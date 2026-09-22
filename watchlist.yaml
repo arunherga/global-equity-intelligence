@@ -1,0 +1,1664 @@
+# ---------------------------------------------------------------------------
+# global-equity-intelligence :: WATCHLIST
+#
+# This file is the MANUALLY MAINTAINED source of truth for the 10 tracked
+# companies. Automated profile enrichment (src/profiles/enrichment.py) writes
+# to data/profiles/<TICKER>.enriched.json and NEVER overwrites anything here.
+#
+# Alias entries may be a plain string, or a mapping:
+#   - value:    the phrase to match
+#     requires: at least one of these terms must also appear in the article
+#     excludes: reject the match if it falls inside one of these phrases
+#     strength: primary (full company identity) | secondary (shorthand)
+#
+# Commodity entries carry a `role`:
+#   input      -> the company buys it   (price up  = cost pressure)
+#   output     -> the company sells it  (price up  = revenue tailwind)
+#   throughput -> the company handles it (volume matters more than price)
+# ---------------------------------------------------------------------------
+
+version: 1
+
+defaults:
+  country: India
+  base_currency: INR
+  exchange: [NSE, BSE]
+
+# User shorthand -> canonical ticker. Applied by the profile loader.
+ticker_aliases:
+  HDFC: HDFCBANK
+  HDFCBANK.NS: HDFCBANK
+  HDFC BANK: HDFCBANK
+  MSTC: MSTCLTD
+  WAAREE: WAAREEENER
+  WAAREEENERGIES: WAAREEENER
+  COAL INDIA: COALINDIA
+  CIL: COALINDIA
+  JINKUSHAL: JKIPL
+  RAVELCARE: RAVEL
+  TAMILNAD: TMB
+  SUPRIYALIFE: SUPRIYA
+  KSOLVESINDIA: KSOLVES
+
+tickers:
+
+  # =========================================================================
+  MSTCLTD:
+    company: MSTC Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: E-commerce auctions and scrap trading
+    ownership: Government of India (Ministry of Steel) PSU
+
+    aliases:
+      - value: MSTC Limited
+        strength: primary
+      - value: MSTC Ltd
+        strength: primary
+      - value: Metal Scrap Trade Corporation
+        strength: primary
+      - value: MSTC
+        strength: secondary
+        excludes: [mstc mining ltd, mstcl bank]
+
+    subsidiaries:
+      - MSTC Recycling Private Limited
+
+    # Related but separately controlled entities: relevant, not the company.
+    associates:
+      - Ferro Scrap Nigam Limited
+      - FSNL
+      - Mahindra MSTC Recycling
+
+    products:
+      - e-auction platform
+      - scrap disposal services
+      - MSTC eCommerce
+      - metal scrap trading
+      - vehicle scrappage
+      - registered vehicle scrapping facility
+
+    services:
+      - government e-auction
+      - mineral block auction
+      - coal block auction
+      - asset monetization auction
+      - e-procurement
+      - tender management
+
+    competitors:
+      - Metaljunction
+      - mjunction Services
+      - GeM
+      - Government e Marketplace
+      - IndiaMART auctions
+      - NBCC auctions
+      - SBI e-auction
+
+    customers:
+      - Steel Authority of India
+      - SAIL
+      - Coal India
+      - Indian Railways
+      - Ministry of Defence
+      - NTPC
+      - ONGC
+      - state governments
+      - public sector undertakings
+
+    suppliers:
+      - scrap dealers
+      - recyclers
+      - shipbreaking yards
+
+    countries: [India]
+    export_markets: []
+
+    commodities:
+      - {name: ferrous scrap, role: throughput}
+      - {name: steel scrap, role: throughput}
+      - {name: non-ferrous scrap, role: throughput}
+      - {name: shredded scrap, role: throughput}
+      - {name: steel prices, role: throughput}
+      - {name: iron ore, role: throughput}
+      - {name: copper scrap, role: throughput}
+      - {name: aluminium scrap, role: throughput}
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - Ministry of Steel
+      - Ministry of Mines
+      - Ministry of Coal
+      - Ministry of Road Transport and Highways
+      - NITI Aayog
+      - Department of Investment and Public Asset Management
+      - DIPAM
+
+    regulators: [SEBI, NSE, BSE, Comptroller and Auditor General]
+
+    sector_topics:
+      - vehicle scrappage policy
+      - scrappage policy
+      - registered vehicle scrapping facility
+      - recycling regulation
+      - metal recycling
+      - circular economy
+      - e-auction
+      - coal block auction
+      - mineral block auction
+      - mining auction
+      - asset monetization
+      - national monetisation pipeline
+      - PSU privatisation
+      - PSU disinvestment
+      - steel scrap policy
+      - scrap recycling policy
+      - tender win
+      - platform transaction value
+
+    macro_topics:
+      - India steel demand
+      - India infrastructure spending
+      - PSU capex
+      - government disinvestment
+      - India mining output
+
+    international_topics:
+      - global steel scrap prices
+      - scrap export restrictions
+      - scrap import policy
+      - EU waste shipment regulation
+      - Turkey scrap imports
+      - China scrap imports
+      - global recycling regulation
+      - commodity cycle
+
+    technologies:
+      - online auction platform
+      - e-procurement platform
+
+    ir:
+      website: https://www.mstcindia.co.in/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "542597"
+      investor_page: https://www.mstcindia.co.in/Investors.aspx
+
+    queries_extra:
+      - MSTC e-auction contract
+      - MSTC tender win
+      - Ferro Scrap Nigam
+      - India vehicle scrappage policy
+      - coal block auction MSTC
+
+  # =========================================================================
+  WAAREEENER:
+    company: Waaree Energies Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Solar photovoltaic manufacturing
+
+    aliases:
+      - value: Waaree Energies
+        strength: primary
+      - value: Waaree Energies Limited
+        strength: primary
+      - value: Waaree
+        strength: secondary
+      - value: Waaree Solar
+        strength: primary
+
+    subsidiaries:
+      - Waaree Solar Americas
+      - Waaree Clean Energy Solutions
+      - Indosolar
+      - Waaree Forever Energies
+      - Waaree Energies Texas
+
+    associates:
+      - Waaree Renewable Technologies
+      - Waaree Technologies
+
+    brands: [Waaree Bifacial]
+
+    products:
+      - solar modules
+      - PV modules
+      - solar cells
+      - solar panels
+      - TOPCon modules
+      - mono PERC modules
+      - bifacial modules
+      - solar ingots
+      - solar wafers
+      - inverters
+      - battery energy storage
+      - rooftop solar systems
+
+    services:
+      - EPC services
+      - solar project development
+      - independent power production
+
+    competitors:
+      - Adani Solar
+      - Adani Green Energy
+      - Premier Energies
+      - Vikram Solar
+      - Tata Power Solar
+      - ReNew Power
+      - ReNew Energy Global
+      - Emmvee
+      - Saatvik Green Energy
+      - Goldi Solar
+      - First Solar
+      - LONGi
+      - LONGi Green Energy
+      - JinkoSolar
+      - Trina Solar
+      - JA Solar
+      - Canadian Solar
+      - Qcells
+      - Hanwha Qcells
+      - Risen Energy
+      - Astronergy
+
+    customers:
+      - NTPC
+      - SECI
+      - Solar Energy Corporation of India
+      - NHPC
+      - Adani
+      - Tata Power
+      - US utilities
+      - independent power producers
+      - EPC contractors
+
+    suppliers:
+      - polysilicon producers
+      - wafer suppliers
+      - solar glass manufacturers
+      - encapsulant suppliers
+      - Daqo New Energy
+      - GCL Technology
+      - Tongwei
+      - Xinte Energy
+
+    countries: [India, United States, Europe, China, Middle East, Southeast Asia, Africa]
+    export_markets: [United States, Europe, Middle East, Africa, Southeast Asia, Latin America]
+
+    commodities:
+      - {name: polysilicon, role: input}
+      - {name: silicon wafer, role: input}
+      - {name: solar wafer, role: input}
+      - {name: solar cell prices, role: input}
+      - {name: silver, role: input}
+      - {name: silver paste, role: input}
+      - {name: aluminium, role: input}
+      - {name: solar glass, role: input}
+      - {name: copper, role: input}
+      - {name: EVA encapsulant, role: input}
+      - {name: solar module prices, role: output}
+      - {name: PV module prices, role: output}
+
+    currencies: [USD/INR, EUR/INR]
+
+    government_dependencies:
+      - Ministry of New and Renewable Energy
+      - MNRE
+      - Ministry of Power
+      - Ministry of Commerce
+      - PLI scheme
+      - production linked incentive
+      - ALMM
+      - Approved List of Models and Manufacturers
+      - basic customs duty
+      - Inflation Reduction Act
+      - US Department of Commerce
+
+    regulators: [SEBI, NSE, BSE, CERC, US Department of Commerce, US International Trade Commission, BIS]
+
+    sector_topics:
+      - solar module prices
+      - solar cell prices
+      - module oversupply
+      - ALMM
+      - ALCM
+      - approved list of cells
+      - solar PLI
+      - basic customs duty solar
+      - anti-dumping duty solar
+      - countervailing duty solar
+      - AD/CVD solar
+      - solar tariff
+      - US solar tariffs
+      - Section 201 solar
+      - Section 232 solar
+      - Uyghur Forced Labor Prevention Act
+      - UFLPA
+      - solar capacity addition
+      - renewable energy tender
+      - solar auction
+      - utility scale solar
+      - rooftop solar
+      - PM Surya Ghar
+      - solar manufacturing capacity
+      - module manufacturing expansion
+      - cell manufacturing
+      - ingot wafer manufacturing
+      - solar order book
+      - module supply agreement
+      - domestic content requirement
+
+    macro_topics:
+      - India renewable energy target
+      - India power demand
+      - electricity demand
+      - grid capacity
+      - energy transition
+      - interest rates renewable financing
+
+    international_topics:
+      - China solar manufacturing
+      - Chinese module oversupply
+      - China solar export rebate
+      - solar export rebate
+      - export rebate
+      - module price
+      - US solar demand
+      - US solar imports
+      - Europe solar demand
+      - EU solar manufacturing
+      - Inflation Reduction Act solar
+      - 45X manufacturing credit
+      - Southeast Asia solar tariffs
+      - global polysilicon supply
+      - IEA renewables outlook
+      - IRENA report
+
+    technologies:
+      - TOPCon
+      - HJT
+      - heterojunction
+      - perovskite
+      - n-type cell
+      - bifacial
+      - battery energy storage system
+
+    ir:
+      website: https://www.waaree.com/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "544277"
+      investor_page: https://www.waaree.com/investors/
+
+    queries_extra:
+      - Waaree Energies order
+      - Waaree module supply agreement
+      - India solar ALMM policy
+      - US solar tariff India imports
+      - China solar module prices fall
+      - polysilicon price
+      - solar module price index
+      - India solar PLI scheme
+      - solar cell import duty India
+
+  # =========================================================================
+  FRESHARA:
+    company: Freshara Agro Exports Limited
+    exchange: [NSE]
+    country: India
+    market_segment: SME
+    industry: Processed food exports
+
+    aliases:
+      - value: Freshara Agro Exports
+        strength: primary
+      - value: Freshara Agro
+        strength: primary
+      - value: Freshara Picklz
+        strength: primary
+      - value: Freshara
+        strength: secondary
+
+    brands: [Freshara Picklz, Freshara]
+
+    products:
+      - gherkins
+      - pickled gherkins
+      - preserved gherkins
+      - pickled vegetables
+      - jalapenos
+      - jalapeño peppers
+      - baby corn
+      - pickled chillies
+      - bell peppers
+      - banderillas
+      - mixed pickled vegetables
+      - preserved cucumbers
+      - private label pickles
+
+    services:
+      - contract farming
+      - private label manufacturing
+      - food processing
+      - contract manufacturing
+
+    competitors:
+      - Global Green Company
+      - Ken Agritech
+      - Sterling Agro
+      - Neo Foods
+      - VT Foods
+      - Reitzel India
+      - Unicorn Agrotech
+      - AVT Natural
+      - Hindustan Foods
+
+    customers:
+      - European food distributors
+      - supermarket private label
+      - Spanish food companies
+      - Russian importers
+      - US food distributors
+      - retail chains
+      - foodservice distributors
+
+    suppliers:
+      - contract farmers
+      - gherkin growers
+      - glass jar suppliers
+      - packaging suppliers
+      - vinegar suppliers
+
+    countries: [India, Spain, Europe, European Union, EU, United States, Russia, Germany, France, Belgium, Latin America, Asia]
+    export_markets: [Europe, European Union, EU, Spain, United States, Russia, Middle East, Latin America, Asia]
+
+    commodities:
+      - {name: gherkin prices, role: input}
+      - {name: cucumber prices, role: input}
+      - {name: vegetable prices, role: input}
+      - {name: acetic acid, role: input}
+      - {name: glass packaging, role: input}
+      - {name: container freight rates, role: input}
+      - {name: sea freight rates, role: input}
+
+    currencies: [USD/INR, EUR/INR, RUB/INR]
+
+    government_dependencies:
+      - APEDA
+      - DGFT
+      - Ministry of Commerce
+      - Ministry of Food Processing Industries
+      - RoDTEP
+      - export incentive scheme
+      - Merchandise Exports from India Scheme
+
+    regulators: [FSSAI, APEDA, DGFT, US FDA, European Food Safety Authority, EFSA, EU Commission, NSE]
+
+    sector_topics:
+      - gherkin exports
+      - pickled vegetable exports
+      - agricultural exports India
+      - processed food exports
+      - food safety regulation
+      - pesticide residue limits
+      - maximum residue level
+      - MRL revision
+      - food import alert
+      - FDA import alert
+      - food recall
+      - EU import rules
+      - EU food safety
+      - private label food demand
+      - supermarket procurement
+      - contract farming
+      - food processing capacity
+      - export order win
+      - horticulture output
+
+    macro_topics:
+      - India agricultural output
+      - monsoon
+      - crop yield
+      - food inflation
+      - rupee depreciation
+      - export incentives India
+
+    international_topics:
+      - EU pesticide regulation
+      - EU maximum residue levels
+      - Spain gherkin imports
+      - Russia food imports
+      - US FDA import refusal
+      - global food trade
+      - container shipping rates
+      - Red Sea shipping disruption
+      - European retail demand
+
+    ir:
+      website: https://fresharaagro.com/
+      bse_code: ""   # NSE SME only
+      investor_page: https://fresharaagro.com/investors/
+
+    queries_extra:
+      - Freshara Agro Exports order
+      - gherkin exports India
+      - pickled vegetable exports India
+      - EU pesticide residue imported vegetables
+      - FDA import alert pickled vegetables
+      - APEDA processed food exports
+      - gherkin prices
+
+  # =========================================================================
+  JKIPL:
+    company: Jinkushal Industries Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Construction and mining equipment trading
+
+    aliases:
+      - value: Jinkushal Industries
+        strength: primary
+      - value: Jinkushal Industries Limited
+        strength: primary
+      - value: Jinkushal
+        strength: primary
+      - value: JKIPL
+        strength: secondary
+
+    products:
+      - used construction equipment
+      - excavators
+      - wheel loaders
+      - motor graders
+      - backhoe loaders
+      - bulldozers
+      - cranes
+      - mining equipment
+      - earthmoving equipment
+      - refurbished machinery
+      - equipment spare parts
+
+    services:
+      - equipment trading
+      - equipment refurbishment
+      - equipment export
+      - machinery sourcing
+
+    competitors:
+      - Gmmco
+      - TIL Limited
+      - Action Construction Equipment
+      - Escorts Kubota
+      - Ritchie Bros
+      - IronPlanet
+      - Machinery Auctioneers
+      - Sany Heavy Industry
+      - equipment rental companies
+
+    customers:
+      - infrastructure contractors
+      - road construction companies
+      - mining contractors
+      - equipment dealers
+      - African equipment buyers
+      - Middle East contractors
+
+    suppliers:
+      - Caterpillar
+      - Komatsu
+      - Volvo Construction Equipment
+      - JCB
+      - Hitachi Construction Machinery
+      - SANY
+      - Tata Hitachi
+      - Liebherr
+      - Hyundai Construction Equipment
+      - Doosan Infracore
+      - equipment auction houses
+
+    countries: [India, Africa, Middle East, Southeast Asia, United States, Japan, Europe]
+    export_markets: [Africa, Middle East, Southeast Asia, Latin America]
+
+    commodities:
+      - {name: steel prices, role: input}
+      - {name: used equipment prices, role: output}
+      - {name: diesel prices, role: input}
+      - {name: container freight rates, role: input}
+
+    currencies: [USD/INR, JPY/INR, EUR/INR]
+
+    government_dependencies:
+      - Ministry of Road Transport and Highways
+      - NHAI
+      - Ministry of Mines
+      - Ministry of Coal
+      - National Infrastructure Pipeline
+      - Gati Shakti
+      - equipment import duty
+      - DGFT
+
+    regulators: [SEBI, NSE, BSE, DGFT, CPCB]
+
+    sector_topics:
+      - construction equipment sales
+      - construction equipment demand
+      - used equipment market
+      - heavy machinery demand
+      - mining equipment demand
+      - earthmoving equipment
+      - equipment imports
+      - equipment exports
+      - equipment financing
+      - infrastructure project awards
+      - road construction awards
+      - highway construction
+      - mining capex
+      - emission norms construction equipment
+      - CEV BS V
+
+    macro_topics:
+      - India infrastructure spending
+      - capital expenditure budget
+      - rail infrastructure
+      - housing construction
+      - mining output India
+      - commodity capex cycle
+      - interest rates equipment financing
+
+    international_topics:
+      - Caterpillar results
+      - Komatsu results
+      - global construction equipment market
+      - used machinery trade
+      - Africa infrastructure investment
+      - Middle East construction projects
+      - equipment import duty changes
+
+    ir:
+      website: https://www.jinkushal.com/
+      bse_code: ""   # fill in from bseindia.com before enabling BSE for this stock
+      investor_page: https://www.jinkushal.com/investors
+
+    queries_extra:
+      - Jinkushal Industries order
+      - India construction equipment sales
+      - used construction equipment exports India
+      - India infrastructure capex budget
+      - mining equipment demand India
+
+  # =========================================================================
+  RAVEL:
+    company: Ravelcare Limited
+    exchange: [BSE]
+    country: India
+    market_segment: SME
+    industry: Personal care and beauty
+
+    # CRITICAL: Ravelcare Limited is NOT Ravel Electronics. See tests.
+    aliases:
+      - value: Ravelcare Limited
+        strength: primary
+      - value: Ravelcare
+        strength: primary
+      - value: Ravel Care
+        strength: primary
+      - value: Ravel
+        strength: secondary
+        requires:
+          - ravelcare
+          - personal care
+          - haircare
+          - hair care
+          - skincare
+          - skin care
+          - cosmetics
+          - beauty
+          - bse sme
+        excludes:
+          - ravel electronics
+          - ravel india
+          - maurice ravel
+          - ravel bolero
+          - ravelry
+
+    negative_aliases:
+      - Ravel Electronics
+      - Ravel Electronics Private Limited
+      - Maurice Ravel
+      - Ravel Hotels
+
+    brands: [Ravelcare]
+
+    products:
+      - haircare products
+      - shampoo
+      - hair oil
+      - hair serum
+      - skincare products
+      - face wash
+      - moisturiser
+      - personal care products
+      - cosmetics
+      - beauty products
+
+    services:
+      - direct to consumer retail
+      - contract manufacturing
+      - e-commerce retail
+
+    competitors:
+      - Honasa Consumer
+      - Mamaearth
+      - Nykaa
+      - FSN E-Commerce
+      - Hindustan Unilever
+      - "L'Oreal"
+      - "L'Oréal"
+      - Marico
+      - Dabur
+      - Emami
+      - Godrej Consumer Products
+      - Minimalist
+      - WOW Skin Science
+      - Plum Goodness
+      - The Derma Co
+      - Bombay Shaving Company
+
+    customers:
+      - Amazon India
+      - Flipkart
+      - Nykaa marketplace
+      - Blinkit
+      - Zepto
+      - Swiggy Instamart
+      - modern trade retailers
+      - distributors
+
+    suppliers:
+      - contract manufacturers
+      - cosmetic ingredient suppliers
+      - packaging manufacturers
+      - fragrance houses
+
+    countries: [India, Middle East, Southeast Asia]
+    export_markets: [Middle East, Southeast Asia, Africa]
+
+    commodities:
+      - {name: cosmetic ingredients, role: input}
+      - {name: specialty chemicals, role: input}
+      - {name: palm oil derivatives, role: input}
+      - {name: plastic packaging, role: input}
+      - {name: fragrance, role: input}
+      - {name: essential oils, role: input}
+      - {name: crude oil, role: input}
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - Ministry of Consumer Affairs
+      - Ministry of Health
+      - GST council
+
+    regulators: [CDSCO, FSSAI, BIS, SEBI, BSE, Central Consumer Protection Authority, CCPA]
+
+    sector_topics:
+      - haircare market India
+      - skincare market India
+      - personal care demand
+      - beauty and personal care
+      - D2C brands
+      - beauty ecommerce
+      - quick commerce beauty
+      - customer acquisition cost
+      - digital advertising cost
+      - influencer marketing
+      - premium beauty
+      - new product launch
+      - retail expansion
+      - cosmetics regulation
+      - BPC market growth
+
+    macro_topics:
+      - India consumer spending
+      - rural demand
+      - urban consumption
+      - FMCG volume growth
+      - GST rate change
+      - inflation consumer goods
+
+    international_topics:
+      - global beauty trends
+      - K-beauty
+      - international cosmetic ingredient regulation
+      - EU cosmetics regulation
+      - global personal care M&A
+
+    technologies:
+      - e-commerce marketplace
+      - performance marketing
+
+    ir:
+      website: https://ravelcare.com/
+      bse_code: ""   # fill in from bseindia.com before enabling BSE for this stock
+      investor_page: https://ravelcare.com/investors
+
+    queries_extra:
+      - Ravelcare Limited
+      - Ravelcare results
+      - India haircare market growth
+      - D2C beauty brand India funding
+      - quick commerce beauty sales
+
+  # =========================================================================
+  COALINDIA:
+    company: Coal India Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Coal mining
+    ownership: Government of India (Ministry of Coal) PSU
+
+    aliases:
+      - value: Coal India Limited
+        strength: primary
+      - value: Coal India
+        strength: primary
+      - value: CIL
+        strength: secondary
+        requires: [coal, mining, ministry of coal, production, e-auction]
+        excludes: [cil secure, council of indian, civil]
+
+    subsidiaries:
+      - Eastern Coalfields
+      - Eastern Coalfields Limited
+      - Bharat Coking Coal
+      - Bharat Coking Coal Limited
+      - Central Coalfields
+      - Central Coalfields Limited
+      - Western Coalfields
+      - Western Coalfields Limited
+      - South Eastern Coalfields
+      - South Eastern Coalfields Limited
+      - Northern Coalfields
+      - Northern Coalfields Limited
+      - Mahanadi Coalfields
+      - Mahanadi Coalfields Limited
+      - Central Mine Planning and Design Institute
+      - CMPDI
+      - Bharat Coal Gasification
+      - Coal India Africana
+
+    products:
+      - thermal coal
+      - coking coal
+      - washed coal
+      - coal gasification
+      - critical minerals
+
+    services:
+      - coal e-auction
+      - coal supply agreement
+      - fuel supply agreement
+
+    competitors:
+      - Singareni Collieries
+      - SCCL
+      - NLC India
+      - Adani Enterprises coal
+      - commercial coal miners
+      - imported coal suppliers
+
+    customers:
+      - NTPC
+      - power utilities
+      - state electricity boards
+      - cement companies
+      - steel companies
+      - captive power plants
+      - aluminium smelters
+
+    suppliers:
+      - Indian Railways
+      - mining equipment suppliers
+      - explosives suppliers
+      - BEML
+      - contract miners
+      - MDO operators
+
+    countries: [India, Australia, Indonesia, China, Russia, Mozambique]
+    export_markets: []
+
+    commodities:
+      - {name: thermal coal prices, role: output}
+      - {name: coking coal prices, role: output}
+      - {name: Newcastle coal, role: output}
+      - {name: Indonesian coal prices, role: output}
+      - {name: API4 coal, role: output}
+      - {name: diesel prices, role: input}
+      - {name: explosives, role: input}
+      - {name: natural gas prices, role: output}
+      - {name: LNG prices, role: output}
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - Ministry of Coal
+      - Ministry of Power
+      - Coal Controller
+      - Ministry of Environment Forest and Climate Change
+      - DIPAM
+      - offer for sale
+      - coal block auction
+      - commercial coal mining
+
+    regulators:
+      - Ministry of Coal
+      - Coal Controller Organisation
+      - Central Electricity Authority
+      - CPCB
+      - SEBI
+      - NSE
+      - BSE
+
+    sector_topics:
+      - coal production
+      - coal dispatch
+      - coal offtake
+      - coal e-auction premium
+      - coal inventory
+      - coal stock at power plants
+      - rake availability
+      - rail rake
+      - mine approval
+      - environmental clearance
+      - forest clearance
+      - mine expansion
+      - coal worker strike
+      - wage agreement coal
+      - NCWA
+      - coal import substitution
+      - coal gasification project
+      - coal bed methane
+      - critical minerals auction
+      - renewable diversification
+      - solar project PSU
+      - offer for sale stake sale
+      - dividend announcement
+      - capital expenditure coal
+
+    macro_topics:
+      - India power demand
+      - thermal power generation
+      - peak electricity demand
+      - India GDP
+      - monsoon power demand
+      - industrial electricity consumption
+
+    international_topics:
+      - global thermal coal prices
+      - Newcastle coal price
+      - Indonesian coal reference price
+      - Australian coal exports
+      - China coal imports
+      - China coal production
+      - India coal imports
+      - global LNG prices
+      - natural gas prices
+      - COP climate agreement
+      - coal phase down
+      - carbon border adjustment mechanism
+      - global power demand
+      - dry bulk freight rates
+
+    ir:
+      website: https://www.coalindia.in/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "533278"
+      investor_page: https://www.coalindia.in/investors/
+
+    queries_extra:
+      - Coal India production dispatch
+      - Coal India e-auction premium
+      - Newcastle thermal coal price
+      - India coal imports
+      - Ministry of Coal policy
+      - coal block auction India
+      - India power demand coal stock
+
+  # =========================================================================
+  KSOLVES:
+    company: Ksolves India Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: IT services and software engineering
+
+    aliases:
+      - value: Ksolves India
+        strength: primary
+      - value: Ksolves India Limited
+        strength: primary
+      - value: Ksolves
+        strength: primary
+
+    subsidiaries:
+      - Ksolves Innovations
+      - Ksolves LLC
+
+    products:
+      - Salesforce consulting
+      - Odoo development
+      - big data engineering
+      - machine learning solutions
+      - DevOps services
+      - custom software development
+      - AI agents
+      - data engineering services
+
+    services:
+      - software development
+      - IT consulting
+      - digital transformation
+      - staff augmentation
+      - managed services
+
+    competitors:
+      - Happiest Minds
+      - Mastek
+      - Persistent Systems
+      - LTIMindtree
+      - Infosys
+      - TCS
+      - Wipro
+      - Globant
+      - EPAM
+      - Thoughtworks
+      - Grid Dynamics
+      - Silverline Salesforce
+      - offshore development firms
+
+    customers:
+      - US enterprises
+      - technology startups
+      - SaaS companies
+      - BFSI clients
+      - retail enterprises
+
+    suppliers:
+      - Salesforce
+      - Odoo
+      - AWS
+      - Amazon Web Services
+      - Microsoft Azure
+      - Google Cloud
+      - Oracle Cloud
+      - ServiceNow
+      - Databricks
+      - Snowflake
+      - cloud infrastructure providers
+      - staffing partners
+
+    countries: [India, United States, United Kingdom, Europe, Australia, Middle East]
+    export_markets: [United States, United Kingdom, Europe, Australia]
+
+    commodities: []
+
+    currencies: [USD/INR, EUR/INR, GBP/INR]
+
+    government_dependencies:
+      - Ministry of Electronics and Information Technology
+      - STPI
+      - SEZ policy
+      - H-1B visa policy
+      - US immigration policy
+
+    regulators: [SEBI, NSE, BSE, NASSCOM]
+
+    sector_topics:
+      - IT services demand
+      - IT spending
+      - enterprise software budget
+      - AI consulting demand
+      - AI adoption enterprise
+      - Salesforce ecosystem
+      - Odoo ecosystem
+      - cloud spending
+      - digital transformation spending
+      - IT outsourcing
+      - offshore software services
+      - deal wins IT services
+      - billing rates
+      - attrition rate
+      - employee headcount
+      - discretionary IT spending
+      - generative AI services
+
+    macro_topics:
+      - US recession risk
+      - US enterprise spending
+      - technology hiring
+      - rupee dollar rate
+      - global IT budgets
+      - US Federal Reserve rates
+
+    international_topics:
+      - Salesforce results
+      - Salesforce AI investment
+      - Microsoft AI spending
+      - AWS revenue growth
+      - Google Cloud growth
+      - Oracle cloud
+      - ServiceNow results
+      - Databricks funding
+      - Snowflake results
+      - Odoo funding
+      - US tech layoffs
+      - H-1B visa rule
+      - AI automation software jobs
+      - enterprise AI budgets
+
+    technologies:
+      - artificial intelligence
+      - machine learning
+      - generative AI
+      - large language models
+      - big data
+      - Apache Spark
+      - Apache Kafka
+      - cloud computing
+      - Salesforce
+      - Odoo
+      - DevOps
+
+    ir:
+      website: https://www.ksolves.com/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "542367"
+      investor_page: https://www.ksolves.com/investor-relations
+
+    queries_extra:
+      - Ksolves India results
+      - Ksolves order win
+      - US enterprise IT spending outlook
+      - Salesforce partner ecosystem growth
+      - AI consulting demand offshore
+      - Odoo ERP adoption
+
+  # =========================================================================
+  TMB:
+    company: Tamilnad Mercantile Bank Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Private sector banking
+
+    aliases:
+      - value: Tamilnad Mercantile Bank
+        strength: primary
+      - value: Tamil Nadu Mercantile Bank
+        strength: primary
+      - value: TMB Bank
+        strength: primary
+      - value: TMB
+        strength: secondary
+        requires: [bank, banking, rbi, deposit, loan, branch, nse, bse, tamilnad, tamil nadu]
+        excludes: [tmb thailand, tmbthanachart, tmb capital]
+
+    subsidiaries: []
+
+    products:
+      - retail loans
+      - MSME loans
+      - gold loans
+      - agriculture loans
+      - deposits
+      - current account savings account
+      - trade finance
+      - digital banking
+
+    services:
+      - branch banking
+      - SME lending
+      - NRI banking
+      - treasury operations
+
+    competitors:
+      - Federal Bank
+      - Karur Vysya Bank
+      - City Union Bank
+      - South Indian Bank
+      - Karnataka Bank
+      - DCB Bank
+      - CSB Bank
+      - Equitas Small Finance Bank
+      - HDFC Bank
+      - ICICI Bank
+      - Axis Bank
+      - Indian Bank
+      - Indian Overseas Bank
+
+    customers:
+      - MSME borrowers
+      - textile businesses
+      - traders
+      - retail depositors
+      - agriculture borrowers
+      - Nadar community businesses
+
+    suppliers:
+      - core banking vendors
+      - fintech partners
+      - payment processors
+
+    countries: [India]
+    export_markets: []
+
+    commodities:
+      - {name: gold prices, role: throughput}
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - Ministry of Finance
+      - Department of Financial Services
+      - Tamil Nadu government
+      - MSME credit guarantee scheme
+      - CGTMSE
+
+    regulators: [RBI, Reserve Bank of India, SEBI, NSE, BSE, NABARD, IRDAI]
+
+    sector_topics:
+      - RBI monetary policy
+      - repo rate
+      - cash reserve ratio
+      - statutory liquidity ratio
+      - deposit rates
+      - credit growth
+      - loan growth
+      - net interest margin
+      - CASA ratio
+      - gross NPA
+      - net NPA
+      - asset quality
+      - provisioning
+      - capital adequacy
+      - slippages
+      - SME lending
+      - MSME stress
+      - gold loan growth
+      - priority sector lending
+      - branch expansion
+      - digital banking adoption
+      - RBI penalty
+      - RBI inspection
+      - bank fraud
+      - cybersecurity breach bank
+      - management change bank
+      - shareholding dispute
+
+    macro_topics:
+      - Indian bond yields
+      - inflation CPI
+      - India GDP growth
+      - banking liquidity
+      - interest rate cycle
+      - interest rates
+      - US Federal Reserve policy
+      - Federal Reserve
+      - US interest rates
+      - global interest rates
+      - systemic credit growth
+      - deposit competition
+      - Tamil Nadu economy
+      - textile sector demand
+      - southern India credit demand
+
+    international_topics:
+      - global banking stress
+      - Basel norms
+      - foreign portfolio investor flows
+
+    ir:
+      website: https://tmb.in/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "543596"
+      investor_page: https://tmb.in/investor-relations.aspx
+
+    queries_extra:
+      - Tamilnad Mercantile Bank results
+      - Tamilnad Mercantile Bank RBI
+      - RBI monetary policy repo rate
+      - India bank credit growth deposit growth
+      - Tamil Nadu MSME textile credit
+
+  # =========================================================================
+  SUPRIYA:
+    company: Supriya Lifescience Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Active pharmaceutical ingredients
+
+    aliases:
+      - value: Supriya Lifescience
+        strength: primary
+      - value: Supriya Life Science
+        strength: primary
+      - value: Supriya Lifesciences
+        strength: primary
+      - value: Supriya
+        strength: secondary
+        requires: [api, pharma, pharmaceutical, lifescience, life science, drug, usfda, fda, nse, bse]
+        excludes: [supriya sule, supriya pathak, supriya pilgaonkar, supriya menon]
+
+    subsidiaries:
+      - Supriya Lifescience Europe
+
+    products:
+      - active pharmaceutical ingredients
+      - API
+      - chlorpheniramine maleate
+      - ketamine hydrochloride
+      - salbutamol sulphate
+      - ambroxol hydrochloride
+      - ipratropium bromide
+      - dextromethorphan
+      - antihistamines
+      - anaesthetics
+      - analgesics
+      - vitamins
+      - intermediates
+
+    services:
+      - CDMO
+      - contract manufacturing
+      - custom synthesis
+
+    competitors:
+      - Divi's Laboratories
+      - Aarti Drugs
+      - Neuland Laboratories
+      - Granules India
+      - Laurus Labs
+      - Shilpa Medicare
+      - Hikal
+      - Chinese API manufacturers
+      - Zhejiang API producers
+      - Hetero Drugs
+
+    customers:
+      - generic drug manufacturers
+      - European formulators
+      - Latin American pharma companies
+      - US generic companies
+      - contract manufacturers
+
+    suppliers:
+      - Chinese intermediate suppliers
+      - specialty chemical producers
+      - solvent suppliers
+      - key starting material suppliers
+
+    countries: [India, United States, Europe, China, Latin America, Asia, Japan]
+    export_markets: [Europe, United States, Latin America, Asia, Middle East]
+
+    commodities:
+      - {name: chemical intermediates, role: input}
+      - {name: solvents, role: input}
+      - {name: specialty chemicals, role: input}
+      - {name: API prices, role: output}
+      - {name: crude oil, role: input}
+      - {name: natural gas prices, role: input}
+      - {name: container freight rates, role: input}
+
+    currencies: [USD/INR, EUR/INR, CNY/INR]
+
+    government_dependencies:
+      - Department of Pharmaceuticals
+      - PLI scheme pharmaceuticals
+      - bulk drug park
+      - DGFT
+      - Ministry of Chemicals and Fertilizers
+
+    regulators:
+      - US FDA
+      - USFDA
+      - EDQM
+      - EMA
+      - European Medicines Agency
+      - CDSCO
+      - WHO GMP
+      - ANVISA
+      - PMDA
+      - SEBI
+      - NSE
+      - BSE
+
+    sector_topics:
+      - API prices
+      - API exports
+      - bulk drug prices
+      - drug shortage
+      - USFDA inspection
+      - FDA warning letter
+      - form 483 observation
+      - EDQM certificate
+      - CEP approval
+      - DMF filing
+      - ANDA approval
+      - regulatory inspection
+      - GMP compliance
+      - API capacity expansion
+      - new API plant
+      - CDMO contract
+      - patent expiry
+      - China plus one
+      - API import dependence
+      - product approval
+      - customer contract pharma
+
+    macro_topics:
+      - India pharmaceutical exports
+      - rupee depreciation exporters
+      - energy costs manufacturing
+      - global healthcare spending
+
+    international_topics:
+      - China API production
+      - Chinese API
+      - China API
+      - API plant
+      - environmental inspection
+      - China environmental inspection plants
+      - Chinese pharma export controls
+      - US drug pricing policy
+      - US tariffs pharmaceuticals
+      - EU pharmaceutical regulation
+      - global API supply disruption
+      - biosecure act
+      - Latin America pharma demand
+
+    ir:
+      website: https://supriyalifescience.com/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "543434"
+      investor_page: https://supriyalifescience.com/investors/
+
+    queries_extra:
+      - Supriya Lifescience results
+      - Supriya Lifescience USFDA
+      - China API plant shutdown
+      - API price index India
+      - India API exports Europe
+      - pharmaceutical drug shortage API
+
+  # =========================================================================
+  HDFCBANK:
+    company: HDFC Bank Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Banking and financial services
+
+    # NOTE: the former HDFC Limited merged into HDFC Bank and is NOT a
+    # separately listed equity. "HDFC" normalises to HDFCBANK.
+    aliases:
+      - value: HDFC Bank Limited
+        strength: primary
+      - value: HDFC Bank
+        strength: primary
+      - value: HDFCBANK
+        strength: primary
+      - value: HDFC
+        strength: secondary
+        requires: [bank, banking, rbi, deposit, loan, credit, branch, nim, casa]
+        excludes:
+          - hdfc life
+          - hdfc amc
+          - hdfc asset management
+          - hdfc ergo
+          - hdfc securities
+          - hdfc credila
+          - hdfc capital
+
+    subsidiaries:
+      - HDB Financial Services
+
+    # Listed/independently reported group entities. News about these is
+    # relevant to HDFCBANK but is NOT a direct HDFC Bank event.
+    associates:
+      - HDFC Securities
+      - HDFC Life
+      - HDFC Life Insurance
+      - HDFC Asset Management
+      - HDFC AMC
+      - HDFC Ergo
+      - HDFC Credila
+
+    products:
+      - retail loans
+      - home loans
+      - mortgages
+      - credit cards
+      - personal loans
+      - auto loans
+      - corporate lending
+      - working capital finance
+      - deposits
+      - savings accounts
+      - UPI payments
+      - digital banking
+
+    services:
+      - retail banking
+      - corporate banking
+      - wholesale banking
+      - treasury
+      - wealth management
+
+    competitors:
+      - ICICI Bank
+      - Axis Bank
+      - State Bank of India
+      - Kotak Mahindra Bank
+      - IndusInd Bank
+      - Federal Bank
+      - IDFC First Bank
+      - Bank of Baroda
+      - Punjab National Bank
+
+    customers:
+      - retail borrowers
+      - corporate borrowers
+      - MSME borrowers
+      - credit card holders
+      - depositors
+
+    suppliers:
+      - technology vendors
+      - payment networks
+      - fintech partners
+
+    countries: [India]
+    export_markets: []
+
+    commodities: []
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - Ministry of Finance
+      - Department of Financial Services
+      - RBI liquidity operations
+
+    regulators: [RBI, Reserve Bank of India, SEBI, NSE, BSE, NPCI, IRDAI]
+
+    sector_topics:
+      - RBI monetary policy
+      - repo rate
+      - bank liquidity
+      - deposit growth
+      - loan growth
+      - credit deposit ratio
+      - net interest margin
+      - CASA ratio
+      - cost of deposits
+      - credit quality
+      - gross NPA
+      - net NPA
+      - provisioning
+      - retail lending growth
+      - corporate lending growth
+      - mortgage demand
+      - credit card spending
+      - UPI transactions
+      - digital banking outage
+      - regulatory action bank
+      - capital requirement
+      - liquidity coverage ratio
+      - priority sector lending
+      - management change bank
+      - risk weight unsecured lending
+
+    macro_topics:
+      - Indian GDP growth
+      - inflation CPI
+      - Indian bond yields
+      - RBI liquidity
+      - consumer credit growth
+      - corporate capex
+      - MSME credit
+      - employment India
+      - housing market India
+      - interest rates
+      - US Federal Reserve policy
+      - Federal Reserve
+      - US interest rates
+      - global interest rates
+      - deposit competition
+
+    international_topics:
+      - foreign institutional investment flows
+      - MSCI index weight
+      - US Federal Reserve policy
+      - global financial conditions
+      - emerging market fund flows
+      - global banking stress
+      - dollar funding conditions
+
+    ir:
+      website: https://www.hdfcbank.com/
+      # Verified at runtime against the filing's company name; see src/sources/bse.py
+      bse_code: "500180"
+      investor_page: https://www.hdfcbank.com/personal/about-us/investor-relations
+
+    queries_extra:
+      - HDFC Bank results NIM deposits
+      - HDFC Bank RBI regulatory
+      - India bank credit growth
+      - RBI policy repo rate decision
+      - India housing loan demand

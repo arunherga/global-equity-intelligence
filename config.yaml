@@ -1,0 +1,267 @@
+# ---------------------------------------------------------------------------
+# global-equity-intelligence :: RUNTIME CONFIGURATION
+# Configuration over hardcoding: behaviour changes belong here, not in code.
+# ---------------------------------------------------------------------------
+
+run:
+  timezone: Asia/Kolkata
+  lookback_hours: 36          # how far back a normal run looks
+  max_queries_per_ticker: 26  # cap on auto-generated queries per company
+  max_articles_per_query: 25
+  language: en
+
+http:
+  timeout_seconds: 20
+  max_retries: 2
+  backoff_seconds: 1.5
+  user_agent: "global-equity-intelligence/1.0 (personal research; +https://github.com/)"
+  per_request_delay_seconds: 0.6
+  verify_tls: true
+
+sources:
+  google_news:
+    enabled: true
+    base_url: "https://news.google.com/rss/search"
+    hl: en-IN
+    gl: IN
+    ceid: "IN:en"
+  gdelt:
+    enabled: true
+    base_url: "https://api.gdeltproject.org/api/v2/doc/doc"
+    max_records: 40
+    # GDELT is used mainly for INTERNATIONAL exposure topics.
+    international_only: true
+  nse:
+    enabled: true
+    announcements_url: "https://www.nseindia.com/api/corporate-announcements"
+    base_url: "https://www.nseindia.com"
+    # NSE frequently blocks datacentre IPs (incl. GitHub Actions runners).
+    # A failure here is recorded in Run Diagnostics and never aborts the run.
+    treat_failure_as_fatal: false
+  bse:
+    enabled: true
+    announcements_url: "https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w"
+    base_url: "https://www.bseindia.com"
+    treat_failure_as_fatal: false
+  rss:
+    enabled: true
+  company_ir:
+    enabled: true
+  regulators:
+    enabled: true
+  government:
+    enabled: true
+
+# Generic + sector feeds. Each entry declares the exposure topics it serves so
+# the pipeline knows which watchlist companies to test the articles against.
+feeds:
+  general:
+    - name: Business Standard Markets
+      url: https://www.business-standard.com/rss/markets-106.rss
+      source_type: established_newspaper
+    - name: The Hindu BusinessLine Markets
+      url: https://www.thehindubusinessline.com/markets/feeder/default.rss
+      source_type: established_newspaper
+    - name: Moneycontrol Business
+      url: https://www.moneycontrol.com/rss/business.xml
+      source_type: established_newspaper
+    - name: Livemint Companies
+      url: https://www.livemint.com/rss/companies
+      source_type: established_newspaper
+
+  solar:
+    - name: PV Magazine
+      url: https://www.pv-magazine.com/feed/
+      source_type: specialized_trade_publication
+      tickers: [WAAREEENER]
+    - name: PV Magazine India
+      url: https://www.pv-magazine-india.com/feed/
+      source_type: specialized_trade_publication
+      tickers: [WAAREEENER]
+    - name: Mercom India
+      url: https://www.mercomindia.com/feed
+      source_type: specialized_trade_publication
+      tickers: [WAAREEENER]
+    - name: SolarQuarter
+      url: https://solarquarter.com/feed/
+      source_type: specialized_trade_publication
+      tickers: [WAAREEENER]
+
+  energy:
+    - name: ETEnergyWorld
+      url: https://energy.economictimes.indiatimes.com/rss/topstories
+      source_type: specialized_trade_publication
+      tickers: [COALINDIA, WAAREEENER]
+
+  banking:
+    - name: ETBFSI
+      url: https://bfsi.economictimes.indiatimes.com/rss/topstories
+      source_type: specialized_trade_publication
+      tickers: [HDFCBANK, TMB]
+    - name: RBI Press Releases
+      url: https://www.rbi.org.in/pressreleases_rss.xml
+      source_type: regulator
+      tickers: [HDFCBANK, TMB]
+
+  pharma:
+    - name: ETHealthWorld Pharma
+      url: https://health.economictimes.indiatimes.com/rss/pharma
+      source_type: specialized_trade_publication
+      tickers: [SUPRIYA]
+    - name: US FDA Press Announcements
+      url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml
+      source_type: regulator
+      tickers: [SUPRIYA, FRESHARA]
+
+  technology:
+    - name: ETCIO
+      url: https://cio.economictimes.indiatimes.com/rss/topstories
+      source_type: specialized_trade_publication
+      tickers: [KSOLVES]
+
+  infrastructure:
+    - name: ETInfra
+      url: https://infra.economictimes.indiatimes.com/rss/topstories
+      source_type: specialized_trade_publication
+      tickers: [JKIPL, MSTCLTD]
+
+  consumer:
+    - name: ETRetail
+      url: https://retail.economictimes.indiatimes.com/rss/topstories
+      source_type: specialized_trade_publication
+      tickers: [RAVEL]
+
+# Source quality feeds CONFIDENCE. It must never by itself decide direction.
+source_quality:
+  company_exchange_filing: 10
+  regulator: 10
+  company_ir: 9
+  reuters: 9
+  major_financial_press: 8
+  established_newspaper: 7
+  specialized_trade_publication: 6
+  unknown_news_site: 3
+  blog: 2
+  social_media: 1
+
+# Domain -> source_type. Anything unlisted falls back to unknown_news_site.
+source_domains:
+  reuters.com: reuters
+  bloomberg.com: major_financial_press
+  ft.com: major_financial_press
+  wsj.com: major_financial_press
+  cnbc.com: major_financial_press
+  economictimes.indiatimes.com: major_financial_press
+  moneycontrol.com: major_financial_press
+  livemint.com: major_financial_press
+  business-standard.com: established_newspaper
+  thehindubusinessline.com: established_newspaper
+  thehindu.com: established_newspaper
+  financialexpress.com: established_newspaper
+  ndtvprofit.com: established_newspaper
+  bqprime.com: established_newspaper
+  timesofindia.indiatimes.com: established_newspaper
+  hindustantimes.com: established_newspaper
+  indianexpress.com: established_newspaper
+  zeebiz.com: unknown_news_site
+  pv-magazine.com: specialized_trade_publication
+  pv-magazine-india.com: specialized_trade_publication
+  mercomindia.com: specialized_trade_publication
+  solarquarter.com: specialized_trade_publication
+  taiyangnews.info: specialized_trade_publication
+  argusmedia.com: specialized_trade_publication
+  spglobal.com: specialized_trade_publication
+  fastmarkets.com: specialized_trade_publication
+  recyclingtoday.com: specialized_trade_publication
+  pharmaceutical-technology.com: specialized_trade_publication
+  fiercepharma.com: specialized_trade_publication
+  chemanalyst.com: specialized_trade_publication
+  nseindia.com: company_exchange_filing
+  bseindia.com: company_exchange_filing
+  rbi.org.in: regulator
+  sebi.gov.in: regulator
+  fda.gov: regulator
+  ema.europa.eu: regulator
+  cdsco.gov.in: regulator
+  apeda.gov.in: regulator
+  dgft.gov.in: regulator
+  coal.gov.in: regulator
+  powermin.gov.in: regulator
+  mnre.gov.in: regulator
+  pib.gov.in: regulator
+  commerce.gov.in: regulator
+  trade.gov: regulator
+  iea.org: specialized_trade_publication
+  irena.org: specialized_trade_publication
+  medium.com: blog
+  substack.com: blog
+  x.com: social_media
+  twitter.com: social_media
+  reddit.com: social_media
+
+scoring:
+  # Relationship floor for inclusion in the main report.
+  report_min_impact: 5
+  high_impact_threshold: 8
+  critical_threshold: 13
+  # WEAK relationships are suppressed unless unusually important.
+  weak_relationship_min_impact: 9
+  # Cap for macro-only and sector-only links so broad news cannot dominate.
+  macro_relationship_cap: 8
+  sector_relationship_cap: 9
+
+clustering:
+  # Two articles join the same event if they share tickers, overlap in time,
+  # and their titles are similar enough.
+  title_similarity_threshold: 0.62
+  same_event_window_days: 3
+  # An existing stored event can absorb a new article within this window.
+  event_update_window_days: 21
+  # Threshold for recognising a stored event as the same development. Lower
+  # than the intra-run threshold because company + category + window already
+  # gate it: a rumour and its confirmation are worded very differently.
+  event_update_similarity: 0.55
+
+deduplication:
+  title_similarity_threshold: 0.88
+  window_days: 5
+
+report:
+  directory: reports
+  max_events_per_section: 8
+  max_watch_items: 5
+  include_weak_section: false
+  show_diagnostics: true
+
+storage:
+  events_dir: data/events
+  daily_dir: data/daily
+  profiles_dir: data/profiles
+  backfill_dir: data/backfill
+  seen_file: data/seen_articles.json
+  seen_retention_days: 45
+
+ai:
+  enabled: false
+  provider: ollama          # ollama | openai
+  model: llama3.1:8b
+  base_url: http://localhost:11434
+  # Only escalate events that are genuinely worth the tokens.
+  min_impact_score: 9
+  include_indirect_complex: true
+  max_events_per_run: 12
+  timeout_seconds: 90
+  temperature: 0.1
+
+alerts:
+  enabled: false
+  min_impact_score: 11
+  alert_on_official_filing: true
+  channels: []              # console | telegram | email | slack | discord
+
+enrichment:
+  enabled: true
+  refresh_days: 30
+  # Enrichment output is written to data/profiles/<TICKER>.enriched.json and
+  # is ALWAYS merged under the manual watchlist values, never over them.
+  max_pages_per_company: 6

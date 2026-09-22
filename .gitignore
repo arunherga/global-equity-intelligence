@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and credentials — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.yaml
+secrets.yml
+credentials.json
+token.json
+*.token
+.netrc
+cookies.txt
+.gh_token
+.github_token
+
+# Local overrides
+config.local.yaml
+local_settings.py
+
+# Raw scraped payloads (never committed; see docs)
+data/raw/
+*.html.gz
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

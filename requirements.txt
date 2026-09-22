@@ -1,0 +1,10 @@
+# Runtime dependencies. Free-first: no paid API clients anywhere in this
+# project. The deterministic pipeline needs nothing beyond these four.
+#
+# Lower bounds rather than exact pins: feedparser 6.0.11 pulls the unmaintained
+# sgmllib3k, which fails to build on newer Python/setuptools combinations.
+# 6.0.12+ ships its own vendored replacement.
+feedparser>=6.0.12,<7
+requests>=2.31,<3
+PyYAML>=6.0,<7
+python-dateutil>=2.8.2,<3
