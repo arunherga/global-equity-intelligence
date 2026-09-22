@@ -1,0 +1,114 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0001",
+  "title": "Chuseok table costs rise 5.1% as summer weather drives up vegetable prices",
+  "summary": "Chuseok table costs rise 5.1% as summer weather drives up vegetable prices 헤럴드경제",
+  "event_date": "2026-09-17",
+  "event_types": [
+    "COMMODITY",
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Chuseok table costs rise 5.1% as summer weather drives up vegetable prices",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBLN0RiVm5UcVpoTlZ2TmVVTU51NlE2eXNoS0U4WFBOTFVXdkNPVE10ZjJKaGlWdG1JZlpMSXgtWDBwQm9CZlFnRE9nWTJvbllqaGxiWWRPQQ",
+      "source_name": "헤럴드경제",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-17T23:24:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Seoul Chuseok Ritual Table Costs Rise 5% as Vegetable Prices Jump",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMGFzZHdkTTNvU19adGJqYUZwdkxUU1JobkY1LWxCRTZPTkZHTU92M2VsbGFxcFFXYzk5S1k0dERVcGNKZThSSmw0U2RMMTRHN0x5d2NzT3AwVGFudFNJcDVXTWVKVEk2XzFfcUFhcXk2ajZJakgyZFJ4NVFBNmxlc1h0Z2I0MW1rUUdEUWZfRV9laWozQ0hJ",
+      "source_name": "Seoul Economic Daily",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-18T02:21:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Chuseok Ancestral Table Costs Up 5.1% Due to Heatwave-Driven Vegetable Prices",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBVWlBMMFZzNG8ybnRidkN0Z3ZwSVZGS3NOWi1sV1Rwa05kVl9KaVZCMVk3QUYwaWFXY1ktMzdNOWVNT1hJLVY2NFY4elhBLUZKTUNKdzJXaHhPWDVKbjc2eV9PaXN4YUlmTjAtbUVn",
+      "source_name": "news.sbs.co.kr",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-18T05:42:21+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 3,
+  "source_count": 1,
+  "primary_source": "헤럴드경제",
+  "cluster_key": "FRESHARA|COMMODITY|5.1%-chuseok-costs-rise-summer-table",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.536657+00:00",
+  "last_updated": "2026-09-22T18:19:43.232383+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.536692+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-22T18:19:43.232370+00:00",
+      "change": "sources added",
+      "detail": "news.sbs.co.kr"
+    },
+    {
+      "timestamp": "2026-09-22T18:19:43.232379+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    }
+  ],
+  "price_reaction": {}
+}

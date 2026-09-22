@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0010",
+  "title": "Inflation rose to 12.5% despite the seasonal decrease in vegetable prices",
+  "summary": "Inflation rose to 12.5% despite the seasonal decrease in vegetable prices open.kg",
+  "event_date": "2026-09-20",
+  "event_types": [
+    "MACRO",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Inflation rose to 12.5% despite the seasonal decrease in vegetable prices",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdmoxb0p6VTljRGpIcV9xTWstOUZ5ajJTQy15N0lmZXVpNWZ0NVF0Vjd3TndRSWFYbDJBcUIwVEJsOUJqY09zXzliTWh6M3hmM0czWmVmTU1CVmZQeFJvR2hUVUhuU2JFa043VXI1bFNfTDJrdS1EYm8xMmd1cVRuemY1UTktbDJROW1hTFJpTWtnamN0OVZTWldnX2ppM2ZkSUlTSC14WHNsdWx4WXB6ejl3YnBQQVVZY2c",
+      "source_name": "open.kg",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-20T21:26:27+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "open.kg",
+  "cluster_key": "FRESHARA|COMMODITY+MACRO|12.5%-decrease-despite-inflation-rise-seasonal",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.778376+00:00",
+  "last_updated": "2026-09-22T18:19:39.778409+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.778407+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

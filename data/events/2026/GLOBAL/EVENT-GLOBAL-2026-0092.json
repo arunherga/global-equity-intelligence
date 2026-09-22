@@ -1,0 +1,135 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0092",
+  "title": "India: Copper scrap imports rise 1% in H1 as US shipments offset global supply shifts",
+  "summary": "India: Copper scrap imports rise 1% in H1 as US shipments offset global supply shifts BigMint",
+  "event_date": "2026-09-19",
+  "event_types": [
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "+2 Major industry-level development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "copper scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to copper scrap, and India. The parts of the business most likely touched are demand, pricing. Classified as industry demand.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 International market development",
+        "+2 Major industry-level development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "copper over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to copper, and India. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Copper scrap imports rise 1% in H1 as US shipments offset global supply shifts",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU3MyVGJET0VRU0phU2J4dE1weFVma2ZobVl1WVRpdzFsX1VRYXRmTDQzSDgxTjdRZnlvUWdHSUhLeE92TG1GSE53dWw1Ukd4b3ZkangzUEpsMmY4RXFLemljcE1VRG9mS1A3ckZxRXNrVzBQdXd1TUpQdXlCUVpld0JwclFJVFludUFEcUVVdGQwVzlnMkpCOGZpcGlZVEFqcmVKWjVvTmlFZkc2MkdXaTN6cE5zUTFOdS1VQzhLV05wWmpUWXV6eQ",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-19T07:31:03+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "MSTCLTD+WAAREEENER|INDUSTRY_DEMAND|copper-import-india-rise-scrap-usa",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.679256+00:00",
+  "last_updated": "2026-09-22T18:19:39.679292+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.679290+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

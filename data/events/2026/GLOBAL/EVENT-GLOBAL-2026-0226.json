@@ -1,0 +1,133 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0226",
+  "title": "Steel Price Surge Puts MSMEs Under Pressure; CICU Seeks Temporary Waiver of Import Duty",
+  "summary": "Steel Price Surge Puts MSMEs Under Pressure; CICU Seeks Temporary Waiver of Import Duty Cityairnews",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "IMPORT_RESTRICTION",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "IMPORTS",
+        "SUPPLY",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are imports, supply, pricing. Classified as import restriction.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "IMPORTS",
+        "SUPPLY",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (steel prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are imports, supply, pricing. Classified as import restriction.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Steel Price Surge Puts MSMEs Under Pressure; CICU Seeks Temporary Waiver of Import Duty",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRzRFLS1HWjRfS0s3cFNoT2pfWWhILVV2bzFmb3h3dkJpLU1ib3huX25CWUI4SkNiWm9CMzM3ek5XWmNyRVRnZzc2Ymc4bW1QS1N1YktKbkh3R2ZpcnRtbk13azZqcmxWWVZkdC1oSEMyeXpsVHlvZkVfLUpvU3Zqdzd2Z3djOWUxUVBYQlNpZUQwbExkUDRoeElWaXM4RDctcFpRWVRYbnZrUERmZTZOUHhhWGYxQXJUeDNYdE1Pdw",
+      "source_name": "Cityairnews",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T15:20:11+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Cityairnews",
+  "cluster_key": "JKIPL+MSTCLTD|COMMODITY+IMPORT_RESTRICTION|msmes-price-puts-rise-steel-under",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:40.049061+00:00",
+  "last_updated": "2026-09-22T18:19:40.049098+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:40.049096+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

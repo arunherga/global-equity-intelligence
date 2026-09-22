@@ -1,0 +1,215 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0161",
+  "title": "Steel Prices Hit Four-year High On Higher Costs, Strong Demand",
+  "summary": "Steel Prices Hit Four-year High On Higher Costs, Strong Demand BW Businessworld",
+  "event_date": "2026-09-21",
+  "event_types": [
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "coking coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Steel Prices Hit Four-year High On Higher Costs, Strong Demand",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNzZHUC1wUUMyZkxMVjI2c3dhZzJUc21LLXBaQVk4cFRXWmI2WWgxdjk4RUQyUklGbDZSdnRyaVlucG5QVGo3V1lUQlY2aEpmcWdPVHZOQWprV2s3a1Ryd3psOTBvU21tTjFOakFOWENPQkdXYXpTUWZ6a0lDUjhaS2NiWGhtWHlwbll4NTBrSWVfdnIyalp1MHB6VEJhY0ZtM01kMHR2QTc",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T01:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Steel prices hit 4-yr high on rise in cost amid strong demand",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSzVqekxLM2w2ZGoxTE84LVBmcHkzSG5HLTcyVmJFRWRGc2hUanZnYndaN2NGSjZfRldqY1RRdUU1bHc0ZmdKTjBWckNWeU92S3JhYmlZeWVhc09RWGtwTXE1ZnpKUTJwR2x2S2l0NGxiQ1MyMmJ5NUNNSHpHbWF2SnRIcUZYVlZFWDE5bG5yZEFlTmZuOGRxaHN1WlZoTUtQVmZKWXdGWTU0QnJHN2hiMUVLLWJpeExWQkFPUzlaTm5ZRXNl0gHLAUFVX3lxTE51N0U5MEVTb3JBNE8tSWxLaDNSaXQ5Wmd5UGMwNDhOM3hOMEtFZVVmV3BRU0xucGpZRDRjdGlQZkZScGFhVUV6bm1JVzNMS3hDMmhSUnNWd3NLdHFuQnBpWHNQTndCcFVGTElqd1RYTFh6ZFlOQkkxczhXQnZpNEI5a3hhdjZfVnNLMlBRTmxyZHZzNXVlcXVwVE9hVjNXMVFpaHJBTEhwdnhJYUdkTW1xV1huTjFFMkhCTE51b3RGQWZIb1F4TEFLOVRV",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-21T15:03:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Domestic Steel Prices Hit 4-Year High on Costlier Coking Coal",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wYlk5WEhadlVrT3MwcGU2OU1yMVZKMGtTRG1VXzRyczRoOHI5MHd4d19vU3BwcUNCSEVvcjNvSUxoTFkwYU1yWkhkRXFueXU3X1pUclJEODFxUHEyVnZKa3lHVU5HdWVVcXo1QnptREhxblBGSXRTUG5pYw",
+      "source_name": "Daily Pioneer",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T11:13:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Steel prices at 4-year high; trend to continue in H2: Report",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcHR5elBkdW12d2tvdTRrOTZJY0RUT20wdEVkQVc4dzRZMTRSbUhHVjZVdUFXVkJlODM4Tkp5U2VOdjY3MDZvZEs2ZWJfOU1sVk52OE12NHB3RlhOQ0JaMkFTVUF4bUxIQW16NHhIdUFBSUJOV3hLU2t3ZFJiRlhNRUNFQ09FeTFmRlF3ekZ6VlZqSUtYX3Q3UGRuVWtMOS1kTkZfRlQ1QnNSNXg4Mi02ajBWZURrR0JQYnZJa2tXYnlwNWI3TDBYMlJwV1lCeHMybElyYWl3QU1NWXp2Z1pn0gHfAUFVX3lxTE5wdHl6UGR1bXZ3a291NGs5NkljRFRPbTB0RWRBVzh3NFkxNFJtSEdWNlV1QVdWQmU4MzhOSnlTZU52NjcwNm9kSzZlYl85TWxWTnY4TXY0cHdGWE5DQloyQVNVQXhtTEhBbXo0eEh1QUFJQk5XeEtTa3dkUmJGWE1FQ0VDT0V5MWZGUXd6RnpWVmpJS1hfdDdQZG5Va0w5LWRORl9GVDVCc1I1eDgyLTZqMFZlRGtHQlBidklra1dieXA1YjdMMFgyUnBXWUJ4czJsSXJhaXdBTU1ZenZnWmc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T08:04:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 4,
+  "source_count": 1,
+  "primary_source": "BW Businessworld",
+  "cluster_key": "JKIPL+MSTCLTD|COMMODITY+INDUSTRY_DEMAND|four-year-high-hit-price-rise-steel",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.874848+00:00",
+  "last_updated": "2026-09-22T18:19:41.302227+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.874885+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-22T18:19:41.302207+00:00",
+      "change": "sources added",
+      "detail": "Daily Pioneer, The Economic Times"
+    },
+    {
+      "timestamp": "2026-09-22T18:19:41.302219+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-22T18:19:41.302224+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (SECTOR)"
+    }
+  ],
+  "price_reaction": {}
+}

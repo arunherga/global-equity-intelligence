@@ -1,0 +1,183 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0029",
+  "title": "Rupee rises 20 paise to close at 95.58 against US dollar",
+  "summary": "Forex traders said Brent crude oil prices witnessed a sharp decline after reports surfaced that Iran would open the Strait of Hormuz within seven days if the US lifts its port blockade and eases military pressure around it",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "CURRENCY",
+    "GEOPOLITICAL",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up",
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, supply. Classified as currency.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, supply. Classified as currency.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up",
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, supply. Classified as currency.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Rupee rises 20 paise to close at 95.58 against US dollar",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-rises-20-paise-to-close-at-9558-against-us-dollar/article71495109.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-22T14:24:27+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA+TMB|CURRENCY+GEOPOLITICAL|95.58-against-close-paise-rise-rupee",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.498026+00:00",
+  "last_updated": "2026-09-22T18:19:39.498063+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.498060+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

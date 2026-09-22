@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-0042",
+  "title": "Gold price today, Tuesday, September 22, 2026: Gold prices holding as Chinese gold imports set record",
+  "summary": "Gold price today, Tuesday, September 22, 2026: Gold prices holding as Chinese gold imports set record finance.yahoo.com",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price today, Tuesday, September 22, 2026: Gold prices holding as Chinese gold imports set record",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPbmNCN3F0X2k5d3g3MHBZMU9MNTZhWWFSWVlBWEFPNkZQOWtHaDFvVEt0ZFN1VjdzRmU4NHB0QUN5d0FKOWFrcWhWMVd1Nl9tNHpSTmhUMVBIVGdfdUQ2aG5ITExDRWRuc0xVOERBNVlwLWdjRC10cjVOLWsyUHVHc1RBRGUyTWduLUp1RTBhWG1lWVlvSXVMMG94Qks3UkJzNmdVTGpENXVSX0l0RURjNVlGSDM5QmFRRVkzSFJsWU9hNDV6aWJDX08tSGVhX3BxdlprN2Z0MkljS0VFLWtySVNSZUdkekI3dnBiVDVWR1l5cTNZWEdlRURtdF9rZzgtNTBF",
+      "source_name": "finance.yahoo.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T10:43:26+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "finance.yahoo.com",
+  "cluster_key": "TMB|COMMODITY|2026-gold-price-september-today-tuesday",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.984760+00:00",
+  "last_updated": "2026-09-22T18:19:39.984797+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.984794+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,121 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0182",
+  "title": "Dollar weakens, metals broadly rise; SHFE copper and coking coal up over 1%, lithium carbonate and polysilicon up over 2% [SMM midday comment]",
+  "summary": "Dollar weakens, metals broadly rise; SHFE copper and coking coal up over 1%, lithium carbonate and polysilicon up over 2% [SMM midday comment] Shanghai Metals Market",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "COMMODITY",
+          "term": "polysilicon",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "copper over the next few weeks",
+        "polysilicon over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper, and polysilicon. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "coking coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Dollar weakens, metals broadly rise; SHFE copper and coking coal up over 1%, lithium carbonate and polysilicon up over 2% [SMM midday comment]",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNeWZxdkQ4NmtXRzQ2RlZzS1BnUkUwcjhNWXUxMXFJVm9lSnZ3VEFSWmtyZG13MUsyclNMR3VsUW9IazRTVk1nSmswRm84TTV4RWFMNEpKUnFJd3JfQlFjeDFQZlppdnotZUtuS3VaOERwZVNzT0JWdzlTcFRuZVUyREJVRVhKdHFYUlpULTFMZi1pY2JrQ2ZfSkp4aEEtMVptaGhJWHZ5T0hNT3dnX0xIdEVzd1FUMzJkNlFMT3R6NHhYUW9NRXlYb1kxMk9QdnhQVk0wSFMzYm1VZ3ZIdXNscUNzQ3B1VHhIcUNsNXhhQ3FpT0E5R1EzOUd0VEZCbnhYTnFaVDYxN08zWVdw",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T06:23:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Shanghai Metals Market",
+  "cluster_key": "COALINDIA+WAAREEENER|OTHER|broadly-dollar-metals-rise-shfe-weakens",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.941217+00:00",
+  "last_updated": "2026-09-22T18:19:39.941267+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.941265+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

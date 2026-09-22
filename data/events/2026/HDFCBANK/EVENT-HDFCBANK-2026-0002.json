@@ -1,0 +1,75 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0002",
+  "title": "Broker’s Call: Indo-MIM (Buy)",
+  "summary": "HDFC Securities",
+  "event_date": "2026-09-21",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.48,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Securities",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC Securities. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Broker’s Call: Indo-MIM (Buy)",
+      "url": "https://www.thehindubusinessline.com/markets/brokers-call-indo-mim-buy/article71491225.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-21T11:44:13+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "HDFCBANK|OTHER|broker-buy-call-indo-mim",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.437644+00:00",
+  "last_updated": "2026-09-22T18:19:39.437672+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.437669+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,149 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0011",
+  "title": "Money Market Operations as on September 21, 2026",
+  "summary": "(Amount in ₹ crore, Rate in Per cent) MONEY MARKETS @ --> Money Markets @ Volume (One Leg) Weighted Average Rate Range A. Overnight Segment (I+II+III+IV) 7,39,558.55 5.12 2.00-5.50 I. Call Money 16,390.64 5.24 4.50-5.35 II. Triparty Repo 5,30,421.95 5.16 4.97-5.35 III. Market Repo 1,85,989.96 5.02 2.00-5.32 IV. Repo in Corporate Bond 6,756.00 5.22 5.00-5.50 B. Term Segment I. Notice Money ** 401.50 5.10 4.95-5.30 II. Term Money @@ 420.50 - 5.50-6.60 III. Triparty Repo 5,355.00 5.26 5.15-5.30 IV. Market Repo 900.00 5.59 5.58-5.60 V. Repo in Corporate Bond 0.00 - - RBI OPERATIONS @ --> RBI OPERA",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "TENDER",
+    "DEBT",
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "MIXED",
+      "confidence": 0.78,
+      "business_impacts": [
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "MIXED",
+      "confidence": 0.78,
+      "business_impacts": [
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Money Market Operations as on September 21, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63641",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-09-22T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Reserve Bank of India",
+  "cluster_key": "HDFCBANK+TMB|DEBT+TENDER|2026-market-money-operations-september",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.424384+00:00",
+  "last_updated": "2026-09-22T18:19:39.424417+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.424414+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

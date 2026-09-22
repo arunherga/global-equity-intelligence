@@ -1,0 +1,102 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0025",
+  "title": "Salesforce stock falls as fresh analyst price target hikes follow Dreamforce AI push",
+  "summary": "Salesforce stock falls as fresh analyst price target hikes follow Dreamforce AI push AD HOC NEWS",
+  "event_date": "2026-09-18",
+  "event_types": [
+    "ANALYST_ACTION",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REPUTATION",
+        "PRICING",
+        "INPUT_COST",
+        "SUPPLY"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are reputation, pricing, input cost. Classified as analyst action.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce stock falls as fresh analyst price target hikes follow Dreamforce AI push",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNjdxenlIRy11N1VweDN2UVdhalpUS3g2V09kSmhudHpWQkp3cGFGM2dfUzFweXBhNHBFZG0wYjl0ZzJzMk4xYnFmampVU0t4NDQwcHB2RHlYVFlPWXd2NUp3N2VtNEZKNzFXNERyVU1uLTF2MmdZYlpmQjV3THYtVlhwei1USjZMOFRHN29QTkJoVDFzeElyQmhGQ0h5SjQyZHRLbFBMaEVjVEllSGtRREROU1diZDBQbDBvWFFoMXc0OWQ0UFpj",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-19T09:54:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "UBS raises Salesforce stock price target on AI product potential",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQX0VMYmFjQkc5T3RXbFVNVHE5QTJSZE9TWlNUenl5NVk5U3NrM05WU2F6WUx6U3J0VnVneEd3VHlLZVVTMUc5U0FDWVdRbXBQSERYQ05nZzJHUnFkV0pDa01DdlJmQWZHUGlobU1COUdFa2dMRXNYaVE3a1laZ2FWbC1FaWlmQWQ5RDQwaWhLQnBmd0E5cDRqejlLX2NyTnZZLWU5U0twNUJUel84TXI1blRYWFBFMUFZZnNRYkFIWjlnQQ",
+      "source_name": "Investing.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-18T13:59:15+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "AD HOC NEWS",
+  "cluster_key": "KSOLVES|ANALYST_ACTION+COMMODITY|analyst-fall-fresh-price-salesforce-share",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.637589+00:00",
+  "last_updated": "2026-09-22T18:19:39.637629+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.637627+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

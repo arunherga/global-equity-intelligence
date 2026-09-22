@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0177",
+  "title": "Chennai gold price falls by Rs 680 on September 22, 2026; check today's gold, silver rate",
+  "summary": "Chennai gold price falls by Rs 680 on September 22, 2026; check today's gold, silver rate DT Next",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Chennai gold price falls by Rs 680 on September 22, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOHk4SEI5YVFFRGRaQ1ViWHBSdjhOdk9lLXFTem1aSFlRZ3hmeW10VFJfY1RPaHFVcm5pd0trN05pYzllekN2RHFhc0hFUDVGVDZIQ0pfekhUYi1XS1NFX2QyUExYMk1OVW5CenFScUdhSG5LRk9wcUpfV1RYNVhPanNXTVJuTXZyZWp3SG1NOUwxMlZUNWhlTC1aWFVxbTZCYjZzTW5lUjNZa1B1dlM1b01TNkJWcjNiLS1wMdIBygFBVV95cUxPNlYwRk52TFJWaHFQdzU2M1RzUDZjd3dnUF9CNGxkTlVkRURsYVZTNDg5UUdxMnBaYnVoTEFvZnJ5V2s3dTQ2dEtKLWtjM1NZTlE3U3g0THJyZkUxYU9meFpRSjI3eE1qYU5aMFpKNHdBSnpDMzZ2ZEZSVEtKaVM5VFNiZFZWQ3RwR0FHTnZEWjhMMEptYXp4MzZ4djM4aVNLajdLWlVmR2lHODIyVVcxYW9IQklvMEVvS0hZSk9Oc2VrRFdtUmpaQXVR",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T04:26:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today Surge In Hyderabad: Check 22K, 24K Gold Rate",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQjg5S3V6R2VmaWZFTW0teFhZNXJKYTgxa05QejIyZmgwTnh0b1NRVnFDMDZBVXlHMnVZRnhSeGdKMDBqN05XWXp3dmtMOE5NOVVOOEg2QU5SODJjSzg2TlRXS3B0cVJMM2lLdndGZThxN0RWd1J2bXB4Z19aNE1nOHFVeEI2SDQya0E",
+      "source_name": "INDToday",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T05:05:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in Philippines: Rates on September 22",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUk8zSHc2bG96dVp6RVJDTzlPcEJ5bXRpT3ZoS1RkREtQN3RZUGFSeS01U0p5N0FSbTJNZmZBZUx6S3dNQ0lFV1Y5RWxkTGdCak1JOHZPenlfM0JLY0dmajFtcjdHU3RDNXZxRWxEMmZ1bExuSmIwbnIxX19YaV96NEVSQXA3d0FPQ3NBemdYaFlxRU1ETm1oTUloTUs1WTEwbVRfN2JtaUFtM3Z5VkFJUWh3",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T05:00:43+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 3,
+  "source_count": 1,
+  "primary_source": "DT Next",
+  "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.924930+00:00",
+  "last_updated": "2026-09-22T18:19:39.924974+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.924972+00:00",
+      "change": "created",
+      "detail": "3 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

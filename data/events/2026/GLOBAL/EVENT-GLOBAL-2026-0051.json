@@ -1,0 +1,116 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0051",
+  "title": "Fuziah warns traders against indiscriminate vegetable price hikes",
+  "summary": "Fuziah warns traders against indiscriminate vegetable price hikes NST Online",
+  "event_date": "2026-09-18",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Fuziah warns traders against indiscriminate vegetable price hikes",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR24zOUJtaHFydnFWb2R2b0o3UEhlQ0ZVbEp2bkhhdUJwNzVycUFOYlQ2TDA5bWhYajJiWE0yU3VXcERCdHVmeVhraTRxY2trc0ZxNkU5d2kxaFJ2ZjFVMXNtNE9pN2RvblVEQm5UcDdSQ3Z3bEVQOW5FYUtGVjl3THR2QUYyR3p4TWt4SmVyREoxS2tfUjdCczBQY3JXQjV4MEJRRmwyeExCX0pRWXU2cEw0TGpmdHM",
+      "source_name": "NST Online",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-18T06:20:53+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "NST Online",
+  "cluster_key": "FRESHARA+TMB|OTHER|against-fuziah-indiscriminate-traders-vegetable-warns",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.563209+00:00",
+  "last_updated": "2026-09-22T18:19:39.563248+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.563238+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,122 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0110",
+  "title": "August copper scrap raw material imports fell nearly 20% MoM, with rigid demand supporting the import floor",
+  "summary": "August copper scrap raw material imports fell nearly 20% MoM, with rigid demand supporting the import floor Shanghai Metals Market",
+  "event_date": "2026-09-20",
+  "event_types": [
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Severe supply-chain or raw-material disruption",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "copper scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper scrap. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "copper over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are input cost, margin. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "August copper scrap raw material imports fell nearly 20% MoM, with rigid demand supporting the import floor",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPd0gyblNIM01INy10TnY5NFIzdnFQcU9iZE5tbzhiQTMza1R2Y3ZRSlhXX05SUUpnRFpKS0s5SmRydE8xTjdnSmhQdUJPVXlTX3FEdU5Kczk4cjFOZTB5U21iTWFfd2dyRjhSM1p0bDFmX3JqeDlEZUNDSzF4OFBhQmFBNkNtbzdPOGdEV3lPcFp3TXpHYlNDRDRfVkhQRjZ0cjBBbnl5SWxqRzdOMWd2enAwUGthLVZOTjBhSFN4eWpwb3h4UzRmV2lZdVB5OWw3dnZkbklXRHJVR0ZtcU00UEtjenY",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-20T08:21:07+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Shanghai Metals Market",
+  "cluster_key": "MSTCLTD+WAAREEENER|RAW_MATERIAL|august-copper-import-material-raw-scrap",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.738629+00:00",
+  "last_updated": "2026-09-22T18:19:39.738667+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.738665+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

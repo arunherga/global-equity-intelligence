@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-0053",
+  "title": "Micro Copper futures Contract Specs",
+  "summary": "Micro Copper futures Contract Specs CME Group",
+  "event_date": "2026-09-19",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "copper over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Micro Copper futures Contract Specs",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWG1pRXhWYWhmWGN4blBUNWlxN1VxX2NyNVdBYkNBRmtFWERMV0xuNWZkbEZ2NExHREkySThWVWhuSUs2c1RFdzAxRjVta3RneGFKemFtcE42YlpDLVc2cHcwbWRhRVpGelROdjBIZjBjYUpka1FkYjZzTTFmNXpDSzlvTFg3T0Npcms1anVONDhReDZJdEd2THhOYUFMelk",
+      "source_name": "CME Group",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-19T06:11:14+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "CME Group",
+  "cluster_key": "WAAREEENER|OTHER|contract-copper-futures-micro-specs",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.675225+00:00",
+  "last_updated": "2026-09-22T18:19:39.675259+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.675256+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

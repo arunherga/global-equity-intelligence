@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0008",
+  "title": "Vegetable prices hold firm as atarugu rises, potatoes and onions ease",
+  "summary": "Vegetable prices hold firm as atarugu rises, potatoes and onions ease Businessamlive",
+  "event_date": "2026-09-19",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices hold firm as atarugu rises, potatoes and onions ease",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVDJPOXhTdXc3QlVJU3J2T1JJSWQzV1Vxazl3MGcxUmx6U1Fzd0pabWJtSTlXeVctdTFEYXBMOTRNbFlxbmJUU2ZxQ0lwNUNjbDd3U2dOaE1VUHhTSDR2VkxvU2VXTEtkVHNZazZQQkFoQWhSd2JmS2tGNXNWazVWc0tTQ2h2SXpGa3E2NHdaXy1Jc1RJcm50NlBKc3E",
+      "source_name": "Businessamlive",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-19T07:45:41+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Businessamlive",
+  "cluster_key": "FRESHARA|COMMODITY|atarugu-firm-hold-price-rise-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.680773+00:00",
+  "last_updated": "2026-09-22T18:19:39.680802+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.680800+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0001",
+  "title": "HDFC Securities says 98% of digital transactions insulated from UPI MDR",
+  "summary": "The broker’s UPI transaction share is below 2%, much lower than wider broking industry’s reliance on UPI",
+  "event_date": "2026-09-21",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.59,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Securities",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "UPI transactions",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, subsidiary exposure to HDFC Securities, and UPI transactions. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "HDFC Securities says 98% of digital transactions insulated from UPI MDR",
+      "url": "https://www.thehindubusinessline.com/markets/hdfc-securities-says-98-of-digital-transactions-insulated-from-upi-mdr/article71491005.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-21T11:07:04+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "HDFCBANK|OTHER|98%-digital-hdfc-insulated-securities-transactions",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.435691+00:00",
+  "last_updated": "2026-09-22T18:19:39.435724+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.435721+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

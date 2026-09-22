@@ -1,0 +1,148 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0033",
+  "title": "India could see 75-100 bps rate hikes if oil shock persists",
+  "summary": "A sustained oil shock could trigger 75-100 basis points of cumulative rate hikes in the current cycle, while higher global yields, elevated crude prices and RBI liquidity absorption are already tightening financial conditions in India.",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-3 Speculative or unconfirmed report",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "RBI liquidity",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-3 Speculative or unconfirmed report",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and RBI liquidity. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India could see 75-100 bps rate hikes if oil shock persists",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/india-could-see-75-100-bps-rate-hikes-if-oil-shock-persists/134400007",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-22T01:12:54+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|75-100-bps-could-india-rate-see",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.511046+00:00",
+  "last_updated": "2026-09-22T18:19:39.511076+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.511073+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0027",
+  "title": "Amazon Stock Holds $245 as AWS Backlog Sets Up Next Week’s $258 Test",
+  "summary": "Amazon Stock Holds $245 as AWS Backlog Sets Up Next Week’s $258 Test TradingKey",
+  "event_date": "2026-09-18",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from AWS"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Amazon Stock Holds $245 as AWS Backlog Sets Up Next Week’s $258 Test",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOajE3c3owaGFmYU1rbHZZSnhsVWxZU3ctejRpcVlkQVFVblRabXhSR0R4S3RaYUZ3RHFuMGpIdU05UlRYMkY4WHFtTF90WnlmbG90OC1FMU1OdGR2eGRDUXlacW9WR3hBZ29DMzJJZmtGNDA4bW5LSUcxY3JYYm1MU3llVDZOMkJBQlBnUVFqRnFtTktrM1dIdTBlbksteUpJLU9sNFduMkVjLTZ1cFdB",
+      "source_name": "TradingKey",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-18T15:02:15+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "TradingKey",
+  "cluster_key": "KSOLVES|OTHER|245-amazon-aws-backlog-holds-share",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.643340+00:00",
+  "last_updated": "2026-09-22T18:19:39.643376+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.643374+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,81 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-0004",
+  "title": "Settlement Order in the matter of Adani Group Companies",
+  "summary": "Settlement Order in the matter of Adani Group Companies",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "LEGAL"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [
+        "REGULATION",
+        "REPUTATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Adani"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are regulation, reputation, customers. Classified as legal.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Settlement Order in the matter of Adani Group Companies",
+      "url": "https://www.sebi.gov.in/enforcement/orders/sep-2026/settlement-order-in-the-matter-of-adani-group-companies_104647.html",
+      "source_name": "SEBI",
+      "source_domain": "sebi.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "SEBI",
+  "cluster_key": "WAAREEENER|LEGAL|adani-companies-group-matter-order-settlement",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.418147+00:00",
+  "last_updated": "2026-09-22T18:19:39.418176+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.418174+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

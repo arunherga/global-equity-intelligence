@@ -1,0 +1,99 @@
+{
+  "event_id": "EVENT-TMB-2026-0044",
+  "title": "Gold Loans Gain Popularity in India as High Gold Prices Boost Borrowing",
+  "summary": "Gold Loans Gain Popularity in India as High Gold Prices Boost Borrowing LiveChennai",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "DEBT",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "gold loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to gold prices, and gold loans. The parts of the business most likely touched are debt, balance sheet, pricing. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold Loans Gain Popularity in India as High Gold Prices Boost Borrowing",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4NkJwS0UyS013a245Y05PWXNyM2dneC1fLVhpTFlDdGF0SXM5LWJKd1JTN09CdVlZQkFacVM4a0J6LU03OEtieWlvOHBjaUVpWDYxMkZIT2J3QmE5Z053ZDJVendEdw",
+      "source_name": "LiveChennai",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T11:15:20+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "LiveChennai",
+  "cluster_key": "TMB|COMMODITY+DEBT|gold-high-india-loan-popularity-rise",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-22T18:19:39.988411+00:00",
+  "last_updated": "2026-09-22T18:19:39.988445+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-22T18:19:39.988443+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
