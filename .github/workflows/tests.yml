@@ -1,0 +1,44 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'reports/**'
+      - 'data/**'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Run the offline test suite
+        run: pytest -q
+
+      - name: Generate the sample report
+        # Exercises the whole pipeline end to end with no network at all.
+        run: python scripts/generate_sample_report.py
+
+      - name: Check the sample report is up to date
+        run: git diff --exit-code docs/sample-report.md

@@ -1,0 +1,113 @@
+name: daily-intelligence
+
+on:
+  schedule:
+    # Twice daily, at deliberately non-round minutes: GitHub's scheduler is
+    # heavily congested on the hour and runs get delayed or dropped.
+    # 02:37 UTC = 08:07 IST (morning intelligence)
+    - cron: "37 2 * * *"
+    # 12:43 UTC = 18:13 IST (evening intelligence, merged into the same report)
+    - cron: "43 12 * * *"
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "Restrict to one ticker or a comma-separated list (blank = all 10)"
+        required: false
+        default: ""
+      backfill_days:
+        description: "Historical backfill window in days (0 = normal daily run)"
+        required: false
+        default: "0"
+      slice_days:
+        description: "Backfill slice size in days"
+        required: false
+        default: "14"
+      dry_run:
+        description: "Run without writing anything"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  # Never let the evening run start while the morning run is still committing.
+  group: daily-intelligence
+  cancel-in-progress: false
+
+jobs:
+  intelligence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The event store and the seen-article file are read before they are
+          # written, so the run needs the previous state.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run the intelligence pipeline
+        id: run
+        env:
+          # The deterministic pipeline needs no credentials. These are read
+          # only if ai.enabled is turned on in config.yaml.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -o pipefail
+          ARGS="--verbose"
+          if [ -n "${{ github.event.inputs.ticker }}" ]; then
+            ARGS="$ARGS --ticker ${{ github.event.inputs.ticker }}"
+          fi
+          if [ "${{ github.event.inputs.backfill_days }}" != "" ] && \
+             [ "${{ github.event.inputs.backfill_days }}" != "0" ]; then
+            ARGS="$ARGS --backfill-days ${{ github.event.inputs.backfill_days }}"
+            ARGS="$ARGS --slice-days ${{ github.event.inputs.slice_days }}"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "running: python -m src.main $ARGS"
+          # A source failing must not fail the workflow; the run records it in
+          # the report's Run Diagnostics section and carries on.
+          python -m src.main $ARGS 2>&1 | tee run.log
+
+      - name: Summarise the run
+        if: always()
+        run: |
+          {
+            echo "### Intelligence run"
+            echo '```'
+            tail -25 run.log || echo "no log produced"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the report and the event data
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/ data/ || true
+          # Commit only when something actually changed.
+          if git diff --cached --quiet; then
+            echo "nothing changed; no commit"
+            exit 0
+          fi
+          git commit -m "Intelligence report for $(date -u +%Y-%m-%d)"
+          # The other scheduled run may have pushed while this one was working.
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && break
+            sleep 5
+          done
+          git push origin "HEAD:${GITHUB_REF_NAME}"
