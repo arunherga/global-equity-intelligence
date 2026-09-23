@@ -135,21 +135,25 @@ Verified against a live 5-day backfill run on GitHub Actions, 22 September
 | --- | --- | --- |
 | NSE announcements | `src/sources/nse.py` | **FAILED** — `www.nseindia.com` read-timed-out from the runner. Exactly the datacentre-IP blocking anticipated. Works from an Indian residential connection; left enabled for local runs. |
 | BSE announcements | `src/sources/bse.py` | **FAILED** — 5 attempts, all refused; circuit breaker stopped it after 5. JKIPL and RAVEL were skipped for a missing `bse_code`, as designed. |
-| Company IR pages | `src/sources/company_ir.py` | **FAILED** — Freshara's domain would not resolve, Jinkushal's `/investors` 404'd. MSTC and Waaree loaded but nothing parseable: the link heuristics need work. |
-| Regulators | `src/sources/regulators.py` | **VERIFIED** — 4 of 7 endpoints, 66 items. APEDA 404s and DGFT 403s from the runner; those two URLs need replacing. |
-| Government | `src/sources/government.py` | **VERIFIED** — 1 of 6 pages, 8 items. Ministry of Coal 404s (`coal.nic.in` has moved) and Ministry of Power 403s. These URLs need replacing. |
+| Company IR pages | `src/sources/company_ir.py` | **FIXED 2026-09-23** — seven of ten investor URLs were dead, most of them *silently* (soft 404s served as normal pages, or a redirect to the homepage). URLs re-verified in a browser; the collector now detects a soft 404, discovers the investor section from the site root, follows announcement sub-pages, and recovers titles from filenames. |
+| Regulators | `src/sources/regulators.py` | **VERIFIED** — 4 of 7 endpoints, 66 items. APEDA's URL has been corrected to `/announcements`. DGFT's URL was already right: its 403 is datacentre-IP blocking, like NSE and BSE. |
+| Government | `src/sources/government.py` | **VERIFIED** — 1 of 6 pages, 8 items, now re-pointed. Coal, Power, MNRE and Steel all confirmed working; Commerce dropped (hash-route SPA, nothing to parse) and the generic PIB feed dropped (defaults to Hindi; ministry pages already carry their PIB releases). |
 | Google News RSS | `src/sources/google_news.py` | **VERIFIED** — 251 of 251 queries succeeded, 3,447 articles in 234s. Carries the overwhelming majority of coverage. |
 | GDELT | `src/sources/gdelt.py` | **FAILED, now disabled** — 6 queries, 154 seconds, zero articles; answered with a non-JSON error page, then refused. Flip `sources.gdelt.enabled` to retry. |
 | Sector & press RSS | `src/sources/rss.py` | **VERIFIED** — 14 of 16 feeds, 240 items. Business Standard and SolarQuarter returned 403 from the runner on every attempt and have been removed. |
 
-Four of the eight sources work from GitHub's runners and between them
-returned 3,761 articles. The four that failed did so for reasons worth
-knowing: NSE and BSE block datacentre IPs (NSE works from an Indian
-residential connection, so it is left enabled for local runs), GDELT returned
-nothing at all and is now disabled, and the IR collector needs better link
-heuristics. Six individual government and regulator URLs have moved and need
-replacing — they are named in the table above, and each one degrades to a
-recorded diagnostic rather than a failed run.
+Four of the eight sources worked in that run. NSE and BSE block datacentre
+IPs (NSE works from an Indian residential connection, so both are left enabled
+for local runs) and GDELT returned nothing at all and is now disabled.
+
+The remaining failures were not parser bugs — they were dead URLs, and every
+one of them has since been opened in a browser and corrected. Seven of the ten
+investor-relations URLs were wrong, and the dangerous part was how quietly
+they failed: MSTC's `/Investors.aspx` and Ksolves' `/investor-relations` both
+answer with a normal-looking page carrying full site navigation, and Waaree's
+`/investors/` redirects to the homepage. All three were logged as "reachable
+but nothing parseable", which reads like a broken parser. The collector now
+treats a not-found page as a failure and says so.
 
 Re-check at any time, on whatever machine will run the agent:
 
@@ -284,14 +288,19 @@ pytest -q
 
 ## Limitations
 
-- **Four of eight sources work from GitHub Actions.** NSE, BSE, company IR and
-  GDELT do not; see the Sources table for each reason. Google News carries most
-  of the coverage, which is a single point of failure.
-- **Six government and regulator URLs have moved** (APEDA, DGFT, Ministry of
-  Coal, Ministry of Power and others). They 404 or 403 harmlessly and are
-  recorded in Run Diagnostics, but they are dead weight until replaced.
-- **The IR collector finds nothing on pages it can reach.** MSTC and Waaree's
-  investor pages load, but the announcement-link heuristics do not match them.
+- **NSE, BSE and DGFT block datacentre IPs**, so they fail from GitHub Actions
+  and work from an Indian residential connection. They are left enabled; the
+  circuit breaker keeps the cost to seconds.
+- **Google News carries most of the coverage**, which is a single point of
+  failure. GDELT was the intended second leg and does not work.
+- **The corrected URLs have not yet been through a live GitHub run.** They were
+  verified in a browser on 2026-09-23; the next scheduled run is the test.
+- **Jinkushal has no investor section** on its website, and Freshara's domain
+  does not resolve. Both rely on exchange announcements alone, and for
+  Freshara that means NSE — which is the source that fails from Actions.
+- **Filename-derived titles are only as good as the filename.** `receiptoforder`
+  becomes "Receipt of order", but a file named `16-09-2026a-wn.pdf` carries
+  nothing to recover and is skipped.
 - **Google News links are opaque.** They are resolved late and only for
   articles that can still reach the report; unresolvable ones are left as-is
   and reported, not silently replaced.
@@ -303,8 +312,6 @@ pytest -q
 - **Profiles decay.** Competitors, customers and products change. Enrichment
   refreshes `data/profiles/` every 30 days, but `watchlist.yaml` is yours to
   maintain — and enrichment will never overwrite it.
-- **BSE scrip codes for JKIPL, RAVEL and FRESHARA are not filled in**, so BSE
-  is skipped for those three with a note until you add them.
 - **No price data yet.** The fields are reserved; nothing populates them.
 - **SME coverage is thin.** FRESHARA and RAVEL are covered mostly by
   lower-quality outlets, which the scorer penalises — by design, but it does

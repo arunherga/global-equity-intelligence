@@ -34,7 +34,10 @@ REGULATOR_SOURCES: Dict[str, Tuple[str, str, str]] = {
     ),
     "ema": ("European Medicines Agency", "https://www.ema.europa.eu/en/rss.xml", "feed"),
     "cdsco": ("CDSCO", "https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/", "page"),
-    "apeda": ("APEDA", "https://apeda.gov.in/apedawebsite/Announcements.htm", "page"),
+    # Confirmed 2026-09-23: the old apedawebsite/Announcements.htm path 404s.
+    "apeda": ("APEDA", "https://apeda.gov.in/announcements", "page"),
+    # This URL is correct - the 403 seen from GitHub runners is datacentre-IP
+    # blocking, the same as NSE and BSE. It works from an Indian connection.
     "dgft": ("DGFT", "https://www.dgft.gov.in/CP/?opt=notification", "page"),
 }
 

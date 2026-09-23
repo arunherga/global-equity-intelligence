@@ -182,8 +182,10 @@ tickers:
     ir:
       website: https://www.mstcindia.co.in/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "542597"
-      investor_page: https://www.mstcindia.co.in/Investors.aspx
+      bse_code: "542597"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE255X01014
+      # /Investors.aspx is a soft 404. Confirmed working 2026-09-23:
+      investor_page: https://www.mstcindia.co.in/content/CorpAnnouncement.aspx
 
     queries_extra:
       - MSTC e-auction contract
@@ -390,8 +392,10 @@ tickers:
     ir:
       website: https://www.waaree.com/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "544277"
-      investor_page: https://www.waaree.com/investors/
+      bse_code: "544277"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE377N01017
+      # /investors/ silently redirects to the homepage. Confirmed 2026-09-23:
+      investor_page: https://www.waaree.com/investor/stock-exchange-disclosure
 
     queries_extra:
       - Waaree Energies order
@@ -538,9 +542,11 @@ tickers:
       - European retail demand
 
     ir:
-      website: https://fresharaagro.com/
-      bse_code: ""   # NSE SME only
-      investor_page: https://fresharaagro.com/investors/
+      # fresharaagro.com did not resolve on 2026-09-23, nor from the GitHub
+      # runner. Nothing is configured rather than a URL that fails every run;
+      # NSE announcements are the source for this one.
+      website: ""
+      bse_code: ""   # confirmed: no BSE listing, NSE SME only
 
     queries_extra:
       - Freshara Agro Exports order
@@ -680,9 +686,10 @@ tickers:
 
     ir:
       website: https://www.jinkushal.com/
-      bse_code: ""   # fill in from bseindia.com before enabling BSE for this stock
-      # No investor_page: /investors returned 404 in the live run of
-      # 2026-09-22, so the collector falls back to the site root.
+      bse_code: "544547"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE1FF001016
+      # No investor_page: jinkushal.com carries no investor section at all
+      # (checked 2026-09-23). Exchange filings are the source for this one.
 
     queries_extra:
       - Jinkushal Industries order
@@ -844,8 +851,9 @@ tickers:
 
     ir:
       website: https://ravelcare.com/
-      bse_code: ""   # fill in from bseindia.com before enabling BSE for this stock
-      investor_page: https://ravelcare.com/investors
+      bse_code: "544629"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE0W4D01018
+      investor_page: https://ravelcare.com/pages/investors
 
     queries_extra:
       - Ravelcare Limited
@@ -1018,8 +1026,9 @@ tickers:
     ir:
       website: https://www.coalindia.in/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "533278"
-      investor_page: https://www.coalindia.in/investors/
+      bse_code: "533278"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE522F01014
+      investor_page: https://www.coalindia.in/en/investors/
 
     queries_extra:
       - Coal India production dispatch
@@ -1178,8 +1187,10 @@ tickers:
     ir:
       website: https://www.ksolves.com/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "542367"
-      investor_page: https://www.ksolves.com/investor-relations
+      bse_code: "543599"          # CORRECTED 2026-09-23; 542367 was wrong
+      isin: INE0D6I01023
+      # /investor-relations is a soft 404 serving a full navigation page.
+      # Left unset so the collector discovers the section from the site root.
 
     queries_extra:
       - Ksolves India results
@@ -1326,8 +1337,9 @@ tickers:
     ir:
       website: https://tmb.in/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "543596"
-      investor_page: https://tmb.in/investor-relations.aspx
+      bse_code: "543596"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE668A01016
+      # investor-relations.aspx returned an empty document; left to discovery.
 
     queries_extra:
       - Tamilnad Mercantile Bank results
@@ -1486,8 +1498,9 @@ tickers:
     ir:
       website: https://supriyalifescience.com/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "543434"
-      investor_page: https://supriyalifescience.com/investors/
+      bse_code: "543434"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE07RO01027
+      # /investors/ 404s; left to discovery from the site root.
 
     queries_extra:
       - Supriya Lifescience results
@@ -1654,7 +1667,8 @@ tickers:
     ir:
       website: https://www.hdfcbank.com/
       # Verified at runtime against the filing's company name; see src/sources/bse.py
-      bse_code: "500180"
+      bse_code: "500180"          # confirmed on bseindia.com, 2026-09-23
+      isin: INE040A01034
       investor_page: https://www.hdfcbank.com/personal/about-us/investor-relations
 
     queries_extra:

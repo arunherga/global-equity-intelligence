@@ -16,12 +16,21 @@ from .base import CollectionContext, HttpClient, Source, SourceError, extract_li
 
 # department key -> (display name, url, tickers it serves)
 GOVERNMENT_SOURCES: List[Tuple[str, str, Tuple[str, ...]]] = [
-    ("Ministry of Coal", "https://coal.nic.in/en/major-statistics/whats-new", ("COALINDIA", "MSTCLTD")),
-    ("Ministry of Power", "https://powermin.gov.in/en/whats-new", ("COALINDIA", "WAAREEENER")),
-    ("Ministry of New and Renewable Energy", "https://mnre.gov.in/en/whats-new/", ("WAAREEENER",)),
-    ("Ministry of Steel", "https://steel.gov.in/en/whats-new", ("MSTCLTD",)),
-    ("Ministry of Commerce", "https://commerce.gov.in/press-releases/", ("FRESHARA", "SUPRIYA", "JKIPL")),
-    ("Press Information Bureau", "https://www.pib.gov.in/allRel.aspx", ()),
+    # Every URL below was opened and confirmed on 2026-09-23. The previous
+    # set was guessed and five of six were dead: coal.nic.in has moved to
+    # coal.gov.in, and the "/en/whats-new" path does not exist on any of
+    # these sites. Ministry homepages are used rather than their listing
+    # pages because they carry the same items with far better link text.
+    ("Ministry of Coal", "https://coal.gov.in/", ("COALINDIA", "MSTCLTD")),
+    ("Ministry of Power", "https://www.powermin.gov.in/", ("COALINDIA", "WAAREEENER")),
+    ("Ministry of New and Renewable Energy", "https://mnre.gov.in/en/", ("WAAREEENER",)),
+    ("Ministry of Steel", "https://steel.gov.in/", ("MSTCLTD",)),
+    # Removed: the Department of Commerce site is a hash-route single-page
+    # app (commerce.gov.in/#/documents/press-releases), so the server returns
+    # the same shell HTML whatever the path and there is nothing to parse.
+    # Removed: PIB's allRel.aspx defaults to Hindi and to whichever ministry
+    # region it was last given; the ministry homepages above already link
+    # their PIB releases with English titles.
 ]
 
 # Anchor text that looks like a release rather than navigation.
