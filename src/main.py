@@ -293,8 +293,12 @@ class Pipeline:
         articles = normalize_all(raw, self.config)
         LOG.info("collected %d articles, %d after normalisation", len(raw), len(articles))
 
+        # Injected articles are a fixed corpus (the sample report, the offline
+        # tests), so filtering them against wall-clock time would silently
+        # empty them out as the fixture ages. Only a live collection is
+        # windowed.
         lookback_hours = max(self.config.lookback_hours, since_days * 24)
-        if until_days == 0:
+        if until_days == 0 and articles_override is None:
             articles = [
                 a for a in articles
                 if within_lookback(a, lookback_hours, now=datetime.now(timezone.utc))

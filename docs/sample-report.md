@@ -12,7 +12,7 @@ Stocks monitored: **10**
 | --- | ---: |
 | Articles scanned | 39 |
 | Unique articles | 39 |
-| Events detected | 29 |
+| Events detected | 30 |
 | Relevant events | 22 |
 | High-impact events | 17 |
 | Critical events | 2 |
@@ -367,7 +367,7 @@ This reaches the company through a close, specific exposure via its commodity ex
 
 - [Commodity Watch (fabricated)](https://commoditywatch.example/story/16-container-freight-rates-jump-18-on-red-sea-disruption)
 
-`EVENT-GLOBAL-2026-0002`
+`EVENT-GLOBAL-2026-0003`
 
 ---
 
@@ -409,7 +409,7 @@ This reaches the company through a close, specific exposure via its commodity ex
 
 - [Commodity Watch (fabricated)](https://commoditywatch.example/story/16-container-freight-rates-jump-18-on-red-sea-disruption)
 
-`EVENT-GLOBAL-2026-0002`
+`EVENT-GLOBAL-2026-0003`
 
 ---
 
@@ -451,7 +451,7 @@ This reaches the company through a close, specific exposure via its commodity ex
 
 - [Commodity Watch (fabricated)](https://commoditywatch.example/story/16-container-freight-rates-jump-18-on-red-sea-disruption)
 
-`EVENT-GLOBAL-2026-0002`
+`EVENT-GLOBAL-2026-0003`
 
 ---
 
@@ -742,7 +742,7 @@ One development, several holdings. Stored as one event.
 - **JKIPL** — INDIRECT_STRONG, 10/15, NEGATIVE; could affect supply, input cost, geography
 - **SUPRIYA** — INDIRECT_STRONG, 10/15, NEGATIVE; could affect supply, input cost, geography
 
-`EVENT-GLOBAL-2026-0002`
+`EVENT-GLOBAL-2026-0003`
 
 **RBI cuts repo rate by 25 bps in monetary policy review**
 
@@ -811,7 +811,7 @@ One development, several holdings. Stored as one event.
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0002`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
 
 ### International Events
 
@@ -833,7 +833,7 @@ One development, several holdings. Stored as one event.
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0002`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
 
 ### Things to Watch
 
@@ -894,7 +894,7 @@ One development, several holdings. Stored as one event.
 
 ### Government / Regulatory Events
 
-- **[5/15 ~]** RBI cuts repo rate by 25 bps in monetary policy review _(INDIRECT, MIXED, 73% confidence, 2 sources, official)_ `EVENT-GLOBAL-2026-0001`
+- **[5/15 ~]** RBI cuts repo rate by 25 bps in monetary policy review _(INDIRECT, MIXED, 67% confidence, 1 source, official)_ `EVENT-GLOBAL-2026-0001`
 
 ### Things to Watch
 
@@ -912,7 +912,7 @@ One development, several holdings. Stored as one event.
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0002`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
 
 ### Government / Regulatory Events
 
@@ -934,7 +934,7 @@ One development, several holdings. Stored as one event.
 
 ### Government / Regulatory Events
 
-- **[5/15 ~]** RBI cuts repo rate by 25 bps in monetary policy review _(INDIRECT, MIXED, 73% confidence, 2 sources, official)_ `EVENT-GLOBAL-2026-0001`
+- **[5/15 ~]** RBI cuts repo rate by 25 bps in monetary policy review _(INDIRECT, MIXED, 67% confidence, 1 source, official)_ `EVENT-GLOBAL-2026-0001`
 
 ### Things to Watch
 

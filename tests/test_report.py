@@ -119,3 +119,69 @@ def test_report_is_written_with_unix_line_endings(tmp_path, report):
     path = tmp_path / "2026-09-22.md"
     write_report(report, path)
     assert b"\r\n" not in path.read_bytes()
+
+
+# -- determinism ------------------------------------------------------------
+
+
+def test_the_sample_report_does_not_depend_on_todays_date():
+    """Regression: CI checks the committed sample with `git diff --exit-code`.
+
+    The generator originally dated the sample with date.today(), so the file
+    differed from the committed copy on every day after the one it was written
+    on, and the tests workflow failed daily.
+    """
+    from scripts.generate_sample_report import (
+        SAMPLE_MOMENT,
+        load_fixture_articles,
+        main,
+    )
+
+    articles = load_fixture_articles()
+    assert all(a.published is not None for a in articles)
+    # every fixture article is anchored to the pinned moment, not to now
+    assert max(a.published for a in articles) <= SAMPLE_MOMENT
+
+
+def test_regenerating_the_sample_is_byte_identical(tmp_path):
+    from scripts.generate_sample_report import main
+
+    first, second = tmp_path / "a.md", tmp_path / "b.md"
+    main(["--out", str(first)])
+    main(["--out", str(second)])
+    assert first.read_bytes() == second.read_bytes()
+
+
+def test_the_committed_sample_report_is_up_to_date(tmp_path):
+    """What the tests workflow asserts, asserted here so it fails locally first."""
+    from pathlib import Path
+
+    from scripts.generate_sample_report import main
+
+    committed = Path(__file__).resolve().parent.parent / "docs" / "sample-report.md"
+    regenerated = tmp_path / "sample-report.md"
+    main(["--out", str(regenerated)])
+    assert regenerated.read_text(encoding="utf-8") == committed.read_text(encoding="utf-8"), (
+        "docs/sample-report.md is stale; run "
+        "`python scripts/generate_sample_report.py` and commit the result"
+    )
+
+
+def test_injected_fixtures_are_not_filtered_by_wall_clock_time():
+    """The fixture corpus must not age out of the lookback window."""
+    from datetime import date
+
+    from src.config import load_config
+    from src.main import Pipeline
+    from src.profiles import load_watchlist
+    from scripts.generate_sample_report import load_fixture_articles
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    # A run dated years after the fixtures must still see all of them.
+    result = Pipeline(config, watchlist, watchlist.profiles).run(
+        run_date=date(2030, 1, 1), since_days=2, dry_run=True, offline=True,
+        resolve_links=False, articles_override=load_fixture_articles(),
+    )
+    assert result.stats.unique_articles == 39
+    assert result.events
