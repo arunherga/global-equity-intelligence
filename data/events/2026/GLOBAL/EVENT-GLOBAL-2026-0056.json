@@ -305,11 +305,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -322,8 +322,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -331,13 +331,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -360,12 +360,17 @@
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.579425+00:00",
-  "last_updated": "2026-09-22T18:19:39.579460+00:00",
+  "last_updated": "2026-09-23T12:26:13.176452+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.579458+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:13.176439+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

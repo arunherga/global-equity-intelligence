@@ -52,8 +52,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.15,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -69,17 +69,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "steel prices over the next few weeks"
@@ -98,21 +96,41 @@
       "published": "2026-09-21T13:30:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Domestic Steel Prices to Remain Firm in September on Construction Revival, Supply Constraints",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX1VuaEJEaFFzTDNSTGg0V1QtVEhTUnNFZFpyaEhIcGtNMXpDWmxVSVhnaGx5RnBTV1g2U3VabVpMT3ZsVWNtSG5Nal9VVnkyeVhXUURTMHJRbUZvX3Y0RE1hRlZJcTkzY1FMREh2UDcxaGhKeFZ5T0lmN2JKd3pkb0ZpYkVtTHNvbl9fLWVhdmhZZVFTc1BmelBKZEo2WGxhZ1pjLXppdXBoTkNkbHRjLUY1eHFHUl90R3pFS19qWDlKQ1pCdUt5QWRjdV83VnQ2NlVLeFV2SlFSWjN2",
+      "source_name": "Realty Plus Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T19:44:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "ET Manufacturing",
   "cluster_key": "JKIPL+MSTCLTD|OTHER|domestic-firm-likely-price-stay-steel",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.862665+00:00",
-  "last_updated": "2026-09-22T18:19:39.862700+00:00",
+  "last_updated": "2026-09-23T12:26:04.579925+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.862698+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:04.579903+00:00",
+      "change": "sources added",
+      "detail": "Realty Plus Magazine"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:04.579920+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -314,14 +314,28 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life Insurance",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "NSE",
@@ -331,8 +345,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -340,13 +354,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -370,16 +384,36 @@
       "published": "2026-09-21T22:35:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Life Insurance Share Price - Live NSE: HDFCLIFE Stock Price & Chart",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9rbmpVWmJiOEVqYWFGbHNBdFhudURwc01vMGRrM3lYdFZYRkNlRTc2cThBbXNDZ3pFVDhjUVEzOGQ3ZVl0dGhmUG8zSWlJZGlHZE0yNURUTUFtN1ZzNXlQQ1ZXUkxpb3Bjd3dj",
+      "source_name": "upstox.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T16:04:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Hindustan Copper Share Price - Live NSE: HINDCOPPER Stock Price & Chart",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlQXJXQi02SVlvaFFnOU00M3I4T0xDOWFWNmF2WHU5Z3BkeFhudDJEZ0dLOXJtV1hDUFo3eEx2N3JPeDd3LXhTUmx0S2MwMkJrczk5akpjM1E4OVVpakhIRjVzQUJZLUNtWUtV",
+      "source_name": "upstox.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T07:30:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Upstox",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|energies-nse-premier-premierene-price-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.760030+00:00",
-  "last_updated": "2026-09-22T18:19:46.796121+00:00",
+  "last_updated": "2026-09-23T12:26:14.212271+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.760061+00:00",
@@ -390,6 +424,21 @@
       "timestamp": "2026-09-22T18:19:46.796100+00:00",
       "change": "sources added",
       "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:02.403283+00:00",
+      "change": "sources added",
+      "detail": "upstox.com"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:02.403303+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:14.212249+00:00",
+      "change": "sources added",
+      "detail": "upstox.com"
     }
   ],
   "price_reaction": {}

@@ -4,17 +4,20 @@
   "summary": "Karur Vysya Bank to inaugurate new branches in Coimbatore and Labbaikudikadu Business Upturn",
   "event_date": "2026-09-19",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EXPANSION"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "GEOGRAPHY",
+        "REVENUE",
         "COMPETITION"
       ],
       "time_horizon": "UNKNOWN",
@@ -28,7 +31,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +39,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "Karur Vysya Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are geography, revenue, competition. Classified as expansion.",
       "ai_analysis": null
     }
   },
@@ -76,16 +79,36 @@
       "published": "2026-09-19T14:36:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank opens new branch in Labbaikudikadu",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZDJzTGZLQXJIRHpjdDBYOE5wZXdWall4U2paaUFkdTJMVGtXUTQ2SlBseG5IMVpxN2VxMzBfTHBpVWRFXzkzSDAyZ2hBTGhUZmdIMGFjaTZfMzBlTnhWSmtfc255OXBlZ0U3MURWazF5QTVwdUdZdk9JbzlQeWdEV1VBOTRUNFpEWERKYXdTT0toWjRSaUFLUEl3",
+      "source_name": "businessnewsthisweek.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T12:05:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank opens new branches in Coimbatore and Labbaikudikadu",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUmJ2Yk1obkhNTWVLS2RMelMzRjhlVTI1M2c1S1Rvd2t4MnM1WmJMVjJZMzFmMnpxNklKOWZac2sxaTNFTXlTMGZ3OHhUUWU4WFMwcC1TT3hTNW4zZ2ZicXV5eGN2dXVEVHUyNVVmblhxS1lDbEluRXIwbl9XZHlQTjFwaVl2WWJOUkhocGh6cWgxdE0zSGRTOG5RVjVEbDFjcG9kMjRUWkE",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T10:13:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Business Upturn",
   "cluster_key": "TMB|OTHER|bank-branches-coimbatore-inaugurate-karur-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.706066+00:00",
-  "last_updated": "2026-09-22T18:19:51.325064+00:00",
+  "last_updated": "2026-09-23T12:26:18.544656+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.706095+00:00",
@@ -96,6 +119,21 @@
       "timestamp": "2026-09-22T18:19:51.325052+00:00",
       "change": "sources added",
       "detail": "EquityBulls, scanx.trade"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:18.544631+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, businessnewsthisweek.com"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:18.544645+00:00",
+      "change": "categories added",
+      "detail": "EXPANSION"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:18.544651+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

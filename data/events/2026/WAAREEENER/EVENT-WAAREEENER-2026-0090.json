@@ -9,38 +9,64 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "COMPETITION",
+        "EXPORTS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "First Solar",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "PV modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "United States",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "+2 Names a key geography for this company"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "First Solar's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to First Solar, and solar modules. The parts of the business most likely touched are competition, exports. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -54,21 +80,51 @@
       "published": "2026-09-21T12:59:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "U.S. solar module production reaches historic 100 GW landmark",
+      "url": "https://www.pv-magazine-india.com/2026/09/23/u-s-solar-module-production-reaches-historic-100-gw-landmark",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-23T08:30:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "U.S. solar module production reaches historic 100 GW landmark - pv-magazine-india.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVU9rU1QzanExVUd5akRoejBFSTZZNjctaXNSMjBqQW9TYTVkc1Z6REV3aTBaRGM3bmxaLTYzUkN5REhveXZFeGhnVkN3UXktV1dBcno3TXJpTS1BR3hrT0FEWmVZblk4VFJWWDEtU29nQ2RtVW1tVG54ZXV4Ry1WVnlsVFd4dHBKMDZnV3VoUGF1UGNYeTFnSHQ3SU1oclJCUk5PUFc5eXVMQQ",
+      "source_name": "pv-magazine-india.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T10:18:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "pv magazine Global",
   "cluster_key": "WAAREEENER|OTHER|historic-module-production-reaches-solar-u.s.",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.859345+00:00",
-  "last_updated": "2026-09-22T18:19:39.859375+00:00",
+  "last_updated": "2026-09-23T12:25:57.535500+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.859373+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.535481+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, pv-magazine-india.com"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.535495+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 6"
     }
   ],
   "price_reaction": {}

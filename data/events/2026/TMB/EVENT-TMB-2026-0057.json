@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-TMB-2026-0057",
+  "title": "Market Prices In Three Fed Rate Hikes, Some Traders Hedge in the Opposite Direction",
+  "summary": "Market Prices In Three Fed Rate Hikes, Some Traders Hedge in the Opposite Direction NAI500",
+  "event_date": "2026-09-23",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are margin, demand, customers. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Market Prices In Three Fed Rate Hikes, Some Traders Hedge in the Opposite Direction",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQel83WnNxY0lEYXRfZnVqOUxwbFB6N0tCNE91TVgwRWZjR1g5Wi0wZEtVc0tGN1hRamNkeDZLTTU2bVlxeXlGcWVzTUJYaWNISEdMOG9LN29rQ0RuUTZrUk1rWFNYSVdaVXpmWGl0UzlhRF93MEpxTW8yaVZNTjhjNXp6cmlnSmt5TEZ3TWVkcF9nNks4WHVCTXIxRWFCYVYwWlNVM2tOejFQaGJqVUZKWmN5ck42dw",
+      "source_name": "NAI500",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T02:47:47+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "NAI500",
+  "cluster_key": "TMB|INTEREST_RATE|fed-market-price-raise-rate-three",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-23T12:25:52.614058+00:00",
+  "last_updated": "2026-09-23T12:25:52.614119+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-23T12:25:52.614115+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -88,6 +88,82 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. Classified as other.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -100,21 +176,46 @@
       "published": "2026-09-22T06:23:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Crude oil falls for six consecutive days, metals mostly fall, lithium carbonate drops over 3%, SHFE nickel rises more than 1%, coking coal falls over 1% [SMM midday comment]",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNZDBVT2dRSzBiVGFDcjJLNWlITl96czAzSnJUZkZWeWNEcjlmdFUxTVdsODFRM01QSVlkM3JzemZUNVdKMm9QY2VPYnlDOVE0dWJXRlVWcEY2SFBiUFhhQ2JsSVhOdVVtaDVxdy1hQUh3RFpYMlFxZ2JjdzRzNUwwRDFlb2ZMR0puaGpmUHZHMm9EbklaQjFfMGZCLS1VZm05LWJkZld6SThRc2Q5ZlRzRm9YT3hFRGdNZkRyTHAtaEVKaF9BODJPWThsTXVoSFAwU3FkQ20wZ3RBTWxEa1NkT29NTVdfaWxmNE90TFA1NklncjI3VHR6NHZ4d0w1SjhIMElpSWNadl9nOFFwLU5JeFdKa0E2RC1nZUVCX0ZiTERMY1p1dlNKcGpJckhIVWdUdU9n",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T06:31:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Shanghai Metals Market",
   "cluster_key": "COALINDIA+WAAREEENER|OTHER|broadly-dollar-metals-rise-shfe-weakens",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.941217+00:00",
-  "last_updated": "2026-09-22T18:19:39.941267+00:00",
+  "last_updated": "2026-09-23T12:26:12.202784+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.941265+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:12.202758+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:12.202774+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:12.202780+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
     }
   ],
   "price_reaction": {}

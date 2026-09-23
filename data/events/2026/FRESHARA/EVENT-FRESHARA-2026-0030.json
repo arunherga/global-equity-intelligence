@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0030",
+  "title": "APEDA: Maximum Residue Levels (MRLs) for Rice",
+  "summary": "",
+  "event_date": "2026-09-23",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "APEDA",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "maximum residue level",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to APEDA, and maximum residue level. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "APEDA: Maximum Residue Levels (MRLs) for Rice",
+      "url": "https://apeda.gov.in/Residue-Levels-Rice",
+      "source_name": "APEDA",
+      "source_domain": "apeda.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "APEDA",
+  "cluster_key": "FRESHARA|OTHER|apeda-levels-maximum-mrls-residue-rice",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-23T12:25:52.148774+00:00",
+  "last_updated": "2026-09-23T12:25:52.148828+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-23T12:25:52.148823+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

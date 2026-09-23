@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0039",
+  "title": "Fuel price hike sends oil, garlic and vegetable prices soaring in a day",
+  "summary": "Fuel price hike sends oil, garlic and vegetable prices soaring in a day The Business Standard",
+  "event_date": "2026-09-22",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Fuel price hike sends oil, garlic and vegetable prices soaring in a day",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV0kxR2ZWU0ZqTkhMbkdnRFU2bWNGWGo0cnJ2LTM2cWRBSEtwY3BrLXZoWEU4VW5UU05NNVExQzR0X09pMEVtU3lYSjdXZTYxZHZMMm45S2c2dkk5X1Z4NHpRdTBJTTd3bTNQNjYyMWxrLV9WcFJTUTJJd3dwakdOT1ZUSWtnbVdvaXQwT3hUVGtJa3lEXzN4R2wzellIWF9ZWlhZTUpXdkF6RmFMTVo0cWpPTVV0UjlmcGRSTw",
+      "source_name": "The Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-22T18:16:56+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Business Standard",
+  "cluster_key": "FRESHARA|OTHER|fuel-garlic-oil-price-raise-sends",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-23T12:25:52.522155+00:00",
+  "last_updated": "2026-09-23T12:25:52.522233+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-23T12:25:52.522228+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

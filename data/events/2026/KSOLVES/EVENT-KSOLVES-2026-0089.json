@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -69,15 +70,20 @@
   "source_count": 1,
   "primary_source": "The Futurum Group",
   "cluster_key": "KSOLVES|OTHER|behind-crm-koa-moat-real-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.033503+00:00",
-  "last_updated": "2026-09-22T18:19:40.033536+00:00",
+  "last_updated": "2026-09-23T12:26:04.374786+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.033534+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:26:04.374775+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

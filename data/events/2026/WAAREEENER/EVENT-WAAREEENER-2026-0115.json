@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.58,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET"
@@ -36,14 +36,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -67,21 +67,41 @@
       "published": "2026-09-22T14:47:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India to add about 8 GW wind energy capacity in FY27: MNRE",
+      "url": "https://energy.economictimes.indiatimes.com/news/renewable/india-to-add-about-8-gw-wind-energy-capacity-in-fy27-mnre/134424828",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-23T03:13:09+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Business Standard",
   "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|about-add-energy-india-track-wind",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.045397+00:00",
-  "last_updated": "2026-09-22T18:19:40.045433+00:00",
+  "last_updated": "2026-09-23T12:25:57.301322+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.045430+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.301303+00:00",
+      "change": "sources added",
+      "detail": "ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.301317+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

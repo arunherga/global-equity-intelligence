@@ -4,18 +4,21 @@
   "summary": "NHAI debars Theme Engineering Services & Ishita Info Solutions from bidding for future road projects The Economic Times",
   "event_date": "2026-09-22",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "REGULATORY"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -27,21 +30,25 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -65,21 +72,46 @@
       "published": "2026-09-22T15:34:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI debars Theme Engineering Services & Ishita Info Solutions from bidding for future road projects",
+      "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/nhai-debars-theme-engineering-services-ishita-info-solutions-from-bidding-for-future-road-projects/134424741",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-23T03:04:41+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Siasat Daily",
   "cluster_key": "JKIPL|OTHER|debars-engineering-ishita-nhai-services-theme",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.050315+00:00",
-  "last_updated": "2026-09-22T18:19:40.050355+00:00",
+  "last_updated": "2026-09-23T12:25:57.261274+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.050352+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.261250+00:00",
+      "change": "sources added",
+      "detail": "ETInfra"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.261263+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-09-23T12:25:57.261269+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
     }
   ],
   "price_reaction": {}

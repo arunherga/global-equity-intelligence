@@ -1,0 +1,115 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0371",
+  "title": "August aluminium scrap imports recover M-o-M; multiple constraints suppress a sharp import rebound",
+  "summary": "August aluminium scrap imports recover M-o-M; multiple constraints suppress a sharp import rebound AL Circle",
+  "event_date": "2026-09-23",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "aluminium scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium scrap. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "aluminium over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "August aluminium scrap imports recover M-o-M; multiple constraints suppress a sharp import rebound",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZ25DWVdJdW53cWVQWVg5aXhNSi1SN0xVWkI5NEk0UlFmSWhxMmNxelYxS093b1hHc21TQmVSYThMc3U4ZVZUMFViYVVBdDg2Q3JpSnlKdGRpUGszUEJMaW1ZMTBaQzRTVjJSeHlyWWlfdllHc1dmVy1DOUlpUjB1RVVnUEYzZDZyRWs0MHYtVTNyS3ZUS3F6WGMyTmpfS1huUm93aGp5bklqS0p6VzFGNGF4RThla1FKM3FVUkF2djlWdHFGXzFPTTItdFRpNjA",
+      "source_name": "AL Circle",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T09:49:37+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "AL Circle",
+  "cluster_key": "MSTCLTD+WAAREEENER|OTHER|aluminium-august-import-m-o-m-recover-scrap",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-23T12:25:52.810303+00:00",
+  "last_updated": "2026-09-23T12:25:52.810369+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-23T12:25:52.810364+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
