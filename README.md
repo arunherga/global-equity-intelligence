@@ -212,48 +212,61 @@ integration (Upstox, Kite, yfinance) without a schema change.
 
 ## Automation
 
-`.github/workflows/daily-intelligence.yml` targets **11:48 IST** and **18:44
-IST**, but does not trust a single cron tick to get there.
+`.github/workflows/daily-intelligence.yml` runs at **06:18 UTC (11:48 IST)**
+and **13:14 UTC (18:44 IST)** — deliberately odd minutes, because GitHub's
+scheduler is congested on the hour and runs there get delayed or dropped.
 
-GitHub runs `schedule` on a best-effort basis: it delays ticks under load,
-drops them outright, and routinely ignores a freshly changed cron for its
-first slot or two. In this repository *not one* scheduled run fired in the
-first day, across two configured slots. So each slot is attempted three times,
-half an hour apart:
+GitHub runs `schedule` triggers on a best-effort basis: a newly added schedule
+routinely misses its first tick or two, and runs are dropped entirely under
+load. `workflow_dispatch` is always reliable, so run the workflow by hand from
+the Actions tab if a scheduled run does not appear. The
+evening run **merges into** the day's report rather than overwriting it: the
+run regenerates the report from the union of the day's events, which is far
+safer than editing Markdown. Reports and data are committed only when
+something changed.
 
-| Slot | Attempts (IST) | Cron (UTC) |
-| --- | --- | --- |
-| Midday | 11:48 · 12:18 · 12:48 | `18,48 6 * * *`, `18 7 * * *` |
-| Evening | 18:44 · 19:14 · 19:44 | `14,44 13 * * *`, `14 14 * * *` |
+### GitHub's scheduler has never fired for this repository
 
-A gate makes the first attempt that actually lands do the work; the rest see
-the slot already stamped and exit in about ten seconds. The stamp is written
-only on success, so a failed attempt is retried by the next one instead of
-being swallowed.
+Recorded, not guessed. Over the first two days: **7 workflow runs, none with
+`event: schedule`.** `push` and `workflow_dispatch` both worked throughout, so
+Actions itself is fine — only scheduled delivery is missing. The retry windows
+above were added after three misses and then missed twice more, 8 and 38
+minutes after they were deployed. Five slots, zero deliveries.
 
-Every completed run writes `data/last_run.json`:
+The repository is not a fork, not archived, not disabled, is public, and the
+workflow is on the default branch — so none of the usual structural causes
+apply. The remaining likely cause is account-level: GitHub silently withholds
+scheduled Actions from accounts with an **unverified primary email address**,
+which produces exactly this signature. Worth checking
+`github.com/settings/emails` first, because if that is it, the fix is free.
 
-```json
-{
-  "stamp": "2026-09-23-midday",
-  "slot": "midday",
-  "event": "schedule",
-  "finished_utc": "2026-09-23T06:19:44Z",
-  "run_url": "https://github.com/.../actions/runs/123456789"
-}
+### Triggering it from Windows instead
+
+Until scheduled delivery works, `scripts/` drives the workflow from your own
+machine through the `workflow_dispatch` API, which has been reliable:
+
+```powershell
+# once: give the script a token (fine-grained, Actions -> Read and write)
+setx GEI_GITHUB_TOKEN "github_pat_..."      # or just: gh auth login
+
+# once: register the two daily tasks
+.\scripts\install-scheduled-task.ps1
+
+# check
+Get-ScheduledTask -TaskPath "\GlobalEquityIntelligence\"
+Start-ScheduledTask -TaskName gei-midday -TaskPath "\GlobalEquityIntelligence\"
 ```
 
-That file exists because a run which finds no news commits nothing, so the
-absence of a commit could mean either "the schedule never fired" or "it fired
-and there was nothing to report". The heartbeat tells those two apart. A
-manual run records itself as `manual-<date>-<slot>` so it stays visible
-without suppressing that day's scheduled slot.
+The token stays on your machine — it is read from the environment or from the
+GitHub CLI, never passed on the command line and never written to the log
+(`%LOCALAPPDATA%\global-equity-intelligence\trigger.log`).
 
-The evening slot **merges into** the day's report rather than overwriting it:
-the run regenerates the report from the union of the day's events, which is
-far safer than editing Markdown. Reports and data are committed only when
-something changed. `workflow_dispatch` is never gated, so running the workflow
-by hand from the Actions tab always works.
+The tasks are registered with `-StartWhenAvailable`, so a slot missed because
+the machine was asleep runs as soon as it is next available. That is strictly
+better than GitHub cron, which drops a missed tick and never revisits it. The
+trade-off is that it only fires when your machine is on; the workflow's own
+retry windows stay in place to cover the days it is not, in case scheduled
+delivery ever starts working.
 
 `.github/workflows/tests.yml` runs the offline suite on 3.11 and 3.12 and
 fails if `docs/sample-report.md` is out of date.
