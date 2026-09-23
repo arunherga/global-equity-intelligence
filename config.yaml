@@ -26,7 +26,11 @@ sources:
     gl: IN
     ceid: "IN:en"
   gdelt:
-    enabled: true
+    # DISABLED after the live run of 2026-09-22: 6 queries, 154 seconds, zero
+    # articles. GDELT answered with a non-JSON error page ("no articles key in
+    # response") and then refused outright. Re-enable to retry - the collector
+    # and its tests are intact and it costs nothing to leave in place.
+    enabled: false
     base_url: "https://api.gdeltproject.org/api/v2/doc/doc"
     max_records: 40
     # GDELT is used mainly for INTERNATIONAL exposure topics.
@@ -56,9 +60,9 @@ sources:
 # the pipeline knows which watchlist companies to test the articles against.
 feeds:
   general:
-    - name: Business Standard Markets
-      url: https://www.business-standard.com/rss/markets-106.rss
-      source_type: established_newspaper
+    # Business Standard removed: 403 from GitHub Actions runners on every
+    # attempt (2026-09-22). Datacentre-IP blocking that no User-Agent fixes.
+    # No coverage is lost - Google News carries the same publisher.
     - name: The Hindu BusinessLine Markets
       url: https://www.thehindubusinessline.com/markets/feeder/default.rss
       source_type: established_newspaper
@@ -82,10 +86,7 @@ feeds:
       url: https://www.mercomindia.com/feed
       source_type: specialized_trade_publication
       tickers: [WAAREEENER]
-    - name: SolarQuarter
-      url: https://solarquarter.com/feed/
-      source_type: specialized_trade_publication
-      tickers: [WAAREEENER]
+    # SolarQuarter removed: 403 from GitHub Actions runners (2026-09-22).
 
   energy:
     - name: ETEnergyWorld

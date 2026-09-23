@@ -681,7 +681,8 @@ tickers:
     ir:
       website: https://www.jinkushal.com/
       bse_code: ""   # fill in from bseindia.com before enabling BSE for this stock
-      investor_page: https://www.jinkushal.com/investors
+      # No investor_page: /investors returned 404 in the live run of
+      # 2026-09-22, so the collector falls back to the site root.
 
     queries_extra:
       - Jinkushal Industries order

@@ -2,12 +2,14 @@ name: daily-intelligence
 
 on:
   schedule:
-    # Twice daily, at deliberately non-round minutes: GitHub's scheduler is
-    # heavily congested on the hour and runs get delayed or dropped.
-    # 02:37 UTC = 08:07 IST (morning intelligence)
-    - cron: "37 2 * * *"
-    # 12:43 UTC = 18:13 IST (evening intelligence, merged into the same report)
-    - cron: "43 12 * * *"
+    # Cron is evaluated in UTC; these are the IST times converted (UTC+5:30).
+    # The minutes are deliberately not round: GitHub's scheduler is heavily
+    # congested on the hour and at :00/:15/:30, and runs there get delayed or
+    # dropped entirely.
+    # 06:18 UTC = 11:48 IST (midday intelligence)
+    - cron: "18 6 * * *"
+    # 13:14 UTC = 18:44 IST (evening intelligence, merged into the same report)
+    - cron: "14 13 * * *"
   workflow_dispatch:
     inputs:
       ticker:

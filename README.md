@@ -127,32 +127,40 @@ counts events; it is not a ranking.
 
 ## Sources
 
-| Source | Module | Notes |
-| --- | --- | --- |
-| NSE announcements | `src/sources/nse.py` | Needs a session cookie from the website first. NSE frequently refuses datacentre IPs, including GitHub Actions runners. |
-| BSE announcements | `src/sources/bse.py` | Keyed on a numeric scrip code from `watchlist.yaml`. The returned company name is verified against the profile, because a wrong code silently returns someone else's filings. |
-| Company IR pages | `src/sources/company_ir.py` | Prefers the feed a site advertises; otherwise extracts announcement-like links. |
-| Regulators | `src/sources/regulators.py` | RBI, SEBI, US FDA, EMA, CDSCO, APEDA, DGFT. Only the ones the current watchlist actually needs are polled. |
-| Government | `src/sources/government.py` | Coal, Power, MNRE, Steel, Commerce, PIB listing pages. |
-| Google News RSS | `src/sources/google_news.py` | One request per generated query, `en-IN`/`IN`, windowed at the source. Carries most of the coverage. |
-| GDELT | `src/sources/gdelt.py` | International exposure topics only — foreign coverage an India-locale search under-reports. |
-| Sector & press RSS | `src/sources/rss.py` | Configured in `config.yaml`; a moved feed is rediscovered from the site's `<head>`. |
+Verified against a live 5-day backfill run on GitHub Actions, 22 September
+2026: **3,761 articles scanned, 2,696 unique, 757 events, 171 relevant,
+31 high-impact, 3 critical, 110 international.**
 
-**No source in this table has been verified on a live network yet.** The
-environment this project was built in blocks all outbound HTTP except package
-registries, so every host above returned `403` from the egress proxy. That is
-recorded rather than papered over:
+| Source | Module | Live status (2026-09-22, GitHub runner) |
+| --- | --- | --- |
+| NSE announcements | `src/sources/nse.py` | **FAILED** — `www.nseindia.com` read-timed-out from the runner. Exactly the datacentre-IP blocking anticipated. Works from an Indian residential connection; left enabled for local runs. |
+| BSE announcements | `src/sources/bse.py` | **FAILED** — 5 attempts, all refused; circuit breaker stopped it after 5. JKIPL and RAVEL were skipped for a missing `bse_code`, as designed. |
+| Company IR pages | `src/sources/company_ir.py` | **FAILED** — Freshara's domain would not resolve, Jinkushal's `/investors` 404'd. MSTC and Waaree loaded but nothing parseable: the link heuristics need work. |
+| Regulators | `src/sources/regulators.py` | **VERIFIED** — 4 of 7 endpoints, 66 items. APEDA 404s and DGFT 403s from the runner; those two URLs need replacing. |
+| Government | `src/sources/government.py` | **VERIFIED** — 1 of 6 pages, 8 items. Ministry of Coal 404s (`coal.nic.in` has moved) and Ministry of Power 403s. These URLs need replacing. |
+| Google News RSS | `src/sources/google_news.py` | **VERIFIED** — 251 of 251 queries succeeded, 3,447 articles in 234s. Carries the overwhelming majority of coverage. |
+| GDELT | `src/sources/gdelt.py` | **FAILED, now disabled** — 6 queries, 154 seconds, zero articles; answered with a non-JSON error page, then refused. Flip `sources.gdelt.enabled` to retry. |
+| Sector & press RSS | `src/sources/rss.py` | **VERIFIED** — 14 of 16 feeds, 240 items. Business Standard and SolarQuarter returned 403 from the runner on every attempt and have been removed. |
+
+Four of the eight sources work from GitHub's runners and between them
+returned 3,761 articles. The four that failed did so for reasons worth
+knowing: NSE and BSE block datacentre IPs (NSE works from an Indian
+residential connection, so it is left enabled for local runs), GDELT returned
+nothing at all and is now disabled, and the IR collector needs better link
+heuristics. Six individual government and regulator URLs have moved and need
+replacing — they are named in the table above, and each one degrades to a
+recorded diagnostic rather than a failed run.
+
+Re-check at any time, on whatever machine will run the agent:
 
 ```bash
 python -m src.main --check-sources
 ```
 
-prints a VERIFIED / FAILED table. Run it once on the machine that will run the
-agent and paste the result here. Until then, treat the table above as
-*configured*, not *working*. One source failing never stops a run — failures
-land in the report's Run Diagnostics section, and a host that fails five times
-in a row is abandoned for the rest of the run rather than costing a timeout on
-every request.
+One source failing never stops a run. Failures land in the report's Run
+Diagnostics section, and a host that fails five times in a row is abandoned
+for the rest of the run rather than costing a timeout on every request — which
+is what kept the BSE and GDELT failures above to seconds rather than minutes.
 
 ## Query generation
 
@@ -200,9 +208,14 @@ integration (Upstox, Kite, yfinance) without a schema change.
 
 ## Automation
 
-`.github/workflows/daily-intelligence.yml` runs at **02:37 UTC (08:07 IST)**
-and **12:43 UTC (18:13 IST)** — deliberately odd minutes, because GitHub's
-scheduler is congested on the hour and runs get delayed or dropped. The
+`.github/workflows/daily-intelligence.yml` runs at **06:18 UTC (11:48 IST)**
+and **13:14 UTC (18:44 IST)** — deliberately odd minutes, because GitHub's
+scheduler is congested on the hour and runs there get delayed or dropped.
+
+GitHub runs `schedule` triggers on a best-effort basis: a newly added schedule
+routinely misses its first tick or two, and runs are dropped entirely under
+load. `workflow_dispatch` is always reliable, so run the workflow by hand from
+the Actions tab if a scheduled run does not appear. The
 evening run **merges into** the day's report rather than overwriting it: the
 run regenerates the report from the union of the day's events, which is far
 safer than editing Markdown. Reports and data are committed only when
@@ -271,8 +284,14 @@ pytest -q
 
 ## Limitations
 
-- **No source is verified.** See the Sources section. Run `--check-sources` on
-  your own machine.
+- **Four of eight sources work from GitHub Actions.** NSE, BSE, company IR and
+  GDELT do not; see the Sources table for each reason. Google News carries most
+  of the coverage, which is a single point of failure.
+- **Six government and regulator URLs have moved** (APEDA, DGFT, Ministry of
+  Coal, Ministry of Power and others). They 404 or 403 harmlessly and are
+  recorded in Run Diagnostics, but they are dead weight until replaced.
+- **The IR collector finds nothing on pages it can reach.** MSTC and Waaree's
+  investor pages load, but the announcement-link heuristics do not match them.
 - **Google News links are opaque.** They are resolved late and only for
   articles that can still reach the report; unresolvable ones are left as-is
   and reported, not silently replaced.
