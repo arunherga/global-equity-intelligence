@@ -1,15 +1,23 @@
 name: daily-intelligence
 
+# GitHub runs `schedule` on a best-effort basis. It delays ticks under load
+# and drops them outright, and a freshly changed cron is routinely ignored for
+# its first slot or two - in this repository not one scheduled run fired in
+# the first day, across two configured slots.
+#
+# So each slot is attempted three times, half an hour apart, and a gate makes
+# the first attempt that actually lands do the work while the rest exit in
+# about ten seconds. The stamp is only written on success, so a failed attempt
+# is retried by the next one rather than being swallowed.
+
 on:
   schedule:
-    # Cron is evaluated in UTC; these are the IST times converted (UTC+5:30).
-    # The minutes are deliberately not round: GitHub's scheduler is heavily
-    # congested on the hour and at :00/:15/:30, and runs there get delayed or
-    # dropped entirely.
-    # 06:18 UTC = 11:48 IST (midday intelligence)
-    - cron: "18 6 * * *"
-    # 13:14 UTC = 18:44 IST (evening intelligence, merged into the same report)
-    - cron: "14 13 * * *"
+    # Midday slot, target 11:48 IST. Attempts at 11:48, 12:18, 12:48 IST.
+    - cron: "18,48 6 * * *"
+    - cron: "18 7 * * *"
+    # Evening slot, target 18:44 IST. Attempts at 18:44, 19:14, 19:44 IST.
+    - cron: "14,44 13 * * *"
+    - cron: "14 14 * * *"
   workflow_dispatch:
     inputs:
       ticker:
@@ -34,7 +42,7 @@ permissions:
   contents: write
 
 concurrency:
-  # Never let the evening run start while the morning run is still committing.
+  # Never let a retry start while the attempt before it is still committing.
   group: daily-intelligence
   cancel-in-progress: false
 
@@ -47,21 +55,51 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # The event store and the seen-article file are read before they are
-          # written, so the run needs the previous state.
+          # written, so the run needs the previous state - and the gate needs
+          # the heartbeat committed by the previous attempt.
           fetch-depth: 0
 
+      - name: Has this slot already run?
+        id: gate
+        run: |
+          set -euo pipefail
+          HOUR=$(date -u +%H)
+          if [ "$HOUR" -lt 10 ]; then SLOT=midday; else SLOT=evening; fi
+          STAMP="$(date -u +%F)-$SLOT"
+          echo "stamp=$STAMP" >> "$GITHUB_OUTPUT"
+          echo "slot=$SLOT"   >> "$GITHUB_OUTPUT"
+
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "manual run - not gated"
+            # Prefixed so a manual run is still visible in the heartbeat but
+            # does not make the gate skip that day's scheduled slot.
+            echo "heartbeat_stamp=manual-$STAMP" >> "$GITHUB_OUTPUT"
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          elif [ -f data/last_run.json ] && grep -q "\"stamp\": \"$STAMP\"" data/last_run.json; then
+            echo "$STAMP already completed by an earlier attempt; skipping"
+            echo "heartbeat_stamp=$STAMP" >> "$GITHUB_OUTPUT"
+            echo "run=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "$STAMP not yet completed; running"
+            echo "heartbeat_stamp=$STAMP" >> "$GITHUB_OUTPUT"
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'yes'
         with:
           python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
+        if: steps.gate.outputs.run == 'yes'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run the intelligence pipeline
         id: run
+        if: steps.gate.outputs.run == 'yes'
         env:
           # The deterministic pipeline needs no credentials. These are read
           # only if ai.enabled is turned on in config.yaml.
@@ -85,29 +123,55 @@ jobs:
           # the report's Run Diagnostics section and carries on.
           python -m src.main $ARGS 2>&1 | tee run.log
 
+      - name: Record the heartbeat
+        # Written on every completed run, including one that found no news.
+        # Without it there is no way to tell a schedule that never fired from
+        # a run that fired and had nothing to commit - which is exactly the
+        # ambiguity that made the missing runs hard to diagnose.
+        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'success' && github.event.inputs.dry_run != 'true'
+        run: |
+          mkdir -p data
+          cat > data/last_run.json <<JSON
+          {
+            "stamp": "${{ steps.gate.outputs.heartbeat_stamp }}",
+            "slot": "${{ steps.gate.outputs.slot }}",
+            "event": "${{ github.event_name }}",
+            "finished_utc": "$(date -u +%FT%TZ)",
+            "run_id": "${{ github.run_id }}",
+            "run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          }
+          JSON
+          cat data/last_run.json
+
       - name: Summarise the run
         if: always()
         run: |
           {
             echo "### Intelligence run"
-            echo '```'
-            tail -25 run.log || echo "no log produced"
-            echo '```'
+            echo "- slot: \`${{ steps.gate.outputs.stamp }}\`"
+            echo "- gate: \`${{ steps.gate.outputs.run }}\`"
+            if [ "${{ steps.gate.outputs.run }}" = "no" ]; then
+              echo ""
+              echo "This slot had already been completed by an earlier attempt."
+            else
+              echo '```'
+              tail -25 run.log 2>/dev/null || echo "no log produced"
+              echo '```'
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Commit the report and the event data
-        if: github.event.inputs.dry_run != 'true'
+      - name: Commit the report, the event data and the heartbeat
+        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'success' && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/ data/ || true
-          # Commit only when something actually changed.
           if git diff --cached --quiet; then
             echo "nothing changed; no commit"
             exit 0
           fi
-          git commit -m "Intelligence report for $(date -u +%Y-%m-%d)"
-          # The other scheduled run may have pushed while this one was working.
+          git commit -m "Intelligence report for $(date -u +%Y-%m-%d) (${{ steps.gate.outputs.slot }})"
+          # Another attempt, or the other slot, may have pushed meanwhile.
           for attempt in 1 2 3; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && break
             sleep 5

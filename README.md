@@ -212,18 +212,48 @@ integration (Upstox, Kite, yfinance) without a schema change.
 
 ## Automation
 
-`.github/workflows/daily-intelligence.yml` runs at **06:18 UTC (11:48 IST)**
-and **13:14 UTC (18:44 IST)** — deliberately odd minutes, because GitHub's
-scheduler is congested on the hour and runs there get delayed or dropped.
+`.github/workflows/daily-intelligence.yml` targets **11:48 IST** and **18:44
+IST**, but does not trust a single cron tick to get there.
 
-GitHub runs `schedule` triggers on a best-effort basis: a newly added schedule
-routinely misses its first tick or two, and runs are dropped entirely under
-load. `workflow_dispatch` is always reliable, so run the workflow by hand from
-the Actions tab if a scheduled run does not appear. The
-evening run **merges into** the day's report rather than overwriting it: the
-run regenerates the report from the union of the day's events, which is far
-safer than editing Markdown. Reports and data are committed only when
-something changed.
+GitHub runs `schedule` on a best-effort basis: it delays ticks under load,
+drops them outright, and routinely ignores a freshly changed cron for its
+first slot or two. In this repository *not one* scheduled run fired in the
+first day, across two configured slots. So each slot is attempted three times,
+half an hour apart:
+
+| Slot | Attempts (IST) | Cron (UTC) |
+| --- | --- | --- |
+| Midday | 11:48 · 12:18 · 12:48 | `18,48 6 * * *`, `18 7 * * *` |
+| Evening | 18:44 · 19:14 · 19:44 | `14,44 13 * * *`, `14 14 * * *` |
+
+A gate makes the first attempt that actually lands do the work; the rest see
+the slot already stamped and exit in about ten seconds. The stamp is written
+only on success, so a failed attempt is retried by the next one instead of
+being swallowed.
+
+Every completed run writes `data/last_run.json`:
+
+```json
+{
+  "stamp": "2026-09-23-midday",
+  "slot": "midday",
+  "event": "schedule",
+  "finished_utc": "2026-09-23T06:19:44Z",
+  "run_url": "https://github.com/.../actions/runs/123456789"
+}
+```
+
+That file exists because a run which finds no news commits nothing, so the
+absence of a commit could mean either "the schedule never fired" or "it fired
+and there was nothing to report". The heartbeat tells those two apart. A
+manual run records itself as `manual-<date>-<slot>` so it stays visible
+without suppressing that day's scheduled slot.
+
+The evening slot **merges into** the day's report rather than overwriting it:
+the run regenerates the report from the union of the day's events, which is
+far safer than editing Markdown. Reports and data are committed only when
+something changed. `workflow_dispatch` is never gated, so running the workflow
+by hand from the Actions tab always works.
 
 `.github/workflows/tests.yml` runs the offline suite on 3.11 and 3.12 and
 fails if `docs/sample-report.md` is out of date.
