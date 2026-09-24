@@ -1,0 +1,157 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0504",
+  "title": "Diesel prices across Australia could surge beyond $3 a litre as Trump eyes cut to US fuel exports",
+  "summary": "Diesel prices across Australia could surge beyond $3 a litre as Trump eyes cut to US fuel exports The Guardian",
+  "event_date": "2026-09-24",
+  "event_types": [
+    "COMMODITY",
+    "EXPORT_RESTRICTION"
+  ],
+  "stocks": {
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.31,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "EXPORTS",
+        "REGULATION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
+        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.31,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "EXPORTS",
+        "REGULATION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Australia",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
+        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to diesel prices, and Australia. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Diesel prices across Australia could surge beyond $3 a litre as Trump eyes cut to US fuel exports",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRUlXZTlEaW1RSnZjMXdBb3k1YXRZTTVwVWs5Y3VMbFN0dHgyNl9OSEJOblNtSTc5UjVKZTRlRU01T3E3clBiV21RMW9vOTdGNjBMeTVaVHlhaTJKQm0zdXBZQkk4UGpxUWZxY3ZYUTBkZ1pWRkN0SEZUbUZlQkZLN1RFR1NXS2dFbDZSWms4Vk1IQmxUZWxZQXJRRVhwS2JoN2tSMTRzN0JDZVNfTUNiaU9aZ3pjY3YxVFV3aHRoYmk3MDVoU3V5NFRnaTBjaEFxSDRZT2FsdFRhbjRJNkVoUzV4VEE2UQ",
+      "source_name": "The Guardian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T06:55:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "European diesel prices surge on US export ban concerns",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTXBxWTRvOGlnakh2Qi1tbTU0THVLNi03eW12WEllQXZ0R2dxcnlhYlMzc2RPZGc2OWhNRGVPQ241NXlkS05XMmtyYUw1ZTM2cjJKZWxtOFMtZFQyUVhzS01TNV8xUGtZZXVfTzNaNjF4RE1qdW5aMm1QcVJSYnc2Y2tKUW1XTzBQRWc",
+      "source_name": "Crypto Briefing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T11:40:50+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "The Guardian",
+  "cluster_key": "COALINDIA+JKIPL|COMMODITY+EXPORT_RESTRICTION|across-australia-could-diesel-price-rise",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-24T12:02:44.530648+00:00",
+  "last_updated": "2026-09-24T12:02:44.530724+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-24T12:02:44.530719+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

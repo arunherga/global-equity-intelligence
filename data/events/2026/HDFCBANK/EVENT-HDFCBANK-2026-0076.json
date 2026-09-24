@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0076",
+  "title": "Sensex, Nifty fall 0.8% as rising crude, US bond yields rattle markets",
+  "summary": "HDFC Life Insurance was the top loser on the Nifty 50, falling 6.28% to ₹526.25 from a previous close of ₹561.50",
+  "event_date": "2026-09-24",
+  "event_types": [
+    "DEBT"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.59,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        },
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life Insurance",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC Life, and HDFC Life Insurance. The parts of the business most likely touched are debt, balance sheet. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Sensex, Nifty fall 0.8% as rising crude, US bond yields rattle markets",
+      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty-slide-over-08-as-rising-crude-us-bond-yields-rattle-markets-financials-lead-losses/article71502720.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T04:55:36+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "HDFCBANK|DEBT|0.8%-crude-fall-nifty-rising-sensex",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-24T12:02:44.040598+00:00",
+  "last_updated": "2026-09-24T12:02:44.040658+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-24T12:02:44.040653+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

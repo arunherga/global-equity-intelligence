@@ -52,28 +52,20 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.51,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST",
-        "COMPETITION"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Federal Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -81,8 +73,8 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -90,7 +82,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are pricing, input cost, competition. Classified as commodity.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -104,21 +96,41 @@
       "published": "2026-09-18T05:52:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Share Price Falls Over 1% In Early Trade: What's Dragging The Stock?",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMU5uelBXX2pBQ0ZnejVGWmdCTy1lX1ZNTmhhZ2Zxb1J0NHNFSXpZMUt6VE0tY3VXdGJhYXI4anRZams2eC14eXFNcnpuTUQwZzR4S0YxUl9sd1RYLXFMZmpGclVoMWJ5YURIWDZ0amhpQmx0eU5sX0RIN19PcWJpci1TTW5FSlJpbE5LSEJJR3J5ZzQ2OGtjUkxFMjNqWkktdzhJYVd2Ri1Halp4OVpLWndJRlpySTdKNUHSAcIBQVVfeXFMT1VPYU9OS0dJRTdMR1N6ZVROM2tnUG5tWG9GUUEzNEJsa2Jkd3Y1YUZPQXJzaXFEWEtudTEzQl9hbXRQQnB5dWhGaGtJV2hqS2VNaGNHZTc5bVl5MndEQ1dFMFZNaU4xWjRJcG1DbHlkeTlVOHMwUWs4WnhQb280SzB2WUdSNXBCT0QyVHdhRXRqLUFUWW03dzBEaWtJdTVicXkxVmxVY0NDWVNObnhRcDRQLWJsTEdrdnFNTjRaejQxSmc",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T04:23:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Univest",
   "cluster_key": "HDFCBANK+TMB|COMMODITY|bank-fall-federal-price-price-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.560046+00:00",
-  "last_updated": "2026-09-22T18:19:39.560076+00:00",
+  "last_updated": "2026-09-24T12:03:12.338983+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.560073+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:12.338962+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:12.338977+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -393,11 +393,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -426,7 +426,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -434,13 +435,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to ICICI Bank, and BSE. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -464,21 +465,41 @@
       "published": "2026-09-20T04:09:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank Share Price Today, ICICI Bank Stock Price Live NSE/BSE Updates",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQX203dWxrZzRtNEZVQVFkRUVXMVdIblBYdzRjQmw5em14S3g4MVlqQkZreTRzdUtfR2oxdEplVnQ3dW1WSWl3bjNPeG5EWVhwU3dBanNmT2RReDRoRWZnRkdOamNfdTdDMUJaYmFreW0tUEduS1NmRjFUX1dyelVSbXd5bw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T07:50:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "TechGraph",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|bank-icici-icicibank-nse/bse-price-share/stock",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.726751+00:00",
-  "last_updated": "2026-09-22T18:19:39.726787+00:00",
+  "last_updated": "2026-09-24T12:03:22.004493+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.726785+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:22.004468+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:22.004487+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

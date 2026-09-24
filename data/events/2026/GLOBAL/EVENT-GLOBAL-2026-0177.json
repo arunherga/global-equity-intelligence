@@ -4,7 +4,9 @@
   "summary": "Chennai gold price falls by Rs 680 on September 22, 2026; check today's gold, silver rate DT Next",
   "event_date": "2026-09-22",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "INDUSTRY_DEMAND",
+    "MACRO"
   ],
   "stocks": {
     "WAAREEENER": {
@@ -53,13 +55,14 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -73,14 +76,14 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
-        "-2 Single unverified source"
+        "+2 Movement in a relevant commodity"
       ],
       "direction_reasons": [
         "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -90,7 +93,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -154,16 +157,36 @@
       "published": "2026-09-23T06:07:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price today: Futures drop to ₹1,51,128/10gm on MCX",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gold-price-today-futures-drop-to-15112810gm-on-mcx/article71503230.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T07:37:04+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold price today, Thursday, September 24, 2026: Gold prices fall as inflation concerns steadily mount",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPZWowZGo0XzdHUVB0emxsY0VOUFBvV0ROUVc0bURydjhPVkM5bk1SazRFLThqU2NvTVZxZ1VfYW4wNzJKWGhpZVBIQVctRE9vcnI2cUFGcDI4cUVUMHZ2bHZVVEpKTGNHN3BhcGI0TGhNVHEtdFhvVV9mdkpzQ3ktSm1vVXNHVW4zRlpZbS1RYmhZWkVFeWYyWEMyUUU1MzJ2VnVLT3dCekJFaXk0UG1US0lnc1VXVVE0MXZwbWNVeEV0enFtNXVtcGgyTFpTbDR4Q28wZ0VraVZaSEhnaWRJSE9PTFJuYzBWbW9STjA3VkNDdng3RktUMGU0WHlxRmVrTlZ3",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T11:06:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-09-23T12:26:09.625322+00:00",
+  "last_updated": "2026-09-24T12:02:48.479521+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -174,6 +197,21 @@
       "timestamp": "2026-09-23T12:26:09.625305+00:00",
       "change": "sources added",
       "detail": "DT Next, INDToday, Kerala Kaumudi"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:48.479499+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:48.479511+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND, MACRO"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:48.479517+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
     }
   ],
   "price_reaction": {}

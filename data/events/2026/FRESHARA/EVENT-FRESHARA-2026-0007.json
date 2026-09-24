@@ -4,21 +4,21 @@
   "summary": "Carrot price falls, other vegetable prices remain stable at Chennai's Koyambedu market on September 19, 2026 DT Next",
   "event_date": "2026-09-19",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "FRESHARA": {
       "ticker": "FRESHARA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,25 +29,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "vegetable prices is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "vegetable prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -71,21 +67,46 @@
       "published": "2026-09-22T05:23:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vegetable prices remain stable at Chennai's Koyambedu market on September 24, 2026",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN0l0c19mbHhTS0Q4ZXc2Ym1WM1pkaURQTEoteHFuX21Ib1BXZXNnTHdNS1djRnpacUJSeDQzTks5bElWeWVHNE0yNmkzYWJhdDNwS0VCRDlYZ3BQczNYUG1jNnpjT3daODRZZXJsWm9QU0tzdjE1bW1reHlNWWtvYV9xTWNpOFktNmFnQjNIYmEzX2JaUFh3T0hSUFNPZTNlNlJKWl94bE8xSmpPUDRvcFJJNkxHd9IBwwFBVV95cUxNWDFELXN3d0NPM0hGTExlTDd6Ymd4VVI4Yjc5ZHFIRDczUnZUSXF3Tjk0RGNvYkVPcEIta1RscTVnQWs0YTV3ZlFreVcwUy13aFFFa1Z5THBWcXdTMEFLM0pvM3hSOTdaSUhnNjRGV1Z5bDFRRjJ4ZFFUb0wzTEdNUmp1SGw4bUNaS2Y5SnhnWXc2c2VhUnJyLVUtU095RmZ0T25BZ29UVmNnd2dxcHd5NGNxWXlucFEyUFI0aHNTS0swV3c",
+      "source_name": "dtnext.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T05:05:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "DT Next",
   "cluster_key": "FRESHARA|COMMODITY|carrot-fall-other-price-price-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.674737+00:00",
-  "last_updated": "2026-09-22T18:19:39.674778+00:00",
+  "last_updated": "2026-09-24T12:03:14.861496+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.674776+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:14.861475+00:00",
+      "change": "sources added",
+      "detail": "dtnext.in"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:14.861486+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:14.861492+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

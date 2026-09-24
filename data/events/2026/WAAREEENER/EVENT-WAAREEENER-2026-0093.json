@@ -4,22 +4,31 @@
   "summary": "Waaree Energies In Focus After Securing 2 GW Solar Module Order; Order Book Exceeds ₹61,500 Cr Trade Brains",
   "event_date": "2026-09-21",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "MERGER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
+      "impact_score": 15,
+      "impact_band": "CRITICAL",
       "direction": "POSITIVE",
-      "confidence": 0.51,
+      "confidence": 0.68,
       "business_impacts": [
+        "BALANCE_SHEET",
         "REVENUE",
         "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Indosolar",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
@@ -31,14 +40,16 @@
       "score_reasons": [
         "+5 Direct company event",
         "+4 Major order or contract",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+4 Acquisition, merger or divestiture",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "ORDER_WIN is favourable for the company",
+        "MERGER cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -48,7 +59,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, revenue, capacity. Classified as merger.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -612,21 +623,56 @@
       "published": "2026-09-21T15:40:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies plans Indosolar merger, secures 2 GW solar module order",
+      "url": "https://www.pv-magazine-india.com/2026/09/24/waaree-energies-plans-indosolar-merger-secures-2-gw-solar-module-order",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-24T05:17:42+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Energies plans Indosolar merger, secures 2 GW solar module order",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUGM3WWVKTHpVdDNadlBFSHpWUFlFWDJVLThISkxzdTQtdndHQ2szNnJLZWlIaHRzaXgzLUF0QUU4OFdxcm01c2F4aGhqQmljWnBWaVRsRHk3VGd6dmJ2SHlXSjJlY3BTcjJoNVhTOEZwUnhxVy1WbmpNUFROSjlQelBQVE9EMFdhVFlTZ3RzOHdQM0I5RjdsRzd6ZkNsdEZXaFI3MXVkWWVIUlNIQ0RaWDVqVlEtdEk",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T08:15:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 16,
-  "source_count": 1,
+  "article_count": 18,
+  "source_count": 2,
   "primary_source": "Whalesbook",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|ORDER_WIN|energies-focus-module-securing-solar-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.868941+00:00",
-  "last_updated": "2026-09-22T18:19:39.869037+00:00",
+  "last_updated": "2026-09-24T12:02:51.070331+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.869035+00:00",
       "change": "created",
       "detail": "16 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:51.070307+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, pv magazine India"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:51.070319+00:00",
+      "change": "categories added",
+      "detail": "MERGER"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:51.070326+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 9 -> 15"
     }
   ],
   "price_reaction": {}

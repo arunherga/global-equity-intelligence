@@ -4,7 +4,9 @@
   "summary": "Recyclers condemn EU plans for waste metal exports Materials Recycling World",
   "event_date": "2026-09-21",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EXPORT_RESTRICTION",
+    "REGULATORY"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -46,6 +48,52 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its supplier exposure to recyclers. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.28,
+      "business_impacts": [
+        "EXPORTS",
+        "REGULATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Trade policy development",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are exports, regulation, customers. Classified as export restriction.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -58,21 +106,101 @@
       "published": "2026-09-21T14:59:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian Recyclers Seek Action Against EU Metal Waste Export Ban",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdXNnbndkU0VrSkc3WkdsRjJjclIwdEllRGpfbE1jbE51S1Zzc1FzZmhSVkFrWVV0eFp0aTNDMzk1Q2FPODNBSEtoS1lTWWJERk9SdURUMVg1a0g5QkNiaXEydW4wRnA1ZldkY1RvY0lCNUYyMDhJY1VEZ2xacjlaT1pkOHh2aVl0S3ZMUzVCNUtRbVRZOVpZRXViZUc0N2VQd0h3",
+      "source_name": "Global Banking & Finance Review",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T14:13:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Recyclers Seek Govt Intervention Over Proposed EU Metal Scrap Export Curbs",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMnRaTUxpY255WjAtTVpjUUNVSGhKLXRudkpRaGtPdUNCd2NJdWtPemtnZUE4TUQ5YV9oRUNOQnVmazA5MC1jVUU0eXZBMnQyMGNBSmo4MUlQU1FNV3NYTTRHY1NqZFN5Z1NPaTI1SmRMUTdOWERYZVBSVnFCdUpwR1F2ZHE4QWhOSFpnbk1QaXZpeWlyVXdVRGw4WkZsckRLTktTYmU3UHdpUzdMWUJRY2VaejRvU1hSTjRqT0kzRTUzSW9iVVhYNg",
+      "source_name": "KNN India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T11:44:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian recyclers seek government intervention on EU waste ban proposal",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOVJGUjMtN1ZzbE9HTVViU3RIbzBDamg3eFo5WFJiaFdSOVFsaTJCZ3poRktsMTNOT0MyMjF2cFV5b29ZNVE1azd0cHNvVjhfcGZ0Mm9ITHYxZkxodG12US1XY3FLQXhuejlyaHIwa0lIaDBabXdQbVcydjdmNi1iUmNHLW1ydWtDNmtoSmRFOTY1d2E4Mk1LQ3I4SnBnOVJpN0M2V3RKUHFiWkVUS3JKNFk1VTBqemV1RnZKZHB4aVN2T19vMGh5dHYyYV9VUTRE0gHWAUFVX3lxTE9JNTc5NXRTSjZ1LXFJbnZ0T205VERGT1B6cEhUbk9fMnhLdTRQTHlVc1VsTG1lVEdzTnNKX0JkZks3UTVPZFJhdFlyN0daRk95Mk1RRUJscnNrUFFyREFyM1laREhxMG5sMFI0S3gyRnBOVHJwMGpIU2EzcE1KeFVPQWhucWpWUVYwQ0ZZTkE1M0MwYjMwdmV5T2FOVk5BODgtcm9BM05MbzdwU1F6Ukxtb19JWDQ3LWx0a1BldDFmR09Ma3Y3cFF2OGFLUE1BSXJ3TmNQM1E",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T02:25:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian recyclers seek government intervention over EU metal waste export ban proposal",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcGRWYmhEQmpTTlVtb0NIcFRQVEkxVjhzOGpGa0EwRkEwZEljWENVRHVxOG5TbTBUN1MxRnI4RTVfYkxjNFVZSFY3amF4V2l5UFB2MEFMc0t6UC16VElfSFpHNlMxN053ZFNlc2RTQ0hJdno1Q3Z3bXNzaWExbkU1eDhNYTdyMGQ1dnR5S2NlcE1zbWdpNU1nNHJB",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T14:10:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian recyclers seek govt intervention over EU metal waste ban proposal",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWVJjOUl1dldFM3ZaUjAzUWsxa05qeDZ1T1NwZDUzalNzMTdlUjZkMDVmX2dOU0N2SEZGR2JFd0JNNlhweUdOeGJYdDNIUWxhRWs2TkhuYVNpRXlWUVZYUlo1encyVnFLT3RsZlZuYUZ5OXpfeDRmdWcwREJBdVEwMnRfVVgtdmQxSDQ5Qlh6LThORjlXVy1GWk9Bc1g3SFpXMm5XN0xzSlVzdFE1VktkYmVCaWItT0tHQ3RNaWI1akZhWkpuZDEzVUw2Z0dJOHhoZVZrQm85VdIB3AFBVV95cUxPWEFfX3VoQ0tROVBpUnFBRlpuRHpNc0hWU01YRklBZjNtTFlHQUFvUXB1Tk94a2lTdklKMmZXeXNKejBjbVVVelJ0ODlka1BiekVyZHNiTTBma0hxT1I0OUgyMnNDMnFnSnFXOTJiSC12N3JwWnRJUjdYQjFJWkRtYzRxUXNwYWFHTnFDc3VqeUZLYzNmY0I5ZGZpbGM1X09fSEU2ejhYdGs5NzB0VFZSN09jWkZZWFhUYjRwTVltT1ppc0M5UGE1ZkY3QmdBdDNRQ19GSDhiN1hld3Bm",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T03:30:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "EU Metal Waste Ban Threatens Indian Recyclers As Industry Seeks Government Action",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLXJBb24ydGI0VlpHdnFyWWJDNk1Pa3llRVBxRTk0V0NMbUNxSTl1M0NmaGttaWMwWTdpQkcyRzhLb0hCbW14QkpZMkJtUkJ6ckxfbHNYNnpLNU1vTEFmQnZ0RHlaVnZZN2pYUFZLY2xvVHhNV1RnclJ4NHlEeXUtc1JsYkF1eXFxZ0pNWlhSckwxUzZwZENYRE95aVlwTGlscmhtdEtEZk5zOFhHOXFaVGNMeE5vSkRiU0g3RmxnX2hjVmh6LVI2N2xLX09SMVdhUlE5anpaSmZ0SGlRVGc",
+      "source_name": "Siliconindia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T06:48:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Materials Recycling World",
   "cluster_key": "MSTCLTD|OTHER|condemn-europe-metal-plans-recyclers-waste",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.873174+00:00",
-  "last_updated": "2026-09-22T18:19:39.873205+00:00",
+  "last_updated": "2026-09-24T12:03:19.326125+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.873202+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:58.806589+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Global Banking & Finance Review, KNN India, The Economic Times"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:58.806605+00:00",
+      "change": "categories added",
+      "detail": "EXPORT_RESTRICTION, REGULATORY"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:58.806616+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:19.326114+00:00",
+      "change": "sources added",
+      "detail": "Siliconindia"
     }
   ],
   "price_reaction": {}

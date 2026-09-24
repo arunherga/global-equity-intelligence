@@ -10,16 +10,15 @@
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -32,39 +31,34 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, revenue. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -77,25 +71,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, revenue. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -109,21 +99,56 @@
       "published": "2026-09-23T05:29:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee Falls 23 Paise to 95.96 as Crude Oil Surges",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMGktWFlicktvZjlaWjJ1UTNCSlZCQ2xVT21GUzRVejMtVXd3eEJ4UGZBZGdIbEJ4UEtzYUNCOXNMZ0xtT2hUR2JVbi1GR0xQMy1UVThDb3pET2pNTlcyOWxhNXFNcHNqdXpHOHFaY1dpMTNmMzJYSlJYOFNYSUJVRHZYdjdpMHNubk1maGgzYXRlRWhEOTFkT0FZN3VFQW8",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T11:23:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stock market crash: Sensex falls over 630 points, Nifty slips as crude oil surges above $100; rupee also falls",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNjllRTk5NW9XdG1oVkhqUmJWNXBwbGRNelVkSURvYWg5X0RabEVUMDktWHQ5ZVdrcVVQMkRERGNOMGNmZG5IYjBXSk96RFVhdHN2Z2RlWlNMc2hsT1hBQU5qcjNIakJjNlBQeDVDamROS0NxSUVEU1R5SndSREE2SWZlYlFJblludnJZVEVmN2xid0xjVTNnd1dnWjNQblZnZEFZUWg4eTlqX2VjSnNsbA",
+      "source_name": "PTC News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T07:10:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "HDFC Sky",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|95.57-crude-oil-paise-rise-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.675363+00:00",
-  "last_updated": "2026-09-23T12:25:52.675421+00:00",
+  "last_updated": "2026-09-24T12:03:20.523204+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.675416+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:20.523181+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky, PTC News"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:20.523194+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:20.523200+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

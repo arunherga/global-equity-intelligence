@@ -57,31 +57,30 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 10,
+      "impact_score": 8,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.6,
+      "direction": "NEGATIVE",
+      "confidence": 0.71,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
         "two independent sources",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -89,7 +88,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -223,21 +222,61 @@
       "published": "2026-09-22T17:36:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares down 26% YTD; Q2 results due Oct 17",
+      "url": "https://www.thehindubusinessline.com/markets/hdfc-bank-shares-in-focus-stock-down-over-26-ytd-q2-results-due-october-17/article71503125.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T07:14:40+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares in focus: Stock down 26% YTD, Q2 results due Oct 17",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaTJaQWY1ZjR0MWMxbVJaRndJT0JGSFd4Q3N5MGdRekZXZHJtNjg0S04tMFo0UXY3b2gzdFk3MTlXa05FQm9jNjhCQ2I0dE9GRVVMd2ZWeFFMR21TRkJhZ21VekVjLVNHYzQ4WmxtN3g2SVk0SzJiYTB5MERwLXVXWEpvV25GaFdCeTVhNmwyYm9jSkxtWXFqSUtNdjdEbTVnUzhSUlI5aEpvcE93WkNXSjMzWTVGcWZralJVbk9tQWNUY21QZTRHa01VUjRnWDJlWXpGdFRn0gHcAUFVX3lxTE42OFZiVEMwNVVvRHhKRDltTkxPc29NaDJidkItX2tXb0VHWEhqOUhUelBXbHR1enkwWTB0MXNiQUQxZV9rVy10cjBJRWYzaUloaWZYSE04cGE3MkpyaVREcWNzaDhyNHJNUERSYVgxWHJ5RGpoU3pVZG9VWnQ1SG1zdXVWTW1TVFF1MXIwbXZZbjJ5NGpLSXhLbVZoSGdFVW4zOXdILWN5WDlJcDJZX2lHVmxYVlBralJKaFRwYTJ0YlpLY1JtbEhXd2gyTlk2bEsyaGVwdVZ4ZkNXQW8",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T07:07:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares in focus: Stock down over 26% YTD, Q2 results due October 17",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONXVXbnVPVW51X3FXQ1I5aEZ5aVZ4Z2t3OXlEOEpwNngtQWEtN21ublhoS2hndV9rX01xdTBXcjFzR0ZZdVNwWFpsMEZxNUxCWDU2RDlQUmwzSGl2SFB1allwWnNIWUpPaVZ5Q0FwdXJPbkgtUm55WnZNM1k3OVFIcnUzUzE2UzVSNW5lVVp5RUFQeGgwVmt1eWFSRnlJWkE0RncxcGMzNXhnYXliTHhtMWVvYnB3ZGRrR3JqeHR1UFBaX09tbkJGSnEzaw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T08:27:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 13,
+  "article_count": 16,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-09-22T18:19:39.452568+00:00",
+  "last_updated": "2026-09-24T12:02:48.413024+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
       "change": "created",
       "detail": "13 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:48.413002+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets, TradingView"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:48.413019+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-0229",
+  "title": "Gold, silver prices slide up to 2 pc as US Fed keeps rates unchanged",
+  "summary": "Gold, silver prices slide up to 2 pc as US Fed keeps rates unchanged DD News",
+  "event_date": "2026-09-24",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold, silver prices slide up to 2 pc as US Fed keeps rates unchanged",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYkZvZ0xvUmNWQ3loeG5hYnl0UlAxQk1WOWotV2VSZl9yb2dZc0hldnJDbmNZc3d1M0lHanJoUFBzZEpQM2JJM3lpOW1KOU0xUEV4NHBaQUduSkRWdmVKRWtYMjN2ZUswalFsQUkzN0pGcldjM0VUalJ2aVB6YW1YdkJJOVhsMW05VGpnaHpGeTFUZWw4TmlZZg",
+      "source_name": "DD News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T06:16:45+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "DD News",
+  "cluster_key": "WAAREEENER|OTHER|fed-gold-price-silver-slide-usa",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-24T12:02:44.510414+00:00",
+  "last_updated": "2026-09-24T12:02:44.510477+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-24T12:02:44.510472+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

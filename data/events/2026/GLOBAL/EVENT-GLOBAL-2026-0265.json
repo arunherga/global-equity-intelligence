@@ -4,7 +4,9 @@
   "summary": "Sensex, Nifty, Stock Price Highlights: Indian equity markets closed higher on Wednesday, with the Nifty 50 gaining 117.80 points, or 0.50%, to close at 23,446.80, while the BSE Sensex rose 299.17 points, or 0.40%, to close at 74,828.25, as signs of stronger domestic growth momentum and softer crude prices supported investor sentiment.",
   "event_date": "2026-09-23",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "DEBT",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -138,36 +140,41 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.55,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
       "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "SUPPLY",
+        "GEOGRAPHY",
         "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "input commodity"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up",
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -176,7 +183,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -310,36 +317,41 @@
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.55,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
       "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "SUPPLY",
+        "GEOGRAPHY",
         "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "input commodity"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up",
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -348,7 +360,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -405,21 +417,51 @@
       "published": "2026-09-23T10:49:05+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Sensex today | Stock Market Highlights: Dalal Street hit by crude fire, US yield surge, Nifty closes 1.64% lower at 23,063, Sensex lost 1,247 points",
+      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-24-september-2026/article71499498.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T10:41:00+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|COMMODITY|highlights-market-nifty-sensex-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.333637+00:00",
-  "last_updated": "2026-09-23T12:25:52.333719+00:00",
+  "last_updated": "2026-09-24T12:02:50.172460+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.333713+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:50.172430+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:50.172444+00:00",
+      "change": "categories added",
+      "detail": "DEBT, GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:50.172450+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:50.172456+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 5"
     }
   ],
   "price_reaction": {}

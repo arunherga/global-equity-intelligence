@@ -9,24 +9,14 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.58,
-      "business_impacts": [
-        "COMPETITION",
-        "EXPORTS"
-      ],
+      "relationship": "SECTOR",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "First Solar",
-          "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
@@ -35,38 +25,30 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "PV modules",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
-        },
-        {
           "exposure_type": "GEOGRAPHY",
-          "term": "United States",
+          "term": "India",
           "relationship": "WEAK",
-          "weight": 0.8,
-          "detail": "export market"
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "+2 International market development",
-        "+2 Names a key geography for this company"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "First Solar's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to First Solar, and solar modules. The parts of the business most likely touched are competition, exports. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar modules, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -109,7 +91,7 @@
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.859345+00:00",
-  "last_updated": "2026-09-23T12:25:57.535500+00:00",
+  "last_updated": "2026-09-24T12:02:59.847819+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.859373+00:00",
@@ -125,6 +107,11 @@
       "timestamp": "2026-09-23T12:25:57.535495+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 6"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:59.847790+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

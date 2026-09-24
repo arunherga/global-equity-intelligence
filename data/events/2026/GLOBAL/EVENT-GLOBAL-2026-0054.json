@@ -52,31 +52,25 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.51,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "exposure_type": "SUBSIDIARY",
+          "term": "Indosolar",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -84,13 +78,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "FRESHARA": {
@@ -446,21 +440,56 @@
       "published": "2026-09-18T07:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Suzlon Share Price Today: NSE Price, History, Trends, & Key Factors",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNzQ5VDQwT1hqbWVtMFVxTWVDN1ZMYVA2dVFuZmstcDJrZUM0bk9iUUo4dTVzY2hfRWxvZjlEblJRd05vVEpZNmgxM2RYNkVnal8wTXZEb19lVExGTzI0N2FWRDBkNFN5OUV3d092bThtSDhFZktYYXB3SGhTOHJRUGR3OVBGTG5BV1ExcVA1djlORVlnS01yWFVzSG53YWVmZkxF0gGwAUFVX3lxTE5RVlhjdElWZTg2cEpXdU1ncFo5REx5Q1lTWFlEci16ZG9uNC1HZ2NXYWpKRHNwVkk2MTZhVTVvRkg2bGI1dnplNGVOY2lfNElIRzh6YUNsWUx3NUJLMWxNdlFmVS1iVHI0LTRUdDVCbTBHZWtwOHVwUnhVRzVQVnF6RWpueTZ6MFpPMm5iLS1DUHlpSk9MNXhPYkJKWjhaNTNoblI4ODk0RnVGVDQxbnlz",
+      "source_name": "Analytics Insight",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T12:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "INDOSOLAR Share Price Today Down 5%",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPaDdYZC1qTWhPMEIwOHFDdk5FMDZ4b1RaTUpyWFhtXzBRM0tUU0QyS09zMDNMR0FSWWI1NDV2dHN5MXdzWFdlX2ltcWZ1clVLQU1LcEtKRjVFVjhOQlRuaHVwQ0lVWDl0YVd6M3ZiQkZwNWNWN0g5Y1d5cy1xN3JwcEdvYkdoSXFfMnBaeXlxUmE1TjRWeHFPa2VveElpQXE2aklUdGtLWk1CdVZXNzdSX3ZZMEYtQU5hVm1Bc3pBeUpTWmZWQURwbWM4WWxaMjhoVjZ1bDk1NXdoT29LYW5iY0VxQnZGUjlHakx2a0JrRFZGYVB3U2U1OUJYMGdNRWNDcnZkdXhPMjFMWUdQS216Qk9INmh6YWdybmdfUQ",
+      "source_name": "Equitymaster",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T06:44:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|price-recode-recode-share-studios-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.573565+00:00",
-  "last_updated": "2026-09-22T18:19:39.573606+00:00",
+  "last_updated": "2026-09-24T12:03:19.091117+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.573604+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:53.392207+00:00",
+      "change": "sources added",
+      "detail": "Analytics Insight"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:19.091100+00:00",
+      "change": "sources added",
+      "detail": "Equitymaster"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:19.091112+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
     }
   ],
   "price_reaction": {}

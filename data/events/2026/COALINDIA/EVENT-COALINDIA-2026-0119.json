@@ -15,14 +15,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "direction": "MIXED",
+      "confidence": 0.3,
       "business_impacts": [
-        "DEMAND",
-        "REVENUE",
         "DEBT",
         "BALANCE_SHEET",
-        "MARGIN"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -50,26 +49,23 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
         "rationale in the rating note",
-        "covenant implications"
+        "covenant implications",
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and India GDP growth. The parts of the business most likely touched are demand, revenue, debt. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and India GDP growth. The parts of the business most likely touched are debt, balance sheet, margin. Classified as credit rating.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -77,14 +73,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "direction": "MIXED",
+      "confidence": 0.3,
       "business_impacts": [
-        "DEMAND",
-        "REVENUE",
         "DEBT",
         "BALANCE_SHEET",
-        "MARGIN"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -105,26 +100,23 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
         "rationale in the rating note",
-        "covenant implications"
+        "covenant implications",
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are demand, revenue, debt. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are debt, balance sheet, margin. Classified as credit rating.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -383,16 +375,26 @@
       "published": "2026-09-23T05:51:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "S&P, Fitch, Others Raise FY'27 India GDP Growth Projections; See RBI Rate Hike On Inflation Fears",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVmZfVER0a1R1V3gyWHNiSjlULXlKZldhZzhQOUF5UjI4Vl9SaVRxZjVFTFBzNlRyeFBEcUtzakRCZDRzWmliUGpPUWJZeWY2MzlTVDVma0pibVg1MVd2S2xnREZENDFEcFlWMVl2RU5xbFBEVWFQaFZFUHNPc0RrcVMxS3JvN0hHRlN6alplNnhXYjRHN3hMbnFhY3dUQUw3eEFvNEpIUktXSWVsbk5oclBzMG4tZE5TMFE4RWZ4Nm9jdy1RTXZIU2c4cFVURFRtd0Fv0gHbAUFVX3lxTE4xTXRYYV9UN0lUUTVaUTlLMGNWUEdSNnIyRGYySWVOZmVoVk45U3JhdDlFLWZ2TENYTVNzVEZ0THhBTGlwczY0MW02YWd3UmljcU1lODl5a0gwcGdXcXFUbUt2YVQyTFhVNWk2RVI0azRHZk80cm1rWXBrdUlRRmQzSHpWVFZkSlVYMUhnX2F0RkNLZ0hBVl9DX1Z5S29ZLWNuZHQyU3lhMnpONFNBZ3FsYWJrRkh2aHBkbXpyYU0xRG5iVXR3ZENha0Z0R2ZQTXVFdTBrNElZVGRiVQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-23T12:40:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 20,
+  "article_count": 21,
   "source_count": 1,
   "primary_source": "NiftyTrader",
   "cluster_key": "COALINDIA+HDFCBANK+TMB|CREDIT_RATING+INTEREST_RATE|fitch-fy27-gdp-india-raise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.610637+00:00",
-  "last_updated": "2026-09-23T12:26:07.773679+00:00",
+  "last_updated": "2026-09-24T12:02:53.834872+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.610754+00:00",
@@ -418,6 +420,21 @@
       "timestamp": "2026-09-23T12:26:07.773675+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:53.834845+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:53.834861+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:53.834868+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

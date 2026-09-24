@@ -13,12 +13,11 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "CASH_FLOW",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
@@ -38,12 +37,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -51,7 +50,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -59,12 +58,11 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "CASH_FLOW",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
@@ -84,12 +82,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -97,7 +95,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -111,21 +109,46 @@
       "published": "2026-09-22T14:26:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank stock slips 0.7 percent before Q2 results",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN1VDaTJTUW1ZaGcxc0JYRm9EZ25HeHJ3a3FIcTFMaXhTbVB2VXU4ZExtTVJCYzNsbEZmLWc4anpXclN2Z0YwTVJGcVdPVFFnU0pISE1tQ3FleHVIaEZaMjZvQzhBZWRVWnNuQ18zb0dGWVVFVTZRTDNtRlN6YUUzRGItSV9zaWJtVFlhNnVySTlPYUpPTHFyVHlrbEEzUy04WUxKWUpWV0dWc2dUY3g1MQ",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T06:04:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "HDFCBANK+TMB|DIVIDEND+EARNINGS|bank-date-dividend-icici-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.043319+00:00",
-  "last_updated": "2026-09-22T18:19:40.043357+00:00",
+  "last_updated": "2026-09-24T12:03:17.646124+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.043354+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:17.646101+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:17.646114+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:17.646120+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

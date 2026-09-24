@@ -54,52 +54,39 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "bank liquidity",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to bank liquidity, and deposits. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -142,7 +129,7 @@
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.861539+00:00",
-  "last_updated": "2026-09-22T18:19:51.832210+00:00",
+  "last_updated": "2026-09-24T12:03:08.163935+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.861566+00:00",
@@ -163,6 +150,11 @@
       "timestamp": "2026-09-22T18:19:51.832197+00:00",
       "change": "sources added",
       "detail": "myind.net"
+    },
+    {
+      "timestamp": "2026-09-24T12:03:08.163924+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

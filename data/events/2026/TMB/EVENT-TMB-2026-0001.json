@@ -4,20 +4,22 @@
   "summary": "22, 24 carat Gold prices down across metro cities on September 21",
   "event_date": "2026-09-21",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.5,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -35,7 +37,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity"
       ],
       "direction_reasons": [
         "gold prices is handled rather than bought or sold; volume matters more than price"
@@ -47,9 +50,55 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.54,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -213,16 +262,86 @@
       "published": "2026-09-23T05:07:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India September 24: Gold prices down in Delhi, Mumbai, Kolkata, Chennai, Bengaluru",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-september-24-2026/article71503312.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T08:24:59+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Chennai gold price falls by Rs 1080 on September 24, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORW5HT1VTVC1SVUdJZVQtTVY5a3BDYl9WUmtqdlZscFdpTmlUUDBDVVVfRFM4Vk9MbERMMzctWWMzWVJGQnRYYnl2a0prbF9mc2lVLVJrenQwT3M5N1kzN1NkdWVlQkRNMXRuXzZjX2dnaG02c0loUGFjd0ZhaF9CNVhMSVgxRW5aQWJ5UWFJd1BNTVBJTGpEVm9oQXNrcGpMWmIxNnp3dFE0eXZibWptelRhT3NOMC13dkQ0cG1R0gHLAUFVX3lxTE1sTkgyMzRrSUphUDRxMVBCV1pTZWdPaVNvc0V6T1FfRV82NGdTdkFkQ3hMbUF6U1c2bWtYT1JtZWw3MjBrU0Fab3BscElZbWI5RDBtY0xvdkE0Y1lqNlcyNGVqR2NsY3huSkhEWmEwdkV6dGI0LUwtcTd6WWhpbjVKS3JUTGVJQVlidHUzT2VEcTEzYy1kN2VvY09tQjY4cER0TXZLQ3IxZFZfUFBrSFBMQzhHUjRLVkRjeDVHN3I4YWc0OFNUQi13Mndv",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T04:38:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today September 24: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPaENSNm43Y0szaGhWaDRXa3BOSUI0SzAtZHVOcmYtc2t1aTdsWGh3d3hobzY2cURTM2pKRzlsN1VsRW9BOXVFMG9PR3NuQXNxc04tMkIwYkxiWmlCVG8weVlhd3ppd0YtWkhOeWR6X05IVXZWd0lmNHA3MkRLVG51TEJvcG81cnFzU1Q5NXZrTUZydVhyN3oxM2szVnBGSDdJWGZmSGtuRWV4QVFsSWdoeXlXQ2RoYkJzTUg5Qlo5MVNvRVV1Ykl5RnRFVnpyVjVZN3Q2dUxZdUtyejBXSHJEZzVVbGgza2N1V2FvVzI2SnpkQm9uWExncm9uSmpTTVZNM2lvdzViZHFWY2d3NjEyZTBvajJIY1nSAZ4CQVVfeXFMUFhNLXZtcTdncXhKM1haVlFuVy1Bd0pUMWF5N0pzSlV0MlZNamJGR3BMQmpqTElKWGZMN1liWE5WUFF4ZGFsYldiU01GYVdROWd4ckNiVTF4amtjX0RSRmV2aUNnY1ZJdFQ2dTdWSkhWb0N0X2dEeDZ3LWNFeU1UWlZMWDVpM3FlX283ZGI3SEFxSHloWUVIUWdhN2cwMlFYbFBVWTJCeGd2LVVSQTJJelFZTWh0UFNCdXB4ZURnMHAyN1poRUE2VDEwSnpQa2hpdUpaZlhGdlNDTVgtTEVCVWVxTVZLQVhvU2dVNXFUbGhMNXlDaWowaHM4VDJIZHEtWGdYdGRkRlNDUnFSMDdtZlg3bldlV2prMTk3YVREUQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T08:01:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today: Check 24K, 22K Gold Prices in Mumbai, Delhi, Chennai, Kolkata, Bengaluru On September 24",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNT0xQb3ZSMzNYNEwyVklZTnhodFJtUE9abVN6NEE0QVdPUHJ3MlpxTnBQYUplYXFheUZ2Wmw0a0c0eVVPNDZBd01FLS1OQjEwTGpKakNaV01GaURjSkVrMERrYjVkcHV1NnlldVFYUVlEUXBpbGF6LUYweHN4Y2ZCUlVQN2xPaVdfc014clVnNUxaUFlFVXJfT1dva2pTcVA1MTNxNHNBSFpYSkpsYzBXOE03R3dwb2o1NUJFbzBVWDBFaUI4cWtqQjhadWY3WXJ2TFZQVy1XemtYcWfSAeMBQVVfeXFMUHk0Q2NXbXg4NHhpbEw4YmFZSUZsd1o1V0hVcDBPcW1sZnVDY2Q0ZW1hcnlvRVdLaUhEdjluY0tnLVVFc1JiWGFzTDV5RUgxZHFIRVZwOXFtV3p6NlhLYm5YT2NNUlFWLUp5MUVhYkM0YnNhTXlwbzNVaXlVcFYwVzR5NTI5YTBDMVZ5Y0V0VHVGcUpMY3pnbktxSjZHNjNadW5kdUI0S3dpMXVMd2tUdm9SR1M4aTN4eTlSTDM1cTdfaERpNEZDMk5tdnU4N0pHX3U4ZjhoalF3ZWVXd0g4MmhjU2M",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T03:33:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in India: Rates on September 24",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWW1FbVRXZHlVcThfU1hZMmJ4SnNYSWVPZkF4dEwwWGJvR2hlWDNjYjN1eldCVmlOQkdwRC12VDdzSXIwUnYtZVRIVWdwOG5BbmwtdGotSDFqdEJlbV9DdDlqVFNKT1ZZUGFNNU1VT0pZZEtxc3JrVHh4UzI0WktzYkNSTlpUNFpNWUFEd3NIWUNNekNWUzlDd2JJRzF3ZG5SWXFxeE1zenQyUQ",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T04:35:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India September 24: Gold prices down in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-september-24-2026/article71503313.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-24T08:26:30+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold Rate Today September 24: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxORXVpSmZCQVhEU3B4VUJ2QnlyWW5hR3hDN3o2ME1lZ1pEdXhTcUVXN3F0eDdiTVZGS0JXLVAxTEpOcGN6ako1dFJVWG42Tlp4RFp6MmtQbE5kY01JbGdBVmkzd0VnTGRMN0YwWXhta3ZpUEpKT3loYjlzOEVUaW1XRE9Sd3plRndDX292OTF0Snd3aEJnT0wxdGd6Z3ZjSndJcHFKR3Vtb2VmbUNidG1Ucmd4RFM0dXduU01LUi10QWlvbTZKNGFTYXdqWGNsQjZoMG9wVHpoSnUyY3EwV3RmUXp5VUxfZUVXTXY5cG9WZXNCdmdxTFQwVExQNFpDMlR6bHhYblJVZXpuTmM1bEMwTndxWWNRVmpMVlctQXUwUXdWYUlm0gGrAkFVX3lxTE5zb05fenAzQkVqVUlVczh6ekx0SDgxMEpxQThUUVdYaFdtSmtXdWY2b0tRNDFiVDJmdjJ5eDB4ZXltVVMzaUw1WnNfNl9LM0Ziam9BVm03cU4yRlByM2FrM0dwZlBLZVkwbkt1c2ZEMm1hN2dUa3RwM1BKSEJYWXdid1BRSENJUnB2OTM1cno0cHo3V0hKUTNlX0kyWV9ycE5DSmViaG80R2tvdFoyVC1ha1Rqcm9TNUJ4a1dZMGlBbmFqTGFqQTVLM0dDOFBLeWRfWHBhYm1lelllV0JDRnFiRTNuMHh0VUU4bV9rRXNXNlJDZFdwN2NMcEtuV0ZrbGwxX09iV183WEN0Ti1NcmhwNHZCVklxSXBJSmhBMGNxcWVpWFhkZ0NvRWMw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T08:01:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 16,
+  "article_count": 23,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-rate-september-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.436103+00:00",
-  "last_updated": "2026-09-23T12:25:56.292921+00:00",
+  "last_updated": "2026-09-24T12:02:49.289784+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.436146+00:00",
@@ -248,6 +367,31 @@
       "timestamp": "2026-09-23T12:25:56.292904+00:00",
       "change": "sources added",
       "detail": "NDTV Profit, The Hindu BusinessLine Markets, The Indian Express"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:49.205579+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, DT Next, FXStreet, NDTV Profit"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:49.205593+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:49.205599+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:49.205606+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-09-24T12:02:49.289772+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
     }
   ],
   "price_reaction": {}
