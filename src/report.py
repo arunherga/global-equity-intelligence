@@ -13,11 +13,12 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 from datetime import date, datetime
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
 from .config import Config
 from .models import (
     BusinessImpact,
+    ExposureType,
     Direction,
     Event,
     EventCategory,
@@ -101,6 +102,10 @@ class ReportBuilder:
         self.max_per_section = int(config.get("report.max_events_per_section", 8))
         self.max_watch = int(config.get("report.max_watch_items", 5))
         self.show_diagnostics = bool(config.get("report.show_diagnostics", True))
+        self.theme_collapse_min = int(config.get("report.theme_collapse_min", 3))
+        # Event ids already printed in full, so later sections can point at
+        # them instead of repeating them.
+        self._detailed: Set[str] = set()
 
     # -- filtering -------------------------------------------------------
     def is_reportable(self, event: Event, impact: StockImpact) -> bool:
@@ -119,6 +124,7 @@ class ReportBuilder:
 
     # -- building --------------------------------------------------------
     def build(self, result: RunResult) -> str:
+        self._detailed = set()
         events = list(result.events)
         pairs = self.reportable_pairs(events)
 
@@ -182,19 +188,38 @@ class ReportBuilder:
             ]
             return lines
 
+        # One block per EVENT. Iterating the (event, stock) pairs printed the
+        # whole ~40-line block once per affected company, so a single RBI
+        # decision appeared twice in full - the loudest repetition in the
+        # report.
+        grouped: Dict[str, List[StockImpact]] = {}
+        order: List[Event] = []
+        for event, impact in urgent:
+            if event.event_id not in grouped:
+                grouped[event.event_id] = []
+                order.append(event)
+            grouped[event.event_id].append(impact)
+
         current_band = ""
-        for event, impact in urgent[: self.max_per_section * 2]:
-            band = impact_band(impact.impact_score)
+        for event in order[: self.max_per_section * 2]:
+            impacts = sorted(grouped[event.event_id], key=lambda i: -i.impact_score)
+            band = impact_band(impacts[0].impact_score)
             if band != current_band:
                 current_band = band
                 lines += [f"### {BAND_HEADER.get(band, band)}", ""]
-            lines.extend(self._event_block(event, impact))
+            lines.extend(self._event_block(event, impacts))
+            self._detailed.add(event.event_id)
         return lines
 
-    def _event_block(self, event: Event, impact: StockImpact) -> List[str]:
+    def _event_block(self, event: Event, impacts: Sequence[StockImpact]) -> List[str]:
+        impact = impacts[0]
         profile = self.watchlist.get(impact.ticker)
+        heading = f"#### {impact.ticker} — {profile.company}"
+        if len(impacts) > 1:
+            others = ", ".join(i.ticker for i in impacts[1:])
+            heading += f"  ·  also affects {others}"
         lines = [
-            f"#### {impact.ticker} — {profile.company}",
+            heading,
             "",
             f"**Impact** {impact.impact_score}/15 &nbsp;&nbsp; "
             f"**Direction** {impact.direction.value} &nbsp;&nbsp; "
@@ -204,6 +229,14 @@ class ReportBuilder:
             f"**Event** — {event.title}",
             "",
         ]
+        if len(impacts) > 1:
+            lines += ["**Also affects**", ""]
+            for other in impacts[1:]:
+                lines.append(
+                    f"- **{other.ticker}** — {other.relationship.value}, "
+                    f"{other.impact_score}/15, {other.direction.value}"
+                )
+            lines.append("")
         if event.summary:
             lines += [f"> {event.summary[:400]}", ""]
 
@@ -396,8 +429,10 @@ class ReportBuilder:
                 if not rows:
                     continue  # only display sections that contain useful events
                 lines += [f"### {heading}", ""]
-                for event, impact in rows[: self.max_per_section]:
-                    lines.append(self._one_liner(event, impact))
+                for event, impact, similar in self.collapse_themes(rows)[
+                    : self.max_per_section
+                ]:
+                    lines.append(self._one_liner(event, impact, similar))
                 lines.append("")
 
             watch = self._watch_items(pairs)
@@ -405,15 +440,67 @@ class ReportBuilder:
                 lines += ["### Things to Watch", "", *[f"- {w}" for w in watch], ""]
         return lines
 
-    def _one_liner(self, event: Event, impact: StockImpact) -> str:
+
+    # -- theme collapsing -------------------------------------------------
+    @staticmethod
+    def theme_key(impact: StockImpact) -> Optional[str]:
+        """The commodity or industry topic an event is really about.
+
+        The live backfill produced twelve separate diesel-price events in one
+        run - US farmers, Ontario farmers, Australia, a refinery crunch, an
+        export ban - all genuinely different articles, all the same story for
+        a reader holding JKIPL. Clustering correctly kept them apart as
+        events; the report is the right place to gather them up.
+        """
+        for wanted in (ExposureType.COMMODITY, ExposureType.INDUSTRY):
+            for exposure in impact.exposures:
+                if exposure.exposure_type is wanted:
+                    return f"{wanted.value}:{exposure.term.lower()}"
+        return None
+
+    def collapse_themes(
+        self, rows: Sequence[Tuple[Event, StockImpact]]
+    ) -> List[Tuple[Event, StockImpact, int]]:
+        """Fold same-topic events into their strongest example plus a count."""
+        groups: Dict[str, List[Tuple[Event, StockImpact]]] = {}
+        order: List[str] = []
+        ungrouped: List[Tuple[Event, StockImpact, int]] = []
+
+        for event, impact in rows:
+            key = self.theme_key(impact)
+            if key is None:
+                ungrouped.append((event, impact, 0))
+                continue
+            if key not in groups:
+                groups[key] = []
+                order.append(key)
+            groups[key].append((event, impact))
+
+        out: List[Tuple[Event, StockImpact, int]] = list(ungrouped)
+        for key in order:
+            members = sorted(groups[key], key=lambda p: -p[1].impact_score)
+            if len(members) >= self.theme_collapse_min:
+                out.append((members[0][0], members[0][1], len(members) - 1))
+            else:
+                out.extend((e, i, 0) for e, i in members)
+
+        out.sort(key=lambda t: (-t[1].impact_score, t[0].event_id))
+        return out
+
+    def _one_liner(self, event: Event, impact: StockImpact, similar: int = 0) -> str:
         symbol = DIRECTION_SYMBOL.get(impact.direction, "?")
         sources = f"{event.article_count} source" + ("s" if event.article_count != 1 else "")
         official = ", official" if event.has_official_source() else ""
+        note = ""
+        if similar:
+            note += f" _+{similar} similar report" + ("s" if similar != 1 else "") + "_"
+        if event.event_id in self._detailed:
+            note += " _↑ detailed above_"
         return (
             f"- **[{impact.impact_score}/15 {symbol}]** {event.title} "
             f"_({impact.relationship.value}, {impact.direction.value}, "
-            f"{int(round(impact.confidence * 100))}% confidence, {sources}{official})_ "
-            f"`{event.event_id}`"
+            f"{int(round(impact.confidence * 100))}% confidence, {sources}{official})_"
+            f"{note} `{event.event_id}`"
         )
 
     def _watch_items(self, pairs: Sequence[Tuple[Event, StockImpact]]) -> List[str]:

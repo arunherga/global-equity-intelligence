@@ -231,6 +231,9 @@ report:
   directory: reports
   max_events_per_section: 8
   max_watch_items: 5
+  # Fold same-topic events (one commodity, one industry theme) into their
+  # strongest example once this many pile up in a single section.
+  theme_collapse_min: 3
   include_weak_section: false
   show_diagnostics: true
 

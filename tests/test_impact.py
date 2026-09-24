@@ -198,3 +198,49 @@ def test_watch_next_is_concrete():
     items = watch_next_items([EventCategory.EXPORT_ORDER], link)
     assert items
     assert all(isinstance(i, str) and i for i in items)
+
+
+# -- routine noise ---------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "headline",
+    [
+        "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF",
+        "Money Market Operations as on September 21, 2026",
+        "Supervisory Data Quality Index for Scheduled Commercial Banks (June 2026)",
+    ],
+)
+def test_scheduled_statistical_releases_are_pushed_down(watchlist, headline):
+    """A regulator feed is high quality, which is why these used to score 8-10."""
+    data = make_input(watchlist, headline, "HDFCBANK", Relationship.INDIRECT,
+                      source_types=[SourceType.REGULATOR])
+    score, reasons = score_impact(data)
+    assert any("statistical release" in r for r in reasons)
+    assert score < 5, f"{headline!r} still scored {score}"
+
+
+@pytest.mark.parametrize(
+    "headline",
+    [
+        "Stock Market Next Week: US-Iran tensions and crude oil to keep Sensex on edge",
+        "Sensex, Nifty snap 4-day rally as IT and PSU banks drag",
+    ],
+)
+def test_market_commentary_is_pushed_down(watchlist, headline):
+    data = make_input(watchlist, headline, "HDFCBANK", Relationship.MACRO)
+    score, reasons = score_impact(data)
+    assert any("Market commentary" in r for r in reasons)
+    assert score < 5
+
+
+def test_real_policy_news_is_not_caught_by_the_noise_filters(watchlist):
+    """The filters must not swallow an actual rate decision."""
+    from src.classify import classify_article
+    from src.models import Article
+
+    result = classify_article(
+        Article(title="RBI cuts repo rate by 25 bps in monetary policy review",
+                url="https://x.test/1"))
+    assert not result.routine_release
+    assert not result.market_chatter

@@ -211,6 +211,32 @@ OPINION_MARKERS = (
     "technical view", "chart of the day", "market outlook today",
 )
 
+# Scheduled statistical publications. A regulator feed is high quality, which
+# is exactly why these score well on source alone - but "Money Market
+# Operations as on 21 September" is a data release, not a development. The
+# live backfill had seven of these clearing the reporting threshold, two of
+# them at 8 and 10 out of 15.
+ROUTINE_RELEASE_MARKERS = (
+    "money market operations", "variable rate reverse repo", "vrrr auction",
+    "auction under laf", "under laf on", "data quality index",
+    "forex inflows via", "weekly statistical supplement",
+    "scheduled banks' statement", "reserve money", "lending and deposit rates",
+    "sectoral deployment of bank credit", "daily liquidity operations",
+    "result of the auction", "auction result", "treasury bill auction",
+    "monthly bulletin", "statistical tables", "provisional figures",
+    "list of", "index numbers",
+)
+
+# Market commentary: what the index did, or might do next week. None of it is
+# news about a company.
+MARKET_CHATTER_MARKERS = (
+    "stock market this week", "stock market next week", "week ahead",
+    "markets this week", "market outlook today", "closing bell", "market wrap",
+    "sensex", "nifty", "top gainers", "top losers", "stocks to watch",
+    "buzzing stocks", "trade setup", "technical view", "f&o cues",
+    "gainers and losers", "market live", "opening bell", "share price target",
+)
+
 OFFICIAL_MARKERS = (
     "announces", "announcement", "intimation", "disclosure", "board meeting",
     "outcome of board meeting", "press release", "regulation 30", "filing",
@@ -226,6 +252,8 @@ class Classification:
     speculative: bool = False
     opinion: bool = False
     official_language: bool = False
+    routine_release: bool = False
+    market_chatter: bool = False
 
     @property
     def primary(self) -> EventCategory:
@@ -287,6 +315,8 @@ class RuleClassifier:
             speculative=contains_any(headline, SPECULATIVE_MARKERS),
             opinion=contains_any(headline, OPINION_MARKERS),
             official_language=article.is_official or contains_any(text, OFFICIAL_MARKERS),
+            routine_release=contains_any(headline, ROUTINE_RELEASE_MARKERS),
+            market_chatter=contains_any(headline, MARKET_CHATTER_MARKERS),
         )
 
 

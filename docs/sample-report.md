@@ -329,95 +329,16 @@ This is news about the company itself. The parts of the business most likely tou
 
 ---
 
-#### FRESHARA — Freshara Agro Exports Limited
+#### FRESHARA — Freshara Agro Exports Limited  ·  also affects JKIPL, SUPRIYA
 
 **Impact** 10/15 &nbsp;&nbsp; **Direction** NEGATIVE &nbsp;&nbsp; **Confidence** 56% &nbsp;&nbsp; **Relationship** INDIRECT_STRONG
 
 **Event** — Container freight rates jump 18% on Red Sea disruption
 
-**Why it matters**
+**Also affects**
 
-This reaches the company through a close, specific exposure via its commodity exposure to container freight rates. The parts of the business most likely touched are supply, input cost, geography. Classified as supply chain.
-
-**Could affect**
-
-- Supply
-- Input Cost
-- Geography
-- Pricing
-
-**Time horizon** Short Term
-
-**Score reasons**
-
-- +3 Close, specific exposure to this company
-- +4 Severe supply-chain or raw-material disruption
-- +3 Price shock in a commodity this company is exposed to
-- +1 The commodity (container freight rates) is the subject of the headline
-- -1 Single source, unconfirmed
-
-**Watch next**
-
-- duration of the disruption
-- alternate sourcing
-- inventory cover
-- cost pass-through
-
-**Sources**
-
-- [Commodity Watch (fabricated)](https://commoditywatch.example/story/16-container-freight-rates-jump-18-on-red-sea-disruption)
-
-`EVENT-GLOBAL-2026-0003`
-
----
-
-#### JKIPL — Jinkushal Industries Limited
-
-**Impact** 10/15 &nbsp;&nbsp; **Direction** NEGATIVE &nbsp;&nbsp; **Confidence** 56% &nbsp;&nbsp; **Relationship** INDIRECT_STRONG
-
-**Event** — Container freight rates jump 18% on Red Sea disruption
-
-**Why it matters**
-
-This reaches the company through a close, specific exposure via its commodity exposure to container freight rates. The parts of the business most likely touched are supply, input cost, geography. Classified as supply chain.
-
-**Could affect**
-
-- Supply
-- Input Cost
-- Geography
-- Pricing
-
-**Time horizon** Short Term
-
-**Score reasons**
-
-- +3 Close, specific exposure to this company
-- +4 Severe supply-chain or raw-material disruption
-- +3 Price shock in a commodity this company is exposed to
-- +1 The commodity (container freight rates) is the subject of the headline
-- -1 Single source, unconfirmed
-
-**Watch next**
-
-- duration of the disruption
-- alternate sourcing
-- inventory cover
-- cost pass-through
-
-**Sources**
-
-- [Commodity Watch (fabricated)](https://commoditywatch.example/story/16-container-freight-rates-jump-18-on-red-sea-disruption)
-
-`EVENT-GLOBAL-2026-0003`
-
----
-
-#### SUPRIYA — Supriya Lifescience Limited
-
-**Impact** 10/15 &nbsp;&nbsp; **Direction** NEGATIVE &nbsp;&nbsp; **Confidence** 56% &nbsp;&nbsp; **Relationship** INDIRECT_STRONG
-
-**Event** — Container freight rates jump 18% on Red Sea disruption
+- **JKIPL** — INDIRECT_STRONG, 10/15, NEGATIVE
+- **SUPRIYA** — INDIRECT_STRONG, 10/15, NEGATIVE
 
 **Why it matters**
 
@@ -692,6 +613,48 @@ This reaches the company through a close, specific exposure via its regulation e
 
 ---
 
+#### WAAREEENER — Waaree Energies Limited
+
+**Impact** 8/15 &nbsp;&nbsp; **Direction** POSITIVE &nbsp;&nbsp; **Confidence** 56% &nbsp;&nbsp; **Relationship** INDIRECT_STRONG
+
+**Event** — China solar module prices fall 20% as polysilicon glut deepens
+
+> Average module prices in China dropped sharply this month amid oversupply of polysilicon.
+
+**Why it matters**
+
+This reaches the company through a close, specific exposure via its commodity exposure to polysilicon, and solar module prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.
+
+**Could affect**
+
+- Pricing
+- Input Cost
+
+**Time horizon** Short Term
+
+**Score reasons**
+
+- +3 Close, specific exposure to this company
+- +3 Price shock in a commodity this company is exposed to
+- +1 The commodity (polysilicon) is the subject of the headline
+- +2 International market development
+- -1 Single source, unconfirmed
+
+**Watch next**
+
+- whether the price move persists
+- contract repricing lag
+- inventory position
+- hedging disclosure
+
+**Sources**
+
+- [PV Trade Review (fabricated)](https://pvtrade.example/story/4-china-solar-module-prices-fall-20-as-polysilicon-glut-deepen)
+
+`EVENT-WAAREEENER-2026-0005`
+
+---
+
 ## Watchlist dashboard
 
 Event counts, not a ranking. This is not a buy or sell list.
@@ -755,11 +718,11 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[10/15 +]** MSTC wins e-auction mandate for coal block auctions worth Rs 12,000 crore _(DIRECT, POSITIVE, 69% confidence, 1 source)_ `EVENT-MSTCLTD-2026-0002`
+- **[10/15 +]** MSTC wins e-auction mandate for coal block auctions worth Rs 12,000 crore _(DIRECT, POSITIVE, 69% confidence, 1 source)_ _↑ detailed above_ `EVENT-MSTCLTD-2026-0002`
 
 ### Supplier / Customer Events
 
-- **[7/15 ?]** Coal India raises FY27 production guidance to 900 million tonnes _(INDIRECT_STRONG, UNCERTAIN, 63% confidence, 1 source)_ `EVENT-COALINDIA-2026-0003`
+- **[7/15 ?]** Coal India raises FY27 production guidance to 900 million tonnes _(INDIRECT_STRONG, UNCERTAIN, 63% confidence, 1 source)_ _↑ detailed above_ `EVENT-COALINDIA-2026-0003`
 
 ### Government / Regulatory Events
 
@@ -777,7 +740,7 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[15/15 +]** Waaree Energies Limited: Intimation of receipt of export order for 1.2 GW of solar modules _(DIRECT, POSITIVE, 95% confidence, 4 sources, official)_ `EVENT-WAAREEENER-2026-0002`
+- **[15/15 +]** Waaree Energies Limited: Intimation of receipt of export order for 1.2 GW of solar modules _(DIRECT, POSITIVE, 95% confidence, 4 sources, official)_ _↑ detailed above_ `EVENT-WAAREEENER-2026-0002`
 
 ### Industry Events
 
@@ -785,15 +748,15 @@ One development, several holdings. Stored as one event.
 
 ### Competitor Events
 
-- **[11/15 -]** Premier Energies wins 2 GW module supply contract in the United States _(INDIRECT_STRONG, NEGATIVE, 63% confidence, 1 source)_ `EVENT-WAAREEENER-2026-0003`
+- **[11/15 -]** Premier Energies wins 2 GW module supply contract in the United States _(INDIRECT_STRONG, NEGATIVE, 63% confidence, 1 source)_ _↑ detailed above_ `EVENT-WAAREEENER-2026-0003`
 
 ### International Events
 
-- **[8/15 +]** China solar module prices fall 20% as polysilicon glut deepens _(INDIRECT_STRONG, POSITIVE, 56% confidence, 1 source)_ `EVENT-WAAREEENER-2026-0005`
+- **[8/15 +]** China solar module prices fall 20% as polysilicon glut deepens _(INDIRECT_STRONG, POSITIVE, 56% confidence, 1 source)_ _↑ detailed above_ `EVENT-WAAREEENER-2026-0005`
 
 ### Government / Regulatory Events
 
-- **[8/15 ?]** India tightens ALMM rules for solar cells from next financial year _(INDIRECT_STRONG, UNCERTAIN, 71% confidence, 1 source, official)_ `EVENT-WAAREEENER-2026-0001`
+- **[8/15 ?]** India tightens ALMM rules for solar cells from next financial year _(INDIRECT_STRONG, UNCERTAIN, 71% confidence, 1 source, official)_ _↑ detailed above_ `EVENT-WAAREEENER-2026-0001`
 
 ### Things to Watch
 
@@ -807,15 +770,15 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[9/15 +]** Freshara Agro Exports bags export order from Spanish distributor _(DIRECT, POSITIVE, 51% confidence, 1 source)_ `EVENT-FRESHARA-2026-0002`
+- **[9/15 +]** Freshara Agro Exports bags export order from Spanish distributor _(DIRECT, POSITIVE, 51% confidence, 1 source)_ _↑ detailed above_ `EVENT-FRESHARA-2026-0002`
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ _↑ detailed above_ `EVENT-GLOBAL-2026-0003`
 
 ### International Events
 
-- **[12/15 ?]** EU tightens pesticide residue limits for imported vegetables from India _(INDIRECT_STRONG, UNCERTAIN, 71% confidence, 1 source, official)_ `EVENT-FRESHARA-2026-0001`
+- **[12/15 ?]** EU tightens pesticide residue limits for imported vegetables from India _(INDIRECT_STRONG, UNCERTAIN, 71% confidence, 1 source, official)_ _↑ detailed above_ `EVENT-FRESHARA-2026-0001`
 
 ### Things to Watch
 
@@ -829,11 +792,11 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[12/15 +]** Jinkushal Industries secures export order for used excavators from Africa _(DIRECT, POSITIVE, 40% confidence, 1 source)_ `EVENT-JKIPL-2026-0002`
+- **[12/15 +]** Jinkushal Industries secures export order for used excavators from Africa _(DIRECT, POSITIVE, 40% confidence, 1 source)_ _↑ detailed above_ `EVENT-JKIPL-2026-0002`
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ _↑ detailed above_ `EVENT-GLOBAL-2026-0003`
 
 ### Things to Watch
 
@@ -857,8 +820,8 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[13/15 ?]** Coal India raises FY27 production guidance to 900 million tonnes _(DIRECT, UNCERTAIN, 69% confidence, 1 source)_ `EVENT-COALINDIA-2026-0003`
-- **[8/15 +]** Coal India declares interim dividend of Rs 5 per share; board meeting outcome filed _(DIRECT, POSITIVE, 77% confidence, 1 source, official)_ `EVENT-COALINDIA-2026-0001`
+- **[13/15 ?]** Coal India raises FY27 production guidance to 900 million tonnes _(DIRECT, UNCERTAIN, 69% confidence, 1 source)_ _↑ detailed above_ `EVENT-COALINDIA-2026-0003`
+- **[8/15 +]** Coal India declares interim dividend of Rs 5 per share; board meeting outcome filed _(DIRECT, POSITIVE, 77% confidence, 1 source, official)_ _↑ detailed above_ `EVENT-COALINDIA-2026-0001`
 - **[6/15 ?]** Mahanadi Coalfields commissions new washery in Odisha _(DIRECT, UNCERTAIN, 61% confidence, 1 source)_ `EVENT-COALINDIA-2026-0002`
 
 ### Industry Events
@@ -877,7 +840,7 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[11/15 +]** Ksolves India reports 28% revenue growth; net profit rises _(DIRECT, POSITIVE, 88% confidence, 1 source, official)_ `EVENT-KSOLVES-2026-0001`
+- **[11/15 +]** Ksolves India reports 28% revenue growth; net profit rises _(DIRECT, POSITIVE, 88% confidence, 1 source, official)_ _↑ detailed above_ `EVENT-KSOLVES-2026-0001`
 
 ### Things to Watch
 
@@ -890,7 +853,7 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[10/15 -]** Tamilnad Mercantile Bank hit with RBI penalty over KYC lapses _(DIRECT, NEGATIVE, 51% confidence, 1 source)_ `EVENT-TMB-2026-0001`
+- **[10/15 -]** Tamilnad Mercantile Bank hit with RBI penalty over KYC lapses _(DIRECT, NEGATIVE, 51% confidence, 1 source)_ _↑ detailed above_ `EVENT-TMB-2026-0001`
 
 ### Government / Regulatory Events
 
@@ -908,15 +871,15 @@ One development, several holdings. Stored as one event.
 
 ### Direct Company Events
 
-- **[10/15 -]** Supriya Lifescience receives USFDA warning letter for its Ambernath plant _(DIRECT, NEGATIVE, 51% confidence, 1 source)_ `EVENT-SUPRIYA-2026-0002`
+- **[10/15 -]** Supriya Lifescience receives USFDA warning letter for its Ambernath plant _(DIRECT, NEGATIVE, 51% confidence, 1 source)_ _↑ detailed above_ `EVENT-SUPRIYA-2026-0002`
 
 ### Industry Events
 
-- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ `EVENT-GLOBAL-2026-0003`
+- **[10/15 -]** Container freight rates jump 18% on Red Sea disruption _(INDIRECT_STRONG, NEGATIVE, 56% confidence, 1 source)_ _↑ detailed above_ `EVENT-GLOBAL-2026-0003`
 
 ### Government / Regulatory Events
 
-- **[10/15 +]** Chinese API plants shut after environmental inspection; API prices surge _(INDIRECT_STRONG, POSITIVE, 56% confidence, 1 source)_ `EVENT-SUPRIYA-2026-0001`
+- **[10/15 +]** Chinese API plants shut after environmental inspection; API prices surge _(INDIRECT_STRONG, POSITIVE, 56% confidence, 1 source)_ _↑ detailed above_ `EVENT-SUPRIYA-2026-0001`
 
 ### Things to Watch
 

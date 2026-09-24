@@ -387,6 +387,12 @@ def score_impact(data: ScoreInput) -> Tuple[int, List[str]]:
     if data.classification.opinion:
         add(-4, "Opinion, preview or stock-tip piece")
 
+    if data.classification.routine_release:
+        add(-6, "Scheduled statistical release, not a development")
+
+    if data.classification.market_chatter:
+        add(-5, "Market commentary rather than a company development")
+
     if data.is_update:
         add(-2, "Story already reported; this is a repeat")
 
