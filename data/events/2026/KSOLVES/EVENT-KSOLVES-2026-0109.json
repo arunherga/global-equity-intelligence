@@ -9,11 +9,11 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "PRODUCT",
         "REVENUE",
@@ -29,6 +29,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "PRODUCT",
+          "term": "AI agents",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "TECHNOLOGY",
           "term": "Salesforce",
           "relationship": "SECTOR",
@@ -37,7 +44,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 International market development",
         "-2 Single unverified source"
       ],
@@ -46,13 +53,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are product, revenue, supply. Classified as new product.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its product, supplier exposure to Salesforce, and AI agents. The parts of the business most likely touched are product, revenue, supply. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -66,21 +73,41 @@
       "published": "2026-09-22T16:11:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce launches job-ready AI agents for SMBs",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fVjdKalZucnlRX2U4ZUllMF9QZnBKWnFKZ3lEZUJ4bGEwQm5FNzQwREFFeGVvOFY3aVF2MldISE53bEhmYmNCWkNQdUI0eEE1d0FV",
+      "source_name": "ASBN Small Business Network",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T16:06:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Small Business Trends",
   "cluster_key": "KSOLVES|NEW_PRODUCT|agents-drive-faster-job-ready-launch-salesforce",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.505072+00:00",
-  "last_updated": "2026-09-23T12:25:52.505132+00:00",
+  "last_updated": "2026-09-25T12:56:28.196982+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.505127+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:28.196962+00:00",
+      "change": "sources added",
+      "detail": "ASBN Small Business Network"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:28.196977+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 3"
     }
   ],
   "price_reaction": {}

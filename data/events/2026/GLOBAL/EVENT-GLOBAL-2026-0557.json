@@ -1,0 +1,142 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0557",
+  "title": "India: Coated flat steel prices rise INR 300-1,100/t w-o-w amid higher input costs",
+  "summary": "India: Coated flat steel prices rise INR 300-1,100/t w-o-w amid higher input costs BigMint",
+  "event_date": "2026-09-24",
+  "event_types": [
+    "RAW_MATERIAL",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Coated flat steel prices rise INR 300-1,100/t w-o-w amid higher input costs",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcUd0N2MtWFBkUXk0S05SbnVrU1VYTjBPT1czc0paLW15R3ZGc2cxajNfdVNEUGdRTUx3UWt1NWVFT2Q0eFpodFk2RHVKeXJ1MTV4NmtkZjRqWVo1ajRkUFJuTjVzV2pKY3QzYjFVeEVzMnpCbHFrcEllYUxQc2RVbTJ1T1hvUE5YQ09MRllUOTFRTEtSUENFbTJqLWhERUJNNU11Wm9LVWFzNGluVGRUd1BISnVfaHFZdnFWOFBiVXR5dEZZY0E",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T13:40:34+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "JKIPL+MSTCLTD|COMMODITY+RAW_MATERIAL|coated-flat-india-price-rise-steel",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-25T12:56:10.718408+00:00",
+  "last_updated": "2026-09-25T12:56:10.718463+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-25T12:56:10.718458+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

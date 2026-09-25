@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-0095",
+  "title": "European power producers increase coal use as gas prices surge",
+  "summary": "European power producers increase coal use as gas prices surge Traders Union",
+  "event_date": "2026-09-24",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "European power producers increase coal use as gas prices surge",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOFBxOUdiclVHaTlXWVh2RElPd3pnM3NzUE9hS1dsZzBQUXZjYlpzUmRGd0VnLVdSM1RqNXBGd0E1S1h1cGgwbl9hMGJObmwwUHVBSVhJTzh6NTVLeUlTNGJNam5xTUo4UDgwS2hmeVdrREtFNElyVFdUaE9JUW9vWm5UbUJWNU1FTmdqV1hB",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T14:56:36+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY|coal-europe-power-producers-rise-use",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-25T12:56:10.783647+00:00",
+  "last_updated": "2026-09-25T12:56:10.783698+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-25T12:56:10.783694+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

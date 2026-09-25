@@ -11,14 +11,14 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 9,
-      "impact_band": "HIGH",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.46,
+      "confidence": 0.62,
       "business_impacts": [
-        "EXPORTS",
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -28,6 +28,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "COMMODITY",
+          "term": "polysilicon",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
         },
         {
           "exposure_type": "INDUSTRY",
@@ -49,31 +56,38 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+4 Material international trade or tariff policy",
         "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (solar module prices) is the subject of the headline",
-        "-2 Single unverified source"
+        "+1 The commodity (solar module prices) is the subject of the headline"
       ],
       "direction_reasons": [
         "solar module prices is a selling price and is moving up",
         "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "duty rate and effective date",
-        "exemptions and carve-outs",
-        "competitor exposure to the same duty",
-        "pass-through to customers"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to solar module prices, and module price. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to solar module prices, and polysilicon. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -97,21 +111,61 @@
       "published": "2026-09-23T10:30:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "US Solar Module Prices Jump Over 40% After Section 232 Measures",
+      "url": "https://www.mercomindia.com/us-solar-module-prices-jump-over-40-after-section-232-measures",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-25T11:42:09+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "US Solar Module Prices Jump Over 40% After Section 232 Measures",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVTk1RzVXai1NZUlEU2VBQWdNaUttVjlraXFCQ2trZHpmTm1SejhiOVgwZGR1R0U5TURsUm5pUC1aOGlGUGp0UXF5WmZ1dU1qZWJlVmRVNXBDWklYbEhFb0x3QUR5VnVZb3ZzRzEzbVlHS1FZYk1veFJ0SGNDQ0pfdmFKeGdkZ2p6azRXbTZ6Z1Y1cVZ0",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T12:24:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "US Solar Module Prices Surge 40% Following Section 232 Tariffs",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOLVhUQmhmUDJNUS1pdnpaekoyR3J3d2ZFcmpGaWVQZ01CanN2cFY5Wk1GMDYzQmxOb3NkVTNMcDh6amgwV0k3aE5SdVFiZm9mUHgxVFByOEVkS3B1OFNZMzIxWWlTR3Y5MHdaOTVwbzNoMWxKVmx3dlBuNjN0clFWcEtiWExhNkZzMW9XU0s2THU",
+      "source_name": "mvapulse.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T07:30:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "PV Tech",
   "cluster_key": "WAAREEENER|COMMODITY+TARIFF|40%+-module-price-rise-solar-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.740032+00:00",
-  "last_updated": "2026-09-23T12:25:52.740113+00:00",
+  "last_updated": "2026-09-25T12:56:18.041791+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.740107+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:18.041766+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, Mercomindia.com, mvapulse.com"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:18.041785+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 9 -> 11"
     }
   ],
   "price_reaction": {}

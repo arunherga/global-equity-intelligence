@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.55,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEUTRAL",
+      "confidence": 0.61,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET"
@@ -35,13 +35,6 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "solar cells",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
-        },
-        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
@@ -50,14 +43,16 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance"
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "+2 3 independent sources"
       ],
       "direction_reasons": [
-        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "two independent sources",
+        "3 independent sources",
         "sector relationship",
         "financial implication is quantified"
       ],
@@ -91,21 +86,81 @@
       "published": "2026-09-24T08:07:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India added 50.6 GW of solar module and 9.7 GW of cell manufacturing capacity in 1H 2026, says Mercom",
+      "url": "https://www.pv-magazine-india.com/2026/09/25/india-added-50-6-gw-of-solar-module-and-9-7-gw-of-cell-manufacturing-capacity-in-1h-2026-says-mercom",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-25T11:03:10+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "India adds 50.6 GW of solar module and 9.7 GW of cell manufacturing capacity in 1H",
+      "url": "https://www.pv-magazine.com/2026/09/25/india-added-50-6-gw-of-solar-module-and-9-7-gw-of-cell-manufacturing-capacity-in-1h-2026-says-mercom",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-25T11:24:57+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "India Adds 50.6 GW Solar Module Capacity In 1H 2026",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORHRTSEZGWXNIeHJvWW1HckZHN1FPUVp3YzRHUC1rdWQ2VEhYdmI5Y00yajVPUUZzeWpGaXVRQnlpVU5JeWhjS0NtM01HN2x0bzBfRFEweWNZZUlsQkRNdXZ4OGNKU3BheFRDbHpmY0packNHbFpEdDYzMFpneEdoeThTMjU4UQ",
+      "source_name": "TaiyangNews",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T11:30:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India Adds 50.6 GW Solar Module Capacity In H1 2026, Cell Supply Lags: Mercom",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNS1psTXZmcWRUQlp0eW4yZm84Y1BBTkgyeGZ2R0JHN3F1ek9JS25DeWVMTWhXV0F4TjlQMktSdGRidDk5TG9mTmp2SXE1bHVVdU8xM2kyOUxjeFlWcWJLeHJoN2FMVVVjenU3cndSTy1kV1lENFB3US1uLUdKZUZNOWNkQzJsYV9nX2t3QmhIbmstZnl4TnkzNWpCdnNZc3laZ190clNLS0hOVmxuWVJ1T3ZtX2h0eE91YkE",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T13:36:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India adds 50.6 GW of solar module and 9.7 GW of cell manufacturing capacity in 1H",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZGdoZ0NJSjg5bm9RN3NBenRzbjdUOFdaR185c1BhYmcwWE1oUkNqcFQ3T1pmdnRGaUtJTVJ4cXY0R1FZdVllQ3BUZVdHUjJvcklzY0xVdmV2elU1ZUd3cGtFejUyMTc1RXlHUVZaaC1fV2lKRnhjY3haQXo3el9JajVZSER5MFU4MHk2dF9DVmFRazI2QW9JLWw1TjRWYUVBZXVlY0RoYWNuNDRUZk1sbmlqS3VfMFRaR2x3RnlLMEc0ZUhIZ1lNTU81SlI1YUFGRXI1YTZBQQ",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T11:28:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 7,
+  "source_count": 4,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|50.6-9.7-adds-india-module-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.137853+00:00",
-  "last_updated": "2026-09-24T12:02:44.137924+00:00",
+  "last_updated": "2026-09-25T12:56:17.964848+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.137919+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:17.964823+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld, PV Magazine, PV Magazine India, TaiyangNews"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:17.964842+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 5"
     }
   ],
   "price_reaction": {}

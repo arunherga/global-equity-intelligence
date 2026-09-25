@@ -150,6 +150,46 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, supply. Classified as currency.",
       "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -162,21 +202,41 @@
       "published": "2026-09-22T14:24:27+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee gains 15 paise to 96.81 against dollar, likely helped by RBI intervention",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQMEk3NUg5YW9GbjdrNUlpSDJOcGhTUzhuVzh0blhaTl9lb2Q2NjZHZ1hybGI1TDdXazVRRTJQTnlXYmZjNUR1ZkFlUk41R2VSQW9Yb1pnU3pmdGNtMmE4a0ZzNTBRZ1VYN0lZdGV0amJlSzRGb0dNd1o3UVlPbjE5NTR2SzlaeDVIeVByR2lVQVF5aGxoLWw4VjdpN3U1M25hVG52ZlNWd0hFZG5EaXRaSm1SZlF0WjdGSnpsR1l3U2pjWGljREI1SjNoY1BLdHhqRnVxc0c0WHZNbzVpYURPVXQxOVY4eURZVFRpQk1R0gHuAUFVX3lxTFAwSTc1SDlhb0ZuN2s1SWlIMk5waFNTOG5XOHRuWFpOX2VvZDY2NkdnWHJsYjVMN1drNVFFMlBOeVdiZmM1RHVmQWVSTjVHZVJBb1hvWmdTemZ0Y20yYThrRnM1MFFnVVg3SVl0ZXRqYmVLNEZvR013WjdRWU9uMTk1NHZLOVp4NUh5UHJHaVVBUXlobGgtbDhWN2k3dTUzbmFUbnZmU1Z3SEVkbkRpdFpKbVJmUXRaN0ZKemxHWXdTamNYaWNEQjVKM2hjUEt0eGpGdXFzRzRYdk1vNWlhRE9VdDE5Vjh5RFlUVGlCTVE",
+      "source_name": "economictimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T11:32:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA+TMB|CURRENCY+GEOPOLITICAL|95.58-against-close-paise-rise-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.498026+00:00",
-  "last_updated": "2026-09-23T12:25:55.445158+00:00",
+  "last_updated": "2026-09-25T12:57:00.928957+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.498060+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:00.928931+00:00",
+      "change": "sources added",
+      "detail": "economictimes.com"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:00.928952+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}

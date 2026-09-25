@@ -4,22 +4,24 @@
   "summary": "HDB IMPORTANT DEADLINE: ROSEN, A GLOBALLY RECOGNIZED LAW FIRM, Encourages HDFC Bank Limited Investors to Secure Counsel Before Important Deadline in Securities Class Action - HDB the-dispatch.com",
   "event_date": "2026-09-24",
   "event_types": [
-    "LITIGATION"
+    "LITIGATION",
+    "FRAUD"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "REGULATION",
         "REPUTATION",
+        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -30,41 +32,46 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, competition. Classified as litigation.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, management. Classified as litigation.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
       "direction": "NEGATIVE",
       "confidence": 0.4,
       "business_impacts": [
         "REGULATION",
-        "REPUTATION"
+        "REPUTATION",
+        "MANAGEMENT"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+4 Regulatory or legal action",
         "+2 Company appears in the headline",
+        "+4 Fraud, cyber or product-failure incident",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -76,9 +83,11 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, reputation. Classified as litigation.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, reputation, management. Classified as litigation.",
       "ai_analysis": null
     }
   },
@@ -92,21 +101,111 @@
       "published": "2026-09-24T01:15:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDB DEADLINE NOTICE: ROSEN, LEADING INVESTOR COUNSEL, Encourages HDFC Bank Limited Investors with Losses in Excess of $100K to Secure Counsel Before Important Deadline in Securities Class Action - HDB",
+      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxPVDNXY3M4cWp2RmwyWkZLM09pYjVhT3dYZWtwTUZ5Q2pqa3V0Z3hEVG4tOEt3UWZNQ3QzOXFkSUgzMGlzUklRTFBnVllObTktb0JOaFEzS25oQVBoc0FhNkNia2tsR0tqT1gwRmxJNWVwY01FeWZNSzh3ck53cEhUS0V6TkxmemxkRUJJU1RVc3hEQTB4TVNRR3FEYlc3LTVvd2R2Q3dFcXMxNlhhbHNUOUZZdk5zLXJTWVVoYjRaRzZZN3JHV2todTA5U0liYTVBY2NIU3ZQVjF2eThkN3FWWnMyOElOZGVORWtQU2xaeW5HczVFdnp0VmM1Z1phbVg5Z1luRDVtRko3dDNGSmt5eWY2T2RFemJoWXNSSVJMUUVHTllzSkZkNVdNV1NSSG5feDJtRGpOdkxKWGVjN3R0OUhEU2lEaExxQ1JPYUZfSGtFWXVpT3NMZUtfLXp2S2o0Y2FvRA",
+      "source_name": "TMX Newsfile",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T21:54:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDB DEADLINE: SueWallSt Reminds HDFC Bank Limited Investors of Upcoming Securities Class Action Deadline",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQemNRRHMzcWllS1hHNDBCV1kxNjJhNFlqX1FUNWRqWUtLVGhQVkVkMjY0QVN3TzliYzNDQkFreXRXdGM3R19HcFdzREttVlRjX0VxTWpMeHBab2hERGdRVk9PMGpVNEhCX1lNS1pnOTQ4MllxbVpNeXJWek5OQjAyN181cFpiazlaSmloQkRIMlAyRU9sWW50Tk1VWlR0Tm5pbGhibWlwLUk2ekV0MXVmOVVDUzdDdWVVcm9PUmk5cW9lWTdUcVlRV19qTFBya3V6UnpzR1ZVcnNPdUE0YkxWWmQ3ZFR4M1A3bDdRTERjQlA",
+      "source_name": "PR Newswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T14:09:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDB Investors Have Opportunity to Lead HDFC Bank Limited Securities Fraud Lawsuit with SBS Law",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPM3lESU54ZTAxMHAxQmZpUUk0eDVtcUFCbnZtekgycnd4Z1NBYjVSbjJ2SkpBeExpc1htZUFRRE9MZGhPdXJkbG15Y2ZhWG1JS2gxaWV0bnpxaV9RTVNYWEkwZ0FRdTVqVHA1VUI4eklSSW5TZ01JcE83OGxGVHBQV2NhMlVBOHRlMzlMQnVDcWtmTU9zVkc4elU2Q242OVFuQmtmdEsyMnpxM0EzMFVKYm1KT09XSFF5ei1OREMwekxKUUdkMlFtdHB3TTlGVTN6MmIwSUh6STdYYmtUd1RvMzZxWUJSU0RGcElWc1QwNlZsVHg4b29Td0ZR",
+      "source_name": "globenewswire.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T14:20:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDB UPCOMING DEADLINE: Faruqi & Faruqi, LLP Reminds HDFC Bank Limited Investors of Securities Class Action Lawsuit Deadline on October 12, 2026",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOcWRJSTJTSkRPQzA1ejFuY0xzblp2U3lYem1BOVdoRWFFend2OXJGZVlvNWZsOFoxeFk2MW4wbm80MUV2WGhSbklneFhZTmF6OWdVdk5YRVJWMDhoVzhjYy1lWnVKSkZta19rZVFWT0Z4ZzdlWG0zb3IzTlNaRG15Mnl6aGVyQjljTEdqRmwxbGJKQ085T3pLSFlCc1RpQ1oxMXZzSEtqM05pYlBmRmdGdk9UY2o5NHNyZDVUNDN6Zmltb2liYTFKYnZhd0tUZFQ3bmxlMF9ud0JGS0JMYzBDY2RBQWVIOHRjaXl6bHBBVnpTSTVZOG40eEI4NFFyRXVSa2xHZXZUSmd4X0VjZUpGeWhFS1kxeTJsb2c",
+      "source_name": "TMX Newsfile",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T21:19:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Limited (HDB) Investors: Securities Fraud Class Action Filed, Contact Hagens Berman Before October 13, 2026 Lead Plaintiff Deadline",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPNHJ2R3ZaRWUtd2JwUVlPaVRjQnpGYlNaZlNBUzNXbXEybHNsWWhRLXlkT2RwS1lUTlZRVEo1bTBfQWhhcWRha0tvYUlaM0YxWGxTekdoLXVaYllYSnc3OEx3ZW44aDV4RlV2UWRNN3NnUXV4V3dTWUlxaEdXcExjMzRmWEpSWGVDM1BCTkxSSWx1OGY1bXFsNHFXWW9GeDNXTi1jSldLZWFEUTlBNVhwMHJpelFrWlplSDRFZ19ETEx4UXd0MzlycU1naU1PdFlieG9nYUpoVXBaQVp6QkhiNUJ5ZEZYa1pWMHFyS0lKeEZMc3c3MzZLUnNJZ1V5bVdmUERUWjI0NXprbDNZaEtEUnhGS2RmZ2RFOUtFbA",
+      "source_name": "PR Newswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T16:03:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in HDFC Bank Limited of Class Action Lawsuit and Upcoming Deadlines - HDB",
+      "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQRFktcUFveHdpT0t3LTVyTG5FSklQQ1RjU0hCS0c3NEhxZDZxX2JtT1dxeldjNzZjSFh0Yl9wU1FrbXQxLXdnajk3dkRpbGRMUmh4SEFiVUUtZUprUkx2Vmk4X3dtMkRPLUJGV0FTeVVjSlpiNFNReEtRdl91WWVhXy1UUkIyNlFaYXJPbXRDQUpZVTdxUEg4TzFlNGZWSmZSZTFROU1uc29ObmJuNm43b2loRDdQZWdRR1djbUZaTk9tR0M3UWY4MjcxWWxmQ0dVd1JVLWpfWVpoaVAybTFJTHUzN0FNWFFBbVo5MEtTeHR2b3JJdHFyNC1vLUdpTDFHWjlhTDlGSFRvbDQ1MnRfNWFqSXluZ090bHFCanlBU3gxa1htYjBLeG9LVnN6UHNaVENXMEZ4bw",
+      "source_name": "PR Newswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T20:15:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Securities Lawsuit Alert: HDFC Bank Limited (HDB) - Contact Levi & Korsinsky Before October 13, 2026",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZ2tBclU2aDV4N1dBSkhyd3lYQWRKNlBDV0taOEtLNWdGNDBac0tDTTNBTGt0a1FOLU42bW1lSnczN0dTYzBNUERJTUM3d2MySHRXZjNhVUdtRS14Q1gwOUdyOTh5amF5cktETVI3SWxGLWM4S0gzaXNTckZ5S2Z6WGFwSzdld0FZc2FNem1JbEs0N25OZ0phZzI2RlNyNTlZS3JVcWRTREJ6bXA5VHRjbG1jVTVSVXBZVUpHVEdUZDR5VGt4VjVlQmNoT3JPdFdnc0FXc1AyUTVaQ3RiOEZ2ZFItMA",
+      "source_name": "ACCESS Newswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T20:00:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "the-dispatch.com",
   "cluster_key": "HDFCBANK+TMB|LITIGATION|deadline-globally-hdb-important-recognized-rosen",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.379610+00:00",
-  "last_updated": "2026-09-24T12:02:44.379695+00:00",
+  "last_updated": "2026-09-25T12:56:23.337026+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.379691+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:23.336975+00:00",
+      "change": "sources added",
+      "detail": "ACCESS Newswire, PR Newswire, TMX Newsfile, globenewswire.com"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:23.337009+00:00",
+      "change": "categories added",
+      "detail": "FRAUD"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:23.337016+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 3"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:23.337021+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 9 -> 13"
     }
   ],
   "price_reaction": {}
