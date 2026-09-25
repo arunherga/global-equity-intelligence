@@ -1,0 +1,173 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0532",
+  "title": "Result of Underwriting Auction conducted on September 25, 2026",
+  "summary": "In the underwriting auction conducted on September 25, 2026, for Additional Competitive Underwriting (ACU) of the undernoted Government security, the Reserve Bank of India has set the cut-off rate for underwriting commission payable to Primary Dealers as given below: Nomenclature of the Security Notified Amount (₹ crore) Minimum Underwriting Commitment (MUC) Amount (₹ crore) Additional Competitive Underwriting Amount Accepted (₹ crore) Total Amount underwritten (₹ crore) ACU Commission Cut-off rate (paise per ₹100) 6.94% GS 2036 34,000 17,010 16,990 34,000 0.54 Auction for the sale of security",
+  "event_date": "2026-09-25",
+  "event_types": [
+    "TENDER",
+    "DEBT",
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
+      "business_impacts": [
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement",
+        "-6 Scheduled statistical release, not a development"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
+      "business_impacts": [
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement",
+        "-6 Scheduled statistical release, not a development"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Money Market Operations as on September 24, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63661",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-09-25T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "Result of Underwriting Auction conducted on September 25, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63662",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-09-25T09:55:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "RBI money market activity, liquidity absorption continues on September 24",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVzNzTy1zU2xJT2xDUnc3OTJDdVE1NG5Ca3BiNEdhdmxTbTNHeG4xeWVVS2o4Y0xQeEgtY0YzaTVEcEJPaTRfVjVNeXNrUGt5UU1BZml2TzluT2RuU1g1MDJHZXBkZS1WbGF4dVdQLXhTMU1LU1BSMkd0M2Z5SFNZaUNPY1E0eFBMcTh1elVxXzh0Q3dIaExoTjVHUVlnV2pXUV9lRWdSb014Y3ZX",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T04:19:38+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 3,
+  "source_count": 2,
+  "primary_source": "Reserve Bank of India",
+  "cluster_key": "HDFCBANK+TMB|DEBT+TENDER|2026-auction-conducted-result-september-underwriting",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-25T12:56:10.548226+00:00",
+  "last_updated": "2026-09-25T12:56:10.548317+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-25T12:56:10.548310+00:00",
+      "change": "created",
+      "detail": "3 source(s) from 2 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

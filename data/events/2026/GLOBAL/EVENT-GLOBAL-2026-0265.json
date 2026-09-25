@@ -6,7 +6,8 @@
   "event_types": [
     "COMMODITY",
     "DEBT",
-    "GEOPOLITICAL"
+    "GEOPOLITICAL",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -140,50 +141,40 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.59,
-      "business_impacts": [
-        "DEBT",
-        "BALANCE_SHEET",
-        "SUPPLY",
-        "GEOGRAPHY",
-        "PRICING",
-        "INPUT_COST"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "crude oil",
+          "exposure_type": "REGULATION",
+          "term": "BSE",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "-1 Single source, unconfirmed"
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up",
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -317,50 +308,46 @@
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.59,
-      "business_impacts": [
-        "DEBT",
-        "BALANCE_SHEET",
-        "SUPPLY",
-        "GEOGRAPHY",
-        "PRICING",
-        "INPUT_COST"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "crude oil",
+          "exposure_type": "REGULATION",
+          "term": "BSE",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "-1 Single source, unconfirmed"
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up",
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -405,6 +392,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -427,16 +452,26 @@
       "published": "2026-09-24T10:41:00+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Stock Market Today | Share Market News | Sensex Today | BSE/NSE Live",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYmgyeGdtN1g4ZmpGOTlVenp3Sy0xR2ZHNDY2VGhUSFlUd0gzY0czWlp1UHd6T2lHVGQ3ZEx2RDg3WURsWklFNGJGeE5HRk1FVEliQlgwa21JRHZxUndwSlNSOTVkWUhpbHJwQkJmREZzek02V0h5bGJoOW55MXlMTm5INzMySUp1T2dpdVpDWDBRX3Q5VXFBNUl1czgyUGw2bWtPbk11elE4N2tkN01CUE9wUklHQ19BVVV5RlFyNVdkY1c1ZU5fUzRIVFNyQ3VlS0VLd0pzRQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-24T14:31:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|COMMODITY|highlights-market-nifty-sensex-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.333637+00:00",
-  "last_updated": "2026-09-24T12:02:50.172460+00:00",
+  "last_updated": "2026-09-25T12:56:25.075466+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.333713+00:00",
@@ -462,6 +497,31 @@
       "timestamp": "2026-09-24T12:02:50.172456+00:00",
       "change": "impact raised",
       "detail": "SUPRIYA 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:25.075422+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:25.075439+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:25.075448+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:25.075454+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:25.075461+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

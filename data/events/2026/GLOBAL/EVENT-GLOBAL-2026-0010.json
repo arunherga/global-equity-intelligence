@@ -6,7 +6,8 @@
   "event_types": [
     "TENDER",
     "REGULATORY",
-    "LEGAL"
+    "LEGAL",
+    "GOVERNMENT_POLICY"
   ],
   "stocks": {
     "TMB": {
@@ -136,16 +137,26 @@
       "published": "2026-09-24T11:10:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Calendar for Auction of Government of India Treasury Bills",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63669",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-09-25T18:00:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|REGULATORY+TENDER|auction-dated-government-india-security",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.421543+00:00",
-  "last_updated": "2026-09-24T12:02:45.520019+00:00",
+  "last_updated": "2026-09-25T12:56:11.969851+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.421573+00:00",
@@ -156,6 +167,16 @@
       "timestamp": "2026-09-24T12:02:45.520006+00:00",
       "change": "sources added",
       "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:11.969826+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:11.969841+00:00",
+      "change": "categories added",
+      "detail": "GOVERNMENT_POLICY"
     }
   ],
   "price_reaction": {}

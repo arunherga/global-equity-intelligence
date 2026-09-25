@@ -4,18 +4,20 @@
   "summary": "Salesforce stock falls 1.33 percent as earnings growth holds AD HOC NEWS",
   "event_date": "2026-09-23",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "GUIDANCE"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
+        "DEMAND",
         "MARGIN",
         "SUPPLY"
       ],
@@ -39,7 +41,7 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+3 Development at a known counterparty (Salesforce)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -51,12 +53,12 @@
         "financial implication is quantified"
       ],
       "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
         "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "management commentary on demand"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are revenue, demand, margin. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -70,21 +72,46 @@
       "published": "2026-09-23T10:35:41+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce stock reports 11 percent Q2 revenue growth and higher guidance",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQb2hmSUZrbjNGM1RDUkI4M05lajUxZndmNDVlMERFdm1zNTBSeHV5QkU2TmUxN0p4a2c3X2xCNGNRLWN5a0ZSMk8tSUloM3FDS1JVTlNhcHVVelB1UUxqMXo4Nl92c2tRT1otWmRRcF9JdnFQaXRRbmkwckwzZFJ5d05DX0IzUW1FZFB3Q01pbm82c2ZyZzlNWWlqbFNLSVBpd0RzRWRXNHBFblAtSk85MnB5S0otdWhHem5LOGJETmQ4ODdiMTJkSEpNQ3ZId2hKd0E",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T12:09:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "AD HOC NEWS",
   "cluster_key": "KSOLVES|EARNINGS|1.33-earning-fall-rise-salesforce-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.824808+00:00",
-  "last_updated": "2026-09-23T12:25:52.824863+00:00",
+  "last_updated": "2026-09-25T12:57:01.899835+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.824858+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.899806+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.899824+00:00",
+      "change": "categories added",
+      "detail": "GUIDANCE"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.899830+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 1 -> 6"
     }
   ],
   "price_reaction": {}

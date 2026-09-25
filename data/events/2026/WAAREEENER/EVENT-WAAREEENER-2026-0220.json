@@ -121,6 +121,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Nykaa",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Nykaa's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Nykaa. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -153,21 +191,41 @@
       "published": "2026-09-24T01:20:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks in Focus Today: Nykaa, Waaree, LTTS & More",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMUxJYjRpYzJpTDBVWnRRdmxwMXczN2pwalNraFRZRHM1TGZsU1pGU3FXaGNjYlI4bmVUZERjWnZDb1pYLXdlTVEwbHFvRFBYRGUwdkRPakY1QS1oNlpGV2ZXOTloUzR4cjExLWFvdTVjMHhBcXNRb3pCNGZwaUpIX3c1a3VkTnZpdEw0SlAtTWo2QVZDZms1dVdjVEd3M25kLVRsMzNseWFycVFiZ2QwM0FFWTRrN1owdVBRaEpUb1NFRnRQanpFTVpUTFllYTBPWTJwLWxXYS02XzZadWd4bGw5Y3NHN2VuSFE",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T03:56:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|grid-ola-power-share-today-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.373364+00:00",
-  "last_updated": "2026-09-24T12:02:44.373473+00:00",
+  "last_updated": "2026-09-25T12:56:41.813694+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.373468+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:41.813671+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky"
+    },
+    {
+      "timestamp": "2026-09-25T12:56:41.813689+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
     }
   ],
   "price_reaction": {}

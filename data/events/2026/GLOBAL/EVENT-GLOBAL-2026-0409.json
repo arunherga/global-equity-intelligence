@@ -4,7 +4,8 @@
   "summary": "Websol Energy System Ltd has been allotted a 54.20-acre land parcel at Falta Industrial Park in West Bengal by the state government for its planned greenfield solar manufacturing facility.",
   "event_date": "2026-09-24",
   "event_types": [
-    "NEW_PLANT"
+    "NEW_PLANT",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -55,15 +56,12 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.61,
-      "business_impacts": [
-        "CAPACITY",
-        "BALANCE_SHEET"
-      ],
-      "time_horizon": "LONG_TERM",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
@@ -75,24 +73,21 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 International market development",
-        "+2 3 independent sources"
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "3 independent sources",
+        "best source quality 3/10",
         "sector relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "capital outlay and funding",
-        "commissioning date",
-        "utilisation ramp"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. The parts of the business most likely touched are capacity, balance sheet. Classified as new plant.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -146,21 +141,46 @@
       "published": "2026-09-24T09:46:54+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Websol Energy Gets Land for 4GW Solar Cell, Module Plant in West Bengal - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTDUyd1AxTUh4dVpVXzR3b0tWSkRXRVpwZnp4OXZKQlNpTVYwVkw4bnoyTzZEZzlJMExZSFc1QW9nOU5aWUtTZmp0NEw2YzFYOUxWMkJ1R1Q1VjV6TVpmNW5MdlRWWFQ0Yjl1dWRIUHhiU25oTlhZeU5oN2NUclRLSUUyNmFOR2c4MjFXS0tzaXZkRHl5VEhWd0dkaGlycmZxTlIxOUpoM1NBc0E",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T11:50:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 3,
   "primary_source": "PV Magazine India",
   "cluster_key": "MSTCLTD+WAAREEENER|NEW_PLANT|allotted-cell-module-solar-websol-win",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.116406+00:00",
-  "last_updated": "2026-09-24T12:02:44.116491+00:00",
+  "last_updated": "2026-09-25T12:57:01.371233+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.116486+00:00",
       "change": "created",
       "detail": "5 source(s) from 3 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.371205+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.371221+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-25T12:57:01.371228+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
