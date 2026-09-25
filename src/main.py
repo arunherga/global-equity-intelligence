@@ -97,6 +97,7 @@ class Pipeline:
         self.classifier = RuleClassifier()
         self.client = HttpClient.from_config(config.http)
         self.rejections: List[EntityRejection] = []
+        self.match_failures: List[Tuple[str, str]] = []
 
     # -- 1. collection ---------------------------------------------------
     def collect(
@@ -141,35 +142,50 @@ class Pipeline:
     def match(self, articles: Sequence[Article]) -> List[MatchedArticle]:
         matched: List[MatchedArticle] = []
         for article in articles:
-            classification = self.classifier.classify(article)
-            text = fold(article.text)
-            headline = fold(article.title)
-            links = []
-            for profile in self.profiles:
-                entity, rejected = match_entity(article, profile, text, headline)
-                self.rejections.extend(rejected)
-                exposure = match_exposures(article, profile, text, headline)
-                link = determine_relationship(
-                    article,
-                    profile,
-                    entity,
-                    exposure if exposure.matches else None,
-                    classification,
+            # Matching is the stage that touches arbitrary live text, so one
+            # unparseable headline must not end the run. The article is
+            # dropped and named; everything else still reaches the report.
+            try:
+                result = self._match_one(article)
+            except Exception as exc:  # noqa: BLE001 - isolation is the point
+                self.match_failures.append((article.title[:120], repr(exc)))
+                LOG.warning(
+                    "matching failed for %r (%s): %s",
+                    article.title[:120], article.source_domain, exc,
                 )
-                if link is None:
-                    continue
-                if link.relationship == Relationship.WEAK and entity is None:
-                    # Weak links are kept out of clustering entirely; they are
-                    # noise and they pollute cluster ticker sets.
-                    continue
-                links.append(link)
-            if links:
-                matched.append(
-                    MatchedArticle(
-                        article=article, links=links, classification=classification
-                    )
-                )
+                continue
+            if result is not None:
+                matched.append(result)
         return matched
+
+    def _match_one(self, article: Article) -> Optional[MatchedArticle]:
+        classification = self.classifier.classify(article)
+        text = fold(article.text)
+        headline = fold(article.title)
+        links = []
+        for profile in self.profiles:
+            entity, rejected = match_entity(article, profile, text, headline)
+            self.rejections.extend(rejected)
+            exposure = match_exposures(article, profile, text, headline)
+            link = determine_relationship(
+                article,
+                profile,
+                entity,
+                exposure if exposure.matches else None,
+                classification,
+            )
+            if link is None:
+                continue
+            if link.relationship == Relationship.WEAK and entity is None:
+                # Weak links are kept out of clustering entirely; they are
+                # noise and they pollute cluster ticker sets.
+                continue
+            links.append(link)
+        if not links:
+            return None
+        return MatchedArticle(
+            article=article, links=links, classification=classification
+        )
 
     # -- 3. events -------------------------------------------------------
     def build_events(self, matched: Sequence[MatchedArticle], store: EventStore) -> List[Event]:
@@ -323,23 +339,55 @@ class Pipeline:
 
         matched = self.match(fresh)
         LOG.info("%d articles matched to at least one company", len(matched))
-
-        if resolve_links and not offline and matched:
-            # Only resolve links that can still reach the report.
-            candidates = [m.article for m in matched]
-            _, resolved, attempted, notes = resolve_article_urls(
-                candidates, self.client, limit=int(self.config.get("run.resolve_limit", 40))
-            )
+        if self.match_failures:
             diagnostics.append(
                 SourceDiagnostic(
-                    source="link_resolution",
-                    ok=resolved > 0 or attempted == 0,
-                    attempted=attempted,
-                    succeeded=resolved,
-                    articles=resolved,
-                    note="; ".join(notes[:2]) or f"{resolved}/{attempted} aggregator links resolved",
+                    source="article_matching",
+                    ok=False,
+                    attempted=len(fresh),
+                    succeeded=len(fresh) - len(self.match_failures),
+                    articles=len(matched),
+                    note="; ".join(
+                        f"{title}: {err}" for title, err in self.match_failures[:2]
+                    ),
                 )
             )
+
+        if resolve_links and not offline and matched:
+            # Only resolve links that can still reach the report. Resolution
+            # is cosmetic - an unresolved link still reads - so it is wrapped:
+            # a network or parse failure here must not lose the whole run's
+            # events at the last step before they are written.
+            candidates = [m.article for m in matched]
+            try:
+                _, resolved, attempted, notes = resolve_article_urls(
+                    candidates, self.client,
+                    limit=int(self.config.get("run.resolve_limit", 40)),
+                )
+            except Exception as exc:  # noqa: BLE001 - isolation is the point
+                LOG.warning("link resolution failed outright: %s", exc)
+                diagnostics.append(
+                    SourceDiagnostic(
+                        source="link_resolution",
+                        ok=False,
+                        attempted=len(candidates),
+                        succeeded=0,
+                        articles=0,
+                        note=f"aborted: {exc!r}",
+                    )
+                )
+            else:
+                diagnostics.append(
+                    SourceDiagnostic(
+                        source="link_resolution",
+                        ok=resolved > 0 or attempted == 0,
+                        attempted=attempted,
+                        succeeded=resolved,
+                        articles=resolved,
+                        note="; ".join(notes[:2])
+                        or f"{resolved}/{attempted} aggregator links resolved",
+                    )
+                )
 
         store = EventStore(self.config.storage_path("events_dir")).load()
         events = self.build_events(matched, store)

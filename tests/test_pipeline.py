@@ -264,3 +264,88 @@ def test_cli_ticker_resolution_normalises(watchlist):
 def test_cli_rejects_an_unknown_ticker(watchlist):
     with pytest.raises(SystemExit):
         resolve_tickers(watchlist, "RELIANCE")
+
+
+# -- stage isolation ------------------------------------------------------
+#
+# A live run meets text no fixture contains. These check that the two stages
+# which touch arbitrary live input fail one item, not the whole run.
+
+
+def _live_like_articles():
+    """Two plainly matchable articles, stamped now so a live-style run keeps
+    them (a live collection is filtered against the lookback window)."""
+    from src.models import Article, utc_now
+
+    now = utc_now()
+    return [
+        Article(
+            title="Coal India digs beyond coal into batteries and critical minerals",
+            url="https://example.com/coal-india-critical-minerals",
+            source_name="Example",
+            source_domain="example.com",
+            published=now,
+        ),
+        Article(
+            title="Waaree Energies subsidiary forays into specialty gases",
+            url="https://example.com/waaree-specialty-gases",
+            source_name="Example",
+            source_domain="example.com",
+            published=now,
+        ),
+    ]
+
+
+def test_one_unmatchable_article_does_not_end_the_run(monkeypatch):
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    articles = _live_like_articles()
+    poison = articles[0].title
+
+    real = pipeline._match_one
+
+    def explode(article):
+        if article.title == poison:
+            raise ValueError("unparseable headline")
+        return real(article)
+
+    monkeypatch.setattr(pipeline, "_match_one", explode)
+
+    matched = pipeline.match(articles)
+
+    assert [m.article.title for m in matched] == [articles[1].title]
+    assert len(pipeline.match_failures) == 1
+    title, err = pipeline.match_failures[0]
+    assert title == poison
+    assert "unparseable headline" in err
+
+
+def test_link_resolution_failure_does_not_lose_the_run(monkeypatch):
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    def explode(*args, **kwargs):
+        raise RuntimeError("aggregator went away mid-run")
+
+    monkeypatch.setattr("src.main.resolve_article_urls", explode)
+
+    # articles_override forces the run offline, which skips resolution
+    # altogether - so stand in for collection instead, as a live run does.
+    articles = _live_like_articles()
+    monkeypatch.setattr(pipeline, "collect", lambda context, offline=False: (articles, []))
+
+    result = pipeline.run(
+        run_date=date.today(),
+        since_days=2,
+        dry_run=True,
+        offline=False,          # so the resolution branch is entered
+        resolve_links=True,
+    )
+
+    assert result.events, "events must survive a resolution failure"
+    aborted = [d for d in result.diagnostics if d.source == "link_resolution"]
+    assert aborted and not aborted[0].ok
+    assert "aggregator went away mid-run" in aborted[0].note

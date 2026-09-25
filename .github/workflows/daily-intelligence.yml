@@ -167,7 +167,7 @@ jobs:
           tail = ""
           log = pathlib.Path("run.log")
           if log.exists():
-              tail = "\n".join(log.read_text(errors="replace").splitlines()[-60:])
+              tail = "\n".join(log.read_text(errors="replace").splitlines()[-200:])
           pathlib.Path("data/last_error.json").write_text(json.dumps({
               "stamp": "${{ steps.gate.outputs.stamp }}",
               "failed_utc": datetime.datetime.utcnow().isoformat() + "Z",
