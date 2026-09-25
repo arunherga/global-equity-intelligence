@@ -63,8 +63,20 @@ jobs:
         id: gate
         run: |
           set -euo pipefail
-          HOUR=$(date -u +%H)
-          if [ "$HOUR" -lt 10 ]; then SLOT=midday; else SLOT=evening; fi
+          # Derive the slot from WHICH CRON FIRED, not from the clock.
+          # GitHub delivers these 4-6 hours late, so the midday crons
+          # (06:18-07:18 UTC) actually arrive around 11:55 UTC. A wall-clock
+          # rule called that "evening", which stamped the evening slot and
+          # made the real evening attempts skip - so only one of the two
+          # daily runs ever executed.
+          CRON="${{ github.event.schedule }}"
+          CRON_HOUR="$(echo "$CRON" | awk '{print $2}')"
+          case "$CRON_HOUR" in
+            6|7)   SLOT=midday ;;
+            13|14) SLOT=evening ;;
+            *)     SLOT=manual ;;
+          esac
+          echo "cron=${CRON:-none} hour_field=${CRON_HOUR:-none} slot=$SLOT"
           STAMP="$(date -u +%F)-$SLOT"
           echo "stamp=$STAMP" >> "$GITHUB_OUTPUT"
           echo "slot=$SLOT"   >> "$GITHUB_OUTPUT"
@@ -142,6 +154,51 @@ jobs:
           }
           JSON
           cat data/last_run.json
+
+      - name: Record the failure
+        # Job logs need admin rights to download, so a crash was invisible
+        # from outside. The tail of the run is committed instead, which any
+        # clone can read.
+        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'failure'
+        run: |
+          mkdir -p data
+          python - <<'PY'
+          import json, pathlib, datetime
+          tail = ""
+          log = pathlib.Path("run.log")
+          if log.exists():
+              tail = "\n".join(log.read_text(errors="replace").splitlines()[-60:])
+          pathlib.Path("data/last_error.json").write_text(json.dumps({
+              "stamp": "${{ steps.gate.outputs.stamp }}",
+              "failed_utc": datetime.datetime.utcnow().isoformat() + "Z",
+              "run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+              "log_tail": tail,
+          }, indent=2))
+          PY
+          cat data/last_error.json
+
+      - name: Keep the run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-log-${{ github.run_id }}
+          path: run.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit the failure record
+        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'failure'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/last_error.json || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record failed run $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && break
+            sleep 5
+          done
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Summarise the run
         if: always()
