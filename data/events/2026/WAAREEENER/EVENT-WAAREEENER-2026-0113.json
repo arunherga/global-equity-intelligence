@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.62,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING"
       ],
@@ -50,14 +50,13 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 International market development"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "solar module prices is a selling price and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -117,7 +116,7 @@
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.018320+00:00",
-  "last_updated": "2026-09-26T11:38:39.497465+00:00",
+  "last_updated": "2026-09-26T17:52:36.383170+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.018351+00:00",
@@ -138,6 +137,11 @@
       "timestamp": "2026-09-26T11:38:39.497459+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 1 -> 5"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:36.383156+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

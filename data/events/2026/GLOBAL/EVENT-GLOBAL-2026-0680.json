@@ -4,19 +4,21 @@
   "summary": "Diesel prices stay high across North America despite easing oil prices play1037.ca",
   "event_date": "2026-09-25",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "SUPPLY_CHAIN"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.2,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST"
+        "SUPPLY",
+        "INPUT_COST",
+        "PRICING"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -31,36 +33,38 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.2,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST"
+        "SUPPLY",
+        "INPUT_COST",
+        "PRICING"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -75,24 +79,25 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
       "ai_analysis": null
     }
   },
@@ -106,21 +111,51 @@
       "published": "2026-09-25T13:03:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why US Diesel Prices Could Stay High Even If Oil Tumbles: A Global Refinery Shortage US Diesel Prices Cou",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOHNnblJodk5UcFRvQzIyNW41STYzN2c5YzFQNU5GOHVXQVhIbERuQ1N5X3VSMWJhR3l5WmFxcEtweU02OENmQnVvLVBsdWpETUpVSzJSLWt0dnZMQmVWb3lhZW1TZGZIbXVMc1hVVk1iTlRwcE1mNTY5b0hmT2ZmWEg5SEFzeTVOVEFLQmI4a01hNnJsVDBsX2lLMFZ2Q3ZNWVlTVUMtTWxzM1BOVllhbEFRRWl3aWdEaE5wYS1kLXhxSmVDT2xGZzk0Q25LUHJkUUxVTXlUdUtUZFk",
+      "source_name": "Benzinga",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T14:19:08+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "play1037.ca",
   "cluster_key": "COALINDIA+JKIPL|COMMODITY|across-diesel-high-north-price-stay",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.526238+00:00",
-  "last_updated": "2026-09-26T11:38:32.526297+00:00",
+  "last_updated": "2026-09-26T17:52:40.520809+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.526292+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:40.520776+00:00",
+      "change": "sources added",
+      "detail": "Benzinga"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:40.520794+00:00",
+      "change": "categories added",
+      "detail": "SUPPLY_CHAIN"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:40.520801+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:40.520805+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

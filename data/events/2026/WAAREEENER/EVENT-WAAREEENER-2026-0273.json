@@ -63,16 +63,14 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 12,
-      "impact_band": "VERY_HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
-        "BALANCE_SHEET",
-        "REVENUE",
-        "CAPACITY"
+        "BALANCE_SHEET"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -98,13 +96,11 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
         "+4 Acquisition, merger or divestiture",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company",
         "MERGER cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
@@ -113,12 +109,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, revenue, capacity. Classified as merger.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as merger.",
       "ai_analysis": null
     },
     "FRESHARA": {
@@ -526,21 +519,41 @@
       "published": "2026-09-24T20:16:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies Ltd (NSE: WAAREEENER) Approves Indosolar Merger With 1:11 Share Swap Ratio",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMUVPRzNndDd1RU5QSWFKT3doemdicFRsNC1FQko5YnFsX2QySXdVamJGSEhTRTBkWGRHQlBUdENvTzcyU0VTOXAtY0NmaWdmckQ1TTFVTmV3ckZPNVNHUkhRWHlYRElLZVBpcGRCNzN1ZnpIbmozZUd6WS1jY2hkUFprTXVkcFlXX3dmUlh4SVFTdlVsbVlrRkQ5NW5za0xDTEV2X3hDWUtsYW5GYThYVFIxN0h3RktTT1BXWUt5WEplSmNxSWZzUVBld3VySGozWENF",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T15:52:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|MERGER+ORDER_WIN|approve-energies-indosolar-nse-waaree-waareeener",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.756594+00:00",
-  "last_updated": "2026-09-25T12:56:10.756671+00:00",
+  "last_updated": "2026-09-26T17:52:42.896947+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.756666+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:42.896918+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-09-26T17:52:42.896937+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
