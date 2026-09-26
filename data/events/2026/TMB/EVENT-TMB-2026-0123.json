@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-TMB-2026-0123",
+  "title": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?",
+  "summary": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal? Livemint",
+  "event_date": "2026-09-25",
+  "event_types": [
+    "INTEREST_RATE",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions",
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next for the yellow metal?",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPNHdIcm9vUlhZb0ZhSGJiMVl2TU44cFRnSE9mV2NRWVJVaUFESFlCVFpoOEFla1VpTzdVN0xXWV8tckx6cXhILXZrVzNqSE81VGVuZUhXdVFHY3Q5MVo0eTU4WFI3Si1sNWx1Tlp6OVZQT0VILWVPcEpuLU1jdE5GZnVVdzYtUV9vcVNLbDlNYmRNSDhCdUFscTI1QmFmOGR6TGxOVUM0UHN0WnpNUl9lZFRHYW80UGhYNktpUURPRUVvbFlhUGhlZ3g0d194SnVDNmRZeWcyWTJFUV9DN2RTQmdOOXlORVRVLV9TcmZoNF9rbDhRZFh1c0l1ZExZZklwTXVvb28yWFdPMk3SAZACQVVfeXFMUFZETXlYa24ydXhhR01qeTY5TG1CWFdZSk9vZ1dqNXBDUXZRMnVsLXpBVUM4eUJkbHdJNmFmRkZNN0FjajExR0NNckhwVld4TDVmSXI3Z1dFSFhTQkRVOE1PVVExam5sZi0tYlloRE9uSXd0dUVtTng5bjJjZEJmUlNlclNrazdYZUFxUXlZbkNOWHQ2SUM2QVAyS1FvdHRucU9PM2VSdDFnQTJ3TzRfYXVobUR1bm5nRWREWFBJemdNZkdyVUVBUGVnaWhaQkZoaFhIbUg1QmZWOWk4X3dnZUhENlpEWkwzM3ZQU0hPa1lqb191QTkxTUVpYmZtWnF2M3IwaUFsOFBWUW9kVTByQ0w",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T18:27:57+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Livemint",
+  "cluster_key": "TMB|COMMODITY+INTEREST_RATE|gold-gold-mcx-outlook-price-slips",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-26T11:38:32.631756+00:00",
+  "last_updated": "2026-09-26T11:38:32.631831+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-26T11:38:32.631827+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

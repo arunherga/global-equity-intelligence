@@ -10,31 +10,31 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -47,33 +47,25 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [
         "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -81,7 +73,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -90,7 +82,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -104,21 +96,66 @@
       "published": "2026-09-23T10:01:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank Strike September 28-30: Will Banks Open on Sunday, September 27? Check SBI, HDFC, ICICI, Axis, PSU Bank Services, RBI Approval and Customer Advisory",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPZ3V5WjVacVZERGI3UUFVMl9Va21oV25JMWJKSDd4ZlpLclZDQzRlZHctLTg2cldPeWRpX3cyLVlwZ2FkTVVxOVlWSFIwamp2Z1o0Z2EwTVN1NVRPcVFrdkx0WDU0RU9JN0lYRFlLcXdEUjhCQ01XZGkyUHR2S1ExZTJoa3JlU2NGZ1I4OTJUMXUxU2dxTUI1aTIzeTl0cTI2S1I2Qko5VDg5OTkwemp2UEdpZEN4cktuMVlRUThVdXRxcnM3QmdUb2hBdkEzeldYNWttQVBKcnVBY3pwcFdPUmduMXN6ajUyUGdSYjUyNFRwUll2UldYTk9VX3VFaFdHZHpVZ0wya3JDYmZLR1N3MzN5cXh2czVuSmfSAZ8CQVVfeXFMUDBmQU5rMVExVWNibXFRY3F4RVc5UGJ2R3c2VFZRUDJnR3NtZnJDRFU5aF9nX25oSXNFOXdpUzdnWUthcmNtcWlULTlJMEtSbUhzY1BlaFJueWFhUllMVm5qT011c0t3cG90WkVTYXZLUFBZUm1yVzgyUjAxN0xwa3dqQktELW9QUFA5Vl9YZEE0cmJvYVJGN1ZpNUk5RzZWWmVVNVhkWlIwMHk1Ym5Bay1MRWpYVjNTY3JiWS1ndWNFc2Jvb0ttZU94OTlJcEFuREFBNVpGaTdSdnNzVHVzb2tOeEhxamdDdnh6c2J2cjUtS1ZYVG9qV0ZmSnhzdHNMbEI2Y0htbTNsU0xTWnBqa1NBM19VZk5IX2psdDR5Ylk",
+      "source_name": "The Sunday Guardian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T10:50:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank open on Sunday, September 27 ahead of three-day bank strike",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNWXBBcUJjMU1UaHYtaVpvMTFaLTF4X19HSzkzT0NxRmdLeXQ0bzRndl8wVzc4VG9RbnBfYkRWZGJSdV9KVXlob2g2OWhFemg2bmNyQk43QUpDem5fVkxjWmJNRHdzUlpPbng1ZDlPVFBQSkVlQzljMU1kM2ZfUFF5ZTNfeEpwdlpDY0I0a3VGU0pSamZnREN1UVM4QW5QMExROFFIMU8zT0RwMDVlRWpXeWx4d2tUa25GblI4SndYeFg0WFhGTG1iN2lR",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T18:26:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank to Open on Sunday, What About the September 28–30 Bank Strike?",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTE4wTU1abEh3T1F3ZktpanpYZEJLR0kwZDNOVzE2c01sVVJzZVR4MnRGU2pYUGJxZEFZZTdBRGtLNzlIYWNFeGtsY2pOT0xBcHQ1MGlXaHhrcTQ1VktPb09ZQnJNVVN4Y3ZVT3ZRY21HZW10MFNYVG9zZEVsTktKcWlmbGpOaFZQMmE1QUNFUjI0NEtiQXltaUU3WHPSAaMBQVVfeXFMUGp1bTlYbThCdzl2TEdqdHp4emhXQ2ZuMDdPWFdIdl8yTW1uS2phOFlJdU1UTG9sV3VqS3BHNVFMbmlmdlBOb0xmbGRZV043MWdDV1p5QjR1VTNKQUltNzBQakliU3UzSXh4NWlOdTdrRy0xVWtqQlpyVUNJY3p6bnRGNWdNWUdUeUQ3Z0RBcmZVRm5haU02NnlGdE9DaTJLTks5QQ",
+      "source_name": "Times Bull",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T07:39:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Mid-Day",
   "cluster_key": "HDFCBANK+TMB|REGULATORY|approve-bank-open-rbi-remain-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.812326+00:00",
-  "last_updated": "2026-09-23T12:25:52.812390+00:00",
+  "last_updated": "2026-09-26T11:38:55.758861+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.812385+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:55.758832+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, The Sunday Guardian, Times Bull"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:55.758849+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:55.758856+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 9"
     }
   ],
   "price_reaction": {}

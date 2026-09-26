@@ -206,11 +206,11 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -222,15 +222,16 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -238,13 +239,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "KSOLVES": {
@@ -460,16 +461,26 @@
       "published": "2026-09-24T06:44:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BSE INDIA DEFENCE INDEX Share Price | BSE INDIA DEFENCE INDEX Index | BSE INDIA DEFENCE INDEX Today",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWdHTV8tMk5Ta1VXYUJ6WnpMQUlLSGhpUzgxNkxKbG5mdmlhYmQ1RTY5SW5JN2UwQjROTHY3eG9FVDJGSl9DVVQyZ1VCYVlOa3g5Vy1iTm43bFBEeTVhU2ZzRmotZ01OcndsbUhuZnItQ0toN2ktZmJORHVKQTY1VTV0NXB2YWdV",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T19:52:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|price-recode-recode-share-studios-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.573565+00:00",
-  "last_updated": "2026-09-24T12:03:19.091117+00:00",
+  "last_updated": "2026-09-26T11:38:59.011925+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.573604+00:00",
@@ -490,6 +501,16 @@
       "timestamp": "2026-09-24T12:03:19.091112+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:59.011896+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:59.011917+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

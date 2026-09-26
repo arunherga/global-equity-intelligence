@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.62,
       "business_impacts": [
         "PRICING"
       ],
@@ -50,13 +50,14 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "-2 Single unverified source"
+        "+2 International market development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "solar module prices is a selling price and is moving down"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -87,16 +88,36 @@
       "published": "2026-09-25T10:36:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Anza expects at least a 40% spike in U.S. solar module prices after Section 232",
+      "url": "https://www.pv-magazine.com/2026/09/26/anza-expects-at-least-a-40-spike-in-solar-module-prices-after-section-232",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-26T08:00:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Anza expects at least a 40% spike in U.S. solar module prices after Section 232",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWWlXQWFDQkxwTEZsdFFJNjZ1a0pLdGFpQzZqTVAzZnd3UFcyRzlEbzJhc0oyNWhZbWN1UWZmV0JzS3B1X1RxOTl0TkVUZnpLc1JBSl9JQVloODltWkVvTG5DcjdtUDBTeWlic0dmcjlKcU0xMi1Hd0xFRWVvcTVEVlk5VWNjNFdhbkpKMll2WkQ1bVBId1JwQmxZdlRtaHBydlB4S1RfTlQ2SklELTFzcGJVaw",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T08:03:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "PR Newswire",
   "cluster_key": "WAAREEENER|OTHER|anza-data-module-price-shows-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.018320+00:00",
-  "last_updated": "2026-09-25T12:56:59.050377+00:00",
+  "last_updated": "2026-09-26T11:38:39.497465+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.018351+00:00",
@@ -107,6 +128,16 @@
       "timestamp": "2026-09-25T12:56:59.050359+00:00",
       "change": "sources added",
       "detail": "pv magazine USA"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:39.497443+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine, pv magazine Global"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:39.497459+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 5"
     }
   ],
   "price_reaction": {}

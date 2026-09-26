@@ -10,38 +10,23 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "MIXED",
-      "confidence": 0.78,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REGULATION"
+        "REGULATION",
+        "CUSTOMERS"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "repo rate",
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
           "weight": 1.0,
-          "detail": ""
+          "detail": "generic role"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -52,26 +37,24 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+4 Regulatory or legal action",
-        "+3 Original regulator announcement"
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "official confirmation available",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to Reserve Bank of India, and repo rate. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer, geography exposure to traders, and India. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -151,21 +134,41 @@
       "published": "2026-09-25T18:05:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "WMA limit for the Government of India set at Rs 50,000 crore from October 2026 to March 2027",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNT29hbGtFT3FCVEZUNEhoaUN6X3piX1N2TlQ2eXJPMHp5LWtSNDJxQUdGU3IyYVZVTFlUbWNjWDM2X2ZoSTZ5UFozSWlLTllfWFNmc05GNHRLU1pQZ184MTA1d1JRY2dwamJXcmQwTk1hc3JnYWhSZEhtM09fdmZqUDlfVi1YQ3FkUzhVN1RFS2E3Tk43VlE",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T14:23:54+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+REGULATORY|2026-government-india-limit-october-wma",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.578281+00:00",
-  "last_updated": "2026-09-25T12:56:10.578344+00:00",
+  "last_updated": "2026-09-26T11:38:46.605668+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.578339+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:46.605643+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:46.605662+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> NEUTRAL"
     }
   ],
   "price_reaction": {}

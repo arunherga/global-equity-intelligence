@@ -1,0 +1,142 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0670",
+  "title": "BFSI Movement: From LIC to Bank Of Baroda, Key Leadership Moves this week",
+  "summary": "India's BFSI sector witnessed significant leadership changes across banking, insurance, wealth management, and NBFC space this week from Dinesh Pant's exit as LIC MD and Bank of Baroda appointing KM Salam as Deputy CISO, to Generali Central Life bringing in Saddam Hossain as CRO, and former RBI CGM Shrimohan Yadav joining as Independent Director at Optimo Capital.",
+  "event_date": "2026-09-26",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.45,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Bank of Baroda",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "wealth management",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Bank of Baroda's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to Bank of Baroda, and RBI. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "BFSI Movement: From LIC to Bank Of Baroda, Key Leadership Moves this week",
+      "url": "https://bfsi.economictimes.indiatimes.com/news/banking/bfsi-movement-from-lic-to-bank-of-baroda-key-leadership-moves-this-week/134496631",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-26T03:54:02+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|OTHER|bank-baroda-bfsi-leadership-lic-movement",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-26T11:38:32.477279+00:00",
+  "last_updated": "2026-09-26T11:38:32.477340+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-26T11:38:32.477336+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -50,6 +50,51 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its customer exposure to state governments. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEUTRAL",
+      "confidence": 0.81,
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -72,21 +117,51 @@
       "published": "2026-09-22T15:10:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Auction of State Government Securities",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63672",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-09-25T18:20:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "State governments to issue ₹22,200 crore worth of SGS in the September 29 auction",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONmhVYUw0SmZkdlhfRUVyaV8xVWcwWHhRNmd5cm82UldxVXh6a2RySDJVblRoanNQZ0YxbUZ0dGItTHY0VDNoQ2sxLXNLdXRiTlZLVkFValAzaDMxYlh3ckNJWEtlZ0ZNS0VpUzNVRlRTbjRSNzJwZXpKVEpvMjdfLUprUTRyVEZqUHNNLW5BTkdxcmlvSVZF",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T14:26:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "MSTCLTD|TENDER|auction-based-government-result-state-yield/price",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.428492+00:00",
-  "last_updated": "2026-09-23T12:25:53.884717+00:00",
+  "last_updated": "2026-09-26T11:38:33.100913+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.428527+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:33.100888+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India, Traders Union"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:33.100907+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

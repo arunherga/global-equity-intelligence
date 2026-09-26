@@ -1,0 +1,98 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0255",
+  "title": "Salesforce repurchases $25B stock, cuts shares 10%, eyes Anthropic stake to retire debt and boost finances",
+  "summary": "Salesforce repurchases $25B stock, cuts shares 10%, eyes Anthropic stake to retire debt and boost finances Pluang",
+  "event_date": "2026-09-25",
+  "event_types": [
+    "SHARE_BUYBACK",
+    "DEBT"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "BALANCE_SHEET",
+        "DEBT",
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a platform or supplier the company depends on is investing"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, debt, supply. Classified as share buyback.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce repurchases $25B stock, cuts shares 10%, eyes Anthropic stake to retire debt and boost finances",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTDFDekdVMzJSaEZ0TXRSR0FVbG5ObDRjZ1dwNGpoYy1JZHZGcmZDTm9FYUNCOXNVdDNla1VXNW1aZHJzdGdqY2RLZzN5ZWh0NVR4YlNIajMyR01UX21maDVhWDlCQ21iY0hFMEcxZnJWZEI2QVhUSUktdmMxSlRjc0hpbmNRMW4zNWFwTUpQTi1uQTR6bXA0Y3UxY3lCa0R2b002VUxXeFg5MjVvdkh5VGZR",
+      "source_name": "Pluang",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T18:14:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce: Anthropic Stake Gives Optionality To Retire $25 Billion Share Repurchase Debt",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNkxpajlaMTBHTFBBeEc0S2VTRzh5OTU2aFlBdTl0UjNNM0lrWWV1eDNJZnd3dVBrRVBOVkNhSlZCSU4xTkdpcEQzcEE5YmtVYmQ4enZRd2NTUE1NR3p2aGhzb29STm5OMzItcTRobk5RYVplWVJpUjFSVWRjQ1NTX2xZNWY0ZlBPZTVnQmNBSzNRanZ0OU4wbEJVX3lGc00tbG9LcUxES05PRHNEYnU4ckFhRTZlOU04U3ZpSy05ZnFVMFB4OFlJ",
+      "source_name": "Seeking Alpha",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T17:58:36+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Pluang",
+  "cluster_key": "KSOLVES|DEBT+SHARE_BUYBACK|25b-cut-repurchases-salesforce-share-share",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-26T11:38:32.626314+00:00",
+  "last_updated": "2026-09-26T11:38:32.626389+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-26T11:38:32.626385+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

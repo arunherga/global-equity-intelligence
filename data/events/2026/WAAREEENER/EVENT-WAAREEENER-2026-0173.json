@@ -10,84 +10,47 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 11,
-      "impact_band": "VERY_HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.62,
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
+        "EXPORTS",
         "PRICING",
         "INPUT_COST",
-        "EXPORTS"
+        "COMPETITION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "solar module prices",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "output commodity; in headline"
-        },
-        {
-          "exposure_type": "COMMODITY",
-          "term": "polysilicon",
+          "exposure_type": "COMPETITOR",
+          "term": "Premier Energies",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "input commodity"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "module price",
-          "relationship": "SECTOR",
-          "weight": 2.3,
-          "detail": "international topic; in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "solar module prices",
-          "relationship": "SECTOR",
-          "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "solar modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "solar cells",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (solar module prices) is the subject of the headline"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "solar module prices is a selling price and is moving up",
         "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to solar module prices, and polysilicon. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Premier Energies. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
       "ai_analysis": null
     }
   },
@@ -141,16 +104,26 @@
       "published": "2026-09-25T07:30:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar News Roundup: IRENA Doubling Target, US Tariff Price Surge, Abu Dhabi 14GW Goal, Canada Duty End, EPA Ruling, Premier Energies 7GW Plant - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNVXpPaF90NzlYeEt2SWU5WUp6VEYwTXQ0VWN0TXgya3pBaWd6cUl4Nm1qWkE0dTlkbm9EYk5ucThPTXN0UGNjbllNZDYxYkk4SUwyaWRhYk9fZzNuLUZhamtlTmI4OHJESmhLTGN0RTY2cDBCVUhJOFdHdHlRN1RXMmYyQU9sdlU1WUxrNHFoMnpmb2ZCZzZRRGVMUEUtdm53N1MxV2JlWlR4WGhCUUJLeGlTN3NKZldSMDVJOGlud3g0N2hIVS1YX1NKRERMLWdEa1RuLTRPMW1EZHc3NlYtZTVkY25FLXdNTXpXcVQ2NVJIZGlPd1hpakMtNA",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-25T16:10:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "PV Tech",
   "cluster_key": "WAAREEENER|COMMODITY+TARIFF|40%+-module-price-rise-solar-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.740032+00:00",
-  "last_updated": "2026-09-25T12:56:18.041791+00:00",
+  "last_updated": "2026-09-26T11:38:52.588132+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.740107+00:00",
@@ -166,6 +139,16 @@
       "timestamp": "2026-09-25T12:56:18.041785+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 9 -> 11"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:52.588108+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-09-26T11:38:52.588126+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
