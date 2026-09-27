@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from datetime import date
 
 import pytest
@@ -575,3 +576,137 @@ def test_gemini_json_in_a_code_fence_still_parses(monkeypatch):
     raw = _gemini().complete("SYSTEM", "PROMPT")
 
     assert extract_json(raw) == {"revenue_effect": "ok"}
+
+
+# -- --check-ai, the two-step verification --------------------------------
+
+
+def _stub_event(ticker="WAAREEENER", score=11):
+    event = make_event(impact_score=score)
+    if ticker != "WAAREEENER":
+        impact = event.stocks.pop("WAAREEENER")
+        impact.ticker = ticker
+        event.stocks[ticker] = impact
+    return event
+
+
+def test_best_stored_event_ranks_on_impact_and_skips_unknown_tickers(monkeypatch):
+    """Picks the event a run would care most about, not the first one."""
+    import src.main as main_mod
+    from src.profiles import load_watchlist
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+
+    small = _stub_event(score=6)
+    big = _stub_event(score=14)
+    delisted = _stub_event(ticker="NOTINWATCHLIST", score=15)
+
+    class _Entry:
+        def __init__(self, eid, impact):
+            self.event_id, self.max_impact = eid, impact
+
+    events = {"small": small, "big": big, "gone": delisted}
+
+    class _Store:
+        index = {
+            "gone": _Entry("gone", 15),
+            "small": _Entry("small", 6),
+            "big": _Entry("big", 14),
+        }
+
+        def load(self):
+            return self
+
+        def get(self, eid):
+            return events[eid]
+
+    monkeypatch.setattr(main_mod, "EventStore", lambda *a, **k: _Store())
+
+    event, impact, profile = main_mod._best_stored_event(config, watchlist)
+
+    # 15 is highest but its ticker has no profile, so it is skipped.
+    assert impact.impact_score == 14
+    assert impact.ticker == "WAAREEENER"
+    assert profile.ticker == "WAAREEENER"
+
+
+def test_check_ai_runs_the_real_prompt_and_shows_the_guardrail(monkeypatch, capsys):
+    """A one-field probe cannot stand in for the real ten-field prompt.
+
+    Without json mode - Gemini's case - the risk is the model answering
+    unparseably on the long prompt while sailing through a trivial one.
+    """
+    import src.main as main_mod
+    from src.profiles import load_watchlist
+
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+
+    answer = {key: f"text for {key}" for key, _ in main_mod._AI_FIELDS}
+    answer["revenue_effect"] = "Strong book; we would buy at a target price of 500."
+    answer["monitor_next"] = ["the exchange filing"]
+    _capture_openai(monkeypatch, _chat_response(text=json.dumps(answer)))
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    event = _stub_event(score=12)
+    monkeypatch.setattr(
+        main_mod, "_best_stored_event",
+        lambda c, w: (event, event.stocks["WAAREEENER"], w.get("WAAREEENER")),
+    )
+
+    assert main_mod._check_ai(config, watchlist) == 0
+
+    out = capsys.readouterr().out
+    assert "Now the real analysis prompt" in out
+    assert f"{len(main_mod._AI_FIELDS)} of {len(main_mod._AI_FIELDS)} fields answered" in out
+    assert "guardrail fired" in out
+    assert "[redacted]" in out
+    assert "buy" not in out.split("-- AI analysis")[1]
+    assert "added to a run" in out
+
+
+def test_check_ai_fails_loudly_when_the_long_prompt_is_not_json(monkeypatch, capsys):
+    import src.main as main_mod
+    from src.profiles import load_watchlist
+
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    event = _stub_event(score=12)
+    monkeypatch.setattr(
+        main_mod, "_best_stored_event",
+        lambda c, w: (event, event.stocks["WAAREEENER"], w.get("WAAREEENER")),
+    )
+
+    replies = iter([
+        _chat_response(text='{"revenue_effect": "ok"}'),   # the probe passes
+        _chat_response(text="Sure! Here are my thoughts in prose."),  # the real one
+    ])
+    monkeypatch.setattr(
+        "src.ai.providers.openai_provider.requests.post",
+        lambda *a, **k: next(replies),
+    )
+
+    assert main_mod._check_ai(config, watchlist) == 1
+
+    out = capsys.readouterr().out
+    assert "FAIL" in out
+    assert "not valid JSON" in out
+    assert "stronger model" in out
+
+
+def test_check_ai_says_so_when_there_is_nothing_stored_to_analyse(monkeypatch, capsys):
+    import src.main as main_mod
+    from src.profiles import load_watchlist
+
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    _capture_openai(monkeypatch, _chat_response())
+    monkeypatch.setattr(main_mod, "_best_stored_event", lambda c, w: None)
+
+    config = load_config()
+    assert main_mod._check_ai(config, load_watchlist(config=config)) == 0
+
+    out = capsys.readouterr().out
+    assert "SKIPPED" in out
+    assert "run the pipeline once" in out

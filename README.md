@@ -341,10 +341,21 @@ export GEMINI_API_KEY=...           # not on the command line in a shared shell
 python -m src.main --check-ai
 ```
 
-It prints `OK` with the parsed JSON, `PARTIAL` if the model answered but not
-in JSON (the analysis would be discarded — use a stronger model), or `FAIL`
-with the API's own message, which names a wrong model id precisely. Until
-that prints `OK`, assume the layer is not working.
+It runs two steps, because they fail for different reasons and the cheap
+one should fail first:
+
+1. A trivial one-field prompt — catches an unset key, a model the account
+   cannot reach, and a rate limit, in one short call.
+2. **The real analysis prompt**, against the highest-scoring event already
+   in the store. This is the step that matters. A one-field probe cannot
+   stand in for it: the real prompt is long, asks for ten fields, and where
+   json mode is unavailable — Gemini included — depends on the model
+   returning parseable JSON unprompted. It also prints how long a call takes
+   and what twelve of them would add to a run, and shows the analysis as it
+   will read in the report.
+
+Each step prints `OK`, or `FAIL` with the API's own message. Until step 2
+prints `OK`, assume the layer is not working.
 
 ### Where the analysis appears
 
@@ -409,7 +420,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-352 tests, all offline. The interesting ones are regressions:
+356 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

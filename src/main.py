@@ -645,7 +645,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         return check_sources(config, profiles)
 
     if args.check_ai:
-        return _check_ai(config)
+        return _check_ai(config, watchlist)
 
     run_date = date.fromisoformat(args.date) if args.date else date.today()
 
@@ -706,16 +706,30 @@ def _print_summary(
     print()
 
 
-def _check_ai(config: Config) -> int:
-    """Make one real call to the configured model and say what came back.
+def _check_ai(config: Config, watchlist: Watchlist) -> int:
+    """Verify the configured model, in two steps, against reality.
 
     The project's rule is that nothing is claimed to work until it has been
     observed working. An API key and a model name cannot be verified from a
-    test suite, so this does the smallest possible live call and reports what
-    happened - a wrong model name or an unset key shows up here in seconds
-    instead of as an empty AI section in tomorrow's report.
+    test suite, so this makes real calls and reports what happened - a wrong
+    model name or an unset key shows up here in seconds instead of as an
+    empty AI section in tomorrow's report.
+
+    Two steps, because they fail for different reasons and the cheap one
+    should fail first:
+
+    1. A trivial one-field prompt. Catches an unset key, a model name the
+       account cannot reach, and a rate limit, in one short call.
+    2. The real analysis prompt, against the highest-scoring event already
+       in the store. This is the step that matters and the one a tiny probe
+       cannot stand in for: the real prompt is long, asks for ten fields,
+       and - for every provider where json mode is unavailable, Gemini
+       included - depends on the model returning parseable JSON of its own
+       accord. It also shows what the analysis will actually read like, and
+       how long a call really takes, which decides whether twelve of them
+       fit inside a run.
     """
-    from .ai import build_provider, extract_json
+    from .ai import analyse_event, build_provider, extract_json
     from .ai.base import SYSTEM_PROMPT
 
     provider_name = str(config.get("ai.provider", "ollama"))
@@ -749,9 +763,68 @@ def _check_ai(config: Config) -> int:
         print("         analysis would be discarded; try a stronger model")
         return 1
     print(f"OK       parsed JSON: {parsed}")
+
+    # -- step 2: the prompt a real run actually sends -------------------
+    print("\nNow the real analysis prompt, on the best event in the store.")
+    candidate = _best_stored_event(config, watchlist)
+    if candidate is None:
+        print("SKIPPED  no stored event with a profile to analyse yet;")
+        print("         run the pipeline once, then re-run this.")
+        return 0
+
+    event, impact, profile = candidate
+    print(f"         {impact.ticker} {impact.impact_score}/15 - {event.title[:64]}")
+    started = time.monotonic()
+    result = analyse_event(provider, event, impact, profile, config)
+    elapsed = time.monotonic() - started
+
+    if not result.ok:
+        print(f"\nFAIL     the real prompt failed after {elapsed:.1f}s: {result.error}")
+        if "not valid JSON" in result.error:
+            print("         the model answered but not parseably. Options: a")
+            print("         stronger model, or a provider that supports json mode.")
+        return 1
+
+    filled = sum(1 for key, _ in _AI_FIELDS if str(result.data.get(key, "")).strip())
+    print(f"\nOK       {elapsed:.1f}s, {filled} of {len(_AI_FIELDS)} fields answered")
+    if result.redactions:
+        print(f"         guardrail fired: {'; '.join(result.redactions)}")
+    budget = int(config.get("ai.max_events_per_run", 12))
+    print(f"         at {elapsed:.0f}s a call, {budget} events is "
+          f"~{elapsed * budget / 60:.0f} min added to a run "
+          f"(timeout is {config.get('ai.timeout_seconds', 90)}s per call)")
+    print()
+    for line in _format_ai_analysis({
+        "provider": result.provider, "model": result.model, **result.data
+    }):
+        print(f"  {line}")
     if not config.ai_enabled:
         print("\nSet ai.enabled: true in config.yaml to use it in a run.")
     return 0
+
+
+def _best_stored_event(config: Config, watchlist: Watchlist):
+    """The highest-scoring stored event that a profile can be found for.
+
+    Uses real stored data rather than a fixture so the check exercises the
+    prompt a run would genuinely build - real exposures, real categories,
+    real source summaries - not a tidied-up version of one.
+    """
+    store = EventStore(config.storage_path("events_dir")).load()
+    # The index already carries max_impact, so rank on it and load only the
+    # few events worth reading rather than the whole store.
+    ranked = sorted(store.index.values(), key=lambda e: -e.max_impact)
+    for entry in ranked[:25]:
+        event = store.get(entry.event_id)
+        if event is None:
+            continue
+        for impact in sorted(event.stocks.values(), key=lambda i: -i.impact_score):
+            try:
+                profile = watchlist.get(impact.ticker)
+            except KeyError:
+                continue
+            return event, impact, profile
+    return None
 
 
 def _run_query(config: Config, watchlist: Watchlist, args) -> int:
