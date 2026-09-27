@@ -251,15 +251,19 @@ ai:
   # It never recommends buying, selling or holding - the prompt forbids it
   # and src/ai/base.py redacts the language if a model produces it anyway.
   enabled: false
-  provider: ollama          # ollama | openai | anthropic
+  provider: ollama          # ollama | gemini | openai | anthropic
   # Match the model to the provider:
-  #   ollama     -> llama3.1:8b          (free, local, needs Ollama running)
+  #   ollama     -> llama3.1:8b            free, local, needs Ollama running
+  #   gemini     -> gemini-3.1-flash-lite  free tier, no card, GEMINI_API_KEY
   #   openai     -> gpt-4o-mini
-  #   anthropic  -> claude-sonnet-4-5    (confirm against your account)
-  # Verify a change with: python -m src.main --check-ai
+  #   anthropic  -> claude-sonnet-4-5
+  # Model names change; confirm yours with the provider. Verify any change
+  # with: python -m src.main --check-ai
   model: llama3.1:8b
-  # Only read by the ollama provider; the hosted providers use their own
-  # endpoint unless ANTHROPIC_BASE_URL / OPENAI_BASE_URL overrides it.
+  # Only read by the ollama provider. The hosted providers ignore it - a
+  # config still pointing here must not capture a hosted call - and use
+  # their own endpoint unless ANTHROPIC_BASE_URL / GEMINI_BASE_URL /
+  # OPENAI_BASE_URL overrides it.
   base_url: http://localhost:11434
   # Messages API requires an output cap. Ten schema fields need room.
   max_output_tokens: 2000

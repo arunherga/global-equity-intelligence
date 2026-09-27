@@ -34,6 +34,10 @@ def build_provider(config: Config) -> Optional[AiProvider]:
             from .providers.anthropic_provider import AnthropicProvider
 
             return AnthropicProvider(settings)
+        if name in {"gemini", "google"}:
+            from .providers.gemini_provider import GeminiProvider
+
+            return GeminiProvider(settings)
     except Exception as exc:  # noqa: BLE001 - AI must never break a run
         LOG.warning("could not build AI provider %r: %s", name, exc)
         return None

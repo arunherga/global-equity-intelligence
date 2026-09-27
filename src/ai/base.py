@@ -87,6 +87,23 @@ class AiProvider(Protocol):  # pragma: no cover - interface
         """Return the model's raw text response."""
 
 
+def api_error_text(response) -> str:
+    """The API's own explanation of a failed call, trimmed.
+
+    A generic "400 Client Error" hides the one thing worth knowing: which
+    model name was rejected, or that the key is not valid. Never includes a
+    header, so a key cannot reach a log through an exception message.
+    """
+    try:
+        body = response.json()
+    except Exception:  # noqa: BLE001 - an error page need not be JSON
+        return (getattr(response, "text", "") or "")[:200]
+    error = body.get("error") if isinstance(body, dict) else None
+    if isinstance(error, dict):
+        return str(error.get("message") or error)[:200]
+    return str(error or body)[:200]
+
+
 def build_prompt(context: Dict[str, Any]) -> str:
     schema = json.dumps(ANALYSIS_SCHEMA, indent=2)
     return PROMPT_TEMPLATE.format(schema=schema, **context)

@@ -343,3 +343,134 @@ def test_enrich_reports_why_it_produced_nothing(monkeypatch):
 
     assert enriched == 0
     assert errors == ["WAAREEENER: 404 from Anthropic: model: claude-does-not-exist"]
+
+
+# -- the Gemini provider --------------------------------------------------
+#
+# Gemini is the OpenAI dialect with two edges that matter: no documented
+# response_format, and its own key variable. Both are asserted here, because
+# sending an unsupported parameter is how a working call becomes a 400.
+
+
+def _capture_openai(monkeypatch, response):
+    seen = {}
+
+    def fake_post(url, headers=None, json=None, timeout=None):
+        seen["url"] = url
+        seen["headers"] = headers or {}
+        seen["body"] = json or {}
+        return response
+
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", fake_post)
+    return seen
+
+
+def _chat_response(text='{"revenue_effect": "ok"}', status_code=200, payload=None):
+    if payload is None:
+        payload = {"choices": [{"message": {"role": "assistant", "content": text}}]}
+    return _FakeResponse(status_code=status_code, payload=payload)
+
+
+def _gemini(**overrides):
+    from src.ai.providers.gemini_provider import GeminiProvider
+
+    settings = {"timeout_seconds": 30, "temperature": 0.1}
+    settings.update(overrides)
+    return GeminiProvider(settings)
+
+
+def test_gemini_omits_response_format(monkeypatch):
+    """Google's compat layer does not document it; an unknown field 400s."""
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    seen = _capture_openai(monkeypatch, _chat_response())
+
+    out = _gemini().complete("SYSTEM", "PROMPT")
+
+    assert out == '{"revenue_effect": "ok"}'
+    assert "response_format" not in seen["body"]
+    assert seen["url"] == (
+        "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+    )
+    assert seen["headers"]["Authorization"] == "Bearer test-key-not-real"
+    assert seen["body"]["messages"][0]["role"] == "system"
+
+
+def test_openai_still_asks_for_json_mode(monkeypatch):
+    """The refactor must not quietly drop it where it is supported."""
+    from src.ai.providers.openai_provider import OpenAiProvider
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key-not-real")
+    seen = _capture_openai(monkeypatch, _chat_response())
+
+    OpenAiProvider({"model": "gpt-4o-mini"}).complete("SYSTEM", "PROMPT")
+
+    assert seen["body"]["response_format"] == {"type": "json_object"}
+    assert seen["url"] == "https://api.openai.com/v1/chat/completions"
+
+
+def test_gemini_accepts_google_api_key_as_a_fallback(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("GOOGLE_API_KEY", "google-side-key")
+    _capture_openai(monkeypatch, _chat_response())
+
+    assert _gemini().complete("SYSTEM", "PROMPT")
+
+
+def test_gemini_without_a_key_names_the_right_variable(monkeypatch):
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+
+    with pytest.raises(RuntimeError, match="GEMINI_API_KEY is not set"):
+        _gemini().complete("SYSTEM", "PROMPT")
+
+
+def test_a_hosted_provider_ignores_a_local_base_url(monkeypatch):
+    """config.yaml ships base_url pointing at Ollama.
+
+    If a hosted provider honoured it, switching provider alone would send
+    every call to localhost and look like a dead model.
+    """
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    monkeypatch.delenv("GEMINI_BASE_URL", raising=False)
+
+    provider = _gemini(base_url="http://localhost:11434")
+
+    assert "localhost" not in provider.base_url
+    assert provider.base_url.startswith("https://generativelanguage.googleapis.com")
+
+
+def test_gemini_rate_limit_is_reported_as_itself(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    _capture_openai(
+        monkeypatch,
+        _chat_response(
+            status_code=429,
+            payload={"error": {"message": "Quota exceeded for requests per day"}},
+        ),
+    )
+
+    with pytest.raises(RuntimeError) as excinfo:
+        _gemini().complete("SYSTEM", "PROMPT")
+
+    message = str(excinfo.value)
+    assert "429" in message
+    assert "Quota exceeded" in message
+    assert "test-key-not-real" not in message
+
+
+def test_gemini_survives_a_reply_with_no_choices(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    _capture_openai(monkeypatch, _chat_response(payload={"choices": []}))
+
+    assert _gemini().complete("SYSTEM", "PROMPT") == ""
+
+
+def test_gemini_json_in_a_code_fence_still_parses(monkeypatch):
+    """Without json mode a model may fence its answer; extract_json copes."""
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    fenced = '```json\n{"revenue_effect": "ok"}\n```'
+    _capture_openai(monkeypatch, _chat_response(text=fenced))
+
+    raw = _gemini().complete("SYSTEM", "PROMPT")
+
+    assert extract_json(raw) == {"revenue_effect": "ok"}

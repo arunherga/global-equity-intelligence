@@ -1,53 +1,94 @@
-"""OpenAI-compatible provider.
+"""OpenAI-compatible provider, and the base for other endpoints that speak
+the same chat-completions dialect.
 
-Reads its key from ``OPENAI_API_KEY`` in the environment. A key is never read
-from, or written to, a configuration file.
+Reads its key from the environment. A key is never read from, or written to,
+a configuration file.
+
+Everything an endpoint can differ on is a class attribute rather than a
+branch, because "OpenAI-compatible" is a spectrum: the URL, the key's
+variable name, the default model, and whether the endpoint honours
+``response_format: json_object``. Gemini's compatibility layer, for one,
+does not document that parameter, and sending an unknown parameter is how
+you turn a working call into a 400.
 """
 
 from __future__ import annotations
 
 import os
-from typing import Any, Dict
+from typing import Any, Dict, Tuple
 
 import requests
+
+from ..base import api_error_text
 
 
 class OpenAiProvider:
     name = "openai"
 
+    DEFAULT_BASE_URL = "https://api.openai.com/v1"
+    BASE_URL_ENV = "OPENAI_BASE_URL"
+    API_KEY_ENV: Tuple[str, ...] = ("OPENAI_API_KEY",)
+    DEFAULT_MODEL = "gpt-4o-mini"
+    # Ask the endpoint to guarantee JSON. Only where it is actually supported.
+    JSON_MODE = True
+
     def __init__(self, config: Dict[str, Any]) -> None:
         self.base_url = str(
-            config.get("base_url") or os.environ.get("OPENAI_BASE_URL")
-            or "https://api.openai.com/v1"
+            self._configured_base_url(config)
+            or os.environ.get(self.BASE_URL_ENV)
+            or self.DEFAULT_BASE_URL
         ).rstrip("/")
-        self.model = str(config.get("model", "gpt-4o-mini"))
+        self.model = str(config.get("model") or self.DEFAULT_MODEL)
         self.timeout = int(config.get("timeout_seconds", 90))
         self.temperature = float(config.get("temperature", 0.1))
-        self.api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+        self.api_key = self._key_from_environment()
 
+    # -- overridable pieces ---------------------------------------------
+    def _configured_base_url(self, config: Dict[str, Any]) -> str:
+        """``ai.base_url`` belongs to the ollama provider by default.
+
+        A subclass that wants it honoured says so; otherwise a config left
+        pointing at localhost:11434 would silently redirect a hosted call.
+        """
+        return str(config.get("base_url") or "") if self.name == "openai" else ""
+
+    def _key_from_environment(self) -> str:
+        for name in self.API_KEY_ENV:
+            value = os.environ.get(name, "").strip()
+            if value:
+                return value
+        return ""
+
+    # -- the call --------------------------------------------------------
     def complete(self, system: str, prompt: str) -> str:
         if not self.api_key:
-            raise RuntimeError("OPENAI_API_KEY is not set")
+            raise RuntimeError(f"{self.API_KEY_ENV[0]} is not set")
+        body: Dict[str, Any] = {
+            "model": self.model,
+            "temperature": self.temperature,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": prompt},
+            ],
+        }
+        if self.JSON_MODE:
+            body["response_format"] = {"type": "json_object"}
+
         response = requests.post(
             f"{self.base_url}/chat/completions",
             headers={
                 "Authorization": f"Bearer {self.api_key}",
                 "Content-Type": "application/json",
             },
-            json={
-                "model": self.model,
-                "temperature": self.temperature,
-                "response_format": {"type": "json_object"},
-                "messages": [
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": prompt},
-                ],
-            },
+            json=body,
             timeout=self.timeout,
         )
-        response.raise_for_status()
+        if response.status_code >= 400:
+            raise RuntimeError(
+                f"{response.status_code} from {self.name}: {api_error_text(response)}"
+            )
         payload = response.json()
         choices = payload.get("choices") or []
         if not choices:
             return ""
-        return (choices[0].get("message") or {}).get("content", "")
+        return (choices[0].get("message") or {}).get("content", "") or ""

@@ -279,25 +279,49 @@ indirect — and it is required to answer in JSON. It never scores, never ranks,
 and never recommends: buy/sell/hold language is stripped from its output
 before the output can reach a report.
 
-Three providers: `anthropic` (Claude), `openai`, and `ollama` (local, free,
-needs Ollama running — so not available to a GitHub Actions runner).
+Four providers. Only one of them needs a payment method:
+
+| `provider`  | Key | Cost | Runs in Actions? |
+|---|---|---|---|
+| `gemini`    | `GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/apikey) | free tier, no card | yes |
+| `ollama`    | none | free | **no** — needs Ollama on the machine |
+| `anthropic` | `ANTHROPIC_API_KEY` | paid | yes |
+| `openai`    | `OPENAI_API_KEY` | paid | yes |
+
+`gemini` is the default recommendation: a free tier with no card, and it
+runs in a GitHub Actions runner, so the schedule needs nothing local. It
+goes through Gemini's OpenAI-compatible endpoint, so it is a few overrides
+on the OpenAI provider rather than a separate client — with one difference
+that matters: `response_format: json_object` is **not** sent, because
+Google's compatibility layer does not document it and an unknown parameter
+is a 400 on every call. The prompt still demands JSON and `extract_json`
+handles a fenced or chatty answer.
+
+Free tiers have per-minute and per-day request limits. At the defaults a
+busy day is roughly 24 calls across both slots, which is small — but the
+limits are Google's, and a `429` in Run Diagnostics is a rate limit, not a
+bug.
 
 ```yaml
 ai:
-  enabled: false
-  provider: anthropic     # anthropic | openai | ollama
-  model: claude-sonnet-4-5
-  max_output_tokens: 2000
+  enabled: true
+  provider: gemini
+  model: gemini-3.1-flash-lite
   min_impact_score: 9
   max_events_per_run: 12
 ```
 
-Credentials are read from the environment — `ANTHROPIC_API_KEY`,
-`OPENAI_API_KEY` — never from a configuration file, and never written to one.
-For scheduled runs, add the matching repository secret under
-*Settings → Secrets and variables → Actions*; the workflow already passes
-both through, and an absent secret is reported as "not set" rather than
-crashing a run.
+Credentials are read from the environment — `GEMINI_API_KEY` (or
+`GOOGLE_API_KEY`), `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` — never from a
+configuration file, and never written to one. For scheduled runs, add the
+matching repository secret under *Settings → Secrets and variables →
+Actions*; the workflow passes all three through, and an absent secret is
+reported as "not set" rather than crashing a run.
+
+`ai.base_url` belongs to Ollama. The hosted providers ignore it, so
+switching `provider` cannot silently send every call to `localhost:11434`.
+Override a hosted endpoint with `GEMINI_BASE_URL` / `OPENAI_BASE_URL` /
+`ANTHROPIC_BASE_URL` instead.
 
 ### Verify before trusting it
 
@@ -305,7 +329,7 @@ A key and a model name cannot be checked by the test suite. One command
 makes the smallest possible live call and says what came back:
 
 ```bash
-export ANTHROPIC_API_KEY=...        # not on the command line in a shared shell
+export GEMINI_API_KEY=...           # not on the command line in a shared shell
 python -m src.main --check-ai
 ```
 
@@ -359,7 +383,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-336 tests, all offline. The interesting ones are regressions:
+344 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context
