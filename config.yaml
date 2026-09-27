@@ -250,8 +250,8 @@ ai:
   # this layer only explains why an event matters to a specific company.
   # It never recommends buying, selling or holding - the prompt forbids it
   # and src/ai/base.py redacts the language if a model produces it anyway.
-  enabled: false
-  provider: ollama          # ollama | gemini | openai | anthropic
+  enabled: true
+  provider: gemini          # ollama | gemini | openai | anthropic
   # Match the model to the provider:
   #   ollama     -> llama3.1:8b            free, local, needs Ollama running
   #   gemini     -> gemini-3.1-flash-lite  free tier, no card, GEMINI_API_KEY
@@ -259,7 +259,7 @@ ai:
   #   anthropic  -> claude-sonnet-4-5
   # Model names change; confirm yours with the provider. Verify any change
   # with: python -m src.main --check-ai
-  model: llama3.1:8b
+  model: gemini-3.1-flash-lite
   # Only read by the ollama provider. The hosted providers ignore it - a
   # config still pointing here must not capture a hosted call - and use
   # their own endpoint unless ANTHROPIC_BASE_URL / GEMINI_BASE_URL /

@@ -67,8 +67,34 @@ def test_feeds_are_filtered_by_ticker(config):
     assert not any("ETBFSI" in n for n in names)
 
 
-def test_ai_is_disabled_in_the_shipped_config(config):
-    assert config.ai_enabled is False
+# Model names are provider-specific and a mismatch is the easiest config
+# mistake to make: switch `provider` to gemini, leave `model` at the Ollama
+# tag, and every call fails with an unhelpful 404. Ollama tags carry a colon
+# (llama3.1:8b); no hosted provider's model name does.
+_MODEL_SHAPES = {
+    "ollama": lambda m: ":" in m,
+    "gemini": lambda m: m.startswith("gemini-"),
+    "openai": lambda m: m.startswith(("gpt-", "o1", "o3", "o4")),
+    "anthropic": lambda m: m.startswith("claude-"),
+}
+
+
+def test_the_shipped_ai_provider_and_model_agree(config):
+    provider = str(config.get("ai.provider", "")).lower()
+    model = str(config.get("ai.model", ""))
+
+    assert provider in _MODEL_SHAPES, f"unknown provider {provider!r}"
+    assert _MODEL_SHAPES[provider](model), (
+        f"ai.model {model!r} does not look like a {provider} model - "
+        "switching provider means switching model too"
+    )
+
+
+def test_the_model_shape_check_would_catch_a_mismatch():
+    """A guard that cannot fail is not a guard."""
+    assert not _MODEL_SHAPES["gemini"]("llama3.1:8b")
+    assert not _MODEL_SHAPES["anthropic"]("gpt-4o-mini")
+    assert not _MODEL_SHAPES["ollama"]("gemini-3.1-flash-lite")
 
 
 def test_alerts_are_disabled_in_the_shipped_config(config):

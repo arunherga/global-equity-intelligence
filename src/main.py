@@ -394,7 +394,13 @@ class Pipeline:
         events = self.build_events(matched, store)
         LOG.info("%d events built", len(events))
 
-        if self.config.ai_enabled and events:
+        # `offline` is a promise of no network, and every provider but
+        # ollama is a network call - so an offline run must not enrich.
+        # This is also what keeps the committed sample report and the test
+        # suite deterministic now that the shipped config enables AI: both
+        # run offline, so neither depends on whether a key happens to be
+        # exported in the environment.
+        if self.config.ai_enabled and events and not offline:
             from .ai import enrich
 
             ai_errors: List[str] = []
@@ -595,7 +601,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     args = build_parser().parse_args(argv)
     setup_logging(args.verbose)
 
-    overrides = {"ai": {"enabled": False}} if args.no_ai else None
+    overrides = {"ai": {"enabled": False, "force_off": True}} if args.no_ai else None
     config = load_config(args.config, overrides=overrides)
     watchlist = load_watchlist(args.watchlist, config=config)
     profiles = resolve_tickers(watchlist, args.ticker)

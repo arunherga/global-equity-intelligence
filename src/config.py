@@ -141,6 +141,12 @@ class Config:
     # -- ai --------------------------------------------------------------
     @property
     def ai_enabled(self) -> bool:
+        # Order matters. An explicit "off" has to beat an ambient environment
+        # variable, or --no-ai stops meaning anything on a machine where
+        # GEI_AI_ENABLED happens to be exported - and with a hosted provider
+        # that spends someone's quota.
+        if bool(self.get("ai.force_off", False)):
+            return False
         if os.environ.get("GEI_AI_ENABLED", "").lower() in {"1", "true", "yes"}:
             return True
         return bool(self.get("ai.enabled", False))

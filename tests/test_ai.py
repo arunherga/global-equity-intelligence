@@ -26,15 +26,75 @@ def make_event(impact_score=10, relationship=Relationship.DIRECT, exposures=()):
     return event
 
 
-def test_ai_is_off_by_default(config):
-    assert config.ai_enabled is False
+def test_a_config_that_does_not_mention_ai_is_off(tmp_path):
+    """The invariant that matters, now that the shipped config turns it on.
+
+    Enabling the layer must always be a deliberate line in a config file or
+    an explicit environment variable - never something a missing section
+    falls into. Built from an empty file rather than from overrides, because
+    overrides deep-merge onto the shipped config and would inherit its
+    `enabled: true`.
+    """
+    from src.config import Config
+
+    assert Config(raw={}, root=tmp_path).ai_enabled is False
+    assert Config(raw={"ai": {}}, root=tmp_path).ai_enabled is False
+    assert Config(raw={"ai": {"provider": "gemini"}}, root=tmp_path).ai_enabled is False
 
 
-def test_the_pipeline_is_complete_without_ai(run_offline_result=None):
-    """Covered end-to-end in test_pipeline; asserted here as an invariant."""
+def test_no_ai_beats_the_environment(monkeypatch):
+    """--no-ai is a brake; an exported variable must not release it."""
+    monkeypatch.setenv("GEI_AI_ENABLED", "true")
+
+    assert load_config().ai_enabled is True  # the variable does work
+    forced_off = load_config(overrides={"ai": {"enabled": False, "force_off": True}})
+    assert forced_off.ai_enabled is False
+
+
+def test_an_offline_run_never_calls_a_model(monkeypatch):
+    """`--offline` is a promise of no network; a hosted provider breaks it.
+
+    This is also what keeps the sample report reproducible: it is generated
+    offline, so it cannot vary with whether an API key is in the environment.
+    """
+    from src.profiles import load_watchlist
+    from src.main import Pipeline
+
+    called = {"n": 0}
+
+    def explode(*args, **kwargs):
+        called["n"] += 1
+        raise AssertionError("an offline run must not reach a provider")
+
+    monkeypatch.setattr("src.ai.enrich", explode)
+
     config = load_config()
-    assert config.get("ai.enabled") is False
-    assert config.get("ai.provider")  # a provider is configured but unused
+    assert config.ai_enabled is True, "the shipped config enables AI"
+    watchlist = load_watchlist(config=config)
+
+    result = Pipeline(config, watchlist, watchlist.profiles).run(
+        run_date=date(2026, 9, 22),
+        since_days=2,
+        dry_run=True,
+        offline=True,
+        resolve_links=False,
+        articles_override=_offline_fixture_articles(),
+    )
+
+    assert called["n"] == 0
+    assert not any(d.source == "ai_enrichment" for d in result.diagnostics)
+    assert all(
+        impact.ai_analysis is None
+        for event in result.events
+        for impact in event.stocks.values()
+    )
+
+
+def _offline_fixture_articles():
+    from datetime import datetime, timezone
+    from scripts.generate_sample_report import load_fixture_articles
+
+    return load_fixture_articles(now=datetime(2026, 9, 22, 6, 0, tzinfo=timezone.utc))
 
 
 def test_only_important_events_are_escalated(config):

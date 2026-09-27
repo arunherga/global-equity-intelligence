@@ -302,6 +302,8 @@ busy day is roughly 24 calls across both slots, which is small — but the
 limits are Google's, and a `429` in Run Diagnostics is a rate limit, not a
 bug.
 
+This repository ships with that configuration active:
+
 ```yaml
 ai:
   enabled: true
@@ -310,6 +312,12 @@ ai:
   min_impact_score: 9
   max_events_per_run: 12
 ```
+
+`--offline` and `--no-ai` both suppress it, and `--offline` does so because
+a hosted provider is a network call — which is also why the committed sample
+report and the whole test suite stay reproducible whether or not a key is in
+the environment. A config with no `ai` section is off; enabling it is always
+a deliberate line.
 
 Credentials are read from the environment — `GEMINI_API_KEY` (or
 `GOOGLE_API_KEY`), `ANTHROPIC_API_KEY`, `OPENAI_API_KEY` — never from a
@@ -383,7 +391,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-344 tests, all offline. The interesting ones are regressions:
+346 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context
