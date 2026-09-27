@@ -308,7 +308,7 @@ This repository ships with that configuration active:
 ai:
   enabled: true
   provider: gemini
-  model: gemini-3.1-flash-lite
+  model: gemini-3.5-flash
   min_impact_score: 9
   max_events_per_run: 12
 ```
