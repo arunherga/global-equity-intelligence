@@ -279,17 +279,64 @@ indirect — and it is required to answer in JSON. It never scores, never ranks,
 and never recommends: buy/sell/hold language is stripped from its output
 before the output can reach a report.
 
+Three providers: `anthropic` (Claude), `openai`, and `ollama` (local, free,
+needs Ollama running — so not available to a GitHub Actions runner).
+
 ```yaml
 ai:
   enabled: false
-  provider: ollama        # local and free; or openai
-  model: llama3.1:8b
+  provider: anthropic     # anthropic | openai | ollama
+  model: claude-sonnet-4-5
+  max_output_tokens: 2000
   min_impact_score: 9
   max_events_per_run: 12
 ```
 
-Credentials are read from the environment (`OPENAI_API_KEY`), never from a
-configuration file.
+Credentials are read from the environment — `ANTHROPIC_API_KEY`,
+`OPENAI_API_KEY` — never from a configuration file, and never written to one.
+For scheduled runs, add the matching repository secret under
+*Settings → Secrets and variables → Actions*; the workflow already passes
+both through, and an absent secret is reported as "not set" rather than
+crashing a run.
+
+### Verify before trusting it
+
+A key and a model name cannot be checked by the test suite. One command
+makes the smallest possible live call and says what came back:
+
+```bash
+export ANTHROPIC_API_KEY=...        # not on the command line in a shared shell
+python -m src.main --check-ai
+```
+
+It prints `OK` with the parsed JSON, `PARTIAL` if the model answered but not
+in JSON (the analysis would be discarded — use a stronger model), or `FAIL`
+with the API's own message, which names a wrong model id precisely. Until
+that prints `OK`, assume the layer is not working.
+
+If analysis fails during a real run, the reason lands in the report's Run
+Diagnostics under `ai_enrichment` — so an unset key or an unavailable model
+reads as itself rather than as "no events qualified".
+
+### What it costs, roughly
+
+At `min_impact_score: 9` and `max_events_per_run: 12`, a busy day is about 24
+calls across both slots, each a short prompt and a bounded 2000-token answer.
+That is cents per day on a small hosted model, and free on Ollama. Raising
+`max_events_per_run` or lowering `min_impact_score` scales it linearly, and
+mostly buys commentary on routine news.
+
+### What it will not do
+
+- No buy, sell, hold, accumulate, target price, or over/underweight language.
+  The prompt forbids it; `src/ai/base.py` redacts it if a model produces it
+  anyway, and the redaction is recorded. This is enforced above the provider,
+  so it holds for all three.
+- No scoring and no ranking. `impact_score`, `direction` and `confidence`
+  stay deterministic and explainable; the model only writes prose about
+  events those numbers already selected.
+- No silent failure. A dead model, a bad key or a non-JSON answer drops that
+  one analysis and is reported; the run still produces its report.
 
 ## Alerts
 
@@ -312,7 +359,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-284 tests, all offline. The interesting ones are regressions:
+336 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

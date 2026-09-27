@@ -114,7 +114,10 @@ jobs:
         if: steps.gate.outputs.run == 'yes'
         env:
           # The deterministic pipeline needs no credentials. These are read
-          # only if ai.enabled is turned on in config.yaml.
+          # only if ai.enabled is turned on in config.yaml, and only the one
+          # matching ai.provider is used. An absent secret is an empty string,
+          # which the provider reports as "not set" rather than crashing.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           set -o pipefail

@@ -144,3 +144,202 @@ def test_a_good_response_is_attached(config, watchlist):
 def test_unknown_provider_returns_none():
     config = load_config(overrides={"ai": {"provider": "definitely-not-a-provider"}})
     assert build_provider(config) is None
+
+
+# -- the Anthropic provider ----------------------------------------------
+#
+# No live call is made anywhere in this file. The transport is stubbed, so
+# what is checked is the request this code builds and how it reads a reply -
+# not that a key works, which only `--check-ai` can establish.
+
+
+class _FakeResponse:
+    def __init__(self, status_code=200, payload=None, text=""):
+        self.status_code = status_code
+        self._payload = payload if payload is not None else {}
+        self.text = text
+
+    def json(self):
+        if self._payload is None:
+            raise ValueError("not json")
+        return self._payload
+
+
+def _capture(monkeypatch, response):
+    """Swap requests.post for a recorder and hand back the call it saw."""
+    seen = {}
+
+    def fake_post(url, headers=None, json=None, timeout=None):
+        seen["url"] = url
+        seen["headers"] = headers or {}
+        seen["body"] = json or {}
+        seen["timeout"] = timeout
+        return response
+
+    monkeypatch.setattr("src.ai.providers.anthropic_provider.requests.post", fake_post)
+    return seen
+
+
+def _provider(**overrides):
+    from src.ai.providers.anthropic_provider import AnthropicProvider
+
+    settings = {"model": "claude-sonnet-4-5", "timeout_seconds": 30, "temperature": 0.1}
+    settings.update(overrides)
+    return AnthropicProvider(settings)
+
+
+def test_anthropic_builds_a_messages_api_request(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(
+        payload={"content": [{"type": "text", "text": '{"revenue_effect": "ok"}'}]}
+    )
+    seen = _capture(monkeypatch, response)
+
+    out = _provider().complete("SYSTEM", "PROMPT")
+
+    assert out == '{"revenue_effect": "ok"}'
+    assert seen["url"] == "https://api.anthropic.com/v1/messages"
+    assert seen["headers"]["anthropic-version"] == "2023-06-01"
+    assert seen["headers"]["x-api-key"] == "test-key-not-real"
+    assert "Authorization" not in seen["headers"]
+    body = seen["body"]
+    # The system prompt is a top-level field, not a message - the Messages
+    # API rejects role: system.
+    assert body["system"] == "SYSTEM"
+    assert body["messages"] == [{"role": "user", "content": "PROMPT"}]
+    assert body["max_tokens"] >= 2000
+    assert body["model"] == "claude-sonnet-4-5"
+    assert seen["timeout"] == 30
+
+
+def test_anthropic_joins_multiple_text_blocks_and_skips_the_rest(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(
+        payload={
+            "content": [
+                {"type": "thinking", "thinking": "should not appear"},
+                {"type": "text", "text": '{"revenue_effect":'},
+                {"type": "text", "text": ' "ok"}'},
+            ]
+        }
+    )
+    _capture(monkeypatch, response)
+
+    out = _provider().complete("SYSTEM", "PROMPT")
+
+    assert out == '{"revenue_effect": "ok"}'
+    assert extract_json(out) == {"revenue_effect": "ok"}
+
+
+def test_anthropic_without_a_key_refuses_before_making_a_request(monkeypatch):
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+
+    def explode(*args, **kwargs):
+        raise AssertionError("no request may be made without a key")
+
+    monkeypatch.setattr("src.ai.providers.anthropic_provider.requests.post", explode)
+
+    with pytest.raises(RuntimeError, match="ANTHROPIC_API_KEY is not set"):
+        _provider().complete("SYSTEM", "PROMPT")
+
+
+def test_anthropic_surfaces_the_api_error_message(monkeypatch):
+    """A wrong model name is the likeliest misconfiguration; say so."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(
+        status_code=404,
+        payload={"error": {"type": "not_found_error", "message": "model: nope-1"}},
+    )
+    _capture(monkeypatch, response)
+
+    with pytest.raises(RuntimeError) as excinfo:
+        _provider(model="nope-1").complete("SYSTEM", "PROMPT")
+
+    message = str(excinfo.value)
+    assert "404" in message
+    assert "model: nope-1" in message
+    assert "test-key-not-real" not in message  # the key never reaches an error
+
+
+def test_anthropic_survives_a_non_json_error_page(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(status_code=502, payload=None, text="<html>bad gateway")
+    _capture(monkeypatch, response)
+
+    with pytest.raises(RuntimeError, match="502"):
+        _provider().complete("SYSTEM", "PROMPT")
+
+
+def test_build_provider_accepts_anthropic_and_claude():
+    from src.ai.providers.anthropic_provider import AnthropicProvider
+
+    for name in ("anthropic", "claude", "Anthropic"):
+        config = load_config(overrides={"ai": {"provider": name}})
+        provider = build_provider(config)
+        assert isinstance(provider, AnthropicProvider), name
+        assert provider.name == "anthropic"
+
+
+def test_advice_from_the_model_is_still_redacted(monkeypatch):
+    """The guardrail lives above the provider, so it covers this one too."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(
+        payload={
+            "content": [
+                {
+                    "type": "text",
+                    "text": '{"revenue_effect": "Strong order book; we would buy '
+                            'this stock at a target price of 4000.", '
+                            '"monitor_next": ["Accumulate on dips", "Q3 order inflow"]}',
+                }
+            ]
+        }
+    )
+    _capture(monkeypatch, response)
+
+    config = load_config(overrides={"ai": {"provider": "anthropic"}})
+    result = analyse_event(
+        build_provider(config),
+        make_event(),
+        make_event().stocks["WAAREEENER"],
+        next(p for p in __import__("src.profiles", fromlist=["load_watchlist"])
+             .load_watchlist(config=config) if p.ticker == "WAAREEENER"),
+        config,
+    )
+
+    assert result.ok
+    assert "buy" not in result.data["revenue_effect"].lower()
+    assert "target price" not in result.data["revenue_effect"].lower()
+    assert "[redacted]" in result.data["revenue_effect"]
+    assert result.data["monitor_next"] == ["Q3 order inflow"]
+    assert result.redactions
+
+
+def test_enrich_reports_why_it_produced_nothing(monkeypatch):
+    """"AI produced nothing" and "that model is unavailable" must differ."""
+    from src.ai import enrich
+    from src.profiles import load_watchlist
+
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key-not-real")
+    response = _FakeResponse(
+        status_code=404,
+        payload={"error": {"message": "model: claude-does-not-exist"}},
+    )
+    _capture(monkeypatch, response)
+
+    config = load_config(
+        overrides={
+            "ai": {
+                "enabled": True,
+                "provider": "anthropic",
+                "model": "claude-does-not-exist",
+            }
+        }
+    )
+    watchlist = load_watchlist(config=config)
+
+    errors: list[str] = []
+    enriched = enrich([make_event(impact_score=12)], config, watchlist, errors)
+
+    assert enriched == 0
+    assert errors == ["WAAREEENER: 404 from Anthropic: model: claude-does-not-exist"]

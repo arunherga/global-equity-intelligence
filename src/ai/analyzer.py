@@ -30,6 +30,10 @@ def build_provider(config: Config) -> Optional[AiProvider]:
             from .providers.openai_provider import OpenAiProvider
 
             return OpenAiProvider(settings)
+        if name in {"anthropic", "claude"}:
+            from .providers.anthropic_provider import AnthropicProvider
+
+            return AnthropicProvider(settings)
     except Exception as exc:  # noqa: BLE001 - AI must never break a run
         LOG.warning("could not build AI provider %r: %s", name, exc)
         return None
@@ -115,8 +119,19 @@ def analyse_event(
     )
 
 
-def enrich(events: Sequence[Event], config: Config, watchlist: Watchlist) -> int:
-    """Attach AI analysis to the events that qualify. Returns how many."""
+def enrich(
+    events: Sequence[Event],
+    config: Config,
+    watchlist: Watchlist,
+    errors: Optional[List[str]] = None,
+) -> int:
+    """Attach AI analysis to the events that qualify. Returns how many.
+
+    ``errors`` collects the reason each analysis failed, so a run can say
+    "that model name is not available" rather than only "AI produced
+    nothing". A wrong model id or an unset key is otherwise invisible until
+    someone reads the log.
+    """
     if not config.ai_enabled:
         return 0
     provider = build_provider(config)
@@ -131,7 +146,12 @@ def enrich(events: Sequence[Event], config: Config, watchlist: Watchlist) -> int
             continue
         result = analyse_event(provider, event, impact, profile, config)
         if not result.ok:
-            LOG.info("AI analysis failed for %s/%s: %s", event.event_id, impact.ticker, result.error)
+            LOG.warning(
+                "AI analysis failed for %s/%s: %s",
+                event.event_id, impact.ticker, result.error,
+            )
+            if errors is not None:
+                errors.append(f"{impact.ticker}: {result.error}")
             continue
         impact.ai_analysis = {
             "provider": result.provider,

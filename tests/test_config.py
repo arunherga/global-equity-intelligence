@@ -75,10 +75,69 @@ def test_alerts_are_disabled_in_the_shipped_config(config):
     assert config.get("alerts.enabled") is False
 
 
+# Credential names that may never appear as a key in a committed config, and
+# the value prefixes the common providers use. Matched against keys and
+# values separately rather than against the whole blob as a substring: a
+# legitimate setting like `max_output_tokens` contains "token" and is not a
+# credential, and a blob match would force the config to avoid the API's own
+# vocabulary.
+_CREDENTIAL_KEYS = (
+    "api_key", "apikey", "api-key", "password", "passwd", "secret",
+    "access_token", "auth_token", "refresh_token", "bearer", "credential",
+)
+_CREDENTIAL_KEYS_EXACT = ("key", "token", "auth")
+_CREDENTIAL_VALUE_PREFIXES = (
+    "sk-", "sk_live", "pk_live", "ghp_", "github_pat_", "xoxb-", "xoxp-",
+    "aws_", "akia", "-----begin",
+)
+
+
+def _credential_findings(node, path="") -> list:
+    """Every place in a config tree that looks like a stored credential."""
+    found = []
+    if isinstance(node, dict):
+        for key, value in node.items():
+            name = str(key).lower()
+            where = f"{path}.{key}" if path else str(key)
+            if any(marker in name for marker in _CREDENTIAL_KEYS) or (
+                name in _CREDENTIAL_KEYS_EXACT
+            ):
+                found.append(f"{where}: credential-shaped key")
+            found.extend(_credential_findings(value, where))
+    elif isinstance(node, list):
+        for index, value in enumerate(node):
+            found.extend(_credential_findings(value, f"{path}[{index}]"))
+    elif isinstance(node, str):
+        text = node.strip().lower()
+        if any(text.startswith(prefix) for prefix in _CREDENTIAL_VALUE_PREFIXES):
+            found.append(f"{path}: credential-shaped value")
+    return found
+
+
 def test_no_secret_is_stored_in_config(config):
     """Credentials belong in the environment, never in a committed file."""
-    import json
+    assert _credential_findings(config.raw) == []
 
-    blob = json.dumps(config.raw).lower()
-    for marker in ("api_key", "apikey", "token", "password", "secret"):
-        assert marker not in blob
+
+def test_the_secret_guard_actually_catches_one():
+    """A guard that cannot fail is not a guard.
+
+    Without this, relaxing the check above would look like a passing suite.
+    """
+    planted = {
+        "ai": {
+            "provider": "anthropic",
+            "api_key": "put-it-in-the-environment",
+            "max_output_tokens": 2000,
+        },
+        "sources": [{"name": "x", "token": "abc"}],
+        "deploy": {"note": "sk-live-0000000000"},
+    }
+    findings = _credential_findings(planted)
+
+    assert any("ai.api_key" in f for f in findings)
+    assert any("sources[0].token" in f for f in findings)
+    assert any("deploy.note" in f for f in findings)
+    # ...and does not fire on the legitimate settings beside them.
+    assert not any("max_output_tokens" in f for f in findings)
+    assert not any("provider" in f for f in findings)

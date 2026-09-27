@@ -6,6 +6,7 @@
     python -m src.main --ticker WAAREEENER,SUPRIYA,COALINDIA
     python -m src.main --backfill-days 365 --slice-days 14
     python -m src.main --check-sources       # probe every source, print a table
+    python -m src.main --check-ai            # one real call, prove the model answers
     python -m src.main --query WAAREEENER --categories TARIFF
 
 The pipeline is the architecture in code::
@@ -396,8 +397,17 @@ class Pipeline:
         if self.config.ai_enabled and events:
             from .ai import enrich
 
-            enriched = enrich(events, self.config, self.watchlist)
+            ai_errors: List[str] = []
+            enriched = enrich(events, self.config, self.watchlist, ai_errors)
             LOG.info("AI enrichment applied to %d event/stock pairs", enriched)
+            note = (
+                f"provider={self.config.get('ai.provider')} "
+                f"model={self.config.get('ai.model')}"
+            )
+            if ai_errors:
+                # An unset key or a model name the account cannot reach is
+                # otherwise indistinguishable from "nothing qualified".
+                note += " | " + "; ".join(dict.fromkeys(ai_errors))[:300]
             diagnostics.append(
                 SourceDiagnostic(
                     source="ai_enrichment",
@@ -405,8 +415,7 @@ class Pipeline:
                     attempted=len(events),
                     succeeded=enriched,
                     articles=enriched,
-                    note=f"provider={self.config.get('ai.provider')} "
-                         f"model={self.config.get('ai.model')}",
+                    note=note,
                 )
             )
 
@@ -547,6 +556,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--check-sources", action="store_true", help="probe every source and print a table"
     )
+    parser.add_argument(
+        "--check-ai",
+        action="store_true",
+        help="make one real call to the configured model and print the result",
+    )
     parser.add_argument("--rebuild-index", action="store_true", help="rebuild the event index")
     parser.add_argument("--query", default="", help="search the event store for a ticker")
     parser.add_argument("--categories", default="", help="comma-separated categories for --query")
@@ -600,6 +614,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         from .diagnostics import check_sources
 
         return check_sources(config, profiles)
+
+    if args.check_ai:
+        return _check_ai(config)
 
     run_date = date.fromisoformat(args.date) if args.date else date.today()
 
@@ -658,6 +675,54 @@ def _print_summary(
     else:
         print(f"\n  report  {report_path(config, result.run_date)}")
     print()
+
+
+def _check_ai(config: Config) -> int:
+    """Make one real call to the configured model and say what came back.
+
+    The project's rule is that nothing is claimed to work until it has been
+    observed working. An API key and a model name cannot be verified from a
+    test suite, so this does the smallest possible live call and reports what
+    happened - a wrong model name or an unset key shows up here in seconds
+    instead of as an empty AI section in tomorrow's report.
+    """
+    from .ai import build_provider, extract_json
+    from .ai.base import SYSTEM_PROMPT
+
+    provider_name = str(config.get("ai.provider", "ollama"))
+    model = str(config.get("ai.model", ""))
+    print(f"provider: {provider_name}")
+    print(f"model:    {model}")
+    print(f"enabled:  {config.ai_enabled}  (--check-ai works either way)")
+
+    provider = build_provider(config)
+    if provider is None:
+        print("\nFAIL  the provider could not be built; check ai.provider in config.yaml")
+        return 1
+
+    prompt = (
+        'Reply with this exact JSON object and nothing else: '
+        '{"revenue_effect": "ok"}'
+    )
+    started = time.monotonic()
+    try:
+        raw = provider.complete(SYSTEM_PROMPT, prompt)
+    except Exception as exc:  # noqa: BLE001 - reporting the failure is the point
+        print(f"\nFAIL  {exc}")
+        return 1
+    elapsed = time.monotonic() - started
+
+    parsed = extract_json(raw)
+    print(f"\nreplied in {elapsed:.1f}s, {len(raw)} characters")
+    if parsed is None:
+        print("PARTIAL  the model answered but not with JSON:")
+        print(f"         {raw[:200]!r}")
+        print("         analysis would be discarded; try a stronger model")
+        return 1
+    print(f"OK       parsed JSON: {parsed}")
+    if not config.ai_enabled:
+        print("\nSet ai.enabled: true in config.yaml to use it in a run.")
+    return 0
 
 
 def _run_query(config: Config, watchlist: Watchlist, args) -> int:

@@ -246,10 +246,23 @@ storage:
   seen_retention_days: 45
 
 ai:
+  # Off by default. The deterministic scoring is the spine of the report;
+  # this layer only explains why an event matters to a specific company.
+  # It never recommends buying, selling or holding - the prompt forbids it
+  # and src/ai/base.py redacts the language if a model produces it anyway.
   enabled: false
-  provider: ollama          # ollama | openai
+  provider: ollama          # ollama | openai | anthropic
+  # Match the model to the provider:
+  #   ollama     -> llama3.1:8b          (free, local, needs Ollama running)
+  #   openai     -> gpt-4o-mini
+  #   anthropic  -> claude-sonnet-4-5    (confirm against your account)
+  # Verify a change with: python -m src.main --check-ai
   model: llama3.1:8b
+  # Only read by the ollama provider; the hosted providers use their own
+  # endpoint unless ANTHROPIC_BASE_URL / OPENAI_BASE_URL overrides it.
   base_url: http://localhost:11434
+  # Messages API requires an output cap. Ten schema fields need room.
+  max_output_tokens: 2000
   # Only escalate events that are genuinely worth the tokens.
   min_impact_score: 9
   include_indirect_complex: true
