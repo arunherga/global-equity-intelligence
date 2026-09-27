@@ -4,21 +4,21 @@
   "summary": "The integrated mining arrangement covers blocks with a combined peak rated capacity of 4 MTPA and around 79 million tonnes of extractable reserves in Phase I.",
   "event_date": "2026-09-25",
   "event_types": [
-    "CONTRACT_WIN"
+    "CONTRACT_WIN",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.62,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -29,55 +29,50 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Development at a known counterparty (SAIL)"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "order flow from SAIL"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to SAIL. The parts of the business most likely touched are revenue, customers. Classified as contract win.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to SAIL. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.57,
-      "business_impacts": [
-        "REVENUE"
-      ],
-      "time_horizon": "MEDIUM_TERM",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "CONTRACT_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue. Classified as contract win.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -171,16 +166,26 @@
       "published": "2026-09-26T03:35:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SAIL and BCCL Partner to Jointly Develop 4 MTPA West Bengal Coal Blocks",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWHRjemVkc3pRb29tYk9kWjNodHFKNldNalUyMWd5VWtRWFNlQmd4SHROR21ONDhxLWgteVNSTm1jNURPRkFtS0xGMm1pZjJQVGFCcktvZVFFM0tTN01oZ04xSVM0TlBldk5IRnVOZnBBNGJuM3RZV25hcVNWX2cwd0lDWGR6MjJEUk83Z05TVGFOS25CWXVnbklnY2xuUlZOZWMzMkN5bERYekwxdTFWeVg5WldPNlJSdU9CZEVULVdXQzTSAcMBQVVfeXFMTlh0Y3plZHN6UW9vbWJPZFozaHRxSjZXTWpVMjFneVVrUVhTZUJneEh0TkdtTjQ4cS1oLXlTUk5tYzVET0ZBbUtMRjJtaWYyUFRhQnJLb2VRRTNLUzdNaGdOMUlTNE5QZXZOSEZ1TmZwQTRibjN0WVduYXFTVl9nMHdJQ1hkejIyRFJPN2dOU1RhTktuQll1Z25JZ2NsblJWTmVjMzJDeWxEWHpMMXUxVnlYOVpXTzZSUnVPQmRFVC1XV0M0",
+      "source_name": "psuindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T13:09:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|CONTRACT_WIN|bccl-develop-jointly-mou-sail-sign",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.480154+00:00",
-  "last_updated": "2026-09-26T17:52:34.441259+00:00",
+  "last_updated": "2026-09-27T12:15:59.629383+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.480251+00:00",
@@ -191,6 +196,26 @@
       "timestamp": "2026-09-26T17:52:34.441242+00:00",
       "change": "sources added",
       "detail": "Maritime Gateway"
+    },
+    {
+      "timestamp": "2026-09-27T12:15:59.629347+00:00",
+      "change": "sources added",
+      "detail": "psuindia.com"
+    },
+    {
+      "timestamp": "2026-09-27T12:15:59.629364+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-27T12:15:59.629372+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-27T12:15:59.629378+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

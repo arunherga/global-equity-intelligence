@@ -305,11 +305,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -319,11 +319,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -331,13 +338,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -351,21 +358,56 @@
       "published": "2026-09-24T22:37:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis BSE India Sector Leaders Index Fund - Regular Plan - Growth",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWlFRT0k5LXZia01udVljS1N2WmNRbmJJOHZiTExkaUFRRzZ0SFNtZmVfSEd4cTdIamJheHlMYkdOdS1QT21xRVBhRGpZbmtiREJ2ckNsYjltbXpwMkxHcjVEXzI1VG1qYWFhYkxiNTJrV0hJOTAtcVExM2xaeXdRd29RMzdpZkxiZ0Y4c0llRllLRXV5M1Y0T0g1WHNFcjJGQzdfcDViQnZxcFhqV01BVE1B",
+      "source_name": "Alice Blue",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T21:08:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Aditya Birla Sun Life Nifty 50 Equal Weight Index Fund -Normal Plan-Growth",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOURQcWJEY2FLQkpvUzRuU08tYzB6d09DaFJjMzR2dkgzbVVFUXNBV3locE9QV1U1UmxpN01hdnI1cXE5WWFFOHlJRDhlai1vN2pYeFNFSC1yYi1TNlJYeWRhVS00Q2tpWnNqN295Q3pjZXFjY0VmUFZETnZyYk1PVmlsQlVreUlOOWNwYWk3UHpQRVAxdWNubnlyQ1pfQkJ0bUNJQnNzajJYTVJfZGtGRFZnblBDeENZWkFWajRMalhTdEU",
+      "source_name": "Alice Blue",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T21:11:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Alice Blue",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|500-aditya-birla-bse-life-sun",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.888322+00:00",
-  "last_updated": "2026-09-25T12:56:10.888372+00:00",
+  "last_updated": "2026-09-27T12:16:05.758733+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.888369+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:05.466688+00:00",
+      "change": "sources added",
+      "detail": "Alice Blue"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:05.466709+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:05.758717+00:00",
+      "change": "sources added",
+      "detail": "Alice Blue"
     }
   ],
   "price_reaction": {}

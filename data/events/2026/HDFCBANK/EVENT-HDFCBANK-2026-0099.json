@@ -10,18 +10,17 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
         "REPUTATION",
-        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -32,25 +31,22 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "regulatory response",
-        "quantum involved",
-        "auditor commentary",
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, management. Classified as litigation.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, competition. Classified as litigation.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -171,16 +167,26 @@
       "published": "2026-09-24T20:00:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDB DEADLINE ALERT: ROSEN, SKILLED INVESTOR COUNSEL, Encourages HDFC Bank Limited Investors to Secure Counsel Before Important Deadline in Securities Class Action - HDB",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQZDE3dXk1WlM0N2Y1WWtlREF4WHd3MGpQMndfajNYNll2ajZ6MWY2eWRHRlcyeUhTX01pX3A1UjhQV2xYbDRxbWxYNGNPY3hiMEhpMnVDdlQteUJJZTlCMU80Wk1kTHlvZm1xYUxpTHl6RjE4SEtUZkxTWU5JdmFGT1ZMT0J4ZkpKbjJVV1JxaWtrNkt0cnBZUjNjMDJXTkRJWVBrYkhLYUxXdXNvU0NaYW5XblR1MW1JR0FUWUN5bFNLd05WbTlzcjJvekNXV3NCVHdCM3QtaHEtVzRZck93R0E1TTRoanFYMDJIWjVzb192M1YyWGI3NW1wZU1ZTFdrb1JndEJJaHFRelNUUVdvTFVpX0pTRll6emtwRENKa1I1VEE2dVoySlFtNXRTNEU",
+      "source_name": "TMX Newsfile",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T22:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "the-dispatch.com",
   "cluster_key": "HDFCBANK+TMB|LITIGATION|deadline-globally-hdb-important-recognized-rosen",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.379610+00:00",
-  "last_updated": "2026-09-25T12:56:23.337026+00:00",
+  "last_updated": "2026-09-27T12:16:06.605193+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.379691+00:00",
@@ -206,6 +212,16 @@
       "timestamp": "2026-09-25T12:56:23.337021+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 9 -> 13"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:06.605148+00:00",
+      "change": "sources added",
+      "detail": "TMX Newsfile"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:06.605167+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

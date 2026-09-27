@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0291",
+  "title": "Amazon.com (AMZN) Confirmed Iranian Drone Strikes Hit AWS Data Centers",
+  "summary": "Amazon.com (AMZN) Confirmed Iranian Drone Strikes Hit AWS Data Centers Yahoo Finance",
+  "event_date": "2026-09-26",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "supply from a known supplier is disrupted"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from AWS"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Amazon.com (AMZN) Confirmed Iranian Drone Strikes Hit AWS Data Centers",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeUFUbHh4NlhNZ0xnZW5pY19IbkJYRkc1S0p0a0lJSkp2ZVNzdV9sNU5jY3BtVXd0VWMwMndzZHFPc3lPamFFbkYwWUxOYmh1RGFHZ2V3NHczLXZwU3lHa2U2ekJyWngtbU12Y2RBcUREMzFoUkdNTE9adnQtVlRuQTY1a3JqN01UNmJlanJvZS1hM0ZBbHotV3dPR2Ywc1k",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T14:10:13+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Yahoo Finance",
+  "cluster_key": "KSOLVES|OTHER|amazon.com-amzn-confirmed-drone-iranian-strikes",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-27T12:15:56.619982+00:00",
+  "last_updated": "2026-09-27T12:15:56.620039+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-27T12:15:56.620034+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -80,6 +80,36 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -92,21 +122,41 @@
       "published": "2026-09-22T06:11:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stock Market Today: Nifty, Sensex Jump 3.5% As US-Iran Ceasefire Lifts Sentiment, All Eyes On RBI MPC Outcome",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNT1htanU5VmNRTEhnM0FDSVMtd1QzSHJsNmF5N08zWDFyUkN1cG5DUjFMTEd3WjlBS1JCbGpEWlRMRVNhQWF2YVZRRnN6a2NEcXRtOXVkck05WVk0Q0pxbWxsSXhFTVM1cHlvV0pSM21XZTZWa2FKYTlMRE01UTlfdjdiaTU5VnlWVlFEdmR1UXI5WUVWLUFBR2ZSMGlnUU50VVBDNHFWdG1hdXhJOHEyb2dSTmpxNlEwWHU0ZWRocVNyNUxSZlF3WU90SjMxc09EM2FhdFQtZFQ",
+      "source_name": "Goodreturns",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-26T18:22:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "DD News",
   "cluster_key": "HDFCBANK+TMB|OTHER|end-marginally-nifty-rbi-rise-sensex",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.940149+00:00",
-  "last_updated": "2026-09-25T12:56:46.405276+00:00",
+  "last_updated": "2026-09-27T12:16:03.855076+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.940176+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:03.855053+00:00",
+      "change": "sources added",
+      "detail": "Goodreturns"
+    },
+    {
+      "timestamp": "2026-09-27T12:16:03.855069+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (DIRECT)"
     }
   ],
   "price_reaction": {}
