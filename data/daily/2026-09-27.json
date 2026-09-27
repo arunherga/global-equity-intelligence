@@ -1,7 +1,7 @@
 {
   "run_date": "2026-09-27",
-  "started_at": "2026-09-27T17:42:52.842210+00:00",
-  "finished_at": "2026-09-27T17:50:19.039266+00:00",
+  "started_at": "2026-09-27T18:48:18.065934+00:00",
+  "finished_at": "2026-09-27T18:56:13.471612+00:00",
   "dry_run": false,
   "tickers": [
     "MSTCLTD",
@@ -16,13 +16,13 @@
     "HDFCBANK"
   ],
   "stats": {
-    "articles_scanned": 3846,
-    "unique_articles": 2468,
-    "events_detected": 235,
-    "relevant_events": 30,
-    "high_impact_events": 6,
+    "articles_scanned": 5813,
+    "unique_articles": 3697,
+    "events_detected": 254,
+    "relevant_events": 6,
+    "high_impact_events": 1,
     "critical_events": 0,
-    "international_events": 16,
+    "international_events": 2,
     "official_announcements": 0
   },
   "diagnostics": [
@@ -32,7 +32,7 @@
       "attempted": 0,
       "succeeded": 0,
       "articles": 0,
-      "duration_s": 62.18,
+      "duration_s": 62.11,
       "errors": [
         "session warm-up: HTTP request failed for https://www.nseindia.com: HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=20)"
       ],
@@ -44,7 +44,7 @@
       "attempted": 5,
       "succeeded": 0,
       "articles": 0,
-      "duration_s": 10.5,
+      "duration_s": 10.53,
       "errors": [
         "MSTCLTD announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20260926&strScrip=542597&strSearch=P&strToDate=20260927&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20260926&strScrip=542597&strSearch=P&strToDate=20260927&strType=C&subcategory=-1",
         "WAAREEENER announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20260926&strScrip=544277&strSearch=P&strToDate=20260927&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20260926&strScrip=544277&strSearch=P&strToDate=20260927&strType=C&subcategory=-1",
@@ -60,7 +60,7 @@
       "attempted": 9,
       "succeeded": 6,
       "articles": 67,
-      "duration_s": 36.1,
+      "duration_s": 32.96,
       "errors": [
         "COALINDIA IR page: HTTP request failed for https://www.coalindia.in/en/investors/: 403 Client Error: Forbidden for url: https://www.coalindia.in/en/investors/",
         "COALINDIA IR page: HTTP request failed for https://www.coalindia.in/: 403 Client Error: Forbidden for url: https://www.coalindia.in/"
@@ -73,7 +73,7 @@
       "attempted": 7,
       "succeeded": 5,
       "articles": 88,
-      "duration_s": 16.31,
+      "duration_s": 16.86,
       "errors": [
         "DGFT: HTTP request failed for https://www.dgft.gov.in/CP/?opt=notification: 403 Client Error: Forbidden for url: https://www.dgft.gov.in/CP/?opt=notification",
         "European Medicines Agency: HTTP request failed for https://www.ema.europa.eu/en/rss.xml: 404 Client Error: Not Found for url: https://www.ema.europa.eu/en/rss.xml"
@@ -86,7 +86,7 @@
       "attempted": 4,
       "succeeded": 2,
       "articles": 21,
-      "duration_s": 10.75,
+      "duration_s": 10.89,
       "errors": [
         "Ministry of Power: HTTP request failed for https://www.powermin.gov.in/: 403 Client Error: Forbidden for url: https://www.powermin.gov.in/",
         "Ministry of Steel: HTTP request failed for https://steel.gov.in/: HTTPSConnectionPool(host='steel.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1016)')))"
@@ -98,8 +98,8 @@
       "ok": true,
       "attempted": 251,
       "succeeded": 251,
-      "articles": 1532,
-      "duration_s": 214.41,
+      "articles": 1551,
+      "duration_s": 222.47,
       "errors": [],
       "note": "empty results: 97/251 queries returned no items in this window"
     },
@@ -109,7 +109,7 @@
       "attempted": 14,
       "succeeded": 14,
       "articles": 240,
-      "duration_s": 12.64,
+      "duration_s": 15.5,
       "errors": [],
       "note": ""
     },
@@ -121,7 +121,17 @@
       "articles": 0,
       "duration_s": 0.0,
       "errors": [],
-      "note": "landed on news.google.com, 581885 bytes, 57 links, markers: canonical, c-wiz; landed on news.google.com, 583031 bytes, 57 links, markers: canonical, c-wiz"
+      "note": "landed on news.google.com, 582209 bytes, 57 links, markers: canonical, c-wiz; landed on news.google.com, 592219 bytes, 57 links, markers: canonical, c-wiz"
+    },
+    {
+      "source": "ai_enrichment",
+      "ok": false,
+      "attempted": 20,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 0.0,
+      "errors": [],
+      "note": "provider=gemini model=gemini-3.1-flash-lite"
     }
   ],
   "events": [
@@ -1998,6 +2008,81 @@
       "event_history": [
         {
           "timestamp": "2026-09-27T17:50:19.005084+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-COALINDIA-2026-0359",
+      "title": "Homebuyer wins case against Pune builder: MahaRERA orders compensation over payment of ₹39.15 lakh",
+      "summary": "Homebuyer wins case against Pune builder: MahaRERA orders compensation over payment of ₹39.15 lakh Livemint",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "ORDER_WIN"
+      ],
+      "stocks": {
+        "COALINDIA": {
+          "ticker": "COALINDIA",
+          "relationship": "DIRECT",
+          "impact_score": 8,
+          "impact_band": "HIGH",
+          "direction": "POSITIVE",
+          "confidence": 0.4,
+          "business_impacts": [
+            "REVENUE",
+            "CAPACITY"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+3 Order or contract",
+            "+2 Company appears in the headline",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "ORDER_WIN is favourable for the company"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "order execution schedule",
+            "customer identity and concentration",
+            "realised margin on the order",
+            "whether extra capacity is needed"
+          ],
+          "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Homebuyer wins case against Pune builder: MahaRERA orders compensation over payment of ₹39.15 lakh",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPcjlmckhuRGVKV1JLbEpyZExvQmFaM3lnUGstTm40N1VJMWdkVmVYVGRRSVkzTllSczRxcFJsbmxYSmZZZTF3SDhYNWhYNTFxYk9iUk1uby1WdmxxTjBST240WW1Hb1FDblZvLXRfVUUxM2FCN3V4RTRrNFVMZHlVczJZM3d1UTk3RXVpVm1NYUNZd0dEaWdsYmh0YjFFWnpaS3YtdHE1aDdpVDVuV2VKNEh5OGpLUnJXRjZYQWRDaGNIX0U0ZHNROFBSc1hXbEVGdU5ScTlVdy1ZWmczdjFteUY0TGxGbUR0aFBMNW9xcUpLUVdiaFYwbtIB_gFBVV95cUxNU25RUlZWeTYydHhmbUVRbWVOUU85RGR3YUdhRmZIdUduVWRMMWVISjB4dFNGbl9naHA2RC0xN2RRRWtGWWtkTVlLT29ITXA3RndLdWt1OVVsOEFJMlRwdXFwYXZCbzhLdGtVbm8wQU5ONXBaN3N6SXpTUFBJaEVmaUVvUUNtZVc5ekFuNVNDZDlnMUFYaXltakVQaU9pdkVEVzBWN3VKdE5CYlp2dWVaSy1oNkpzQWQ3R2pxaEJLT2dTY1hXaXV1Ql82cG83MWdRRllIeDBhVlN2NFAtVEFWeHZaVnRISTZ4bjg1OUlkSktNM3ZlZURkVVVoenZNZw",
+          "source_name": "Livemint",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T14:12:33+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint",
+      "cluster_key": "COALINDIA|ORDER_WIN|against-builder-case-homebuyer-pune-win",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.448963+00:00",
+      "last_updated": "2026-09-27T18:56:13.449040+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.449034+00:00",
           "change": "created",
           "detail": "1 source(s) from 1 domain(s)"
         }
@@ -5117,6 +5202,74 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-COALINDIA-2026-0358",
+      "title": "Who is Mehli Mistry? Why is the Ratan Tata confidant stepping down from Tata Medical Centre Trust board?",
+      "summary": "Who is Mehli Mistry? Why is the Ratan Tata confidant stepping down from Tata Medical Centre Trust board? Livemint",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "COALINDIA": {
+          "ticker": "COALINDIA",
+          "relationship": "DIRECT",
+          "impact_score": 5,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.4,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+2 Company appears in the headline",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Who is Mehli Mistry? Why is the Ratan Tata confidant stepping down from Tata Medical Centre Trust board?",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNSGMzZ3duekZPRmFleXE2TFROd3BrRXB0RGlLOFR3UHdpSTZsZXhsQmN3Yndla3FBODNkdU5GVXRsTnBoSDFmYnlpcXRyRDdZeGF1VkpRU1ZVaHU0am5UR2JyTmUxOWNIRnFQNURZUFc4dnRLM3N0U0JTMEFFNzlRenF4dTBlVml4bDRNYXRQb2dHdFdJSmxiVTZtMUNQSHFJaTFVUFVVcmNDU2Q0ZVlmQ1NBcWFTaHp2V29tUHNtQ0p2Zkt1aHJMb3NQVHlDQ3pEeVBVT1Q4N1B2dEpDOHhvS2ZSTzFtcUVSRWkyX0lGSUxpUURtQVg00gH8AUFVX3lxTE5jem1SWjFLRGZBcjQ3ZEUtZ21wdm9ucmRoeHdUdmlzc2pjaGdZU1ozMFNMNURnOC1HVUtZVm0zZjVrd3Rja1pYWUZVTHZHSkFzYVVWSTJLM1RCU2tBRjEtQ3luc25NVnpyNzI3VjJwYlRPWFFCUWU2bTA4dFlVWXRsUWVWVUdMakpGVUVNLUVRemFqLXBfaklmb1l1REFOMzJQTzNhQ0tmX0NsRmgwREFFLUtDR0xZVzVoRGNPT0NHR2dFM0MtdUd0TjRaYUZqVzFmUW0wSmw4SUNuSHhuYlUwQXRtWjNuc1NtbDNpZ1JWejNSY0F0cFlKeWFWaw",
+          "source_name": "Livemint",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T08:09:51+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint",
+      "cluster_key": "COALINDIA|OTHER|confidant-mehli-mistry-ratan-tata-who",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.441502+00:00",
+      "last_updated": "2026-09-27T18:56:13.441585+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.441578+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-GLOBAL-2026-0310",
       "title": "Ontario farmers seek help as diesel prices hit record high",
       "summary": "Ontario farmers seek help as diesel prices hit record high Barrie 360",
@@ -7176,16 +7329,36 @@
           "published": "2026-09-27T10:21:35+00:00",
           "is_official": false,
           "quality": 3
+        },
+        {
+          "title": "3-day bank strike deferred after bank union body meet: Will SBI, HDFC Bank remain open on Monday, 28 September?",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQR1ZGWjFnSjA2NEsteHNtYlBIRnpESnhvM19nT0pwTlVialpUR3BzajVzUGtaZ0NxdVFtRXEtSFc5V3NZM3NmaTlZZDJvVWxmQ0loOF95RlMwS1FwTElHOVlQNm9NTGhqLUI4V0lrQW1lMENIZlNvMVdlU2JnUF93ZVpUVUotRDNuLUtOU0JocHdSdE1OOGNaZEgwcElxbU1idVdIdzRCVktRUTEwXzdHVDhfb0VWZTJEU3RGS2hBdkFvOVlmOGNGSXZyT3pfTkEtQnBTRW1ZUVQzM1FWX2xVVGtoMUhxMy1uR3dWTVJ5TlFmTHBzZUdKNmowWTlXdUt5SG94Z9IBigJBVV95cUxQMGVmSXFTZGE2bWhna1NNVm14WXlEZlV3UkY4MUhweDhpZ1V2SjhuTGZFVUEyWlJrSmZkMHpMdFFjNXNtT2hxZGVuWWlfcEF0dmU1ZHNKU3gtdjlTRUp2OWktVF9odDI0MW15d2xfNnB6ekJuTGVRdV8zcWhTLTBnSXdFaXNoZlF5TmxQTFZ5ajRVUi1kejV3bUxUOW5YZWZTakx0UFdnUTBia0JGM1NVVjhKLTNfX1FBdFFiSmJmVENCQlppejlja1duQ2VkNGtqUWxQTmdkT0FHUDQ0dGU3TUZidEM5aVR1Y29FRk5tUHNaNWxNZDJQaXM1QjBEZFExTWttVHJxSHdidw",
+          "source_name": "Livemint",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:23:36+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "3-day bank strike deferred: What happened during union body meet? Will SBI, HDFC Bank now remain open 5 days a week?",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQdVVqVjR2Sk44RDJqZUVPamhtX1VzVG92cmc2eU9ORjlyT2g2YjBNNHRJSkRGdVMyV1JjWmUxaUNrR1ZTUXAyaWpsb09sbnZOdENSckZwNFRxclVCYVU2Z3FnY2RHMkpWNHpuN1RVRUpaejFIOHBKNmdvb0FYc2xucS1QN1hJN2k3MExVZHFaZlUwTU84NV83bTNSVGlGX0hhWVhYdWJRZTdUOXk0Nm5zZ2RtM3FXbGFDNzhSZ29sTDNjR28tWFlBVE93WWJIaW12Z3o3eEV4ZHlnV0xpYV83VzZiSkFxb1NQSG5CUkFCdG8xa2hR0gH6AUFVX3lxTE1GVTNoeHM0WTdrVHByR2FKRWlFekYtQ29aWU9RY1VzeHZaczhKRmUzLWk1SExUVEFkUWNaMlQ2Uk5Ddms5cXZEenRfZWZob3l0MW9rX2ZUbEVkcWVyTzVaMFdwXzljT0lPQWRvZE4xUVJGMDhhdDlmSlI1TTAyaFRkWDJxbmNZTnl2VnFiLTBOZk5LSE9uX0JyTGp0WFl5ck44MkxLa0ZEakphZlFiRWdFTmFyZ0E4a0NIMld5WHkxZkNqWlNqQ28xR0RGamRNdTRDejFNNjQ5UnFPOWRGbGZQam4weHgwVEt5QjNUM2RwbUphSFhUbE1tY3c",
+          "source_name": "Livemint",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:41:55+00:00",
+          "is_official": false,
+          "quality": 3
         }
       ],
-      "article_count": 2,
+      "article_count": 4,
       "source_count": 1,
       "primary_source": "fortuneindia.com",
       "cluster_key": "HDFCBANK+TMB|OTHER|bank-bank-bank-hdfc-icici-strike",
       "is_international": false,
       "tags": [],
       "first_seen": "2026-09-26T11:38:32.734315+00:00",
-      "last_updated": "2026-09-27T12:16:22.417273+00:00",
+      "last_updated": "2026-09-27T18:56:16.156575+00:00",
       "event_history": [
         {
           "timestamp": "2026-09-26T11:38:32.734368+00:00",
@@ -7196,6 +7369,11 @@
           "timestamp": "2026-09-27T12:16:22.417256+00:00",
           "change": "sources added",
           "detail": "Upstox"
+        },
+        {
+          "timestamp": "2026-09-27T18:56:16.156557+00:00",
+          "change": "sources added",
+          "detail": "Livemint"
         }
       ],
       "price_reaction": {}
@@ -9390,6 +9568,180 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-HDFCBANK-2026-0264",
+      "title": "Bank unions defer 3-day nationwide strike following assurance from IBA",
+      "summary": "Bank unions defer 3-day nationwide strike following assurance from IBA Business Standard",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "DIRECT",
+          "impact_score": 5,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.4,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+2 Company appears in the headline",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Bank unions defer 3-day nationwide strike following assurance from IBA",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbTBjWmd5Wk5GcEdyckVIMEJTMjQxQm1HeWtoeTZMM2FlUk11LXUtbWh6dlY5S3paQTR6akFJQW9YR2o4WGdtZzEySDcxVTk3UHdmTGN3R01kckpuMEI3M1BnVDNyNVQtU3RENDhuUzdGTU1YaXpvVjNPQTZiVWZkenVtdVRNcnlZUFlPZG1HbzF4LWU0Y2Z0eDhtR1B6bGVBMmV2LXB4YWlELUZ4YTBvYVV6X0RtTWhOcTR5c1BqUjJuR0ZFNUtaUmtSc2ZxT29IX2VUdlFlc0bSAd4BQVVfeXFMUG52NU5RN1R1SEdQQjZUQVlFM1dZT2FwLVhPWFh2TDZJa0ZIMU9lYVZsUlhfMzFIZlJVaW5Hd0xNZ29ja255TjNLNDg4YnhuSnVkR3diMjU1dGxLWGprSUhvUW9zYXlHcGNubl9EVG1qaS1wdDdsRnAySWpLSEdETXVxVVdwZXZWRFdJeDJveGJELXlmZ2c0b29TMGtuNVNBUVcwNzJOM1BObnppdzdObUhqbkZxWFVqSDFIaEYyekZURFJhV29FSm5YajI2Wmsyc3VESWRTdDZGbXEzSE9R",
+          "source_name": "Business Standard",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:28:04+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Business Standard",
+      "cluster_key": "HDFCBANK|OTHER|3-day-bank-defer-nationwide-strike-unions",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.458903+00:00",
+      "last_updated": "2026-09-27T18:56:13.458960+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.458955+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-HDFCBANK-2026-0265",
+      "title": "Biyani takes on Zudio, HDFC Bank plots a comeback, Chinese AI finds Indian takers, and more",
+      "summary": "Biyani takes on Zudio, HDFC Bank plots a comeback, Chinese AI finds Indian takers, and more The Ken",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.3,
+          "business_impacts": [
+            "COMPETITION"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "HDFC Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "HDFC Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "DIRECT",
+          "impact_score": 5,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.4,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+2 Company appears in the headline",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Biyani takes on Zudio, HDFC Bank plots a comeback, Chinese AI finds Indian takers, and more",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaFlVN0lPenF1dnBCTF93OU9najBmX2hfOXN2UmhiVUlRTHkxTnVBSk5WcUgwSldFQkl6eHdCVHBnbmg1d2tzSEJLOG9FLVcxU3FuTl8ta3ZVNW5sbXdCa0lDb3ZMMzFoWWZHeW5PX1NWQWpMSXhIZVNiZ0VGNmQ5ek1iS25KM2ZtbzJMYmRHZjQ1dFE1N1M1RExsTlN3dk1jQ3k0REpyRS1ocndTZk15azd6US1GY2hJOFN4bmEtVEVSc2dkcWN6dQ",
+          "source_name": "The Ken",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:47:57+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "The Ken",
+      "cluster_key": "HDFCBANK+TMB|OTHER|bank-biyani-hdfc-plots-takes-zudio",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.462753+00:00",
+      "last_updated": "2026-09-27T18:56:13.462817+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.462812+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-KSOLVES-2026-0301",
       "title": "AMZN Stock Rises Premarket Ahead Of Results: AWS, CapEx In Focus",
       "summary": "AMZN Stock Rises Premarket Ahead Of Results: AWS, CapEx In Focus Stocktwits",
@@ -10440,6 +10792,74 @@
       "event_history": [
         {
           "timestamp": "2026-09-27T17:50:19.011793+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-0385",
+      "title": "Contract Awards Weekly Round-Up: Defence, EPC and Energy Storage Drive ₹5,467 Crore of Confirmed Orders",
+      "summary": "Contract Awards Weekly Round-Up: Defence, EPC and Energy Storage Drive ₹5,467 Crore of Confirmed Orders News on Projects",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "DIRECT",
+          "impact_score": 5,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.51,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+2 Company appears in the headline",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "direct relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Contract Awards Weekly Round-Up: Defence, EPC and Energy Storage Drive ₹5,467 Crore of Confirmed Orders",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVHFZU1E0V3lWVDMyMnMyTFpNQ2R4X2loVEVUUlMyTUlJY2wwVGVrV3g0U2toMkRHOWRVYS12N19pYkFQMW81Y3RSb19Udk1HRm91X1R2dld1NWlEb1QyLS1yT0IwN0FMeDFRSENPcUZobnJrZk5QSDRVbWpFeEJ6Y2dSeGZlYTA4MUUyNHotUFBwS2JYTFY5X18yclBVcmdWdm50YU9HTGJ3am1fOTNqZDl1b0ZyaXNhWkVVTUJlcEwtaG9hNVdMT09zeElaQ1lGSVRn",
+          "source_name": "News on Projects",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T17:58:43+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "News on Projects",
+      "cluster_key": "WAAREEENER|OTHER|contract-defence-epc-round-up-weekly-win",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.454334+00:00",
+      "last_updated": "2026-09-27T18:56:13.454421+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.454415+00:00",
           "change": "created",
           "detail": "1 source(s) from 1 domain(s)"
         }
@@ -11539,6 +11959,131 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-GLOBAL-2026-0819",
+      "title": "Petrol and diesel prices remain under pressure as oil stays high",
+      "summary": "Petrol and diesel prices remain under pressure as oil stays high RNZ",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "COMMODITY"
+      ],
+      "stocks": {
+        "JKIPL": {
+          "ticker": "JKIPL",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 3,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [
+            "PRICING",
+            "INPUT_COST"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "diesel prices",
+              "relationship": "INDIRECT",
+              "weight": 3.0,
+              "detail": "input commodity; in headline"
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "+2 Movement in a relevant commodity",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "whether the price move persists",
+            "contract repricing lag",
+            "inventory position",
+            "hedging disclosure"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+          "ai_analysis": null
+        },
+        "COALINDIA": {
+          "ticker": "COALINDIA",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 3,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [
+            "PRICING",
+            "INPUT_COST"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "diesel prices",
+              "relationship": "INDIRECT",
+              "weight": 3.0,
+              "detail": "input commodity; in headline"
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "+2 Movement in a relevant commodity",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "whether the price move persists",
+            "contract repricing lag",
+            "inventory position",
+            "hedging disclosure"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Petrol and diesel prices remain under pressure as oil stays high",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcWZjcXhlN3ZWVndMUEk5TG8xdEpSWmdKZjA0UkJLWW5TUVQ2b1dNRUJ0Nmx3NUdnSkROa2RpUW45Tk1Gd0pSdWxsZ21XbnJWU3JLbU1RVm9MQTAxS3N4bXVTaFlxeC1hdEhxX0NQYkR0ZGQ2cFFiZmlOVjFVWU5hX1BGTGxMNWNST2Nla2xHczVDR0Foa3VYY2JjMFlLXzRxWU1nZFFWRm5QeDdT",
+          "source_name": "RNZ",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:38:45+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "RNZ",
+      "cluster_key": "COALINDIA+JKIPL|COMMODITY|diesel-petrol-pressure-price-remain-under",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.461411+00:00",
+      "last_updated": "2026-09-27T18:56:13.461468+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.461463+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-KSOLVES-2026-0296",
       "title": "Here Is How to Play Accenture Stock After a New AWS Collaboration",
       "summary": "Here Is How to Play Accenture Stock After a New AWS Collaboration inkl",
@@ -11779,6 +12324,89 @@
       "event_history": [
         {
           "timestamp": "2026-09-27T12:15:56.640321+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-0384",
+      "title": "UBS Forecasts Silver at $80 by September 2027 as Gold and Industrial Demand Provide Support",
+      "summary": "UBS Forecasts Silver at $80 by September 2027 as Gold and Industrial Demand Provide Support Yahoo Finance",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "GUIDANCE",
+        "INDUSTRY_DEMAND"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 3,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [
+            "REVENUE",
+            "DEMAND",
+            "INPUT_COST"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "silver",
+              "relationship": "INDIRECT",
+              "weight": 3.0,
+              "detail": "input commodity; in headline"
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "+2 Earnings or guidance at a related company",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "assumptions behind the guidance",
+            "execution track record",
+            "silver over the next few weeks"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "UBS Forecasts Silver at $80 by September 2027 as Gold and Industrial Demand Provide Support",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLUhCUjNPaU1DRWJrdll3SGxvaF9DVzhtVU1JMXJnR2F6SGFwMUpHWDBzV2NIaUsyQ0gzQzFGbWtnTWNxaGN3R0YxSTltNzJKVFhrLUptUWZnZS1NajlkeHp5UHdZd0UwXzRkem1PYXFfaDN5ckpiS1pFUmVDVi14R3R1UDVPQWttVm45RFh6eVh1bU9QR2dFSzM5dU4tbnJmMVZKRmpR",
+          "source_name": "Yahoo Finance",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T14:28:21+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Yahoo Finance",
+      "cluster_key": "WAAREEENER|GUIDANCE+INDUSTRY_DEMAND|2027-forecasts-gold-september-silver-ubs",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.450262+00:00",
+      "last_updated": "2026-09-27T18:56:13.450332+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.450326+00:00",
           "change": "created",
           "detail": "1 source(s) from 1 domain(s)"
         }
@@ -13980,6 +14608,84 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-KSOLVES-2026-0314",
+      "title": "Amazon's AWS growth accelerates but 2027 earnin...",
+      "summary": "Amazon's AWS growth accelerates but 2027 earnin... pluang.com",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "KSOLVES": {
+          "ticker": "KSOLVES",
+          "relationship": "INDIRECT",
+          "impact_score": 2,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.3,
+          "business_impacts": [
+            "SUPPLY"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "SUPPLIER",
+              "term": "AWS",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 International market development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "supply terms from AWS"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Amazon's AWS growth accelerates but 2027 earnin...",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOa3BDSEVTTzJtOGE5VHR2c3RJUzRMakg1Y255VGtSMDRaVy1TOWl5S3ZDNl9iUXhZR3NWUVFhWXRmLVY4UDY5V21jNkl5WWU2OVd5MHdwbm81d1p0eWlaaFA3c211Wk9MZDNhUnY0Um83Qm5tSzVxTi10b2N4dTZPNmY0aWw2Y2daeXktSFBB",
+          "source_name": "pluang.com",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:35:21+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "pluang.com",
+      "cluster_key": "KSOLVES|OTHER|2027-accelerates-amazon-aws-earnin...-rise",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.459956+00:00",
+      "last_updated": "2026-09-27T18:56:13.460012+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.460007+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-SUPRIYA-2026-0067",
       "title": "Unichem Goa Facility Gets 5 USFDA Observations",
       "summary": "Unichem Goa Facility Gets 5 USFDA Observations Medical Dialogues",
@@ -15464,6 +16170,138 @@
       "event_history": [
         {
           "timestamp": "2026-09-27T12:15:56.588420+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-0818",
+      "title": "High credit-deposit ratio not a funding constraint for banks: RBI",
+      "summary": "High credit-deposit ratio not a funding constraint for banks: RBI MillenniumPost",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.3,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "credit deposit ratio",
+              "relationship": "SECTOR",
+              "weight": 2.0,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and credit deposit ratio. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "High credit-deposit ratio not a funding constraint for banks: RBI",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRnNuWXRZWGtvN01LeHdnc0tVLVN4S3dlWktWdUdlRjVqZldabnozNXVkR09wdVFFWlVVZ1dNc19zYkU4QVd4M0RZSFg1X213Njc0blNlZlNFa3J3dmh4dE1Gc1l5TXRzMzZLRkxBdGxsYmM2MlZtQU9WSHlyNWtOdkRjTVhKeE90UVcteGVXZE51TVZsVDlYcUQ0Z2p3bTVrRW9XSjRKSTQxQlZ1VmJR0gG0AUFVX3lxTFBNNUJrOWZ4NFFQZ2Zkd0xmWFl0dGhMWWZIQWlpd3lva3Qtc1QtTmRrcl9oM1Vxdm5KY1AwbGRFWW5PeTZ4M2syZ3dvYzNoYTd4aFp5bjFtLWRmandZYThucWFQM2d6TEFHSXlGV0NCYVdGNmJwUlhjbXJ3bGdJeW1ieEY4bUhwWFRXV05aMHR1MkdMNG5OYXBNRmVDdTN6UXJmLTVqak1ENk9tRmQ5X29Jb0tzVw",
+          "source_name": "MillenniumPost",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T17:41:21+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "MillenniumPost",
+      "cluster_key": "HDFCBANK+TMB|OTHER|bank-constraint-credit-deposit-funding-high-ratio",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.452950+00:00",
+      "last_updated": "2026-09-27T18:56:13.453006+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.453001+00:00",
           "change": "created",
           "detail": "1 source(s) from 1 domain(s)"
         }
@@ -17483,6 +18321,165 @@
           "timestamp": "2026-09-27T12:16:00.215690+00:00",
           "change": "direction changed",
           "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-0665",
+      "title": "Gold may rise to $5,000/oz in H1 2027 after near-term consolidation: ICICI Bank",
+      "summary": "The bank expects gold to trade in the $4,200-$4,600 per ounce range for the rest of 2026, with a marginal upside bias in the first half of 2027",
+      "event_date": "2026-09-26",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [
+            "COMPETITION"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "ICICI Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-3 Speculative or unconfirmed report"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "two independent sources",
+            "indirect relationship",
+            "no quantified financial implication",
+            "speculative language"
+          ],
+          "watch_next": [
+            "ICICI Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.35,
+          "business_impacts": [
+            "COMPETITION"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "ICICI Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-3 Speculative or unconfirmed report"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "two independent sources",
+            "indirect relationship",
+            "no quantified financial implication",
+            "speculative language"
+          ],
+          "watch_next": [
+            "ICICI Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Gold may rise to $5,000/oz in H1 2027 after near-term consolidation: ICICI Bank",
+          "url": "https://www.thehindubusinessline.com/markets/gold/gold-may-rise-to-5000oz-in-h1-2027-after-near-term-consolidation-icici-bank/article71512216.ece",
+          "source_name": "The Hindu BusinessLine Markets",
+          "source_domain": "thehindubusinessline.com",
+          "source_type": "established_newspaper",
+          "published": "2026-09-26T08:35:04+00:00",
+          "is_official": false,
+          "quality": 7
+        },
+        {
+          "title": "Gold may rise to $5,000/oz in H1 2027 after near-term consolidation: ICICI Bank",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOcGJQNWktamw0eF8taWY5SEUxM0g3dHZ4RGFrbXVRS1lxdzltLVFDSDN2X0JFcTBGUDNWNmVHNlV4c1dOLVBHaDdsemxCZGtRNGtUNzNXNFJQSkhGMkhNRmRRMmh3a3RsMmNEdUljNGU0dU9qdFEtNmZFUnM5Q3pWUHR0NXZPLVgxOWhtVFZMTjVSclBQUkpkN3hEMXFaTFpjTFkycnNGR0JWUVI1aW9Mb0g4VG5UNmtWOGRSSmxqS2JBOTc5YV9kN1NJUHBkbEk",
+          "source_name": "TradingView",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-26T09:33:39+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Gold May Reach USD 5,000/Oz In H1 2027 As Dollar, US Real Yields Ease: ICICI Bank",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZ1ZWakU4UWFSdnpKbzRjZmJRRGVLamlQeW4tZmd1Wnh5N2ZFalR6Y3RCV3NRU19pWl9aUU1tSm82VC1YWTZxc3lYVnJrd3BDQUhEOTRLYkU4a2xhWUtNaWx5cTV5SXdrdkFMMDd3N2pEODJkLVFBaVRwdVM1WXZUZUVaQTJoOXJrUzUwck5vdkdkd21BeXpobnFGTndvT3E0QmVORmkyOHJwekVsMzNyc1p1Z2FPRHFPQVZ2LWhtUU8",
+          "source_name": "BW Businessworld",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-26T11:26:51+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "ICICI Bank sees gold at $5,000/oz by H1 2027 | Tap to know more | Inshorts",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQelhGdHhUN0JrcjNVVmc4RVRiVWd0THBlNENBSTZJd1AzSVl6ek9KbV9seGZkZ1F3enc4bHVBRHV0M3lMbXVuaUduSXEtMl9jSG15ZFg3UElWTlJsZHo5OXUycTRuczVUb3RiT3dVWkQzTEhqNUhQYjdsWFFXM1Y2VlRNZUNKaDVNNVYzdEZHYmPSAZYBQVVfeXFMUG5ncHRCNjF1dF9MRzVXWWotMVE3V3k4VHotUkFMbGdSOGNTOGlzcUg5UXc1QVJFWlJaMlhKcXhqQVJ5WmYxTG5ONzNBNTBmMjVDRWhRdGhac0VuMGs5ZkRiWEZPZFVrT2hYTC15LVRFUUxxcWQwb0pqTlR4alpCOURvU3ROd21DNWUwWXJBVlhEM3FUR01B",
+          "source_name": "Inshorts",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T17:41:09+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 4,
+      "source_count": 2,
+      "primary_source": "The Hindu BusinessLine Markets",
+      "cluster_key": "HDFCBANK+TMB|OTHER|000/oz-2027-consolidation-gold-near-term-rise",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-26T11:38:32.453172+00:00",
+      "last_updated": "2026-09-27T18:56:15.405390+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-26T11:38:32.453237+00:00",
+          "change": "created",
+          "detail": "2 source(s) from 2 domain(s)"
+        },
+        {
+          "timestamp": "2026-09-26T11:39:19.080884+00:00",
+          "change": "sources added",
+          "detail": "BW Businessworld"
+        },
+        {
+          "timestamp": "2026-09-27T18:56:15.405353+00:00",
+          "change": "sources added",
+          "detail": "Inshorts"
         }
       ],
       "price_reaction": {}
@@ -23496,6 +24493,395 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-GLOBAL-2026-0814",
+      "title": "The Fed Just Raised Interest Rates. Recession is next",
+      "summary": "The Fed Just Raised Interest Rates. Recession is next taxresearch.org.uk",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "INTEREST_RATE",
+        "MACRO"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "MACRO",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "MIXED",
+          "confidence": 0.26,
+          "business_impacts": [
+            "MARGIN",
+            "DEMAND"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "MACRO",
+              "term": "interest rates",
+              "relationship": "MACRO",
+              "weight": 1.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Economy-wide relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "rate moves hit margins and credit demand in opposite directions"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "macro relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "deposit repricing lag",
+            "loan book mix (fixed versus floating)",
+            "credit demand response",
+            "margin guidance"
+          ],
+          "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "MACRO",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "MIXED",
+          "confidence": 0.26,
+          "business_impacts": [
+            "MARGIN",
+            "DEMAND"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "MACRO",
+              "term": "interest rates",
+              "relationship": "MACRO",
+              "weight": 1.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Economy-wide relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "rate moves hit margins and credit demand in opposite directions"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "macro relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "deposit repricing lag",
+            "loan book mix (fixed versus floating)",
+            "credit demand response",
+            "margin guidance"
+          ],
+          "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "The Fed Just Raised Interest Rates. Recession is next",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRlRxS0hUSnpud2VIUEdaRlhiWEwycDV6RlJITnhiUzQ4S2pLVDlVZGNIUHYyVlFRTlk2cTZzOTRGTU9LNUpaNE9mM2ZUc3VZYkl0TmpfV1psZHBPQlBSRXVsdnlUbkhhemJSdGFLWEFVclJIMFhFVkZZaUY3b05obks1Z29WT25wV09IWDNJZUgzc2FCb1ZCUzdiMUVGYVl6Y2c",
+          "source_name": "taxresearch.org.uk",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T06:38:53+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "taxresearch.org.uk",
+      "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-interest-just-raised-rates.-recession",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.433089+00:00",
+      "last_updated": "2026-09-27T18:56:13.433191+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.433178+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-0815",
+      "title": "Booms, Bombs and Bonds: Interest Rates, Part I",
+      "summary": "Booms, Bombs and Bonds: Interest Rates, Part I Paul Krugman | Substack",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "DEBT",
+        "INTEREST_RATE"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "MACRO",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "MIXED",
+          "confidence": 0.26,
+          "business_impacts": [
+            "DEBT",
+            "BALANCE_SHEET",
+            "MARGIN",
+            "DEMAND"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "MACRO",
+              "term": "interest rates",
+              "relationship": "MACRO",
+              "weight": 1.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Economy-wide relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "rate moves hit margins and credit demand in opposite directions"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "macro relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "deposit repricing lag",
+            "loan book mix (fixed versus floating)",
+            "credit demand response",
+            "margin guidance"
+          ],
+          "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are debt, balance sheet, margin. Classified as debt.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "MACRO",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "MIXED",
+          "confidence": 0.26,
+          "business_impacts": [
+            "DEBT",
+            "BALANCE_SHEET",
+            "MARGIN",
+            "DEMAND"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "MACRO",
+              "term": "interest rates",
+              "relationship": "MACRO",
+              "weight": 1.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Economy-wide relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "rate moves hit margins and credit demand in opposite directions"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "macro relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "deposit repricing lag",
+            "loan book mix (fixed versus floating)",
+            "credit demand response",
+            "margin guidance"
+          ],
+          "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are debt, balance sheet, margin. Classified as debt.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Booms, Bombs and Bonds: Interest Rates, Part I",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00d21LWFlqUENYcnN2dGp2d3VCdmlaTTh0WUh0b05EUlJ2Mkxadm0wOFgxdGF1Vkp6MVhyQlhMakxZV3dsODcxYl84dFA0R3l6Skh6RnFnQXpzWkdwY3BYUjV3eWZyOHNSWUhUTkFrV2tLalZPS1NjbjdiZw",
+          "source_name": "Paul Krugman | Substack",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T10:46:34+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Paul Krugman | Substack",
+      "cluster_key": "HDFCBANK+TMB|DEBT+INTEREST_RATE|bombs-bonds-booms-interest-part-rate",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.444186+00:00",
+      "last_updated": "2026-09-27T18:56:13.444253+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.444247+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-0816",
+      "title": "Nationwide bank strike from Monday: Cash withdrawals, deposits, cheque clearing may suffer",
+      "summary": "Nationwide bank strike from Monday: Cash withdrawals, deposits, cheque clearing may suffer Telegraph India",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.13,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-3 Speculative or unconfirmed report",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication",
+            "speculative language"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to deposits, and India. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.13,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-3 Speculative or unconfirmed report",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication",
+            "speculative language"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to deposits, and India. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Nationwide bank strike from Monday: Cash withdrawals, deposits, cheque clearing may suffer",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOazZ3ejBiNkFFSndEY1RUMHRCTWdLS1BFQ2NWQ3l1VXB2OEVfTWp0OFNlUU1xR19lRERxb0hvRlVqQmI3SEFBcWZxNzdJRkpqNkVCY29ja1lzcXhjdFRMclBDbDFsTWZMWVlWYm1mQ21nbUdsRi10b2xGTUJQamRDMFZCZXF6VHlyWGdyenhXQndkSFA3cWFkNFE1YTdyMGRDTXU3bVkzTzhiWExubjFDLUxXS0x4cGFhNlYzVFJobUdmM0JxZjhaVlVEZFJOVlVBYWfSAdcBQVVfeXFMT1M3Q1lLcVBxbTl0d2lVb1ZqbFdXWXlkakVGRDdIMTZ4RXNVWmZYRnNyQ3RielZYWTN3TDd2c1o1OW1WRi1ZaFRqQ29jXzRObUJlUW56Y09jczNSWW0tQnBZQmYxVUFIN2N5ZFlmNTJtNWxnZ0JHMlF3T1BYU01XUkY4RnM0WF9BQkdtaXh0WUltdTNOel9iWEVoY0FzWkNOMU41amFNY2daeUFXa1lfRFRack1KcUVuQXlWWFJRaVZOZTd2TDFtcHc1Y0N3TVZveVFBRTYxRFU",
+          "source_name": "Telegraph India",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T12:51:24+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Telegraph India",
+      "cluster_key": "HDFCBANK+TMB|OTHER|bank-cash-monday-nationwide-strike-withdrawals",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.446341+00:00",
+      "last_updated": "2026-09-27T18:56:13.446425+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.446419+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-HDFCBANK-2026-0232",
       "title": "Kotak Mahindra Bank FY2025-26 Annual Report: Consolidated Balance Sheet Crosses ₹10 Lakh Crore",
       "summary": "Kotak Mahindra Bank FY2025-26 Annual Report: Consolidated Balance Sheet Crosses ₹10 Lakh Crore scanx.trade",
@@ -26202,6 +27588,95 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-SUPRIYA-2026-0068",
+      "title": "Times Dhandho: API shortage bites Gujarat drugmakers",
+      "summary": "Times Dhandho: API shortage bites Gujarat drugmakers The Times of India",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "SUPPLY_CHAIN"
+      ],
+      "stocks": {
+        "SUPRIYA": {
+          "ticker": "SUPRIYA",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.28,
+          "business_impacts": [
+            "SUPPLY",
+            "INPUT_COST"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "API",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "duration of the disruption",
+            "alternate sourcing",
+            "inventory cover",
+            "cost pass-through"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to API, and India. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Times Dhandho: API shortage bites Gujarat drugmakers",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT0ZjY0QwcC0tXy13WTlOSzlwalFTd29XREpHVGZZUzBhQXNPT0Jjc2g1VmZmVmFHbkcwdm9OR3JNRHpvd19PSFBsUGE0YzRWTW1oSzlZSXJEMmI5UzVzNkI0bjlvbkU1SnJJeG9TYXdTUVphZHdxRG5ySWVvSTVlVmMtQmtpQzFEVU5Wa0JTQXZ6Q2xJOFpzY1lBd1Q3aTBTN0FYY1dTaV9OR04xTndzcVUwT0Z6aThFdmo5c0FGcWlpczFvY3lv0gHMAUFVX3lxTFB5LTJKRTFRd3pyX3hGSTZLNGhlSm5fZERZVVpDd01iQndmWXFaMWdjVW9QYi01YllMU1l0M0pCOUNzZnREd1E5YUVTREVqb2F4djRjd3VjcVp1REdOSkR1T0JBbnhUbXBNanVaX0dJX1BwWEhWVVRWWlMzWU5jTms1R091ZFF3cGtnS3hJNUE0X1JZa3ZUbXI4YWVyQllwSWdESVBqUUJqSExkV25jVElJRTBKVmd3bDA4M3N3a1hVd1J1bG93OHgxV1Vnaw",
+          "source_name": "The Times of India",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:37:00+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "The Times of India",
+      "cluster_key": "SUPRIYA|SUPPLY_CHAIN|api-bites-dhandho-gujarat-shortage-times",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.460722+00:00",
+      "last_updated": "2026-09-27T18:56:13.460777+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.460772+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-TMB-2026-0055",
       "title": "Gold Rate Today in Tamil Nadu 23rd September 2026 : 22 & 24 Carat, Todays Gold Price in Tamil Nadu",
       "summary": "Gold Rate Today in Tamil Nadu 23rd September 2026 : 22 & 24 Carat, Todays Gold Price in Tamil Nadu Business Today",
@@ -27564,6 +29039,327 @@
       "price_reaction": {}
     },
     {
+      "event_id": "EVENT-TMB-2026-0162",
+      "title": "Emerald Finance Q4FY26: Partners With 30 Companies, Disburses ₹375 Cr Gold Loans",
+      "summary": "Emerald Finance Q4FY26: Partners With 30 Companies, Disburses ₹375 Cr Gold Loans scanx.trade",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "PARTNERSHIP"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.28,
+          "business_impacts": [
+            "PRODUCT",
+            "CUSTOMERS"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "gold loans",
+              "relationship": "SECTOR",
+              "weight": 1.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. The parts of the business most likely touched are product, customers. Classified as partnership.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Emerald Finance Q4FY26: Partners With 30 Companies, Disburses ₹375 Cr Gold Loans",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNV1hWVmVqTFlNd2hMdVF6SElTYk54LUtjeS1ESGtGRXd3dklkTFk5MFRlbHY2VzBQZlpWZ2NpQXNQUThUTjFySXdwM3k2emNJVW1ZVWNWaEFzTEp0S0FYQ0RFTE9DVXY2M01oTEtwbDNCVmc2QUsyNGhveG5JTnpSTUNCSF9EMlY2NEhEb3JfZHUza1c4WlNXUDRwYkM2MzVUN2hUdU1MTVZYenRwOXptbGxlN0dWNllPRUJiM0NPcTlJLTRZV2E1ZHViSmpNSFdnSUhZS0VUZDlFQmNYbVhicA",
+          "source_name": "scanx.trade",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T08:45:41+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "scanx.trade",
+      "cluster_key": "TMB|PARTNERSHIP|companies-disburses-emerald-finance-partners-q4fy26",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.442439+00:00",
+      "last_updated": "2026-09-27T18:56:13.442514+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.442508+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-TMB-2026-0163",
+      "title": "Gold price at the close of the session on September 27: Gold bars adjust to increase, decrease in opposite directions",
+      "summary": "Gold price at the close of the session on September 27: Gold bars adjust to increase, decrease in opposite directions Laodong.vn",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.3,
+          "business_impacts": [
+            "PRICING"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "gold prices",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "throughput commodity; in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "gold prices is handled rather than bought or sold; volume matters more than price"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "gold prices over the next few weeks"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Gold price at the close of the session on September 27: Gold bars adjust to increase, decrease in opposite directions",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWjdtMEJraFNGclI5UHBGTXIxdTd0VmlRWjQwSXp4OC1ycVVURTNJWWgyUzMzdHFYZDNoS1lkN0VjYngxTWN0M3gtV3V1ckFDSjJMcVZSdWZBYVhSeVRueTlOUWdPQjlBR3U3Vl9pcEYtUjF2eTFFeHRDT3JaQ2pkNEJFUEJNOXdHVXlwaGY2NHpYa2pNUDZ0a1V0ei05RTVHNFl5eU1pVm5SOXE4Um5MRTdOMENqX0F2",
+          "source_name": "Laodong.vn",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T11:39:07+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Laodong.vn",
+      "cluster_key": "TMB|OTHER|close-gold-gold-price-september-session",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.445434+00:00",
+      "last_updated": "2026-09-27T18:56:13.445518+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.445512+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-TMB-2026-0164",
+      "title": "South Indian Bank appoints Mahesh Muralidhar Pai as MD & CEO from Oct 1, 2026",
+      "summary": "South Indian Bank appoints Mahesh Muralidhar Pai as MD & CEO from Oct 1, 2026 scanx.trade",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "MANAGEMENT_CHANGE"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.3,
+          "business_impacts": [
+            "MANAGEMENT",
+            "COMPETITION"
+          ],
+          "time_horizon": "LONG_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "Indian Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "South Indian Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "reason for the change",
+            "successor's background",
+            "further exits",
+            "Indian Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "South Indian Bank appoints Mahesh Muralidhar Pai as MD & CEO from Oct 1, 2026",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPekNYclRjZk9ZVDlXcXVHMXZ2Qlc3Nm1PZTJKUkdxTUxoajdzaklEdnFvRVRweXJsMHFiSjB0XzNpZ0lMSWl1MDBTR0tubUdMZk9LdUZjQkV2U2tuZXUtTHphRmM1R3JZdFdOdGZzczZKR1F1UmVhS3g3UVF3M21RbC03Zm1rbXhLcDUxTmgtTGhkLXZHYnFRQlVSX2xjTEhoNG5mNm9lSHJVT0xfVzYzckJIb3JOUQ",
+          "source_name": "scanx.trade",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T13:50:40+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "scanx.trade",
+      "cluster_key": "TMB|MANAGEMENT_CHANGE|appoints-bank-india-mahesh-muralidhar-south",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.448013+00:00",
+      "last_updated": "2026-09-27T18:56:13.448080+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.448075+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-TMB-2026-0165",
+      "title": "Gold Price Today Sept 28, 2026: Antam at Rp2.613 Million, Check List",
+      "summary": "Gold Price Today Sept 28, 2026: Antam at Rp2.613 Million, Check List Aktualita.co",
+      "event_date": "2026-09-27",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [
+            "PRICING"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "gold prices",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "throughput commodity; in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "indirect relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "gold prices over the next few weeks"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Gold Price Today Sept 28, 2026: Antam at Rp2.613 Million, Check List",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVXBJdHIwYjNjMVplckJyZVEtMWprNHVTNTd2blVsZjFFenZPWkJzQ2pzSlJMbmVBTlpHMzJCcmV0ekhPdV9OWG1KcWE0WTA0QjB6eGl2U1o0c0JBN0EtbWZucmV1Smp0UmFudkFid2NTVU1zQWRWcGdzOUR5NlNCNGlRV0tQVVVvZjZXSjRjWGhsUUhOdklYaWNGVFo",
+          "source_name": "Aktualita.co",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:26:46+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Aktualita.co",
+      "cluster_key": "TMB|OTHER|2026-antam-gold-price-sept-today",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-27T18:56:13.458103+00:00",
+      "last_updated": "2026-09-27T18:56:13.458167+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-27T18:56:13.458158+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
       "event_id": "EVENT-WAAREEENER-2026-0071",
       "title": "Gold and silver price today, Sept 21: Check retail rates of 24K, 22K gold and 999 silver in Mumbai, Delhi, other cities",
       "summary": "Gold and silver price today, Sept 21: Check retail rates of 24K, 22K gold and 999 silver in Mumbai, Delhi, other cities Livemint",
@@ -27746,6 +29542,107 @@
           "timestamp": "2026-09-27T12:16:10.658708+00:00",
           "change": "sources added",
           "detail": "Business Today"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-0102",
+      "title": "Australian state opens consultation on mandatory solar panel recycling scheme",
+      "summary": "Australian state opens consultation on mandatory solar panel recycling scheme pv magazine Global",
+      "event_date": "2026-09-22",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.28,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar panels",
+              "relationship": "SECTOR",
+              "weight": 1.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Australian state opens consultation on mandatory solar panel recycling scheme",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjBfOFBmNTlQemNEaUhVcGc3VHZ1ZVllQm1HSUh1UGhBWC02OG1ER1p4S2E1bUxwQVBTYlBiRzJLWTg3cVB5d1FTTjVDTUVsRWx1dUllVUowZDlvTkV1d0lJcUdncmRwSldWR2tMN1plMkZNcUprTEZTSUFWdlJBczRjR0F1MnozS0s4enhjb0E2dGh5Q29pY093SHhmZWJSOTFEOG9OSQ",
+          "source_name": "pv magazine Global",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-22T04:55:08+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "NSW Opens Consultation On Solar Panel Recycling Rules",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYlFqSGt1UTg3SGVhY1NLMDc1Z2VXUENjMXZ5OXJHT3dYY1l2U0tRV0JFTXJCTUpvaGVWMDREaXdXVGRYVXZYNDlMVmFtVS1ta2FsWjZ2MjFKWnNSSVZmdGx1eV9VdkNaZkotUFM4aGdCY1Y4aFdKWGp6bG1PZVdxOEYzRW51WUxXWklj",
+          "source_name": "TaiyangNews",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-22T10:08:42+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "NSW Seeks Feedback On Solar Panel Recycling Scheme",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd09ma3YzTTE0MlZJcnF2ejNTalV5WUVUWE9sMWxSUHN6TGJycFczME02dThfZGVXZzdZUlVuSFpJVnNJN1J5YmpkY0pQLWFxSXBwd01Uckc2T1VKTmlKbTZIaXBoVTViLXFXNW42RVpseTZGSEF6UEtobmFab1RzXzlaMUJNMGRhSHFiWmIxd2xyYVFvWUMwWk5VRUVZa3dPMm5PNnYyNDY2eDhZMFU4NQ",
+          "source_name": "Northern Rivers Times",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-09-27T18:06:12+00:00",
+          "is_official": false,
+          "quality": 3
+        }
+      ],
+      "article_count": 3,
+      "source_count": 1,
+      "primary_source": "pv magazine Global",
+      "cluster_key": "WAAREEENER|OTHER|australian-consultation-mandatory-opens-solar-state",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-09-22T18:19:39.932220+00:00",
+      "last_updated": "2026-09-27T18:56:15.863918+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-09-22T18:19:39.932262+00:00",
+          "change": "created",
+          "detail": "2 source(s) from 1 domain(s)"
+        },
+        {
+          "timestamp": "2026-09-27T18:56:15.863904+00:00",
+          "change": "sources added",
+          "detail": "Northern Rivers Times"
         }
       ],
       "price_reaction": {}
