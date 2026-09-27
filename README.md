@@ -346,6 +346,24 @@ in JSON (the analysis would be discarded — use a stronger model), or `FAIL`
 with the API's own message, which names a wrong model id precisely. Until
 that prints `OK`, assume the layer is not working.
 
+### Where the analysis appears
+
+Three places, once a run with a working key has completed:
+
+1. **The daily report**, `reports/YYYY-MM-DD.md` — an **AI analysis** block
+   under each qualifying event, below the deterministic score and its
+   reasons.
+2. **The command line**, against the stored event history:
+
+   ```bash
+   python -m src.main --query COALINDIA --min-impact 8 --show-ai
+   ```
+
+   Events carrying analysis are marked `[AI]` in the listing, so it is
+   obvious what `--show-ai` would print.
+3. **The event JSON**, `data/events/…json` — under each ticker's
+   `ai_analysis` key, alongside `provider` and `model`.
+
 If analysis fails during a real run, the reason lands in the report's Run
 Diagnostics under `ai_enrichment` — so an unset key or an unavailable model
 reads as itself rather than as "no events qualified".
@@ -391,7 +409,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-346 tests, all offline. The interesting ones are regressions:
+348 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

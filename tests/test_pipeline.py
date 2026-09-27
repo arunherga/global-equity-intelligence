@@ -349,3 +349,79 @@ def test_link_resolution_failure_does_not_lose_the_run(monkeypatch):
     aborted = [d for d in result.diagnostics if d.source == "link_resolution"]
     assert aborted and not aborted[0].ok
     assert "aggregator went away mid-run" in aborted[0].note
+
+
+# -- reading stored AI analysis from the CLI ------------------------------
+
+
+def test_query_formats_stored_ai_analysis():
+    from src.main import _format_ai_analysis
+
+    lines = _format_ai_analysis({
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "revenue_effect": "Converts to revenue over the delivery schedule.",
+        "margin_effect": "",                      # empty fields are skipped
+        "key_uncertainty": "Whether the order is firm.",
+        "monitor_next": ["The exchange filing", "Q3 order inflow"],
+    })
+
+    text = "\n".join(lines)
+    assert lines[0] == "-- AI analysis (gemini gemini-3.1-flash-lite)"
+    assert "Revenue: Converts to revenue over the delivery schedule." in text
+    assert "Margin:" not in text
+    assert "Key uncertainty: Whether the order is firm." in text
+    assert "     - The exchange filing" in text
+    assert "     - Q3 order inflow" in text
+
+
+def test_query_marks_which_events_carry_analysis(capsys):
+    """[AI] in the listing, so it is obvious what --show-ai would print."""
+    from src.main import _run_query, resolve_tickers
+    from src.event_store import EventStore
+    from src.models import Direction, Event, EventCategory, Relationship, StockImpact
+    import argparse
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+
+    plain = Event(
+        event_id="EVENT-COALINDIA-2026-9001",
+        title="Routine production update",
+        event_date=date(2026, 9, 27),
+        event_types=[EventCategory.OTHER],
+    )
+    plain.stocks["COALINDIA"] = StockImpact(
+        ticker="COALINDIA", relationship=Relationship.DIRECT, impact_score=6,
+        direction=Direction.NEUTRAL, confidence=0.5,
+    )
+    analysed = Event(
+        event_id="EVENT-COALINDIA-2026-9002",
+        title="Rare earth exploration licence signed",
+        event_date=date(2026, 9, 27),
+        event_types=[EventCategory.OTHER],
+    )
+    analysed.stocks["COALINDIA"] = StockImpact(
+        ticker="COALINDIA", relationship=Relationship.DIRECT, impact_score=11,
+        direction=Direction.POSITIVE, confidence=0.7,
+        ai_analysis={"provider": "gemini", "model": "m", "revenue_effect": "Unclear."},
+    )
+
+    class _Store:
+        def query(self, **kwargs):
+            return [plain, analysed]
+
+    args = argparse.Namespace(query="COALINDIA", categories="", min_impact=0, show_ai=False)
+    import src.main as main_mod
+    original = main_mod.EventStore
+    main_mod.EventStore = lambda *a, **k: type("S", (), {"load": lambda s: _Store()})()
+    try:
+        assert _run_query(config, watchlist, args) == 0
+    finally:
+        main_mod.EventStore = original
+
+    out = capsys.readouterr().out
+    assert "2 event(s) for COALINDIA, 1 carrying AI analysis" in out
+    assert "EVENT-COALINDIA-2026-9002  11/15 POSITIVE DIRECT  [AI]" in out
+    assert "9001" in out and "[AI]" not in out.split("9001")[1].split("\n")[0]
+    assert "Add --show-ai" in out

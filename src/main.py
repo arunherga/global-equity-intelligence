@@ -7,6 +7,7 @@
     python -m src.main --backfill-days 365 --slice-days 14
     python -m src.main --check-sources       # probe every source, print a table
     python -m src.main --check-ai            # one real call, prove the model answers
+    python -m src.main --query COALINDIA --show-ai   # read stored AI analysis
     python -m src.main --query WAAREEENER --categories TARIFF
 
 The pipeline is the architecture in code::
@@ -28,7 +29,7 @@ import sys
 import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 from .classify import Classification, RuleClassifier, classify_article
 from .config import Config, load_config
@@ -571,6 +572,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--query", default="", help="search the event store for a ticker")
     parser.add_argument("--categories", default="", help="comma-separated categories for --query")
     parser.add_argument("--min-impact", type=int, default=0, help="minimum impact for --query")
+    parser.add_argument(
+        "--show-ai",
+        action="store_true",
+        help="with --query, print the stored AI analysis for each event",
+    )
     parser.add_argument("--no-ai", action="store_true", help="force the AI layer off")
     return parser
 
@@ -739,7 +745,11 @@ def _run_query(config: Config, watchlist: Watchlist, args) -> int:
     if not events:
         print(f"no stored events for {ticker}")
         return 0
-    print(f"{len(events)} event(s) for {ticker}")
+    with_ai = sum(
+        1 for e in events
+        if (e.stocks.get(ticker) or None) and e.stocks[ticker].ai_analysis
+    )
+    print(f"{len(events)} event(s) for {ticker}, {with_ai} carrying AI analysis")
     for event in events:
         impact = event.stocks.get(ticker)
         detail = (
@@ -747,9 +757,45 @@ def _run_query(config: Config, watchlist: Watchlist, args) -> int:
             if impact
             else "-"
         )
-        print(f"  {event.event_date} {event.event_id}  {detail}")
+        marker = "  [AI]" if impact and impact.ai_analysis else ""
+        print(f"  {event.event_date} {event.event_id}  {detail}{marker}")
         print(f"      {event.title[:100]}")
+        if args.show_ai and impact and impact.ai_analysis:
+            for line in _format_ai_analysis(impact.ai_analysis):
+                print(f"      {line}")
+    if with_ai and not args.show_ai:
+        print("\nAdd --show-ai to print the analysis for the [AI] events.")
     return 0
+
+
+# The report's field order, so the CLI and the Markdown read the same way.
+_AI_FIELDS = (
+    ("revenue_effect", "Revenue"),
+    ("margin_effect", "Margin"),
+    ("cost_effect", "Costs"),
+    ("competitive_effect", "Competition"),
+    ("regulatory_effect", "Regulation"),
+    ("short_term", "Short term"),
+    ("medium_long_term", "Medium / long term"),
+    ("second_order_effects", "Second-order effects"),
+    ("key_uncertainty", "Key uncertainty"),
+)
+
+
+def _format_ai_analysis(analysis: Dict[str, Any]) -> List[str]:
+    """Stored AI analysis as readable terminal lines."""
+    provider = str(analysis.get("provider", "ai"))
+    model = str(analysis.get("model", ""))
+    lines = [f"-- AI analysis ({provider} {model})".rstrip()]
+    for key, label in _AI_FIELDS:
+        value = str(analysis.get(key, "")).strip()
+        if value:
+            lines.append(f"   {label}: {value}")
+    monitor = analysis.get("monitor_next") or []
+    if isinstance(monitor, list) and monitor:
+        lines.append("   Monitor next:")
+        lines.extend(f"     - {item}" for item in monitor[:5])
+    return lines
 
 
 if __name__ == "__main__":
