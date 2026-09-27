@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "vegetable prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -76,16 +76,26 @@
       "published": "2026-09-25T18:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Heavy Rain Sends Vegetable Prices Soaring",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5XSWhrWmFidHQtcS1LZ3dQS1ZYMlh0RWRjbDFhT1JMeDM5c0NNdHJoTGJhbXVjcEIyYUE2TU9xaWlYVVlCcTBqQXJzR1gxSl84dlVmWA",
+      "source_name": "News On Japan",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-27T13:17:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "The Business Standard",
   "cluster_key": "FRESHARA|OTHER|fuel-garlic-oil-price-raise-sends",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.522155+00:00",
-  "last_updated": "2026-09-26T11:38:55.280267+00:00",
+  "last_updated": "2026-09-27T17:50:26.562769+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.522228+00:00",
@@ -106,6 +116,16 @@
       "timestamp": "2026-09-26T11:38:55.280250+00:00",
       "change": "sources added",
       "detail": "daily-sun.com"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:26.562751+00:00",
+      "change": "sources added",
+      "detail": "News On Japan"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:26.562766+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

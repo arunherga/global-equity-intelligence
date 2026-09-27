@@ -170,14 +170,13 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.4,
       "business_impacts": [
-        "BALANCE_SHEET",
-        "DEBT"
+        "BALANCE_SHEET"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -190,22 +189,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect relationship",
+        "best source quality 3/10",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are balance sheet, debt. Classified as fundraising.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
       "ai_analysis": null
     },
     "KSOLVES": {
@@ -385,21 +384,41 @@
       "published": "2026-09-27T11:22:08+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "IPO rush: 9 companies, including Trans ACNR Solutions, submit draft IPO papers to SEBI | Check list",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORXNRbW9qT09jYUl3T0FvRG1fcFRXZHRHV2pEUENIaEdxSkl3UmVEa1IyZFg5cDFRUFVtZG45cUZ0a2VEYThjb0VZUm5Pb3JCVUVCenNZWEw3TDRhRVM1VFNLb05pYVRSd0k0Y0RETXI0Um5wWTZnOVRUWFA1bzZHX29OaUtFN1dla0xPYnhVeWRrN0ZLb2hyWU5ZZTFyT1hoUi0tQVBoMzE4YlBnXzVwaDRXRVRmaUV0YXFiVXVUcnRwV0Q3RF9KQnJMem5qVHNCd2dUa1laSHpPY01HdUlCOGlXb1g3Z9IB6wFBVV95cUxOaGF5SC0yX2V3VFo1c2JOQ2hIVUh4Q3JRclJIRWp3cUVZU0ZQdXlaNUFvTzRqeHZwTE5NdG5hTzlaN240V2ZDeVV0eXlCdTZKZTBLcWQ0dzVYSWlUQVdGNHhIbFhrOW9RNlNLaHBaN3htMHVObnE5QnZaNnlmWUw5TFRqd19NTVNBNTVtT01nbTFrTjlKVnhJY0tFRnQydVYzMUF5TlY5Wms0MVFsMDV1WjZkQ3M5WEMwX21Vd3cyc28yWGNacXRYR3lsTUhKWFJLTHkwaVNmanFrQVFjbm1LVHc1cmVFVDJWbzFJ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-27T15:25:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|DEBT+FUNDRAISING|acnr-file-ipo-others-solutions-trans",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.597305+00:00",
-  "last_updated": "2026-09-27T12:15:56.597372+00:00",
+  "last_updated": "2026-09-27T17:50:30.042581+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.597366+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:30.042555+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:30.042574+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

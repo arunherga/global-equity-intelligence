@@ -122,18 +122,14 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.21,
+      "confidence": 0.36,
       "business_impacts": [
-        "DEMAND",
-        "REVENUE",
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN"
+        "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "MACRO",
@@ -152,8 +148,7 @@
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "+2 Earnings or guidance at a related company",
-        "-3 Speculative or unconfirmed report",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -162,16 +157,12 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
-        "rationale in the rating note",
-        "covenant implications"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to India GDP, and India. The parts of the business most likely touched are demand, revenue, debt. Classified as macro.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to India GDP, and India. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -385,16 +376,26 @@
       "published": "2026-09-23T12:40:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India GDP Grows 7.8% in Q1 FY27 on Investment and Manufacturing Growth",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWlBXMnNQNnFoYjdtZXh3ZTdKWjFXNHNHZWNXR2cyT3h2QVR3UUtrU3o0SXVxX01JLVVyZ01yVmE2NDZXWkIxNGJIdi1OcjZkTjBPT2gwcWUtSUZ4U0NZUUR1QVFXQnZQenJFN3ZzU21NdWtpVlBDc0w0Z2l6a2pqYTZNcjJkaUNEMDhNUWNlVmJHSXRRNmJ3NUdtTFBlcXQzM1VUN19ZNHMyRkk2NDhMY3MxS2xGV2lma05pY2lpc01RelEtY0Y1eS1UWQ",
+      "source_name": "kalkine.co.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-27T15:56:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 21,
+  "article_count": 22,
   "source_count": 1,
   "primary_source": "NiftyTrader",
   "cluster_key": "COALINDIA+HDFCBANK+TMB|CREDIT_RATING+INTEREST_RATE|fitch-fy27-gdp-india-raise-rise",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.610637+00:00",
-  "last_updated": "2026-09-24T12:02:53.834872+00:00",
+  "last_updated": "2026-09-27T17:50:30.682044+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.610754+00:00",
@@ -435,6 +436,16 @@
       "timestamp": "2026-09-24T12:02:53.834868+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:30.682027+00:00",
+      "change": "sources added",
+      "detail": "kalkine.co.in"
+    },
+    {
+      "timestamp": "2026-09-27T17:50:30.682040+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 1"
     }
   ],
   "price_reaction": {}
