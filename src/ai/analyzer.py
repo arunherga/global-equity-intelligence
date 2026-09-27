@@ -10,6 +10,8 @@ from __future__ import annotations
 import logging
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
+from dataclasses import dataclass, field
+
 from ..config import Config
 from ..models import Event, Relationship, StockImpact
 from ..profiles.loader import CompanyProfile, Watchlist
@@ -123,27 +125,48 @@ def analyse_event(
     )
 
 
+@dataclass
+class EnrichmentOutcome:
+    """Why the AI layer produced what it produced.
+
+    ``selected`` and ``enriched`` have to be separate numbers. "Nothing
+    qualified" and "everything I tried failed" are both zero analyses and
+    completely different problems - the first is the impact threshold doing
+    its job, the second is a broken key or model. Reporting only the count
+    made a quiet run look like an outage.
+    """
+
+    selected: int = 0
+    enriched: int = 0
+    errors: List[str] = field(default_factory=list)
+
+
 def enrich(
     events: Sequence[Event],
     config: Config,
     watchlist: Watchlist,
-    errors: Optional[List[str]] = None,
-) -> int:
-    """Attach AI analysis to the events that qualify. Returns how many.
+) -> EnrichmentOutcome:
+    """Attach AI analysis to the events that qualify.
 
-    ``errors`` collects the reason each analysis failed, so a run can say
-    "that model name is not available" rather than only "AI produced
-    nothing". A wrong model id or an unset key is otherwise invisible until
-    someone reads the log.
+    ``errors`` on the result collects the reason each analysis failed, so a
+    run can say "that model name is not available" rather than only "AI
+    produced nothing". A wrong model id or an unset key is otherwise
+    invisible until someone reads the log.
     """
+    outcome = EnrichmentOutcome()
     if not config.ai_enabled:
-        return 0
+        return outcome
     provider = build_provider(config)
     if provider is None:
-        return 0
+        outcome.errors.append(
+            f"provider {config.get('ai.provider')!r} could not be built"
+        )
+        return outcome
 
+    chosen = select_events(events, config)
+    outcome.selected = len(chosen)
     enriched = 0
-    for event, impact in select_events(events, config):
+    for event, impact in chosen:
         try:
             profile = watchlist.get(impact.ticker)
         except KeyError:
@@ -154,8 +177,7 @@ def enrich(
                 "AI analysis failed for %s/%s: %s",
                 event.event_id, impact.ticker, result.error,
             )
-            if errors is not None:
-                errors.append(f"{impact.ticker}: {result.error}")
+            outcome.errors.append(f"{impact.ticker}: {result.error}")
             continue
         impact.ai_analysis = {
             "provider": result.provider,
@@ -166,4 +188,5 @@ def enrich(
             impact.ai_analysis["redactions"] = result.redactions
         event.record("ai analysis", f"{impact.ticker} via {result.provider}")
         enriched += 1
-    return enriched
+    outcome.enriched = enriched
+    return outcome

@@ -1,4 +1,10 @@
-from .analyzer import analyse_event, build_provider, enrich, select_events
+from .analyzer import (
+    EnrichmentOutcome,
+    analyse_event,
+    build_provider,
+    enrich,
+    select_events,
+)
 from .base import (
     AiProvider,
     AiResult,
@@ -10,6 +16,7 @@ from .base import (
 
 __all__ = [
     "AiProvider",
+    "EnrichmentOutcome",
     "AiResult",
     "analyse_event",
     "api_error_text",

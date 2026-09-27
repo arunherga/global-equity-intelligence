@@ -425,3 +425,66 @@ def test_query_marks_which_events_carry_analysis(capsys):
     assert "EVENT-COALINDIA-2026-9002  11/15 POSITIVE DIRECT  [AI]" in out
     assert "9001" in out and "[AI]" not in out.split("9001")[1].split("\n")[0]
     assert "Add --show-ai" in out
+
+
+def test_a_quiet_ai_run_is_not_reported_as_a_failure(monkeypatch):
+    """Regression for a diagnostic that lied.
+
+    The 27 Sep manual run built 17 events, the best scoring 8 against a
+    threshold of 9. No call was made, yet Run Diagnostics said
+    `ai_enrichment FAILED | attempted 20` - which reads as a broken key and
+    is what it took an investigation to rule out. `attempted` also counted
+    events in the run rather than calls made.
+    """
+    from src.ai import EnrichmentOutcome
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    articles = _live_like_articles()
+    monkeypatch.setattr(pipeline, "collect", lambda context, offline=False: (articles, []))
+    monkeypatch.setattr(
+        "src.ai.enrich",
+        lambda events, config, watchlist: EnrichmentOutcome(selected=0, enriched=0),
+    )
+
+    result = pipeline.run(
+        run_date=date.today(), since_days=2, dry_run=True,
+        offline=False, resolve_links=False,
+    )
+
+    diag = next(d for d in result.diagnostics if d.source == "ai_enrichment")
+    assert diag.ok is True, "nothing qualifying is the threshold working"
+    assert diag.attempted == 0, "attempted counts calls, not events in the run"
+    assert "no event reached min_impact_score 9" in diag.note
+
+
+def test_ai_that_qualified_and_failed_everything_is_a_failure(monkeypatch):
+    from src.ai import EnrichmentOutcome
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    articles = _live_like_articles()
+    monkeypatch.setattr(pipeline, "collect", lambda context, offline=False: (articles, []))
+    monkeypatch.setattr(
+        "src.ai.enrich",
+        lambda events, config, watchlist: EnrichmentOutcome(
+            selected=3, enriched=0,
+            errors=["COALINDIA: 429 from gemini: Quota exceeded"] * 3,
+        ),
+    )
+
+    result = pipeline.run(
+        run_date=date.today(), since_days=2, dry_run=True,
+        offline=False, resolve_links=False,
+    )
+
+    diag = next(d for d in result.diagnostics if d.source == "ai_enrichment")
+    assert diag.ok is False
+    assert diag.attempted == 3
+    assert "Quota exceeded" in diag.note
+    # Repeated identical errors collapse rather than filling the cell.
+    assert diag.note.count("Quota exceeded") == 1

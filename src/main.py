@@ -404,24 +404,41 @@ class Pipeline:
         if self.config.ai_enabled and events and not offline:
             from .ai import enrich
 
-            ai_errors: List[str] = []
-            enriched = enrich(events, self.config, self.watchlist, ai_errors)
-            LOG.info("AI enrichment applied to %d event/stock pairs", enriched)
+            outcome = enrich(events, self.config, self.watchlist)
+            LOG.info(
+                "AI enrichment: %d of %d selected events analysed",
+                outcome.enriched, outcome.selected,
+            )
             note = (
                 f"provider={self.config.get('ai.provider')} "
                 f"model={self.config.get('ai.model')}"
             )
-            if ai_errors:
-                # An unset key or a model name the account cannot reach is
-                # otherwise indistinguishable from "nothing qualified".
-                note += " | " + "; ".join(dict.fromkeys(ai_errors))[:300]
+            # Three distinct states, previously all reported as FAILED:
+            # nothing qualified (the threshold working), some analysed, and
+            # qualified-but-every-call-failed (a broken key or model).
+            if outcome.selected == 0:
+                ok = True
+                threshold = self.config.get("ai.min_impact_score", 9)
+                note += f" | no event reached min_impact_score {threshold}"
+            elif outcome.enriched == 0:
+                ok = False
+                note += " | " + "; ".join(dict.fromkeys(outcome.errors))[:300]
+            else:
+                ok = True
+                if outcome.errors:
+                    note += (
+                        f" | {len(outcome.errors)} failed: "
+                        + "; ".join(dict.fromkeys(outcome.errors))[:200]
+                    )
             diagnostics.append(
                 SourceDiagnostic(
                     source="ai_enrichment",
-                    ok=enriched > 0,
-                    attempted=len(events),
-                    succeeded=enriched,
-                    articles=enriched,
+                    ok=ok,
+                    # Calls attempted, not events in the run. "attempted 20"
+                    # previously meant 20 events existed, not 20 calls made.
+                    attempted=outcome.selected,
+                    succeeded=outcome.enriched,
+                    articles=outcome.enriched,
                     note=note,
                 )
             )

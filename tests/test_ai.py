@@ -398,11 +398,52 @@ def test_enrich_reports_why_it_produced_nothing(monkeypatch):
     )
     watchlist = load_watchlist(config=config)
 
-    errors: list[str] = []
-    enriched = enrich([make_event(impact_score=12)], config, watchlist, errors)
+    outcome = enrich([make_event(impact_score=12)], config, watchlist)
 
-    assert enriched == 0
-    assert errors == ["WAAREEENER: 404 from Anthropic: model: claude-does-not-exist"]
+    assert outcome.selected == 1, "the event qualified, so a call was attempted"
+    assert outcome.enriched == 0
+    assert outcome.errors == [
+        "WAAREEENER: 404 from Anthropic: model: claude-does-not-exist"
+    ]
+
+
+def test_nothing_qualifying_is_not_a_failure(monkeypatch):
+    """The distinction this whole outcome object exists for.
+
+    A quiet run - every event below the threshold - used to be reported as
+    ai_enrichment FAILED, which reads as a broken integration and sent me
+    hunting for one. No call is attempted, so there is nothing to fail.
+    """
+    from src.ai import enrich
+    from src.profiles import load_watchlist
+
+    def explode(*args, **kwargs):
+        raise AssertionError("no provider call may be made")
+
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", explode)
+
+    config = load_config(overrides={"ai": {"enabled": True, "provider": "gemini",
+                                           "model": "gemini-3.1-flash-lite"}})
+    watchlist = load_watchlist(config=config)
+
+    outcome = enrich([make_event(impact_score=4)], config, watchlist)
+
+    assert outcome.selected == 0
+    assert outcome.enriched == 0
+    assert outcome.errors == []
+
+
+def test_an_unbuildable_provider_says_so(monkeypatch):
+    from src.ai import enrich
+    from src.profiles import load_watchlist
+
+    config = load_config(overrides={"ai": {"enabled": True, "provider": "nonsense"}})
+    watchlist = load_watchlist(config=config)
+
+    outcome = enrich([make_event(impact_score=12)], config, watchlist)
+
+    assert outcome.enriched == 0
+    assert outcome.errors == ["provider 'nonsense' could not be built"]
 
 
 # -- the Gemini provider --------------------------------------------------
