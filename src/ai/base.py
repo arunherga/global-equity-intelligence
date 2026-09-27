@@ -63,11 +63,86 @@ buying, selling or holding.
 """
 
 # Advice language that must never survive into the report.
-_FORBIDDEN = re.compile(
-    r"\b(buy|sell|hold|accumulate|book profits?|target price|price target|"
-    r"overweight|underweight|outperform|underperform)\b",
+#
+# Matching the bare verbs was too blunt, and it showed: a real analysis of a
+# bank closing dormant accounts came back reading "if they [redacted]
+# balances". The word was "hold". "Hold balances", "sell products",
+# "buyers", "households hold deposits", "holding company" are all ordinary
+# business English, and redacting them corrodes the analysis quietly - the
+# reader sees a gap and cannot tell whether advice was removed or a verb
+# was.
+#
+# So two tiers. Tier one is language that is only ever a recommendation,
+# whatever surrounds it. Tier two is the action verbs, which are advice only
+# when they are about the security - so they must appear within the same
+# sentence as, and close to, a word for the thing being traded.
+_ADVICE_PHRASES = re.compile(
+    r"\b("
+    r"target price|price target|price objective|"
+    r"overweight|underweight|"
+    r"rated (?:an? )?(?:buy|sell|hold|outperform|underperform)|"
+    r"(?:strong |a |an )?(?:buy|sell|hold) (?:rating|recommendation|call|signal)|"
+    r"book profits?|accumulate on dips|average down|averaging down|"
+    r"(?:recommend|advise|suggest)(?:s|ed|ing)? (?:buying|selling|holding|"
+    r"to buy|to sell|to hold|accumulating|exiting)|"
+    r"(?:investors?|shareholders?|traders?|readers?|you) should "
+    r"(?:buy|sell|hold|exit|accumulate|avoid)|"
+    # First-person advisory framing needs no security noun to be advice:
+    # "we would buy at 500" is a recommendation whatever follows it.
+    r"(?:we|i|one) would (?:buy|sell|hold|accumulate|exit|avoid|add)|"
+    r"(?:we|i) (?:are|am) (?:buying|selling|holding|accumulating|exiting)|"
+    r"(?:would|will) be a (?:buyer|seller)"
+    r")\b",
     re.IGNORECASE,
 )
+
+# The thing being traded. Deliberately excludes "shareholder" and
+# "stockist": \b keeps "share" from matching inside them.
+_SECURITY = (
+    r"(?:stock|stocks|share|shares|scrip|scrips|equity|equities|"
+    r"security|securities|counter|position|positions)"
+)
+_ACTION = (
+    r"(?:buy|buys|buying|bought|sell|sells|selling|sold|hold|holds|holding|"
+    r"accumulate|accumulates|accumulating|exit|exits|exiting|offload|"
+    r"offloads|offloading|outperform|outperforms|underperform|underperforms)"
+)
+# Within one sentence and 30 characters, in either order. Short on purpose:
+# the wider the window, the more ordinary prose gets caught.
+_ADVICE_NEAR_SECURITY = re.compile(
+    rf"\b{_ACTION}\b[^.\n]{{0,30}}?\b{_SECURITY}\b"
+    rf"|\b{_SECURITY}\b[^.\n]{{0,30}}?\b{_ACTION}\b",
+    re.IGNORECASE,
+)
+
+
+def _advice_spans(text: str):
+    """Every stretch of ``text`` that reads as a recommendation."""
+    spans = [m.span() for m in _ADVICE_PHRASES.finditer(text)]
+    spans += [m.span() for m in _ADVICE_NEAR_SECURITY.finditer(text)]
+    return sorted(spans)
+
+
+def redact_advice(text: str) -> tuple:
+    """``text`` with any recommendation replaced, and whether it changed.
+
+    Errs towards redacting: "the bank may sell shares to raise capital" is a
+    legitimate business statement that this will still catch, because the
+    alternative - reasoning about intent - is not something a regex can do,
+    and a missing clause is a smaller failure than published advice.
+    """
+    spans = _advice_spans(text)
+    if not spans:
+        return text, False
+    out, cursor = [], 0
+    for start, end in spans:
+        if start < cursor:          # overlapping matches
+            continue
+        out.append(text[cursor:start])
+        out.append("[redacted]")
+        cursor = end
+    out.append(text[cursor:])
+    return "".join(out), True
 
 
 @dataclass
@@ -151,7 +226,7 @@ def sanitise(data: Dict[str, Any]) -> tuple[Dict[str, Any], List[str]]:
             kept = []
             for item in items:
                 text = str(item).strip()
-                if _FORBIDDEN.search(text):
+                if _advice_spans(text):
                     redactions.append(f"{key}: removed recommendation language")
                     continue
                 kept.append(text)
@@ -159,8 +234,8 @@ def sanitise(data: Dict[str, Any]) -> tuple[Dict[str, Any], List[str]]:
             continue
 
         text = str(value).strip()
-        if _FORBIDDEN.search(text):
-            text = _FORBIDDEN.sub("[redacted]", text)
+        text, changed = redact_advice(text)
+        if changed:
             redactions.append(f"{key}: recommendation language redacted")
         cleaned[key] = text[:1200]
 

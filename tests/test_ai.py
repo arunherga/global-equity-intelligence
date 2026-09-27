@@ -710,3 +710,109 @@ def test_check_ai_says_so_when_there_is_nothing_stored_to_analyse(monkeypatch, c
     out = capsys.readouterr().out
     assert "SKIPPED" in out
     assert "run the pipeline once" in out
+
+
+# -- the advice guardrail, precisely --------------------------------------
+#
+# The rule is that no recommendation reaches a report. The first version
+# matched the bare verbs, which also hit ordinary business English - a real
+# analysis of a bank closing dormant accounts came back reading "if they
+# [redacted] balances". The word was "hold".
+
+ORDINARY_BUSINESS_ENGLISH = [
+    # The sentence that exposed the problem, from a live gemini-3.5-flash run.
+    "While closing these accounts might reduce the bank's deposit base if "
+    "they hold balances, the notice could prompt reactivation.",
+    "The bank sells insurance products to retail customers.",
+    "Buyers returned to the market in August.",
+    "Households hold deposits with the bank.",
+    "The holding company structure was simplified.",
+    "Shareholders hold 42% of the company.",
+    "Operating margins may underperform last year on higher fuel costs.",
+    "Waaree will buy polysilicon from a new supplier.",
+    "Coal India sold 52 million tonnes in the quarter.",
+    "A sell-through agreement with the distributor was signed.",
+]
+
+ACTUAL_RECOMMENDATIONS = [
+    "We would buy this stock at a target price of 4000.",
+    "Investors should sell the shares.",
+    "Rated a buy by three brokerages.",
+    "Accumulate on dips.",
+    "The stock could outperform.",
+    "A hold rating was reiterated.",
+    "Book profits near resistance.",
+    "Analysts recommend buying ahead of results.",
+    "We are overweight the name.",
+    "Traders should exit the position.",
+]
+
+
+@pytest.mark.parametrize("text", ORDINARY_BUSINESS_ENGLISH)
+def test_ordinary_business_english_survives(text):
+    from src.ai.base import redact_advice
+
+    out, changed = redact_advice(text)
+
+    assert not changed, f"false positive on: {text}"
+    assert out == text
+    assert "[redacted]" not in out
+
+
+@pytest.mark.parametrize("text", ACTUAL_RECOMMENDATIONS)
+def test_actual_recommendations_are_removed(text):
+    from src.ai.base import redact_advice
+
+    out, changed = redact_advice(text)
+
+    assert changed, f"advice slipped through: {text}"
+    assert "[redacted]" in out
+    for word in ("target price", "overweight", "accumulate on dips"):
+        assert word not in out.lower()
+
+
+def test_the_live_tmb_sentence_is_no_longer_mangled():
+    """Regression, verbatim from the run that surfaced this."""
+    from src.ai.base import redact_advice
+
+    text = (
+        "Unclear. While closing these accounts might reduce the bank's overall "
+        "deposit base if they hold balances, the public notice could prompt "
+        "some customers to reactivate their accounts."
+    )
+
+    out, changed = redact_advice(text)
+
+    assert not changed
+    assert "hold balances" in out
+
+
+def test_a_recommendation_buried_in_good_analysis_is_cut_out_of_it():
+    """Only the advice goes; the surrounding analysis is kept."""
+    from src.ai.base import redact_advice
+
+    out, changed = redact_advice(
+        "Order visibility improves through FY27. We would buy the stock here. "
+        "Execution over the delivery window remains the real question."
+    )
+
+    assert changed
+    assert "Order visibility improves through FY27." in out
+    assert "Execution over the delivery window remains the real question." in out
+    assert "buy the stock" not in out
+
+
+def test_monitor_next_drops_the_advisory_item_and_keeps_the_rest():
+    cleaned, redactions = sanitise({
+        "monitor_next": [
+            "Quarterly CASA ratio",
+            "Accumulate on dips",
+            "Disclosures on unclaimed deposits",
+        ],
+    })
+
+    assert cleaned["monitor_next"] == [
+        "Quarterly CASA ratio",
+        "Disclosures on unclaimed deposits",
+    ]
+    assert redactions

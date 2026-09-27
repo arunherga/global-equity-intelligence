@@ -389,10 +389,20 @@ mostly buys commentary on routine news.
 
 ### What it will not do
 
-- No buy, sell, hold, accumulate, target price, or over/underweight language.
-  The prompt forbids it; `src/ai/base.py` redacts it if a model produces it
-  anyway, and the redaction is recorded. This is enforced above the provider,
-  so it holds for all three.
+- No recommendation to buy, sell or hold. The prompt forbids it;
+  `src/ai/base.py` redacts it if a model produces it anyway, and the
+  redaction is recorded and printed. Enforced above the provider, so it
+  holds for all four.
+
+  The match is deliberately two-tiered rather than a word list. Language
+  that is only ever a recommendation — *target price*, *overweight*, *rated
+  a buy*, *accumulate on dips*, *we would buy* — is cut wherever it appears.
+  The plain verbs are cut only when they are about the security: *sell the
+  shares* goes, *sells insurance products* stays. A word list caught "if
+  they **hold** balances" in a real analysis of a bank closing dormant
+  accounts, which is how this was found. Where the two are genuinely
+  ambiguous — "the bank may sell shares to raise capital" — it still
+  redacts: a missing clause is a smaller failure than published advice.
 - No scoring and no ranking. `impact_score`, `direction` and `confidence`
   stay deterministic and explainable; the model only writes prose about
   events those numbers already selected.
@@ -420,7 +430,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-356 tests, all offline. The interesting ones are regressions:
+379 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context
