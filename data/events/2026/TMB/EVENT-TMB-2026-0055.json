@@ -4,20 +4,22 @@
   "summary": "Gold Rate Today in Tamil Nadu 23rd September 2026 : 22 & 24 Carat, Todays Gold Price in Tamil Nadu Business Today",
   "event_date": "2026-09-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,6 +31,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,9 +43,55 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -456,16 +505,36 @@
       "published": "2026-09-28T05:53:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price falls by Rs 2,680 on September 28, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTDRTVzMxWkZMRlBYSjdyRFBpamVHWnNrbWhlLU56eXZGaXdIalptTWN4VUNDd3BmMXQyM3JBZUhVX1Bfb09PN3NmRVVOVzhwNVBIN1dMVWwwN3BYQmlHM0VRMDk4eENrX2wwelAtcUR2VDV2VXlJUUVvWUswaVFsZThpU3pyOUVCZzhhdUxaZFhGdkZOM0FTWkZ6dzhQeW4ydW9Hb2toOHpiMjNLWWV2c0NLUTl6aEl5X1RLcmp30gHLAUFVX3lxTE90Q2F2anY5RmRuTkdXdDE3aHZUNlJlVkhLNW1ocFoxMnJnS0g1dER0RUFJT1dSaTlsWmlIY1VCQURwWkR4eDJVUzNpc2xUdDZWVGJnWGl4b0l2MUcwUXR2SE9vTmc1YVpRZzJQV2RIeExNVDFCNTlNYlVNU2VjQ1I2MkhZVFRodi1vMzZmdHoxd3FHWnVfdTIwdzRHLWFyNXFZckJGQnczSU5tbjdZTlUxbTRTSE92czZRZ2ZQOFU1ZDZ5OFZPWkdkb1g4",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T14:11:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why is gold price falling today?",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeEJqT3FxSVNTbXk0dVpnZEFkaWxhU29VbnIzN3FQVV9yeEN0RnNzT1N6bFViVUJOc2xZX2JCXzlhTk41STRoeFZWY0E1MWc5OXFrQXBWbTNRbnNOR1BkSTZqcy1aeW8tN1p4ckV2UDdKTS1OcE8zRHdaNTY3UHdFOEkxZXhZUFFwT21FN19NWHZZUXZhei14NUlmUjlxd9IBowFBVV95cUxPY0RrejltRFRxT055VF9yRUUyYkJXUU5HdWtsT2FQd3gtQXVoX2tsQUs1a1hnUU1RaksyZ1JDUE9NbWZDUmFZMkpaZlF5R1NjX0RBMWNpdVVzdlpqOGpPekh0R0EybXdIY01aT3VWTzB1ZWRZemVsVlN4LU9FMDJWOUt4OWo5aUFsY2dBcXlzajB5TUl4ZHBzaUtkQlI1dUk2VDk4",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T13:00:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 41,
+  "article_count": 43,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "TMB|OTHER|23rd-gold-nadu-rate-tamil-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.597850+00:00",
-  "last_updated": "2026-09-28T14:13:17.667246+00:00",
+  "last_updated": "2026-09-28T20:44:39.822162+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.597946+00:00",
@@ -511,6 +580,26 @@
       "timestamp": "2026-09-28T14:13:17.667231+00:00",
       "change": "sources added",
       "detail": "ClearTax"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:39.822128+00:00",
+      "change": "sources added",
+      "detail": "DT Next, The Economic Times"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:39.822145+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:39.822152+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:39.822158+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

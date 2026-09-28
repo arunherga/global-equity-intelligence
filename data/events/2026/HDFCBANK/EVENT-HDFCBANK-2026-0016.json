@@ -12,13 +12,11 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "REGULATION",
-        "REPUTATION",
         "COMPETITION"
       ],
       "time_horizon": "UNKNOWN",
@@ -33,11 +31,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -47,7 +44,7 @@
       "watch_next": [
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, competition. Classified as litigation.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -224,16 +221,26 @@
       "published": "2026-09-24T18:18:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDB Shareholder Alert: HDFC Bank Limited Securities Class",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPWnljZWlFbVVfX2JTZjJRcDdDWWFwYmkwYjBWRWI2ZHRiY3p0aEZ5dk96eXBLckMzWFZiSUNELWZUSDhWTF9Nbk5QZzVYX2RUYndzVlUwak5uVW9qNF9mc0NndTZETmVqZGd6OXp1MndWMFpKWGZmaS1QczhqNzVYR2V3cTJQN0czMm9lcllTaFNsQjIyTDZ5bFlOWG13ZDdwMWxaUEJDTkpSVHppdk5rVzdVVWJRVUxELUE2MXotOFVVQ2N4ZkhDdDk4SHRSbHhZVUpPWUt0V2oxczNNQkwzd3E1Y1dFdE9SWkFGLVVDUHJrdnFPbFcyZlZWdHV4cXl6RFpIMThYeVFkSXN3TXNjNlQ4SUw",
+      "source_name": "GlobeNewswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T14:11:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 14,
+  "article_count": 15,
   "source_count": 1,
   "primary_source": "GlobeNewswire",
   "cluster_key": "HDFCBANK+TMB|FRAUD+LITIGATION|alert-bank-claimsfiler-hdfc-reminds-shareholder",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.653501+00:00",
-  "last_updated": "2026-09-25T12:56:29.961119+00:00",
+  "last_updated": "2026-09-28T20:44:41.317367+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.653574+00:00",
@@ -279,6 +286,16 @@
       "timestamp": "2026-09-25T12:56:29.961114+00:00",
       "change": "impact raised",
       "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:41.317340+00:00",
+      "change": "sources added",
+      "detail": "GlobeNewswire"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:41.317359+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

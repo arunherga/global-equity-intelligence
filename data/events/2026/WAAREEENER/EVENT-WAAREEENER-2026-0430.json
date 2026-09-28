@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "DIRECT",
-      "impact_score": 12,
-      "impact_band": "VERY_HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.51,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
@@ -27,35 +27,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "TOPCon modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "TOPCon",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+4 Major order or contract",
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
         "+3 Strategically important competitor development",
-        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "a competitor (Vikram Solar) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -64,7 +49,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Vikram Solar. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -88,21 +73,41 @@
       "published": "2026-09-28T10:51:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vikram Solar secures 400 MW module supply order for Maharashtra projects",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNYlZNclRTZGppZ19LZFJhOWNFSVNvTWZxT1B0YlYtUThVa2RwTERjZDg2bkptUFBXQ1F2dGNFd0hKa0ZnLTR4TlNfRWF2aUNiM2VnQ1RZclp1U0JxNkVQeUtyRmU1dHVPU1NHZlJTMDB5OFpJb2xMYzBld2dvLVFjTGpfbTQ2OHRuMEhJNmJDbmhPOGNycWV2T053QnlnV3hFbFdIczhNMWRqd1pSZkJQZ3Q5d2wzTGpNcEhnYTBwQkFUYV9YbXlFRC1PRExCajZ5NFJLRGpvQndSNnI3clHSAd4BQVVfeXFMTWJWTXJUU2RqaWdfS2RSYTljRUlTb01mcU9QdGJWLVE4VWtkcExEY2Q4Nm5KbVBQV0NRdnRjRXdISmtGZy00eE5TX0VhdmlDYjNlZ0NUWXJadVNCcTZFUHlLckZlNXR1T1NTR2ZSUzAweThaSW9sTGMwZXdnby1RY0xqX200Njh0bjBISTZiQ25oTzhjcnFldk9Od0J5Z1d4RWxXSHM4TTFkandaUmZCUGd0OXdsM0xqTXBIZ2EwcEJBVGFfWG15RUQtT0RMQmo2eTRSS0Rqb0J3UjZyN3JR",
+      "source_name": "energy.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T12:07:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|ORDER_WIN|400-n-type-solar-topcon-vikram-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.653087+00:00",
-  "last_updated": "2026-09-28T14:12:11.653199+00:00",
+  "last_updated": "2026-09-28T20:44:36.934120+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.653193+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:36.934094+00:00",
+      "change": "sources added",
+      "detail": "energy.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:36.934114+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -52,11 +52,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -83,7 +83,8 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -91,13 +92,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and credit deposit ratio. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -121,16 +122,26 @@
       "published": "2026-09-27T23:03:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "High Credit-Deposit Ratio Alone Does Not Signal Funding Constraint: RBI Staff Report",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPbUxSYXV6ZWVfRDJ1VVgwZTZvcUlHaFQxMDhOLUtkcEhtV3VLck1XUVNjUkh6X25lRHJvSmxIVC0zWlZhUmFYZEFMVEhvRS1jRkxRWE51Q2dvc0haTXBUVWZ3Q3c4MXlOb08zWXVCOHAwTDB1Sk1KaVNoejZzczRCUUhvQ0FTQ2ZoRklWY3NzWWlxWm9DNUIwSWR2d09XbG43TXB6dHVHUUZFUzZWWkE1a2R0VTh0QjNFellOUVhKaU9XNmdqZ0J6ZFZ2WWJqbkhGZ3BhdFRIbw",
+      "source_name": "tradingview.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T15:07:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MillenniumPost",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-constraint-credit-deposit-funding-high-ratio",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T18:56:13.452950+00:00",
-  "last_updated": "2026-09-28T14:13:12.803293+00:00",
+  "last_updated": "2026-09-28T20:44:44.889748+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T18:56:13.453001+00:00",
@@ -141,6 +152,16 @@
       "timestamp": "2026-09-28T14:13:12.803277+00:00",
       "change": "sources added",
       "detail": "Magzter"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:44.889724+00:00",
+      "change": "sources added",
+      "detail": "tradingview.com"
+    },
+    {
+      "timestamp": "2026-09-28T20:44:44.889742+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 5"
     }
   ],
   "price_reaction": {}
