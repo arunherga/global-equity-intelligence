@@ -11,23 +11,16 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEUTRAL",
-      "confidence": 0.61,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.39,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET"
       ],
       "time_horizon": "LONG_TERM",
       "exposures": [
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "cell manufacturing",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
@@ -45,15 +38,13 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 International market development",
-        "+2 3 independent sources"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "3 independent sources",
+        "best source quality 3/10",
         "sector relationship",
         "financial implication is quantified"
       ],
@@ -63,7 +54,7 @@
         "demand visibility for the new capacity",
         "effect on return ratios"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to cell manufacturing, and solar modules. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar modules, and India. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
       "ai_analysis": null
     }
   },
@@ -157,16 +148,26 @@
       "published": "2026-09-25T16:53:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India Adds 50.6 GW Solar Module Capacity in H1 2026",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQc29RMTZHZjdhZVYyaXNZTnNIdWJZc1ZJdjgzeWVlRUM5aV95S0Y4bjg5NC1vVGVld0NGOGFjSWZjcFRleWpyMHpNa3J1aFl1Wkk1OXowZFJXdlEyeW15V0xCZVVUYXFPZ3Z2U1EtUF9KR09sVjFqMmVuZmFfQkE3YnY0bkNVclhjNGhyMW5kblNmR0s5RXNVdFVmRXNUaWpLNV9KUWxYbklzN2RWZjFvcGEwOHVkRkY1OFhlY3FNTkNBbkRxbEhHS0JSa04wQ0tIa1RNbEVn",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T06:01:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 4,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|50.6-9.7-adds-india-module-solar",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.137853+00:00",
-  "last_updated": "2026-09-26T11:38:45.036071+00:00",
+  "last_updated": "2026-09-28T14:13:33.259119+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.137919+00:00",
@@ -192,6 +193,16 @@
       "timestamp": "2026-09-26T11:38:45.036064+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:33.259099+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:33.259114+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

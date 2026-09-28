@@ -11,14 +11,16 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
         "PRICING"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,21 +31,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk",
+        "iron ore is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp",
         "iron ore over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are capacity, balance sheet, pricing. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -67,16 +73,56 @@
       "published": "2026-09-27T10:57:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NMDC commissions ₹5,427 crore iron ore processing complex in Chhattisgarh; stock slides 2%",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/nmdc-commissions-5427-crore-iron-ore-processing-complex-in-chhattisgarh-stock-slides-2/article71519073.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-28T09:37:44+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "NMDC Commissions 2 MTPA Pellet Plant in Chhattisgarh, Boosts ₹5,427-Crore Iron Ore Project",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeVZiaTIxZUdBWVg0bDcwOV9iNThYek95c2FlUkYzRktBSXpfNV9LemtUWWgzT1JwVTJjQXB0SjVUS29tc19JTTMzZG5KQ3JVUl9abk1HWHdCVkJuV3pQc2lBNWJaTEdfMmJ0YlNxREpoWE1fZmZsU2NhN2x6eXZPME9Ob0RUZmkzYjkwQVdVZWpMeEZVQnBnZVBwRQ",
+      "source_name": "Indianmasterminds",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T08:10:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NMDC commissions Rs 5,427 crore Iron ore processing plant,",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YNWlJOEo2Y2JWNFlSVG8zbzczdTRfTkFXNC0wejgyX0V3aWJyLUJUQjlNWEQtcjU2Z29HSVpyMzhvLUdZSnBoUDFRLVBISGg0TUtlV0F2MHFHVTh3MWNSNGctT2xvM3p2TGFfSXVtcW1rYUFFbHc",
+      "source_name": "pib.gov.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-27T18:18:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NMDC commissions ₹5,427 cr integrated iron ore project in Chhattisgarh",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOX2ZNUlVLc3JkSkw2cF9tY2lsQjA1SE9WYzhqVWUzbDdSQmt3QXNIR0p6aVBoMEVRQWlNVVRpMDItcEl0Yl9QMTRkMlZ1X25paE9FUTYwLTNlZXRDZTd5cTZkbzFIdzVEbk9BcGlYdDl4S1RwTUl2TzFIek9QamNGVFpjdXRQSEQ2YzlnYUxQRldzWWRHaERCVS1HUHBCUTlGUUpQYlJ2anFPeGpITFFXalk0bWtVQ1hHWmxzd3VxdE1lS051QXJQNHBUQS1SRzVQQkxHVdIB2gFBVV95cUxOQWRCcmp4TTdzYkxZOGRfSmZxbU9GeDNCeFBvMmVueFltWm5lNlFQTjAwNmJYSXc2d2xtN1puczhxdlRSYlloQV9ZVHFDaHhCR2JYMGd0cW93VEhQMGQxVHY0bzNfcDVETGxYMl9FcW5UQk8tdjc1OFJKa2Zndl9iYlpwLXVKWVdXcE9EVDJaWVA3dmxia1MydmlQVGQwOWpleEc3VTZRY0JLVllDV0JqeHhERDM2b0tBTkR6NVVSNjdxdS1lTzlfWnd1SDBCT09DMExzaHVtb0liQQ",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T03:55:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "Business Standard",
   "cluster_key": "MSTCLTD|OTHER|427-commissions-iron-nmdc-ore-processing",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.788152+00:00",
-  "last_updated": "2026-09-27T17:50:24.463616+00:00",
+  "last_updated": "2026-09-28T14:13:04.397707+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.788240+00:00",
@@ -92,6 +138,16 @@
       "timestamp": "2026-09-27T17:50:24.463610+00:00",
       "change": "categories added",
       "detail": "NEW_PLANT"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:04.397686+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Indianmasterminds, The Hindu BusinessLine Markets, pib.gov.in"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:04.397701+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
     }
   ],
   "price_reaction": {}

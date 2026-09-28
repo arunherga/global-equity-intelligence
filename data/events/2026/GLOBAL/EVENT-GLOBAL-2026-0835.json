@@ -1,0 +1,125 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0835",
+  "title": "Debit card transactions remain weak in August; credit card volumes rise 26%, spends however soften",
+  "summary": "Debit card transaction volumes increased around 2 per cent month-on-month in August 2026, while transaction value rose about 1 per cent, according to RBI data analysed by 1Lattice. On a year-on-year basis, however, debit card transaction volumes declined around 10 per cent and value fell about 6 per cent. Credit card transaction volumes grew around 4 per cent sequentially and 26 per cent annually, while transaction value declined about 3 per cent month-on-month but increased around 6 per cent year-on-year.",
+  "event_date": "2026-09-28",
+  "event_types": [
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Major industry-level development",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as industry demand.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "credit cards",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Major industry-level development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and credit cards. The parts of the business most likely touched are demand. Classified as industry demand.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Debit card transactions remain weak in August; credit card volumes rise 26%, spends however soften",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/debit-card-transactions-remain-weak-in-august-credit-card-volumes-rise-26-spends-however-soften/134534014",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-28T06:19:16+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|INDUSTRY_DEMAND|august-card-debit-remain-transactions-weak",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-28T14:12:11.339461+00:00",
+  "last_updated": "2026-09-28T14:12:11.339525+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-28T14:12:11.339521+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

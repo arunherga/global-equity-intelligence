@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "POSITIVE",
       "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
@@ -28,7 +28,7 @@
         },
         {
           "exposure_type": "COMMODITY",
-          "term": "polysilicon",
+          "term": "silver",
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
@@ -39,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "copper is an input cost and is moving up"
+        "copper is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,9 +48,9 @@
       ],
       "watch_next": [
         "copper over the next few weeks",
-        "polysilicon over the next few weeks"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper, and polysilicon. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper, and silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -186,16 +186,26 @@
       "published": "2026-09-23T06:31:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Most metals fall; LME copper, SHFE tin, SHFE nickel, and coking coal lead declines; lithium carbonate tops losses; gold, silver, platinum, and palladium plunge [SMM Midday Commentary]",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQQ2x0cHFjMU9FVjZOTGUydG1ITDZZdkNLTUg1VXdPbGtHS2ZDRWRlU2Z1dW1nYkd0cXE0ekFCcDRhTE5DLWxMQW5lSlBBdmVLcGJraTlnR1BqSlZfZnJIbzNrSWo1cU44UVB2MEV1LVlFRHU1QV9xRTdvR0JYcFFHTzhUbUNiVXJKY0RpYjBxN3NRdm9oQ0Q5RGUxd3BYRGxPckUybHJQSXpaeXMtSkFXUldZZUY1Z1lCNE9NLWZobk9WTk1zQUlQRHlGbG9FY21STEZoUlZnWTNGNXhVeEhkREE4NmhFMVg2SGV6NzdWMkFrZ0RFWUJYOTJzU1ZYUG5lYmZEZFotT1dmLUR4bXVXM0p5UXBDWlZzb21Qd3VaN0lmNVpQblhLb1ZvWU5VYnl2am11NDZfQlJSR3RlT2c",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T06:27:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Shanghai Metals Market",
   "cluster_key": "COALINDIA+WAAREEENER|OTHER|broadly-dollar-metals-rise-shfe-weakens",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.941217+00:00",
-  "last_updated": "2026-09-23T12:26:12.202784+00:00",
+  "last_updated": "2026-09-28T14:13:34.507047+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.941265+00:00",
@@ -216,6 +226,16 @@
       "timestamp": "2026-09-23T12:26:12.202780+00:00",
       "change": "stock added",
       "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:34.507023+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:34.507040+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

@@ -4,21 +4,19 @@
   "summary": "Waaree Renewable Technologies Wins 800 MWac Solar EPC Contracts Totalling 1,082 MWp scanx.trade",
   "event_date": "2026-09-27",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
-      "business_impacts": [
-        "REVENUE",
-        "CAPACITY"
-      ],
-      "time_horizon": "MEDIUM_TERM",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -30,12 +28,11 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -43,12 +40,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -62,21 +56,46 @@
       "published": "2026-09-27T05:43:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Updates Scope of 2,012.47 MWp Solar EPC Contract",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONzNKeXJoaWNpVDZuVXE2WU9WWXpieXBPWGt0Q0FBWUROa01GNnYzU0ZmOVlVNmwwTlVLRnhYWEttZG41NzZscUs1WFA2UVFvUWxqdWh3UHFrNGU3QnhCSldTV0Npd2FUU0dsMFFXbHdZLUd5UzQ1SVpCcC1Ka1pYdnFfM0N5dnQ0ZmMtcGtNeTBUMzlnQjh1UnFyQ3ZnZUc4V183QVBqaw",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T13:20:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|ORDER_WIN|800-mwac-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T17:50:18.977623+00:00",
-  "last_updated": "2026-09-27T17:50:18.977665+00:00",
+  "last_updated": "2026-09-28T14:14:03.272603+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T17:50:18.977662+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-28T14:14:03.272578+00:00",
+      "change": "sources added",
+      "detail": "Sahi"
+    },
+    {
+      "timestamp": "2026-09-28T14:14:03.272591+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-09-28T14:14:03.272598+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

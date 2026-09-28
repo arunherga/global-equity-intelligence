@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -25,44 +25,31 @@
           "detail": "international topic; in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "TOPCon modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "GEOGRAPHY",
           "term": "China",
           "relationship": "WEAK",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "TOPCon",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "+2 International market development",
-        "-2 Single unverified source"
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, product exposure to module price, and TOPCon modules. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to module price, and China. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -96,16 +83,26 @@
       "published": "2026-09-25T12:00:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China and U.S. module prices hold ahead of Golden Week and Section 232 price floors",
+      "url": "https://www.pv-magazine-india.com/2026/09/28/china-and-u-s-module-prices-hold-ahead-of-golden-week-and-section-232-price-floors",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-28T04:15:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 3,
-  "source_count": 2,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|OTHER|china-golden-hold-module-price-u.s.",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.680828+00:00",
-  "last_updated": "2026-09-26T11:38:40.253558+00:00",
+  "last_updated": "2026-09-28T14:13:07.231727+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.680882+00:00",
@@ -121,6 +118,16 @@
       "timestamp": "2026-09-26T11:38:40.253552+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:07.231704+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:07.231721+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

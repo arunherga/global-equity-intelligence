@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0056",
+  "title": "U.S. asparagus and cucumber prices rise as strawberry prices fall",
+  "summary": "U.S. asparagus and cucumber prices rise as strawberry prices fall Hortidaily",
+  "event_date": "2026-09-28",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "cucumber prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "cucumber prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to cucumber prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "U.S. asparagus and cucumber prices rise as strawberry prices fall",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQmtBSDFMdVBTU1BvQnNkaHphVnctUW5TQmRxcnVXUmtwUU13N0VBQi1OWURnMFJabERDNExEblJwYWtSRHNLUGszR2VnSmNYd1hNVEdGS0ppUmtqZC1pMGJPaDF1dFNkcDRjaE1ndjRmUmJDYjBnSXJBS0luV2J4YUxlNkoydklGMkkwc0o0MzFZZ1c2dFJCVURnbGFnN3dBbDNoRXhvcXBuWVd4",
+      "source_name": "Hortidaily",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T11:53:26+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Hortidaily",
+  "cluster_key": "FRESHARA|COMMODITY|asparagus-cucumber-price-rise-strawberry-u.s.",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-28T14:12:11.679169+00:00",
+  "last_updated": "2026-09-28T14:12:11.679222+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-28T14:12:11.679218+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

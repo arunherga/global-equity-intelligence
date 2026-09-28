@@ -11,8 +11,8 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
@@ -29,11 +29,26 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "US interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -51,7 +66,60 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and US interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "US interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to US interest rates, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -65,21 +133,46 @@
       "published": "2026-09-25T18:27:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Fed rate hikes: What happens to gold prices when US interest rates rise?",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObm9sVjlEODktUjMyTUxwelc0TU1EeGdnbWloVEt4MTMtSGU2VldXdGwxXzlEeDRaSFlHaWNaMEJBUEpNMU5VOTZfeVFNRkVDTGIzcFdMcEgwN0J3cGZuZlZzZy1PRmJwcWhUenRIbGhZLWYzdldjSWlOWkZILXNsNzBzOERGUFpSVXo1STVTZFJUeXNaMUNYYlFmcXlsNUNVc3hvcmMzeEZPbkYxY0VjcC13T0dBNE5kR3ZZOGxpOTNzbjFDRXctaHltVGtSREg5dW9CY9IB2gFBVV95cUxPbFAxNjhzMV9lRjZPRW5lV2VfRjJxOFJuQlVTeENhY1Fka2tlU0NPVG1jNE5fMmJic294ZzZNWXFCdHBWcVlaNGNNdGV4UUtia2dfa2ZOdTBCMFFOdllQVVZoMURvaEFxdUJ5WENPOEhCYW85LTd5aUR0TUF1WVIxNnVHNlhEOGRPN2M2dWlqalZYejJrVkc4Skx1aGFBSWQwY0lnZ3pBUlV6TnpOcFVQSVd5UzI3bjNfZnRfUUhmQjV5QUM1dkU5TXVWTUw1eW5BckllNGlfdG52UQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T01:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "TMB|COMMODITY+INTEREST_RATE|gold-gold-mcx-outlook-price-slips",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.631756+00:00",
-  "last_updated": "2026-09-26T11:38:32.631831+00:00",
+  "last_updated": "2026-09-28T14:13:15.291505+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.631827+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:15.291480+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:15.291494+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:15.291500+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (MACRO)"
     }
   ],
   "price_reaction": {}

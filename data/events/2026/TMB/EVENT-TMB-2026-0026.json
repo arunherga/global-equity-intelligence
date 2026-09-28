@@ -4,20 +4,22 @@
   "summary": "Gold price prediction today: Where is gold headed? Check outlook for September 21, 2026 week The Times of India",
   "event_date": "2026-09-21",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -36,10 +38,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -47,9 +50,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -83,16 +89,26 @@
       "published": "2026-09-25T07:34:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price prediction today: Will gold continue to fall? Check outlook for September 28, 2026 week",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxNWGxFR2xDMlhoTVVRQ0xMNVFOT2x3WUdZbjQtY1pzbjFzYm5yQ2Z4TUNSdmx0eHJYaF9Nei1rNlRJd2xVYkNYd1hJSFpCOGFzckJJQldwamhuYXVQbmlIaHdXMTY1RHJob0hyMFBYTmg2RXBFT1lMdldhbFkxSmgwNmR0d2YzOWp6dC1sN2RaenpXckJUQlBXYzBjeVlfYmczaG00Y2tua2M5dE1ab2FuZ0ZpSWRCZXFWcTd4b05abnZ2UU9aN0pibnZMMkduY1hpZG9zUUhvV2J2anNhRUFwYzhqc1VyQThINEZNMS1HSlNmbHYwTS1Lbk91OTJkZGxEai0yZjVvd1dHd2RrTVVzX0xvcWdJWGs5RnA5bm55MUlyakU2YS14b3FSR2NtR0ExNFdVa2ctb183ZjVISHhYVlQ2R0JvcElNamfSAc8CQVVfeXFMUHdWYkdRcEJCTlFfU1BjbFhpSDlsazJmTUhLT3NxWkVaLVhzY0cwc1dnOFhfVE42bEtVdmViTHdnMnF6SGo1ZE9jQ3VNNlZ5bkpyNE1CdzlpSHluLVg1QURiSi1HUmJPX2ctdzZ2aDN0MXhOQ2x6TEo5MlZSSHJpX0xvc3lHOXFmbjMyZTNsSmV5aFNjOVVqOGIzY3pudnRfcVJ2LURILTBsSURta01yRG5kTk5hd0FtZGhmNVlNbmZ4a2d2Xy1EMDlHRUZCX3FOTkM3QWh0SWZTR2tjcF9oam9RUElVSjFjbTBLMVVfcmI5RkU0VUxldWoyWmhuZFBBd21OcVVhYlYza3l6cGdoVnptVi1OX0VwUXc3TmNQb1dvUG9xbVdLMWtxQnY4bUNtNHc1c2w3RnNyQml4cDRyT0k2N0ZZV01vdnNsY2c0ME0",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T06:34:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "TMB|OTHER|gold-gold-prediction-price-today-where",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.805143+00:00",
-  "last_updated": "2026-09-25T12:56:49.277403+00:00",
+  "last_updated": "2026-09-28T14:13:35.346365+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.805174+00:00",
@@ -108,6 +124,21 @@
       "timestamp": "2026-09-25T12:56:49.277384+00:00",
       "change": "sources added",
       "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:35.346340+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:35.346354+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:35.346361+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

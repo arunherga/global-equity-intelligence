@@ -5,20 +5,22 @@
   "event_date": "2026-09-23",
   "event_types": [
     "COMMODITY",
-    "CURRENCY"
+    "CURRENCY",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "confidence": 0.65,
       "business_impacts": [
-        "REVENUE",
+        "PRICING",
+        "INPUT_COST",
         "MARGIN",
-        "INPUT_COST"
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -31,34 +33,41 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "+2 International market development"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "confidence": 0.65,
       "business_impacts": [
-        "REVENUE",
+        "PRICING",
+        "INPUT_COST",
         "MARGIN",
-        "INPUT_COST"
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -71,21 +80,120 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "+2 International market development"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.65,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
+        "+2 International market development"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -119,16 +227,66 @@
       "published": "2026-09-24T07:10:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price falls ₹2,600, silver plunges ₹5,000 amid crude oil surge",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gold-price-falls-2600-silver-plunges-5000-amid-crude-oil-surge/article71519585.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-28T11:31:07+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold price falls Rs 2,600, silver plunges Rs 5,000 on Monday",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORTB4QVZ2V2RhSUVEeFFzRFVOWDhkd2JXN05HWE1sd1kxN05JaHNuMnVnM2V2bjBoTjYwak55U2tkOUhkVzJMSXpvN0J1VkpQaXdJY3BGUE5mU2pZcVhyTnM4SXh2NGZjZ3RLOUcxQnN4b0ZabC1HQ2Q3SUs4UTU1UURhTVlhci15Rk5JRFhsbFA2N3F0WEtzU19kbk9XMWloYVdvU3B4c2NiUVIwUUlabUd2U0lvQ011YUk5X3JjQy11ZXp6YzNvLVNhb1fSAdMBQVVfeXFMT2pQQkJfaVVnWUdleTRLTkRycGg2MmlYdVJKamNSblB0SjJYeVhhQ2xTMW9RaG1qUzZMa1V0UWxrVFpDQzkyV2prczA4STFsMW9uYUZ0bzVpUWsxLVk3aS1xM3hfUGhLSTVtSVZOckpDSHRrcElzNDRmcjhnWmlGY210ejFMRVJwOHhIQVFJTTF2UVhQczNOVXRWOER2OXgzSWxlbjBLUUo0cnR5X3BWdXhRZWRCTmgwM09yMXBKMm5SX3pvbDN3OTFnWndjaE9CbmI1TQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T11:31:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices today, Monday, September 28, 2026: Gold prices slump as Iran tensions and oil prices rise",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZnV4QXY0dGxlcGVhME00ckZBZnYxZWt2LXNIZW1scE5wdW9xY2dmaVVwWGlUSEdfLVp6VTJkcU11ODQ3RlJRaW5iaV9zMlhGcFp0VmJYYjZKaEVrMUtBdkpUZDgxZ0xMdnNSS2UxUzRfZWlqQXFpMjhiZm9RYi1CLU9VZTcxbnY0NS1PNFR2M3B5T09PX0lnWTYyRnhDQUpDQmFCc053UEsxc09iclNlTU5uMUx3MjNmT1A0OHZSZGdaMnRiQlNkZ2h2cnFrQzhIRHFNcDRrS0lVc3I3RVpneGVTVFdjZEdwMkxSOTNsX003V1hsWkVkdnM0Z3lLN1pUZkRZ",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T11:07:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, Silver rate today live updates: Gold drops more than 2 % as oil surge boosts US rate hike bets",
+      "url": "https://news.google.com/rss/articles/CBMi8AJBVV95cUxOUFdONVIta1NKbEZ3TnhqcHVGblpja3dHNFJQN0d0Qy16ZW52NVVkVlY0SE1qSFZmMWlkb2x3TDNQaVVBTlNUQjUzS0lDTjlXblM5a2xET1ZCS21uN3BhQnJ5d1FMdTRyU3NXQ0ZvSDBwZ0NiQ0dXR3lua3pXZElPYnRqeXREb01GQmVnU0pMWENCdDJiMHFCUTkwRkQzMnJueVlaOVBjUjZCdkxCU3FISGdqdU00dm10MUtxeVpsR2FBMTR2dkJQaE9MRk9sTDgtRFZldE1jT3ZZb2Q1YnRvbmFJUGFveG91SkEyRVVubXFBZ3hkbDdLNkNlekN0Um4tYm5McGkxbHBBQ2ppNFVYcVFMWU9LTmw5MXdKcEJQVFQ1TVdpTlB1eXFzQXQwckloS0ZwR3F3b1BRbVVSZ1ljQ0lGNFhoZUpGMmNoSzQyRnBySS1DNWJRVWl3Z1dkUm9ZcDl2eVptSldsR0x3blZ1MdIB9gJBVV95cUxPTGhWVEVLRGxrTlhaVWV2S2R2SDZZaUVzaHhaVEVpU01BNzdrVVlyWDNtSl9LMVUyN2dFa0pvOVlxalgyQmhoTFgwZUU0SExRbjREdEhLV0ZlLXdOUkpRRGhWRk1HX3c4RFlYWlIzeC1VSkZDdjBORVhzczdwUXRWSjhhS2hnMGQzVU05ZXZvanA0YTItSWcwbVZzbnpfZ3JaNlB4eHZjMklEby1MMVdlY1pTVkpUeWxjTzlYU09QUzYyWEpEQUhqZTFxOThZT2lZX1JOWThDS0NNMENJWUtHSnNSZ3Bvd05mS2lpeE1CR2VKdjFYOW0tQmQ4WXJoZW5OWk1LUjdQbmdLZU1oejF1Z0Z0VzFBT2hmMFhVXzE0M1VvdEcxSHFya2VOWFRnUnVReUlNRkxDdnRrbnhfY3UtQzFNeUVacHpFOG9sWmloOHBJRk85d1Y0cHZDMXN1UHlELVVrcllPZnFITnNWR1JOZGZveFc2UQ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T04:12:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Markets Fall as Crude Oil Prices Rise and Investor Caution Grows",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOczBxSU81d3BUM2txR3F3WTgxV1B0UlZNTV9ERm1CYUtMVkg5elBTOGpiYktHLVR4V1FFbkM4Yl9sdkZSak9OeDR6R2tURkphNTM2YVhnUXZmTkVfNW9Da3BISVk5Rkt3NkNQdGVJMDd4R3FoMDV4bTJ5b202T1JCWGNvWHJaa2sxbGpUZkk4eGlELVMtLTh4OFB4cjRDWVl3SktWLTA3VkV3dlM1enJJcHc3V1UwUjZkMzdtYVF3",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T10:49:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "HDFC Sky",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|95.57-crude-oil-paise-rise-rupee",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.675363+00:00",
-  "last_updated": "2026-09-24T12:03:20.523204+00:00",
+  "last_updated": "2026-09-28T14:13:05.332591+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.675416+00:00",
@@ -149,6 +307,36 @@
       "timestamp": "2026-09-24T12:03:20.523200+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332547+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, Kalkine India, The Hindu BusinessLine Markets, The Times of India"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332565+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332572+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332577+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 9"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332583+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:05.332587+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 9"
     }
   ],
   "price_reaction": {}

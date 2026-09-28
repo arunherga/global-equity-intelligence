@@ -9,16 +9,24 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "SECI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "rooftop solar",
@@ -28,25 +36,25 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders"
+        "competing bidders",
+        "order flow from SECI"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its customer, industry exposure to SECI, and rooftop solar. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -60,21 +68,51 @@
       "published": "2026-09-25T07:31:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BHEL Floats Tender for 1.24 MW Rooftop Solar Projects in Tamil Nadu Under 25-Year PPA",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQNEhKS3RYWi1BTE1QbFZPZlQtdVB3MFBXTy1OWU56WUFJSU8ySjhlZzYwY2pOUVJxamNmcUN1RnMtVkotUWZ3MGVFcEVHSU5SMV9IbnlEVU81d19Hbjd6VXV6RU5pVXZNOVFNbXpPRjNIVjJSQUJZc2RGNWdHekIwX0pHLUJDbk1ONnQ2NV9hS0l0NXYtMmtMZ2tHUGlrb0UzaVFmQ2NsY1dFM1U2eVRfNVNLSnAwWDdUUmpjckVCSQ",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T04:18:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SECI Floats Tender for 11.16 MW Grid-Connected Rooftop Solar Projects Under RTSPV Tranche-XIV",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYUZZWUpiUXNqNXdfWXBZcXIwTVIxUVp1OFFZRlFqN0NEVjQyc0hWXzItN0xmai16OHlwZmdRb1RZOWFqaXNad0lncFhfcHN2UXFVb1M2OVVkeHY2Skc1dldQVURJd3FuTzFVM0M1eThDZHM3cTJNZnJSanVqcVpCenkwWUU0cG9EMFI5b0lMcWM3RzBRMWRwQWlPZ0NWZ0ZsOGN3QVlNcVRSR0hTNmczVHNBTnFhU1dCN2hkd0Q0emtoZk8zdk5XbGx3",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T06:49:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "mvapulse.com",
   "cluster_key": "WAAREEENER|TENDER|mumbai-projects-remcl-rooftop-solar-tender",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:11.026181+00:00",
-  "last_updated": "2026-09-25T12:56:11.026228+00:00",
+  "last_updated": "2026-09-28T14:13:25.608484+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:11.026224+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:25.608465+00:00",
+      "change": "sources added",
+      "detail": "SolarQuarter"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:25.608479+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

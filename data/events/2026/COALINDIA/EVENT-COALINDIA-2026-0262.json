@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.61,
       "business_impacts": [
         "BALANCE_SHEET",
         "CUSTOMERS"
@@ -36,14 +36,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -56,10 +56,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.71,
       "business_impacts": [
         "BALANCE_SHEET"
       ],
@@ -75,14 +75,14 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -143,16 +143,56 @@
       "published": "2026-09-26T12:31:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Unit SECL said to hire banks for $800 million IPO",
+      "url": "https://www.thehindubusinessline.com/markets/coal-india-unit-secl-said-to-hire-banks-for-800-million-ipo/article71518166.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-28T02:10:32+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Coal India Unit SECL Taps Banks For $800 Million IPO",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOFF3U0s3STFfQWZOUUVYbVhaWERKX1dPdm9mSTNpUzF6TTVwWVdyLW14WlNUN1pIdjdkTjloTmNySlhOS3lsamt0T0h5OTZFZVJ0dG03b24zOGY1M2ZwRmZZN2ZKd3BzaFpteVpNRjQzQmo0M1BmVzRFdFlFOEJFN1lQa2J0cVFkODJqeE5aVzEyd01NS0pnSmt6bzJZZ0J2ZUcwOTh4MA",
+      "source_name": "marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T02:24:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India unit advances $1.14 billion IPO",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1CZXh4NGMxUTJ0ZHkyd3piSFhYajhnSnU3bmlPbVYwVC03c25FSFJKSllqYnVzSW90cEEtM0Vzd1VoY2trQVJXNlA3NGs2UmtDTjFaUjVQc1o2TUN1N3JFRUZHMExMQ0x5X2FtVzJOdkk5Zw",
+      "source_name": "Mining.com.au",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T13:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SECL IPO: Coal India Subsidiary Eyes $800 Million Share Sale, Targets December 2026 DRHP Filing",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcnBhSWY5VjNZY2NMY2c1VmZKTVU0UHRvTEhGb0stbHJheXlzam9sZmV4cWF2eGY5SE5TbGxNVDNPTVkzSndTNnBlekNObmlBQW5WWFJrWVNrSW5wY0EtQ3dfdkVvQmNmRDB3d2tjWE5nbmUzY0tGNXlpT1NrNUdMckRjQ2ZmU1dmUXkweUg4aC10YUpwb3dr",
+      "source_name": "Indianmasterminds",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T11:01:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
-  "source_count": 1,
+  "article_count": 9,
+  "source_count": 2,
   "primary_source": "Bloomberg.com",
   "cluster_key": "COALINDIA+MSTCLTD|FUNDRAISING|bank-coal-india-secl-selects-unit",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.576234+00:00",
-  "last_updated": "2026-09-26T17:52:31.347146+00:00",
+  "last_updated": "2026-09-28T14:13:02.438136+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.576303+00:00",
@@ -163,6 +203,21 @@
       "timestamp": "2026-09-26T17:52:31.347127+00:00",
       "change": "sources added",
       "detail": "Investing.com South Africa, TradingView"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:02.438108+00:00",
+      "change": "sources added",
+      "detail": "Indianmasterminds, Mining.com.au, The Hindu BusinessLine Markets, marketscreener.com"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:02.438125+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-28T14:13:02.438131+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 7"
     }
   ],
   "price_reaction": {}

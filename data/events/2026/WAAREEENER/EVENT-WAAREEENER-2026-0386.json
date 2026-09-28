@@ -1,0 +1,94 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-0386",
+  "title": "Festive shopping gets costlier as brands plan to hike AC, TV and appliance prices from October 1",
+  "summary": "Consumer electronics and appliance manufacturers in India will increase prices of products by 5-8% starting October 1. The rise in prices is attributed to higher costs of raw materials like copper and steel. Companies including Blue Star and Haier have confirmed these increases ahead of the festive shopping season. Despite the increases, some dealers have inventory stocked at old prices for the upcoming festivals.",
+  "event_date": "2026-09-28",
+  "event_types": [
+    "RAW_MATERIAL",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-3 Speculative or unconfirmed report",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to copper, and India. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Festive shopping gets costlier as brands plan to hike AC, TV and appliance prices from October 1",
+      "url": "https://retail.economictimes.indiatimes.com/news/consumer-durables-and-information-technology/consumer-electronics/festive-shopping-gets-costlier-as-brands-plan-to-hike-ac-tv-and-appliance-prices-from-october-1/134525429",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-27T18:55:09+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETRetail",
+  "cluster_key": "WAAREEENER|COMMODITY+RAW_MATERIAL|brands-costlier-festive-plan-shopping-win",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-28T14:12:11.329691+00:00",
+  "last_updated": "2026-09-28T14:12:11.329761+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-28T14:12:11.329756+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
