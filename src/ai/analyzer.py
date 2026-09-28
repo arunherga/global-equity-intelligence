@@ -8,6 +8,7 @@ else is left alone, which keeps a run cheap and keeps the report reproducible.
 from __future__ import annotations
 
 import logging
+import time
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 from dataclasses import dataclass, field
@@ -139,6 +140,10 @@ class EnrichmentOutcome:
     selected: int = 0
     enriched: int = 0
     errors: List[str] = field(default_factory=list)
+    # Set when the time budget stopped the layer before it worked through
+    # everything it selected, so the report can say so rather than look
+    # like the remaining events silently failed.
+    ran_out_of_time: bool = False
 
 
 def enrich(
@@ -165,8 +170,29 @@ def enrich(
 
     chosen = select_events(events, config)
     outcome.selected = len(chosen)
+    # Retries multiply the worst case: twelve events, three attempts each and
+    # a 90s timeout is theoretically most of an hour. The budget is what stops
+    # a bad provider day from turning a ten-minute run into an open-ended one.
+    budget = float(config.get("ai.max_seconds_per_run", 600))
+    pause = float(config.get("ai.pause_between_calls_seconds", 1.0))
+    started = time.monotonic()
+
     enriched = 0
-    for event, impact in chosen:
+    for index, (event, impact) in enumerate(chosen):
+        if budget > 0 and time.monotonic() - started > budget:
+            remaining = len(chosen) - index
+            outcome.ran_out_of_time = True
+            LOG.warning(
+                "AI time budget of %.0fs spent; %d event(s) not analysed",
+                budget, remaining,
+            )
+            outcome.errors.append(
+                f"time budget of {budget:.0f}s spent, {remaining} not analysed"
+            )
+            break
+        if index and pause > 0:
+            # Twelve requests back to back is what a free tier notices.
+            time.sleep(pause)
         try:
             profile = watchlist.get(impact.ticker)
         except KeyError:

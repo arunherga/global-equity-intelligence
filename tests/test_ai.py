@@ -816,3 +816,139 @@ def test_monitor_next_drops_the_advisory_item_and_keeps_the_rest():
         "Disclosures on unclaimed deposits",
     ]
     assert redactions
+
+
+# -- retrying a provider that is merely busy ------------------------------
+#
+# The 2026-09-28 midday run selected twelve events and kept one: the other
+# eleven got 503 "the model is overloaded" from a free-tier key, with no
+# retry in place. Capacity is temporary; a model name is not.
+
+
+class _Sequence:
+    """A transport that returns each queued response in turn."""
+
+    def __init__(self, *responses):
+        self._responses = list(responses)
+        self.calls = 0
+
+    def __call__(self, *args, **kwargs):
+        self.calls += 1
+        item = self._responses[min(self.calls - 1, len(self._responses) - 1)]
+        if isinstance(item, Exception):
+            raise item
+        return item
+
+
+def _overloaded(status=503):
+    return _FakeResponse(
+        status_code=status,
+        payload={"error": {"code": status, "message": "This model is overloaded."}},
+    )
+
+
+def test_a_503_is_retried_and_can_succeed(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    transport = _Sequence(_overloaded(), _overloaded(), _chat_response())
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", transport)
+
+    out = _gemini().complete("SYSTEM", "PROMPT")
+
+    assert out == '{"revenue_effect": "ok"}'
+    assert transport.calls == 3, "two failures then a success"
+
+
+def test_retries_are_bounded_and_report_the_last_error(monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    transport = _Sequence(_overloaded())
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", transport)
+
+    with pytest.raises(RuntimeError) as excinfo:
+        _gemini(max_attempts=3).complete("SYSTEM", "PROMPT")
+
+    assert transport.calls == 3, "three attempts, not unbounded"
+    assert "503" in str(excinfo.value)
+    assert "overloaded" in str(excinfo.value)
+
+
+def test_a_bad_model_name_is_never_retried(monkeypatch):
+    """No amount of waiting fixes a typo; retrying only spends the budget."""
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    transport = _Sequence(
+        _chat_response(status_code=404,
+                       payload={"error": {"message": "model nope-1 not found"}})
+    )
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", transport)
+
+    with pytest.raises(RuntimeError, match="404"):
+        _gemini(model="nope-1").complete("SYSTEM", "PROMPT")
+
+    assert transport.calls == 1
+
+
+def test_a_dropped_connection_is_retried(monkeypatch):
+    import requests as _requests
+
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    transport = _Sequence(
+        _requests.exceptions.ConnectionError("connection reset"),
+        _chat_response(),
+    )
+    monkeypatch.setattr("src.ai.providers.openai_provider.requests.post", transport)
+
+    assert _gemini().complete("SYSTEM", "PROMPT")
+    assert transport.calls == 2
+
+
+def test_retry_after_is_honoured_over_the_backoff(monkeypatch):
+    from src.ai import base
+
+    slept = []
+    monkeypatch.setattr(base.time, "sleep", slept.append)
+
+    response = _overloaded(429)
+    response.headers = {"Retry-After": "7"}
+    transport = _Sequence(response, _chat_response())
+
+    base.send_with_retry(transport, provider="gemini", attempts=3, base_delay=2.0)
+
+    assert slept == [7.0], "the server's own instruction wins"
+
+
+def test_backoff_grows_and_is_jittered():
+    from src.ai.base import MAX_BACKOFF_SECONDS, backoff_delay
+
+    first = [backoff_delay(1, 2.0) for _ in range(40)]
+    second = [backoff_delay(2, 2.0) for _ in range(40)]
+
+    assert all(1.0 <= d <= 2.0 for d in first)
+    assert all(2.0 <= d <= 4.0 for d in second)
+    assert len(set(first)) > 1, "jitter, so parallel runs do not sync up"
+    assert backoff_delay(20, 2.0) <= MAX_BACKOFF_SECONDS
+
+
+def test_the_time_budget_stops_the_layer_and_says_so(monkeypatch):
+    """A bad provider day must not turn a 10-minute run open-ended."""
+    from src.ai import analyzer, enrich
+    from src.profiles import load_watchlist
+
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key-not-real")
+    _capture_openai(monkeypatch, _chat_response())
+
+    # Every call appears to take two minutes.
+    clock = iter([0, 0] + [130 * n for n in range(1, 40)])
+    monkeypatch.setattr(analyzer.time, "monotonic", lambda: next(clock))
+
+    config = load_config(overrides={"ai": {
+        "enabled": True, "provider": "gemini", "model": "gemini-3.5-flash",
+        "max_seconds_per_run": 120, "min_impact_score": 5,
+    }})
+    watchlist = load_watchlist(config=config)
+    events = [make_event(impact_score=12) for _ in range(5)]
+
+    outcome = enrich(events, config, watchlist)
+
+    assert outcome.selected == 5
+    assert outcome.enriched < 5, "the budget cut it short"
+    assert outcome.ran_out_of_time is True
+    assert any("time budget" in e for e in outcome.errors)

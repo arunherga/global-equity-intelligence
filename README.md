@@ -297,10 +297,24 @@ Google's compatibility layer does not document it and an unknown parameter
 is a 400 on every call. The prompt still demands JSON and `extract_json`
 handles a fenced or chatty answer.
 
-Free tiers have per-minute and per-day request limits. At the defaults a
-busy day is roughly 24 calls across both slots, which is small — but the
-limits are Google's, and a `429` in Run Diagnostics is a rate limit, not a
-bug.
+Free tiers have per-minute and per-day request limits, and return `503
+"the model is overloaded"` under load. The first real run hit exactly that:
+twelve events selected, one analysed, eleven lost to 503s. So transient
+failures are retried — `408/425/429/5xx`, and dropped connections, with
+exponential backoff plus jitter, honouring `Retry-After`. A `404` on a model
+name is never retried, because waiting does not fix a typo.
+
+Retries multiply the worst case, so the whole layer has a time budget. Past
+it a run stops starting new analyses and records that it did, rather than
+running open-ended:
+
+```yaml
+ai:
+  max_attempts: 3
+  retry_base_seconds: 2.0
+  max_seconds_per_run: 600
+  pause_between_calls_seconds: 1.0
+```
 
 This repository ships with that configuration active:
 
@@ -430,7 +444,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-379 tests, all offline. The interesting ones are regressions:
+386 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

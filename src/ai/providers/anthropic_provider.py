@@ -20,6 +20,8 @@ from typing import Any, Dict
 
 import requests
 
+from ..base import send_with_retry
+
 API_VERSION = "2023-06-01"
 DEFAULT_MODEL = "claude-sonnet-4-5"
 
@@ -37,46 +39,38 @@ class AnthropicProvider:
         self.temperature = float(config.get("temperature", 0.1))
         self.max_tokens = int(config.get("max_output_tokens", 2000))
         self.api_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+        self.attempts = int(config.get("max_attempts", 3))
+        self.retry_base = float(config.get("retry_base_seconds", 2.0))
 
     def complete(self, system: str, prompt: str) -> str:
         if not self.api_key:
             raise RuntimeError("ANTHROPIC_API_KEY is not set")
-        response = requests.post(
-            f"{self.base_url}/messages",
-            headers={
-                "x-api-key": self.api_key,
-                "anthropic-version": API_VERSION,
-                "content-type": "application/json",
-            },
-            json={
-                "model": self.model,
-                "max_tokens": self.max_tokens,
-                "temperature": self.temperature,
-                "system": system,
-                "messages": [{"role": "user", "content": prompt}],
-            },
-            timeout=self.timeout,
+        # A wrong model id is the likeliest misconfiguration and the API says
+        # so precisely; send_with_retry surfaces that text rather than a bare
+        # status, and does not waste retries on an error that cannot resolve itself.
+        response = send_with_retry(
+            lambda: requests.post(
+                f"{self.base_url}/messages",
+                headers={
+                    "x-api-key": self.api_key,
+                    "anthropic-version": API_VERSION,
+                    "content-type": "application/json",
+                },
+                json={
+                    "model": self.model,
+                    "max_tokens": self.max_tokens,
+                    "temperature": self.temperature,
+                    "system": system,
+                    "messages": [{"role": "user", "content": prompt}],
+                },
+                timeout=self.timeout,
+            ),
+            provider="Anthropic",
+            attempts=self.attempts,
+            base_delay=self.retry_base,
         )
-        if response.status_code >= 400:
-            # A wrong model id is the likeliest misconfiguration and the API
-            # says so precisely. Surfacing its text is the difference between
-            # "AI produced nothing" and "that model name is not available".
-            raise RuntimeError(
-                f"{response.status_code} from Anthropic: {_error_text(response)}"
-            )
         payload = response.json()
         return _first_text(payload)
-
-
-def _error_text(response) -> str:
-    try:
-        body = response.json()
-    except Exception:  # noqa: BLE001 - an error page need not be JSON
-        return (getattr(response, "text", "") or "")[:200]
-    error = body.get("error")
-    if isinstance(error, dict):
-        return str(error.get("message") or error)[:200]
-    return str(error or body)[:200]
 
 
 def _first_text(payload: Dict[str, Any]) -> str:

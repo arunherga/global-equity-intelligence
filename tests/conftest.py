@@ -66,3 +66,14 @@ def fixture_articles():
     from scripts.generate_sample_report import load_fixture_articles
 
     return load_fixture_articles(now=datetime(2026, 9, 22, 6, 0, tzinfo=timezone.utc))
+
+
+@pytest.fixture(autouse=True)
+def _never_really_sleep(monkeypatch):
+    """Retry backoff must not make the suite wait.
+
+    Every test stays offline, so a retry is instantaneous by definition;
+    tests that care about the delay assert on backoff_delay directly.
+    """
+    monkeypatch.setattr("src.ai.base.time.sleep", lambda seconds: None)
+    monkeypatch.setattr("src.ai.analyzer.time.sleep", lambda seconds: None)

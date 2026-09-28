@@ -10,7 +10,10 @@ The one hard rule, enforced in :func:`sanitise`: no BUY, SELL or HOLD.
 from __future__ import annotations
 
 import json
+import logging
+import random
 import re
+import time
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Protocol
 
@@ -160,6 +163,88 @@ class AiProvider(Protocol):  # pragma: no cover - interface
 
     def complete(self, system: str, prompt: str) -> str:
         """Return the model's raw text response."""
+
+
+LOG = logging.getLogger("gei.ai")
+
+# Worth trying again: capacity, rate limits and the transient 5xx family.
+# 503 in particular is what a free-tier Gemini key sees under load - eleven
+# of twelve analyses were lost to it on 2026-09-28 with no retry in place.
+# A 404 on a model name is not here: no amount of waiting fixes a typo.
+RETRY_STATUSES = frozenset({408, 425, 429, 500, 502, 503, 504})
+
+MAX_BACKOFF_SECONDS = 30.0
+
+
+def _retry_after(response) -> float:
+    """The server's own instruction, when it gives one."""
+    try:
+        raw = (response.headers or {}).get("Retry-After")
+    except Exception:  # noqa: BLE001 - a stub response need not have headers
+        return 0.0
+    if not raw:
+        return 0.0
+    try:
+        return max(0.0, float(raw))
+    except (TypeError, ValueError):
+        return 0.0          # an HTTP-date form; the backoff below covers it
+
+
+def backoff_delay(attempt: int, base: float) -> float:
+    """Exponential, with jitter so parallel runs do not retry in lockstep."""
+    ceiling = min(base * (2 ** (attempt - 1)), MAX_BACKOFF_SECONDS)
+    return round(random.uniform(ceiling / 2, ceiling), 2)
+
+
+def send_with_retry(
+    send,
+    *,
+    provider: str,
+    attempts: int = 3,
+    base_delay: float = 2.0,
+    sleep=None,
+):
+    """Call ``send`` until it returns a usable response or the attempts run out.
+
+    Retries the transient statuses above and anything that raised on the way
+    out - a dropped connection is as temporary as a 503. Everything else is
+    raised immediately, because retrying a bad model name only spends the
+    budget more slowly.
+
+    Raises ``RuntimeError`` carrying the API's own message, so the report's
+    Run Diagnostics says what actually happened rather than a status code.
+    """
+    sleep = sleep or time.sleep
+    attempts = max(1, int(attempts))
+    last_error = ""
+    for attempt in range(1, attempts + 1):
+        try:
+            response = send()
+        except Exception as exc:  # noqa: BLE001 - transport errors retry too
+            last_error = f"{type(exc).__name__}: {exc}"
+            if attempt == attempts:
+                raise RuntimeError(f"{provider} unreachable: {last_error}") from exc
+            delay = backoff_delay(attempt, base_delay)
+            LOG.info("%s failed (%s); retrying in %.1fs", provider, last_error, delay)
+            sleep(delay)
+            continue
+
+        status = int(getattr(response, "status_code", 0) or 0)
+        if status < 400:
+            return response
+
+        message = api_error_text(response)
+        if status not in RETRY_STATUSES or attempt == attempts:
+            raise RuntimeError(f"{status} from {provider}: {message}")
+
+        delay = _retry_after(response) or backoff_delay(attempt, base_delay)
+        LOG.info(
+            "%s returned %d (%s); attempt %d of %d, retrying in %.1fs",
+            provider, status, message[:80], attempt, attempts, delay,
+        )
+        sleep(delay)
+
+    raise RuntimeError(f"{provider} gave up after {attempts} attempts: {last_error}")
 
 
 def api_error_text(response) -> str:

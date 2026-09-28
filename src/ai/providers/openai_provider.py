@@ -19,7 +19,7 @@ from typing import Any, Dict, Tuple
 
 import requests
 
-from ..base import api_error_text
+from ..base import send_with_retry
 
 
 class OpenAiProvider:
@@ -42,6 +42,8 @@ class OpenAiProvider:
         self.timeout = int(config.get("timeout_seconds", 90))
         self.temperature = float(config.get("temperature", 0.1))
         self.api_key = self._key_from_environment()
+        self.attempts = int(config.get("max_attempts", 3))
+        self.retry_base = float(config.get("retry_base_seconds", 2.0))
 
     # -- overridable pieces ---------------------------------------------
     def _configured_base_url(self, config: Dict[str, Any]) -> str:
@@ -74,19 +76,20 @@ class OpenAiProvider:
         if self.JSON_MODE:
             body["response_format"] = {"type": "json_object"}
 
-        response = requests.post(
-            f"{self.base_url}/chat/completions",
-            headers={
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json",
-            },
-            json=body,
-            timeout=self.timeout,
+        response = send_with_retry(
+            lambda: requests.post(
+                f"{self.base_url}/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {self.api_key}",
+                    "Content-Type": "application/json",
+                },
+                json=body,
+                timeout=self.timeout,
+            ),
+            provider=self.name,
+            attempts=self.attempts,
+            base_delay=self.retry_base,
         )
-        if response.status_code >= 400:
-            raise RuntimeError(
-                f"{response.status_code} from {self.name}: {api_error_text(response)}"
-            )
         payload = response.json()
         choices = payload.get("choices") or []
         if not choices:

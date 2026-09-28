@@ -273,6 +273,16 @@ ai:
   max_events_per_run: 12
   timeout_seconds: 90
   temperature: 0.1
+  # A free tier returns 503 "model is overloaded" under load - eleven of
+  # twelve analyses were lost to it on 2026-09-28 before these existed.
+  # Retries cover 408/425/429/5xx and honour Retry-After; a 404 on a model
+  # name is never retried.
+  max_attempts: 3
+  retry_base_seconds: 2.0
+  # Retries multiply the worst case, so cap what the whole layer may spend.
+  # Past it, the run stops starting analyses and says so in Run Diagnostics.
+  max_seconds_per_run: 600
+  pause_between_calls_seconds: 1.0
 
 alerts:
   enabled: false
