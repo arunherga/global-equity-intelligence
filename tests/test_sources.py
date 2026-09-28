@@ -391,3 +391,131 @@ def test_the_watchlist_locales_are_well_formed(watchlist):
             assert pattern.match(locale), f"{profile.ticker}: {locale!r}"
             declared += 1
     assert declared, "at least one company should declare a foreign edition"
+
+
+# -- Reddit, as the legitimate stand-in for marketplace reviews -----------
+
+
+def _reddit(**config):
+    from src.sources.base import HttpClient
+    from src.sources.reddit import RedditSource
+
+    settings = {"subreddits": ["IndianSkincareAddicts"], "min_score": 2}
+    settings.update(config)
+    return RedditSource(settings, HttpClient())
+
+
+def _post(**overrides):
+    post = {
+        "title": "Tried the Ravel PRO zero hairfall shampoo for 6 weeks",
+        "permalink": "/r/IndianHaircare/comments/abc/tried_ravel_pro/",
+        "selftext": "Shedding is noticeably down but the smell is strong.",
+        "score": 42,
+        "num_comments": 17,
+        "subreddit": "IndianHaircare",
+        "created_utc": 1790000000.0,
+    }
+    post.update(overrides)
+    return {"data": post}
+
+
+def _listing(*posts):
+    return {"data": {"children": list(posts)}}
+
+
+def test_reddit_parses_a_listing_into_articles():
+    articles = _reddit().parse(_listing(_post()), ticker="RAVEL", term="Ravel PRO")
+
+    assert len(articles) == 1
+    article = articles[0]
+    assert article.source_name == "r/IndianHaircare"
+    assert article.source_domain == "reddit.com"
+    assert article.url.startswith("https://www.reddit.com/r/IndianHaircare/")
+    assert article.tickers_hint == ["RAVEL"]
+    assert article.published is not None and article.published.year > 2020
+
+
+def test_consumer_items_are_marked_and_scored_as_social_media():
+    """They must never be mistakable for a filing."""
+    from src.models import SourceType
+
+    article = _reddit().parse(_listing(_post()), ticker="RAVEL", term="x")[0]
+
+    assert article.source_type == SourceType.SOCIAL_MEDIA
+    assert article.raw["consumer"] is True
+    assert article.raw["score"] == 42
+    assert article.raw["num_comments"] == 17
+    assert not article.is_official
+
+
+def test_posts_nobody_engaged_with_are_dropped():
+    """One person with an opinion is not a signal."""
+    listing = _listing(_post(score=0), _post(score=1), _post(score=9))
+
+    articles = _reddit(min_score=2).parse(listing, ticker="RAVEL", term="x")
+
+    assert [a.raw["score"] for a in articles] == [9]
+
+
+def test_nsfw_and_removed_posts_are_dropped():
+    listing = _listing(
+        _post(over_18=True),
+        _post(removed_by_category="moderator"),
+        _post(title="A real review"),
+    )
+
+    articles = _reddit().parse(listing, ticker="RAVEL", term="x")
+
+    assert [a.title for a in articles] == ["A real review"]
+
+
+def test_a_post_with_no_title_or_no_url_is_skipped():
+    listing = _listing(_post(title=""), _post(permalink="", url=""), _post())
+
+    assert len(_reddit().parse(listing, ticker="RAVEL", term="x")) == 1
+
+
+def test_a_malformed_payload_returns_nothing_rather_than_raising():
+    """A source must never take a run down; the collector treats a raise as
+    a hard failure of that source."""
+    source = _reddit()
+
+    for payload in ({}, {"data": None}, {"data": {"children": None}},
+                    {"data": {"children": [None, {}, {"data": None}]}}):
+        assert source.parse(payload, ticker="RAVEL", term="x") == []
+
+
+def test_search_urls_quote_multi_word_terms():
+    source = _reddit()
+
+    scoped = source.build_url("Ravel PRO", "IndianHaircare")
+    sitewide = source.build_url("HexL")
+
+    assert "/r/IndianHaircare/search.json" in scoped
+    assert "restrict_sr=1" in scoped
+    assert "%22Ravel+PRO%22" in scoped, "a phrase must be quoted"
+    assert "/r/" not in sitewide and "search.json" in sitewide
+
+
+def test_only_companies_that_opted_in_are_searched(watchlist):
+    from src.sources.base import CollectionContext
+
+    context = CollectionContext(
+        profiles=list(watchlist), queries={}, since_days=2,
+        max_articles_per_query=10, dry_run=True,
+    )
+
+    pairs = list(_reddit().terms_for(context))
+    tickers = {t for t, _ in pairs}
+
+    assert tickers == {"RAVEL", "JKIPL", "FRESHARA"}
+    assert ("RAVEL", "Ravel PRO") in pairs
+    assert all(term.strip() for _, term in pairs)
+
+
+def test_the_reddit_user_agent_identifies_the_project():
+    """A generic UA is what gets a project rate-limited or blocked."""
+    from src.sources.reddit import USER_AGENT
+
+    assert "global-equity-intelligence" in USER_AGENT
+    assert len(USER_AGENT) > 40

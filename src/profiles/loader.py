@@ -140,6 +140,10 @@ class CompanyProfile:
     # as 'lang-COUNTRY' (es-ES, en-ZA). Only where a company is genuinely
     # covered abroad: every locale is extra requests on a fixed budget.
     news_locales: List[str] = field(default_factory=list)
+    # Terms to search consumer forums for. Deliberately separate from brands:
+    # a term that works in a news index can be hopeless in a forum. Empty
+    # means this company is not watched for consumer sentiment at all.
+    consumer_terms: List[str] = field(default_factory=list)
 
     enriched: Dict[str, Any] = field(default_factory=dict)
     enriched_terms: Dict[str, List[str]] = field(default_factory=dict)
@@ -337,6 +341,7 @@ def _build_profile(ticker: str, data: Dict[str, Any], defaults: Dict[str, Any]) 
         ir=dict(data.get("ir", {}) or {}),
         queries_extra=_dedupe(data.get("queries_extra", []) or []),
         news_locales=_dedupe(data.get("news_locales", []) or []),
+        consumer_terms=_dedupe(data.get("consumer_terms", []) or []),
     )
 
 

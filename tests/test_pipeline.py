@@ -488,3 +488,67 @@ def test_ai_that_qualified_and_failed_everything_is_a_failure(monkeypatch):
     assert "Quota exceeded" in diag.note
     # Repeated identical errors collapse rather than filling the cell.
     assert diag.note.count("Quota exceeded") == 1
+
+
+def test_consumer_posts_never_become_events(monkeypatch):
+    """A shampoo thread is not a development.
+
+    Reddit items flow through the same collection path as news, so without
+    this they would cluster, score and fill the report - burying the filings
+    it exists for.
+    """
+    from src.models import Article, SourceType
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    news, posts = _live_like_articles(), []
+    for n in range(4):
+        post = Article(
+            title=f"Ravel PRO zero hairfall shampoo review, week {n}",
+            url=f"https://www.reddit.com/r/IndianHaircare/comments/{n}/x/",
+            source_name="r/IndianHaircare", source_domain="reddit.com",
+            source_type=SourceType.SOCIAL_MEDIA,
+        )
+        post.raw["consumer"] = True
+        posts.append(post)
+
+    monkeypatch.setattr(
+        pipeline, "collect", lambda context, offline=False: (news + posts, [])
+    )
+
+    result = pipeline.run(
+        run_date=date.today(), since_days=2, dry_run=True,
+        offline=True, resolve_links=False,
+    )
+
+    titles = " ".join(s.title for e in result.events for s in e.sources)
+    assert "shampoo review" not in titles
+    assert len(pipeline.consumer_articles) == 4
+    diag = next(d for d in result.diagnostics if d.source == "consumer_signal")
+    assert diag.ok is True and diag.articles == 4
+
+
+def test_the_same_consumer_post_from_two_searches_counts_once():
+    """Two searches finding one post is one post; two people is two."""
+    from src.main import _split_consumer
+    from src.models import Article
+
+    def post(url, title):
+        article = Article(title=title, url=url, source_domain="reddit.com")
+        article.raw["consumer"] = True
+        return article
+
+    news = Article(title="Coal India signs a licence", url="https://x.test/1",
+                   source_domain="x.test")
+
+    consumer, remaining = _split_consumer([
+        post("https://www.reddit.com/r/a/comments/1/x/", "Ravel PRO review"),
+        post("https://www.reddit.com/r/a/comments/1/x/", "Ravel PRO review"),
+        post("https://www.reddit.com/r/b/comments/2/y/", "Ravel PRO review"),
+        news,
+    ])
+
+    assert len(consumer) == 2, "same URL folded, different people kept"
+    assert remaining == [news]

@@ -27,6 +27,7 @@ from .gdelt import GdeltSource
 from .google_news import GoogleNewsSource
 from .government import GovernmentSource
 from .nse import NseSource
+from .reddit import RedditSource
 from .regulators import RegulatorSource
 from .rss import RssSource
 
@@ -49,6 +50,7 @@ __all__ = [
     "CompanyIrSource",
     "RegulatorSource",
     "GovernmentSource",
+    "RedditSource",
 ]
 
 # Config key -> factory. Order is the order sources are polled.
@@ -72,6 +74,11 @@ SOURCE_FACTORIES: Dict[str, Callable[[Config, HttpClient, List[str]], Source]] =
     ),
     "rss": lambda config, client, tickers: RssSource(
         config.section("sources").get("rss", {}), client, feeds=config.feeds(tickers)
+    ),
+    # Consumer voices come last: they are opinion, so any clustering has
+    # already picked its primary source from the official feeds above.
+    "reddit": lambda config, client, tickers: RedditSource(
+        config.section("sources").get("reddit", {}), client
     ),
 }
 

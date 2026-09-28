@@ -23,7 +23,18 @@ def probe_sources(
 ) -> List[SourceDiagnostic]:
     """Run every enabled source with a minimal workload."""
     client = HttpClient.from_config(config.http)
-    profiles = list(profiles)[:2] or list(profiles)
+    everyone = list(profiles)
+    profiles = everyone[:2] or everyone
+    # The consumer sources only search companies that declare consumer_terms.
+    # Probing the first two companies alone would report those sources as
+    # FAILED when they were never exercised at all - the one verdict this
+    # table must never give, since its whole purpose is to say what works.
+    if not any(getattr(p, "consumer_terms", None) for p in profiles):
+        opted_in = next(
+            (p for p in everyone if getattr(p, "consumer_terms", None)), None
+        )
+        if opted_in is not None:
+            profiles = profiles + [opted_in]
 
     queries = generate_queries(profiles, budget=per_source_queries)
     # GDELT only runs international queries, so the probe must include at

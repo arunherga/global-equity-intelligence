@@ -58,6 +58,30 @@ sources:
 
 # Generic + sector feeds. Each entry declares the exposure topics it serves so
 # the pipeline knows which watchlist companies to test the articles against.
+  reddit:
+    # Consumer sentiment. Marketplace reviews (Amazon, Flipkart, Nykaa,
+    # Myntra) are NOT collected: their terms prohibit it and they block
+    # datacentre addresses, so a scraper would break quietly and still be
+    # trusted. Reddit's public JSON endpoints are the legitimate
+    # substitute, and often the more candid one.
+    #
+    # UNVERIFIED: no live call has been made from the build environment,
+    # which cannot reach reddit.com. Prove it with --check-sources before
+    # believing anything it reports.
+    enabled: true
+    base_url: https://www.reddit.com
+    subreddits:
+      - IndianSkincareAddicts
+      - IndianHaircare
+      - IndianFashionAddicts
+      - india
+      - IndiaInvestments
+    window: week            # hour | day | week | month | year | all
+    limit_per_query: 25
+    max_queries_per_run: 12
+    # A post nobody engaged with is one person, not a signal.
+    min_score: 2
+
 feeds:
   general:
     # Business Standard removed: 403 from GitHub Actions runners on every

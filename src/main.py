@@ -100,6 +100,7 @@ class Pipeline:
         self.client = HttpClient.from_config(config.http)
         self.rejections: List[EntityRejection] = []
         self.match_failures: List[Tuple[str, str]] = []
+        self.consumer_articles: List[Article] = []
 
     # -- 1. collection ---------------------------------------------------
     def collect(
@@ -321,6 +322,29 @@ class Pipeline:
                 a for a in articles
                 if within_lookback(a, lookback_hours, now=datetime.now(timezone.utc))
             ]
+
+        # Consumer posts are opinion, not developments, and they split off
+        # before deduplication for two reasons. They must never reach
+        # clustering - a shampoo thread is not an Event, and a hundred of
+        # them would bury the filings the report exists for. And near-
+        # duplicate collapsing is wrong for them: four people saying the
+        # same thing in one week is the signal, not a repetition to fold
+        # away. Only the identical post arriving from two searches is
+        # dropped, by URL.
+        consumer, articles = _split_consumer(articles)
+        if consumer:
+            LOG.info("%d consumer item(s) held out of the event pipeline", len(consumer))
+            diagnostics.append(
+                SourceDiagnostic(
+                    source="consumer_signal",
+                    ok=True,
+                    attempted=len(consumer),
+                    succeeded=len(consumer),
+                    articles=len(consumer),
+                    note="held out of clustering; opinion is not a development",
+                )
+            )
+        self.consumer_articles = consumer
 
         deduped = deduplicate(
             articles,
@@ -551,6 +575,28 @@ class Pipeline:
 # --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
+
+
+def _split_consumer(articles: Sequence[Article]) -> Tuple[List[Article], List[Article]]:
+    """Separate consumer posts from news, de-duplicating the former by URL.
+
+    Returns ``(consumer, news)``. The same post found by two searches is one
+    post; two different people posting the same complaint is two.
+    """
+    consumer: List[Article] = []
+    news: List[Article] = []
+    seen_urls = set()
+    for article in articles:
+        if not article.raw.get("consumer"):
+            news.append(article)
+            continue
+        key = (article.url or "").strip().lower()
+        if key and key in seen_urls:
+            continue
+        if key:
+            seen_urls.add(key)
+        consumer.append(article)
+    return consumer, news
 
 
 def build_parser() -> argparse.ArgumentParser:
