@@ -668,6 +668,10 @@ class RunResult:
     events: List[Event] = field(default_factory=list)
     tickers: List[str] = field(default_factory=list)
     dry_run: bool = False
+    # Consumer chatter for this run, as SignalChange objects. Typed loosely
+    # to keep models.py free of a dependency on the sentiment module, which
+    # is meant to be removable without the core noticing.
+    consumer: List[Any] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -679,4 +683,13 @@ class RunResult:
             "stats": self.stats.to_dict(),
             "diagnostics": [d.to_dict() for d in self.diagnostics],
             "events": [e.to_dict() for e in self.events],
+            "consumer": [
+                {
+                    **change.signal.to_dict(),
+                    "previous_mentions": change.previous_mentions,
+                    "mention_change": change.mention_change,
+                    "net_change": change.net_change,
+                }
+                for change in self.consumer
+            ],
         }

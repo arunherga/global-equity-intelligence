@@ -72,6 +72,7 @@ from .profiles.loader import CompanyProfile, Watchlist, load_watchlist
 from .query_generator import generate_queries
 from .relationship import determine_relationship
 from .report import build_report, report_path, write_report
+from .sentiment import SentimentStore, analyse as analyse_consumer, compare
 from .resolve import resolve_article_urls
 from .seen import SeenStore
 from .sources import CollectionContext, HttpClient, build_sources
@@ -101,6 +102,7 @@ class Pipeline:
         self.rejections: List[EntityRejection] = []
         self.match_failures: List[Tuple[str, str]] = []
         self.consumer_articles: List[Article] = []
+        self.consumer_changes: List[Any] = []
 
     # -- 1. collection ---------------------------------------------------
     def collect(
@@ -481,6 +483,16 @@ class Pipeline:
         stats.high_impact_events = sum(1 for e in events if e.max_impact >= high)
         stats.critical_events = sum(1 for e in events if e.max_impact >= critical)
 
+        # Consumer signal: a trend, computed and stored beside the events but
+        # never mixed into them.
+        signals = analyse_consumer(self.consumer_articles)
+        sentiment_store = SentimentStore(self.config.storage_path("sentiment_dir"))
+        self.consumer_changes = compare(
+            signals, sentiment_store.most_recent_before(run_date)
+        )
+        if signals and not dry_run:
+            sentiment_store.save(run_date, signals)
+
         result = RunResult(
             run_date=run_date,
             started_at=started,
@@ -490,6 +502,7 @@ class Pipeline:
             events=events,
             tickers=[p.ticker for p in self.profiles],
             dry_run=dry_run,
+            consumer=self.consumer_changes,
         )
 
         if not dry_run:

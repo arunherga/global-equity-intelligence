@@ -135,6 +135,7 @@ class ReportBuilder:
         lines.extend(self._global_section(events))
         lines.extend(self._cross_stock(events))
         lines.extend(self._per_stock(events))
+        lines.extend(self._consumer(result))
         if self.show_diagnostics:
             lines.extend(self._diagnostics(result))
         lines.extend(self._footer())
@@ -302,6 +303,62 @@ class ReportBuilder:
         monitor = analysis.get("monitor_next") or []
         if isinstance(monitor, list) and monitor:
             lines.append(f"- **Monitor next** — {'; '.join(str(m) for m in monitor[:5])}")
+        lines.append("")
+        return lines
+
+    def _consumer(self, result) -> List[str]:
+        """Consumer chatter, kept visibly apart from the event sections.
+
+        Deliberately a summary and not a feed: individual posts are anecdotes
+        and reading them one by one is how you end up over-reacting to a
+        stranger having a bad week. What is worth a reader's time is the
+        direction and the change.
+        """
+        changes = list(getattr(result, "consumer", []) or [])
+        if not changes:
+            return []
+
+        lines = ["## Consumer signal", ""]
+        lines.append(
+            "_What customers are saying, from public forums. This is opinion, "
+            "not news: it creates no events and affects no impact score. "
+            "Polarity is a keyword count — useful in aggregate, unreliable "
+            "on any single item._"
+        )
+        lines.append("")
+        lines.append("| Stock | Mentions | vs last run | Leaning | Engagement |")
+        lines.append("|---|---:|---:|---|---:|")
+        for change in changes:
+            signal = change.signal
+            delta = change.mention_change
+            arrow = f"+{delta}" if delta > 0 else str(delta) if delta else "—"
+            flag = " ⚠️" if change.is_notable else ""
+            lines.append(
+                f"| {signal.ticker} | {signal.mentions} | {arrow}{flag} | "
+                f"{signal.leaning} | {signal.engagement} |"
+            )
+        lines.append("")
+
+        notable = [c for c in changes if c.is_notable]
+        for change in notable:
+            signal = change.signal
+            lines.append(f"**{signal.ticker} — worth a look**")
+            lines.append("")
+            reason = []
+            if change.mention_change > 0:
+                reason.append(
+                    f"mentions up from {change.previous_mentions} to {signal.mentions}"
+                )
+            if change.net_change < 0:
+                reason.append(f"tone down {abs(change.net_change)} points")
+            lines.append(f"- {'; '.join(reason) or 'shift in volume'}")
+            for example in signal.examples:
+                lines.append(
+                    f"- _{example['polarity']}_ [{example['title']}]"
+                    f"({example['url']}) — {example['source']}"
+                )
+            lines.append("")
+        lines.append("---")
         lines.append("")
         return lines
 

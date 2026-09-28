@@ -301,3 +301,88 @@ def test_an_event_detailed_above_is_marked_as_a_repeat(config, watchlist):
                              ["TMB", "HDFCBANK"], score=11)], config, watchlist)
     per_stock = report.split("## TMB Intelligence")[1]
     assert "detailed above" in per_stock
+
+
+# -- the consumer signal section -----------------------------------------
+
+
+def _result_with_consumer(changes):
+    from datetime import date as _date, datetime as _dt, timezone as _tz
+    from src.models import RunResult, RunStats
+
+    return RunResult(
+        run_date=_date(2026, 9, 28),
+        started_at=_dt(2026, 9, 28, 6, tzinfo=_tz.utc),
+        finished_at=_dt(2026, 9, 28, 6, 10, tzinfo=_tz.utc),
+        stats=RunStats(), events=[], tickers=["RAVEL"], consumer=changes,
+    )
+
+
+def test_no_consumer_data_means_no_section(config, watchlist):
+    from src.report import build_report
+
+    report = build_report(_result_with_consumer([]), config, watchlist)
+
+    assert "## Consumer signal" not in report
+
+
+def test_the_section_says_plainly_that_it_is_not_news(config, watchlist):
+    from src.report import build_report
+    from src.sentiment import ConsumerSignal, SignalChange
+
+    changes = [SignalChange(
+        signal=ConsumerSignal(ticker="RAVEL", mentions=9, positive=1, negative=6),
+        previous_mentions=3, previous_net=1,
+    )]
+
+    report = build_report(_result_with_consumer(changes), config, watchlist)
+
+    assert "## Consumer signal" in report
+    assert "creates no events" in report
+    assert "keyword count" in report
+    assert "unreliable on any single item" in report
+
+
+def test_a_notable_shift_is_called_out_and_a_quiet_one_is_not(config, watchlist):
+    from src.report import build_report
+    from src.sentiment import ConsumerSignal, SignalChange
+
+    changes = [
+        SignalChange(
+            signal=ConsumerSignal(
+                ticker="RAVEL", mentions=12, positive=1, negative=9,
+                examples=[{"title": "Rash from the serum", "url": "https://r.test/1",
+                           "source": "r/IndianHaircare", "polarity": "negative"}],
+            ),
+            previous_mentions=4, previous_net=2,
+        ),
+        SignalChange(
+            signal=ConsumerSignal(ticker="JKIPL", mentions=3, neutral=3),
+            previous_mentions=3, previous_net=0,
+        ),
+    ]
+
+    report = build_report(_result_with_consumer(changes), config, watchlist)
+
+    assert "RAVEL — worth a look" in report
+    assert "JKIPL — worth a look" not in report
+    assert "mentions up from 4 to 12" in report
+    assert "Rash from the serum" in report
+
+
+def test_the_consumer_section_sits_outside_the_event_sections(config, watchlist):
+    """It must be impossible to mistake chatter for a development."""
+    from src.report import build_report
+    from src.sentiment import ConsumerSignal, SignalChange
+
+    changes = [SignalChange(
+        signal=ConsumerSignal(ticker="RAVEL", mentions=9, negative=6),
+        previous_mentions=3,
+    )]
+
+    report = build_report(_result_with_consumer(changes), config, watchlist)
+    sections = [line for line in report.splitlines() if line.startswith("## ")]
+
+    assert "## Consumer signal" in sections
+    consumer_at = sections.index("## Consumer signal")
+    assert consumer_at > 0, "not the first thing a reader meets"

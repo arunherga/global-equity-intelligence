@@ -131,6 +131,7 @@ class Config:
             "profiles_dir": "data/profiles",
             "backfill_dir": "data/backfill",
             "seen_file": "data/seen_articles.json",
+            "sentiment_dir": "data/sentiment",
         }[key]
         return self.root / str(self.get(f"storage.{key}", default))
 
