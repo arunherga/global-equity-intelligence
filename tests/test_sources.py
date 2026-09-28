@@ -282,3 +282,112 @@ def test_error_list_stays_readable():
     for i in range(50):
         source.record_error(f"query {i}", "403")
     assert len(source.errors) <= 6
+
+
+# -- multi-locale Google News ---------------------------------------------
+#
+# Google News is localised: the Spanish edition carries the Navarrese press
+# on Aceitunas Sarasa that the Indian edition never shows, and the Gulf and
+# African editions carry the equipment trade press on HexL.
+
+
+def _news_source(**config):
+    from src.config import load_config
+    from src.sources.base import HttpClient
+    from src.sources.google_news import GoogleNewsSource
+
+    return GoogleNewsSource(config, HttpClient.from_config(load_config().http))
+
+
+def test_locale_codes_become_googles_own_parameters():
+    source = _news_source()
+
+    assert source.locale_parameters("es-ES") == ("es", "ES", "ES:es")
+    assert source.locale_parameters("en-ZA") == ("en", "ZA", "ZA:en")
+    assert source.locale_parameters("en_AE") == ("en", "AE", "AE:en")
+
+
+def test_an_unparseable_locale_falls_back_rather_than_building_a_bad_url():
+    """A typo must cost one locale, not every query for that ticker."""
+    source = _news_source()
+    default = source.locale_parameters("")
+
+    for junk in ("rubbish", "es-", "-ES", "es-ES-extra", ""):
+        assert source.locale_parameters(junk) == default, junk
+
+
+def test_a_foreign_locale_reaches_the_url():
+    from src.models import Relationship
+    from src.query_generator import Query, QueryKind
+
+    source = _news_source()
+    query = Query(text='"Aceitunas Sarasa"', ticker="FRESHARA", kind=QueryKind.COMPANY)
+
+    url = source.build_url(query, since_days=2, locale="es-ES")
+
+    assert "hl=es" in url and "gl=ES" in url and "ceid=ES:es" in url
+    assert "Aceitunas" in url
+
+
+def test_only_company_like_queries_are_repeated_abroad():
+    """Repeating a macro query in six editions buys six copies of one wire."""
+    from src.query_generator import Query, QueryKind
+
+    source = _news_source(max_locale_queries_per_ticker=10)
+    queries = [
+        Query(text='"Jinkushal"', ticker="JKIPL", kind=QueryKind.COMPANY),
+        Query(text="India coal imports", ticker="JKIPL", kind=QueryKind.MACRO),
+        Query(text="steel prices", ticker="JKIPL", kind=QueryKind.COMMODITY),
+    ]
+    spent = {}
+
+    pairs = list(source._with_locales(queries, {"JKIPL": ["en-ZA", "en-AE"]}, 10, spent))
+
+    home = [q for q, loc in pairs if not loc]
+    abroad = [(q.kind.value, loc) for q, loc in pairs if loc]
+    assert len(home) == 3, "every query still runs at home"
+    assert abroad == [("COMPANY", "en-ZA"), ("COMPANY", "en-AE")]
+
+
+def test_the_per_ticker_locale_budget_is_enforced():
+    from src.query_generator import Query, QueryKind
+
+    source = _news_source()
+    queries = [
+        Query(text=f'"brand {n}"', ticker="JKIPL", kind=QueryKind.COMPANY)
+        for n in range(5)
+    ]
+    spent = {}
+
+    pairs = list(
+        source._with_locales(queries, {"JKIPL": ["en-ZA", "en-NG", "en-AE"]}, 3, spent)
+    )
+
+    assert sum(1 for _, loc in pairs if loc) == 3, "capped, not five times three"
+    assert spent == {"JKIPL": 3}
+
+
+def test_a_company_with_no_locales_costs_nothing_extra():
+    from src.query_generator import Query, QueryKind
+
+    source = _news_source()
+    queries = [Query(text='"Ravelcare"', ticker="RAVEL", kind=QueryKind.COMPANY)]
+    spent = {}
+
+    pairs = list(source._with_locales(queries, {"RAVEL": []}, 3, spent))
+
+    assert [loc for _, loc in pairs] == [""]
+    assert spent == {}
+
+
+def test_the_watchlist_locales_are_well_formed(watchlist):
+    """A malformed code silently degrades to the Indian edition."""
+    import re
+
+    pattern = re.compile(r"^[a-z]{2}-[A-Z]{2}$")
+    declared = 0
+    for profile in watchlist:
+        for locale in profile.news_locales:
+            assert pattern.match(locale), f"{profile.ticker}: {locale!r}"
+            declared += 1
+    assert declared, "at least one company should declare a foreign edition"
