@@ -90,3 +90,99 @@ def test_unrelated_news_matches_nothing(watchlist, make_article):
         "Mumbai weather update: heavy rain expected",
     ):
         assert tickers_for(make_article(headline), watchlist) == []
+
+
+# -- brands and foreign subsidiaries --------------------------------------
+#
+# A company is often reported under a name that is not its listed name. Trade
+# press writes about HexL, not Jinkushal; Spanish press writes about
+# Aceitunas Sarasa, not Freshara. Brands were previously used only to build
+# queries, so those articles were fetched and then dropped for matching
+# nothing - the worst possible outcome, since the collection cost was paid.
+
+
+def _match(watchlist, ticker, title, summary=""):
+    from src.matching import fold
+    from src.models import Article
+
+    article = Article(
+        title=title, summary=summary,
+        url="https://example.test/a", source_domain="example.test",
+    )
+    return match_entity(
+        article, watchlist.get(ticker), fold(article.text), fold(article.title)
+    )[0]
+
+
+def test_a_brand_alone_identifies_the_company(watchlist):
+    """"HexL wins an order" names Jinkushal nowhere."""
+    match = _match(watchlist, "JKIPL", "HexL backhoe loaders enter the Ghanaian market")
+
+    assert match is not None
+    assert match.strength == "brand"
+    assert match.alias == "HexL"
+    assert match.is_primary, "a brand is the name it trades under, not a hedge"
+
+
+def test_a_brand_match_is_case_insensitive(watchlist):
+    for spelling in ("HexL", "HEXL", "hexl"):
+        match = _match(watchlist, "JKIPL", f"{spelling} loaders win a repeat order")
+        assert match is not None, spelling
+
+
+def test_the_spanish_subsidiary_identifies_freshara(watchlist):
+    match = _match(
+        watchlist, "FRESHARA", "El grupo indio compra Aceitunas Sarasa, de Navarra"
+    )
+
+    assert match is not None
+    assert match.strength == "subsidiary"
+    assert "Aceitunas Sarasa" in match.alias
+
+
+def test_the_surname_sarasa_alone_is_not_freshara(watchlist):
+    """Sarasa is a common Navarrese surname and place name.
+
+    Listing it bare would have matched local politics, sport and obituaries.
+    """
+    assert _match(
+        watchlist, "FRESHARA", "Sarasa appointed to the state agriculture board"
+    ) is None
+    assert _match(watchlist, "FRESHARA", "Miguel Sarasa wins the Navarre stage") is None
+
+
+def test_the_ravel_pro_range_identifies_ravelcare(watchlist):
+    match = _match(
+        watchlist, "RAVEL", "RavelPRO Zero Hairfall Shampoo reviewed by dermatologists"
+    )
+
+    assert match is not None
+    assert match.strength == "brand"
+
+
+def test_brands_did_not_weaken_the_existing_ravel_guards(watchlist):
+    """The new brand path must not reopen what the alias guards closed."""
+    assert _match(
+        watchlist, "RAVEL", "Ravel Electronics wins a municipal lighting contract"
+    ) is None
+    assert _match(watchlist, "RAVEL", "Maurice Ravel's Bolero performed in Chennai") is None
+
+
+def test_every_brand_and_subsidiary_is_distinctive_enough(watchlist):
+    """A one-word lowercase brand would match half the news in the world.
+
+    Cheap structural guard: names added later get the same scrutiny these
+    did, without anyone having to remember why.
+    """
+    too_generic = {
+        "pro", "care", "zero", "fresh", "hex", "plus", "max", "one", "prime",
+        "shampoo", "serum", "oil", "loader", "olives",
+    }
+    for profile in watchlist:
+        for name in list(profile.brands) + list(profile.subsidiaries):
+            assert len(name) >= 4, f"{profile.ticker}: {name!r} is too short"
+            assert name.lower() not in too_generic, f"{profile.ticker}: {name!r}"
+            assert any(c.isupper() for c in name), (
+                f"{profile.ticker}: {name!r} must be capitalised - lower case "
+                "marks a generic term, and these are matched as named entities"
+            )

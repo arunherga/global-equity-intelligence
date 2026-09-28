@@ -426,6 +426,16 @@ tickers:
       - value: Freshara
         strength: secondary
 
+    subsidiaries:
+      # Acquired for EUR 7.7m: an olive processor in Navarre with three
+      # plants, including Badajoz. Spanish coverage names the target, never
+      # the Indian parent. Verified 2026-09-28 against spain-india.org.
+      # "Sarasa" alone is deliberately absent - a common Navarrese surname
+      # and place name, it would match almost anything.
+      - Aceitunas Sarasa
+      - Aceitunas Sarasa S.A.
+      - Aceitunas Sarasa SA
+
     brands: [Freshara Picklz, Freshara]
 
     products:
@@ -574,6 +584,15 @@ tickers:
         strength: primary
       - value: JKIPL
         strength: secondary
+
+    brands:
+      # JKIPL's own equipment brand. Trade press reports orders under the
+      # brand without naming Jinkushal at all - a USD 5m repeat order for
+      # HexL backhoe loaders was reported exactly that way. Verified
+      # 2026-09-28 against constructionworld.in and jkipl.in.
+      - HexL
+      - Hexl
+      - HEXL
 
     products:
       - used construction equipment
@@ -739,9 +758,22 @@ tickers:
       - Maurice Ravel
       - Ravel Hotels
 
-    brands: [Ravelcare]
+    brands:
+      # Ravel PRO is a dermatologist-developed haircare range of 12 SKUs,
+      # launched alongside an AI diagnostic skincare range due H2 FY27.
+      # Verified 2026-09-28. The individual SKU names sit under products:
+      # they are descriptive, and capitalisation here is what marks a term
+      # as a named entity rather than a kind of thing.
+      - Ravelcare
+      - Ravel PRO
+      - RavelPRO
 
     products:
+      - zero hairfall shampoo
+      - zero dandruff shampoo
+      - hyaluronic repair shampoo
+      - anti grey serum
+      - hair growth serum
       - haircare products
       - shampoo
       - hair oil

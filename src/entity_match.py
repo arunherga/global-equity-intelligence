@@ -22,14 +22,16 @@ class EntityMatch:
 
     ticker: str
     alias: str
-    strength: str                      # primary | secondary | subsidiary
+    strength: str                # primary | secondary | subsidiary | brand
     in_headline: bool = False
     spans: List[Tuple[int, int]] = field(default_factory=list)
     detail: str = ""
 
     @property
     def is_primary(self) -> bool:
-        return self.strength in {"primary", "subsidiary"}
+        # A brand is the name the company trades under, so a brand hit is
+        # as direct as the listed name - not a hedged secondary match.
+        return self.strength in {"primary", "subsidiary", "brand"}
 
 
 @dataclass
@@ -132,9 +134,17 @@ def match_entity(
             break
 
     if best is None:
-        # Subsidiaries count as a direct mention of the parent.
-        for subsidiary in profile.subsidiaries:
-            spans = find_spans(text, subsidiary)
+        # Subsidiaries count as a direct mention of the parent, and so do
+        # brands. A brand is the name the company trades under, and trade
+        # press uses it in preference to the listed entity: "HexL wins a
+        # USD 5m repeat order" is a Jinkushal story that names Jinkushal
+        # nowhere. Brands were previously only used to generate queries, so
+        # such an article was fetched and then dropped for having no match.
+        for name, strength in (
+            [(s, "subsidiary") for s in profile.subsidiaries]
+            + [(b, "brand") for b in profile.brands]
+        ):
+            spans = find_spans(text, name)
             if not spans:
                 continue
             blocker = covered_by(spans[0], text, [n.lower() for n in profile.negative_aliases])
@@ -142,11 +152,11 @@ def match_entity(
                 continue
             best = EntityMatch(
                 ticker=profile.ticker,
-                alias=subsidiary,
-                strength="subsidiary",
-                in_headline=bool(find_spans(headline, subsidiary)),
+                alias=name,
+                strength=strength,
+                in_headline=bool(find_spans(headline, name)),
                 spans=spans,
-                detail=f"subsidiary '{subsidiary}'",
+                detail=f"{strength} '{name}'",
             )
             break
 
