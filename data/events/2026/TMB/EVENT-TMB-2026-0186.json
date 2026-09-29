@@ -4,21 +4,25 @@
   "summary": "TMB Product Specialist Recruitment 2026 - Apply Online FreeJobAlert.Com",
   "event_date": "2026-09-28",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.4,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
+        "+4 Regulatory or legal action",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
@@ -31,9 +35,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -47,21 +54,46 @@
       "published": "2026-09-28T11:52:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "TMB Recruitment 2026 Notification Out - Apply Online for Security Officer, Branch Head and More Posts",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaXRIbFRES19OTmZHWUc5UDRGSXFrd0lTcC1BdjZwVlpVem9TTkw4eEt0S0xRQXl5QUppTGY1Z2FwTnZvcHZBd1IyelY1bHZvZEdVOEg0Y280UTZuNTBGdnlTbzZKU05oeG5YYW9HcEh2cnlDZWpPSjdoM2N1V1VaZkZCWHpETENxZmZITlk3MW5zZlplcHc",
+      "source_name": "FreeJobAlert.Com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T05:57:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "FreeJobAlert.Com",
   "cluster_key": "TMB|OTHER|2026-apply-product-recruitment-specialist-tmb",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.678430+00:00",
-  "last_updated": "2026-09-28T14:12:11.678481+00:00",
+  "last_updated": "2026-09-29T13:15:17.397791+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.678477+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:17.397763+00:00",
+      "change": "sources added",
+      "detail": "FreeJobAlert.Com"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:17.397780+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:17.397786+00:00",
+      "change": "impact raised",
+      "detail": "TMB 5 -> 9"
     }
   ],
   "price_reaction": {}

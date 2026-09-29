@@ -1,0 +1,149 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1036",
+  "title": "India: Alang's scrap prices rise INR 1,500/t d-o-d on firmer steel prices",
+  "summary": "India: Alang's scrap prices rise INR 1,500/t d-o-d on firmer steel prices BigMint",
+  "event_date": "2026-09-29",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Alang's scrap prices rise INR 1,500/t d-o-d on firmer steel prices",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaWRGV3dsSWszWXp2MkxBT09Zb25aUnRCcmIxc3pBc0JNd3pqXzRtYi1TYmhtcEtuaGVrSmthdDhsU0JpdDM3RnNXeTJjdk5mVllFRTMwY1JCRDZ1UUppVVVTZzZhM2NhVWxkNDRkLVVtZzJ1MmV1YkEweHhnWjVsOFRHeUJMUEFENlRYS0xZd0dTTlhXdFotNFJuQzhHQlRnQV96YjNJeEUtUVZ0ZlZmNzVYSHVOc3M",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T07:08:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "[India Domestic] Domestic steel prices rose sharply on Tuesday support",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWFlFaG9fMG91dEdqUmI5N0d3WjVoaWctNVk0a0MydDZob1p0RXdMcjYxc3FKZ2lJd0UwbE82VUY4a1ExSElNNFNCYWJwYmhOcmIxRXgtSWVMaG9tVUZrMGRHd3BGa3dJaEZLTzVFdE5WVzNxMXRMaG5YNnYyZk1NbmVtZ21xTDhBd29DRWtkZ1dWWjZxWmJOenFkQ2RXZklh",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T08:22:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "JKIPL+MSTCLTD|COMMODITY|alang-india-inr-price-rise-scrap",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-29T13:08:35.747243+00:00",
+  "last_updated": "2026-09-29T13:08:35.747311+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-29T13:08:35.747306+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

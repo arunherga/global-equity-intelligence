@@ -89,11 +89,11 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "DIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.31,
+      "confidence": 0.41,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -108,7 +108,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
@@ -117,14 +118,14 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "financial implication is quantified",
         "opinion piece"
       ],
       "watch_next": [
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -138,21 +139,41 @@
       "published": "2026-09-28T11:01:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Jefferies’ power play: 7 stocks with up to 54% upside; NTPC JSW Energy among top picks",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNDJsUVRPTDU2dThpM1BSLWlCeGNkUUlnWTZzVmliX1RqWVR2ZUtTcUxfb0J6Z19rQWd4NUx1RmRfZ1JSdmo5SFVqSTFyT2lUQXpxS0hFYlAwcGRlWVlWV2xGNG5FM0o3VUVnRzNOSl9kS3hyQUtZMHNCRXA5MExIcWtjN0xGWUdfT2pIMUx5N2tFN1JhdlBrTXY5bEF6dm9RRUl0U1o1TFk2WFo3SkdkRVhHT2hJTUMxVzF5cEZscTZCdFhQZHhYdUx5TVpWbHU5YVHSAdIBQVVfeXFMTTQybFFUT0w1NnU4aTNQUi1pQnhjZFFJZ1k2c1ZpYl9UallUdmVLU3FMX29Cemdfa0FneDVMdUZkX2dSUnZqOUhVakkxck9pVEF6cUtIRWJQMHBkZVlZVldsRjRuRTNKN1VFZ0czTkpfZEt4ckFLWTBzQkVwOTBMSHFrYzdMRllHX09qSDFMeTdrRTdSYXZQa012OWxBenZvUUVJdFNaNUxZNlhaN0pHZEVYR09oSU1DMVcxeXBGbHE2QnRYUGR4WHVMeU1aVmx1OWFR",
+      "source_name": "financialexpress.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T03:36:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Zee Business",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|60%-buy-jefferies-picks-power-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.658982+00:00",
-  "last_updated": "2026-09-28T14:12:11.659050+00:00",
+  "last_updated": "2026-09-29T13:15:05.187822+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.659045+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:05.187800+00:00",
+      "change": "sources added",
+      "detail": "financialexpress.com"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:05.187817+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 1"
     }
   ],
   "price_reaction": {}

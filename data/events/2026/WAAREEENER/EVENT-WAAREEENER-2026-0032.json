@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.51,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -26,7 +26,7 @@
         },
         {
           "exposure_type": "PRODUCT",
-          "term": "solar modules",
+          "term": "solar cells",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
@@ -47,7 +47,8 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -55,13 +56,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its product, regulation exposure to ALMM, and solar modules. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -75,21 +76,41 @@
       "published": "2026-09-18T07:08:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar Cell Capacity in ALMM Nears 37 GW in September 2026",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUF9UUU1la2p3cTlVMmFNck5XM2cxMFBMNW8tXy1feGE4UXVNRmJseUtBQ1RLMDU5SW81VzNnOHZ3WUM0ZDdtNHBlWktPcXQ4aHZLd2h2bnZrakE0a2NLTWhzRGdNRm1qbWQxVFBoVjQ0ZHdYd1BNWTRPUFB3SXRLUGc3ZjcweUNXTDZsbkxvZER1aTdpelVBVmpFOA",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T06:39:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Energetica India Magazine",
   "cluster_key": "WAAREEENER|OTHER|228-almm-capacity-module-solar-surpasses",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.585890+00:00",
-  "last_updated": "2026-09-22T18:19:39.585920+00:00",
+  "last_updated": "2026-09-29T13:15:22.434807+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.585918+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:22.434785+00:00",
+      "change": "sources added",
+      "detail": "Energetica India Magazine"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:22.434802+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 5"
     }
   ],
   "price_reaction": {}

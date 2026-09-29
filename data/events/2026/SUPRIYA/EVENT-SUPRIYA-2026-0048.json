@@ -4,13 +4,14 @@
   "summary": "Steamhouse India wins Rs 311-cr project from Bulk Drug Park, Una, Himachal Pradesh Business Standard",
   "event_date": "2026-09-24",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "CONTRACT_WIN"
   ],
   "stocks": {
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
@@ -26,12 +27,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Order activity at a related company",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,7 +55,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to bulk drug park. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to bulk drug park, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -72,21 +79,46 @@
       "published": "2026-09-24T18:07:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Steamhouse India Limited Secures Rs 311 Crore EPC Mandate For 300 TPH Steam Project At Bulk Drug Park, Una",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOTzJOQm1GQmhpWGVmZ0JUWEVVOW9WRVUxVUxPYXZRMHNlZTl0LVBzd2FxUlk2bWcycm52Zjk4NVAxZ0F6UWR1eHRRbGc1d0dGS1dQd21XNDhCbnNsQl9QTktSNjhjN25Md0YzemZxMzJVeG1YRGZfTngtc2F6UUV5UEhWWmFDX2VKaVlDNWcyUDl6dHhudGtHZ1FlYkUwc0VQcS0xbDlHTFZfTnlXdE1MY0tZUV83TzdTUjlYMjExNmpHNUZJMUY3STg4b2hsczZycmJoVnNkNUFaYTNybkRJV283MHNteFB0eGxncmZB0gH7AUFVX3lxTE9vQmhYSVpWMVpUdTM4WHhoUlVzaF9pUVlaVFdDZVBSTFY0T0RReWVQSmZkWW5LWTR1YTJ3bW1QTDltVjJCYlROWGE0NGlzdkVyWEZnNy1RZXFjWkxlV2hFVkg2bXRBTktpMW10VFVJUnRwcktaX09nN0d0SmlnR3l3STY4bnBKbDNJTER2VGFGYVVSSFpKYmRyNC1BZWZ2ckxRNmxSQU5XejJOMEFZbUppWlU4RDFSbU5SRlppaDdCeUdxX1ZPZ0Y2RTBVYkhqUzdUdGlLVFUxSzVaaUxxdUJoQnBrX1ZRSXFlWE41dWJQSGVPcHVBQmNwOUZV",
+      "source_name": "outlookbusiness.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T06:51:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "SUPRIYA|ORDER_WIN|311-cr-bulk-india-project-steamhouse-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.836391+00:00",
-  "last_updated": "2026-09-25T12:56:10.836446+00:00",
+  "last_updated": "2026-09-29T13:15:23.260381+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.836443+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:23.260355+00:00",
+      "change": "sources added",
+      "detail": "outlookbusiness.com"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:23.260371+00:00",
+      "change": "categories added",
+      "detail": "CONTRACT_WIN"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:23.260377+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
     }
   ],
   "price_reaction": {}

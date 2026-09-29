@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "confidence": 0.62,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
@@ -27,19 +27,26 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "TOPCon",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
-        "+3 Strategically important competitor development",
-        "-2 Single unverified source"
+        "+3 Strategically important competitor development"
       ],
       "direction_reasons": [
         "a competitor (Vikram Solar) is doing well"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -49,7 +56,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Vikram Solar. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, technology exposure to Vikram Solar, and TOPCon. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -83,16 +90,46 @@
       "published": "2026-09-28T12:07:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vikram Solar secures 400 MW module supply order for agricultural solar projects in Maharashtra",
+      "url": "https://www.pv-magazine-india.com/2026/09/29/vikram-solar-secures-400-mw-module-supply-order-for-agricultural-solar-projects-in-maharashtra",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-29T04:33:44+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Vikram Solar Bags 400 MW Module Order for Maharashtra Solar",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWTlreTcwcHlSQ2JmcnR1UDBXTTdHbmUyYjVqODA4dkszdk1YWm1OR0ZVSUd3U3lZZGdqaFJ3b0pzSmUzUEswckNEU2R2OVcyTGFpcmlySy1LVFRKMTdOQU00aDlRNnVSc1hfZ1FKSXo2UmtzZGd0bEFyc1hMV0RFRU9ETjZJd3lWZHNhdlJB",
+      "source_name": "mvapulse.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T07:33:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Vikram Solar Secures 400 MW TOPCon Module Supply Order For Maharashtra Agri-Solar Projects",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNaV9zR3VCWDQ5UWtXSWFnUTNfeTdrUnY1RFZkSExLWldETzI3ZTdRU3E2UmxNLUxvdzZQeHlhRk9sbFlxSnk2cTBiYnE1MGExR2k2bHFpWHZiUlQ5dk10NFVfZWt6blZKeHJiajhNdjBGMUxmYkdfLWZfX2N4Mnp2bXlhUGVrcF9zZ1FZaWNRT0s5c09QN2dJcVRnY2VpZ2Y3UTBHV09xS2MwQnFreGdZQ1BpUzdlRzg",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T00:47:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|ORDER_WIN|400-n-type-solar-topcon-vikram-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.653087+00:00",
-  "last_updated": "2026-09-28T20:44:36.934120+00:00",
+  "last_updated": "2026-09-29T13:14:48.779200+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.653193+00:00",
@@ -108,6 +145,16 @@
       "timestamp": "2026-09-28T20:44:36.934114+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:48.779177+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, Sahi, mvapulse.com"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:48.779194+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 8"
     }
   ],
   "price_reaction": {}

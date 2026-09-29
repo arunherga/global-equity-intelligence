@@ -9,92 +9,76 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "deposit rates",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit rates, and deposits. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "depositors",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role; in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from depositors"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer, product exposure to depositors, and deposits. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -118,16 +102,26 @@
       "published": "2026-09-27T03:09:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Your bank FD rules are changing from October 1: What RBI has changed",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSUNqZFhqU0F5MHdIR1loRnc3VS12MEtTREVYUm9uSkhzN29hcXFNaUpmWWx3X2JuWFg5aUFMeTBtajl3VEgxMDVjYW9tYVRBdHM4WENLeXlZU1owU05PZXNIemRiMWVnSTgzS1VvU0I0OTNVbFExOXJvR01CNEQ2LUtNZDh6ZkY4YmVKRUtTNEhDaEVxQkYyZlUxSTBBcXBpSjh2dGIteGZ3WGQ0TW1oUW5ESHNMQdIBvAFBVV95cUxPSUpWd0F4SzN4R3VjSm5oUVNiMUdtZXNCcVhTemxHSXpXR0JfV1duZ2N6UmFQOU8tZHBsN2w5UVFGQkx0VDRjQUg4OFoxbGlFQzBwR1VDQXNJX194UE8ybllFMVVFRTJ5Nm5rOTVsaFhwWEdxSnE1TXhzb09MWlVma0pua3JaYmxlUzlrV2VXaDJ6VHoxX245QkE0RmFwd3dwM09PcVR1RWlIRnpFS0tLUmhxRGZBSHBpYXU2cA",
+      "source_name": "financialexpress.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T08:32:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "HDFCBANK+TMB|OTHER|bulk-changes-depositors-october-rbi-rules",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.673895+00:00",
-  "last_updated": "2026-09-27T12:16:09.560784+00:00",
+  "last_updated": "2026-09-29T13:15:33.019932+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.673950+00:00",
@@ -148,6 +142,21 @@
       "timestamp": "2026-09-27T12:16:09.560779+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:33.019904+00:00",
+      "change": "sources added",
+      "detail": "financialexpress.com"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:33.019921+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:33.019928+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

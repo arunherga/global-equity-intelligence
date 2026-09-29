@@ -43,6 +43,96 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +145,46 @@
       "published": "2026-09-23T07:05:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Top Solar Companies in India in 2026: Adani, NTPC, ReNew, Tata Power, JSW, Avaada and ACME",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VZbnRhdnNyOFZVNWh6cmt2T19YSG1nT0NadDBUQmI1QzA3RnNuYjQwV2lQRHBzVW53V0RhV0FuWFhPUWhpbnB6OV96cFN5QnNVLU5HQ05zay1vOFhJZ1Q4bmhuWjVlWmM4RlhLWDdlRGdVLUs4X3hTdWUzQlNYZzJtQ2xtY3JZWmhTZ2VfVnV2b3N0V01uMERmWlFtVFVVQjUtYjNjOTRUZXpkMjBCQkE2cDJnX1hldzhUMUEtaw",
+      "source_name": "GreentechLead",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-28T15:00:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Hans India",
   "cluster_key": "WAAREEENER|OTHER|companies-india-list-power-solar-ultimate",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.725787+00:00",
-  "last_updated": "2026-09-23T12:25:52.725839+00:00",
+  "last_updated": "2026-09-29T13:14:50.861489+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.725835+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:50.861461+00:00",
+      "change": "sources added",
+      "detail": "GreentechLead"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:50.861479+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:50.861484+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
     }
   ],
   "price_reaction": {}

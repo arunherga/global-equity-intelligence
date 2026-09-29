@@ -60,23 +60,14 @@
       "relationship": "DIRECT",
       "impact_score": 8,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.6,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "REPUTATION"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
@@ -84,7 +75,7 @@
         "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -98,7 +89,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -614,16 +605,46 @@
       "published": "2026-09-24T16:00:24+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares dip, Q2 results due October 17",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-shares-dip-q2-results-due-october-17/article71522892.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-29T09:36:56+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares dip, Q2 results due October 17",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRERfVkFjNFE5RUptWmdxazl0MDVBYXZPekVTY3hUS29sdkF6ZkdlVG5XQzBfR0NPOU54bzE3ckNsRnlRYS1STW1kNDR1VEJjdFU1ck1KeGRVWU9rM2JLM1p1N2JJRk96LXZianNhUElPQklSd051RFBFUGwzX1hHb2V1NzJEUG5ZcjdLcnNlZFdpWFpXQVpYTE1Hc09pV0V6V2VCenc5WUFCb2N3Q1BXSzZSckFhRzktXzMxaDRla290aEnSAcoBQVVfeXFMUEl6UzJua0lQVl8tMHVjZ05HZFdwaXlFdmVlLWZ2TVU5OFdvMllXcXdHejN2Y0RqbUVZMnM5X3RzUlVoX1hVMTBHVkEzMm5wSlNVU2NoalpYTHhCSnJNak9EWk41bWVBcFdLb1RSbExySkw2TG5KZF9Ockc2TjZkQ3RFbFRJWXNWcWhsN3JrTDRVcURkR0FGWW5xQ2VCNlZNdEFWV3V2MndxOEQ3bnFFTWxHS0VkOEFqQUVVUXp0dUxjWXdiUUhCd1Vidw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T07:16:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank stock slipped nearly 2% before Q2 results",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdjNESE9CaXhHQkhuaU54OC0zcEFDdVlLdlVNYzR3Y0JvaGh0SFgxaTY2Wm0wRE5MaDJOWmw1LVkyN1lPcVlRajQ2czNVdXVmRVR3UXFWMHBueEpfMktaTXBYdkVCYXZhUkdhYng5S3QwWVptR2MtTXBLcmQ4X21RQXNnaEliY2dYMHA2UEc5UGc5eUdYT2FQS2pHRHZiZ3c",
+      "source_name": "NewsBytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T08:06:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 19,
+  "article_count": 22,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-09-25T12:56:15.185570+00:00",
+  "last_updated": "2026-09-29T13:14:45.015969+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
@@ -689,6 +710,16 @@
       "timestamp": "2026-09-25T12:56:15.185564+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:45.015943+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, NewsBytes, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-09-29T13:14:45.015963+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

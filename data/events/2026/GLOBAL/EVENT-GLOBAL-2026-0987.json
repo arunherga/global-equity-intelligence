@@ -1,0 +1,152 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-0987",
+  "title": "India G-sec yield hits 2-year high at 7.18%; market sees 7.25% amid RBI sales, oil pressure",
+  "summary": "Global markets are adding to the pressure on Indian bonds. The US 10-year Treasury yield rose 5 basis points to 5.23%, while Brent crude climbed 4% to above $108 a barrel. Higher global yields increase the return investors demand from Indian debt, while elevated crude prices add to India's inflation and external-sector risks.",
+  "event_date": "2026-09-29",
+  "event_types": [
+    "DEBT",
+    "MACRO",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are debt, balance sheet, demand. Classified as debt.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "treasury",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and treasury. The parts of the business most likely touched are debt, balance sheet, demand. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India G-sec yield hits 2-year high at 7.18%; market sees 7.25% amid RBI sales, oil pressure",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/india-g-sec-yield-hits-2-year-high-at-7-18-market-sees-7-25-amid-rbi-sales-oil-pressure/134553415",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-29T00:34:09+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|DEBT+MACRO|2-year-g-sec-high-hits-india-yield",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-29T13:08:35.499548+00:00",
+  "last_updated": "2026-09-29T13:08:35.499616+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-29T13:08:35.499611+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

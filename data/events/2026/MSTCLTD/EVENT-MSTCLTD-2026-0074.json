@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0074",
+  "title": "Donald Trump announces Essar Group's $15 billion steel plant in Iowa, promises 1,750 jobs",
+  "summary": "The project will connect a newly opened $3 billion iron ore mine in Minnesota with a proposed $15 billion steel plant in Iowa.",
+  "event_date": "2026-09-29",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": "throughput commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "iron ore over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Donald Trump announces Essar Group's $15 billion steel plant in Iowa, promises 1,750 jobs",
+      "url": "https://infra.economictimes.indiatimes.com/news/construction/donald-trump-announces-essar-groups-15-billion-steel-plant-in-iowa-promises-1750-jobs/134554635",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-29T03:03:21+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETInfra",
+  "cluster_key": "MSTCLTD|OTHER|announce-donald-essar-group-steel-trump",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-29T13:08:35.505987+00:00",
+  "last_updated": "2026-09-29T13:08:35.506075+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-29T13:08:35.506070+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

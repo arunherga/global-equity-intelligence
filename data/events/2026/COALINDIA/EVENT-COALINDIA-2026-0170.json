@@ -41,8 +41,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -50,7 +50,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -61,55 +61,46 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -123,21 +114,61 @@
       "published": "2026-09-24T03:52:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Stock Update: Share Price Slips 1.37% Intraday",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdktoc21KRmJuV21HdHlfWmNGNWE1OHpmTnhxZVlpcFFCYVFpbUpVbDZUNFljOXFGYU9nTDRhaVhQMG9GSHNLZVJza20zbmxrTFhWZ004dWhudjctNWJQb2twMTN5NmRTcVJzMTh0WXhMUWMzYkxRTUJBMmpEWFhTMXVDdzZqay0zY2k0R1BaQkM3aGUtNEtMWlZLR2o0RVI2NW95SE9UcUHSAagBQVVfeXFMTnZLaHNtSkZibldtR3R5X1pjRjVhNTh6Zk54cWVZaXBRQmFRaW1KVWw2VDRZYzlxRmFPZ0w0YWlYUDBvRkhzS2VSc2ttM25sa0xYVmdNOHVobnY3LTViUG9rcDEzeTZkU3FSczE4dFl4TFFjM2JMUU1CQTJqRFhYUzF1Q3c2amstM2NpNEdQWkJDN2hlLTRLTFpWS0dqNEVSNjVveUhPVHFB",
+      "source_name": "latestly.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T04:00:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "State Bank of India Stock Update: Share Price Slips Amid Broader Market Weakness",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ0dSSk1JaXA5VHQ5bW5JQmFCXy12NFNnbjNxMjR2QUNUSnJLOGZHdWZQdzRpbW1Jd0IxRmowVGxrZncwTTQzWUppeU93SkM3Q3A2Ql9xUTA1d2xESm1tNFdWTlFFLUc1aWRrQ2J6cXVVdDg0QThwclVhaWdNWXhxZDZvamRRclVYdVgtWURFbTY1YjJSSHB5TEpzN3dwaVdDWmVtdkV2OU44aWxIZ1lNWkY2dTZLZkRFUmZpYm9Wb09LcTBP0gHKAUFVX3lxTE5LZVRqRTdjUGZabkt1MHlGTFBMbURIOTVoV3FwZXp2ZC1yMzRxalFIX3JFN0g2OUhZcE5sMEUtN2RWQ3pyVWhpN3BuNmY0Q2Qwd1JoNlJMdklsRDVWTUw5WGxRWENPSUNLLUJybElUYXhGeVNvMFcyYlVjQlV3eWdHaVhPMHZaZ3hxVVNKaUVuejM4dEVHVDZwclcwYnJUc3RiZ1habnFLaEdzdGFmOHJta3N0c0JpTTFzZ00xRllyRFBuTi1tckljU1E",
+      "source_name": "latestly.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T04:00:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "latestly.com",
   "cluster_key": "COALINDIA+HDFCBANK+TMB|OTHER|bank-icici-price-share-share-slips",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.425238+00:00",
-  "last_updated": "2026-09-24T12:02:44.425295+00:00",
+  "last_updated": "2026-09-29T13:15:08.224420+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.425291+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:07.983530+00:00",
+      "change": "sources added",
+      "detail": "latestly.com"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:07.983549+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:07.983555+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-09-29T13:15:08.224403+00:00",
+      "change": "sources added",
+      "detail": "latestly.com"
     }
   ],
   "price_reaction": {}
