@@ -65,11 +65,19 @@ sources:
     # trusted. Reddit's public JSON endpoints are the legitimate
     # substitute, and often the more candid one.
     #
-    # UNVERIFIED: no live call has been made from the build environment,
-    # which cannot reach reddit.com. Prove it with --check-sources before
-    # believing anything it reports.
+    # VERIFIED FAILING unauthenticated from GitHub Actions: the 2026-09-29
+    # run got "403 Client Error: Blocked" on all five attempts. Reddit
+    # blocks datacentre addresses for anonymous access. Register a script
+    # app at https://www.reddit.com/prefs/apps (free, one minute) and set
+    # REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET as repository secrets; a
+    # client-credentials token works from anywhere. Without them this falls
+    # back to the public endpoint, which works from a home connection.
     enabled: true
     base_url: https://www.reddit.com
+    oauth_url: https://oauth.reddit.com
+    token_url: https://www.reddit.com/api/v1/access_token
+    client_id_env: REDDIT_CLIENT_ID
+    client_secret_env: REDDIT_CLIENT_SECRET
     subreddits:
       - IndianSkincareAddicts
       - IndianHaircare

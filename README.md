@@ -423,6 +423,38 @@ mostly buys commentary on routine news.
 - No silent failure. A dead model, a bad key or a non-JSON answer drops that
   one analysis and is reported; the run still produces its report.
 
+## Consumer signal
+
+Customer reviews are a leading indicator that never mentions a ticker. What
+is collected, and what deliberately is not:
+
+- **Not collected:** Amazon, Flipkart, Nykaa, Myntra. Their terms prohibit
+  automated collection and they block datacentre addresses. A scraper would
+  break quietly and be trusted anyway.
+- **Collected:** Reddit, via `consumer_terms` on a company profile — forum
+  terms, not news terms. "Freshara" finds the company; "gherkins" finds a
+  thousand recipes.
+
+Reddit blocks *anonymous* requests from datacentre addresses: the 2026-09-29
+GitHub Actions run got `403 Client Error: Blocked` on all five attempts. A
+registered script app fixes it and is free:
+
+1. https://www.reddit.com/prefs/apps → **create another app** → type
+   **script**. Redirect URI can be `http://localhost:8080`.
+2. The id is under the app name; the secret is beside it.
+3. Add both as repository secrets, `REDDIT_CLIENT_ID` and
+   `REDDIT_CLIENT_SECRET`.
+
+Without them it falls back to the public endpoint, which works from a home
+connection, and the `reddit` diagnostic row says which mode it used.
+
+Consumer posts never become events. They split off before deduplication —
+near-duplicate collapsing is right for news and wrong here, since four people
+saying the same thing in a week is the signal, not a repetition to fold away.
+They are summarised in a **Consumer signal** section: volume, direction and
+the change since the last run, with a company flagged only when there was a
+real baseline to move from.
+
 ## Alerts
 
 The interface exists; only the console channel is implemented. Telegram,
@@ -444,7 +476,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-435 tests, all offline. The interesting ones are regressions:
+450 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

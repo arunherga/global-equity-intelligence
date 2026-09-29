@@ -306,6 +306,41 @@ class ReportBuilder:
         lines.append("")
         return lines
 
+    @staticmethod
+    def _failure_reason(diagnostic) -> str:
+        """The compact reason a source failed, for the front of the note.
+
+        Learned the hard way: the 2026-09-29 reddit row read "HTTP request
+        failed for https://www.reddit.com/r/IndianSkincare..." and truncated
+        exactly where the status code was. The answer - 403 Blocked - was
+        only findable by reading data/daily JSON. The status is the whole
+        message; the URL is the least informative part of it.
+
+        Deliberately narrow patterns. A loose "any three digits" rule read
+        the :443 in a hostname as an HTTP status, which is worse than saying
+        nothing: a confident wrong reason stops the reader looking further.
+        """
+        import re
+
+        status = re.compile(
+            r"\b(\d{3})\s+(?:Client|Server)\s+Error:\s*(.*?)(?:\s+for url|:|$)",
+            re.IGNORECASE,
+        )
+        for error in (getattr(diagnostic, "errors", None) or []):
+            text = str(error)
+            found = status.search(text)
+            if found:
+                phrase = found.group(2).strip().rstrip(".")
+                return f"{found.group(1)} {phrase}".strip()
+            lowered = text.lower()
+            if "timed out" in lowered or "timeout" in lowered:
+                return "timed out"
+            if "proxyerror" in lowered or "max retries exceeded" in lowered:
+                return "unreachable"
+            if "not valid json" in lowered or "expecting value" in lowered:
+                return "not JSON"
+        return ""
+
     def _consumer(self, result) -> List[str]:
         """Consumer chatter, kept visibly apart from the event sections.
 
@@ -583,7 +618,12 @@ class ReportBuilder:
         for diagnostic in result.diagnostics:
             status = "ok" if diagnostic.ok else "FAILED"
             note = (diagnostic.errors[0] if diagnostic.errors else diagnostic.note) or ""
-            note = note.replace("|", "/")[:120]
+            # Lead with the status. A truncated URL says nothing; "403
+            # Blocked" says everything, and is what the row is read for.
+            reason = self._failure_reason(diagnostic)
+            if reason and not note.startswith(reason):
+                note = f"{reason} — {note}"
+            note = note.replace("|", "/")[:150]
             lines.append(
                 f"| {diagnostic.source} | {status} | {diagnostic.attempted} | "
                 f"{diagnostic.articles} | {diagnostic.duration_s:.1f}s | {note} |"

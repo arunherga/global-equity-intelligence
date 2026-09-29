@@ -386,3 +386,86 @@ def test_the_consumer_section_sits_outside_the_event_sections(config, watchlist)
     assert "## Consumer signal" in sections
     consumer_at = sections.index("## Consumer signal")
     assert consumer_at > 0, "not the first thing a reader meets"
+
+
+# -- failure reasons on the face of the report ---------------------------
+#
+# The 2026-09-29 reddit row read "HTTP request failed for
+# https://www.reddit.com/r/IndianSkincare..." and truncated exactly where the
+# status code was. Finding the answer - 403 Blocked - meant reading the daily
+# JSON. The status is the message; the URL is the least informative part.
+
+
+def _diag(source="reddit", ok=False, errors=(), note=""):
+    from src.models import SourceDiagnostic
+
+    return SourceDiagnostic(
+        source=source, ok=ok, attempted=5, succeeded=0, articles=0,
+        note=note, errors=list(errors),
+    )
+
+
+def test_a_blocked_source_reports_its_status():
+    from src.report import ReportBuilder
+
+    diagnostic = _diag(errors=[
+        "'Freshara Picklz' in r/IndianSkincareAddicts: HTTP request failed for "
+        "https://www.reddit.com/r/IndianSkincareAddicts/search.json?q=x: "
+        "403 Client Error: Blocked for url: https://www.reddit.com/r/x/search.json?q=x"
+    ])
+
+    assert ReportBuilder._failure_reason(diagnostic) == "403 Blocked"
+
+
+def test_a_port_number_is_not_read_as_a_status():
+    """A confident wrong reason is worse than none: it stops the reader looking.
+
+    The first attempt read the :443 in a hostname as "HTTP 443".
+    """
+    from src.report import ReportBuilder
+
+    diagnostic = _diag(source="nse", errors=[
+        "session warm-up: HTTP request failed for https://www.nseindia.com: "
+        "HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out."
+    ])
+
+    reason = ReportBuilder._failure_reason(diagnostic)
+    assert reason == "timed out"
+    assert "443" not in reason
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("403 Client Error: Forbidden for url: https://x.test/a", "403 Forbidden"),
+    ("500 Server Error: Internal Server Error for url: https://x.test", "500 Internal Server Error"),
+    ("Caused by ProxyError('Unable to connect to proxy')", "unreachable"),
+    ("Max retries exceeded with url: /a", "unreachable"),
+    ("response was not valid JSON", "not JSON"),
+])
+def test_common_failures_get_a_short_reason(text, expected):
+    from src.report import ReportBuilder
+
+    assert ReportBuilder._failure_reason(_diag(errors=[text])) == expected
+
+
+def test_a_source_with_no_recognisable_error_gets_no_invented_reason():
+    from src.report import ReportBuilder
+
+    assert ReportBuilder._failure_reason(_diag(errors=["landed on news.google.com"])) == ""
+    assert ReportBuilder._failure_reason(_diag(errors=[])) == ""
+
+
+def test_the_reason_leads_the_diagnostics_row(config, watchlist):
+    from src.report import build_report
+
+    result = _result_with_consumer([])
+    result.diagnostics = [_diag(errors=[
+        "'x' in r/y: HTTP request failed for https://www.reddit.com/r/y/search.json"
+        "?q=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: "
+        "403 Client Error: Blocked for url: https://www.reddit.com/r/y/search.json"
+    ])]
+
+    report = build_report(result, config, watchlist)
+    row = next(l for l in report.splitlines() if l.startswith("| reddit |"))
+
+    assert "403 Blocked" in row, "the status must survive truncation"
+    assert row.index("403 Blocked") < row.index("reddit.com"), "and lead it"

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+
 import pytest
 
 from src.config import load_config
@@ -118,6 +120,22 @@ _CREDENTIAL_VALUE_PREFIXES = (
 )
 
 
+# A key ending in _env names the ENVIRONMENT VARIABLE that holds the
+# credential; it never holds the credential. That indirection is the whole
+# point - it is how a config can say "the Reddit secret lives in
+# REDDIT_CLIENT_SECRET" without containing it. Allowed, but only when the
+# value really is a variable name: UPPER_SNAKE_CASE, nothing else.
+_ENV_POINTER_VALUE = re.compile(r"^[A-Z][A-Z0-9_]{2,63}$")
+
+
+def _is_env_pointer(key: str, value) -> bool:
+    return (
+        str(key).lower().endswith("_env")
+        and isinstance(value, str)
+        and bool(_ENV_POINTER_VALUE.match(value))
+    )
+
+
 def _credential_findings(node, path="") -> list:
     """Every place in a config tree that looks like a stored credential."""
     found = []
@@ -125,6 +143,8 @@ def _credential_findings(node, path="") -> list:
         for key, value in node.items():
             name = str(key).lower()
             where = f"{path}.{key}" if path else str(key)
+            if _is_env_pointer(key, value):
+                continue
             if any(marker in name for marker in _CREDENTIAL_KEYS) or (
                 name in _CREDENTIAL_KEYS_EXACT
             ):
@@ -167,3 +187,15 @@ def test_the_secret_guard_actually_catches_one():
     # ...and does not fire on the legitimate settings beside them.
     assert not any("max_output_tokens" in f for f in findings)
     assert not any("provider" in f for f in findings)
+
+
+def test_the_env_pointer_carve_out_cannot_hide_a_real_secret():
+    """*_env may name a variable. It may not hold the value."""
+    assert _credential_findings({"reddit": {"client_secret_env": "REDDIT_CLIENT_SECRET"}}) == []
+
+    for smuggled in ("hunter2", "sk-live-abcdef", "Reddit Client Secret", "abc123def456"):
+        findings = _credential_findings({"reddit": {"client_secret_env": smuggled}})
+        assert findings, f"a value that is not a variable name must still be caught: {smuggled}"
+
+    # and a key without the _env suffix gets no leniency at all
+    assert _credential_findings({"reddit": {"client_secret": "REDDIT_CLIENT_SECRET"}})

@@ -55,6 +55,31 @@ class HttpClient:
             "Accept-Language": "en-IN,en;q=0.9",
         }
 
+    def post(self, url: str, **kwargs: Any) -> requests.Response:
+        """POST with the same timeout, retries and UA as :meth:`get`.
+
+        Added for OAuth token exchange. Kept deliberately narrow: sources
+        read, and the only thing they post is a request for permission to
+        read.
+        """
+        headers = self.default_headers()
+        headers.update(kwargs.pop("headers", {}) or {})
+        kwargs.setdefault("verify", self.verify)
+
+        last_error: Optional[Exception] = None
+        for attempt in range(self.retries + 1):
+            try:
+                response = self.session.post(
+                    url, headers=headers, timeout=self.timeout, **kwargs
+                )
+                response.raise_for_status()
+                return response
+            except requests.RequestException as exc:
+                last_error = exc
+                if attempt < self.retries:
+                    time.sleep(self.delay * (attempt + 1))
+        raise SourceError(f"HTTP POST failed for {url}: {last_error}") from last_error
+
     def get(self, url: str, **kwargs: Any) -> requests.Response:
         headers = self.default_headers()
         headers.update(kwargs.pop("headers", {}) or {})

@@ -519,3 +519,93 @@ def test_the_reddit_user_agent_identifies_the_project():
 
     assert "global-equity-intelligence" in USER_AGENT
     assert len(USER_AGENT) > 40
+
+
+# -- Reddit authentication ------------------------------------------------
+#
+# The 2026-09-29 run got "403 Client Error: Blocked" on all five attempts:
+# Reddit blocks anonymous requests from datacentre addresses. A registered
+# script app is free and works from anywhere.
+
+
+def test_without_credentials_it_stays_anonymous_and_says_so(monkeypatch):
+    monkeypatch.delenv("REDDIT_CLIENT_ID", raising=False)
+    monkeypatch.delenv("REDDIT_CLIENT_SECRET", raising=False)
+
+    source = _reddit()
+
+    assert not source.authenticated
+    assert source.base_url == "https://www.reddit.com"
+    assert source.access_token() is None
+    assert "Authorization" not in source.request_headers()
+
+
+def test_with_credentials_it_uses_the_oauth_host_and_bearer_token(monkeypatch):
+    monkeypatch.setenv("REDDIT_CLIENT_ID", "id-not-real")
+    monkeypatch.setenv("REDDIT_CLIENT_SECRET", "secret-not-real")
+
+    seen = {}
+
+    class _Token:
+        def json(self):
+            return {"access_token": "tok-123", "expires_in": 86400}
+
+    def fake_post(url, **kwargs):
+        seen.update(url=url, auth=kwargs.get("auth"), data=kwargs.get("data"))
+        return _Token()
+
+    source = _reddit()
+    monkeypatch.setattr(source.client, "post", fake_post)
+
+    assert source.authenticated
+    assert source.access_token() == "tok-123"
+    assert seen["url"].endswith("/api/v1/access_token")
+    assert seen["auth"] == ("id-not-real", "secret-not-real")
+    assert seen["data"] == {"grant_type": "client_credentials"}
+    assert source.request_headers()["Authorization"] == "bearer tok-123"
+    assert source.base_url == "https://oauth.reddit.com"
+    assert "oauth.reddit.com" in source.build_url("HexL")
+
+
+def test_the_token_is_fetched_once_per_run(monkeypatch):
+    monkeypatch.setenv("REDDIT_CLIENT_ID", "id")
+    monkeypatch.setenv("REDDIT_CLIENT_SECRET", "secret")
+    calls = {"n": 0}
+
+    class _Token:
+        def json(self):
+            calls["n"] += 1
+            return {"access_token": "tok"}
+
+    source = _reddit()
+    monkeypatch.setattr(source.client, "post", lambda url, **kw: _Token())
+
+    source.access_token(); source.access_token(); source.access_token()
+
+    assert calls["n"] == 1
+
+
+def test_a_failed_token_exchange_degrades_rather_than_ending_the_source(monkeypatch):
+    """Auth failing should cost the better endpoint, not the whole source."""
+    monkeypatch.setenv("REDDIT_CLIENT_ID", "id")
+    monkeypatch.setenv("REDDIT_CLIENT_SECRET", "wrong")
+
+    source = _reddit()
+
+    def explode(url, **kwargs):
+        raise RuntimeError("401 Unauthorized")
+
+    monkeypatch.setattr(source.client, "post", explode)
+
+    assert source.access_token() is None
+    assert source.base_url == "https://www.reddit.com", "falls back to public"
+    assert source.errors, "and the failure is recorded, not swallowed"
+
+
+def test_the_credential_variable_names_are_configurable(monkeypatch):
+    monkeypatch.setenv("MY_REDDIT_ID", "abc")
+    monkeypatch.setenv("MY_REDDIT_SECRET", "def")
+
+    source = _reddit(client_id_env="MY_REDDIT_ID", client_secret_env="MY_REDDIT_SECRET")
+
+    assert source.authenticated
