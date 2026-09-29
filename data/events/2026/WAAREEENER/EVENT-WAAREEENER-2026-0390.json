@@ -9,57 +9,42 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.56,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "PRODUCT",
-        "REVENUE",
-        "SUPPLY"
+        "REVENUE"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "SUPPLIER",
-          "term": "Tongwei",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "rooftop solar",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "solar modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 International market development",
-        "-1 Single source, unconfirmed"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from Tongwei"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, supplier exposure to Tongwei, and rooftop solar. The parts of the business most likely touched are product, revenue, supply. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -73,21 +58,41 @@
       "published": "2026-09-28T09:00:00+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Heleine launches new module for residential rooftop solar",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORk43NnZjb1RXSTd0cGEyT2YzbjZBaEFVcE91M3RpOXlwcThYc2plbE84bjU5Q2h4dUpnbk1DWmtYbXNWV2hoTmdwNWZ3c0JYUk9zUzllYjlqOWRZeTJPTzRScVZoNUVubEhNSnh0angzT0xURmJMN296REdhZER4N0JtT3B1MUlFY1Q5bFBETm8zSVgwNkJ2amRxMGN2Zw",
+      "source_name": "Solar Builder",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T18:31:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|2.0-fullx-g12r-48-launch-tnc-tongwei",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.343986+00:00",
-  "last_updated": "2026-09-28T14:12:11.344049+00:00",
+  "last_updated": "2026-09-29T18:47:32.909177+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.344044+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:32.909154+00:00",
+      "change": "sources added",
+      "detail": "Solar Builder"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:32.909172+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

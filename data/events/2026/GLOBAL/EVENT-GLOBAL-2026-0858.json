@@ -60,24 +60,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "MIXED",
-      "confidence": 0.27,
+      "confidence": 0.51,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "repo rate",
@@ -87,8 +80,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -96,9 +89,8 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -106,7 +98,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -150,16 +142,26 @@
       "published": "2026-09-29T11:20:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nomura projects terminal repo rate of 5.75% following Oct, Dec hikes",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOalNCZ3JRVHF0bEJsTXMzOWttNnN6cGdRdURKRlA2TU5ENExHVDQ5VDBLOHppVWg3UGRrdTR2UjRBT282aXl2b1UyNDZ5RTZFdzRBc1Q0aHhaNnNkM2RnSFgtT0h5MkNNN2ZSQmhYRGdaVlM0WjV2NjZPZnB6SW9XTkZlLVVELURnZ1U4U1A4dy0zeFdfOWVRU1VvN25Ud2tBQmtOSGh1X3p4YXM4UTdsUENteEc1WXdmb1NmT3U5QS11cTEtQkhVcFJLQ3ltQdIB0wFBVV95cUxQTG4xZThELThsMnNhNXVuZndqdVc0aHdzc05DclFDRXA3QUp6ZjRGQVZJcUNHNVk1UHVqdDYxeXBDN0lvc2tBMGRDUGx5Ui1yX3VrR1pjb0NqUDgzekpZUF8xcDRuWnNUc1l6SF80Q25SaVFIbkREZ3BYenhUcWNuMVpqbHFEMG1ZN3FHWlg3cXBrQkl6ZlgyLWFSZjI3Q24zU3kwU3UtUGN5Y0FMTEVMcTlhbk5xYTJSMGI3SW0yNFF3aGRyM3AzN1ZLQkV3YXdpZENB",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T13:02:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Outlook Money",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|bps-likely-raise-rate-rbi-repo",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.446287+00:00",
-  "last_updated": "2026-09-29T13:15:45.060745+00:00",
+  "last_updated": "2026-09-29T18:47:14.532713+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.446360+00:00",
@@ -170,6 +172,16 @@
       "timestamp": "2026-09-29T13:15:45.060727+00:00",
       "change": "sources added",
       "detail": "Press Trust of India"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:14.532689+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:14.532707+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

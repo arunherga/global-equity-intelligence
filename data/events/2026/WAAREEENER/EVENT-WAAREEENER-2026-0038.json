@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.62,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -25,36 +25,57 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "REGULATION",
+          "term": "Approved List of Models and Manufacturers",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of New and Renewable Energy",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
           "exposure_type": "PRODUCT",
-          "term": "solar modules",
+          "term": "solar cells",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
         },
         {
           "exposure_type": "INDUSTRY",
-          "term": "ALMM",
+          "term": "cell manufacturing",
           "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "weight": 1.5,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to ALMM, and solar modules. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its regulation exposure to ALMM, and Approved List of Models and Manufacturers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -68,21 +89,51 @@
       "published": "2026-09-18T07:52:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar Cell Capacity Under ALMM Rises to 36.9 GW",
+      "url": "https://www.mercomindia.com/solar-cell-capacity-under-almm-rises-to-36-9-gw",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-29T19:19:10+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Solar Cell Capacity Under ALMM Rises to 36.9 GW",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZzlYLXpXWDNCcURVNUo1dENETVZkTnZKMHBiQXA4SllKVFdISUx2WlVvNTlVSk52a20yLWljQXgtS2NKWkttcVVTcmIxOEVja3NZOVpYSGxIUHVRQUxjb1VuVEItN1NLTkJBNTJDeC1xQTZDa2RkNXJZZF9od2owdg",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T14:01:08+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Mercomindia.com",
   "cluster_key": "WAAREEENER|OTHER|capacity-daily-module-solar-under-wrap-up",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.594209+00:00",
-  "last_updated": "2026-09-22T18:19:39.594247+00:00",
+  "last_updated": "2026-09-29T18:47:01.552973+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.594238+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:01.552947+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:01.552967+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

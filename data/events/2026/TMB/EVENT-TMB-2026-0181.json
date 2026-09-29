@@ -11,15 +11,13 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "MIXED",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST",
-        "MARGIN",
-        "DEMAND"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -29,23 +27,14 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions",
         "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
@@ -59,7 +48,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -73,21 +62,41 @@
       "published": "2026-09-28T06:43:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price today: Why is gold near a 7-week low as oil prices rise? | Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTl85REdLYnBvU1JaQ2NEcVluR1lJTDh3UldDd2RLN0laWG5nSWFtamNXazZoZ0JfSkpzWFpsejFNSkk1bVRQSGlXMWpZWUs0R2pWSXhsZ3VlLVVBM2JnMm01QWxvUkJLaEl4cklfX0V4d0FXcEZfUmZHVlRvajFMZV84UFVWakJ0S2ZKR05FbnY2LTBrcG5RMzFZM012aEdvcGxwSERheVloWE9Pczg0LTdwZ2FQWmpiYnUzSXMwc0cyX3dfaTFhYk9GeG5FTWxjaEHSAdcBQVVfeXFMTmQ1Zmtva0E4M0xJcktCTUE4SGtxaGctR1FqUS1EbWkzNERxWTFMc3Qyc28tSnpJREZMR1ZzbzhlTHB3aEs4OFNITGZQLTdjclMxOWJPV1VYbWMzOXVnaThJSzExcTEzNmxLNjd5MWpLYV9WTW9hM3Y2eW5vbFRkVHRneDM4aHFKOGhoWkZicU92WnpSLTJFQks4UmdOa2NWXzFIeFpjdDdiOGZkSVByZEFUT094clNnQ1VkcjhQeDVfTENIeWlUMkQ1Vm1STmFRZ2pMN2EzT2M",
+      "source_name": "Hindustan Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T14:37:08+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "TMB|COMMODITY+INTEREST_RATE|bets-fed-gold-price-rate-hike-today",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.529821+00:00",
-  "last_updated": "2026-09-28T14:12:11.529890+00:00",
+  "last_updated": "2026-09-29T18:47:21.681844+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.529886+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:21.681820+00:00",
+      "change": "sources added",
+      "detail": "Hindustan Times"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:21.681838+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

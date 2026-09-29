@@ -7,20 +7,24 @@
     "COMMODITY",
     "INDUSTRY_DEMAND",
     "MACRO",
-    "OTHER"
+    "OTHER",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,31 +32,29 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down",
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are supply, geography, pricing. Classified as geopolitical.",
       "ai_analysis": null
     },
     "TMB": {
@@ -210,16 +212,26 @@
       "published": "2026-09-27T02:39:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Today, Sep 29: Gold, Silver Rates Fall Amid US-Iran Conflict; Check City-Wise Prices",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWWh2a0VxYk1odlEwQS1PamlJT2kwbk1GWHgwelFkdlFQWUxQSUVfTktOOExzUXJfbEl4T3FxMndISDFhWmJXVWgxc2hqN0ZWaEdHZUlUVkdRUXZBOWRVTjZoejNIaEdpaEFfS3I5UjFUSU9jTjJ5c0hlNW1hQ0o3aC1NSUxTUFVjTDZ4X284SUI3ekwtUUhSRmZSUQ",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T13:17:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
+  "article_count": 12,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-09-27T17:50:20.948942+00:00",
+  "last_updated": "2026-09-29T18:47:16.193034+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -265,6 +277,21 @@
       "timestamp": "2026-09-27T17:50:20.948925+00:00",
       "change": "sources added",
       "detail": "ClearTax, The Times of India"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:16.193002+00:00",
+      "change": "sources added",
+      "detail": "APAC Media"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:16.193021+00:00",
+      "change": "categories added",
+      "detail": "GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-09-29T18:47:16.193027+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}
