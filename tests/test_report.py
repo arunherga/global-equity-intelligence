@@ -469,3 +469,33 @@ def test_the_reason_leads_the_diagnostics_row(config, watchlist):
 
     assert "403 Blocked" in row, "the status must survive truncation"
     assert row.index("403 Blocked") < row.index("reddit.com"), "and lead it"
+
+
+def test_a_source_with_no_credentials_reads_as_skipped_not_failed(config, watchlist):
+    """The third diagnostic in this project to have said something untrue.
+
+    A source that needs a key nobody set has not broken. Calling it FAILED
+    devalues the word for the sources that really did break - and both
+    earlier cases cost an investigation to unpick.
+    """
+    from src.models import SourceDiagnostic
+    from src.report import build_report
+
+    result = _result_with_consumer([])
+    result.diagnostics = [
+        SourceDiagnostic(source="youtube", ok=False, skipped=True,
+                         note="skipped: YOUTUBE_API_KEY is not set; no quota spent"),
+        SourceDiagnostic(source="reddit", ok=False,
+                         errors=["403 Client Error: Blocked for url: https://reddit.com"]),
+    ]
+
+    report = build_report(result, config, watchlist)
+    rows = {l.split("|")[1].strip(): l for l in report.splitlines() if l.startswith("| youtube |") or l.startswith("| reddit |")}
+
+    assert "skipped" in rows["youtube"]
+    assert "FAILED" not in rows["youtube"]
+    assert "FAILED" in rows["reddit"]
+    # and the summary line names only the real failure
+    failed_line = next(l for l in report.splitlines() if l.startswith("Failed sources"))
+    assert "reddit" in failed_line
+    assert "youtube" not in failed_line

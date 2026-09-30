@@ -123,6 +123,9 @@ jobs:
           # a registered script app works from anywhere.
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          # Restricted to YouTube Data API v3, separate from the
+          # Gemini key so neither can be used for the other service.
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           set -o pipefail

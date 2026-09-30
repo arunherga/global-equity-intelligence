@@ -638,6 +638,8 @@ class SourceDiagnostic:
     duration_s: float = 0.0
     errors: List[str] = field(default_factory=list)
     note: str = ""
+    # Deliberately not run, rather than tried and failed.
+    skipped: bool = False
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

@@ -126,6 +126,9 @@ class SourceOutcome:
     duration_s: float = 0.0
     errors: List[str] = field(default_factory=list)
     notes: List[str] = field(default_factory=list)
+    # Deliberately not run (no credentials, disabled upstream). Distinct from
+    # ok=False, which means it tried and could not.
+    skipped: bool = False
 
 
 class Source:
@@ -184,6 +187,17 @@ class Source:
             self.errors.pop(0)
         LOG.warning("%s: %s", self.name, message)
 
+    def record_skipped(self, reason: str) -> None:
+        """This source is deliberately not running, and that is not a failure.
+
+        A source that needs a key nobody has set has not broken; reporting it
+        as FAILED is the third diagnostic in this project to say something
+        untrue, and each one has cost an investigation. "skipped" is a
+        distinct verdict so a real failure keeps its meaning.
+        """
+        self.skipped = True
+        self.record_note("skipped", reason)
+
     def record_note(self, context: str, detail: str) -> None:
         message = f"{context}: {detail}"
         self.notes.append(message)
@@ -193,6 +207,7 @@ class Source:
         return SourceOutcome(
             name=self.name,
             ok=articles > 0 or (self.attempted > 0 and not self.errors),
+            skipped=getattr(self, "skipped", False),
             attempted=self.attempted,
             succeeded=self.succeeded,
             articles=articles,

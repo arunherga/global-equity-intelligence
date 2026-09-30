@@ -30,6 +30,7 @@ from .nse import NseSource
 from .reddit import RedditSource
 from .regulators import RegulatorSource
 from .rss import RssSource
+from .youtube import YouTubeSource
 
 __all__ = [
     "CollectionContext",
@@ -51,6 +52,7 @@ __all__ = [
     "RegulatorSource",
     "GovernmentSource",
     "RedditSource",
+    "YouTubeSource",
 ]
 
 # Config key -> factory. Order is the order sources are polled.
@@ -79,6 +81,9 @@ SOURCE_FACTORIES: Dict[str, Callable[[Config, HttpClient, List[str]], Source]] =
     # already picked its primary source from the official feeds above.
     "reddit": lambda config, client, tickers: RedditSource(
         config.section("sources").get("reddit", {}), client
+    ),
+    "youtube": lambda config, client, tickers: YouTubeSource(
+        config.section("sources").get("youtube", {}), client
     ),
 }
 

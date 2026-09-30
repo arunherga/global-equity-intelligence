@@ -609,3 +609,148 @@ def test_the_credential_variable_names_are_configurable(monkeypatch):
     source = _reddit(client_id_env="MY_REDDIT_ID", client_secret_env="MY_REDDIT_SECRET")
 
     assert source.authenticated
+
+
+# -- YouTube --------------------------------------------------------------
+#
+# Key-authenticated, so unlike the anonymous Reddit endpoint it works from a
+# GitHub Actions runner. The constraint is quota: Google allocates a project
+# 100 search.list calls a DAY, not 10,000 units to spend freely.
+
+
+def _youtube(**config):
+    from src.sources.base import HttpClient
+    from src.sources.youtube import YouTubeSource
+
+    settings = {"max_queries_per_run": 8, "max_results_per_query": 10}
+    settings.update(config)
+    return YouTubeSource(settings, HttpClient())
+
+
+def _video(video_id="abc123", title="Ravel PRO shampoo honest review",
+           description="Used it for 6 weeks.", channel="HairTalk India",
+           published="2026-09-28T09:00:00Z"):
+    return {
+        "id": {"kind": "youtube#video", "videoId": video_id},
+        "snippet": {"title": title, "description": description,
+                    "channelTitle": channel, "publishedAt": published},
+    }
+
+
+def test_youtube_parses_search_results(monkeypatch):
+    from src.models import SourceType
+
+    articles = _youtube().parse({"items": [_video()]}, ticker="RAVEL", term="Ravel PRO")
+
+    assert len(articles) == 1
+    article = articles[0]
+    assert article.url == "https://www.youtube.com/watch?v=abc123"
+    assert article.source_name == "HairTalk India"
+    assert article.source_domain == "youtube.com"
+    assert article.source_type == SourceType.SOCIAL_MEDIA
+    assert article.raw["consumer"] is True
+    assert article.tickers_hint == ["RAVEL"]
+    assert article.published is not None
+
+
+def test_html_entities_in_titles_are_decoded():
+    """YouTube returns &amp; and &#39; in snippet text."""
+    articles = _youtube().parse(
+        {"items": [_video(title="Ravel PRO &amp; Nykaa: what&#39;s better?")]},
+        ticker="RAVEL", term="x",
+    )
+
+    assert articles[0].title == "Ravel PRO & Nykaa: what's better?"
+
+
+def test_playlists_and_channels_in_the_results_are_skipped():
+    """type=video is requested, but the shape must not be trusted blindly."""
+    payload = {"items": [
+        {"id": {"kind": "youtube#channel", "channelId": "UC1"}, "snippet": {"title": "A channel"}},
+        {"id": "not-a-dict", "snippet": {"title": "Malformed"}},
+        _video(),
+    ]}
+
+    articles = _youtube().parse(payload, ticker="RAVEL", term="x")
+
+    assert [a.raw["video_id"] for a in articles] == ["abc123"]
+
+
+def test_a_malformed_payload_returns_nothing_rather_than_raising():
+    source = _youtube()
+
+    for payload in ({}, {"items": None}, {"items": [None, {}, {"snippet": None}]}):
+        assert source.parse(payload, ticker="RAVEL", term="x") == []
+
+
+def test_no_key_means_no_requests_and_no_quota_spent(monkeypatch, watchlist):
+    """Skipping must cost nothing - quota is the scarce resource here."""
+    from src.sources.base import CollectionContext
+
+    monkeypatch.delenv("YOUTUBE_API_KEY", raising=False)
+
+    def explode(*args, **kwargs):
+        raise AssertionError("no request may be made without a key")
+
+    source = _youtube()
+    monkeypatch.setattr(source.client, "get", explode)
+    context = CollectionContext(
+        profiles=list(watchlist), queries={}, since_days=2,
+        max_articles_per_query=10, dry_run=False,
+    )
+
+    assert source.fetch(context) == []
+    assert source.attempted == 0, "an attempt is a spent search call"
+    assert any("not set" in str(n) for n in source.notes), "and says why"
+
+
+def test_the_daily_allocation_cannot_be_blown_by_config():
+    """100 calls a day is the whole budget; a config typo must not eat it."""
+    from src.sources.youtube import HARD_QUERY_CEILING
+
+    reckless = _youtube(max_queries_per_run=5000)
+
+    assert reckless.max_queries == HARD_QUERY_CEILING
+    assert HARD_QUERY_CEILING <= 20
+
+
+def test_the_query_budget_is_enforced_before_requests_are_made(monkeypatch, watchlist):
+    from src.sources.base import CollectionContext
+
+    monkeypatch.setenv("YOUTUBE_API_KEY", "test-key-not-real")
+    calls = {"n": 0}
+
+    class _Empty:
+        def json(self):
+            return {"items": []}
+
+    source = _youtube(max_queries_per_run=3)
+
+    def counted(url, **kwargs):
+        calls["n"] += 1
+        return _Empty()
+
+    monkeypatch.setattr(source.client, "get", counted)
+    monkeypatch.setattr(source.client, "sleep", lambda: None)
+    context = CollectionContext(
+        profiles=list(watchlist), queries={}, since_days=2,
+        max_articles_per_query=10, dry_run=False,
+    )
+
+    source.fetch(context)
+
+    assert calls["n"] == 3, "stopped at the cap, not at the end of the term list"
+
+
+def test_the_search_window_and_region_reach_the_url(monkeypatch):
+    from datetime import datetime, timezone
+
+    monkeypatch.setenv("YOUTUBE_API_KEY", "test-key-not-real")
+    url = _youtube(window_days=14).build_url(
+        "Ravel PRO", now=datetime(2026, 9, 30, tzinfo=timezone.utc)
+    )
+
+    assert "publishedAfter=2026-09-16T00%3A00%3A00Z" in url or "publishedAfter=2026-09-16T00:00:00Z" in url
+    assert "regionCode=IN" in url
+    assert "type=video" in url
+    assert "q=Ravel+PRO" in url

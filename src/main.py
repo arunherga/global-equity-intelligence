@@ -134,6 +134,7 @@ class Pipeline:
                     duration_s=outcome.duration_s,
                     errors=outcome.errors[:5],
                     note="; ".join(outcome.notes[:3]),
+                    skipped=outcome.skipped,
                 )
             )
             LOG.info(

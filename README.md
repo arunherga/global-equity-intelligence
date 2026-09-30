@@ -431,9 +431,25 @@ is collected, and what deliberately is not:
 - **Not collected:** Amazon, Flipkart, Nykaa, Myntra. Their terms prohibit
   automated collection and they block datacentre addresses. A scraper would
   break quietly and be trusted anyway.
-- **Collected:** Reddit, via `consumer_terms` on a company profile — forum
-  terms, not news terms. "Freshara" finds the company; "gherkins" finds a
-  thousand recipes.
+- **Collected:** Reddit and YouTube, via `consumer_terms` on a company
+  profile — forum terms, not news terms. "Freshara" finds the company;
+  "gherkins" finds a thousand recipes.
+
+YouTube needs an API key and is the more dependable of the two from CI,
+because it is authenticated rather than anonymous:
+
+1. In Google Cloud, enable **YouTube Data API v3** for your project
+   (APIs & Services → Library). It must be enabled *before* you can
+   restrict a key to it.
+2. Create a key restricted to that API only — separate from the Gemini
+   key, so neither can be used for the other service.
+3. Add it as the repository secret `YOUTUBE_API_KEY`.
+
+Quota is the real constraint. Google allocates a project **100
+`search.list` calls a day**, not 10,000 units to spend freely, so the
+per-run cap is low and is clamped in code no matter what config says.
+Without a key the source reports **skipped**, not failed, and spends
+nothing.
 
 Reddit blocks *anonymous* requests from datacentre addresses: the 2026-09-29
 GitHub Actions run got `403 Client Error: Blocked` on all five attempts. A
@@ -476,7 +492,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-461 tests, all offline. The interesting ones are regressions:
+469 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context

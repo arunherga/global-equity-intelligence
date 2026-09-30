@@ -616,7 +616,13 @@ class ReportBuilder:
             "| --- | --- | ---: | ---: | ---: | --- |",
         ]
         for diagnostic in result.diagnostics:
-            status = "ok" if diagnostic.ok else "FAILED"
+            # "skipped" is its own verdict: a source with no credentials has
+            # not failed, and calling it FAILED devalues the word for the
+            # sources that really did break.
+            if getattr(diagnostic, "skipped", False):
+                status = "skipped"
+            else:
+                status = "ok" if diagnostic.ok else "FAILED"
             note = (diagnostic.errors[0] if diagnostic.errors else diagnostic.note) or ""
             # Lead with the status. A truncated URL says nothing; "403
             # Blocked" says everything, and is what the row is read for.
@@ -629,7 +635,10 @@ class ReportBuilder:
                 f"{diagnostic.articles} | {diagnostic.duration_s:.1f}s | {note} |"
             )
         lines.append("")
-        failed = [d for d in result.diagnostics if not d.ok]
+        failed = [
+            d for d in result.diagnostics
+            if not d.ok and not getattr(d, "skipped", False)
+        ]
         if failed:
             lines += [
                 "Failed sources in this run: "

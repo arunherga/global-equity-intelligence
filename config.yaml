@@ -90,6 +90,28 @@ sources:
     # A post nobody engaged with is one person, not a signal.
     min_score: 2
 
+  youtube:
+    # Video reviews - where Indian personal-care buying decisions are
+    # actually made, and equipment buyers too. Unlike reddit this is
+    # key-authenticated, so it works from a GitHub Actions runner.
+    #
+    # Quota is the real constraint: Google allocates a project 100
+    # search.list calls per DAY, not 10,000 units to spend freely. The
+    # per-run cap is low on purpose and is clamped in code regardless of
+    # what is set here.
+    #
+    # Create a key restricted to YouTube Data API v3 (separate from the
+    # Gemini key), enable the API in the same Cloud project, and set
+    # YOUTUBE_API_KEY. Without it this source skips without spending
+    # anything. UNVERIFIED until --check-sources says otherwise.
+    enabled: true
+    api_key_env: YOUTUBE_API_KEY
+    max_queries_per_run: 8
+    max_results_per_query: 10
+    window_days: 14
+    region_code: IN
+    relevance_language: en
+
 feeds:
   general:
     # Business Standard removed: 403 from GitHub Actions runners on every

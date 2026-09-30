@@ -77,6 +77,7 @@ def probe_sources(
                 duration_s=outcome.duration_s,
                 errors=outcome.errors[:3],
                 note="; ".join(outcome.notes[:2]),
+                skipped=outcome.skipped,
             )
         )
     return results
@@ -92,7 +93,10 @@ def check_sources(config: Config, profiles: Sequence[CompanyProfile]) -> int:
     print(f"  {'source'.ljust(width)}  {'status':>8}  {'tried':>5}  {'items':>5}  {'time':>6}  detail")
     print("  " + "-" * (width + 42))
     for result in results:
-        status = "VERIFIED" if result.ok else "FAILED"
+        if getattr(result, "skipped", False):
+            status = "SKIPPED"
+        else:
+            status = "VERIFIED" if result.ok else "FAILED"
         detail = (result.errors[0] if result.errors else result.note)[:90]
         print(
             f"  {result.source.ljust(width)}  {status:>8}  {result.attempted:>5}  "
@@ -100,10 +104,16 @@ def check_sources(config: Config, profiles: Sequence[CompanyProfile]) -> int:
         )
 
     verified = [r.source for r in results if r.ok]
-    failed = [r.source for r in results if not r.ok]
+    failed = [
+        r.source for r in results
+        if not r.ok and not getattr(r, "skipped", False)
+    ]
+    skipped = [r.source for r in results if getattr(r, "skipped", False)]
     print()
     print(f"  verified: {', '.join(verified) or 'none'}")
     print(f"  failed:   {', '.join(failed) or 'none'}")
+    if skipped:
+        print(f"  skipped:  {', '.join(skipped)} (not configured; nothing was tried)")
     print()
     print("  Record this table in README.md. Do not claim a source works "
           "until it appears as VERIFIED on the machine that will run it.")
