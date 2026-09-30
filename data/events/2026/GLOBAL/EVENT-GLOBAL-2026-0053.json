@@ -56,11 +56,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.4,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -82,8 +82,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -91,14 +91,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "direct relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Axis Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -192,16 +191,36 @@
       "published": "2026-09-29T14:10:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Apple Pay Reportedly Set to Launch in India With Just One Bank Partner",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZWGgzaUVYUjFiUkllbWZncXU5Vjl1cmo0MXQ0NHVsUmh0anpBdFVXSldBcUU4cDVZQ0h2UF9JYjR5Zk5kREhLZnZ0d0x3WDkxSjgzMXpkRHE5T2NvbmxJSTVZY2RmTG9PLVNQRWxXcm0",
+      "source_name": "AndroidPure",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T23:24:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Apple prepares to launch Apple Pay in India with Axis Bank — TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcWp4T3Vxdkllbm1JaENhVmtsWnBrb2pnUWpjMklpb2c2Rm9WUGxlNU5Pclo2VHkwMXdoS19pbzhrQ3JiLXZ1d25QdFlDR3JKa3JrY1M5a0dEOXlheGdwWmVtYXZZbXVPQ1BrRjl0TUs0Z3B1bnNOV2c0d2FfblM1X21RN1ZLOWc4ZzNUMWdONHpOX3FBRTV3Y3N3",
+      "source_name": "UA.NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T19:52:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 11,
   "source_count": 1,
   "primary_source": "Investing.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|all-apple-india-launch-pay-set",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.565520+00:00",
-  "last_updated": "2026-09-29T18:47:19.077584+00:00",
+  "last_updated": "2026-09-30T12:53:28.248491+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.565585+00:00",
@@ -212,6 +231,16 @@
       "timestamp": "2026-09-29T18:47:19.077565+00:00",
       "change": "sources added",
       "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:28.248468+00:00",
+      "change": "sources added",
+      "detail": "AndroidPure, UA.NEWS"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:28.248486+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

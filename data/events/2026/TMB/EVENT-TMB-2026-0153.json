@@ -9,26 +9,17 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Karur Vysya Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +27,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Karur Vysya Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +47,41 @@
       "published": "2026-09-27T08:58:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Ltd is Rated Buy",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcW5aYmJzY01aS0tYY3FsNW00MFBTSjg0TUdUNHVsbDVTZUZnZno4LVRzOGVMSTE4T3h5a0JJc09tYXVFYW96OFhUdldBQkxTaElmbklWeVVGVjU5N0gtSHVWcEJmdTZldUZCNEhFTk9wZTZVM2pRNlhNQjNCVGYxeVY1MnZiZ0NXV3llbVNwMU1selVSRzkxVFVqRWYzVlZ3SERBRGVR",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T04:57:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "TMB|OTHER|bank-buy-karur-ltd.-rated-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.750205+00:00",
-  "last_updated": "2026-09-27T12:15:56.750256+00:00",
+  "last_updated": "2026-09-30T12:53:55.505559+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.750251+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:55.505535+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:55.505554+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 5"
     }
   ],
   "price_reaction": {}

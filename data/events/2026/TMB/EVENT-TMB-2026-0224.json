@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-TMB-2026-0224",
+  "title": "Under-the-counter cash gold sales boom in India as high prices and taxes bite",
+  "summary": "High gold prices, combined with higher taxes, are encouraging more buyers to engage in cash transactions. This trend allows buyers to save significantly compared to official market prices based on reported cases. As import levies have doubled, the informal gold market is thriving, especially in the lead-up to wedding season. Retail customers are discovering varying discounts, influencing their purchasing decisions significantly.",
+  "event_date": "2026-09-30",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": "throughput commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Under-the-counter cash gold sales boom in India as high prices and taxes bite",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/under-the-counter-cash-gold-sales-boom-in-india-as-high-prices-and-taxes-bite/134577729",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-30T02:33:42+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETRetail",
+  "cluster_key": "TMB|COMMODITY|boom-cash-gold-india-sale-under-the-counter",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-09-30T12:51:04.820656+00:00",
+  "last_updated": "2026-09-30T12:51:04.820716+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-30T12:51:04.820711+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

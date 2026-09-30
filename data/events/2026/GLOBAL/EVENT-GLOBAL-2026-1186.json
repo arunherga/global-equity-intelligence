@@ -1,0 +1,203 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1186",
+  "title": "Thermal coal prices in China hit a three-year high — OilPrice",
+  "summary": "Thermal coal prices in China hit a three-year high — OilPrice UA.NEWS",
+  "event_date": "2026-09-30",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "thermal coal prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "thermal coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (thermal coal prices) is the subject of the headline",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "thermal coal prices is a selling price and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to thermal coal prices, and thermal coal. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and China. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "China's Thermal Coal Prices Surge to Three-Year High",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOendZU1JkZ1hqVG4tcnVrZ1pZd0VEa0Q0c0dtMUd2cGZBTTgxVi1GVkxYazN1Wk5CWlBNNVd3N2trZkVTc05Oc0pLekZnSkpicDlLWlpmanE0UHBqZks4b2lZN2lJcXYwc193cmJYYUxhSnVCVmdsNTN6djhUMV90U1dSdnlYMUJyS0xMUmFRSDFDYWJEOFdfVmE1b3E4dEowbTdzajhKaW03cVHSAbABQVVfeXFMTTBjQkxmVGNLazIySHhZNzE0dVV6b3ZZSzNkTTZkYnhxR0VkdHpCY2d1alRMUlEtaVp0d3BfZVZGOUdSMjRVUENOcE1qSkJKcmRtbVE1SUhEVXYtXzc5RWJfM0lONG01Rml6X0xza1JXVmxVeEFKdTliWUgwb2NGckZnTUd4M1czU0F2Mk4wSVprNE9NWmdmQkk0X1doZWF6YUVpR0ljamcwUVh0OGpUOUE",
+      "source_name": "Crude Oil Prices Today | OilPrice.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Thermal coal prices in China hit a three-year high — OilPrice",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMUVlcEVDNWs5YzEzT3ZYazFJaGpEcU9jaVpzVWg4S1ZsaTVTOWc5V3hRZEkwd0xNeGc1TzFwbDBkWGM5SWNNSzNlbFZLV1NaVFBrTm1iak1fcnNJVm1jZ0E0dE9lZlVkMGxqZHJpLXcwSzE2bG1maUstVW1xRVhFaFMwTlV0UHdjak1ydnJrOFlvc1h5Q3lsX0RqS3pBd0lObF91SGlHRDBqVmFNTXc",
+      "source_name": "UA.NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T10:44:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Crude Oil Prices Today | OilPrice.com",
+  "cluster_key": "COALINDIA+RAVEL+SUPRIYA|COMMODITY|china-coal-hit-price-thermal-three-year",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-30T12:51:05.201594+00:00",
+  "last_updated": "2026-09-30T12:51:05.201660+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-30T12:51:05.201655+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,17 +4,20 @@
   "summary": "Sensex, Nifty, Share Prices Highlights: Equity benchmark indices Sensex and Nifty ended lower for the second day on Tuesday as elevated crude oil prices triggered by uncertainty over the West Asia situation and foreign fund outflows weighed on investor sentiment.",
   "event_date": "2026-09-29",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "DEBT"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "POSITIVE",
-      "confidence": 0.48,
+      "confidence": 0.54,
       "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
         "PRICING",
         "INPUT_COST"
       ],
@@ -31,14 +34,15 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "-5 Market commentary rather than a company development",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-5 Market commentary rather than a company development"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -48,20 +52,21 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, pricing. Classified as debt.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "POSITIVE",
-      "confidence": 0.48,
+      "confidence": 0.54,
       "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
         "PRICING",
-        "INPUT_COST",
-        "EXPORTS"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -71,27 +76,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "input commodity"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "Asia",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 Names a key geography for this company",
-        "-5 Market commentary rather than a company development",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-5 Market commentary rather than a company development"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -101,7 +99,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Asia. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are debt, balance sheet, pricing. Classified as debt.",
       "ai_analysis": null
     }
   },
@@ -115,21 +113,61 @@
       "published": "2026-09-29T11:12:26+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Sensex today | Stock Market Highlights: Stock markets fall for 3rd day; Nifty down 96 points, Sensex slips to 72,480",
+      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-30-september-2026/article71523523.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-30T10:58:42+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Stock Market Today: Sensex Falls 48 Points, Nifty Slips 95 Points on FII Outflow, Crude Oil Prices",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzlPOXI0RHJNcWxNa2cwcjZZeVh1THZFUUdZUW5jREV6LURhYU1Lb3hFa1RXRjk4THFvdFRDMDh2ZlY4d1U0NU0yeVFmVERKaFRLZ2UxMTBJME0tc0hIVWZJZXE0ZXNHbVZLZEJnTkttMXFBOTV1YUo3dmltMEVCLTg3RUUydEZiUWd0VkFVdE14VmRseWZLSl9TSQ",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T11:38:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY|highlights-market-markets-sensex-share-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.490351+00:00",
-  "last_updated": "2026-09-29T13:08:35.490423+00:00",
+  "last_updated": "2026-09-30T12:53:14.750845+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.490418+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.750804+00:00",
+      "change": "sources added",
+      "detail": "APAC Media, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.750822+00:00",
+      "change": "categories added",
+      "detail": "DEBT"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.750830+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.750836+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 1 -> 2"
     }
   ],
   "price_reaction": {}

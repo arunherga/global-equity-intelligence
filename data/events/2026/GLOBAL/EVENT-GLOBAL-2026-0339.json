@@ -54,11 +54,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -72,15 +72,23 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "PRODUCT",
+          "term": "credit cards",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -88,13 +96,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Axis Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -128,16 +136,26 @@
       "published": "2026-09-25T11:04:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Breaking: Apple Pay arrives in India; enabled with Axis Bank Credit Cards as of September 30, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQLXM1bnpQYXVSeDY3QUpSM1JoUGJNMm1EdHNwaVZSY0h3ZlBhSk5pRnBJU0VKTUp4QU9lU0l5dGZUZEw1WlhSOV9DRWtvRngxOWZPeXdkYVNDT3Y5c1JyVzJQTmpDLUVMRWFTeHdHYVlQb05KcUpBbHRPRElibEctLU1XSGhLTEtlcWFjSWJwdU5SQjJMemVLcFF0c3dyR3JfLXJWRW9OLXhsUmhwOHBSZ3RVRlV3dWFZVmtsR01RdFUxUQ",
+      "source_name": "Live From A Lounge",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T01:02:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "HDFCBANK+TMB|OTHER|appointment-axis-bank-director-independent-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.663926+00:00",
-  "last_updated": "2026-09-25T12:56:47.297008+00:00",
+  "last_updated": "2026-09-30T12:53:38.188118+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.663976+00:00",
@@ -148,6 +166,16 @@
       "timestamp": "2026-09-25T12:56:47.296972+00:00",
       "change": "sources added",
       "detail": "HDFC Sky"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:38.188094+00:00",
+      "change": "sources added",
+      "detail": "Live From A Lounge"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:38.188112+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

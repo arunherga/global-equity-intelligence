@@ -1,0 +1,124 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1166",
+  "title": "Japan: Nippon Steel raises steel prices by $32/t amid cost pressures",
+  "summary": "Japan: Nippon Steel raises steel prices by $32/t amid cost pressures BigMint",
+  "event_date": "2026-09-30",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Japan",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and Japan. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Japan: Nippon Steel raises steel prices by $32/t amid cost pressures",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMkdtaTRGZFRtbmNPS2JsQUdHdkxtaHVlZ0JWcVRUVzZKVmFtRGMydEo2RTZ0TFZPSVhuTGFqbGw1MG5YNHRrcVhpWmh6N1Y1MVBqMVFGZEZ6YlRCaEpKWXdxdG1HQzRoUnJwLUFSWmM4ZnRRbHg4NXo5OHVhLW5leXF5SWs0aGZHc3BGWkJsUU5LXzRyZERsd2lENWxUbi04YWk2anpjQ0VLTkZsU2FiLXhB",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T07:25:50+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "JKIPL+MSTCLTD|OTHER|japan-nippon-price-raise-steel-steel",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-30T12:51:05.105106+00:00",
+  "last_updated": "2026-09-30T12:51:05.105164+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-30T12:51:05.105159+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

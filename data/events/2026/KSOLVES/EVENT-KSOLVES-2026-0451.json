@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0451",
+  "title": "Salesforce stock stood at EUR 346.70, plus 0.20 percent on EUR 346.00 - ad-hoc-news.de",
+  "summary": "Salesforce stock stood at EUR 346.70, plus 0.20 percent on EUR 346.00 ad-hoc-news.de",
+  "event_date": "2026-09-30",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce stock stood at EUR 346.70, plus 0.20 percent on EUR 346.00 - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ2pvdjBzX1JvdXE1S3g3MFhUeWtNeG14SVRSNy1HRVZIUHpadlBEMmVNT1BYV1pmRzhjREFyQjQ0ZFBaSnhSZEh3WFU1ZzE1V1NiUHlqYm9uT2QzVVZPRmU3aUFHS2VneEx2ZkVzbFNwclBIeTVIakEtMzBWaHF1enJEOFpxQnJVZTBCZXZEYzFqOXgxTnJGM09QVk1lTDg3UUlGQUl0ZFNaT1VMXzFBTVdMME9tazVPNmVfemR5NDI5bXJ5bWRraUFmVQ",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T08:31:43+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ad-hoc-news.de",
+  "cluster_key": "KSOLVES|OTHER|346.70-eur-plus-salesforce-share-stood",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-09-30T12:51:05.139174+00:00",
+  "last_updated": "2026-09-30T12:51:05.139239+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-09-30T12:51:05.139234+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

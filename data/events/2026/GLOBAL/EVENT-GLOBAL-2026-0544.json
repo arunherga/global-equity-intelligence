@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.5,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -37,14 +37,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -105,21 +105,51 @@
       "published": "2026-09-25T03:51:27+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "RBI likely intervenes to support rupee near 96/USD mark, traders say",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rbi-likely-intervenes-to-support-rupee-near-96usd-mark-traders-say/article71526964.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-09-30T07:17:27+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Indian central bank likely intervenes to support rupee near 96/USD mark, traders say",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQLXJxUS1xUjlMdWhtVUJXT0Nid1VSdFFmeVZoS1NUVmlQVGk3TlNGSUlpZExUVXRpNElZaS1CTWd3S3VVWGZjcHlxelFDLW1WNjBOQzNCcFF4aXA4cldEbFpLSEZSQ1F0d3dqeXZUbnVsS2x6Y0JsRURhamhUVGdrY3FILUdNNnJyalhtNUF3d3FnRnhicGZJUWhtZGt6V3l6QjdMa2YteWk0N2l4VlE3UW93UlV6elI1ODZWSURZQ0xJLV9TTnJiTkdlYUdvRjI0akE",
+      "source_name": "marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T05:16:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|before-likely-market-open-rbi-steps",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.630019+00:00",
-  "last_updated": "2026-09-25T12:56:10.630072+00:00",
+  "last_updated": "2026-09-30T12:53:14.004558+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.630068+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.004531+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets, marketscreener.com"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:14.004549+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 2"
     }
   ],
   "price_reaction": {}

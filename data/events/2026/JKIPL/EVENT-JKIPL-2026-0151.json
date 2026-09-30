@@ -10,8 +10,8 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
@@ -33,6 +33,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Caterpillar)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -70,21 +71,41 @@
       "published": "2026-09-29T17:10:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Caterpillar acquires major Wisconsin CAT dealership group",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX0htQVNhVjhYWDY4MkEwb3ZRcExlXzRrOXhhai03QkRZUVBSLWxPYXhyeEwyUl9yOTN3NHVfM0xjZ3hjYmhaY29mcE0wNnRjVFdHaVZhdjhYdGpFSEFVVDNIbWUwbFR0M0dsNjgzYkl2UWZKR05tNVdTSk80ZHBPTjNUUEE5cVJHZ29jaDB6cHFBUFdn",
+      "source_name": "The Business Journals",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-29T19:54:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Caterpillar investor",
   "cluster_key": "JKIPL|ACQUISITION|acquire-agreement-caterpillar-enters-fabick-inc.",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-29T18:45:53.150604+00:00",
-  "last_updated": "2026-09-29T18:45:53.150658+00:00",
+  "last_updated": "2026-09-30T12:53:28.342633+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T18:45:53.150655+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:28.342614+00:00",
+      "change": "sources added",
+      "detail": "The Business Journals"
+    },
+    {
+      "timestamp": "2026-09-30T12:53:28.342628+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 6 -> 8"
     }
   ],
   "price_reaction": {}
