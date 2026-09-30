@@ -237,6 +237,34 @@ MARKET_CHATTER_MARKERS = (
     "gainers and losers", "market live", "opening bell", "share price target",
 )
 
+# Pages that list many companies and carry no development about any of them.
+# A share-price ticker page names dozens of firms; treating a body mention on
+# one as news about that company is how "REGAAL Share Price Update: Rs 99.15"
+# scored 9/15 for both HDFC Bank and Freshara on 2026-09-29.
+LISTING_PAGE_MARKERS = (
+    "share price update", "share price and valuation", "stock price, news, quote",
+    "share price live", "price update:", "stocks in focus", "stocks in news",
+    "stocks to buy or sell", "stock picks today", "stock recommendations",
+    "sector stocks today", "sector stocks fall", "sector stocks rise",
+    "banking sector stocks", "brokerages' radar", "on brokerages radar",
+    "analysts recommend", "best stocks", "stock list", "movers and shakers",
+    "most active stocks", "52-week high", "52 week high", "52-week low",
+    "hits upper circuit", "market cap rs", "share price target",
+    "money market operations", "weekly wisdom", "stock in green", "stocks today,",
+)
+
+# Hiring and examination notices. A bank advertising a vacancy is not a
+# development in its business: "TMB Product Specialist Recruitment 2026 -
+# Apply Online" scored 9/15.
+RECRUITMENT_MARKERS = (
+    "recruitment", "apply online", "vacancy", "vacancies", "notification 2026",
+    "notification 2027", "admit card", "merit list", "cut-off", "cut off marks",
+    "answer key", "exam date", "result 2026", "result 2027", "hall ticket",
+    "apprentice", "walk-in interview", "walk in interview", "job openings",
+    "hiring for", "eligibility criteria", "how to apply", "selection process",
+    "shortly at", "check merit",
+)
+
 OFFICIAL_MARKERS = (
     "announces", "announcement", "intimation", "disclosure", "board meeting",
     "outcome of board meeting", "press release", "regulation 30", "filing",
@@ -254,6 +282,8 @@ class Classification:
     official_language: bool = False
     routine_release: bool = False
     market_chatter: bool = False
+    listing_page: bool = False
+    recruitment: bool = False
 
     @property
     def primary(self) -> EventCategory:
@@ -317,6 +347,8 @@ class RuleClassifier:
             official_language=article.is_official or contains_any(text, OFFICIAL_MARKERS),
             routine_release=contains_any(headline, ROUTINE_RELEASE_MARKERS),
             market_chatter=contains_any(headline, MARKET_CHATTER_MARKERS),
+            listing_page=contains_any(headline, LISTING_PAGE_MARKERS),
+            recruitment=contains_any(headline, RECRUITMENT_MARKERS),
         )
 
 

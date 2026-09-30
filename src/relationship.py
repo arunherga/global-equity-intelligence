@@ -140,6 +140,20 @@ def determine_relationship(
     reasons: List[str] = []
 
     # ---- 1. The company itself ---------------------------------------
+    #
+    # A name in the body is not evidence the article is about the company.
+    # On 2026-09-29 that alone made Coal India the DIRECT subject of "Essar
+    # to build $18-billion US steel plant in Iowa" and of a Dubai media
+    # company's funding round, both at 9/15, and made one share-price ticker
+    # page a DIRECT event for HDFC Bank and Freshara at once.
+    #
+    # "Any exposure corroborates it" was the first attempt and is too weak:
+    # an article about coal always carries coal exposures, so it would
+    # corroborate every passing mention of Coal India. What actually
+    # distinguishes the two cases is whether the company is the subject, and
+    # the honest reading of a passing mention is that it adds nothing to the
+    # relationship - the exposures decide it instead.
+    passing_mention = False
     if entity is not None:
         if entity.strength == "subsidiary":
             reasons.append(f"Subsidiary named: {entity.alias}")
@@ -147,18 +161,37 @@ def determine_relationship(
             reasons.append(f"Company named: {entity.alias}")
         if entity.in_headline:
             reasons.append("Company appears in the headline")
-        return StockLink(
-            ticker=profile.ticker,
-            relationship=Relationship.DIRECT,
-            entity=entity,
-            exposures=exposures,
-            reasons=reasons,
-            evidence_weight=weight + 4.0,
-            international=_is_international(article, profile, exposures),
+
+        if entity.in_headline or article.is_official or entity.strength == "subsidiary":
+            return StockLink(
+                ticker=profile.ticker,
+                relationship=Relationship.DIRECT,
+                entity=entity,
+                exposures=exposures,
+                reasons=reasons,
+                evidence_weight=weight + 4.0,
+                international=_is_international(article, profile, exposures),
+            )
+
+        passing_mention = True
+        reasons.append(
+            "Named only in passing: not in the headline and not an official "
+            "filing, so the exposures decide how close this is"
         )
 
     if not exposures:
+        if passing_mention:
+            return StockLink(
+                ticker=profile.ticker,
+                relationship=Relationship.WEAK,
+                entity=entity,
+                exposures=[],
+                reasons=reasons,
+                evidence_weight=1.0,
+                international=False,
+            )
         return None
+
 
     # ---- 2. Start from the strongest exposure hint --------------------
     relationship = Relationship.strongest([e.relationship for e in exposures])
@@ -258,10 +291,19 @@ def determine_relationship(
         relationship = Relationship.WEAK
         reasons.append("Thin evidence")
 
+    # A listing page carries exposures for everything it lists - the REGAAL
+    # ticker page matched HDFC Bank on "BSE" and "NSE" alone - so it must not
+    # promote a passing mention into a real connection.
+    if passing_mention and getattr(classification, "listing_page", False):
+        relationship = Relationship.WEAK
+        reasons.append("Share-price listing page: the mention is the only link")
+
     return StockLink(
         ticker=profile.ticker,
         relationship=relationship,
-        entity=None,
+        # Keep the entity when the company really was named: the report can
+        # then say "named in passing" rather than silently dropping it.
+        entity=entity if passing_mention else None,
         exposures=exposures,
         reasons=reasons,
         evidence_weight=weight,

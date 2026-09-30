@@ -393,6 +393,15 @@ def score_impact(data: ScoreInput) -> Tuple[int, List[str]]:
     if data.classification.market_chatter:
         add(-5, "Market commentary rather than a company development")
 
+    if data.classification.listing_page:
+        # A page listing dozens of companies says nothing about any one of
+        # them. Larger than the other penalties because the mention itself is
+        # the only evidence there ever was.
+        add(-7, "Share-price listing or roundup page, not a development")
+
+    if data.classification.recruitment:
+        add(-7, "Recruitment or examination notice, not a development")
+
     if data.is_update:
         add(-2, "Story already reported; this is a repeat")
 

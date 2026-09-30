@@ -104,3 +104,117 @@ def test_relationship_ordering():
     assert Relationship.strongest(
         [Relationship.WEAK, Relationship.SECTOR, Relationship.DIRECT]
     ) is Relationship.DIRECT
+
+
+# -- DIRECT needs corroboration ------------------------------------------
+#
+# Every case here is from the 2026-09-29 report, where a company name in the
+# body alone made the article a DIRECT company event. The replay used to
+# verify the fix could not reproduce them, because stored event sources carry
+# no summary - so they are reproduced here with the body text the live run
+# saw.
+
+
+def _link(watchlist, ticker, title, summary="", official=False):
+    from src.classify import classify_article
+    from src.exposure_match import match_exposures
+    from src.entity_match import match_entity
+    from src.matching import fold
+    from src.models import Article
+    from src.relationship import determine_relationship
+
+    article = Article(
+        title=title, summary=summary, url="https://example.test/a",
+        source_domain="example.test", is_official=official,
+    )
+    profile = watchlist.get(ticker)
+    text, headline = fold(article.text), fold(article.title)
+    entity, _ = match_entity(article, profile, text, headline)
+    exposure = match_exposures(article, profile, text, headline)
+    classification = classify_article(article)
+    return entity, determine_relationship(
+        article, profile, entity, exposure if exposure.matches else None, classification
+    )
+
+
+def test_a_name_in_the_body_alone_is_not_a_direct_company_event(watchlist):
+    """"Essar to build $18-billion US steel plant in Iowa" was 9/15 DIRECT
+    for Coal India, on the strength of a passing mention.
+
+    It is not dropped - a steel plant does touch coal demand - but the
+    passing mention no longer makes Coal India the subject of it.
+    """
+    from src.models import Relationship
+
+    entity, link = _link(
+        watchlist, "COALINDIA",
+        "Essar to build $18-billion US steel plant in Iowa",
+        summary="Related coverage: Coal India, NTPC and SAIL were unchanged.",
+    )
+
+    assert entity is not None, "the name is still found"
+    assert link.relationship != Relationship.DIRECT
+    assert any("passing" in r for r in link.reasons)
+
+
+def test_a_headline_mention_is_still_direct(watchlist):
+    from src.models import Relationship
+
+    _, link = _link(
+        watchlist, "COALINDIA",
+        "Coal India and HURL sign MoU for a coal gasification urea plant",
+    )
+
+    assert link.relationship == Relationship.DIRECT
+
+
+def test_a_body_mention_with_real_exposures_is_kept_not_dropped(watchlist):
+    """The fix must not lose "three bidders, including X, won contracts".
+
+    It is no longer labelled DIRECT - the company is not the subject - but
+    it still reaches the report on the strength of what it is exposed to.
+    """
+    from src.models import Relationship
+
+    _, link = _link(
+        watchlist, "COALINDIA",
+        "Three miners win captive coal blocks in the latest auction round",
+        summary=(
+            "Coal India was among the bidders. The blocks will supply thermal "
+            "coal to power producers including NTPC, easing coal imports."
+        ),
+    )
+
+    assert link is not None
+    assert link.relationship != Relationship.WEAK, "still worth reporting"
+    assert link.relationship != Relationship.DIRECT, "but not its own story"
+
+
+def test_an_official_filing_is_direct_even_without_a_headline_mention(watchlist):
+    from src.models import Relationship
+
+    _, link = _link(
+        watchlist, "COALINDIA", "Outcome of board meeting",
+        summary="The board of Coal India approved the interim dividend.",
+        official=True,
+    )
+
+    assert link.relationship == Relationship.DIRECT
+
+
+def test_a_listing_page_cannot_corroborate_itself(watchlist):
+    """REGAAL Share Price Update was 9/15 DIRECT for HDFC Bank AND Freshara.
+
+    It carried exposures - "BSE" and "NSE" - because a ticker page mentions
+    the exchanges. Those cannot be evidence that the page is about any one of
+    the dozens of companies it lists.
+    """
+    from src.models import Relationship
+
+    _, link = _link(
+        watchlist, "HDFCBANK",
+        "REGAAL Share Price Update: Rs 99.15, Market Cap Rs 861.34 Cr",
+        summary="BSE and NSE data. Other movers: HDFC Bank, ITC, Infosys, Wipro.",
+    )
+
+    assert link.relationship == Relationship.WEAK

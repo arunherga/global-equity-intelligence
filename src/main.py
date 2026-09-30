@@ -23,6 +23,7 @@ and the run continues.
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
 import json
 import logging
 import sys
@@ -234,9 +235,17 @@ class Pipeline:
                 if current is None or link.relationship.rank > current[1].relationship.rank:
                     best_links[link.ticker] = (matched, link)
 
+        # Suppressive flags belong to the event, not to whichever article
+        # happened to win on relationship strength. An 18-article cluster
+        # about an RBI liquidity auction scored 10/15 because the one article
+        # chosen for scoring was the single headline that did not say "VRRR",
+        # so the routine-release penalty never applied.
+        event_flags = _cluster_flags(cluster)
+
         for ticker, (matched, link) in best_links.items():
             profile = self.watchlist.get(ticker)
             classification = matched.classification or Classification()
+            classification = replace(classification, **event_flags)
             data = ScoreInput(
                 event=event,
                 link=link,
@@ -588,6 +597,26 @@ class Pipeline:
 # --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
+
+
+# Flags a cluster carries as a whole. Majority rather than any: one routine
+# wire item inside a real story must not suppress the story, and one
+# ordinary-looking headline inside a routine release must not rescue it.
+_CLUSTER_FLAGS = ("routine_release", "market_chatter", "listing_page", "recruitment")
+
+
+def _cluster_flags(cluster) -> Dict[str, bool]:
+    articles = list(getattr(cluster, "articles", []) or [])
+    if not articles:
+        return {}
+    flags: Dict[str, bool] = {}
+    for name in _CLUSTER_FLAGS:
+        votes = sum(
+            1 for m in articles
+            if getattr(m.classification, name, False)
+        )
+        flags[name] = votes * 2 >= len(articles)
+    return flags
 
 
 def _split_consumer(articles: Sequence[Article]) -> Tuple[List[Article], List[Article]]:

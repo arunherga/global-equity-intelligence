@@ -244,3 +244,117 @@ def test_real_policy_news_is_not_caught_by_the_noise_filters(watchlist):
                 url="https://x.test/1"))
     assert not result.routine_release
     assert not result.market_chatter
+
+
+# -- event-level flags ----------------------------------------------------
+#
+# An 18-article cluster about an RBI overnight liquidity auction scored 10/15
+# on 2026-09-29. "variable rate reverse repo" was already in the routine
+# markers and the classifier did set the flag - but scoring used the
+# classification of whichever single article won on relationship strength,
+# and that one headline said only "RBI absorbs Rs 71,971 crore liquidity
+# from banks". The penalty never applied.
+
+
+def _matched(title, links=()):
+    from src.classify import classify_article
+    from src.event_cluster import MatchedArticle
+    from src.models import Article
+
+    article = Article(title=title, url=f"https://x.test/{abs(hash(title))}",
+                      source_domain="x.test")
+    return MatchedArticle(
+        article=article, links=list(links), classification=classify_article(article)
+    )
+
+
+def test_cluster_flags_follow_the_majority():
+    from src.main import _cluster_flags
+
+    class _Cluster:
+        articles = [
+            _matched("RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction"),
+            _matched("Money Market Operations as on September 21, 2026"),
+            _matched("RBI absorbs Rs 71,971 cr via overnight VRRR auction"),
+            _matched("RBI absorbs Rs 71,971 crore liquidity from banks"),
+        ]
+
+    assert _cluster_flags(_Cluster())["routine_release"] is True
+
+
+def test_one_routine_item_does_not_suppress_a_real_story():
+    """Majority, not any: a wire snippet inside a real story must not bury it."""
+    from src.main import _cluster_flags
+
+    class _Cluster:
+        articles = [
+            _matched("Coal India and HURL sign MoU for a urea plant"),
+            _matched("Coal India signs non-binding MoU with Hindustan Urvarak"),
+            _matched("Coal India, HURL to explore coal gasification"),
+            _matched("Money Market Operations as on September 21, 2026"),
+        ]
+
+    assert _cluster_flags(_Cluster())["routine_release"] is False
+
+
+def test_an_empty_cluster_produces_no_flags():
+    from src.main import _cluster_flags
+
+    class _Cluster:
+        articles = []
+
+    assert _cluster_flags(_Cluster()) == {}
+
+
+# -- the new penalties ----------------------------------------------------
+
+
+def _score(title, relationship=None, exposures=(), ticker="TMB"):
+    from src.classify import classify_article
+    from src.impact import ScoreInput, score_impact
+    from datetime import date
+    from src.models import Article, Event, Relationship
+    from src.relationship import StockLink
+
+    from src.profiles import load_watchlist
+
+    profile = load_watchlist().get(ticker)
+    article = Article(title=title, url="https://x.test/a", source_domain="x.test")
+    link = StockLink(
+        ticker=ticker,
+        relationship=relationship or Relationship.DIRECT,
+        entity=None, exposures=list(exposures), reasons=[], evidence_weight=4.0,
+    )
+    data = ScoreInput(
+        event=Event(event_id="E-1", title=title, event_date=date(2026, 9, 29)),
+        link=link, classification=classify_article(article),
+        profile=profile, text="", headline=title,
+        source_types=(), independent_sources=1,
+    )
+    return score_impact(data)
+
+
+def test_a_recruitment_notice_is_penalised():
+    """"TMB Product Specialist Recruitment 2026 - Apply Online" scored 9/15."""
+    score, reasons = _score("TMB Product Specialist Recruitment 2026 - Apply Online")
+
+    assert any("Recruitment" in r for r in reasons)
+    assert score < 5, f"must fall below the report threshold, got {score}"
+
+
+def test_a_share_price_listing_page_is_penalised():
+    score, reasons = _score("REGAAL Share Price Update: Rs 99.15, Market Cap Rs 861.34 Cr")
+
+    assert any("listing" in r.lower() for r in reasons)
+    assert score < 5, f"must fall below the report threshold, got {score}"
+
+
+def test_a_real_development_keeps_its_score():
+    """The penalties must not touch genuine company news."""
+    score, reasons = _score(
+        "Coal India and HURL sign MoU to explore a coal gasification urea plant",
+        ticker="COALINDIA",
+    )
+
+    assert not any("listing" in r.lower() or "Recruitment" in r for r in reasons)
+    assert score >= 5
