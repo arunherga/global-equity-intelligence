@@ -83,9 +83,32 @@ def probe_sources(
     return results
 
 
+_LABELS = {
+    "verified": "VERIFIED",
+    "no_data": "NO DATA",
+    "skipped": "SKIPPED",
+    "failed": "FAILED",
+}
+
+
 def check_sources(config: Config, profiles: Sequence[CompanyProfile]) -> int:
     """CLI entry point for ``--check-sources``. Returns a shell exit code."""
     results = probe_sources(config, profiles)
+
+    def _state(result) -> str:
+        if getattr(result, "skipped", False):
+            return "skipped"
+        if result.articles > 0:
+            return "verified"
+        if result.attempted > 0 and not result.errors:
+            # It was reached and answered; it just had nothing to give. For
+            # an obscure brand on YouTube that is the correct answer. For
+            # google_news it means something is wrong. The table must not
+            # decide which - it must report what happened and let the reader
+            # judge. Calling this FAILED is the fourth diagnostic in this
+            # project to have claimed something untrue.
+            return "no_data"
+        return "failed"
 
     width = max((len(r.source) for r in results), default=10)
     print()
@@ -93,25 +116,24 @@ def check_sources(config: Config, profiles: Sequence[CompanyProfile]) -> int:
     print(f"  {'source'.ljust(width)}  {'status':>8}  {'tried':>5}  {'items':>5}  {'time':>6}  detail")
     print("  " + "-" * (width + 42))
     for result in results:
-        if getattr(result, "skipped", False):
-            status = "SKIPPED"
-        else:
-            status = "VERIFIED" if result.ok else "FAILED"
+        status = _LABELS[_state(result)]
         detail = (result.errors[0] if result.errors else result.note)[:90]
         print(
             f"  {result.source.ljust(width)}  {status:>8}  {result.attempted:>5}  "
             f"{result.articles:>5}  {result.duration_s:>5.1f}s  {detail}"
         )
 
-    verified = [r.source for r in results if r.ok]
-    failed = [
-        r.source for r in results
-        if not r.ok and not getattr(r, "skipped", False)
-    ]
-    skipped = [r.source for r in results if getattr(r, "skipped", False)]
+    states = {r.source: _state(r) for r in results}
+    failed = [s for s, v in states.items() if v == "failed"]
+    skipped = [s for s, v in states.items() if v == "skipped"]
+    no_data = [s for s, v in states.items() if v == "no_data"]
+    verified = [s for s, v in states.items() if v == "verified"]
     print()
     print(f"  verified: {', '.join(verified) or 'none'}")
     print(f"  failed:   {', '.join(failed) or 'none'}")
+    if no_data:
+        print(f"  no data:  {', '.join(no_data)} (reached and answered, but returned "
+              "nothing - correct for a rare search term, suspicious for a news feed)")
     if skipped:
         print(f"  skipped:  {', '.join(skipped)} (not configured; nothing was tried)")
     print()

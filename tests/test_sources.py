@@ -754,3 +754,54 @@ def test_the_search_window_and_region_reach_the_url(monkeypatch):
     assert "regionCode=IN" in url
     assert "type=video" in url
     assert "q=Ravel+PRO" in url
+
+
+# -- "reached it, it returned nothing" is not a failure -------------------
+
+
+def _outcome(source, attempted=0, articles=0, errors=(), skipped=False):
+    from src.models import SourceDiagnostic
+
+    return SourceDiagnostic(
+        source=source, ok=articles > 0, attempted=attempted, succeeded=attempted,
+        articles=articles, errors=list(errors), skipped=skipped,
+    )
+
+
+def test_the_four_verdicts_are_distinct():
+    """YouTube searched two obscure brand names, answered, and had nothing.
+
+    Reporting that as FAILED is the fourth diagnostic in this project to
+    claim something untrue, and each earlier one cost an investigation.
+    """
+    from src.diagnostics import _LABELS, check_sources  # noqa: F401
+    import src.diagnostics as diagnostics
+
+    # _state lives inside check_sources; exercise it through the labels map
+    assert set(_LABELS) == {"verified", "no_data", "skipped", "failed"}
+    assert _LABELS["no_data"] == "NO DATA"
+
+
+def test_check_sources_separates_no_data_from_failure(capsys, monkeypatch):
+    import src.diagnostics as diagnostics
+
+    results = [
+        _outcome("youtube", attempted=2, articles=0),            # answered, empty
+        _outcome("google_news", attempted=5, articles=40),       # working
+        _outcome("reddit", attempted=5, errors=["403 Blocked"]), # broken
+        _outcome("gdelt", skipped=True),                         # not configured
+    ]
+    monkeypatch.setattr(diagnostics, "probe_sources", lambda config, profiles: results)
+
+    exit_code = diagnostics.check_sources(config=None, profiles=[])
+
+    out = capsys.readouterr().out
+    assert exit_code == 0, "one working source means the check passes"
+    assert "NO DATA" in out and "FAILED" in out and "SKIPPED" in out
+    assert "verified: google_news" in out
+    assert "failed:   reddit" in out
+    assert "no data:  youtube" in out
+    assert "skipped:  gdelt" in out
+    # the important one: youtube is not counted as a failure
+    failed_line = next(l for l in out.splitlines() if l.strip().startswith("failed:"))
+    assert "youtube" not in failed_line
