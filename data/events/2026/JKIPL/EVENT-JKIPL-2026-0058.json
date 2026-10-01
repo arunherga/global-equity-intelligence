@@ -4,20 +4,23 @@
   "summary": "Komatsu Opens New Edmonton Parts Distribution Center Equipment World",
   "event_date": "2026-09-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "CAPACITY_EXPANSION"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -28,21 +31,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Development at a known counterparty (Komatsu)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from Komatsu"
+        "funding mix for the expansion",
+        "commissioning timeline",
+        "demand visibility for the new capacity",
+        "effect on return ratios"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Komatsu. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to Komatsu. The parts of the business most likely touched are capacity, balance sheet, supply. Classified as capacity expansion.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,46 @@
       "published": "2026-09-23T16:49:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Komatsu Opens Edmonton Parts Center, Doubles Canadian Warehouse Capacity",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPTVlQVWRxUVhseGdPRElpaEkzc09uamR4ZWYyaVlEUE9VMXJXT054U2xtNVZ1M182QWk2b0MtQWdjaW80UTZCR3Q2WkhTblhMV3BlRC1Pak8yTHdUcFhRNUpNLWR4bGdvS3o5ek5LWDBGVko5MTliOUQtRU5CZXV1V1B5RFpBbk9kSUJfRkhkb3VLWjZXNHpsaFI5aTVOamRyMEVPUlRJdXNnME5WUTFUaHlsREdIamhsZnNKM1llemNsWXlkejRKcWpSM0lpNHJWVjZCRFl1VXdiUWZaalVtQVJHSEhxSE9iNHUxOQ",
+      "source_name": "constructionequipment.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T17:53:07+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Equipment World",
   "cluster_key": "JKIPL|OTHER|center-distribution-edmonton-komatsu-opens-parts",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.297004+00:00",
-  "last_updated": "2026-09-24T12:02:44.297058+00:00",
+  "last_updated": "2026-10-01T13:36:36.313148+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.297054+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:36.313123+00:00",
+      "change": "sources added",
+      "detail": "constructionequipment.com"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:36.313137+00:00",
+      "change": "categories added",
+      "detail": "CAPACITY_EXPANSION"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:36.313143+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 4"
     }
   ],
   "price_reaction": {}

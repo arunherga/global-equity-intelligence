@@ -1,0 +1,166 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1313",
+  "title": "Interest Rate Pressures Push Silver Lower in September, with Losses of 4.7% in Egypt and 10.2% Globally",
+  "summary": "Interest Rate Pressures Push Silver Lower in September, with Losses of 4.7% in Egypt and 10.2% Globally Sada Elbalad English",
+  "event_date": "2026-10-01",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.36,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.36,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Interest Rate Pressures Push Silver Lower in September, with Losses of 4.7% in Egypt and 10.2% Globally",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd1VlYms5WTF2UTJpaTBrU1dRTUJKbGxuTElzbWp3aWtYX0FKTDFDOUZTZEZlSlZaVGlPZ2dMdFBfQlBfZ1ZlZTRnS0dyQTBXNHZDVXkwRzQzejB6NG1heGs2R1pHR09VbmM1blVyb21hRGt2S2MwelVNcURpY1pWaDBKc3BKcmNBRXhpanJKRDlrOUhsZzdZZzRoeW9jX1FQSVhxQWJkM2tjdExMRXVWMldac2h6UQ",
+      "source_name": "Sada Elbalad English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T12:42:07+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Sada Elbalad English",
+  "cluster_key": "HDFCBANK+TMB+WAAREEENER|INTEREST_RATE|fall-interest-pressures-push-rate-silver",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-01T13:34:27.810290+00:00",
+  "last_updated": "2026-10-01T13:34:27.810356+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-01T13:34:27.810352+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

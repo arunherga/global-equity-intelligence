@@ -13,7 +13,7 @@
       "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.39,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -27,7 +27,6 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,12 +35,49 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
       "why_it_matters": "This is industry-level news rather than company news via its industry exposure to credit growth. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +91,96 @@
       "published": "2026-09-30T12:40:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank credit to industry rises 18% in August, medium-industry lending jumps 32%: RBI",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/bank-credit-to-industry-rises-18-in-august-medium-industry-lending-jumps-32-rbi/134595795",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-09-30T13:31:55+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Bank credit to industry grows 18.2% in August, up from 7% last year: RBI",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPYWttMUFPLWhYUVRZOGYwOTMybnhSMGpyRzVxRHE2akE5QkIxWHhFb2xDVm1RS0luMWZVWkNlX3UyN19USzVHSVJ6OUFQUWNUc1RFdTUwQU9LZk9xdGJweHVURXplSFhVcGZPdTIxV0lkSUtvdkQ5aUQ3eTVqNDdIQnNsV0FlZ0tPS2lfQ21iZWVKdHB5eHpwTnJGTkRzZy1fWk9xeEMxbm01YnM2aWxUMTI5YVJDSF84Z282VDVBMHB2dEFhVmRSUlN5SUJ1QW5Z0gHQAUFVX3lxTE9ha20xQU8taFhRVFk4ZjA5MzJueFIwanJHNXFEcTZqQTlCQjFYeEVvbENWbVFLSW4xZlVaQ2VfdTI3X1RLNUdJUno5QVBRY1RzVEV1NTBBT0tmT3F0YnB4dVRFemVIWFVwZk91MjFXSWRJS292RDlpRDd5NWo0N0hCc2xXQWVnS09LaV9DbWJlZUp0cHl4enBOckZORHNnLV9aT3F4QzFubTViczZpbFQxMjlhUkNIXzhnbzZUNUEwcHZ0QWFWZFJSU3lJQnVBblk",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T14:33:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank credit to industry jumps 18.2% in August: RBI data",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRjBhSjJiV1hxUEI5YWZQdEFRdEF4bEQ2eG9RaDVyazFSUHNIUFJYY09KeDZFa2pOcmMxNnlmQTg1TUF5d0gtajZiQzZ2MGRjYnlVUVdZWnlOb3g5OWhWNnVCaWhxWjZwMndQRmI1WHcxbVJMUXRoUGw2UFl6THFLSUl4bGU5clRUWkNTUUQtVGtPNGwtRjVVbU1GaGl4aGJEQS1BZkd1MU1RUVHSAasBQVVfeXFMT0YwYUoyYldYcVBCOWFmUHRBUXRBeGxENnhvUWg1cmsxUlBzSFBSWGNPSng2RWtqTnJjMTZ5ZkE4NU1BeXdILWo2YkM2djBkY2J5VVFXWVp5Tm94OTloVjZ1QmlocVo2cDJ3UEZiNVh3MW1STFF0aFBsNlBZekxxS0lJeGxlOXJUVFpDU1FELVRrTzRsLUY1VW1NRmhpeGhiREEtQWZHdTFNUVFR",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T15:23:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank credit to industry rises 18% in August, medium-industry lending jumps 32%: RBI",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOd3Q1aHpYc21oRFEzZENIX1F5M09qN3JDNHZnWmZaTnVwMTVkaE12aFB3aE5xck4xS1o5ei1LWjVmSWdTU1JKOEo1TFBXbjdvNmxYX1J0bVNkLXFGTEN2bGRtS1l5OEhlYWJ0dVpRVEpPZGVOM3NFNEJjV1ZHVUZVTzl5MzZfa21ReHdBR3BUNWVaOURvTnRBQ3NSeGo4YzVYS2FKWWJTd2F0cXE2X0FiR2FQcG5ESVp0NnpLUkY2cWU1LWFGaXBrOVFsOHBxdHNxTk1qTU5wTdIB3AFBVV95cUxOYmp4RDZ6ZFFsVGR1RV93WjZQLTVPeE54dGsxUGkyLXc0QXU1bWcwblRfeVJmTUNCMTY3TTA4OEpMejRqTmlEQ1Q3Wm02U0FndkdDd0VzMURORlItdnBaY1BLWk81SHFuNGdrSEJWaVFoYlltZzQ2Y010RS11VVBkbzc3STZEVmdXSlJ5OE9RNmZUdDVOS3NuY1JfQWpBZU13MnFDazFFQ0hEOU1tUkJhU0F3VW54cFNiREdBSF9VZkpxd0kxcld3MmVIcHBjaGpHd2lfSjdPT3RXcnBJ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T13:31:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank credit growth sees sharp acceleration in August; industry, services lending rises",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNkdaNElTeGxXbVdIbmxNeHdkZjY0XzNUa1dDNElMcFdBekNZbTZWdjBYQVBYeDVpejJfNmRCaWtUREZ6N1R1QXlXUTU0RkdpTzJjTG9FcEc3NDc2NXhDaGVWdWQ4akxSRmt1Z0thTlhlanN3dGw3M0VpZG5ydVZ0UDBPZENsajZBTDNpamVXaGNlSktMQnhreTV5aFM3Q3FSazRyN3ZoNEVCSEV3ZHl4M1RveXBPTUsyRmxBTUFhN24xVm0tbFJQSGZLOW05bUtKU19VaGZ3",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T14:11:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "TMB|OTHER|accelerates-august-bank-credit-industry-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-30T12:51:05.242089+00:00",
-  "last_updated": "2026-09-30T12:51:05.242146+00:00",
+  "last_updated": "2026-10-01T13:36:21.702382+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:05.242141+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:14.743134+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18, ETBFSI, Moneycontrol.com, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:14.743150+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:14.743157+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:21.702359+00:00",
+      "change": "sources added",
+      "detail": "ANI News"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:21.702377+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -158,7 +158,7 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.58,
@@ -173,11 +173,24 @@
           "relationship": "INDIRECT",
           "weight": 1.8,
           "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "offer for sale",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
@@ -191,7 +204,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI, and offer for sale. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
       "ai_analysis": null
     },
     "KSOLVES": {
@@ -431,21 +444,51 @@
       "published": "2026-09-30T06:50:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Inox Clean Energy Files Draft Papers for ₹100 Billion IPO",
+      "url": "https://www.mercomindia.com/inox-clean-energy-files-draft-papers-for-₹100-billion-ipo",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-01T17:04:09+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Inox Clean Energy Limited files DRHP with SEBI for Rs 10,000 Crore IPO, set to be the largest in the...",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNSHByYWZjOTkyQm5PQWZEaXg4UDdZWnNnNkVBS1cwRVZBRHhvTUswWXI0U0JfSlFVajBNM2EzdXNrM19yMW1sdGhrSW1Md29rUkc2OEN5blM2RmlnR0xiQW5SODFiS1hvcUFVYWJiMXB0RE4zTUJjQ2gzVUdoQzlTNHl1el9uT3Ric2VUeVplTFNhNVhCNHl6YUFXd2t3ZUdlbENYSnVzUFdVa2ZGa18waEVocnFGOG16Ny1vekQ0VU9ybnZUMGlhMmsxWkppajBMUXNtanpUeVhxSDM2T1B0bEhHcWE2aUVsNnEySDRGYkg5QzNkdjdGM2w1RkJGOGNhVzJvRlJEVUNEbVpiV0VrRFB3R09oYnVqRWpvLTV30gGeAkFVX3lxTE1IcHJhZmM5OTJCbk9BZkRpeDhQN1lac2c2RUFLVzBFVkFEeG9NSzBZcjRTQl9KUVVqME0zYTN1c2szX3IxbWx0aGtJbUx3b2tSRzY4Q3luUzZGaWdHTGJBblI4MWJLWG9xQVVhYmIxcHRETjNNQmNDaDNVR2hDOVM0eXV6X25PdGJzZVR5WmVMU2E1WEI0eXphQVd3a3dlR2VsQ1hKdXNQV1VrZkZrXzBoRWhycUY4bXo3LW96RDRVT3JudlQwaWEyazFaSmlqMExRc21qelR5WHFIMzZPUHRsSEdxYTZpRWw2cTJINEZiSDlDM2R2N0YzbDVGQkY4Y2FXMm9GUkRVQ0RtWmJXRWtEUHdHT2hidWpFam8tNXc",
+      "source_name": "MillenniumPost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T06:13:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
-  "source_count": 2,
+  "article_count": 10,
+  "source_count": 3,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|FUNDRAISING|000-clean-drhp-energy-files-inox",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.825103+00:00",
-  "last_updated": "2026-09-30T12:51:04.825211+00:00",
+  "last_updated": "2026-10-01T13:36:18.550322+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.825206+00:00",
       "change": "created",
       "detail": "8 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:18.550295+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, MillenniumPost"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:18.550313+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 2"
     }
   ],
   "price_reaction": {}

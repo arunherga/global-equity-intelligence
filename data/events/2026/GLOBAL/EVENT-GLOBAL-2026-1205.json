@@ -1,0 +1,124 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1205",
+  "title": "Crude oil price trades lower on improved West Asia supply",
+  "summary": "December Brent oil futures at $96.98, down by 1.07%",
+  "event_date": "2026-10-01",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Asia",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Names a key geography for this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and Asia. The parts of the business most likely touched are input cost, exports. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Crude oil price trades lower on improved West Asia supply",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-trade-lower-on-improved-west-asia-supply/article71531380.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-01T04:39:53+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|OTHER|crude-fall-improved-oil-price-trades",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-01T13:34:27.338619+00:00",
+  "last_updated": "2026-10-01T13:34:27.338674+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-01T13:34:27.338669+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

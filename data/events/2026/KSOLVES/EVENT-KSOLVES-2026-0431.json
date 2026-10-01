@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE",
@@ -40,6 +40,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,7 +49,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "supply terms from Salesforce"
@@ -87,16 +88,46 @@
       "published": "2026-09-30T08:38:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Latham & Watkins Advises on Salesforce’s Acquisition of Listen Labs",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVXprREg0b2x4MlJpa2xDVEhUTjB5WG0wZ2RPWG1UNEoxeGgxQXJESVYtb3Y0aGFYc0o3dkhrbllzTlZKQTlhQ2kxVTBybkJvZGUwaWE3dEVrdTBWU3NNeV9LaWtWcDBEdUd5LW1Ua0FuQmhSZm1lYTR4N0hXSTR2bDMwcGRiZkZGWF9jSllENHQyQzA",
+      "source_name": "Legal Desire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T06:54:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce buys Sweden-founded Listen Labs in $2B AI deal",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQalRaMEg3bDN6QjBQYk1fSVJuU0tsUXFhaXRxWmRfVFhoMHBtQXhTeFp4bzRaTnNYM19qUF9sWG5kZmp0UnliakF0Ymo1ZjFnX2w0M3ZYR25PYkp3WS1rRXJyQ2didmYzSkc5Rl91bXZPbVJzMUNzcGRrbjlUbnhoNGppTE1Xa1NQbWNFUmlhRzBUdnBB",
+      "source_name": "Dealroom",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T20:21:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce up 3.2% after announcing Listen Labs acquisition",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUUtzTWJYbDJCZEFCNjEwR2ppajZMbGhlUFJwWGJHU0ZfSEVNWlo2X3hoSTFsU05XSnFLZ0wtdVl6bEtWWV8zN2VkdVVGNDdmMHBrRFZPR0RsbThuVERfVHRGNHVtN1k1RzJtcG04NXNfYlVoX3B3V2FjYlR0dVJmY1dOUXViRDFpNmFwR3lIS3BNaVlxUEhEZTJsb0NtMW53dG9DRnU0c21kNjdpWDBJbWNpU0JsLWNTTlhVcDBpY1BkTkRlejZCZA",
+      "source_name": "Proactive financial news",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T16:12:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "salesforce.com",
   "cluster_key": "KSOLVES|ACQUISITION|acquire-agreement-definitive-listen-salesforce-sign",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.915331+00:00",
-  "last_updated": "2026-09-30T12:54:11.590335+00:00",
+  "last_updated": "2026-10-01T13:36:31.178482+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.915389+00:00",
@@ -107,6 +138,16 @@
       "timestamp": "2026-09-30T12:54:11.590315+00:00",
       "change": "sources added",
       "detail": "app.dealroom.co"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:31.178461+00:00",
+      "change": "sources added",
+      "detail": "Dealroom, Legal Desire, Proactive financial news"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:31.178477+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 6 -> 8"
     }
   ],
   "price_reaction": {}

@@ -6,7 +6,8 @@
   "event_types": [
     "CURRENCY",
     "GEOPOLITICAL",
-    "COMMODITY"
+    "COMMODITY",
+    "REGULATORY"
   ],
   "stocks": {
     "RAVEL": {
@@ -56,47 +57,47 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.52,
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING",
-        "INPUT_COST",
-        "CUSTOMERS"
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -147,13 +148,14 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -161,27 +163,31 @@
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
         "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -225,16 +231,26 @@
       "published": "2026-09-28T10:34:08+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee opens 3 paise down; trades in narrow range against US dollar in early trade",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-opens-3-paise-down-trades-in-narrow-range-against-us-dollar-in-early-trade/article71531420.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-01T04:39:11+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA+TMB|CURRENCY+GEOPOLITICAL|95.58-against-close-paise-rise-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.498026+00:00",
-  "last_updated": "2026-09-28T14:13:04.914656+00:00",
+  "last_updated": "2026-10-01T13:36:09.192395+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.498060+00:00",
@@ -275,6 +291,26 @@
       "timestamp": "2026-09-28T14:13:04.914651+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:09.192362+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:09.192378+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:09.192386+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:09.192391+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

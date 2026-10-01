@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0111",
+  "title": "Freight rates for iron ore fluctuated in September depending on the route",
+  "summary": "Freight rates for iron ore fluctuated in September depending on the route GMK Center",
+  "event_date": "2026-10-01",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Freight rates for iron ore fluctuated in September depending on the route",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZm9fb19SQ2pPdTlPTzNxRTdydG9uMDF4NVREN1RoYzQ0bENISmRrZERzd3A2S0JtV2N5ZHpXTjBMRHItMzB5cTZlcG5ZMGVDNkZGbEVfTmtRUjRkZ3h2aGRiSElEWFhCVEpNajlwa2w5MEp6cDd1ZVdIbU94ZFVQeHVJRXNpWVY2OExNTVM4Zk1BT3RORHM4WFk5U3o2MklhdFM40gGoAUFVX3lxTE9LN3JFWFkyQVZPaHdkZElPRl9MWXM4QS11OVI1bHRIR1MwUU5nYnZIWDZNWHRjWXBWdHZJNmxCTEh3S0dMTXpIYzhjaFg2QS1sdWprWmgtelpreXAtOU5tUXhHdlZ1a3RSRnROMmJBcHpaMUhMeVdyTERJX0xGb2lSSjJCMFcxWEF4OU92LWQtVWw0Zm4wTnVVV21tY2d2Mm9Jb1V0cHJQOQ",
+      "source_name": "GMK Center",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T05:02:51+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "GMK Center",
+  "cluster_key": "MSTCLTD|SUPPLY_CHAIN|fluctuated-freight-iron-ore-rate-september",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-01T13:34:27.626438+00:00",
+  "last_updated": "2026-10-01T13:34:27.626497+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-01T13:34:27.626492+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

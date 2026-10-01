@@ -13,16 +13,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -33,25 +32,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -259,16 +254,26 @@
       "published": "2026-09-30T07:57:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Silver Rate in Howrah Today (30th September 2026), Silver Price in Howrah",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE51cEhSX1NfUGVRWjNpQXM1RnduYVdPWjMwQUJBMEszTFdoaGpqN0t0RHhNUm5NTlhUcWcxazY0emJlTzJkZWhHREs2N01lZmM",
+      "source_name": "cleartax.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T05:57:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 16,
+  "article_count": 17,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-09-30T12:53:52.864272+00:00",
+  "last_updated": "2026-10-01T13:37:03.986548+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -339,6 +344,16 @@
       "timestamp": "2026-09-30T12:53:52.864264+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-01T13:37:03.986528+00:00",
+      "change": "sources added",
+      "detail": "cleartax.in"
+    },
+    {
+      "timestamp": "2026-10-01T13:37:03.986542+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

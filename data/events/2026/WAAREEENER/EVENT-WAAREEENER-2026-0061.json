@@ -59,10 +59,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.51,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET"
@@ -70,23 +70,16 @@
       "time_horizon": "LONG_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "PRODUCT",
+          "term": "inverters",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Capacity expansion or capital expenditure",
+        "+4 Capacity expansion or capital expenditure",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
@@ -96,7 +89,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "funding mix for the expansion",
@@ -105,7 +98,25 @@
         "effect on return ratios"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue is expected to increase in the medium to long term as the expanded 4.15 GW capacity allows the subsidiary to fulfill larger order volumes for solar inverters.",
+        "margin_effect": "Unclear. While economies of scale could improve gross margins over the long term, initial ramp-up costs, depreciation, and competitive pricing pressures could temporarily weigh on operating margins.",
+        "cost_effect": "Increase in capital expenditure (CapEx) and fixed operating costs associated with commissioning and running the expanded Sarodhi facility.",
+        "competitive_effect": "Strengthens Waaree's position as a comprehensive solar solutions provider, allowing it to offer bundled packages (modules and inverters) and compete more effectively against domestic and international rivals.",
+        "regulatory_effect": "May help the company qualify for domestic manufacturing incentives (such as PLI schemes, if applicable) and meet local sourcing requirements in government-backed solar projects.",
+        "short_term": "Focus will be on the commissioning, trial runs, and stabilization of the expanded capacity, with minimal immediate impact on revenue but potential increases in pre-operating expenses.",
+        "medium_long_term": "Expected to drive volume growth, market share expansion in the inverter segment, and stronger integration with the core solar PV module business.",
+        "second_order_effects": "Potential to boost sales of Waaree's solar PV modules through cross-selling and bundled EPC (Engineering, Procurement, and Construction) contracts.",
+        "key_uncertainty": "The pace of demand adoption and the capacity utilization rate of the new 4.15 GW facility amidst intense competition from established global inverter manufacturers.",
+        "monitor_next": [
+          "Capacity utilization rates at the Sarodhi manufacturing facility",
+          "Quarterly revenue contribution and margin profile of the inverter segment",
+          "Pricing trends and import tariffs on competing solar inverters in India",
+          "New contract wins or bundled orders involving both modules and inverters"
+        ]
+      }
     },
     "FRESHARA": {
       "ticker": "FRESHARA",
@@ -461,21 +472,51 @@
       "published": "2026-09-20T00:22:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies 's subsidiary expands solar inverter capacity to 4.15 GW",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaHE1Y0hpUlQ2aDQxNW9qU1N3LUx5Ujg1SlZMN2tId0kxUGwxUF9CcXRmcU94YUQ2ZVI1SjZqSENsMDR5aFAwMXdIaWlTM3RmVU9BV3B6VTRJR2w5aC1vWWZSWEpQM1d3eE5Vd1J1ZmZNRVp2bVFGWmVudC1DbUwtYUc0SDlZYlh1ZlJGZ3Z3a2U2VnhxeUJJaDAtNGh4YlQ1QWhtM3NPM3NURUNp",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T14:34:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree expands solar inverter manufacturing at Sarodhi to 4.15 GW",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IbDJia2NFd1I4akFReGFNN0JPTDJUazhMbVd2bnFYU0VTX3dxbnlZWkZwYUdRanE3VGFHQ1RITGtXYng1ME9pa0tMLW1sVEl3NU9HMDhhd2pYVklqMkZCXzRtd3FVeWdWdUtzZUNSU2plbXVYUzBQcXhQSkI",
+      "source_name": "Power Peak Digest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T18:48:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|CAPACITY_EXPANSION|energies-investor-meeting-nse-waaree-waareeener",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.717924+00:00",
-  "last_updated": "2026-09-22T18:19:39.717958+00:00",
+  "last_updated": "2026-10-01T13:36:22.759301+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.717956+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:22.759282+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, Power Peak Digest"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:22.759296+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 7 -> 9"
     }
   ],
   "price_reaction": {}

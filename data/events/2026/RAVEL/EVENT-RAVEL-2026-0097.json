@@ -10,7 +10,7 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
       "confidence": 0.39,
@@ -19,7 +19,7 @@
       "exposures": [
         {
           "exposure_type": "PRODUCT",
-          "term": "skincare products",
+          "term": "personal care products",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
@@ -27,6 +27,7 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,7 +41,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to skincare products. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to personal care products. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -54,21 +55,41 @@
       "published": "2026-09-28T07:26:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Organic Personal Care Products Market to Reach USD 30.9 Billion",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRUVEQkFOeGVTbFpKa3NwclZicDlHVFNKQVpYX1VwekY3Vngtd2E5WkxMUVJSNk1wTGotOVRHTHBlUzNvcG9PLUZEczFrS3BxUW1qOGhyM3BGZE5keU53WWlObTJOREE1a3BqZ3R3R01yUkFnSk53b2dxb1VQU20xU0dzTEtOeXVWYWtGTlRPUS14Nk9icktNSlpZSWVKcDdp",
+      "source_name": "openPR.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T14:38:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "openPR.com",
   "cluster_key": "RAVEL|OTHER|market-men-products-reach-skincare-usd",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.544908+00:00",
-  "last_updated": "2026-09-28T14:12:11.544964+00:00",
+  "last_updated": "2026-10-01T13:36:22.839952+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.544960+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:22.839935+00:00",
+      "change": "sources added",
+      "detail": "openPR.com"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:22.839947+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 1"
     }
   ],
   "price_reaction": {}

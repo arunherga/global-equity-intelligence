@@ -1,0 +1,81 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0100",
+  "title": "Ministry of Steel: Import/Export Duty In Steel Sector",
+  "summary": "",
+  "event_date": "2026-10-01",
+  "event_types": [
+    "EXPORT_RESTRICTION"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [
+        "EXPORTS",
+        "REGULATION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Steel",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Material international trade or tariff policy",
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Steel. The parts of the business most likely touched are exports, regulation. Classified as export restriction.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Ministry of Steel: Import/Export Duty In Steel Sector",
+      "url": "https://www.cbic.gov.in/entities/customs",
+      "source_name": "Ministry of Steel",
+      "source_domain": "cbic.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Ministry of Steel",
+  "cluster_key": "MSTCLTD|EXPORT_RESTRICTION|duty-import/export-ministry-sector-steel-steel",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-01T13:34:27.282333+00:00",
+  "last_updated": "2026-10-01T13:34:27.282396+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-01T13:34:27.282390+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

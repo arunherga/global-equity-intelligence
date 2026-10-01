@@ -10,16 +10,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -27,39 +26,24 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (silver) is the subject of the headline",
-        "+2 International market development",
-        "-4 Opinion, preview or stock-tip piece",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified",
-        "opinion piece"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -83,16 +67,36 @@
       "published": "2026-09-28T10:27:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why is silver price falling today? Precious metal set for a monthly decline",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZ3dlcG92b2VrbjBWUVJncXltZm5iWlNHWTREMTdCMExUc0psbkxac1JNX3U1Zk55aTRKMEl0TFdJTng4SGRQV3REN0ctX2doV01HLVhNWU1udU5zUVBNNDVobDNaT3RaaUpuRklOM0dyY1hXX0pOU2d0MVdocHY0eEp2M3ZLdmZ1dHdzTHJ1bzdKQm5NcHNseFZWMXZFLUNUWjFpeTVDZXZlek9xZUJybncyQ0FMVXJrVHlWVDNMYmhySHA3U2VlOEF5Yk1yUUlRSklNcWhzRdIB3AFBVV95cUxNUHZRMVpXLVhwSmpMaGV3ejhaUkNobjYwRnl2azZ2VjhTbHVSVFY3TmFmVGdIVlZWVG9pcmZJR2xBTWV0dWpadXdtQjRURVlUSnJkVnFKa3hoY0xKd08xc0haZXlNZ3VpdDg5Z3pobF9Ld0RER1ZaMkFfQlp2ZlUzN29tQW55RmRYYW9OR0FUejZJbmdtWkxZLWNQR1hHd3dLelVIYy14SG41c2RVaC1IQ29abTJpTHAtQmppSUtpbGNNbGJnYVU2MjhOZmdVRWx1WnlhclNoendPWmw1",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T14:54:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "How Does Gold & Silver Price Track the Physical Market?c",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR0xLamZIaXdWZl9Ec1VkM0tZVng0Y01yVHM0VmwzZ0NVbHhIQjlHV2lFcEN0RlV5Wk1RVlBXaFYwR1FUNmY1UDFPNU1pNkxMOXVnWXJzQkZQM3RkYUs2Tkxzd0JhV252Y3BtbURSNkQwSWFMcDR1d2F2QlVxbVdjQW1DTjJ6emt2Y2ptY0VnWGhISG0xb2g1eF9iVTY",
+      "source_name": "NewsGram",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T06:39:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "WAAREEENER|OTHER|gold-precious-price-silver-today-understanding",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.627926+00:00",
-  "last_updated": "2026-09-28T14:13:52.299379+00:00",
+  "last_updated": "2026-10-01T13:37:08.162754+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.627955+00:00",
@@ -113,6 +117,21 @@
       "timestamp": "2026-09-28T14:13:52.299374+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 2 -> 3"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:26.073508+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-01T13:37:08.162731+00:00",
+      "change": "sources added",
+      "detail": "NewsGram"
+    },
+    {
+      "timestamp": "2026-10-01T13:37:08.162749+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

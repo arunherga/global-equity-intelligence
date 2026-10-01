@@ -1,0 +1,123 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-0557",
+  "title": "Metal sector stocks fall today, October 1: Vedanta falls 2.18%, Welspun Corp down 2.60%, Coal India down 1.31%",
+  "summary": "Metal sector stocks fall today, October 1: Vedanta falls 2.18%, Welspun Corp down 2.60%, Coal India down 1.31% Business Upturn",
+  "event_date": "2026-10-01",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Metal sector stocks fall today, October 1: Vedanta falls 2.18%, Welspun Corp down 2.60%, Coal India down 1.31%",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQR1dSOHRhNXM5SkpqQkNuR3A1clQyWG04Tkx4bnh0NDlkMHVCejVoWVFILW8ycXNHOEpqUFB6bzdBRW9pekVwUnpxR0UzODdXYXBUdjhGbjNTai1lN3NjdHk4SUpidG5WZFZzVTliNXFUOV8zRnh6Y3BGQnRwS3hXblBSZG1IQmhZQVFiRnhyaGdHRC1Jc0t4OGdMTnpRMVpvZ0J1VEJyU1k2QjYxUUp5NmF2UDZkUGhldzU1T1J2U2lCQUkzZE90YmlhU09YMHluRHBzMDI5OWEtb3VpM0Q1Snl5c0p1RFU",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T06:13:41+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Business Upturn",
+  "cluster_key": "COALINDIA+MSTCLTD|OTHER|fall-metal-october-sector-share-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-01T13:34:27.661635+00:00",
+  "last_updated": "2026-10-01T13:34:27.661703+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-01T13:34:27.661699+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

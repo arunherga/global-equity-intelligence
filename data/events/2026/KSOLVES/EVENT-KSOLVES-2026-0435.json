@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,7 +45,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "supply terms from Salesforce"
@@ -63,21 +64,41 @@
       "published": "2026-09-29T21:43:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce shares rise 3.2% after acquiring AI customer research firm Listen Labs",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQM1JSVXlTWnJ6azhrM21oZDk3V1RhaFA5OTQ4SGFOcHg3ZzdwcElJNWRWUmxqT2xWS25SOF8tRldueU5JOHpMSnB4QzBZVllXalZ4MWRUdUNNM2JBVFp1ZmhUNVJ0Q1U0dzBCVDFGLUl5REpoZktaa2tmXzI0UEdWVTdIUlBZWFY5MUVrUS05U0U5OFdTdVBzc0d4bkQ4Y1k",
+      "source_name": "pluang.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-09-30T16:34:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "marketscreener.com",
   "cluster_key": "KSOLVES|OTHER|agrees-buy-labs-listen-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.924582+00:00",
-  "last_updated": "2026-09-30T12:51:04.924632+00:00",
+  "last_updated": "2026-10-01T13:36:31.761563+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.924627+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:31.761542+00:00",
+      "change": "sources added",
+      "detail": "pluang.com"
+    },
+    {
+      "timestamp": "2026-10-01T13:36:31.761558+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}
