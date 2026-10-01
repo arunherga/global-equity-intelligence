@@ -10,32 +10,26 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
-        "SUPPLY"
+        "COMPETITION"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "SUPPLIER",
-          "term": "Salesforce",
+          "exposure_type": "COMPETITOR",
+          "term": "Globant",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "Salesforce",
-          "relationship": "SECTOR",
-          "weight": 0.9,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,12 +38,12 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from Salesforce"
+        "Globant's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Globant. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -111,16 +105,36 @@
       "published": "2026-09-24T06:27:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why is Globant stock surging today?",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdFJVdE02VklfX0xGQzdxM01weWpJYmt3MjdEX05kNmp0TkhhS2QtcnV0Uko3Y3p5WlowX1NnVHdVOURRYzBkTG01NThiVFNtWmc1R1VKRmVyODBqQ1IxeG12ZnptVzhRVEdrcVBRMUswSGRLaV8zQnFNQjdyZUoxQW1xUG9RYzhOdlNpXzJ3dGFoekdOQ0ZtV29uMjc",
+      "source_name": "Investing.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:03:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why is Salesforce stock up 2.2% today?",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPOG9pcW1NOV8wTml1TGg4bXpaZ191QmRVQnNtSE1NNEdnNEtUdkdhekNQNW1IdVZQaU9NMHdhNjROMlFUbFpJUHZEakJoYVhEbXpiS0tOb0w2Zlo0aDlsV1gyaVR0UGNwSWcxVFd3M0ZJSWVxbzFhWlFsdjR1dk4wekZaMUtDVGhQd0NvMDlUSS1UUQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:28:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Traders Union",
   "cluster_key": "KSOLVES+TMB|OTHER|2.2%-salesforce-share-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:40.051911+00:00",
-  "last_updated": "2026-09-24T12:03:18.498077+00:00",
+  "last_updated": "2026-10-01T19:01:16.122946+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:40.051935+00:00",
@@ -131,6 +145,21 @@
       "timestamp": "2026-09-24T12:03:18.498063+00:00",
       "change": "sources added",
       "detail": "Barron's"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:04.245131+00:00",
+      "change": "sources added",
+      "detail": "Investing.com"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:04.245146+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:16.122921+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
     }
   ],
   "price_reaction": {}

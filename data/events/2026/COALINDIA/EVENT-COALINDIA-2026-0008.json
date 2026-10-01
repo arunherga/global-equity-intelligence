@@ -10,10 +10,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -33,18 +33,12 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (thermal coal prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -53,7 +47,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -75,21 +69,41 @@
       "published": "2026-09-18T06:50:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "South Africa: Thermal coal prices surge on tight availability",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaUxzMDZ6dUctM085eV8yb0lfa2hqdzRFUmdiM1hMZU04QWtRb3h5eHozMmdUU3BvMEtJZzdXd01MLWs4TkpfSzFGRGxLVlYzMkJGQjUzcjYtbkx1NHgwVnhsbUt4b1lOUGtTM1E2SENvNFVqNEZoZW5CZlR2eTZmOFFWdTYzQjVISWlOMndJMmljTHFNVzNXWjVvVjM0eGRMczUwcVo5NVdMZw",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:51:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "COALINDIA|COMMODITY|african-coal-india-portside-south-thermal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.570775+00:00",
-  "last_updated": "2026-09-22T18:19:39.570807+00:00",
+  "last_updated": "2026-10-01T19:01:03.440278+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.570805+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:03.440258+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:03.440274+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 3 -> 5"
     }
   ],
   "price_reaction": {}

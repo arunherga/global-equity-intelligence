@@ -12,55 +12,45 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 12,
-      "impact_band": "VERY_HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.78,
+      "relationship": "SECTOR",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
         "REVENUE",
-        "REGULATION",
-        "REPUTATION"
+        "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+4 Regulatory or legal action",
+        "+1 Industry-level relevance",
         "+3 Government policy or tender development",
-        "+3 Original regulator announcement"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "official confirmation available",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "bid outcome",
         "order value",
         "competing bidders",
-        "formal order or circular text"
+        "order flow from traders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue, regulation, reputation. Classified as tender.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -147,16 +137,26 @@
       "published": "2026-09-25T18:00:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Indian states announce ₹25,100 crore government securities auction programme",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNndaUC1PNU5zZFhTcXpVSkZILWV1dzVFTDhkT185ckRZTzJYZzBWU3NCZjdEN196LTd2cDh0ejBBSW9yZFhqWVJybG5jZ0hCekVCdVREMUFXYl9SLUVLTENKdzJJRnpaYWdCVVlCNXlySFpUemViRG9kQkVRZUprRDRoM0RaT0s1b0tYMldwMWRPNWdFeWhXQkdVeEIxNWxLZ0dZ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:23:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|REGULATORY+TENDER|auction-dated-government-india-security",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.421543+00:00",
-  "last_updated": "2026-09-25T12:56:11.969851+00:00",
+  "last_updated": "2026-10-01T19:01:05.997515+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.421573+00:00",
@@ -177,6 +177,16 @@
       "timestamp": "2026-09-25T12:56:11.969841+00:00",
       "change": "categories added",
       "detail": "GOVERNMENT_POLICY"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:05.997493+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:05.997510+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

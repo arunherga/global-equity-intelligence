@@ -11,61 +11,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "impact_score": 2,
+      "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.5,
-      "business_impacts": [
-        "MANAGEMENT",
-        "REGULATION",
-        "COMPETITION"
-      ],
-      "time_horizon": "MEDIUM_TERM",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "HDFC Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action"
-      ],
-      "direction_reasons": [
-        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
-      ],
-      "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "reason for the change",
-        "successor's background",
-        "further exits",
-        "formal order or circular text"
-      ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to HDFC Bank, and RBI. The parts of the business most likely touched are management, regulation, competition. Classified as management change.",
-      "ai_analysis": null
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 15,
-      "impact_band": "CRITICAL",
-      "direction": "UNCERTAIN",
-      "confidence": 0.6,
+      "confidence": 0.41,
       "business_impacts": [
         "MANAGEMENT",
         "REGULATION"
@@ -81,17 +30,53 @@
         }
       ],
       "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "reason for the change",
+        "successor's background",
+        "further exits",
+        "formal order or circular text"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are management, regulation. Classified as management change.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "MANAGEMENT",
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [],
+      "score_reasons": [
         "+5 Direct company event",
         "+4 Regulatory or legal action",
         "+4 Senior management or promoter development",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -105,20 +90,20 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Unclear in the short term, but medium-to-long term revenue growth will depend on the new CEO's strategic focus regarding loan book expansion, retail versus corporate mix, and digital banking adoption.",
-        "margin_effect": "Unclear, as Net Interest Margins (NIMs) will be driven by the new leadership's strategy on deposit mobilization versus aggressive lending and pricing power.",
-        "cost_effect": "Operating expenses could fluctuate depending on potential organizational restructuring, investments in technology, or changes in employee compensation structures introduced by the new management.",
-        "competitive_effect": "Bringing in a veteran from a primary competitor (ICICI Bank) could sharpen HDFC Bank's competitive edge, particularly in digital banking, retail liabilities, and customer acquisition strategies where ICICI has historically been strong.",
-        "regulatory_effect": "The appointment has received RBI approval, ensuring immediate regulatory compliance for the transition. The new CEO will be responsible for maintaining strong regulatory relations and addressing any ongoing compliance mandates for the systemically important bank.",
-        "short_term": "The next 0-3 months will focus on leadership transition, maintaining organizational stability, reassuring institutional investors, and ensuring a smooth handover from outgoing CEO Sashidhar Jagdishan.",
-        "medium_long_term": "Over the next several years, the new CEO will shape HDFC Bank's long-term strategy, address post-merger integration challenges, drive deposit growth, and steer the bank's digital transformation agenda.",
-        "second_order_effects": "Potential talent migration or executive reshuffling within the private banking sector, shifts in corporate culture, and changes in investor sentiment that could impact the stock's valuation multiple.",
-        "key_uncertainty": "Whether the new CEO can successfully integrate his leadership style and strategic vision with HDFC Bank's distinct corporate culture and address its post-merger deposit-to-loan ratio challenges.",
+        "revenue_effect": "unclear, as any impact will depend on the new CEO's strategic growth initiatives, particularly in retail lending, digital banking, and cross-selling financial products.",
+        "margin_effect": "unclear, depending on how the new leadership balances aggressive deposit mobilization with high-yield retail loan growth and credit underwriting standards.",
+        "cost_effect": "Operating costs could see shifts in the medium term if the new CEO accelerates investments in technology, digital infrastructure, or branch expansion, potentially impacting the cost-to-income ratio.",
+        "competitive_effect": "The appointment of a veteran from arch-rival ICICI Bank could sharpen HDFC Bank's competitive edge in digital banking, customer experience, and retail credit, potentially closing the technology gap with peers.",
+        "regulatory_effect": "The appointment of a CEO for a systemically important bank requires formal approval from the Reserve Bank of India (RBI), ensuring compliance with stringent fit-and-proper criteria.",
+        "short_term": "The next 0-3 months will focus on leadership transition, stabilizing internal management, addressing investor expectations, and maintaining business continuity without disrupting daily operations.",
+        "medium_long_term": "Over the next few years, the new CEO is expected to drive the post-merger integration of HDFC Ltd, define the bank's digital transformation roadmap, and steer deposit growth strategies in a tight liquidity environment.",
+        "second_order_effects": "Potential talent migration from ICICI Bank or other financial institutions to HDFC Bank, and potential shifts in corporate culture to match the new leadership's execution style.",
+        "key_uncertainty": "Whether the new CEO will maintain HDFC Bank's historically conservative credit risk culture while pursuing aggressive digital and retail growth to satisfy market expectations.",
         "monitor_next": [
-          "First public address or strategic roadmap presentation by Anup Bagchi after taking charge on October 27, 2026.",
-          "Any high-level management exits or new executive appointments following the leadership transition.",
-          "Quarterly deposit growth rates and Net Interest Margin (NIM) trends under the new leadership.",
-          "Analyst and credit rating agency commentary regarding the bank's strategic direction post-transition."
+          "Formal regulatory approval and confirmation of the start date by the Reserve Bank of India (RBI).",
+          "The new CEO's first public address or earnings call outlining strategic priorities, deposit mobilization plans, and technology roadmaps.",
+          "Any senior management reshuffles or key executive appointments following the leadership transition.",
+          "Quarterly metrics on deposit growth, net interest margins (NIM), and cost-to-income ratio under the new leadership."
         ]
       }
     }
@@ -713,16 +698,486 @@
       "published": "2026-10-01T04:08:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Anup Bagchi takes charge as HDFC Bank MD and CEO: Tracing the banking veteran’s career and achievements at ICICI",
+      "url": "https://www.livemint.com/companies/people/anup-bagchi-takes-charge-as-hdfc-bank-md-and-ceo-tracing-the-banking-veteran-s-career-and-achievements-at-icici-11790865098320.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-01T15:04:44+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "How Anup Bagchi got the HDFC Bank MD-CEO job: Timeline of developments",
+      "url": "https://www.livemint.com/companies/people/how-anup-bagchi-got-the-hdfc-bank-md-ceo-job-timeline-of-developments-11790872658025.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-01T16:52:33+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Meet Anup Bagchi, HDFC Bank's new MD & CEO - ICICI veteran to take charge from October 27",
+      "url": "https://www.livemint.com/companies/people/who-is-anup-bagchi-hdfc-banks-new-md-ceo-icici-veteran-to-take-charge-from-october-27-11790860093978.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-01T13:30:25+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank appoints Anup Baghchi as MD & CEO",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/hdfc-bank-appoints-anup-baghchi-as-md-ceo/134620138",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-01T13:06:15+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Anup Bagchi: The ICICI veteran chosen by HDFC Bank for the top job",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSVJpZVJrMkItTlBKSkRKRHcwMll5XzRsZWxHSFlrVDFYN09rb3JxdjdiRVh2ZEt3WWNvekNHTjJ1aXduRWd1S3dVTFNrNkRGeVo4RTR5V1kyaW9jRG81Q1UyR3E1Z1NFZEJjVEQ4QUFyZVVyZDBXQXFkRVNud05nM2xKb2ozM0hMSDBYY3BOa3BqcXpFdkZuXy1USG54LWtuMDFhQ1RiV1N4WEVhcnNseTdTMS1sV3RRWUtBTjh4empZS0FwODRZ0gHMAUFVX3lxTFBzS29FWnJBZ0FZYnVBTkYxQ2xKckpCT1JfTGdJWERKZl8ydTA4UzVCTlFFV3N3WndyUUZ4MHAtMWZLNlVya3NIQURYS1huQjYyeWVtTnFHbU1Bb1JfUWlTZlVaTEp4LVJtZGlIZmIwNEJRMHRpWUNVMk9IM1ZTYzlhMlFaMFBGSGdnUE1zUGtnVm1JTE9MS1FWTl9yOVFBTWtJbmk4UTdpMzFGRGgtWHBFUFFyVFVEVVE1Sm5kRkR6MkxaNWFUeGlsSDk5aw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:41:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi’s rise from ICICI veteran to HDFC Bank MD and CEO",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYW1ZYlBUMVVrWW9iQ3lPYXNRVV9pU1lrZWozWnZUNUg1aHZ0MmNwTTdKaHBUaEhmRFV0OElvRHFPakMydUJIS0dNWWZpY19kS1IzcDd1cEMyLXRSNTlBdzZrVl9vN1FFdk1DNy1uZWpBcll0Si1yaHJoR203RzgtRXBHeEZtZlpWY3E4bmdmTnhmV182djNnUVFEeVFBUTVCZG91cnF3VlUxX2ZNWFQyOVFvVdIBswFBVV95cUxNYW1ZYlBUMVVrWW9iQ3lPYXNRVV9pU1lrZWozWnZUNUg1aHZ0MmNwTTdKaHBUaEhmRFV0OElvRHFPakMydUJIS0dNWWZpY19kS1IzcDd1cEMyLXRSNTlBdzZrVl9vN1FFdk1DNy1uZWpBcll0Si1yaHJoR203RzgtRXBHeEZtZlpWY3E4bmdmTnhmV182djNnUVFEeVFBUTVCZG91cnF3VlUxX2ZNWFQyOVFvVQ",
+      "source_name": "Firstpost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T15:31:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Books, coffee and banking: Anup Bagchi the ICICI lifer set to lead HDFC Bank",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOOUlfeFE3b1cxc0NWb2xxaXVSZGlra3dZTWF1bUdCakFLQVd2cUpMbHlqZkFHbWlBa2Q3TmJVVlpnUlJLY080OUdFODB0SFFiVjgwam9sVEhZYjZ6dHJzVzhYWmVya2luNjF6TnBpYUhhNzZNZHg1S3pSVWVmNDN1M2lmQl9CbHgxY0lacXI1THM4c3gxaVhkd0x2VkFQeGtfeHg3eXZyZ2JmWXhTaFF1TVA4R1VxaDJTWC0yX2JrM1Fnbkt5SDEya1k0cXFhajdzcG9lNW4zSTJLQ0V6aVVUTE5reWw2UjUtekgwWmItbjJxWHNfaTd4aNIB-AFBVV95cUxOOUlfeFE3b1cxc0NWb2xxaXVSZGlra3dZTWF1bUdCakFLQVd2cUpMbHlqZkFHbWlBa2Q3TmJVVlpnUlJLY080OUdFODB0SFFiVjgwam9sVEhZYjZ6dHJzVzhYWmVya2luNjF6TnBpYUhhNzZNZHg1S3pSVWVmNDN1M2lmQl9CbHgxY0lacXI1THM4c3gxaVhkd0x2VkFQeGtfeHg3eXZyZ2JmWXhTaFF1TVA4R1VxaDJTWC0yX2JrM1Fnbkt5SDEya1k0cXFhajdzcG9lNW4zSTJLQ0V6aVVUTE5reWw2UjUtekgwWmItbjJxWHNfaTd4aA",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank ADRs surge 4% as RBI approves Anup Bagchi as new MD & CEO",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeFFNaVRPWGwzZlI0VlFETlRGLThta1B6djBjY3k5bV9aZDNacldDV0QyRFJQU3daRUMtbDZPMlhfX2ZwM0pOVHpWWUFmWEh4N2JlNnVhSERuVmhrYWEtT2stNWd6di1na2Q1cU1Sb3B3bDhYVVNkOGVUd01IQzl1R3NUN0R4X3JKOHBmenFPc0N4TUFCbUZic2M5YlZWZF9ESG95YXFfMzlMV3BNR08ycVdHNndZWkpMU1QxTnVvY0lVY3lreFU5Ni1ZODJBQdIBzgFBVV95cUxNeFFNaVRPWGwzZlI0VlFETlRGLThta1B6djBjY3k5bV9aZDNacldDV0QyRFJQU3daRUMtbDZPMlhfX2ZwM0pOVHpWWUFmWEh4N2JlNnVhSERuVmhrYWEtT2stNWd6di1na2Q1cU1Sb3B3bDhYVVNkOGVUd01IQzl1R3NUN0R4X3JKOHBmenFPc0N4TUFCbUZic2M5YlZWZF9ESG95YXFfMzlMV3BNR08ycVdHNndZWkpMU1QxTnVvY0lVY3lreFU5Ni1ZODJBQQ",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:31:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank CEO Race Ends As Anup Bagchi's 3-Year Appointment Gets RBI Nod",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVHM1bUg2aE9nRnc2UXBwdUJiWTlqNVNVVXFUU1ljSmhWQXhrSmdOQy1acm55TXdDbDVHNkM1MzdxbEZCdm9ObjBTX3NYclpieUd3SXlPd1BqcGpwNjY4NXFPZ3BPOFFWS1dQMjltS2RsVU5oREZrb3VZaU9YNnd4dXNxQXRCcVNsaldQOGtGMzhJdzE1eGpHT3Mxc1Jkcy1kcHBR0gGrAUFVX3lxTFBhTkUtV21vcnpPWWc0b0xRTVBSUDVaV19QT3lLdnBoelVSLVZXczRucEZzMGIxYTBjczJzYkVaS1FZUzBGdEpEal91MUk2cGQtZ1psbVVYUDNRM1dnRnNoVzRzbjBNeVRuemFVWmVPaXkydk16cFgtWDF0Tk41TE5OWU1QUHpOZHphbE5JczZKZWJWbVF4SlVWZkJWTHNkamZienl0Umw2eUM0VQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T12:55:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank leadership transition: From Aditya Puri’s exit to Anup Bagchi — a timeline",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWmpqOUI0VHU0R1dIbXFMbTY2SmFyN0duMkozQm95ZWtyYUdjR1hXSFNDbS1PenBJZUZOLW8yVzZwcUZlNXNrc2tyaG5BRXM4MmlBaTNXdzVGbllob3pEUGpiZ2dybm96QVNPS1VfUHgtVS1FenVrZmRoNmI0MlhSVHFDUlJ3YnJFRFJtSzRiWEJNSlRyRDZ6Q1d0b2RzSHdYMTRCRERPRktBdU5QTGfSAbMBQVVfeXFMTzhDX2F6UUNqWkR3N2d2LXBwQmlPam0xSnZrRDhadGYwM3pMcklJQTJ3U1Y3NFFuQ01SZW9TbldRbFcxVFJQR3hsRjhLQ1VoTTM2RzBINkRFbm9KQWRaNFp1OFp5RUtlMGs4ZkJuanlVVnJNNGoxMzYxTTVoZkQ0TllhY0tQRjk4b2NsckpkaTY0bUoxa2twVW05TWZvU25kS0JPZnNZNEpIc3Ryc0luaUV3ODg",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:40:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank names Anup Bagchi as CEO; to take charge from October 27",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZzdIZmJ3WGMtenNDZXpQOG4wT2hHVUVmX0dPZTJkX3dOcFR3VUVEWEN4QjdzWG9KTFdjd1ZFdUhNM0lsU0RBT0l5N2daWHA0Tmh0Q2JIWTRnOEItNm91TF9Rc0lsZjNpU3UzV2t0LTFkRXF2dTExaHhvazQxSElPWmd3VVJHdDJiYkVEcFFvdnpfbmR5QkVyVjZaR3rSAaMBQVVfeXFMTUQ1NUo5RlVHX1VycU9ZdVBlMVhTSElab2I0eGJFNksxSnFhOEVqcWhLSExVZkNHLVZvOURhZ2gtS2dTbktjZ2owc1dSZWo2ZUdoMnJPckRyVGpRVUFTUFE0SDhtTDljRUxvc3B6eDVSU3JLU2ktcnBaLWJ6QmQ2Sy1TZXdhTTVyVm9qV003MUE5bVpmT21Wbk1wUThVVm5WaUlhWQ",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:03:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank: RBI Approves Anup Bagchi As CEO For 3 Years Succeeding Sashidhar Jagdishan",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRXhsRy1Kb09XMlpsNWozNGRCRkpQMGZYeXRHRDlpM0oxNGloM2FYMWtxZ0ZZM3RmMGIzVzU0MDc3YnVKc29pTEc1UEdMNmpPQzE1aGhrY3lFSVNPVm96Z05WRHRUb0hWNTBZSTBvN0lVYy1lbi0yNmxJYlpTU1pkMDJ0UjdsM3Q4VFcwZTlWSWM1eHhzOFIyQjNPX1ZFeUFVSkJ3ZmNHMnltcllRY1Vr",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:02:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "How Anup Bagchi got the HDFC Bank MD-CEO job: Timeline of developments",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSkpYUy1oVkdhRFFSQXBmV3o0UFRmaHhseU1WbXVjeTZuRlpabm95aHZjb0IzX3BLR0VGdnVzY3V4YngybUNjQWVCd2hnZ1FXRHFCekVveGk3bm51MTFDQkpjb3dLX1FMV082bVJTS05lUTdnb0wtTmhZaGdoWWNzc3hya3o1NTlYenIyN0Q4a3YxampjZGRraXh6UHljTlZvcWpGYmhndHkyVUVWRTNLM2Z6SjNKQ255ZDNBQU5HVUZnTTJaOE8wUTR0WdIB0AFBVV95cUxOWmZtX0hmZWlEZC1rQ1BmeHJxcUJXbUY1T0w3d19yeF9IbFI2NTNsODE0cTB3VFkwak9fUHRabUFpMXp6SC1QaHJfendMb3BiaVFpOFFjRlktZGZUM3h1aWNyU1hVMnVlazNlMWx5SGNzQnBmcVhTakZpSWFZZ2xGbFdKdmRSN1hfeGpoVHFnd3AzaVJ2Sm1wTi14eTlIcXJKOUVSNWlKZzVIUGlaNHFOYXlYeDdrVk9yeTJHb0s3ck40QkNwZ1ZpTUhUWXhNYW8x",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:52:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank: The CEO Factory",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVzJvbkVpVE9kU0U5eGRmMDlDUjB3dzBuYjJEYi1BVkNuR3NPTFBDVDkzRmJoLXRSZVRpVXJfcFhqSUtWcVNNVGJCc2dsRmwwbGhQckRDQU9vNFlRV1RJVHpqYnZPTGMyM3MzNVptckxMZU9HZ1ZwOXlDWjlMeWExVm9FNkQ2bFpxVGFxRk1DQU0wSXfSAZMBQVVfeXFMT1cyb25FaVRPZFNFOXhkZjA5Q1Iwd3cwbmIyRGItQVZDbkdzT0xQQ1Q5M0ZiaC10UmVUaVVyX3BYaklLVnFTTVRiQnNnbEZsMGxoUHJEQ0FPbzRZUVdUSVR6amJ2T0xjMjNzMzVabXJMTGVPR2dWcDl5Q1o5THlhMVZvRTZENmxacVRhcUZNQ0FNMEl3",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T15:24:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Meet Anup Bagchi, the ICICI veteran picked as HDFC Bank CEO",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaW94SkZ6MHZOUVR6M3JnV0tHMmhEN0NUWG9vUDhOZVdfTG1yWnQtR0V1Zk5RVlN1OWFURTVfRlE3WEhINFBhUmxYQmduU1M2RWpLLUVCSkF0N2ZtTGdnLVA1ZHhGMy15OXoyOXlJQnM5U2FOb192ZlI5MnhPc3EtOUF2WWtkTFVHc1k1cUxESUdocHpRXzRFQnE3WnJMRTNjU2oxT0JQVzhyZC1jdGdKLVdVZk9WUFlrM21mNXVpLVdrU0h30gHKAUFVX3lxTFAtRWh5dEM4V3N1Wk52aFpBN1hMUmsxYXNaUXY2UjZiNF90YWFnb1puY2F2WWk3MkhrRUt5SWFSRVRNZjZhT0llRGlXc1N2LVhxa1htUFVoWV9MRDVSXzgzV043V3lJX05TcTBHb2VWcTlIZWhwSFVtWWxNcTJtT0Z4YUdDOUJ6ME1kS2dMN0hnNkp6Zng0QjdPbVJsd1JwdmZ3LXNObHhMWkpCTFRWazM3X1JyY3BCSXRVUVZaZHhIOFc2UWd5clYxblE",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:14:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi To Be HDFC Bank’s MD & CEO For 3 Yrs",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOalNwM0ZHdG5zZk15VVZBaTBsb01MLU5FTHQwV043dV9DOVloRFMyY2pNSVNKbm5iNTVYOVQ1TFNsTUJkXzZCeE1qdDVMbEtRRENyeWhvS1V0SVN0SFBOb3B0WS00Qjk0TkIwc0JRTGUzdVlXVlBaZ0JCeVJkdHdMWlNCX3o0WktneEhzdW5ySnlRNW5U",
+      "source_name": "fintechbiznews.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:12:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi appointed HDFC Bank MD & CEO: Meet the ICICI veteran with over 30 years of experience - Career, profile, education and more",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQc0hMQ1lweDI1Z002SFNkU0pnRk0yalQwTUFiNHVtc1kycHBLU2lUUlBnbTRHMk5nTHZxTWNTekdCeS1vS1NnUVJyR1lBQi1fUHAxa0dLRDJ1MWNqMG9kNjhKeXJkTnl5a1JPNnplbEVtamtianEybS0tUnEyRnlPRkhnRFVva21Ec3BnLTlscG55WktBMklTSWFIaGhuZ3l1bkdqMmlINmhWUFJwdmxJQWRHNDBVTldNZnR0VGNIYnM5UVN3cU1CZW5Gd3hiN2RwZ05lY29jTS1ILVYtcjQ5VkRLSHBTMmV6YlN0TEN0dmFOR3MyOVZNV3NZZlNmVHVlR09HUU1JblJUcTYxMkpN0gGUAkFVX3lxTE02ejY1ZHdiajZEb29aRXNZTHB0dFd2amNFeUtRYUx5R2ZiM3hmWVl1WWxYTmxCU2JvanhGY0FxMkZIbnlCYlEtMGtibXVxRktMTGNJOWhXV0FTUTRfdzFNM3M1QkRZVHkwSlZmZGxhOUliQmg1U205QTZGNG55b2NTUFBCbmZBdzRiVkZBMXZyaV9SZ1htWDdMcEI3LVRCUGFCZlVNams4WkdxQ0JLS0xQYkVRckNRbTB6VWU0eXB6Y3I3LVBrYVRzN3BJLVYyS2V6aE9lc09tVndqSk9aUWppNGVHWVVBd1VrTjhJajhCbk96RlI3QUd2WU1uekVKYmNaeTNOM0NTbHFaS1UydDN2RHloUw",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:46:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi appointed HDFC bank CEO",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWG9uR2JtNFVUWEtuc1ZYT21SZ1RtZElQNjF6MS1hd0tBcUhmWllxRnByNzdXZXhjajUxczY2cGNyTHNzcjhOaC1kMGJVS2pxaXdUQzk0TEd5ZXNSMWN1ODZzQW5kQTl5TWtxMEFoZl9sbExkZ3dHN2d3XzRya0hsaUJNUDZvc2VsYklPT29DSE51eUNWMXk1S1g1a0hvbGVvZTktNHJmZUF6ZlBqWlJ2dXBrMTF1eUx3blNWVy1B0gHDAUFVX3lxTFBhVTlld0NKSnJfNGZRcVRaYTRCYk5yU0pEdGxNRlVoNTk2ZHlQZFBjRDVJX0lIRGZ3UW9IZms1QmNDcTRWYl9sdFVKU2dUU0pOZWhWYXlLQ19IeGhtb041enl5VWdsb2ZCQ25UQTlMQXA4MkVJb3k5bWNDZGNhVXQ2R3FRSll0Qk04eWQ0VktadVRWMkszZ0tsaHBQcUZHVHpjc3hrYjBoMGVWYlBIOXFzWTJfaFE4bzhIbEJ3WkNORUFORQ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:19:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi takes charge as HDFC Bank MD and CEO: Tracing the banking veteran’s career and achievements at ICICI",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPMUJTclhvMXdfR2lxZFdlOFVYOVNDbFh3TDZYXzlJRWtXOGZvY0t5VWotMGl4NUNVLWNPZTd4Uk1NMFpxdERWS0lVQnFJUXlmVU9wdWpnMzZ6U1VaX2cxc19FNl9sNUQzOWpMbS1idks3NWtyRFFNNkxSbVlzdTh5cFVGai0wc3g1Mm5OTHFXdlg3TER4WWtvaHU4dW53d2h4NjhRaTI0T1ExTFRiUnZ5c2NiazZzX2ZYUmd1aWJLUUhaXzFmVU53QkRWYnl2Wm1KcU1JRFpLT0JpbEZjWm5zMlJ1dWx6SkxKNEtmeXQ5cGZNbHFoS3doZFlkb2NYUnNzaE9j0gGIAkFVX3lxTFBYS0xKa1JkZTdERXF2ajAzNDhBb2paOHRXeDd2NkM5b293d2UxYXpwbWFjWUFST0pLLW8wQW9BSVVGd3NZZm1LeVd5SWtlNUtSRHBLcDBMZ2NoSVRXRERieExjbTlqby1aRi1BNXhLNXYyYWZmS2cxNWhZTjgwbVlKZmFtS0J1NmQtMjF2WWdWa1E2YVdzcXBYakJlV1h5LS1DTW45SUFwRXBLb09SZTBhdWpaYk5pdmQ3SkM5TXJUY0dQd0RXU0w5TzRZandIbXdqaklZaGVSQmNMR0FwanRTUWV0S0tyMTNDYlFKcHU3d2FxZXlQNEdmNnR5Y3kzOGdpVXVlYVJaSA",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T15:04:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi to head HDFC Bank from Oct 27",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pSlFvUHE4cW9MRmlsbFUyWGZhMFhRbWRvWk84Z3hmY2szVG9sTlJjSHRrU0RnYjRreEc1d2x5aGxqSVllRGp1THJES3pnekl1WktseENWXzRlVEM1aWNhZ1F6ZENzMjRjWW5adWs4N3gwczlZXzA4",
+      "source_name": "telanganatoday.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:58:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi to lead HDFC Bank as RBI clears appointment",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeFlXajZpRVdQenBkZDR4V2pzNENYbjViR3RSdmh2elcwT1RfdllmVXM1Q2lHVXZuazhzRFZtNEJ0b0JyaW12c1RobTUzekNKMW9RNVRGY1ltVHhhYWNtMnhxSzNkNXVZMVZnTUlBdXFCV2RTVHB6YnAyVWNacHE1ZDFENktIS2pJYmRIZnl0SG1VUUFqamdiakZPdVlaQ2V3bUtySmkxMjdXMmxWSEphZzBJNXhYdEE",
+      "source_name": "The Hans India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:06:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Bagchi to steer HDFC Bank as RBI gives nod",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcGRCejZjSjZSZHdmcklYelBTQjhpcHdkX1ZRb3R0MEpQQ1NleGF6M09IYy02ZWpVSG9kY1RtbHBKRWliTnVtQ2FxS0dIYURjT3dmdkFlWUxaNlZCOC14X2lJUzJWRzlEbFFwc0pMSzFKc0RDZDdnX0hEQ3ZwMnF3VnhQSlBKbEVwaS1kX0lmczlpaFZMdVpISXcwNUZlc29WLUVRZzFNMlNHX2NWa0ZZ0gG2AUFVX3lxTE8xdjU0VllRZE1KRHZWTUtxaHlWSjZiYU9OMGZNV3R3MlJCeWw5NEpmc0pGUl9UWUQxRDM1WDZEQ1ZueGFyYXl5a3hjRlh1ZE1HdHJJZnNLOXd1el9jR244bWFpOW1Ubm9qVHdPT1paWTdzMS1sdng0b0NPYVppUldQOHZ4dEV3aDlRaW9qb1hNSHg0SmxmdlpGZHp0OUZQU1F2cHduTGxOejk3UEhMTE1DZTFZc2d3",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T15:42:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Anup Kumar Saha appointed as new MD and CEO of Kotak Mahindra Bank",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdm8yTFg1ZzZXVlJsUFhGV1B0eU1OUGpIY1hZY0VvQ3ROcFQ0Z0I4c1pzRmtTWjVseDVsWXBVUGNEV0VvUTNaVVRZU0UzbjdmMnEtYjhOT21HVG94aW5UUXFFRW1JdDVweDQ1bUxwcVE5azFCSzZxcGRHU3lzRkxteDhpdUtIOHU3SWpDcmJOaEVKSlR0aW1teE1GM3JuLWlPQmJZTTlVaHRnTGxXTWMxYXlOdURNOXBjSGNLSHUtV0tCNTZJVXVxRHdR0gHKAUFVX3lxTFB2bzJMWDVnNldWUmxQWEZXUHR5TU5QakhjWFljRW9DdE5wVDRnQjhzWnNGa1NaNWx4NWxZcFVQY0RXRW9RM1pVVFlTRTNuN2YycS1iOE5PbUdUb3hpblRRcUVFbUl0NXB4NDVtTHBxUTlrMUJLNnFwZEdTeXNGTG14OGl1S0g4dTdJakNyYk5oRUpKVHRpbW14TUYzcm4taU9CYllNOVVodGdMbFdNYzFheU51RE05cGNIY0tIdS1XS0I1NklVdXFEd1E",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T03:07:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank ADRs jump over 5% after Anup Bagchi appointed as MD & CEO for three years",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUm5aMGo0Ym13ZHZFNzExQURKVHN6NVYwa0hYeXJVNk9vQVUyeDhVWEkxd3dFenE3SmE3aW9lZUlMTm1RSkxvdmpGU3B4c19CMHRfckltQ3hTeHExZVoyX0JoVlZ6QWU0akpmcEtPcUVGUHZBcktwX1NKVU9nWVZ6Y3JacmRJWHg4d2VUWFNKZW95THBqMjQzcVYybi1xVlVtY3MzYWV1N1pWX0hsb1VvazREOGpVYTVCSm0xNU1BWDBlSUlfbmZPeHdNcDHSAdIBQVVfeXFMUENySEdXZTA1OGxPNzBFTFN6TndTbW9pTkk5am56aV91RjhvV0RDUmlVSy00Vl9mR0RzdFRFbUtFOGwya3gycEdPOE9JVzBtN3k4OHZndWtsWVdPWW1mal84OW9FMk9mVFNTQ01vRHA0Tkw3VXl5MThud0F5WUt5X2laRXQ5SENEZ0xxVUZYSHRFTXZIN1hVRHkxdnZHbWtHYVZlZ3ZQS2tUNnk2aTRjdGVBTjk5VlBMTk5STnN5TzRkOVFrdE1JdTRBQWdfckh3UFBn",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:34:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Appoints Anup Bagchi as MD and CEO From October 27 for 3-Year Term",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX0dIckRlTkRHdkZReWFiTGh3OHVMMjUzeXNrWGwyaS12S2FpNkx1c2lBMTZieHBlQU1GZDNrSkQzdkhCSTJzMXVWazZQM05tQlQ5b1VGV1o2MEJFazZUZmVUVUlEdDFDWVB1X1ctT2dWbmlwRUswWmtoQ1hyQWkxVFkwRjY2VVdNTUdZUTZzYlNKdFVORkpIZWxCWTVUcVYwcmVuX2V0TU1Hd0JDY2tqcFhxNnlZSnotWkpoQk55ZGPSAcYBQVVfeXFMUHF2QzJaTkRiLVI2R3ZCWFRjWnF5OVpmZ0E2V3g3SGhBRGtMbzlOcUdDSnVpNi1nWEdndTRFemFXWDFkZUN5NnhhUEdhZWgtRjdqUVJiMG5IVTdhb3JXS1dCaDNQSVFxMndVQlBqNHpJLVFrV09JbzhZamFPZG5acm0yUWdVMFpkN29sV1pwWjZSb1RFaV9rWV9TZWhHTFMtdVAydGlRZmRtMVhoWVY5eDRHN2xzMDZwVFlQdnBwWkhGN2Z4U3dR",
+      "source_name": "latestly.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:30:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Appoints Anup Bagchi as New MD & CEO Following RB…",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNQ0FkSVhYcW9oX2JjcUxDZm0td3RNOXh2Ykt6ZGM3UmI0MHUxcDAzV0NQdDNKam85SlljNkNkblpiaW5peDZPV25vaGhrV3ZWWEl0emJxaVBwSGdCdGlTSXNwQVNIdHhOX011aHV4emZscjl0WG9VZWRCMUZ5X0ZlYWotZUNhRHFIQkZOLTdWUlZzbGVVeVJKNnBjV0d1a2NuSHVibjAzNDRLUTRaTDY4QWF2c0xDV0NobW8wMjV5YU9Pa3p2QmxFUEhTejU1QQ",
+      "source_name": "GujaratSamachar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:50:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Gets RBI Nod For Anup Bagchi As Next CEO",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOS3JuS1lIRnc5Qkw5NFdpQkhaTTNvWkdUcDZEMjlUd1JIajZTMmNxWm1jZkFHVC1wR1k3WlY5M3VPX3NiVGVxLXVhSlBtaWxfd0tRcGEzUng4Wmo3cW53Wm5hcF9FS0pZWnpBZFAzbUtkVm56Ry1GR28wci16dGw0cDktRTI0NDF5TWMtSXpMNzhhN19jRVV30gGkAUFVX3lxTFA1dS1GVVdnTmlyZ0dhS0g0TmduamNXNUc2RmJjeVhjQkpsWTcwYWhtc2p5RDg1Sk5VQTBncHBHcWlGdmlHdldQM3ZWUkNrbkxNWVFUWXlRS19OTjIzV3ExRjY4VFVLME1Qcm43VkNKRTFITmZiSWkxUWh0aHVkZEpTV2NGWVJFVFlhRGtaR0V4OXB6T2VQMmtVZUFjc2ZaOHJnSmhu",
+      "source_name": "outlookbusiness.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:25:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Picks Anup Bagchi As Managing Director, CEO",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObEhJcmU1Y0hMOTVZZ1Rrdm5jNVM2aUFvTGpsanRONVJlYVdCbF9PcTJUMHdNaFFMcHMwSTNqc2t1WU5hdE9qLW1tekozNDZFcElNeFpLTC1jX2xYYnJUb3FUX1dQb0V1cE9XbXR5RFZjM0VfZmc3X0NQRm54bWMwLUptUnd6N1ZXaDJweWVHV2twbm4xb2IxZg",
+      "source_name": "NDTV",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:06:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints Anup Bagchi as CEO, to succeed Sashidhar Jagdishan",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOT3FLdVpBZXZKQ1pQamxSYVN5V0o5T2RGSXJJLURqMUxQN1h1Ri11VnpmV09DdzZwQlJ2QnBsZWIxVXBUcm55RTBRQTlIRWVxUEI5eEROV2hPUDVjSU81MGVPVFd0MUJsakIxcU0zSVc2MUc2VU1vVDc2X3BHeExXRjNLaFJrYVd1eXRSREk1TlBiR2szYjdySlpNb1h1emVGdThnMXFYR1JPbERwTTFNeWg5XzZqMU8x0gG-AUFVX3lxTE9aelBSXzFyX0taRW5nLWNuTnZ6WWJFck9IVUMzNUJuOFhSZ1oyWE1hSVQzUTBLOXo1OXpJb203bW5Yc3VfdHI0WURsU2hNRjI5cGxYaHNtbVhoZWlHcS1TWTFEbWM2Z3JyWk9TdGQ0LWNXM1V2NHUxcktqNmhxSVpDZ2ZXc1VUOUZkS1hDRVRydm5SMkJNS0NXZjdHUFk0MzBPcGRZOW5sdXFLN0c3czNVbEZZclFaNGtnb3R5LWc",
+      "source_name": "Firstpost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:30:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints Anup Bagchi as MD & CEO for three years",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRUhzRXVpV3BZZUJxcVNKTzBtc2hzMFlCV01BTnRneFhLWTFDc25QVXlVTmw0RlM2dHZJa3JQSDRjVTl2WWc4MUVlSmlhNG9VdFRNN1lCSkpLai1mdEQwdWFIR3VRaWVBLXo3NzUxczZnYm9yYnVWbS1Wa1RGcERRZ29BYTRzd0FGSmdzaQ",
+      "source_name": "prameyanews.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:57:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints Anup Bagchi as MD & CEO for three years; RBI gives approval",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQ0NUWXFocXlpTWJ4TmVuN1J3bjVoRW9rcVZkVEpnR3FpaE9fNlZrQTg4dzBzY3VIQ3NpRDZMQVFpVUpBZHloWGVYMzdVSkZOVGJrNDZXdmhnTkdIX3kyLVNjWkRoalBsNERhbno2cXd0NHFCZUVDbjJlX1FUd3FydTA3c201VFVhWUloZ19nU1dPdGJ3TGJLVDRDOFhuUE9rU0Z4ZHFHR3BqaER0RTgyTHRXV3NUOHlUeTVueUg0QdIBvwFBVV95cUxQQ0NUWXFocXlpTWJ4TmVuN1J3bjVoRW9rcVZkVEpnR3FpaE9fNlZrQTg4dzBzY3VIQ3NpRDZMQVFpVUpBZHloWGVYMzdVSkZOVGJrNDZXdmhnTkdIX3kyLVNjWkRoalBsNERhbno2cXd0NHFCZUVDbjJlX1FUd3FydTA3c201VFVhWUloZ19nU1dPdGJ3TGJLVDRDOFhuUE9rU0Z4ZHFHR3BqaER0RTgyTHRXV3NUOHlUeTVueUg0QQ",
+      "source_name": "The Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:47:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints Anup Bagchi as new MD & CEO, to take charge on October 27",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMEZLVTBjQ2g4QnRTdGVKRXlhM2pmWjRwUU5ZSHlvcC1xSU1iMG1GT3hGOEpLalBidnl3N1BPaHJGWEhfQkdHdW5jR0dDME5OeGVZbU0ycGF6QWZkZXMwT1lEMFh5VDFVYmNWRmZSZUNuMG1YUmZ0WkJXckxNQ083Ym5OTmtYYUs0MHhhZzVGTlpyT2JZMkNRdDExUEdabE0ycDVoYV9hcVpJNzltOC1SalNLcWg0RTJvSTUwTUxZdnZqWDZ2LXY3cVpIeG1qdTBMWTAtVEVNTjBPaVdzWmJJ0gHfAUFVX3lxTFAwRktVMGNDaDhCdFN0ZUpFeWEzamZaNHBRTllIeW9wLXFJTWIwbUZPeEY4SktqUGJ2eXc3UE9ockZYSF9CR0d1bmNHR0MwTk54ZVltTTJwYXpBZmRlczBPWUQwWHlUMVViY1ZGZlJlQ24wbVhSZnRaQldyTE1DTzdibk5Oa1hhSzQweGFnNUZOWnJPYlkyQ1F0MTFQR1psTTJwNWhhX2FxWkk3OW04LVJqU0txaDRFMm9JNTBNTFl2dmpYNnYtdjdxWkh4bWp1MExZMC1URU1OME9pV3NaYkk",
+      "source_name": "sambadenglish.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:15:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints Anup Baghchi as MD & CEO",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOT2ZLZ0lVLVlNTUxIQ1FQOE5kZzZCdVZJR2o5VUFOcnR2aEJicFpnbkZBajlhaHdSNXRCc2UzS3NhTmNIMGdqLU1oeDhMQW5hb3pMd281N0JtR3JSakRFbXBEdmIyRzBVSC1la25RekVwTkhqYXVFT0xhUC02dGhxckJLSzA4am8tMWZoQUhlWkxZUzUyN254dzVuWGRMcHVEWXlGYlVzODVfd9IBqgFBVV95cUxOT2ZLZ0lVLVlNTUxIQ1FQOE5kZzZCdVZJR2o5VUFOcnR2aEJicFpnbkZBajlhaHdSNXRCc2UzS3NhTmNIMGdqLU1oeDhMQW5hb3pMd281N0JtR3JSakRFbXBEdmIyRzBVSC1la25RekVwTkhqYXVFT0xhUC02dGhxckJLSzA4am8tMWZoQUhlWkxZUzUyN254dzVuWGRMcHVEWXlGYlVzODVfdw",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:06:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank appoints ICICI Pru's Anup Bagchi as MD and CEO",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQlB3M3Y2LWtKY1VQN1dUMHdxaFFXd1AzT1JxeUxNRjBYY2RmcWs1ajRSMnhRMXJFS1JVb2RHUHhUMzhFWjJFSEctYlFJTmQwMlR4MGowWkU0Skk3ZWQ4NE1kS3pLWWlLbkFKRUVsSkpEdWxPMjRnQ0lLckdUUlVwbHZWX3ZxVllVVjB5b2hFb1M3S2FDQTdZemZyaGl1MjVUUm1hbjJyTjEwb2PSAa4BQVVfeXFMUFhpeVNTTnBlZU8wUktiTXlleWlab1FZWTZNM21aQ29BdFAwc3p3ZnlxbGI1Y2MzckxXVnpHNmc2YlB2bVdKeldHeDlTWUYzbEQ0OWxtZkxWLVU2eEZaSnJGOWtvZS1SMVFBbGdqRld6Vng3WWR6YTVkYU9IWGRMak9GZmVlQm1oNExNd2Q5ZGNySVotVVJNZTVKcWlnc045RElxa200N0RhM3BWY0VB",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:10:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank gets a new CEO in Anup Bagchi - Can the share price get a new lease of life too?",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZG83NXFYbmFJWFZ4Z0tiNzladWkwdzZGUkhXNFAxNDJWcXB3NlMxdTdWSTBJZ29tczlwTWFwMEJtemJIR1N1S3JRa3dHWG91eGVkVzNkRWJqeVd6aXdmS0hjWWQ1Y1lBNzJGdFcyR083N1hxRWpTS19JV2JhUXlnRGdhdi1wVy1XUmtVXy1EUzRMMXBEWi0zeVFmdVQzOUg0bC1ZYkFwMTFTaXhEYVhheVVCTUpFU3dqX01idHZnRmFUQdIBxwFBVV95cUxPbi0yNnh1QzlBSGdSRlFSdFFsdGg4T0dVQjU5b016ZHpSUHVmUl8zeXlpY091OXhQazBCQ1I3OVlWZFZGMTNXejNCMDhkbzZJYW15UTBRa0dfV01PSl9rQ2dFR1F4VFVGMEFiQjBWWWFwTGZQTV9XTHJhQ1ctN1pfdWt6UVp0RU5lVFVKWkRQcWFwSkx5SjFLdThVZVpqZklCSERaXzhGbkJpTmhpNTFXQWw3SkdWb0hBWmNHUGdGSE83U095LU9F",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:53:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank names Anup Bagchi as new chief executive",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcGdfQ3hzZnliZmxMTUZpdEdhaFhidVpDQ2dDZHd4bnlveWdDOFVjUFpTT2cxU29hXzBPR0ctVW1CNkVSTll3RzRjcmVFSUFfX0t2Wm1GUDNRYWFJUXAycWpGa3FKYVV6T0V5UnpQYnl0U3JXYkstRFpMQXlsYWdwQVd3Nk9LYjBGSXhaRE8zR1J6ODRKTXJpNmpVOVpZNE9Iang2Tm9DdVRfcDNZVDZhNA",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:18:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Group veteran Anup Bagchi to head HDFC Bank",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPd1libWxIekQxUmpsQkY5N0cxRUFtYUhhelhlNDgyYVd4UEhTNHY4SXk5SnZBanZVb1BoeEtGV1R3b1VvVDhNd3BCRUlDbnZSOGFKNXlpWWxvdElJYzhWMFRFU1pFQVU0eG9lMkF0bVA2RUQxQW9iTE1ndGRqS2xCSEJKNnNaU19BbkRfNmY0WmZwY0U2RnJNRzFyUTlZVnBaVllqNjBhdjhfbjhRVkgwdzAwS3dTZ0hCUFhkYkxBbTRjQdIByAFBVV95cUxQaUE0UEt0M3d4NzZiQ0pIQ2g1dXpCR1k3dzhfSEt3cnRuUG1CQWdMTkdfWWFzOTdFaWVSaWZwZzNwTHY5WWhHOWpmM2Y1eEI0RDZaVHJCbjVtbWg4UHR6RnJfU3lxRXRtOS1YRUF6Q1V5UG1vMElRVWNwaUxOMjZVSk9LYTB6RW5WQlJROFY1T1FlVWdXMXdkRnJuem1wek8xYXdnSC1UUVhGSHBlMXpodjZIOEpKX083dmNISU9vMVBtS1puSVBENQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's HDFC Bank appoints outsider Anup Bagchi as CEO",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQkxTZWNtQXFucmJXdmRxR01taG5SOEVfT1RYSm9JelhiWWNqRl9BLTRDa0p0R0hqbXRkTm41bGhzT0hiSkdoTVppVkZzSlp6aDNBdXZ5a2NlWG80M21yWFNheHF0MjZqQlNWempyNG5qRHhlbmoxQ3ltVFBXLVVxYkw3UkQ4eVdfejdYNDJkLW1Famc",
+      "source_name": "Reuters",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T16:58:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank Gets RBI Nod For Anup Kumar Saha As MD And CEO, Shares Rise 4.11% On Leadership Clarity",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNQ3U0YW1ETzltbUhiU3ltekNVbEhIajBmck5ISURzOE9DcEs0SDhRUl9yU09EOWhURVJ4YXVOdU9wYlNWeXllT256S3pDbHBGUUFkaEZrRm0zbGNxSDBJYnhRYjkxRXpoVnR2U1FfaWxtZGFSbFY0SllJSkI2UnU0TE9tSGk2bHRCZnN1M1gwbV9tUThHQ0FYREw3eUJKemJkYkZ0YngyVEpHcnRtYi1MaXE2a05qcjdXM0lOZk5WSnFZSlV6T3MtQVgycUVmd0xMYkl4Um9XWGh0aG1oNFHSAeMBQVVfeXFMUEtYQ0NuTXZLeEJYQkgzaldSNGFLc3pMZHN2ak43dUJNQXBSRXpvRFE3Wlc5LTJBQWdNcVozTFQtenJTSHY4S2xwOTFpb3FjOFZvN0tNM2twcEZSdVJVSGlXa0JweFBtamx2ZkUzNmYtRC1IZFBPX3pRZlRkb29ncnNyTHkzemtUd0JueXJZSnUwQ0Y1MjE4SVB1UlZmR01HX0JzdThnVkI2bGlIT0ZtU3ZOUktqS0VseFdvMHZTandUODlRYm1GT3ZaajRJbm5sdE1fbTl3SVVSbzVDcXZUcTNBNUk",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T06:23:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank’s MD & CEO designate Anup Saha could shift advances mix in favour of retail lending",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOdEhZdE0waGJCWjlGNWpvSXJsOVNOS05zeG1vRGNOdFdTZUZvdm1yQVlzcVREdFMwMmxLcXRvaXdmemJQVXpOTk8tS2d1MTlWVG5oSEZkakdVajhaUHFndDFqV2EyVEhxY1ZjZWRLa2NzbkZrZzA1ZnR1dWdZcGZFbHBFdWxNZE4zOXpoN0Z5dm5DMDhGam92XzJZeG5NWGZSRWlqb0h1N0VTZUdhT3ZqN3MzdXhESFdPRUF6RkRaaFRSUGxkZVp5QXhBNDIxX0cwMzBNSWVEZzlFRzBURW9COTlWbkNqNXZkbm1vTHd1V0ZTOHowb0dsazNBek5ENDBhQnFBZkRzdUxqNU3SAZICQVVfeXFMTlJMcnBPUVN0ZlBzT0l6dkxZcHdqLTFHbnFuM1ZzQ3JOckV3SlRRY0JaWjBwWnZyQm1IVE10UTBMU1RuM0R1SHItbzZGaHFfN2ZhWmkxT3A4bEViM19CR3FtTEhfbDlBNkkwR0NvVkVXWXVWZkRIbE9TMnFFUXNfY2ZUN1Y4MXNDWW5NRGtfTVJPTmJsdVVfTHNPMW5YakhKY0p4cmR0OWxfbkxmSHdpZDEwZmVOcTFYbHlJWVVKNTdGdG80T19PcmtDZDBlblFsamdnWlVDYWFYcGRxeUtraURWbTBoTXlPcXlVbzR5Q2I1UGREQjZwMFNTU0U3SmVPSXVXN3V6NVZMc1FFeURONWlQUQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Meet Anup Bagchi, HDFC Bank's new MD & CEO - ICICI veteran to take charge from October 27",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbldMZWJlbV94OHd0UWEtSHlNWjNhcjAtRTVCUTJzT3hsRUpoVnpLQ0R0WnlxYzBieXpveGhvQzFtY1V4Y0djTlpBWmhoZ0lTZURael9PWGZIY1BhbnBWcm4zNUE0WDFKanQtMFhTdmpVa21IT1Q5WjkxQm9nU0FuT2ZndFQwMkpkaWtIMFYzUjhRLWNIMjRFcnFsaFdkZGktZjBSNW9ma1lGN1I4VjFHbl94dVVLdzFBVHFwbWs2Z2g4LURSV1NRaUFPT3BzaWFleG5wT1lUZ0tfTEs2ODNnR9IB5gFBVV95cUxPUDJHRVJVbnJWR2tPeWhKWTIyZWh4anlWbWxza3BOUjNsbjdESDg3ejFOZGpDbno1b0pPT091MkhiNG5UUEhiZm1welNfQkRsaHZpNW9CN242cVZGRDJXc0VoT0RpSE5DbVZsV0o5WmVDcEp4UjFEVUNGVE5ocENySUNxa1hBQkxlMUJzM3FhRHlSOU1HT1Fzc2lBZ1Q1M0tjVXZvS1NYVjQ5cmNCd3d1djZHUDBHQzVuQW83VFhaRm96aVFUWWdTblRJdUtVQjZYNm9nYVpOOURsSHZLS1hFOWJHRzdBUQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:30:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI approves Anup Bagchi as HDFC Bank MD & CEO for 3 years",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQ0RiUU0ySGVkSnlNWjFETUZ5RWRjUy1Vdk1SdFJrcDJEN0s2VnBZaER0ZWp6bjlja0pBVWxIX25rSDA1MWRtTy1zSWVxcXdtYnFSNGNNWGFnZ3BpdGUyMExfbDZ6LTZ4UkdOQnp2ZG42QWRhSE9MYnhaWHIwOU8xa0M0UUVZdnhBcVBRYnhac2t1UjVsd1lwSGpxaWdyZjBBaU1uMEV0Nkh4UQ",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:38:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI approves Anup Saha as Kotak Bank CEO for 3 years",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQY2cwR0x2bFpuTW45NVRpWnE3SEI2bU83eDQ0cC1WZnBoVnJ0ZmVHVGljbGJ5aWt0WGh4SHNpTENSVDE5UWFGbGlLRmpfem9WcF9GZWJLbDJHbF9wcmFPQnR1UGlnYmMtdENrVE1UV0FxVk1tMS1fR1ZWVFRvWVM5ZHZCOGZLVWl6RUtFdlF6TS1vbGpla25OTFVuWFdjTHdhUnIwYVRMS3ZnUdIBtwFBVV95cUxQMXFIbUg1RWVERGU5cUM2elFtWEMxWERiSjBOZWhLNjBqWkVMRS1jczhfeU9MS2FkV3pkM1lnQUhqcjdUZl9KWmNrc1d1anIzRXE5aTFVN0NHaTg0UC02RmZNWjFyQWdPa0RBcUYwV3lxVmE3N1FRbmh4OTdtcHBncFJfSE9Rcm8wWVZHV010ZWxZOUV4Z3NQN0hpaWVGMVM0NXNobExZb001Z2ZLTXNlQ2RMR0NRZjQ",
+      "source_name": "newindianexpress.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:28:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI clears Anup Bagchi’s appointment as HDFC Bank CEO in flat 20 days",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR1JlVmdwcjhCZkVGa2NKd01oTjh2dTRqeGxBRjdIbTZfXzZrdGZURjFERHpUQmVkendQQVR1ZVg3VnFBM1prZmdMaWJFdnBENnA5WUFoNy1QaFZuZldxTk9rU1kyang4TzRoWkhFUk5aZVlfS2hMNFZMM2doc29CQlRpUW9uZ2dZSkpPeGZxb2Y4b3B3bUxLcE5QTEdnUjdBazBOWGViV2M2RTRHaWNuMmRoTTFQMHpNSkhiSkZ0Y9IBzAFBVV95cUxOdjBhYzduTW53Wk80OTg0VWtiWnJMcjFHdmVkbm0wWTlEcGcxd1RNc0hjUzB5UUhPRzRZZzJvdzZaRVRxNGQ2WmJ1TmdfRW41amktSURPUW85TUxtYlNJenpNd1JBdFBNZlBlVk8zNnVfZTRiQ0VjanVSMDJJZW9YX09XTGlfUE5FNnE1WFN4b19NdWs0by1teU5HQlo2d3RDVU1IRnM1R1VCeGo0ZFJnTkRNZi10dXIyN3Rfc3BPTnkzdER2UmZ2NjgzNko",
+      "source_name": "newindianexpress.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:32:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Video | HDFC Bank ADRs Spike 4% As ICICI Group Veteran Anup Bagchi Gets CEO Charge",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa19QcExBS05sOHpYa2xXUU5YaHFhSjZPcGJsVWtLZ0ZIZF9rSE56V3ZVenV2QWhCRXBzYjRRelI1WWp0elRyNjdYelI4STZIYVBmakpSVkM3MTRjc3FDS2lMb3hfUVEwR3ZMU05TNU5fczhMQTg3WnFXbThsMFJteXJXTnVlZWl3N1d1UnR0NlRGbGZtN2lnTUhiT1R2VmRGXzNUakFKdjFDVWE1OENXSl82cS1uYmhaTDBVaXhVTXVhQQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:58:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Who Is Anup Bagchi? The ICICI Group Veteran Taking Helm At HDFC Bank As New CEO",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTjVZUE51WE1QY1k1M0dmN3JGenBDWDU3WE51enpCd3EwdzQ4b3U3YkljR05QSlJsOGtEWkQ2cWkzaFk0a2VtelRyVWRHTF9oOEwxVVAxLU1YQ2hfU0pXWjU3SXdhLUtObmJzZDM3UGtTMkpDX0h5MU9ISlpocmNubVA1US1uOTE4ZVZybWl2WEs1cEE5TXhISElEMGUwLXVzMEdya2I4MWNBWjdza1p5QU9QaThibHM3NXdobHFzV00wNXlB0gHMAUFVX3lxTFBybGlsVzhPdWJfVWUxenpRZ2FPUEtjUC01eS1MTFRFSXd0LUgtNjJCcVFEQUlBa29lYV95UTRlODVoQmFjVUxKYV8yYmR5U0NmRTBCSUxLeXNhMF9JWXVKVldKa2VyTmxJenA3aVRldDNfQU5xb0I2MFh6UUZDLTRPWXR0NDlhaHB4enVEMmdwYzFkZHFGemtocDhVc0N4a1NsTkwzTmw0S2ltUkxvdnZ4QXY3aXBubmJCelZYby1rMF9SaUxjcHlFZ2ItZw",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:47:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Who is Anup Bagchi, HDFC Bank's new MD & CEO? ICICI veteran to take charge from October 27",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUDJHRVJVbnJWR2tPeWhKWTIyZWh4anlWbWxza3BOUjNsbjdESDg3ejFOZGpDbno1b0pPT091MkhiNG5UUEhiZm1welNfQkRsaHZpNW9CN242cVZGRDJXc0VoT0RpSE5DbVZsV0o5WmVDcEp4UjFEVUNGVE5ocENySUNxa1hBQkxlMUJzM3FhRHlSOU1HT1Fzc2lBZ1Q1M0tjVXZvS1NYVjQ5cmNCd3d1djZHUDBHQzVuQW83VFhaRm96aVFUWWdTblRJdUtVQjZYNm9nYVpOOURsSHZLS1hFOWJHRzdBUdIB5gFBVV95cUxPUDJHRVJVbnJWR2tPeWhKWTIyZWh4anlWbWxza3BOUjNsbjdESDg3ejFOZGpDbno1b0pPT091MkhiNG5UUEhiZm1welNfQkRsaHZpNW9CN242cVZGRDJXc0VoT0RpSE5DbVZsV0o5WmVDcEp4UjFEVUNGVE5ocENySUNxa1hBQkxlMUJzM3FhRHlSOU1HT1Fzc2lBZ1Q1M0tjVXZvS1NYVjQ5cmNCd3d1djZHUDBHQzVuQW83VFhaRm96aVFUWWdTblRJdUtVQjZYNm9nYVpOOURsSHZLS1hFOWJHRzdBUQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T13:30:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 59,
-  "source_count": 2,
+  "article_count": 106,
+  "source_count": 3,
   "primary_source": "Livemint Companies",
   "cluster_key": "HDFCBANK+TMB|MANAGEMENT_CHANGE+REGULATORY|anup-appoints-bagchi-icici-rbi-veteran",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.369297+00:00",
-  "last_updated": "2026-10-01T13:34:34.429573+00:00",
+  "last_updated": "2026-10-01T19:00:56.159019+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.369641+00:00",
@@ -733,6 +1188,36 @@
       "timestamp": "2026-10-01T13:34:34.429558+00:00",
       "change": "ai analysis",
       "detail": "HDFCBANK via gemini"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:53.654019+00:00",
+      "change": "sources added",
+      "detail": "Business Today, CNBC TV18, ETBFSI, Firstpost"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:53.654037+00:00",
+      "change": "impact raised",
+      "detail": "TMB 4 -> 6"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:53.654044+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:56.158990+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, BusinessLine, CNBC TV18, ET Now"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:56.159009+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:56.159015+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

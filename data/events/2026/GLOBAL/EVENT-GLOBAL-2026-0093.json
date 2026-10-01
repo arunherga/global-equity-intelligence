@@ -9,19 +9,21 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "credit growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "CSB Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
@@ -33,22 +35,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "CSB Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit growth, and deposits. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to CSB Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -126,21 +127,51 @@
       "published": "2026-09-19T08:00:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CSB Bank Q2FY27 Results: Deposits rise 18% YoY, advances up 22%",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVS11Y1dtajVPak53cnFPdVB0blhkTW9kWG5kQ3hFVHRweUhBT01oaFNaRzJSYW9LN2JwdzVySGNJYUV4bS1NVW5Xc1d3VEhqMFJWMFJoZDBEQTVzalZHVzRubGRyMDBzbjZNbURGeXhyVEdIbGZGdG81T1lMMUhYMFdCSFgyQWJRa3BnelZJN093ZkZtdGRHd1FURDNvRmdOUXIzU3BWV1Z0X05DcVBLSkR2Yzlzd2M",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T17:12:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "CSB Bank posts 22% growth in advances, deposits rise 18% in Q2 business update",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ1dtTVhGR3g2VThkQ1drZndGN2taZmsteHhTWlhxcnNJLUc1Zk5CeGVfa3lFQVc0MjI2Y0lyNEE0Rm1UWl8wVjEtWFNlYUNmeDBscDhnWDkwTVBRQWdDR2RCREZGRDBCcGpYNFNEU1k1SWVBVWtsc1BIUHBacUhBWTh3c3A2WTk2RHJ2X1ZmX2xLWkRGdldnSFlwdXBwM2d6LUdTN2lhSGU0Y2MzZWhuUFZZOHFFNUdfWXFNVWZ5S0tKZ9IBxwFBVV95cUxOTHhSOXBBZjJSOGtiWGxtVzJxN05kX2FoTDlmQUJWNFh6aW5iaml3YUo2M2RYc2cyakNjSmphZTJLUjF0Rjl3VjRkZFRoYlNNaTJoQ2IyajRPOVhvZEtnN3RkcXlwNEpjdFZRZGV2ZDFQU2hIMTR3RVNlNUVvblBKNlA2NWlhLThzWHgxOXRSeVBaMExNS0VlUkJvbmlXaEIzWTI5SnJ0TnZPSmt4U00zQ19GZTZpcEQ1T2VYOTNkZlZKTURpYVNj",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T18:13:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Thekanal",
   "cluster_key": "HDFCBANK+TMB|OTHER|8-quarter-bank-business-credit-hits-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.681106+00:00",
-  "last_updated": "2026-09-24T12:02:56.233649+00:00",
+  "last_updated": "2026-10-01T19:01:13.893147+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.681147+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:13.893126+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18, scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-01T19:01:13.893143+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

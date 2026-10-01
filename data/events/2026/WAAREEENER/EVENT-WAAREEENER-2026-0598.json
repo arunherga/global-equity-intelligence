@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.62,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET",
@@ -40,35 +40,35 @@
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
         },
         {
           "exposure_type": "TECHNOLOGY",
           "term": "battery energy storage system",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": "in headline"
+          "weight": 1.0,
+          "detail": ""
         },
         {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Strategically important competitor development",
-        "+3 Development at a known counterparty (Adani)",
-        "-2 Single unverified source"
+        "+3 Development at a known counterparty (Adani)"
       ],
       "direction_reasons": [
         "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -82,20 +82,20 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Potentially positive in the medium-to-long term. Large-scale battery storage (BESS) expansion unlocks grid capacity, allowing for greater deployment of solar PV projects in India, which indirectly drives aggregate demand for Waaree's solar modules.",
-        "margin_effect": "Unclear. While increased demand for solar-plus-storage projects supports volume growth, Waaree's margins will remain highly dependent on global polysilicon prices, domestic competition, and solar cell import duties rather than BESS deployment directly.",
-        "cost_effect": "No direct impact on Waaree's manufacturing or operating costs, as battery storage is a downstream project component rather than an input for solar PV manufacturing.",
-        "competitive_effect": "Mixed. Adani Green Energy is a major developer (potential customer) but its sister company, Adani Solar, is a direct competitor to Waaree in PV manufacturing. Adani's dominance in BESS and utility-scale projects could lead to increased self-sourcing of solar modules, potentially limiting Waaree's market share in these mega-projects.",
-        "regulatory_effect": "May accelerate Indian regulatory frameworks and grid codes favoring Round-the-Clock (RTC) renewable energy tenders, which mandate solar-plus-storage configurations and require ALMM-compliant domestic modules like Waaree's.",
-        "short_term": "Minimal direct impact over the next 0-3 months, as the commissioned BESS capacity is already factored into ongoing project phases and Waaree's near-term order book is already locked in.",
-        "medium_long_term": "Highly supportive of long-term volume growth. Over the next 1-3 years, massive BESS capacity in hubs like Khavda mitigates grid curtailment risks, enabling the execution of multi-gigawatt solar projects that will require substantial module supply from domestic manufacturers.",
-        "second_order_effects": "Could incentivize Waaree to accelerate its own technological diversification into integrated solar-plus-storage product offerings or form strategic alliances with battery manufacturers to capture value in the hybrid utility-scale segment.",
-        "key_uncertainty": "The proportion of solar modules for Adani's co-located BESS projects that will be sourced externally from manufacturers like Waaree versus internally from Adani Solar's expanding manufacturing capacity.",
+        "revenue_effect": "unclear",
+        "margin_effect": "unclear",
+        "cost_effect": "No direct impact on Waaree's operating costs, though the broader scale-up of utility-scale solar-plus-storage projects in India could tighten the domestic supply chain for specialized components.",
+        "competitive_effect": "Adani's massive scale-up in BESS reinforces its position as a highly integrated renewable energy giant. Since Adani also has its own solar manufacturing arm (Adani Solar), its dominance in mega-projects like Khavda could limit the addressable market for independent module manufacturers like Waaree, unless Waaree can offer superior technology or cost advantages.",
+        "regulatory_effect": "No direct regulatory consequences, but the expansion aligns with India's policy push for Round-The-Clock (RTC) renewable energy, which may lead to future tenders mandating co-located storage and high-efficiency domestic modules.",
+        "short_term": "Minimal immediate impact on Waaree's financials over the next 0-3 months, as the commissioned capacity is already operational, but it may boost sentiment around India's overall renewable energy execution capabilities.",
+        "medium_long_term": "Over the next several years, the growth of massive solar-plus-storage installations will increase the total addressable market for high-efficiency PV modules (such as TopCon). Waaree must ensure its product roadmap aligns with the technical requirements of large-scale BESS-integrated projects to capture this demand.",
+        "second_order_effects": "Increased grid stability and transmission capacity resulting from large-scale BESS deployment at Khavda could unlock approvals for further solar generation capacities, indirectly boosting long-term domestic module demand.",
+        "key_uncertainty": "Whether Adani Green Energy will source the PV modules for its co-located solar projects from third-party domestic manufacturers like Waaree or rely entirely on its captive in-house manufacturing capacity (Adani Solar).",
         "monitor_next": [
-          "New order wins or supply agreements announced by Waaree Energies for the Khavda renewable energy park.",
-          "The share of hybrid solar-plus-storage projects in upcoming SECI (Solar Energy Corporation of India) tenders.",
-          "Capacity expansion announcements from Adani Solar (competitor) relative to Adani Green's project pipeline.",
-          "Policy updates regarding domestic content requirements (DCR) in solar-plus-storage utility tenders."
+          "Supplier announcements and module procurement contracts for Adani Green's upcoming expansion phases at Khavda.",
+          "Waaree's technological advancements and capacity expansion in BESS-compatible or high-wattage utility-scale modules.",
+          "Market share dynamics in the Indian utility-scale solar module market between Waaree and Adani Solar.",
+          "New government tenders or policy mandates linking solar PV procurement with battery storage capabilities."
         ]
       }
     }
@@ -200,16 +200,46 @@
       "published": "2026-10-01T12:34:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Green Energy expands operational battery storage capacity to 6.63 GWh",
+      "url": "https://www.pv-magazine-india.com/2026/10/01/adani-green-energy-expands-operational-battery-storage-capacity-to-6-63-gwh",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-01T12:35:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Adani Green Energy Scales BESS Capacity To 6.63 GWh, Surpasses 50% Of India’s Operational Storage",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxObXp0U3ZPYXNxVndaS1JlRDZjRkpKRURsSGpKbjlhSHRaM1RVRGJEMkxxenpKYlptSHlJMFA2ZlAxOFVWbVZ3ZzZLeDJhdVNlQXpVVVctYmp5dzhRaG92REdsRUpGcXVZVDFMeEREVVMtUUo0VGMyTldXcmFUVzVSTTNkMzNtM1VNcmI5N1k5NHp3R2prbldINWEtYkRMaUNpSFFIT0U4aE1SUEF0UFBKdzVhTXdVQ3F5VVRWYWd3YzJhMlZlcmNNbGtHb2pNV2VubHBLVzFfQnlhN0ZWemQwQk5Uc2xnUFU",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T14:01:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Energy expands operational BESS capacity to 6.63 GWh at Khavda",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON1lIVzctOHNXU2QwdUd6ZW85TVhhQzdXQjR5T2QyN3JWVDl3M0RIaTdQcXZxb1lDdkN6N1UyeVJCakZPNFIxdXp4MlJrN2Y1NVJsMU5vVTlqSmx5cF81dVlmMV9yMDE2bnBqeDRIbks1b19JSV9iVUsyU3FPY1NrVWpDNml4eUtKY0x4THJMWDBsSlFud0lFX1BtQUhDLTFZd2fSAacBQVVfeXFMTndTaXNDZ2padktmM19xM3FNVzdLeXRzSmk4WVlKQjVwdTdrV0RrUGhudWh1elFzbFBkd25ZR09IQU83UlQ1OGNGNU1VNDBROHEtTkF2UldKUk8xaHdrNWRjelM3YnNHRkxvVjZoTEFWY29GQUcxblIzVVFMbEx1WmNhMlhKNDRJcVJDcjlJOUh4S3NEZF9xMFJRZmFwekRVYjVyYW1RWTQ",
+      "source_name": "T&D India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T08:22:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
-  "source_count": 1,
+  "article_count": 13,
+  "source_count": 2,
   "primary_source": "NDTV",
   "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|adani-battery-energy-expand-green-storage",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.683262+00:00",
-  "last_updated": "2026-10-01T13:35:38.398304+00:00",
+  "last_updated": "2026-10-01T19:00:54.593284+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.683386+00:00",
@@ -220,6 +250,16 @@
       "timestamp": "2026-10-01T13:35:38.398288+00:00",
       "change": "ai analysis",
       "detail": "WAAREEENER via gemini"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:54.593262+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, T&D India, TradingView"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:54.593279+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 7 -> 9"
     }
   ],
   "price_reaction": {}

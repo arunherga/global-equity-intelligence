@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -32,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -42,7 +49,7 @@
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,41 @@
       "published": "2026-09-24T06:28:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver price prediction: Gold to move up on fresh buying interest? Check outlook on October 1, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPMC1mdFNLaEpreDYxRmRudEFxUjVqMjFiVk55MEh2MVFtdXlWZVhaRm9ldDNQbHhtQ01yWlZiZ1ZrcTZXT004M2NfQzdHYmVEX1V1R3lDemtmM1JrWHAwdkl5X04teE5HOGJveURUb3JnR29mYnVKM0lKVnV5cWpXNWlLQ0ZkTVVscVctYU0wUjMzUmJjRVdXYUFqZzdKN2huM2RGM0xPREVSdHN5eDItaTgyazh3VGpMVDJhUFJmdV9RZXVmOUJGdnE3SXZzQzcwMk9zc0FwTkVNSnNPZ2JKcWtuYVQ1NHB2Tnc5elRPcXR1ZW5aX255OVh0UTFmLUg0TG4wTEtlcUIzemdtTTh5WHlsX0xaZHp3d1hXaXFlV0FnQkN0RFdpdGItczJ3Q1l2X1pmNmNqZVLSAb4CQVVfeXFMTXZkemNpMi1fcHZaeTVjMXVKcFRTMWlTZVB5OXBuM2lmOGYtNWZ0YVR4cE9MdFlteWVJR01aQjlscXNxQW8zWFpIWl9WRk94OGV0QWFqdF9NQkFjWGhNQ21qSGFnN2tlN0s4SWhQM29TcUVUSm9TM1NFRTZXTWhrR3Jrd2hzang2WFdjcUxINUZ0OHBKR1E4NW82ZFIydmJxcU10S3Vfdkl1Nm84a25YOTBReHJ1RFhQUEFkYTFlTGxrVGZicENLcDZJRlNPYjNYRUd2a09nOEMxR2ZBekdLYXBmMms4WEZnUjRCOWh4d1lmaWFZMTcxaUlHVG5kdjRvbTgteXgwVGpKQVV6SHpSdWJ6MmhRdTNjSWJEWVhQbHNkWm9WQ09GUTF4Yk8wRm5sRjIwSFhKRlNiWEVXZXRR",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T05:55:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "timesofindia.indiatimes.com",
   "cluster_key": "WAAREEENER|OTHER|continue-gold-gold-prediction-price-silver",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.517293+00:00",
-  "last_updated": "2026-09-24T12:02:44.517365+00:00",
+  "last_updated": "2026-10-01T19:00:56.887768+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.517357+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:56.887746+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-01T19:00:56.887763+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}
