@@ -78,3 +78,62 @@ def test_word_boundaries_apply_to_categories(make_article):
     """'cut' must not match 'executive', 'ban' must not match 'urban'."""
     result = classify_article(make_article("The executive team reviewed urban demand"))
     assert C.INTEREST_RATE not in result.categories
+
+
+# -- shapes found in the 2026-09-30 report --------------------------------
+#
+# Every title here is real, and every one of them scored 8/15 or higher.
+
+import pytest as _pytest
+
+
+def _flags(title):
+    from src.classify import classify_article
+    from src.models import Article
+
+    return classify_article(
+        Article(title=title, url="https://example.test/a", source_domain="example.test")
+    )
+
+
+@_pytest.mark.parametrize("title", [
+    "Digital Transformation Market Report 2026: Capitalize on the $2.47 Trillion Revenue Surge",
+    "Next Generation Computing Market Report 2026: Capitalize on the $486 Billion Revenue",
+    "IT BFSI Market Report 2026: Capitalize on the $171.25 Billion Revenue Surge",
+    "Ore Cars and Parts Market Forecast to 2035: Growth Momentum Builds on Fleet Renewals",
+])
+def test_syndicated_research_advertisements_are_flagged(title):
+    """The highest-scoring item on 2026-09-30 was one of these, at 14/15.
+
+    It was read as a severe supply-chain disruption because it mentioned a
+    supplier in passing.
+    """
+    assert _flags(title).research_report is True
+
+
+@_pytest.mark.parametrize("title", [
+    "ABBOTT INDIA Stock/Share price , NSE/BSE Forecast News and Live Quotes",
+    "HIMALAYA NUTRAVEDICS INDIA LTD. Stock/Share price , NSE/BSE Forecast News and Live Quotes",
+    "HDFA Forecast — Price Target — Prediction for 2027",
+    "Top 20 Energy Stocks To Buy In India For September 2026 | Best Long-Term Energy Stocks",
+])
+def test_quote_pages_and_tip_lists_are_flagged(title):
+    assert _flags(title).listing_page is True
+
+
+@_pytest.mark.parametrize("title", [
+    "Coal India and HURL Sign MoU to Explore Coal Gasification-Based Urea Plant",
+    "HDFC Bank Limited (HDB) Investors: Securities Fraud Class Action Filed",
+    "Waaree Energies Subsidiary WCES Forays Into Specialty Gases For Semiconductor",
+    "SAIL, BCCL sign MoU to jointly develop two West Bengal coal blocks",
+    "Coal India announces senior management change as Dr. Anjani Kumar steps down",
+    "U.S. Solar Module Prices Jump 40% Before Import Curbs Take Effect",
+])
+def test_real_developments_are_not_flagged(title):
+    """The penalties are worthless if they also hit the news worth having."""
+    flags = _flags(title)
+
+    assert not flags.research_report, title
+    assert not flags.listing_page, title
+    assert not flags.recruitment, title
+    assert not flags.routine_release, title

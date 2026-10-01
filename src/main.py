@@ -603,7 +603,10 @@ class Pipeline:
 # Flags a cluster carries as a whole. Majority rather than any: one routine
 # wire item inside a real story must not suppress the story, and one
 # ordinary-looking headline inside a routine release must not rescue it.
-_CLUSTER_FLAGS = ("routine_release", "market_chatter", "listing_page", "recruitment")
+_CLUSTER_FLAGS = (
+    "routine_release", "market_chatter", "listing_page",
+    "recruitment", "research_report",
+)
 
 
 def _cluster_flags(cluster) -> Dict[str, bool]:

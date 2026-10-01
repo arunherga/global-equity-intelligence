@@ -402,6 +402,9 @@ def score_impact(data: ScoreInput) -> Tuple[int, List[str]]:
     if data.classification.recruitment:
         add(-7, "Recruitment or examination notice, not a development")
 
+    if data.classification.research_report:
+        add(-7, "Syndicated market-research advertisement, not a development")
+
     if data.is_update:
         add(-2, "Story already reported; this is a repeat")
 

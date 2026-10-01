@@ -246,6 +246,12 @@ LISTING_PAGE_MARKERS = (
     "share price live", "price update:", "stocks in focus", "stocks in news",
     "stocks to buy or sell", "stock picks today", "stock recommendations",
     "sector stocks today", "sector stocks fall", "sector stocks rise",
+    # Per-company quote pages. One per listed company, titles identical but
+    # for the name, so they also cluster together into nonsense.
+    "stock/share price", "share price , nse", "nse/bse forecast",
+    "live quotes", "price target", "prediction for 20", "forecast —",
+    "stocks to buy in", "stocks to buy for", "top 10 stocks", "top 20 stocks",
+    "stocks for long-term", "best long-term",
     "banking sector stocks", "brokerages' radar", "on brokerages radar",
     "analysts recommend", "best stocks", "stock list", "movers and shakers",
     "most active stocks", "52-week high", "52 week high", "52-week low",
@@ -263,6 +269,20 @@ RECRUITMENT_MARKERS = (
     "apprentice", "walk-in interview", "walk in interview", "job openings",
     "hiring for", "eligibility criteria", "how to apply", "selection process",
     "shortly at", "check merit",
+)
+
+# Syndicated press releases advertising paid market-research reports. They
+# read like industry news and are not: "Digital Transformation Market Report
+# 2026: Capitalize on the $2.47 Trillion Revenue Surge" was the single
+# highest-scoring item on 2026-09-30 at 14/15, classified as a severe
+# supply-chain disruption because it mentioned a supplier in passing.
+RESEARCH_REPORT_MARKERS = (
+    "market report 20", "market research report", "research report 20",
+    "capitalize on the", "market size, share", "market size and share",
+    "market forecast to", "market to 20", "market outlook 20",
+    "global market report", "industry report 20", "cagr of", "cagr during",
+    "forecast period", "market analysis report", "market trends report",
+    "to expand by 20", "growth opportunities 20",
 )
 
 OFFICIAL_MARKERS = (
@@ -284,6 +304,7 @@ class Classification:
     market_chatter: bool = False
     listing_page: bool = False
     recruitment: bool = False
+    research_report: bool = False
 
     @property
     def primary(self) -> EventCategory:
@@ -349,6 +370,7 @@ class RuleClassifier:
             market_chatter=contains_any(headline, MARKET_CHATTER_MARKERS),
             listing_page=contains_any(headline, LISTING_PAGE_MARKERS),
             recruitment=contains_any(headline, RECRUITMENT_MARKERS),
+            research_report=contains_any(headline, RESEARCH_REPORT_MARKERS),
         )
 
 

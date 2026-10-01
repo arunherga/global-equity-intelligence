@@ -116,7 +116,10 @@ class GoogleNewsSource(Source):
                     collector=self.name,
                     source_type=SourceType.UNKNOWN_NEWS_SITE,
                     query=query.text,
-                    tickers_hint=[query.ticker] if query.kind.value == "COMPANY" else [],
+                    # Deliberately no tickers_hint: a search result is not
+                    # evidence of what it is about. Which query found it is
+                    # recorded in raw["query_ticker"] below, for provenance.
+                    tickers_hint=[],
                 )
             )
             if not found:

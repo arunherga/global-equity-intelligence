@@ -15,6 +15,12 @@ from .matching import contains_any, covered_by, find_spans, fold
 from .models import Article
 from .profiles.loader import AliasSpec, CompanyProfile
 
+# Collectors that fetch per company and therefore genuinely know whose item
+# this is - NSE, BSE and the IR pages are queried by scrip code. A search
+# collector is not one of them, however confident its hint looks: its hint
+# records which query found the item, not what the item is about.
+TRUSTED_TICKER_COLLECTORS = frozenset({"nse", "bse", "company_ir"})
+
 
 @dataclass
 class EntityMatch:
@@ -96,18 +102,34 @@ def match_entity(
     rejections: List[EntityRejection] = []
     best: Optional[EntityMatch] = None
 
-    # Explicit collector hints (exchange filings arrive pre-tagged).
-    if profile.ticker in {t.upper() for t in article.tickers_hint}:
-        return (
-            EntityMatch(
-                ticker=profile.ticker,
-                alias=profile.ticker,
-                strength="primary",
-                in_headline=True,
-                detail="tagged by collector",
-            ),
-            rejections,
-        )
+    # Explicit collector hints, but only from collectors that genuinely know.
+    #
+    # NSE, BSE and the IR pages are fetched per scrip code: if an item came
+    # back from Coal India's filing feed it IS about Coal India. A search
+    # collector knows no such thing - its hint records which query found the
+    # item, and a search engine answers loosely.
+    #
+    # Honouring both equally was the worst precision bug in this system. It
+    # returned a confirmed, headline-strength DIRECT match before any other
+    # check ran, so on 2026-09-30 a Coal India query returning "thyssenkrupp
+    # nucera wins chlor-alkali order from Hongniu Lanzhou in China" scored
+    # 10/15 as a direct Coal India event, and an HDFC Bank query returning a
+    # Power Mech Projects order scored 9/15. It also bypassed every guard
+    # built to stop exactly that: the negative aliases, the requires/excludes
+    # conditions, and the corroboration rule - all of them live below this
+    # return.
+    if article.collector in TRUSTED_TICKER_COLLECTORS or article.is_official:
+        if profile.ticker in {t.upper() for t in article.tickers_hint}:
+            return (
+                EntityMatch(
+                    ticker=profile.ticker,
+                    alias=profile.ticker,
+                    strength="primary",
+                    in_headline=True,
+                    detail=f"tagged by {article.collector or 'collector'}",
+                ),
+                rejections,
+            )
 
     ordered = sorted(
         profile.aliases, key=lambda a: (0 if a.is_primary else 1, -len(a.value))

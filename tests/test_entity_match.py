@@ -78,10 +78,62 @@ def test_rejections_are_recorded_for_explainability(watchlist, make_article):
     assert any("excluded phrase" in r.reason for r in rejections)
 
 
-def test_collector_ticker_hints_are_trusted(watchlist, make_article):
+def test_an_exchange_collectors_hint_is_trusted(watchlist, make_article):
+    """NSE, BSE and IR pages are fetched per scrip code.
+
+    An item returned by Jinkushal's filing feed is about Jinkushal, even
+    when the title is boilerplate that names nobody.
+    """
     article = make_article("Intimation under Regulation 30")
     article.tickers_hint = ["JKIPL"]
+    article.collector = "bse"
+
     assert "JKIPL" in tickers_for(article, watchlist)
+
+
+def test_an_official_filing_hint_is_trusted(watchlist, make_article):
+    article = make_article("Outcome of board meeting")
+    article.tickers_hint = ["JKIPL"]
+    article.is_official = True
+
+    assert "JKIPL" in tickers_for(article, watchlist)
+
+
+def test_a_search_collectors_hint_is_not_evidence(watchlist, make_article):
+    """The worst precision bug this system had.
+
+    Google News tags each result with the query that found it. Treating that
+    as a confirmed headline-strength mention meant a Coal India query
+    returning "thyssenkrupp nucera wins chlor-alkali order from Hongniu
+    Lanzhou in China" scored 10/15 as a direct Coal India event, and an HDFC
+    Bank query returning a Power Mech Projects order scored 9/15 - on
+    2026-09-30, both real.
+    """
+    article = make_article(
+        "thyssenkrupp nucera wins chlor-alkali order from Hongniu Lanzhou in China"
+    )
+    article.tickers_hint = ["COALINDIA"]
+    article.collector = "google_news"
+
+    assert "COALINDIA" not in tickers_for(article, watchlist)
+
+
+def test_a_search_hint_does_not_bypass_the_negative_alias_guards(watchlist, make_article):
+    """It returned before every guard built to stop exactly this."""
+    article = make_article("Ravel Electronics wins a municipal lighting contract")
+    article.tickers_hint = ["RAVEL"]
+    article.collector = "google_news"
+
+    assert "RAVEL" not in tickers_for(article, watchlist)
+
+
+def test_the_hint_still_cannot_invent_a_match_the_text_supports(watchlist, make_article):
+    """A trusted hint for a company the text does name is still fine."""
+    article = make_article("Jinkushal Industries wins a repeat order")
+    article.tickers_hint = ["JKIPL"]
+    article.collector = "google_news"
+
+    assert "JKIPL" in tickers_for(article, watchlist), "matched on the name, not the hint"
 
 
 def test_unrelated_news_matches_nothing(watchlist, make_article):
