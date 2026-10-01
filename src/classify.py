@@ -285,6 +285,20 @@ RESEARCH_REPORT_MARKERS = (
     "to expand by 20", "growth opportunities 20",
 )
 
+# Securities-litigation notices. A single class action generates dozens of
+# press releases, one per plaintiff firm, each with its own headline: on
+# 2026-09-30 the HDFC Bank action produced one event with 16 sources and
+# three strays. Title similarity cannot connect them, because the firms share
+# no wording beyond the company name - which is exactly why this genre needs
+# naming rather than measuring.
+LEGAL_NOTICE_MARKERS = (
+    "class action", "shareholder alert", "deadline alert", "lawsuit alert",
+    "investor alert", "lead plaintiff", "investors with losses",
+    "securities fraud", "lawsuit reminder", "investor deadline",
+    "shareholders who lost", "securities litigation", "class period",
+    "reminds investors", "urged to contact",
+)
+
 OFFICIAL_MARKERS = (
     "announces", "announcement", "intimation", "disclosure", "board meeting",
     "outcome of board meeting", "press release", "regulation 30", "filing",
@@ -305,6 +319,7 @@ class Classification:
     listing_page: bool = False
     recruitment: bool = False
     research_report: bool = False
+    legal_notice: bool = False
 
     @property
     def primary(self) -> EventCategory:
@@ -371,6 +386,7 @@ class RuleClassifier:
             listing_page=contains_any(headline, LISTING_PAGE_MARKERS),
             recruitment=contains_any(headline, RECRUITMENT_MARKERS),
             research_report=contains_any(headline, RESEARCH_REPORT_MARKERS),
+            legal_notice=contains_any(headline, LEGAL_NOTICE_MARKERS),
         )
 
 

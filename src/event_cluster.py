@@ -14,6 +14,8 @@ bonus.
 
 from __future__ import annotations
 
+import re
+
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
@@ -37,6 +39,9 @@ SAME_DAY_BONUS = 0.08
 OFFICIAL_BONUS = 0.08
 SHARED_DIRECT_BONUS = 0.06
 MAX_BONUS = 0.30
+
+# How long one legal proceeding may generate notices for.
+PROCEEDING_WINDOW_DAYS = 30
 
 
 @dataclass
@@ -158,13 +163,83 @@ def similarity_with_bonuses(a: MatchedArticle, b: MatchedArticle) -> Tuple[float
     return base + min(bonus, MAX_BONUS), reasons
 
 
+# A securities class action is announced by every plaintiff firm chasing it,
+# each writing its own headline. They share no wording beyond the company
+# name, so title similarity - the instrument the rest of this module relies
+# on - measures nothing useful about whether they concern the same
+# proceeding. On 2026-09-30 the HDFC Bank action came out as one event with
+# 16 sources plus three strays, all the same lawsuit.
+#
+# For this genre the title is not evidence, so it is not used. What
+# identifies the proceeding is the company and, when the notices state one,
+# the lead-plaintiff deadline. Two notices quoting different deadlines are
+# different actions and must not be merged.
+_DEADLINE = re.compile(
+    r"\b(january|february|march|april|may|june|july|august|september|october"
+    r"|november|december)\s+(\d{1,2}),?\s+(\d{4})\b",
+    re.IGNORECASE,
+)
+
+
+def stated_deadlines(text: str) -> set:
+    return {
+        (m.group(1).lower(), int(m.group(2)), int(m.group(3)))
+        for m in _DEADLINE.finditer(text or "")
+    }
+
+
+def _both_notices_about(a: "MatchedArticle", b: "MatchedArticle") -> bool:
+    return bool(
+        getattr(a.classification, "legal_notice", False)
+        and getattr(b.classification, "legal_notice", False)
+        and a.direct_tickers
+        and a.direct_tickers & b.direct_tickers
+    )
+
+
+def conflicting_proceedings(a: "MatchedArticle", b: "MatchedArticle") -> bool:
+    """Two notices that each name a deadline, and the deadlines disagree.
+
+    This has to veto clustering rather than merely withhold a bonus. Two
+    actions against one company are described in near-identical language -
+    the headlines may differ only in the date - so ordinary title similarity
+    merges them enthusiastically. The date is the only thing distinguishing
+    them, and it is the one thing a similarity score treats as noise.
+    """
+    if not _both_notices_about(a, b):
+        return False
+    first = stated_deadlines(a.article.title + " " + a.article.summary)
+    second = stated_deadlines(b.article.title + " " + b.article.summary)
+    return bool(first and second and not (first & second))
+
+
+def same_proceeding(a: "MatchedArticle", b: "MatchedArticle") -> bool:
+    """Are these two notices about the same legal action?"""
+    if not _both_notices_about(a, b):
+        return False
+    return not conflicting_proceedings(a, b)
+
+
 def can_cluster(
     a: MatchedArticle, b: MatchedArticle, threshold: float, window_days: int
 ) -> Tuple[bool, float, List[str]]:
     """Gate first, then score. The gate is what stops nonsense merges."""
     if not (a.tickers & b.tickers):
         return False, 0.0, []
-    if abs((a.event_day - b.event_day).days) > window_days:
+
+    # Different lead-plaintiff deadlines mean different actions, whatever
+    # the headlines look like.
+    if conflicting_proceedings(a, b):
+        return False, 0.0, []
+
+    # A legal action runs for as long as its notice period, and the firms
+    # chasing it issue releases throughout. The HDFC Bank notices on
+    # 2026-09-30 spanned 18 to 30 September against a lead-plaintiff deadline
+    # of 13 October: one proceeding, and the ordinary three-day window split
+    # it in two at the one four-day gap in the coverage.
+    proceeding = same_proceeding(a, b)
+    limit = PROCEEDING_WINDOW_DAYS if proceeding else window_days
+    if abs((a.event_day - b.event_day).days) > limit:
         return False, 0.0, []
 
     # Two articles that each name a company directly must name the SAME one.
@@ -172,6 +247,12 @@ def can_cluster(
         return False, 0.0, []
 
     score, reasons = similarity_with_bonuses(a, b)
+
+    # The title carries no signal for this genre, so it is not consulted.
+    # The shared-ticker and deadline gates above still apply.
+    if proceeding:
+        return True, max(score, threshold), reasons + ["same legal proceeding"]
+
     return score >= threshold, score, reasons
 
 

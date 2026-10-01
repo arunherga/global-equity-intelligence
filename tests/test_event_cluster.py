@@ -124,3 +124,114 @@ def test_clustering_is_deterministic(make_article):
     first = [sorted(a.article.source_domain for a in c.articles) for c in cluster_articles(items)]
     second = [sorted(a.article.source_domain for a in c.articles) for c in cluster_articles(items)]
     assert first == second
+
+
+# -- the plaintiff-firm press-release mill -------------------------------
+#
+# One securities class action is announced by every firm chasing it, each
+# writing its own headline. They share no wording beyond the company name,
+# so title similarity measures nothing useful here. On 2026-09-30 the HDFC
+# Bank action came out as four separate events.
+
+import pytest as _pytest
+
+
+def _notice(title, day=18, ticker="HDFCBANK", summary=""):
+    from datetime import datetime, timezone
+    from src.classify import classify_article
+    from src.event_cluster import MatchedArticle
+    from src.models import Article, Relationship
+    from src.relationship import StockLink
+
+    article = Article(
+        title=title, summary=summary,
+        url=f"https://example.test/{abs(hash(title))}", source_domain="example.test",
+        published=datetime(2026, 9, day, 9, 0, tzinfo=timezone.utc),
+    )
+    link = StockLink(ticker=ticker, relationship=Relationship.DIRECT, entity=None,
+                     exposures=[], reasons=[], evidence_weight=4.0)
+    return MatchedArticle(article=article, links=[link],
+                          classification=classify_article(article))
+
+
+REAL_NOTICES = [
+    ("HDB INVESTOR DEADLINE: HDFC Bank Limited Investors with Substantial Losses", 18),
+    ("HDFC BANK LIMITED (HDB) SHAREHOLDER ALERT Bernstein", 20),
+    ("HDFC Bank Limited (HDB) Lawsuit - Investors Urged to Contact Levi & Korsinsky", 24),
+    ("DEADLINE ALERT for UWMC, HDB, SMPL and AARD: The Law Offices of Frank R. Cruz", 23),
+    ("HDFC BANK LAWSUIT ALERT: Bragar Eagel & Squire, P.C.", 29),
+    ("HDFC Bank Stock Update: Share Price Slips 1.24% on Lawsuit Reminders", 30),
+]
+
+
+def test_one_action_becomes_one_event():
+    from src.event_cluster import cluster_articles
+
+    clusters = cluster_articles(
+        [_notice(t, d) for t, d in REAL_NOTICES], threshold=0.62, window_days=3
+    )
+
+    assert len(clusters) == 1, [c.articles[0].article.title for c in clusters]
+    assert len(clusters[0].articles) == len(REAL_NOTICES)
+
+
+def test_a_twelve_day_notice_period_is_still_one_proceeding():
+    """The ordinary three-day window split the real set at its one gap."""
+    from src.event_cluster import cluster_articles
+
+    clusters = cluster_articles(
+        [_notice("HDB SHAREHOLDER ALERT: HDFC Bank Limited Securities Class Action", 18),
+         _notice("HDFC Bank Limited Class Action Reminder - Robbins LLP", 30)],
+        threshold=0.62, window_days=3,
+    )
+
+    assert len(clusters) == 1
+
+
+def test_notices_quoting_different_deadlines_stay_apart():
+    """Two deadlines means two actions, however alike the headlines read."""
+    from src.event_cluster import cluster_articles, same_proceeding
+
+    first = _notice("HDFC Bank Limited Class Action - Contact Us Before October 13, 2026", 18)
+    second = _notice("HDFC Bank Limited Class Action - Contact Us Before December 1, 2026", 19)
+
+    assert not same_proceeding(first, second)
+    assert len(cluster_articles([first, second], threshold=0.62, window_days=3)) == 2
+
+
+def test_notices_about_different_companies_stay_apart():
+    from src.event_cluster import same_proceeding
+
+    assert not same_proceeding(
+        _notice("HDFC Bank Limited Securities Class Action Lawsuit", ticker="HDFCBANK"),
+        _notice("Coal India Limited Securities Class Action Lawsuit", ticker="COALINDIA"),
+    )
+
+
+def test_ordinary_litigation_news_is_not_swept_into_the_notice_rule():
+    """A court ruling is a development; a plaintiff-firm advert is not.
+
+    These must not merge just because both concern the same company and
+    mention a court.
+    """
+    from src.event_cluster import same_proceeding
+
+    ruling = _notice("Supreme Court limits forensic audit in the Daiichi dispute", 18)
+    mou = _notice("HDFC Bank announces Q2 results date of October 17", 19)
+
+    assert not same_proceeding(ruling, mou)
+    assert not ruling.classification.legal_notice
+    assert not mou.classification.legal_notice
+
+
+def test_the_rule_needs_a_direct_mention_not_a_passing_one():
+    """A notice that merely lists a ticker among others still needs the
+    company to be the matched subject, which the DIRECT gate enforces."""
+    from src.event_cluster import same_proceeding
+    from src.models import Relationship
+
+    a = _notice("HDFC Bank Limited Securities Class Action Lawsuit", 18)
+    b = _notice("HDB Shareholder Alert: Securities Class Action", 19)
+    b.links[0].relationship = Relationship.SECTOR  # no longer a direct mention
+
+    assert not same_proceeding(a, b)
