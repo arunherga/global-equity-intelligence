@@ -4,20 +4,22 @@
   "summary": "Coal India raises September coal supplies 12.5% to 61.2 MT on higher power demand ET EnergyWorld",
   "event_date": "2026-10-01",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
+        "DEMAND",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -36,6 +38,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Coal India)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,12 +47,12 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are demand, customers. Classified as industry demand.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -130,16 +133,26 @@
       "published": "2026-10-01T13:58:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India ramps up supplies in September as power demand rises",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWXZnWmhLQ003bXpqVW5ld3UzcTc0dHRnVHE1U2NFYWxwa3JZV3JadHJtd0dMaEtwVi1SMnFoTWxaT0Ntd3JPZ1BuT05aay0zQnVkR20zYXFDZlFuWDM3Yy1fak81UTRpSHltbWtMeEl4TmRPZHZIX1loaUczWllHRENtYmVsd281c0Naak1kR3Fyd00zZ2d0bzhqS2w4OGlFbkN0VDhqaXhaa1ZjM1kwZGI1Z1g3RFdkNkk0YmpzdC1GV3ZhUktGeE1xZFIzdFpP0gHQAUFVX3lxTE5ZdmdaaEtDTTdtempVbmV3dTNxNzR0dGdUcTVTY0VhbHBrcllXclp0cm13R0xoS3BWLVIycWhNbFpPQ213ck9nUG5PTlprLTNCdWRHbTNhcUNmUW5YMzdjLV9qTzVRNGlIeW1ta0x4SXhOZE9kdkhfWWhpRzNaWUdEQ21iZWx3bzVzQ1pqTWRHcXJ3TTNnZ3RvOGpLbDg4aUVuQ3RUOGppeFprVmMzWTBkYjVnWDdEV2Q2STRianN0LUZXdmFSS0Z4TXFkUjN0Wk8",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T13:30:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "ET EnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|coal-coal-india-raise-september-supplies",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.749092+00:00",
-  "last_updated": "2026-10-01T19:01:03.864763+00:00",
+  "last_updated": "2026-10-02T18:33:35.184264+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.749162+00:00",
@@ -150,6 +163,21 @@
       "timestamp": "2026-10-01T19:01:03.864745+00:00",
       "change": "sources added",
       "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-02T18:33:35.184230+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine"
+    },
+    {
+      "timestamp": "2026-10-02T18:33:35.184248+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-02T18:33:35.184256+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 3"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,217 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-0599",
+  "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
+  "summary": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details TradingView",
+  "event_date": "2026-10-02",
+  "event_types": [
+    "DIVIDEND",
+    "REGULATORY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CASH_FLOW",
+        "REGULATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "ONGC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "+3 Development at a known counterparty (Coal India)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Coal India, and ONGC. The parts of the business most likely touched are cash flow, regulation, customers. Classified as dividend.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.4,
+      "business_impacts": [
+        "CASH_FLOW",
+        "REGULATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "DIVIDEND is favourable for the company"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow, regulation. Classified as dividend.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "unclear",
+        "margin_effect": "unclear",
+        "cost_effect": "No direct impact on operating or input costs, but high dividend payouts reduce retained earnings, which could increase reliance on external debt to fund future capital expenditure.",
+        "competitive_effect": "Enhances the company's attractiveness to yield-seeking and institutional income investors relative to other large-cap Indian equities, though it does not alter its dominant market position in the domestic coal mining sector.",
+        "regulatory_effect": "Aligns with the Government of India's DIPAM (Department of Investment and Public Asset Management) guidelines mandating state-run enterprises to pay consistent dividends, ensuring compliance with state shareholder expectations.",
+        "short_term": "Increased investor attention and potential positive sentiment toward the stock as dividend yield comparisons highlight Coal India's attractive payout ratio.",
+        "medium_long_term": "Sustained high dividend payouts could limit the cash available for reinvestment into green energy transition, coal gasification projects, and mining capacity expansion, potentially requiring external debt for large capex.",
+        "second_order_effects": "A high dividend payout reputation may constrain capital allocation flexibility, making it difficult for management to reduce dividends during commodity down-cycles without triggering negative market reactions.",
+        "key_uncertainty": "Whether Coal India can maintain its high profitability and cash generation to sustain these dividend levels amidst rising production costs and the long-term transition toward renewable energy.",
+        "monitor_next": [
+          "Upcoming board meeting announcements regarding interim or final dividend declarations.",
+          "Quarterly net profit and free cash flow generation trends to assess dividend sustainability.",
+          "Capital expenditure (capex) requirements for renewable energy and infrastructure projects.",
+          "Government of India (DIPAM) directives on public sector undertaking (PSU) dividend payouts."
+        ]
+      }
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CASH_FLOW",
+        "REGULATION",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (Wipro) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Wipro, and India. The parts of the business most likely touched are cash flow, regulation, competition. Classified as dividend.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Dividend jackpot shares: Coal India, Wipro, ITC, BPCL or ONGC? Which large cap stock has the highest yield? Data details",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNeEhEME9FV1ltcHN1U2JZWGJiazFoSGUtUkhNUnhLbkRHbDU4M3o2RHZWaDMwdGhmUkhiUnJVV0tRanMxdlhZSThiSFdnMGN3QjN2VlFjeE5Yc1BhaTJUbkdWc0ZvTEhaZG1iRzNBdTNpdjVsZXphYXI2Y21XeGtUckhCMGNfeHFpeVNZTFhsTVIzVjZ4WkVPTE05VExBS2lmLVU1d0NTcURtMGo1emtURVYtMVJ4VjI0ZHdURksyRi1wWWZHZ3ZQU0ZiTXVEUzgwZ3pHQ2NiY1BLekdzWURNVWtmemZDMUVEaFlUdFVIOXB4MkdmWHZyZWZrcksyVDZV",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T17:34:29+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "TradingView",
+  "cluster_key": "COALINDIA+KSOLVES+MSTCLTD|DIVIDEND+REGULATORY|coal-dividend-india-jackpot-share-wipro",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-02T18:31:36.693078+00:00",
+  "last_updated": "2026-10-02T18:33:18.127563+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-02T18:31:36.693160+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-02T18:33:18.127547+00:00",
+      "change": "ai analysis",
+      "detail": "COALINDIA via gemini"
+    }
+  ],
+  "price_reaction": {}
+}
