@@ -293,7 +293,7 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
@@ -306,30 +306,29 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "HDFC Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         },
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-5 Market commentary rather than a company development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -347,7 +346,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank, and HDFC Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -399,8 +398,8 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
@@ -412,16 +411,16 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -429,7 +428,6 @@
         "+5 Direct company event",
         "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-5 Market commentary rather than a company development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -461,21 +459,46 @@
       "published": "2026-10-01T03:33:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MS-India Index Earning Revision (Sep): SWIGGY, HDFC Bank, Axis Bank, Reliance Industries",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVzNFeWdpWjVBeXRnMEFXanNnMjdURUpodllJMkdZV3kxY2tRb3l3QVM2Z1VxTXQzNkNGNkNWWEE3WGJ3azY0VWVtQU5CeWJBdWx4RWhpbFZWdThyZzZ5aVYzSUJBWFhKRzNGZXF4dVBEN0x1cmJoVzQ2bHRXUDhwVnFseE0zaHdQMmNhM0k0SEI2NXpQWXJPeDljWWFlQmVsMWwtTFN4NVd1ZERyM2h0RlhHTXNqQXlpRVE",
+      "source_name": "Smartkarma",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T02:31:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Smartkarma",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|EARNINGS|earning-index-nifty-revision-sep-wipro",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.595869+00:00",
-  "last_updated": "2026-10-01T13:34:27.595955+00:00",
+  "last_updated": "2026-10-02T12:57:42.948363+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.595945+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:42.948336+00:00",
+      "change": "sources added",
+      "detail": "Smartkarma"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:42.948353+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:42.948359+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 6"
     }
   ],
   "price_reaction": {}

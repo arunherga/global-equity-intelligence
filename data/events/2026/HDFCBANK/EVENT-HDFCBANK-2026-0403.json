@@ -44,6 +44,44 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its product exposure to credit cards. Classified as other.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Flipkart",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Flipkart"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Flipkart. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -56,21 +94,41 @@
       "published": "2026-09-30T16:07:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Amazon Great Indian Festival and Flipkart Big Billion Days in Oct: Which debit, credit cards offer the best deals?",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNVFlMWjFuOU1VMnktU3kxZ1pzSEdKRkU3NDVHOGdzWmpZdWlSTmdBYnN6dUxINk5RSk04RUtJN0wyVjdJRmY3SFRGVFA0UlhCME9jaE02WWtmUGYxeklUVHlhVm50VlY0WTVFQlF2OWR3NVYwQTVNVzhLQ3BSczhUeHBmVEthTUVEWVN6WGUxN0NZQnJ4NjBWRGNGaERKbzB1LVM2TlhiYXRsdU51ZUpieEhSNTJxNmVRYnhGaHhoOUZhRHBTZmxDRHZFX1R4amh3Z0VTZ0FaZE5xN20xT0JzeDl0RURDLWliZTRtUjV6VmN0RnBD0gH6AUFVX3lxTFBQcE9LMHZnaDl2UnMtblBDZGRHOFJFc3FXYWxJR0JLLTltVkJoOTR0ZmttTXBkTXhpZ1FjYUk0N0RfUW9HWExaRUZhcUFPYTdXTFRLQm01UERFRzQ3Q2FYRFBLQ0hoZDFZV29qb3JWWHR1RnNwVmdmWHlOY28xRjJpenpIRzZDZVhtZ3RJbGRSUnhpTEhocExmLTU5V2NyNTdieTA2RjlvZjRSOHBjazRnUW4tbHBDRm43RXZuQmJsR09QN3BHLVpPQjdOcEZ6VUJEN25wRHNjY25OYmRVZkYtcEdFVzdpRC1KNnNzRTZxdzFDRWx3V3VJWHc",
+      "source_name": "livemint.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T03:12:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "WorldFirst",
   "cluster_key": "HDFCBANK|OTHER|best-cards-credit-singapore-travel",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.466108+00:00",
-  "last_updated": "2026-10-01T13:34:27.466157+00:00",
+  "last_updated": "2026-10-02T12:57:45.223742+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.466152+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:45.223721+00:00",
+      "change": "sources added",
+      "detail": "livemint.com"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:45.223735+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -4,21 +4,24 @@
   "summary": "Adani Green Energy ADANIGREEN crosses 20 GW and 6.63 GWh BESS Kalkine India",
   "event_date": "2026-10-01",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "CAPACITY_EXPANSION"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
         "COMPETITION",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -33,32 +36,29 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Strategically important competitor development",
+        "+3 Development at a known counterparty (Adani)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Adani Green Energy's follow-up announcements",
-        "order flow from Adani"
+        "funding mix for the expansion",
+        "commissioning timeline",
+        "demand visibility for the new capacity",
+        "effect on return ratios"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are competition, customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as capacity expansion.",
       "ai_analysis": null
     }
   },
@@ -82,21 +82,76 @@
       "published": "2026-10-01T08:58:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Green Energy Expands BESS Capacity to 6.63 GWh",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZnZIM0FWTXlRSjg1aUZ3VHhheERhN2l2RU5WN1VJM2Z1Q2JLRmg0NzBYbmxDczNxMkpTUmJTa1RXOENQbkV4ay1IYnNiNjgzakhzTmQtNjdGV282c1gzXzEzUnJ6WXM0MEdJMlNtLTJPT0JqWTJKN2h2UDFIVDRyVkphOFE",
+      "source_name": "mvapulse.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T02:32:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Energy expands BESS capacity to 6.63 GWh, achieves 70% of FY27 target",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOGgzbUZPWmxqMklxQmlHQ0RjcVRpclFudlBRZnZNZjhOeWh1RGxlTXNEVzFTME9tUGpGUkNsaVhwM2N4Tnl2Qm5JamNEYmtyM21tQi1RbWxDclk5cXYyXzZJLUJMUXFfMlJYR1FnT2I2YllmMXFUazMzc1BWeEpxcmJNNGNYZkdtU09SV0ZCbUkwREVQdE1kcUZxYmgzZEZhYUVZMTNkbHNSLXd0UVp1V0NmUWpJa2ppeDFieVBNYjJOUdIBxwFBVV95cUxQam83QTZRUzF0dHdLOU5ZaWpjR1hxWDFfM05Cb0Z1QmpQMEJ6SWFUU2xxT3JhTHNsOWh3bkpFLUpTZEV1Um9GREwxVW9nY0lJdmQ4V3FXZU1qbmtOOWZkT1B2UGNxNVYtNW55bGxTdTl1X2FhVlNaZjlxS0xDUHZNUWJQN0R5SkFpOXZ4NXVrT0RoMXZ6U3FOM0FIY3dhUjZVa2hRTEZrQ2NNVWZFMVBzS0xLam8tSnVzXzgtd3ZOZVh1VGZLTkNn",
+      "source_name": "MillenniumPost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-01T19:10:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Energy expands operational battery storage capacity to 6.63 GWh",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQb2FhVno0VW82OUZxejhWak1qOTBOUFp0MGI2TTZtUTJ5RWw0Qmg1N1NzR2NKb0I1TGFGNV9VTE1wUkxQT09TekJPWkNqOVl0VmNvUl9LT1A3WnYtbFE3LWk1alpEVkJueG5pczBzc0htY2FSQjFLZ05Hc2VaY1YtWllVYUNCR3VfbDR1WTYxQWVoaUdSZkxjNDZKa0JyZk9ic1ZQZUt6bXhwV1hnX3lVanlR",
+      "source_name": "ESS News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T09:01:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Energy lifts operational BESS at Khavda to 6.63 GWh",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQURDeWRKaDVaSTZmV0lmMjZYWDVBRC1vSlQySjlzTDZ0VlRIWUhwVkd5ZFd1RHdEZVZCcG15WFE5OTF2ckpjX1pGN3NJWGl0YmJSZjNWU2pjeHN1TXdaVkN6V1M5Qzkxdk9mbVoxT3Rjakd3aG5LY2JpeEltQkhxWFU0TF9WaEZrYnZSb3ZhSjQ0bXI3eThjZ01QT2haRlZJ",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T05:42:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "WAAREEENER|OTHER|6.63-adani-adanigreen-crosses-energy-green",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.657072+00:00",
-  "last_updated": "2026-10-01T13:34:27.657136+00:00",
+  "last_updated": "2026-10-02T12:57:31.024052+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.657131+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:31.024001+00:00",
+      "change": "sources added",
+      "detail": "ESS News, MillenniumPost, Solarbytes, mvapulse.com"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:31.024019+00:00",
+      "change": "categories added",
+      "detail": "CAPACITY_EXPANSION"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:31.024047+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 7"
     }
   ],
   "price_reaction": {}

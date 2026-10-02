@@ -1,0 +1,134 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1405",
+  "title": "Natural gas prices down as solar power generation jumps 22%",
+  "summary": "Natural gas prices down as solar power generation jumps 22% The Center Square",
+  "event_date": "2026-10-02",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "natural gas prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "natural gas prices",
+          "relationship": "SECTOR",
+          "weight": 2.3,
+          "detail": "international topic; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (natural gas prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "natural gas prices is a selling price and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to natural gas prices, and natural gas prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "natural gas prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (natural gas prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "natural gas prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to natural gas prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Natural gas prices down as solar power generation jumps 22%",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRjcyOTlNdkE5TkF1N0xSVHJRemtnb081Ui1IUzdKT2ZtWldoUVRGUy1zMDd0YnlfaFpzSF9RZHMyXzNLcDJPV2JpM2JEOUdzT2pQNUpFckQ4bExsMnQwOV9IRGZkSmFrcWkwWGh5OVF3VmhNSmhBbnQ5RnNGU3JWVU56TmRKTE1EYzFOT2c5YVB4QWFldWfSAZsBQVVfeXFMTWJaVzFsaHVHLUJScHhJc1NpOXZka04zb2djVlpkS29mVW12bzhHRHJpX0pzcy1uaHB1eDZiWnAxVFlNaldzOUJsa05EVVp0REJHOE55bVBRV3htRnprTkdFMUhzaFBrZnFOQ3I3RjFLVzR2LXRSaE1yWEcwVFBNQ082WEtJMDBEbTlHdnB4OU15c21GUzIxbWx0UzA",
+      "source_name": "The Center Square",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T12:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Center Square",
+  "cluster_key": "COALINDIA+SUPRIYA|COMMODITY|gas-generation-natural-power-price-solar",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-02T12:51:59.336676+00:00",
+  "last_updated": "2026-10-02T12:51:59.336728+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-02T12:51:59.336724+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

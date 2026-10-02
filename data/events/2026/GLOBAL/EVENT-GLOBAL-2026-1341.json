@@ -4,20 +4,25 @@
   "summary": "Banks lose pricing advantage as RBI’s bulk deposit disclosure norm kicks in BusinessLine",
   "event_date": "2026-10-01",
   "event_types": [
-    "REGULATORY"
+    "REGULATORY",
+    "INTEREST_RATE",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "MIXED",
+      "confidence": 0.56,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "MARGIN",
+        "DEMAND",
+        "REVENUE"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -25,6 +30,20 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "deposit rates",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
         },
         {
           "exposure_type": "PRODUCT",
@@ -35,17 +54,17 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+4 Regulatory or legal action",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -53,20 +72,41 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are regulation. Classified as regulatory.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and deposit rates. The parts of the business most likely touched are regulation, margin, demand. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear, but could be indirectly pressured if higher funding costs force the bank to slow down loan growth or if they cannot pass on the increased cost of deposits to borrowers.",
+        "margin_effect": "Likely negative to mixed. Increased transparency in bulk deposit pricing could trigger price wars, raising the cost of funds and compressing Net Interest Margins (NIMs) if asset yields cannot keep pace.",
+        "cost_effect": "Interest expenses (cost of deposits) are expected to rise as the bank may have to offer competitive rates to retain or attract yield-sensitive bulk depositors in a highly transparent market.",
+        "competitive_effect": "TMB may face intense competition from larger private and public sector banks. As a mid-sized bank, it might have to offer a premium over larger peers to attract bulk funds, potentially weakening its competitive positioning on funding costs.",
+        "regulatory_effect": "Strict compliance with the new RBI disclosure guidelines is required. Any failure to accurately or timely disclose bulk deposit rates could result in regulatory penalties or reputational damage.",
+        "short_term": "Immediate increase in compliance overhead and potential volatility in bulk deposit pricing as the bank aligns its rates with the new disclosure standards.",
+        "medium_long_term": "A structural shift toward a more competitive liability franchise, potentially forcing TMB to aggressively focus on low-cost CASA (Current Account Saving Account) deposits to offset expensive bulk deposits.",
+        "second_order_effects": "Increased operational costs from marketing and branch expansion to garner retail deposits, and a potential deceleration in credit growth if deposit mobilization becomes too costly.",
+        "key_uncertainty": "The extent to which bulk depositors will prioritize yield over bank size and credit rating once all pricing is fully transparent.",
+        "monitor_next": [
+          "TMB's quarterly Net Interest Margin (NIM) and Cost of Funds trends.",
+          "The proportion of bulk deposits versus retail deposits in TMB's overall liability mix.",
+          "Competitor pricing strategies and rate disclosures for bulk deposits post-implementation.",
+          "Any regulatory updates or clarifications from the RBI regarding compliance with the disclosure norms."
+        ]
+      }
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "MIXED",
+      "confidence": 0.52,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "MARGIN",
+        "DEMAND",
+        "REVENUE"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -74,6 +114,13 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
         },
         {
           "exposure_type": "PRODUCT",
@@ -85,16 +132,16 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
+        "+4 Regulatory or legal action",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -102,7 +149,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and interest rates. The parts of the business most likely touched are regulation, margin, demand. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -116,21 +163,51 @@
       "published": "2026-10-01T16:17:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI bulk deposit rate disclosure norms kick in; banks face greater transparency in pricing",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/rbi-bulk-deposit-rate-disclosure-norms-kick-in-banks-face-greater-transparency-in-pricing/134629950",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-02T01:06:08+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "BusinessLine",
   "cluster_key": "HDFCBANK+TMB|REGULATORY|advantage-bank-bulk-lose-price-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T18:59:35.255909+00:00",
-  "last_updated": "2026-10-01T18:59:35.255961+00:00",
+  "last_updated": "2026-10-02T12:57:17.730852+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T18:59:35.255957+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:17.730819+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:17.730833+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE, CURRENCY"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:17.730840+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 6"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:17.730846+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 5"
     }
   ],
   "price_reaction": {}

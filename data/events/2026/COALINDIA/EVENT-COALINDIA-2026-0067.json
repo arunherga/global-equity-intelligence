@@ -4,17 +4,19 @@
   "summary": "Coal India Share Price: Stock gains 3% after Morgan Stanley upgrades to overweight; check target price Zee Business",
   "event_date": "2026-09-22",
   "event_types": [
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "TENDER"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "POSITIVE",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
+        "REVENUE",
         "REPUTATION",
         "CUSTOMERS"
       ],
@@ -28,6 +30,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "e-auction",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
@@ -37,6 +46,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,22 +55,26 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
         "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are reputation, customers. Classified as analyst action.",
+      "why_it_matters": "This reaches the company indirectly via its customer, industry exposure to Coal India, and e-auction. The parts of the business most likely touched are revenue, reputation, customers. Classified as tender.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.4,
       "business_impacts": [
+        "REVENUE",
         "REPUTATION"
       ],
       "time_horizon": "IMMEDIATE",
@@ -75,6 +89,7 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Government policy or tender development",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
@@ -84,12 +99,14 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "bid outcome",
+        "order value",
+        "competing bidders"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation. Classified as analyst action.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, reputation. Classified as tender.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -498,16 +515,26 @@
       "published": "2026-09-22T20:12:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India shares | Nuvama upgrades to Buy, hikes target price on higher e-auction premium",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZ25vTDNNYzF3dzRQOGRWdDVkYUM3aEFQb1NnUkF5ejVLSFNPdDBoZ01OYjV3U0tvV0FkY3BXWG85VFVxNFB3WXpEUDlHYUIwZmNDLVVtYVR5NlktY0NnYjVyb1lvcHNvSVJjNnlnR3hRMWNNTGhxLUlqY3JLNkhLdFBSVnFNUGVsWUZ0NDdiWFdhMVBSV1hiUENfcWxnUWJmckdlbmdhbzBicllTNTVYbENsVmdFMDYwU0taQ0xRZXI1X3huQ2xJX1BkWDU4SmdyTl8tV200Q0RlRlVtLWQ1T3YyZ1pWNExGbWFjVEZ30gHzAUFVX3lxTFBOYmxmcFlIN0pLeUIyNFNac1U0RndiMmpxQzl2VVMxdGwzT3l0Y0dYc2R1R2h5MFFGLUtqeUpTYXZBUUpiaFdvenZSaDNkSTBpQ0l5T1hFU3RudVhMTE5rNEc5OTRvTEplUV9jUTA4Q3lEQmdsSXhHckdVbXJLbnhXMDBPajVVX2ZLbzZBZ0ZOaEVMNnVBOGFURXd3RnpxVzNfaWhEdjJaY0Nkb2Z2SnhHQWtnWUt4Y3BONEJZVGx6QUtxaERWTVBUMzlpSjUyUC1OZWFMV1pFc09hRkNfcGJmU0c3aE5NY0N6Ulk1VVRCeHRRTQ",
+      "source_name": "livemint.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T05:52:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "Univest",
   "cluster_key": "COALINDIA+MSTCLTD|ANALYST_ACTION|coal-india-price-rise-share-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.920135+00:00",
-  "last_updated": "2026-09-23T12:25:59.535320+00:00",
+  "last_updated": "2026-10-02T12:57:51.581394+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.920191+00:00",
@@ -553,6 +580,26 @@
       "timestamp": "2026-09-23T12:25:59.535317+00:00",
       "change": "stock added",
       "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:51.581366+00:00",
+      "change": "sources added",
+      "detail": "livemint.com"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:51.581378+00:00",
+      "change": "categories added",
+      "detail": "TENDER"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:51.581384+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-02T12:57:51.581389+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 8"
     }
   ],
   "price_reaction": {}
