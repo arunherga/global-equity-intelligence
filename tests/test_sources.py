@@ -508,8 +508,8 @@ def test_only_companies_that_opted_in_are_searched(watchlist):
     pairs = list(_reddit().terms_for(context))
     tickers = {t for t, _ in pairs}
 
-    assert tickers == {"RAVEL", "JKIPL", "FRESHARA"}
-    assert ("RAVEL", "Ravel PRO") in pairs
+    assert tickers == {"RAVEL", "JKIPL", "FRESHARA", "WAAREEENER", "ASHOKA"}
+    assert ("RAVEL", "Ravel PRO review") in pairs
     assert all(term.strip() for _, term in pairs)
 
 
@@ -805,3 +805,66 @@ def test_check_sources_separates_no_data_from_failure(capsys, monkeypatch):
     # the important one: youtube is not counted as a failure
     failed_line = next(l for l in out.splitlines() if l.strip().startswith("failed:"))
     assert "youtube" not in failed_line
+
+
+# -- spending the consumer budget fairly ---------------------------------
+
+
+def test_the_consumer_cap_degrades_fairly_instead_of_starving_the_tail():
+    """Five companies, twenty terms, a cap of eight.
+
+    Straight iteration gave the first two companies everything and the last
+    three nothing - which reads in the report as "those companies have no
+    chatter", a different and much more comfortable conclusion than the
+    truth.
+    """
+    from src.sources.base import consumer_terms_round_robin
+
+    class _P:
+        def __init__(self, ticker, terms):
+            self.ticker, self.consumer_terms = ticker, terms
+
+    profiles = [
+        _P("WAAREEENER", ["w1", "w2", "w3", "w4"]),
+        _P("FRESHARA", ["f1", "f2", "f3", "f4"]),
+        _P("JKIPL", ["j1", "j2", "j3", "j4", "j5"]),
+        _P("RAVEL", ["r1", "r2", "r3", "r4"]),
+        _P("ASHOKA", ["a1", "a2", "a3"]),
+    ]
+
+    pairs = consumer_terms_round_robin(profiles)
+
+    assert len(pairs) == 20
+    assert {t for t, _ in pairs[:5]} == {
+        "WAAREEENER", "FRESHARA", "JKIPL", "RAVEL", "ASHOKA"
+    }, "every company reached before any company gets a second term"
+    assert [term for _, term in pairs[:5]] == ["w1", "f1", "j1", "r1", "a1"]
+    # the longest list still gets its tail once the others run out
+    assert ("JKIPL", "j5") in pairs
+
+
+def test_companies_with_no_consumer_terms_are_skipped_entirely():
+    from src.sources.base import consumer_terms_round_robin
+
+    class _P:
+        def __init__(self, ticker, terms):
+            self.ticker, self.consumer_terms = ticker, terms
+
+    pairs = consumer_terms_round_robin([
+        _P("HDFCBANK", []), _P("RAVEL", ["r1"]), _P("TMB", None),
+    ])
+
+    assert pairs == [("RAVEL", "r1")]
+
+
+def test_the_watchlist_consumer_budget_fits_the_daily_quota(watchlist, config):
+    """Twenty terms, twice a day, against a documented 100 search calls."""
+    from src.sources.base import consumer_terms_round_robin
+
+    pairs = consumer_terms_round_robin(list(watchlist))
+    cap = int(config.section("sources").get("youtube", {}).get("max_queries_per_run", 8))
+
+    assert len(pairs) <= cap, (
+        f"{len(pairs)} terms declared but only {cap} searched per run"
+    )
+    assert cap * 2 <= 100, "two runs a day must fit the daily allocation"

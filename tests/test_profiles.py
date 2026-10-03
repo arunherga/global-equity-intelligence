@@ -8,15 +8,19 @@ import pytest
 
 from src.profiles.loader import AliasSpec, apply_enrichment, load_watchlist
 
+# The watchlist is manually maintained truth. This list is the second half
+# of that: adding a company means saying so here too, so a stray edit to
+# watchlist.yaml cannot quietly add or drop one.
 EXPECTED = [
     "MSTCLTD", "WAAREEENER", "FRESHARA", "JKIPL", "RAVEL",
     "COALINDIA", "KSOLVES", "TMB", "SUPRIYA", "HDFCBANK",
+    "ASHOKA",
 ]
 
 
-def test_exactly_the_ten_configured_stocks_load(watchlist):
+def test_exactly_the_configured_stocks_load(watchlist):
     assert watchlist.tickers == EXPECTED
-    assert len(watchlist) == 10
+    assert len(watchlist) == len(EXPECTED)
 
 
 def test_hdfc_normalises_to_hdfcbank(watchlist):

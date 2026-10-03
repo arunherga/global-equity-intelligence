@@ -106,7 +106,9 @@ sources:
     # anything. UNVERIFIED until --check-sources says otherwise.
     enabled: true
     api_key_env: YOUTUBE_API_KEY
-    max_queries_per_run: 8
+    # Five companies x four terms. Two runs a day is 40 of the
+    # documented 100 search calls, leaving room for a manual run.
+    max_queries_per_run: 20
     max_results_per_query: 10
     window_days: 14
     region_code: IN

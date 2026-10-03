@@ -6,7 +6,7 @@
 
 **22 September 2026**
 
-Stocks monitored: **10**
+Stocks monitored: **11**
 
 | | |
 | --- | ---: |
@@ -14,7 +14,7 @@ Stocks monitored: **10**
 | Unique articles | 39 |
 | Events detected | 30 |
 | Relevant events | 22 |
-| High-impact events | 17 |
+| High-impact events | 18 |
 | Critical events | 2 |
 | International events affecting the watchlist | 5 |
 | Official company / exchange announcements | 7 |
@@ -161,11 +161,15 @@ This reaches the company through a close, specific exposure via its industry exp
 
 ---
 
-#### JKIPL — Jinkushal Industries Limited
+#### JKIPL — Jinkushal Industries Limited  ·  also affects ASHOKA
 
 **Impact** 12/15 &nbsp;&nbsp; **Direction** POSITIVE &nbsp;&nbsp; **Confidence** 40% &nbsp;&nbsp; **Relationship** DIRECT
 
 **Event** — Jinkushal Industries secures export order for used excavators from Africa
+
+**Also affects**
+
+- **ASHOKA** — INDIRECT_STRONG, 8/15, POSITIVE
 
 **Why it matters**
 
@@ -671,6 +675,7 @@ Event counts, not a ranking. This is not a buy or sell list.
 | TMB | 2 | 1 | 0 | 1 | 1 | 0 |
 | SUPRIYA | 3 | 3 | 1 | 2 | 0 | 0 |
 | HDFCBANK | 2 | 0 | 1 | 0 | 1 | 0 |
+| ASHOKA | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## Global events affecting my stocks
 
@@ -688,6 +693,10 @@ Foreign and cross-border news that may never mention these companies by name. A 
 
 - → WAAREEENER (INDIRECT_STRONG, 8/15, POSITIVE)
 
+**Jinkushal Industries secures export order for used excavators from Africa**
+
+- → ASHOKA (INDIRECT_STRONG, 8/15, POSITIVE)
+
 ## Cross-stock events
 
 One development, several holdings. Stored as one event.
@@ -698,6 +707,13 @@ One development, several holdings. Stored as one event.
 - **MSTCLTD** — INDIRECT_STRONG, 7/15, UNCERTAIN; could affect revenue, demand, capacity
 
 `EVENT-COALINDIA-2026-0003`
+
+**Jinkushal Industries secures export order for used excavators from Africa**
+
+- **JKIPL** — DIRECT, 12/15, POSITIVE; could affect exports, revenue, capacity
+- **ASHOKA** — INDIRECT_STRONG, 8/15, POSITIVE; could affect exports, revenue, capacity
+
+`EVENT-JKIPL-2026-0002`
 
 **Container freight rates jump 18% on Red Sea disruption**
 
@@ -906,6 +922,19 @@ One development, several holdings. Stored as one event.
 - order book or loan book disclosure
 - any guidance change
 - deposit repricing lag
+
+## ASHOKA Intelligence
+
+### International Events
+
+- **[8/15 +]** Jinkushal Industries secures export order for used excavators from Africa _(INDIRECT_STRONG, POSITIVE, 35% confidence, 1 source)_ _↑ detailed above_ `EVENT-JKIPL-2026-0002`
+
+### Things to Watch
+
+- shipment timeline
+- currency hedging on the contract
+- destination-market duties
+- repeat-order potential
 
 ## Run diagnostics
 

@@ -29,7 +29,13 @@ from typing import Any, Dict, List, Optional
 from urllib.parse import quote_plus
 
 from ..models import Article, SourceType
-from .base import CollectionContext, HttpClient, Source, SourceError
+from .base import (
+    CollectionContext,
+    HttpClient,
+    Source,
+    SourceError,
+    consumer_terms_round_robin,
+)
 
 API_URL = "https://www.googleapis.com/youtube/v3/search"
 
@@ -73,6 +79,9 @@ class YouTubeSource(Source):
         )
 
     def terms_for(self, context: CollectionContext):
+        return consumer_terms_round_robin(context.profiles)
+
+    def _terms_sequential(self, context: CollectionContext):
         for profile in context.profiles or []:
             for term in getattr(profile, "consumer_terms", []) or []:
                 yield profile.ticker, str(term)

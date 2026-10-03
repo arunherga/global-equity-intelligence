@@ -39,6 +39,8 @@ ticker_aliases:
   TAMILNAD: TMB
   SUPRIYALIFE: SUPRIYA
   KSOLVESINDIA: KSOLVES
+  ASHOKABUILDCON: ASHOKA
+  ASHOKA BUILDCON: ASHOKA
 
 tickers:
 
@@ -222,6 +224,13 @@ tickers:
     associates:
       - Waaree Renewable Technologies
       - Waaree Technologies
+
+    # Solar panels are bought after watching someone install one. This was
+    # the clear omission: the most reviewed product on the watchlist had no
+    # consumer watch at all.
+    consumer_terms:
+      [Waaree solar panel review, Waaree solar module, Waaree inverter review,
+       Waaree rooftop solar installation]
 
     brands: [Waaree Bifacial]
 
@@ -429,8 +438,12 @@ tickers:
     # Spanish coverage of Aceitunas Sarasa never reaches the Indian edition.
     news_locales: [es-ES]
 
-    # "gherkins" would return a thousand recipes; the names would not.
-    consumer_terms: [Freshara Picklz, Aceitunas Sarasa]
+    # "Aceitunas Sarasa" is the legal entity and returned nothing: shoppers
+    # do not search for the company that packed their olives. Spanish terms
+    # are deliberate - it is a Navarrese producer selling into Spain.
+    consumer_terms:
+      [Freshara Picklz, Aceitunas Sarasa, aceitunas rellenas marca,
+       pickled gherkins brand review]
 
     subsidiaries:
       # Acquired for EUR 7.7m: an olive processor in Navarre with three
@@ -595,7 +608,11 @@ tickers:
     # African, Gulf and SE Asian editions. Matches export_markets below.
     news_locales: [en-ZA, en-NG, en-AE, en-SG]
 
-    consumer_terms: [HexL backhoe, Jinkushal]
+    # "HexL backhoe" returned nothing; equipment buyers search by machine and
+    # by comparison, so the terms follow the products already listed below.
+    consumer_terms:
+      [HexL backhoe loader, Jinkushal, used excavator review India,
+       backhoe loader review India, second hand construction equipment India]
 
     brands:
       # JKIPL's own equipment brand. Trade press reports orders under the
@@ -770,8 +787,12 @@ tickers:
       - Maurice Ravel
       - Ravel Hotels
 
-    # Forum terms, not news terms: "Ravel" alone is hopeless in a forum.
-    consumer_terms: [Ravelcare, Ravel PRO, Zero Hairfall Shampoo, Anti Grey Serum]
+    # Search terms, not company names. "Anti Grey Serum" is the only one of
+    # the original four that returned anything, because it is what a buyer
+    # types. "Ravelcare" is what a filing says.
+    consumer_terms:
+      [Ravel PRO review, Ravelcare shampoo review, Anti Grey Serum,
+       Zero Hairfall Shampoo review]
 
     brands:
       # Ravel PRO is a dermatologist-developed haircare range of 12 SKUs,
@@ -1724,3 +1745,168 @@ tickers:
       - India bank credit growth
       - RBI policy repo rate decision
       - India housing loan demand
+
+  # =========================================================================
+  ASHOKA:
+    company: Ashoka Buildcon Limited
+    exchange: [NSE, BSE]
+    country: India
+    market_segment: MAIN
+    industry: Civil construction and highway development
+
+    aliases:
+      - value: Ashoka Buildcon Limited
+        strength: primary
+      - value: Ashoka Buildcon
+        strength: primary
+      # "Ashoka" alone is one of the most overloaded words in Indian public
+      # life - the emperor, the chakra on the flag, the university, the
+      # hotel, the global fellowship, and Ashok Leyland one letter away. It
+      # is only this company when construction context is present.
+      - value: Ashoka
+        strength: secondary
+        requires:
+          [buildcon, highway, highways, expressway, epc, bot, ham, nhai,
+           morth, infrastructure, construction, road project, toll,
+           railway electrification, transmission, nse, bse]
+        excludes:
+          [ashoka university, emperor ashoka, ashoka chakra, ashoka pillar,
+           ashoka hotel, ashoka fellow, ashoka innovators, ashoka trust,
+           ashok leyland, ashoka hospital, ashoka edict]
+
+    negative_aliases:
+      - Ashoka University
+      - Ashoka Chakra
+      - Ashoka Pillar
+      - Emperor Ashoka
+      - Ashoka Hotel
+      - Ashoka Fellows
+      - Ashoka Innovators for the Public
+      - Ashok Leyland
+      - Ashoka Trust for Research in Ecology
+
+    subsidiaries:
+      - Ashoka Concessions
+      - Ashoka Buildcon Australia
+
+    brands: []
+
+    # Reviews of what it has already built are the consumer-side signal:
+    # a highway or flyover is judged publicly for years after handover.
+    consumer_terms:
+      [Ashoka Buildcon project, Ashoka Buildcon highway, Ashoka Buildcon flyover]
+
+    products:
+      - ready-mix concrete
+      - switchgear
+      - bitumen road surfacing
+
+    services:
+      - EPC contracts
+      - BOT projects
+      - HAM projects
+      - highway construction
+      - expressway construction
+      - bridge and flyover construction
+      - railway electrification
+      - power transmission and distribution
+      - optical fibre laying
+      - toll collection
+      - building construction
+
+    competitors:
+      - IRB Infrastructure
+      - KNR Constructions
+      - PNC Infratech
+      - Dilip Buildcon
+      - HG Infra Engineering
+      - GR Infraprojects
+      - J Kumar Infraprojects
+      - NCC Limited
+      - Larsen & Toubro
+      - Afcons Infrastructure
+      - Rail Vikas Nigam
+      - Kalpataru Projects
+
+    customers:
+      - NHAI
+      - National Highways Authority of India
+      - Ministry of Road Transport and Highways
+      - state public works departments
+      - Maharashtra State Road Development Corporation
+      - power distribution companies
+      - state electricity boards
+      - Indian Railways
+      - municipal corporations
+
+    suppliers:
+      - cement manufacturers
+      - steel producers
+      - bitumen suppliers
+      - construction equipment dealers
+      - Jinkushal Industries
+
+    countries: [India, Australia]
+    export_markets: []
+
+    commodities:
+      - {name: bitumen prices, role: input}
+      - {name: cement prices, role: input}
+      - {name: steel prices, role: input}
+      - {name: diesel prices, role: input}
+
+    currencies: [USD/INR]
+
+    government_dependencies:
+      - NHAI
+      - Ministry of Road Transport and Highways
+      - Ministry of Railways
+      - National Infrastructure Pipeline
+      - Gati Shakti
+      - Bharatmala
+      - state road development corporations
+
+    regulators: [SEBI, NSE, BSE, NHAI, CCI]
+
+    sector_topics:
+      - road construction order inflow
+      - highway awarding
+      - NHAI tender
+      - EPC order book
+      - BOT toll collection
+      - hybrid annuity model
+      - arbitration award infrastructure
+      - execution delay
+      - working capital infrastructure
+      - asset monetisation
+      - InvIT stake sale
+      - road project completion
+      - toll revenue growth
+      - railway electrification contract
+      - power transmission order
+      - construction labour shortage
+
+    macro_topics:
+      - government capital expenditure
+      - infrastructure spending India
+      - interest rates construction
+      - monsoon construction delay
+      - commodity cost inflation
+
+    international_topics:
+      - global infrastructure investment
+      - Australia construction market
+
+    ir:
+      website: https://www.ashokabuildcon.com/
+      # Verified 2026-10-03 against ashokabuildcon.com and NSE/BSE listings.
+      investors: https://www.ashokabuildcon.com/investors
+      bse_code: "533271"
+      isin: INE442H01029
+
+    queries_extra:
+      - Ashoka Buildcon order win
+      - Ashoka Buildcon NHAI project
+      - Ashoka Buildcon results
+      - India highway awarding NHAI order inflow
+      - road EPC order book India

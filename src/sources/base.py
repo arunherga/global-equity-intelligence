@@ -367,3 +367,28 @@ def extract_links(html: str, base_url: str) -> List[Tuple[str, str]]:
         if absolute.startswith(("http://", "https://")):
             out.append((absolute, text))
     return out
+
+def consumer_terms_round_robin(profiles) -> List[Tuple[str, str]]:
+    """(ticker, term) pairs, taking one company at a time.
+
+    The consumer sources are capped per run, and the cap binds: five
+    companies declaring twenty terms against a cap of eight means the last
+    companies are never searched at all. Straight iteration hides that - it
+    looks like those companies simply have no chatter, which is a different
+    and much more comfortable conclusion than the truth.
+
+    Round-robin spends the cap evenly, so a company that is cut short loses
+    its least important term rather than all of them.
+    """
+    queues = []
+    for profile in profiles or []:
+        terms = [str(t) for t in (getattr(profile, "consumer_terms", []) or []) if str(t).strip()]
+        if terms:
+            queues.append((profile.ticker, terms))
+    pairs: List[Tuple[str, str]] = []
+    depth = max((len(t) for _, t in queues), default=0)
+    for index in range(depth):
+        for ticker, terms in queues:
+            if index < len(terms):
+                pairs.append((ticker, terms[index]))
+    return pairs

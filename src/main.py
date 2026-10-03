@@ -706,7 +706,7 @@ def _split_consumer(articles: Sequence[Article]) -> Tuple[List[Article], List[Ar
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="python -m src.main",
-        description="Personal equity intelligence for a fixed 10-stock watchlist.",
+        description="Personal equity intelligence for a fixed watchlist of Indian equities.",
     )
     parser.add_argument("--config", type=Path, default=None, help="path to config.yaml")
     parser.add_argument("--watchlist", type=Path, default=None, help="path to watchlist.yaml")

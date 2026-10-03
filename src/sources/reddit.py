@@ -32,7 +32,13 @@ from typing import Any, Dict, Iterable, List, Optional
 from urllib.parse import quote_plus
 
 from ..models import Article, SourceType
-from .base import CollectionContext, HttpClient, Source, SourceError
+from .base import (
+    CollectionContext,
+    HttpClient,
+    Source,
+    SourceError,
+    consumer_terms_round_robin,
+)
 
 # Reddit asks for a User-Agent that identifies the software and a contact
 # point. A generic one is what gets a project rate-limited or blocked.
@@ -125,6 +131,9 @@ class RedditSource(Source):
 
     # -- what to look for ------------------------------------------------
     def terms_for(self, context: CollectionContext):
+        return consumer_terms_round_robin(context.profiles)
+
+    def _terms_sequential(self, context: CollectionContext):
         """(ticker, term) pairs for companies that opted into consumer watch.
 
         Driven by an explicit ``consumer_terms`` list rather than by brands,
