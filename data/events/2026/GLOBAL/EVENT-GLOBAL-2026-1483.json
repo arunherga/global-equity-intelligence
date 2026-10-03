@@ -393,6 +393,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -415,21 +458,41 @@
       "published": "2026-10-03T09:45:54+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Jain Resource Recycling Files SEBI Compliance Certificate for September Quarter",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOElnempFUWJ0YWhrdDVuX0ZuMGZicE5DZERVd3lzeG5EVnpWeGd1cTRuSFNfbEN6M0NCT2JzN0Z0Sk1UbmM1T00tZ0E1TFV5R2tpVUY1LXBETWFSVmVzaTZJNEEyd2t1TlBFaHVncmw1T1lxQVk4NHAyUkpJdmFZM1lvX3AwYkQ3YXZnVnFVdUlObzFMS2pmY1podkFDYW9hTTFvY3VudjBndW02bG5QQjdxN09XakZaRk9NQmdHN1Q5VFRCenlXQlRnZw",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T09:45:54+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "PSU Connect",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|REGULATORY|bank-compliance-dematerialization-federal-files-sebi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-03T11:54:41.956941+00:00",
-  "last_updated": "2026-10-03T11:54:41.957024+00:00",
+  "last_updated": "2026-10-03T18:06:47.292846+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T11:54:41.957015+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:47.292817+00:00",
+      "change": "sources added",
+      "detail": "TipRanks"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:47.292841+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

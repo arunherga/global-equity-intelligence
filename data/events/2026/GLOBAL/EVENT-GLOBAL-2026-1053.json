@@ -82,6 +82,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -94,21 +132,41 @@
       "published": "2026-09-29T09:02:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "American Farm Bureau Federation Reports Diesel Costs Increase for Harvest As U.S. Farm Diesel Price Has Increased $2.60 Per Gallon Year-Over-Year in September 2026",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQMjZQVkNsOW5oODdjTVo0YzQ4YVI5RFdaREpockwxSnhSWW1CTE1lcDRxVWxGSS1HbGZLaXd5OTZyZXQyRHlQdHJVQ1J6ZVJWQWlnSTJjc2dITEczanZ0LWlVZEFIOE93TXJnMVY0NC11QVBNVEdadzE2cGstX3lEUk12QS1rVi0xbFFoRUo0Sml3RHg0WnFxWU9sSnlpR1R3TVdRamRzR2RYTDNzZXhyTzFFNDZ4andLdElBQWFlNXVySUUxNDd5ZTBXZWctVnlTcEdmUlZlemdzUmJZdTBUYTR6a19qQkFPR24tN0J1UllyZkg3Wm5GOEFNdk45aUJaMzZ6ZGdJWnhDbHpWcWs2M1FwVnZDNkFDZ3BEbEZyRER2M3FrUTk3eHVyOG9YU1hEeDc1VVVqRFNxa24tTnc4UDktNnBOM0ZRa0dINVJCMER0Zw",
+      "source_name": "Sierra Sun Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T12:23:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Transport Intelligence",
   "cluster_key": "COALINDIA+JKIPL|OTHER|diesel-freight-rise-road-struggles-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.810680+00:00",
-  "last_updated": "2026-09-29T13:08:35.810733+00:00",
+  "last_updated": "2026-10-03T18:06:56.434759+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.810728+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:56.434735+00:00",
+      "change": "sources added",
+      "detail": "Sierra Sun Times"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:56.434753+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

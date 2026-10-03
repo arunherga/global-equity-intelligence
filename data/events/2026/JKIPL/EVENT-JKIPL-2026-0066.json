@@ -43,6 +43,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +100,41 @@
       "published": "2026-09-24T08:36:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "H.G. Infra को Odisha में ₹1,582 करोड़ का NHAI रोड प्रोजेक्ट मिलने के बाद, शेयर में तेजी।",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPanAxaGZNend1X2x5Wmx4R2pxUzUtUjdNY21WSVdQMEtyUGpuY1JpbVFmaTdTWUh0VENDcVVSRnl1NjFHUTBUbHNkdlJ3UURMbzNpajk4NnpJMXQ5a2xtUWg3TWU2SnlIelhHS0ZyWGVsaUlZRjY0MmxtYjhKODVlZUR3ek1zaTYwcnJPblNYLWJST1dnTFREakJicGE0QWxQR2hIVTBBT08wTWZKdGZv",
+      "source_name": "Alice Blue",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T11:18:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Upstox",
   "cluster_key": "JKIPL|OTHER|14%-engineering-h.g.-infra-rise-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.589024+00:00",
-  "last_updated": "2026-09-24T12:02:44.589099+00:00",
+  "last_updated": "2026-10-03T18:06:52.092178+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.589094+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:52.092155+00:00",
+      "change": "sources added",
+      "detail": "Alice Blue"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:52.092173+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -4,21 +4,22 @@
   "summary": "Anup Saha appointed Kotak Mahindra Bank MD & CEO, effective 2027 Rediff",
   "event_date": "2026-10-02",
   "event_types": [
-    "MANAGEMENT_CHANGE"
+    "MANAGEMENT_CHANGE",
+    "REGULATORY"
   ],
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
-        "MANAGEMENT",
+        "REGULATION",
         "COMPETITION"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -26,14 +27,22 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
+        "a competitor (Kotak Mahindra Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -41,12 +50,55 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "reason for the change",
-        "successor's background",
-        "further exits",
-        "Kotak Mahindra Bank's follow-up announcements"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Kotak Mahindra Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Kotak Mahindra Bank, and RBI. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -60,21 +112,51 @@
       "published": "2026-10-02T16:01:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Anup Kumar Saha Kotak Mahindra Bank CEO: RBI Approval",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zWDZ4WnAtZmpqbnFOYWdyWXFJSWIwbmU3QS1oU3hTNEhLWEdKTFZXdWRIaFlvbHA4TWpzRDJiTk10TjJLX0dnR1FnWVhlTF9sbnNudzNPdkNpSDJoZ25xNGpJNnA",
+      "source_name": "Business Viewpoint Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T21:37:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Rediff",
   "cluster_key": "HDFCBANK|MANAGEMENT_CHANGE|anup-appointed-bank-kotak-mahindra-saha",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T18:31:36.678470+00:00",
-  "last_updated": "2026-10-02T18:31:36.678529+00:00",
+  "last_updated": "2026-10-03T18:06:41.434099+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T18:31:36.678524+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:41.434065+00:00",
+      "change": "sources added",
+      "detail": "Business Viewpoint Magazine"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:41.434081+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:41.434088+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:41.434093+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

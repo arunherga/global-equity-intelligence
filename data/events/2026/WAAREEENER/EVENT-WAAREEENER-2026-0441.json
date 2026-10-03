@@ -4,20 +4,22 @@
   "summary": "Gold, Silver rate today live updates: Gold tumbles over 2%; MCX plunges Rs 3,171 as global prices slide The Times of India",
   "event_date": "2026-09-28",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "POSITIVE",
-      "confidence": 0.41,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -25,17 +27,11 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -43,13 +39,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "financial implication is quantified"
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -63,21 +62,46 @@
       "published": "2026-09-28T04:12:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver prices fall in local, global markets",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUEpxZ0Y3d2VsdzFGaE9xUjgzTWJ4Q1lHTTgyRjhtS19uU1J0cjBEbkdxSVk4MlFpU3EzY0U2cDNmX3AtU3FDOF9nZjNySjcwdjBTN0dwTjJ4d2MxcXVFWUFPNk9kNEp5a08yT3RfcWVHSVIyWjRiVzRvdnMyVy1zRnhaMF9DSmlFUWd0aTRscDhpTnNlQzVn0gGUAUFVX3lxTE9qcG5sQlFfVXh2ZkZ3bm5VcnNiM0VUQktka2JXNVZ0ZU9jeDlSZmM4YThVOTZWZ2NOZ2xoZE9FSVZ0V3ViS0JMZzgyeEVBVWNKMEw2emduRmFRMExDejBtUGwxeVVBSy1Fd3U2ZkY5ZTRwUHNLdk50YkNSTXI4cVhRcFB0UjUtOTd0X3pPVnRrOUF0Tkw",
+      "source_name": "The Express Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T09:43:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "WAAREEENER|OTHER|gold-gold-rate-silver-today-updates",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T20:41:16.652133+00:00",
-  "last_updated": "2026-09-28T20:41:16.652213+00:00",
+  "last_updated": "2026-10-03T18:06:46.256440+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T20:41:16.652206+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:46.256410+00:00",
+      "change": "sources added",
+      "detail": "The Express Tribune"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:46.256428+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-03T18:06:46.256435+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

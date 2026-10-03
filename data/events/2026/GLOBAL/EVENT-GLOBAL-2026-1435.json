@@ -412,6 +412,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are revenue, regulation. Classified as tender.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are revenue. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -434,21 +477,41 @@
       "published": "2026-10-03T08:38:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Sebi gets 3,500+ comments on Closing Auction Session rules: Circular likely soon, says Tuhin Kanta Pandey",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQeEFnYnd5QjV0V05BOWszYzFsaHVtSHJqaGEzemMtYnlLLWljaU8xMDRJMHZNaHNuR3lDRndvLUIwZ1I0TEUxX01sOFVSeTM0VldyYURBcjdUR0hQdy1OU19YRURpTGJuMWVTYjRhWHNySU9vMXRRN00xLVpWeVhlc1llY3dod3Bhc0lIWnpZZk5XWC1kTF9SVzVkaGxvdUhWcHNTOXpPQ2NFNjVCQ1hBM2ROZ25qWDJ6el9ncWxCVGJWRzlwcWttUVF5OGlQUjBQNHVwb042UzlJX0xiR3B3WU5rMmVvbzl4UWhJdFZyV3hSVkpsWllUcV9LUW9XQ1ZZVkHSAYcCQVVfeXFMTVNLLUE0bUllNi1wZ29EX09iVzVSSnYxajBXakFVZnctVHB1ZHpJLXNKZ19hSlJaTDRIaHFVTkg0UWRadHpSUUxKdnpLcjI4SkdCUW90SmxfQnVVRXhlRzQ5amZ6b29wclJPdHRlOUFVX1luUE9sOUs0RTB1RndGQXh4R2dSdGcxaTFaWGlXd2NOQVJVdXJ6NnZhSHdaT25Pb3hkT1VBS3dvM3RlLW9pcFMybkJtYURDRm5BU2Q3emwzWExLQ1RSRWFPTDZoWnZpX3lEVFA3VmZMdk9LLWZpeTZOS3BNWGRyT3h3ZVBVcmdnZ3I3cXBGVllhVWUwamY4SFdjeU1MVzA",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T13:05:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|REGULATORY+TENDER|auction-closing-framework-issue-sebi-soon",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-03T11:52:37.123740+00:00",
-  "last_updated": "2026-10-03T11:52:37.123844+00:00",
+  "last_updated": "2026-10-03T18:07:00.210658+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T11:52:37.123832+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T18:07:00.210631+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-03T18:07:00.210652+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}
