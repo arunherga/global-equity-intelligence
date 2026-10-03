@@ -552,3 +552,100 @@ def test_the_same_consumer_post_from_two_searches_counts_once():
 
     assert len(consumer) == 2, "same URL folded, different people kept"
     assert remaining == [news]
+
+
+def test_an_events_genre_is_judged_on_all_its_coverage_not_todays_slice(tmp_path):
+    """The RBI liquidity auction scored 10/15 for ten days running.
+
+    "variable rate reverse repo" was in the routine markers, the classifier
+    set the flag, and the cluster vote still said no - because the event had
+    lived since 22 September with twenty sources, while each run contributes
+    only what arrived that morning. On a day whose one new headline read
+    "RBI absorbs Rs 71,971 crore liquidity from banks", the vote saw a
+    sample of one, and the penalty never applied.
+
+    A replay cannot reproduce this: rebuilt from scratch, the cluster holds
+    all twenty articles and the vote passes. It only happens against a
+    persisted store, so that is what this builds.
+    """
+    from datetime import date as _date, datetime as _dt, timezone as _tz
+    from src.classify import classify_article
+    from src.event_cluster import MatchedArticle
+    from src.event_store import EventStore
+    from src.main import Pipeline, _cluster_flags
+    from src.models import Article, Event, EventSource, Relationship, SourceType
+    from src.relationship import StockLink
+
+    config = load_config()
+    watchlist = load_watchlist(config=config)
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+
+    # Today's contribution: one headline that names no routine marker.
+    todays = Article(
+        title="RBI absorbs Rs 71,971 crore liquidity from banks",
+        url="https://example.test/today", source_domain="example.test",
+        published=_dt(2026, 10, 1, 9, tzinfo=_tz.utc),
+    )
+    matched = MatchedArticle(
+        article=todays,
+        links=[StockLink(ticker="TMB", relationship=Relationship.INDIRECT, entity=None,
+                         exposures=[], reasons=[], evidence_weight=2.0)],
+        classification=classify_article(todays),
+    )
+
+    class _Cluster:
+        articles = [matched]
+        lead = matched
+
+    assert not matched.classification.routine_release, "today's headline alone looks ordinary"
+    assert _cluster_flags(_Cluster())["routine_release"] is False, "which is the bug"
+
+    # The same event's earlier coverage, as the store holds it.
+    earlier = [
+        "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF",
+        "Money Market Operations as on September 21, 2026",
+        "RBI absorbs Rs 71,971 cr via overnight VRRR auction amid surplus liquidity",
+    ]
+
+    flags = _cluster_flags(_Cluster(), earlier_titles=earlier)
+
+    assert flags["routine_release"] is True, (
+        "the event is a routine release, and its own archive says so"
+    )
+
+
+def test_earlier_coverage_cannot_suppress_a_genuinely_new_development(tmp_path):
+    """An event that turns into real news must not stay suppressed.
+
+    A company whose routine filings clustered earlier can still announce
+    something; a third of all coverage is the bar, so a run of ordinary
+    notices does not permanently gag it.
+    """
+    from datetime import datetime as _dt, timezone as _tz
+    from src.classify import classify_article
+    from src.event_cluster import MatchedArticle
+    from src.main import _cluster_flags
+    from src.models import Article, Relationship
+    from src.relationship import StockLink
+
+    real = []
+    for n in range(6):
+        article = Article(
+            title=f"Coal India signs a binding supply agreement, tranche {n}",
+            url=f"https://example.test/{n}", source_domain="example.test",
+            published=_dt(2026, 10, 1, 9, tzinfo=_tz.utc),
+        )
+        real.append(MatchedArticle(
+            article=article,
+            links=[StockLink(ticker="COALINDIA", relationship=Relationship.DIRECT,
+                             entity=None, exposures=[], reasons=[], evidence_weight=4.0)],
+            classification=classify_article(article),
+        ))
+
+    class _Cluster:
+        articles = real
+        lead = real[0]
+
+    flags = _cluster_flags(_Cluster(), earlier_titles=["Money Market Operations as on 21 September"])
+
+    assert flags["routine_release"] is False, "one old notice must not bury six real reports"

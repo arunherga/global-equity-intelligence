@@ -32,7 +32,12 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
-from .classify import Classification, RuleClassifier, classify_article
+from .classify import (
+    DEFAULT_CLASSIFIER,
+    Classification,
+    RuleClassifier,
+    classify_article,
+)
 from .config import Config, load_config
 from .deduplicate import deduplicate
 from .direction import analyse_direction
@@ -216,13 +221,36 @@ class Pipeline:
             sequences[key] += 1
 
             event = build_event(cluster, event_id, quality_map)
-            self.score_event(event, cluster)
+            self.score_event(event, cluster, store)
             if event.stocks:
                 events.append(event)
         return events
 
     # -- 4. scoring ------------------------------------------------------
-    def score_event(self, event: Event, cluster: Cluster) -> None:
+    def _earlier_titles(self, event: Event, store: Optional[EventStore]) -> List[str]:
+        """Headlines this event already carried from previous runs.
+
+        An event lives for days and each run contributes only what arrived
+        that day, so judging its genre from today's slice alone is judging a
+        sample. The RBI liquidity-auction event ran from 22 September with
+        twenty sources; on a day whose one new headline read "RBI absorbs Rs
+        71,971 crore liquidity from banks" the routine-release penalty did
+        not apply and it scored 10/15, while the nineteen headlines naming
+        the auction sat in the store unread.
+        """
+        if store is None:
+            return []
+        try:
+            existing = store.find_existing(event)
+        except Exception:  # noqa: BLE001 - scoring must not fail on a lookup
+            return []
+        if existing is None:
+            return []
+        return [s.title for s in existing.sources if s.title]
+
+    def score_event(
+        self, event: Event, cluster: Cluster, store: Optional[EventStore] = None
+    ) -> None:
         quality_map = self.config.source_quality
         caps = self.config.section("scoring")
         source_types = tuple(s.source_type for s in event.sources)
@@ -241,7 +269,7 @@ class Pipeline:
         # about an RBI liquidity auction scored 10/15 because the one article
         # chosen for scoring was the single headline that did not say "VRRR",
         # so the routine-release penalty never applied.
-        event_flags = _cluster_flags(cluster)
+        event_flags = _cluster_flags(cluster, self._earlier_titles(event, store))
 
         for ticker, (matched, link) in best_links.items():
             profile = self.watchlist.get(ticker)
@@ -609,17 +637,47 @@ _CLUSTER_FLAGS = (
 )
 
 
-def _cluster_flags(cluster) -> Dict[str, bool]:
+def _cluster_flags(cluster, earlier_titles: Optional[Sequence[str]] = None) -> Dict[str, bool]:
+    """Suppressive flags for the event, not for one article inside it.
+
+    Two corrections, both from real runs.
+
+    A plain majority was too strict once events started living for days. The
+    RBI liquidity-auction event ran from 22 September with nine updates and
+    twenty sources, but each run contributes only the articles that arrived
+    that day - so the vote saw a sample of one or two, and if that day's
+    headline happened to read "RBI absorbs Rs 71,971 crore liquidity from
+    banks" rather than naming the auction, the routine-release penalty never
+    applied and it scored 10/15. A third of the cluster is enough.
+
+    The lead article counts on its own, because its headline becomes the
+    event title. If the line the reader sees is "Money Market Operations as
+    on September 21, 2026", the event is a routine release whatever else
+    clustered into it.
+    """
     articles = list(getattr(cluster, "articles", []) or [])
     if not articles:
         return {}
+    lead = getattr(cluster, "lead", None)
+
+    # Today's articles, plus the headlines this event already carried. The
+    # genre belongs to the story, and the story is everything written about
+    # it - not whichever fragment of it happened to arrive this morning.
+    classifications = [m.classification for m in articles]
+    for title in (earlier_titles or []):
+        classifications.append(
+            DEFAULT_CLASSIFIER.classify(
+                Article(title=title, url="", source_domain="")
+            )
+        )
+
     flags: Dict[str, bool] = {}
     for name in _CLUSTER_FLAGS:
-        votes = sum(
-            1 for m in articles
-            if getattr(m.classification, name, False)
+        votes = sum(1 for c in classifications if getattr(c, name, False))
+        named_by_lead = bool(
+            lead is not None and getattr(lead.classification, name, False)
         )
-        flags[name] = votes * 2 >= len(articles)
+        flags[name] = named_by_lead or votes * 3 >= len(classifications)
     return flags
 
 
