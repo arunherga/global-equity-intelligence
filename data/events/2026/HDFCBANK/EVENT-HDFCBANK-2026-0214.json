@@ -15,49 +15,45 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
-      "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REVENUE"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "global financial conditions",
-          "relationship": "SECTOR",
-          "weight": 2.3,
-          "detail": "international topic; in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to global financial conditions, and RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -65,14 +61,10 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
-      "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REVENUE"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -80,28 +72,34 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+2 International market development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -145,16 +143,26 @@
       "published": "2026-09-28T14:19:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "AI valuation correction could boost capital flows to India, but poses global financial risks: RBI Governor",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNY0tucklMY3JEcFdLT3JQQXVDUS1sQTZNelhOMmk3aEdSRzA0R2NfaXBWUGluMUJvdHBWaG03MnFMRjk1VVRGQ1hkQ2FIUFRQYzRBdmUwalBNSEJXUTRwa3B2VXBveVZGLU1IMXdjUXo0TUxFZnFNazZMaUdMM1RUSTlXS0g3bV8xWl82ZDhYVUQxOWJkU2ZiaHhyR0RVV1E3LVBHYlZWQ3prcTR4cklNcG9yemJvRzdGSGtkZkZETDZNRVh1a2dTOVJLVV93dHdscXF2YkpXSkhwMlkxY19rRzZlNElwMjVDZXlfdENLMHVmYUNqNUNJYTV4dXlqRzh1M0pOMDE0eW3SAY4CQVVfeXFMTjlSU3FVY0VLRzl0S0NYVjZIdFlqSzJVc3NxLW03aWY5MEhkRW12UW8tMHFlVVFZZDhyeXA3Skd3eWtlWjVhNGhKb01aSmQtdXFWcnBXRkpwMW9HZTUzN2t4R1NYVS1pS3kxSWRQRjBqU05oWl9uMzlqYzd0Q3EwUTJrOXgzQUh2ZDk3YmFTbGpUa1hHMm9jM0FUMXBGaW9fdVFXd1pVYjFkeFg4alZqUEJsTUd2X29hWEtLWHFiQjVXa1FmM0YtUVRER01GMVZHTlplMzl1TVpMVnBFaVV3R3RPcW9mODkzT01wdjFXZUJVNzNUTG9leXVlM2tLcjV0Y05faFJCSFd0Z29MUzB3",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T07:12:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "thehawk.in",
   "cluster_key": "HDFCBANK|OTHER|conditions-financial-global",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-26T17:52:30.580242+00:00",
-  "last_updated": "2026-09-28T20:44:37.263594+00:00",
+  "last_updated": "2026-10-03T12:01:31.592935+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T17:52:30.580276+00:00",
@@ -190,6 +198,21 @@
       "timestamp": "2026-09-28T20:44:37.263585+00:00",
       "change": "categories added",
       "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:31.592899+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:31.592915+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:31.592930+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.47,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -25,46 +25,75 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to HDFC Bank, and loan growth. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.57,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -115,21 +144,76 @@
       "published": "2026-09-22T06:17:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What are the challenges before new HDFC Bank CEO Anup Bagchi?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/what-are-the-challenges-before-new-hdfc-bank-ceo-anup-bagchi/134646636",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-02T21:13:10+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Anup Bagchi HDFC Bank CEO: New MD & CEO From Oct 27",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9OYTNzN3ktdkNxZW1rUjB0STJDblZ6NzNiZ2N4Y2dFeWpZWjNMX2lxTnpJc2VWZXFEMjd0TlNRZHA2eTVLeTJySC1STVhCdk9wcjljVW5ISXBIcWhESWZrSWtBaWw1SFBON09PS3QycWJydw",
+      "source_name": "Business Viewpoint Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T00:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank’s Next Test Is Bigger Than Anup Bagchi’s Appointment",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNlJiclJ1V0dHdklNMlFPWkdSbE82WkJ4dEpvZXh1SnN6ZWNycVBWX21hZWRNaTBMLUsxNmZSamUweGowVUVRaFg4a2puVFZIb3dfSlRDaHhqOVM0c3FhZGJmZTY4X2Q5TEVhMTFTSXZ0ZEJWc0xtSURlblFkN2gtSFB0b01Jc0ItLWxuTmZnalZZY1g3b0pUdm10Z1c2LTlGSVdV",
+      "source_name": "bwpeople.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T06:56:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "What are the challenges before new HDFC Bank CEO Anup Bagchi?",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUWpTdjJmVm94aE9LLUFoZmdzaUxpMGhaN2E0aFBldG4yLWRjX193dmh3MjhtSmxEVHFxcEtieE1qV3JUNXVFVngxWHFrYm1uOFkwbUY5VGx3SEpyeWlHVnp4eGx5aDlPVWl6Qmd4allKNVF5ZFFOaS1LX2RzMkFVeEl1Ni1DdHQ1TldwcnBzUWwwYlBHRXQzaXpzbmdINXdJLUhzNF9TVEZ1ZWxJSWhDOU5rb1I0bFFEWEl4UGNn0gHDAUFVX3lxTE5zTUtrLUp1SUtzY0I0T2hzUXVka21RT1p6bXMxSUMwcEZUUWMwY0p4ZU9FcHN1OWhqMnRmb294cy1CTFZ1Qmw2dHRkdHRKcEMyMUhWbVNxa1ZTTDJ1ZFFId25nQ1psa1U3S2JDakk0N0VJTTlFZEVNcDN0SXpBRjBsOTZ3cWpOUUFTalhsTFktUHdVR0lrX0NXb05xUXNNanJZRlZ4SWF5bUhoc1U3c1FRSExUSERQV3JSaFkybEk5bk42TQ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T21:13:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "NDTV Profit",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-day-hdfc-rise-second-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.921788+00:00",
-  "last_updated": "2026-09-22T18:19:39.921833+00:00",
+  "last_updated": "2026-10-03T12:01:08.046211+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.921831+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.046183+00:00",
+      "change": "sources added",
+      "detail": "Business Viewpoint Magazine, ETBFSI, bfsi.economictimes.indiatimes.com, bwpeople.in"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.046200+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.046206+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 5 -> 7"
     }
   ],
   "price_reaction": {}

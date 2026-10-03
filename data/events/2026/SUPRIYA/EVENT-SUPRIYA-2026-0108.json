@@ -1,0 +1,126 @@
+{
+  "event_id": "EVENT-SUPRIYA-2026-0108",
+  "title": "China Launches Anti-Dumping Investigation into EU Chemical Intermediate",
+  "summary": "China Launches Anti-Dumping Investigation into EU Chemical Intermediate 아시아경제",
+  "event_date": "2026-10-03",
+  "event_types": [
+    "NEW_PRODUCT",
+    "TARIFF",
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
+        "EXPORTS",
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "chemical intermediates",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to chemical intermediates, and China. The parts of the business most likely touched are product, revenue, exports. Classified as new product.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "unclear, but potentially positive if Chinese API competitors face higher input costs from tariffs on EU intermediates, driving global buyers toward Indian alternatives like Supriya",
+        "margin_effect": "unclear, depending on whether global intermediate prices rise due to supply chain disruptions or fall in non-Chinese markets like India due to diverted EU supply",
+        "cost_effect": "input costs for chemical intermediates could fluctuate; they may decrease if EU producers divert blocked supply to India at lower prices, or increase if global supply chains are disrupted",
+        "competitive_effect": "Supriya's competitive position against Chinese API manufacturers could strengthen if those Chinese competitors rely on EU intermediates and face higher tariff-induced costs",
+        "regulatory_effect": "no direct regulatory consequences for Supriya, though it may prompt Indian trade authorities to monitor potential dumping of EU chemicals into the Indian market",
+        "short_term": "increased price volatility and sourcing uncertainty for chemical intermediates as global supply chains react to the investigation announcement",
+        "medium_long_term": "potential realignment of trade flows, where EU chemical exporters increase supply to India, potentially lowering long-term raw material costs for Indian API manufacturers",
+        "second_order_effects": "Chinese API manufacturers may seek alternative intermediate sources outside the EU, potentially bidding up prices of non-EU intermediates in other regions",
+        "key_uncertainty": "the specific chemical intermediate targeted by China's investigation and the extent of Supriya's direct or indirect exposure to it",
+        "monitor_next": [
+          "The specific chemical intermediate compounds targeted by China's anti-dumping investigation",
+          "Import volume and pricing trends of EU-origin chemical intermediates entering India",
+          "Price spreads between Indian and Chinese manufactured APIs for Supriya's key product lines",
+          "Any retaliatory trade measures or parallel investigations initiated by the EU or India"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "China Launches Anti-Dumping Investigation into EU Chemical Intermediate",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1XRWxfaTNTaDlBekZBeXhjNW9FYTRZRkZMUHB2MlZhQ2Z4MkVpZkhWMTB6czg5MHotNEVoY0prd3RfN081aklEVlA3YmkyMlBDOWVaUnd1Qzh0UGpNVXFMNm1Md2ZiSFZzOWJYMjN5anFsaDRnei1B",
+      "source_name": "아시아경제",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T08:51:21+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "아시아경제",
+  "cluster_key": "SUPRIYA|NEW_PRODUCT+TARIFF|anti-dumping-chemical-china-europe-investigation-launch",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-03T11:54:35.093834+00:00",
+  "last_updated": "2026-10-03T12:01:03.702522+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-03T11:54:35.093901+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:03.702505+00:00",
+      "change": "ai analysis",
+      "detail": "SUPRIYA via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

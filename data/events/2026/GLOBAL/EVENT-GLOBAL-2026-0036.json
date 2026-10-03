@@ -6,22 +6,24 @@
   "event_types": [
     "INTEREST_RATE",
     "MACRO",
-    "REGULATORY"
+    "REGULATORY",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.43,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
-        "REGULATION"
+        "REGULATION",
+        "REVENUE"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -29,27 +31,24 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
+        "+2 Earnings or guidance at a related company",
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -57,22 +56,23 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.43,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
-        "REGULATION"
+        "REGULATION",
+        "REVENUE"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -80,27 +80,24 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
+        "+2 Earnings or guidance at a related company",
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -108,7 +105,105 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.43,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "REGULATION",
+        "REVENUE",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+4 Regulatory or legal action",
+        "-3 Speculative or unconfirmed report"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.43,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "REGULATION",
+        "REVENUE",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+4 Regulatory or legal action",
+        "-3 Speculative or unconfirmed report"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -122,21 +217,91 @@
       "published": "2026-09-17T19:11:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why RBI may hike policy rates next week?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/why-rbi-may-hike-policy-rates-next-week/134646639",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-02T21:14:48+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "A tricky rate hike to consider, but change in RBI’s policy stance unlikely",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPN3RDemkxc1MySnhPdkM1RzIyaG9UT3k3TXdoN3hmbUl1a1M0emJiTGg0eVFWV1dyV3hEalB0bjQtc0JkODFPWkZza2JVTmtoQ1pTcmdmM3JOYmpKSEVreWJGS3dlSUhNWURYRmlDZFB0VjJVeE5iTng3WmxuT1UxZjd1bWFCRDJibjFTYU90aUNLQnhfYWE3YmRvSVF6dG1NampKWG5JYVFrcjFrNlFTb0c0YVdaYnhpd21MUUNxMjhNbGdHZjRsctIBzgFBVV95cUxOWEtIeF9RRXZoQ0M0cGlpRG1Xamw2TUlRS0dEWVdUYnFzU211Z3liZktTWUtiNUN6c25IeVN2V0dzdkh6N3M3U0RaUlR6T2hkMkZEM1BIdGFNRzlRQ2lwVnN2SkNSOXM4a1ROYVdPWV9IbWRvRVFvMGJlTmVUWGhQOGhGUUdGOU1KNXJORWdfY2xpY2Fsa01rS0tyTVVzY0VTZWFFdGctU0NWdHVIQnFaQ0t4WkJjaUdES1RPNnJWOW5XZkFLemxIRFNfd3BXdw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T02:48:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Key Factors Set To Affect Stock Market Next Week: RBI Policy, Q2 Earnings, And FII Outflows In Focus",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUG9VeTZmNWxFT3Zqd3V5aF9mRTZvZ2RlMkRnZ1ZsOVJGNm9aeFNMNmxHdjNacU9GWVRvalRHNmpONWdNZmJvbV9jTmxPdE5NVldqazNKbjFlZEhDNEpjZFo5dUx0MUdaamd1WDVsMExvM2c3WHIxSkJqc2F0cmFFR3JHR19nTGJUSWNCOFFubGRNTW94WHhEdnlKNVJ2cF9Tc3ByMHFERzlxdmxwekZJMmRZQnJFaHlsQkk1VTBRTjVvTEgxYlJDNzBQWjhDZ9IB2wFBVV95cUxNQjNyeEozajJjSUcwNWZKdmFhVkRaVjd2TWtjS21HMmFhNXA3TjBEZVkzVlA0NUt5R1F2QWpCRG1iUDVpMF9MdllfaHloOFJVLUk2VVNtUlN0R0doUnJrUVhEUE5KSnhPcEQ0UWFPSVU4NXMyaWNENU9pWGw1WnNiSXRMQm13ME1LbzJ3OGl5UDhzUk5LZExXUDBLTm8weTN1b2FuYlZVMXllb185cDcwZG85RHVaTmJKNmVYUG92MVRMQlVnSGQ2MkItOGZSQ0JIU0o0dWx2cVZWd0U",
+      "source_name": "outlookmoney.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T07:28:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why RBI may hike policy rates next week?",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbDhQM0h6RlZYZnpDMG9xNlZDbmsxNGRKR19kbl9KYVRhRXNBMlpNZWowRWd2QXFYZWhsbEFQLXo2SlQ4bGNZOTFUYzVHVG81dzRkZHFaQS1LQTNkU3lseEpPcVU4NzFySHprT1hlT2ZhRy00dGNqWEd2N0pXZFNOSEw4M0N6a2xfbWl0MVdhbER4MkdsVE50Q1VQbEhaQjlwZlo3TTh6Y9IBpwFBVV95cUxPbDhQM0h6RlZYZnpDMG9xNlZDbmsxNGRKR19kbl9KYVRhRXNBMlpNZWowRWd2QXFYZWhsbEFQLXo2SlQ4bGNZOTFUYzVHVG81dzRkZHFaQS1LQTNkU3lseEpPcVU4NzFySHprT1hlT2ZhRy00dGNqWEd2N0pXZFNOSEw4M0N6a2xfbWl0MVdhbER4MkdsVE50Q1VQbEhaQjlwZlo3TTh6Yw",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T21:14:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-imminent-move-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.529471+00:00",
-  "last_updated": "2026-09-22T18:19:39.529509+00:00",
+  "last_updated": "2026-10-03T12:01:08.344622+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.529507+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344581+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, Moneycontrol.com, bfsi.economictimes.indiatimes.com, outlookmoney.com"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344597+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344604+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344609+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 3"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344614+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:08.344617+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 3"
     }
   ],
   "price_reaction": {}

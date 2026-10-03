@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0090",
+  "title": "Vegetable prices rise after flooding damages crops in Thailand",
+  "summary": "Vegetable prices rise after flooding damages crops in Thailand Fresh Plaza",
+  "event_date": "2026-10-02",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices rise after flooding damages crops in Thailand",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN0syaVhFT3AwZmZhWGNuQ3ZWM1ZvZGE3WGlQbVRjZ0drSllabHFBVWJPMC1qWVNpaF9laU12Nkl5dzVKbndqWFhLSEt0ejlWYnA2V3AwcVpqU1dtOElJS3hVVi1LTDgwZXM2UVFLOE1vTEdOLVhWQXNnNGd1WERSQUdUWFU1RlEtcWw5TFQ2UlFGN3hHYWhYQm53VHljaE5YZ25xSllDV2Zsa0dpTnlTTWM5WGRzM0Y1RThlVQ",
+      "source_name": "Fresh Plaza",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T18:11:15+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Fresh Plaza",
+  "cluster_key": "FRESHARA|COMMODITY|crops-damages-flooding-price-rise-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-03T11:53:00.882115+00:00",
+  "last_updated": "2026-10-03T11:53:00.882180+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-03T11:53:00.882171+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

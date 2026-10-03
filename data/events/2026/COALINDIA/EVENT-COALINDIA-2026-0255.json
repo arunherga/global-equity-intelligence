@@ -4,21 +4,22 @@
   "summary": "India: Portside Indonesian thermal coal prices drop w-o-w amid lacklustre demand BigMint",
   "event_date": "2026-09-25",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "REGULATORY"
   ],
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST"
+        "REGULATION",
+        "PRICING"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -43,25 +44,25 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "thermal coal prices is a selling price and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to thermal coal prices, and thermal coal. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to thermal coal prices, and thermal coal. The parts of the business most likely touched are regulation, pricing. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -75,21 +76,46 @@
       "published": "2026-09-25T13:24:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India: Portside Indonesian thermal coal prices ease on weak demand; tight power plant stocks limit downside",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNM3ltSl9NUENvRmNZNXJkQzI4MUlkYWhVLUtGRUs3MFpzZnVFODR5Z2J1WVJ0dFMteE01SG85cFRxeUs4Qm5XeF9neUMtSVNBUlZDOFlqTGhIODlKajhLMHpPa1RScnU1d1c3dk5GUFRwLVEyQWNNU19CN1lkX0FUZzlaaW5iOW1SQW9MYTFmMWFIRmhHWDBRaF8xc2hQVUZMYUg4c0JHajdPNEdTVUM1NDlaNllBenhkVy1SUXYzYjB2VTdIaWpVTF94N1l4alJnMFRQWVlXb0IwdFZXNDV4UUx6WG1tZw",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T06:02:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "COALINDIA|COMMODITY|coal-india-indonesian-portside-price-thermal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.537043+00:00",
-  "last_updated": "2026-09-26T11:38:32.537103+00:00",
+  "last_updated": "2026-10-03T12:01:28.675587+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.537099+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:28.675562+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:28.675576+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:28.675583+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

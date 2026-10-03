@@ -53,16 +53,15 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -73,25 +72,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -815,16 +810,46 @@
       "published": "2026-10-02T02:48:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in Kanpur 3rd October 2026 : 22 & 24 Carat, Todays Gold Price in Kanpur",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaamtlNXV2dHpDTFFVNzU5ejlEVEZTclZsMF9uNGtob1luMlh6VHNMcVVkV1FBaGV0Tk1yMmd3ZVljQ0xYb0RQajZOcjR1QWdiZDFHbURlZDYtY1dKNjFCWV91blNsbElsU1lPbFRDZHJkUQ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-02T22:37:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in Madhya Pradesh 3rd October 2026 : 22 & 24 Carat, Todays Gold Price in Madhya Pradesh",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBmTDJ2eXdhQ1E5OUdvMmRRR0lXTkJMMWJWbVRVaGkzUF9ZNEJjZ1BmbHo1SDRFc1lzdXMzSldQNUM1QTVIaXM0bm9jQVdHRkc2Tng5eFM2OWE2RXJaUmMzSnFmanJkc1Q3R1ZwSWJOcmFIQnZiTU85OE1HNGM",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T09:21:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today in Sonapur 3rd October 2026 : 1 KG, Todays Silver Price in Sonapur",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kb3B2QnE1dkd0QXVPaDBub05JZlpxWDlWWUt4bjFKX25JN3B2eDFCUDRTTFduMmc2czFMYTdfVlQ4Z1U3WmJGdUsyYk1hWWNZNDNZU3RuZ29aVXVkLU1VT0xYOEpHLWFEY09YLTRpV2oyTHp0VEE",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-03T09:28:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 72,
+  "article_count": 75,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "TMB|OTHER|23rd-gold-nadu-rate-tamil-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.597850+00:00",
-  "last_updated": "2026-10-02T18:33:22.023379+00:00",
+  "last_updated": "2026-10-03T12:01:41.385819+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.597946+00:00",
@@ -920,6 +945,21 @@
       "timestamp": "2026-10-02T18:33:22.023358+00:00",
       "change": "sources added",
       "detail": "Business Today, ClearTax"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:15.529467+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:41.385798+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-10-03T12:01:41.385815+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
