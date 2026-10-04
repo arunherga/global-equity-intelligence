@@ -170,7 +170,14 @@ jobs:
         # Job logs need admin rights to download, so a crash was invisible
         # from outside. The tail of the run is committed instead, which any
         # clone can read.
-        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'failure'
+        # !cancelled() is required, not decoration. A step whose `if` has no
+        # status check function carries an implicit success(), so this step -
+        # written to run only on failure - was skipped on every failure it
+        # existed for. Runs #46 and #48 both died in the pipeline step and
+        # recorded nothing, which is what sent this hunting through the API
+        # for a reason the repository was supposed to already contain.
+        if: ${{ !cancelled() && steps.gate.outputs.run == 'yes'
+                && steps.run.outcome == 'failure' }}
         run: |
           mkdir -p data
           python - <<'PY'
@@ -198,7 +205,14 @@ jobs:
           retention-days: 14
 
       - name: Commit the failure record
-        if: steps.gate.outputs.run == 'yes' && steps.run.outcome == 'failure'
+        # !cancelled() is required, not decoration. A step whose `if` has no
+        # status check function carries an implicit success(), so this step -
+        # written to run only on failure - was skipped on every failure it
+        # existed for. Runs #46 and #48 both died in the pipeline step and
+        # recorded nothing, which is what sent this hunting through the API
+        # for a reason the repository was supposed to already contain.
+        if: ${{ !cancelled() && steps.gate.outputs.run == 'yes'
+                && steps.run.outcome == 'failure' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

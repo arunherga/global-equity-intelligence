@@ -492,7 +492,7 @@ pip install -r requirements-dev.txt
 pytest -q
 ```
 
-500 tests, all offline. The interesting ones are regressions:
+505 tests, all offline. The interesting ones are regressions:
 
 - Ravelcare Limited is not Ravel Electronics, and `Ravel` alone needs
   personal-care context
