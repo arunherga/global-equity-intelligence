@@ -1,0 +1,150 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1546",
+  "title": "Steel Ministry asks SAIL, NMDC to scout overseas mineral assets for raw material security",
+  "summary": "Indian steelmakers currently rely heavily on imports for coking coal and limestone, which increases their costs. Diversifying mineral portfolios could also benefit NMDC as it seeks to enhance its revenue streams.",
+  "event_date": "2026-10-04",
+  "event_types": [
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "SAIL",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (SAIL)"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from SAIL"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to SAIL. The parts of the business most likely touched are input cost, margin, customers. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.44,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "coking coal",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. The parts of the business most likely touched are input cost, margin. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Steel Ministry asks SAIL, NMDC to scout overseas mineral assets for raw material security",
+      "url": "https://energy.economictimes.indiatimes.com/news/coal/steel-ministry-asks-sail-nmdc-to-scout-overseas-mineral-assets-for-raw-material-security/134670289",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-04T05:52:07+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Steel Ministry asks SAIL, NMDC to explore mining assets abroad",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdmZSNkVsS1Z1c0YzeDUzSVNaQVJCNllvUU9jcjZOZTFfUlhUanlBTHFmLXFsZ0RPU2pMTEVaV3lKY29ta3BDLUZzamEzWmZsYjBJOW9SQ0NsVmd2WGpJMTg4UjNZN0w3NFBnaTBseTNhVWdCVXBDQnU0b3loNWRwRlU3Tk9uREJEdWFQd2R6Zkp2a2c4NnZfU2t0NG1DaXl0NmZibE1Zb2NteDMtWTJ3MUJSZUxHOWY5aG9UalY1YkN2b0h1LTNVZEZsUUxTTTZFNGhjUXZaVdIB1wFBVV95cUxQdmZSNkVsS1Z1c0YzeDUzSVNaQVJCNllvUU9jcjZOZTFfUlhUanlBTHFmLXFsZ0RPU2pMTEVaV3lKY29ta3BDLUZzamEzWmZsYjBJOW9SQ0NsVmd2WGpJMTg4UjNZN0w3NFBnaTBseTNhVWdCVXBDQnU0b3loNWRwRlU3Tk9uREJEdWFQd2R6Zkp2a2c4NnZfU2t0NG1DaXl0NmZibE1Zb2NteDMtWTJ3MUJSZUxHOWY5aG9UalY1YkN2b0h1LTNVZEZsUUxTTTZFNGhjUXZaVQ",
+      "source_name": "ET Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T06:39:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Steel Ministry asks SAIL, NMDC to explore overseas mineral assets",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZHA5X0c2X2xaQmtHWG9INmExUXZJV0pjLWNSWkR0c0pNSVNaMUdvdy04Q2ZFME81cnpoeHE4N0ZwWTZzNFlqQzlUNDJxanc0akZfS1pXOGpPd1FiTFVKUEUzMm9TRVp5aTlJNjI5azVfT2hNQVpaT0xlR0gwV3ZtYTROcUhONWx0c3Q5cXRKRlktc0lMTHJoNV9UYTJaa09JQVRPSFd4by1xQ2hBQ1E0OWV4UGZqM0Naazc1VEpCS0d2cVFTM1E1aTI4U1AxdGlv0gHQAUFVX3lxTFBkcDlfRzZfbFpCa0dYb0g2YTFRdklXSmMtY1JaRHRzSk1JU1oxR293LThDZkUwTzVyemh4cTg3RnBZNnM0WWpDOVQ0MnFqdzRqRl9LWlc4ak93UWJMVUpQRTMyb1NFWnlpOUk2MjlrNV9PaE1BWlpPTGVHSDBXdm1hNE5xSE41bHRzdDlxdEpGWS1zSUxMcmg1X1RhMlprT0lBVE9IV3hvLXFDaEFDUTQ5ZXhQZmozQ1prNzVUSkJLR3ZxUVMzUTVpMjhTUDF0aW8",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T05:27:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Steel Ministry asks SAIL, NMDC to scout overseas mineral assets for raw material security",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNbVhwUnZJV0NVWExxcEZYcGFPYUJFcTNTR1FpSVBqSU9MM1MxaUVTbTdRLTVRTkZEVlRPTnV1WWlEU1RncVUtWXJ4YnZGOF9JemFlYnZnMWhqaXFiUXl0dWpDZWM2eGJkWnVYQlRHWExyZUpla2hvaVFWTUZ2Zk93ejRTTkROLTRlN0hfeFFXZ00wbjc2b3dLM1FjWlhVaDdhSDN6bmhHWWFwakNLekdlNDR0WXQySHl2akRTZG56TXM0S3o4MlQySTliWFEwWFhJMHdxQ3pvRk93enp2cnVrWkEtN1JHcHR3c3NYRzBPT1hSUEViSTlWejZkLTJuLWhlY0U5ZzhESdIBhwJBVV95cUxNbVhwUnZJV0NVWExxcEZYcGFPYUJFcTNTR1FpSVBqSU9MM1MxaUVTbTdRLTVRTkZEVlRPTnV1WWlEU1RncVUtWXJ4YnZGOF9JemFlYnZnMWhqaXFiUXl0dWpDZWM2eGJkWnVYQlRHWExyZUpla2hvaVFWTUZ2Zk93ejRTTkROLTRlN0hfeFFXZ00wbjc2b3dLM1FjWlhVaDdhSDN6bmhHWWFwakNLekdlNDR0WXQySHl2akRTZG56TXM0S3o4MlQySTliWFEwWFhJMHdxQ3pvRk93enp2cnVrWkEtN1JHcHR3c3NYRzBPT1hSUEViSTlWejZkLTJuLWhlY0U5ZzhESQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T05:39:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 4,
+  "source_count": 2,
+  "primary_source": "ETEnergyWorld",
+  "cluster_key": "COALINDIA+MSTCLTD|RAW_MATERIAL|asks-ministry-nmdc-sail-scout-steel",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-04T17:41:37.046154+00:00",
+  "last_updated": "2026-10-04T17:41:37.046252+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-04T17:41:37.046241+00:00",
+      "change": "created",
+      "detail": "4 source(s) from 2 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -425,6 +425,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -457,16 +500,26 @@
       "published": "2026-09-24T13:59:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "EMSLIMITED Share Price Today - EMS on NSE/BSE",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13a0M5RHByUFZxaVFWSkk4VkRpNFhxZC1BLTY1TjlsSTl2eDZSWGxvRVk1UWVXZ2pMemNZS1EwNnVWWlhjdlhTbnpjbTMtWXFLdzhKRg",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T08:53:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|energy-hitachi-powerindia-price-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.566734+00:00",
-  "last_updated": "2026-09-25T12:56:22.560811+00:00",
+  "last_updated": "2026-10-04T17:43:59.285575+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.566760+00:00",
@@ -482,6 +535,16 @@
       "timestamp": "2026-09-25T12:56:22.560787+00:00",
       "change": "sources added",
       "detail": "economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:59.285552+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:59.285571+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

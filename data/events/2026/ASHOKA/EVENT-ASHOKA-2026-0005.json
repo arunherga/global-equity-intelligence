@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-ASHOKA-2026-0005",
+  "title": "Cement prices fall to K180 - Times of Zambia -",
+  "summary": "Cement prices fall to K180 Times of Zambia -",
+  "event_date": "2026-10-04",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "cement prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "cement prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to cement prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Cement prices fall to K180 - Times of Zambia -",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yRnNSSm82SkxJZGVfaUxSR0xoZmNxNDVrcFJfNTk0WG5ILTljWVFWeWFtTjdaa3d4U0l0d3RXVEU3T0kwVE9xWjZwblEydmpUMk5NSWY4SWZfY00",
+      "source_name": "Times of Zambia -",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T09:18:54+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Times of Zambia -",
+  "cluster_key": "ASHOKA|COMMODITY|cement-fall-k180-price-times-zambia",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-04T17:42:38.200092+00:00",
+  "last_updated": "2026-10-04T17:42:38.200151+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-04T17:42:38.200143+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

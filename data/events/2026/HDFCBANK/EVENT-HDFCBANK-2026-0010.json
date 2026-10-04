@@ -35,6 +35,94 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -47,21 +135,46 @@
       "published": "2026-09-18T07:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver outlook: Dollar, US-Iran tensions, RBI policy among key factors to drive prices this week",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQUGlTam40NFBlcE5xYjFpTGZDOGlnX3JuYzRCdkJQdGZicDFfQkxtRno4aDlHa1FJelA0NFE5c2xqWEhzVWQtbkZ1bWVadGNhTnhrZjNURC1tNk1HbkxOTC0tWTA4SjVWWm1UOHhtai03RllsNWRub2VOOEQ2WlNXWGxqdmg0Rl9ROXJMNm50cEpxUEJnb1FJdmlQdWlHbUswcmNKQWR4MEJFaGpadDU2Vl9uV0ExbURaa05vcllydXp1VVBpRmpvZ1RYb0paanlWdzdsOFloWTRmLUU5YzB6U0d6YTZIbzBtTXY3dVJqbFJMTEF2d0JtdlFSUUQ5eHJQZlpwVHJnckt6dzhrYUhickFn0gGXAkFVX3lxTE9JbVNaaWJRV2YxUVVPVGc4TnZsS1VnUy1adEIyZl9wZjVINWhlRGVMVm9EMFFRcHgyaTRUdUF6QUx5TTNFcG1hTWZlRWx5NUZwXzJsRWk3cGNZSEZqUHI0Yk4zeFVqR2NiZ3JoOWxfbWFQRDJMOEFPUFctN1ZYV09EbmROVWcySVp5OGNXX2RDcVM4Xy1udUFqQXRVb3Y5cWptZXNvT2tJV0dmc2JUSjZrYWcwTVhmRE54X2I0Q05wMWpDRjRHaG9QRWJNOTlnZWdZUWtZanZ4QjFhcFhyZ2FQY0JNRUxkdUdVT3pRM1lYWXJRcDk5VVVybVhjbjB4Rm5nMmhzc2pvNnJ4S21fa0tRZ3hKenB6Zw",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T15:51:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Equitypandit",
   "cluster_key": "HDFCBANK|OTHER|hdfcbank-outlook-week",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.577673+00:00",
-  "last_updated": "2026-09-22T18:19:39.577699+00:00",
+  "last_updated": "2026-10-04T17:44:14.457393+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.577697+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:14.457367+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:14.457385+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:14.457388+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

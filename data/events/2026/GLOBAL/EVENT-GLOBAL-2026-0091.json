@@ -5,31 +5,23 @@
   "event_date": "2026-09-19",
   "event_types": [
     "ACQUISITION",
-    "REGULATORY"
+    "REGULATORY",
+    "MANAGEMENT_CHANGE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "BALANCE_SHEET",
-        "REVENUE",
-        "REGULATION",
-        "COMPETITION"
+        "MANAGEMENT",
+        "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "City Union Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
@@ -39,28 +31,26 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+4 Regulatory or legal action",
-        "+2 Acquisition, merger or divestiture",
-        "+3 Strategically important competitor development",
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (City Union Bank) is doing well",
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "reason for the change",
+        "successor's background",
+        "further exits",
+        "formal order or circular text"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to City Union Bank, and RBI. The parts of the business most likely touched are balance sheet, revenue, regulation. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are management, regulation. Classified as management change.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -129,21 +119,46 @@
       "published": "2026-09-19T03:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank stock gets a new CEO after RBI approval",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV3FuNVEyM1JOSzVzcnJ0TnpoYV8xbWRBYUMzSkNYVHFma0Zjc05kcHNYemZzczZ4SzhiR2RFVlZkZWhBcDBXNkdqSE45NkRzV1J5Y0l5OGlveWFXeFg0VTBjMzJmY1dtV1gyS2hjd0F0eGdjM0NOcXdHYjl1RXcxcnF6dTBUbW5fQTdwT0tGeks2QWd2UWZBb3R3YWlMZWd1VDZ2cl9ZOW1neXZ6S0U1UEoydG1XbFlzYWd4aGNRYw",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T13:24:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|ACQUISITION+REGULATORY|acquire-approve-bank-kotak-mahindra-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.672688+00:00",
-  "last_updated": "2026-09-28T14:13:10.393027+00:00",
+  "last_updated": "2026-10-04T17:44:11.252122+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.672721+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.252098+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.252111+00:00",
+      "change": "categories added",
+      "detail": "MANAGEMENT_CHANGE"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.252117+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

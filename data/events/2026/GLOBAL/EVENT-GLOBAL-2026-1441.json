@@ -117,6 +117,58 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to TCS, and India. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -159,21 +211,221 @@
       "published": "2026-10-02T18:46:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Eight-week losing streak : RBI rate hike, crude prices and TCS results to test markets",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSXE3T0Vkd01QQnZnRjVBbzRMOTVidklBMUtHaC1Ja0RQcXM1THNoSkRFMjg5SGlUYTFCOS1FOEZUYzNUdzdDZGxLQnM5QWc1Q0tyUEtXemNnblVLVWNoSEJWX21uSXNPbzVxbi1VX0lZWmhuSHJjWC0yY2NOSjhUNE1WX0F4NXlXOERvdWItNTRpdWdDSEtwbFItYXltLVlxYVNfaTlIZXRUM2JrZC1maS1lU2IzTnJrTl9OT1FpLUNaUkpPOEJwZjBNdnBrbkY00gHWAUFVX3lxTE1aLUluN2Y5bHJzWDgzOHUyMUMtaDlSMk04NzNyQnhnbkVQM0hFSHNaWElxVjU1Ti1NYVB1RlhlZkxjSm9iTTJTOU1IVUNnbGo5NExoT1pRVGNPT0FwdTlHZGM2S0J2MklVT3MzMWx0LTgtX045NnNsc0hOSmM0bmN5QWdjYUpjRkZ0cFBhbU16U3lLaFZ1S0I5QURob1NHYUpCU21OYzQ3cnBhQW1uSmNLNTllUFp6cmFhbEl1SFVHcHdyQTBHUlBjVkZWNlRLWTRWSFdscEE",
+      "source_name": "Telegraph India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T09:51:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Meeting October 2026: Repo rate hike will be decided by these 5 factors | Explained",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONWl0VHVMMHBnOHFQWnRkWllLRXdPRXM0cnFIUDk3bDNQX21MRks3YjFKcGxzUnlLU3dpWGQ4c3YtY0oxUFpaOFpVdXFCa19oZEpCdWx4SDQ2M0lPeU45a3Znd0t2Q2lhaWxWdVp5V0lRRkZWcXVZWWRFb0J3WE85OFdMTW5pekU2YWg5ZDVCM2c4REVES1g0bmp1UXZNQkVyOFRPWEwwcFlIbzh5MjZhS09WR1JYejFPZEcxcUtFNEtTbGhfTkY2bDRDMml1cmxDak9sWHlSRWNCRW96ZWc",
+      "source_name": "tradingview.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T10:17:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Meeting October 2026: What Happens If Repo Rate Is Hiked, Unchanged Or Cut?",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUkpGQXFWSUpPU2w4UmUwQzJPd3pmN0Z6d24wNW1VdkJzYUY5MGRXbTNoU2ZRQXdYaFpZVy14cUQ4R2pENUJHYm4wOTRRUmhOS3J0Unh5VEpELUQ3UmhsUWRRUmtDbFQzZGtGWXdYSlRSQU8zei1aTnpwbm9tanh3QmZDTHJiX0hTaHNXNmhTaEw3NmZ0M0J2RGROdkFFX0lyX255VnhRM21LRUljSUVrUXBaNTc1amZlMFdOQ0Uybm15dlBkM3ppLVl2d2M0Z0tpSlBNdVFkanhxcWY5eE9XUk9NV0xseUnSAecBQVVfeXFMUFJKRkFxVklKT1NsOFJlMEMyT3d6ZjdGenduMDVtVXZCc2FGOTBkV20zaFNmUUF3WGhaWVcteHFEOEdqRDVCR2JuMDk0UVJoTktydFJ4eVRKRC1EN1JobFFkUVJrQ2xUM2RrRll3WEpUUkFPM3otWk56cG5vbWp4d0JmQ0xyYl9IU2hzVzZoU2hMNzZmdDNCdkRkTnZBRV9Jcl9ueVZ4UTNtS0VJY0lFa1FwWjU3NWpmZTBXTkNFMm5teXZQZDN6aS1ZdndjNGdLaUpQTXVRZGp4cXFmOXhPV1JPTVdMbHlJ",
+      "source_name": "Jagranjosh.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T07:59:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC October 2026: Repo Rate May Rise To 6% In FY27",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNemJaakRrQUZzSHZMRnhPYjFWY0lQZTRkc3BudnZhMkRxVWJZaXdCZXQ3cUhqbnhldWpRX29zdGs3QmxGSUM3cGp2Q3kydHkzdFpxWFpLc0FOR05wSnc2b3B4Z2hBX3A5TFlWWHJTRTZvZ0hOTmRZbmR3SXN1dGhtMjhtaVEycngxWGVCUUg2RURzWFY0SDVCeGZIcldRM0FHd2VUWnBtR1EwZ182aHlHZ2tONHIzU2dlZW84NlZLSHoxQdIBxwFBVV95cUxNSFVJV0FxLTJqOHJDNVZGYkJ6c1VOZ1ZqVTd3N29mOXRweDAyY0UzbjE0WTh1VGxJZFJYTDRfNDAyMC13M0FXV2s3bElNeWZNWXlEcGNUOUxmOWUyejZnODJQUHZPd3dXQ3luN1ktZzl0MER3VW94dDhnOHpLUV9vZ2dTS094WlFtY0hRUUtRWVdBeXZvb2NxRl9jeThJcWdpcGdpaGRNNE9VZ21PVHRsVGRMRU9EZlhQVVRCV0I2N3pyX3c2amRZ",
+      "source_name": "Times Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T05:54:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI May Hike Repo Rate 25 Bps In October, G-Sec Yields Under Pressure",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNHhSaHVjRGhmd2NOa1pyd1g3UnlPUHZvaVhmWHdfT0t3eXVpQ1BuNUV4aU8zbUtXcnZSNW90VE80VlRGbXJ4dzlCQmQ2STNKUW55Uy1Wa1FvZlhKNVliLVFlYmZ0MUNkR19XWmN6dXYzbHR0RGVsekZmNTR3YVRFaWpXT0dsNUZTZ1lyc1FZLUlrRktublgwQ192NEVrWmV6cEkyT0NSQWNEUHl6SW84ZVR3",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T01:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI May Hike Repo Rate In October As Inflation, Oil Risks Rise",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkJabXJqMmdhb3RPd0hvNkl4OGRCOWQxcUo1ZmhPbkRfRlF1VVZfR3BVbURCc0ZBeDRYdm5yZTNzblkxSTlJWTBfSVBoUGNtdHpON3lROEoyNFV1NnB4VExEWDN0TmN0ckZ3WnROR0NtcC1oNDZFTzFmQnh6bDhmMGtsOTYzRXNybklMVjJ3NlZWTXlQMUU3clJYSG9WNUc0TlhUSGUwdjU",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T04:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI May Hike Repo Rate by 0.25% in Oct Amid Inflation",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0lWelJhallLWHEwRWRoNHRyaDNVWDk5ZFZxTVRiVmx5M0NtZkFtdXJWZUdla29DcGZNRFE1RFkyMDFLYlZLcUViNnEtNzhGdTlraG13Z2I3amJLbFdpMnRhZUNsODM0SUQ2cl9MSWFpamMxckxuTXVGWHZvQzRpZW0zUmhfeTZ2TUN5TTg1WlBBV3FmOHhpUUdqQ3NCSVNhYV9COHhhRdIBrAFBVV95cUxQbzB1VGZnNGF1SWdvVmhkRXVIbHFYQXJhS3k3eTNVaU1Qb0sybTFaVFI2TEVLSW1PV0VnMTdCM2p1RGVHelFUT1FqNFdkNHVXbE1sb29mYldUakJONFNVd05GQ2FqZGFmRTZWOEZHVWVUY1M4SGRTTjVRaXEyRDBfVHhlT3pmXzJPbmZWSHhsVkkyMmtiN3RwaDBnTjdhbzJYSDFKSmJPVmtRV2VR",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T09:35:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI May Reverse Rate-Cut Cycle With 25 Bps Hike In October Policy: Economists",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbXVvOFYtNmoyd0l3RzJkQlRITURhZXVOdENWclRaYUR5MmVmR2NKTzNwMHpyZDJCUk0yWDBoNmdkN3B0M2l3SEhGamFINWVibEJhQndqb0ozdjdBTE1rbTR3N3YtZ1ZwMk5faVNkZmVVVXVBallGY2ZtVnM4cTIwajVkaWhUM19fRUN5a0c5NUEwd3FTbEVTMzYyY2dXNDF6cWFUeDhDaWhEREVqMXRFVDItdjRWWXUySzVlZHFCNXRMcHNHWjBfU0tFcGMzMFYzZktsblF0VGI0NUNLbnFTZXlEMkZmaFXSAecBQVVfeXFMT211bzhWLTZqMndJd0cyZEJUSE1EYWV1TnRDVnJUWmFEeTJlZkdjSk8zcDB6cmQyQlJNMlgwaDZnZDdwdDNpd0hIRmphSDVlYmxCYUJ3am9KM3Y3QUxNa200dzd2LWdWcDJOX2lTZGZlVVV1QWpZRmNmbVZzOHEyMGo1ZGloVDNfX0VDeWtHOTVBMHdxU2xFUzM2MmNnVzQxenFhVHg4Q2loRERFajF0RVQyLXY0Vll1Mks1ZWRxQjV0THBzR1owX1NLRXBjMzBWM2ZLbG5RdFRiNDVDS25xU2V5RDJGZmhV",
+      "source_name": "Times Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T12:16:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate May Rise to 6% in FY27: Report",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUhjT09yWmpxaHdzQTltTjdBcHpVRW13OWg5T3ZOa1hWdEdQZUg3ODA5N3ZQN3pkVlAxRjVjX1FkRzlDMEtiZE9CSDNVZUxTbEI2UEdrYW91bU1xOFJoRDEzU3RSeUw3RVlTMExaby0xUDNZZFhGN3lQSG5tWkJsb2tiN01uNGpLYXFGX3Eyc3ByMmhvVEJIcTN3aWVDQnk5ak1iUA",
+      "source_name": "english.dainikjagranmpcg.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T06:30:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI likely to raise rates: Why inflation, crude and global rates matter",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSE9oaEs3TGRBdmVFSjFDSS1lS3hFYUtIREdET1EtUXI2cUxFRVdqS2FwbFVUN05UWklkV29KQm93ZkZRNW1yV2xpcnk3UFNEZE90WlJpMFphc2hUMXpDbmNSaTd5NkRuRlVuOHZuYmlJWEVxUkNZUXBPZ29Ed2NjeWQydHlLLXo3RnZTd2hfN2pneGVWblJITExlak9zOUZMWG9IMFgtTG1xWnRWaHZIUWpnV3RRaEpaM0p0bEc5Njl6V1JteGNCN3pFNEzSAdMBQVVfeXFMTWlNVFBpckxVYWRQYloxYVg0SVdMTllFaFBXU2RYM1dUMDM2eXo1cERibjI5RmhrYjF2bnZjZE5DeEhJRlNZeE5DTHczc2RiZE9GNy1hclhNQkQtMHpqNnNuNEFvTkZVN1ZtWnI4SW5EYlAzdjRpS2oyQVhMelBndU1FbzBnckIyLWJaNzQ2YTNQS3A4VXlhbDdXcGg5TFNCaXBtcEtXbllJWTEwZGZpQjhoREpMY2VDeHY0SkFRejJBYUdwT1BVRzhRSlREbFVXX0Rnaw",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T12:09:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may hike repo rate by 25 bps as inflation and oil risks mount: Sunil Sanghai",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOM3NsLVlqREFMcG5rUU44QzdPWnI2d1QxRFNDdHBGOXB3a1B2N3FRMzlwYllFVmhEb3lwMUJwVUNuWC1vTGRQY01RcUNOajYtN3BMYTUzZ3dkbkRkMS1JeGphY0FUUUo5WjlZdXRLTzI3NjZOV2hIWkcxQU9wRTNaMXpraURzX3VFRlNrM3E4dzFSc1RweTByMzlqTFc5ejBteDR4MVVNa1dUZVdsUUpFaHJCQ2pPMVpMc3pPamVJNjNQOEI5ajBYU2xoTU1PZ1FsNmxfR1ozMUVqR1l1ZHJqMFpDdTl3Skg2RDNwVk9n0gHuAUFVX3lxTE4zc2wtWWpEQUxwbmtRTjhDN09acjZ3VDFEU0N0cEY5cHdrUHY3cVEzOXBiWUVWaERveXAxQnBVQ25YLW9MZFBjTVFxQ05qNi03cExhNTNnd2RuRGQxLUl4amFjQVRRSjlaOVl1dEtPMjc2Nk5XaEhaRzFBT3BFM1oxemtpRHNfdUVGU2szcTh3MVJzVHB5MHIzOWpMVzl6MG14NHgxVU1rV1RlV2xRSkVockJDak8xWkxzek9qZUk2M1A4QjlqMFhTbGhNTU9nUWw2bF9HWjMxRWpHWXVkcmowWkN1OXdKSDZEM3BWT2c",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T09:40:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may hike repo rate to 6% by FY27-end: Report | Tap to know more | Inshorts",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWE40QnpjcHRILVk1VDFhTWdYRU9sby1HZE1jczE4ay0ybndEZlBFVGlJajZPWWpEUDItN3J3RlZod3FjZlZBQjA5MXhSSjh5V2hWRFpEWkpiYUwtTW1TY3ZSNXlKUi12alNyWWZpWWFmX3R3clh0UUZsVU9KTVQ5RUJ0UlBoN1pRdERrMk9BcVrSAZABQVVfeXFMTlhONEJ6Y3B0SC1ZNVQxYU1nWEVPbG8tR2RNY3MxOGstMm53RGZQRVRpSWo2T1lqRFAyLTdyd0ZWaHdxY2ZWQUIwOTF4Uko4eVdoVkRaRFpKYmFMLU1tU2N2UjV5SlItdmpTcllmaVlhZl90d3JYdFFGbFVPSk1UOUVCdFJQaDdaUXREazJPQXFa",
+      "source_name": "Inshorts",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T14:25:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may raise repo rate by 25 bps in October, could take rate to 5.75–6% in FY27: Report",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcG9icTZPOXozaGZlX3l6NFlKV1hWM2tUTHJLQjhwMk9PQ0JaQjFoTDRicHI4dHE3NElWZGFzaW10c1pzZmtkcU9yWXYxdGxkczB6Ylhld3hkRjNLNU5QeHNjNUdTb3BxZ0pPeUlxNXVGcVoyY3VjWWl2RGdiYV94MHZ6ckFQdzV2THlSaFRTcDl3QjkwTWZiQnVnWXR4ZlBqazNkVm5vblpFWVdQQVQyUkFwMjdwWG5sdHB6bkptTHA1b1VRUVdaRXlpdHNnQTJsNHVj",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T04:44:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: Why experts expect 0.25 per cent increase in October amid rising inflation",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMTVleU1YQ201ZHF1VFR5UlBHMHQyc0d2ZHRGX3Y4c1pHWHBwN3kyWnNwLVhEM2xBMXVocDJ0YkFQSEtTLTF6Zk04aWZQY1pfeTRzWDBDSEFaSzROM2RzUXVTOENKYWFtSHhNOXRreGZqVjBrdnozcWtEaXNJRjZNMV9EWmtQazJHQUZ1ZjRiczhuOEUydlRmQU1DRVRDeVBEV3RVeVViU2RVQUNxM0Z3VGZwazhxbExWdmdySGNPN1RrOGg5dGFpcEwzdDg5U2lQMGdPaUJzSnNuOER3aUE",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T10:57:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate may climb to 6% in FY27; G-Sec yields face upward pressure: Report",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOSlFyVVF6c0V4eTE4aHJXMlppV0dJdEV5ekZLWGoyalBLc1ZHWjlFSmw1VnI4Tjl3MWZXR1ozSFFBVmwyMlpaNE8wLTNzbXdTRHNuZUQ2Q2taQzJWSlpvWDNiVXAwMDJCaFotZmdINnZpS0lRRTMzNDJkemNQR1ZKa1BsWnhDRTBxUmpEMGFNWUV1OFkyRmpnRU1neVR6Qnc2c293ZlVZZzRuQUVZdVhKWDVVQjNlRl9NbThRZTZXWmI0aFlBSURFMXM1VklNN2ltdXY0aEh3T1pyYXFGY0JLNm9xMzQ5bWYxVEQ00gHrAUFVX3lxTE5KUXJVUXpzRXh5MThoclcyWmlXR0l0RXl6RktYajJqUEtzVkdaOUVKbDVWcjhOOXcxZldHWjNIUUFWbDIyWlo0TzAtM3Ntd1NEc25lRDZDa1pDMlZKWm9YM2JVcDAwMkJoWi1mZ0g2dmlLSVFFMzM0MmR6Y1BHVkprUGxaeENFMHFSakQwYU1ZRXU4WTJGamdFTWd5VHpCdzZzb3dmVVlnNG5BRVl1WEpYNVVCM2VGX01tOFFlNldaYjRoWUFJREUxczVWSU03aW11djRoSHdPWnJhcUZjQks2b3EzNDltZjFURDQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T03:35:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI’s October MPC Meeting Begins Monday; 25-Basis-Point Repo Rate Hike Possible",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObWhVcVhER0lobWI4Sll4S01pWHoxMDdWOGlsZWQ3RDlIUmkxWnFQY2h3NmI5aVpfVkx5QjJnMTlUYWZmZVZDY180N0FHUHVCeXNfa2N6eWRUcWFMSXEzbzFmZkctOGg1T2ZySF96MTVOWVdBOTFybFhkWnctR2xsd2lzUXhuMF9yQ3BhLUFyRWZSQQ",
+      "source_name": "Hindusthan Samachar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T12:08:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will RBI MPC hike repo rate in October? Here's what economists expect",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMmZXb0VlTFJIRmlTWDZrNUNsdzBRNVo4dXVPSnYzQTRLemFEaEl1U1hMRG9Gb3c5SnhYZExZc2I0eXRaVzdFQi1vX2xheWRGMzdiSkozbEk3V0xtYl9KbWFLRFB2c2gxaG84SWh0NjhZbU9hR2xCQ2pmM2dJZ3dvZVFGZFVqbkZiQVI0VUdUa3RTbXRZbXZ3WGRPaEdKTnRydGZVLVdrX2Z6c25WazhWdlRZNkRlX3ZxU0UwaWxKRDNJcXIxOFJldW0tU29Fdw",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T05:14:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will RBI hike repo rate on October 7?",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ0ZjUEM1YURqNzBDN3dJUXkzaHRTTHRaYjBNSmh2a3UySHJIN3RjRldva29UZVhuWWFMdl83Mjg0ZEh5XzUtRVJVMzFaNTgyNmVpaTVOYjZyY0lJR2h2dGFHcVN6RHU2eWE0U1F4azU2SFZLMXNzaEFVdmllVUp1NnhJWS1fWHFWQVhyRjU0cFRSc0xpQTlCdERJSG9tSVdL",
+      "source_name": "NewsBytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T09:38:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "‘Inflation risk may tilt RBI towards 25-bps rate hike’: Economists",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVjBHSFJSZkZPRkJ3TlB4NmptOVhhVGhsWGt6OXcwS2Z0Y2VYX2wzNVJUdXR2OTFpblJvSWRIS2tiVDlTdjViS1RENklQbm9xc1lwMVU1Z0xHc1hCdlNmcDhrLU9MLW9CMGRGSzNqYkNpQ0lIeUJlY3J1Z1FJMVRHY2V2NnlVa0FxTUdDZXo2OWpPS2pYV1dEbEU0NGJlelg0S1BtX0RnVkZaV0pzVHBmOWtlSzJfNTY0QTRaUA",
+      "source_name": "financialexpress.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T12:44:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 23,
   "source_count": 1,
   "primary_source": "Agniban",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|inflation-interest-pressure-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-03T11:53:04.795139+00:00",
-  "last_updated": "2026-10-03T11:53:04.795240+00:00",
+  "last_updated": "2026-10-04T17:43:48.639102+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T11:53:04.795230+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:48.639081+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld, ET Now, Hindusthan Samachar English, Inshorts"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:48.639098+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}

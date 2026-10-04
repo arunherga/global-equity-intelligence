@@ -82,6 +82,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -584,16 +622,36 @@
       "published": "2026-10-03T03:29:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Check out petrol and diesel prices in Chennai on October 4, 2026",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTHdyUzE3WUpXd3FHTTYyeEJQakxpeU9Rc1F4dGZtOTU2OXY2STFlLWRScGI2a2VONWtybXZWNDhzZ0xEb09KVGM0cEJNMTBBa0RzaXpDdTlfMmhERkVzbHJuWGp6SmVzaFR2UDZndkl2Tk81SHk0eFdad3BlQXJ1OUhocHZqdXpwbWhaNVhkQ0hTS0VKa1M2elVJT2NFRjTSAawBQVVfeXFMT2NrUTBvM09Dam02bWRiaVVWVzc1Rmd4Vy1fNENSWC0xblhtQVZoNkk3ZWh2SmRRclpzVnJXMUlKMXRWQXdkUTg0cjVTUGM3TnZDVUlpOG1XUkUyVVZZS0xzU1JzeDhTVVpwS243R0hwWENxRjFHdUtSSHk1c19mS3RfSmVWZG9hNU40TV9BQThaV1ZDdm1RYnlITWdoNm5jWVhoYXo3RVBIMlV1Zw",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T03:00:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, diesel prices today (October 4): Check latest rates in Delhi, Mumbai, Chennai, Kolkata & more",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPaWlUUExEUlFsY3dMMEk0d3J3NXhITUZKNHI1eHc3QVFDSlZyR2FCaHJ0WmFrNHlsLTVPdTZXdl95SWFSaXlPUWNpS3R3LVltcS1SX2p6cGhRYXZKV0J4eXhubGZzaklQWTJYdGctc1N1RHVmNW5EYVpWdE5RckZaRDFRNTZsWUxTejhHV2xtSl9qR3h0d0VRQ1drUHl2dktuTnNhOXg5dkFSZ19OQjVQNlVWZGNaa2hoWEhRWmliZzBlelppODBOeURDNWNPRGdjSkxndTJBakY5WTlpSWs5ZDJGbzhhcEtVUWM5U0c0TWhiU3RlR1JZ0gH3AUFVX3lxTE9paVRQTERSUWxjd0wwSTR3cnc1eEhNRko0cjV4dzdBUUNKVnJHYUJocnRaYWs0eWwtNU91Nld2X3lJYVJpeU9RY2lLdHctWW1xLVJfanpwaFFhdkpXQnh5eG5sZnNqSVBZMlh0Zy1zU3VEdWY1bkRhWlZ0TlFyRlpEMVE1NmxZTFN6OEdXbG1KX2pHeHR3RVFDV2tQeXZ2S25Oc2E5eDl2QVJnX05CNVA2VVZkY1praGhYSFFaaWJnMGV6Wmk4ME55REM1Y09EZ2NKTGd1MkFqRjlZOWlJazlkMkZvOGFwS1VRYzlTRzRNaGJTdGVHUlk",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T02:56:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 50,
+  "article_count": 52,
   "source_count": 1,
   "primary_source": "DT Next",
   "cluster_key": "COALINDIA+JKIPL|OTHER|check-diesel-petrol-price-september-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.913134+00:00",
-  "last_updated": "2026-10-03T12:01:22.731009+00:00",
+  "last_updated": "2026-10-04T17:43:50.892176+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.913182+00:00",
@@ -669,6 +727,16 @@
       "timestamp": "2026-10-03T12:01:22.730992+00:00",
       "change": "sources added",
       "detail": "Business Today, DT Next, NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:50.892157+00:00",
+      "change": "sources added",
+      "detail": "Business Today, DT Next"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:50.892172+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

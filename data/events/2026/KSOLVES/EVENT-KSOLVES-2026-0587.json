@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "SUPPLY"
@@ -39,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a platform or supplier the company depends on is investing"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -63,21 +63,41 @@
       "published": "2026-10-03T04:18:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce rolls out AI Slackbot to schedule meetings, retrieve information",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZXc2VDhCVUR3V0UtcmtfTVpFQ1I4cjgtNldUZzJnY0V3LTE2ZVlNTXdOR0xrWmxqN0dDZ0ZJd2VLalQtR1ZSc1c1akNTNmtSMGUycnMtZFJnNkFkODV1ZlkyOFdYV3VZYV8tUlZSNzg2WDA3LTJvUjlhMFB4MXpzTHFkb3dXN0VXRFk1QXUyeDVVdFNhcXFqQVN4N3lNTXU3UTA3OFRmYW1FckFzV2JzMklSc3BxV1RjNzVldFl3",
+      "source_name": "NewsBytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T04:51:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "NewsBytes",
   "cluster_key": "KSOLVES|OTHER|chats-salesforce-schedule-slackbot-understand-upgrades",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-03T18:05:01.882378+00:00",
-  "last_updated": "2026-10-03T18:05:01.882455+00:00",
+  "last_updated": "2026-10-04T17:43:54.678605+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T18:05:01.882445+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:54.678586+00:00",
+      "change": "sources added",
+      "detail": "NewsBytes"
+    },
+    {
+      "timestamp": "2026-10-04T17:43:54.678601+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

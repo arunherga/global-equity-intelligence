@@ -10,10 +10,10 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEGATIVE",
-      "confidence": 0.52,
+      "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -23,8 +23,8 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -36,13 +36,14 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -55,10 +56,10 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEGATIVE",
-      "confidence": 0.52,
+      "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -68,8 +69,8 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -81,13 +82,14 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -108,21 +110,46 @@
       "published": "2026-10-03T02:05:23+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "India Crude Oil Imports Hit Record as Gulf Supply Rises",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVGwyYWJsREtqVldiVDkyUDFFTk1VOWdFRFU1R0ZoZmF3NWdTM0VDckpBX1REcUFaeGRNUk93RExZc0V4OHhERnZ6WlkxNkRob3JnQ09nWTRhOVNmSWlOVDdEbEtPVEdQUU1aNlNXck4zZ1lYREQtQVM2UUdZbkY3LTlEU2ZRaGtwd3VfSjdnYUpmQQ",
+      "source_name": "urbanacres.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T13:42:08+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|2026-crude-high-hit-import-india",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-03T11:52:42.815932+00:00",
-  "last_updated": "2026-10-03T11:52:42.816026+00:00",
+  "last_updated": "2026-10-04T17:44:11.627908+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T11:52:42.816016+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.627886+00:00",
+      "change": "sources added",
+      "detail": "urbanacres.in"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.627900+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 1 -> 2"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:11.627904+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 1 -> 2"
     }
   ],
   "price_reaction": {}

@@ -132,6 +132,48 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "REPUTATION",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "Infosys's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -144,21 +186,41 @@
       "published": "2026-09-27T07:41:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Top 3 stocks to buy: HDFC Bank, Infosys, BEL by Ganesh Dongre | Target price, stop-loss for IT, defence and bank shares",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOZFRPaFpPdE10azc5REI5NUpOMmw3blB5aWJNRkg3Ni1yZ2tkb2REVW9KZjFuRDZBT0R2V3JYTk9WbkVsRmRxSVdtTVRpV2g5dlByVTg3VTlNVkEwTWFEdVBINWNnakphQUwtR2hra0VIVXZyWEdGX19yRXh2WmhmTDhMX194ZnNSV1JoQWtPZ3A0anZGUmNLZjdwb3JHcjdyYzByOWpOWmxseGdnSElYS0c2Z096YTBIdmFLWHM5RlRNWklZVW9tUUdhdzNHampQZU9RVnJFVmtMVEtxLV9jWFNfTEMxUWNkSDRMUXctZ08zX2dIV0pWLS1DOXAxczA2WXlxQVJ5YjUwX1hEbDEw0gGUAkFVX3lxTE5GVjlJbTd2cWpOcTlDb2hsMFJJdXhNNGRFUWwzUUVsSVd3SXRqYjQ5MmUxbFUtNVljemNmVmtaNnowYWNHYjhfOXhLN2ZPU3Vyd1UtY1hLUFAweU1nWVNlc1hTS28xaVdtVXBmekUzamt2NEx0MXdScHNBeVEzcTl0RXBiWHdWeVFuSDdxZHVCRmxBSjlYb0V5RW5fNVo3QVlEb0Z4M2FqWmVtVERDdnFYdS1rU2c2NWk5T1ZkT3JLQWhtWHZKcDFINnZuVFNjTnVYSFpkV1ZOU0F4bDlqa0lEOVNNRUc5YTFSRnd5aEpINXBtM1R3blJoWElkUkE1bVFBSjQ2eTl3TkRLMmF6VGUxQzY1Mg",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T15:26:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "HDFCBANK+TMB+WAAREEENER|ANALYST_ACTION|bel-cochin-shipyard-steel-tata-voltas",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.736939+00:00",
-  "last_updated": "2026-09-27T12:15:56.737009+00:00",
+  "last_updated": "2026-10-04T17:44:13.182568+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.737004+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:13.182547+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-04T17:44:13.182563+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}
