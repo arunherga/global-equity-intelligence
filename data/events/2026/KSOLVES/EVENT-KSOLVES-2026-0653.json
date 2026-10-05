@@ -4,21 +4,21 @@
   "summary": "TD Cowen reiterates Amazon stock Buy rating on AWS growth outlook Investing.com",
   "event_date": "2026-10-05",
   "event_types": [
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "OTHER"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "REPUTATION",
         "SUPPLY"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -31,7 +31,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,7 +44,7 @@
       "watch_next": [
         "supply terms from AWS"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are reputation, supply. Classified as analyst action.",
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -59,21 +58,46 @@
       "published": "2026-10-05T14:24:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Amazon Stocks Edged Higher as TD Cowen Reaffirms AWS Growth",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMGVldUJ2UEt4RDNrOVF6cVBHbTFQSWxUOVdUWE52OEVoOFk4YzVQQTJjeDJ1bFZ1Z1YxcloxSHpVd1NyZkNfUU1yeEh0SlllaUs2UThialB0Z3Bpa19rWlQtQ20xU3FCVlJZR2gzbUxUeF85aE8tTnhwQUdzS3l0WU5rd3RJbW1YZm9NLTdMY2lBbTFIUVIwYkF3",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T19:20:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com",
   "cluster_key": "KSOLVES|ANALYST_ACTION|amazon-buy-cowen-rating-reiterates-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T15:00:49.702205+00:00",
-  "last_updated": "2026-10-05T15:00:49.702274+00:00",
+  "last_updated": "2026-10-05T21:42:23.421788+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T15:00:49.702263+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:23.421760+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:23.421776+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:23.421783+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

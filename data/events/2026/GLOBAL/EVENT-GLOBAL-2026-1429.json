@@ -82,6 +82,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -94,21 +132,41 @@
       "published": "2026-10-02T16:16:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Farmers call for federal diesel price relief",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9LTmRqUV9PUklWaFNBNVkwQUh4b3UxUTNaOVFnVTBhVW5oU1gwdDNQNHY2OVBzczl1d1hRa0JRaUd0Y0lpa3ZlNkY3ZExqNlFJTHgyb1hoeXdQbWptS0I0c1NIYmhfdXVpczRyT1BxZ0ZuWDBxVjRub05iakZ2Zw",
+      "source_name": "texasfarmbureau.org",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T19:30:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Feedstuffs",
   "cluster_key": "COALINDIA+JKIPL|OTHER|call-diesel-farmers-price-provide-trump",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T18:31:36.679273+00:00",
-  "last_updated": "2026-10-02T18:31:36.679327+00:00",
+  "last_updated": "2026-10-05T21:42:24.428593+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T18:31:36.679322+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:24.428569+00:00",
+      "change": "sources added",
+      "detail": "texasfarmbureau.org"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:24.428588+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

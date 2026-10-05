@@ -10,9 +10,9 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION",
@@ -37,11 +37,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a platform or supplier the company depends on is investing"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -78,16 +77,26 @@
       "published": "2026-09-30T20:35:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. stock underperforms Monday when compared to competitors",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYlM3bDF6WUN5WVFKUzdvTjRNRXBST0EtZk1wUV8yRERmQnZRVGZNTzJKSk5yWFJZcGMxeG5WRkN0NUF4Q3FvQ0VsckFzNWNmN3FVbFB2QVA5bkhaWkhzMU5CeURGUkF0YjZZbWlPbTNCUXlBR0lnX3dPbkRZMktKcmxtcUNtRG1tanlxcXJ0ak1TOFJzUWtRRFF1WDlmd3lKT182Q3N6aHNnbnpZZE9WMFdxVnQ3MEh0bGpWeHZJVWU1ZTBwUmRwUlJXa1dORWRlN1F5NVdmcjJSZUFxQy1DbUFR",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T20:34:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "KSOLVES|COMPETITOR|friday-inc.-salesforce-share-underperforms-when",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-26T17:52:30.559679+00:00",
-  "last_updated": "2026-10-01T13:36:40.166450+00:00",
+  "last_updated": "2026-10-05T21:42:24.906714+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T17:52:30.559721+00:00",
@@ -103,6 +112,16 @@
       "timestamp": "2026-10-01T13:36:40.166444+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:24.906689+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:24.906708+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

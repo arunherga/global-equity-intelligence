@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -124,16 +115,26 @@
       "published": "2026-10-05T12:03:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank falls Monday, underperforms market",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZFp2Nk56dTR4cy1rMlZaN1I1bjl0a01KWnlIVk40eXVPdl83d0VZVV80VjBabklCZjQ5cE56TzVZLXhaQllBYTRWeFBJX2hhWklSZUJvSXlUd1hFS1VJVEtvMHpFQjhpNEFkR0ZkdDd1TUNnNHpXLVptVU9NSUJHSnc3YkpwdjhVYmpFdk1jTUhoZWplY2Rpa2tCYWFQdG5KZC1LWW8yY21QMGwyWGtPQmNNRVhWakt1RG9jTTVR",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-fall-icici-market-monday-underperforms",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T20:41:16.669941+00:00",
-  "last_updated": "2026-10-05T15:07:14.487463+00:00",
+  "last_updated": "2026-10-05T21:42:03.382994+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T20:41:16.669991+00:00",
@@ -154,6 +155,16 @@
       "timestamp": "2026-10-05T15:07:14.487445+00:00",
       "change": "sources added",
       "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:03.382968+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:03.382988+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

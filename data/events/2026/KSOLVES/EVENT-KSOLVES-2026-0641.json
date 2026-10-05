@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -44,6 +44,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -72,21 +73,41 @@
       "published": "2026-10-05T11:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "AWS Drops Billion-Dollar Chip Gift on SAP, Salesforce, Workday",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZEtNTG5zX0k2ZmxvamlsVVZjNWRfSEZmYUNqbDBuNHRsYkZZV2VmWjZLeThfcF9pcHdjVEZVTUx3bG8tTGlRRTNPN2hIMjlQSlJweFRFM1NpVW8zOVZZdUNybVFlTmVKVmdRRGk1T3FKNTF1Rjh2djl6MENsUXFNMmdCaFphWlJkUmJ2WXBqdElQcVJ2OF9xVUNLbjl1cmNFWG9hMVM5OGQ",
+      "source_name": "Cloud Wars",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T15:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Cloud Wars",
   "cluster_key": "KSOLVES|GEOPOLITICAL|billion-dollar-chip-love-salesforce-sap-workday",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T15:00:11.858225+00:00",
-  "last_updated": "2026-10-05T15:00:11.858292+00:00",
+  "last_updated": "2026-10-05T21:42:10.279980+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T15:00:11.858281+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:10.279956+00:00",
+      "change": "sources added",
+      "detail": "Cloud Wars"
+    },
+    {
+      "timestamp": "2026-10-05T21:42:10.279974+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}
