@@ -1,0 +1,127 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1656",
+  "title": "Cracks found on Delhi-Mumbai Expressway bridge in Ratlam: Two lanes closed for repairs; NHAI calls defect '...",
+  "summary": "Cracks found on Delhi-Mumbai Expressway bridge in Ratlam: Two lanes closed for repairs; NHAI calls defect '... Bhaskar English",
+  "event_date": "2026-10-05",
+  "event_types": [
+    "PRODUCT_FAILURE"
+  ],
+  "stocks": {
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REPUTATION",
+        "PRODUCT"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are reputation, product. Classified as product failure.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REPUTATION",
+        "PRODUCT",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Development at a known counterparty (NHAI)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are reputation, product, customers. Classified as product failure.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Cracks found on Delhi-Mumbai Expressway bridge in Ratlam: Two lanes closed for repairs; NHAI calls defect '...",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcDNKZTVoU2w0WlFHc0o5c045akl0WjJ1UXJ5cjZmb25YOHRQMy1qQkhsaExCVGwteV8xTk9OYlZRSExaTnJxeE4wbHRhX0toVVp2YlhpYlByN0g1REtBV0hXZXdmbG1vUWZxbFdiOHNyemZ3VGJEdF9vVzFUa2k4bnhzenc4OVhvelE4Unowd29fWDVlVkZYRmU0R3BDcjM4cktFanE3LUpjcUxK0gGyAUFVX3lxTE5BZ0hlTklwbWJOT09iSkZQblJJVjZLNnZja3l1MHM3NnFCS1Buc1ZITGhFcnh0WjZ4R2tuQjg4dEZEUFgySDVaeVJyTVB6QUdjWGg1SUU4YUd3Tk56eU5ERGZQRVo5YzBrb2w5bW5ZV3RfaGxSQ3dQT2hCQmZ0bFV5X1BtVkM3d0NnUERpV3hsY0pNWlA1Qk1fUU9UWWNpR1JoMUNtR2dBemtOM1lwZ1lmcmc",
+      "source_name": "Bhaskar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T05:11:49+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Bhaskar English",
+  "cluster_key": "ASHOKA+JKIPL|PRODUCT_FAILURE|bridge-cracks-delhi-mumbai-expressway-found-ratlam",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-05T14:58:52.006518+00:00",
+  "last_updated": "2026-10-05T14:58:52.006616+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-05T14:58:52.006604+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

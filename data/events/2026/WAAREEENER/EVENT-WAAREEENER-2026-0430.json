@@ -9,45 +9,49 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.62,
+      "relationship": "SECTOR",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.55,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY",
-        "COMPETITION"
+        "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Vikram Solar",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "PV modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         },
         {
           "exposure_type": "TECHNOLOGY",
           "term": "TOPCon",
           "relationship": "SECTOR",
           "weight": 0.9,
-          "detail": ""
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Strategically important competitor development"
+        "+1 Industry-level relevance"
       ],
       "direction_reasons": [
-        "a competitor (Vikram Solar) is doing well"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
         "two independent sources",
-        "indirect strong relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -56,7 +60,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, technology exposure to Vikram Solar, and TOPCon. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules, and PV modules. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -120,16 +124,56 @@
       "published": "2026-09-29T00:47:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solex Energy secures INR 75.96 crore order for n-type TOPCon solar modules",
+      "url": "https://www.pv-magazine-india.com/2026/10/05/solex-energy-secures-inr-75-96-crore-order-for-n-type-topcon-solar-modules",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-05T08:47:18+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Solex Energy Secures ₹75.96 Crore Order For 620 Wp N-Type TOPCon Solar PV Modules",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMDBaTjNOU20xZnkxOS1NRDRSR0RZWnBvLWVPUjRvNU00SHZlN0Z0VlVRbGg0MzRNejB5U3VQYkpJczFxdXdiWXpYRDV1QVV3dGFZd3JrM1h1b1E2czV3RmFZSDBLLVIwQXZyT1N2MHYwY1gtbE1KNVFGdlVvZUo1ZjBDNVNkOG1jOUJZMjJidU5vcXYwRF9NTFdrR1FCUl8wcnhRWjZ4NzhKdERYVmdLaFVUQnNPSGFmOXVSVlh1QTZqd9IBwgFBVV95cUxPMDBaTjNOU20xZnkxOS1NRDRSR0RZWnBvLWVPUjRvNU00SHZlN0Z0VlVRbGg0MzRNejB5U3VQYkpJczFxdXdiWXpYRDV1QVV3dGFZd3JrM1h1b1E2czV3RmFZSDBLLVIwQXZyT1N2MHYwY1gtbE1KNVFGdlVvZUo1ZjBDNVNkOG1jOUJZMjJidU5vcXYwRF9NTFdrR1FCUl8wcnhRWjZ4NzhKdERYVmdLaFVUQnNPSGFmOXVSVlh1QTZqdw",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:15:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Solex Energy secures INR 75.96 crore order for n-type TOPCon solar modules",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRjdFdlVaY2NoZEVJSmM3NHFJNE43WDFxNnJWX1lkSUg0RkkxMER5N0otbm4tMEt6NE96SG5KdlQtOXRhRmhwTkxiNjJJcC1TOTB3eU1DdDlMSlNWTGtnQmRTck5yM1hvRFBEY3EybXJhd3RhS2Nib0syLS1sTmRqb3lleEtSZlNzdFM1eFE2cTZvU3VBV1dMeFZ5SnFUcWxLcTJzX1ZHNUs1Wm90S3dUb0o4Z1pVNEo5cTZTRw",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:33:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Solex Energy wins ₹75.96 crore domestic order for N-Type TOPCon G12R glass-to-glass solar PV modules",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSkZxYzViUnVtQW5vbGRUUFZsb1ZQbk0yd1BuWEtLbHYxYmxLMnZZUkJCbVBaQ2ZQbVUtWlFTQzZXa1JyeVdJUmtZLVFSWHNIRVRkX1ZvSTFuU1N3bHVGLWhuNkdPdjBKVHpWTEVLdXE0dkltaHlpUHBkXzI4T1JlUVRrdFpaQ2JEQkxSTnhLM2pHZUltOVh1Y1Z5VWhGZ051NUtCcFNCT2pNSV9NNFVKXzNILWhBbG9wdjFXa3VNdXhqY2twLUhTSk5ERmo",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T09:34:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|ORDER_WIN|400-n-type-solar-topcon-vikram-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.653087+00:00",
-  "last_updated": "2026-09-29T13:14:48.779200+00:00",
+  "last_updated": "2026-10-05T15:06:26.728473+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.653193+00:00",
@@ -155,6 +199,16 @@
       "timestamp": "2026-09-29T13:14:48.779194+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 6 -> 8"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:26.728449+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, Free Press Journal, PV Magazine India, pv magazine India"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:26.728469+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> NEUTRAL"
     }
   ],
   "price_reaction": {}

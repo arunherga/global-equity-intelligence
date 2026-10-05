@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-RAVEL-2026-0212",
+  "title": "Pharmacies are experiencing shortages of certain medications — Ministry of Health",
+  "summary": "Pharmacies are experiencing shortages of certain medications — Ministry of Health UA.NEWS",
+  "event_date": "2026-10-05",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Health",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Health. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Pharmacies are experiencing shortages of certain medications — Ministry of Health",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOE9rUlpoLTAwQmtVTXpfVi1pazB5SzhmbnFrQWJKcEEzVmF6NzZlR3I1a3pJbWlad0VfR2xTbjJES2lmSlV2TnRuMkkzMVktR0toelloU2ZfSWh6Rjk1bExOZnZtZGJKMkNRQmFWZlI4Q0NUa2pWRk9Td3RCN19hSG9R",
+      "source_name": "UA.NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T11:30:48+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "UA.NEWS",
+  "cluster_key": "RAVEL|SUPPLY_CHAIN|certain-experiencing-medications-ministry-pharmacies-shortages",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-05T15:00:12.421456+00:00",
+  "last_updated": "2026-10-05T15:00:12.421524+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-05T15:00:12.421512+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

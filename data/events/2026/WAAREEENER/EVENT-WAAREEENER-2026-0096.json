@@ -10,46 +10,42 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND",
-        "INPUT_COST"
+        "DEMAND"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "copper",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
+          "exposure_type": "INDUSTRY",
+          "term": "utility scale solar",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "+2 International market development",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-7 Syndicated market-research advertisement, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "copper is an input cost and is moving up"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
-        "copper over the next few weeks"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to utility scale solar. The parts of the business most likely touched are demand. Classified as industry demand.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -146,16 +142,26 @@
       "published": "2026-10-02T15:51:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Single Axis Solar Tracker Market To 2035: Utility-Scale Solar Demand Drives Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdC1XVk1TQjNJNDNKdVdfZkNqWmFPRDY1aEFGQm80ME02ZHBySllJRGQwQ21fU2trNEQ3ZVlrMFpoekM5WEs5NVllQ3FLMzd0alQ2aTA0emdTUkF4OFh0RTBhLVoyWkNyLTFpR2hyZ01td0Z6X0RubWk3MzB6UHlnbTVjTjcyLVp3V1ZJb01QV3lOTWZORXU5eEZSSS1veFNHVlI3VDdUZm5lTDBoMWRqTEp1WmRkelUwZFRoNA",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T14:01:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|INDUSTRY_DEMAND|2035-compounds-copper-inhibitor-market-passivation",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.909554+00:00",
-  "last_updated": "2026-10-02T18:33:42.736472+00:00",
+  "last_updated": "2026-10-05T15:07:22.158350+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.909591+00:00",
@@ -191,6 +197,16 @@
       "timestamp": "2026-10-02T18:33:42.736454+00:00",
       "change": "sources added",
       "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:22.158330+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:22.158347+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> NEUTRAL"
     }
   ],
   "price_reaction": {}

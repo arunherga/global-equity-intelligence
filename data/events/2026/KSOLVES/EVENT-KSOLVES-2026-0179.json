@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -83,16 +84,26 @@
       "published": "2026-09-25T04:17:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce stock faces AI deal after 10.8 percent growth",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNajg3OHNYR3dzQ1JvVWtlTk9WbkRibzVLRW1mWmtPaXByMTN2cUx2Vi1hR3duSFVMajJXbWFoaW1Rc2pYX2VxSGFuQVdfc2ZwbmNfODBoQTJOaWhOb0JzXzY3NGlRMUpHalQ3dDFhUTJxOVlnaWFNemdPaEd2SHhZemxlNTVIVTJtQkpTWmd3R1pZWndhSEdnOUYtYWNNc3FXVHM5bmVIVzZOOXRxNENmNmhfVmhFZDFxMVM4",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T12:09:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "AD HOC NEWS",
   "cluster_key": "KSOLVES|OTHER|1.8-heads-open-rise-salesforce-share",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.451754+00:00",
-  "last_updated": "2026-09-25T12:56:42.915709+00:00",
+  "last_updated": "2026-10-05T15:07:14.583484+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.451824+00:00",
@@ -103,6 +114,16 @@
       "timestamp": "2026-09-25T12:56:42.915693+00:00",
       "change": "sources added",
       "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:14.583464+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:14.583480+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

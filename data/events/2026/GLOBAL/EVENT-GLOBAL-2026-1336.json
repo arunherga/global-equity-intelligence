@@ -267,45 +267,38 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -353,11 +346,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -370,6 +363,56 @@
           "weight": 2.5,
           "detail": "in headline"
         },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Kotak Mahindra Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to Kotak Mahindra Bank, and NSE. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
         {
           "exposure_type": "REGULATION",
           "term": "NSE",
@@ -398,9 +441,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Kotak Mahindra Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Kotak Mahindra Bank, and NSE. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -414,21 +457,66 @@
       "published": "2026-10-01T15:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank (NSE:KOTAKBANK): What Do Its Q2 FY27 Deposits and Advances Numbers Show?",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPQTJUcFRJYWdEUDZWV3M2amtNRkVSWkZ5eDJuTWRIY0F2REFadzlUQW8xWDVad3FLQnAxdGFUblFJa0J3Xzc0UTZQa3NsbzFtWVdaT3oyWjcyY3BfWmlNRkNYQWw4NkRHa3o1ODQ2MzB0cVJvamJnMkxkb2RUQXRyb0YyWjF4eHY2cWd3S1Zaa1B4ZVJpQ3JoX1hKSllKMWRVdUFOdnZja3hXQnNLSFlZaW56ZUdJdlFiOS13ck5mWWg4MThSdElNYVl1SGNrd2hZ",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:45:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank Q2 FY27: Loan Growth Hits 24.7% Even as Stock Slips to Rs 416",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZWFqZTBJQXFGeVJVc1AxcUZtS09FbTVEZXh2a1lMaXA2MkhxM2xCbG40aTliQy1YbkZWYVhmVXk2YVJ5djFCSkpqNmlkSG41eE9WWW5ESlptYWtIbnZSYzFObDRvZHBha3VDekJWQnpKb0s4YTQxTzAtWTBfMFJDSw",
+      "source_name": "NiftyTrader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T12:59:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-focus-kotak-kotakbank-mahindra-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T18:59:35.243739+00:00",
-  "last_updated": "2026-10-01T18:59:35.243778+00:00",
+  "last_updated": "2026-10-05T15:07:18.096109+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T18:59:35.243775+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:09.500254+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:09.500275+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:09.500280+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:18.096084+00:00",
+      "change": "sources added",
+      "detail": "NiftyTrader"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:18.096103+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

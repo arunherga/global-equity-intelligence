@@ -5,19 +5,22 @@
   "event_date": "2026-09-30",
   "event_types": [
     "INTEREST_RATE",
-    "MACRO"
+    "MACRO",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -27,11 +30,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,19 +58,21 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -70,11 +82,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -91,7 +110,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -105,21 +124,241 @@
       "published": "2026-09-30T17:50:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "FD interest rate hike coming? With rising inflation, many experts expect RBI to hike interest rate",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOeE1yX3FVaE84aUl2YkRfLUpOSVd6alBxSm9pOHI5bmNCZDNzRWYtcnVENTcxeFRXWWxsX3AzMHJQTDhEVVgteWlfTVhXN0RnZDZHT0tycnBCZ2wxTHhtLVYxSm5GdU1ldF9ybV9RWndJQllUQUZnNTBzTHpRWjRPM1pXcEVBVjRtSmM3NlZaX3BYWktpeU5GbjJUcVM3NUlvQ25DdkpYU3BJbDhLN3RIWFNOa2ljREdGS3lPcC1Md3hGaF9naUZNSENCcHJlLVRhTHViSHhnRm1rZ2RlcTBvTU0ybzlWXzVYVGhsWFFuZncwbGV6VGpYMTg1N0lvRzRaaGFOOXJpcFRJejBoQlA5NWtxVWQwZ9IBlgJBVV95cUxOeE1yX3FVaE84aUl2YkRfLUpOSVd6alBxSm9pOHI5bmNCZDNzRWYtcnVENTcxeFRXWWxsX3AzMHJQTDhEVVgteWlfTVhXN0RnZDZHT0tycnBCZ2wxTHhtLVYxSm5GdU1ldF9ybV9RWndJQllUQUZnNTBzTHpRWjRPM1pXcEVBVjRtSmM3NlZaX3BYWktpeU5GbjJUcVM3NUlvQ25DdkpYU3BJbDhLN3RIWFNOa2ljREdGS3lPcC1Md3hGaF9naUZNSENCcHJlLVRhTHViSHhnRm1rZ2RlcTBvTU0ybzlWXzVYVGhsWFFuZncwbGV6VGpYMTg1N0lvRzRaaGFOOXJpcFRJejBoQlA5NWtxVWQwZw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T11:39:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Faces Rate Hike Test as Inflation, Crude Prices Put Pressure on Policy",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2VBM2F4Y0EyYTNNOXdLa1lnT3YwRGlDV2E5TFdnc2JqUnUtNnJBN2hqSFQ0eFQxRFQyZS13c3F1X1dUYXJSZ2NNaU5kMXJ4bjZaa2l1UW5TMlBCRm0zTXRjY09OQThYRGVabldXMlBpblE1am9ObkFxRGlqemRWUHhwOERCbS1pWXlIRTNDYXNaZDR0bXBWMTNUOUk4d2lhWWota19XNFE",
+      "source_name": "boldnewsonline.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T09:12:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Interest Rate Hike Could Squeeze India's Urban Economy",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQVM0YUFZcVpwSlRtQllVUlZUMTR0SUJUcl9lOGI0cjZZbWhYdmtjWVJhalV0ZTZRN3lpRE52aWVTV18tN1ZNaVFoVjlVVDZHSThXbndncnhGcFJla2FCbUZZUnRZSGVVdVhLZ1dZRktuVXQ2Tms2V0s5aGhKeHdzZ25ZNW8",
+      "source_name": "urbanacres.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T13:59:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Likely To Raise Repo Rate In Nearly Four Years, Here Is How Markets And Your Portfolio Could React",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX3d3QkY4Rjllc3NwWExVV0x2dEp3aWs1dHZnR0h4b1Jwaml5RHV6RHd2ajRYSkpvZVhpSC1jNTVRT1dxeFRSNXlPbzFJcHBXc19BdU0tSl9Tck9PSU5PMDlDWnY0QlFZS19vbEl0TjRITDRXZ21RU2kxQ0tDY2Y0ZzRDZlYxVEQzUjJhZ1kyTnVDRDkwTTFTTDhlX0hrdnNyZzY5YjF4UU5sU1dlT2QwNTR30gGyAUFVX3lxTFBfd3dCRjhGOWVzc3BYTFVXTHZ0SndpazV0dmdHSHhvUnBqaXlEdXpEd3ZqNFhKSm9lWGlILWM1NVFPV3F4VFI1eU9vMUlwcFdzX0F1TS1KX1NyT09JTk8wOUNadjRCUVlLX29sSXRONEhMNFdnbVFTaTFDS0NjZjRnNENmVjFURDNSMmFnWTJOdUNEOTBNMVNMOGVfSGt2c3JnNjliMXhRTmxTV2VPZDA1NHc",
+      "source_name": "outlookmoney.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:18:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Begins 3-Day Meeting; 0.25 bps Repo Rate Hike Likely",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQX2lwQW14X29PZUVJVHo3NVFlTzBMSEFKc0pEV2w4ZVp5QTQtVTY3anhCWnZFVS11MVJQak1KX2VDQTJxb2VSd05kRDVVOTc5eVgtazJ1Zmx4aHc1NEJoLXN4bWNkSXlTOFN0RUptXzZ0ZTVSdEJ4ZGdYUWJKbUNuMk5hRC16SkxCMW9HZ1NUOVBmWm0tM010emFwVW1Sc19CcHk0bDJwLW54Q2psVHY0UVRNWlAza1NGcWtpQW9tMlRYdlA2RmdmRTl6RDZLeUVibkHSAdIBQVVfeXFMUF9pcEFteF9vT2VFSVR6NzVRZU8wTEhBSnNKRFdsOGVaeUE0LVU2N2p4Qlp2RVUtdTFSUGpNSl9lQ0EycW9lUndOZEQ1VTk3OXlYLWsydWZseGh3NTRCaC1zeG1jZEl5UzhTdEVKbV82dGU1UnRCeGRnWFFiSm1DbjJOYUQtekpMQjFvR2dTVDlQZlptLTNNdHphcFVtUnNfQnB5NGwycC1ueENqbFR2NFFUTVpQM2tTRnFraUFvbTJUWHZQNkZnZkU5ekQ2S3lFYm5B",
+      "source_name": "ETV Bharat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:12:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Meet Begins Today: Will the Rate-Cut Cycle End With First Repo Rate Rise Since 2023? Check Expected Hike",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOUkREUGhlYUhGcnBBcmRaV0U5NUJ4VTBsS1BDeEktUE4zS0RYMUNUQkw2NFAzWTN6M0k2OERYT0VKU1JDZDl0LVkxdjVoS29KRHRjcTFUZ210eDVGMEc1QTd6SzQzSW5fMlUxRlF3LVREV2VqTE5LdFh4WXFOX3dTLXIxb1NTN3Z4bjYzOXZ4MHpWOFdsWmdLMVBuWDhySzVCRXN6TE1RbDBtMTNnUVN4ZFpjaU9TeHQ3OG5hM2d6THl3SW5CN24yTlBxRmxDWHdvczhhdXptTWtmcW9aTnphNG5mTVJtUUMwU1ZHRnpVQ2RmODNIVHdtY0xKREV6SVp0bjBtRUhESW9HSmFmRjFQN2930gGYAkFVX3lxTFBMOWNveFRsM1JOSUR2NjZHVjFrWHFXandnSDRSV2JHMEdrS3pDR0c3Q004aGM0aTBXc3JGenExeVQ0bmJRNDk0YzNkdU9DZUVoMEpIN20tSEFBWllPV1J3NE1ISTREOUlxZEhQM1pXTy1aVDZrX21oVmJibmQzTV9pdng3UC13ZnREaUV5S2k1RTFsRmVXam02UFAwTGE5OWw0UGdfVzBqbDRGUmw2eG5URHo4ZGV4YndrM3R2ZENRNnNXZ1AxcEQ1aEZjRDhuZTBESXZzVkVhQXBJbnJXdkx2ekVrOE1BTW9odzluTFJTOGRQWDByMkc5M0ZvSldMMzIyVU10RENiTUhmWFJUYUI4cXFDQTB4VEM",
+      "source_name": "Jagranjosh.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T06:37:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Meeting Begins Today: Will RBI Hike Repo Rate? Inflation, Crude Prices Put Rate Hike Back on Table",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMGQwMGlLTEVIZlJnVEMyM253Z1MwUnAxZVRMUGg0WFhwbDhqYXNWeEMtY2E5SVMxN3VZV1J4Y1BaclRTQnpRX0pUR2hJMjMwakNVcXlxTG83U0l1eWJWNkFOMHlwMUNBWkVHSDVEd0dYSFBSRXVLODVuR3NSQ0pyTXZQMG9hMGJLTzNneHZXX0poekhCMy14SS15NEFWWjBtdlFaVlNCVjRkcmJKRi1EYzluTkY4Z2lPYWdVWkZVTERiM1JqNUhwWkNxQmRmZG5mT2ZhSmFMeENUdktWV3FXbHVmV1lwOVkxYWZHcUhBOHR6NlnSAfMBQVVfeXFMUDBkMDBpS0xFSGZSZ1RDMjNud2dTMFJwMWVUTFBoNFhYcGw4amFzVnhDLWNhOUlTMTd1WVdSeGNQWnJUU0J6UV9KVEdoSTIzMGpDVXF5cUxvN1NJdXliVjZBTjB5cDFDQVpFR0g1RHdHWEhQUkV1Szg1bkdzUkNKck12UDBvYTBiS08zZ3h2V19KaHpIQjMteEkteTRBVlowbXZRWlZTQlY0ZHJiSkYtRGM5bk5GOGdpT2FnVVpGVUxEYjNSajVIcFpDcUJkZmRuZk9mYUphTHhDVHZLVldxV2x1ZldZcDlZMWFmR3FIQTh0ejZZ",
+      "source_name": "News18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T02:25:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC begins 3-day meeting as crude, inflation put rate hike back on table",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUm9KaVBjY3J6QlBWRkxSall5YUo4WV9ScUw2LWRMV1BsVVNqUnNHNGhqTksyRFc0TzNDcXY2LTlNZVBIbS1HekY0a1VaR0dsN2ZjTjNyV1FvdDlaeWxVdXJ0S1NkNmsyUEtUX1NkdlZKUzJOSjhzLXYtc2JCQ1VIUWFHcDl2b3FrVXc4RmJPeG9YZURoXzNRNjVJUHFaSmFhSHI0NzJmU1hwSzRQX25aNkdwUVlyUFlPek9OWEhMYWdrd9IBxwFBVV95cUxOQVY2RW5rci1qbnkxWXo3cnUzTTVJd3BrLTNFci1vU2VLUThGLXRqN2wxTVRNMWc5MW5NVEg1TXpUUUVsY0t6elFfbEZpZ2ROQnBTRGo4Nkg1NjV5RV9WcS1fX3F5Vkhha1c4cTdoa21QWFhIOGJ3R3ZLTFlKNkVTNlF0d1kzVkstZ2c3SWdYb0J6LW81a1ZnWEk3NDRmRjk3V2otWTZUMmpBZnpMalBMbC1NV2pNTEUzQVVpR0taNjdMdUxyQk9J",
+      "source_name": "Firstpost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T07:06:16+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC begins 3-day meeting today amid expectations of first rate hike since 2023",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQY3BRczdEOHpBcFJQSWN1cFJMTU83UFVuN0NwYS1rczlZQVc5M3UtOV82X2JBQUt5b3RfQXhWLUVZZ0piRnZTdTg5QjNVNDlReUgxUkw4b3pXYVRleWZYUVJBWTJqd2IxWnpwRllMWDFuWDVtOC1WRW11Nm44VkxPel9SRlhWNUlUZ1J3WEVaNWJLbG9QdTNzSzhEVUdqNEZGWWFweTRKNndLeXl0X0NHcFpKcGpiUVBGelJTYVI1M3BlcnhaVmhhOGh6a1N1LUV0VmZVTmJfRXlQVkNnRkFURHcxS0plQTJqVm5NWDhoTUVWNURsYTZz0gH3AUFVX3lxTFBjcFFzN0Q4ekFwUlBJY3VwUkxNTzdQVW43Q3BhLWtzOVlBVzkzdS05XzZfYkFBS3lvdF9BeFYtRVlnSmJGdlN1ODlCM1U0OVF5SDFSTDhveldhVGV5ZlhRUkFZMmp3YjFaenBGWUxYMW5YNW04LVZFbXU2bjhWTE96X1JGWFY1SVRnUndYRVo1Yktsb1B1M3NLOERVR2o0RkZZYXB5NEo2d0t5eXRfQ0dwWkpwamJRUEZ6UlNhUjUzcGVyeFpWaGE4aHprU3UtRXRWZlVOYl9FeVBWQ2dGQVREdzFLSmVBMmpWbk1YOGhNRVY1RGxhNnM",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T05:15:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC begins amid rising bets on a repo rate hike to 5.5%: What experts expect",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSWQxSTVjN1RQZzZhV3Q5ajZCSnF6VkdfOXdYZGVpa0hBTlN1dUk3amtYNHFkNm1CblllSXFudi05cU5vT2FLdmdYWXl4SjNQQ3VjOHFrc1d6OURUdnFnN3ZGWGlwSElEanZmWnBoT3o0cFhMNnZQUE5pSzRiMXV0YlNTSkc2UUtlVFhWemd1UlFtMVlrN21PcWNrcll1YmE4SkJCRlR5ckMweWNhNS1TbkFMeXNGN2Y4ODZ30gG7AUFVX3lxTE1JZDFJNWM3VFBnNmFXdDlqNkJKcXpWR185d1hkZWlrSEFOU3V1STdqa1g0cWQ2bUJuWWVJcW52LTlxTm9PYUt2Z1hZeXhKM1BDdWM4cWtzV3o5RFR2cWc3dkZYaXBISURqdmZacGhPejRwWEw2dlBQTmlLNGIxdXRiU1NKRzZRS2VUWFZ6Z3VSUW0xWWs3bU9xY2tyWXViYThKQkJGVHlyQzB5Y2E1LVNuQUx5c0Y3Zjg4Nnc",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T11:06:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC meeting begins today: Will Governor Sanjay Malhotra hike repo rate for first time since February...",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSHcwNTN5NGlGbUloMGZjSFNXVEpmUXpNSnFTc2RlZ2FpY0JvdnF2OUVvVW1PMzBWbTJDMHd6Z0VJOEJZMmRWd2g5Um9hY1FfaXcxS1hYbXI0M2FmUzFqbm9FRHFkeFVqQkNWNllwUXpFRnJON0Y0ejRmTDBfTDhRQmlvbFk2R2NWcWxrYUViVzdiRmttbkM5T3pBVkVIMmtkeTF2RG5Bd19TUlh0OVQzWExWVERQTzN5X2NveGlBblhJYWxyOTFXcTFZNWw0cUhfaHF2bEpkd3pwS3JnSnJ0Ny1PZHFKV21iOHdpckc2Y2twMDNzcjZqTUZXanBYM1BBRmRR0gGIAkFVX3lxTE8zYnQ1b1FSMVA2TTJlZTJObEd5RHNoUzI4aUh1bmlQSURPMFp6TEtibC1qQU9Jdlk2eEZuZXJ6bFA0ZHozUEJMQnMyU3BOMGdJQU10U3VxOW1mal8wSVk5ZXJfeDJSSGpTcEdQRDR3YU9QTkd6N2dpMC00SUJiZmVoSmZVSUFsOVRfd3QxMVoyRUxNci1KYkVMc1ctSXpwZElBLXFsQkc1VU5xeUJDNlA3bWgzWHFDcGdPQUVGRVFUTk90MkRORGNpYlFycXJWalFCNm02ZElfWUdzdUVSOGJBcWJiMFFicXE3c2kyOXE1bkllMDVPclNYN3U3bTNnLTBfVUxuV1pmSw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T02:11:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC meeting begins, eyes on first rate hike since 2023",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUVlLZW0xOWhjejhXTlpBalhmWnUtX1drcVJqdTF2NmJjQjQ0Yk4tTUNxUVdfNUM1TEZQUU1tVE9Vb0FNb2pWS3BzZ3VjaVNfbllIUy1rcEhxdnpEc09hRlU1OG16ZGRpdEhxNk5wNDdyazVlQk0xT204SmNuQl9zZDdYeW9WbHg2LUdYbUpNVU9RWEJxdU9ZMk1MZVFrWE11bGdzd0VzQWE",
+      "source_name": "Awaz The Voice",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T05:50:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Monetary Policy Review Meeting Begins; 25-Basis-Point Repo Rate Hike Possible",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZTVmQ2s3Z1RtWERheVF2NkMwVnhmSUhYZmZmMVN4N3JZSEtSTnZJYnlQeGhWdHphV2lpTDFkakhvV3hLVWg3dThHOTJWRW1ucll6LXVUQW1SSnVLMUl3eGJoS2tkUm42MUtQN2V6LVBZbTM5NjlHakt0Y1VUZGdMRUoxZTFIVncwV21vYThNYmxLQQ",
+      "source_name": "Hindusthan Samachar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:02:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI POLICY WATCH 25 bps rate hike: unanimous call in the CNBC-TV18 RBI policy poll. But how far does the tightening cycle go? Will RBI turn more hawkish? What happens to liquidity? And where does RBI see inflation and growth? Ritu Singh brings you th",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQzcxNTZLemNpWExnV2NKb0thR2Z6VE9CWjctakw4YWJxYzcwMzNnUHI2VndLcVVmWHBFOVdrdkxKUy12WGZQSWF2b2dabGNWb0xsQURBVllXRERjWlJKNVFzbU5ab0pYZ3NWSHNtaHN1V0JmajlXTDhxQjVjVW44NlN4VUR4YkVYRkNId3JSM0xqelQxa2QyaGg4NA",
+      "source_name": "LinkedIn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T14:06:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike Expected This Week: 60% of Economists See 25bps Increase - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOX2xRYXJVZG5EbHdLVjBSWk5JNzF4VFplVVRxblJUMngwMXF6Z2JRZWM5aEtaMjUwTFY2MXI4M19BYkNVcnFNTVNER2JHZDNUQmhiSlRfd3RVNm5PYzEwUC1iVm8tUlB5aUxod2hsU2J5NHBUQy1BWktHb1ZRNGlGOURIOERMZU04STJReQ",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T13:20:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike: Will Your FD Interest Rate Rise?",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTE1BeTJBaExPekZ1SV9WNVdDR3JQUHhJSDAwdmpsWFBtbV9iRUVvWExKRFVsVTl5RlJ1aWVGbVRtb1hibXZYb3NEbWJWZk1uanBYWHNZYXhOSEhySzBFcFBGVnd5X3JVOGZCZGwyWnRxUmtMZ2JjbnFjblN0MnFuMjN0akozR2JhQk1EQ0U0UQ",
+      "source_name": "News Arena India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:11:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI begins policy meeting as inflation pressures strengthen case for rate hike",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPTjFtVkZqOU5TeFZoNG9YdmhXOEdpWjZFMVFSd1RGVW1JVkxwRXE5UVdfS3pNRWlWdnBfN2xlcGEtYjZ3aVV6UUpRRk96ZkpzQ2ZQY1UydnhPV2pndzBYWHJTSnpCZDdJUzNUNDRQNDYtVmFPZWZSNWZMcVZOWkR5QTRKWnliNW1la010U3hCYUd2Q1ltQ05sR2o4V21vLTRTMUlJaWRaUG91SjNjOWJBUGpEV3FhRXVGTXVIZzhheVFTYm56dGEwTmtnSE5Nd9IBzgFBVV95cUxPTjFtVkZqOU5TeFZoNG9YdmhXOEdpWjZFMVFSd1RGVW1JVkxwRXE5UVdfS3pNRWlWdnBfN2xlcGEtYjZ3aVV6UUpRRk96ZkpzQ2ZQY1UydnhPV2pndzBYWHJTSnpCZDdJUzNUNDRQNDYtVmFPZWZSNWZMcVZOWkR5QTRKWnliNW1la010U3hCYUd2Q1ltQ05sR2o4V21vLTRTMUlJaWRaUG91SjNjOWJBUGpEV3FhRXVGTXVIZzhheVFTYm56dGEwTmtnSE5Ndw",
+      "source_name": "National Herald",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T04:55:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI's MPC begins deliberations, 25 bps rate hike anticipated",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeUxSM1pfQmVyTmhoZnFTNGxwRmtOTHVpMHVTY0ZtSEJ2cXRxNEFqVEs1SFJOX0VRZUdEeks0N2IwblNGY3lSaExWNXo0MG0zRUxYbkRkaGY0STU5OUhLZzYzd1JMOXl1eEx6d2phZzk4bWhLU1hCNG8yREJwaW1MWXBGM0k1RmpBWDg3SkIzSlhITE5ZVllHZ0pyOEV4SldobGJ3UmdOeUdkZnJGQXloS3hmNDdweEdCMHB2Mm5LeTYyOW5nXzlTNDFfRVVMa2PSAdIBQVVfeXFMT3hTRG1nM0x5WnlnZ0E4ODd2YW9rVl85VENaQnk4MFFyQm82blZDNXRYdUtzQ2dTZk1tZ1lQdDJFYVRXcHUwMThHWS1YME53ZHpYaXRRb2ZublF3TU5EUWpubFcxODUtZEVJY3hXeDQ3WWZzazBMdFJrQTJPenE1RGljMmhiZm1qUFBEakZ4REFpSk9FZU5WYnZES3lNSEd3d2dDcVVYWlAwOEpYSjk4T0V5UUNGal9qaGh1OVRSMEVRcXlXV296NXk4VmFKNDQxbzFn",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T12:19:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI’s Monetary Policy Committee meeting begins in Mumbai",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQWZNZEt3bFlQRjA1WkRMcVFFYnhYanNHSGU3MkFzSE9RM1diWUJUdVlTYVNrR202MnVBaUFvdGpQTjltWm9YWWR3MUlYbU9UdWVDMWFtVEdGU3hrNThUVWRaS2FrRUlGanJ1UnJsTllIR0ZhLXZ6aVgyUXNtVzdPYVBGVHVLT3FR",
+      "source_name": "News On AIR",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T09:42:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will RBI hike repo rate? What it could mean for homebuyers and property prices",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSzMyaHpueGZVSzRLVWRqclljWVJYUDV2N3h1VW5HZU51X0d3b25ydE9UYTFMbDFLb1hrTjdGTGNzNGl0UTZXb2FjZ3g2MTY5Mlh0RTRHSlRsM3FxclYxQ0pIVFdfcEpNM1RTQl9IbkZHam1aWlRBdWYyX1d0dUxVMHVOOEFpLXVjSEVsdGpCS3dJaXpvOTc1bkR4cXlQcUtaSWRxUTNnVVlmVmMxNEwwRDVKSmtmcE5BSUZFTkJ5ZjZZZE9lX3R3dkJLcnRuX3ZjaDVxb2dJVHTSAdgBQVVfeXFMT0szMmh6bnhmVUs0S1VkanJZY1lSWFA1djd4dVVuR2VOdV9Hd29ucnRPVGExTGwxS29Ya043RkxjczRpdFE2V29hY2d4NjE2OTJYdEU0R0pUbDNxcXJWMUNKSFRXX3BKTTNUU0JfSG5GR2ptWlpUQXVmMl9XdHVMVTB1TjhBaS11Y0hFbHRqQkt3SWl6bzk3NW5EeHF5UHFLWklkcVEzZ1VZZlZjMTRMMEQ1SkprZnBOQUlGRU5CeWY2WWRPZV90d3ZCS3J0bl92Y2g1cW9nSVR0",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T13:59:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 21,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|demands-inflation-phase-rbi-wait-watch",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.498057+00:00",
-  "last_updated": "2026-10-01T13:34:27.498126+00:00",
+  "last_updated": "2026-10-05T15:06:41.543662+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.498121+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:41.543634+00:00",
+      "change": "sources added",
+      "detail": "Awaz The Voice, ETV Bharat, Firstpost, Hindusthan Samachar English"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:41.543649+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:41.543655+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:41.543659+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

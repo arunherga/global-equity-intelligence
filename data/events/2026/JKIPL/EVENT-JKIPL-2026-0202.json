@@ -4,7 +4,8 @@
   "summary": "NHAI launches Tamil Nadu’s first barrier-free tolling system at Paranur Toll Plaza The Indian Express",
   "event_date": "2026-10-01",
   "event_types": [
-    "NEW_PRODUCT"
+    "NEW_PRODUCT",
+    "OTHER"
   ],
   "stocks": {
     "JKIPL": {
@@ -46,6 +47,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -68,16 +114,26 @@
       "published": "2026-10-02T05:02:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Rolls Out Barrier-Free Tolling at Paranur, Tamil Nadu",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMFVwVkRKOHF6OTVEd2x2bDNPM3RQeVJ6NGprWDdadGR2UkdmdXRUQ0I4OVlWMlJmUnpxWVpzYUJaczZCZHpaYmJHX3VjSXUxb3h0b2hQX0RNb196c2ZRUVp2OS1JbHN1TkZJZDd3bkdtaF91bUxERVR1eDNOZXJCSXh0Q2NuMWktZHJ4NnJWaWY",
+      "source_name": "Equitypandit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T06:47:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Indian Express",
   "cluster_key": "JKIPL|NEW_PRODUCT|barrier-free-first-launch-nadu-nhai-tamil",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.783733+00:00",
-  "last_updated": "2026-10-02T12:57:50.119918+00:00",
+  "last_updated": "2026-10-05T15:06:55.165945+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.783792+00:00",
@@ -88,6 +144,21 @@
       "timestamp": "2026-10-02T12:57:50.119905+00:00",
       "change": "sources added",
       "detail": "GK Today"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:55.165922+00:00",
+      "change": "sources added",
+      "detail": "Equitypandit"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:55.165937+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:55.165942+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

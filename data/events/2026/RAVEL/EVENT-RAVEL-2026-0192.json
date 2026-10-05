@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-RAVEL-2026-0192",
+  "title": "Broker’s call: FSN E-Commerce (Buy)",
+  "summary": "JM Financial",
+  "event_date": "2026-10-05",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "FSN E-Commerce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "FSN E-Commerce's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to FSN E-Commerce. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Broker’s call: FSN E-Commerce (Buy)",
+      "url": "https://www.thehindubusinessline.com/markets/brokers-call-fsn-e-commerce-buy/article71546980.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-05T11:38:08+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL|OTHER|broker-buy-call-e-commerce-fsn",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-05T14:57:30.536474+00:00",
+  "last_updated": "2026-10-05T14:57:30.536538+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-05T14:57:30.536528+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

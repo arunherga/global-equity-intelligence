@@ -9,19 +9,21 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "credit growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
@@ -33,21 +35,58 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to HDFC Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit growth, and deposits. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -61,21 +100,46 @@
       "published": "2026-10-01T11:35:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Advances Rise 15%; Deposits Grow 19% YoY",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQMTllcDhIRU1vbkR6bkRBY1ViNlNWQ3M1UDZQNV85QkZmdHRidmV0Sm9oT1B5MUJhMXgxZjZKOEt5eE9Demg2V2E1VFpNZDdqQzR1QnlaaXBiQXhTcldmakNreXpqTTJFY2k4WlVCRk81NWd6UkIyMDQwWXNfU2xPOVJkTThYZDZFWDFyclFzQ0VLQzZ2cWdGX21Cdi1rdXRMSGFtNjlTR1l6RnNDVUNyTTFJYVNlVXpnelNRSnhRWC1NU21iWGFmVnpTRWM1VF9MUVVZaENLbDN4OWtNMDJQM0sxSEJQc21obHc",
+      "source_name": "whalesbook.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-04T16:36:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "TMB|OTHER|19.4%-bank-canara-credit-rise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.796346+00:00",
-  "last_updated": "2026-10-01T13:34:27.796406+00:00",
+  "last_updated": "2026-10-05T15:06:29.986320+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.796401+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:29.986294+00:00",
+      "change": "sources added",
+      "detail": "whalesbook.com"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:29.986312+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:29.986317+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (DIRECT)"
     }
   ],
   "price_reaction": {}

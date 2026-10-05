@@ -48,6 +48,56 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -60,21 +110,41 @@
       "published": "2026-10-03T06:47:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Amaravati outer ring road project: NHAI floats tenders worth Rs 13,092 crore",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTHFibkpMNC1XMHRUN0NXQl82SVhSdDNldHpVV2FGa25FSmJudFRSS2c5bHBHSExFeFlSdGgxYmdOWUdCeTJhck1MdzZEZUFmV0VqeS1RMmVUOVRXNi1vdV9LOXB6MXBfdXB5NkVheHVueFBIcnVKZ0t3MEhCdGMtamVRSDEySTEyT0JyY1VKN1Y0YmtMQnBuUndDNlhHc0Ni",
+      "source_name": "BigInfo.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T04:54:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "swarajyamag.com",
   "cluster_key": "JKIPL|TENDER|092-crore-amaravati-floats-nhai-six-lane-tender",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-03T11:54:06.023708+00:00",
-  "last_updated": "2026-10-03T11:54:06.023783+00:00",
+  "last_updated": "2026-10-05T15:06:48.085041+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-03T11:54:06.023774+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:48.085020+00:00",
+      "change": "sources added",
+      "detail": "BigInfo.in"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:48.085038+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

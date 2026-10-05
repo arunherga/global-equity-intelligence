@@ -11,13 +11,11 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "REGULATION",
-        "REPUTATION",
         "PRODUCT",
         "COMPETITION"
       ],
@@ -31,21 +29,18 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "COMPETITOR",
-          "term": "JA Solar",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "TECHNOLOGY",
+          "term": "TOPCon",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (First Solar, JA Solar) is under pressure",
         "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
@@ -54,10 +49,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "First Solar's follow-up announcements",
-        "JA Solar's follow-up announcements"
+        "First Solar's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to First Solar, and JA Solar. The parts of the business most likely touched are regulation, reputation, product. Classified as litigation.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, technology exposure to First Solar, and TOPCon. The parts of the business most likely touched are product, competition. Classified as technology.",
       "ai_analysis": null
     }
   },
@@ -131,16 +125,26 @@
       "published": "2026-10-02T08:55:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "First Solar Takes Its TOPCon Patent Fight to a Chinese Plant on American Soil",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaEJoUFpKRlBFdjBDVlh5SFJuX1c4bWQ5TmFXR1BQMXhyU1VFMkRVU0F0aUxxV1hiRzUxVUlLckhlVTRLQVpVQ1ZnZ2kyeW9IdmkzaEdsbUtkQU5JSkV1QnRpZUtrQ1EzSnpCLXpsQUNuSzVvWDc5VTQtRVEtSW55c1RxVzZxLW8zLXYzcS1YTFJNdjEzUGNZR1UxRm9sUERtU1dadGVqQk5VNHdHdDVYVV9LMXlpT0tBMndKcl9kVEF5NDBBRU9YZXN4SQ",
+      "source_name": "Saur Energy",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T04:31:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "mvapulse.com",
   "cluster_key": "WAAREEENER|TECHNOLOGY|complaint-fall-first-patent-solar-topcon",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.591683+00:00",
-  "last_updated": "2026-10-02T12:57:33.607632+00:00",
+  "last_updated": "2026-10-05T15:06:47.349346+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.591710+00:00",
@@ -161,6 +165,16 @@
       "timestamp": "2026-10-02T12:57:33.607627+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 4"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:47.349323+00:00",
+      "change": "sources added",
+      "detail": "Saur Energy"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:47.349342+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

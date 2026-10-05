@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -37,13 +37,13 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "polysilicon is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -64,21 +64,41 @@
       "published": "2026-10-02T07:26:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Global polysilicon prices hold steady as China price gains meet buyer resistance",
+      "url": "https://www.pv-magazine-india.com/2026/10/05/global-polysilicon-prices-hold-steady-as-china-price-gains-meet-buyer-resistance",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-05T04:45:14+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "pv magazine Global",
   "cluster_key": "WAAREEENER|OTHER|china-global-hold-polysilicon-price-steady",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-02T12:51:59.276903+00:00",
-  "last_updated": "2026-10-03T12:01:09.538788+00:00",
+  "last_updated": "2026-10-05T15:06:26.107266+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T12:51:59.276959+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:26.107246+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:26.107263+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 3"
     }
   ],
   "price_reaction": {}

@@ -9,23 +9,14 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "credit growth",
@@ -42,21 +33,66 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Indian Bank, and credit growth. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit growth, and deposits. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "deposit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit growth, and deposits. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -70,21 +106,46 @@
       "published": "2026-10-01T14:03:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Banks’ credit growth outpaces deposit growth for fourth straight quarter; private banks lead pack",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOVkF1a3ZKajhnX0xSdGRweFNtX0kzTzRNWi0yX1pTdlV4dGlsc0h3eng2ZFNxWlUwc09fR3BYOVdNckJTM3JDMnN3cGlEM0FCSHFFNTEtNC1pUFYyOFpydmxibEdoN2RTNzNtZ3U0LVFpbnRBMVVDRjFrRnZCQTdSbFFaNHVycjlwRXFuQnM0MDlZczlybWRPel9BY0F4ZGtnTW1FZ3ptMVFoaUtEaGVtUF96RTRCN0dhdGZtVHJ4ZDRBZHg2dGtBOVFLQXpmcFd2Z3F1Z0ZFNDRmWmV4VHVPbE1LNHA3TExoSkc1V0Vka9IB9AFBVV95cUxQV05XbDBsSEFQYXNqemJGRXY2VHBvbFBwX2NCOW1WR1J2WGcyRWlpejQ5b29VMnh5Qm5RcmlNajJWNlh1T1VncFAxNU9paF9YMjE4bFRZWjEwSnIwcWE3dkNXOGgxNGVmOWM0MVhYaG5icnVWS1o3YUttQmFLaHdfOTd4VW5FRXp1OW1QWlAwT3BIc2Z0S3FXdVYwcngzTmZQSzVfV1BqWEVoWVBkSFRGa2FnWGtISU9QSDJEcjdqRHFvU0ItMWRTWW9fS3ZCV1o0Z1Z3Q3dFRU0tYjhlbTJXNGNZbmp5UVJZamZZOUt0dmhWQ05X",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T03:40:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB|OTHER|bank-credit-india-outpace-rise-see",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T18:59:35.224617+00:00",
-  "last_updated": "2026-10-01T18:59:35.224656+00:00",
+  "last_updated": "2026-10-05T15:06:45.137332+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T18:59:35.224653+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:45.137304+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:45.137324+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:45.137329+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (SECTOR)"
     }
   ],
   "price_reaction": {}

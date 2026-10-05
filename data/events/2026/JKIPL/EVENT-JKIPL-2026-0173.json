@@ -53,6 +53,57 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are regulation, revenue, capacity. Classified as regulatory.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "+3 Development at a known counterparty (NHAI)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -135,21 +186,41 @@
       "published": "2026-10-01T07:07:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI to conduct special quality inspections of 17 highway projects",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdUxUb0NMSWtfM0IyVHd5aGU5VkVkNEdmT09xSTRIOW1XVFRfS1V5czJFTk9pbWJuZjgwbHdCZTVYRFZqczd4R2lVeUluU0h5QUhPSnZKci1BYWVURnNfeXNzVHEzZFNCa3Z5b29Ea2RfQldKaV9LaEhhN2F3VkQ0U3RDeHJDaXo3eE9uc1J3NE5BS0xIYW55LWE0TnQzZXNsX2pnN2xoRndGT0NHV0pCWm8zRThqbldYY2c",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T03:33:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "ETV Bharat",
   "cluster_key": "JKIPL|ORDER_WIN+REGULATORY|begins-highway-inspections-nhai-quality-special",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.413680+00:00",
-  "last_updated": "2026-10-01T13:34:27.413780+00:00",
+  "last_updated": "2026-10-05T15:06:44.641338+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.413775+00:00",
       "change": "created",
       "detail": "8 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:44.641315+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:44.641335+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -9,39 +9,62 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.38,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "SECI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Solar Energy Corporation of India",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "rooftop solar",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from SECI",
+        "order flow from Solar Energy Corporation of India"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to SECI, and Solar Energy Corporation of India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +78,41 @@
       "published": "2026-09-25T13:46:27+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "SECI Invites Bids for Rooftop Solar Projects Across India",
+      "url": "https://www.mercomindia.com/seci-invites-bids-rooftop-solar-projects-across-india",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-05T18:54:40+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|OTHER|bids-gescom-invites-projects-rooftop-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.686687+00:00",
-  "last_updated": "2026-09-25T12:56:10.686735+00:00",
+  "last_updated": "2026-10-05T15:06:28.051863+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.686732+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:28.051842+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:28.051859+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

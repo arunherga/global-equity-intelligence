@@ -9,71 +9,62 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
-      "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "No clear directional signal in the available text"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "order flow from traders"
-      ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are customers. Classified as other.",
-      "ai_analysis": null
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "deposit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
@@ -82,24 +73,32 @@
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit growth, and deposits. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -133,16 +132,56 @@
       "published": "2026-09-25T12:31:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Credit offtake stays ahead of banks' deposit growth",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZzhlYlFRZlZkcU5nR05pOE5GaDRPdnQyNGJNdTRkR25XaEJtQXNpSUNxVGdkdUIyT1UxVWhBRkFRVUFDSVN5X3BwUGI2NFdqQjFJTFZUTThvcS1OZXZGeDBLZ05idTJROVU2U0pNcnhQd2p4VkRfUFNTZEh4ZFZTY01KeHRmbmhHa3puX2lnNldtTnpyWU81RG5vLXRpbEIyVklfSkxTaUt3RmJBYW5rTG1nbjEtOXlnNHZQaWpyQVUtMnA2b2FVakRXOFVraWU2MExWaHJqWdIB1wFBVV95cUxNZzhlYlFRZlZkcU5nR05pOE5GaDRPdnQyNGJNdTRkR25XaEJtQXNpSUNxVGdkdUIyT1UxVWhBRkFRVUFDSVN5X3BwUGI2NFdqQjFJTFZUTThvcS1OZXZGeDBLZ05idTJROVU2U0pNcnhQd2p4VkRfUFNTZEh4ZFZTY01KeHRmbmhHa3puX2lnNldtTnpyWU81RG5vLXRpbEIyVklfSkxTaUt3RmJBYW5rTG1nbjEtOXlnNHZQaWpyQVUtMnA2b2FVakRXOFVraWU2MExWaHJqWQ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T00:01:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "FCNR(B) Inflows Drive Strong Q2 Deposit Growth for Indian Banks",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTkloWTMzVnhJbHlaMlNyZm5MNGFLYWlxalY0cUxnSlBCUm9kMFJHSk5EcWJWeXpjZ05aSEVIRDkxT3BPOUVUVXAyb0lTdFB1Sy1Sc0RVNVpiT09QekRsOHpDSVlOOE1qSE1xZmFoMEVoa2R0X3JLX2YyVXp5aE54Z2RVMUVXZzk5WE9MbDhpZ1lRMWdHczNxN3ZrdllNN1BTNS1aSld4a2xTRG5keERLcjkzalFGM2h0YjNzMHZJdmZBSzRLejc1ctIBywFBVV95cUxPUUw3ZnhHa2ItYmNsSUc4MXdYMzJ1SHBzM243dnJXOVhMeDhmVWlZTkE5SWxNQU5rUmEtVFppMk1KNzZFZzhtWTcwV2ZhaEhtRmd6bFVFZWctN3lyeEhDd2ItVUhzdEVDY1B5QkZ3M2hKT0VlaHl6OUR3SGdiSGdBc0U3R0s5WU5LOEcyOFl0V1R1b0h2YWxTcms2a0hYZ2JrRjh4bXlFa19rRTVwemN2d1VuMVdpM3dyOWxLVjNyT1Vfa0FMNVZVcWxYWQ",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T04:21:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Central Bank of India posts 30 per cent credit growth at Rs 3.81 lakh crore in Q2 - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNkxDZmFNZEE4ZWstZ1U0ZWdQVloweXFVYy1yZ2FjR0d6VHJmcGpDLXQ0cTZBcncwOUwxOUJrdlNzWnJYOU43MzRRUTJ0TlBjcVVTUUJHd2ZFTmh3WERSM1o1U0hkd0p1eFBGdTQ0YUREekdTTjhUQ0VfM3ZyblU3ZmdTRGdaRmhjaHhHcnd4WjRhcy1ndV9DTDBwSFBUcEZBb1hJSHVWUDRsTE4xZFVORGN5LVgzTTk4OXoxRVU5Zm9zSTI1ZnZadFRnbmtSV0JvaDVhc21MQy1oZEVz0gHiAUFVX3lxTE1XMjNCZDJ3SnRjR1EyeXMxRG1VRmJtb01ubDdMR1puZXkxbWJBSjF3cWh5SFQ5ZmlVNl9fYm9QdEtmQWRoVGVsSVdVdDdrLWZfaldySVdtcXI3VjJQN3JDNU54NHNwMDJmaFV3TWNkcVNJdnRJMldabGVZcHVpWWlhR05Qd1hBNkhNWTFKS01ycXdGeC16NkdoVS1GU2xCZ1pjSHQ3ZDlPZmtrQkFXWDhIdUNpanhWWHBfMmV3WldIeWFJcGxQLWZzS1dJTmFhWWw2NEI5cFZrQlkyVG1NdUlBY0E",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T12:27:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Central Bank of India posts 30% credit growth at Rs 3.81 lakh cr in Q2",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPWnlLUHRfTTBBSWc5YWN1ZkJ5UkpweWVBQklxMGs4ZUVadnVoR1VNVUlOdEk4NnFBeV9oWUNGMF80eUxOeDNMV2ZRN1NoX3IxRkN4aTBqc1hDTTlUSFZiS2hLU0pIcmtjS1NpZU1jeElnZW83NnloYWRSdW4yby1JMXBIWFFpVGJNdE9IQjY3eG9IemtveDRJaWs2ZTJpWmZIVDI3Z05lX0hLT0tDaUtwaV9XODR1eURaSEYzazVWOUtZT25TOHMxQm90M3EyWldyR3NZbXZ0UkZwNHlDYXpvOFVXQzY2VWl6NS1MUTRBNk1rUdIB8gFBVV95cUxPWnlLUHRfTTBBSWc5YWN1ZkJ5UkpweWVBQklxMGs4ZUVadnVoR1VNVUlOdEk4NnFBeV9oWUNGMF80eUxOeDNMV2ZRN1NoX3IxRkN4aTBqc1hDTTlUSFZiS2hLU0pIcmtjS1NpZU1jeElnZW83NnloYWRSdW4yby1JMXBIWFFpVGJNdE9IQjY3eG9IemtveDRJaWs2ZTJpWmZIVDI3Z05lX0hLT0tDaUtwaV9XODR1eURaSEYzazVWOUtZT25TOHMxQm90M3EyWldyR3NZbXZ0UkZwNHlDYXpvOFVXQzY2VWl6NS1MUTRBNk1rUQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T10:15:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Traders Union",
   "cluster_key": "HDFCBANK+TMB|OTHER|exchange-foreign-high-india-remain-reserves",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.636037+00:00",
-  "last_updated": "2026-09-25T12:57:03.225626+00:00",
+  "last_updated": "2026-10-05T15:07:06.511259+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.636071+00:00",
@@ -168,6 +207,41 @@
       "timestamp": "2026-09-25T12:57:03.225622+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:35.906614+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:35.906631+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:35.906635+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:46.620947+00:00",
+      "change": "sources added",
+      "detail": "Rediff"
+    },
+    {
+      "timestamp": "2026-10-05T15:06:46.620965+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:06.511239+00:00",
+      "change": "sources added",
+      "detail": "Mid-Day, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:06.511256+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

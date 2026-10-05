@@ -52,14 +52,23 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [],
+      "confidence": 0.46,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Kotak Mahindra Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
@@ -76,7 +85,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -84,13 +93,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Kotak Mahindra Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to Kotak Mahindra Bank, and RBI. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -104,21 +113,41 @@
       "published": "2026-09-23T12:31:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank Q2 Updates: Deposits Up 23%, $5.78B Mobilised Via RBI's Strategic Swap Window",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPOGFscE16TDBFZ2szc0swR0RsbjVYTGpiOWNwOUgxdmNjUmxrUm1sY1g1TlFvbjlnTzZsOWpDM2ROU3Vra1RidXV2M0tuMV9USjh2ODd2RmxOSVhQcWhqVGhJU21tWVlCZUdrdzRGaUZrOWFhQ2dBcUF6akVDN3oxWHEyNWNUWFNnQmM2S1RCVTI0QXdjdkNqS181NzlqbTd6VldlNEhMQ0dhM083Nll1T1IyT3B3eE8wbmkwdkFJMW1WT3FMcjJNWmx2Z05VQlRDNHpJ0gHbAUFVX3lxTFBZSTlRSGUyQnlGNEVNakFENnN3aXdCaW9wTmVvTzlxSlZrZWVTdmJ0dURNU3lFRnREYVFCbXFvZGRPOHZSMDFHQ0t2eVBtR2Jnd21hbVJnbC1QaU54cFk2S2lDMkp1TmRWb0R0WW5FS2Z6UEt1SDZvTFRFZ29CTlZfMUZGRGN1YkVPWlg1MUYya0xDR3ZfUUY2dWZ2SW1pZGI5MlJ5aGh3S0Rhcm1PeDUzN2JPNmxrcFlvS3dTQWU4TG4zM3Fqc0pYbnFNN0hwTHFDTldRSU9iUlVOTQ",
+      "source_name": "ndtvprofit.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T11:19:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-deposit-fcnr-mobilises-via-yes",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.159564+00:00",
-  "last_updated": "2026-09-24T12:02:44.159628+00:00",
+  "last_updated": "2026-10-05T15:07:11.505206+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.159623+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:11.505184+00:00",
+      "change": "sources added",
+      "detail": "ndtvprofit.com"
+    },
+    {
+      "timestamp": "2026-10-05T15:07:11.505202+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}
