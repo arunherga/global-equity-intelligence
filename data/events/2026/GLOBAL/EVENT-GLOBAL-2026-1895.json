@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.62,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -26,7 +26,7 @@
         },
         {
           "exposure_type": "INDUSTRY",
-          "term": "loan growth",
+          "term": "credit growth",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
@@ -37,31 +37,24 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "retail loans",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and loan growth. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and credit growth. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -125,21 +118,81 @@
       "published": "2026-10-06T12:49:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NBFC credit grows 15.8% in August, gold loans surge 69%, RBI says",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/nbfc-credit-grows-15-8-in-august-gold-loans-surge-69-rbi-says/134742478",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-06T13:52:15+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Gold loans rise 69% as NBFC retail credit growth accelerates to 22%: RBI",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOV3ljYjhVeDc1d3VQUFRpOGRIcXFXOHVtZmk2UjNXSzR4bzN3eHFKd1RSXzlDSDhJdzFxeWxxUDJBUmZUVHZaRnJKdzlfTzZPSlh4cXJZdGpNNG9NeV9rTzZsQkJxdlFnclc3d3lQS1FvU1BqWFd6U3JGUFhpWHJaRm9nTlhsTzJBS0xsN01lN2ZRcEg1ZEQtLXVZWlF0RkV5T2o0Q3ZHQ3lnU3VFd2hBdXh5NXJRMF9tOW9xNTBsajlQaDZJckN0VHA3VDRGdw",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T14:31:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NBFC credit grows 15.8% in August, gold loans surge 69%, RBI says",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOV21BczVsWXRvdTJlVDdvQ3Bad1J3cVowWjlpbnVEVXRQenk5WGp5SXdYUTJxaEpCMGJIWmxqbnd1V0dFOWc5NU8wYkFfUnBDT0JlVDFjRllZRlF3RU9YX3dHSW5SY1lXb1NqTDhPSmRSYVhtX3hVMmpBbW1haEJ0UlU4YVk0THBXODRkSVlFRjF4Xzg1a3FOMjl1VmxQeDk3ZmFOYnJaOS01ellsZmdpcFJXTzF6blEtVnlENkpEV1lDaENS0gHEAUFVX3lxTE5XbUFzNWxZdG91MmVUN29DcFp3UndxWjBaOWludURVdFB6eTlYanlJd1hRMnFoSkIwYkhabGpud3VXR0U5Zzk1TzBiQV9ScENPQmVUMWNGWVlGUXdFT1hfd0dJblJjWVdvU2pMOE9KZFJhWG1feFUyakFtbWFoQnRSVThhWTRMcFc4NGRJWUVGMXhfODVrcU4yOXVWbFB4OTdmYU5iclo5LTV6WWxmZ2lwUldPMXpuUS1WeUQ2SkRXWUNoQ1I",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T13:52:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NBFC credit grows 15.8% in August, trails banks; gold loans surge 69%",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQT0NkU251aFctYVd5ajllVVBSNzQwQTFPcTMyMmpzYnFLMV9FN01xeEptRjlYZEl5OFB0bXZBWjM0TVpOeFh1ZzRIdEhQeXNOSTNZbEJUdERMcDdwYUE3T2owWi1GNHdyWkI2NmRubTlnelJKWlFjSGdNd1B0ajhiWF9YVWZnVWh3WkI3THdKN1NNdmtodzBFOHZiMjV1YnpoM0NvZGd1elNHMFM1NERyVTItbXlwa056MnZTX3VPWlBfR3d6MGZCQVdOWkJzNjFDNXdBZVpJUdIB1wFBVV95cUxQT0NkU251aFctYVd5ajllVVBSNzQwQTFPcTMyMmpzYnFLMV9FN01xeEptRjlYZEl5OFB0bXZBWjM0TVpOeFh1ZzRIdEhQeXNOSTNZbEJUdERMcDdwYUE3T2owWi1GNHdyWkI2NmRubTlnelJKWlFjSGdNd1B0ajhiWF9YVWZnVWh3WkI3THdKN1NNdmtodzBFOHZiMjV1YnpoM0NvZGd1elNHMFM1NERyVTItbXlwa056MnZTX3VPWlBfR3d6MGZCQVdOWkJzNjFDNXdBZVpJUQ",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T15:22:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NBFC credit growth rises to 15.8% in August as gold, consumer durable loans surge",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQW5MRG83NUxHTFpkZ1MzRU8zR1E0QTF5T2pCTE10N0tuMEJxLWhHMWFEYVQ4b0JVbkhHZzFRQ2FNNlZnOXI1Q2E4Z3NtaUR6bXE3d0RmVzl3Vk5pVzVabUk4RmgyRmpQX044amtnWE12cV9wNG9vX3ppWmNtS1EyeVA4UUdOd1pPM2xHYllKb0RuWGVXWmhxUlhvdzJEcU40YzA4ODlxVEt0dGhUN1lxXzgwXzZmTVhENm9nald3NzhZUHNFZGdITTdvalpQN0ZWRmExOFhPM21WSkozV1N5RHRnRUJrZ1lhSGdSdUVpcGg5RUpq0gH0AUFVX3lxTFBBbkxEbzc1TEdMWmRnUzNFTzNHUTRBMXlPakJMTXQ3S24wQnEtaEcxYURhVDhvQlVuSEdnMVFDYU02Vmc5cjVDYThnc21pRHptcTd3RGZXOXdWTmlXNVptSThGaDJGalBfTjhqa2dYTXZxX3A0b29femlaY21LUTJ5UDhRR053Wk8zbEdiWUpvRG5YZVdaaHFSWG93MkRxTjRjMDg4OXFUS3R0aFQ3WXFfODBfNmZNWEQ2b2dqV3c3OFlQc0VkZ0hNN29qWlA3RlZGYTE4WE8zbVZKSjNXU3lEdGdFQmtnWWFIZ1J1RWlwaDlFSmo",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T16:23:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "prameyanews.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|22%-accelerates-loan-nbfc-retail-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:39:12.383760+00:00",
-  "last_updated": "2026-10-06T13:39:12.383851+00:00",
+  "last_updated": "2026-10-06T19:06:55.581307+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:39:12.383839+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T19:06:55.581284+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, ETBFSI, The Economic Times, Zee Business"
+    },
+    {
+      "timestamp": "2026-10-06T19:06:55.581300+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,135 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1953",
+  "title": "Salesforce's stock volatility prompts a neutral options strategy amid uncertain AI-driven growth prospects.",
+  "summary": "Salesforce's stock volatility prompts a neutral options strategy amid uncertain AI-driven growth prospects. Pluang",
+  "event_date": "2026-10-06",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce shares draw options interest amid AI-driven volatility",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQXzRTQ1M3REVFel9VWEtmaVRCN1lVbUlVVUY5T1ZtU0JPZ0I4b1laNEstc1lMSHIzZ3NVZndwaURMTTRMS0w2OVdWMG45UUs5VEd1bURaVG13X3dQZERTeTV6MnBORnpPY0VwRnpjc3NtbExaUmE3TUJWdXZWMVR2T0wwcUM3VnRvX3I1UHkzZGlYbGZ6MjkwaFZYUkFCcGc",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T17:41:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce's stock volatility prompts a neutral options strategy amid uncertain AI-driven growth prospects.",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT0hoR2plU0oydEdKaG9CblVHdFVFNzRZOVJHU0JTbU01SGt6ZGFPTkEwM3g2T0t5akRqbF9GeTV3MTRtb1ZLencza0VKdUZ0aTNEdW5CcHdGWFljUmFlWTBQUVc1TjNxQXROSFZqR0ZSTHlObDdHajQwSmo0RzgwSURiaTF4YUV5M3pGMWdVR0ZjaFlUMHRF",
+      "source_name": "Pluang",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T17:48:11+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "KSOLVES+TMB|OTHER|neutral-options-prompts-salesforce-share-volatility",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-06T19:06:12.336573+00:00",
+  "last_updated": "2026-10-06T19:06:12.336667+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-06T19:06:12.336657+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

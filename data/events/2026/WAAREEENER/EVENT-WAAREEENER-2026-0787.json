@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.45,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -32,6 +32,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of New and Renewable Energy",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
           "exposure_type": "PRODUCT",
           "term": "solar cells",
           "relationship": "SECTOR",
@@ -48,13 +55,13 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -75,21 +82,41 @@
       "published": "2026-10-06T13:15:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MNRE Proposes Standard Nomenclature for Solar Cells Under ALMM List-II",
+      "url": "https://www.mercomindia.com/mnre-proposes-standard-nomenclature-for-solar-cells-under-almm-list-ii",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-06T18:43:44+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Mercomindia.com",
   "cluster_key": "WAAREEENER|OTHER|cells-mnre-nomenclature-proposes-solar-standard",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:39:25.962973+00:00",
-  "last_updated": "2026-10-06T13:39:25.963048+00:00",
+  "last_updated": "2026-10-06T19:06:55.817947+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:39:25.963039+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T19:06:55.817926+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-06T19:06:55.817942+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 2"
     }
   ],
   "price_reaction": {}

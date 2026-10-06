@@ -4,20 +4,23 @@
   "summary": "Godrej Consumer Products inagurates first phase of Indonesia plant scanx.trade",
   "event_date": "2026-10-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "NEW_PLANT"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,21 +31,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Strategically important competitor development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp",
         "Godrej Consumer Products's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Godrej Consumer Products. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Godrej Consumer Products. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,46 @@
       "published": "2026-10-06T11:03:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Godrej Consumer Products inaugurates first phase of Indonesia manufacturing plant",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMEg2MXkxOEJnSmxDRWgtSnFDRkthZm9VdmtTYk1zSjRUN3RpSU1pWjdSVXpTeXhGOGQtWWh3dmlfYVpNTEQtVElDSGI1YzFIeWdvUXBMR2g0U0VwaHdNY3FJTVBOdjgzYVJUWHROOGlsY1NObEdicjlfU3h5WEI0aUc3YW9RcE0yTEZzQW1HeXYySlNKZ1lqVGVTTEtnX1RFOUZybmMyYnczUml1eHp6ZHM1LVFXRGJpWEMweWRPc1Z1Vi1YT3JyMGdrVHZNOVVGOTRLMXFwOGd5MHlUaXY4M04tYnN2bTJack01MdIB7AFBVV95cUxQMEg2MXkxOEJnSmxDRWgtSnFDRkthZm9VdmtTYk1zSjRUN3RpSU1pWjdSVXpTeXhGOGQtWWh3dmlfYVpNTEQtVElDSGI1YzFIeWdvUXBMR2g0U0VwaHdNY3FJTVBOdjgzYVJUWHROOGlsY1NObEdicjlfU3h5WEI0aUc3YW9RcE0yTEZzQW1HeXYySlNKZ1lqVGVTTEtnX1RFOUZybmMyYnczUml1eHp6ZHM1LVFXRGJpWEMweWRPc1Z1Vi1YT3JyMGdrVHZNOVVGOTRLMXFwOGd5MHlUaXY4M04tYnN2bTJack01MQ",
+      "source_name": "ET Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T13:57:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "RAVEL|OTHER|consumer-first-godrej-inagurates-phase-products",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:38:34.626169+00:00",
-  "last_updated": "2026-10-06T13:38:34.626251+00:00",
+  "last_updated": "2026-10-06T19:07:19.767216+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:38:34.626241+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T19:07:19.767190+00:00",
+      "change": "sources added",
+      "detail": "ET Manufacturing"
+    },
+    {
+      "timestamp": "2026-10-06T19:07:19.767205+00:00",
+      "change": "categories added",
+      "detail": "NEW_PLANT"
+    },
+    {
+      "timestamp": "2026-10-06T19:07:19.767211+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 4"
     }
   ],
   "price_reaction": {}

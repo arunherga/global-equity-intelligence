@@ -55,29 +55,28 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "CAPACITY",
-        "BALANCE_SHEET",
-        "CUSTOMERS"
+        "BALANCE_SHEET"
       ],
       "time_horizon": "LONG_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
+          "exposure_type": "REGULATION",
+          "term": "ALMM",
           "relationship": "INDIRECT",
-          "weight": 2.5,
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
-          "exposure_type": "INDUSTRY",
-          "term": "cell manufacturing",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
@@ -86,12 +85,17 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "ALMM",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Development at a known counterparty (NTPC)",
-        "-5 Market commentary rather than a company development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -100,7 +104,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "funding mix for the expansion",
@@ -108,7 +112,7 @@
         "demand visibility for the new capacity",
         "effect on return ratios"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, industry exposure to NTPC, and cell manufacturing. The parts of the business most likely touched are capacity, balance sheet, customers. Classified as capacity expansion.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its regulation exposure to ALMM, and MNRE. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -187,16 +191,26 @@
       "published": "2026-10-06T11:10:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MNRE Expands ALMM Solar Cell Capacity to 37 GW",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE40eHkwTjZDVjU4V29BRzhhdkdRMDMydENyNzZTVVBTWUtzb3hyUjhLdDBxcDdraDFIenlZQXJZcU5HMlVSSlI0T3h4ajlOTXByNnpfZDdDY3pFaDFCZFdIYXl1WWNEUEV1RXlwWHVIdU1BbGV0bzJlclZFYTE",
+      "source_name": "www.mvapulse.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T13:31:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 2,
   "primary_source": "Equitymaster",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|CAPACITY_EXPANSION|capacity-energy-green-ntpc-raise-renewable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.571857+00:00",
-  "last_updated": "2026-10-06T13:46:03.083263+00:00",
+  "last_updated": "2026-10-06T19:07:16.664240+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.571924+00:00",
@@ -207,6 +221,16 @@
       "timestamp": "2026-10-06T13:46:03.083245+00:00",
       "change": "sources added",
       "detail": "Mercom India, Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-10-06T19:07:16.664217+00:00",
+      "change": "sources added",
+      "detail": "www.mvapulse.com"
+    },
+    {
+      "timestamp": "2026-10-06T19:07:16.664234+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}
