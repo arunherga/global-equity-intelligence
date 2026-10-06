@@ -58,24 +58,22 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.6,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN"
+        "REPUTATION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
         "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -84,12 +82,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation. Classified as analyst action.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -635,16 +630,36 @@
       "published": "2026-09-29T08:06:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Shares Flat: Why Bernstein sees upside with ₹1,150 target",
+      "url": "https://www.thehindubusinessline.com/markets/hdfc-bank-shares-flat-bernstein-maintains-outperform-rating-with-1150-target/article71550068.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-06T10:55:35+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank Shares Flat: Why Bernstein sees upside with ₹1,150 target",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSEw1cWxOX01TTGRZT0JPb3ltTFVpUExJSFFGczVLRDRoZHNkNUlaQkRUSm16V2JMQTRmY3JaYWk2d2VHd1pBQ2UxU0VVd0VqMUlIVDRsVWhySHNKdzh5QUczMkRUUlBuZkp2c0NGT3ZvQ0x3dU1hQmFleWFKLTFMRXZMSU1vVnNmeVlVQXJjU0VJUjVSRTR5Z2k3WEtIRFBraTR4LTFIVk85MUZPbHVWQkVJc2FEb0dvTXpNMF9CUWhqQW5CcmRtUWFsNlF1a2xpUmsyYmd0WGrSAd8BQVVfeXFMT2RENWM2N0N3Nks2V29hczJ6cGp4SXZsa3NhMUxqNzEtRWNEa2ZXZ3NVbVNCSlRyeVFTWWRSdXRkaFZzc3hyeUdNS2xHSDJXS01rcldoS0Foa1hZdWxYMGVyV0dEcGpSbG03SDZRd1VDbXRJTGFFWElOc2czRmIxVF9GNWhsRUpfSmJPMUxOX0FSdTJ6bEpVNGQ0R3BqelFfMjUxZFdqTy1BcGVqME0xTjVxVTlSb2tKU0V6dWlIMndOeGE1bVFKbEtfUDZlVzNDbmhLdzRjbTd3UWx4ZlpGMA",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T05:43:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 22,
+  "article_count": 24,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-09-29T13:14:45.015969+00:00",
+  "last_updated": "2026-10-06T13:45:56.806848+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
@@ -720,6 +735,16 @@
       "timestamp": "2026-09-29T13:14:45.015963+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:56.806823+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:56.806842+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

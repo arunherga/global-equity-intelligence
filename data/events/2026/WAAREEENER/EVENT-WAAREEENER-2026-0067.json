@@ -362,6 +362,44 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -484,16 +522,26 @@
       "published": "2026-10-01T13:06:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Avenue Supermarts Share Price - Live NSE: DMART Stock Price & Chart",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XWFIwbkpBcGVGdHFZSy1zZ3BtSzZQcWtzaE5SNWRXRGs1TEJlRnRqUklZcTh6eDBVMFdjOWdyZmJ0bTdJYVNkNGRpZFk1RFREblJELUtPaHBfdWpEellZOF8yaUI4SklLeXhrV0hXWE1rUQ",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T15:39:07+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 12,
+  "article_count": 13,
   "source_count": 1,
   "primary_source": "Upstox",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|energies-nse-premier-premierene-price-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.760030+00:00",
-  "last_updated": "2026-10-02T12:57:19.838180+00:00",
+  "last_updated": "2026-10-06T13:46:05.616587+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.760061+00:00",
@@ -564,6 +612,16 @@
       "timestamp": "2026-10-02T12:57:19.838156+00:00",
       "change": "sources added",
       "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:05.616560+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:05.616582+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -9,31 +9,47 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "thermal coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to thermal coal, and China. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -57,16 +73,26 @@
       "published": "2026-09-27T11:39:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Asian thermal coal markets remain mixed; low Indian power plant stocks support buying as China pauses for holidays",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOQkRGbGw1bEdqM29KTEpiSkR3QWFXZ3RXRlphalpEUGFkYWNpWjRsRlF1cGFpVzVZSF85WVRxWjFES3ZLLXowRDEyWnFBUUZNZGN2OV95eUFucFJvYV9iQUY3U0pGYmRWeUJ3TUdJa3dKTHJLelpFN2Z2RllVQVk5OTA3NXNmV0puWDkxLWNGQU5zOWlTMVhwdnlCb1RGdnZaZzgza2sxcXBGLWFWcnNaMUlxbUg5MDRTTGEzaDBkc3AzQnVjeTNTUkdPcGdJQllHVFRraHAyRU54OUhSNjVvWTRkOVFoNGVVOUhOczNYSFQ",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-05T13:55:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MillenniumPost",
   "cluster_key": "COALINDIA|OTHER|coal-critically-low-power-share-thermal",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.332932+00:00",
-  "last_updated": "2026-09-27T12:16:24.484316+00:00",
+  "last_updated": "2026-10-06T13:46:03.633303+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.332988+00:00",
@@ -77,6 +103,16 @@
       "timestamp": "2026-09-27T12:16:24.484299+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:03.633279+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:03.633298+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

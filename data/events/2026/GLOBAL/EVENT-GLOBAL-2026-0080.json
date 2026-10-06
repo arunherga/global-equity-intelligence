@@ -13,14 +13,13 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "MIXED",
       "confidence": 0.15,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND",
-        "MARGIN"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,19 +29,11 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "+2 International market development",
+        "-2 Weak indirect connection",
         "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
@@ -56,25 +47,26 @@
         "speculative language"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
         "deposit repricing lag",
-        "loan book mix (fixed versus floating)"
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and interest rates. The parts of the business most likely touched are revenue, demand, margin. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
+      "relationship": "DIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.15,
+      "confidence": 0.26,
       "business_impacts": [
-        "REVENUE",
+        "MARGIN",
         "DEMAND",
-        "MARGIN"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -86,17 +78,16 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "+2 International market development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
@@ -105,17 +96,172 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication",
         "speculative language"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
         "deposit repricing lag",
-        "loan book mix (fixed versus floating)"
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and interest rates. The parts of the business most likely touched are revenue, demand, margin. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to TCS, and India. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -229,16 +375,86 @@
       "published": "2026-10-05T18:26:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian shares extend gains ahead of RBI rate decision",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUFdSdW1FbkhzY3J5Y04zU1VhQnN6MWpGazU1dXBDMU9md1Q3RjlLRUlwNEJHWW9rbzRXdGRqQ1FxQ24waTVZWEM0X0hmY0FySmVxNEpBQVJOamhEc2VNcmFvM3hTcUFVdzhGN1cycmt6Wk15U09iTk1uOFcybFVOcDVJUEVwMlFIMk5mUnlxdUhKR3ltY1czVkRUdU13dmxMUjNjWVVMRFgta2ZG",
+      "source_name": "Reuters",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T01:54:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Oct 2026: Why A Rate Hike Could Be Inevitable And What It Means For Homebuyers, EMIs",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSWhsRlQ4WGp0djlBVm1vS3MwRTRtY1BaYU5BSjNZVE44anZsU2tuUE9YRjZKTGZxdmthZkotM2ROR3FnUmcxTTVZTVRhYWpOZjFudm9rcGJQcTFzWnNZQTRyc0N5Nms0aXlmZml0blpGUGhnWGYzMEhENXlzNjZXaDRkdGFmLTI1dHcxNXFZZFZyc1MzSldILTNjOGpZYUpvN3d0RmJiM2pzLXBmdF9rQTNpMDdfRVpSM2Nva1ZTTVdReERtRktOU0tZRmVFUUEyMFdxbEo0VzhIdkV3OGtvM1J6OWPSAesBQVVfeXFMUEhELWtNbTFnSnV1a0NnMVV6b0QzWXVkRllRWVlfNnFpSkNmX3Z5TTV1VXRoMjQxVkpoWjNOTUc2Y2M3ODFQdkVEaW1rd0FsUVV4bWtUUzdKcmY5cDk1R3d4bUl2VVgtMFgwWVVQLTNEVUVvR3NxQ0ozN05hMWE4MS04X2l6TGM0X2RwMW1IbXlYd1U3eTZUUlByTjc4SHRQdjJtNVlUeU1IeExJQlJFQ2dqSzFsU1FOZUJXVWxFUkFJcUUwdVNnNTVKY1k2WU5OOFY5Wms5MlRmWV9qMEJiSnJLLXNzaFpYakpvOA",
+      "source_name": "The Daily Jagran",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T08:05:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC interest rate decision in focus: Can a 25 bps hike trigger a market sell-off?",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQY1Qxc3ZrMXd0bXZnZ2I4YnQ1NVA2dW16eFdPbWZYRlpiek1pak9ON094cVVpanFoQzY0US0yc184S09kMUZkeDl0QnpOMXAteENZX2Y2R1Z6Q195ZzJSZVU2d19lNVpwaVU1TnRWWGdIRHJOcFN6aUhNUW9JdFh1cjlrYjFqeENQbjJiOVZKU082TURPUzdzNE1VYVJaSzBlcm9JS1hIWmQ1bF9fMmxWRmxEajB2b2FZVDlOVThudTVTczZ1NGxmVlROQXJSMzYyQUx2ejA4R3hVdEoyZV9Wd1hjTWVCMGPSAewBQVVfeXFMTW1YM3ZMOVNuMHgxNzl1TzlfOE5iQXpNV3RyMm1iWmRyYmtXa1Q0dmxTYXZMUTk3VlBCNEViUWZWaVZmSDNqLU5KNXlwV1BZRDB4blZjVVhFTHNDM0V3TWhoTkgzcU5Cd3M4RDFEeUQ3N3R3Z2dQYjVSdTZHcFpxU1YyclgyMzJLaVRTYWhvY0RNTHFjeWM1Nnh2NnMyRW1HOUQ2WldaalJSTHNKYjk4N1VNRC1CVGpzQWJjRGNiUG0weUZwNW5KOFkyUmttUmtaVldRQUJqSkdXeUtZRDZQV0hIMldlTnVsSE9oUlg",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T12:11:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC meeting Oct 2026: Why TCS, HDFC Bank, ICICI Lombard, Coal India shares may gain if 25 bps rate hike is announced",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNTjRBMjI2ZDV6ckw3Ym5SZEZQbzhEYmNNZ2tSMlNkQ1VvY2N4dmgyT0FQWkhENmlwR1FkN3QxalVZbG1DOWtnN2pyOWwzSHZ2U1hvVzhLRVhET01JRXJYVWtuMjZERmJNcThOdnVpRlU1Z01Yb1Q0a2xNX2JNVGIweEFfZ0lheE84bFE2cF9qdm02dHBtcmViVHdxTkF5UGxqQzJ1YkVOOUU1dzhLMTU0MFpvX05INzhtMFlOR05zRmNyLVJ0b2UwWVBjMXpzM0FFai04R04tdk5yMWtnZWVfa1NYWC0yNUxfcWtSTTAyNHVaekM4ZmF5dnZCaTNRZm5vcnZUYjJsZGtJM2xJbXJDMk9B0gGXAkFVX3lxTE9sX2d2T3JOR0ZqVFExdzFsbjFuUkhQNGdDZGYyNXJuOVlrVjVfMnBxeEMzbmgxazV5ajJISDRKTjJDNDFVQlZXRTVuSVFiSl9SYUFpTFlha1NJU2lTY0NHX0dkRGZlRU53WFBfVG9qMUNhZDlyUGk4OTh3V1VGNUxCMXowcTdjQ1F3M1BXdW5kdHF5cnliMWRSWGVlaEowVHI4WTNxQXdxajU5ZVVodHJ0VHBhQVlsbGp0Xy1xT09ZLU9zVGNTY3RCSmVTUjJqclc0eUNoVzRQaWRUWUUybElVLUQ0U2dmQXZSemYzZGJkejRfaWNBdXJpQWhleUxMbzRDeDVaWWF5NUlkX3dqLUEyblR5U2NINA",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T07:38:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC: Rate hike in focus as inflation, oil rise",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSEJTOXZzSDZlYTRCZGNxNkFuV1JvUG9WeHVyUi1yaGpNdkgydWlBQ1Z2R3FVRkltcS1ZXzVfZ3h3LTBzRE54U3BXWjdTZXc3Q2RSMllJTmtjWV9JYXN3bjdyeTA0VUJCMnJUZXlYS3I3THpOeWR2NXRoVFl1M0laS19iVVhESTNiRmFYcUlmR3oyZFNvX1RxN09ZdUsxY0RQ0gGmAUFVX3lxTFAwWUVwWS1XV2tRZGlmdFVoNkRIeFpKRnBBeWJHWGt5YklJRUVvLVdCVjVWS3BRSk9OaFNPRGVVcUhtY2N0ejV2UzNTQTMtcmFMMVIzUVhJQ2pUTlZQUEJsaGplRUhCbnNDZVdJbnNFYkJSbHhUeHNkMUVacjNTdTNSNXZ0Uk9WLUlocUJCRXM1TFVycWRjYVM0UVl0T0Uya1pZcFNHZ3c",
+      "source_name": "Forbes India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T09:50:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike Stocks: Why HDFC Bank, TCS, Coal India May Gain",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORkowVC1va2lkQkY5ckkwd1BqbV9vYXN2c0VGUXRsY1YyWHhaOU1VQndLLWU1VEZ2cmhZWVZ0aXpObFJnUTN4VFlfUUl1VHhQLUxabHgyWjB3T0hTRXh5NkJGNFZpNFBpeWFFWjdDSWVsMDhKYl9nbzVGT2dtaXpHNTdNT3dhc21QTWp0YmpIUXFabVBEUmRfSnFpRVpFSmxVa3FF",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T07:53:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may defer rate hike to December, deliver 75 bps of tightening this cycle: Madan Sabnavis",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUE10cl95MkpxMXcxaVdLYzdoWnIyOXNXM1VyWTZkY2VqZ3k1c01XZVAtWEQ0Q2ZnWDhVLTN6T1FqQ1dqUjA1UWRtXzNCUkxtM0UxaXZTbmFScTJ1dXI5c2tsYUZUUjF6a1VCOXo1OVNXMTNOc3FjdzcySmRheEhIMkhicHpQdUFDcWg2ZTR5N1lmLU9wWEhWMUZsaHJMd2h6VFlnYUF0Qlc4SXRrcGxkNEh4dENjQW12RHdHZVAzdm90Q0hOMTdnSDk4d3AzVW5NdVNCX2ZlWWM",
+      "source_name": "aninews.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T08:34:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
+  "article_count": 18,
   "source_count": 1,
   "primary_source": "The Hindu",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|2026-deliver-raise-rate-rbi-two",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.649054+00:00",
-  "last_updated": "2026-10-05T21:42:22.312254+00:00",
+  "last_updated": "2026-10-06T13:47:09.904795+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.649082+00:00",
@@ -304,6 +520,46 @@
       "timestamp": "2026-10-05T21:42:22.312235+00:00",
       "change": "sources added",
       "detail": "The New Indian Express"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805279+00:00",
+      "change": "sources added",
+      "detail": "Forbes India, Livemint, Reuters, The Daily Jagran"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805298+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805305+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 2"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805310+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805314+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (DIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:22.805318+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:09.904768+00:00",
+      "change": "sources added",
+      "detail": "aninews.in"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:09.904788+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

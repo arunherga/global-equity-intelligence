@@ -48,6 +48,56 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -60,21 +110,41 @@
       "published": "2026-09-30T03:03:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Floats Tender for Contactless Tolling at Kukdola Plaza",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYkRQNElOdExOWFFGV2hWUHJkajlpNm4wcGlBeEJnYlVFdmRVZWlPWURoUHNWVGYyZ0dUMTNOU0FNTURJeEdkdnpkU0FRcFdkdjZrQ1YzUV9GZWxDbnNUV1JETGFOOVNuOHdfWDctbEdObWRMcHQxak5GNV9BczlDSTEzRVdiMlBKcTF4Z2ppbU94VFZJa0dwakVOYzlQWThYT3dXQjhlN2pRWUtjNkZ2anJ1RFBwYUpaX2s5dlpVMzdxbWdjd3dSWExmM2R1dkx1WU1SZ3dQNVBPQ2FYeUpKdzNac1dVZy1ITWpjUkZ3",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T09:17:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindustan Times",
   "cluster_key": "JKIPL|TENDER|contactless-floats-nhai-proposed-tender-tolling",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.997387+00:00",
-  "last_updated": "2026-09-30T12:51:04.997465+00:00",
+  "last_updated": "2026-10-06T13:47:13.859174+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.997460+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:13.859151+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:13.859169+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

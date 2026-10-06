@@ -63,11 +63,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.15,
+      "confidence": 0.35,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -89,11 +89,17 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "home loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -101,9 +107,8 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -111,7 +116,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -145,16 +150,46 @@
       "published": "2026-10-04T23:30:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike likely: Will your home loan EMI rise and what does it mean for your FD",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMDJiby1NbVdweWlwYmN2RzhGRXJBbFowTGFTdTB6QXpRX05WTmp4cFdKZ3VfWkNaVVV2cDNKYzdlMzBlMUxLR1dmeWFOOWlRTV93N1NhVXVJdUpvMkZRbU9BbXFrZ3Bqd2lYWE1KR0k4dnF2eDVRclJHcFBYeWNfcHExSUdpc1JxNmY4QXlhTndRLUVqM2gxcFRtYktsYzBzbFBCd3V2Rk1ZYXltNjZtOHZXWWZlenM0TW93dm1IM1JtUENCOXpWSUJDWDRDbHJ1TkxpU2RXeVpZZnYyOXRkLURZaUVCTVNrcS0wQUJBZkxESURH0gH6AUFVX3lxTE1yaDRhcmZSSzNXUksxeFRtbUlMNTJ3ZWJib1VHYy1ZbUNWTFVaSUtTeUEyN19pQkVtdFZkTHZhYkxnLVdLQmR2WGVibzVMQkRPRkxhSFZoMGpzbFdsNzBoUmwtZHZrZjBiaTNiVnFBMWhEUWpQRTVjTzVPNks0MTI0Nm12SXJpaW4xbXF5OWpUVktjY0lmZkN1Y1M2T254TFdNUFRrYkU0aWozczFjTGF2ZzBkZmlnN0lKV29OUVItTms2OGZTbVQ4RmNQeHczNnlCZVlEcFJpSDh2T0pDZ1FZSWYtckNOdFZLTmdKYlNOMmV4Mzc3bUx5NFE",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T01:56:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: What happens to your home loan EMI and FD returns if rates rise 25 bps?",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPd0wwMTJadkxSWHhVcG9WMVp4VnhPeHB4Z2FZZ3l2UXRxTVZMMlc1NTRTbGdHMUJpNGRINnNIVklQYXdYWUhIY0ZWei1FUXAwdlRBUUhhTlR4UE9DWTk4dVhVRFpUNXo1eFRUeHNnbXIxS19KUVFhNk5maWhHVU1ZcnhCRnpjZnVabU93WW93SC1WdW9yRFZJbElGZ2RNLTg4U1dTTUZ3OG9oME1TODlkeUluZ1JzYWx2VlU5UC0tYnNLZ3JBcVZBMlFJdWdMUzBwbHBqbE13U1BzWTdFTlVKdVZuTFJUOUhjdFprd2Znd2LSAfYBQVVfeXFMTXlwVnB3eHdfaGhOUXlrMG01QjBDT2JpUDVaOXNqNXRkWlpfRmNKaDByMkp6djdvUEZ5SVo3dXUydks0ejI5aFQwWDZkeDZLTUlST3hJNTFDbXlZeGc1XzJ4WUhhYzN1aFp2WmtHWnBjQVhBalMtX2JBN1RlT2pSWUZqbElKSkNnQkxRdWpkemJOalJjZVZnel9Ub1R1cUhSQzlQbEJEdkd6M3dZaDJ1aFEydjVuM0FLay1qWjloN2JsSTN6VGRTbWxyck5Wb1lBNDhTT2NBb2RRbi1oeEdUNnhjSnVKUnJOWjBjOENoajl1bFBzeGNn",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T08:45:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "What if RBI hikes repo rate by 25 bps? Check impact on your home loan EMI, interest",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZWh4Y1Z4dXRwWGtrUnVadl9TQ0RENTNSTlFLOG4zQWtqUkVQS3gwZmFJM3JJZmxBRXFEMVREVXlRcmlTZWZnb01KMl9WRHl6bHFSY3ByR256NVFrSVVrZlJ0V0UtTm5iQ3BxUVJJUTBneTF5MjRYZVBxUklNeDhxX255TDRWdmsyQnM5dmg5LURuNnZlUnZXUndTTjZTR1JTUmkxdC1KbDR4SFIwVDE0b21DUXo4aW03U2RUN2RGb2hXVDhSMk5nRjB4LWVDMWtjLVpOWjI2ckbSAd4BQVVfeXFMT0Y1dDdKSU9jZEJvVkdGVWdJUUZ4MTJBeC12UkRWZHljRU1Fb054eXlKUFlmT3VvcHdlcUtYcFoxQmlnUWRVZ3p0OVFibk1Td1NCOVpITEZxcDZTUWFwQ0ViVzdsNTlkdmRKUjVyVjA1cXN4RHBTbnN2N3R0X2p5a3U1YnJ4VlhOVl9EeUp6ajF1a1hES05Lbi1zWVktUTdxSlpBM1RzbTdHVE9rbDcySnRVNE9fNDhkVllMYU1SRUlGRVkxUGNVaTNzeTdTOURqcjlhdVZNRlVNWVAyMTFn",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T12:43:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "LiveChennai",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+INTEREST_RATE|car-emi-home-loan-rbi-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.661296+00:00",
-  "last_updated": "2026-10-05T15:06:35.372413+00:00",
+  "last_updated": "2026-10-06T13:46:23.345041+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.661346+00:00",
@@ -165,6 +200,16 @@
       "timestamp": "2026-10-05T15:06:35.372395+00:00",
       "change": "sources added",
       "detail": "Bhaskar English, urbanacres.in"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:23.345017+00:00",
+      "change": "sources added",
+      "detail": "Business Today, India Today, Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:23.345035+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

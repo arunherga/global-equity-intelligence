@@ -4,19 +4,24 @@
   "summary": "Rupee Slips 5 Paise to 96.30 Ahead of RBI Policy HDFC Sky",
   "event_date": "2026-10-05",
   "event_types": [
-    "CURRENCY"
+    "CURRENCY",
+    "INTEREST_RATE",
+    "MACRO",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "DEMAND",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,33 +35,39 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "DEMAND",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -70,21 +81,25 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -98,21 +113,91 @@
       "published": "2026-10-05T10:52:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee slips to over two-month low ahead of RBI policy decision",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-slips-to-over-two-month-low-ahead-of-rbi-policy-decision/article71551180.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-06T12:32:38+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "RBI Policy Decision in Focus as Inflation, Rupee Pressure Raise Rate-Hike Expectations",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNazlrNUliR2djbkxXLWxWaUo3YmhrOUVOSVd1OFN4SDUzX1BSV2RZTmc5c1d1YTZWRC11Nm1uYmdIbzNwLVluR3I0UkE4M09hTVo1VGx0TmlhbmtDRGpQNGRYWWxOS3paQkdtMGRUWEFKWDdSaTF5eG03WU9rX08tNTZhOFVYNUd0OGZNcTdjY3h3WEk1V1ppX29MSVExRWoxUXBwOHNlV1F4T2FJVldiWVdULXRkS2x1",
+      "source_name": "boldnewsonline.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T09:10:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee hits two-month low on outflows, investors await RBI outcome with hike priced in",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNX0pKQ1lVTkthYW9pWGs5Q3Y0eEdBYzRzaDUyM2Rld1J3TEg4czBQMUhjNmUyT01Ha0Rnc0I4LTlnbl9zdjFYcnBJbElOc2lvY1hKeXlxakhHeXVUNXNxQXpoUktjMXpicElRSWV6ek94S3V3TjdhLTI3VUEtblljOUtLYnBZTTJObmdVaXBXdF81d3NDa1kyeUlZeXJwcms5RHZsRHRqbEZwSXp6djkwMTYySzNaSVNpd1ZSdDFrc0FmMkh6dFlveTcwcU5LZ3hxX2p0MVpzWmlaMVR4Y0JiYWpmR2NVR3N6MjVZWDBmTkk2SU94REHSAfsBQVVfeXFMUFotZjhYQTNMUGZWd0JYRmlvQ2t4SW1weW9UcU0wTWV2dmNuVXA3ZzJuVFZnQmJsUWQ3dnl2V0NhVEVoMEFCc1gxSXEwSG5aMHVCLTBoR19VTF9TVmZrZkVMRmZqU2pGeE52eGladWVSeHNrdExyUzI4NzV4eTlKRTNzN0lLcDE4eDVGOGkwZG5TTzFWYWxwSVNhWEp3a3ZzblhtVUdpNVR5U3BIR1VybHJreVdyTklEVXhERllwaktWcFJ6OHdaZ084Um9JX2g5M2o1ZDB4dXA2S0ZWNmhCVktMZ2lvcW5zSkFlN2Z5bWdlczhVdHR3TDF3UFE",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T10:50:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee slips to over 2-month low on portfolio outflows, RBI likely steps in",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ0lSZUtMQUxta0UxYWk5VkZhbDBjc1cyZjNrekxmWVJ2NU1HZE0ya2NPTnVWSE5QSFplYmpqdTV0OTJwazdKejNuZTNJN1VQNGk3aHVDMmVnSzdXOW1wLUlXTnZDaVBXTHRMdTJLTHFTU0FsNGlISlJOT1RwQVpzZFNma2R2LTluWTdQWlFRcDdUTGVUQmxkcWJpMkloV1l0elNmRE55WlRQZlA3SURBSDJHbHJlSjRGcDBjZWhMb2xxeWc",
+      "source_name": "marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T03:11:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee slips to over two-month low ahead of RBI policy decision",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNLUJMN29XVmRHWXRYemVsd2JaRkhIUHFjSU44WUo5X0VvWlpSY2d1ZDF6OHEteGpsaTNUUG1pSEFOMTlZaS1icHdvY0JLUFB3WEZUR0pmZDMydkJMeG1kenVOVFRBRGdncF9Jcy02Zm1RNUFDQzBfbDhjWXpyNFc2ZHhQbVM3UmpxVmNPV0pqMmNkc0ktdWg5a0ZoQjVVdVQxeWpGa0d2OXQ1MmVkRHdMQmZoRUZWZlJvN0Z1bEJtMS1STDZvRmZ1bGxaYzlLUdIB1AFBVV95cUxPZDUyc1dyOEttSW1jTmhYS1psYkhiRDlhQjM4WlJlX3F2a3YwSnFxVGZYLWJvWFd2bFFGVkVLQkRMM1ctZHNYRkxZa3RkaGtRZHQ5VlRJeUt5a0ZneEVaS2lmcGdfMHRSNGRaS0xtVDktRktJb2RJR1ZUdGRRWkNLVlFLdFlwLW1fS2x3TmI2U2gyZXpUa0hxYnlYTTc2NkFDc2tJUnloaDdUR0dvMGRsRjV1ejFsUWg5UmdlQnBEbzRsMHhYNzZKZXlwbm02RHFKMjd4Zw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T12:32:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "HDFC Sky",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|96.30-paise-policy-rbi-rupee-slips",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T15:00:04.259848+00:00",
-  "last_updated": "2026-10-05T15:00:04.259912+00:00",
+  "last_updated": "2026-10-06T13:45:58.192968+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T15:00:04.259901+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:58.192932+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Economic Times, The Hindu BusinessLine Markets, boldnewsonline.com"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:58.192950+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE, MACRO, REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:58.192958+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 4"
+    },
+    {
+      "timestamp": "2026-10-06T13:45:58.192964+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 4"
     }
   ],
   "price_reaction": {}

@@ -9,9 +9,58 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
+      "business_impacts": [
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "rooftop solar",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+3 Government policy or tender development",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to rooftop solar, and India. The parts of the business most likely touched are revenue. Classified as tender.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 2,
+      "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
@@ -22,39 +71,88 @@
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
-          "term": "SECI",
+          "term": "Coal India",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
+          "weight": 2.0,
+          "detail": ""
         },
         {
-          "exposure_type": "INDUSTRY",
-          "term": "rooftop solar",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "-2 Single unverified source"
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "bid outcome",
         "order value",
         "competing bidders",
-        "order flow from SECI"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, industry exposure to SECI, and rooftop solar. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.45,
+      "business_impacts": [
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Mahanadi Coalfields",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Government policy or tender development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its geography, subsidiary exposure to Mahanadi Coalfields, and India. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -88,16 +186,26 @@
       "published": "2026-09-28T06:49:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields Tenders Rooftop Solar Projects in Odisha",
+      "url": "https://www.mercomindia.com/mahanadi-coalfields-tenders-rooftop-solar-projects-in-odisha",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-06T15:40:14+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "mvapulse.com",
   "cluster_key": "WAAREEENER|TENDER|mumbai-projects-remcl-rooftop-solar-tender",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:11.026181+00:00",
-  "last_updated": "2026-09-28T14:13:25.608484+00:00",
+  "last_updated": "2026-10-06T13:46:02.510527+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:11.026224+00:00",
@@ -113,6 +221,26 @@
       "timestamp": "2026-09-28T14:13:25.608479+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:02.510493+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:02.510509+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:02.510516+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:02.510523+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

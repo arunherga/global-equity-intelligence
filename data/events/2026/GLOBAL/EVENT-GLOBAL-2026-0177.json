@@ -13,15 +13,16 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -32,21 +33,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "TMB": {
@@ -314,16 +319,46 @@
       "published": "2026-10-05T04:25:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price falls by Rs 120 on October 6, 2026; check today's gold, silver rates",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNjJFVXp3VE9OZXpGWFdfenR0aHVqRFZyN0ZnYzhTd29GeUc5Vlp6bWd5XzZrY1NyTmxEdHNmZmZ3cElQZC1Ebml5bFRTaU12aG93VDFBZEpmTWZ2RERpQTdsSW9vRXpmRUpVSDZteG9DN2RjVmFMcHBzMFJINnJQQm1tSzdTeUgtYmVUa2xBSmkyazgyMHdvcUx5elhROWlnajVXcVB5cEN0bHJrbkZkVlJ2MEl2ZHpPNUHSAccBQVVfeXFMT3FITkJwby1tVUhNalUwT2pGM0t6U1lQRjI2SGZvQlBYMzFJWFdPRDFVeDdFZjBHbzNfeklBU0VRZkpIV010WEViZGg2V2M5NWlSd0lSZ19xNy13NXJiM00wQ2dDdXBOZDlNdTVTTEFPaEFxdHB6UkdrNDRGOEZScmhnaGVrMlduZE1naVd3LUFSaE8tQV9TU05KVWJVWVJZRHVtZXFOcC1ZZ0NZWVFuOFNDdThFYjFkYzlhTkVuRkRoX3dCalFNZw",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T04:55:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Fall By Over Rs 600 To Below Rs 1,49,000; Silver Rates Fall By Rs 1,700",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTDhHaVY0dFBJUFVycVR0TFR1VkN6U2Zvajh4TFJyTVB2ODJ6dzV2TWU1NkdIMGh3TnpTSk9nQThVUWc1b0dnbXNabDFUcFlmMnZHWWdxN0cxX0R1YzA2Yi1vR2RpbnRaMmpmTm5EV25DN3BRcUJRSTA3M2xrUnM2elRZYWdkREhJdkIzN0xXTC10aktZSGktc2E5WklfYXpFTmw0X09vS1pncGpHME10NFZDbUEzMEh3Qi1vQWVXbjdWQ3Z00gHMAUFVX3lxTFBtSHB1UHg4OENzanZNMUpUajZTR0ZTQTdLOUZCTmpLQkg0ZHo5b0FrendjSk90eDVmN3ZXdEYyT3E2UkFNUXJHVlNYMVlGQWQ2RUxuYWRQRWtMNVlSUm1WUDJWVXRpd2N4YmFOR0VvZkhVNjhyalFhN2hzUmNqZXNCbV9uaVVsck03YUxOaXVjbFdxRlF1WnVDbW5fNzE3ZVcxckVZUEw2Q0JwUm1CdjRLY1R4di1nV0JMbzRUQW1KMGgxQTdfTjU0YmtpZA",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T08:25:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today Drops In Hyderabad On 6 October, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZk5NSmQwdEdyR2kzZ2d4Z2JibWtmTGNwcE90NUlmcklLdklacTVHU1BITWJtNk4tb0NRUE9tc0tqalo1VGt5WEZWbmVlQlFvSnRSU1V3Rkx5YnNlb3dwdFhQTVBhb2FMT1JKRFdWTXk4ckVBQnJVNlNIRHpoTUYxdTJR",
+      "source_name": "indtoday.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T09:57:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 22,
+  "article_count": 25,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-10-05T15:06:47.209218+00:00",
+  "last_updated": "2026-10-06T13:46:45.491849+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -434,6 +469,16 @@
       "timestamp": "2026-10-05T15:06:47.209198+00:00",
       "change": "sources added",
       "detail": "DT Next"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:45.491824+00:00",
+      "change": "sources added",
+      "detail": "DT Next, NDTV Profit, indtoday.com"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:45.491842+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

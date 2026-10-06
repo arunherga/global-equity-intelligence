@@ -43,6 +43,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -65,16 +110,26 @@
       "published": "2026-10-03T07:38:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI invites bids for ₹11,537-crore Amaravati Outer Ring Road",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOamk3MFhYd1h0UDVidmpYd3dTdml5RlI0b3pnRjVHUnJpRmdvUzlfMXp1dEdUV0s3QUJjSWM4empZUng5VlpXLWN2a1NwRHkzRzR0YnV0WHRPeE90enhUT3NpSXF1Z1dzSjh6aWRIVUpYNGVSeHBIZmFEZE12SXJvVVdGY1EyUkIwcng4dXY4RHItNXRjQmlMOFFYX05PMEpVRU5pcEc1cFFWMmxsWlBnRV8zckt1R3cyMkU4SGpESXNNU1hOYUFqS19Sb0VoUdIB1AFBVV95cUxQcnVMR1FQZ25KVlM1TXhwdmJEcG5OVFp2d1VsSGxpeWVOekQzYmMyZ1VCUWR2RHowaFU0VC1EcWJLRVNUb0hiTkhwRU9sS0NkTzl0TGlfTVI4bnFycDVEcjlyM1hiRHg4TzFSZ0Z3UmZWQlA3RDJPcUhHdGxZWXBoTVhoLURtTDhkd1k5eXdUMEM2R1JsR09OeElGYUJKMmlhVUd4dV9TY29ZTjdxckUxeU1mRjZCZEZIMmhBTmRtaU1JLVQ0QnlQZTkzV21HMTl3ZmdUTQ",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T08:46:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "JKIPL|OTHER|491-amaravati-nhai-outer-ring-road",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.713314+00:00",
-  "last_updated": "2026-10-03T12:01:32.353000+00:00",
+  "last_updated": "2026-10-06T13:47:10.857298+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.713378+00:00",
@@ -85,6 +140,16 @@
       "timestamp": "2026-10-03T12:01:32.352983+00:00",
       "change": "sources added",
       "detail": "Biltrax Media"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:10.857273+00:00",
+      "change": "sources added",
+      "detail": "The Hindu"
+    },
+    {
+      "timestamp": "2026-10-06T13:47:10.857292+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

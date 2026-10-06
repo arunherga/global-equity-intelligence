@@ -96,6 +96,87 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank, and Kotak Mahindra Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Marico",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Marico's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Marico. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from Adani"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -108,21 +189,91 @@
       "published": "2026-10-05T13:41:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks in news: Vedanta, Kotak Mahindra Bank, Marico, Axis Bank, Trent and Zydus Lifesciences",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPYzZIY0UyOG4zZzd6c3RaUjZERTBmblNwVkdiSWsxLW5TUUNsUkVQVUZQcW5NSmFQck9oY2Z2dVlqdlRZQnRVcERYYW5oeHVvRzdoazY5TWRBQ3BiWVhic240LU5IV21kd2ZkaTNpaTVNUC00aFVwRUM5VTF4MjN6eURUTVhNMEJvc2cwcWhxemZPWEdfUGVJdWZINzh6STZ1UzgzUVZkbmt1SVRhMGhPNU9UX1hjdUFxUGVMUVBZZy1lRXdWMmxuWU9LQ1hCTXRPcGFfdkVBOE13V09HY2ZmU2s4Zm9mSTJ5UUQwOS1WaVZJbzVMeHJYVG1vR2RoR3lo0gH6AUFVX3lxTE9KNHNRaTJPS2pRdi1SVFdXS2M3dEZIRXhqWWItVDFZLVpRWHJuNUlBR3BLYUdhNkdiRGN3cWFqZTVLVlBOQUJzUFVDNGZHb2VZWnlaelVXM3hJRmljZmR2d21HbTVSWGRObDdzTFhuMlZJdjMxU3dhSEhpRElCOFRWOW1rVnFlQ05wcnU3SnJXbDdUSm9qNzZsei1ha2tZRHlTX0xURkdnWWY1VmMySzF0TERVUTR2VXFEMk9mM29mT0dNOUIxNE5nczVZaDNuNGQySk5LMy02OEh1TnNCWm1ZMVpjY0hqUHJMZDc2VmlHUXpYeS03LWVldHc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T00:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to Watch Today, October 6, 2026: AB Infrabuild, Hi-Tech Pipes, KOTAK MAHINDRA BANK, Laser Power & Infra and Narayana Hrudayalaya",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWEt0c2hvUGpOUDFtQzd1N0NFM3NVUVlrWFRkUUMtT09BemRIcmVUTl82cHMyaWhwS09ENUtqb3gxTy1kLVB5OTl3N3FTaEtrNnYwRlVMLVZPU2hVc3FDZkhqZDkwTkFWMTFlaWF6Y2VBaHlQc3Y5UHJCQlJoVHFLN2pibUkxRDlFTDdVVWNmd29RMlhBV18tMUlyR2dQdVQwUVVvNXBBOGstbTRlX2JWSXhwOXpwLUhHTTdhT0VDOA",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T01:39:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to watch: Trent, Vedanta, Axis Bank, Adani Power, Marico & more",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZlFWdTdjQ29aeHlLNVl5Z2dhbGVEV0dfVTdiYi1KSkNQRldjTEY2dWtNWDhWT2VkN0xFRHV3eG1BUXNFM1ZQci1ZeU5HZzFwTHZMQXNnVUJWTTFfd1hxRWFfQjdVN3pQeHFIVEZiel9VNWxTbG1aekNFenZKSTFacGF1WTFPVVhWbVBubWU4TG8xQXBiNHdQQnc5RU5RdGFNWWFVbmlkSWlxenN2WTY1cDJob05RRHVqTlF1b1JfejlqZlJUcVVqaG9R0gHPAUFVX3lxTFBScHJtcUJQSnBXdTAzdWdHajhhNTNiclJJaWJxMDdxdExMeVhjWEJzOUZvdG82TzNwMGhlZ1dyUElmVEVYalZnd0VpWUhOUTNYN0c2Q1N2YnJMdzh4Ulp0a2Q5amtJalhGOUpLMlJldFg3Z29nZDJWYTFFeGFmR25Eb2YzTTdyQ1dKZzZ2Mkpub0JUb2tlX2xyUFdMYVlsaGFvOWllQ3BhRzljTlFaWllYN2hQVTZuQ19obktvZDQ4ZndLcmxnUHZyMEs4VnBEdw",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T02:40:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why Kotak Mahindra Bank Share Price is Rising",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZFhLbnRUdUlXR2QwSFo2cVJUUmdmUTlhRHl3ZEtLeERaQ1lnLXRnT0NzUUwwUjRkeTlTV1RqNTRhRVFfVDJrY0kxQlA1bWh4VDFWREgwTjh1NEJ1LTRnQ0xQM2xTdnhBSXoxbm1fTFZzQU8yM0NzeXZsSVJocXIwV3J2SE82bFdZaU9GTFl2QzRkZjhta2ZfLVlvRTlOOU96UjRkQnQxbjhDQk1mVWg4VWtraVROQQ",
+      "source_name": "Equitymaster",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T06:31:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "cnbctv18.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|axis-bank-kotak-october-share-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T21:38:46.814395+00:00",
-  "last_updated": "2026-10-05T21:38:46.814490+00:00",
+  "last_updated": "2026-10-06T13:46:53.653024+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:38:46.814477+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:14.964567+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:14.964584+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:19.834966+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:29.155006+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:29.155023+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:53.653007+00:00",
+      "change": "sources added",
+      "detail": "Equitymaster"
     }
   ],
   "price_reaction": {}

@@ -9,47 +9,45 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to Indian Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -63,21 +61,41 @@
       "published": "2026-09-23T02:27:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India banks face margin squeeze despite 18.8% credit growth",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWWJiYmZHWW9mcEJOQjJsTnB6dTVGaTJ5VTlITnhiWlcyVnZkUzUwMFhqcng0M2poN1k1M0VqcWRRcnUwLS15bFVUS3VTUExIZ2xxVmpITkRFbGVjZ2I1ekZLV20wWDVGcTZOUmliU2dsd0tQTGtzd3E1LXR0aktrNUx5am9XdzJYX0dYSklUOEVBWDhuaVRtNjJ5ejF2bk5wb2RQRnFVSmQ",
+      "source_name": "Asian Banking & Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T03:24:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Asian Banking & Finance",
   "cluster_key": "TMB|OTHER|127b-bank-deposit-foreign-india-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.607975+00:00",
-  "last_updated": "2026-09-23T12:25:52.608034+00:00",
+  "last_updated": "2026-10-06T13:46:32.966759+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.608030+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:32.966735+00:00",
+      "change": "sources added",
+      "detail": "Asian Banking & Finance"
+    },
+    {
+      "timestamp": "2026-10-06T13:46:32.966753+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
