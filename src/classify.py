@@ -235,6 +235,16 @@ MARKET_CHATTER_MARKERS = (
     "sensex", "nifty", "top gainers", "top losers", "stocks to watch",
     "buzzing stocks", "trade setup", "technical view", "f&o cues",
     "gainers and losers", "market live", "opening bell", "share price target",
+    # Price-move explainers whose stated cause is the market, not the
+    # company. "Why HDFC Bank shares fall 2% as banking stocks decline amid
+    # market slump" led the 6 Oct report at 13/15 - the single loudest false
+    # positive in it. Only market-WIDE phrases are listed: "shares fall 8%
+    # after a 1.2 GW order win" is a real development wearing a price-move
+    # headline, and must keep its score.
+    "market slump", "market selloff", "market sell-off", "broader market",
+    "weak market", "market sentiment", "amid profit booking",
+    "global cues", "market volatility", "amid selling pressure",
+    "amid market weakness", "market rout", "amid a selloff",
 )
 
 # Pages that list many companies and carry no development about any of them.

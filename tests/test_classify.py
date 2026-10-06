@@ -137,3 +137,40 @@ def test_real_developments_are_not_flagged(title):
     assert not flags.listing_page, title
     assert not flags.recruitment, title
     assert not flags.routine_release, title
+
+
+# -- price moves the market explains, not the company --------------------
+
+
+def _chatter(title: str) -> bool:
+    from src.classify import classify_article
+    from src.models import Article
+
+    article = Article(title=title, url="https://example.com/a", source_domain="example.com")
+    return classify_article(article).market_chatter
+
+
+@pytest.mark.parametrize("title", [
+    # Led the 6 Oct report at 13/15. The cause it states is the market.
+    "Why HDFC Bank shares fall 2% as banking stocks decline amid market slump",
+    "HDFC Bank shares decline amid broader market weakness",
+    "Coal India slips 3% amid profit booking",
+    "Banking stocks fall on weak global cues",
+])
+def test_a_market_wide_price_move_is_chatter(title):
+    assert _chatter(title)
+
+
+@pytest.mark.parametrize("title", [
+    # A price move WITH a company cause is a development wearing a price-move
+    # headline. These must keep their score - suppressing them would lose
+    # exactly the news the run exists to find.
+    "Waaree Energies shares jump 8% after winning a 1.2 GW export order",
+    "Waaree bags a 1.2 GW module order from a US developer",
+    "MSTC wins e-auction mandate from Ministry of Steel",
+    "Ashoka Buildcon receives Rs 1,200 crore highway order",
+    "Coal India raises production target for FY27",
+    "Supriya Lifescience gets USFDA nod for its Ratnagiri plant",
+])
+def test_a_company_caused_price_move_is_not_chatter(title):
+    assert not _chatter(title)

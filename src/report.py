@@ -91,6 +91,22 @@ def section_for(event: Event, impact: StockImpact) -> str:
     return "industry"
 
 
+def _one_per_ticker(impacts: Sequence[StockImpact]) -> List[StockImpact]:
+    """Highest-scoring impact per ticker, strongest first.
+
+    One company must appear once in an event block however many times the
+    pipeline handed it over. A duplicate used to print as its own entry in
+    the heading and in "Also affects" - including the event's own subject,
+    which read as a company affecting itself.
+    """
+    best: Dict[str, StockImpact] = {}
+    for impact in impacts:
+        previous = best.get(impact.ticker)
+        if previous is None or impact.impact_score > previous.impact_score:
+            best[impact.ticker] = impact
+    return sorted(best.values(), key=lambda i: -i.impact_score)
+
+
 class ReportBuilder:
     def __init__(self, config: Config, watchlist: Watchlist) -> None:
         self.config = config
@@ -203,7 +219,7 @@ class ReportBuilder:
 
         current_band = ""
         for event in order[: self.max_per_section * 2]:
-            impacts = sorted(grouped[event.event_id], key=lambda i: -i.impact_score)
+            impacts = _one_per_ticker(grouped[event.event_id])
             band = impact_band(impacts[0].impact_score)
             if band != current_band:
                 current_band = band

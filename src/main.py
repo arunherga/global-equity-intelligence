@@ -558,18 +558,25 @@ class Pipeline:
         window = int(self.config.get("clustering.event_update_window_days", 21))
         threshold = float(self.config.get("clustering.event_update_similarity", 0.55))
 
-        final_events: List[Event] = []
+        # Keyed by event id, because two of this run's clusters can both
+        # match the SAME stored event - near-identical notices about one
+        # proceeding, say. Appending to a list then recorded that event
+        # twice, and the report printed its tickers twice with it ("also
+        # affects HDFCBANK, TMB, TMB" on an HDFCBANK event, 6 Oct). The
+        # second object is the one to keep: it was read back after the
+        # first save, so it already carries the first merge.
+        final_events: Dict[str, Event] = {}
         for event in result.events:
             existing = store.find_existing(event, window_days=window, similarity_threshold=threshold)
             if existing is not None:
                 merged = store.merge(existing, event)
                 store.save(merged)
-                final_events.append(merged)
+                final_events[merged.event_id] = merged
             else:
                 store.save(event)
-                final_events.append(event)
+                final_events[event.event_id] = event
         store.save_index()
-        result.events = final_events
+        result.events = list(final_events.values())
 
         seen.mark_all(fresh, when=result.run_date)
         seen.save()

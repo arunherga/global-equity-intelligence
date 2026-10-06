@@ -499,3 +499,60 @@ def test_a_source_with_no_credentials_reads_as_skipped_not_failed(config, watchl
     failed_line = next(l for l in report.splitlines() if l.startswith("Failed sources"))
     assert "reddit" in failed_line
     assert "youtube" not in failed_line
+
+
+# -- one company, one entry ----------------------------------------------
+
+
+def test_a_company_appears_once_in_an_event_block(config, watchlist):
+    """The 6 Oct report led with "HDFCBANK ... also affects HDFCBANK, TMB, TMB".
+
+    Two of that run's clusters had merged into the same stored event, so the
+    event reached the report twice and its tickers were printed once per
+    copy - including its own subject, which read as a company affecting
+    itself. The report must collapse that however often it is handed the
+    same company.
+    """
+    from src.models import Direction, Event, EventCategory, Relationship, StockImpact
+
+    def impact(ticker, score, relationship=Relationship.DIRECT):
+        return StockImpact(
+            ticker=ticker, relationship=relationship, impact_score=score,
+            direction=Direction.UNCERTAIN, confidence=0.7,
+        )
+
+    event = Event(
+        event_id="EVENT-HDFCBANK-2026-0001",
+        title="HDFC Bank reports Q2 business update",
+        event_date=date(2026, 10, 6),
+        event_types=[EventCategory.EARNINGS],
+    )
+    event.stocks["HDFCBANK"] = impact("HDFCBANK", 13)
+    event.stocks["TMB"] = impact("TMB", 8, Relationship.INDIRECT)
+
+    builder = ReportBuilder(config, watchlist)
+    # The event handed over twice, exactly as the duplicate did.
+    pairs = [(event, i) for i in event.stocks.values()] * 2
+    block = "\n".join(builder._attention(pairs))
+
+    heading = next(line for line in block.splitlines() if line.startswith("#### "))
+    assert heading.count("HDFCBANK") == 1, heading
+    assert heading.count("TMB") == 1, heading
+    assert "also affects HDFCBANK" not in heading
+    # And the bullet list below it, which is built from the same impacts.
+    assert block.count("- **TMB**") <= 1
+
+
+def test_one_per_ticker_keeps_the_strongest(watchlist):
+    from src.models import Direction, Relationship, StockImpact
+    from src.report import _one_per_ticker
+
+    def impact(ticker, score):
+        return StockImpact(
+            ticker=ticker, relationship=Relationship.DIRECT, impact_score=score,
+            direction=Direction.UNCERTAIN, confidence=0.7,
+        )
+
+    kept = _one_per_ticker([impact("TMB", 4), impact("HDFCBANK", 13), impact("TMB", 9)])
+    assert [i.ticker for i in kept] == ["HDFCBANK", "TMB"]
+    assert kept[1].impact_score == 9

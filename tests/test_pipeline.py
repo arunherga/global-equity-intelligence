@@ -649,3 +649,69 @@ def test_earlier_coverage_cannot_suppress_a_genuinely_new_development(tmp_path):
     flags = _cluster_flags(_Cluster(), earlier_titles=["Money Market Operations as on 21 September"])
 
     assert flags["routine_release"] is False, "one old notice must not bury six real reports"
+
+
+def test_two_clusters_that_merge_into_one_stored_event_are_recorded_once(tmp_path):
+    """Regression for the duplicate that led the 6 Oct report.
+
+    Two of a run's clusters can both match the same stored event - two wire
+    copies of one notice, say. The persistence step appended the merged
+    event once per match, so the run ended holding it twice, and the report
+    printed its tickers twice with it: "HDFCBANK ... also affects HDFCBANK,
+    TMB, TMB". One stored event must come back exactly once.
+    """
+    from datetime import date as _date, datetime, timezone
+
+    from src.event_store import EventStore
+    from src.models import (
+        Direction, Event, EventCategory, Relationship, RunResult, StockImpact,
+    )
+    from src.seen import SeenStore
+
+    config = load_config(overrides={"storage": {
+        "events_dir": str(tmp_path / "events"),
+        "daily_dir": str(tmp_path / "daily"),
+        "seen_file": str(tmp_path / "seen.json"),
+    }, "report": {"directory": str(tmp_path / "reports")}})
+    watchlist = load_watchlist(config=config)
+
+    def make(event_id, title):
+        event = Event(
+            event_id=event_id, title=title, event_date=_date(2026, 10, 6),
+            event_types=[EventCategory.LEGAL],
+        )
+        event.stocks["HDFCBANK"] = StockImpact(
+            ticker="HDFCBANK", relationship=Relationship.DIRECT, impact_score=13,
+            direction=Direction.UNCERTAIN, confidence=0.8,
+        )
+        event.stocks["TMB"] = StockImpact(
+            ticker="TMB", relationship=Relationship.INDIRECT, impact_score=8,
+            direction=Direction.UNCERTAIN, confidence=0.6,
+        )
+        return event
+
+    store = EventStore(config.storage_path("events_dir")).load()
+    store.save(make("EVENT-HDFCBANK-2026-0001", "HDFC Bank class action notice filed"))
+    store.save_index()
+
+    # Two fresh clusters, near-identical, both of which match the stored one.
+    result = RunResult(
+        run_date=_date(2026, 10, 6),
+        started_at=datetime(2026, 10, 6, 6, 0, tzinfo=timezone.utc),
+        events=[
+            make("EVENT-HDFCBANK-2026-0002", "HDFC Bank class action notice filed"),
+            make("EVENT-HDFCBANK-2026-0003", "HDFC Bank class action notice filed"),
+        ],
+        tickers=[p.ticker for p in watchlist.profiles],
+    )
+
+    pipeline = Pipeline(config, watchlist, watchlist.profiles)
+    pipeline._persist(
+        result,
+        EventStore(config.storage_path("events_dir")).load(),
+        SeenStore(config.storage_path("seen_file")),
+        [],
+    )
+
+    ids = [e.event_id for e in result.events]
+    assert len(ids) == len(set(ids)), ids
