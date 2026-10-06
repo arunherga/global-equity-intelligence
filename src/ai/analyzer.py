@@ -79,36 +79,65 @@ def analyse_event(
     profile: CompanyProfile,
     config: Config,
 ) -> AiResult:
-    exposures = "\n".join(
-        f"- {e.exposure_type.value}: {e.term}" + (f" ({e.detail})" if e.detail else "")
-        for e in impact.exposures[:6]
-    ) or "- none recorded"
-    summaries = "\n".join(
-        f"- [{s.source_name or s.source_domain}] {s.title}" for s in event.sources[:5]
-    ) or "- none"
-
-    prompt = build_prompt(
-        {
-            "company": profile.company,
-            "ticker": profile.ticker,
-            "industry": profile.industry or "not recorded",
-            "exchange": ", ".join(profile.exchange) or "not recorded",
-            "exposures": exposures,
-            "title": event.title,
-            "event_date": event.event_date.isoformat() if event.event_date else "unknown",
-            "categories": ", ".join(c.value for c in event.event_types) or "OTHER",
-            "relationship": impact.relationship.value,
-            "impact_score": impact.impact_score,
-            "direction": impact.direction.value,
-            "summaries": summaries,
-        }
-    )
+    # Everything from here to the reply is wrapped. The only guarded step
+    # used to be the network call, so a malformed profile, an unexpected
+    # reply shape, or an odd source title ended the whole run instead of
+    # costing one analysis.
+    try:
+        exposures = "\n".join(
+            f"- {e.exposure_type.value}: {e.term}" + (f" ({e.detail})" if e.detail else "")
+            for e in impact.exposures[:6]
+        ) or "- none recorded"
+        summaries = "\n".join(
+            f"- [{s.source_name or s.source_domain}] {s.title}"
+            for s in event.sources[:5]
+        ) or "- none"
+        prompt = build_prompt(
+            {
+                "company": profile.company,
+                "ticker": profile.ticker,
+                "industry": profile.industry or "not recorded",
+                "exchange": ", ".join(profile.exchange) or "not recorded",
+                "exposures": exposures,
+                "title": event.title,
+                "event_date": (
+                    event.event_date.isoformat() if event.event_date else "unknown"
+                ),
+                "categories": ", ".join(c.value for c in event.event_types) or "OTHER",
+                "relationship": impact.relationship.value,
+                "impact_score": impact.impact_score,
+                "direction": impact.direction.value,
+                "summaries": summaries,
+            }
+        )
+    except Exception as exc:  # noqa: BLE001 - one event, not the run
+        return AiResult(
+            ok=False,
+            error=f"could not build the prompt: {type(exc).__name__}: {exc}",
+            provider=provider.name,
+        )
 
     try:
         raw = provider.complete(SYSTEM_PROMPT, prompt)
     except Exception as exc:  # noqa: BLE001 - a dead model must not end the run
         return AiResult(ok=False, error=str(exc), provider=provider.name)
 
+    # Parsing and sanitising sat outside the guard above, so a model reply
+    # of an unexpected shape ended the entire run rather than costing one
+    # analysis. Seven runs between 26 September and 4 October died in a
+    # tight 7-9 minute band - which is when enrichment runs, against a
+    # median successful run of 11.5 minutes.
+    try:
+        return _parse_and_clean(raw, provider, config)
+    except Exception as exc:  # noqa: BLE001 - one bad reply, not the run
+        return AiResult(
+            ok=False,
+            error=f"could not read the reply: {type(exc).__name__}: {exc}",
+            provider=provider.name,
+        )
+
+
+def _parse_and_clean(raw: str, provider: AiProvider, config: Config) -> AiResult:
     parsed = extract_json(raw)
     if parsed is None:
         return AiResult(
@@ -197,7 +226,11 @@ def enrich(
             profile = watchlist.get(impact.ticker)
         except KeyError:
             continue
-        result = analyse_event(provider, event, impact, profile, config)
+        try:
+            result = analyse_event(provider, event, impact, profile, config)
+        except Exception as exc:  # noqa: BLE001 - belt and braces
+            outcome.errors.append(f"{impact.ticker}: {type(exc).__name__}: {exc}")
+            continue
         if not result.ok:
             LOG.warning(
                 "AI analysis failed for %s/%s: %s",
@@ -205,14 +238,22 @@ def enrich(
             )
             outcome.errors.append(f"{impact.ticker}: {result.error}")
             continue
-        impact.ai_analysis = {
-            "provider": result.provider,
-            "model": result.model,
-            **result.data,
-        }
-        if result.redactions:
-            impact.ai_analysis["redactions"] = result.redactions
-        event.record("ai analysis", f"{impact.ticker} via {result.provider}")
+        try:
+            impact.ai_analysis = {
+                "provider": result.provider,
+                "model": result.model,
+                **result.data,
+            }
+            if result.redactions:
+                impact.ai_analysis["redactions"] = result.redactions
+            event.record("ai analysis", f"{impact.ticker} via {result.provider}")
+        except Exception as exc:  # noqa: BLE001 - one event, not the run
+            impact.ai_analysis = None
+            outcome.errors.append(
+                f"{impact.ticker}: could not attach the analysis: "
+                f"{type(exc).__name__}: {exc}"
+            )
+            continue
         enriched += 1
     outcome.enriched = enriched
     return outcome

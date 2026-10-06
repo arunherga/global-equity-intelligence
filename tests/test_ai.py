@@ -952,3 +952,73 @@ def test_the_time_budget_stops_the_layer_and_says_so(monkeypatch):
     assert outcome.enriched < 5, "the budget cut it short"
     assert outcome.ran_out_of_time is True
     assert any("time budget" in e for e in outcome.errors)
+
+
+# -- nothing in the AI layer may end a run -------------------------------
+#
+# These exist because of a real failure mode: for nine days roughly a third
+# of the scheduled runs died between 7 and 9 minutes in, the window the AI
+# layer occupies, and produced no report at all. Only `provider.complete`
+# was guarded; `build_prompt`, `extract_json` and `sanitise` all sat outside
+# the try, so one unexpected reply shape took the whole run with it. The
+# layer is optional enrichment - it is never allowed to cost the report.
+
+
+class _StubProvider:
+    name = "stub"
+
+    def complete(self, system, prompt):
+        return '{"revenue_effect": "ok"}'
+
+
+def _boom(*args, **kwargs):
+    raise RuntimeError("planted failure")
+
+
+@pytest.mark.parametrize("step", ["build_prompt", "extract_json", "sanitise"])
+def test_a_failure_in_any_step_costs_one_analysis_not_the_run(
+    monkeypatch, config, watchlist, step
+):
+    monkeypatch.setattr(f"src.ai.analyzer.{step}", _boom)
+    event = make_event()
+    result = analyse_event(_StubProvider(), event, event.stocks["WAAREEENER"],
+                           watchlist.get("WAAREEENER"), config)
+    assert not result.ok
+    assert "planted failure" in result.error
+    assert result.provider == "stub"
+
+
+def test_enrich_survives_an_analysis_that_raises(monkeypatch, config, watchlist):
+    """The outer belt: even if `analyse_event` itself raises, enrich continues."""
+    from src.ai import analyzer
+
+    monkeypatch.setattr(analyzer, "build_provider", lambda cfg: _StubProvider())
+    monkeypatch.setattr(analyzer, "analyse_event", _boom)
+    cfg = load_config(overrides={"ai": {"enabled": True, "pause_between_calls_seconds": 0}})
+    event = make_event(impact_score=40)
+
+    outcome = analyzer.enrich([event], cfg, watchlist)
+
+    assert outcome.enriched == 0
+    assert any("planted failure" in e for e in outcome.errors)
+    assert event.stocks["WAAREEENER"].ai_analysis in (None, {})
+
+
+def test_enrich_survives_a_reply_that_cannot_be_attached(monkeypatch, config, watchlist):
+    """`**result.data` on a non-mapping used to be an uncaught TypeError."""
+    from src.ai import analyzer
+    from src.ai.base import AiResult
+
+    monkeypatch.setattr(analyzer, "build_provider", lambda cfg: _StubProvider())
+    monkeypatch.setattr(
+        analyzer, "analyse_event",
+        lambda *a, **k: AiResult(ok=True, data=["not", "a", "mapping"], provider="stub"),
+    )
+    cfg = load_config(overrides={"ai": {"enabled": True, "pause_between_calls_seconds": 0}})
+    event = make_event(impact_score=40)
+
+    outcome = analyzer.enrich([event], cfg, watchlist)
+
+    assert outcome.enriched == 0
+    assert any("could not attach" in e for e in outcome.errors)
+    assert event.stocks["WAAREEENER"].ai_analysis is None
