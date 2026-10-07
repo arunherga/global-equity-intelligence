@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-0414",
+  "title": "Gold prices drop over 2%, slide to 2-month low as Treasury yields, US dollar climb",
+  "summary": "Gold prices drop over 2%, slide to 2-month low as Treasury yields, US dollar climb Livemint",
+  "event_date": "2026-10-07",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold prices drop over 2%, slide to 2-month low as Treasury yields, US dollar climb",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxORU45YTlzVk0wRThtNU9CaTJFd1oxaDRIMDM3NjFxNEYxcUw2MzFpWEVhSzhIcHN5SnctWFpDUXBVeHpQMmdXMkZCNWFvakdpZmpkOVZvZnlVU01DcFF4NEV2WG9BdTF6c0wzUWtyQWgtd3FoNXExZHJ5d3c3eDJodGgxNEZoVmlzeG9zZ0F4UGQwY2lzU090cWVfaUNZZlJWaUhDYVB5Q3RMVExraGZTTURsd2hPaTFOcmd4OGxQX2JnVlRjcXN3TkVScjRTdHlFSTRDX0oyQjJwTTRtSVJkTE5YTdIB6AFBVV95cUxNaXptMmNfUjBpWmhnaHBnYmF6enJIdzMtYXJ3cUk1UU8xYnNaQnZwVmVVVGtkUHo3RkZOTlJpQVkwbHMtTThsVDZoamw5ZldfSlJ4QlVwRWlKcDZGcEpsWTBtSTBkM09iaXZMSlN4bUs4Tm5FYVJ0UzdycFN1MUdhVjVPdlFqcjk5dWNhUTYwZmhUQmc3M2NncmNBQXVPX2llTm5GUWxSVTBkSFd5cnpULVFURUhPWHBSbXoyVHdSb1JFNHpDYXNsN2JsbTZCVnN0enZaRmp1NjNXUjdEbE5mYkRGLUpfR0ll",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T18:29:53+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Livemint",
+  "cluster_key": "TMB|COMMODITY|2-month-fall-gold-low-price-slide",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T19:32:13.714075+00:00",
+  "last_updated": "2026-10-07T19:32:13.714166+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T19:32:13.714154+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,142 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-2167",
+  "title": "India: Copper scrap prices rise w-o-w as festive demand supports buying",
+  "summary": "India: Copper scrap prices rise w-o-w as festive demand supports buying BigMint",
+  "event_date": "2026-10-07",
+  "event_types": [
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to copper scrap, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to copper, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Copper scrap prices rise w-o-w as festive demand supports buying",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUU1kNjItd1NBMTJqSlFHa0hQZkQwMTR1azFJY1lJdk9oenZzV1lVbERpOWltR0o1bDl1WllPU3MyU01DQkZ4VWU4TWMxRk9GeG1lRzl6MG5KVGpkbVJ0R1VJQUFsZmNfSzVmWng5cW81SU1ZTmlGeGRReVp2MEZZNFVYcGNkdkxOVDNqazlxVXZaN1BGQ3FHY0xjdVRZTy1zN3kyNjFLZS05allQZHh0LTI3em9ZQU0",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T15:36:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "MSTCLTD+WAAREEENER|COMMODITY+INDUSTRY_DEMAND|copper-india-price-rise-scrap-w-o-w",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T19:31:19.709999+00:00",
+  "last_updated": "2026-10-07T19:31:19.710092+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T19:31:19.710080+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

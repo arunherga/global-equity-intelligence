@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +50,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -70,7 +70,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -88,7 +88,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -108,7 +108,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -119,6 +119,82 @@
         "diesel prices over the next few weeks"
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -812,16 +888,26 @@
       "published": "2026-10-07T03:21:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Petrol, Diesel Price Today October 7: OMCs issue latest fuel prices as crude oil rebounds; Check latest petrol-diesel rates in Delhi, Mumbai, Bengaluru and other cities",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQSkZaS0NIYVpPT0FxRk9sVGNzWFRTb192Zm5ZaklFbG9tNm9YbUhLaE13WUh1ME1jVzFJRG9DWWtINVc3S3Y3cmxjREJDSTl1ODZrUXdYTEFhQWtycnlmNVgxT3IxYm1sS1hkOUlaRkhoVXQ4VWNpZlRrakxqOHQwTnpwN0FvYzBuekY0NTd5SWt0eVM3bHBKdHlaUnZ6cjgtY1BYQXBFNHpOOWxybk51OV8zZ2RpaXFyczlkMklnbG1jb283RVJuakxZTXRsMXBKVVp3bmljTEFDMHEtbTRaWDlGbnc0YlFicjY3aTIzS3dsOGpiazJUREdXN2VyZTc2cld0YjU4WHJlNVBlSkhMRDE0VEZMMXZaNnp1WmZUOU54aC1xQ09SdHJKX01JOS05ampyb0tB0gG6AkFVX3lxTFBFQmhmV1lrTDNtbFM0RHpnNVBfX0tVQlBhcDhFSDJqQlotZmdobjdaZHduZndJdjNoWGR1T2FUSlVPb3V3eHkzWFY0ekhtOUJaOC1pekIwcmpkeHJtLWxVTWQwRXRiZklHYk9KN0VjVnFtRElKekpXYWhIUTJSaVMxRjhmekI0LTloMlVoUXpCdWMzVEtVNUhuT0xzTGpkM3hkRjE4TC1ISG9feTgxeHJHTHNZV1RFbTVZWGtMX2tfT3pHUUdCQ25EckZWSm5Vbi04cVdYQThGZVBIZzZhWnF1aktJbHd4QUpBOU1fa2FfTV92Y0hiOFNJbk9rVTJSeXVpVjZvenhRdndxbUcycHBPM1pCSzJYTERSRFA3XzNSZEhVZmZVZ3BUSlpmTWVaOUZmcG5IbmZYbFF3",
+      "source_name": "News24Online",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:43:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 69,
+  "article_count": 70,
   "source_count": 1,
   "primary_source": "DT Next",
   "cluster_key": "COALINDIA+JKIPL|OTHER|check-diesel-petrol-price-september-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.913134+00:00",
-  "last_updated": "2026-10-07T13:51:45.375331+00:00",
+  "last_updated": "2026-10-07T19:33:41.141212+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.913182+00:00",
@@ -962,6 +1048,36 @@
       "timestamp": "2026-10-07T13:51:45.375310+00:00",
       "change": "sources added",
       "detail": "Business Today, DT Next, HDFC Sky, NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141168+00:00",
+      "change": "sources added",
+      "detail": "News24Online"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141188+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141195+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141200+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141204+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:41.141208+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -267,38 +267,45 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "loan growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -477,16 +484,26 @@
       "published": "2026-10-05T12:59:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank (NSE: KOTAKBANK): Two-Month Outperformance",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPcFFvMV9RRUttWHFYV0ZyYkNVYzJ1RmtRNmR5T21NNjJEZUdLdi1kbExMMUdwam1reHFteFowOEIzZktLZ0d1SHFQSlJlVGxOR0R1Qk9DblU1UWpWUFRRbmxBLUc1Y2VYZWRuOW5EbnJPRS1kWmRrVjZDcllLLVpsRHQ1VmEyZm0zRmI2c0QwdnNIYzFhTTVkdUI0TmlzbFg1LUQtb3NwN2lvVFVQeXB1ZFUtZFpYN21kdGxiZC1DWktXZ0U4ZXlOb0F3QW9XSXNJY3JBRHRFQlozRmFFMVJFeGZsR0NvSWJkOUkybw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T12:25:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-focus-kotak-kotakbank-mahindra-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T18:59:35.243739+00:00",
-  "last_updated": "2026-10-05T15:07:18.096109+00:00",
+  "last_updated": "2026-10-07T19:33:52.805601+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T18:59:35.243775+00:00",
@@ -517,6 +534,16 @@
       "timestamp": "2026-10-05T15:07:18.096103+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:52.805570+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:52.805593+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -114,6 +114,49 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to diesel prices, and Australia. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -136,21 +179,41 @@
       "published": "2026-09-24T11:40:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Diesel price jumps after IEA says no additional fuel will be released",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa3hjYUR3RGVKc2FlZy1nbjZaQUJvR3B2dTVCdTE1UG9FOWM0d1FsMFhLaDdmMS1Oa19BTXpJTm9kV3BWZG13enBtMi0xNHlQSUcxc1FOa2tiQWdVUXNjNHFZdWZSZ3lEVHd3REJ0WmlrYUdJTUluMVYxRjRvcDQyZ1B5a00",
+      "source_name": "Financial Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T19:02:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Guardian",
   "cluster_key": "COALINDIA+JKIPL|COMMODITY+EXPORT_RESTRICTION|across-australia-could-diesel-price-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.530648+00:00",
-  "last_updated": "2026-09-24T12:02:44.530724+00:00",
+  "last_updated": "2026-10-07T19:34:28.792384+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.530719+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T19:34:28.792359+00:00",
+      "change": "sources added",
+      "detail": "Financial Times"
+    },
+    {
+      "timestamp": "2026-10-07T19:34:28.792378+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

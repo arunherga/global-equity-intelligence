@@ -47,31 +47,40 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Axis Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -95,16 +104,26 @@
       "published": "2026-10-01T10:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank slides Wednesday, still outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWUxDd0MzM3Nhd25UYnNXbUhBZ05lTXc0NmxCUS1ZTUtaOFFaTUZlUXJzTE4xUndqNUV6Z0JfT1dlZ1pmN01VbG5zanJVd29FRXRLTUpra1JwbWhraU9MdDdVZGFBd3RXRnI1cm9SSl9KUDlCbWtNN0pUV1NrYnM5dUplbmJ0ejI4TGJQZnBheVRxT0Q1VXdYeWJKQm1BX1lOeHJoVzlnVnFsWjA",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:33:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-hdfc-market-outperforms-rallies-tuesday",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T18:45:53.127379+00:00",
-  "last_updated": "2026-10-01T13:37:25.726851+00:00",
+  "last_updated": "2026-10-07T19:33:46.640646+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T18:45:53.127417+00:00",
@@ -115,6 +134,16 @@
       "timestamp": "2026-10-01T13:37:25.726835+00:00",
       "change": "sources added",
       "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:46.640621+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:46.640640+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

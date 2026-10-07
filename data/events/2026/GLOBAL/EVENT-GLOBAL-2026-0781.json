@@ -92,6 +92,49 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -104,21 +147,41 @@
       "published": "2026-09-27T09:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "High diesel prices squeeze farmers, truckers as officials move to blunt costs - Agri-Pulse Communications, Inc.",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeXBzeDhnSk1xd19UMEQ1LVZ3U2U4NkNxMFlDX0RsVWwxcDVnVnNReFFqQUluZmRVVlRFTXAzWEVqV1FieHJaWnVaX2oyTGh0NGV0TVRxNDZvc2VoX3pIOTJTMmk1c1ZYMmRiZ2JjR1h6SS1ydVk4UDRZOFRVdVMydWFDYzdyQUNFTmE2Uk96aGlac2VJMUJZNWlqQ3JRZkw0MWtzOWF4a1JOTmEtR0xtaFRjY1BWYmZyaEJud1EwYw",
+      "source_name": "Agri-Pulse Communications, Inc.",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:14:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "cbc.ca",
   "cluster_key": "COALINDIA+JKIPL|COMMODITY|diesel-farmers-price-sky-high-troubling-truckers",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.750732+00:00",
-  "last_updated": "2026-09-27T12:15:56.750788+00:00",
+  "last_updated": "2026-10-07T19:33:44.205160+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.750783+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:44.205134+00:00",
+      "change": "sources added",
+      "detail": "Agri-Pulse Communications, Inc."
+    },
+    {
+      "timestamp": "2026-10-07T19:33:44.205154+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

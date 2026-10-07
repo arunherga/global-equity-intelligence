@@ -116,6 +116,53 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.55,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "REGULATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
+        "+3 Development at a known counterparty (Adani)",
+        "-5 Market commentary rather than a company development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -197,12 +244,17 @@
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T13:41:57.490547+00:00",
-  "last_updated": "2026-10-07T13:41:57.490672+00:00",
+  "last_updated": "2026-10-07T19:33:28.081345+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:41:57.490662+00:00",
       "change": "created",
       "detail": "7 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T19:33:28.081326+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
     }
   ],
   "price_reaction": {}
