@@ -4,7 +4,8 @@
   "summary": "Mint Explainer | Why the RBI looks set to hike rates Livemint",
   "event_date": "2026-10-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
@@ -12,10 +13,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -31,7 +35,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -39,9 +43,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -49,10 +56,14 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -60,15 +71,21 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "retail borrowers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -76,9 +93,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and retail borrowers. The parts of the business most likely touched are margin, demand, customers. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -92,21 +112,51 @@
       "published": "2026-10-06T07:21:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mint Explainer | What RBI's rate hike means for retail borrowers and lenders",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV0JBUGFHUV9zbndHcU1wbVl6S21JSU5IX1g5R19QVUdxOG1heUxqNXJGSXRBTVRiTnBWcndUZjlrMWVJRVlPRVV4dFBsX3F0dmhPcUEwVjk2YWRSN01nT0M0V0xYbGFLSUF2cE1BNXJJTjdZY2dpV1hLRVVWSkJxMVpwM3JzYnROd1RPMFRXODNBbVFPUkhEVEtRZGFzYlA5TGFaUUNONG1HRjEtbXQ5OVJQb9IBuAFBVV95cUxQN2cyZE5EaUdsVEtGV0FEV18xUUE1MGoxVE9zRU5ycXFicFpPU3BVa0FqUFBaMk9sbXhBUVFKbmpYeFl1Y2VDMEtnS1h5MTFjVHF0OGMyN2NadWxUcU1UaXVvQml4N1JucHJ6a24wcjBQQWZHcFF3OUdfTXhaSi1mY2gtc0dDU1JocERDTW1GZGVzRGxBXzV1Rkg0YTQtOGZMVXpRclg2YW4tLXpIYm90OTJ6eF9LUEl3",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T04:45:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "HDFCBANK+TMB|OTHER|explainer-looks-mint-raise-rbi-set",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:37:09.855357+00:00",
-  "last_updated": "2026-10-06T13:37:09.855441+00:00",
+  "last_updated": "2026-10-07T13:52:05.706741+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:37:09.855430+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:05.706706+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:05.706723+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:05.706730+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:05.706736+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

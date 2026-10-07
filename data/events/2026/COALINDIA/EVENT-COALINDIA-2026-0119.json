@@ -7,23 +7,22 @@
     "CREDIT_RATING",
     "INTEREST_RATE",
     "MACRO",
-    "GUIDANCE"
+    "GUIDANCE",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
+        "REVENUE",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -31,57 +30,43 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "India GDP growth",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "+2 Major industry-level development",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "rationale in the rating note",
-        "covenant implications",
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)"
+        "assumptions behind the guidance",
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and India GDP growth. The parts of the business most likely touched are debt, balance sheet, margin. Classified as credit rating.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
+        "REVENUE",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -89,34 +74,29 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "+2 Major industry-level development",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "rationale in the rating note",
-        "covenant implications",
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)"
+        "assumptions behind the guidance",
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are debt, balance sheet, margin. Classified as credit rating.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -386,16 +366,66 @@
       "published": "2026-09-27T15:56:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Raises FY27 GDP Growth Forecast By 40 Bps To 7.1%, Says India Resilience Amidst Global Headwinds",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQWJXcHBmZnhRLW93YkVFRjEwMHhNTHVXSHczR19DMEtNNXdDTEplQTFfaHZfWXZKeDJxRmtJeGlOd1NRNElVVElrWFpqc3pFdkF5Z2NhX2daV2FSWU1sbkJuOXF6eWM3NTN4RGVrblpjZGFXRERNVkoxVEVKdVd5TlNvc2IzVHVDY3FqeHpjYmliTUZMdmhvNjVodHFXd1JuZ0Z6VlltWldGZW1lNllEdXhfMzFYNXRQMmx5NEQya3RDQWtqb3M4ZTVkbUowUdIBzgFBVV95cUxQQWJXcHBmZnhRLW93YkVFRjEwMHhNTHVXSHczR19DMEtNNXdDTEplQTFfaHZfWXZKeDJxRmtJeGlOd1NRNElVVElrWFpqc3pFdkF5Z2NhX2daV2FSWU1sbkJuOXF6eWM3NTN4RGVrblpjZGFXRERNVkoxVEVKdVd5TlNvc2IzVHVDY3FqeHpjYmliTUZMdmhvNjVodHFXd1JuZ0Z6VlltWldGZW1lNllEdXhfMzFYNXRQMmx5NEQya3RDQWtqb3M4ZTVkbUowUQ",
+      "source_name": "Daily Excelsior",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:21:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises FY27 GDP growth forecast to 7.1% from 6.7%, sees resilient domestic activity",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQTVpyVXpPZnlFNnU0b3RrYUR6STg1MkcyUWktVGhpQjV0cGlROFpjQUNCUXJfbU12Rmh2YWhuRmlBcDZ3d0lxUUctRTgxSVlrWkhKRVFFNmRCTXdhZFdMVU1SdER0cXdvbENrOTc3c2R0bXdhdmhWU3FpRFRDYU1yeUcwWHFybWtfMnQxaFFobjA5OVdEOHB5SmNtNHlHUUtmX1VDVjRUTHdhOXhWa3g0eFhOT2ZqYXpYeHFOR0NIcy1rSHJFWFlMc3J5TDZ3QVZ5cVlSSzVaN2ZfOWtobUliM0ZyODJQdkFFcl930gHwAUFVX3lxTE5vVUxUY1FRMHVlYjFKRHZWb2IzcEdwbEtMenJkb1dBZVVyRE4zSkNWS0R4ZVN6cURiWFdnWEIxN3JmMXIxb0pVZEhZWmptbkJ5N2MzRmxLVno5VXU4WWtET005dGFMeXZhNzNYakJ4NVprVGxUaHV4VHR6RERtdnRXc01jZGViNFVVWFZZcmlCalVEOFQweWFOV3FxdTZjQnQ2NEhlQ3pOalEyWW5TclRBSTdpS3RTaDlRRlFEYnFkM3FZem1kay1zU0Vpd1hKWkg3R2lyWEFUeDFjTWFNNmZ6N25vcms5TzQ4Nk92LVFBMg",
+      "source_name": "ET Government",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T04:50:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises FY27 growth forecast to 7.1% as consumption, investment stay resilient",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSklobEFoQXpYa3NVVW1KUUxvYmdhYWVmSDNSNk1oV0RhaUlYZUdRZzloTGN3Y2FqektFVllhODJXcWhBTnNwM1FtY3ZaSUVNQThPSkFIQURfU1BlZDlGc0k4TTBIUTF3c2xOamZxZjltNzd6XzhKellFUzlzcEs2ZWpJYUQ5aGptWUhyQkJBOTByZGJ6dlJKNWlTeW1jOGVJd2xETVZIbGd3VGExUTM4UFhfZDVPNWFweWlvWXJFM3ZEc0xQQ2RJMXZJOEhLX0FkR2xGQl9peTgzdnFG0gHcAUFVX3lxTFBKSWhsQWhBelhrc1VVbUpRTG9iZ2FhZWZIM1I2TWhXRGFpSVhlR1FnOWhMY3djYWp6S0VWWWE4MldxaEFOc3AzUW1jdlpJRU1BOE9KQUhBRF9TUGVkOUZzSThNMEhRMXdzbE5qZnFmOW03N3pfOEp6WUVTOXNwSzZlaklhRDloam1ZSHJCQkE5MHJkYnp2Uko1aVN5bWM4ZUl3bERNVkhsZ3dUYTFRMzhQWF9kNU81YXB5aW9ZckUzdkRzTFBDZEkxdkk4SEtfQWRHbEZCX2l5ODN2cUY",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:03:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises FY27 growth forecast to 7.1%, sees inflation at 5.2%",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcU1WYzFTcm1RdnZieU5NTVFPTmRuSDN3bU5wTUltdHhncVRpUlRobWs4dHRCTVdHMUo0LXkzZGlha2Y4aUJvbTdPSFpMcmxud0VhTlY5Tk5Fek5ua2RpeFUxTHlSeC1Bb1pxQzFQZGUyelJuM3lnZDB1bEFVYTNxSTVhSWpEbWpWSlV0dTlZUDNwV2s2X281RU1pYmVOa2xHY3RqWFFUaTQyR1dlUklwTjNB0gG_AUFVX3lxTE03UTdHRXVhT2k4THg4U05XdkJUNm9kUmpBZC1CVm9neFg2dE1WUlowTHNJOUhtYl8td1kzR2stZW9fMmZ0eDRNMEFsU3lGZUUtanltd3RfTEc1N0tHMmdaVVFCS1ZOMHgxUGZCX3ZuOFhvXzZjTWVjMXNNMDB5dzFPbHhCenBtN0oxeFdUWWl0eVFmb3RNb1k0QmV5anFYSmwxcktyZXk3RVMwTTgtcTFfTGVjdEgwT19DQnFueHlv",
+      "source_name": "The New Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:55:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises India’s FY27 GDP growth forecast to 7.1% amid global headwinds",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWWxBYWh3SDZ6MjV0cjJkcEtMWHZMWFVJc1hJbVJ0bUFPc2JUa19OR0luV09PTEd3WnE1ZXhDaXhqNE5EN1JwMHJxczlGLURnMXRYU080TFlsTExoSjc2WEsxb0V0cm1HU0xfdFUxQUxxc1p2TmUyTTg1QzdRSXRXOWxhY2lLSnVvdEFIaXNuZVpTOFFJTW1QV1JQeXRUcU5zVDVfdlczRnJ0djJhZEdNcndR0gG3AUFVX3lxTFBET3JTQTZKRWRHWnJ6X0dVbklHOHVfNGRybnNZTmZtMm9BMUNHeHZ4UVlkMDhuZ3I3ek9uQXV6RHFKMjhpRE1uWFI4SVlfZVh1MHBiZ1ZCSHJJM1QzZ0pCdndvU2hneDFQc0I2Rk9iTkJZQkdKSG44cmFrQXhiQms1UjdkUEZneThmX1ptWHdSck9jM0daclpqWGtnajlOVkc4dUkwbzROLWdjMTF0OWl1VmZsN0ZXVQ",
+      "source_name": "The Assam Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:50:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 22,
+  "article_count": 27,
   "source_count": 1,
   "primary_source": "NiftyTrader",
   "cluster_key": "COALINDIA+HDFCBANK+TMB|CREDIT_RATING+INTEREST_RATE|fitch-fy27-gdp-india-raise-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.610637+00:00",
-  "last_updated": "2026-09-27T17:50:30.682044+00:00",
+  "last_updated": "2026-10-07T13:52:07.277458+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.610754+00:00",
@@ -446,6 +476,26 @@
       "timestamp": "2026-09-27T17:50:30.682040+00:00",
       "change": "impact raised",
       "detail": "COALINDIA 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:07.277423+00:00",
+      "change": "sources added",
+      "detail": "Daily Excelsior, ET Government, The Assam Tribune, The New Indian Express"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:07.277440+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:07.277447+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 4"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:07.277453+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 4"
     }
   ],
   "price_reaction": {}

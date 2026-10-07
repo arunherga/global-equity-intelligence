@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0118",
+  "title": "Tokyo's 37 straight days of rain drive up fresh vegetable prices",
+  "summary": "Tokyo's 37 straight days of rain drive up fresh vegetable prices Nikkei Asia",
+  "event_date": "2026-10-06",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Asia",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Names a key geography for this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to vegetable prices, and Asia. The parts of the business most likely touched are input cost, exports. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Tokyo's 37 straight days of rain drive up fresh vegetable prices",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPd2pRaWpPUHlvWEtmYkJIeWZ4RjgzZkNUOUx4cE9WZnRiRXVFb3V0S0Z1aDk2aHVNQ2Z0cHFSc2Q1Sk9wQkk3cUJjY240dEhDRHJQRWhlOG9oN0cxQ3BLRFZRT0Mydm9yekcycmdjdXJhclNfT1pHRmhHaC1wVk1XZkd4WWlvdExxQ3l1MHMtdXp2TzJzRDNWOEFscnNWVzdmbkVDN05nUXJWRUFkb0RYb245WkxMWXo1SEVSSXZIclg0UXc",
+      "source_name": "Nikkei Asia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T20:20:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Nikkei Asia",
+  "cluster_key": "FRESHARA|OTHER|days-drive-fresh-rain-straight-tokyo",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T13:43:02.290583+00:00",
+  "last_updated": "2026-10-07T13:43:02.290668+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T13:43:02.290658+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -48,6 +48,48 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MANAGEMENT",
+        "COMPETITION"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Federal Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "reason for the change",
+        "successor's background",
+        "further exits",
+        "Federal Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -60,21 +102,41 @@
       "published": "2026-09-27T17:10:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "LIC Appoints 5 New Independent Directors Including Former Federal Bank & Exim Bank CEOs",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOa0VDYWxVZmFDUzdvcHVUajViSzBwaWhnWFpkXzFyUDh4djktNjI1OFRyU0dDUWI0OG43d2N2eUl2bUFRSDVpMFc1RW40QTI1UVYtbHBPX0pvZmM2ZUxSVTFnUUVnQlNiWHZMekVDVEI1VnVkNS00RFozUEVvaFRUZ1MtV1htT18xV2ltRUpBcEl1QlFOOG12OEszOU03SGpaMEZGTllydFJpaE4waUJoaGk1a2t3RFliZk9nOE16bEpob1BjZ1hkWQ",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T11:23:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK|MANAGEMENT_CHANGE|appoints-bank-directors-four-including-indusind",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.359729+00:00",
-  "last_updated": "2026-09-28T14:12:11.359789+00:00",
+  "last_updated": "2026-10-07T13:53:09.267367+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.359785+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T13:53:09.267324+00:00",
+      "change": "sources added",
+      "detail": "PSU Connect"
+    },
+    {
+      "timestamp": "2026-10-07T13:53:09.267359+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

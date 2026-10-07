@@ -1,0 +1,126 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1965",
+  "title": "Brent crude rises above $101 on US hurricane threat, Houthi attacks",
+  "summary": "December Brent oil futures were at $101.58 up by 0.99%, and November crude oil futures on WTI (West Texas Intermediate) were at $90.22, up by 0.87%",
+  "event_date": "2026-10-07",
+  "event_types": [
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are input cost, margin. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to crude oil, and intermediates. The parts of the business most likely touched are input cost, margin. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Brent crude rises above $101 on US hurricane threat, Houthi attacks",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/brent-crude-rises-above-101-on-us-hurricane-threat-houthi-attacks/article71554273.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-07T04:41:29+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|RAW_MATERIAL|101-above-brent-crude-rise-usa",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T13:41:52.692254+00:00",
+  "last_updated": "2026-10-07T13:41:52.692374+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T13:41:52.692362+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

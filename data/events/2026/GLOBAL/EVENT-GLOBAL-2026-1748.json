@@ -5,23 +5,37 @@
   "event_date": "2026-10-05",
   "event_types": [
     "TENDER",
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "MACRO",
+    "CURRENCY",
+    "GUIDANCE",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.25,
       "business_impacts": [
-        "REVENUE",
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "REVENUE",
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
@@ -35,12 +49,20 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "gold loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "-6 Scheduled statistical release, not a development",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,29 +70,32 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
-        "bid outcome",
-        "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are revenue, margin, demand. Classified as tender.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, regulation exposure to gold prices, and RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
-        "REVENUE",
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "REVENUE",
+        "SUPPLY",
+        "GEOGRAPHY"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -87,12 +112,19 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "home loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "-6 Scheduled statistical release, not a development",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -100,16 +132,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "bid outcome",
-        "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are revenue, margin, demand. Classified as tender.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -123,21 +155,401 @@
       "published": "2026-10-05T15:50:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "After 3.5 years, RBI hikes repo rate: How does it impact your EMIs & loan interest payout? Explained",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYXZpNU1sRVNhZm9BZGpQVFpXZVUyNl9IcmppWEtLdi05WGRsY3J0RjJQVGJtTDZvbG5Cc2tpTnJxNmw3UjlBbzNsZl9PUjZORmJMQzlEUElDS2R3ZC1tY3BGN0Vfb2R0al9KelJ5LUV5dUdhYkhEMUNOWmhMQVg0dVM5a0xFRkhWcml2STVhR3BYa2VxbkRwN2drTUN6MkMtT1dOdGliY1VZczlNSV9IMjg2OFdFbWVkNUpfaTN2bzFzM2oyQThCQS15MVRHajFMRTFGeFZpZzlVcXduUFJib1N2YTZBMjYxeTNBRkk4eXRVcFAxVlFFU0ZLOEtLcTlKWW1RTklSZmZEQ2phckHSAZMCQVVfeXFMTVJJalJhcGtiYkFpQ1VnNlN3RjM4LVFxa0NLZHZYNWR3NFM1dGFyZ3hqVU9LR0p0RF9ubFZLOUtWT19KQjNEaWZEZDBCdGE5T1QxdFlfamNaNjg0OTFKT2FDZThxQTd3dkZpLTh2cy1LTU1hNEFjb2x6WFlUTTFya2lFbDUwNllkRFRTbVhYZTJoNzhYTjJwMkFyMEt1QkhfQnp6TFpTN2dJWmtOQUplcHNoTk1qVW1tckZXSTBVMVM0WDMxY1pMMTVRdU1vMTN0VkpfVEVXbW5LY3hjb1ZSZEFYYk0xZjFQX3ZMVlpiYW9KenZjTl9UOTZ1clFJTHNfQnBLNVZxU3Nqc3VjUGpOVUxCUzg",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:56:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "FAQs on RBI repo rate hike: Growth forecast, inflation outlook and what it means for you",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOanQtMWgzVndsVDUzcXZSRnlYY09JSDMybmF3UG4yTWtza3dxLW5jM0NPWVE0X1Fldi1GN3NvNXF4QzljUkpXLTBkQnJrYjd5RHRGVWxDM2JpZjFEZEtPT1lfRkpQU0JFT01ZWDZ5VXZ0STlyVXAycE5DQnZSSWZTbjlEeWVYUWtTcUN5NlIxbWd5aU9NblpjM0E2R1VpaFdjVnYzR1lIQ3d0OHBKWmJhdml6RlltZUZUTndKNXpyQUV2cUczdHhvUnFNbE1qYTBDQ1BfRHFtNHI5M1BEUjFtSjNLY3RWTXFONVBFdzNuRmIzMlR0azdPT0dCZXdIUjl5Z0HSAYcCQVVfeXFMUFp2UW5CcWlUTnM0RExYRjdTWGNtQWxCOHhlZ1h2cW9kR0pVZVRDTEdUSlQ4SUtuYUpSRTdsYlJMZXlEdi1VSkt5dW9LMjlYbklMMlZ1VHZOSF9BTm02UVdIcUhtSUpKN0RUWFg2YWs1Yzl1VVc2aDRzZkdwanpqbTZXckN0bXUyOHVqaDdUYjBKbk82UjN1aHRoVXlYTThPZmFCd0hTWWlvVjctR285SWRGcHlpa2kybXB0R3JZek1iWUNRQXJ6Z180QmY2SFZEMGJmRk84c1BXRVhGMjR3ay00Q2d1MU1IeWVTcEVqZ0FlU2JhRHJMek5RM3dkSlkyTE4zUkU0OVU",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:28:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Highest senior citizen FD interest rates after RBI repo rate hike: Public vs private vs small finance bank",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxORU1zNTZZRDdUVVJkdWh3V0dVNmNheE5pV2RQdkd3UU5OTU8zV3VOMG9PV1Z4R3U4US1lQkJtWHlwbE1WLXZEQ2d4emdBRFBIU1hhTlNwZUFwWHg1aTVseW9vUXRLSDQ3X1NTaTYtSnIybXlOa0NfWkFtRjVtZDJWZFk3MVN2N2JxdXB3VG5kdlZjRkdKcUpBQS1CdkRTeGFyVC1XTW5oWkljd1hPdmF6Zk16NVUxQ2Niei1BNkxMWTVVbnpmdGp1bklBOHRZNTc3VTNEWDRkUjJCU1Z2X2h4V1N5dllEWmZZOTBFZ05vQV9VM3Z1c3B2OXNMaXdVcFRyRllzb0UybFZPU0V3Uk8zemhhVFlRbm9oMHRBdjJudHVxWjM5bC1FMTlwMW1yY0xSQ25iMtIBugJBVV95cUxPSEFJNkQ2aGJSdFl4VkhidnBzLThvNGdvaTI1TTFsZTZfZm9kOVgxcVB6eVBxUzQwXzdDUjBOOERsRXBiZG93S3pQdGQyNThYUVZXSXI1Vy1XeTRpUHEwYm5HcWs2V215SzVIRUxBVWJyMHZtWXdRVmttMmVjWUNQUmlFUlU1cTVRcGt5cFhQVXgzSVFaWGFCUlF5LXd2WW9iM1paTmdfMUl5Qzg5bmxJNTczZ0RrWXA5M3FvWEZVSXFDNkNvSGd5ZWtWZXh0YTZXUGxQa0JuME5rX2taTnI1OTZ2WWRXZzk4QlF1WGtUTXZyUVpQVWJyUGF5LVExcnRfUGNoNlVYVDRtRDVpRDJ1NXQxQS1JMW5yaGZxOWxCYjVXTnRJbnFCNlRScUNDdW1FWFRreEFhTGNLZw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T12:31:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Lowest home loan interest rates after RBI repo rate hike: Check EMI on above Rs 30 lakh to 75 lakh loans at public & private banks, HFCs",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPX1QtTmFjTzMtOUt4dzVjMVdLZnlDXzgxU2VRUjB6VnNFWXNvTm1jRDN2YTBEeGF6Z2p0bGRrWW1wQnJSOE1ZVUVBaGhNeEFCV1A1aGJmcEcxMkVJVGV1Nm1sandjZG11TDJScGl6cTQ1UmcyMUU3MHJOaURqczNNRW0tMmFKTTU3aVpGV3RmMkNlRVJ4VllCaEIwZDZkYTdoMU9Ic2VBSFFRcGlVaks3Q295bUxXRlRVVmlzQ0dGTWlIS2l3Qy1IRk5OM0pFN04xbnRSWmVDOFA5bnJuX3Z6T2tOdWswWTEwTVdQcmRZbXpZa1Z5N05Qbkk5STZfa2dwWXFzY0FfN2dNM3pvN0tlU0pLVXlLSWppa1R1Y3IxOXJLUUdFYlM3RG5BUzdiTUtBYUNB",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:57:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Hikes Repo Rate By 25 Basis Points To 5.5% Amid Rising Inflation",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaVFBS2FLMEx0Ums1R0tieENHb19icTNBcWF0cHB5cjhZbk9CYzBLVjhWUHQzV0JuZGR5Rk5XV1NYS21BV2dZN1FSdFV4WnFBM0poYlhtbmtITFZjMnBQclpYbnVZY0VpaXVNdkkzZVpmdVRjU0RJcjdheHN0OHdTMGxEWVdjc3hGbjBFaTZuRVVKT29TVkw5N29rR0kzM0w0eU5Bc1ZMVVBLaXNycDlUQ2p5bjBTMHZHSmFDWHhwVdIBxwFBVV95cUxObWdFMU1jYURLblc2VVJIZTBuZlpmVDNwX1Z5bFlEUW5NbU1seTNLcVpDUEN2ZVZxVDlzLU5fQzJUNFJZV09ITWV1clpXeFRTZHZuS2FNelFmVHJCODF2b3V3Z0pIT2RuOGRrZnBFXzd3UjlNZjJsVVNyVXAwa0czNlRucHZrLTdidEhWY3Vrc3l4N0d0bUVGMDRJSHdXR0hXaFBhSEE2dmVQai02M1NZVnRIZllIUUZ5NW4xcHBOUlNSSnZHOUhF",
+      "source_name": "NDTV",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T04:33:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Hikes Repo Rate by 25 Bps to 5.50%; GDP Forecast Raised to 7.1%",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdndEV1U4NTF4UTdkdFlHbFk3dUF5Y3NEdWdWWTdwOWJPV0NnUDFqTjFMM3ZpVFU3QlBaeHUtX05ZQ2lSUUtZNkZHZ2I3YlVjTk1FYXlKWVVXRXRLUTd4N01xQ3RpdmlZenV0bWFPMFdVVERzS2ZGWmNVcWxlU05ISUdxOEFUS3BjME4zMkw2QjJCRWtMXzJLdFB1UnhtXzRUeGpRRmx6WFE4TVJwR0Vtb3FCTDh4UQ",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:11:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Hikes Repo Rate to 5.50%: What It Means for Car Loan Interest Rates and EMIs",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWC1xbW9tQnNqNDZBUDJLZVhDX2ttOEppbnhWcU1zTzg5ejloZmNGVjRqVE5xMy1fOGVUWnQ5QThZM0d6Nmc4QnlQdDAwbTBNZlFzVnd2YnEtOHkyXzhoMnc2UWJCRUp0b0dWVWRrcWhlaElnRmhDVjNLZUEtaVFYaU9QbFJKN1haN1FBcWdyNXU",
+      "source_name": "Autopunditz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:39:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Hikes Repo Rate: Know What It Means For Your Debt Mutual Fund Holdings",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa0VRYjdhSmdHZ01RUVdIXzNtNEY1RGNRZmwtSWliUDh6bWp1WTNHZ1hkYjJoemNCRTZDZk53aDBGcVhKY2kwa0VuYW91T2tNaTk2R0VNZjZVWFA4UWVEYVZ4QVJUMGRrbjJ3MTZ3dXE1Z0wxVEM3RGlVelBPajBiUi16X2R2Ui1jeWlwVU5SMHdpZUJHWW9PS1BnRDR3eGdBaWoxVWJGU2lCSlMyamfSAbsBQVVfeXFMTTdxWmlGbjlySFo1SWwzb0lTdDdGb0d3NmxKN3JEbHExdndQbUM5QzR0MmJ3QzcwMHVqbnVKbTlDMEZIRVk4QWVERjNtbHA4UnRJVkFTRXNwTUZPUUNMQmtITWptdk1HX0Q0SHV5cnhNRkptNWRCTXRfb0VrNzkzcU5NNjBuWF9BZmFqYTZRTlB5Z1c2SmZjVGpGaldWR0FyOU1KZWx4VVJRMjJlWV9mbGFheFpydWdyMlg0dw",
+      "source_name": "Outlook Money",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T12:28:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Decision: Beyond repo rate hike, RBI announces 3 key measures for bank customers, market investors; here's what changes by Dec 31",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOd1dyMGNvM3FhRjFIWmRZZWpjNGhxQXUzM0pWVS1GLU9IWEFDZEdsTWZsUXBsX21BM1NmZENScXNHUHVXTXpaTk1xNHh1bUhrYWF1bmNiX2NuTE4wRDBUejVlZEVTbDViN1RNV1RFX2VjdVdsRUVFUjNlQVA2NmVaU3FSYXV4eTRHMWFoMFRmaEUwaUZGVWY2NmJUVHFnYmV4b2NyR3BGaXNmRHZwTUNnV3ZKQjZQeTJjQXFEQ0lpdjF0WHMtaU1INzFRejhuNWxXNHdCNjktQzZ2TVNCTjBfZHRLU0ZLdmgwYWc5cmlteTNiaTVrZG83U2VpY2ptcm5XYzJFbWd0ZndMTnBmM2thSUZB0gGXAkFVX3lxTE1pWGExemJxcU5NWXFsWjV0aF9xVjhQcmFvN3pwN3I4cl9pbE56QTIwRkdicy1maGk1UzRLQXZXTGFDanZFQy1FSDR2UmJyaVNCbm9YdVZPck03NVFNSTdobjhVMnRXWjVSbXFuN2pIeUVYdmF2WkJFaHZGd21lbG5QbllmSkM5RG9BMXhRRk9uMkVSNjVwcFRGTlNCZjIwYjBvaUJERmZ5QjJSVWJVcW1sQndXclA0eGJyeW5nZElQRDZsZ1dSRzJKN0NteEZiQlhKel9YWHIyOWJLRVhxbmhVOGRzODgybWFWN2hveEdKVV9INFFSRHkyaHl4dzVPbEtPMDl1RWlqMDBVTU56cnZpRGFjV0VmQQ",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:28:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Meeting 2026: Repo Rate Increased by 25 bps to 5.50%",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV1FPT2dUNEI0ZmQ2Q2xJTzhGV0wtbXlQNkV4Y1B4S3VmZHZFWFVnOEhUeEtzNGN3T3ZTazNsdzJQeXJseWs0bFV3YnJTQ0xnelBuMDJvdVI2WU5LQUV2SjdBazRnd0J2THZ0aTBuQTVZbzlLNlVpdXAyaXlIQkY4T1ZpeWNIMWpIRFFPN2xfSDZOMzIwM0JkeF9RRERMcmN5eDZ1a2xrWWdXdG5TNFR1Mnl5clhWSzFuYVVReF9RR0dBZlc0Tno3ekt6SlVHYjQ",
+      "source_name": "Utkarsh Classes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T08:38:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Raises Repo Rate By 25 Bps To 5.50% Amid Rising Inflation Risks",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR3VQRFllWUM3QUdXUXVvclNkNTJ6U3d4Z25NQVlFQ1F5dmk3Ty1ZV0UweVVZdEdXQ0VGRzh0Wm4ycnpGWXliWTUtamtuOElwdTFJRUd6RVZFb181YV9PNDlGb2YyX1RaejRreDdIVFB2eHZVRVhxN09kX2V5ZmVSdlRUYll1T08tRUFTMEJRMA",
+      "source_name": "The Earth News Network",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:14:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Raises Repo Rate by 25 bps to 5.50%, Lifts FY27 Growth Forecast to 7.1%",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMlRZTjF6bzhkRmI3VUg3OElZcWVyWWhibk1uVUZqcWxFUlE0MF8wM0Y2S2kxVmJWU0hZamc3c3lTOFpOQ2VlU29TMHVkSHVFXzFlVTZYTDFLV2o5MEJMRzZ3NnY2UGlfMkFKLXRrQ25YeURudndtaUhxWjZkcndDak9FTk83dVpSTURiRzF4T2RIVzJRY0pVX1U4RHNoTVd6QlVIS2d2bw",
+      "source_name": "Open Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:36:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Raises Repo Rate to 5.5% as Inflation Risks Strengthen",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSTBuYUdoRXVSMGxfRGJzd0pzU3pmOUdxSG1QbXJaSkN3ZUxzUHNiU084VmtxTXhRVDVVbWRaM3ZGbUdWLWoxb2tWdUhheDJVbXFiYmlxNmJCR1FKS3Ezc01Db2Roa1RMbUw0b0ZseExmMnJjYlNBVVlObXJ6SVV3d09yR3QzN0lpWlZxd3hWN2gyZFVsSmozMGt4R3Y",
+      "source_name": "Thekanal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T08:55:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Raises Repo Rate to 5.50%: How today’s rate move could affect borrowers and lenders across the loan market",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPdHY5ekV1WlV0bGlKVnAxdWxfV1Z3T25wVHZFRERNS1pLdE1faWI4Z3RwRC1FS0VGZHFiLWVMeFd1UDVfa3JrQ0lFTUJDSUE4b0NmNW8yd1ZYalJJTXpxRld0N3h6ZG5aUEVUVUJ0VlYydEhGMXpuOHgtZ2U2Sm55S1M3ai05LW9QODY1dzZiRnpzVWJNeHpEMi1hTjFpUVZvMzVzbEx1VE1fbmhqNmxIRkw4SHp3SzRIam5TYllYaWlxZ2tiakdCbFN5WURpSG9Dd09aWnlYMkQtMGFqWFg1ZEdkR1VVWVU4WU5BVm1qc0dqU3RsTXM0N1N1QQ",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T11:47:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Hike: Banks May Hold FD Rates For Now, What It Means For Your Money",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZjBKaUw1V3pKbmRsYnlNa0ZqZFVYNTNoY1YwYUhwZF9iMnhxRnhEdFd0cl9kczQ3UzFGb1N5ZnpwRjZMc0NqekRLXzhBbGc4eTUyMWFEX1htelBsc3NLMGdLMjBBUGVxelNxVDE4NmZJZ3ZlYWY2akJtaFhCMmRnYTE5YXVtVmNlMlpGX1cyc00wR19mUmFCQWV5TGNGVzl3OVVZTkE3RHgzcVNBWU1URzJjcVBzMFlqNmo5aXl5Z2FtVkczaFRYWVFiS3NSRVRaZUViREpNUGJEVTBsS2VITFl4Ui0yTnVRN3fSAe8BQVVfeXFMUEN5Q2lFTng0ZjlRdE1tNDFXWUYwZWd3X0NvT0NDQmJlTzBEMHhSNm56c1V3Zm50aGpEdGJlRFNHbmxxRmM2MDFtQWZOZ0NyVUhqTTd3d0VkNUUycG90NjZWU3VfVThBQ3ZicEcyMkhTYUxWZW1jS3dnSXh4ZzZsUFptVHdfMHlSNWZLeUc0ZTNyWlFQYnk3RFhncFpoaXdYQ2NwNzdoRXFBdG9zeEJpQUJXNFJ2eXdMS3FPY1RGNC1RUEdVTGNmVGg2UURwM0RlU1gzV3ZHZ283UVVzUTFpODJodkFNSUM5NThfSS1nd1U",
+      "source_name": "News18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:18:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Hike: How Much Will Your Home And Car Loan EMI Increase?",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOamI5ak1pRWJxNW9BMjFCZlBKQ3BiY2VRNUt3YV83bTRGVEFpemRRRFE0YlFlMkpJc09aU29sNWVkdlR5c3lLOEI0MHVXeGJNblZZejVwSTlJYl9uQVU0T3hZRWdpN2ZManBoOHJ1OHhBSmc0ci11MWtHaUIwaW54U2RLdnk5bWpFZlBXVXZNUXVKbG9OeU5UcnYxVTFJLWFUbGNFU1FTaGI4VXlMYks3UU1qNFl5VmJZMlVNSmtR0gHDAUFVX3lxTE9kYUQydzVrb0swZnpOUllqejBlQUpqQlVleXh2aXpCNGt1UkpkZDMwU2REa2dqWDhxZEpvSDRKMl8tNUNrbVoycEZsV3M4SC1XemRzRElWaWhQLVpLeTAwVGhjdEVzc0wzS1NkWnRuWUJWUFdROVdPMUgtRWZldXEtWEFjX2lJLWhMYTFWTjA1a3k4VHJ3ZzVsNGtVaFl5eU96N21JRG00N3lQVzcwRDJFcGwxb1NYOXAzN3VHOHdGb1d5cw",
+      "source_name": "ETV Bharat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T08:36:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Raised By 25 Bps: What It Means For NPS Subscribers",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSzBvU1FWTWpfRGxVaHVEMlpYWHBkOXF6MW42OTBqdTJwb1hoZUFkZXQ1QThRR2VJQVhrRjVEWkRNWW9vY0dpMWEzcDAzMWZYTzZPcTJXaU1iZDhGMVE2M1dRUlQ5RnZlUHptTlUxNFRpY2c2SUlrZW9MVjZFbWwzLTZJUlI4dVBTYlo0Zk1yV0NWZ3MtcEdGSXdqNEJCRGFpamo5RHZsQdIBtAFBVV95cUxNSXVFMEtFTEZnR2p6cUZVTXpGLU9SMDN6V3ItUEhkV1FrcTVOQ1BsNjMweWowQnVDTnl0YlA3WC1ZRVBqS2wyc1NvUEQwNnJTRVh0NTlFZVNrVnNiYmFEYzI1alVsMlpkTVJxOHFMNUV3U1lWWHdaUXUwV1BIbHVpZTZ5Ri1BbXQyelpBMS04a1lkR1hXUEpKODRjWkdscC13b3lXa2x3TTc1cTZJbk9xQXJ0QUs",
+      "source_name": "Outlook Money",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:25:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Raised to 5.50% Amid Global Risks",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ERUw1RGJsSEthUDEzM21lOWhTMTlXQTlDc3VhY2dkQXl6VVBRM1RxckRmNWp4QTVoUWIwX1VFMkdiQmw2VFViMFpOOC1nSG1ZTVNYVnlFZ3YyZ1FZNFh1MEFXQzhCenJzRUUxeGVQZjRIN0ZJY05YWDN2aXpUN3c",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T09:07:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes policy rates by 25 bps to 5.5%; growth, inflation projections revised up",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVFLUFJiZnBoWHFMSml6Z0xueTJiY1kyeHBUNlhzU3IxZGZteUhzYnIyQWRmRkxnMkR2ODNNSFRzd1lQTVZxZGNTMHN0VDBtOGJyTGE0NlJDVVZocHR1bG83VHR0R3A2QU1jR01wVFNfSHQ1YUlyY1k0RENIZDA1Z3V1SlE4STV3SndJSW9EOXBmNUpzNWs4OEtpQnN6QUo5bFNreHBIaGRBclhWSnV5V0RvR1I5ODctei0tTXZBQWJCMW5fOURzYlQtQnBOLVVuMFE",
+      "source_name": "Deccan Herald",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:33:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate by 25 basis points to 5.5% | MPC | Calibrated tightening",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORGVNY2NZTVN3THVFM0o0SG9obVVaRlk5ZzhYUXBYQzBhVk44dll4bFc3RXNjeVdZS2pzam8yQ1hxVmdQNXQwSk5NbU5zNVhhRkY1QlUyTEEtLUtWZmpUOHh2MHhHZ2o5ZXo0X2NjTmJZUU9jS1liVmJhMjdOSWZHcVcwcFRxX1FXNm9Cc2w0YWkxdVVFTkdsU2xQRmszOThNSmlHMl80RllORndvdVk2cFQxNnBBQjVNX3VqUTlQRQ",
+      "source_name": "Manorama Yearbook",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:39:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate by 25 bps to 5.5% as inflation fight takes centre stage",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcXRESDR4ZXljT0JYRDRjWEZjRjVudzRNMG13c1IyZ2VSWU5ZbUxoaGFGYm9rOTBrb2dHT1VRdXQ2V2ZieWsyYnNUaWVmTFdGdHUxam5RS1FOMGFDVlhlNldUM0dVMWlEeDUyWE9rdFl4R2FIR2dENDllbnducUtIN3FKSEkweU8wX2RvUmgta192N0ZEUUNkZzU3dDZlR2FFeEhqSkdxNGhMbzM4QkhyQjJCb2tNUE1xWlhuQnpxNWnSAcYBQVVfeXFMTjM4WjctM1Ayd2tfeUxQbEpWclpiMEFReVI3cTR2a0xQN3RCdVJYOWs1RTJXci0zR3RUaXd2bkd0T0xfR0ZKLTRqVWlxZFFETWozOURTVXNlTnBubTh1dy14MzJiUHZPN1NsMl95T0lPN2xWS0M3enIxR3B0VGQ5VkxpNERFdlBITTFfUS1TWmRzTUVwX3NFY1Z1QjRLN0JDWENja3BxaXM0Ml9oOWpoeHpPaUNzR1p5bkU1SGc5X3FMSUFJOXp3",
+      "source_name": "Firstpost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T04:33:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate by 25 bps to 5.50% as per market expectations",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdHFQcHpNZjBQWG1BaUR6QVRzemd3SWtPY1ZERTIwN3QyeGI2ZHRkalpudmgtNGZJbnNrWHZzdUlrMmpzRmQtMFpBVVVSZWNLRjdwa241RE84Z1BRaDJfemUxMGJfeXIzVF9CaUhmRFBrUFh4aHBtRmM5ZV9kQTVwQTc1SlllcW4zSko3SUJUOEc5WkRaMlJMYTRXcUZlcTltTFNDNjkxS2VST1BTUlRCS1QzcFMtQdIBuAFBVV95cUxQd3lWS0J2S0RjajlCd210a1RUMmYzck90bW04M0QtRHZfdG5Xa253T29OYWVIckNBV0RMb3doYWZSYlpzSHNkQ2lKYVVNc1FlSWxSRzhHRERkLV9Ic1FrZE5CR1hSenZvUHBFcVRuaUtWVnJZc2dhaGFEdlQzQTVzanhnbHpVb3B1Q1hDaU5KTVZLNHljenRJcS1lVFdxR2Z1WWtwczVrNXZOYWtIaHVmWHhIdzY2TkxP",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:04:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate by 25 bps to 5.50%, forecasts GDP to grow 40 bps to 7.1%",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTjBpS09LRTFGOC11Z3BpYS0xY1NLdXY4NEZaTXF6eHhCVjgtVUg2dDFsWURWeG9OTUhSaTk3VnVSaXFvME5fOENnd0oxZGgzN2hsWFVUVzdiY05LUGxMc3N3cDVEWi15X09WMUJ0X3pIZ0xMdWhxb1JxWkdlUVY1QnZkd01pTkJWMmdFSHloVUVXQm5MUDZOVi0zUW52Uzc0ZjdPWnhBRlFQck1ZclZqTTZPRQ",
+      "source_name": "The South First",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:02:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate to 5.50%: How will it affect your EMI, savings and monthly budget?",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVVpVdzg1amZpalBYaWNzUWphR0U4ckNmMzRZQk8xQzU1NjZIdWRDT051aGhQTGVDbVp5Z3k4TnF5TmRmMVBXZzItbDJsb01CMVlXMktRRS1oTzMtWHNMeXRNbGZOUktjNVVsb29VemNjTTZTNUQ5QkJERGduQ0NZdVpKRG84aXNhb3dSUXJxMmxkTEZMbzlVdmtwb9IBmwFBVV95cUxQVVpVdzg1amZpalBYaWNzUWphR0U4ckNmMzRZQk8xQzU1NjZIdWRDT051aGhQTGVDbVp5Z3k4TnF5TmRmMVBXZzItbDJsb01CMVlXMktRRS1oTzMtWHNMeXRNbGZOUktjNVVsb29VemNjTTZTNUQ5QkJERGduQ0NZdVpKRG84aXNhb3dSUXJxMmxkTEZMbzlVdmtwbw",
+      "source_name": "Mathrubhumi English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:16:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate to 5.50%: What it means for homebuyers and real estate",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVDhrN1pzdG1JcjdHOHk3RVV6YVNRbDcwS2xKY1JvTUtUWDJNVUtZZmVha0NlOXdIaDhaUEJucVEzXzhPeUhBUlFnNEJIUURJSXppVVY2dVl1YVVoUGI5TWNpaXRGOTlFWjJPMzc5THVMVE9PdTZjNVpWdG5iMldUVU5IbEh0bTFxR3hsdUEzRmU1QVJtMWY3SzBqM2lJczhJNXplRE91anRuQWZCM0pDT3huTkxDRHpndTlKSFRfR0dNdU0xdk90VA",
+      "source_name": "ET Edge Insights",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:55:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises rates amid rising inflation and global risks outlook",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HaFhnN1dxaGRKTU9oOTNhRnA1SFZJaDczMDYxZ09TMUNfaHNUX21TcEx0RXI1eVNHMHR0UmMxRXczZnFNdXRFX0lXd0RLVDJhemN6UjExTXY4YnM",
+      "source_name": "BBC",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T10:44:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises repo rate by 25 bps to 5.5% amid rising inflation risks",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQajdxd0g3YzNmOUFKcHZrQWxkaW1GWDJPTXdEcVhvaTNDWDc3ai1HMkd5dXJyaDNGcldqOEVrWjZLaFFHV2Q5dF9tbURXNDNTTWR5NnVuYjNRYzZ4QUlndWtZSlBRSTVVcjItVkpibWZlVG9XMG5hV014VFNaVVUzajZxdF9xdkc0VGVDQVcwV0xPTGV2aW9OYjc2dHMtdUZ0SnM5UNIBqgFBVV95cUxNVUhvVThBb0FXRmVCRnppdVQwUmlIUk1hNTlTb0FaUHBxbHBJNl92Snh3enVIckprS1VQY2k0c2dVeXprUElhRWxJd3VSUzZ5cmFOMlQxRUl6M3hMUm5iRlBncm9RTHo3NjJPbTAyakZIYmVRWlppa1dnNmppbjM1bmFzaWlTZDJzRGREZnY2R3p6bllEZFpCR2NONWQzVF9nWFNZc25xZlNSUQ",
+      "source_name": "ThePrint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T07:33:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI raises repo rate by 25 bps to 5.50% as per market expectations as inflation risks strengthen",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUGE2MTJjamVVM09uSGUtOFNDcEJQRWYyMlR5SVlPR3ItYnpTNml0dDJzaVBHaFZqS1hsUGpDY2tSSEJ3eXlXZk92cTNEemhsdWtWN0oyYlBNejk0T0hhY2xVUm96RFBNLXU4VTNUTWdkN05vVWtaMEd6dDlJTE01WVRkMG53QXBBUlpKLW43aXF0c3FOb1dkZURIOE1vRkxmTDA0bHN5QTRXU1NVQS1UYTFEaHNfc0tzSUE5LTdQNWlFWFBUTkF4Ul94OUhydndhbldWWQ",
+      "source_name": "https://www.indiagazette.com/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T01:02:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: How much your home loan EMI may rise and what it means for housing demand",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVzNtWWUzQl85V1BSLVl6dUtOMU0zYXpoR1ZIVWtjY2lzS3o2S3NVRy1sa3FsN0dZUHRVYjFwcFliRHFWMkN3SW9LcEJ4eG1wSTl0THJXVHRUNzZaSm1LZG5oNE5kR1RLMXQ1T1FwanFGc3FFSk1XNm1XMUMtTEFBODYxMjFTUFM2aWs1dDVhR2JDbjNGWThEamNxc3FMSnM4ejM2cXpZZjYtXzFsOEMxZDNjNTlQSkVjc3o1M28wakXSAcYBQVVfeXFMTVYxSTAzSTJGY2I2RGM5Y1hFTUtLYmZHS1FQSkxSV1pqUHA0ZVZyeGNLbWhTYm9oMEh0enJrbjdZa2l0MjBjZFo5dERTdXZVTHdFSFQ0RENpV2xjbjF1NVRLTGFkOHFDbk9SMzJsRnd3U0M0WUNXMWVMN0MtOUxXaDFQRHctVWhxN2FyVW5YLUR6b3FGSWFaQW5IbkFoMHJrR1BHVHhoS2Jvd2t1MEpfaGZXZElxaWwyUF85ek15X3Y0TzVXS0Vn",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:46:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: How will the 25 bps increase affect your home-loan EMI? Experts explain",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNYXFXamM2Yll5TWdnSWJYLUJRbkFtdmlZRVdXV1ZNNXBxc3kwc2d4UlJTdEdpaHZBcXkwbE42MmFBZUpvQmd3UTFIVGpLU3JhN2QzckwtWlBwZ1pzTXlmUm9Qbkg2QmxqVURHMVhobERrSnk2a2tXQlh0a1pqNGRQTm14WDhMV2QxZ0x3Y0tIY01yR2JNc0dIRzlGdTA3emdqLXdYeEs0M3VxWWVZRGkyWFZkRTJtWFJpOTBBeEZLb2NOdHBIQlR5WEN1a0FuLWhfQ3ZNemY3UFQxN0FJa2lzQmlSOXAzZU9rZVEwSnJR0gHzAUFVX3lxTE44VXFKM2stS3JNX2FEVXREaExXYXBPalZNUmsyeHplOS1tbzh2ZGJVN3Y4T1lMY1NwY250MzQ0bzROcWtBX2s3RVJXZXFxNEk2MWV5UWlNSER6NHhQT0o0OW9OSXFtdlJ6RE9tSE9LYm9vTE9iM0NpdEplR1haX2Nkeks3eHhkUjNLbkVrVHo1azlmRm03R2lZMEp6MF85ZFNQeDBteFMyR19fSWpCQWZWaVVYYjBRelpCTUt6RVM4dnZtdDRyRUhFblF1MV9JVDU3SWNrYXllZm1jb3BsaDBXckFSS05INTdkVk44eUVpTVd2bw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:18:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: Impact on gold prices and gold loan rates explained",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPR3hpZkpFODBJMXlnOEh2ZWF4QjNqZ2x3ZHNJd3QxQVRhdnF3a3hTMGotNlBIS1JZWVkxQjdycnNVa0J0VEt6dklwamtjWkNUeWF4bm8zVE9NbDNzWWE3YXcyeUQyRWlwN3RTS2x3Zy15NTZxRno1TWRqdFNabFZNaU9FUG9Cb0ZubjRqb2VFTzVDOU1pQjluMWEzSkRIOFdfdmZYZGwxV1B1OVZnLUFOdXJzdjVBV3FuU19FenV3MVBaU0pIdjJHaEpRZW5lS1YxM0hDUjVR",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T11:41:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: What it means for equity investors",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOT3hRT2Y2SlJVMHA4ZUlOZ1BaT25iTW0wT1FCaU9sUUdtT1dGTHRYeUtzeUJaT2JWWnQ0ZjAxVUs4ejhLRjNNTUViRFc0YjJFdmVnQkJFWDJ5TktsaC1iVGYwejVULWZScUdGRzVsREZHb19OV0ktSThXSlJxSjl3NW5YQ21nNjFkTl9td0RyVy15NlJuMkxxeEpyV0xsalJhVDQxNHdHeU5nLXpYVThQdVgzVVFFZGIxaXU3dA",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:42:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI set to announce repo rate decision amid geopolitical tensions",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONmpzM2tKal8teEFkZTluZXg0Ty1YSW51MXFWVXJWSTg4c0xCZ0lhdVJZdTNKRGxRWlB2cWY0NV8zdFRxYWdhLWxNaS1NTGZGcTdldEVtLWwxR1NyRlBZVGVxRGlDbVNnVm4xNThqRUVXTkdfcnp0ZmR5Um9sRU16bmZQeHVvTDE2WGFpTXhiRE5uQVJ2WmRuSk9NVU4",
+      "source_name": "DD India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T06:45:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Repo Rate Raised to 5.50% by RBI amid Challenging Global Uncertainty, Inflation",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVWVTQjVCV1VyQjVqSndGN1ZobGdMMnBwUEpTaWdNR1VCOUxoNGNyanQyMFVHdE9VdHlvcDRZQ283REsxYjQtTWM0TEloLUFWT2UtTHZiVnpNaUJxS0NWRFlUNVY4Q1JDYzJ4cUN4aHd4UXVlTDVsNnA0OC1WVlpqbndOTVB0OVVKa2ZQcm5oTWR2UUlSQlR6Tkd5a2hzaTNMRWpkMnFyUmxTWU5LTDZlZEZ2a21ReVNwNEo3LTNydXRjS1h4d2wtRlN2cw",
+      "source_name": "Moneylife",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T08:01:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee Nearly Flat At 96.3550/USD After RBI Hikes Repo Rate By 25 Bps",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcGlsMEtQeFNONmllQTVoYmc4WjBGQnRMZVZJQmszQkpYTWhDUXV0N0FCYzd5WmtjNUdiTjZwaXl5S25QZlktZVhpMkc5VW5RUkVfUnNEanNMZnA2NVhLZy0zZEE5S3JLMjFPZlVGUFVWb283dGx5UUd4WHJVQ1luZGNkdUx6bU5pbzl6TUNYT3Y4Q0FJRFI1eWNR",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T05:05:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI Research expects 6% repo rate: Why inflation is forcing RBI’s hand",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZkp3OXljdFFNMXAwYV90XzJKOXdJV09tdnFaXzBzaFUtcU9UQ214eGkzRkcyTHptNDhvSUE4R0tCaU5ocHhES280blNUTjZSODRZUzBuYkk3QnY1NkVHdE9MOUpEYnMxT3RuOV9NcW5MSjRpd0RadHRLTW5LMTNiQzI0TU1nN3hkdE1NdFp6cWlLMmtIcU9IVndXRUtMc2E3M0ZtMlJSSzVaXzV6ZjZvTmFGbmhyQXRQN1V6VEZ2Q3NadEpYNnBqLUxXQld3VVdr",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T13:04:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 37,
   "source_count": 1,
   "primary_source": "BusinessLine",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+TENDER|market-priming-raise-rate-rbi-repo",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T21:39:19.040580+00:00",
-  "last_updated": "2026-10-05T21:39:19.040670+00:00",
+  "last_updated": "2026-10-07T13:51:40.267824+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:39:19.040658+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:40.267788+00:00",
+      "change": "sources added",
+      "detail": "Autopunditz, BBC, Business Today, CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:40.267805+00:00",
+      "change": "categories added",
+      "detail": "MACRO, CURRENCY, GUIDANCE, GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:40.267814+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:40.267819+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

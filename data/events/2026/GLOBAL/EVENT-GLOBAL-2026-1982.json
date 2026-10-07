@@ -1,0 +1,131 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-1982",
+  "title": "India: Imported aluminium scrap prices decline w-o-w amid weak demand, softer LME",
+  "summary": "India: Imported aluminium scrap prices decline w-o-w amid weak demand, softer LME BigMint",
+  "event_date": "2026-10-06",
+  "event_types": [
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "aluminium scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium scrap, and India. The parts of the business most likely touched are demand, pricing. Classified as industry demand.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "aluminium over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to aluminium, and India. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Imported aluminium scrap prices decline w-o-w amid weak demand, softer LME",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdktxdnpCZ2xuREY2dFBDZ1BlTzduMk9JaDlRZGJkWDFZeVBrcHNtQnNDaTR5ek02bElicmhiQjdHZDhLX01OWFppcEpWdlhLTUNtamk2M0J3VVp4aURDeFJrLVd4bjN1a2hkMDRDZHZnTHZlUU9pdXdUZllya1JoYktYYmJwQnZJT191d0Y0RnMzNWYzUjNkclpaQ3lNaUx0M215TkZqZ1JINDd2a2tfR2EtenVheUxWcGJJWTdpcGw1QVk",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-06T13:46:32+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "MSTCLTD+WAAREEENER|INDUSTRY_DEMAND|aluminium-fall-imported-india-price-scrap",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T13:42:31.750272+00:00",
+  "last_updated": "2026-10-07T13:42:31.750386+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T13:42:31.750374+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

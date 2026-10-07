@@ -52,61 +52,39 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NHAI",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NHAI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "toll collection",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NHAI"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to toll collection. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -120,21 +98,41 @@
       "published": "2026-10-06T17:02:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nattika Toll Collection Starts October 8 on NH 66",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYnYzYnh1X2pyYVlmNTFCQ2JXckJqdjN5M0Rnbi1iYXJUZTlsQmVGZ3lfN1hNcW1BMU9EWTBYb0p6SDJ4Rl8za1JZYnNVWVZCMnJrZDhReENkS1p1UlM4cFp3UDJ4UzFhMkVPbEVwOXVrZHg0V09VakNNX1lCQXVLYUlzeE96ZVJfY3h2SDJhN3dHcGVT",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T00:02:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "ASHOKA+JKIPL|OTHER|collection-nattika-nhai-oct-start-toll",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T19:06:02.018500+00:00",
-  "last_updated": "2026-10-06T19:06:02.018589+00:00",
+  "last_updated": "2026-10-07T13:51:37.513731+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T19:06:02.018579+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:37.513708+00:00",
+      "change": "sources added",
+      "detail": "Urban Acres"
+    },
+    {
+      "timestamp": "2026-10-07T13:51:37.513725+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

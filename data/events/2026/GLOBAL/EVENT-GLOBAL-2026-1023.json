@@ -4,19 +4,21 @@
   "summary": "Why are gold and silver prices falling? How oil prices, US interest rates are driving the decline | Business News Hindustan Times",
   "event_date": "2026-09-29",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "COMMODITY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
+        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
@@ -30,7 +32,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -38,7 +41,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -47,7 +50,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "TMB": {
@@ -149,6 +152,96 @@
       ],
       "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to US interest rates, and interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -161,21 +254,56 @@
       "published": "2026-09-29T05:40:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver fall on concerns over rising crude oil prices, interest rates",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNC04UUZiYXRaMnFPNzlOUzhRZW42Z213RWExZFZCSWtGemRXQ0lna3hNZnpwQUNEZk9EaElKemlpczZVWlJ4Slk4NGdaOHVkclUzQ3E4UVR5Y3NUaWJWU1NuNWdqYW1LdkJVOW9iM3BFTF9jMXdqZk5qSmFiUWZhTWNMalZVTkpCbkhqUFB1NEJJOUNzY1pFN2tpUHlkOGxCUk5oc2ZIQWkwanI0bkRyZkNnR2NDZmxkdzY0TkJzRENmRDc1ZjVxdUJrWTZtbld3VWNaREJjUkxzREpQSm1v0gHkAUFVX3lxTE1PZDNTVzV1TDlEMU5vUjcycW1ReG12bEdzSEdXYWlTem0tR1IzbFU4SUpyd285RlBKMXlCS3RQUU4xSWxlbm12ZUxvZ3BoNXlOMlI4ckNPYVJOajVoM21CZFNJVXlQRW9GVURKQWxTcjdPMDZ0QkdDZ3dPZ3U1WjdmVFJGdF9TTXlKVHZyeTM0Ykx2V3ladkxHRWM1cHo2RVZIdG9JRGdFbGZNQVlFNUNWQkpiU2JwcjU5Yy1lMFFOTk1HZm1Ydjh4NGpRNXA0UVpMdUF6UHJwVXBPYnluSUgxYjExdw",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T08:45:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindustan Times",
   "cluster_key": "HDFCBANK+TMB+WAAREEENER|INTEREST_RATE|falling-gold-oil-price-price-silver",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.679584+00:00",
-  "last_updated": "2026-09-29T13:08:35.679654+00:00",
+  "last_updated": "2026-10-07T13:52:47.644331+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.679648+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:47.644292+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:47.644308+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:47.644315+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:47.644321+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-07T13:52:47.644326+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

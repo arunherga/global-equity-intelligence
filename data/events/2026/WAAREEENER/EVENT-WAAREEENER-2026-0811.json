@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-0811",
+  "title": "Codelco Probes New Signs of Overstated Chile Copper Production",
+  "summary": "Codelco is investigating fresh evidence that copper production may have been double counted in 2024 and 2025, raising further questions over output figures at the Chilean state-owned miner.",
+  "event_date": "2026-10-07",
+  "event_types": [
+    "CAPACITY_EXPANSION"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
+      "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
+        "INPUT_COST"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "funding mix for the expansion",
+        "commissioning timeline",
+        "demand visibility for the new capacity",
+        "effect on return ratios"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are capacity, balance sheet, input cost. Classified as capacity expansion.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Codelco Probes New Signs of Overstated Chile Copper Production",
+      "url": "https://www.livemint.com/companies/codelco-probes-new-signs-of-overstated-chile-copper-production-11791313604023.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-06T19:06:43+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Livemint Companies",
+  "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|chile-codelco-copper-overstated-probes-sign",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-07T13:41:42.918354+00:00",
+  "last_updated": "2026-10-07T13:41:42.918451+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-07T13:41:42.918439+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
