@@ -14,17 +14,13 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "MIXED",
-      "confidence": 0.5,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
-        "PRICING",
-        "INPUT_COST",
-        "REGULATION"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -34,52 +30,37 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "RBI monetary policy",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "+2 International market development"
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and RBI monetary policy. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "MIXED",
-      "confidence": 0.5,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
-        "PRICING",
-        "INPUT_COST",
-        "REGULATION"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -89,36 +70,25 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "RBI monetary policy",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "+2 International market development"
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and RBI monetary policy. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -292,16 +262,26 @@
       "published": "2026-10-07T04:25:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee Falls 10 Paise To Rs 96.45 Against US Dollar Ahead Of RBI Policy Decision",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPajFXcHU1TzF0dnlFZk9PWXJ0Nmh6X0IyVWpybjNjWVRqb0hrSHJIY21fekM5RUFBUmZOcnZqT083NEFZVGIwUGk3c2p2Q1JuWUFCbnM0LU5fNWhFLVJYX3dDRExoVEQwWk13XzBOSDk0WHE3QzNkT2xfMWdvR0F0eWJNb3lrcGhKNmVBSVFzVTNEOWxrczgyQU1VS3M5Y0JFTHFoa2FfTHkyOVNjWlJnSzdMNWNOaE0ydUpCaEtYYnY",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T14:31:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 17,
+  "article_count": 18,
   "source_count": 2,
   "primary_source": "HDFC Sky",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|96.30-paise-policy-rbi-rupee-slips",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T15:00:04.259848+00:00",
-  "last_updated": "2026-10-07T13:51:11.325041+00:00",
+  "last_updated": "2026-10-08T19:27:26.160033+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T15:00:04.259901+00:00",
@@ -347,6 +327,21 @@
       "timestamp": "2026-10-07T13:51:11.325035+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 4 -> 6"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:26.160008+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:26.160025+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:26.160030+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

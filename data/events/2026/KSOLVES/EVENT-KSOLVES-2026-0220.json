@@ -10,12 +10,13 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "SUPPLY"
+        "SUPPLY",
+        "EXPORTS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -32,11 +33,19 @@
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +59,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply, exports. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -74,16 +83,26 @@
       "published": "2026-10-08T00:02:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. $CRM Stock Purchased by Quintet Private Bank Europe S.A.",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWG44QW9kWUhlenZkbWdxQjdlMzB1aDlnTEd5c3RxbW9OS0Rpb1g2OFUxaFNvdVN5UENFT0d2Z3lJVXllMzdvOUF2eV9SV1RIdVQ3M1JDVGdkMW1iRllISk5pVDA0bXVwXzN2eTVWS0FFR09GaC1TMVVMSzFwX2VEU0p2OGxMUFdCZWlqTzcwOUVGQm16em9PcHVZTmxvTWFmb01FNFAxdjJWZ1B4LUtwdG5xaTlvc1hOd0lVSldTUnlSSHF1b0lDMA",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T17:32:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "KSOLVES|OTHER|crm-envestnet-inc.-purchased-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-25T12:56:11.018399+00:00",
-  "last_updated": "2026-10-08T13:57:17.849687+00:00",
+  "last_updated": "2026-10-08T19:27:33.519041+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:11.018445+00:00",
@@ -94,6 +113,16 @@
       "timestamp": "2026-10-08T13:57:17.849667+00:00",
       "change": "sources added",
       "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:33.519020+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:33.519038+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 4"
     }
   ],
   "price_reaction": {}

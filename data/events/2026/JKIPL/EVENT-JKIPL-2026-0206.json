@@ -46,6 +46,60 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "highway construction",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -58,21 +112,41 @@
       "published": "2026-10-01T11:07:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Launches Barrier-Free Tolling on Tamil Nadu Highway",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOV3VQa2JmY080ckZmZ2tIQVA2SV84cUZFTWUyR1p4RThyZDZwRFEzWklWUGVzZTlTNG9fSGpHeVVNb0dHQW95Zk5nVFAwWVZ4TTQzN1EtVV9qaW1tdmtiejVfUDk2UTAwMFVPWUstYnRMakpVTnRHSHpnMkk2WHQyd19zZXFZRS1jRXBVNXFoSnc3NUM2bkZaOGZNSFRVTXhnYS1SQTBBQjJLdFllRGJsaFFhVy1UTVB0U3g4MnBmdGVCRjR6UEZDd0g4dXdqTllHV2M2TVhsVXlnWjVGYjhpbkxQSWNubE9rMXc",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:00:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Indian Express",
   "cluster_key": "JKIPL|NEW_PRODUCT|driving-highway-nadu-tambaram-tindivanam-tamil-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T18:59:35.192889+00:00",
-  "last_updated": "2026-10-01T18:59:35.192946+00:00",
+  "last_updated": "2026-10-08T19:27:09.054187+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T18:59:35.192943+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:09.054165+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:09.054183+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

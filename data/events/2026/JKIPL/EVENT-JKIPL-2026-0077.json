@@ -4,17 +4,19 @@
   "summary": "Caterpillar Inc. (NYSE:CAT) Steadies On Record Backlog And Power Demand Kalkine Media",
   "event_date": "2026-09-24",
   "event_types": [
-    "INDUSTRY_DEMAND"
+    "INDUSTRY_DEMAND",
+    "GUIDANCE"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
         "DEMAND",
         "SUPPLY"
       ],
@@ -29,7 +31,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
         "+3 Development at a known counterparty (Caterpillar)",
         "+2 Major industry-level development",
         "-2 Single unverified source"
@@ -39,13 +42,15 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
         "supply terms from Caterpillar"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Caterpillar. The parts of the business most likely touched are demand, supply. Classified as industry demand.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to Caterpillar. The parts of the business most likely touched are revenue, demand, supply. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -89,16 +94,26 @@
       "published": "2026-10-05T18:09:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Caterpillar Stock Forecast: $72 Billion Backlog and AI Power Demand Drive Record Growth",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSkU2S1hOV25zS0JBUm42cVJGWHU3NXZCYm0yN2t4SVFTMm9VbkUtNUh5dzd6dXU1eDE5dGF1NUNRdTQ0c1FRTDlGUUFGMU1oWjlNUmNYZ0ljb3RJejNTemp3MmQ1bUM4VU1jR3ZYWlMyaDJpWVFGc215T2xKSDZLM1NOWG12d0VNeDN3RjF6ellwekItVEhSSkIxaGJHaFpwbmtIbXM4aDV0NzBDQjNudmlxUjc2NktqdXlr",
+      "source_name": "TradingKey",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T15:04:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine Media",
   "cluster_key": "JKIPL|INDUSTRY_DEMAND|cat-caterpillar-inc.-nyse-record-steadies",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.812010+00:00",
-  "last_updated": "2026-10-05T21:42:21.199822+00:00",
+  "last_updated": "2026-10-08T19:27:28.539905+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.812056+00:00",
@@ -119,6 +134,21 @@
       "timestamp": "2026-10-05T21:42:21.199804+00:00",
       "change": "sources added",
       "detail": "Kalkine Media"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:28.539888+00:00",
+      "change": "sources added",
+      "detail": "TradingKey"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:28.539898+00:00",
+      "change": "categories added",
+      "detail": "GUIDANCE"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:28.539902+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 5 -> 8"
     }
   ],
   "price_reaction": {}

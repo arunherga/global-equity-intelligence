@@ -56,6 +56,46 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, revenue, supply. Classified as acquisition.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.39,
+      "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are balance sheet, revenue, customers. Classified as acquisition.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -148,16 +188,26 @@
       "published": "2026-10-05T11:17:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce acquires Listen Labs for $2 billion and OpenAI hits $70 billion run rate, Harry Stebbings notes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYUpTQ05vZ2JPYzlPVTZyOW1JSC14NnZpZ3ZIQUNpNHBMZ2dFUVBxVThpSlVSQ3d0NTRwa0Y2MkVlQ1dPTUJBXzR4MlMxSU9qOS1jcGFMck5MNnd5V202dmg0MVh1VF8yOE1pUnlIVEFpY2Y4TGFEenNDWHpHXzlhc203MmkxVTE1ZVN5NjNfNA",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T14:51:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "salesforce.com",
   "cluster_key": "KSOLVES|ACQUISITION|acquire-agreement-definitive-listen-salesforce-sign",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.915331+00:00",
-  "last_updated": "2026-10-05T15:07:11.232832+00:00",
+  "last_updated": "2026-10-08T19:27:28.425827+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.915389+00:00",
@@ -188,6 +238,16 @@
       "timestamp": "2026-10-05T15:07:11.232815+00:00",
       "change": "sources added",
       "detail": "marketingreport.one"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:28.425805+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:28.425823+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

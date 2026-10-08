@@ -10,13 +10,14 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -26,12 +27,21 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Middle East",
+          "relationship": "WEAK",
+          "weight": 1.3,
+          "detail": "export market; in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
         "+1 The commodity (crude oil) is the subject of the headline",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,19 +58,38 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Middle East. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Export revenue from the Middle East could face downward pressure due to shipping delays, increased transit times, and potential regional demand disruption caused by geopolitical instability.",
+        "margin_effect": "Margins are expected to contract due to the dual impact of rising raw material costs (crude-linked ingredients and packaging) and surging ocean freight rates.",
+        "cost_effect": "Input costs will rise as crude oil derivatives (used in personal care formulations and plastic packaging) become more expensive. Operating costs will also increase due to higher shipping insurance and freight surcharges.",
+        "competitive_effect": "RAVEL may face a disadvantage if larger competitors have stronger bargaining power with shipping lines or more robust raw material hedging programs to absorb the cost shocks.",
+        "regulatory_effect": "Unclear, though there could be changes in maritime security protocols or government export support schemes if shipping disruptions persist.",
+        "short_term": "Immediate increase in logistics costs and potential delays in fulfilling export orders to the Middle East. Initial pressure on gross margins as higher oil prices begin to reflect in chemical and packaging costs.",
+        "medium_long_term": "Sustained high oil prices could force RAVEL to implement product price hikes, which might risk volume growth. Supply chains may need to be re-routed, permanently elevating baseline logistics costs.",
+        "second_order_effects": "Rising energy and shipping costs could fuel broader inflation, leading to consumer down-trading in the personal care segment toward cheaper, non-premium alternatives.",
+        "key_uncertainty": "The duration of the shipping disruptions in the Middle East and whether crude oil prices will sustain above the $100 level.",
+        "monitor_next": [
+          "Brent and WTI crude oil price trends",
+          "Global freight rate indices (such as the Drewry Container Index)",
+          "RAVEL's quarterly gross margin and management commentary on pricing power",
+          "Geopolitical developments and shipping safety reports in the Middle East and Red Sea region"
+        ]
+      }
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -70,12 +99,21 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Middle East",
+          "relationship": "WEAK",
+          "weight": 1.3,
+          "detail": "export market; in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
         "+1 The commodity (crude oil) is the subject of the headline",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -92,8 +130,26 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Middle East. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Could be negatively impacted in the short term due to shipping delays and export disruptions to the Middle East and European markets, though potential price hikes to pass on costs could offset some volume declines.",
+        "margin_effect": "Negative, as rising crude oil prices drive up the cost of petrochemical-derived raw materials and solvents, while shipping disruptions in the Middle East escalate logistics and insurance costs.",
+        "cost_effect": "Input costs for chemical solvents and key starting materials (KSMs) are expected to rise, alongside a significant increase in outbound and inbound freight expenses.",
+        "competitive_effect": "Supriya may face pressure relative to competitors with more localized supply chains or those operating in regions with subsidized energy and petrochemical inputs, such as China.",
+        "regulatory_effect": "No direct regulatory consequences expected, though shipping disruptions could lead to stricter compliance requirements for maritime transport and cargo safety.",
+        "short_term": "Immediate pressure on operating margins due to higher spot prices for solvents and sudden spikes in ocean freight rates, alongside potential delays in export shipments.",
+        "medium_long_term": "If elevated oil prices and geopolitical tensions persist, the company may need to permanently renegotiate pricing contracts, diversify its sourcing of raw materials, and optimize logistics routes.",
+        "second_order_effects": "An increase in working capital requirements due to longer inventory transit times (inventory on water) and potential cash flow constraints for smaller distributors in affected export markets.",
+        "key_uncertainty": "The duration and intensity of the geopolitical conflict in the Middle East and its ultimate impact on global shipping lanes and sustained crude oil price levels.",
+        "monitor_next": [
+          "Brent crude oil price movements and petrochemical solvent price indices.",
+          "Global freight rate benchmarks, particularly routes passing through the Suez Canal and Middle East.",
+          "Company management commentary regarding raw material cost pass-through and contract renegotiations.",
+          "Transit times and export volume data for Indian API shipments to Europe and the Middle East."
+        ]
+      }
     }
   },
   "sources": [
@@ -106,21 +162,46 @@
       "published": "2026-10-07T02:22:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Oil Price Today (October 8): Crude oil jumps 2% to $102 amid rising attacks on ships in Middle East. What",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOZGpPYlUzRzBGTVEzYkFjemx5Q0NEWGpZN3kyY0FDMzV1YlV2ZGhQWjc4UzhadXZEVVZGbjBCd0pYbDV5TG9SajliTHFXWUFxa1d5d3d5Si1Td2tDU1p3SnVpVjVkSG9EOEZMdU5xajhSVDh5NGplOGxsRDhWQUMzeEZ2UjQ0TDdqLTh2Wm5IYXUyQjVhNGpCdmE5bTBxejRaVGhLY1FPWGw2N2FyMjJmbDk1cF9NQ3NLMmdxTmlSekxSLTlUb1dlbkp6aWNfVG9GQ0ctTXZ1bk5tTXE3X2VfX2JJMnc3T3ZCV251RVJXRmVES05hamRXWE5maFlxWXhvZFdOZzFrZTJlbkl2ODZWSG5KZmJhVU9abTBESmln0gGeAkFVX3lxTE5kak9iVTNHMEZNUTNiQWN6bHlDQ0RYalk3eTJjQUMzNXViVXZkaFBaNzhTOFp1dkRVVkZuMEJ3SlhsNXlMb1JqOWJMcVdZQXFrV3l3d3lKLVN3a0NTWndKdWlWNWRIb0Q4Rkx1TnFqOFJUOHk0amU4bGxEOFZBQzN4RnZSNDRMN2otOHZabkhhdTJCNWE0akJ2YTltMHF6NFpUaEtjUU9YbDY3YXIyMmZsOTVwX01Dc0syZ3FOaVJ6TFItOVRvV2VuSnppY19Ub0ZDRy1NdnVuTm1NcTdfZV9fYkkydzdPdkJXbnVFUldGZURLTmFqZFdYTmZoWXFZeG9kV05nMWtlMmVuSXY4NlZIbkpmYmFVT1ptMERKaWc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T03:45:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY|crude-october-oil-oil-price-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-07T13:43:51.554567+00:00",
-  "last_updated": "2026-10-07T13:43:51.554668+00:00",
+  "last_updated": "2026-10-08T19:27:07.978549+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:43:51.554657+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:07.978526+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:07.978542+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 5 -> 9"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:07.978546+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 5 -> 9"
     }
   ],
   "price_reaction": {}

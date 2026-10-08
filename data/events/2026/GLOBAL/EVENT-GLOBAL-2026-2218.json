@@ -9,17 +9,24 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.28,
+      "confidence": 0.35,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "deposit rates",
@@ -36,8 +43,7 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,7 +51,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -54,7 +60,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit rates, and deposits. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and deposit rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -128,21 +134,51 @@
       "published": "2026-10-08T10:07:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Deposit rate hikes unlikely for three mnths, RBI action to help NIMs: SBI",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ2V4V09jdUVjNlUxUXNKc3ZCWFFySXV5OG1xUW9OekNWYXBJUzMxODVvXzVkSmMtUFNjRVpoaTVGUzlWU1dOQnpfcmNwOWRraV91Si1rQnk2TGNfVHBxdm5lTnBKODliTnpuaUgxRllLaWctVXNDajJhS0c3cjhvaV90eENQMzc5OG9qa05qZUxCRkpKSjhiTlBqbW1yb2UwMzJSdFpTTWZKSjhYTUZlcjVKbFRsTTBu0gG-AUFVX3lxTE94VHVYZWthTV84clppUlQtc0VlVWFaNGdNQXEtNDZOcVlxTW1KeWJCRHk2MGlLQU53NjZORFM1eS1zMVNJZUZ3enAxSjg4WjhVNi0zeDh0ZzEwWW1vUHU0b2x5ZVhSVTJTXzNCRkNJcWMwUll3VjZnaWRvaFFaQzVYcjdDREppbE1SaG5ZMnBnVEUtZmhBVlUyQ1BqcHk5VXRON1J1SHdXQzY2dS1obE4taHVQYlBRUkZRclZ1ZXc",
+      "source_name": "MillenniumPost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T19:06:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI: Deposit Rate Hikes Unlikely for 3 Months; RBI Aids NIMs",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNjFQSF9YUktBZEIycU9xMXJ1QmlXTTZiTFA3ZVNkcnFQcEw1cHRpUlB5RmdwOFlKd0g3dDZMZlc3WWpuSWtubC12MWZNemdTMGZMOVJENzFSQjVwdWlLd2lpV0J0dzc3UHdfY0VMSjY4ZnJUcm1icFpTZnQ0d1BxRlQybTRTZ0VReVZWZVdsVDFKSnJiMGp3VXFVWVZqOUtFdk8xRDlvNW9CUFlrOV9EOXAxVEfSAbQBQVVfeXFMUDYxUEhfWFJLQWRCMnFPcTFydUJpV002YkxQN2VTZHJxUHBMNXB0aVJQeUZncDhZSndIN3Q2TGZXN1lqbklrbmwtdjFmTXpnUzBmTDlSRDcxUkI1cHVpS3dpaVdCdHc3N1B3X2NFTEo2OGZyVHJtYnBaU2Z0NHdQcUZUMm00U2dFUXlWVmVXbFQxSkpyYjBqd1VxVVlWajlLRXZPMUQ5bzVvQlBZazlfRDlwMVRH",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:03:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "BW Businessworld",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|chairman-deposit-raise-rate-sbi-unlikely",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T13:49:15.069559+00:00",
-  "last_updated": "2026-10-08T13:49:15.069642+00:00",
+  "last_updated": "2026-10-08T19:27:10.459227+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:49:15.069632+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:10.459206+00:00",
+      "change": "sources added",
+      "detail": "MillenniumPost, Rediff MoneyWiz"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:10.459222+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

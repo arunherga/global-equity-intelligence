@@ -11,12 +11,15 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.4,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -28,6 +31,7 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
@@ -40,9 +44,56 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.28,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "public sector undertakings",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to public sector undertakings. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -66,16 +117,36 @@
       "published": "2026-09-28T13:20:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Secures 5 MWp Solar EPC Order from Public Sector Undertaking",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5mWG1SYnkxSGpkOXJsSnBmWEVJWUprd0I0ZVdJMTZ5QUwyNXQ4c3dCRm1UTVloT3lRZUYySnJNdFhfMXc2V2JMWmh2VkJudlVHSlY1RjdSQmszeGdhQzVJ",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T14:43:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies bags 5 MWp grid-connected solar project from PSU",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNRDBONE9idVBSZ25pNWZyQThsRmc3X3ZYOERjOHVZTmpKN3dvdU41dFFnMm1lY25FMm1wLUM3cGYtYkI1cWxBYjEybmR4cFJMM1FyUE8tLTd2U2xNZmc2TWNOdUdjSE9oRE5kMmhYSFpoN0VjUXFJOUxPWDc4UTlTNUtZM2w4NDY0aVhGWS1BQzBmUFdWU280Y2lJMXMydmFMMktlcUtpbzJHeEFFTmxENHFLaFkzTWxlR1dObmo2MWNPQzZZZ3lhNk9FdnlNd2QtVS1yUXFvMHotUdIB3wFBVV95cUxNTE11ZHQyczVoaEVZRHN5eGpLSnVJVWFZYWFXV1NMN1pFcDlVWTZPczJvUXc5R3puMEVIZHRmZFZJeWFXZVRjOFRvbVduUmh2TmRYOEFOUVItY3lzSjd4XzdIY09TUDZKSUl0M0Fxa2FXUmdQOTF4RXBrbWR4X0Jsc3hZR1d4UGJ6NUl3VmR1UXVWN2JkOFk4UGNiOWotYlpENVdKY3JQSWpRakVHRHJBSmFzLWtpbEljSTNjczZlZG1GcTVvbUFacHV6VnFBZ3NWNG1UX1JzdHNBVjVJWHRv",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T14:25:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|ORDER_WIN|800-mwac-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T17:50:18.977623+00:00",
-  "last_updated": "2026-09-28T14:14:03.272603+00:00",
+  "last_updated": "2026-10-08T19:27:25.174095+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T17:50:18.977662+00:00",
@@ -96,6 +167,21 @@
       "timestamp": "2026-09-28T14:14:03.272598+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:25.174070+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18, EquityBulls"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:25.174087+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 8"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:25.174092+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (SECTOR)"
     }
   ],
   "price_reaction": {}

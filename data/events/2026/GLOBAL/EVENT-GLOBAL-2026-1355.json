@@ -356,6 +356,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -368,21 +411,41 @@
       "published": "2026-10-01T15:07:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Green Energy (NSE: ADANIGREEN): Yields Up, Crude at $102",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN2ZscVFMcnJ2NUJCMm5TWDJlb3BXTzlFQ0JLOGRVNDNyeWV6Z2c4TDdDYktLdHpReE9mSFhPa2l3dGNNbHJRcEI2Q3JBOVJJX0NVekY4THBXN08zWE5NUUNnUHY1dkIzaVY3NjN6WnNhQUdfbFNha3BWQ1A2S2pUQWJDektjSWhZM2IwY0RFSFJVS0RPaFRVRklfZEVDUmExaDVYU2hINEhWc0l0aEV4WDZPZ1FoeTFXQjJNbXlTaGNHaVU5Yi1n",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T13:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "kalkine.co.in",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|adani-adanigreen-energy-focus-green-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T12:51:59.126349+00:00",
-  "last_updated": "2026-10-02T12:51:59.126412+00:00",
+  "last_updated": "2026-10-08T19:27:19.134078+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T12:51:59.126407+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:19.134053+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-08T19:27:19.134075+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

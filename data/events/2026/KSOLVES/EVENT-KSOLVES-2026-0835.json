@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0835",
+  "title": "Salesforce stock trades at EUR 200.48 with volume 73.5 percent below average",
+  "summary": "Salesforce stock trades at EUR 200.48 with volume 73.5 percent below average AD HOC NEWS",
+  "event_date": "2026-10-08",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce stock trades at EUR 200.48 with volume 73.5 percent below average",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPaGpTalUxRXJyWGpPNmx5ZFd1aWtSa3BkMUQxVFpCdFZxYTdBYXZDVnM4cThGb3FfSWxOUzUwWHJHYmxOdlpHMmNmSndBVENaSmV2UGFkLTFsVk91U0JHNHY3Z19NZUx5QURxNlRPZ1IwQ2x0c2VGUkpQTlhMeVQ2OWdjMDFENG9DaWpUN2VuX3d6Tk1tRW1GMXp6VzRnSjIxeEtjQmJUXzQ1OER4MGVmQXFvS3hzbWQxTkNMVkxxWEZIeUJNcm56LTNOVQ",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T18:33:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "AD HOC NEWS",
+  "cluster_key": "KSOLVES|OTHER|200.48-eur-salesforce-share-trades-volume",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-08T19:26:26.832509+00:00",
+  "last_updated": "2026-10-08T19:26:26.832582+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-08T19:26:26.832571+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
