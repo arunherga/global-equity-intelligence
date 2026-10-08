@@ -58,19 +58,19 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.6,
+      "confidence": 0.71,
       "business_impacts": [
-        "REPUTATION"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
@@ -79,12 +79,15 @@
         "best source quality 7/10",
         "two independent sources",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation. Classified as analyst action.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -650,16 +653,56 @@
       "published": "2026-10-06T05:43:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares dip, falls 4% in October: Can the stock recover?",
+      "url": "https://www.thehindubusinessline.com/markets/hdfc-bank-shares-dip-falls-4-in-october-so-far/article71558514.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-08T06:18:12+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares dip, falls 4% in October so far",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSFl1aXpEcnkweU5WRTFZNFY1NlhsZmtkZnZZeWlvWTNxb1pyNFRvc055YmpjUFh2eVV5QWhGeG5CSzQ0aHF3empraXZ1WDQzRWNYS2o1bF9oUGJ5VFE4Q0JzQUxLUFZPd2lrcHgxUXZLVUVyaU5DaU5oLVJzVm1tUTdfUndHcUllNmU0d2JLMnRoTWhic0ROQXd2YnNZWnJmV0xkc0t3",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:07:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares dip, falls 4% in October: Can the stock recover?",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcXduVmM4LWRGcTJWNksxOHZwbXF5X01HNEt4LUJ1S1RCVS1NcGlhbWh2SXBPUHpEbzZYOGNtZGFtSFJ1dWFSNG00S0tIeURZYV9nQXFoT0R5d3YzNHFxa1hMc3UxTC1YY0JuOHk0TDFNQWJjd01XTjFEa2kwdkhHWGRxR1NxRExJdnlkbEc5RFJfUVdiU2paaGNQdjJvcFJnTy1vbS1rWW5SYzg1TTM5M9IBtwFBVV95cUxNTUZkZmd5YXdUUTlSTUJyS3RxdVM3eDBCcGJQWFN4aUdfTXp2N1FZX0ROMmRyMXJwVklza1A3MHkyUVZhdVBWTXd0Vmc2dG9qMEZyelh6Q0c0THBrak91TWJnN2w0YUR2c1VjWUd2blVKRkxUT284ZGFwVEpJbHI1Vk1YX0pTS3pyWTBVN1N2V1hLdktJSlRlcklBUm4walVmTmszXzFWSTBpMDN0ZGIyWm53V1pNR2s",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:47:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank To Review Q2 Results On October 24",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVTVKeGpnUUxkNDRJZVFRb1hDamFELUpFN2xqamQzcTRLanRzbTNuU3RGQzMyN2czaHRTVXdibVQ4RU5KY2x1QmRwbHh1QjFvcWQ4ZExJaDhxUzYxU05iTWZpQnh1ZXUwQ1JRRlJLcjRGeHBQRzBFZ3Vnb1U0WWF0d0xiZmtPNHM",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:41:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 24,
+  "article_count": 28,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-10-06T13:45:56.806848+00:00",
+  "last_updated": "2026-10-08T13:58:16.201310+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
@@ -745,6 +788,21 @@
       "timestamp": "2026-10-06T13:45:56.806842+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:47.373893+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets, TradingView"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:47.373917+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 5 -> 7"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:16.201288+00:00",
+      "change": "sources added",
+      "detail": "Sahi"
     }
   ],
   "price_reaction": {}

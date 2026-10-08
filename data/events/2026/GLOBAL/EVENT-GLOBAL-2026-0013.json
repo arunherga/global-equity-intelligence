@@ -6,7 +6,9 @@
   "event_types": [
     "TENDER",
     "REGULATORY",
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "DEBT",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
@@ -58,16 +60,20 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
+      "relationship": "DIRECT",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
       "direction": "UNCERTAIN",
-      "confidence": 0.84,
+      "confidence": 0.83,
       "business_impacts": [
         "REVENUE",
-        "REGULATION"
+        "REGULATION",
+        "MARGIN",
+        "DEMAND",
+        "DEBT",
+        "BALANCE_SHEET"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -78,11 +84,85 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
         "+4 Regulatory or legal action",
         "+3 Government policy or tender development",
         "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "+2 International market development",
+        "+2 Company appears in the headline",
+        "-6 Scheduled statistical release, not a development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "formal order or circular text"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, regulation, margin. Classified as tender.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Could marginally increase interest income on surplus funds deployed overnight with the RBI, though the overall impact on total revenue is minimal given the short-term nature of the auction.",
+        "margin_effect": "Helps prevent dilution of Net Interest Margin (NIM) by ensuring idle cash earns a risk-free return, though VRRR yields are lower than standard loan yields.",
+        "cost_effect": "No direct impact on operating costs, but highlights the opportunity cost of holding excess liquidity instead of deploying it into higher-yielding credit assets.",
+        "competitive_effect": "Reinforces HDFC Bank's strong liquidity position, as large private banks with robust deposit franchises are typically better positioned to participate in surplus-absorption auctions than liquidity-constrained peers.",
+        "regulatory_effect": "Standard participation under the RBI's Liquidity Adjustment Facility (LAF) to assist in regulatory liquidity management, including Liquidity Coverage Ratio (LCR) maintenance.",
+        "short_term": "Immediate deployment of overnight surplus cash on October 08, 2026, helping the bank optimize its daily treasury operations and overnight yield.",
+        "medium_long_term": "A single overnight auction has negligible long-term impact, but a series of such auctions indicates the RBI's broader stance on systemic liquidity, which influences HDFC Bank's medium-term deposit and lending rate pricing.",
+        "second_order_effects": "Fluctuations in interbank call money rates and short-term certificate of deposit (CD) yields, potentially influencing the pricing of short-term wholesale deposits.",
+        "key_uncertainty": "The exact quantum of surplus liquidity HDFC Bank will bid and the final cut-off yield accepted by the RBI in the auction.",
+        "monitor_next": [
+          "RBI's published auction results, specifically the cut-off rate and total absorption amount",
+          "HDFC Bank's credit-to-deposit (CD) ratio and overall systemic liquidity deficit or surplus levels",
+          "Movement in the weighted average call money rate (WACR) post-auction",
+          "Future RBI monetary policy committee statements regarding liquidity stance and VRRR frequency"
+        ]
+      }
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.63,
+      "business_impacts": [
+        "REVENUE",
+        "REGULATION",
+        "MARGIN",
+        "DEMAND",
+        "DEBT",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "+3 Government policy or tender development",
+        "+3 Development at a known counterparty (Adani)",
+        "+3 Original regulator announcement",
+        "+2 International market development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-6 Scheduled statistical release, not a development"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
@@ -92,7 +172,8 @@
         "two independent sources",
         "official confirmation available",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
         "bid outcome",
@@ -100,7 +181,7 @@
         "competing bidders",
         "formal order or circular text"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, regulation. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are revenue, regulation, margin. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -374,16 +455,656 @@
       "published": "2026-10-07T15:03:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI to conduct Overnight Variable Rate Reverse Repo (VRRR) auction under LAF on October 08, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63756",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-08T10:40:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "21 Chargesheets And 32 Cases Still Open. How Did India’s Builder-Bank Fraud Continue For So Long, And Why Does The System - CBI, RBI, RERA Authorities, ED And Local Authorities - Still Lack The Bite To Stop It?",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxQaW92bHFibU5RTW1RWVVDd2VyRE9LSXF2SmM3UW5ocV9TbG0zX0JlWEYzSk4tMGNEcDBGR044ejBnTTVnWUZzcnRqTW9WUGVOVEJoYUxIWHdFQlFlWERhaEg0VjZ1Q01xQnd2N1FSM0hjNllOV1ZraUU1ZjJSUWxQX21UcElUMmF3dk44bDlRWjM3Y19FbWZlczJVOGtwLW45ZV9YNWRGUmZSZXRFZ1J6QjZ1dVN2Z0gtV0tNR0hKY1RZdE44U0tielphNC11RFM3WEdZNWFaUW5DZFkwOWpTbVV0RXY3ZGlmZTAyZ3dCb1FtSHRvNDg0blY3YVhBT2dodHdOMy1rOXV0Yk51QjZ4TTJZQmdnVDUzdEk3X1R1ZE8yMmFDZGRwZ0RHVVFITUJTb09acHJrYXQwVzJyYkZv",
+      "source_name": "Inventiva",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:06:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Energy Solutions: Jefferies Top Pick Despite RBI Rate Hike",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWHMtOG51RW1GM1hZNG04eTgyR1BxR2dXcEJoUXhta3BmVVJuZlRkTzMxWGdXOUJHQmFqZ3RhWHl4bkxNX05nVmxNZVhibXY4bkJoUzJvRm05b0NSMHYtQi1WMW00S2QxZk9qcmdhMmNGMTU4XzBKSXpHTFhhYjhrVmpFRGpDU2hTMmlmUkhsZzEtc21vajdCd0ZqdDRGU1JlTTlnOS14TTZ3Y3ZDcENZMm9XMWw",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:37:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "After RBI policy rate hike, several banks raise lending rates",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZWRoS2VRcS1lSm5aaGVEY24yUFR6dkYtYzM5aW91UVE3NWxhel9QbVlwUmstU0I3MVE3SzZuMmFJbzFnbG44YVFSLTRDS0NlOUpFd0RQSE5xaGZwSGNtRExQTFZ3RUR4REtSbDRkMENlRDV6VVFxRXoyeUViZ0wwbVZXOUk4ZWVxa1gyVWg5NENQeW1BN3RyYTF5QzBWeFlPeEhGMy16RTFsSURGVjg2MUVCMlg3TFNNSnlyTzZqby1SZ9IBxwFBVV95cUxQMVpsb2dpcVNvTzZKcG5VUlVqajkxRlpzRGl6WXpJNEVHMjdtRl9ZS2lsczNycE5hVjEwY3IxZUFnNGwxMms3alVxVVhzSVVLZEFfZk1ESUI5SU9aVFk4VzBjTGJyMXRDa19LdDRwZm1lNFA4UWpYZEFJcU8tX1B3ME5NV2lTOHpvSzE1dXZ1b1FRbXVPRllSRjJjZHVTTFJWV0tVRllZSjdwOURrOVNMSTZWOElhYkdvZGZkZkUxeTctWWxZUW40",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:23:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "BFSI Compliance Management in India: Lessons from RBI Enforcement Actions and Regulatory Penalties",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVlFsVk4wLTJBNUU2Y01mdXFiR25hTmN6bXNxTjlyYU8yRjg2Qm1lRV9Kdy1QbFF6c2pBRUdhRS01d0d4QmhfWVdyRl8zcVNkZW9naEZUczZWU3B3d2RabUp0Zkt0TWxWREM5cFVqemdJclBlbmNlUUtVQ0Q2amxlSnZHX0RIR0R0YllEenVySVRNTnNONzZHa2dicElzN3Nwa2xsbnhiejJEZ2FKbDJvV2ZVSERBSDFhNlFtQXAyM19Nd0hSTDRseXpvdHBoeHdZSkg4",
+      "source_name": "Complinity",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:49:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Banks Hike Loan Rates After RBI Raises Repo Rate to 5.5%",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWC00NmJXcnlTc3pyTHZWekJOSTBmZDhIX3hOaS0xUHdaN2Z4R1dsWl9CZl9tY21XbGtSVWpTMHJNQlRfUHFpWVQyVnhzWmVCWm9FbVFuU29WSEF4V1lvOFVRTW5zQXhJaGtuRzVXNl9XS3J3VGRsT0U5UTRySlhUZU5xVlZPcWFfbXhucEt3",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:45:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Check lowest home loan rates after RBI repo rate hike",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONnhtUml1dzBkZTR4UjZTTG5CcDNZQUYtOUhkaTlnT0F0V0E0alVtMmdBTXU0dnVzQ2k0ZjV6R3hDejg0cGRjZERJX0IzbzFZcUhuUHUzaDV6M09QRVdaVjlzQUczTVlGNTExWTU2YWNOUkx0Q2lHTnVvZmE3WHV4OVVXQXk4WUxoYXZlMTZIaFlpcVVKWUR1UmRXeHVaWktIX0ZsOXBCVmw0UTVIbjNSak9SQ3puZ3VWVEdHUUtQOXI2UDNJZl9EZmtxU0tabDhxOC1OZE1CZ0JvMlZMODBOVFM3NGt1cmN4VFpNb2p6a2lzQ0VQeC0yenl1a1E1THpr",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:53:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Collateralised repo dominates overnight funding, accounts for 97% of volumes, RBI report",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVDdPS0k1cHFJM1oxOXlQaXh3QmJ4VmRDblkxX0x6SUZsYWdBVlpDSzVTVzZ5LW53c1lWWkZISFltc2JDMS0wVlNwOWJubDcycGN6QWNncFAtV1RLeDltOVRfOV9ua20wdWJDYWZBekJzamFPci01cUxSX1NkQ00xNWp3NmNoY2daejlPSm0wNG41dVhRRVVaUUFTdlUwVWw3cnBYUV9acXVLV0RuYWxlWFFkTDYyc1h5aGtESlF6UDdPWXNRYXBiME4xcmp2aDRab0FyOVJnN00tRXI0YThUV19n0gHnAUFVX3lxTE5vTjRGSkxYWWU5bUYwaUxNMzJ5NlJmSUNqZXplNlFsY3RZUWJoUmpNLVp4ZFk1bDBTUzg2b3FsUG9jQUs2ZXBvLWNrS0FBeWdJOTUxZFdqcFdBOFZNcHhlYjlrc01aQ250WkVsMDBhMWp1SkdhSjZzX0VucFJpNTZBRnVKQlhfS0dEV25iOGtvRU12N3RPc21sc0sySHRYMHNZemlORDkxVzVRXzNERHJJSWxzWF8yQk9OZGE3aDFrbmkzYURDYkx5bzJyU0VQY3BHMmRYVU5GT3o3R0huUkVnWHVKSXBJcw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:04:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Costlier loans post repo rate hike could impact housing sales during festive season - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNOVk2RW8weFZ4VWt0alVEWHk3cnB5V05FLVlOdngwMzFocjBNQ1lCRGZUcHNiTTVEdzlaTF91cU96Z0JsejkyZVRkaUxFYlZGZGtPZHZMUUVSMzN3S0Jac1ZiNHotSHR1QWFfUGhCTUF4LTM1ZVZ5OG80STk5M2I5Q0l5emZya3lqdGJCS2NBMm5qYmIxS2hud1RvN0RFSkZxZEJ3WUt5RExmb1JUUlc2SGpqZ3ZSdnJXQ0J0dm56ZGh1TmxrNmotYzJmMlRwUXVQSlF2RFZha3o2dEF5d2pMbFVfUkItd9IB5gFBVV95cUxNOVk2RW8weFZ4VWt0alVEWHk3cnB5V05FLVlOdngwMzFocjBNQ1lCRGZUcHNiTTVEdzlaTF91cU96Z0JsejkyZVRkaUxFYlZGZGtPZHZMUUVSMzN3S0Jac1ZiNHotSHR1QWFfUGhCTUF4LTM1ZVZ5OG80STk5M2I5Q0l5emZya3lqdGJCS2NBMm5qYmIxS2hud1RvN0RFSkZxZEJ3WUt5RExmb1JUUlc2SGpqZ3ZSdnJXQ0J0dm56ZGh1TmxrNmotYzJmMlRwUXVQSlF2RFZha3o2dEF5d2pMbFVfUkItdw",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:43:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Households expect inflation to reach 10% in one year as price concerns rise: RBI survey",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQc0sza3RwSUtyRGQ3U2xRb2FoMS0yb2lranJvVlE0dkpQZUNIVTJvWVVCVTNlbkdVUzVrRXp2dnRfUHh0WS1ndDVSbTNOWXEwT0k4a2hjZm1jejRWa3VId3NueWdFelZRako2S3dNRVJWS2FJeFB6eTFEVzZ5V3pDTFl2MGdNamt0UVM5MFFQWnpOR2YwS2lmXzQyZXVlZjhyYXgzTlhuNm5wNTd2Yi1hZTNrbXBHNUZjOEpVaWI2bzVkbFJ3UmRxb0xZSEM4NklGRmc",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:07:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "INDIA STOCKS-Indian shares extend losses as RBI rate hike, rising oil weigh",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOMjJCRWF1Si1uNzlPV3BHd3EyODNGdlpzaG0zQXYzb2RRYzBya2x5RFUxbDY5Q0M1MUppQk5LOGVXRHBxUVNza3pDM21rdUc3NjBqTHFDOHloc1A2VTg1OFhBeUM1Z3dadHdVaGF4WlB3YXRBZHFnNHVzZEhWVVN2bjlQMFhtWUdLY0g3NWRNYUtFU2dDeW9iR3hnYVR1M0JLSnFDSjVTMGdudG5nX3l5M0NUeU9yQ2pDOTJ0ZU5IMEttM1oybEY5ZDZYbnVwWnpjeWZyTzFaR1R4TEU3WE9uSWkycWF0dTFrRkHSAeoBQVVfeXFMTjIyQkVhdUotbjc5T1dwR3dxMjgzRnZac2htM0F2M29kUWMwcmtseURVMWw2OUNDNTFKaUJOSzhlV0RwcVFTc2t6QzNta3VHNzYwakxxQzh5aHNQNlU4NThYQXlDNWd3WnR3VWhheFpQd2F0QWRxZzR1c2RIVlVTdm45UDBYbVlHS2NINzVkTWFLRVNnQ3lvYkd4Z2FUdTNCS0pxQ0o1UzBnbnRuZ195eTNDVHlPckNqQzkydGVOSDBLbTNaMmxGOWQ2WG51cFp6Y3lmck8xWkdUeExFN1hPbklpMnFhdHUxa0ZB",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:58:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India bonds may weaken mildly after RBI hike; 10-year yield seen near 7.25%",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPMWRfVUpsSmNJWFdEWnFIRVZVVnlqbnczMzU5SnVTZU1MVm44bmZrN3ZEdjJPVkliRGVQTzNONDJhWlRybVRzVWxYbjZFMkptYVJkZ0hJblYwTFUzODNnSXlzRVA3cXNxSWI2Q2JleV9naHlNcHdHU0MzLVBqOHpJNGFVek8xVUVMb2VyVGlDYXA0YnVIa0YwUktGS2pIZUd2QlE2dUxReXZaTXF3MURTdnRwSXBYTmR4aE05c3hic3ZSN29UUmF4ZEMxSnM1SllzRUU5ZGJrNGotcXhXbEptbVEzONIB6AFBVV95cUxPWWJvZXZQTnlrZVk1d1lFUjM2U1J5OEZ5MzBUSXJQWElTbUN3QlRGVVJRNm5VTHo5TU1FVWZxT2NQTFlMMF8zSHc0WTI5TERnOG9ORU1TTEFIZTBwaHpacjBLQmljd3poMmJsWUQ4WjNRUHAtT050TjdRSWtROGNvM2wyWXhrYVZOSDJUeFM4dnFQaXp1S0VYbjNDNkNGNFZrNWNMaU1DRWs3Q3A2Mldybktqano3VGJpRTVCQlJsUWNSbHJaVTJLcndZVThxMWIzaHktaXNhd19BSU1iUnNHdktVZ2hOX3B0",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:43:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Rupee: Broadening price pressures challenge RBI – Societe Generale",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONVA5U25VUjc0bHhVTzNXNk91a09aMWdnQTl4M2RTY2JUSTlqQ1RaRVpKUVMybV9uZlZJelV4TDg4czdMZHF5S2RBUUpWOGdiOW9hcG9LNFZwaHd6ZHZ1TzBxdVZHampxeXJxSFhBQW1ETFZpcmpyNmNQR0N2QW9fX1k5Rl9YclkzazdtNWlIN3kyT1k1VXJTTUJUQWNYNnFTdFFjcTRTWFIyYmlreVdNU1FoTQ",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:39:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Rupee: RBI tightening cycle resumes – Commerzbank",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaV9lOFNLWVBBdTMyR2o2YUlxNUdia3RPSFUzcjlRY2dsZUZkMk5TY0dOMlRPOVM5eEZWLUFkRDRQckhTNDRoSmNfT1BHZ0NSd1QyOGt3ZFlYSmVGeFVVOWJvV3JZanJqZjA0NnpJdjhRZ2xWMXJBcDVsNnNkdjhXNzg3VGNhRS15N3ZHNlBoRlFUQjI0QzI5TnpNa2k",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:39:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Inflation Expectations Hit Alarming 10%, RBI's Painful Hike",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vQkxuMHZIQnVBVmpja1NENTlsbWQtNlNPSFZwa0tPd19pRU85b2Q1MWJPWHlFeWpyYzF1RjVpejRLTm4wdUxjOVNYNjNfMmJRRGNNTTNfeWpYT3BQLVl3Z181ckZwQ1R5Y3JqQkt0OURJYmM0YnptcmZaSXllSG8",
+      "source_name": "Hindustan Herald",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:27:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Inflation pressures broaden as 37% of CPI basket rises above 4%: RBI",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcmVkRWNtTDJpdXNpMldlTl9iMDhsNm5NSFQxNVpnZGFoSEJpbFVkMkRDcmh3ZU9lRnZ5MkVZNHdSd3RVZUJHSC16aXIwTjlteENEU05QWnYzRlQ1a2RUcVBFRGhsNVV1c3RqaTZ5bDBDdFNoaXRRVVQ1S09xM1V2d0lEc19EQmd5VnNvemh3RHd0LVlWaXAtOFZnNG9GWmRTVVJwTXpIeVJwblJCejBFdFFieDVydWU1U0pTeVM2RmhWcTBMOENEc0haZzDSAdIBQVVfeXFMT0lkQk4yRTR4eXlxTkoyZjd1M2V0M3ZUYjdCTjgwMlBlcUp5UDJtQ1dXN043OGVRWURlOXF1cFlKUDFPdDdBU0dtbXBxbjM3c0dWTnc2SGk5NGtHQVdybURZMnlyVnV2MWlwU3JGSHREZ0RfMUxublJKOXkzWks3eXhuU19HUjU0RzNhLVlWMVpZZWdYbzhCUjBmUzhXMEVhRUw4Wmhta3RBVDVDVjkxMDhEdTZ1SmZDRVVOeUdvbUNjdDJiZkJqODhIMkdrVnJTSGxR",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:00:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Jefferies names Axis Bank stock a top pick on rate outlook",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQWNmLVNTUzFXaFBSUE5kN0xVQl8xanFQV2YweHRuNXhTSUVGeU5KbWE5WnJsQnN5RHc1U3dYOHc4cDZjY1gyNFpXa19vRDdBc0x0aVA2dGp1dEozV0V6VGJISHhqbXJtZTVkX0dLWnY3aTlnYTh5VENzTWZNTlQycU9SZUFTRHduRWlyZzdmYWVyRjNlVHM4bGwyYVVLR1FzUzJvMkhfdWI2WElhTzMxNUJFTXJqLTladUxYcU1n",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:10:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Jefferies names ICICI Bank stock a top pick after RBI rate hike",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSXNpSTV2ZHBCWjEzVDhlSjlFc3ZKUmt2dk9IVmtscUJ3OGYxOU5PZXJERkVWRUdUeDZSelRHSHlqVFl6a2VCQjd5b3FvUWpXa3hrYUh2bGE3Skh0QmM4blU2Yk5KQnNSSTJxWmk5d2V6bFJhREpPRkhqWUdqOHNsTDZ2bW1qRWNERFNLWXlkYlVpNkZVUjF1c3ZfSVNlZUJlanIyZW5ZTE5DWTdIb2hrMmRHMDY4MkJNTUdnbjlFSUdWRlBl",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:13:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Jefferies names State Bank of India stock a top pick",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcU1RVmVsV2hUZS1xQWZkNlhLdkx3YnNZOVIwaGYzSGxPWXBKbXRZQ1hfUkJfUi1XNXNMd0IwajktWm5WRVFHRUlzak9zZml3ZXE5aEpENkc1aGNoQ2pXa3dOMlRVU0NEcmJFdTdUOHhsbksxTEZpUzRabHlUekRBS0QyQUIwdURrYk1OMDlOeUJmV2c0VE5RNTZ0MmF6YnVZQ0RzenQ1Tkk5QS04RnF5QjFpNkhZQQ",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:10:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Nifty 50 Outlook: RBI Policy and Global Market Trends",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd1AtRzNlZ2lmR25GOVRhOTJTUV9VQjdOV0JVVEl1cWVUcC0zMlRkQUotcXhqaE1tdVl2N29oR2tIckhaWGl1SnAxWUpWcjZQbVFwMERmMGRsQlhyN0VLcnVRaUVFaXVsRVNacWdhQVVrQS1Dd3A5MTJ2cG9ZWFE3Z0dJUVNRc1NxdURzalY4RXBIOTRTZW5HSVYzWnB2M2M1bk1wSExBUURDRFBpR2pKcUVhSjZEckxkLXVsVWFpY2Q5Xy1NcHFUaFVMbldxcUlGT3pvSjhEeW5yRTluQXc",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:42:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "One 97 Communications Stock Update: Share Price Plunges Over 6% on RBI Action",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUm1MMTdnVGtLRUsxRzZwbUM5OFpsZnZHT0Y3R3psYjRSb1RtOFRweXgzdWdsOUE3elc3MFdsOFdmU0hMdWd0cHBqRlBJZ2x2WEY0dEx3U0JFVjZ3ZzBhTmExci1kOXdkRlgzd1BYRFZ1Y1lTTEpLWHpBOWRLUzE0ODlCRVdTVUROYWJYQ3QtWEc2RkV4azB5azRzdDlITm52QWZJNG03Nm1PUDk3S2VXYXF0OVVkOVlHV3dTV1M1VdIBxAFBVV95cUxPLUQzcTRHSUFUTkZsYllsb3BpYzBHOEtEVjUtWmhpbnRmTVozSmc1MEdnMHN1T1lGMXNiRkpxeGdKRzJkNnRVWktSUGJxVGtaS01JSGFNakRaOTNJUlZTLUlGXzBqQk5SbGpYbnFxMlBMM3hxMld0ejBRcGQxbGVjVEpSc0pfTDRfeEg2QkVoeHBMZk92U2M4allYUm5lZVRkbkR0UmJWeDlmbWtSODhMSFJTRkRQb1I0M1hrZWYyV0xpSlM3",
+      "source_name": "LatestLY",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:23:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Brings Bank Deposits Into CAS",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNnhiTVFzaDNHRVV6dk03T0RPbmNvY2NYZmFfbXlPYS13YS03dGpYc1R2TWxKdl9oY3JVeHNuVEJWclB1N2JVNnlPdHEwaUctM3lrcDNKaVBFdHVDUmtvR2t4T1RycjRYMUNoUi1hXzFwaFRtdWtYV0NrMWJMZmw4RUNHeXFUc2RSbl8zWXdYZzPSAZABQVVfeXFMTzZ4Yk1Rc2gzR0VVenZNN09ET25jb2NjWGZhX215T2Etd2EtN3RqWHNUdk1sSnZfaGNyVXhzblRCVnJQdTdiVTZ5T3RxMGlHLTN5a3AzSmlQRXR1Q1Jrb0dreE9UcnI0WDFDaFItYV8xcGhUbXVrWFdDazFiTGZsOEVDR3lxVHNkUm5fM1l3WGcz",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:30:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike May Give Banks Short-Term NIM Boost as Lending Rates Reprice Faster",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONWZaWmdDM3JUVTBZXzM5OFJfMmRwNmFMWkF3RkFmb3pnQ0xqRERjX0JpR3Z4eHFVZnd0TGFLM09wWGg5UlNnMHdhbjFpdnpJVEVROE5hQ1A4emVjcFJCRks1LUNlTzZJbXlOYkQ2cGZSb0VUUXhkRWVwc1NsdmtWeVRGS25qaEY0bXE4WEcwWHFrZG5UWUtncTRzOEdOZFJYU015b29oSFZrX2szeHBNM1RrMFRnOE5od3BZRVpB",
+      "source_name": "Thekanal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:34:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike Puts Pressure on Indian Markets as Oil Prices Surge",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNll2YmxkdlVvOXJkaVY3anJyZFRCQm03d0xhSG52S19sMlVoTlFCd2NCbjFKUWx4SGFtVThCdHhwZVI0bWRvUHcwakp4c0VEZzBoODNxcnlvZUhQMEhJTjQzZEpZYWpqNVVnWUlkWUxvYzVVUzlOV3NOQnF2blFmQkZlRENSZ1dsRmp6X0hreGZKX25oM3RIeQ",
+      "source_name": "Bold News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:45:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike to Test Housing Affordability, Buyer Sentiment During Festive Season",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb25NRlUwd1ZpZG5IejlZMXRIV09Fck41NWFSMTBzcmh1bDdaRkVnaEF4NUZSblRGZy1MOGd2LUViY1piUTg2a3hNT09OQTZTcmRxQUpzTlUzMW1RRk5VQTF0ZDlJRGEtRks2VHF3bHFSQ2Y5LUhwM2hsRnpEZGItdG1tME1IMzJFYWRLblpoMFJ5ZF9uOUJYSUg3dlM5ck1hVVhoYVNlXzRYSjhWeHRMc0xZTzUwenhnU19iVG1rY1N3UmNDYkM0YnZ30gHMAUFVX3lxTFBvVmY2VHRBNnJsTndhQmhEaTlBb3VVazl2Y3pPVmthZnFRNUl6VkpWcDBwdXJQRWJSZnlFVkVEaWtlSmdzNUNvUXVKWGhHektYVVh6MnNyV05kU3Z2Z3FMbDExSmIzSzhSbGh1UnAxYTZ5WUx5OTJDMGdENUEyUGpySnBnazdiTTZ0Ujk1eU56bmxiSVZYalU2TlVDT1lVUjV4aFEzd09LeGxZRkFEcGRkcVh2dl8tLUFlT18yYThkUVRiRUNJQUdyZnZmSg",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:25:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Removes Paytm Payments Bank From Scheduled Banks List After Delhi HC Winding-Up Order",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOYWxsTzhKWWFaWmIwT3d5b1R2dmo0SzhwTWdwUGRrM3hCbTEwT3hwWExzUmVfM21OSE5kQVZiUEtydVQzSVVXSG15a2N6blJiLWJQX1VXbV84TW1peDNSS1pyc2hHTnhxNU9aRmVmQWVXNHZSLWprN050dWVULWtHU0IwYndFMDBoRDV4ZTlidmhZbE5IOEI3Q05PaC1lZ1ZSWFZyZE9YTnBudDdBMGluV3J5Y0hPTTV3SEs1dWE1ZzVOOWU2OHBlLXVxekRIR3N0RFZERzVoY1l1WTBGc1J5N2dvRHRuWEEzaDc2VWhPeXgxS2vSAfMBQVVfeXFMTmFsbE84SllhWlpiME93eW9UdnZqNEs4cE1ncFBkazN4Qm0xME94cFhMc1JlXzNtTkhOZEFWYlBLcnVUM0lVV0hteWtjem5SYi1iUF9VV21fOE1taXgzUktacnNoR054cTVPWkZlZkFlVzR2Ui1qazdOdHVlVC1rR1NCMGJ3RTAwaEQ1eGU5YnZoWWxOSDhCN0NOT2gtZWdWUlhWcmRPWE5wbnQ3QTBpbldyeWNIT001d0hLNXVhNWc1TjllNjhwZS11cXpESEdzdERWREc1aGNZdVkwRnNSeTdnb0R0blhBM2g3NlVoT3l4MUtr",
+      "source_name": "LiveLawBiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:28:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Removes Paytm Payments Bank From Scheduled Banks. Was Paytm’s Biggest Mistake Trying To Become A Bank, Or Did Its Ambitions Grow Faster Than Its Systems And Controls?",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNbGtyVGhMMkZ6ZUVLSjVuVTY1WmFyY3I0T2xkc1ctdWMzaHNwUnM5R3BNMmY0dWROMVNGb1FMT0ZOX3lZNXdQSjhvU3NoVjNSbHg5aGFYaFhmQjVnd3d6WDNwanloRF9tU2RueFdUV2xfZWo2MXhBZHlsOVdVWmFkRnh2OXpSSXUwS1NHaUprT3NwN0RZWk9jSTlTMDJTZTZFVlU0bFZyMkE5WmNiaG5lNS1GTXlnTmtsT2x0TEZUOERtWGV1TlRLYXNDUU1BWmpkVjNVaURBTU5SZngyY0h1eHNiWm9OQ0RUWUNqck1WajFTTHhJRDRFTXdDbHZsY3ZxdVlmRHNBOTBMczN6X3Z4MVc4TW5ZU0dicXpCeEltQjYyTVJEX3JjRFBn",
+      "source_name": "Inventiva",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:27:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Hike: These Banks Have Increased Repo-Linked Lending Rate",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVVo0MkZReWVXb0stRGdQSkF5ZmptTnpDaFhMcHgzRHZTODBLNG1Bdkdna1A0dENySjlPVVNnbjkzU3daektIbzBzMW1aTmt3eHVNSDNLUUc1MDhJSExOMHRIbTg1b2dmZmVoM01RYW5UazJjZXkxaktrbGNLXy1YTWgydDFIdVVOSkNiX3NzYVN6Q0xtWHhfbjJSY0dJNGxlTDhpRUZVbGw5dTNmMC1FbWRYMlk3c2lHc2c5MVBpUG7SAcYBQVVfeXFMTVhjT0ZsVzFaX3d5SnJsdU5ReWc4b19PczlMVEtkUW13WlhCLXJKZmhheTlQV0hONHNyMU1YZGZpVFV0eTNGTm1OT0VnSXFUUmtfQzN2R0NUZTBRZnRhTXdsTTE5S2ZRblRpdVB3Zlc2SlNSR1FWd19RQkIwcUJoUXQyenpya253ZllCVXpaaTMyTU9XaGZRNGFPUHFyR3p3X0V5VW1BUnYtSXRBdmRrSHViRWEwbWV6OE8zMjBiV2pma1pxa2h3",
+      "source_name": "ETV Bharat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:54:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Shifts to ‘Calibrated Tightening’ Amid Rising Inflation Risks",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPR2hwUkZ0TFJzd056MEFYMm9JTXFYZGhvT1BGZF9ZLXB3cmp0X3pLNDJONzhNbWVfRlZWWkdnUE55bTNlWnBVNXJwSFViYWlNbE5RNVVDVXpzdWYzczRVQ0ZiWUZuVmE5bGU0ZWF6MGxtN19BcHBld0tnMUJ6dW5xZDR0Y1lZR051ZUlRVlBQNXZxc3V3SmZxNm15MHVVamVwQzd5dEw3R2RyV2s",
+      "source_name": "Vajiram & Ravi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:20:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Turns Hawkish: 25-Bps Hike Puts Rate Cuts On Hold",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcS0tQy0xZ3lCcHFnX25BVU9mQWJxeEZ1YVRpcEVCSlJjT21ZbmJLUWhhZG5zT0ludW5aa21LNGNJclU0dE9YaTI5TnBNd1RNVFYweTgtczBQaU8wdXBKYVMyQkxfa3NpZ29PSmkwYmdfTDlITEpXLXdIZDZWNVJyMVl6Y2dfRE9VQXc2NTdoSmJTa0xEeGtTc3NsQmNlanE0",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:37:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI deploys its strike bowler: Hawkish policy goes beyond 25-bps rate hike",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWGtrdjhZTV9xZzdOTXY5V2lqOER1OW1CeGRZekF6NkVjQ3pBWWNubmdCMGc0Yk5hYlZVY00tTkZXdlNUdExNWFVUbGNyeVV6V1lncUNUTkk5MlNKbVdndDZWZUVwNGpyN1doRHZjOEFiOEVaQTFhQ3dlT2JjeHFveWN3RVZhOVplNjNpSXU5RFJSdkY1RG5GenNvLTBNeUpMdHlERnZGcFpOOXRKX3g2YjN1SnlUemdRWi1aYVotdG80U0RuaW4tUNIBzgFBVV95cUxOdVJ6SkZJRUlYSlpfMW9scjB4bUl1MHRMcHpqNlpKSUVhdFdIQ19hTUZfa1lWWUZudzZEc3BXM1VFR2JRZDdaUzJXT2RTM3ktMVF4OHpkUGNZTGdqVG1RTWZJT2FrMUgxUHl4N1R6MzAwSlFXcjZ3dzRMT0pWVnJaTXdFT08xdGd4WENXRTBtRE90V2hYUEdsRWM4VWU4RFZ3MG9FMzUzbWxkY19QUWVPZG4xYlpPVFlFWlRWbHN6RFVNR0FVMGgweGFOcVV0QQ",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:20:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes interest rate for first time in nearly four years, signals more tightening",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObGhJTW5XOUJOVkl1bDJaTkw4TTRyNVhQSE9ZY1U2SlgzdzNXc1V3cVR2dEtNZk5yeU5YZlBHZ3RkbHRzWkdzS2UwMElwQ0VOSTc1S2x3S1JvOXg4ZVhRZU1LUkxjZTZmRWZCU2p1NnVKMU42bU5Ca2NFbnp1SFY3YTdWR0lRaXJNU3Y3cEFzR05hOXg5S29jNkdybEJKcGhXaHJUd3BJUzdFcGd5V0E",
+      "source_name": "Nagaland Post",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:13:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI hikes repo rate by 25 bps amid re-escalation of West Asia crisis, high financial mkt volatility",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQzNpSEFad1BfUVlFekdNQ0NfXzhGSmhTVGREQjFfNzROOUpPTXQ5cW4tUlBKRkVfRHlrY3h6cWhpQnFQOWxJUlRFNTFuODZMbE80Y2RWcmFJWjZmcENsNVVFNzJYNnkzZy1ZczZPcUdDdXh2TEEtRmd1LTU4ay1IaVFTcmxFb05hZThOSXR2eU9wVmpabnpOcWJRSTlIeVduUDZOQy1qOVJLeW9NVV9IR0pPSDRkSTBYNnpldFpxcW9pcmdSWEdhWG10NktaNldlWmFNU3RuTlpDUVFYMlRjNjdtVnVrcl9feXpRa1dEQUs2MEZMTmdsRk1nd29NWGFFSW5pZNIBigJBVV95cUxPUFRvd2FJZWNwRnZVaTBIWk01S2U0NkY5Vk5YSHRDWVE4UHV5dlZKOHN5cXc3ZzE2bGtQNV9DbXpOMHZ5NkwxVFpJT1BFWFZSNkJnNVVTQmg1YUdwUmpLRzUwcmVBemZtOW50YWs5SGZBQ0g5MmxnNUl5TnY0M1VaM0hldW5QVmMtRElCZktQVmsxejVoNGJwRkYyQzZxeG8xWlNnZXhXX3Q0eEFjX2Q5b1dlN0VUZEFwR1pUMDVIbm14bUJDLW9iNzlRZW9WWVBDN2xreE9aNlZLczFMRG5NaVJIRmh1MFdzQzVVc2gtQ3ZERTlWbmR6SFQ3Vk5zRkZhbFNqaFRwYmdyUQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:24:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI imposes restrictions on withdrawals and new business at Thiruvalla Urban Co-operative Bank",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZzVvX2psbEVRczlPcnVTMngwLXBHc2Y1TjU1Ym9TYjhzcDFqd3k0T2JhWTBPb2hFT2dDQnlBVmkyQUsxVEZnTUF6RG9SWndsSE40alJoWl9QZkIyNzNSc21XdkV2TktWc2dqUjhDRDFLSGh3LWxOQnp4UndieDBvbWJSMFRHTlRLY0tKS0IyajRKMy1haW14MzhJVjZfLUpwc1gxa2dremMtR3Fs",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:24:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI intervention halts rupee's slide to record low, risks linger",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWE9YVTZETGFCVWphV0ZoM1hxbmdEMUhsNzUxLXF1c1dHeWFpLVVIOXgybE1hY19aNnloTWw0R21LZldqNzhTX2Z1VE1zTWczb1FkNVE1NmJIZ29FZk81Vk5ib2VlT1lxRmtQWEJsU011TGRvdGNkbXh2WU52V0FWeXk5ZlRhSGljWGhPR2piUFVfckVrT1FSaUhHV0VXZVN1U1hLLUVfem5iR2FOQnhPdkloNExKSzJFNzBpRnNycThobVVUdENoNDVDNldpVWvSAc8BQVVfeXFMTVhPWFU2RExhQlVqYVdGaDNYcW5nRDFIbDc1MS1xdXNXR3lhaS1VSDl4MmxNYWNfWjZ5aE1sNEdtS2ZXajc4U19mdVRNc01nM29RZDVRNTZiSGdvRWZPNVZOYm9lZU9ZcUZrUFhCbFNNdUxkb3RjZG14dllOdldBVnl5OWZUYUhpY1hoT0dqYlBVX3JFa09RUmlIR1dFV2VTdVNYSy1FX3puYkdhTkJ4T3ZJaDRMSksyRTcwaUZzcnE4aG1VVHRDaDQ1QzZXaVVr",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:53:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may deliver another 50 bps of rate hikes through February 2027: Analysts",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNZnc2WGk5dlcwNWp6cnBkc3JDWEZVT1VqWXhiQ0k5UVd6QjQ1Y2xaN0dDMzhhQnNITUJUSkVXVkdQUmI0N0FDUjBDZTUwZkN1blVPUEEwUWNhZE13Sko5bFRDbXRfUmNYTWdBU3FfTlZydjhsWVlLTlBNd2dxQnd2dGhHS0J1TlM0S0lfNThfN2xIbUN2OEoyMDFPaEJZQUtfcm9FVW9fcmh0Sml3RHU1Vm9YdEhEblhVVmw3ellDLUxILWN4WkVYdk9rVDdUUFgtM1RTRkZjY3Q3eGUxcXNR0gHkAUFVX3lxTE0tVUR0UHctbFZtaTdIT3F4NkN0bWpqOW9XZDZYSC1Na29VMnp6TzNLZGJQTDBvSEJGekFfaEVZLURJcnl0T0hpVjQ3OGhiaDBaeHVrYVlLU3NXQk1JaTJJaWpfQ3o3ZFpLZXJ6OEJOcWNpMExqSWROSVoxS3J5WTN4UmNMLXJNODBSZjN6UmpFVWU0MkJDUlVySHlEb1JoLVh1QXJkV2ZjajJyMkFYVzRkYlF4UWNEei1jTUIxWmozaGZfeEVQV2dqRlNialJOOUJZVGdtenV0ZHREOTBVQ2dIREgwXw",
+      "source_name": "ET Government",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:34:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may hike rates further as commodity inflation, global volatility remain concerns: Kotak Securities",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOa2lHMHZiZmE5d01IMkFiYzdQUXo5d1lYMGVEWnpSdW41a1ZxWEdibzRTS3h6RFhiY1Zmd3ZpN3p5R01fZ3RpZF9qSDExZ2hGY0FUWXdKdDhueHoyM0t5NUxoRm1XVkg5SFNORFZVdFhHNVpSSzV3emhMQlFYWFpBY2tXY1I4Njg4bmJubExpSm5qdkE2NXoybkwxc1FRRzhLY0Z0YnRTd1N5bVJkOHVmdGhCMzZYaXJqamtPNXFjb0RhREhuRWhVQzU3MnZMY09lakpNSm1ubzc4Y0c40gHgAUFVX3lxTE4waDNxcm03NTBXTXFaX1FQMVJWQTdVY2hzQWlWNnp5RU9vX0dNUTk5UWQzNUFZaDRGUmFnY3BTQnVnMmdhcG5IRDczSXhwT1NnS2U5ZW1qbjM0UmVMeUI2Q0ZEZGllUlpTczItY1lpSUFsOV9yZmVNcGlJNlgtUGxraTdLWVlYMWVoYmZGQUpMUU1kNGpqRXlhYkFnNWlhRXhmRllzRmN1UUd0MWZOOTg3WGphS05KSEF0T3FfZ3BTLTQxc09FMGFyYVJRRE9jd2xLX1p1Q2cyMGUtbnYwdm5l",
+      "source_name": "The Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:56:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may hike repo rate in next two policies, absorb additional Rs 2 lakh cr liquidity: Report",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQkVRN0NOd0JyM0l2WDFaN2MzWDY1QzJObjhvNVNPV1UxZ2Y5Q0YxeDExNnF0UzI5bzI3TVhpWjRMOE9SSTQ5QmlpSU9DV19QOG1pMGJQWDRWUFJuQ0VZYjB5SUdtblJnU1lKSWt2S0VxaUVTLUJ1TFBrUWdKSTVYdEZRWkdRTU9UR3dhbFpITG1NOGV0YUxEU0hoRnJ1S3otYmYzbzE1b3I3aEg5cTZNa0dMcDluRjhoVldnN09ENWc1VGpKNUU0b3E3anZHYVJQUGVISWRzUzc4OGJiQnAtTThva9IB4wFBVV95cUxOQkVRN0NOd0JyM0l2WDFaN2MzWDY1QzJObjhvNVNPV1UxZ2Y5Q0YxeDExNnF0UzI5bzI3TVhpWjRMOE9SSTQ5QmlpSU9DV19QOG1pMGJQWDRWUFJuQ0VZYjB5SUdtblJnU1lKSWt2S0VxaUVTLUJ1TFBrUWdKSTVYdEZRWkdRTU9UR3dhbFpITG1NOGV0YUxEU0hoRnJ1S3otYmYzbzE1b3I3aEg5cTZNa0dMcDluRjhoVldnN09ENWc1VGpKNUU0b3E3anZHYVJQUGVISWRzUzc4OGJiQnAtTThvaw",
+      "source_name": "Devdiscourse",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:29:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI opens AA network, but incumbents keep the pipes",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZ0JXRkR1WGFaeUNnb2RLWE5XSUVvU1VDRUNZOGRVS1k4bm9nQXpiTTY1aDhwWDJCeWRDQ0dlV3lxVjhvLTNzZVd3d2lVTFpoSlVkYnZPTmZsaEQ2c3BrWTdubkpmQTVsZ0QyZ2xLV0pQdzV4SnlhRmRwWnBESzdiekpQWEpzd3lOR21CT2JsYV9yUzVxTC03eUxVM3paYWdCX0J3",
+      "source_name": "The Arc Web",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:12:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate cycle: How much did borrowers and savers actually benefit?",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOcEZ1TFlkVG52cWRCblpBODRYOEVLWUxYdDRfRU14QUlEWGh0R1hXdlF0UEVKZGpSSnV3M1huTExUZGFybDlOWFUxcDMxZjhtUEVkRlh1WHF5aEZONl9LU0JTc2txcnpHZUtkTHFJS3U3clhOMUFLb2c4d0pTT3cxZ3NhVXpxeGVTRjkyaWdJMl9yOU45VTN4MVNEWl9yN0xpNzdEakNXeDBJSkxBbmFwSUxLSjE2eHU4R1ZCYjRZNnFtSTlzSEF1eW5NWVPSAdIBQVVfeXFMUEw4bi1KVlg4Uzc4bDRxVFlhX0VUa25zLW52Y2s0UW1JY0szYzR5X1IzODRvT1l1QXlpSlJmazd5MHFkeUUzNllRQWItbEh2RThwcEwxQzZIZmxyQnhWd2Qya0tHdUFXcWtvTGt0d0xBYk1vR0M0ZW9lajJvSHROUXFHNzZ6NkdFS0xqVzNyWFlUXzJYeHI2bW0tY21xY3oyR3JuX0lUTmVQV0VVNXZxa1kybTRsYnlGNjlNSzYtd3R5NERwVy05eURxUTl3LUIxWW93",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:00:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate hike done. Now what’s ahead for bank stocks? Jefferies, other analysts weigh in",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQWEF5TjJ3M1RodWx5a3dLUlBCVlNlel8xVkl4cS1aS0pFWnBNS2RMZkpqdjBuTnAxeXREYmJ4aGVOaVU5VlRldUVkN2ZBdWE5V0JFV0RubkhoX0ExM19vNGoyVEdGUTRpRUZwZ2hTNnVicXBxYmN3cGRjZkJNd3VaNWctckN1dHQ3UTE1ZmI4UklyVVN3WHVtclJ2Zm5kaG13VGVPSUVWU2t3dTB3ejNhUVJ0aEpMR0xtSHEwVjA0VzBseV9lRVlVQU5rTWQ4TG1ES01CSlIydGFjVTZKd2hrc0F1bG5JNmJyMUlZYTA4NNIB9AFBVV95cUxQOUlQSXRmNDVrM2NuYUJBeU9BTzltazJzQWktZUtsR3hmOGgxSk56TWdzRXpzY0ZKM1B3TFpaS0o0R1dubUNTa05wMkxFTlQ3XzJUTkxycG41T0FIQ21YWm5VQTFrVVBsMWhZVng4bkJPREZleFJyT2VMSzZmWUlDeFV6azRDNkZKd0I5TVVZSmJmbHFnWU5sVE5NOFFyUmFONTJuMkZHeXNUX1M5WUd4YkllUUJHVHdLbURiSklITnlHV1BmUFV1ZDQybGR4VHQ5Y1pQd1AtOERJWlR1RUlWcmhUejRkQW1xVlJBR1hZdzZDaGd0",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:58:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate hike: What it means for loans, deposits and markets",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQRm4xSWl4TDdjTlYycVpXNWU2cWpZb1ZJLUhwRi05clVEUXlSWGQ0VjFoaUM0elVhMzhKV3FfanhUeTQ2eWkwOE9xOWR1TzNlMVktNnh5cXVhN3ZpcjBYT1VfalFpdkVmVTFCcjhNdnE5MHVKdk52c0otSmwwTkY2SkotZW9paFduaFFjNHhCdmdaUEt6c2FsV292RVA4NVc2Z08wTENEVXNPbjNrd0hNRzhRc3BvSmJpcTBReDR0TmhNMFY0OWfSAcsBQVVfeXFMT084MWlybW82OUZ4Z25reWZnMHVZS3N6Y0Q2WW5pd1V5UTh6S3lLall5eG1fNjZ4MjI1Z0RCRzFQVlNCbDhjWkZhWFlXNUtxUldzWWU3UE1RZHBaRzd1bURGVnkwV1ZVYnRDaEJWOUFKcW5vSTV4N3hTRUIxWkRuYW9FRlVUMUpiMTd4MThLRnpUTzNZb2tuS3dpTXhMM3VidkFOSzNKVlRldHZsRUdXUjZrSVU0Mktpbk1ZazcyUjA5RWRoY3A4U0pZOUE",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T03:56:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate hike: What lies ahead for the economy",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdlhoWHNGRXVpaEg2ZE83ZUVJM1ZMTXZnMjNUWDRZMzlOcFRjYUstQWVyX3dPN0lkUmhuWkppanFsTXJqRTZQUEktU3NJNHpzTjVRdGlNcTBvSGxlanhPSWduaHdvTlMtZ2Y0U3RYOVB1MjFHb2ZVM2xRendpeHlLVGNTRkZNei13R0pPR3h6amlIV1lRWTF4UlQza3pjeWJsVDFhSWdzeHVMTUN5ZWtaV21KcVhmS3o00gG-AUFVX3lxTFBjdTJZUWFrLXNiZnNWcG0zVnJVcUdmc21EWnFrcmZVZE5vZjBvM2NXUW5TLUxNOFRBZWlqRHBNRF9na0drZjJ6ZzFjcm8xQmFtMWVXNTlMdXVIY1RqS1ljcVJkZE82a2RBVDZ6SEptRGc1UVVfa3BkQy1LbDMzWDRYamdGcjE0LTJWd1AtSzlVNF9MVm9IOUhfOFJGUEJhR3QzWmNHeDZpcVl4djJXVHNvRVFQc05kX1RBVGlMRnc",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:02:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate hike: Your EMI may not move, but your loan may get longer",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcVlDRXZpc3MxRXRuTE5BeUQ0anE5SkVZYWc0TDVsZndld3prV1RXN1dXclp1aC1sb29mMHZfRWNiZmpiNl9qTGpwODRsUzlzbEJTcUFlR0xRTVZTT3p6OU5CclNLOE5LbUYzYXZPby1JV3B4THJ4em00YzdVRWdjd3pyZ2l6c1pLVGdUMm41RlI1OVZIR2tDVWliRDFvZjNITWNhMXVUQ2drNzlaX2o0X2FvOTVlVzhwcVk4T2djSjJudG9KN3l6OHZtRdIB0AFBVV95cUxNU0l2N0dNNG14Sml3TDh4QW04Y0tIajFSZlB6TjdHSERyUEV5MXpGT0FHVUVNbzFnQ01rOFhnLWh3THVSckZWNlRmZEc3cWUwRy1ySjl4U2s0aENiSU9uRTNHb09MaFcwdlQ5TGN6Zkx5ZWNEUG1NSk4tbDBtT25MaHdCSG9KeEVJc1EyTXFmZGRRTU0yM1JYbzhvSWhMaGRmUVE3SkkxWGdyRi1rR3hKZHZURG0taHM0WHpZemR6YlE1Mk54TlFIeTUwcVVYQWc2",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:59:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI releases foreign exchange trading data for the September 21–25 period",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWHdpbVJlNm1YcXVYa1lobFZuQkc4MW8yaWFieUxHVEMxdWplVEQyMTI2d2xibmtBNzRpMkpQUm1MMkF5WTZGQjZsSXd5UXRGZ010ZGRRZ3NGU1BBY2xsLUZnNGFEck9VUVBVSC1pT1ZFUXBIaUFDbHd4TEdZVUExYUdsZWlYeGsxRWo0MHFHTGc",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:26:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI releases weekly foreign exchange trading data",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUHVRNmlwTG9DaVZLWlNyWTN6TndFWGFubjNBVWx5d1cwMWV5VXBMandIMFYwRUtpM1VnRWd0Y0VOZF9zQU5ncmJ5TXpocFRXNnFvYmkzQmxaLVlFYVZmUlBlY21YWVBIV0ZxRWhSZ1BzWUdMYmc1UmdsdDlpN0ZySzRlOUtRU1QxcVkzTnFn",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:26:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: How mutual fund investors should approach equity, debt and SIPs - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc2UtYnJzWEdzMUt5U3dHUDFJb05QdUtmWGlBclB5SC1JcWJsRGRHaEJtZTJ6TWdyLVQwaklnd0ZidmU0bDBsVFE2VVhGSU4yMmtpYlVIWlREeUpEc1U0anViUDBDVWdDMF93c0Z4QVhUNEFjNXA5TUJ3V2w0MUE1QXNwaDJDZ2EyWjFhTFgwUTJNZE1MREdIUjhFd2ZvcEJRRzFIT0lPUkpEUmJrTDRIRmVpZ2VxSm1tY3Rz",
+      "source_name": "LinkedIn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:11:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI's 'Calibrated Tightening' Drags Indian Markets Lower Amid Global Headwinds",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOX1pHaUl0MWhYSHY2QzVTQzZINmh6aW5mQTVPTldFeVF6d1l3NXNVQmFCenJQbkI2ZjFIVkpPOXhMMTFGN2pPS24zb2NtVFU2aUdINm0ybTg2UXlXdGxEZ2tYUTlwRkJwcDN1OGR0cDJVVGhEUTFWTzJJdmZEZURMUVE1TlV4dnltQWh2czJIbEViRmpKbUVOWk5pTk5jcHZRcDB2TG1hUU9abWtXakU0ZDVQVnJMTldENUZlNmV6RUZvVnpfMkpKeHZqSWZBYU9SNjd3VUxrdWrSAdsBQVVfeXFMUEtrdzZYWnQzRGpydXFkQ01Td1JKX0NYZThkS3hueU1CaC1WT0FJRl8tLWpHYjNHbGVoR3JKcl9zVWx1YUhVN0ZWVHhyMW5DcmVfVVlhNFhMVi13YjZhRGljb1BNN1FsTW5KSExCLWhDOUppdnZpNXhudXdVejFNblFXTkM0ZG5JRFFMRGk0SElvcnhDVG9OZ3RrWXUtYmZ1dFVGNVZWXzJ3RU5Wc2tRR2ZrWWY3aGN0b3l2d0xnbk9fTWo5a1AxMTdvZ0JjTFpLbXQ0R19VOFYtM2c4",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:26:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI's 29-Day VRRR Auction Sees Tepid Response Amid Surplus",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMExhZjFtMXl5Q2VyOE5mTDM4RkQxdEJJQzhZaVg3a19CMV9USHhoOHo5MVkyNm1NUUVBTGhsZDM0VWZvUTAxRHYyanB2UW1wdV9kNTJ2dzRhZ0RXR1pYaVdqYmxUdGxjOE55N0tUMlNKbWVkM010LXhmVU1pc0dJbldsYnRkbEJTMVpVZTJFX3g0akZfRVNTYTJYNm56eTBFOW1RR00zeXo1bUo0R1pRNWY2MjfSAbQBQVVfeXFMTjBMYWYxbTF5eUNlcjhOZkwzOEZEMXRCSUM4WWlYN2tfQjFfVEh4aDh6OTFZMjZtTVFFQUxobGQzNFVmb1EwMUR2MmpwdlFtcHVfZDUydnc0YWdEV0daWGlXamJsVHRsYzhOeTdLVDJTSm1lZDNNdC14ZlVNaXNHSW5XbGJ0ZGxCUzFaVWUyRV94NGpGX0VTU2EyWDZuenkwRTltUUdNM3l6NW1KNEdaUTVmNjI3",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:50:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI's 29-day VRRR auction receives tepid response despite high surplus liquidity",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOSnU0QmlLeHdPWDNRQUJnZ1pMaGRDZHdTX3hsVEVWTUZzRndTbGVVUUUwd2hPZlMzanVwNWVQS2pYLVNySjFXMGxfTWwzQTJRU1NCSFJWN2lKMG80aUFaSDlSWHNmNmlra1JLSmgzQlpFaU41WGhiWHRyd3RMS3o3dFF1ZFNOQjJyWnMzd0cwQ0NhOTFtNXN4bEJKTDFGbzBiZHhfREpWNUU3YVRpaXBMVGdoTktjVmF6MzhSTjVLQk91NlZoY25qaEVXdUZmUHZYMEpYSGlvMlBxY1JCZlhEOWRQMjFYRE04MHRSb0sxRdIB9AFBVV95cUxQZndnM3RIQUpncDUxajJaY3NRMGI2QzdNdGI4b1hGQl94ZXJnbGhqbkxZajJMZWtlS2lvaHdMQ2x6SzFfMGpiRlRxdFcxUUVkTUVZZmRIU3AtOUJ0QnktY1RfV0NMWmU0cTdIQk5BcC1JaEVqTENNdG5NcWdqOGpLZldHaWdGdGU1aFZIMEVUdHBGRWJmSnpRQTg5RmNaQnVsR2U4bGRVMzA1UjhRTDdxc2dhQXRnZmZaSmVuSzgwbWxSVXlDUlZVZUw2SUhvbVg3dXA3bGxhbkhHOEl6OTdVTk1vV2JSc1NWamFXRXFxM1pQTWMy",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T12:56:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI’s FX Swaps Are Making Rupee Forwards Harder To Read",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWkJSdzJ5Skd3am9fQ3lCMHZVNnBQN0l5eHJPV3FvU3ByM0Rfc0ZRQkF3Q3BOd1hJNEktbjB0VlVKT3VWWHhaNHdLTHMxZUVxRU1HYkQ3ZUJBTzh5WVFjY2tHT1BRdmNNQURYSG0tcHRqLTBUaXltNTRYOHVON3ZOcWVoWFF0a3VuNFFR",
+      "source_name": "Finimize",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:37:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Sensex opens over 300 points down, Nifty below 22,550 as RBI's tighter monetary policy weighs on markets",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOeDlxWjZ1clJQYlFGczhpRWR3ZWh4cGdnSFVnSjNWWi0zd0FFd0dEMzBUR3NJSlZDSk5wMER3X3c2OTdJd05wdkVnRmRwNE42TnlvanlERktZNVp3TVlrQzlrX0h6bk9YMHhKNkNoMmtNOXJGb0dWMzZPVGlEN3FydXpSTGlWTjFSeEhCNlo2NVpCTmRfRHR5ZHdmMHBHS056QW5HM3cyUTRpNk93S1l6d1F2X1B4MkVnSTZJV2tYX1MydUFQb2hNbURlWnNmb0hLb01ONXljOHBGNnNyOTdtQ3VGQTlmcnBhM283UW5kUnBRMXhxMlpwaVplbFJDWWtlUnYxeGlkUljSAY4CQVVfeXFMTWVJaEUxVWdYdHZVMGRRVXJ0QVFweEdtdW5wdnFpc1lqNFZpOWZkNVIzQ3d1cG16Q2R6TU1xNEVDWkNCQkI2MXFrWTVkSkJzWUtQWDEtTUptQlNIRXVSNEh6LWU4TDhMTTBsRWxnR1lnNUhzLUR0ZWlCZGg2MUJoWVRDOFRlb3JJcm03UERDbGZJNVBYeWRWV3RKbk1VMzI4Zk1hOFFhWUdrNHN6ajA4MXZ5UFhpVkJUSkJnTlpDeUhvdl9RdnFpZzNJSklHbDhfYVlZRXRrSTNjeWpYZXN6V1lDOEpHUG55cnpLSEM5T0dDZjdZWmxjQ0N2NFdiLTd3MHUwcEFjZlFOQW16S3d3",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:05:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Sensex, Nifty fall in early trade as RBI signals tighter monetary policy",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTFdnbEJlcXY2UEExbmhLbjFmbmhualRQMjhIaWx6T2h1SElnMl9XYlowaG9PVEZtNi1VREVrZVhkQ3RnZklSWVRvRUJCc2RIZ2U3ZTB1VUpxRFVkSEN4djVGS0U0MDJDeUNxVmpkYks5VmoycFNxZUhWV2hyQmVjcUpzSG50RVdEbF9VRVQ4Tnhfd2xhUFZqSWh2Y2h4S3NZMmR5Vi1pMWJxUXdxLV9nT1JaWTdzaGtYakJRNmEwamItWFHSAcMBQVVfeXFMUExXZ2xCZXF2NlBBMW5oS24xZm5obmpUUDI4SGlsek9odUhJZzJfV2JaMGhvT1RGbTYtVURFa2VYZEN0Z2ZJUllUb0VCQnNkSGdlN2UwdVVKcURVZEhDeHY1RktFNDAyQ3lDcVZqZGJLOVZqMnBTcWVIVldockJlY3FKc0hudEVXRGxfVUVUOE54X3dsYVBWaklodmNoeEtzWTJkeVYtaTFicVF3cS1fZ09SWlk3c2hrWGpCUTZhMGpiLVhR",
+      "source_name": "National Herald",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T05:27:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Sensex, Nifty hit lowest level in 1.5 years amid rising crude prices, reaction to RBI policy",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQSHd1ZDlOY2tUaFZRd2ZxYUtmQVJyNm5IRGkxTUx6cnYyR0s1Um9YUnh4THN5ZW82YWVJTTFqRGg2aDZDUFE3akFOLWFwd3NxRjJ5WUxoVnJkSVpFT19ZVl96NC00Sk1GbjFsQ3RwbXRaYkEzNEN4WHpnbWNoLTk4NkNTYWVqc0VCMFlwb2hBSHRUZ09vYTBWZE5BY05PdHVYOG56cWpQSjlBalRaeUwxaTJyMnYwQkdTejhHcEtmODRuRFNKWWUzSDVhaE9nZVpGRXdtemROYTRWWjBRWTYwR01hLUJLTTJGVkHSAfABQVVfeXFMTXVHQUdsTGc3MWdSaEpNUHZIaTJLNC1BWFNGVFA0SFFYR0IybnZVc0dRM0szSGhSR0RmX2xHTzZINHVmWWc1VnJ0NkNRYkh5VkJtdjJIYzNqSlZjZExJUVFpc1lzUWwzbXNlUFAwZU1FcFFJZnJ2bHBuSThVb0NLSnRoVkg5RFdyMTg3MjlwNG1CeW44V0k2UWZBeVlCejE1a0hBLVlJVWNVZV9zZUdOVWVnSmlja3lRMnBINWQxWkdMMFpkSUl4VDltTGlOeUtCM2J5ekpYSllWd29ZM3RTNkJ3MjQwMnlPdy1nNnZ1elJM",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:09:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Several PSU banks hike lending rates after RBI raises repo rate by 25 basis points - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNN2lOc1RBaHpFclp2Wl9jelZ5OUVjUmMzVDE2TnMwNGxBN3I2R3ptVFk5YmJ6dWI4ZU45WjRxNjhNSjhvVURPT0tkYlB4UUZuS0w0a3NCV3JhU0QwamQ3dFVYVk1ndjh5QTdEeDhIMFdILUd2ckUxMVBVank4RGFoYzhzeTZ1aUVlUGtwaWR2X1dSdGJsc1kwako2NnduclFjRndaMm5nbUVZaTc5Mm9BeWxhTTBLZFRRcGRhUnJkbFJRaFc2NUdVaWJLTHZKejRSbmxyQnhQYk5EZm5tS3N0ZEFCd2fSAeQBQVVfeXFMTTdpTnNUQWh6RXJadlpfY3pWeTlFY1JjM1QxNk5zMDRsQTdyNkd6bVRZOWJienViOGVOOVo0cTY4TUo4b1VET09LZGJQeFFGbktMNGtzQldyYVNEMGpkN3RVWFZNZ3Y4eUE3RHg4SDBXSC1HdnJFMTFQVWp5OERhaGM4c3k2dWlFZVBrcGlkdl9XUnRibHNZMGpKNjZ3bnJRY0Z3WjJuZ21FWWk3OTJvQXlsYU0wS2RUUXBkYVJyZGxSUWhXNjVHVWliS0x2Sno0Um5sckJ4UGJORGZubUtzdGRBQndn",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T03:59:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stock Market Crash Today: Why Sensex and Nifty Are Falling Sharply Amid RBI Rate Hike and FII Selling",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5PaUVFeW1wY0ZZcGtrdXZZNzU4RGU1ZWJaNDQ1THlNaGNPdnRWamJmUy1GUWdqZzhWaGJoN1JaS25UTE5mQngwNjJtZGt3OXNiaWtIVVYtTXZGUHJTQmNQSUF3NzNxOXZfZVEzTg",
+      "source_name": "NiftyTrader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:33:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stock markets decline in early trade as RBI signals more tightening",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU5jQVhPUTRPb0I1MnBTNU45MzlqaXZ3UDdieFNyaGY1V3JHRHVHWjBka2FoNDZZb0dMZHhqbmx6YzU2dHVBZ0pab0RWSFhlRktwVW5QNno5b3Y3eXBvc3cyWExmSnJSQXhQeGFwTk84aWlaOGRDQTJ6eWJxc1BHU0tocVd4ZGNzRk9UVW5yN3BtQW9HR3d1NEtvTzBlWUI2SVc4Q2lhb3kyeVFCempBQUNXaF9GZXRSYVFENEJHemrSAc4BQVVfeXFMUDNRZ3VzeW9MdGRVdGI3MnNvbUljT1BubHZOWE0wVEZBajFPOFZubHdRc0U4YUo0S1NjSHRQUkFDbFdyYWtmZ0dELTdKMFFOa3dKUFdWUndtaDZKYUNrTFRWUnktQUFhOHRQXzJaV2hlSlFpcUR4MXctbnFFOTJpY3VoWGJGTkNQSVE0Q2hseFROX0VfVXZBdFByWXpId21yR09qWEsxVmVMWGlid29tenlBTU0tRkZkZG91Vl9kRmFBU3NITXNQUzdjV1k1NXc",
+      "source_name": "The New Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:54:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "What is the impact of 25 basis points repo rate hike on borrowers? | Explained",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaGhkOER4VjdZYjdSeVk4eFA3cXRjbnIzdmk3eklXWHJXYkxFcGx1LUFmX0pBZklEVlhONGt4OGhsZEJybGNneUZjdlhUSUZvTWpBZnN4bVRfRUJ0aTBPanljdFpqVHhhV3I2cXlvNDl6dmtGZXVTQklTamNxdV83Qng0Yk1FVGlvbTlZM2JoNVRxWklhV3BiMndUMEN4ZWl4dmZoakJPYmkzUnBRNW8teEZDbGF0TlVKbVJIbk5GeEtva1BVanpvMnF6RXZ2cVRjalo00gHaAUFVX3lxTE5panE0WHRQZThHYTg2T0NCcEg4MVI1RGo4TnFYX0JRbXRqOWpWTUtiRXFFY0k4SnE3WnBEeEQwUUtVNUpaczRXM2E1SjkxS2ZFX2FPLU1TZzhrTTQ4clVVOVI0dko1Q1FDOXd4a19DZTFyRmNzd3hLbldLZFdtWDVEMXZ3NVYzdGFyVm5qcWZTbjczVTczazZpVUhCTHRVemdVeWhLYUNDeVFpUnhJUDQ4eWt4bTBqY2hpYWhsQXcxT0o4TXV0Sk91dDRhUmlVZGNZN1BHZUFlekZR",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:18:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why Did RBI Remove Paytm Payments Bank From Scheduled Banks? Check Complete List Of The Bank",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcng0TFRYb25sWXd0ODhJN2M3Nlc2SE5qTzNKTy1haGpHTzN6YkdKc2NoeWxhRkdnODFuc2JpTmlqa1BPT1JNTDhXZ1dfcTdpeHlYaGEtQnB0Z3h3RmVyMVpEN0FDMENiTEtSNm1rNnN3ajdsMVR4ZVBadUJEbmswSGl1bWdlRURhdXFtbXk0bHZIS05KamtGdDN2UEloNlBJNmRCNFo4cG5DOXZuSnhUWEl1aHZpb3d2SjJ3LUVpNDF2RnJYM25RUmhKT29IcS11U25TNXgzMXhSbW90YmlidTNib9IB6gFBVV95cUxPQ05KUnV1cjZORzlSclRMY1REQURQbS1pLXQ2aElLVG9fUXpwX2Y3WWVmUDZuV2ZNbFlNQWgtMklESUQ3cXZnZWlSaXAyb2JDLVJSX1VidW9jSmUzbkJWdmhHcmNXWVBmbHZ1VUhWNW1EU3FIcnlObDZYbjBiQnZQZVlvckhPblRTYm5ody0zNG5URjNabnVNYmRfUVpVcjNxTVZUSk9sYjM3MkFIYTlSYmlGWVp2SnYyR2NmN2hWeURIQmgxZDZpOXF1MmZoSE43S05hazlqNmNzUFlZYzR0V1BYV3J1NEJVc0E",
+      "source_name": "Jagranjosh.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:33:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Why Jefferies prefers large caps as RBI hikes rates; favours HDFC Bank, RIL, Airtel",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVmJBUzh3cTUxZGFRbl9QN3dWMHhZbmhhLWNlR3YyWDRFTGlfUzk5MGg4ZEV2THJjSlB0NjhPc0R0dHlnYzJZRWJfMV8tTXZiZnFTSGxsX194Y3VkdllKQTk2UGoycGV5d2dVa3B6Rk5QVkZOajlCejFvazBMbWZ1SlJodEwtNkp4VG5RQzFrYml5VF9NUElRSU9YUXd3QVBaOTBmejFEOXhGcU1nNUJuOU5fekc3U19lVVgtOTFoVWRiVmdEbVk4etIBzwFBVV95cUxQeFZqLS1sak9ISEd5NlZxWTFiSm9GR2ZWeGt4T2lKYS1OWldvZnBNSVdQeW85THlUVnhzcTMyVlA2UzNjRTRSVU5ld3h2UUdnZnVkems4YmlSMjlfZDhhNUF5QV9sQ0o0ZnBkek5LYjdYN2Nhemo0b3huSk1ZM08ydVlya3dLMkxYUWlfU3o4MG1FcXlmcG1vM2x4YkxQVXp6cGdtMFpKM1NQU1dQVnpzejA4OElQdlYwVGFsVDhRaFFGVDNCY2lVU0VCOUVXRTQ",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:16:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will RBI's repo rate hike impact housing affordability this festive season? | Real Estate News",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOQmxhVHRCUm9HWWMzM0EzNDZ0dlBpYnVid2pyRjFsbnlxWjU4TVFnUHpFTmlLei1GeXZxV1NOQTlYRURXNkdSNlg3QmQzemZaWkRoTmo3OEFXUm5XRnJwMnhpQy1PT2phSzFseDMxVnhUaVFfaG8tZGZCTWp0UDZXRUxvNEhKUl9FbzZXb1Y3ekJUNEY4d09XdGhjVHhvcXpjYVRvUHVfMDJqbFZKZ3JVRlBDQmFfVWpaT0FmbEpOQVdTUGZsbTcyZXI0MjdTTUhSRmphSktQc0xFU3BQQXI5cDJiSEZsT1R5YkNfRnNXV25ZMlhpWFRwUl9PTGVjekdp0gGGAkFVX3lxTE8wdHhGY0xBbzFrdDA4SEJQMmd5OXhxRnRlTzl0VmJoMEhhel9Tek92QVp1NEsyV1ViMjZDNWFSamJsaUN1bDMzQVk5aG9STDdZSWRSUTN6dnVNZzdtSWt4QndzTlM0TDZ3VHlmMEM0ZldEeC1VMzFZUmx3SHZIdjhtLW8zMWs3ZG15THpHWWpxNURfLXN4aW8yVkt5Wkt0M19Od2dRbGZSOWRPTzQySXd2Y3ZWN3A5SjBzM1NMcU41b3NzaTdHcnduNlJhaEo0UmlMTmluTk14bTlPbEJHb2h1SFRwWWhLVWtlbmJseFFhbkVrMHQxbTJXcmM2WEJZalNaUExSZlE",
+      "source_name": "Hindustan Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:21:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Your bank deposits could soon show up in your demat statement: RBI",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYVlrb29SWDdIVWN0TUpjZGNZc1NNSUVxaVMzS0dHX2JWbWJ6OUllVTNQUndaZUFpNXo3c2otSXU2d0VhVk5RN0lMUGZURjB3bHhOZWF4SXF3blc5aWkxXy1wZ2xZcmVTLUZyQlFNckhLdUNIUmhOWm12ZHpUSXhmbjlFbHJadXI3ZEphS2w1S01GUXVyN0lXWDlSWnhNTm1SYjhubEljM00xb2drUFRjbG14d0tBYzZqekNkMGgtWlV4Z1ZibEdHME5ZV0NHY0RIU05tTk9NSFBNZ0Ut",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:54:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Your money, shown at one place: What RBI’s new AA measures mean",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUkNPZnZSRm4yLTIyMHFlX0tXMDNsQUtpUlAxNUp3YUdNMVVIb0RLeTdhNmVZYW9UUWVtZXV3b0xkdWFxT3huZVB2RUNhUnloMnFzMFpocnVYT2x1Y0NuVGl6dDMzWHVFclZxQ1V4YnVNZkMxeTdtb0NXaTVpaE1HNlJqMDJZNlQydDJzeDRHVE44M1dKLWt6QnVOLVMyb0RqVkE3N045ZXBkYzRfMlFob0JlTWtqV1VZeDJYaHlCRG9FYVXSAcgBQVVfeXFMTXJQVklxcEZ0ZTFUYy10eDJ3bXFfM2h0NHNwQlBLQUllZUQ5V0d4Yk0xb19kSkFTMFVUdlhCWmkwNmdheGo1aGFDZVRPNXhnMkU5b0NVbC1iNVlTcEtFZjFhRG5aREd6Q29HY0dad1VmWEFsYXJhcmlDblNEWlNXTWI3UWhJQXlvLXljckFoMElPemN0bkJUSHRkU2tSaXNTQ1BUUlJWY3g4UURkT18zc2VWcHJhRjVjVXgwengwQzJOSE9KcHNCazM",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T08:31:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "अनिल सिंघवी से जानिए RBI पॉलिसी के बाद क्या खरीदें और क्या बेचें? लिंक कमेंट बॉक्स में 👇",
+      "url": "https://news.google.com/rss/articles/CBMigAdBVV95cUxQMHI5RG5qV2xBcDZMejFBeHFLU0QzM2VmZ1VURUxLZ1hVVGVoYlZwdGZjcXZJMXFqcG5lOGRZZHVhVEZjY1VIMXk0RDR5MC1CMXdOSC02a3dIUmVJZlgwRndwM28tU2JSNzVVQkhUeVQzMkxmRUFoMTRicW1SMXR0T0hkTU1GWFlVYk1fN2RHWVlSVHFxMUNHMmoyWXRMamhZN1FlMnpWdUdzTzRxb3FoNkRuQ0tRNUFiRFliV2Rnck5qTGlHVS1FeGpkc3ZPdzRnUVNxM05vSUl2UWMxMDRkc2otMEItX242VGxhM1hXS3ZvZTFJNjhsUnJzSGxUNDV1NnByZHlrVkkxSlo2ZjVCSk9yTFJ6X3lyNUpmdFRzZVFBenU0NzliaERfU1JBdDJNVWpNMnhFOUNfZXM2UVV4bGw4SVJsWGltMDRxQ2hnSFFnR0ppTDB5ZmxieEhLZVU4dDdmM05SQkdZOFBaeTQ2WjdUT2RRSmpjbGdyZENodEl5M214UHBFQ05LZW9mcFVDYUprVnlnSG1Va2RCN2lob1Q4MmxXenA3ZU1WbzNYSjNCN2lCdVhoMTZWODI2aE1aalQwOHRjTlJKNHpFN2FjUlg1UDEweFVvRG4yV0M1V2lySGZXUm9ERWJvSHdKTFFpazF6SEJyclhtUzRIMGRoVkJPQ29pMkhvdEdDOVl0YWNFeVEzTnUzandzb3Q1bE1qNllrSWFyLU5WMHhrV2pEb3hDZ19laXN3MVI4eDl3elJEMHBZNTRyTnNSc18tazdIWjRXbUpYel91WEdTei0tWG8xekhSUURDZU1UOWRSaDMtUzROckZGNDRYaHZhNGFjLTc5ZmotckpFVmlyZ0ZaSDBCN1NDZTItVFhGVVJoRFV5TVdfRmY3cmVJdkpOOHBrQ2l4Rm94Vk1CZ0FfTnkxUk5RVTRWYkZqUXZIcktQcjc5d2FBcG1HMV9fUTNsRFVDWExOaDViVHh4NXRNdFh6OWt0RU9sR2FxaG9rX1gyMEN0aEZEYldDYWZNYTcwSDdTWWExTllDV2xkLXcyZ193TDQwNDQ5RFRCeFJaSmtBSEhaS21iN1huVXN3d3ZRVm14dEFhZTQtV0lsa0FiMFJseDc2Y093X3p0Y1FCMjdNZmFoWTFTc0p5X3RfQ1pDTkpRUTRZUXB2RFhxRHNRNERaVg",
+      "source_name": "Facebook",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T03:56:07+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 27,
+  "article_count": 91,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|REGULATORY+TENDER|conduct-overnight-rate-rbi-reverse-variable",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.432713+00:00",
-  "last_updated": "2026-10-07T19:34:09.467753+00:00",
+  "last_updated": "2026-10-08T13:56:40.068550+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.432757+00:00",
@@ -449,6 +1170,26 @@
       "timestamp": "2026-10-07T19:34:09.467746+00:00",
       "change": "categories added",
       "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:40.068513+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS, ANI News, BW Businessworld, Bold News"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:40.068531+00:00",
+      "change": "categories added",
+      "detail": "DEBT, COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:40.068539+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 10 -> 13"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:40.068546+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
     }
   ],
   "price_reaction": {}

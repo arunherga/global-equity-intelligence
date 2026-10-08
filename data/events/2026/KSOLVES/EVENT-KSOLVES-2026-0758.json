@@ -1,0 +1,95 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0758",
+  "title": "Indian stock markets set for weak opening as global cues turn negative",
+  "summary": "Weakness across Asia followed adverse signals from Europe and the US, while investors awaited TCS quarterly results and its outlook",
+  "event_date": "2026-10-08",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.48,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION",
+        "EXPORTS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
+        "-5 Market commentary rather than a company development",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to TCS, and Europe. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Indian stock markets set for weak opening as global cues turn negative",
+      "url": "https://www.thehindubusinessline.com/markets/indian-stock-markets-set-for-weak-opening-as-global-cues-turn-negative/article71558195.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-08T02:28:16+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "KSOLVES|EARNINGS|india-markets-opening-set-share-weak",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-08T13:47:22.584227+00:00",
+  "last_updated": "2026-10-08T13:47:22.584315+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-08T13:47:22.584303+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

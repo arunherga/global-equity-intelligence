@@ -4,7 +4,8 @@
   "summary": "RBI’s Malhotra Says The Rupee Looks Undervalued Finimize",
   "event_date": "2026-10-07",
   "event_types": [
-    "CURRENCY"
+    "CURRENCY",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
@@ -13,7 +14,7 @@
       "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.15,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -26,11 +27,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,12 +47,13 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -53,7 +62,7 @@
       "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.15,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -66,11 +75,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -79,12 +95,13 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -98,21 +115,86 @@
       "published": "2026-10-07T08:04:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI says rupee may be undervalued: What does this mean for the currency?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/rbi-says-rupee-may-be-undervalued-what-does-this-mean-for-the-currency/134783335",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-08T07:35:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "RBI says rupee may be undervalued: What does this mean for the currency?",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdmFCVDJoX1huQWotRGl5RnpXZ0w1WGtiY1RLV3RUUWZ1UUlpZi1rT2lGS3ZPRkJQbjR6alQ3b3hBa18zVHA3eDkxRVVLc0VuSWJ0SmFUd21yRHgwTjlZaUtCdUYtZ3dfMkhVYS0teTJMNVVFRFBjOTlSOGh1Tzl6VFpkbTZ5YkVFU2R4YUNaQW5LNXJCYXFraWYwUHczYlJCS0x6SWxwdXBrRlFQTk05V2xjWnYydVZUZF82bTM2Tko3NkFFRTlOU0dfTdIB0AFBVV95cUxQaTYxWXJzU3ltdWR6Y1Z4WWh6Q21TcFZFYV9SVzk3eWVWUmJneWZncGhXYUxfSjZVbUZlWDRjMFB3UndBNUdYZ1VocVB2RGN4RXpqdzl0SXRUV2VEVFd6bDlpYjg0RTM5VW1qOU1xZFlsQmpzM2pyLW9lZGdKYUU3VVhyS0QzWlRKUU9BMWJBLVl0aXNwZXdab0VrOEFsMkZ3LV92ekVVU3VPZ3U5Mk4yQ1RramdfSkw5Q1VOYWpXMzNJUGtoS2kwd3lYMEJHNjM5",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T07:35:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee may be undervalued, markets can be irrational: RBI governor Sanjay Malhotra",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNGRGdVRORTZtS3BCc2pmbThNQXQxdWszdWR0LWZGVHNzRW5oRTFnTHNCRUI3TWw5S1A0YWp0VnRmc2NlODNHR2M2VUp1Q3cwdnE5QV9XRnZLUWt0NEhWSzF3bHhCeTZ6WmhfclR4aDRmNHNLRFNRR2xwT0FRZUo3d1J6VkpZSm5VNy0yOHlzYk9PTjMxVzhVb0dTZDQ1ZlZRZlBCMDNTaEZLZDZ3Q2huaUJKa09hZVB4eFRYTTQ5TVJFbE1xSHR3UE9DSE1zcUNMdm41aXpSQXFlT29mWTlXU9IB5gFBVV95cUxOeGRzWVlWN2Q0dHliUzZ2TmZoN2lyQlM5Xy0zb0JDSW8yOXpCb01UeWpiUTdYTmNmV1Q1dnJWSUk0TXZ5SC1yUkZEX3hMQjRGeEtMN2RCSnpRaUVaNHBXSUhTNXQzV0NvMFlzenY5YXBXbFAzT1Bwa3VsX1d5OEhyYmZMT29YWjBoM0JYSVU5YzB0ZWhHcDlUckRPRlgtWkRhYnlUQWlYM3RpRjJhNkdqb3ZKeUF5Yk1zSmo5Nk80cGdJT2tNV2dQbTU3U3R2VkdlUm5YUGcxZHlfbG5iM1B6SkpLOFBvQQ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T01:14:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Finimize",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|looks-malhotra-rbi-rupee-undervalued",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T13:46:42.503316+00:00",
-  "last_updated": "2026-10-07T13:46:42.503423+00:00",
+  "last_updated": "2026-10-08T13:57:19.866972+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:46:42.503410+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:54.229218+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:54.229235+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:54.229242+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:54.229247+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:19.866943+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:19.866963+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:19.866968+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

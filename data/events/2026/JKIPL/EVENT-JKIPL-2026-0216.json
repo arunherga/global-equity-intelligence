@@ -43,6 +43,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +100,41 @@
       "published": "2026-10-02T02:12:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Completes DPR for Elevated MG Road Corridor to Andheria Mor",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPX2hFQWxhMUJ5OXZUM3JLYVBuYlNZcFNFdlhCQTAtNTJLX29PSmw3VFZjT3Y0TldYY25MWlVjT0sxUmlTODE3bHFlUWlVbVRqTjVTQ2tkMHJSa25ObjBXdk9PZk4wM29sNWNzdVptbUNLMWFuOU9vWTVVN1l3R3d0MmREQ3IwRFNJLS1KcGZXLVlHOGoxQng1bFRmbTNqT3VBbWFYRUZFdGpmNTZWUWVRSmlfcGhZaGxfdkc1RGhDamR2ODVmVXdJV2UxM0VQRXJTWFl6aUozenh5b3dHY0xjT1VmWVRSeUxhUjVBWW5zcVVHU0NB",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:14:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "hindustantimes.com",
   "cluster_key": "JKIPL|OTHER|completes-dpr-elevated-nhai-proposed-road",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T12:51:59.218689+00:00",
-  "last_updated": "2026-10-02T12:51:59.218748+00:00",
+  "last_updated": "2026-10-08T13:58:09.947071+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T12:51:59.218744+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:09.947047+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:09.947067+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -71,16 +72,26 @@
       "published": "2026-09-27T23:13:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ZAWYA: Oman: Freight costs surge, pushing up fruit and vegetable prices",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdTJJTVluLVVWU3A0QU5oeDdQTGRMQUEyX1hVZDBWZ2FYbC1XNWpoc3lFSDF4Qjl5blN0QUloZWJ0cVhITkZTRjdLbm1LM1l3WkRmQ0JYYlNBdWRXY2N6VWpSRm5maG5pcFZCanVtN3ZYNlRfUWJ0WkF3YklfTHdMbklLeWRUSGN3Z2lXVHFwMERPWkw3Yk1FdExUbmNiTTlQUTVhVVpKbDhrdHBoeGV1V3hIcThHSnJEcnFMM0lJaWFSNUVzVl8xOTNhcXRfdVFVQnVSR1pFVmozUlZp",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:15:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Vietnam.vn",
   "cluster_key": "FRESHARA|COMMODITY|flood-fruit-price-price-rise-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.536962+00:00",
-  "last_updated": "2026-09-28T14:13:12.835155+00:00",
+  "last_updated": "2026-10-08T13:58:00.170584+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.536988+00:00",
@@ -91,6 +102,16 @@
       "timestamp": "2026-09-28T14:13:12.835143+00:00",
       "change": "sources added",
       "detail": "Vietnam.vn"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:00.170562+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:00.170579+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 3 -> 5"
     }
   ],
   "price_reaction": {}

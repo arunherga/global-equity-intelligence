@@ -4,7 +4,9 @@
   "summary": "Deposit competition forecast for banks in 4Q The Star",
   "event_date": "2026-10-01",
   "event_types": [
-    "GUIDANCE"
+    "GUIDANCE",
+    "INTEREST_RATE",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
@@ -12,19 +14,20 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "MIXED",
+      "confidence": 0.29,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND"
+        "MARGIN",
+        "DEMAND",
+        "REVENUE"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "MACRO",
-          "term": "deposit competition",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
@@ -37,23 +40,26 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 Earnings or guidance at a related company",
         "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "-3 Speculative or unconfirmed report"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its macro, product exposure to deposit competition, and deposits. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit growth, and deposits. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -116,21 +122,56 @@
       "published": "2026-10-01T22:07:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rate hike may intensify banks’ competition for deposits as credit growth stays strong",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/rate-hike-may-intensify-banks-competition-for-deposits-as-credit-growth-stays-strong/134777903",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-08T02:17:34+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Rate hike may intensify banks’ competition for deposits as credit growth stays strong",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOMmNOVldnWHJ1am1BbFR0c3IyNmJ3RW5LTnltZHZGb3czWkZnc3JDdjNfWldVbThiSHNhS2FzeEw3WXVhOVo4a2R1ZkwtMC1mUXVuUDlWbFZNQkx5VFQ0SVpBdFhmd1hhTkRyWmttTmdMajBHTHJhVGhDQ1VnNjFJT25SMlBIenJBa0pueWJoX2htUlA3dlZGN1B5bFFNcGtDTGNUUWhSd3hJdlBzejJFUU9pR05iSDBQcU4wOUJvRTJjNHVBX3JZSFBnS05YTF90NktPR0gyOHNBd2RzcGfSAeMBQVVfeXFMTzdObDlES0lGcHI1eHhRWWl3Y29nZFctYVVaQWtOYklBZU5lR2w1UlBpNURDR3VGNWVIVTJIQ0F3VWlueWFuVzc1TW5xTGZoX0l5M1VuY1BtV1I5Z0tod3Uwd2FlTTlvaDg3bERWRjVnQTdNRFFwc1pkZTBpcGM5SkdNRmZqTnd1WGZUNDRSbjhwMHNXc0tUVHRsZU9mbFZQVU90U0ktVEJrQmt4dFd3VlBHLWwwbVlodnZCLUVnbzRBbG84cW9DR0c5NXNobTBTdWZINVdDNEp0T3pXaGpEWU5RX28",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T02:17:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Star",
   "cluster_key": "HDFCBANK+TMB|GUIDANCE|bank-competition-deposit-forecast",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T12:51:59.180194+00:00",
-  "last_updated": "2026-10-02T12:51:59.180244+00:00",
+  "last_updated": "2026-10-08T13:56:50.987294+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T12:51:59.180239+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:50.987263+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:50.987281+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE, CURRENCY"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:50.987290+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> MIXED"
     }
   ],
   "price_reaction": {}

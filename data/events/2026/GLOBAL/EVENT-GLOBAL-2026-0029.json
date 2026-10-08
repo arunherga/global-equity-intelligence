@@ -62,12 +62,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.44,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "DEMAND"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -82,23 +81,20 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -151,12 +147,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.44,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "DEMAND"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -171,23 +166,20 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -261,16 +253,26 @@
       "published": "2026-10-07T10:54:38+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee slumps 40 paise to close at 96.75 against US dollar post RBI policy decision",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQm1PNjdvUFViZUZxX2tMQXFZclQ0dGxlc0E3Ul9GTGtCQmpaOElzNFZhNk9Sd0dmVl9RajVOcjlHR3dXeFJreVYyQnJwdHI3Y2dWRmpYWkdPRy1LbW1fQW1USEFtME4zQTZiZEVYeTFtb0JlaUk3dGFVVWZ0a0ZGWjUzT09DVnZCZWI1SXVHbnlXZTI1V0dVVVFfczNZX1Z4Qm5zR2l0U3R5NnMwS0NyM2s5QnloV3c",
+      "source_name": "The Meghalayan Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T15:09:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA+TMB|CURRENCY+GEOPOLITICAL|95.58-against-close-paise-rise-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.498026+00:00",
-  "last_updated": "2026-10-07T19:33:27.064233+00:00",
+  "last_updated": "2026-10-08T13:57:01.744667+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.498060+00:00",
@@ -356,6 +358,21 @@
       "timestamp": "2026-10-07T19:33:27.064227+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:01.744637+00:00",
+      "change": "sources added",
+      "detail": "The Meghalayan Express"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:01.744657+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:01.744663+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

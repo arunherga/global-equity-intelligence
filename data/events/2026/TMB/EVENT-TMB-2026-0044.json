@@ -10,61 +10,41 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
         "DEBT",
-        "BALANCE_SHEET",
-        "PRICING",
-        "INPUT_COST"
+        "BALANCE_SHEET"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMMODITY",
-          "term": "gold prices",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "throughput commodity; in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "gold loans",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "gold prices is handled rather than bought or sold; volume matters more than price"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to gold prices, and gold loans. The parts of the business most likely touched are debt, balance sheet, pricing. Classified as debt.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. The parts of the business most likely touched are debt, balance sheet. Classified as debt.",
       "ai_analysis": null
     }
   },
@@ -78,21 +58,41 @@
       "published": "2026-09-22T11:15:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Loans Surge as Indian Households Shift Borrowing Patterns",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92UDBhOTkxVXh3Ym9CdU1XdUpCWDRSLTlaRVNVdHBsQ1FyT2kzTXNWQzNoa3VIU0pybGludExRQkVYY29iTGQxUGl2YjZGUFZQT01TWjJZdVphbnBHYlJURGxzcE42aURuT2JFQWM2TQ",
+      "source_name": "LiveChennai",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T09:23:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "LiveChennai",
   "cluster_key": "TMB|COMMODITY+DEBT|gold-high-india-loan-popularity-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.988411+00:00",
-  "last_updated": "2026-09-22T18:19:39.988445+00:00",
+  "last_updated": "2026-10-08T13:58:00.600270+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.988443+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:00.600244+00:00",
+      "change": "sources added",
+      "detail": "LiveChennai"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:00.600265+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

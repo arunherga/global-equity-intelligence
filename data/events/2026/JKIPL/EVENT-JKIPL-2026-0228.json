@@ -43,6 +43,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +100,41 @@
       "published": "2026-10-02T13:15:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Advances Rs. 2.88 bn NH-139 Daudnagar Bypass",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPVXpmc3Z3Z1ZJSS1SVXZ3SHZ2LTBYRHZZQUlQaENRUVV4VTF2Z1F2bGRmbmVjSGJTbF90RURtVjg4WkxidEZkU0RMM3FxTk1EWC1zYjdod3ZBM1o2SkM4SDdKcUhVTlBndWdfYlpUelE5Ty1vaFRhNy0ydGprekF5Y0dVQ21HM0JsVXhDVEc2WW1kX3ZaQWd2Unc1QnYwaWhYazIweWxSQnZ6NmNlVE1MM3NiUTJLX1RGOFRQN1NOVFRhNlBQMnNGX1QxWXlRTlEyRVRpTnZNenF1WHNHYzhtMg",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:00:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "psuindia.com",
   "cluster_key": "JKIPL|OTHER|288-crore-bypass-daudnagar-nh-139-nhai-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T18:31:36.636199+00:00",
-  "last_updated": "2026-10-02T18:31:36.636261+00:00",
+  "last_updated": "2026-10-08T13:57:42.666666+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T18:31:36.636256+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:42.666641+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:42.666662+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

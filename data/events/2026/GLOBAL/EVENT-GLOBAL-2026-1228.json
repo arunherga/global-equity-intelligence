@@ -5,21 +5,23 @@
   "event_date": "2026-09-30",
   "event_types": [
     "GUIDANCE",
-    "COMMODITY"
+    "COMMODITY",
+    "SUPPLY_CHAIN",
+    "RAW_MATERIAL"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.59,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND",
+        "SUPPLY",
+        "INPUT_COST",
         "PRICING",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -27,46 +29,64 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "+2 Movement in a relevant commodity",
-        "+2 International market development",
-        "-2 Single unverified source"
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
-        "whether the price move persists",
-        "contract repricing lag"
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Could be negatively affected if Ravelcare is forced to implement price hikes that lead to demand elasticity issues, causing consumers to trade down to cheaper alternatives or reduce discretionary spending on beauty products.",
+        "margin_effect": "Negative. Rising costs of crude-linked raw materials and packaging, alongside higher distribution costs, are expected to compress gross and operating margins unless fully offset by pricing actions.",
+        "cost_effect": "Direct increase in the cost of petrochemical-derived ingredients (such as surfactants, mineral oils, and specialty chemicals), plastic packaging materials (PET, PP), and freight/logistics expenses.",
+        "competitive_effect": "Ravelcare's competitive position could weaken relative to larger FMCG conglomerates that possess stronger pricing power, deeper pockets to absorb temporary margin hits, or more robust supply chain hedging programs.",
+        "regulatory_effect": "No direct regulatory consequences expected, though sustained high inflation in essential personal care items could attract government scrutiny regarding retail pricing.",
+        "short_term": "Over the next 0-3 months, Ravelcare is likely to experience immediate pressure on gross margins as raw material and packaging procurement costs rise, alongside increased transportation expenses.",
+        "medium_long_term": "Over 3 months to several years, the company may need to reformulate products to reduce reliance on crude derivatives, permanently adjust its pricing architecture, or face prolonged volume growth stagnation if high oil prices persist.",
+        "second_order_effects": "Broader macroeconomic inflation driven by high oil prices could reduce overall household disposable income, leading to a general slowdown in the premium personal care and beauty segment.",
+        "key_uncertainty": "The duration of the crude oil supply disruption and the exact level of price elasticity among Ravelcare's consumer base.",
+        "monitor_next": [
+          "Brent crude oil price benchmarks and global supply disruption updates",
+          "Price trends of key packaging polymers like PET and HDPE",
+          "Ravelcare's gross margin trends and management commentary on pricing actions in upcoming quarterly earnings",
+          "Competitor pricing movements and volume growth trends in the Indian personal care sector"
+        ]
+      }
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.59,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND",
+        "SUPPLY",
+        "INPUT_COST",
         "PRICING",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -74,33 +94,59 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "+2 Movement in a relevant commodity",
-        "+2 International market development",
-        "-2 Single unverified source"
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
-        "whether the price move persists",
-        "contract repricing lag"
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to crude oil, and intermediates. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. Nominal revenue could increase if Supriya successfully implements price hikes to pass on rising input costs to formulation customers. However, volumes could be negatively impacted if high prices lead to demand destruction or if customers delay purchases.",
+        "margin_effect": "Negative. Gross and EBITDA margins are expected to contract in the short term because the spike in crude-linked raw materials and solvents will likely outpace the company's ability to renegotiate API selling prices.",
+        "cost_effect": "Directly negative. Crude oil is the primary feedstock for key chemical intermediates and solvents (such as toluene, acetone, and methanol) essential for API synthesis. Additionally, utility costs and outbound logistics/freight expenses will rise.",
+        "competitive_effect": "Largely neutral to slightly positive against smaller, unorganized API players who lack the financial resilience to absorb cash flow pressures. However, Supriya could face a disadvantage against larger, backward-integrated competitors with stronger purchasing power.",
+        "regulatory_effect": "No direct regulatory consequences are anticipated, though sustained high input costs could indirectly pressure budgets allocated for environmental compliance and waste solvent treatment.",
+        "short_term": "Immediate margin compression as spot prices for solvents and intermediates rise. The company may experience increased working capital requirements to secure raw material supplies amid disruption fears.",
+        "medium_long_term": "Over the medium to long term, Supriya may seek to renegotiate supply contracts to include price-escalation clauses, accelerate R&D into green chemistry alternatives, or increase backward integration to reduce reliance on crude-derived imports.",
+        "second_order_effects": "Potential supply chain bottlenecks for Key Starting Materials (KSMs) if chemical manufacturers reduce utilization rates due to high energy costs, alongside elevated global shipping and freight rates.",
+        "key_uncertainty": "The duration of the crude oil price spike and the degree of pricing power Supriya holds to pass on these cost increases to its global pharmaceutical clients.",
+        "monitor_next": [
+          "Global Brent crude oil price benchmarks",
+          "Price trends of key solvents like toluene, acetone, and DMF",
+          "Supriya's quarterly gross margin and EBITDA margin performance",
+          "Management commentary regarding contract renegotiations and pricing power",
+          "Inventory levels and lead times for Key Starting Materials (KSMs)"
+        ]
+      }
     }
   },
   "sources": [
@@ -113,21 +159,51 @@
       "published": "2026-09-30T16:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Crude oil price rise on supply disruption fears",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-rise-on-supply-disruption-fears/article71558343.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-08T05:40:38+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Crude Oil Prices Today | OilPrice.com",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+GUIDANCE|disruption-forecasts-hormuz-oil-price-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.462017+00:00",
-  "last_updated": "2026-10-01T13:34:27.462078+00:00",
+  "last_updated": "2026-10-08T13:56:44.753924+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.462073+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:44.753890+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:44.753910+00:00",
+      "change": "categories added",
+      "detail": "SUPPLY_CHAIN, RAW_MATERIAL"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:44.753916+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 7 -> 10"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:44.753920+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 7 -> 10"
     }
   ],
   "price_reaction": {}

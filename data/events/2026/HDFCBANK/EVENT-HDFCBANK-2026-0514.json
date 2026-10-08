@@ -50,17 +50,16 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.36,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -69,8 +68,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -89,21 +87,41 @@
       "published": "2026-10-05T02:08:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares are underperforming despite CEO clarity, Q2 update - IIFL's Rikin Shah explains why",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNcHdET1pneVJEYkFZOWVNcGdYdzM1Vmx5QTlLbEN5VkZia2R6bnZWWXgzY2hfdHZFYWZZMk02TTY4THhBQlNYa1l2UWtTZF9hOVBETklaQ3FiQmw5cGxjYVVEeWMyb05USkRQbHNrX0hoUGplMGE4ajZmU3hUb3g4ZWlXMjhLSmRDXzZKbXNxVHgzbDVCSl9hdndMQW5rVU5icWg3d0FtSEMzdnZFSEh2cUgxS21nbHFkMzd3NzdpbTVEanowZmVOSmQtRzZ6UEJwcXVkTjVuQjdmSkUwd1JvalpFRVkwejFxY0dDRFk3OTNyQdIB9wFBVV95cUxQMmtoVkhvZUc4RHFaWmwzSDBsbUFFdUpFcGtRZ3NfaDlwLXhudzlMbVVXWDJyMkZOWjZEYk1CUDN5Umlpa3B2TXNVeHJISmNBU1R2QjVBUGZzejhXaU4zZVQ5OHJvd3VudlFoWi16eWZCcG5fcmNLSXg2cm9rWFFaekhIa1NQU0tld3FpTmN3TzZZeXYzeUY2dG5WMHJjLXlZSy1MeUIyUC1ZdUhUZjJ1aEFGTWQxblAzZC1uVmtYVTdkeXVibWd2VFRJMzVQQWQ1UzZmV2N3OWs3dnBYN3lVSDZCdXpyeGxXQjdjUUphOFpwaFF1cjdV",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T23:01:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Upstox",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-ceo-despite-hdfc-share-slip",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T14:58:24.943850+00:00",
-  "last_updated": "2026-10-05T14:58:24.943917+00:00",
+  "last_updated": "2026-10-08T13:57:14.570276+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T14:58:24.943906+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:14.570251+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:14.570272+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 5"
     }
   ],
   "price_reaction": {}

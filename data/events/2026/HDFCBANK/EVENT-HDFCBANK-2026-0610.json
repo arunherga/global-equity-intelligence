@@ -1,0 +1,219 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0610",
+  "title": "From Your Loans & Interest Rates To FDs & Investments: How RBI's Rate Hike Impacts Your Lifestyle",
+  "summary": "From Your Loans & Interest Rates To FDs & Investments: How RBI's Rate Hike Impacts Your Lifestyle Livemint",
+  "event_date": "2026-10-07",
+  "event_types": [
+    "INTEREST_RATE",
+    "DEBT",
+    "CURRENCY",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "DEBT",
+        "BALANCE_SHEET",
+        "REVENUE",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, debt. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "MIXED",
+      "confidence": 0.4,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "DEBT",
+        "BALANCE_SHEET",
+        "REVENUE",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "home loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand, debt. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "From Your Loans & Interest Rates To FDs & Investments: How RBI's Rate Hike Impacts Your Lifestyle",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeWdYcnhYWHhuS0pBMUQ0UXJqcnc1d2lrQlljX0VVWDdkbExqSUw3ME1kZTRHTUZSSU9QU2YyeG5NQTgtLTVpZk1ZdlU4QzZvRHR0X0tfOG5VWUdSQVF6ZzlZWDlsOHR6MGgweF9ETVNtNGNYRHdKSU5kRWN6QjA5QnZWdFotb29JVXpmSEJBUVFBWVlTZ09wbHdkaExZOVZtREpzcFM4X0FUQzQxMGlGZW4wOXVIRmhjUVVLZjUzMEN2bFVCUGxTYW14MmJvX3ZtYnp0QlI2T09HUzDSAeABQVVfeXFMTXJwcVZ1V2gwZWZKMHAzQkRLcVNYcFVjVnc5dXJqdnVUTFFlcVVGdnViZWhiYVBfb1Z2OE9oYWFzQThQUi1wUW4yblA4Q2JSRHZZVm9wd0JjWmFnQzFsSmZvcHhVWkRJRFpzUFdSekN3U1R1UXA2M3pVQmhDa0lyQkM1UFk0VXo0Tks3eHNCaVlfcUZmV0xfYUZLN0NOcXViLS1rQ3p4aGZpZE80VnJ3dlliel9KcEhkYXZ5eVFja1hNQ0pCMUJlNVY2UG1XUHdSYTVsUkdOc0g0QzI3TndEaDM",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T15:04:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Home loan: HDFC Bank trims interest on home loans after rise in Repo Rate; know details",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb0pBd1ZHeUpHZTB5WU9ybE4yak1QYTdBSjVzWElrX2xmelp4N2pQY2ZoMlowMmpiUWlwdGJCdFhkVE5YSTEyZVRZMVBTRFV5Rjc1WEhCczVJNy0xbUZvNlpfVFFtWjdNM0FfLWpKeXNNVDY4bDZMOWJ3RzJiYXlPZ3h2VWNhVnc5dlpoakJmU0F0WVVxZGd2WEJaeDA3d25IbFVKc1ZJZEN0ZHdPejVBazBXektRYkZ4RkRLdXhCNEFEZTdtZFpEaHA0M0szT2JZQmZDRUtuRVhpTVZKM2fSAeMBQVVfeXFMT3FnTTFOUnFwbzIxelliSU1Nd0FwZERleWxjOVBmMXVzdUd5c2xmUmFLelJaMWpRdXhSRlhpNXYyTkRnWjV0Zl9mZ2JoRTU2OWlQUTUzODg1ejMyZGMwS1ZkTl9jUEVSQzltZWZrcm1LeHZsVmdReWJUMmhsVDFiMkNGUmRrUmUwWmc4QkxSZXhxb0hTS3VJVFpPbkhMOWY1SVdBQkt0VHRyWE5UNDJ0VnRzQmNIRTZsbHI2QUs3X3pQUW02YVhKRXozeWwzWHVzb2RLeV9JQnpMbW1hT1hUeTQtY0U",
+      "source_name": "News9live",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T23:31:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Loans set to get dearer as RBI hikes repo rate after 44 months",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOX1BQWmdpTXotNFBXYnE1c2R1Um1pVHJlUjFtX0VGV2VBWnh4OXExZHZoSGJYQkhoVktTT2JHZ0lWZHJUeDlUZzdYN2ZhNVhnVDllME9VZXBnTzNvcHpVOXNCWGtTMzgyZk01S09kUllyOTFQVksza2RaZ1ZiVHU1eHplR1RpdXZOR3h4Y19zS084UUJQalVidmQyNlpyczduM00wX2NrMHRoNUxla3hmUHh4VlhJRDhRX3puOE1QcnZQd2ZOeFpJSHk2a19sdkUyUGhOQ09NQWlZVTV0Z2RPU0F30gHnAUFVX3lxTE9zLXdaaUgwZEZ5UGY0V3NFaE5aWVpQYWRSUWZHNTZXMUZQaEFHbTRIblpxUG9iZUE3cDZheWJTUjJJME1LZ3hTOUJpdkZfRS1PMU5yTklrYXJFamJRZTNkWk85eUJoaXN5bnZzeXd6ZEpLaXpSWHI5NUpyaEJYZ2xveTZtQjJlM282d2VtZXlFbW5qTC1IbThjNi00YjYzYVVHc1RibVBvM3JQR3RDRDJyYjJLMDVCdHJpQWEwbHdIelctcmxWRHJOMFJoZ1FiaWJSOXhQd3p1ekpRdTRmS1lBa2hvRTZjcw",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T21:21:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Rate Hike Raises Home Loan EMIs and Costs",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZWFsaDRRb0RfQ01PYm54Z1Z0a2FYLW9MaGxsN1VuUGpkQWdOX0FkRGtJLUd1c2JNLXdIM3M4enkzWTV5M3E4Z01vYlZOellYZmRSOXZLWHhFVkRCMjltWGNBUVVqS0w5YjdQeW5iRnVKUkQ0SERmQ2NMRzRudUY0RC1JcTZzT2dMcEE",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T10:27:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Hike Raises Home Loan EMI Costs",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPXzdPVzBDRm5uNzluZGkxQk1Ba1U0Sk4xMlJRU1c3S3VxX1pUdzdZRS1fNlpJVElRV0J0YkdpT01XaXpwcXVqSXJpVkJJblAxSkRpQ0dtM3MwN3VLT2N5WWRESm9tQTh1WWhBVzNoTjlmMzlKWGs3UG1MWUdmZmlQS212VktWbXM",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T13:50:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Hike: What It Means for Home Loans",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaGZqR1BtaGEyVVQtbFBzZVo1bS03SzVkTWpkZ2o0ZmZkdy1SWnVOZ04ybnE3XzkydVN6VkF0Z19MS1JMMmszajNUNVNFdnRwTXJxNHhRNU5wcWtFa0RlYlNDV0VPRWNfOFNSUUloalZ2R2NkV0ExR1UwLWp6Y2xrVmNVRmhWUmxxS3hrNmlDdVdLZVU",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T13:41:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI shifts to calibrated tightening: What it means for repo rates, bonds and the rupee",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOC1QYzM5XzVyRjhqOFhwOW9YQ0ZNeGNhVGtTTU1OaVM2aXNldWF6RDZWeWxKMC1VdmhsTFd6YzA0NVhGZ01CQ2pvOWU5aXQzQWlJc0FKNGRpbG9aOEZ1VzhIUjdUd3liNTZIUGpWSE1POGNsdzRhN0hMZ1FwRC1VdXl3MzZVX1hHMEVTU2MwdlZtQTBpSkVWedIBngFBVV95cUxNWHhDN0pYYWNwZ2tBbzlWZGFaYlV0MzlXNWc2SXNVazNteDI5M3lvZk1zZTUxZmVleF9LQnA4M0o2SnVpU1RHSXVUXzhtYkNrQy0wcl9fTGhwSlNEbXUwZUlkSGtGNks2WlNwYS1VNHJHQXNHZDdyb0s1dEVKQ2dJeko2RUtmNXBuOVdDNlpyUmVxdzRfR1JJdzNKVzZLZw",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T16:09:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI sees 2-3 quarters of benefit from RBI rate hike as loans reprice faster",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSEEtLVk2VW81ZklxdE02cFZjNlhxbnJGR0E4SEpxal9OTHA3RGxvcGNFdWNnb0dYQzFSYVM5bWprak9TY3RNMmhzdVlwZzVpWXBMSUtVMS1la19aLXkzdDBOVFdBSkl1WjhGQnI4SDE3VlVKQkpVaUhReDUzUlo4UERLdGw2UnkzMVNzZi1QZUFUVEVKUEZBWXRFNHN1OEd1TDZyMEh4TldHa2h3Z3pGM2M0RmUydVg4Q1g3Y0c1Q0hQeGhqc0U0NEl3Y9IB0AFBVV95cUxObVR4MUU1TTBJdHB4OEJTbzYtREQ5M2NqRXNRNlQ4T0F1RGNXb09iRG16RVh4UmJxWjJEcFdZbVdmWmFpdGp3dUM0Vl9pcUh6RlpfSVhzT1dVUHdRTTI0TkRhOWF4d0VnRHQwcGxER3FPa0hvajJOc2N5b19OMXNoMDV5cE00b2RRQXhZUkgydGNPamtmeGVNSFczX2t2dHJZRnZGUVlsQU9jZ0dVLVFPbkNySmtLVnVGaDFMN1BwT2RMOXBNNm95Vzd2RUE0SVUw",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T14:45:43+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 8,
+  "source_count": 1,
+  "primary_source": "Livemint",
+  "cluster_key": "HDFCBANK+TMB|DEBT+INTEREST_RATE|fds-interest-investments-loan-rate-your",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-08T13:48:14.788651+00:00",
+  "last_updated": "2026-10-08T13:48:14.788783+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-08T13:48:14.788770+00:00",
+      "change": "created",
+      "detail": "8 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -9,30 +9,14 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.41,
-      "business_impacts": [
-        "INPUT_COST"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMMODITY",
-          "term": "silver",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "COMMODITY",
-          "term": "silver paste",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar cells",
@@ -42,22 +26,21 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "silver over the next few weeks",
-        "silver paste over the next few weeks"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver, and silver paste. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -71,21 +54,41 @@
       "published": "2026-10-07T11:13:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Semi-Transparent Organic Solar Cells Hit 12.04% Efficiency - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSGhlbjV4OHhCQ0ZBLTBvTERBQTRkZ1Vjb182QUF0Z08xaDJOSWVUYXJndTZvWGhNMVdEUXV1ajlDVXM5U19iMWNIdDRWY2huN2JNaW01ZHJwQkw0eG9mLTRGVU5fYk83a2VQRU5mQVJRMzQ2aUNTT1FEaU9pUmctb21vd2pEbV9aaEM3c2hIeWZKMURvRGgxWnRtaEZpa09NaWdFbThaOFBtZFBPdkxibm41V1B1WFhjclQzbmZvdnJIYWxLd0E",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T11:01:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|OTHER|25.96%-cells-lignin-paste-silver-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T13:48:04.438809+00:00",
-  "last_updated": "2026-10-07T13:48:04.438897+00:00",
+  "last_updated": "2026-10-08T13:58:14.043922+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:48:04.438887+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:14.043896+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-08T13:58:14.043917+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> NEUTRAL"
     }
   ],
   "price_reaction": {}

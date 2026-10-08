@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.45,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE",
@@ -33,15 +33,15 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Adani)",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Adani"
@@ -70,21 +70,41 @@
       "published": "2026-10-07T12:08:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Energy Solutions acquires Satara Power Transmission",
+      "url": "https://energy.economictimes.indiatimes.com/news/power/adani-energy-solutions-acquires-satara-power-transmission/134779072",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-08T03:38:11+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|ACQUISITION|100%-acquire-adani-energy-solutions-stake",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T13:47:38.688088+00:00",
-  "last_updated": "2026-10-07T13:47:38.688170+00:00",
+  "last_updated": "2026-10-08T13:56:52.721839+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:47:38.688160+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:52.721808+00:00",
+      "change": "sources added",
+      "detail": "ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-10-08T13:56:52.721833+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 7"
     }
   ],
   "price_reaction": {}

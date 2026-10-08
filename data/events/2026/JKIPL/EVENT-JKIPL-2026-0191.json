@@ -43,6 +43,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -85,16 +130,26 @@
       "published": "2026-10-01T07:26:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Highway Infrastructure Secures Rs. 244.6 mn NHAI LoA",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOVgtdUdaNUJhaFpUc3Q0eU1RRzNWOVRhUllFZDRHQkE1RUlwTWQ2eU1teU03QzdvMFlDNGxuQWVpenh5bzdLOEtTUS1XeFd3TnotLW5QcTNKX2dhTHRSVGxLV3d1Rlp6QWM2MDlvZExTQ1FtTUVOZGlrdTAwV0pHaHBxaDVoeFA0cFdHaGhtM3Bkb0dfTTUxOC16QllWN0FCbE5CcEdXV01fMTRKTDhyQWdmX29WVjU0c29HUXhHRXFEa2lUVUE0MWhYOG9Vd3Z6UnZTZEludWNXUHB0YlBzaWNWSGY",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T06:00:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "HDFC Sky",
   "cluster_key": "JKIPL|OTHER|24.46-highway-infrastructure-loa-nhai-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.623914+00:00",
-  "last_updated": "2026-10-01T13:37:11.432865+00:00",
+  "last_updated": "2026-10-08T13:57:42.535705+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.623972+00:00",
@@ -110,6 +165,16 @@
       "timestamp": "2026-10-01T13:37:11.432850+00:00",
       "change": "sources added",
       "detail": "Investment Guru India"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:42.535679+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:42.535701+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

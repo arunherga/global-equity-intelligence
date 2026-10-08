@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -63,21 +64,41 @@
       "published": "2026-10-07T02:19:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce, Inspire Bring AI to MICE Sales Operations",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdkprM21OejFlSzlVZjI5cU5LZ19ETjZvUGZwQnhib05ZdjJTRWZaVjB5dmh6d0RpQVY0NExTN192d1dBSk1oMEh4MWNxTHVGR2pRTUFRa0E5ZWtSQ09VVXE2bWJGZER0aElKeVJrWTdhd1JBdFVvcExFYmE1c1gwZklrX1g1ZTU1bjJzSlRoZk45VkJib1hCdkF2d0gzUQ",
+      "source_name": "Seoul Economic Daily",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-07T20:00:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Chosunbiz",
   "cluster_key": "KSOLVES|OTHER|data-inspire-integrate-mice-sale-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-07T13:43:50.095735+00:00",
-  "last_updated": "2026-10-07T13:43:50.095834+00:00",
+  "last_updated": "2026-10-08T13:57:10.043523+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:43:50.095824+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:10.043498+00:00",
+      "change": "sources added",
+      "detail": "Seoul Economic Daily"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:10.043518+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

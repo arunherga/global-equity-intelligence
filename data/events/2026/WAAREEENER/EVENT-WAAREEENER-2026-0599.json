@@ -50,6 +50,49 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +105,41 @@
       "published": "2026-10-01T09:35:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices near Rs 1.5 lakh/10 grams; silver rises as dollar eases from multi-month high. What lies ahead",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOTFJINlJuY3JaRlAwOGtsbTNqbW1xekFpdGNDbGs3N2diT3g2VlhUY2l3YUt5dldIQTdJTVREbzZ3QTQ4X1YwZGFXZ01sTjkzRTJtOWU3M1JUaG5MdjdsT2VzdDZIUE9qaTB5c3dKekFGb2JERHQ1dEZaYWdnSEl2MTlZMEV2NFVQQUhLanNBQUZfNThLNmIwU3piaC0wZmE3QU9TZERVaVVBLVNGRUh5Y24xZUpCOGR3bTliVWJkNHRDNGFkOC1KMmlOaW9HQU9KbEVvaFJteTZKN2FJMEZWLS1uaExHT0FScF9mZWJSS3hDTWR4eWlpd04tYkdvSkR3VHQ1OGhjTW9SaFpfUWtianpxTi1rZ9IBlgJBVV95cUxOTFJINlJuY3JaRlAwOGtsbTNqbW1xekFpdGNDbGs3N2diT3g2VlhUY2l3YUt5dldIQTdJTVREbzZ3QTQ4X1YwZGFXZ01sTjkzRTJtOWU3M1JUaG5MdjdsT2VzdDZIUE9qaTB5c3dKekFGb2JERHQ1dEZaYWdnSEl2MTlZMEV2NFVQQUhLanNBQUZfNThLNmIwU3piaC0wZmE3QU9TZERVaVVBLVNGRUh5Y24xZUpCOGR3bTliVWJkNHRDNGFkOC1KMmlOaW9HQU9KbEVvaFJteTZKN2FJMEZWLS1uaExHT0FScF9mZWJSS3hDTWR4eWlpd04tYkdvSkR3VHQ1OGhjTW9SaFpfUWtianpxTi1rZw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T04:21:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "ETV Bharat",
   "cluster_key": "WAAREEENER|COMMODITY|1.50-futures-gold-lakh/10-rise-silver",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.724631+00:00",
-  "last_updated": "2026-10-01T13:34:27.724686+00:00",
+  "last_updated": "2026-10-08T13:57:35.693201+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.724682+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:35.693173+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-08T13:57:35.693196+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}
