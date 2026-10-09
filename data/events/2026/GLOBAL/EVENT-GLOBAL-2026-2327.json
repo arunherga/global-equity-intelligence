@@ -4,7 +4,9 @@
   "summary": "Adequate response: on the RBI and inflation The Hindu",
   "event_date": "2026-10-08",
   "event_types": [
-    "MACRO"
+    "MACRO",
+    "CURRENCY",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
@@ -84,6 +86,61 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.15,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "rupee depreciation",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to rupee depreciation, and India. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -96,21 +153,46 @@
       "published": "2026-10-08T18:50:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rate rises: Editorial on the RBI’s response to inflation and rupee depreciation",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPalAtdll3NEtoNW1uVl9fVENVSGVwMGtONXRBb1JPRW91clZHZHRHNTdnNEdvQWN1YjB6Z0FzLWQ3bHpjSENnU2szYUtrSjQ2QXI3WGk4b3ZuRHlTb3MxRENYX3I1anItaTA2NXdGb3BpbTg1SUl2akl3STF0RF83T0tneUwzWWZQTC1pRG56SlJ5TkdKT3pkczlGb0RXYlp6OUVoeXdjT3ZYSExEQVQwR0hxbC1uNk5TUHR4S2Z0QUdLeU1XNE11c0paci1jZ9IB0wFBVV95cUxNaFFFVkhfczk4QVF3TnVFQ0hPdW54cjZBQWY5d3d5OXI3VWo4Mm85Sk50WWRnRG9NUHNiVnR6UkVPOW5PTGJ1a0Rvb2pWbWtYT05NQk1ZX01Sb2xkYVMteHdPV0VnYlM3VmdndU9LdmlfSk5SU1RUQ0l0dkJnZDRqUk5XUUhQNEhVOWtJb1c3d0JGMmtDSXRjcXVUdzdYSHI3YWZJbGYtUTZZVGpqWTNKR0RSRlIzcEpSYXotU0JFT1YzTTlVUmx0UE9wWE9kNUZIbUxj",
+      "source_name": "Telegraph India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T03:04:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Hindu",
   "cluster_key": "HDFCBANK+TMB|MACRO|adequate-inflation-rbi-response",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:26:28.306849+00:00",
-  "last_updated": "2026-10-08T19:26:28.306911+00:00",
+  "last_updated": "2026-10-09T13:45:42.213800+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:26:28.306902+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:42.213771+00:00",
+      "change": "sources added",
+      "detail": "Telegraph India"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:42.213787+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY, COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:42.213795+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (MACRO)"
     }
   ],
   "price_reaction": {}

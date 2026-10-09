@@ -44,6 +44,62 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "Infosys's follow-up announcements",
+        "TCS's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys, and TCS. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -56,21 +112,41 @@
       "published": "2026-10-08T06:50:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks to Watch Today, October 9: TCS, RIL, Paytm, Adani Enterprises, Info Edge, Vedanta, ITC, Infosys, Wipro and other IT stocks",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVDByUzkyYWJFNVVnLTh2N2pjTzkyeW1HemxGSXc0bUpqQUx0dF9FYXg3Nm1JdlEwakVuc0V2cVUwTWNtSG4zc2RpWWlsSWU3UFRkTnNGU2RiMnhGNE1jd0FLYW50RGo3ZTFRWk5mMHd4MGFlUmQ5OHEzOFZtc2pNcVkxdWs1Y1dkQUh5Z3N1YUhhZjVTd1ZFcUdjelNVOEVib3RqTC16cXgyQ0VvLUhXUWE0Z3BBc2hac3JBUmY4U0tkeVlXb1hLSURQQi1lNEpPMTQwV0Fjc0HSAd4BQVVfeXFMTjA3SnU2WmxQdENfWDFtLW5xeGdFYlBSeGp2OVJ5Z2FnLWx6bDlsTEJjbV9UQVVVR1dzTExuS2xFWkpiWW1VY1VkYUJ6Wm9QN3Zyc1FscW9LN3plcnp3WXM4Xzl2Vm9OaFZ0ZXBHLXFPRUN1dUEwTnFmZF90OWljaWJYTmdZdG5LYlI1X3JtbG5LdXVncXdCSGpJYm9oS1JOWUNyRnI4R2VqZW8wS2kyTjZtbVdoNzhtS3kweG4zcDZDb0hPWU5YZUpRLXBRcC1TNFlJWmNXZXluM3Jvc1ZB",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T01:17:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Samco",
   "cluster_key": "WAAREEENER|OTHER|2026-adani-list-october-share-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:24:54.252477+00:00",
-  "last_updated": "2026-10-08T19:24:54.252535+00:00",
+  "last_updated": "2026-10-09T13:45:33.306389+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:24:54.252526+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:33.306362+00:00",
+      "change": "sources added",
+      "detail": "ET Now"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:33.306384+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.58,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -28,14 +28,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -76,21 +76,51 @@
       "published": "2026-10-08T14:16:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IRB Group toll revenue rises 24% to ₹773 crore in September",
+      "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/irb-group-toll-revenue-rises-24-to-773-crore-in-september/134811456",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-09T06:02:53+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "IRB Infrastructure Developers toll revenue surges 24% to ₹773 crore in September",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRDBGQWlDUktXLWVwQzdwYmVtUXRnbnB0VmFDUUxscGhaMW54Zm9OZkcySmlJTHlxazlQR2tPbzdnSDJBNVdsSkNYd2ZkM2ttSDhFRlpJVTJmS3Y4SGtMcDJaT3lGUWlZcmVtTV9YbHNHZE5sa2hlSjVIR0FvYTN4Q0tDV1NpWkJfejlfZ19HNHFhTmRSeDhXVkhrYkNNVzc4ZmVHNmhTNzhDTnlmOS1mU1RLd1U",
+      "source_name": "IndiaIPO",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T14:32:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "The Financial Express",
   "cluster_key": "ASHOKA|OTHER|developers-infrastructure-irb-revenue-rise-toll",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:25:41.415043+00:00",
-  "last_updated": "2026-10-08T19:25:41.415117+00:00",
+  "last_updated": "2026-10-09T13:45:04.250464+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:25:41.415108+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:04.250441+00:00",
+      "change": "sources added",
+      "detail": "ETInfra, IndiaIPO"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:04.250458+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 2"
     }
   ],
   "price_reaction": {}

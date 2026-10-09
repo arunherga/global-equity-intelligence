@@ -227,8 +227,8 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "direction": "MIXED",
+      "confidence": 0.35,
       "business_impacts": [
         "COMPETITION",
         "SUPPLY"
@@ -262,12 +262,14 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "Positive and negative effects both present",
+        "a competitor (Mastek) is doing well",
+        "a platform or supplier the company depends on is investing"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "Mastek's follow-up announcements",
@@ -559,16 +561,26 @@
       "published": "2026-10-08T06:41:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mastek wins Staffordshire council Oracle Cloud deal",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObVRzQnd5WEYtVl9jYXdWTzgwX3AyQ01qOGZjQnp1RFpoQmxZVjZja2lqWWRvRkEzTmNuZExOT1NxOWdnWEM1bUJraUptS3FMcHlJZGxOczRrNVlJQm1fUjhxM1J2TzViUGM1WVhKa200bzRGOHBZUGg2RzRVeHJ3QlkzV0w",
+      "source_name": "IT Brief Asia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T08:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
+  "article_count": 12,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|cloud-mastek-oracle-subsidiary-transformation-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T13:50:42.454316+00:00",
-  "last_updated": "2026-10-08T13:57:49.324998+00:00",
+  "last_updated": "2026-10-09T13:46:17.738368+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:50:42.454404+00:00",
@@ -594,6 +606,16 @@
       "timestamp": "2026-10-08T13:57:49.324993+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-09T13:46:17.738344+00:00",
+      "change": "sources added",
+      "detail": "IT Brief Asia"
+    },
+    {
+      "timestamp": "2026-10-09T13:46:17.738362+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

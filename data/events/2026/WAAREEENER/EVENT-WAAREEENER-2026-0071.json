@@ -4,20 +4,24 @@
   "summary": "Gold and silver price today, Sept 21: Check retail rates of 24K, 22K gold and 999 silver in Mumbai, Delhi, other cities Livemint",
   "event_date": "2026-09-21",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY",
+    "ANALYST_ACTION"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
-        "INPUT_COST"
+        "PRICING",
+        "INPUT_COST",
+        "REPUTATION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,11 +32,58 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, reputation. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -40,9 +91,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, reputation. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -306,16 +360,116 @@
       "published": "2026-10-08T03:46:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price rises by Rs 840 on October 9, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYmNrdkxHeER1cTN4TENBbEthOWpORHNPV05SLUoxd3pMLW02U1dVZkRzVU0zaUE0UFV0UHQ4VnplNjBvcFQ0TFl4UnZxM1BKN180SGhZazRia3BEWGNESmdPUi1POXpRd2V3OXd1TGx0NVBaQnI3N2JJSE9tVEU5TGJLci1DSDVDUzJzYThqSEpCcEhMVks1cV8zUk9RQlQzdVVzVnRMMmt4aUREVnhpdnpiV1pZVU5J0gHGAUFVX3lxTE04b29weWZJOFNSVy1GNkVLZm9jeW1WLVZJZXdrWmttX2hiVjR1MXo0TWoxYVl0WUJOaHpPb2FmUzg0bEYwd0tMem1TX1N5NlF4Sk02M2pZM2s1R1VGOUs3U3diN1VwLVpRREtJVk15R0hMZmU4M2JQQzZTbkx6Y1hRZ21neWRxcEVnNWRQU3oyVFRYNnJ2a1BMcVJsSzgwWTlJNk00bkpJR284TnlUNUlvV1ZOaGRwWXlIeEcxVXJvbUhwS3lSZw",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T04:49:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today, October 9, 2026: Rates Jump ₹1,140 Per 10 gm on Friday",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaGtGWF9GVmx6M3hIcEFhTUtTMVFTaHFtM0U1Z0tGVU9QNnhQUkVIalpjcG5HZFdWRjdCam50YUV6eEFoc21Cb0pGVWZycTBfLU1Dc3lSbzFwNlQyNnIyVy0tSDB3Y2xpQTBuMkRQVXRBUTlGTHM1YWNQZ0VBYjdUY24zNjhjdllGS3ZUaGxhNkkzSENxOUthdVRFMktlWmJBdmg0TkFPM1Y0a29VRTNUbUFWTmRpSkdsTU5Pb0NXNU1LalU2b2Eyam5YMFoxTUtpNkZKa3U0bndFWlF3N095TVlleERfU29Gb19ER1Vpd3NaR2Yt",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T05:13:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, Oct 9: Check City-wise 24K, 22K Gold & Silver Price in Delhi, Mumbai, Bengaluru",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ09ULUp3Z2JYbGh4TnczMWhGUUZTT2RNdW5IQ2hjXzBhMnRHRWlkeEFaY2Z0YmhBQjZhRTFkNHFSeGVobkR5Z0d2cVNmSmVKVGlFbVRMam10amk3U1QzUDJWRFB5VVRvbFFJbjBfWjJodmZ0TWdjUDktY1NudHFJdXVoVWlHZ0swUlFLM2xtX3BCQnprWDhyWmNyT2luY0ZhWVVJQUNlUlNrR1NDZDgwN1hOTnZER0dMTjhj",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T12:09:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver rates today, October 9: Gold rebounds, silver rises; WGC data shows strong ETF buying",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTzNsVktKWl9oT2xlSWRvYTBjN0cydkFlcjZVekY3Z1lMSThVN1BVYWdRNUs3U1plY1p6SnpvcEpXeTYySGZrTnlPUThreVRvNk1HNXVqZ2diV1ptSzA3NmRoNWxOQkVMN1p3UmZDNmNOUGNBd3F1Znl4MHQ4b21FWS1LR3pXVi00X1VSdVJJU2VVZGd2NC0wdDdrV0dYWFBVOGZ0Vjd1YnNGV3k3QWR1UFRzQkpQaEhhQ2tseTR2b2RXS2hTdWlHMnhPZXJPbkpzLTQ1RWYwSURmeEVZQXpTbzBJQ25Bb3ZwU1NERHdyY2gxa1Ni",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T05:57:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price prediction: Should you follow sell on rise strategy? Check October 9, 2026 outlook",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOaGhWR2pyc05lbjkya0Z0WGN0MFRmT0JzMjVzOFNseEFuckM2VDktenZXWDFGd2ZfUnpMMEMwVERIYnpMX0FSM25NclVlcmNMR0RYV0YtNVpjd1VoUEMzejBHSkRnRngtRm9PdUV2MzFDZ1FYVkwyUWZtYzJpQ1RCZ1lPQlJIR3ZYSjhBUXI2WVNZVHF6SERNQWZoVlh3Z3JEWlJqa0hqcEJ5b1J5STZZR1N2U3MwSjhpaTBQUWhtcVlRakRBV1pjVXpkVE1DN0VoQ2RqVVVURE9KdlQzcW9LNWVkZjlMMmdQYVltSlJiVm5NU0dZN3JQeXRuWGh2bjB2bjBCc1RvQTlFcGZwQWJ0QklLYUk3Ukp2b2o4ZEp1YjI",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T06:23:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices rise 1.4% to $4,190 amid Fed outlook",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ29vWTYzdHNVZkI4dmZXQVRRYjNaZDN0Z1k1aWExbUhBZHZWZ2ptaktDaHRPWFpNRVJhUHpLa3p6WUxOejVNdlJod1VlbWZJclZIMUJaVjU2Z1Qyb0NMTzRhNWcyV19SUlJNTURNaThnUmNvdjJZYW5QVTZ5N2k3bXAzblBOOGI4ZEI2M0hhUk1ZNUxkX1cxbzhhaWtmSkw2X0JHd3ZtOE12LU01dnV2YmJ5MEtPSTFIVjdWVkFqMi1PTTQ4MHdCVDA3T1E",
+      "source_name": "Profit by Pakistan Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T07:48:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 9 October: Check retail rates of 24K, 22K gold, 999 silver in Delhi, Mumbai and Kolkata",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQUHBzRkxkblk2QzJSRFVCbV9BY0NIUmNDcXFOUFF4R1RtTmc5dFRxa21fbEZFMFRhNnIzYlJPYzR1bjRpbUl1S2R4V3BhMVFWTWQxbk40Ykt2VFAzcWQwUFJxZGNGSmRreWoyMGdyaGpac0tjOXJlUWxaVzV5ck5kbWJQUjZqSGIyeTRGcnp0NnI5Y2Nnalc4V29QOU1qeHdHNFhWbWtidFNmcVdkUmwtam5kYVFhdWVwc19iOWE2LWhHUUhEYWdYYjNLUHVIdTgzbVNSS2NfLUlLMXRCanBNWXdsMHEyQzlReGtGYXRjaHgzNXRjN0Y4V1ZUR3FjNzdoNUdKUzRNMNIBjAJBVV95cUxQaGxjT05GSzFPbzZqUmtYcV80clBrOFdxSzVOc18tTXFyMFB3NWZ1LW1oaXJHbHlwZHNCVW1UVlAxVmpxbVJOWDFDLXNYNGJLcU9LWkRxSzRtRzFaSWliRXd4TC1KVDAxeTJOR0gyUjdiQVlIcldjUWI4VkhpektGS3FkLTNkZmJXTDFDNUZrWmx4TmJPUGU1aGxnRFdld19TY0YzZ1h0a2wwcnJ1UXJFMkN4OG0yZkc2RGN4Q0VTTkt1RkdJNXd5OGwxa3JCUEFyUnpZc0VaVEVvUEVrRGR2YURTNENtRENtUmZsMFI0MmdJYnc4RUFQZWFnSTM2cm84Wl9UM2pUek5CVmVk",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T03:55:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Udaipur Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1nN1dsWk9FcE85WEVLaVZWMURVUWhvdDJsc0hNbEhJVWpHNTZSZG4tTEJBU3YzR25mYXN0aUViQkZWQ2xQZ3c1UzlNM1F0RGM3UlNIMWM1WUQwVENZcXhIWklyX1RoX01QUS1QUENNYkkzRHVQZHpubw",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T08:01:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Vadodara Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1nYndfX1dZcUFxQkVIUVpaVjRBeXlLWlp0aWpVS04wYkR6d2Qtck1KU3FLelp4M3J5ZzlVVFRtdDh1RmMxV3pQelpHbHhSOE1icEFVUzhrX2JKRE1wS3BjTm0zT0t2dHYyOVVXcjM4WXU4VGpWTDZfUm5n",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T09:03:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today Live, Latest Silver Price In India",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyQjk1SkZteFJRaW93a29mWFRWOVVFRjl6OHk3X1RRSElIR0Z5MC1hTi1hRkU2QWFkbVJ4VGNRX08xYkFFN2Zuam52MHR0SVhC",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T02:55:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 26,
+  "article_count": 36,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "WAAREEENER|OTHER|check-gold-price-sept-silver-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.792250+00:00",
-  "last_updated": "2026-10-08T13:57:29.923754+00:00",
+  "last_updated": "2026-10-09T13:45:41.278875+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.792297+00:00",
@@ -391,6 +545,26 @@
       "timestamp": "2026-10-08T13:57:29.923734+00:00",
       "change": "sources added",
       "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:41.278839+00:00",
+      "change": "sources added",
+      "detail": "APAC Media, DT Next, HDFC Sky, Livemint"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:41.278857+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY, ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:41.278865+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:41.278871+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

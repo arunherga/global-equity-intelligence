@@ -1,0 +1,125 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-2387",
+  "title": "Gold prices rise Rs 1,500/10g; silver up Rs 3,100/kg ahead of US economic data, softer yields. Buy, sell o",
+  "summary": "Gold prices rise Rs 1,500/10g; silver up Rs 3,100/kg ahead of US economic data, softer yields. Buy, sell o The Economic Times",
+  "event_date": "2026-10-09",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold prices rise Rs 1,500/10g; silver up Rs 3,100/kg ahead of US economic data, softer yields. Buy, sell o",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOMDRVRER1MEtESkFmRGN5UmZXVnJyZUZFSDQyanBIcHV0WUcxRVdzZ0wwLTBCSzlpS3BwTmFnVUJBV2hwZXlWbGQ5bjhabnJYb241THVtR1hVcktZRWI1WHRCanlqQTZMaDR6UEMzZFpNREVuMjBFR1djcXBUYzRIVGdNU3MyUkduU00yVnNZQXM5cXBJQS03cU1kdFAwcUppU0RTcHE3bEZTSkNhYnFTQXVxT0E2WHF0ck1tX2ZxQWh0ZExvc0RHQ2g3TnJTTU9fRnBmRWxoUHEwVl9pVFFQTEl2LVNFblJtWlowUTVOc1NSTG42UmhFVGJ4Nzd6ZWZ2X0NaMVlLZjdzb0hqekpEdzZrRWp4c2tk0gGYAkFVX3lxTE4wNFVERHUwS0RKQWZEY3lSZldWcnJlRkVINDJqcEhwdXRZRzFFV3NnTDAtMEJLOWlLcHBOYWdVQkFXaHBleVZsZDluOFpuclhvbjVMdW1HWFVyS1lFYjVYdEJqeWpBNkxoNHpQQzNkWk1ERW4yMEVHV2NxcFRjNEhUZ01TczJSR25TTTJWc1lBczlxcElBLTdxTWR0UDBxSmlTRFNwcTdsRlNKQ2FicVNBdXFPQTZYcXRyTW1fZnFBaHRkTG9zREdDaDdOclNNT19GcGZFbGhQcTBWX2lUUVBMSXYtU0VuUm1aWjBRNU5zU1JMbjZSaEVUYng3N3plZnZfQ1oxWUtmN3NvSGp6SkR3NmtFanhza2Q",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T04:44:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "TMB+WAAREEENER|COMMODITY|100/kg-500/10g-gold-price-rise-silver",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-09T13:39:24.033998+00:00",
+  "last_updated": "2026-10-09T13:39:24.034095+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-09T13:39:24.034084+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

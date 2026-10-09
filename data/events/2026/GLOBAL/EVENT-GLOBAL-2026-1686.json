@@ -10,11 +10,11 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.15,
+      "confidence": 0.62,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -31,6 +31,20 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "deposit rates",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
           "exposure_type": "PRODUCT",
           "term": "deposits",
           "relationship": "SECTOR",
@@ -39,18 +53,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -58,16 +70,16 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and deposit rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.15,
+      "confidence": 0.51,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -84,6 +96,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "PRODUCT",
           "term": "deposits",
           "relationship": "SECTOR",
@@ -92,18 +111,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -111,7 +128,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -135,16 +152,136 @@
       "published": "2026-10-08T02:13:52+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Will banks increase deposit rates after RBI rate hike?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/will-banks-increase-deposit-rates-after-rbi-rate-hike/134804304",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-09T02:22:15+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Bank Deposit Rate Hikes Unlikely for 2-3 Months Amid Surplus Liquidity: SBI Chairman",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTHRyU083bHd6VFFfQU1ZM2UtSFFmakN0cVFUTnB3YlJJdUxSREZTcEo0cGJ3RkV5UkFMd2xWNS1fdUFFVE1XV1JLSzZJTDdKQU5veWpNRU1vbjh4Mm4zV2FoQ1hGQUEzOHlPUnZGSGx5eWFVVFRuUklGcVNIVVVpV001YWhuQ1VHR280bU5KOFRGWXh6Sng5Q2dMNGJZR25LY3lpelNLcGtpUVZRUFQxaEhIMWdqQnhrN3JxeWc3cmNsSU9LSEVnTjg2SQ",
+      "source_name": "KNN India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T10:29:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Banks Raise Lending Rates After RBI Hikes Repo Rate To 5.5%",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaVJENm84ZzJXQ3ZHbzV4OFNNNHFJMXNtdHV0bVloV2lpUzBJczhKNVVLTFJMNmotdy01b3Rub0JXUmx2RU1QY0lMMWtCa2NfaWU0UzlkMENMWFdzMjAwbWZKbnlXRXNBeWVUZm5nN0pkTVA1bnc2THNsNkVLc3Bsdi1UdEdVWnRBbEhBVURJYTVZY294NmpuUEdHV2tHNVlXaTM0b2owZWJsSW5vdE5nSU8xSjVpdw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T08:42:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Major banks hike loan rates after RBI move: Check if your EMIs will rise",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMU8yT3lyN0JSeG1YM19LN2xfeTJGZzMwcFZOYnpZM24wSEdmbjRzd3NrdU1BQU5XNDVwZkRwTHN2a3dpUzUyNlN3WmlCSTBNMFppRG5NOHZVbGxTMWgzOWo3X0hiTkx5amR5N19GU0JaenAyRmEtQS1HaW5kaUN4QWRzZ3FXNE5oYkN6TGVKX2RJN0xYdGJVUlJ5eG9wOXhwY2ttTHV1T1dHRExvSDVKN05nZHlpdDFyRG1yRmp4Q0FuQWkyYjZIaEdNX3cwdjRINVdQYWtxQ2p2djhObl9oOUJkRmzSAeoBQVVfeXFMTkFfLXVCYWk1NFJGYUtDemJhdC1UM2MxYW1zLTdYMDlUOVRPYkNuX3hPUWIzVVJrWHdNc0xaekRBb09QQTZ3WGJyM3lscDdhNXBrVjlRMEtIYkNHTGpvVDRQckkxeF9nbi1fOUFLeGJQX1AxVnBMUmlxaWxZdmxtZGxoLTZPZ0hhVC1Dc0dncWJocG9yOHF4dVZOTzNhMzV4WDNkRVp0U0NlSlByM3Fual9kS0VvSGlsRVUyc0JaeTZmU00xQ2VyNzUtM3BCYTNPUFNTRDBPVEt0aXNYRnhWZGY3b05oWS1LZFlR",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T06:51:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NRI home loan after RBI rate hike: Should borrowers increase down payment or retain overseas savings? Experts explain",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPUEtPVlVvckxWTzZmU0RlNDlzVnc2TzNSel94WDdHcXpSa1dzTURzcWx0UGZIYUE5QndreHZnVWJtWlY4ZDZVc05JMTNCSTRjT0owOW5wT0ljTHlRWnVTblRFWEgxb21acUpoa0VkcjBDWGt3ckxWeFU4ZzFsR0tYOHRINGdfUU4yV2ZqOWtIQkY3bUZxTXFua3U0U1BhUWNvOVU1eVZBWkg1TmhqV3M3emFURURhclRYMGIzV0djY1BfZjFQWk5tMkhSd2RJT2duUnNYWHMtQmZTNW03bUgxOGNUWDB1UTFzdGtIak5xQzJWTE9iVVczblVGOEpuYjZmVGVnaXRxSkxjeHpjQnYwN9IBlgJBVV95cUxOSnBrX3VmMTRfbWNTWV9vLTdYczRKVVhtbDBsbkVsRV9LcE5JdDZOUGtITmI5TWhyUkZSdW84ajJieEZzTnlXQ05mTERTcjRmV04yTnNJdjVYa1hjcEs4cWdUWVRUV2VPdERYU05WdDZfd01OdFAwTHQyd0YtU19MdTVHLUVyaklKTk10Wm1oN3FIdE5HV251UmRsTFJtV1V4R2tpM2dadHotUHhKX3RyNUlGbWxjNU8xUG1wb0F3T3hhcXR3dkFaZFloSkNubkNKVmJDcS1tRmlHV1BtSlBXN0dWMm5yZFZueWFvaDVmeGx2Y2x5eV9TTXRRQmVRZ3RlQ2lSYTRCYmxnMWZqYVdmc3BnMVJBZw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T17:08:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PNB, Bank of Baroda, Indian Bank Raise Interest Rates, Loan EMIs Set to Increase",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOREh2X1NVX3p1VUxFclRoZ0o1Z1JPQUYxMndoZkxpUWk5QWU5NGtWcVQwelB4Y3VERXI5a29FcDR4NUsxc0RlSHpKVGVFeDY2M1VEa0hJLXRkbzVkemV0ZHljT0RidG51ekl0bHdyQWI0UGw2OTdxV2dZTzl1X25INVVHV3pQVVBYMXNKNk9YNUx6WnkwdXAyTXZURGU5TllfQWhkdk9yeUZ3V25E0gGsAUFVX3lxTE5ESHZfU1VfenVVTEVyVGhnSjVnUk9BRjEyd2hmTGlRaTlBZTk0a1ZxVDB6UHhjdURFcjlrb0VwNHg1SzFzRGVIekpUZUV4NjYzVURrSEktdGRvNWR6ZXRkeWNPRGJ0bnV6SXRsd3JBYjRQbDY5N3FXZ1lPOXVfbkg1VUdXelBVUFgxc0o2T1g1THpaeTB1cDJNdlREZTlOWV9BaGR2T3J5RndXbkQ",
+      "source_name": "Times Bull",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T01:30:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI expects rate hike transmissi­on to temper credit growth in coming quarters",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaFVSdVpOWVpsQWw1ZEhnNEtVWGlXcUZBYjVqeXpHQUdMN2t1SnlWOGJEMlp1dDRBbHdXS19QaGpra2Z5N3ExSXp4azh5MjVEWUdwOWROZFJiWlZ1cjM3SUNmUUpaMEVQc1lILVBmSGFrc1hXOGNHUTJOdm1QQ0VXZUpUelNFY0oyUllv",
+      "source_name": "PressReader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T05:37:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI repo rate hike: Will SBI, other banks increase fixed deposit rates? Here's what SBI chairman said",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNSXdickxrOS1HQ05aM0gzcXNTb2tSM1M2WHg3Skp5OEpGWmFpR21DWWMxbE1aaTYyOTJNaXAtUjBqMjhZN0hTbEJrZS1maTUyWEEtSzhzbHhEVUdFdVV3UHZ3VERGcV9oTTI2UUl5aDhDLWpzWlcxNXNTaVY5Y2tyVHhCVVBLTi1oMVRSYnlmRDl3aEhwdjQ4cWwzODRkeGx2NENGVlR0U3dJM25iOTdYZ1RPUjZkRkgyRDlvSzV2NE1RRlltZWR0SWI4V0JwUUNPU3EzQU83Y2FnRXFGelVWUm5EUVZNbW15VWNJUWJZWXJqbUc5cVQzd0NLNmYwZEE0SUlKaXdwSngwcFFhT3l5cTRtbW50NGlxS09jcQ",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T02:08:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI's Repo Rate Hike: Real Estate Sector Expects Resilient Demand Amid Inflationary Pressures",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOVzV3SmU1clhZbUpWQzd0T3kxVkxjcTFQS0pZQ0ktZUhRaXRwcnZKX3ljN0tyWUpDMFNGZDNzcWctYnJDVlRVZTR0cVBpbkowdnRyRXRoNGtjVmFwaGpFSjRWRmxMRjNZTWNvRFVreVlPRGp6cTlXQk1lY0JWcmhYZ1VZSW9GS0ZWcURXeVh1X2FQLTJxNllYMVhJdV9zV0dXTzJZa1BZSzRxU0VZMjZoaGdSNWhLd01ReWwwYXZoTmFTX2lXMGQ2NVNkSGFHS2dINFNiaS00c3MycE9meE5VeGl3N3lITVpMSzBrRUg3Z2FLODE4SHdZZ0czV1pXTUJkQXVB0gGIAkFVX3lxTE0xSldPOUFBT3ZaVHZCd0M3QWdhX1RiQVNoamJhV0UxUkRkYkZpekd4WC12SnR4WElOTExvbXlycnRxODlEa2NFNkxMTDNzQXpRYTFnYWNjVS0tUkpTUGNuZmNhUzdxbnVEZzhQU25ZVXh2ay1pVDVaLTlPWWZpbVJfQmZ2MVY1MHZuNHpWV3FtN3JWUmlQa280amdaVUlLTEhFTVM3cWtBNllCM20yRmhDV20xNGdCMjlLekJWV19qQi0zREhkalRpbkdvVkhGc2p3emNHMjVIem9zbVl2WmVxQ1YzZnZaSjJ4OThiNV9uanIta1FwX1k1T2VRZWwtSDF2SUQ5QnFRVg",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T11:45:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Repo Rate Hike: How Will Higher Home Loan Rates Impact EMIs?",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMktXTGtOb0pqUzJqZXlqZ0xHbFR1MWJiRnQwM1d6a2haYjVHa1gwWFZKZEVQWHBJT0wyMmJfWUJTY0ZsZVBjeTdkaFJXQnZtaG5EaDhBTmN2OWdxLVJOQk1iM2p2YkZNLWx3Nk5RZzhtakFsMEJ2U2NieC1Rby1FTmJIbUlZd2FtNHhzUTF4Q2haTDlSMEFBekYtMWFyZ29GcTA4MW93Vk9CdlJvM25N",
+      "source_name": "Realty Plus Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T03:01:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI Research calls for 50 bps RBI rate hike: Why the central bank may need to act before December",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxORFByU180VmdaT1VYaGtoVkJjTi0wS1lqa0hYQ1h1RWhuYi1BYS1YRG1uYzVVXzVIdUxkaWJQYTRtZHY4cXA4M1R0QzVQMkxTQTlfclpjeE5sLTdiQkhhMXh2SEdjbWNUbU5FVW1VanM1MXl1T0szMnViS0VvRUhXWTM3SGNUemlrUzhKUWZ1LXVJVEkya3R3bmZCYnJyalFrcUpJQ1ZLZE9vb2N4akZ0UFl6WmpTdU5zYlFwYkRaTk96VC1QM1RzV2hrTy1pV2R0SVU1dHVJdWhxNUxRdnROTnpMYzM1SC1Vb1k0RWs5OG4yajJnTnNN0gH8AUFVX3lxTE1qQ2wxSVJxbDRxM1h6cUp2emx3UzhXVDd4ek1rdkNJb0tNdUlXbUlfVE5hY0tENHdYMVNaMGZrNEVsLTlOU3FUN2hwSmp4LVVyUGNCc05sejZRM0g5RFhmZDV2TDNRSExzOER3UHFZN0oza2FtS09pdW81clE2TW9qYm93Ynk3cnBUbzRKbktzRHBnWkphQnBqQTRxa1V1S2FKQVh0T1RibERyZHp3SDV3bUJseVYtbkZ5azFXRVVLQ0R3bTRaTTEyX3kzejlWVTUtYmtrMkduQ2kxZG81dkMxY3ZZR3ZUeVNFeU83Q2ptWm5jZFlfMmdBRXMyYQ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T09:54:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will banks increase deposit rates after RBI rate hike?",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNXByMEhxeV9UT0R3cTMyQTk5cE1aMHBiREQtZUdlV3c0VnRrOXM2akR2UGJKWUlfWVB2eFdRY0FiUDYyd056cnJMQjhRWHlVcDF0S3RUWGpBTTN5d20taWlsVTByQ0IzbEtIR2xjZ3ZXV1JiTlpVMVlubVJ1RGJhNDVRd3dwX2JQTzdudWxLbDdSdW1qeEFpU0FVdUI0SHhjRC1MRFdxRmFNXzFpVUtSM2d0bDdvLVl3NEHSAboBQVVfeXFMTzVwcjBIcXlfVE9Ed3EzMkE5OXBNWjBwYkRELWVHZVd3NFZ0azlzNmpEdlBiSllJX1lQdnhXUWNBYlA2MndOenJyTEI4UVh5VXAxdEt0VFhqQU0zeXdtLWlpbFUwckNCM2xLSEdsY2d2V1dSYk5aVTFZbm1SdURiYTQ1UXd3cF9iUE83bnVsS2w3UnVtanhBaVNBVXVCNEh4Y0QtTERXcUZhTV8xaVVLUjNndGw3by1ZdzRB",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T02:22:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 14,
   "source_count": 2,
   "primary_source": "News18",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+INTEREST_RATE|likely-october-raise-rate-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T14:59:42.888501+00:00",
-  "last_updated": "2026-10-08T13:56:50.546080+00:00",
+  "last_updated": "2026-10-09T13:45:03.311552+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T14:59:42.888568+00:00",
@@ -155,6 +292,21 @@
       "timestamp": "2026-10-08T13:56:50.546059+00:00",
       "change": "sources added",
       "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.311524+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Business Today, ETBFSI, KNN India"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.311541+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.311548+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 3"
     }
   ],
   "price_reaction": {}

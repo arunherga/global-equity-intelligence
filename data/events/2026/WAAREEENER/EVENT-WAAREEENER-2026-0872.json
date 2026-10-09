@@ -9,40 +9,45 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.58,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "Tata Power",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from Tata Power"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Tata Power. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar modules, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -76,16 +81,26 @@
       "published": "2026-10-08T13:19:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "TP Solar records 2 GW solar module output in H1FY27",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaWprMWd0YjlPTDc2SUhrN2ZkZl8yZmlVa2RyX3I1ZGFuRmhqclVrekdNZ0pWMjRCX0R4NlQ5b3lianBUZlNYOXk5TG5rUkRvUkp2R2RrV3ljT01HYjNUcXVlbW9HQXF1eDJ5WVFlRTduTmhPY0VJRUhqTDRDMVFHblBLa9IBiAFBVV95cUxOZkFhcXRqWWQ1SEJ3V25Mb2NESWpjaldCY3phSmp2X1lXR25uSEZGWERIbDZmUGdTWENQVUJXVnIyXzBTLUZPcmxkVUUxNHVGbklsbXZwNmstUTEyRGp3RlpfdWFUTDZCMUh1Wjk2ZU80anNLQi05RFg5NGdHQU02Sl9hd0M5bU13",
+      "source_name": "T&D India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T05:25:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "WAAREEENER|OTHER|arm-clocks-module-power-solar-tata",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T13:47:59.958625+00:00",
-  "last_updated": "2026-10-08T19:27:21.017781+00:00",
+  "last_updated": "2026-10-09T13:45:57.792727+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:47:59.958703+00:00",
@@ -96,6 +111,16 @@
       "timestamp": "2026-10-08T19:27:21.017767+00:00",
       "change": "sources added",
       "detail": "PSU India"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:57.792701+00:00",
+      "change": "sources added",
+      "detail": "T&D India"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:57.792721+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

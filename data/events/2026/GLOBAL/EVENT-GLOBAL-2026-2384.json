@@ -1,0 +1,125 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-2384",
+  "title": "RBI's money market operations saw higher net liquidity absorption on October 8",
+  "summary": "RBI's money market operations saw higher net liquidity absorption on October 8 Traders Union",
+  "event_date": "2026-10-09",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "RBI's money market operations saw higher net liquidity absorption on October 8",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLUdLQjZCUXhSSnhCWUJ2WDgzM1ktYlM4eE43cGZudzdVTDQ1MC1nOXJMXzBPenpmOUZHb0hldHZXNjNiYUVlVlY4SHNoVmFiZW9TMEJpRF9taEFiQWhpRXJXVGhLdzBFclhaaVJjendQTl9vTFNSRkwyMnhUbFdKQkFnV09JcHpOQ0xLcTAxQ2pPcWhzZ2pkdkNjWG9vbXBSc1g2YlhuM28",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T04:19:33+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "HDFCBANK+TMB|OTHER|market-money-operations-rbi-rise-saw",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-09T13:39:12.463459+00:00",
+  "last_updated": "2026-10-09T13:39:12.463536+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-09T13:39:12.463528+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

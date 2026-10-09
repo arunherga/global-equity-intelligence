@@ -1,0 +1,127 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0641",
+  "title": "HDFC Bank shares bounce back after rate hike blow; YTD loss tops 29%",
+  "summary": "HDFC Bank’s market capitalisation stands at ₹10,85,392.16 crore",
+  "event_date": "2026-10-09",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.61,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "MIXED",
+      "confidence": 0.71,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "direct relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "HDFC Bank shares bounce back after rate hike blow; YTD loss tops 29%",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-shares-bounce-back-after-rate-hike-blow-ytd-loss-tops-29/article71562937.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-09T07:01:34+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares bounce back after rate hike blow; YTD loss tops 29%",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSFFHcHhqUDdUSjQ5cHFUS0JjZzNLaE1oMFh2aVppMDBuN1YzNkVKelk4ckttdTRsUmVXbTR2TGdsRW9rbVJNdlVfb0w1b0RsQmVvNld1Zl96bDFuNmx0VmtFRlFpVVJaQkQwdXFocFlhWmtTY1FkdnVqZ2szbXdNNnBhVWcxeS1xUWNaa3FfUlBfVVRoZjhVV2pDU1hiSjk5dGxHU3VwRG4xaUowaVk5QzkyTlJOT0VmQkg2NmxYeU1rX2g3Q1pNR1VpNTVfQTRMNnFQcHNvNUhPYmxZRGfSAeQBQVVfeXFMT2RjOGNuR2p5aFhfZmZuTUdKcHhTNHZUZHA4U0tZaExSNWI2MWVlbDZpUFRCb1lrTWFBUDJWVVkwSlhiRGU5UFpHSGhkQnM2bGtJeDBGMWNtaHpSRXhEeTNPeG5OWlNUUmxNMVlybVpYeVBmc0JTWnRyTEFxMjMyZ1JoenpRYVNxYlNOR0dsT3YtNlZaLS1nSkE5b2NoR2hNX2VMQXlIMnl1aF9PSGtEWmQxeno1MkZ6N2tRODV0MDA5d0JCOC1Zakx2MlVYUWhERHJ0Z2VfQWVWTVRFTjg4bjV3NFR2",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T07:01:34+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|back-bank-bounce-hdfc-rate-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-09T13:36:07.345104+00:00",
+  "last_updated": "2026-10-09T13:36:07.345189+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-09T13:36:07.345179+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 2 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

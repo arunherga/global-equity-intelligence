@@ -35,6 +35,51 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -47,21 +92,41 @@
       "published": "2026-10-05T15:22:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Steps Up Coal Supplies to Power Plants",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSkd4UDdIcU5iOG5JdlpSd1VoZjdCQi11SHJIbFI2STFvOU14cHhlQzAyOF9FVUE0dDV5WlRHS2lXTE02UlNjdlljRncwNUI0dWFYRlZVYUlka29kbmVmRHlQS2h3OVpnamxSSGxLU1U2THFScE9lbjhaT1pwbjNjSGNFSENUa3ZHYWdjUlU5aFlOMEE3UEVMNDBhdzAwLXQtOXBlcXlCai1QSXVWOVpDci1MZWlHSXN0TjVBb2JOelI1ejBi",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T07:34:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "COALINDIA|OTHER|cil-coal-plant-power-steps-supplies",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T21:39:14.822895+00:00",
-  "last_updated": "2026-10-05T21:39:14.822980+00:00",
+  "last_updated": "2026-10-09T13:46:13.933906+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:39:14.822969+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-09T13:46:13.933883+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-09T13:46:13.933900+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -4,18 +4,22 @@
   "summary": "FSSAI send notices to Dr Reddy's, Nestle Health Science, Amazon, Flipkart over misleading protein supplement Livemint",
   "event_date": "2026-10-08",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TRADE_POLICY"
   ],
   "stocks": {
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "EXPORTS",
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -23,38 +27,49 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+4 Material international trade or tariff policy",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "scope of the measure",
+        "affected product codes",
+        "retaliation risk"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to FSSAI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to FSSAI, and India. The parts of the business most likely touched are exports, regulation. Classified as trade policy.",
       "ai_analysis": null
     },
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
+        "EXPORTS",
+        "REGULATION",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -69,24 +84,35 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+4 Material international trade or tariff policy",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "scope of the measure",
+        "affected product codes",
+        "retaliation risk",
         "order flow from Flipkart"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Flipkart, and FSSAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Flipkart, and FSSAI. The parts of the business most likely touched are exports, regulation, customers. Classified as trade policy.",
       "ai_analysis": null
     }
   },
@@ -100,21 +126,51 @@
       "published": "2026-10-08T17:51:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "FSSAI issues notices to Dr Reddy's, Nestle Health Science, Amazon, Flipkart over misleading protein claims",
+      "url": "https://retail.economictimes.indiatimes.com/news/health-and-beauty/fssai-issues-notices-to-dr-reddys-nestle-health-science-amazon-flipkart-over-misleading-protein-claims/134805197",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-09T03:18:16+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Livemint",
   "cluster_key": "FRESHARA+RAVEL|OTHER|fssai-health-nestle-notices-reddy-send",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:26:20.127056+00:00",
-  "last_updated": "2026-10-08T19:26:20.127127+00:00",
+  "last_updated": "2026-10-09T13:45:03.930793+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:26:20.127117+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.930760+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.930776+00:00",
+      "change": "categories added",
+      "detail": "TRADE_POLICY"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.930783+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-09T13:45:03.930788+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,211 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-2354",
+  "title": "Refinery outages pumping up fuel prices more than cost of crude oil",
+  "summary": "Refinery outages pumping up fuel prices more than cost of crude oil Federal Reserve Bank of Dallas",
+  "event_date": "2026-10-08",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to Federal Reserve. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to Federal Reserve. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Refinery outages pumping up fuel prices more than cost of crude oil",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54QVNSRE5wVG1lQmwyWlpvX1gwbmNKbmJmaXc0NTFjR2Q5ZGJMbThDTEhjUS1Wem9qY2dHXzZwYXlLeUNtWVdiTzdVZ2hva3lueEJFLU9KcFdpaFZVZTJvcTI4ZmU",
+      "source_name": "Federal Reserve Bank of Dallas",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-08T19:36:58+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Federal Reserve Bank of Dallas",
+  "cluster_key": "HDFCBANK+RAVEL+SUPRIYA+TMB|INTEREST_RATE|fuel-more-outages-price-pumping-refinery",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-09T13:37:24.488453+00:00",
+  "last_updated": "2026-10-09T13:37:24.488537+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-09T13:37:24.488527+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
