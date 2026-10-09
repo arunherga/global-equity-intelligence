@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "vegetable prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -146,16 +146,26 @@
       "published": "2026-10-08T16:50:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chicago Terminal Market Vegetable Prices: Mixed Movement on October 9, 2026 - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLUtWTXhWZVBRLXBSVjFjcTF0bHA1eUg3djF1bVdtM2NodUVXRzNLVl81ajBaTEpROS1laDVvTi1ja3lrOTFBQ3NkZmt2ek8yMmRuTkgwSDc1NnVoM0Y3d0RvNWc2X2laM2FtWldfNzNMcWw3S2NDNXZHQmVHaTAwUnczNHJnODdvU1BidDBsd1ljdHNEUU9B",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T17:10:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 11,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "FRESHARA|OTHER|market-philadelphia-price-september-terminal-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.854058+00:00",
-  "last_updated": "2026-10-09T13:45:15.415387+00:00",
+  "last_updated": "2026-10-09T19:07:33.436200+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.854111+00:00",
@@ -206,6 +216,16 @@
       "timestamp": "2026-10-09T13:45:15.415382+00:00",
       "change": "direction changed",
       "detail": "FRESHARA UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-09T19:07:33.436174+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-09T19:07:33.436195+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

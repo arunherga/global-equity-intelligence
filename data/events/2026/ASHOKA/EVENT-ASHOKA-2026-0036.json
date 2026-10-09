@@ -10,10 +10,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 9,
+      "impact_score": 8,
       "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.51,
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
@@ -22,17 +22,17 @@
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Major order or contract",
+        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order execution schedule",
@@ -41,25 +41,7 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Positive. The ₹290.23 crore contract will directly add to the company's order book and will be recognized as revenue over the project's execution period.",
-        "margin_effect": "Unclear. Margins will depend on the specific terms of the contract, including the presence of price escalation clauses for key inputs like steel and cement, and the company's execution efficiency.",
-        "cost_effect": "Increase in project-specific operating costs, including mobilization of labor, procurement of railway-grade raw materials, and equipment deployment.",
-        "competitive_effect": "Strengthens Ashoka Buildcon's positioning and track record in the railway infrastructure segment, helping it qualify for larger railway tenders in the future.",
-        "regulatory_effect": "Requires compliance with Indian Railways' stringent safety, quality, and environmental standards, with potential penalties if milestones are missed.",
-        "short_term": "Positive impact on market sentiment and order book visibility. Initial activities will focus on project mobilization, design approvals, and site preparation with minimal immediate revenue impact.",
-        "medium_long_term": "Steady revenue recognition over the next 18 to 36 months (typical for such projects) and potential expansion of the company's non-highway portfolio.",
-        "second_order_effects": "Enhanced bidding capacity and pre-qualification credentials for future North Eastern Railway or broader Indian Railways projects; potential local supply chain efficiencies.",
-        "key_uncertainty": "The exact execution timeline and the margin profile of the contract, particularly regarding inflation protection for raw materials.",
-        "monitor_next": [
-          "Official disclosure of the project execution timeline and milestone schedule",
-          "Quarterly order book updates and the share of railway projects in the total mix",
-          "Input cost trends, particularly for steel, cement, and specialized railway components",
-          "Segmental margin performance of the company's non-road EPC division"
-        ]
-      }
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -72,16 +54,56 @@
       "published": "2026-10-09T12:28:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Receives Rs 290.23 Crore Order For North Eastern Railway Capacity Upgrade",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQmV1c2d1YmI3bEVPOHpfcWU2Zkh4OFhPbnQ4RE5iYlJmMHBfdUEtdmhHM1BkTURmVHlVMzQ3dFJfaXpIR3ZQNnB1bXRFQ0wxTFpJelhVOWtrUlIyN0lPenJvWDFoUENoTWc2ckEtdGdTU18tVXFkLV9ERFlLSVoyQWE1bmhTcldhNndIcGVrbGphZDBqSFpMV3M5c3RkZUNjVmUyY0pZNDJ4aG5UYUVOblVjbzlPZ2JNbmdXTHFja185bno3N096X3BOd3RDUdIB1gFBVV95cUxOQU9tTUlyM1JvcHBxOG5iRDFfaGdtMnZJMzNwSl9aOFozRThoVUJuNHU4UWo1QWxETjhTNVJsWFRhZ3U2a1pTTkt6LURkS2dYYmRWX0ZFNDNyNERBR1dBa3ozUENKbXYzdXY5SVQ2WEVzeTdyWVVjb3p1TTcwaFpqQzZOOTFPLWJjWVgxR3p3WkZKMU02V3VUZmhrMlB3ckhNVkM4Tm5UT3p5NGVpbzJ5c3VzVzRTZ1ZacS1xN3ZuNXJWanNRWVpoYW1zMlAzWVJsZmx6bFB3",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T16:51:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Submitted Bid For Project To North Eastern Railway",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdkRfTGdOdWthQUQ0cXgtaXE2QkwtM2JnOVlVVThueUJFUHpDbjBESDNVLUYxeHA1STZLbUZ2RlRWMkxPNEU0WVViVnFsdmxUQlE3NHB3SndJOHZ5MFIxOWt5azRGWnJnWmxralNweWFnSHN0X2tZMzdReGQ4V2M5TnpvOXBscGVCOXhlNTRWTnk0MGRBdTc1bEFJY1JGY1lISXR5M1pzQ3cyaGZ5LWp5REJES1A3VVdHUk5fcXpkN05yN3NPemJsZFFLQk9XMDJseEE",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T13:26:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Wins ₹290.23 Crore Railway Electrification EPC Project from North Eastern Railway",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE95T0Zha0tfWmRuSzl6ejcxZllhUVlOdjhqWjhnRjRkZU5NakFHTlJKRDg4NnJsTmkxUVFqX3IyRWkzTi1qaVZFeHNxMGFYM29yVkUxQ2U3QWMwa1BVSG5Z",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T15:47:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon wins ₹290 crore North Eastern Railway contract to upgrade traction power systems",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZ3ZDTWFZU3otQTRCQ29XX1IxNUUxd0JtdUtKdmtxZmwzNzdhcEFhTHhucnRWMUZic3BsRTl3Mll6eXg5NnpNZWNJSEZpTVFuTUw5T2Naa251S2Jaak84dnNxWmtETF9vYzUwd0d5eTFETENLN0pmaDVvV0VaWGxONFE2QjY2enNuMmMxZW9oak5Cc3gydXNhLWpKaURfZThoc3hucDNxS2xyT3UzeUxaVll1QWhWdzdscFg4UU0yX1BFQXFfVktpeDFaOEs4dzl4bTI3ZmJJUml6bGvSAeABQVVfeXFMUGYzN1RiUl9nUUIyUjFEeEhreU9hNWt1UnY0ZWZoS3NVTG9EZHc0ZGVpUWZzTXRYUjB6aTFPUGZnQjIwX2RZNVk0aFB0cDc5WXR3cS03RnJSQnFqT3M0eksyWmNsWEVtV3Y0WE5ITmRhMzJTeENNS3RDV0loMGpOamw1ZnJEZ3lJd1VEZjdRNzlEVWNBT1FXWV9KV0JkX2ZyNlQ2MHZXYzVRRTZZeF8zSF9SS0M4MndPTFBzR3RVRms2bGRveVRVMGlvVFE5N2Jza1NCWklreEoySmpmdDFjY2E",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T14:32:11+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Business Upturn",
   "cluster_key": "ASHOKA|ORDER_WIN|290.23-ashoka-buildcon-contract-north-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:42:48.671910+00:00",
-  "last_updated": "2026-10-09T13:44:34.928201+00:00",
+  "last_updated": "2026-10-09T19:07:12.224231+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:42:48.671992+00:00",
@@ -92,6 +114,16 @@
       "timestamp": "2026-10-09T13:44:34.928184+00:00",
       "change": "ai analysis",
       "detail": "ASHOKA via gemini"
+    },
+    {
+      "timestamp": "2026-10-09T19:07:12.224207+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18, EquityBulls, NDTV Profit, TradingView"
+    },
+    {
+      "timestamp": "2026-10-09T19:07:12.224227+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

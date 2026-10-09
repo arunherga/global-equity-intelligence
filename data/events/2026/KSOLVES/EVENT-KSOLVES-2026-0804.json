@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
         "REPUTATION",
@@ -44,12 +44,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a platform or supplier the company depends on is investing"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -84,16 +83,26 @@
       "published": "2026-10-08T13:28:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Palantir Rises 4% as Barclays Starts Coverage at Overweight With $265 Target; ServiceNow Holds Steady, Salesforce Sits Tight - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQUlZWalpybVpmdVNpWEdaZm5ZUlBnUmNGZGRfaDNET2YyQTd3UzhNbVV5QlZweEpKUnFJSkF5Mll4RGstMmtTaGptSWRtZ1RvSDFZSFhrX3I4enAzaDRmeks0OEhMQ0hmOGNhTkJIYnVzdHhyakxjeXE0QjhLVVZUSGRDUExTQm5Wd0Z0MVpVb2Y3X3RkRG9BTGVNSTVycEx0dmJ4ajVGZzF4MTlrNTZwQmE3bkpLYUgzdUxTWVBnOFVaamJobkhyQ0xiYTZUdnFaUWlyamdvUzZmenA1RFZJSmEwWXZJVFRfSldXVEhPVEtydlFZbE5B",
+      "source_name": "24/7 Wall St.",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T16:53:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "24/7 Wall St.",
   "cluster_key": "KSOLVES|ANALYST_ACTION|buy-goldman-palantir-rise-sachs-upgrades",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-08T13:53:23.873268+00:00",
-  "last_updated": "2026-10-08T19:27:22.373321+00:00",
+  "last_updated": "2026-10-09T19:07:32.407712+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:53:23.873340+00:00",
@@ -104,6 +113,16 @@
       "timestamp": "2026-10-08T19:27:22.373307+00:00",
       "change": "sources added",
       "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-09T19:07:32.407688+00:00",
+      "change": "sources added",
+      "detail": "24/7 Wall St."
+    },
+    {
+      "timestamp": "2026-10-09T19:07:32.407708+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

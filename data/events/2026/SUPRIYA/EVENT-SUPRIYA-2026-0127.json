@@ -13,9 +13,11 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
         "PRICING"
       ],
       "time_horizon": "UNKNOWN",
@@ -47,17 +49,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "API prices is a selling price and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "API prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to API prices, and API prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to API prices, and API prices. The parts of the business most likely touched are product, revenue, pricing. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -91,16 +93,26 @@
       "published": "2026-10-07T22:29:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Anthropic Launches Claude Haiku 5.5 With API Prices Starting at $0.10",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONmQtZzZRS2E4SWEtaDM4V3U0ZHJTZkhiblJOdkpZem9WR2V5dTYwWVk4TF9zeFJiTF9keUg1LVBEYTdoUTc3d2dXN1dkd0RBeEYzcG1VaVNFWmNuaGtLX0VQTXBaazNPMlpKSDZyd1diQTY0TnIzZ2FNQnoxLTNiYVFxaEF6aW9C",
+      "source_name": "TechRepublic",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T08:10:11+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "VentureBeat",
   "cluster_key": "SUPRIYA|NEW_PRODUCT|5.5-90%-anthropic-claude-haiku-launch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T19:32:09.260625+00:00",
-  "last_updated": "2026-10-08T13:57:13.119416+00:00",
+  "last_updated": "2026-10-09T19:06:55.389438+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T19:32:09.260694+00:00",
@@ -126,6 +138,16 @@
       "timestamp": "2026-10-08T13:57:13.119396+00:00",
       "change": "sources added",
       "detail": "TestingCatalog AI News"
+    },
+    {
+      "timestamp": "2026-10-09T19:06:55.389413+00:00",
+      "change": "sources added",
+      "detail": "TechRepublic"
+    },
+    {
+      "timestamp": "2026-10-09T19:06:55.389433+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
