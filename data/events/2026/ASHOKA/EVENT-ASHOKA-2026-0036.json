@@ -10,10 +10,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 8,
+      "impact_score": 9,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
@@ -22,17 +22,17 @@
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
+        "+4 Major order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -41,7 +41,25 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Directly positive. The ₹290+ crore order adds to Ashoka Buildcon's order book and will be recognized as revenue over the project execution period based on completion milestones.",
+        "margin_effect": "Unclear. Railway EPC contracts typically carry operating margins distinct from highway projects; net margin impact will depend on execution efficiency, sub-contracting costs, and price escalation clauses.",
+        "cost_effect": "Increases direct project costs, including procurement of steel, cement, railway track materials, equipment deployment, and specialized labor for railway infrastructure.",
+        "competitive_effect": "Strengthens the company's position and track record in non-highway civil construction, aiding its strategic diversification into Indian Railways EPC bidding.",
+        "regulatory_effect": "Execution will be subject to Indian Railways safety, signaling, and construction regulations, as well as obtaining necessary rights-of-way and site clearances.",
+        "short_term": "Provides a sentiment boost following a 39% YTD stock decline, with early activity focused on contract signing, mobilization, and initial site preparation over the next 0-3 months.",
+        "medium_long_term": "Sustained revenue recognition across the contract life (typically 1-3 years), supporting top-line growth and helping balance concentration risk from pure road and highway development.",
+        "second_order_effects": "Execution success could improve eligibility for larger railway tenders, but working capital could be stretched if milestone payments or approvals from railway authorities encounter bureaucracy.",
+        "key_uncertainty": "The exact execution timeline, project completion deadlines, and underlying margin profile of the contract are not detailed in the source.",
+        "monitor_next": [
+          "Formal execution timeline and milestone schedule for the North Eastern Railway project",
+          "Quarterly updates on overall order book size and segment breakdown",
+          "Operating margins (EBITDA) reported in upcoming quarterly financial results",
+          "Working capital management and receivables days from government bodies"
+        ]
+      }
     }
   },
   "sources": [
@@ -94,16 +112,26 @@
       "published": "2026-10-09T14:32:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon bags order worth over ₹290 core from North Eastern Railway; stock down 39% YTD",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPYXZtbHlOTmRKcVpqRTExZ3Y0MDFHZXAtX2lVazNIelJ1YTJEUGx6WlJsNnljZUZMX00wMklnRXRhZ0lKVW1qc2diNmU0SjNKYmZEMWVKbDZmR2l5bGMzbnJsY0tNdUtpdmxjTE5yTmdHbndKRC1SMmpYY0JqWVUxRFRzVlJQS3JpNWpaM2lBQ0FqX055a3pQY2M5N19kQlpXY2dDTGY0ZWFuSGRyNWZvSW52QjFCSmVuOS11dlZxSEdVVkFNZThxcDNDaXl4U1NMdmhPa3B6QWxOM3kzT0RnclRnNEU",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T13:04:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Business Upturn",
   "cluster_key": "ASHOKA|ORDER_WIN|290.23-ashoka-buildcon-contract-north-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:42:48.671910+00:00",
-  "last_updated": "2026-10-09T19:07:12.224231+00:00",
+  "last_updated": "2026-10-10T12:53:55.754422+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:42:48.671992+00:00",
@@ -124,6 +152,16 @@
       "timestamp": "2026-10-09T19:07:12.224227+00:00",
       "change": "direction changed",
       "detail": "ASHOKA POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-10T12:53:55.754399+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-10-10T12:53:55.754416+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 8 -> 9"
     }
   ],
   "price_reaction": {}

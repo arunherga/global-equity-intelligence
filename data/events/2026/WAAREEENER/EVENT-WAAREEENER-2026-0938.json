@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -25,24 +25,32 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +64,41 @@
       "published": "2026-10-09T05:16:42+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "India Withdraws Tax Benefits for Banks on Gold, Silver and Platinum Imports",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQc1BkWnhFM20xTzFoM3RaYWF5ZzRTZHd5UE5Wd1J2c2JQMUoyUGZwa2kwbHJvcnpRME52bV8yMmZjQ3YxSGpiNjNVVzlySGR2c2dLMjduemZhdVBlSFE0cFJjMXI4TG5fc3VxWVJLeHE4X1lXejM5SzVWempWN21QX2JYWE5yNjJhM05TYWJiZmd3eDFfUGRYTlJMUWlieWhsVGluR0NIMUkwWW8",
+      "source_name": "StudyCafe",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T04:54:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "WAAREEENER|OTHER|bank-benefit-gold-govt-tax-withdraws",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-09T13:36:04.848382+00:00",
-  "last_updated": "2026-10-09T13:36:04.848461+00:00",
+  "last_updated": "2026-10-10T12:54:37.778988+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:36:04.848452+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:37.778965+00:00",
+      "change": "sources added",
+      "detail": "StudyCafe"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:37.778983+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 2"
     }
   ],
   "price_reaction": {}

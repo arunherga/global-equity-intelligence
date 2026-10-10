@@ -11,17 +11,18 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "REGULATION",
         "REPUTATION",
+        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -32,7 +33,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
@@ -41,36 +42,41 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, competition. Classified as litigation.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, reputation, management. Classified as litigation.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
         "REGULATION",
-        "REPUTATION"
+        "REPUTATION",
+        "MANAGEMENT"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+4 Regulatory or legal action",
         "+2 Company appears in the headline",
+        "+4 Fraud, cyber or product-failure incident",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "LITIGATION is unfavourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -78,26 +84,28 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, reputation. Classified as litigation.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, reputation, management. Classified as litigation.",
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Direct revenue impact is likely unclear, as class action lawsuits typically do not directly halt core banking operations, though severe reputational damage could indirectly affect customer acquisition.",
-        "margin_effect": "Net profit margins could face downward pressure due to elevated non-interest operating expenses, specifically legal fees and potential provisions for settlement.",
-        "cost_effect": "Operating costs are expected to increase due to legal defense fees, administrative expenses associated with the litigation, and potential future settlement payouts.",
-        "competitive_effect": "Reputational risk from the lawsuit could temporarily weaken HDFC Bank's brand equity relative to key domestic competitors, particularly among international investors and premium clients.",
-        "regulatory_effect": "The allegations underlying the class action could attract parallel scrutiny or formal investigations from regulatory bodies such as the SEC or the Reserve Bank of India (RBI).",
-        "short_term": "Expect heightened public relations challenges, potential volatility in the bank's stock and ADR prices, and immediate legal advisory expenses.",
-        "medium_long_term": "If the lawsuit progresses, it could lead to a material financial settlement, prolonged management distraction, and a potential increase in the bank's cost of equity capital.",
-        "second_order_effects": "An increase in Directors and Officers (D&O) liability insurance premiums, and a potential tightening of internal disclosure and compliance protocols which could slow down operational agility.",
-        "key_uncertainty": "The specific legal merits of the allegations in the class action and the ultimate financial liability or settlement amount.",
+        "revenue_effect": "Unclear. Core banking revenues (net interest income and fee income) are unlikely to be directly impacted in the near term, though severe reputational damage could potentially slow international wealth management or institutional business expansion.",
+        "margin_effect": "Unclear. Profit margins could face modest downward pressure if legal defense expenses escalate or if the bank is required to set aside financial provisions for contingent litigation liabilities.",
+        "cost_effect": "Operating expenses will increase due to legal defense fees, administrative costs associated with class action litigation, and potential future increases in Directors and Officers (D&O) liability insurance premiums.",
+        "competitive_effect": "Limited impact on domestic retail and corporate banking market share in India, but could marginally weaken investor perception and capital-raising flexibility in international capital markets relative to peer ADR listings.",
+        "regulatory_effect": "Heightened scrutiny from foreign securities regulators (such as the US SEC) regarding financial disclosures and reporting standards, alongside potential review by domestic regulators like SEBI or RBI if disclosure deficiencies are alleged.",
+        "short_term": "Increased headline risk and ADR price volatility surrounding the lead plaintiff deadline and subsequent court filings over the next 0-3 months, along with immediate legal advisory expenditures.",
+        "medium_long_term": "Protracted legal proceedings over several years that may result in formal settlement payouts, financial provisions, ongoing compliance enhancements, or dismissal of claims.",
+        "second_order_effects": "Management distraction from core operating strategy and integration efforts, potential drag on ESG/governance ratings by rating agencies, and stricter internal disclosure controls enforced by auditors.",
+        "key_uncertainty": "The legal merit of the fraud allegations and the total financial magnitude of potential court judgments or settlement agreements.",
         "monitor_next": [
-          "The filing of the detailed class action complaint and the specific allegations raised.",
-          "HDFC Bank's formal legal response, including any motions to dismiss.",
-          "Any allocation of financial provisions for legal contingencies in upcoming quarterly earnings reports.",
-          "Statements or actions by financial regulators (SEC, RBI) regarding the subject matter of the lawsuit."
+          "Appointment of the lead plaintiff and filing of the consolidated amended complaint",
+          "HDFC Bank's formal court response and any motion to dismiss the class action lawsuit",
+          "Disclosures regarding contingent liabilities or legal provisions in upcoming quarterly earnings releases",
+          "Any formal regulatory inquiries or notices from the SEC, SEBI, or RBI regarding the alleged conduct"
         ]
       }
     }
@@ -292,16 +300,46 @@
       "published": "2026-10-08T03:13:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDB 4-DAY DEADLINE ALERT: HDFC Bank Limited Investors with",
+      "url": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxOVkdMTEhGSmlpTHEyMUlaXzMxV09rOWFpVkNURHZqeEV1eFNQeGRsOS1FQ3Z2bGtKUGV5akJxSDlsSVAzbTdYTHFURVlnSkF1dzJ1YVlqTEgyOXZUMUctWFoxdkY2ZUZpRnlSQTFsMjVJZnNiT2g2cGpnTEx5emlYaHYwNTBickZ3TUJwUW5qdDdEQ09yWkh0NjVZS1A5a2pqRWZSeWpSTGZwMWJTNzRVX0lDMFpjWGhuLWFTbzJGZmNFSktFdE1MWDRzOTNoNGhQMmIzYUJ1SXdacHB4T1FVclc4Vnd6SDI5aVRPZU5WTFdQYm5jekVKLVF6eGF2WUxfdm1RY1RxMVNHOEVsY09Jb2hTZ05EWS1raTJGeUpKWVBYVnVNTmowWmdZR1pmaTFfdktyeDhaN3VsXzhVOURTcjAzNDc2YWxIMVBsenBadEhHSm5saUF4emNZQkRKeXNfSXlEOEFQLTNhYWxNSldPUUN3",
+      "source_name": "GlobeNewswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T22:13:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDB Deadline: HDB Investors with Losses in Excess of $100K Have Opportunity to Lead HDFC Bank Limited Securities Fraud Lawsuit",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNT2l6MDRRQ3R4YW9NQU1EOWhLd21SNldhck1IazdiSEJKVmZ2R1lEbTAxek1lY1hKSTZHcTlYWU02dEpsM2ZpbWZ3UVdWUVAxX20zX3RoOWxOQzZEWmdjWVFHdGx5RHFZUkVycmZQUmJaM3FVY2luTlJzdEVvZE9fdUlQQjhwOTc4V3VHd2ZtYnBqYTV5VlE3aDNseFNRWTRhZTY1RHlDeVRnOHVGc21WbnRXLXJsUTg0bzFiNGZZTW5hTnpWb1I1RzlaUE9ldEJYcW1MLVFLQ0hFOWQ2Z2Y5VnhQU05OcDZ3SXVtT1gzVE5EUnpXbFRZYUV1cVdIS242Tjd1b202WGlzc2oz",
+      "source_name": "PR Newswire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T10:35:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank 96 Hour Deadline Alert: Kahn Swick & Foti, LLC Reminds Investors With Losses In Excess Of $100,000 of Deadline in Class Action Lawsuit Against HDFC Bank Limited - HDB",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQNDVxc2FHSXlqRk1nVVYwZmNEenlEVHRLQlA2dGc3SXNqS1hhd3BsamhMNXk4WVBNNi1WWFFkM1Z5Q1dNMkl2cnh3RmZmOTRNdDNoMlU0blFIS0x5em1VV0M1UkRmdWRPcVBzbzNVZFB6MXFHamRvMVptSFVuM3ZMYjVmYnVNRWpfR0N1Q3RsM2ZhTEZLZ3BHLWZaeDFJMVFXdXZSVkVmME1laTVSd0F2R1loU3ZFZlgzeS10eUZVd0xPZVl6ejQzaE1nMWVxa2RFYmlIWElFT2tJYU92X3FUaTlB",
+      "source_name": "www.marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T23:46:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 19,
+  "article_count": 22,
   "source_count": 1,
   "primary_source": "GlobeNewswire",
   "cluster_key": "HDFCBANK+TMB|FRAUD+LITIGATION|alert-bank-claimsfiler-hdfc-reminds-shareholder",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.653501+00:00",
-  "last_updated": "2026-10-08T13:57:26.906577+00:00",
+  "last_updated": "2026-10-10T12:54:19.052526+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.653574+00:00",
@@ -387,6 +425,21 @@
       "timestamp": "2026-10-08T13:57:26.906556+00:00",
       "change": "sources added",
       "detail": "ACCESS Newswire"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.052497+00:00",
+      "change": "sources added",
+      "detail": "GlobeNewswire, PR Newswire, www.marketscreener.com"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.052515+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 3"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.052521+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 9 -> 13"
     }
   ],
   "price_reaction": {}

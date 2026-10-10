@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1001",
+  "title": "Aluminium prices surge after Iran-linked strikes hit gulf smelters",
+  "summary": "Aluminium prices surge after Iran-linked strikes hit gulf smelters DD News",
+  "event_date": "2026-10-09",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (aluminium) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to aluminium. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Aluminium prices surge after Iran-linked strikes hit gulf smelters",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQemtYUEFwUUpoRG03WUY1QlhzZUQxVzIxSU1DYU1vSjBwVE45dElZMzFRcnFoeDlJSzZpUDg1ODNPaGVWT3RlM2dUc0h5VWRZLUNQbzk0NloyTWZwUkFJdnR6UDdXNVFiVVJWd3lhaFFJMUVqb1FLR29yT0x2UlBjX092dnVTWTFKMTNSUzBzc0QxOXN1ZGtF",
+      "source_name": "DD News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T18:44:42+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "DD News",
+  "cluster_key": "WAAREEENER|COMMODITY|aluminium-hit-iran-linked-price-rise-strikes",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-10T12:48:35.058294+00:00",
+  "last_updated": "2026-10-10T12:48:35.058370+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-10T12:48:35.058360+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

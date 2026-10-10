@@ -4,7 +4,8 @@
   "summary": "Hazoor Multi Projects ने Karnataka में प्रमुख NHAI toll plaza प्रोजेक्ट जीता, शेयर में तेजी। Alice Blue",
   "event_date": "2026-10-02",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN"
   ],
   "stocks": {
     "JKIPL": {
@@ -43,6 +44,58 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NHAI)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +108,56 @@
       "published": "2026-10-02T04:16:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Hazoor Multi Projects Secures Two NHAI Toll Collection Contracts Worth ₹77.60 Crore in Karnataka",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sc0d2YVF1VkJlb3VqQldDQzlKUTU3Njl4Q3ZvUkxfTHVDakEtQllibHNwY2xLYmJGd3A0VGMwMmZqeDh4UUlDaXM4aHVfUEJqMDZoRnlnc3pmR2R3TndB",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T09:10:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Hazoor Multi Projects Wins ₹77.60 Crore User Fee Contract From NHAI In Karnataka",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORGlEc000ZUhDMWZWQ3dlZDlhdWYtd0RUYXhWWWNHblU5S1VnYklTd3UyWjVuT1hIS3Bud2ZFVjZXTnpPc19vQ0oxdHhmRVlQdkNtVEs0ZDh3T25TSWpJTHpjdmhRMmtJTG1SdUNraTZsUXE1NDB3S3FxaHcyNXRhaU1OczUyNlZoNmM0SDltUnQyekJYalBiTjRxNjZMUkRmZk1GYWJGZ2I",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T08:46:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Alice Blue",
   "cluster_key": "JKIPL|OTHER|hazoor-karnataka-multi-nhai-projects-परम",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T18:31:36.585196+00:00",
-  "last_updated": "2026-10-02T18:31:36.585275+00:00",
+  "last_updated": "2026-10-10T12:54:53.558074+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T18:31:36.585270+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:53.558046+00:00",
+      "change": "sources added",
+      "detail": "EquityBulls, Sahi"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:53.558062+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:53.558070+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

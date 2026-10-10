@@ -10,8 +10,8 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
@@ -27,12 +27,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
         "+3 Strategically important competitor development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -49,7 +57,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Premier Energies. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Premier Energies, and solar cells. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -83,21 +91,61 @@
       "published": "2026-10-09T13:57:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Premier Energies Bags ₹4,001 Crore Orders, Boosts Solar Cell And Module Capacity",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSEV5MUZFZTRfc1Fsc1NCZzhOR0pfRUJrSFUtTHdUVnRhRTl2V1pLQVVfSWtzdDRUWDc5eWlXYnpseVdDb2FrVTVUMVNPWUF6SklEQXlIR0poZ0ZWZk55eW9EUGFIYkw0c2ktQzBTYnIxYVJmMmpJSzhNNW9VSFVlZzN5aU1NclBIcmhvbTJEMjNZMF9ONVJBU2UxM3Y4MUs3RkpLN0h6Znl1LVk5cFZRMGFvcEN5dldDb1HSAb8BQVVfeXFMUFg2NHFzNjNKMTRwVTRoYnQzcTR4WC1nenZNUDl5aGo4WkN0Y1o5RWdqM1JkM0VfYndXNWJVazNxdXBoQlZmMVAtR3BjSnkzYmVHak5NQnJJM2Nlb3g0X1RDbUZOeFVmTGZLdmEwMEpLWmU3clBfTklZNnY3RC0wR0N1U2cyOXBiNjBGS1REdFE3YmJ6anlKbTRvakhvanRwRWcxQl9kaVhfY2J1YmI1VjBPMkxXc2tDVVVyd2plQm8",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T05:31:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Premier Energies secures 2.308 GW of solar cell and module orders",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ2tsZ0JZUjZGeEVrd1h0a2JILVhpX3VVU3ZyUndsWFJaMEtIUnMxYTJTTXUxcFdiSEs3Y05WSEhwbXZHUUttNkFWamdEOEE5V0dfLXdLNTVDalkwM0JqYXV6dlgyOGdISHl2STFGOXZUQ3pGQUlsUGxVanJlNHFiQU1TS2NxczdzUk1GOTVkUmZOMVU0TndsVWJTZVpFbnp5SHg4Y1lWUzNKQ2xud2VN",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T04:47:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Premier Energies secures orders worth Rs 4,000 cr in Q2",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVVN4Vmp4cnFQcENzVmR6RTJIS1V4V0FxXzd2Tml2REhPeTk0TjF2ZVRaVGRpN0czWU9rTldLUkE1NlJYQWNrUmpxMzJ2dkdhMVNpbDFWV0VKOGcxcF9VVzA2SEZjOUlNRTBSZXNvVWhXbDVVSmZjcjZvTlRiTFEtNHBpWUI4d0xfM3ZvOU5WcHJMYzJC0gGUAUFVX3lxTE9VU3hWanhycVBwQ3NWZHpFMkhLVXhXQXFfN3ZOaXZESE95OTROMXZlVFpUZGk3RzNZT2tOV0tSQTU2UlhBY2tSanEzMnZ2R2ExU2lsMVZXRUo4ZzFwX1VXMDZIRmM5SU1FMFJlc29VaFdsNVVKZmNyNm9OVGJMUS00cGlZQjh3TF8zdm85TlZwckxjMkI",
+      "source_name": "Daily Excelsior",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T11:05:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "WAAREEENER|ORDER_WIN|001-308-energies-order-premier-win",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-09T18:58:49.599341+00:00",
-  "last_updated": "2026-10-09T18:58:49.599443+00:00",
+  "last_updated": "2026-10-10T12:54:37.340651+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:58:49.599432+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:37.340628+00:00",
+      "change": "sources added",
+      "detail": "Daily Excelsior, Free Press Journal, Solarbytes"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:37.340646+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 8"
     }
   ],
   "price_reaction": {}

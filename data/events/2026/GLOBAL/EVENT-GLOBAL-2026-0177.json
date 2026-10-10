@@ -13,15 +13,16 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -32,21 +33,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "TMB": {
@@ -364,16 +369,66 @@
       "published": "2026-10-09T14:05:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price rises by Rs 520 on October 10, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWY1VmlQd2hCTmNyZHA5eWI3WEJlYWJteHZyQTRsV081djdjdk9ISUtxY2JMaVRTc2lhXzdWXzZSMVczMDZIRmFYd3lWV19PNnJrdWJiUTFmOGUyWVFiUmpyR2NuQlFzWmlBcGpaSXJVaDktd3NkMHBoNXI3NW1tT0Fxb1lNbmxLNjVqM3dnaEJUdVFUeUZSYjV4Uk9OZ01zalNUVUpEYWExWnY2T3Blb1M5Wm9tTXlJWC1EUWIzNzI4LU9xX2cw0gHHAUFVX3lxTE1ZZjVWaVB3aEJOY3JkcDl5YjdYQmVhYm14dnJBNGxXTzV2N2N2T0hJS3FjYkxpVFNzaWFfN1ZfNlIxVzMwNkhGYVh3eVZXX082cmt1YmJRMWY4ZTJZUWJSanJHY25CUXNaaUFwalpJclVoOS13c2QwcGg1cjc1bW1PQXFvWU1ubEs2NWozd2doQlR1UVR5RlJiNXhST05nTXNqU1RVSkRhYTFadjZPcGVvUzlab21NeUlYLURRYjM3MjgtT3FfZzA",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T04:23:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Coimbatore Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9SSFhmbHVRbnZIWWMzT0VPUDdqYmJqZktBbGhKRWppVVhxN1V3LVBwVnFQRk85b2ZUTllQemt1S09iNnBIQ3duaVA1ODBPelIwOHdQb2ZaX01UT0NYMTQ0VmNHTmVZVW84NDJ4emhqMThCbllveXgwaVhGVmY",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T18:32:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Indore Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wUlp6UHp5elBQVXhheF9YeVVYdXd1OVBkcWlaeldPN0FISHY1RHpGNUFxYVdhTGhoQWhMZXMydEwtaHlBZUg0N3hVeEt5bWR1NUFEdFVZUFBkX0V6NmRqX2JMdjk3ZHJlaGpqLXF5MG1ydGM2eFRv",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T23:17:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Tirupati Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94dUxkUk1kQXMzOVlhV0Vhb2xnSmJjQjhwYXkyX2U3SndQQnRaTEJsU3VtbHJjbEVxZlFOVVA1REJwQ20wLThfVkVlR19GdWxfQjl6RGtlNE9FR0JmZ1preGZqWFFodWRzZzVLUjJUaXlzV1RXbWhiem5R",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T00:06:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today in Sonapur 10th October 2026 : 1 KG, Todays Silver Price in Sonapur",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1kb3B2QnE1dkd0QXVPaDBub05JZlpxWDlWWUt4bjFKX25JN3B2eDFCUDRTTFduMmc2czFMYTdfVlQ4Z1U3WmJGdUsyYk1hWWNZNDNZU3RuZ29aVXVkLU1VT0xYOEpHLWFEY09YLTRpV2oyTHp0VEE",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T11:12:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 27,
+  "article_count": 32,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-10-09T19:07:19.108696+00:00",
+  "last_updated": "2026-10-10T12:54:06.362992+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -509,6 +564,16 @@
       "timestamp": "2026-10-09T19:07:19.108677+00:00",
       "change": "sources added",
       "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:06.362968+00:00",
+      "change": "sources added",
+      "detail": "Business Today, DT Next, NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:06.362985+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

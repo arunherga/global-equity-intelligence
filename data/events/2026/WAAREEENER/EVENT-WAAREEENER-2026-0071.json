@@ -11,17 +11,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
-        "REPUTATION"
+        "INPUT_COST"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -32,26 +30,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "+2 International market development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, reputation. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -460,16 +453,26 @@
       "published": "2026-10-09T02:55:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Rate Today Hyderabad: 22K, 24K And Silver Rates",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBuN1JIbF81LXRvNm51Mnp4dnEtejFROFN1WEVtVVlvTklKUnVXUGxnemxvOXZpanlqUmlCRnlqeUNJRUFEc01kT2U2UjRDbllweFZQV3dnQm1KanJLOU1jRGZGT2FxV3Y3R0Y5RXMwVnhhdjRXNGsySXlpSQ",
+      "source_name": "INDToday",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T05:11:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 36,
+  "article_count": 37,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "WAAREEENER|OTHER|check-gold-price-sept-silver-today",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.792250+00:00",
-  "last_updated": "2026-10-09T13:45:41.278875+00:00",
+  "last_updated": "2026-10-10T12:54:38.164408+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.792297+00:00",
@@ -565,6 +568,16 @@
       "timestamp": "2026-10-09T13:45:41.278871+00:00",
       "change": "stock added",
       "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:38.164384+00:00",
+      "change": "sources added",
+      "detail": "INDToday"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:38.164403+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

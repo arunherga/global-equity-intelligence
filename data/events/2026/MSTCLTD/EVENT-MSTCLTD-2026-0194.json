@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -29,13 +29,13 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -56,21 +56,41 @@
       "published": "2026-10-09T16:18:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gems, jewellery industry welcomes GST 2.0; hails 'new era of trust, transparency'",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/gems-jewellery-industry-welcomes-gst-2-0-hails-new-era-of-trust-transparency/134847035",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-10T03:57:50+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Rediff MoneyWiz",
   "cluster_key": "MSTCLTD|OTHER|2.0-era-gems-gst-hails-jewellery",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:32.093752+00:00",
-  "last_updated": "2026-10-09T18:59:32.093821+00:00",
+  "last_updated": "2026-10-10T12:53:50.234375+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:32.093811+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:53:50.234352+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-10-10T12:53:50.234369+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
     }
   ],
   "price_reaction": {}

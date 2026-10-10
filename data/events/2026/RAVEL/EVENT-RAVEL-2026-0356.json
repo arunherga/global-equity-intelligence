@@ -4,18 +4,20 @@
   "summary": "Flipkart draws 6.3 million concurrent users as Big Billion Days sale opens Business Standard",
   "event_date": "2026-10-09",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "NEW_CUSTOMER"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
       "confidence": 0.41,
       "business_impacts": [
-        "CUSTOMERS"
+        "CUSTOMERS",
+        "REVENUE"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -25,14 +27,22 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Customer gained or lost",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -42,7 +52,7 @@
       "watch_next": [
         "order flow from Flipkart"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Flipkart. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Flipkart, and India. The parts of the business most likely touched are customers, revenue. Classified as new customer.",
       "ai_analysis": null
     }
   },
@@ -56,21 +66,66 @@
       "published": "2026-10-09T14:33:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Flipkart Big Billion Days opens with 6.3 million concurrent users",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPTldrMV9aMFdHYTFtUDZqTFBkSGxLQUdicGFFWDZtTUY1c0g4dUktVjk5SWhCdHFhaWZOYzNGU2l4azFLQ3BWcVhFRU9zOS1BXzRESmxYME9wWTFHZ1MzelJFTGNVV2R4dWJmdnBxWHNOdzhhVnRyTElsb2ZMaVg3cG1qTXNfMTI0WWhpUF9jckhUTDd3TE4zcFlTbThtZDgtTF9VbzZBWlZYNEVxRjJKbFNjUGFZYmRSWGFQaEJvNFl1Y0JaTDZqRXlvZ2V0SHoyZ0k4MFp4SDBSM3ByeEx5QWlIVdIB4wFBVV95cUxPTldrMV9aMFdHYTFtUDZqTFBkSGxLQUdicGFFWDZtTUY1c0g4dUktVjk5SWhCdHFhaWZOYzNGU2l4azFLQ3BWcVhFRU9zOS1BXzRESmxYME9wWTFHZ1MzelJFTGNVV2R4dWJmdnBxWHNOdzhhVnRyTElsb2ZMaVg3cG1qTXNfMTI0WWhpUF9jckhUTDd3TE4zcFlTbThtZDgtTF9VbzZBWlZYNEVxRjJKbFNjUGFZYmRSWGFQaEJvNFl1Y0JaTDZqRXlvZ2V0SHoyZ0k4MFp4SDBSM3ByeEx5QWlIVQ",
+      "source_name": "ETRetail.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T03:59:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Flipkart recorded 6.3 million concurrent users in a single minute as its Big Billion Days 2026 sale kicked off, highlighting strong demand at the start of India’s festive shopping season. According to the company, more than six times as many Indians shopped on",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vbXJzUC1PcFMwaXJNdVQzcGt5WE9HeUE2R0laOE1zaDVEVFlPZnFJWTUxWmZaNkMyTzJ5WTNYcTV4bEppSzJ0cVU3cnpMdVBOaHc",
+      "source_name": "Instagram",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T04:14:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India logs on for Big Billion Days: Flipkart sees 6.3 mn concurrent users, new customers up 34 pc, non-metros lead demand",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSE8tWVF5ckR2Y0V2SThKLWo1X3VfQzFjeFphNk40ZVVIOGRDNU5KX01VVnN1ejJRWVl6R3k1cGZzcVN1YTR3N050QUdrSi1MTU8tbGEwYURMME1KSkhSRFNGWDJ1Rmg1YjBXWXY4UC1FS1U5XzJwenFab1NJUm1NRkZHTGlaN21lWmdWZEEwWTNQeFdaeldqOS1XWXpFN3BhY3VpZllqYld2dERld1VoakxoRU5GREthdkIxVUFfcmwwTjMxTTZmUVdQcnNHaVdtSHpKeGhNQllUbHdUTkswWURkWi1HNlFl0gHoAUFVX3lxTE5ITy1ZUXlyRHZjRXZJOEotajVfdV9DMWN4WmE2TjRlVUg4ZEM1TkpfTVVWc3V6MlFZWXpHeTVwZnNxU3VhNHc3TnRBR2tKLUxNTy1sYTBhREwwTUpKSFJEU0ZYMnVGaDViMFdZdjhQLUVLVTlfMnB6cVpvU0lSbU1GRkdMaVo3bWVaZ1ZkQTBZM1B4V1p6V2o5LVdZekU3cGFjdWlmWWpiV3Z0RGV3VWhqTGhFTkZES2F2QjFVQV9ybDBOMzFNNmZRV1Byc0dpV21Iekp4aE1CWVRsd1ROSzBZRGRaLUc2UWU",
+      "source_name": "Daily Excelsior",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-09T22:50:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "RAVEL|OTHER|6.3-concurrent-days-draws-flipkart-users",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:00.455242+00:00",
-  "last_updated": "2026-10-09T18:59:00.455334+00:00",
+  "last_updated": "2026-10-10T12:54:19.510712+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:00.455321+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.510683+00:00",
+      "change": "sources added",
+      "detail": "Daily Excelsior, ETRetail.com, Instagram"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.510700+00:00",
+      "change": "categories added",
+      "detail": "NEW_CUSTOMER"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:19.510707+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 3"
     }
   ],
   "price_reaction": {}

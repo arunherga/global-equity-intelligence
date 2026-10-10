@@ -4,7 +4,8 @@
   "summary": "RBI’s 25 Bps Rate Hike Hits Borrowers: PNB, Bank of Baroda, Indian Bank Hike Lending Rates The Daily Jagran",
   "event_date": "2026-10-08",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -12,14 +13,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -41,7 +40,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,12 +48,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Indian Bank, and RBI. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Indian Bank, and RBI. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -62,22 +58,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
-      "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "COMPETITION"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Bank of Baroda",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
@@ -88,10 +73,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -99,12 +85,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Bank of Baroda, and RBI. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -118,21 +101,51 @@
       "published": "2026-10-08T05:14:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "PNB, BoB, Indian Bank raise lending rates after RBI hike",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWTIyX0pCdVB6a1RKN1NPa2xTTW1fQTR6US1WUXFRbS1TTmg2MUxlbFJBVjhwWXFEMm5VMTVEVjAxSV9ycDZuZnMxQ2tLN29HSjBXVkRrNW5Ma29tRFl3eVRCMVQtR0dJdXBYa1pwcXBDNzNFelFqVUtyeE1VXzhyd0wyQVNMNmVta2o4NG1Ib3Z6ZzNKSUZHbEg3M25icTR5cVVSWmFLbGpJdw",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T12:30:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Daily Jagran",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|borrowers-bps-hits-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:24:50.589164+00:00",
-  "last_updated": "2026-10-08T19:24:50.589234+00:00",
+  "last_updated": "2026-10-10T12:55:09.421464+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:24:50.589224+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:55:09.421428+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-10T12:55:09.421446+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-10T12:55:09.421453+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-10T12:55:09.421459+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

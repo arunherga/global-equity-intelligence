@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -23,45 +23,25 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Ministry of New and Renewable Energy",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "PM Surya Ghar",
-          "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to rooftop solar, and Ministry of New and Renewable Energy. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -85,21 +65,41 @@
       "published": "2026-10-09T13:51:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Surat Housing Complex Completes 612 kW Rooftop Solar Project",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaGs1RlFWZVhEOHIwX2hWWjQ1Ujg4dFVEWVotSzh4ZkxieTR2cHI1Y1Rsb2ZJSzk2Z0l1VmxfRkRmd2RjRmczY09OY1JIdU9rWnJ2RTFMaHFkYWVOU1Jva2xISU9ldm1rWGd2TkJWd2tmSXladjJkdUM1eVJ6c1RobmJqc3N5amVZdjVpeGdPOA",
+      "source_name": "https://www.mvapulse.com/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T02:30:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|OTHER|annual-complex-eyes-housing-savings-surat",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:57:18.313809+00:00",
-  "last_updated": "2026-10-09T18:57:18.313899+00:00",
+  "last_updated": "2026-10-10T12:54:27.847159+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:57:18.313888+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:27.847136+00:00",
+      "change": "sources added",
+      "detail": "https://www.mvapulse.com/"
+    },
+    {
+      "timestamp": "2026-10-10T12:54:27.847153+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
