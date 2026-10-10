@@ -1,0 +1,90 @@
+{
+  "event_id": "EVENT-TMB-2026-0474",
+  "title": "Pakistan gold prices rise as local rates track global gains",
+  "summary": "Pakistan gold prices rise as local rates track global gains Traders Union",
+  "event_date": "2026-10-10",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, customer exposure to gold prices, and traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Pakistan gold prices rise as local rates track global gains",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYTM0Z1pZZW0zdGNoU0JGWmhKbl9US1gzNGZHclRZenA3bk0wMDE2WE9CbURGanJFeDlHb1RRdlkySFloakhtOWdyb1JsbWo4b2puUzY0QThwaHQ2LTY4X2VTb0d3WHJTdkg4WlVGT2hTOWtOb214cE9mYnhMUlVaQXNydXlCaWpybG0tbzJZdF9aYkdnZmRCeWk2TGVQUQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T14:39:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY|gold-local-pakistan-price-rate-rise",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-10T17:59:08.416899+00:00",
+  "last_updated": "2026-10-10T17:59:08.416971+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-10T17:59:08.416961+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

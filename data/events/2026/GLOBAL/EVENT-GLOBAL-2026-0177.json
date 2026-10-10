@@ -13,16 +13,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -33,25 +32,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -419,16 +414,26 @@
       "published": "2026-10-10T11:12:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Jabalpur Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9mUUw4dnYxVGthbGpwZERCVzhCVkN4SmlqMlplRkxMdlNZZVZtcnFnb3dfRlhmaGVfS1ZFenZTTVhEUUZaUm1LdU1HcXhXZXhXVWR1a2h0SFdidkszNXlTQ0lXaFRucjZ4ZkphS183TzhWSWFxTEJFNGdR",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T05:05:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 32,
+  "article_count": 33,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-10-10T12:54:06.362992+00:00",
+  "last_updated": "2026-10-10T17:59:44.103404+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -574,6 +579,16 @@
       "timestamp": "2026-10-10T12:54:06.362985+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-10T17:59:44.103380+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-10T17:59:44.103399+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

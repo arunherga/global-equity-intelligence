@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0201",
+  "title": "Ocean Freight Rates Retreat from Highs; Iron Ore’s “Cost Floor” Begins to Loosen",
+  "summary": "Ocean Freight Rates Retreat from Highs; Iron Ore’s “Cost Floor” Begins to Loosen Sunsirs",
+  "event_date": "2026-10-10",
+  "event_types": [
+    "SUPPLY_CHAIN",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Ocean Freight Rates Retreat from Highs; Iron Ore’s “Cost Floor” Begins to Loosen",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9HUU5iRVhBQ01mRzE1dmoxU2VHMVQ2VGxZeGkwak9BaEJBQkU5Y1JETUJYMlJIbXdzb2NYQ3hLQ2pLOE0yWDVjQWwtNk85dDJHTG1qRk1pXzdDLURjVEE",
+      "source_name": "Sunsirs",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-10T06:32:54+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Sunsirs",
+  "cluster_key": "MSTCLTD|COMMODITY+SUPPLY_CHAIN|freight-highs-iron-ocean-rate-retreat",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-10T17:58:29.898327+00:00",
+  "last_updated": "2026-10-10T17:58:29.898412+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-10T17:58:29.898402+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
