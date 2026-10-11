@@ -1,0 +1,193 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-0731",
+  "title": "Coal India denies supply shortfall to NTPC despite critical coal stocks",
+  "summary": "Coal India denies supply shortfall to NTPC despite critical coal stocks Business Standard",
+  "event_date": "2026-10-11",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Coal India",
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Coal India, and NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Coal India Coal Supply: NTPC Stocks Fall Despite Higher Dispatches",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQ3lwek1wVl9pZzlXUTR3eWwwWjNiV0swZURFWU5vZGN4MXVxNkk1anV6R1BnLXFYSjVNRjRrZS1wR05sNjBhRlM0dVE0VkdzVm9aWS1xemxzMVFkLWs0Z0dPalliUmttR0RsaWlwTXBjRDdRbV9pdFBjVU5uYmxqNzZKWXJWU2xDVlVR",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T17:31:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India denies supply shortfall to NTPC despite critical coal stocks",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORW5wem9VRTl3WjMweVc4ZXl4LWV5eENsYjhaOW93Zm0wYzNWZ1hMR2REY1J1bERqM2JkTG9qdGNla3VPUjdUSjNDYklnVmxWNEctNXhldzZ5VWdCdjdoM09GWjl0OXVJdS02bkE0OGlKY2tmR3BIVVI3TE9JYUs5M1BEb09EZ3ktcVJYd1NYRTktdzlxM3l1WjBTYVZYOHk2YWt0ZDlCS1h4WFNCRVFHOG5UeW44TE9vLVhLT1NoZ1cxZU4xa1hFMFVBT3ZjakdhU0hrb3BZTdIB3AFBVV95cUxQZ0xGZTFRRVpsN0FaaktIdTRUeFc5QVVxUDhOemdiOFJSNGt0UW1hYzlObEZ3RDNGUUVJcnZ3eXo0d3VmNTFNWjZxNDA2Qzk3T0ZrRzZ1TDUtSTduVFVNcW5yYVllRlRUZUtrd1p0SHAxekY4RDNQODIza21NaWdnYU43RXVDa0VSMDZnSXFLMWMtR0RYM2JIMmJ1cUdVTldsOVh2a2ZjVzRtT3N2cXIzaHdUekZROXo5cmc0OG1LRHNrM3k5U09SWUZnZk9NWGRlSE5FaHNjdGFZOG50",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T12:56:48+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Urban Acres",
+  "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|coal-denies-india-ntpc-shortfall-supply",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-11T18:11:24.839001+00:00",
+  "last_updated": "2026-10-11T18:11:24.839084+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-11T18:11:24.839074+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

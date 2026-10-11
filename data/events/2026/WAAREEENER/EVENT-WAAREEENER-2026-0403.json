@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -32,17 +39,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,41 @@
       "published": "2026-09-28T01:54:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver prices next week: What investors should watch amid global uncertainty",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNHIweV9VdkJydGdNS0txQl9JUmEzb3lRY1R3c1dYakVRaEEyZ1dmRHEwckE2ZGF3NXB3R0ZjRlJGUmFHSXZtSEFiMGhTVGxvTjFDS0hpcVd3Zk1YeWpZM0dOV05uME9vVFdlanFlV2dkdUhPdVBpYWtZck13a2ZIRWhDdDRTQW83VUoxRWhoZ2V3WTJLb0VGQUc2d3Z5NHFLTTR0TVlodzJaZUkzdXMySUozWFFGaHZqZlQ0REk0WVl4cGViU3dNeUEtNzFxQm9YMmZQbS1zTzh1VV9IWG5lSDBIZE1JRGx5MjJkRmQ0ekp4OU9IQkxnX0130gH_AUFVX3lxTFBxREtfbGFKT2lrdVVSbXJ6dkRtTlQtNDU4anc0dHZRTVdTaUhBQ2dVeHd6OXNqTEUwMUU4WEkwcmpnc3dCbTJ2WnlEZHBsbk9GRC1mTmtYWTkzT01mb3FWcGtENnZYVkNWLVdjbklZVHhDQ1ZEUnJxWVFHaGxTaFNhTWpTWjNqOGVPdFhBUmI3bmJNYy1XTjBiVXFIZkR5OWwxQjhzc3BmVG16RnJfOC1tdTBPT1QyamVYckJFYWRlamVLd0RoNUxSUGg1SU5sU2pzSXVuRzdESngwUG1qU0ItWlBXckdzR3hlRmdCazE4Y0lzeWM2SzFmVkxVNVh3UQ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T15:49:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "WAAREEENER|OTHER|2.8%-gold-investors-price-silver-tumble",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.417113+00:00",
-  "last_updated": "2026-09-28T14:12:11.417169+00:00",
+  "last_updated": "2026-10-11T18:12:18.596084+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.417165+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:18.596063+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:18.596080+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

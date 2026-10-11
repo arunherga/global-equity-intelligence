@@ -4,20 +4,23 @@
   "summary": "The initiative aims to provide industries with long-term energy supply solutions integrating coal, renewable energy and battery energy storage systems (BESS).",
   "event_date": "2026-10-11",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ACQUISITION"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "confidence": 0.35,
       "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -28,34 +31,38 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+3 Close, specific exposure to this company",
+        "+2 Acquisition, merger or divestiture",
+        "+3 Development at a known counterparty (NTPC)",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are balance sheet, revenue, customers. Classified as acquisition.",
       "ai_analysis": null
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "confidence": 0.35,
       "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -63,51 +70,41 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "battery energy storage",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "battery energy storage system",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+3 Close, specific exposure to this company",
+        "+2 Acquisition, merger or divestiture",
+        "+3 Development at a known counterparty (NTPC)",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and battery energy storage. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are balance sheet, revenue, customers. Classified as acquisition.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "confidence": 0.35,
       "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -118,21 +115,23 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+3 Close, specific exposure to this company",
+        "+2 Acquisition, merger or divestiture",
+        "+3 Development at a known counterparty (NTPC)",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are balance sheet, revenue, customers. Classified as acquisition.",
       "ai_analysis": null
     }
   },
@@ -156,21 +155,56 @@
       "published": "2026-10-11T07:06:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NTPC invites industries to acquire 26 pc stake in co-generation projects",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV29GTmhDVFJoNXkwSW9MRThKbUxVT1ktUGlFdFhyS2dpaEYtR0hYQndHUzdoSW9SaFpMeGJwRFVBTnNnUUxUTTNJTmJRWFl0a3RJQzhkczVNNGR2SFI3ZER0N2FMWk1oRUQzTFpEVHN1b3E4b2x3RmNfcDFGNTFKWDRUSlVXVzNRb2l4YXdmTmNOR3k1UHUyU2lRbWxrWVQ1NDNLNDBnSnc2bThHLXZoS3JGWjQtRDdWaWZUc3ZaX1Raci1mSFM3YVV30gHKAUFVX3lxTE5Xb0ZOaENUUmg1eTBJb0xFOEptTFVPWS1QaUV0WHJLZ2loRi1HSFhCd0dTN2hJb1JoWkx4YnBEVUFOc2dRTFRNM0lOYlFYWXRrdElDOGRzNU00ZHZIUjdkRHQ3YUxaTWhFRDNMWkRUc3VvcThvbHdGY19wMUY1MUpYNFRKVVdXM1FvaXhhd2ZOY05HeTVQdTJTaVFtbGtZVDU0M0s0MGdKdzZtOEctdmhLckZaNC1EN1ZpZlRzdlpfVFpyLWZIUzdhVXc",
+      "source_name": "The Statesman",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T13:39:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|26%-bids-equity-industries-invites-ntpc",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-11T13:06:48.869729+00:00",
-  "last_updated": "2026-10-11T13:06:48.869831+00:00",
+  "last_updated": "2026-10-11T18:12:11.900676+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-11T13:06:48.869819+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:11.900642+00:00",
+      "change": "sources added",
+      "detail": "The Statesman"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:11.900658+00:00",
+      "change": "categories added",
+      "detail": "ACQUISITION"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:11.900664+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 2 -> 6"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:11.900668+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 6"
+    },
+    {
+      "timestamp": "2026-10-11T18:12:11.900672+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 2 -> 6"
     }
   ],
   "price_reaction": {}
