@@ -322,39 +322,38 @@
     },
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.5,
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "REPUTATION"
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
-        "-2 Scheduled disclosure with no surprise"
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -363,7 +362,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Wipro. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -693,16 +692,56 @@
       "published": "2026-10-08T11:41:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Earnings Tracker: HDFC Bank, HCL Tech, Wipro among 129 companies set to report Q2 results this week",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPYmtfTlBtWnJQY1IwWG1sRHhKTU9jMnhtUlVlcUVvTDFGOE9GRWVaSW1rOE9BNlRRWlVuQkk3ekk4ckJlX05zTEJzR1VnRUt4NUpJMjVta2lhRFhCTmJmbktPejlJTVFQTGVsZWZqUEl0SHZDb3VHZmR3V05zeVZOc21wbjRzek9xRl95OXI0c1dwbHVLX1dSQVEtZ1lIeXV2dE1SX09xb2pTYnc4M01fX293eTVjTmx3cTE1bHU5SUxVckd4eld3eW9yWDcwNlA2NTFMaFZsZ1ROc1FUQnNfYmw2LXB6LVJTN2xQVktrWTV6VGlQcjZoWnhIUEpaVDgwbndwRm5hX1ZlUdIBigJBVV95cUxPYmtfTlBtWnJQY1IwWG1sRHhKTU9jMnhtUlVlcUVvTDFGOE9GRWVaSW1rOE9BNlRRWlVuQkk3ekk4ckJlX05zTEJzR1VnRUt4NUpJMjVta2lhRFhCTmJmbktPejlJTVFQTGVsZWZqUEl0SHZDb3VHZmR3V05zeVZOc21wbjRzek9xRl95OXI0c1dwbHVLX1dSQVEtZ1lIeXV2dE1SX09xb2pTYnc4M01fX293eTVjTmx3cTE1bHU5SUxVckd4eld3eW9yWDcwNlA2NTFMaFZsZ1ROc1FUQnNfYmw2LXB6LVJTN2xQVktrWTV6VGlQcjZoWnhIUEpaVDgwbndwRm5hX1ZlUQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T06:14:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 Results This Week: HDFC Bank, Axis Bank, ICICI Bank among 70 others to report numbers",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVm5VczhHdVl6eGFUQ3VXYTVCYkgxOVRnQnF4ZVVLckQzRVVvT2FNNWxLS2VUcHo3RUVMVS1PUWVaNzJURkVoV0pKNTZ2R2ZmSXYtbV9mb3NabHFVU2IzQ25pTUphOFZmazk1QTNIby1pTW4yc0txMXFPSWw1VnlOTFNKMVZiOG9ZTUhNTko1UTN6TllDMDlHeEtJUkhoV3YzZ09FdktMQU5BMGNoenRoX3JUclZpVFFFQ1FCX0F0Q2xhakdGR2hxTjBHVm1MQi1pZEF0ZG13LWxpMkNMNEZtTlQ4a9IB6AFBVV95cUxPVlFjeEZ6SC1JOEdrRW50TDhKZ3VOdTd6U2tUV2txel9mUDBvSXM5d3N2YWhXSHhiVTFVSDhaMmo2ZncwLU1uZGlmNmI5MmRpUDA0NVVPb3VJSzV2UlR2SGdSOFBBZW9SeC03UE9nMjFSV0o2dUJ4SmJsb01KTWFrSlJNNy1kaG4zU3Rzcmx4T1ZWWElIRUNwb25ublNiRzl2S1JLZWhoMlZVNEJ1TTA0TTV3dGJ1ZHk4ekR3RE1kOGt5TEVEdUczN3JUYzhPc2hPb1ZfUUJHU083QUhrMDZWd0tYNUdtSmc4",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T03:04:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Top Q2 results next week, October 12–17: HDFC Bank, ICICI Bank, HCLTech, Canara Bank, Tech Mahindra, Wipro and more to announce quarter earnings",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQRENZMGFtaFd4Y0xOOUtHZ1F1TnFXbzBld1ZSZ0I5ZTVnMGU0Mm56UG9pVmc4R0x5T3VQNE1SdzVDZnlNZFBhSzVTSDRhUUtfWS1wYjlpQlk4TlFNcS1rWEw5YlFhSDlFQzZXakZwWlFjV3RMTlJVbjVDRGJtS1dMcHROSFJMTE81a2NGNklhb3NKdVdQTkxBeUlveUZla1laSVZoRmxsWEpyT0s1M3dfWGhlaExLQ1ZfWUpadWg2dGw1aHgxY1NLV3haTUpPVDFGbVpJblVOdk9HS1BYY3AtZlktLV9NNklhUmNObFRocGJtbmZrUUR1UnY4ODdNZVVvcThjY0NfOWtPWlVFU3lIX2txTHBUb2txR0pNdmU1ZjBjU2NMZVJDSUliZGFEcHpFblE",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T05:15:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Upcoming Q2 FY27 results this week: HCLTech, Nestle, Wipro, BHEL, Tech Mahindra, HDFC Bank, and more; check list",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOdXZzbmR1V0JSZF84ODZBX3FQSGpXN2RxbnVGU3VtUEVJR3BxUVRBLWpFMUxMNEJCX2ZVNEo1Yi1EeXZSZkwxUXNiN2dDelZ1aGFjRWt4eEZVYkdYZ2cxXzBicThmR09OeVBCMlE4WmRtdHZTYmczNmE5bWVwd0oxRUwtMTN0cG5UeVV4dkFpVlB4QmpMM0J5V2VXQnpvQkRNNzl5X3RLOWplWUtQakJLMERyVW5hdndnbnFJeHZhTDFCMV9pWm9WbURlQWNKcmRVSExmTFJ0aHpQeHpvckJIV0pkWmNWaG84NkhYSlhIcUlWRk5XNW81ag",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T05:40:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 28,
+  "article_count": 32,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-10-08T13:58:16.201310+00:00",
+  "last_updated": "2026-10-11T13:11:01.743445+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
@@ -803,6 +842,16 @@
       "timestamp": "2026-10-08T13:58:16.201288+00:00",
       "change": "sources added",
       "detail": "Sahi"
+    },
+    {
+      "timestamp": "2026-10-11T13:11:01.743419+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, CNBC TV18, The Economic Times, Upstox"
+    },
+    {
+      "timestamp": "2026-10-11T13:11:01.743440+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 1"
     }
   ],
   "price_reaction": {}

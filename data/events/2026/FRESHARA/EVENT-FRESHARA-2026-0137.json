@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0137",
+  "title": "Vegetable prices have risen sharply; domestic pork prices have dropped significantly.",
+  "summary": "Vegetable prices have risen sharply; domestic pork prices have dropped significantly. Vietnam.vn",
+  "event_date": "2026-10-11",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices have risen sharply; domestic pork prices have dropped significantly.",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM3B2WDFGYXZwaG9ZaFRSOW9kRDhNQU9NSVF5VWNQUHlEQ3IyaXpKdmNMMTNPa2tjNXRTWTNFc1Zad05jbUtOcEc1RkhMWGUyMjJPM09DakhHUXk0YW9vdHVkOFFOYTVadDVUU2hzZ2FkQkdKejdMVUlSSGVxazI5U3pXZlI",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T01:40:31+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Vietnam.vn",
+  "cluster_key": "FRESHARA|OTHER|domestic-pork-price-price-risen-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-11T13:07:51.558252+00:00",
+  "last_updated": "2026-10-11T13:07:51.558325+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-11T13:07:51.558315+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -11,13 +11,12 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
-        "CUSTOMERS",
-        "REVENUE"
+        "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -32,17 +31,16 @@
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Customer gained or lost",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -52,7 +50,7 @@
       "watch_next": [
         "order flow from Flipkart"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Flipkart, and India. The parts of the business most likely touched are customers, revenue. Classified as new customer.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Flipkart, and India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -96,16 +94,26 @@
       "published": "2026-10-09T22:50:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Flipkart’s Big Billion Days opens with 6.3 million concurrent users, new shoppers surge 34%",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPT2prRXVKQkRDQ0NiV1A3NGdFbEJBQXdZb3p4NDBFTDZmRi1ZNllEOU9iTktROTNxX3pIeFgzVWRWLVI5bFE1S2Z4Z2xDOXdxOV9EYk9FN2JhRmI5R0JtbGhYbWlyV2E0WVpzYVh4VFlOaGtnSGJRbnU2OTduNDVySU1QZ01BazFBWFN6ZTFvV2ZXVGJSRTVvYWJPLXVvNVRuZEoxSEg0TzNwS3Q5VjNYTnEyWHppQlFSV3hUQmhycmdiNzZvdnNnb3FrVXQ3dnh4aUh4RGI4U3p2bVdHcVZ3X9IB4AFBVV95cUxPT2prRXVKQkRDQ0NiV1A3NGdFbEJBQXdZb3p4NDBFTDZmRi1ZNllEOU9iTktROTNxX3pIeFgzVWRWLVI5bFE1S2Z4Z2xDOXdxOV9EYk9FN2JhRmI5R0JtbGhYbWlyV2E0WVpzYVh4VFlOaGtnSGJRbnU2OTduNDVySU1QZ01BazFBWFN6ZTFvV2ZXVGJSRTVvYWJPLXVvNVRuZEoxSEg0TzNwS3Q5VjNYTnEyWHppQlFSV3hUQmhycmdiNzZvdnNnb3FrVXQ3dnh4aUh4RGI4U3p2bVdHcVZ3Xw",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T05:20:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "RAVEL|OTHER|6.3-concurrent-days-draws-flipkart-users",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:00.455242+00:00",
-  "last_updated": "2026-10-10T12:54:19.510712+00:00",
+  "last_updated": "2026-10-11T13:11:09.671772+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:00.455321+00:00",
@@ -126,6 +134,16 @@
       "timestamp": "2026-10-10T12:54:19.510707+00:00",
       "change": "impact raised",
       "detail": "RAVEL 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-11T13:11:09.671745+00:00",
+      "change": "sources added",
+      "detail": "Fortune India"
+    },
+    {
+      "timestamp": "2026-10-11T13:11:09.671767+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

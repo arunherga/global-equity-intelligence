@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0138",
+  "title": "Egypt annual inflation rises to 12.8% in September as vegetable prices jump - Economy - Business",
+  "summary": "Egypt annual inflation rises to 12.8% in September as vegetable prices jump - Economy - Business Ahram Online",
+  "event_date": "2026-10-11",
+  "event_types": [
+    "MACRO",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Egypt annual inflation rises to 12.8% in September as vegetable prices jump - Economy - Business",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc3NLSmR6YzNSZ0RCMmk2RFYyNUdKNV9YRHJrdkFtRWpIdlBCenllLXF2bm1KaXJIM3dpbnkzN0E3dm56MURzdHV5VDAyV1ZidzFrcHBVa3kzTnlxT2k2RGZfV3lMVnR6dHJZY0VkVDJ1OFVGMkZoMVB2ZjRyejhaLXQ3SUx5UzlIYUllWEhDN1F2RDJiVmNXbE1EUlotUmt6aU44WU9ycnMybDh5aDlSZHVJanJmUV9fekRwamU3dHJqREU",
+      "source_name": "Ahram Online",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-11T11:04:56+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Ahram Online",
+  "cluster_key": "FRESHARA|COMMODITY+MACRO|12.8%-annual-egypt-inflation-rise-september",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-11T13:09:28.025035+00:00",
+  "last_updated": "2026-10-11T13:09:28.025123+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-11T13:09:28.025111+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
