@@ -1,0 +1,92 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0984",
+  "title": "Create an AI-Powered Contact Centre with Salesforce and AWS",
+  "summary": "Create an AI-Powered Contact Centre with Salesforce and AWS Salesforce",
+  "event_date": "2026-10-13",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from AWS",
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Create an AI-Powered Contact Centre with Salesforce and AWS",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcGlPd1dVenR0V21FTFVfRVhzNEhsc25UTE1idFdhUEYzeFl0Q0JqbWhLLWVJbjl3Zy1HV0UtUGx5am92OXJWYndHTUxIZXdvdjhfa2xtWUVfTktEWFhZVWZId0hSWnBUc2NjQXVGeU5zbEhoVUhKVUI3MU1MNi1kbHI5ME1mQQ",
+      "source_name": "Salesforce",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:32:08+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Salesforce",
+  "cluster_key": "KSOLVES|OTHER|ai-powered-aws-centre-contact-create-salesforce",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-13T14:33:27.142620+00:00",
+  "last_updated": "2026-10-13T14:33:27.142691+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-13T14:33:27.142683+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

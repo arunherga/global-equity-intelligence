@@ -4,21 +4,21 @@
   "summary": "Emmvee Photovoltaic shares rally 5% after Jefferies maintains buy call with Rs 440 target Business Upturn",
   "event_date": "2026-09-21",
   "event_types": [
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.44,
       "business_impacts": [
-        "REPUTATION",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -30,21 +30,20 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "Emmvee's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Emmvee. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Emmvee. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -58,21 +57,46 @@
       "published": "2026-09-21T04:19:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Broker’s call: Emmvee Photovoltaic (Buy)",
+      "url": "https://www.thehindubusinessline.com/markets/brokers-call-emmvee-photovoltaic-buy/article71575473.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-12T13:47:54+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Business Upturn",
   "cluster_key": "WAAREEENER|ANALYST_ACTION|emmvee-jefferies-maintains-photovoltaic-rally-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.795361+00:00",
-  "last_updated": "2026-09-22T18:19:39.795396+00:00",
+  "last_updated": "2026-10-13T14:42:12.879691+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.795394+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:12.879667+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:12.879679+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:12.879686+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -48,6 +48,56 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -60,21 +110,41 @@
       "published": "2026-09-25T02:05:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nagapattinam-Ramanathapuram stretch: NHAI floats tender worth over Rs 10 crore for work on NH 32",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU2VTQUlCSW0yaUxjeVk0YVNiYmhOTXZYd2VkT1Q5SnprbXZ6U09XdzhMSm9pNl96VDhwSGNwVXdNRXRMQnR6Y0tXemVUQTNiWmg4dVlSNXlLZm44OEtHQ1lEVDdvYWYwMnBGUllPTEdqNEU4NEZLMmdlMV9Dal9rVzlpekxBVEN5a2cwa0ZtYWxYbWFLalN2WnoxZ3B5RW1FbkR0SjliZTBWdEFWRUZ2UEI3VVhSOEhuYkp3Wg",
+      "source_name": "BigInfo.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-12T18:34:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindustan Times",
   "cluster_key": "JKIPL|TENDER|damaged-floats-hero-nhai-repair-tender",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.921585+00:00",
-  "last_updated": "2026-09-25T12:56:10.921644+00:00",
+  "last_updated": "2026-10-13T14:43:03.782318+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.921640+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:03.782297+00:00",
+      "change": "sources added",
+      "detail": "BigInfo.in"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:03.782313+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

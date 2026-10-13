@@ -92,6 +92,50 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "+3 Development at a known counterparty (Adani)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -104,21 +148,41 @@
       "published": "2026-10-10T07:58:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Quant Small Cap Fund: ICICI Bank and Adani Power among stocks bought and sold in September",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOaTRVNmxnQWZZbG0yeEtWQXJGRUZ4Q2picjZaVlhQSkR4SWVGa2VuZHNzOUFQY0ZheGFZSjJ1Yjl0bi1Pa0h3ZXNIR0FUZHBlWFpIT1l0ZklJVF9oTlhwem5VZ052NkFOcTBIeTJiU2lIdDNNQ0M1T2NFWWVLR1BvNmVyZ1R2aFVpYkc2dUFrclRWbXE4NXdfYVZXZHljM18tVU5uTlJfS1VJVE85R2w0N0J2UWM4SGo4TFpqUHg3WmwtclZKT0NObjBqdGVqbG1fdlo0RWlaZlg0bm9aSXhNS2pvUlhQdDhxU2E0ejRDcjVVSnpCUFVNUExGYTZ5UEdHNXRz",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T09:18:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|REGULATORY|cap-exits-fund-icici-quant-small",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:51:05.006765+00:00",
-  "last_updated": "2026-10-10T12:51:05.006860+00:00",
+  "last_updated": "2026-10-13T14:44:27.423047+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:51:05.006849+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:27.423024+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:27.423040+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
     }
   ],
   "price_reaction": {}

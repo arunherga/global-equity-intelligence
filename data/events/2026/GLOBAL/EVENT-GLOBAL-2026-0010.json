@@ -12,45 +12,55 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "relationship": "INDIRECT",
+      "impact_score": 12,
+      "impact_band": "VERY_HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
       "business_impacts": [
         "REVENUE",
-        "CUSTOMERS"
+        "REGULATION",
+        "REPUTATION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
         "+3 Government policy or tender development",
-        "-2 Single unverified source"
+        "+3 Original regulator announcement"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "bid outcome",
         "order value",
         "competing bidders",
-        "order flow from traders"
+        "formal order or circular text"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue, regulation, reputation. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -147,16 +157,26 @@
       "published": "2026-10-01T14:23:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Auction of Government of India Dated Security",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63792",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-12T17:30:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|REGULATORY+TENDER|auction-dated-government-india-security",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.421543+00:00",
-  "last_updated": "2026-10-01T19:01:05.997515+00:00",
+  "last_updated": "2026-10-13T14:42:05.089928+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.421573+00:00",
@@ -187,6 +207,16 @@
       "timestamp": "2026-10-01T19:01:05.997510+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:05.089905+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:05.089920+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 12"
     }
   ],
   "price_reaction": {}

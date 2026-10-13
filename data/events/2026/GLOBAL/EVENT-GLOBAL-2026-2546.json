@@ -56,14 +56,13 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.58,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "REGULATION"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -73,29 +72,31 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "treasury",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and treasury. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -159,21 +160,51 @@
       "published": "2026-10-10T04:35:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What's the hidden cost of the RBI's 20% forex reserve for banks?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/whats-the-hidden-cost-of-the-rbis-20-forex-reserve-for-banks/134905423",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-13T00:39:16+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "RBI extends forex risk reserve requirement to banks' own hedging contracts",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPLTJiYjl0V0NlbDN2NzR2ZW1MYU4tQmNNbnlJM0d5WjhfSkN5NGdHWV9nRTFGdG1IOG1rM0c0TzZwRFhGamVUeG1HTzlIN1lHTTZsdDRVZ1BuM3BOdnYyYVR6VjNIWC13SXcwVmVuSjE5RXJyaEYyLWgtTG9wRHcwclZpaWlMdXc4ZS02dnJPaHJ3OHFNWmhSV3dnT3dWVUI3NXQ3OEtCRzg1VFlVclUzSkdPVUtIMkpnZ1A0eXZFd19zM2lMRXJHVUgzeU5JdGRfbUEzYU5tb9IB3AFBVV95cUxQNm1EYnJmcExCMDRnR3VpdzRfRENOMjNBYzRaNGlrVkNLblEwS0lEcGFZWURGWUtMMGkxUGZwMlY4cTlJQmFCU3owYmdYcUhNbUVDckFXdEUxcm5nNnJhM0VlaDR5UVFqRzdiVU5XWUFOUUVpb2lOQVc3UWo4UXJEekRqNzM2UUhIR1U2X2dBNEppT1liei1EVXE2NmE0cG5JU1ZzVjhVRkdOWkhIS0FvMG0wMzhQcjFfUnptOThLQmVvT3hVc3VUOFo5eWZUdnpWc2ROelVULTE0Wmk3",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T05:03:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "BW Businessworld",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+REGULATORY|cut-derivative-forex-rbi-rules-tightens",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:50:13.882792+00:00",
-  "last_updated": "2026-10-10T12:50:13.882915+00:00",
+  "last_updated": "2026-10-13T14:42:28.302709+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:50:13.882905+00:00",
       "change": "created",
       "detail": "6 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:28.302689+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, ETBFSI"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:28.302704+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

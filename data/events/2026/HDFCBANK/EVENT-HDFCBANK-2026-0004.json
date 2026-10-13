@@ -58,22 +58,24 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
       "confidence": 0.71,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST"
+        "REVENUE",
+        "MARGIN"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline"
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -82,12 +84,12 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -732,16 +734,46 @@
       "published": "2026-10-11T05:40:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares climb 0.84% as Q2 results loom; sellers still dominate",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-climbs-084-as-q2-results-loom-sellers-still-dominate/article71578274.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-13T09:25:46+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank climbs 0.84% as Q2 results loom; sellers still dominate",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOSk5IUDllcndwS0taVlhPZ3JFcUNmb2ZQLVhBcDRrc2U1TThJbVdsVWRoOTlSaV8zR0o3SGdzN2cxMm85bTJNamx3OG04bVRCVHdjUEVaV29Wckd0WEluNFhHcGxEb1ZCY01PeW9KbGlPeHZsOGhSbGtSaFZFS3Z5UjBQX0VsZWxBR3lKbUV5TktxTmtaSFRPZTM0dlNVUlZlaTV3TGF3dmFFQzByUFd2MzE3bnhDRW1rUlE0TlZmVlpRbkNkMm1pYUxJVjFRQWdsbDcxT2ptbDdWcGpSVl9r0gHfAUFVX3lxTE5KTkhQOWVyd3BLS1pWWE9nckVxQ2ZvZlAtWEFwNGtzZTVNOEltV2xVZGg5OVJpXzNHSjdIZ3M3ZzEybzltMk1qbHc4bThtVEJUd2NQRVpXb1ZyR3RYSW40WEdwbERvVkJjTU95b0psaU94dmw4aFJsa1JoVkVLdnlSMFBfRWxlbEFHeUptRXlOS3FOa1pIVE9lMzR2U1VSVmVpNXdMYXd2YUVDMHJQV3YzMTdueENFbWtSUTROVmZWWlFuQ2QybWlhTElWMVFBZ2xsNzFPam1sN1ZwalJWX2s",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T07:00:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares climb 0.84% as Q2 results loom; sellers still dominate",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONWRydlhHRDhYNEsybFppdmJCT256UEZOUlRRLVc3ODRRanhaX0xBdjJPVjNMR2dfMzU1ZDBqSkNWNkQwMGt0cVRYOExTOUVOOWZrTXpNdWRKOFpGa0RFMFRwTUs1RTVVaHFwWmRvOUxzb2VhRGhlRk1tdEhiMW5Zc2gtSGNUZVh3QkZPYWJhUDhIcEFuUXp4bmJidGxNa3ZGWG9mSVQxX1RYNkJTT2NQUEprYWVhZURXdWRlOGFZOHg2bGRETnV3ZmV6LXlSZjN3aTNuTXRVVjPSAd8BQVVfeXFMTkpOSFA5ZXJ3cEtLWlZYT2dyRXFDZm9mUC1YQXA0a3NlNU04SW1XbFVkaDk5UmlfM0dKN0hnczdnMTJvOW0yTWpsdzhtOG1UQlR3Y1BFWldvVnJHdFhJbjRYR3BsRG9WQmNNT3lvSmxpT3h2bDhoUmxrUmhWRUt2eVIwUF9FbGVsQUd5Sm1FeU5LcU5rWkhUT2UzNHZTVVJWZWk1d0xhd3ZhRUMwclBXdjMxN254Q0Vta1JRNE5WZlZaUW5DZDJtaWFMSVYxUUFnbGw3MU9qbWw3VnBqUlZfaw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T07:00:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 32,
+  "article_count": 35,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+EARNINGS|bank-flat-hdfc-october-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.452452+00:00",
-  "last_updated": "2026-10-11T13:11:01.743445+00:00",
+  "last_updated": "2026-10-13T14:42:21.630956+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.452566+00:00",
@@ -852,6 +884,16 @@
       "timestamp": "2026-10-11T13:11:01.743440+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:21.630934+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:21.630951+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 7 -> 8"
     }
   ],
   "price_reaction": {}

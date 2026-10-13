@@ -530,6 +530,62 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -582,16 +638,26 @@
       "published": "2026-10-02T09:26:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SRIT INDIA LTD. Stock/Share price , NSE/BSE Forecast News and Live Quotes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbVdaV1JTZDM3QWpYRVQ5akFnTjJTbGRWYkRsQzY4Y1JLZnVfbDVvU0tYRXVNeTdveEg4WmxlVEZpVDdKMlB1YVVhRFRQZzhkc0ZlTHBSN1RYMXhuc0JqOU1GUHFpMEVKaVBKbUs2VERuek1WRy0tMUJxODlaejFzSUxpSjdZdzFRZlRDbw",
+      "source_name": "Equitymaster",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:26:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Equitymaster",
   "cluster_key": "COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|GUIDANCE|abbott-forecast-india-nse/bse-price-stock/share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.622034+00:00",
-  "last_updated": "2026-10-02T18:33:26.480330+00:00",
+  "last_updated": "2026-10-13T14:43:34.786225+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.622088+00:00",
@@ -627,6 +693,16 @@
       "timestamp": "2026-10-02T18:33:26.480307+00:00",
       "change": "sources added",
       "detail": "Equitymaster"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:34.786197+00:00",
+      "change": "sources added",
+      "detail": "Equitymaster"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:34.786220+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

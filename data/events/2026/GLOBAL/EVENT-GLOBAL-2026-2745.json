@@ -1,0 +1,125 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-2745",
+  "title": "Bond yields rise to 3-year high on RBI liquidity cut",
+  "summary": "Bond yields rise to 3-year high on RBI liquidity cut The Economic Times",
+  "event_date": "2026-10-13",
+  "event_types": [
+    "DEBT"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are debt, balance sheet. Classified as debt.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "RBI liquidity",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and RBI liquidity. The parts of the business most likely touched are debt, balance sheet. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Bond yields rise to 3-year high on RBI liquidity cut",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMkdKb3AzVGNGdHhVZG5JdkNpNWZMUjhvci1UV1NBMTdNVVFTcVNDbHpHS3puZy1PUkNQOFg5NkY3NGwxY0dwcjFIQUZvVDdmcEs2bUdrZzRWWldEWmFXZHRtRVk3aU9iRVV1U0dyenY0bENZd056QjJXU0hoYU9hUFJDc1pjaU91V1RZckljLUJvdi1aem5KbjZnUWRnV2JPUVphV196TWh2Rm5xZmM4SEVrVUh1eHA3OE9nWDhlbjZ4Q2c4UGJfeNIBwgFBVV95cUxQTDJpWGlOWXpIZFpzSTJ3M3F1ZXRFRzNCV1NmdmdEdEJ1aVN5YWlqaW8wakNxNUdFVzhIT2VhQU5jS3VZemRzdExsRWgwMTFjVzBCYUtMc01mNHBZeUZqZ3dqY0s5MjZzcEUzSFBTMVBpejJYNXFhTTk4RFQyWlU3VGpmSU5JMWpnQ29TZTkwZmlnQjlld19oeUl6RU4wSVZDN0Q0VzJKS3FMajhFQzhDZzdGam01NlZvNFJxUWZiRnRtQQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T00:09:04+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "HDFCBANK+TMB|DEBT|3-year-bond-high-rbi-rise-yields",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-13T14:32:07.128870+00:00",
+  "last_updated": "2026-10-13T14:32:07.128949+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-13T14:32:07.128939+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

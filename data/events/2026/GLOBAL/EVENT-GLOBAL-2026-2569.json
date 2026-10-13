@@ -6,7 +6,8 @@
   "event_types": [
     "INTEREST_RATE",
     "CURRENCY",
-    "COMMODITY"
+    "COMMODITY",
+    "MACRO"
   ],
   "stocks": {
     "TMB": {
@@ -14,14 +15,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -39,20 +38,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -60,14 +56,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -85,20 +79,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -112,21 +103,51 @@
       "published": "2026-10-10T09:16:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI's rupee rescue faces test from oil, inflation and outflows",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPV0Vya2w1SV80LVJzLWU3RUNJd2JGLXc1aXAxMEpLT3BXWE1uUXVQb1hmU3NUZzY3am5PbDdQd2NDYU5md1laZ1Q0NkZRdW51dGxsektWdGhGODd3MC1oV0ZIVDBRYWg5U282Q2V0UTdpek5XU3FsUjhXdGRQR0I4T1BRV0hLWEpmaE5MUU1iQml2SkpZV3BkU09wT2pTbzZzR3lvTmF0TnhOQ2JNSEQxeG5B0gG3AUFVX3lxTE9pYWR4TGd6czI5VHNxVWxMUUNDTF9MUFFWc3V2YUlLVEQ5Ym5DUEs1VHdLMWg0b1k2VGtiMmJVVzUxQ3cxLXFTTWhmcTR6N2F5REd4R25XZTdpNXZ1Tk5fb2NtajE4X3hFUTBMQTNIeG91cG95RVU0S0NETU95Zm9BdUtQbmlfWERxcWtVTmt5ZTZGZkNOUmQyT1h0S1dLTVJVYlNsX1NjR0lXWU4wLUdJVTAtcXBsYw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:39:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "HDFC Sky",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+INTEREST_RATE|96.72-despite-rate-rbi-rupee-slips",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:51:32.591574+00:00",
-  "last_updated": "2026-10-10T12:51:32.591663+00:00",
+  "last_updated": "2026-10-13T14:43:41.728528+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:51:32.591652+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:41.728498+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:41.728511+00:00",
+      "change": "categories added",
+      "detail": "MACRO"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:41.728518+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:41.728524+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

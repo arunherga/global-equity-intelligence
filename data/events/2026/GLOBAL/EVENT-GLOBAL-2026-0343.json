@@ -12,15 +12,13 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.65,
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.48,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST",
-        "MARGIN",
-        "DEMAND"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -34,18 +32,16 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (crude oil) is the subject of the headline",
-        "+2 International market development"
+        "+2 Movement in a relevant commodity",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -53,21 +49,20 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.65,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.48,
       "business_impacts": [
         "PRICING",
         "INPUT_COST",
-        "MARGIN",
-        "DEMAND"
+        "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -77,22 +72,28 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Asia",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (crude oil) is the subject of the headline",
-        "+2 International market development"
+        "+2 Movement in a relevant commodity",
+        "+2 Names a key geography for this company",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -100,7 +101,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Asia. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -297,16 +298,26 @@
       "published": "2026-09-29T04:39:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Crude oil price falls after nearly $2 gain in previous session",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-fall-after-nearly-2-gain-in-previous-session/article71577904.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-13T06:12:11+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 10,
+  "article_count": 11,
   "source_count": 2,
   "primary_source": "HDFC Sky",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|95.57-crude-oil-paise-rise-rupee",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.675363+00:00",
-  "last_updated": "2026-09-29T13:15:10.162657+00:00",
+  "last_updated": "2026-10-13T14:42:19.518091+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.675416+00:00",
@@ -362,6 +373,21 @@
       "timestamp": "2026-09-29T13:15:10.162639+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, newsdrum.in"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:19.518063+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:19.518079+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:19.518087+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

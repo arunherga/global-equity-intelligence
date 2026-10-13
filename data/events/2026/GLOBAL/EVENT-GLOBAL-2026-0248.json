@@ -6,7 +6,8 @@
   "event_types": [
     "TENDER",
     "REGULATORY",
-    "LEGAL"
+    "LEGAL",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -146,16 +147,26 @@
       "published": "2026-09-28T14:50:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Open Market Operation (OMO) – Sale of Government of India Securities held on Oct 13, 2026: Cut-Offs",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63796",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-13T14:30:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|TENDER|announce-government-india-omo-rbi-sale",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.192667+00:00",
-  "last_updated": "2026-09-28T14:13:01.558686+00:00",
+  "last_updated": "2026-10-13T14:42:06.910532+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.192721+00:00",
@@ -181,6 +192,16 @@
       "timestamp": "2026-09-28T14:13:01.558680+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 8 -> 12"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:06.910504+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:06.910519+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
     }
   ],
   "price_reaction": {}

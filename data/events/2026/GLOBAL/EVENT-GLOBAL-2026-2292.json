@@ -13,13 +13,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -35,20 +34,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -56,13 +52,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -78,20 +73,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -105,21 +97,46 @@
       "published": "2026-10-08T12:27:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What 3 RBI papers reveal about inflation and Indian households",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVkRuUlBCYkVkdmFCWU1yZTFoUE1yaVgzOWZueGF3bFI2dDU1aEdnMnNHbjNuMFhqWXUzdk9GaUpicHhtbV9ncl9wYWRwVTZwNENVckgybDRFbDh0dUk4Rkd6UmZTSkNvYXJ4eDVUX1BxLURqdWVHNW41MjRwV0hkVGhKTHBDSnRJT1FtT9IBkgFBVV95cUxPOTNJZmhLbktjb0tmS2E2RExvX3lDYjZ1MER0NmdVZEhTR3NxXzR6TF9rekdwUnBCWmFKdmpHNldPTGFnTmlaS3RRZUFsdC13SnZyYzN6WmpfWjBXV0NxWENtOVF4SEVON3p0VXlyZW1TS1J6MzlIQ0ZfQm8yc3pwODE2ci1rYTdGcXAtb2dlbEV6UQ",
+      "source_name": "ThePrint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:51:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindustan Herald",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|expect-hit-households-india-inflation-now",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:25:19.528207+00:00",
-  "last_updated": "2026-10-08T19:25:19.528281+00:00",
+  "last_updated": "2026-10-13T14:43:44.760048+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:25:19.528270+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:44.760023+00:00",
+      "change": "sources added",
+      "detail": "ThePrint"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:44.760037+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:44.760044+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

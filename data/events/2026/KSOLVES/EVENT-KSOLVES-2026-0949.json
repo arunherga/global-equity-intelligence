@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-0949",
+  "title": "Adjudication Order in the matter of suspected insider trading in the scrip of Wipro Ltd",
+  "summary": "Adjudication Order in the matter of suspected insider trading in the scrip of Wipro Ltd",
+  "event_date": "2026-10-13",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Wipro's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Wipro. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Adjudication Order in the matter of suspected insider trading in the scrip of Wipro Ltd",
+      "url": "https://www.sebi.gov.in/enforcement/orders/oct-2026/adjudication-order-in-the-matter-of-suspected-insider-trading-in-the-scrip-of-wipro-ltd_105200.html",
+      "source_name": "SEBI",
+      "source_domain": "sebi.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "SEBI",
+  "cluster_key": "KSOLVES|OTHER|adjudication-insider-matter-order-suspected-trading",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-13T14:28:13.963664+00:00",
+  "last_updated": "2026-10-13T14:28:13.963772+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-13T14:28:13.963760+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

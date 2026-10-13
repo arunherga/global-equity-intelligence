@@ -11,24 +11,35 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
-      "business_impacts": [
-        "REVENUE",
-        "CAPACITY"
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Waaree Renewable Technologies",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
       ],
-      "time_horizon": "MEDIUM_TERM",
-      "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -36,12 +47,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -159,16 +167,26 @@
       "published": "2026-10-08T21:55:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Bags 5 MWp Solar Project",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMjBJZjBXcVJoLWJob212OGtLOHB1aXNNVW5faHVsVVFrU2E0WVQ2N0lUbnJVUXJZWk9lYUxrRXJTY3FZdTVCWmJkblBhd3RraVoxb2VWX05HOUdFQzZSek5lOFp4a2xKdHVUbUxmZGlTWWtvd25ONkhjOU9UTmlaSDhyN00ydlVrYUdHVGlkQUd0cnM2S0ppanYxZUpyUUJUN2RGcjA1d201M0V3NXNYbDFLS2x0N2E2T2VDZTZxR3lvWS1Tc0JFeUV6TjlPdnA3T3FvcGhoVVgxQQ",
+      "source_name": "Construction World India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T09:16:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|ORDER_WIN|800-mwac-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T17:50:18.977623+00:00",
-  "last_updated": "2026-10-09T13:45:23.945213+00:00",
+  "last_updated": "2026-10-13T14:44:26.294751+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T17:50:18.977662+00:00",
@@ -214,6 +232,16 @@
       "timestamp": "2026-10-09T13:45:23.945208+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:26.294731+00:00",
+      "change": "sources added",
+      "detail": "Construction World India"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:26.294746+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

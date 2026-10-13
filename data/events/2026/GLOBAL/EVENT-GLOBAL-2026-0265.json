@@ -7,7 +7,9 @@
     "COMMODITY",
     "DEBT",
     "GEOPOLITICAL",
-    "OTHER"
+    "OTHER",
+    "EARNINGS",
+    "MACRO"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -148,40 +150,50 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 2.5,
+          "detail": "input commodity"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+3 Price shock in a commodity this company is exposed to",
         "-5 Market commentary rather than a company development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -315,46 +327,50 @@
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 2.5,
+          "detail": "input commodity"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+3 Price shock in a commodity this company is exposed to",
         "-5 Market commentary rather than a company development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -509,16 +525,26 @@
       "published": "2026-10-03T04:00:00+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Sensex today | Stock Market Highlights: Sensex jumps 1,109 points, Nifty rises 1.6% as IT stocks rally",
+      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-stock-market-highlights-13-october-2026/article71574859.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-13T10:41:29+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|COMMODITY|highlights-market-nifty-sensex-share-today",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.333637+00:00",
-  "last_updated": "2026-10-03T12:01:08.613685+00:00",
+  "last_updated": "2026-10-13T14:42:23.982383+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.333713+00:00",
@@ -594,6 +620,26 @@
       "timestamp": "2026-10-03T12:01:08.613680+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:23.982355+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:23.982367+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, MACRO"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:23.982374+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:23.982379+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
     }
   ],
   "price_reaction": {}

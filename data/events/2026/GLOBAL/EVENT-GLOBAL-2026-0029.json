@@ -60,10 +60,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -74,20 +74,21 @@
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 International market development",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -145,10 +146,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -159,20 +160,21 @@
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 International market development",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -283,16 +285,106 @@
       "published": "2026-10-09T04:47:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee jumps 40 paise to close at 95.38 against US dollar",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-jumps-40-paise-to-close-at-9538-against-us-dollar/article71578987.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-13T10:47:12+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Rupee vaults 82 paise to 94.96 against US dollar in early trade",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-vaults-82-paise-to-9496-against-us-dollar-in-early-trade/article71577928.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-13T04:38:06+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Indian Rupee extends gains on RBI's fresh measures",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQd3ZoQWhwTGRoQmRUYi0zTkN0MDg5ZHgzQnRPNVFJREtVN2FaQWhvTWNkOUFfaHJxWmJyaUtHLUw2TGZuTTU5MFllM1JyMWRaNi1xN0luZHdTaDdVX2dtOXBPY1RwUDBfdUtyd2g1UW84RzhqMWlvUDEyc05uYnlPU0VvY09ITDdPZTFwdVVKVjlnWDRPQ2dQRlhVc1F0RkRTZkhBWUxlX0pxTDlKTkZaeGJsXzJBcEVyVU4w",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T11:41:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Rupee: RBI defense limits losses against US Dollar – Societe Generale",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdUFLWTJrbUtIRGhvWW0ybUdUWGx5c0tqU3ZSVWUtdG1LTkNxNmlfX2IxVXY4YkZwN0EwYUpnbGQ0RXhIY0taZlJvNTNOdjgwaWFzR1lDQ09WLTRoQ1NoM1ZnY1Z6dlg3NU1RTnpRUjBKQUZvNWtJbW5aUV9IRWUtRGQySW5QSkpOclJEbXdoZF9ZS3BPMk1OV19uX3JBeWlGejMtWGFfRFQwSUFLTThnSGJqbFZObk0",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T13:31:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee Jumps 82 Paise Against US Dollar on RBI Measures",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaklBRHNhay1ET2p4VnRfTHdpa2NYQlpGRlZXdFdMX0MweFRLempxUHdjc1Y0M0tSdlNiVHh2SUs1VXRuYmZnblh2UTdoR1Vvc3VubWdfaWlDdDFEVFBFb0ZYQnd1NzhqOWRvbnRNckNwZGJ5N1VKSV9meHNIY0lRck5JOFVqVENtSlRDVmc1SlhuZmlZOEVmcnZzenJnSER6UnM0MlZ2a3JyUdIBrwFBVV95cUxPSW15YXhxMlZXcHFVb0F5UVAxSWozbmtCSFhoc3VSS2dCNEhFTmdxeUo2Y3lrckFCQVhVUWhSd3ZLNGZENVI2M2h3aFMtUXFiMUdUODlzQ2JlYmRhV3BHcU4yZ3NnM1d5X0FiMEVqQWUwaGlvR0VXR2NPQ1BCMG9wVUI5WFBVblZfWlNleElHZGNqM0tFTi1pT2lLcWJ3YklVNlVhZXV1eGZvMldYaFY0",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:57:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee jumps 177 paise in 2 days against dollar after RBI's strong defence before Rs 97 goal post. What lie",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPWFY2S2xKT0pkZW1fNzB2bENhM2hNRlpCSmNSemp5bm5udVNVbTJuSlR2ZWwxT1FSQkpQWi1SWWdGbTFrTExsSUtDZUJKNTF6TWtXN2xRRVhCVTJqMmpMT256aWt0dlpaVkhxX25qTm5ZWV9jWWZDZHgxNXNSR25wd1lGaEpia2tpa1hoNXFkSDJxZWg2RVJES0NTLXNWOEJycTdYeXhzaGU2T2k0d3dnQ3k4Yl9Zc1ZNTkNFRmxsY2cxUVk5Y2QxelhBREhHcnJwcW5tbFVMdG5kdnJ1RkRyTE9oNlF2M0pwcl9LSmwxUjFXMklmb0gtbEt5Y0xfb1M4dnFuLW0wWGRuazBMY3JJStIBkAJBVV95cUxPWFY2S2xKT0pkZW1fNzB2bENhM2hNRlpCSmNSemp5bm5udVNVbTJuSlR2ZWwxT1FSQkpQWi1SWWdGbTFrTExsSUtDZUJKNTF6TWtXN2xRRVhCVTJqMmpMT256aWt0dlpaVkhxX25qTm5ZWV9jWWZDZHgxNXNSR25wd1lGaEpia2tpa1hoNXFkSDJxZWg2RVJES0NTLXNWOEJycTdYeXhzaGU2T2k0d3dnQ3k4Yl9Zc1ZNTkNFRmxsY2cxUVk5Y2QxelhBREhHcnJwcW5tbFVMdG5kdnJ1RkRyTE9oNlF2M0pwcl9LSmwxUjFXMklmb0gtbEt5Y0xfb1M4dnFuLW0wWGRuazBMY3JJSg",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T06:29:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee jumps 77 paise, logs sharp gains for second day after RBI measures",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX3Q3eW1XVlBUM19SeVJ6MUhXUE16d2tNRDEwMVRWZ2VKRldKaFVCX09qbGJXaVpydkdvLUJEZTUyNEZRTFVrbzQyaW03NWxwdEljSFlvRGk5V1ZXN21EWExTRWxJMVMwTk9nb2MzRmhHVThJWHhUV1IwdXYwLW8yYmdpYXlnWkNsaWVRMGt5NWM0OHVoT1IxRVVySmFpOTg",
+      "source_name": "Telangana Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T07:49:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rupee rallies 82 paise to 94.96 against US dollar on RBI measures",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc0FHUVhpZ05xeFVITFdJVGFxV3VuSFhBQ3dzeXZSVWhUYmI4TmZtNDMzbTVMUVRubGZyV1l4alZCYmdhVFVEY2pTU2Z4b3ZiaWRuMXJLWVJHWndmU3hoaUlfX0M4aDFMTGVCMXJ6QzJEZjZxYnY2TGZUdno1b2w0em82VUFDdHRyLVFTZEtzRmVuZXFmR3BQSERkbnNvc2xRTndVNEFpY2liWXFH0gG6AUFVX3lxTE5RejFnUzZHS05rRWJHQjBReTROSVk3SXoya09fLThLYnFzbF9NTGNJOVFOZmlTNVN6S3NHcGtuVDVwQmF0NU95YmVxcUxJakctMzIxbVVLQXM3YWRSQzJQd0p0MXhEQXZyYklZR2ZXNTh1My0zRTRfSlE1ZEM3VmJMZkU0YnZPN3FXdmxEamtPRlBJQkx3WG82MkcwWG0wRzdpV3NJa1BLMlpoVlMxVWNBaXd0eDhLT0J6UQ",
+      "source_name": "PSU Watch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T05:28:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "US Dollar vs Indian Rupee edges lower as RBI intervenes to supply dollars and introduce fresh FX measures",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVUlkUTl3R2lhdER4OEJYcmFteW1mRnFwcXIyaXU2STliUkRtMlFlLUdHLW01TEVxZExSVWNPV01MRlQ4amgyTVNpd0NMTlZxUDZZYWhOcTVROUx0VlpZVlNfRHBJSzh5RHVhWFc1c2VfNFZFTFExRzhodUFXZjRRME82RlZZaTA",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T14:12:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 19,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA+TMB|CURRENCY+GEOPOLITICAL|95.58-against-close-paise-rise-rupee",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.498026+00:00",
-  "last_updated": "2026-10-09T13:44:54.550720+00:00",
+  "last_updated": "2026-10-13T14:42:18.977428+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.498060+00:00",
@@ -398,6 +490,21 @@
       "timestamp": "2026-10-09T13:44:54.550701+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:18.977402+00:00",
+      "change": "sources added",
+      "detail": "FXStreet, PSU Watch, Rediff MoneyWiz, Telangana Today"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:18.977418+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-13T14:42:18.977424+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

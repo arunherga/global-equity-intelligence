@@ -13,15 +13,16 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -32,21 +33,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "TMB": {
@@ -464,16 +469,46 @@
       "published": "2026-10-11T11:54:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price falls by Rs 280 on October 13, 2026; check today's gold, silver rates",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUldjSkp5MURVVnltZGxBUEhmU0pCYXFZRkNQdGhyZE5WQ2tZOHpyUXltcG9qQ2FDXzI0QVVkbEhIZWlIdEdhQnB3WDdZMEV1dEJ2LWZkeVp3SzdrbkhuNVhtOTlKMGxETlpHSC1fUWhLOXl5SkpqVjFiYVptbGp4TE5Ldm93QzZ1YjhNUmFhdi16dzdPOHZ5RHJvVC1TUkN4Y2k1RVZHM284NTRfTEs5MWVscUgxNjVUX25v0gHIAUFVX3lxTE5ZRjJfblVVTmxFMXVNYWY0TzhNb1phajdTSUFPNUtZYVdEQUREZUFlOGpvWFdwMllaNTJTY1prNzNEcEVEWUh2UmJkYlVqcHlIeVIzbEpQQ0VxXzN3dXJwTVhic29LQWNMU1VRXzk3WXMwbE12NHFPckVCN0ZmaFBnX3IyZ0x5MTZISmM4NWpsck5mQ19LejNsRTBuc1lLMzNXMEphMlJvN2pvOWhwOV81RWh6NF9DdFgwQVpyMXhua0gzZDdFZ1ZZ",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T04:29:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price prediction today: Will gold prices rise? Check October 13, 2026 outlook",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOcjBoRVlNRXN4OGJEdzY1MVMtZlAtQjhXMHBvRFFoWXdZdW81X0pzbFlDb0V2MmswUTZFUGNqT0hibDFrX3JLZERVajdrbldlQldjSkg2ZjRKTzlIYkh0VV8zWTE5NzdHZVN3U2Fmd05pSHhsN0tBamNHcHZBMFlQTmkwWG9FUlV1a1pyaDVJQ29mSmJkRVpBNjRjeXJvd0JRRk1JS2lvMWJob2lwV0NmSm1PVnlqNDc3TnVybEo2WDlldHFsRnVEOEZsbWw0eXc4VXRva053UTZzR1FBdkdKeEZsaUw3SzdZMWU3cHNxVW5CbUx3WWZPVktjUlVFeWQwb2tQMk9YdHB0MUtSUmEwZ19BM01lUk5FenN0YjA2VzhLRThORmFfTnhJLWLSAbICQVVfeXFMTjJwWXJXZkwxSmd3OEVjTUVjSE1wTjEydjJTbUw3VWdUTHowdmJ6cVlpSjF5SXNsYWhrS1d3TFU0bkZxdjRnd25QSDJxazBBblBIWHBzQ2JEay1sbzA2cDczQkt0QWlmdng0V3U3RmkwbEM0RDcxMERaQUNQVU5jWTMtUXFBcUV0MmVJMHJ6MGlCcm5OQnd1R2cwX0VxVmtoUUtKNUp5Ti0xVnVIOEFvWndmYkFDWm5pVldtNjY0aEpXQ2YzVVE3Wkk4Y2tCY184Z2ttZElRakJpTEpZXzlGWkE2Sm9FaWduQWdtUGhhLTdXRTNjeElsS2l5b21nNWY4TGVja0c3TDg4Vi1aRlFXZHBtZGExckVPUHpUckdCdFh2RUhKRE1TSWgwSWRJbFppNDJB",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T06:13:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price today: Why gold rates slipped today? Check city-wise prices | Business News",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNOGJITVlzN3RMNUZla0FyamlLWWdXbEdBTVQxY2ZBUXNKbDFIaHNEX1loQzVlNmttaXJUeWRsUW16VEhVaXRFNkdRZXgySnBObkx0T01mZHpyUTFrUjgzc1Y4QVcwcjNrTy10SXVXMEEyclNKVlF2OFRYbl9ST0hTeEtzakFRQVVVWUR5X3JVZ1phT0NwaWNjQnBkZlJOeUpZcW9fZmQxRXpqNFdFdTIxTEJiRGZtbUZkSklCMXRSNnctdDRVOHN3V1J3QncwbnhuNUpscHJOMTB3TC00cC1LQUpVY0RuWmZMUlFFS3dMQjgyemxSNEhGZGlVQktWSk3SAYQCQVVfeXFMUERwZWVReUZGdERnNVItWjFmQklrT2VSY2lWWF9iZkk3cHFoc0JCeFprWjY2VzlZV2lFVkFnMnpybWxEMnhYYUpmSG11VXl6aG1NS0l1QWYzQjB2cGVqenRQX00xWm5KX0NzUlRSWmFPV09YSnpsNmx6dzlYVkotSUV5d1ltQlBScFdxWUxLYTVIZEhnbFhFS1dmbDVfUmRLR1pnR3dld2JmX3NfQXR1Zm4ycXpaSDkzdGNpX203R0Vua29MTXN6RHRZblRGeEZTUkFUQUxJSC1PamlybXRiTDIxNjBDMkF2VmJaY2pfR3pyNzJRNmM0ZGxqZlB3Qk5RVnVTS00",
+      "source_name": "Hindustan Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T07:38:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 37,
+  "article_count": 40,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|680-chennai-fall-gold-price-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-22T18:19:39.924930+00:00",
-  "last_updated": "2026-10-11T18:12:08.398132+00:00",
+  "last_updated": "2026-10-13T14:44:14.558787+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-22T18:19:39.924972+00:00",
@@ -644,6 +679,21 @@
       "timestamp": "2026-10-11T18:12:08.398115+00:00",
       "change": "sources added",
       "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:37.806331+00:00",
+      "change": "sources added",
+      "detail": "DT Next, The Times of India"
+    },
+    {
+      "timestamp": "2026-10-13T14:43:37.806347+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:14.558771+00:00",
+      "change": "sources added",
+      "detail": "Hindustan Times"
     }
   ],
   "price_reaction": {}

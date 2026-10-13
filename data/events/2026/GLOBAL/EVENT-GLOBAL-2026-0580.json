@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.2,
+      "confidence": 0.3,
       "business_impacts": [
         "PRICING"
       ],
@@ -30,7 +30,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,8 +38,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "steel prices over the next few weeks"
@@ -51,10 +49,56 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.2,
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and Europe. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -71,7 +115,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,8 +123,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "steel prices over the next few weeks"
@@ -100,21 +142,51 @@
       "published": "2026-09-24T17:24:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "[Europe] European hot-rolled coil (HRC) steel prices continued their u",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVzR3eVc4bTBNMzAybTRhc1h1NE1mVjNfZGRENE4zNEZfNWdRaVNiNG9zN2h4dU1xMEFRelRNbUFMX0VQV01uQ2hQVDRiSFEzc2g1Ni1TTFB0dTh1YU1rZUFNVHdsTU0tWldnXzdVMy13NFZmN1RkRVNHdzhMUXdDVTk4U3R3c29ONnRtWGVmVV9hN0I4Umw4MDZyVXNIcGgwTmJ0a0hZbjN3TnRYdm1VYzY5cDRUemF2b0VmZHVRcHpKLXg3Nk11UnFkXzRZV0tEQUdZeFRJU0Y",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T07:18:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "openPR.com",
   "cluster_key": "JKIPL+MSTCLTD|OTHER|2026-europe-hrc-price-rebar-steel",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.827000+00:00",
-  "last_updated": "2026-09-25T12:56:10.827059+00:00",
+  "last_updated": "2026-10-13T14:44:10.356964+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.827055+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:10.356933+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:10.356949+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:10.356955+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-13T14:44:10.356960+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}
