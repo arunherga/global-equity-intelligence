@@ -4,20 +4,24 @@
   "summary": "The proposed venture will develop a multi-gigawatt manufacturing platform for AI racks, servers, storage systems and cooling equipment, targeting domestic and global markets.",
   "event_date": "2026-10-13",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "PARTNERSHIP",
+    "CONTRACT_WIN"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.52,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
-        "CUSTOMERS"
+        "PRODUCT",
+        "CUSTOMERS",
+        "REVENUE"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -28,21 +32,23 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (Adani)",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to Adani. The parts of the business most likely touched are product, customers, revenue. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -56,21 +62,66 @@
       "published": "2026-10-13T12:45:49+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "ADANI ENTERPRISES JABIL SIGN MOU FOR 50 50 DATA CENTRE HARDWARE JOINT VENTURE",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZF9YOVIxLV9teEFRQ3hkVWplMkl6ZFNFN0NLTExxNFFaT1J3aVpBd3F4MXQtM1NrNU5ydE9hSDUyR0NhWTExRnNBRUlOZ20zcVZQUVhnTXpTZkFNX3Y5LVVUbWV1b0FiWmk2MDdLRGd6QVIzTngzUXRGZVNvZTQtZnlzd3g4MDhfTWxvQ3hPLVZsRFpFVHJCU3NpR1g1SkZXcFNKNU5JMDhjMVdqMVdqQ3pCcDBQSU9ucU03aQ",
+      "source_name": "IndianMandarins",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T15:27:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Enterprises, Jabil sign pact for 50:50 JV to manufacture data centre hardware",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONU5QcHJLNl9lVkEzOEhFMmxxSEtBV3AzUXNqVEEyX2M2WlNwQ2VnM2JSb01OZW9XWk5WNkhHX3F3VGVYMjNveGd0b0o1Nkt6S2d3SGY1dWlMRVJyYVlIcVQ5cHI0Ykh6dHBmQlV1U2oySmdZQS04dkJzdzJlMWlabnFFUkxBZnhIVnl1QndJN0FfU0lrMFZWbXNlYk9XWkpGZG1TRXhsWWRDQm5taE1kVE5iUDkxd3hScG02WmlWSkg3Y0ZCQ0VQaWpUTzFwSW1CVTJ4VFZUT1RHYWxBR0s0X2c0T3BOckEzS2F4R2RuWXFYeEpGVm5n0gH3AUFVX3lxTE41TlBwcks2X2VWQTM4SEUybHFIS0FXcDNRc2pUQTJfYzZaU3BDZWczYlJvTU5lb1daTlY2SEdfcXdUZVgyM294Z3RvSjU2S3pLZ3dIZjV1aUxFUnJhWUhxVDlwcjRiSHp0cGZCVXVTajJKZ1lBLTh2QnN3MmUxaVpucUVSTEFmeEhWeXVCd0k3QV9TSWswVlZtc2ViT1daSkZkbVNFeGxZZENCbm1oTWRUTmJQOTF3eFJwbTZaaVZKSDdjRkJDRVBpalRPMXBJbUJVMnhUVlRPVEdhbEFHSzRfZzRPcE5yQTNLYXhHZG5ZcVh4SkZWbmc",
+      "source_name": "ET Infra",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T12:45:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Enterprises, Jabil sign pact for AI, data centre hardware joint venture",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPekFZOFJZRnk5R1ZOeHRPN2Z5VzU2Y19kYXhobkRNSlBoSzVyUng3TGMyQ2ZiTVhQQklwbmhfbnpodC03bEFXeEFKSW1TaER3aGtGVTEzU2d1RW5RbXd5a3BJU242b2Q3YzItN3BEM3RlWEkyc2tUeTFQWHVkM29RbG41X2ZWeDJ5R1lPZ09xSm9LdHBadzVOR2NmVGJwblpSLTVCZUtxa2pKNDlQZ1E0M2U1Q2tQS1R0RHJ4Mzlka3VNOFNWSkdqLTV5bi02SC1JOGFXam5kRUNoV1lWSkpwR0xOaW8xMHFaUWxDWXB0blHSAfYBQVVfeXFMTTZwd3FHdnhLX1JmR3JDREE3OWVpMUswSEF0NFhTbVZTS3pnNllVYmlNVkVCMXZwQXRicmM2ajlscHVqMlZTSk5uVHcwZmJ1VFRCWVg4ajZJVTZaM2MzbEY1eFAtUFRYVWM5YnU1Nldpd1pxdVBUQmNqTHFmbFdFUVVlcG5RZFBaR3ludzBtc3B1a0lKSHNQSm1aUkRaRHVTalN0TzJzLV8yTjVWTVJYZnFudU9oUHE0aTdsMGhIVGxFbENCcUNDZzlHaUNOWG9HUGpIMFJCWTRrMEx0Q2EtVmZyS3NYVDdxMmtFRmJ0MldEeUNvWFRn",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T12:37:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "ETInfra",
   "cluster_key": "WAAREEENER|OTHER|adani-enterprises-jabil-manufacture-pact-sign",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:29:30.801635+00:00",
-  "last_updated": "2026-10-13T14:29:30.801720+00:00",
+  "last_updated": "2026-10-13T20:06:30.923792+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:29:30.801710+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:30.923765+00:00",
+      "change": "sources added",
+      "detail": "ET Infra, IndianMandarins, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:30.923780+00:00",
+      "change": "categories added",
+      "detail": "PARTNERSHIP, CONTRACT_WIN"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:30.923787+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 6"
     }
   ],
   "price_reaction": {}

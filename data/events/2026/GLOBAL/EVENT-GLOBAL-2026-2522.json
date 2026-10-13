@@ -4,20 +4,23 @@
   "summary": "RBI Tightens Daily Reserve Norms For Banks Amid Liquidity Surplus BW Businessworld",
   "event_date": "2026-10-09",
   "event_types": [
-    "REGULATORY"
+    "REGULATORY",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -29,7 +32,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "+4 Regulatory or legal action",
         "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
@@ -39,7 +42,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -47,20 +50,22 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -72,7 +77,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "+4 Regulatory or legal action",
         "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
@@ -82,7 +87,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -90,7 +95,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -104,21 +109,51 @@
       "published": "2026-10-09T20:30:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "​RBI Tightens Forex Derivative Norms and Mandates 20 Per Cent Reserve for Banks",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUE5EcFU4dFhLV0pQU2M1REVuQnRMUEFYd1hrTUZEdkRWT2RwcnhvTVpKWmVQdHpSUngwODZjUUNxTkk0SDlleHEwbFgzZW9ycTgxamZXQ2kwT3Z4d3pEajZ1aVpmX1ZiYV93bzJ2dkIyWEpXT25Tc01PcFZXcDlhemRBVQ",
+      "source_name": "The420.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T14:26:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BW Businessworld",
   "cluster_key": "HDFCBANK+TMB|REGULATORY|bank-daily-norms-rbi-reserve-tightens",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:48:59.582111+00:00",
-  "last_updated": "2026-10-10T12:48:59.582185+00:00",
+  "last_updated": "2026-10-13T20:06:41.993246+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:48:59.582175+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:41.993216+00:00",
+      "change": "sources added",
+      "detail": "The420.in"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:41.993230+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:41.993236+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:41.993242+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0145",
+  "title": "Vegetable prices rise as supplies dip, relief after Oct 20",
+  "summary": "Vegetable prices rise as supplies dip, relief after Oct 20 The Times of India",
+  "event_date": "2026-10-13",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to vegetable prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices rise as supplies dip, relief after Oct 20",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTU9nRDY1eG1nSVh5ME5wZDNXZTZ5VURxVlV1TjJCTi1qWEtHcXpCS09wUVllYXpTOXQtUERhTFFiWWNIU2hzSVhwY2hKYktjZ09CWDI2MlhSRk5FdWhQc0NFSnRjcVFoTTJtb1loYWsxMlJWeXlIbFc2cXdhU3J3NU1GMW9aZDNzRTVwTnZRU1J5YjFyQ1phRVctSGFXM3NZbENVR0NrUGVLMFpoeFBGTnZ4N0VaVkNYV1JTX0FzR1JXWWhoMWtOZEU5MNIB0AFBVV95cUxOTERxckRoWEY5bGVSQW85a1p3OXdkSWFTLTNxYXJqQkZ2TzdhcXVPaDNlYmgybmdyMEl3enVzeGhZX3doekxqRjlxU05mdTNrYmYyX3F1X3VKS3FzUF9CSkxsMElaaER3S1VOOVBCLUdsdkFvU0tyQmtMMFl4VHdHRDBVZy1Pb1dScVZSU1dKSmtGUHBhWXc4aGxLNW1pRWNIMzhCVEtEUGVUZm9iNjBOZU5GLWt3UFU3d2xrZ2FnWHpxNVQ0eHRkRTNUd21JWkNP",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T17:40:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Times of India",
+  "cluster_key": "FRESHARA|COMMODITY|dip-price-relief-rise-supplies-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-13T20:04:33.659499+00:00",
+  "last_updated": "2026-10-13T20:04:33.659571+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-13T20:04:33.659563+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

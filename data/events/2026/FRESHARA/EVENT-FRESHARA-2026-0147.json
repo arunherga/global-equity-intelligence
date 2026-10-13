@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0147",
+  "title": "Water shortage in farms pushes up vegetable prices by 10-15%",
+  "summary": "Water shortage in farms pushes up vegetable prices by 10-15% The Times of India",
+  "event_date": "2026-10-13",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to vegetable prices, and India. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Water shortage in farms pushes up vegetable prices by 10-15%",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPc0ZpbDA2eVMyR2RJbmpIZnZVOEpHUC0tLTdqMDk5LU00S0dvS1ZkNVc5ODhMZjI0b083WHhIQWFKWm9mZHlkNUwtdmhtUzl2MFJmX3ZjR0kzQ0pDaGZHeFpFdThEX19GZkxzM0JGTGtqQ2N5Qk1zaUdBNDl1VmdySUJPWmJZZzF2T1FkNVp2S1JXdjBsT21CRG8yUnBEWHdmYk1WTjI1YU9WSzVjZWlTcEFQcEZIc3gwMVo2Um9QdkdtRWE0d1BpY1pXb9IB0AFBVV95cUxQZ2E1QUx2SDBhRGVkNXJ3SWhlSlFrNmNseU9EbUZ0SzdRc1JjaU9uVGdFNU1BaVdpNHEwYjRBSVd2bDhxVVpnbUpfSU9kMlRURWhoRWpQMWVvY1Z4eE9XYjJJVFMxODJWcHZTQWZxUzFDMk54YXhpc09fUnlBdVh6NHEya1hJRjBhbndPYTE4ckJhT1EwclRBUy1ESWhFQmM3V201TEx6RVU1My1lZFg2X3JJczRXVVBTUnl6M18xRlVhalR4OFp3R01KSGpIR0kz",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T18:48:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Times of India",
+  "cluster_key": "FRESHARA|SUPPLY_CHAIN|farms-price-pushes-shortage-vegetable-water",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-13T20:04:50.830651+00:00",
+  "last_updated": "2026-10-13T20:04:50.830730+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-13T20:04:50.830720+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +85,41 @@
       "published": "2026-10-13T12:56:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "How to Add Money to US Stocks on Groww with HDFC Bank: A Step-by-Step Guide",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNnR1MElfR3RUbzBXT1M1UVAtbm5RT0xvWDc3d243eEhpU2gxdWhETm5icTZHVEFfelBZbVNSZmlrYkFGTlpHdVo0bUtfMFQ3N19IOXgtRGVfckhpNzg2Nkt1NG9uOVJ2ektkOXdfTi1tWGY0U0hPRUhxbHRYbEpLTQ",
+      "source_name": "Groww",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T11:50:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Groww",
   "cluster_key": "HDFCBANK+TMB|OTHER|adding-axis-groww-money-share-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:37:19.626417+00:00",
-  "last_updated": "2026-10-13T14:37:19.626491+00:00",
+  "last_updated": "2026-10-13T20:06:26.047375+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:37:19.626483+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:26.047353+00:00",
+      "change": "sources added",
+      "detail": "Groww"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:26.047370+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

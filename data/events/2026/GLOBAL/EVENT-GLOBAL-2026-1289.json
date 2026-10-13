@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +50,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -70,7 +70,45 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -94,21 +132,51 @@
       "published": "2026-10-01T07:56:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gasoline prices up again, diesel prices down on October 13",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBDX1dhdldQeUlqdVdkd0hKX29ZNENYQlU4TG5obU81N1FRcEJjb3VCcWRselBwMEZWNGdtMmxuak5zQ3ZOa1JTYjRiUGF5ajlYU1dTbTdWOXVVNVNETmV0UjdlNW5oT2lzX3JaWTFhaS1yMl9TZTdpc05rMTVSQQ",
+      "source_name": "Rappler",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T15:29:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "COALINDIA+JKIPL|OTHER|committee-fuel-jordan-price-raise-zawya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.699855+00:00",
-  "last_updated": "2026-10-01T13:34:27.699935+00:00",
+  "last_updated": "2026-10-13T20:06:52.344901+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.699929+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:52.344870+00:00",
+      "change": "sources added",
+      "detail": "Rappler"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:52.344883+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:52.344890+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-13T20:06:52.344897+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}
