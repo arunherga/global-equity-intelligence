@@ -4,19 +4,19 @@
   "summary": "PNC Infratech secures Delhi High Court stay on NHAI debarment orders Business Upturn",
   "event_date": "2026-10-13",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "REGULATORY"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
-        "CAPACITY"
+        "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -30,7 +30,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Order activity at a related company",
+        "+4 Regulatory or legal action",
         "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
@@ -40,15 +40,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -56,7 +56,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 9,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
@@ -96,7 +96,9 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "Positive and negative effects both present",
+        "a competitor (PNC Infratech) is doing well",
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -110,7 +112,25 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, customer exposure to PNC Infratech, and NHAI. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear to slightly negative. The re-entry of major peer PNC Infratech into NHAI tendering processes increases competitive intensity, which may reduce Ashoka Buildcon's win probability and incremental order inflow from upcoming NHAI project awards.",
+        "margin_effect": "Unclear. Stiffer competition among top-tier road developers typically leads to more aggressive price bidding on NHAI projects, which could pressure bid margins for newly awarded contracts.",
+        "cost_effect": "Direct input and operating costs remain unaffected, though aggressive bidding to secure projects in a competitive market leaves less margin buffer for unexpected cost overruns.",
+        "competitive_effect": "Negative shift relative to the period of debarment. The stay removes a temporary competitive advantage that Ashoka Buildcon and other peers held while PNC Infratech was barred from bidding on NHAI tenders.",
+        "regulatory_effect": "No direct regulatory or legal consequence for Ashoka. The event highlights judicial oversight over NHAI debarment orders, which could influence how NHAI enforces administrative penalties across the sector.",
+        "short_term": "In the next 0-3 months, PNC Infratech will likely resume submitting bids for active NHAI highway tenders, increasing the number of qualified bidders competing against Ashoka.",
+        "medium_long_term": "Market share distribution for NHAI highway projects will normalize to baseline competitive levels over the next several quarters, contingent on the final court judgment regarding the debarment.",
+        "second_order_effects": "If highway bid competition intensifies significantly, Ashoka Buildcon may shift greater focus toward non-highway infrastructure segments (such as railways, power distribution, and building construction) to preserve margin profiles.",
+        "key_uncertainty": "Whether the stay granted by the Delhi High Court is upheld long-term or overturned following full hearings or an appeal by NHAI.",
+        "monitor_next": [
+          "Subsequent Delhi High Court hearings and final verdict on PNC Infratech's debarment status",
+          "NHAI bid opening results and bidder lists for upcoming highway projects",
+          "Ashoka Buildcon's order win rate and order book additions over upcoming quarters",
+          "Winning bid margins and pricing discounts relative to NHAI benchmark costs"
+        ]
+      }
     }
   },
   "sources": [
@@ -133,21 +153,96 @@
       "published": "2026-10-13T14:38:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "PNC Infratech gets Delhi High Court stay on NHAI debarment orders",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLXBXT3JvN0dybzNTWi1heW14ZlU2VjQ5dl8yTUw3VVI4WDhOeHdaTjdLUE5Sc0VoZERVQVFJZ2ZydzEyR2FnbnpCZWtjMXlyeEdhV2RjN2VxQm9USHdfWDZwRk83eU9xTzRQcnh4MjhPaW1fQ0VXYTE0WGJYa01LRE5iazAtUDM5UGR2QXdiZk1UUjRySnVTTVM1VTB1Wk85QVROR2ZfR1EwQnhGb3l4b1c0Q3VTUUMyeGF5Z0Z1eF9LRy01TFNGcdIBzgFBVV95cUxOOEZLbjBDdmxUalpzMXY0c3R0bEtFek1MV2drUFI3Wjh5NFpId3lfaU9QRlhLNFAyUVNVa2JYUHZsS0VraHVzUXhOR24weXJUS0lhcmt5VVVuTmZ2aTQ1MkxBVXFncGQwWVotZ0lFeFRDTktSUURlMUROQXE3dFJpSUxvVnc4ZGVGbGdDYnJoNTNFZFhwMnZfV0hfZ3gtczFJZkdXa1lEVHdsOTVpTGlCLXEzc2c1TWpjX2syU3Uyb1hYcThXUm92OE9kU0g2QQ",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T17:26:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PNC Infratech Shares Rise 8% As Delhi High Court Stays NHAI Debarment Order",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQX2RCRmdGeVdsUi1mREdHMnZTZi1odWpJZVdSYVN5WHpKb3FMM0RqR0ZnNUkyNTJHa04xbXByWGN5V1dhSVlyNnJEOFNnTUZVVHlPRGE3N3lsbHJxSE5IX0MzTEdiZVZiTnF6TXZic2JTY28yVVVRX2lza05RcU44XzZMY2pSNHlzLTd4cU9GTkh3aGZXTW5mbHBubU5XNWxEaFJyek5UZ093ZEtZZ2wyVHFzbjFpbFktQnZHZkhhRWRiT3BncGc0MHI1Yw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T09:31:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PNC Infratech jumps 7% after Delhi HC temporarily stays 3-year bidding ban",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNaHZDUENPbmRXUlBLOTVSaTBxZy1wRkxjTzRXQmg4TVFXSTdISHNWMWRCZmFjWGl5R1NBd1AzbVp2ZUdSVTFCMENraVNCWkZTRVFVakJKRnVLWGVqYVBiNVE4WEY3cW4xdTI0bHRwU0txNFZCcjVrbW40QWxjby1Cbno4MjBMNDV0ZDFDTGo4RV80YkJIdXJfQkJBQ2V3bkVJNnV3c2l6blBGQm5OamM2N0JfWVFDWXFFZzl0Yk8zXzJUV05mOVQyaC1CX0xoSXBkQUpSakdNNmtISnhVYVg3YzFRNnBUQ1pYdW9GONIB7AFBVV95cUxNaHZDUENPbmRXUlBLOTVSaTBxZy1wRkxjTzRXQmg4TVFXSTdISHNWMWRCZmFjWGl5R1NBd1AzbVp2ZUdSVTFCMENraVNCWkZTRVFVakJKRnVLWGVqYVBiNVE4WEY3cW4xdTI0bHRwU0txNFZCcjVrbW40QWxjby1Cbno4MjBMNDV0ZDFDTGo4RV80YkJIdXJfQkJBQ2V3bkVJNnV3c2l6blBGQm5OamM2N0JfWVFDWXFFZzl0Yk8zXzJUV05mOVQyaC1CX0xoSXBkQUpSakdNNmtISnhVYVg3YzFRNnBUQ1pYdW9GOA",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T06:18:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PNC Infratech shares in focus after Delhi High Court stays NHAI debarment orders",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUXY0U1RQS0paRnpEMm1vTmJMcHppMGJWVFBUckMxOHRJZU1ZU042WGsyanI2RmYxN29zWndOZW1Ndy05UTR2ajF5eFVLLU1RQ2tSNzQtXzJCWVJRZnZ2dEYzOFBERHJqS1ZKdU53SUg5Ri10ZDVqalpVODJjWmVNV1V1cWVya3RiUGlFQlVsVHR0TkF3YkNjZUxuX2hpLTMycG5fNDRuQ1BCMVBEWEduc3VUM0drVWp0dFFCbFdPZ3ZrMzRlT2t2ZExXTVBLWTJEV3A5bmh3VnRiQU9UeHpFUGh2eVpRVTjSAecBQVVfeXFMTVF2NFNUUEtKWkZ6RDJtb05iTHB6aTBiVlRQVHJDMTh0SWVNWVNONlhrMmpyNkZmMTdvc1p3TmVtTXctOVE0dmoxeXhVSy1NUUNrUjc0LV8yQllSUWZ2dnRGMzhQRERyaktWSnVOd0lIOUYtdGQ1ampaVTgyY1plTVdVdXFlcmt0YlBpRUJVbFR0dE5Bd2JDY2VMbl9oaS0zMnBuXzQ0bkNQQjFQRFhHbnN1VDNHa1VqdHRRQmxXT2d2azM0ZU9rdmRMV01QS1kyRFdwOW5od1Z0YkFPVHh6RVBodnlaUVU4",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T03:43:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PNC Infratech shares jump 4% after Delhi High Court stays three-year NHAI ban",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQbjkxZ20wSzA2Sk9aRGRpdHA2WHEtQ3Uyem1QcW5lUkxsbjBnMlk3aUZYYVBNeWpyZ2JJQk9zd2cwN3FHb290eHpwYm1DNnp5cnhlNWlnTGpNUmdiWldGVUtrVldYeFd1bU1Val9fd292RlJMR3NnQzdydjNrMjU4dEhXYW9aSGNMYVdKbDU1LVR0WkE3dDVKVm50azNJdGpJZkotNXNCdGJCOW5QYjJoQ2tfR0VfMjlrZjNWQlkzZFNhWEYwdjdaVWdvY0wzYmY5OHU40gHYAUFVX3lxTE1ZemNEdVZUMHpwY283OFBZVzR1QzlBRm4tb2kzWVc1eEhMeFBQaWxfWXlDYVFpNVVkbG9PM09UMUxTZTc3aG1QZ0pCLWtmRHZqUmhOcHpLY1g1MmkyVE8xR29fTU9ZM0c4OEhXTGxXcF83ajZPdzJuSWFrUm91bGhBSldlM1pzbGt4aHR0eEpHRzYxLWw0TkxWVDZtZldzdkZNYWktRF9YMXNaR0QxdFQySWtTU2wxWFpHR3hpUk9lRVhHVXhIb091ZGNzc0V5SUJ5WFRfOTZxZg",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T02:06:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "ASHOKA+JKIPL|ORDER_WIN|court-high-india-infratech-pnc-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:03:14.571139+00:00",
-  "last_updated": "2026-10-13T20:03:14.571225+00:00",
+  "last_updated": "2026-10-14T12:18:36.415302+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:03:14.571216+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:21.368613+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:21.368628+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:36.415265+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Business Today, CNBC TV18, TradingView"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:36.415287+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:36.415294+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
     }
   ],
   "price_reaction": {}

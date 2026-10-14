@@ -1,10 +1,13 @@
 {
   "event_id": "EVENT-GLOBAL-2026-2384",
-  "title": "RBI's money market operations saw higher net liquidity absorption on October 8",
+  "title": "Money Market Operations as on October 13, 2026",
   "summary": "RBI's money market operations saw higher net liquidity absorption on October 8 Traders Union",
   "event_date": "2026-10-09",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TENDER",
+    "DEBT",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
@@ -12,46 +15,56 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "MIXED",
+      "confidence": 0.84,
       "business_impacts": [
-        "CUSTOMERS"
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
         },
         {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
           "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement",
         "-6 Scheduled statistical release, not a development",
-        "-7 Share-price listing or roundup page, not a development",
-        "-2 Single unverified source"
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from traders"
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -59,38 +72,56 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "direction": "MIXED",
+      "confidence": 0.84,
+      "business_impacts": [
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement",
         "-6 Scheduled statistical release, not a development",
-        "-7 Share-price listing or roundup page, not a development",
-        "-2 Single unverified source"
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -104,21 +135,66 @@
       "published": "2026-10-09T04:19:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Money Market Operations as on October 13, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63801",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-14T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "Liquidity absorption persists in India’s money market operations",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSnMwbG5VaHY5bkhJaE1qZXFLdEhSVGduMk9BbDJLcHFldTBCVDdIcmtEel9NVGJIU0s5OUFlOWM0MWZlWlRVMlpKaWRXZGp4REFTUjdXel9zOGdKa0tvcnNpSFAza0pVd2Q5YTFmamRSTXFjbmJmbXV1T05ENVJxdUpYdVRucDRwdVlaYUg4R3RwaGVlY0dBZ1dNeTVvQQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:20:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "Traders Union",
+  "article_count": 3,
+  "source_count": 2,
+  "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|OTHER|market-money-operations-rbi-rise-saw",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:39:12.463459+00:00",
-  "last_updated": "2026-10-09T13:39:12.463536+00:00",
+  "last_updated": "2026-10-14T12:17:59.583750+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:39:12.463528+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:17:59.583714+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India, Traders Union"
+    },
+    {
+      "timestamp": "2026-10-14T12:17:59.583729+00:00",
+      "change": "categories added",
+      "detail": "TENDER, DEBT, INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-14T12:17:59.583735+00:00",
+      "change": "official confirmation",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-14T12:17:59.583741+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-14T12:17:59.583746+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

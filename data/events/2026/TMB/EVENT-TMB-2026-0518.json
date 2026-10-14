@@ -9,47 +9,155 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.5,
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "INPUT_COST"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
-          "term": "gold prices",
+          "term": "diesel prices",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "throughput commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "gold prices is handled rather than bought or sold; volume matters more than price"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "diesel prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "diesel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -73,21 +181,96 @@
       "published": "2026-10-13T15:25:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Check out petrol and diesel prices in Chennai on October 14, 2026",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONlVtVnFZX3MzZ2FpY3ZzQl9Ibnc3REtoajNwRThMOEpEOHVtVTBIdERmNDl3a1lJZGhrcEdrLVVJQmI0TDRMNWt4V0pPRk5ZeHVXelVoZzkycUE4YlZIRXBqSkNIcDJ0VlE2LWk1MDE5WG5BNWxjRHNKOTlVSjRRT3E2eGg2VWF0YUFBckVtQXdBeUhJUThNcFc2RFFhVXpz0gGuAUFVX3lxTE1OMDJ4bFgxWjV6ZG5FaG1KQlhJY0I4NWZ3Z3BMYjNRWnkxZVBUaTZLQnhoTkwzNVlvSFBSdmxieThVOUphUjhtUXQyQUhoZWp6WXE3c3YtX185YmswV2tseWFKOVVmLUZQMXlVSEZFejNBOFdfSUNDLWF5ZHdDOEFuOG1xejBvVVFnMV9OWDRDUjNCRlBjNUxsRnVQMWwtVWxkejQwUkZib3FqYzhlUQ",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T02:32:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Pakistan cuts petrol, diesel prices for October 14",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYjBCYlgzOFVYdW92OXc3LWFPdlZMSE4zVlRNVkk1bWQwOE0yel9Pb0RXbWdmdEM0UEFsNFdJZnhKMUpJYmNUd3BWWW96NDVwaGtzdUVDZV9UdFhJY3BpblQ1VHlkaFFlbFl1T0Vna1QyT0FOcTBiSDJZZkJ3TVNTMjlFYUZzSUFWaFVnS0Z6aTREdUxXWHBwQTBHNlJhWVBo",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T09:25:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, Diesel Prices Today, October 14, 2026: Check Latest Rates In Delhi, Mumbai, Kolkata, Chennai, Noida",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZDRIYWtNc3FwOWVybW9HeWt4X2VZSkVsbUl4ZzZQbHFWRVNya1Z1SjB6dGhrQ0pwc0YyVHBDcUluYTQ1M1JxNnlic20xTm03bmFMekV0eTNJZnJpRDE0R0lxdzFfN3ktWjY0cW9JakRLZXJEWDNxQmZGOUY1RmRva01vWFEtRkhDeG9yZGs2R3JuaU5ON3RkOHNQOHBMWnllYm5XR1VmYzByME9lbEZZSl9uVWtMWTZ6TVNrSHRIZmNEdw",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:09:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, Diesel Prices Today, October 14: Check Fuel Rates In Delhi, Mumbai, Kolkata, Chennai",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMFJEZE9CMHBRS0ZlTERLeVhFQVhUN3FDSW55WlBmeER3YjRUUnlxbEdqQXFqekJHX29XZnBNRmhRSTdTVFJwTmd1UnpybmVrMmdDc3l2T2RiNjJnNmgtVjY0dWRuNWIyREhRTUxGTTZrS2VqNmdqQU8wQ2pxY3ppNERvUVVyOUV3MnRHNU5xWWRxd2ozWkV6dWFrWlFBeWwtX2R5Mk16UFVFZ2lIT09NOEZDNWlTUi1rS1ZMODhTR1BGRHNjb24xMUJ5N2ZfMEpGMjM0cjJxX01BZHNO0gHcAUFVX3lxTE4wUkRkT0IwcFFLRmVMREt5WEVBWFQ3cUNJbnlaUGZ4RHdiNFRSeXFsR2pBcWp6Qkdfb1dmcE1GaFFJN1NUUnBOZ3VSenJuZWsyZ0NzeXZPZGI2Mmc2aC1WNjR1ZG41YjJESFFNTEZNNmtLZWo2Z2pBTzBDanFjemk0RG9RVXI5RXcydEc1TnFZZHF3ajNaRXp1YWtaUUF5bC1fZHkyTXpQVUVnaUhPT004RkM1aVNSLWtLVkw4OFNHUEZEc2NvbjExQnk3Zl8wSkYyMzRyMnFfTUFkc04",
+      "source_name": "News18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T02:28:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, diesel prices today (October 14): Check latest rates in Delhi, Mumbai, Chennai, Kolkata & more",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPN1V1SFhqMWNLWk01QmN1Qk1xSFp3ZldJZVlmek1VRGNKQ0pDN1gzN1RQR1JhaXhrTVdCQ29WNnRhYnZiNHc3YTlHTFhQYmpSWjRLWm5VdWItbHZWUUlqNFZqWWxIbmR0dnBkSzliVUUzN1hVT2FKSEZLUkJnbkl1WXNzTmxUN0FXRzNnVVhsT3pRRWFPQU1haEdhS1lmU3Qydm4zTmpPaEZpaEo3cHdyZ25WT0wzZDNVM0dyanMtV1ZUTFQyVmRUc3ZYN3ctcnVaZk1TTGJkQzZVMXZ1aGZkYWlDb3doNTjSAewBQVVfeXFMT21KUndaRU5MWHcwM2JxdXlhTENNdVJVRWxFa0g4TUtEekNkVFV3NWR6b29pdmlWeUI4SFJ4bnNkYUUtZVdMTlpIalVTREhfRGNtR2thcV9rUmF4WnpmdWZRNTBzemxBTXRtUFp3NzdHZTg0cGxHVnVTdDRYSnRJa3RLOHpOUXVWLXVHWmhQTDRKVmJxNUFDSW1aSDRQVm50VG9TNjJYVVdyVDVPX0JMYVkwMTN5cGVtVDU3dURKVEFvZG5WNVRkRm9GTlE4a3dHQVV5V0FBVGVuNVZzcktTZ0Y4UHJGUXJWX3VKSDI",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:52:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-october-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:01:22.158272+00:00",
-  "last_updated": "2026-10-13T20:01:22.158402+00:00",
+  "last_updated": "2026-10-14T12:18:37.885052+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:01:22.158391+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:37.885019+00:00",
+      "change": "sources added",
+      "detail": "Business Today, DT Next, HDFC Sky, News18"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:37.885035+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:37.885040+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:37.885043+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:37.885048+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

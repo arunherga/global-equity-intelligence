@@ -50,6 +50,49 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +105,41 @@
       "published": "2026-09-24T08:32:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices fall for the third consecutive day: 10g gold price falls by ₹3,000/10 gm; silver also drops by ...",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWVlLb2xSQXN3R3o3eEpTa0lEeDBTaXVLS3pZaUI3ZU5FQldlZkVEQnpOVVBHMUpJRG9adzRDM2t6eGNqcTIzODVDTGR4bkZ1MXdNSG0zVk5jcjZKMEJBa0haYVdIaDlXUVJSTUFsdTM3VjZMRGx1a1dNSWRqRk9rZVVoQXlsOHJIeFJtOWJxdWNHbVVoM0lqc2RNOWVGdWhQMnfSAacBQVVfeXFMTTRkTkFJd1IwN2ZoR0k1SW15NGNMcnVPNTJMc1MxeXVrZlVTYkpOc0Vkc3ZFYWRjN3pxQUVhODNlcEdPUG5ZX29EYkRSN21kUzBaVGlPQ25uaXFkdEstOTlQMG9ZQUwxQkVFUWItSXBUUU9zZVl5OEg3R2I5M2U5Znl3SnptS21vUGtvZHJQZmh1NS1OOGtTMWRxVkk4T0c5LWhCV21JeEk",
+      "source_name": "Bhaskar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T06:55:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Bhaskar English",
   "cluster_key": "WAAREEENER|COMMODITY|4th-fall-gold-price-silver-straight",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-24T12:02:44.586999+00:00",
-  "last_updated": "2026-09-24T12:02:44.587074+00:00",
+  "last_updated": "2026-10-14T12:19:04.895700+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-24T12:02:44.587069+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:04.895679+00:00",
+      "change": "sources added",
+      "detail": "Bhaskar English"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:04.895696+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

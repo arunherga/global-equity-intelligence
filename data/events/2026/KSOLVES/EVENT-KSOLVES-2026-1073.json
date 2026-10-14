@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-1073",
+  "title": "Docusign embeds agreement platform directly into Salesforce",
+  "summary": "Docusign embeds agreement platform directly into Salesforce Yahoo Finance",
+  "event_date": "2026-10-14",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Docusign embeds agreement platform directly into Salesforce",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS09XNHlYakJwcy1sU0tTbTdVMkpiNnk1QWhzWmtlSHFoUjYyZUNCWlhGYUkyWVE5TXRqaWprMDduYTJUS3VMUkpobUdNeXNOX0ZHTHJLM18tUjl6bWp5YzNCRDM0XzlobElYNnJtM1owWm54OUFfLTlZbUtmTVdEMTFldXVtdmNfM0s5c2JFMXhnR28",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T11:04:21+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Yahoo Finance",
+  "cluster_key": "KSOLVES|OTHER|agreement-directly-docusign-embeds-platform-salesforce",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-14T12:14:47.921282+00:00",
+  "last_updated": "2026-10-14T12:14:47.921346+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-14T12:14:47.921337+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -12,15 +12,14 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
+      "impact_score": 0,
+      "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.68,
+      "confidence": 0.3,
       "business_impacts": [
-        "COMPETITION",
-        "REGULATION"
+        "COMPETITION"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -32,25 +31,21 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+4 Regulatory or legal action",
-        "+2 3 independent sources"
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "3 independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "pricing response",
-        "market-share shift",
-        "capacity announcements",
-        "formal order or circular text"
+        "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition, regulation. Classified as competitor.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -719,16 +714,46 @@
       "published": "2026-10-13T04:27:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SENSEX, NIFTY50 edge lower dragged down by HDFC Bank, ICICI Bank; IT stocks outperform",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOVFPMlJ0RHNKT1VhOFRXWms4a1hwYTItMFctVUp2cm42M1JCYnN5b2dUTVZ0RlBaWXNsZXpYLVVQSFAtTHBqQVpuQ1RnbFkxY3RYaFF1TGxGT0Y2SUVSVENlU1p4dUxNZThYMFVHQjZOSjhjbFBiTGMyd1kwQjhTZEZqcThRWF9lNlRBWUlrMTI1S0VUelgzZ2UxbEFwZmRpV1hTalJoc0I5cnFfLVdObFJGRzFURThkeXpnSG8xQ0pFS1ppWkdOS25qUXU1WHlfSnF1MnJlUEtBMGc",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:00:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Banking sector stocks today, October 14: IDBI Bank surges 12%, Central Bank gains 4%; Bank of Baroda falls 2.55%",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNTFBrYjdYN1Y3NmQ3ajBWbEZhRzVGLXBMMklkaEtHY3RySTdsTEFhOUJ0Y0Z6dGsweVhzRTlQTGFpMUp0MXZ3MmZrY2VUc3VYRVBWM3ljN1ZqMjdNcEI2TEE0QXB3bE9wYWMxUXQ0aDZGRUpoOFEtVkczWUxscnB4bGhNMkdfZ2lxc29NZmktc2lJcE1SeF9ZRXpNS3ozLWNpaWpuY3hXSE02dDBtQnVfYWdSanMtN1ZjWVNWbHJsSnJBaXJGZEpldm4tMXNHV0hqd05yY1Z0RF9BQWIwd3Rzb3pLbmstbE9Pa3RNc3A2dw",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:26:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stock Market Remains Volatile; Sensex and Nifty Trade Nearly Flat Amid Selling in IT Stocks and HDFC Bank",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaF85RUY0Vm9jWkV3WXFtb3JMSWtfWXhnOVdObHcyRXBvQl9zMUdCUEdnNjh6OC1aZjZXVF9BMWlURTMxa3haX3dzQ2I5YUd3d3p6S3NQQ29UcTdaN0xxLW5qNjhiRS1pRkpZYVgxYkNhTkFNUlZsYjloWGtXdVc4cmtmNnFac2RqUkdzYzVaNHhsVlE",
+      "source_name": "Hindusthan Samachar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T07:22:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 23,
+  "article_count": 26,
   "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|COMPETITOR+REGULATORY|bank-banking-fall-hdfc-share-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.314075+00:00",
-  "last_updated": "2026-10-13T14:43:36.318989+00:00",
+  "last_updated": "2026-10-14T12:19:08.738203+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.314168+00:00",
@@ -859,6 +884,31 @@
       "timestamp": "2026-10-13T14:43:36.318974+00:00",
       "change": "sources added",
       "detail": "Business Upturn"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:44.158143+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:44.158159+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:45.985445+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:08.738180+00:00",
+      "change": "sources added",
+      "detail": "Hindusthan Samachar English"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:08.738197+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -50,6 +50,51 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +107,41 @@
       "published": "2026-10-10T08:03:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bharat Coking Coal Limited (BCCL), a subsidiary of Coal India, has app",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZERSRG14Yk4ycGRqQ1BtZkZPbHFMMzhHbHRTSVZmcmZnY19lUTdRY3BEUW9GdTdmQTVDdDV6bDd4b3E4VWViR3BVS3ptM1F2dXJVYktNZWZLYUF2WHVXMktIMWV1SVhkYk5PSjk3aER4UjhmTjVaMWVfZDdEcEZ5TlRRbmxQU2YxVV9LODFNUTlyM2xHczczcjJFNnpjNEQwWUxFbGkxSU5xSWpCRjFadEwybGthdUlKOHE2WmZzSVo1aHZXcVBGc2dibFg",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T10:05:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "PSU Connect",
   "cluster_key": "COALINDIA|OTHER|2013-anjay-appointed-cvo-irts-tiwari",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:51:06.786603+00:00",
-  "last_updated": "2026-10-10T12:51:06.786688+00:00",
+  "last_updated": "2026-10-14T12:19:25.884072+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:51:06.786677+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:25.884053+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:25.884067+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
     }
   ],
   "price_reaction": {}

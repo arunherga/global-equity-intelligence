@@ -4,7 +4,8 @@
   "summary": "HDFC Bank Stock Falls 2%, Yes Bank Shares Up 2% : Should You Buy Either Private Bank Stocks After Q2? Goodreturns",
   "event_date": "2026-10-10",
   "event_types": [
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
@@ -52,17 +53,36 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
-        "REPUTATION"
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION",
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
         "-4 Opinion, preview or stock-tip piece",
         "-2 Scheduled disclosure with no surprise",
@@ -74,13 +94,16 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified",
+        "no quantified financial implication",
         "opinion piece"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation. Classified as analyst action.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -94,21 +117,46 @@
       "published": "2026-10-10T03:11:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Which bank stock should you buy ahead of Q2 results - HDFC Bank, ICICI Bank, Yes Bank or Axis Bank?",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNdUtXSTZkOG5mSTJBRUZDSm1ucEhqY0hIMUZiaUlFajBkbm5PcmtRMC1hVExscXV2YXFyNG5MUE9OY1d6NlJ4RGhSQXVIenZJelM0UUZMQXNyUmU4NnItUXdyMjdRNnJ3SU5HR2twRFhWZVVqa0Z4Q3ZpS1NYU3l1b09md093eFJQaHVIM29Uc2ZpeVhSLWkwNlFTcUJsb1o5d3poeVQwZUFSVUw5b0oxYW1XbDJQc1NBYXI0T1o3Z2k1ZHp3dnphbkVrWHJDUy1PV05ReUNMdzMtZVpaaWd6ejlPVk9WSUVTZkNXWU9yRkgzSFBXc0Fzbk16djPSAYICQVVfeXFMTVBablRYeUEtVXRxQml5M0VacnJIczlmQk1RYjN3cXJHSTlWb2Rtci1qaTVxbkF4aTk3akVtY2l0RHhuWVlSaWxDTVFqZTBCZEQtekRjaHpyNGlqajB4WnZWWGdyQ2pvQVN3S2pSdnpPQm9UbDFWVDVLY3hVbEFIUjRpNy1CSUVua1o2d0hSVjcybzZuSmxQcUYzd3dfQ1k5S3VESkZrcFBpRXFIbjc0emh0S3VDRmtXcXgyMVlKVE5tUFRHX1FTSkVEMGc5UWZRTmk2S0hlX25hRW56V01wWDhRb3A2Si1OME12dGxDNEZmRHBkRmItNVo3WkVBdG5YeEpR",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:21:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "HDFCBANK+TMB|ANALYST_ACTION|bank-bank-fall-hdfc-share-yes",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:49:59.093728+00:00",
-  "last_updated": "2026-10-10T12:49:59.093823+00:00",
+  "last_updated": "2026-10-14T12:18:45.519522+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:49:59.093813+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:45.519487+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:45.519501+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:45.519519+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

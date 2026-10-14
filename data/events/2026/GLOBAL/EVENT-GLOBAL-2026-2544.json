@@ -46,11 +46,11 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -69,10 +69,17 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "expressway construction",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,13 +87,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NHAI"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -100,21 +107,41 @@
       "published": "2026-10-10T04:26:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Moves to Curb Diesel Generator Emissions on Dwarka Expressway",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPQzc1LWdRUWJvLUpUZ3pvZjJKajBrTkdBQks4QlVxQzRRd0tVdTJXOEphYzZRSkp5YTc2TVctVEdhTlMzNmFqSzFibXhNYTQxNVZGeVVBQzI3bWx4S1IxSUkwNXgyRnRDQmRKQlNaT2lyckJHeDBRZTRJRW9qLVFvemN2dEpLckpjTjdKZjQyZ21JNGg0Y1dJUnFsVlZuMERZQTN5WVI5WnhYY2VBS1NGam9rLVcwRnNYU2VCWEpxOG93aDB6cmRxei1zMWxJQTlxLWNqblZYcm02LWluT0NTV1R1bjYzZnlBWEJNc2ppYTV6NHVBTEdv",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T06:49:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Swarajya",
   "cluster_key": "ASHOKA+JKIPL|OTHER|curb-diesel-emissions-generator-moves-nhai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:50:07.607512+00:00",
-  "last_updated": "2026-10-10T12:50:07.607602+00:00",
+  "last_updated": "2026-10-14T12:19:02.298488+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:50:07.607591+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:02.298469+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:02.298484+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -9,11 +9,11 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.5,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -21,13 +21,6 @@
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "CUSTOMER",
           "term": "traders",
@@ -37,21 +30,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from traders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -145,16 +139,26 @@
       "published": "2026-10-06T05:54:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian central bank likely intervenes to bolster rupee gains, traders say",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNcUpXcnM3VXZEM3I2SF9tRWhFYW9HRDRjdnBJWmNONnNPTUp6QUtqajFySHJIZURIRHJaX1h6MmVXdkR3NWx1Y0FNLVNKTERSek1vdkRiS2VPTUJnZ0ZONlVEODNPbHBueUppR09rZ1ZhbzBmbzA3ZEJ0bzJ4SE5nSHJoREM0Q3dsUmlKVXREQV9weDZ1VkdFQ2NMVVdtSGFIYmZ6MnFscTFwLVhxUmh6ZnlGMEVlR0cxdTFzRlR4RlNWemgzQl9WQ0dYLS01Q05NYmw4N2FRRmhlMGxOOVlSOWp30gHnAUFVX3lxTE1kaHRXNS1BSHB6M2psUHRHWTV3cVRNQXlETUl2T1VGODhFdU9DMnRXZDlIZkphS2Vzb0ZBQW5CNXVaREJPUG5FSHdGTDFldjFFWnRDeWdVeHhkMXBRWmc5dTVpSVVidzBHOTRBVXRaZGdtODlwVDVXTVFtY2xfVW5XTkRncWNjblZ3aVZmMHZ5VG9SNVF5UmE5SzRPaHNKSU14QnZ3WXZGZUxfMWNmZmVFS0dmZlJyVDg5RXh4a2FfNFdqbklFemw3OHZ3ajdPVU9qbWVfSWFzNFNCZU5RZWFJZUVGcHpNWQ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:43:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "marketscreener.com",
   "cluster_key": "TMB|CURRENCY|bank-central-defending-india-likely-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.743773+00:00",
-  "last_updated": "2026-10-06T13:45:49.326252+00:00",
+  "last_updated": "2026-10-14T12:18:47.690476+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.743830+00:00",
@@ -185,6 +189,16 @@
       "timestamp": "2026-10-06T13:45:49.326246+00:00",
       "change": "stock added",
       "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:47.690456+00:00",
+      "change": "sources added",
+      "detail": "bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:47.690472+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

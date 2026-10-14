@@ -4,20 +4,23 @@
   "summary": "The revision covers select steel, direct feed and washery grades, with industry experts expecting a modest immediate impact on buyers.",
   "event_date": "2026-10-13",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "RAW_MATERIAL"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.61,
+      "confidence": 0.47,
       "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -35,65 +38,67 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Coal India)"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 6/10",
         "two independent sources",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are input cost, margin, customers. Classified as raw material.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "DIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.71,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "coking coal prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "coking coal",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "coking coal prices is a selling price and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "direct relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "coking coal prices over the next few weeks"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to coking coal prices, and coking coal. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -137,21 +142,76 @@
       "published": "2026-10-13T17:48:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India arm BCCL raises prices of select raw coking coal grades for non-regulated sector",
+      "url": "https://energy.economictimes.indiatimes.com/news/coal/coal-india-arm-bccl-raises-prices-of-select-raw-coking-coal-grades-for-non-regulated-sector/134930371",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-14T02:31:58+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Coal India arm BCCL raises prices of select raw coking coal grades for non-regulated sector",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVmFNVWJnUFZvZlNxUW9LbjA5NUZRdk1WTFFuWUdneGlBTjB1UFdSVFNvVUZtaTAzNW5mZ0hZdlFaU2RZZ0FHa3pJR1MtV2cyWDNEZ2lia3F1b3BfZXBqVlFJRm1qQXp6WTA3N0hibEV6aXVnSEhESHgzTEFrRGQwWGZCdmJzaWlIaWZXUU5UbENYUXppZ1Iwd1dENDlJU0dWdVNaU0JMQU02QmVfaDZaYk1weEJFV1g2TlRvU0JqY25vLS1YbjRmUDd5VmEwbThHZThybFFFUVpOLXNaX0ZLd29hNVg4QWNaX2I4Z2NVMXLSAfABQVVfeXFMUFZhTVViZ1BWb2ZTcVFvS24wOTVGUXZNVkxRbllHZ3hpQU4wdVBXUlRTb1VGbWkwMzVuZmdIWXZRWlNkWWdBR2t6SUdTLVdnMlgzRGdpYmtxdW9wX2VwalZRSUZtakF6elkwNzdIYmxFeml1Z0hIREh4M0xBa0RkMFhmQnZic2lpSGlmV1FOVGxDWFF6aWdSMHdXRDQ5SVNHVnVTWlNCTEFNNkJlX2g2WmJNcHhCRVdYNk5Ub1NCamNuby0tWG40ZlA3eVZhMG04R2U4cmxRRVFaTi1zWl9GS3dvYTVYOEFjWl9iOGdjVTFy",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T02:31:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "BCCL Raises Coking Coal Prices by Up to 14% for Non-Regulated Sector, New Rates Effective October 14",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWHJTaWtoTWpaUmpJVmYyNTAycEpfOGdYTlZ5WVVVeEI2MXhJUXVEMTlMQl8tZnhEeWtPTmY3akIxS2Zxc255NF9RMFpfWG9ScHFFWGF1NkxVUE5JdTctZWt3U1d4dEdiTjZyS1o0azU5b2V4Y2RENEFwM2VzTXNRUE03LWliOFo2dzJNeE94cEktdW1yZlRYRDg4amhoOENnV0NrdThDQQ",
+      "source_name": "Indianmasterminds",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T10:16:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 2,
+  "article_count": 7,
+  "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|arm-bccl-coal-india-price-raise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:01:37.227167+00:00",
-  "last_updated": "2026-10-13T20:01:37.227285+00:00",
+  "last_updated": "2026-10-14T12:19:27.048431+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:01:37.227274+00:00",
       "change": "created",
       "detail": "4 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:08.957716+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld, ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:08.957730+00:00",
+      "change": "categories added",
+      "detail": "RAW_MATERIAL"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:08.957735+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 2 -> 5"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:27.048411+00:00",
+      "change": "sources added",
+      "detail": "Indianmasterminds"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:27.048427+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

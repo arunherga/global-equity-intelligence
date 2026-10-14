@@ -11,17 +11,16 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "PRODUCT",
-        "CUSTOMERS",
-        "REVENUE"
+        "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -29,26 +28,32 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
+        "+2 Indirect but real exposure",
         "+3 Development at a known counterparty (Adani)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to Adani. The parts of the business most likely touched are product, customers, revenue. Classified as partnership.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Adani, and India. The parts of the business most likely touched are product, customers. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -92,16 +97,96 @@
       "published": "2026-10-13T12:37:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Enterprises and Jabil sign MoU for 50:50 JV to manufacture multi-gigawatt AI and data centre hardware in India",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMDh0QlVObjBsVUVGUEg5SUliRVlPU3FsOGNLdVFzS1JvaFVKclRFOFQ5cVFaQmdSY04xVktKOC1yajNmSXA0Vk9sTWlaQUlSa2FkbW9UN3I5SHpMeDB4MVFpcHRnUEF2MV9zT3FYSFNCUUxNRnNYdm45Xy1zNFdsTXpmbWpEODQ4TXIybjRTdjh6d1dxMlNsQW0zSW9wMHBkaklDVk9aLU4wdFdHSGI3dGhlNTVwdHdmaXpUdlBPV1NmeDlDa1haSnE3di1PTzQ3YjQyNzE0ZGNYTUx5aXRRWUFLNzZ3SkJBdjNycU1tNmh6S0o2",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T05:46:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Enterprises and Jabil sign MoU for proposed 50:50 JV to manufacture AI and data center hardware in India",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNQVp5aG9XdXVTejhqTWFnSW9xd09fWV9wMmFDMWR1UTRXZ0hiQWl0ME9nOTBPVVhXQnlBeDZ0T3Q4alRfYUtrdDRkU2lYdUxucFBnLWJFcktDYmVQRktJN09yaFB3UmctSVhTb05oS3VERVFSUDBFaWs5NXNteHJBMUE2aW9Pb1VJM2ZSTlh1OUtTcG85endlcnpRQl85SkJhRUtRXzRVWlR1QmZDUnF0cXFUMzhFV0FYaDBxaXk5eHhKUVNORm5fdEoyRVhRM00yVkhyWEktSXAtTzFKelNRYXVGd0xhbjJRQThvMUZkNGx4N194N0NUeHl2Y0JxMFhxNlBN",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T13:10:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani, Jabil sign MoU for 50:50 JV to manufacture AI data centre equipment",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMjFaejFEQkx5TE10ME1Oc2o3dE9LNVhicWRCX2xUeS11NGw1YlNfdkVObk5BTUZCbE1GbFJMMW9kNnFpVUd2NU1ZMmpTMEdrTEhTS3Q0REhHX1hjWGRCVUJHdUtFRkR2M1IxbWpRZ2F6Y19ZN2RQbGVBeGY5ZFdkYVc1bGwtWDRRRTgzSE90RE42eUVaREhFcEQ4bTRYNG9hb1BPc3F4UWpsWGszN1QtRU12VmhzVDR5VmxWMkpCYk1jRVBC0gHSAUFVX3lxTFBLcXdSVWtEazlUREk2amtsbUhfZUdmVjBMNVZCX2I4ZF9hQVNNWXMxT3p1b1hiYUd1b3p4aG1NWldUN0dfb0RVTjRDUFhPbThrUnNVYkVValZNX3BZQnJPSXhrcXZxSG8tc2t5U2pHSElEQmd1WGZpNWJiNzd0aEVJYVVMWF9nOWNhVXA0bnFoTWgtczU3ZGRFMmRMcW45TE9vYTE0cklYeTNPN01McDlJT0U3NHgxa24wZmlrV3NMVVA4eW15U3dMTE9wajhEUEQ1QQ",
+      "source_name": "The New Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T14:32:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani, Jabil sign MoU for AI & data centre equipment JV",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNX0NHZTM1VWRIbXA0ZVp2TG9HQzlDMVhwWFJ4TGd3NDdQSkpndE9rM3lIUzN0NnBRYldkVnB6WHBfdzU4QVJGM3lnZU5tWEtQMUtPa0FrU1ROekFXVFU0YjRmVE40QmRQazU1RTBZNE4xOGVKNzQ1VHlxbHFiRjNqVDhMb3JtTlhJcHJxREhJLVo5RWVkUEYwQjR4VU9xNElJdFIxeWItVUlrRUl3UWJmN1lMOE0wNmhJT0tLeWVTSXQ3cXFTb2tFMFhmLUhLOHN4alRUZW51TlE5MzRMX1NkaEZlU2RCWmZjc3JoZlZMU19NaGxXTm1qS3Z3a0doZ9IBgwJBVV95cUxNTzdnRHJfcDN5RHFKUS1JUFBNcnlYY2pjZ1ZqMWM1TlFfbHZFRlRFdDY3UjdoY2VtQkFWaXd6MHM3WU9DVjlaMkxhTjViemF2dExOMGRMNHJWT29GQkkwUWxuVUFwX2h5RWkxUjlZMFVnU3JaekJEMTdqbktjUU1xVTM3RTVBejVDRGc4SXBoSHVuX2piSFJ1c3VROEs4c1dYY2FXTWNOYjVCMFRoRlVabEZzUkZDQ3pDNVQ4S0RvVHZYcUpQanNVRnh1XzltWWtmZ0d1emx1bVpfTEVCVW5tMHJxdXdJZC10N2dzcnZKWkpLeGpzS2dEVVpnQU5NSkZGT1Jz",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T19:57:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Enterprises gains on signing MoU with Jabil for data centre hardware joint venture",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYVBveGhoTlFtTFFDSjVpbmd4S3NwU3lUZU1QT1ZqTjJQQzZSMVVXX1J0cXdwNTN0dURCaW1CTG42RDNvRGhIbHM2bVgzV1dNMnhFNENkNUtLaGFGUkFTVmxWUlN2YnF3QVJxMUNTWGFzRFUxME84Q2ViMFdwdlU4dnRCUGloNXRrTUF1MHJabnRuZW5tYXNzV1F2cE5mNEhScGR3SDdrNnlmSW1XWEhwZmo4LWs",
+      "source_name": "Udaipur Kiran",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T05:34:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Enterprises, Jabil sign pact for 50:50 AI hardware joint venture in India",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSG9rRm5sOURDOHctNklPSGp0bXE4SHE3T0daN19LUUIya2wtT2dfTkRET0t5UUlmcl9uUWc5ZFRYUGI1S0lIOGNSaTFDVkJXNUhQTWJaWVBkSHd4dFd4aUU1VmEtUFVZby0wMGRLT0FteHFQYVMxNG1jQ2Q4MkJkS2hrNFZfWkwycVdyUDdNVVkxV0lZa181QW9UVUFnYkNzUEdBWmdSVS1OZDg0R2FoXzV3b19KN2o4d2RsaTZXeGROMEVOVUdBRVV5Z0F4NEE2WDFVZEFfZ25Pb09GTC15RFU4ONIB4wFBVV95cUxOSG9rRm5sOURDOHctNklPSGp0bXE4SHE3T0daN19LUUIya2wtT2dfTkRET0t5UUlmcl9uUWc5ZFRYUGI1S0lIOGNSaTFDVkJXNUhQTWJaWVBkSHd4dFd4aUU1VmEtUFVZby0wMGRLT0FteHFQYVMxNG1jQ2Q4MkJkS2hrNFZfWkwycVdyUDdNVVkxV0lZa181QW9UVUFnYkNzUEdBWmdSVS1OZDg0R2FoXzV3b19KN2o4d2RsaTZXeGROMEVOVUdBRVV5Z0F4NEE2WDFVZEFfZ25Pb09GTC15RFU4OA",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T01:51:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "AI and data centre equipment: Adani Enterprises shares in focus on JV with Jabil Inc",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOczhYcmtQTzIzZ0N6c2NHRmxDd29leFBpbGJSNl9JZ3VsdEJZZXp3dkNCTUpuTmxuSzdxcWNGN2l6OTBQLV8tM3Y4aFNRZENyeGFpUDE3bDg4MXFsaTNFOEozZmdUYlJYSDhzU09NZmVRcHR0cGh2R3RPdGIxV1E2cTBmdnJXc1Z0WDlfSjF6RURXbUd2T09VQm1yTXdWcmhnY0tUcmprc2Z3ZW4yZ0dfTlc5dVZHT3R4dUZ5TjNjdnZrSzBWOE9jUV85Sll4NFNoMnVWR0NDWnlrUHdzbzNHaHNJZWVqd9IB6wFBVV95cUxQOXlGX21vaHhsSEphR25LS1VhZmJPOE1LMWg3V3M2THBHYzhmckcxN0J6ZlEyWlBwak9tQkNZTTJCSV8zMHc3RGlkSi1HY2V0SUpVUHZWQzEyNnJXeEhyUzZPOTBVSDlPSW9Mb3ctbjBiZlZYdVRYX0xJY05oWEh2MlZnOHJQd1g0S2txdGJOLUdlTjV0UkU2d3E0YVVNclVNODV6TVZ0Nk1sbmh6N21Rb0lRNzVWdHJqSl94TDZqOEdFalBBbFRoa1ZmYnM2SUFBMjNrTFR2U044b25OQTYwT3NvMldrOUtubVI0",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T03:31:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani, Jabil Plan JV to Make AI & Data Centre Hardware",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNY1pkWXphekdxa2h0bkllLV9KRjNLQmliU2tPM2ljRXFMUnNyQlpramtOUDNPSk9CS1BYR3dEejZ0dUc5dDN5NG9wcmtTOVdYbFVGc01UZk9mb1BDNHlQdVZod3BmWFlSX0JpNm5sbXE4X21RN01FOGpQaUYyN3lBeDRfNm9zbkx6cThObXlVTUpZcDQwdUY5NktnVmg3cVJLOFNxZg",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T04:01:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 12,
   "source_count": 2,
   "primary_source": "ETInfra",
   "cluster_key": "WAAREEENER|OTHER|adani-enterprises-jabil-manufacture-pact-sign",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:29:30.801635+00:00",
-  "last_updated": "2026-10-13T20:06:30.923792+00:00",
+  "last_updated": "2026-10-14T12:18:44.481686+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:29:30.801710+00:00",
@@ -122,6 +207,31 @@
       "timestamp": "2026-10-13T20:06:30.923787+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 1 -> 6"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:14.313911+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times, The New Indian Express, Trade Brains, TradingView"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:34.803197+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com, Udaipur Kiran"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:34.803214+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:42.151662+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:44.481670+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky"
     }
   ],
   "price_reaction": {}

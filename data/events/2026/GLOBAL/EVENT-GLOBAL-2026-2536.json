@@ -46,11 +46,11 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -69,10 +69,17 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "highway construction",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,13 +87,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NHAI"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -100,21 +107,41 @@
       "published": "2026-10-10T02:04:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Opens Kakoria Flyover on Gurugram-Rewari Highway",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMHRveXJ3cXh4eDVkcWpEQzFHY25kZzJMWDZGRGhnT21aY3VjamltT0ZqNHlKd1BIYWtHMF9fMWlNMFVvM1ltajlvMGFodGFFaVA3TXVOMjlKREw0NDVCM1pOOUExS2Juc3FMSE1mVUJkMlY1Qm9MUURVcDdRMjZGS1FsbzhGYy1zZ1lJVnRQQlFjelpRNEdDY3NqZ3B5UkxXbTUyaVVkcWwyU1FJa1VwYmRhZUlmVlFKTkNZWm8xN0VCcXFTbkI3eElQUTI0Y0VJRDhDYXFHZVI1UVBMZ1ZTR3dIOWNfZw",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T06:49:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindustan Times",
   "cluster_key": "ASHOKA+JKIPL|OTHER|flyover-gurugram-rewari-kakoria-nhai-opens-traffic",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:49:40.810783+00:00",
-  "last_updated": "2026-10-10T12:49:40.810870+00:00",
+  "last_updated": "2026-10-14T12:19:02.424208+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:49:40.810860+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:02.424188+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:02.424203+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -61,36 +61,21 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Federal Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -99,7 +84,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -108,7 +93,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to Federal Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -142,16 +127,36 @@
       "published": "2026-10-13T11:17:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank to host Q2FY27 earnings call on October 17",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOEVBeGdyX1RHLU1mdTBXb0VUTmpnUWpnam9lbzVPVVpYUFRWZkRJbGlobWlpNFlTRm5yaVZGR1hEcjJ0aGxCbVJHTnJWdi1XU1o4NEZjdEVWYzhIU2NvSGJEVW9CaloySkhuYlAxc3ZMQk1yWHVIenRxby0zMXFtY0JrMmRoT0hrbDlSeFdVVkQyZ0ZOUFZTTFhfWWFMS3VPR0pTdy1rOA",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-13T21:31:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Schedules October 17 Earnings Call on September Quarter Results",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTjlYYTd2UTZYT1JydDNMbVprVUtfdXJOcVpKaDhJVFB5d3BCWFpLQ0VsZW1jWDZ5LUZFZjdlUlpmWHVseGd4S3BZaU5uVk5rVmtWbmVqU01YX0tla241dnFJY19sc016VHNFWkU5aFBWd1doMGdPaGFXVFR1QjBrckl4OXVSVnlkYVBYSzNoZDhMd0xsZUdrSm5TNVl2eUgxU21lR2FCanJNclJGby1Gd3FtQ1ZraElRWnVhQ3c1UTJ0dWs",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T10:37:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-call-earning-federal-q2fy27-schedules",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T13:52:13.355907+00:00",
-  "last_updated": "2026-10-13T14:44:50.054820+00:00",
+  "last_updated": "2026-10-14T12:19:29.897837+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:52:13.355978+00:00",
@@ -162,6 +167,21 @@
       "timestamp": "2026-10-13T14:44:50.054807+00:00",
       "change": "sources added",
       "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:25.594003+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:29.897817+00:00",
+      "change": "sources added",
+      "detail": "TipRanks"
+    },
+    {
+      "timestamp": "2026-10-14T12:19:29.897833+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 6"
     }
   ],
   "price_reaction": {}

@@ -4,17 +4,19 @@
   "summary": "Gold prices flat ahead of US jobs data The Economic Times",
   "event_date": "2026-10-01",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "MACRO"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
+        "DEMAND",
         "PRICING"
       ],
       "time_horizon": "UNKNOWN",
@@ -29,20 +31,21 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 International market development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "gold prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are demand, pricing. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -66,16 +69,56 @@
       "published": "2026-10-02T04:20:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices hold firm ahead of US inflation data",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gold-prices-hold-firm-ahead-of-us-inflation-data/article71582178.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-14T05:51:19+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold price today, Wednesday, October 14, 2026: Gold prices losing ground ahead of inflation data",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOaDY1cDVETUVQa3FWTVV2c0I3TmlEa2pHeDI5UTNTLV9LenlvNE1jbmEydHdUdkMzQUMyelFiVUFnSmcxWDlPZ0lJOU80ei04YUV6U0lfUG5WdjVveXdkd0ZxaEMyQ1Bod3pmdHp3UVZYVkJxTldTNXkzOHphbktzdU43eldGWGZUS2s2Vzg1RUF6aDYteksxMWczcTZmMDY1UVNZZU1NY3NtTzRmaHB5N01SSHFsS0c5SDlMQkk1dGNFMS1tc3RjM2Q4d3hBdzFHNUJDbEJvSnZ2QkNiRlN6bTVHQWF0VEpuTmdlZnNHcXRCSUpSR2lVQlVLeGs",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T11:10:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices flat as markets await US CPI data",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWXl2aXdxMGwyRU5FYVUyaTVidm1iVHlzXzdPeUd0azN1bWVXRGZRUUZDMkNhUE5xY1I1OVJjeW5ORjJ6NV9ncEQ4dGRhSlpiTkJPRHdNd19IYWdyeFlrc2s1SHdpUm5hZ3A1RVNVT09CcTdyd2xsWjdyOUxJLUUxaGh2dkIxQ0hpREVnUFhCZEhxck9tcUNkRlhRUDVNN1FsbWozU1UyOUZxUVo3N1luc2ZzQXhyZmpxV3dLTDNxZ0pLb1o4U0Jz0gHHAUFVX3lxTE9ZeXZpd3EwbDJFTkVhVTJpNWJ2bWJUeXNfN095R3RrM3VtZVdEZlFRRkMyQ2FQTnFjUjU5UmN5bk5GMno1X2dwRDh0ZGFKWmJOQk9Ed013X0hhZ3J4WWtzazVId2lSbmFncDVFU1VPT0JxN3J3bGxaN3I5TEktRTFoaHZ2QjFDSGlERWdQWEJkSHFyT21xQ2RGWFFQNU03UWxtajNTVTI5RnFRWjc3WW5zZnNBeHJmanFXd0tMM3FnSktvWjhTQnM",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T02:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices hold firm ahead of US inflation data",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaXlVS3F4WTdRSl9HQXBzYUxkR0xVWkwzZG03bkdzamNvYmJVNi03NnJ4ZV9kam8xN0ZkQ3VNd3BoLXI0YzJ5ekdrZmpqbGtBblVqcWJ1ck16bXF0Wm9QZFBBZ2VuX2o4cUllclZYaDJNY01WUG1MWjZNSjVOcGlkdnFIWm1PTlJmNExGR1FVeEx1V25VNGJpVFBBT0pQZjRGRW4zWWJJekhjMHpmOGlTU0cteWdsVFVybWfSAcABQVVfeXFMUFcyWm9Jb3gxanFvQ2xSaTV6MldPTkplazM1SklMRHdtX3RHVFZrZ2l6MlVjaXhCcHVCRVV4R3k3YTdEdE9fTmVlRDREV1Y4R0VHOWM0ejNOalRJSVZKMjVTbnRlZENfZEJnVko4dllEeUZPeWxTc2x5WjU5MzRqbDdCaTNfcmFXM0pVR1JUaXNDVzBiX2tVclhqanF1Rk5jbm9fWC1sUFdneUcwNXhkVmFyaGlXNGRFVzdScnhUZ25w",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T05:51:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB|OTHER|data-flat-gold-jobs-price-usa",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.574022+00:00",
-  "last_updated": "2026-10-02T12:57:48.821379+00:00",
+  "last_updated": "2026-10-14T12:18:02.219007+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.574074+00:00",
@@ -86,6 +129,21 @@
       "timestamp": "2026-10-02T12:57:48.821362+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:02.218982+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Economic Times, The Hindu BusinessLine Markets, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:02.218996+00:00",
+      "change": "categories added",
+      "detail": "MACRO"
+    },
+    {
+      "timestamp": "2026-10-14T12:18:02.219004+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 4"
     }
   ],
   "price_reaction": {}
