@@ -1,0 +1,116 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3102",
+  "title": "US September CPI exceeds expectations, metals fall across the board, LME aluminum, SHFE tin, coking coal and coke lead declines, silver futures plunge [Overnight Market]",
+  "summary": "US September CPI exceeds expectations, metals fall across the board, LME aluminum, SHFE tin, coking coal and coke lead declines, silver futures plunge [Overnight Market] Shanghai Metals Market",
+  "event_date": "2026-10-15",
+  "event_types": [
+    "MACRO"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are demand, input cost. Classified as macro.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [
+        "DEMAND"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "coking coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. The parts of the business most likely touched are demand. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "US September CPI exceeds expectations, metals fall across the board, LME aluminum, SHFE tin, coking coal and coke lead declines, silver futures plunge [Overnight Market]",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPOE5rMzZLeHFBUEVVandWY21HQndXdWgxMjVpYWN3RTRzTUVPVXZ2akdLSkFQR1VLSy1GOXlNUzF2czk0Ujc4NFN2b3JmMWNDLUwxR2VDRUZvQzg4dmtZeE83WUdQbEFzUHBBT1JQM1haQkllSWJlT0ZUVHVWVUJYWkpxMVRaM0lXY0FqMlMtTlVHZS1LeUtScVRMdndIcWVhWU5FcXZlUm9wdDMyUkJRbnhpcklYTVQ1MS1RaU9Ga3g5Um9DVkxvRHhGRmUyNEVwd2pCWkZ6ZE9LbjBzd1p3dmhtbGRZT2lIbl9iYVpjT3FfWnhTcjBSOS1IakU1SmlEVEZIZk56UGt1SnNiTmJvU0p6cDJwVXN0d1FPeUZRbElNYVJDVm5rVUNZSE9ONUtFQXpFNw",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T00:29:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Shanghai Metals Market",
+  "cluster_key": "COALINDIA+WAAREEENER|MACRO|cpi-exceeds-expectations-metals-september-usa",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-15T11:51:44.753257+00:00",
+  "last_updated": "2026-10-15T11:51:44.753363+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-15T11:51:44.753353+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

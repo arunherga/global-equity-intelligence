@@ -1,0 +1,135 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3128",
+  "title": "China 'dumped' aluminium windows and doors in Australia, report finds - ABC News & Headlines",
+  "summary": "China 'dumped' aluminium windows and doors in Australia, report finds ABC News & Headlines – Australian Broadcasting Corporation",
+  "event_date": "2026-10-15",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "aluminium over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium, and China. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Australia moves to curb dumped Chinese aluminium windows and doors",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONHN3U2hnWFZqZkJfQTlHeTFVc2RqQlpzZWZaUGRDWjg1UGNtdE9PamotQTFyMVNQWEh1UkVyS0kzTjBmUnVZZEJEVFBpem1QS09SMkx3ZFVTTHo4dWQ5QU44bVNlR2hHWDJTNjFtWUNaSjNTSk5pNzBHbEw3TndMNVd3Y3k5NlE5UElaWDNZN2FzY055UmdSdW9PT2VndGEwdHc",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T06:41:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "China 'dumped' aluminium windows and doors in Australia, report finds - ABC News & Headlines",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRlZMQ2tKSkFONGtkVGVISzlieFRmWVBadG92MUZQOFhrenFialJydXRYNWJDcEhaR091TWxkOVM0X3JXNTNxX09zS0pUOGpzbFl4MmpOWEd6dEI3YnFrQ1BydVprM2lhMXdMZWxhdXVrNGpnQUNfa3FnWGF5VV81WFVQdE9MSDZHclRxYUttUjlRUlMxRTRJbUtSUmdYRDNVV3hJMjFGcGdSV01tN1ZR",
+      "source_name": "ABC News & Headlines – Australian Broadcasting Corporation",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T06:23:06+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB+WAAREEENER|OTHER|aluminium-australia-china-doors-dumped-windows",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-15T11:53:35.986290+00:00",
+  "last_updated": "2026-10-15T11:53:35.986389+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-15T11:53:35.986379+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

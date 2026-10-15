@@ -106,6 +106,56 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -128,21 +178,51 @@
       "published": "2026-09-29T08:22:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ferrous scrap prices increase in October",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQVVhWm1QVVpzX2JoSkMtT1AxanhISnFxNlNqUXBXcjZwSWxrTVhMSGt6TnNUNlBXdWw1YzN2MWZ3dUM2UkJYYjVhby1uT3ZDS1dHSzQ1Smw2YTRmU0hLQUJ0MWdSUVM3RUJiR0ZaejAtbkRjY1BXcF9fNmVyRG4zYVc5Tmk0ZnlsUzllRUV1Zw",
+      "source_name": "Steel Market Update",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T18:30:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India: BigMint's ferrous scrap index rises INR 300/t d-o-d as steel prices strengthen",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSzFkQUVkNU5PV3dRcnFPTGlFRHQwWV8zUUQtZkFacndkUllZUDltekhIY3ZCZEN4aDhZTTFfSWRUZDI3MjJoUEMtcTVMc0FOcFY2SElqTFVqVVBsUHRsU0lnTDBFSnBUUHlud052MWlCZWNDN09OTUstZFVpWGx5VDNybk1rZ2NVYUNyNWl1STA5cG5yM1dubmRzMWhhNk1HU2hVQ3RaVW9UZkxSWkE4UTNfNVkzX3RlRkg2Smh5eVRkSEdIaUtqendn",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T13:39:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "JKIPL+MSTCLTD|COMMODITY|alang-india-inr-price-rise-scrap",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.747243+00:00",
-  "last_updated": "2026-09-29T13:08:35.747311+00:00",
+  "last_updated": "2026-10-15T12:01:53.934607+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.747306+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:53.934582+00:00",
+      "change": "sources added",
+      "detail": "BigMint, Steel Market Update"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:53.934602+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

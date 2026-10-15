@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-TMB-2026-0538",
+  "title": "Rupee hedging turmoil exposes strain in India's FX market",
+  "summary": "One-year hedging cost rises to 4.6% amid liquidity strain and market dislocation as traders struggle to unwind positions",
+  "event_date": "2026-10-15",
+  "event_types": [
+    "CURRENCY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer, geography exposure to traders, and India. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Rupee hedging turmoil exposes strain in India's FX market",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-hedging-turmoil-exposes-strain-in-indias-fx-market/article71587071.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-15T08:16:56+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "TMB|CURRENCY|exposes-hedging-india-rupee-strain-turmoil",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-15T11:47:11.811164+00:00",
+  "last_updated": "2026-10-15T11:47:11.811258+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-15T11:47:11.811245+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

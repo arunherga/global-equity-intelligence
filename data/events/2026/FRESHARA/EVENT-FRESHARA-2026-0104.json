@@ -4,21 +4,21 @@
   "summary": "Vegetable prices in Ukraine will rise by up to 20% in October: Experts cite the reasons Комерсант Український",
   "event_date": "2026-10-04",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "FRESHARA": {
       "ticker": "FRESHARA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,26 +29,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "vegetable prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "vegetable prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -62,21 +57,46 @@
       "published": "2026-10-04T16:08:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vegetable Prices Decreased in Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tQjh3aFA0UllSV05zYzJrWXUybjZnb2piR0tzbWlmS1ltZlNjWk91SnAzQTdaOHFSS0ZiZjFQbzZuSFdPTVFlai1SLXVyUVVRR0E0M0pTT002Q21WUFZORlJPZzZSbzRWTDhLSXFKeFh3U1hp",
+      "source_name": "Новини аграрного бізнесу",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T05:05:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Комерсант Український",
   "cluster_key": "FRESHARA|COMMODITY|20%-october-price-rise-ukraine-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T14:57:48.922014+00:00",
-  "last_updated": "2026-10-05T14:57:48.922084+00:00",
+  "last_updated": "2026-10-15T12:03:04.168085+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T14:57:48.922073+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:04.168055+00:00",
+      "change": "sources added",
+      "detail": "Новини аграрного бізнесу"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:04.168071+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:04.168080+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -56,32 +56,37 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.51,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "CASH_FLOW"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC AMC",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "DIVIDEND is favourable for the company",
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -90,7 +95,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC AMC. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -104,21 +109,41 @@
       "published": "2026-10-12T18:18:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC AMC Q2 Results: Net profit up 4% YoY to ₹7.5 billion",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMWkwUkpMdElvZUh2Nk9NazhpSUlLcnJkOFRNMlhsZXFkZ010dm95eEpmV2NtcUVNQWhiRm5pVnhGY3lNTHgxS0Z6UXRucmkxY1NZR0l0T0RDa2E4cGtFVGo2VmpTNHlyTVRKei1pRlk0RVFwNzBwRTJvcWpVWjlQa2p2MUpSQTEzZklIQ25YaVBBMVQ0eW1yQWtQZ1JENG5xcHRsT2JzcjJUQzIt",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T10:05:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "HDFCBANK+TMB|DIVIDEND+EARNINGS|bank-hdfc-net-profit-result-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:31:09.998771+00:00",
-  "last_updated": "2026-10-13T14:31:09.998859+00:00",
+  "last_updated": "2026-10-15T12:03:48.004430+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:31:09.998848+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:48.004406+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:48.004424+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

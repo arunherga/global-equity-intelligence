@@ -10,10 +10,10 @@
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -81,16 +82,26 @@
       "published": "2026-10-07T02:09:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Pune Vegetable Prices Rise 20% As Heat Hits Supply, Potato Rates Double",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNU0UzSFc2aWdLU25ydU1DU0t0YVhzVkhiUnlSNUI3RTlTOGtjZDNMdjhwSTUxcGFkTlREUjh6c2NpU3pEekdiemRZQ3FpanNHZTNfcUZPUzRUMm1NbEJ5YUlBeUM2NTA4bjlFSmNTTmJtS01XbFVmUkRwV2RVeC15U2I4czJlZGdsRkZLaV9NZS1ZenBlbE41dzVIX0FHeUFZemsw",
+      "source_name": "Pune Mirror",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:27:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Ekantipur",
   "cluster_key": "FRESHARA|COMMODITY|continuous-disrupts-price-rainfall-rise-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.624396+00:00",
-  "last_updated": "2026-10-07T13:51:45.434248+00:00",
+  "last_updated": "2026-10-15T12:03:32.496344+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.624448+00:00",
@@ -106,6 +117,16 @@
       "timestamp": "2026-10-07T13:51:45.434230+00:00",
       "change": "sources added",
       "detail": "Urban Acres"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:32.496323+00:00",
+      "change": "sources added",
+      "detail": "Pune Mirror"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:32.496339+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 3 -> 5"
     }
   ],
   "price_reaction": {}

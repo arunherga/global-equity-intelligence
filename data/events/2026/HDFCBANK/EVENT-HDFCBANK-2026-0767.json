@@ -5,22 +5,19 @@
   "event_date": "2026-10-14",
   "event_types": [
     "EARNINGS",
-    "DIVIDEND"
+    "DIVIDEND",
+    "OTHER"
   ],
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 6,
+      "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.51,
-      "business_impacts": [
-        "REVENUE",
-        "MARGIN",
-        "CASH_FLOW"
-      ],
-      "time_horizon": "IMMEDIATE",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -32,14 +29,11 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "DIVIDEND is favourable for the company",
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -47,12 +41,9 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -76,21 +67,46 @@
       "published": "2026-10-14T10:45:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDB Financial Services' Q2 Profit Jumps 34%",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQmYwWTk0LTlxOHdtZjk4Sm1CS3kwMVVoLThtQnJITGkxd0hiekkzblN2VzVOQmJ4d2p6emNZRGhBQ2xjdVREemZmUVBCNXFmcUlTRFRCaXluWHhEU0RocnJHOGRxLUFzbnJhdTlNTUw4QW0ySDkwNGl3NERIakplUDB4dy1IbHFicVNDN2ZISm44SFFGMGw1RlJScUhlaVE",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T04:14:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK|DIVIDEND+EARNINGS|financial-hdb-net-profit-results-services",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-14T12:14:40.585110+00:00",
-  "last_updated": "2026-10-14T12:14:40.585185+00:00",
+  "last_updated": "2026-10-15T12:03:00.496687+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:14:40.585177+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:00.496659+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:00.496675+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:00.496682+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

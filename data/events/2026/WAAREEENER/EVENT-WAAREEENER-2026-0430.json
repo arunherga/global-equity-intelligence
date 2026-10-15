@@ -9,30 +9,31 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.55,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.62,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "solar modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
+          "exposure_type": "COMPETITOR",
+          "term": "Vikram Solar",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
           "exposure_type": "PRODUCT",
-          "term": "PV modules",
+          "term": "TOPCon modules",
           "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
+          "weight": 1.7,
+          "detail": "in headline"
         },
         {
           "exposure_type": "TECHNOLOGY",
@@ -43,15 +44,17 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Strategically important competitor development"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "a competitor (Vikram Solar) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
         "two independent sources",
-        "sector relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -60,8 +63,26 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules, and PV modules. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Vikram Solar, and TOPCon modules. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Slight opportunity cost for domestic order conversion, as a key competitor captures 187 MW of TOPCon demand in Karnataka and Tamil Nadu, though direct impact on overall revenue is modest relative to Waaree's total manufacturing capacity.",
+        "margin_effect": "Unclear to slightly negative, as intensified domestic competition for utility-scale TOPCon orders could put modest downward pressure on domestic module average selling prices (ASPs).",
+        "cost_effect": "No direct impact on Waaree's input or operating cost structure.",
+        "competitive_effect": "Highlights heightened competition in the high-efficiency TOPCon segment from domestic peer Vikram Solar, signaling that rivals are successfully commercializing TOPCon capacity in Indian utility markets.",
+        "regulatory_effect": "No direct regulatory changes, though domestic supply contracts reinforce compliance with ALMM (Approved List of Models and Manufacturers) guidelines.",
+        "short_term": "Minimal immediate financial impact, but highlights competitive friction in domestic bidding for regional utility-scale projects over the next 0-3 months.",
+        "medium_long_term": "Reinforces the industry-wide transition from Mono PERC to TOPCon modules, requiring Waaree to maintain high execution speeds on its own TOPCon capacity expansions to defend market share.",
+        "second_order_effects": "Potential margin compression across the domestic solar module sector if top-tier domestic manufacturers engage in aggressive price competition to secure TOPCon off-take contracts.",
+        "key_uncertainty": "Whether Waaree participated in and lost this specific bid on price/terms, or preferred to reserve capacity for higher-margin export markets.",
+        "monitor_next": [
+          "Waaree Energies' subsequent domestic order win announcements and total order book growth.",
+          "Domestic TOPCon vs. Mono PERC module pricing spreads in Indian utility tenders.",
+          "Execution milestones of Waaree's integrated TOPCon cell and module expansion plans.",
+          "Market share trends among ALMM-listed domestic module manufacturers in regional state tenders."
+        ]
+      }
     }
   },
   "sources": [
@@ -244,16 +265,46 @@
       "published": "2026-10-06T12:43:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vikram Solar secures 187 MW TOPCon module supply order",
+      "url": "https://www.pv-magazine-india.com/2026/10/15/vikram-solar-secures-187-mw-topcon-module-supply-order",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-15T11:35:13+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Vikram Solar Secures 187 MW Module Order For Karnataka And Tamil Nadu Projects",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUEZiSlJLQld3TnVBWW5RdUVFQlJ2bERKY2JEa1ZzMllSZHY3cTFBbHBwOXpzcW9PMjJETG5Oa3ZEbEt0cHlwUlVXNWVIbnpvbjdtZnJXUDdaNWhtM1JodE55ZG9acmhncllCOG0ydUN4ZmNfNGxObnZIdkFYUmVyV1NoLXRVRGFiN0pMcGw5TGtBNjVUVERDQXg4T3NRRFFGX1l1emRpWQ",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T09:57:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Vikram Solar Wins 187 MW Solar Module Order; Shares Fall 2.96%",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOM3FZbXA5eG1sb2JkdURqVXVPZU5VWEIyOU5JY2JHTVJ2RlZnQTRtVnJCczdLQU5JcVV4SzFIczkzS1F1SVZTRnZMVDJhWC1xMWtOYkd1N2d2UWNXN3I1TTRIdXBMbFZmOFdfV1djQ19WYTdRTnJ2THFhWUI5SXplQ1ZaQTZpaG0yYVN2LWpobUZRRkx6N29KTQ",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T10:14:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 18,
+  "article_count": 21,
   "source_count": 2,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|ORDER_WIN|400-n-type-solar-topcon-vikram-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.653087+00:00",
-  "last_updated": "2026-10-06T13:46:01.913195+00:00",
+  "last_updated": "2026-10-15T12:01:29.622548+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.653193+00:00",
@@ -299,6 +350,16 @@
       "timestamp": "2026-10-06T13:46:01.913177+00:00",
       "change": "sources added",
       "detail": "Free Press Journal, Machine Maker, PV Magazine India, Sahi"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:29.622524+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky, PV Magazine India, Sahi"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:29.622543+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 8"
     }
   ],
   "price_reaction": {}

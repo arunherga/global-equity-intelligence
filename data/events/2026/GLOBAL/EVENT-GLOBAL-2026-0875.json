@@ -14,14 +14,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.15,
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REGULATION"
+        "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -29,44 +27,27 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
         "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
+        "financial implication is quantified",
         "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and interest rates. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -74,14 +55,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.15,
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REGULATION"
+        "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -89,44 +68,27 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
         "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
+        "financial implication is quantified",
         "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and interest rates. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -150,16 +112,26 @@
       "published": "2026-09-28T06:45:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Inflation May Hit 7%, RBI Could Hike Rates By 150 Bps",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbEN3UG9qNDlCQjlmVF9yMC1BYVVZRUZTNER5VUE3RnM4eDJSX3VtTDBwbWhkZmVIa21Lekh4eWZOUWZMaF9iZU9yMm9fcU5GN2l6V2VRek1CZDFpS3JIVE1NU1ZUNUktODh0QnV4eTRqcTdwcGxNTFUxbGZySzdYYTJSNUxWN2ljN3hzanF6cFJIMVJnV3R0bzREcw",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T23:52:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Hans India",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|cap-interest-likely-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.519542+00:00",
-  "last_updated": "2026-09-28T20:44:33.347045+00:00",
+  "last_updated": "2026-10-15T12:02:40.935526+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.519603+00:00",
@@ -170,6 +142,21 @@
       "timestamp": "2026-09-28T20:44:33.347024+00:00",
       "change": "sources added",
       "detail": "Free Press Journal"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:40.935495+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:40.935514+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:40.935521+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

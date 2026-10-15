@@ -9,14 +9,21 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Bharat Coking Coal",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "coking coal",
@@ -26,22 +33,22 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -65,16 +72,36 @@
       "published": "2026-10-09T07:08:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BHARAT COKING COAL LTD Share Price",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13MHNIelNXNWlvX2JJLTBBTnk4TldBQ1FORVQzeVNzVEtlRlFCclFrOGsxTEhkZzhuZ2JtQjkwa1dnM2JKMVhmckVjcmtHVUswYjZRVjd2c1AxcHFPdzJLMWVQTDFUckxwa3dIbjZn",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T12:52:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bharat Coking Coal - Vedanta Power among 6 stocks showing RSI trending up",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTUpxWWlwbWdqbTVmLV9TVkpSbE00cUM0S1R0VndFaGY2S2dFWUpKYlN1SmRjOXFCb1pfcmtmeGtnNHptaGU2RGtfY3hON055SDRQWmxtOGk1VmdlOG9waFl4T190R3RLVzVINDRGVG4tZWdYX0JtRnE4VG9jZ1RidGlKd1lqV2dWWm9xLVBpU2VnYmVSMXZQSV9pa1pRR3NuYTJuVHVmbFdFQ2R3Z1lRSXVRMmkzc3pQY3BUUFYzYlJ2Y1FiWUpzcHM3YmN2VlFpZkdZTXlTSHM0YWs",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T04:09:21+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "COALINDIA|OTHER|coal-coking-performance-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T19:03:49.728199+00:00",
-  "last_updated": "2026-10-09T13:46:09.604817+00:00",
+  "last_updated": "2026-10-15T12:01:47.869071+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T19:03:49.728256+00:00",
@@ -85,6 +112,16 @@
       "timestamp": "2026-10-09T13:46:09.604800+00:00",
       "change": "sources added",
       "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:47.869048+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times, Upstox"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:47.869066+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

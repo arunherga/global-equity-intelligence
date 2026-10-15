@@ -1,0 +1,226 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3025",
+  "title": "Steel prices rise for third consecutive month on cost push",
+  "summary": "The ongoing geo-political uncertainty has pushed up cost on imported key raw materials including coking and thermal coal, ferro-alloys besides the rise in shipping cost",
+  "event_date": "2026-10-14",
+  "event_types": [
+    "COMMODITY",
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.54,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.47,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "thermal coal",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to thermal coal. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.54,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Steel prices rise for third consecutive month on cost push",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/steel-prices-rise-for-third-consecutive-month-on-cost-push/article71583834.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-14T14:07:03+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Steel prices rise for third consecutive month on cost push",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFNtSzIyYmJPSW1UbEJDMDNna3RTY0c0cXhMTnJpalpUbXdGZ2JwYU5fTDg4VU9wdGlvRTNNTnVacjBfbXlZMGYzRDdVYlJNc09oX3poeEJqNkRMWnUxOFcyZHVoUy1FejlvY2JMeHh6VjhHRXpxWUVmbnJVWHBVdWpFazhhZmNoZm1NaWtCM2FVWF9zcmlCblRmS2FDOWIydHlfVm9RSWdUNWVfR2N5TERCM0lXT1YzekE2YUtDWnoxR0JZVzdvNEVXWndablRf0gHXAUFVX3lxTE5MWmQxYW1NZExtVXdTMmVaOURGQjE3el83TXVxcGNXMng0bDJabS1scUJKRWY1bGpqZndRQ0pRejRYNGU3ZmxzeU8tM2ozUzR4VEdXcWgtR2NJYmNEamdoLUdYblhFOTJLSkxONE1DZndxRGViTXRjS2NhOEVpMDVYT1lhU1RuQ2d6LUxSamVpQ0NmeVpiYV9WdVQ1ai1nak9OTjVOZzVkV1NmWm5ocTNZMUZrb0hoNlNYNVdVQUtka0poUEgwZUJ3Qk1GRFZGX0tLNmtOX3M0",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T14:07:03+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "ASHOKA+COALINDIA+JKIPL+MSTCLTD|COMMODITY+RAW_MATERIAL|consecutive-month-price-rise-steel-third",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-15T11:46:50.158912+00:00",
+  "last_updated": "2026-10-15T11:46:50.159019+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-15T11:46:50.159009+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 2 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

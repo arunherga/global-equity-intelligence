@@ -7,7 +7,8 @@
     "TENDER",
     "REGULATORY",
     "LEGAL",
-    "OTHER"
+    "OTHER",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
@@ -157,16 +158,26 @@
       "published": "2026-10-13T14:30:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Conversion/Switch of Government of India Securities",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63806",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-14T19:20:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|TENDER|announce-government-india-omo-rbi-sale",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-23T12:25:52.192667+00:00",
-  "last_updated": "2026-10-13T14:42:06.910532+00:00",
+  "last_updated": "2026-10-15T12:01:00.751842+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-23T12:25:52.192721+00:00",
@@ -202,6 +213,16 @@
       "timestamp": "2026-10-13T14:42:06.910519+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:00.751813+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:00.751831+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
     }
   ],
   "price_reaction": {}

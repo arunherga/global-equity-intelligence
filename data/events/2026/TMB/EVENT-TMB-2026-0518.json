@@ -9,41 +9,47 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
       "business_impacts": [
-        "CUSTOMERS"
+        "PRICING"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from traders"
+        "gold prices over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -231,16 +237,106 @@
       "published": "2026-10-14T04:52:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India October 15: Gold prices down in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-october-15-2026/article71587167.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-15T08:09:13+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold Rate Today In Thanjavur, Check Live 22 And 24 Carat Gold Price",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ITEtRTEN0bHBweW4ybDlvcV9YOEtMT1ZJeGJFc1FySGJOTzJiNnhURFJZVTZTSUFSYjd2cXFOX1FSbFlTNExKTGdlU21SYUJ5TlZ2bFdHX2NjNW1EZzB1MjRDVWtTeWxHa1otWmttY1F1V196d1E",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T10:07:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 15: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOMmdMcFI0NmYtamxPbElXY3QwQWZVeUZ4ajBiejdqbmQ1b3N4V1pYVG5zT283R0FNOENDdkhaZ29PNVhTSHRLZlVET2hPcGdWcEh2Umt1TnVJNG5PSGpxZmxtTENidS1QWVRsMTdZRExIdkxtOWsybmswM3Nmd1NmWXdSeXk1bDBIYjJpamRZa2FUSFM0dkxvOXlEWnJpeGhzSGxPU3NkNndwZmhlMGU1UWpubWRlRGItcmdjRzEwRHFBRFpkcW9ZTEo5NWtlaEN3UlJzd0FJSHRLM2JLN25OSU1BMFo0bFhacktKYlZ2Zzd2NXpPTzBUOVBmNDZZTWU4Vk5YN2kyMklsNGIzWUFsSWRveGc0ZWZkZ2N0SS1WZUlYaHZWd1FDZ9IBqAJBVV95cUxOMmdMcFI0NmYtamxPbElXY3QwQWZVeUZ4ajBiejdqbmQ1b3N4V1pYVG5zT283R0FNOENDdkhaZ29PNVhTSHRLZlVET2hPcGdWcEh2Umt1TnVJNG5PSGpxZmxtTENidS1QWVRsMTdZRExIdkxtOWsybmswM3Nmd1NmWXdSeXk1bDBIYjJpamRZa2FUSFM0dkxvOXlEWnJpeGhzSGxPU3NkNndwZmhlMGU1UWpubWRlRGItcmdjRzEwRHFBRFpkcW9ZTEo5NWtlaEN3UlJzd0FJSHRLM2JLN25OSU1BMFo0bFhacktKYlZ2Zzd2NXpPTzBUOVBmNDZZTWU4Vk5YN2kyMklsNGIzWUFsSWRveGc0ZWZkZ2N0SS1WZUlYaHZWd1FDZw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:01:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 15: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOZ2YtQk1TOEstbS00RHIxbkF3cmdDRUI1cHpyUzVWNlplODBuYlk4aTVYUFVtV3FTMzNsbHIxT3JObVlBaWdWay1FSnpGQlJtTlJVUUZ3OXFIdDRoZ3AyWVRSM01CLW1PRFNNcUU1dldTQ0pnWDZvSjdKTUVQN0pUSEhVSEdFUHZNTEhya3VMb05NQkxlb3RGS2Z4QlkyeW9RTW80MjUxMmhhMXFwN19nVDJoOXVSdFR1UHNCSkk1NzFTMFNRcEs3XzdCbFRQaTFzYk9jWDN1NFZHTm9EeV8xSTdTTndlYVJGaXFfajlsZjNHc1FaeF9jb0duME9IM19MdGtEeUtDd2ZoYTlNeXRhVHpnck_SAZsCQVVfeXFMUDh4VkwyTUFqNDBzdkZYV3BINXAzMENCQmRPckVRODhyX2xwa1NBRmZYZUpNd3ZFRUpKZWdsUm1Ua0VXYlhYVS1oaG5KbzRoUGF1ZHdJRG1wVFdOOGRJeDluNHZmaTlvYXQ5OVhHQlhsM2lSN2psNm16ZDI5RXNvaFFra2l1dGZEQjdfNm14OVZPUVE1V1VZQ0ItNkgxQWhiaGRXY09kbUNQTmN6RDZQblBrRlN5OEFtTXpSbGJhZHhjaEJjRjdNeEMtRmhlMHlidHZOaDAtWkVnUGx6d2tRcm16N0dZWXc5WFdBcWsxYXZWMnV1cHhadVczUWpjUkdpTEN0NElxNlBMS1NBUkJrNHBvc1hUaldic1hzNA",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:01:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in India: Rates on October 15",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcVk4cVFkOS10cFAzSHdXNHpYb2NTQzBoQ0sxUUpFc1RkWXJTcW9ra0xXVktDTTFCWWU0NldlbTBscEtOZlBoNW1lS0VEN25QdGI0Qkl5cGhsZ2FiaXUzcjRyd2Rhd0NoLVlKY3NvVWVEMkhfM0RVVTJydzZ3ck9SZG02Wkp3UnNWaDJwbVVXckN3dDBPMHhwUU9IMk5lTTJ6VW11Q2dR",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T04:35:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India October 15: Gold prices down in Delhi, Mumbai, Kolkata, Chennai, Bengaluru",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-october-15-2026/article71587166.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-15T08:09:53+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Petrol and diesel prices today, October 15: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcWZDNmJaNXp1azgyUEwzZ3ZHR2xLVWhMeU1aV2w3MF9UTzlzTGhQbG5xQ2xBX3FwZW5ReXNXemJ2RnF3a25uTFJONi1EXzRWbHlKM2VObDNVeGsxcnhjMlkwczNqajhBYmpBaHpCYnFBR3RuaEYtZXZINFZOX0R2U2JFbkJuQ1JHa1ZUWUFEaUNWbkdfWWlJLWFRQ1hhaTRaQm1nZVVWTmYwTkVwTVZuNjRQbzNuQ25YSlJDeDdqU3U3MEpGM2tydGNkWXFaaHBGaGp2cDFGMldOSjNWVTQ1X9IB5gFBVV95cUxPY01lZ0RyV0xWeGM2LVBxMzV4LW10UV9HUzNwcmhyLUpxVkhVOVFrYkU2eDVUQUpIQ2p6RTdEZ3gyZVAzSTBNU3ZMaW9xZmh3c3hwSTJoT0QtN3dQd00xeVFaRnNTSHNSVnUxVUh4aUQtZ2YzU000aVk5eVdwaVFnUVY2aDl3c0lvUHJ3c0d2VzZ1cnJXWWw1bUR1UHhFYlVuMTVkYjFCdmk5aVM5Q185RW9QUXdvSmhnRUdQcDFXV2Y2RlZmVVZnZmZLanRHZmZOdEx0a3Y0VXMzZW9XV2tKTHB5QzRTUQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T01:24:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Check out petrol and diesel prices in Chennai on October 15, 2026",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdFBZMXpUN0tpX2NPX1pSRTFEem02dGtybWZqRXZrZkl6V1JiSW5sRXBXT1hTT1hSQkdYckdqYWFWUVF3T2xCT01JN3ZpRnU4cHNETWFlUjdIX3dtTWVBMG80M3ZzVGZtMFk4Mmpha1dqbDE4WFdyYm5MTTlWQmlKU1JLeHJMV2p5NHZqbWpGZDV4SWpoZkd2RVpBckdPSEl50gGuAUFVX3lxTE5sdVNNazQxNVp2WjhNbGx5bXBWY2xlWlZxTWo5YjkzbW0tN1ZqdU53YzFqU2U0RFdZT3RFM0hwVHhLWGNCZmdON1pFME9HNGNiaWF0QnJQVUw4U1VTVTQ2bjdpWU1MZlpKdFA2cHN5UFEwNGs0QXQ0aXA4c2Zxb1dKU1NYMlgwWFZOOWEyRnMzSTViWVRuQmQ1RG9ReDA1dFlzMXUySndCVUljNnpPUQ",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T02:30:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, diesel prices today (October 15): Check latest rates in Delhi, Mumbai, Chennai, Kolkata & more",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNOHJxSTlFNmF4T2c1Ykl6Q1NNSFhnQmtRcHZWaU1DS1BBRjFzVHBxeldGamtMeDFvUHc3dXFMLWNpMjkybnVqbFVyd2JkQjh3ZTRBVG9ndXZBeVRUZktSQm40M3JtRHAwQU9POHhZd1NvUlAtWGNOV09CV0otb1plZkhMTmx3MjRoWmxhVUc0ZllYbWpGclFnaC1CMjVUX1BybThiWGZxRnVMV2NBMkxKZXlDWnFORGpzb2FrVGtyQzdQSnNPM3kyZTZxa0NBMTZTSkxjNDNiUE44ekpfX0hBMW9WQWNzVEXSAewBQVVfeXFMUGh2ZVgyUnNCbUZWSUNRSENsb0VVR2xoTWRpdUowQUc2OGdONElxcFgyTDNIRUNMbjI2WF9kdUJRSzRVWkowYkNhWGF2UUROamdyNXk5bTBLT3d1R0RLODBLbVZlYW8xQWJ2WURVVHFrdjB0UVhTU3VWTHZHWXRuVThxNGVKRWhfM2NBaDYyT1JZcTNJSlZiNnR0WDQ4aVlyYmdFYzlSeXVhWlpPZjNLMW1KNWEyZmxvWUUyREZtQUE5TVMyZ09HSTVEdlJ1LTEtREdKQmJyT3MwV1g4N29vYnZjUlBoOUpXMHVqNkQ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T02:50:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 16,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-october-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:01:22.158272+00:00",
-  "last_updated": "2026-10-14T12:18:37.885052+00:00",
+  "last_updated": "2026-10-15T12:02:50.798459+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:01:22.158391+00:00",
@@ -271,6 +367,31 @@
       "timestamp": "2026-10-14T12:18:37.885048+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:12.503999+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, FXStreet, NDTV Profit, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:12.504019+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-15T12:01:13.110672+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:45.153580+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:50.798439+00:00",
+      "change": "sources added",
+      "detail": "Business Today, DT Next"
     }
   ],
   "price_reaction": {}

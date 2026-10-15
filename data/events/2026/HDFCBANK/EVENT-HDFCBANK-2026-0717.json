@@ -126,6 +126,142 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-4 Opinion, preview or stock-tip piece",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "Wipro's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Wipro, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "IRB Infrastructure",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "IRB Infrastructure's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to IRB Infrastructure, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -138,21 +274,51 @@
       "published": "2026-10-13T02:30:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks To Buy or Sell Today, October 15, 2026: Wipro, Coal India and IRB Infrastructure Among Shares Likely",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPeF9YMHRxN3BTbGM4MXB0OGpmN2dGNFprdlpueDlNcVMyU2hjV3JUbVF1MWFFZHFaZVdiNlEyODRZajJzQV9Ec1NRR3FmTExkY0lQcThnY1k5Tm5Ic25xTnllNmxuZUJGanBaV2ppcWg3Z2VNVmhVMTUySzBIbFVBZWV5UW1DZGVyWVFWSmdmUm5DOEV6Q1FJd3BPWEg2a1NVeDlRcUFWejI1NjBpcDNLYmVTTkExZzBXbjhnQ2NERllPSVhRcFdFaUZoa2tMME5nS1g2ZThEcGdOQVpRRklmZzF4MDRuWU1DU3ZPUEFqb0VBUjh1aWpHTTZSeTh0YjB1amtkM3RnVE5YdERnZjVnLXBNZ9IBmAJBVV95cUxPZzREdUJLNzhvVTFJLTFqRllpa2hXV0NUUXo0US16S2dpM0RmdGRDTUhabl9XYXJTYnctSUlBdjBrYWwwbjhIZVNCREF2aGtCY2hIS2VQanpKaVVubXBaQzhsS2tjMUJsSS1VX0ZXbHlwRzlQRnJBZTdQZUhUMjUwVzlRU3FXbGpQTGNZSDhtdGNGOFpYM0QtSFo2MUM1cVdNQy1RM1NYZ3pnOU1Uekh4R1g3TWE4ZGs3OUFlMmNMMjVqQWQ5aHRrSDhPOUJNV3M1amtxeGlJUTZDWFBocnZveGo3WU9MenFtQjNDXzltUkp5SzdxVDhsRnNUdGl3Z3p2REdwQUxXb2RfX3VRbUZrS2Y2RUYtSFZi",
+      "source_name": "LatestLY",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T02:30:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "LatestLY",
   "cluster_key": "HDFCBANK+MSTCLTD+TMB|OTHER|2026-buy-october-sell-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:32:33.498051+00:00",
-  "last_updated": "2026-10-13T14:32:33.498160+00:00",
+  "last_updated": "2026-10-15T12:02:51.484594+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:32:33.498150+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:51.484561+00:00",
+      "change": "sources added",
+      "detail": "LatestLY"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:51.484580+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (DIRECT)"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:51.484586+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:51.484590+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -9,24 +9,16 @@
   "stocks": {
     "FRESHARA": {
       "ticker": "FRESHARA",
-      "relationship": "INDIRECT",
+      "relationship": "MACRO",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.26,
       "business_impacts": [
-        "DEMAND",
-        "INPUT_COST"
+        "DEMAND"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMMODITY",
-          "term": "vegetable prices",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
-        },
         {
           "exposure_type": "MACRO",
           "term": "food inflation",
@@ -43,21 +35,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "macro relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "vegetable prices over the next few weeks"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to vegetable prices, and food inflation. The parts of the business most likely touched are demand, input cost. Classified as macro.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to food inflation, and India. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -71,21 +64,41 @@
       "published": "2026-10-06T08:05:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nestlé India says rising inflation, particularly food inflation, is a reality",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNY3FsTHY5VXdlLWhpaVBfS0dNUWRiVEtXYU1RSjAwVmFTNlh4WnpKdkxoanNIczdGRXhLNWVPbl80TmlvM3V2Z1BmRUNjeG1NVFlodDhuaFRQbDJwYnFGRHpqQzhGcEFqWHVha014dUViOU5lQ3FleWZGM2wxbFkzMjY2clBYdGJQMThfVXhCMzBSbUZsVnFCVU9lZEgzUGJobm1tTnRreklqN3lhdUp0NVVhSWR6a0k1RWc1T29sMEt2NVZ1V1FnREQxYllsdF9rSDhKMGMwaHJVN2N5eGQ4VXhHYVFSVXJJdGd1UUZhamVUUdIB8gFBVV95cUxNY3FsTHY5VXdlLWhpaVBfS0dNUWRiVEtXYU1RSjAwVmFTNlh4WnpKdkxoanNIczdGRXhLNWVPbl80TmlvM3V2Z1BmRUNjeG1NVFlodDhuaFRQbDJwYnFGRHpqQzhGcEFqWHVha014dUViOU5lQ3FleWZGM2wxbFkzMjY2clBYdGJQMThfVXhCMzBSbUZsVnFCVU9lZEgzUGJobm1tTnRreklqN3lhdUp0NVVhSWR6a0k1RWc1T29sMEt2NVZ1V1FnREQxYllsdF9rSDhKMGMwaHJVN2N5eGQ4VXhHYVFSVXJJdGd1UUZhamVUUQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:53:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BusinessLine",
   "cluster_key": "FRESHARA|MACRO|again-food-inflation-rising-vegetable-watch.",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:37:27.298105+00:00",
-  "last_updated": "2026-10-06T13:37:27.298192+00:00",
+  "last_updated": "2026-10-15T12:03:37.773911+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:37:27.298183+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:37.773888+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:37.773906+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

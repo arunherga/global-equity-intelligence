@@ -61,6 +61,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply, exports. Classified as other.",
       "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "wealth management",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to wealth management. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -93,16 +131,36 @@
       "published": "2026-10-08T17:32:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. $CRM Stock Purchased by Sanders Morris Harris LLC",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUjN3RUU5VDBIbjFUUHA4aGFLTXotS0Z1TnlfVzhRcnVKbWJBZzJIVjg0NTBLZjNjUnBicWd1WXpyM3JOOTRyU0Jmd1lkRW45QTlkSGFEU0wzVzhaY0VJX3Q0N2FfdjlrWHBycGJ6ZDlNS2ZKSDZvUUxQOVZJTTlDSW1TT2d6RkJOTlFZNDhyT0FkOG9xLUUyaG00bkpIVEVfano1V0l4LUhtdGNtVzFGcU80NjdtSEV4V2ZhcFhUOXRpZw",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T23:38:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. $CRM Shares Newly Purchased by B.A. Schrock Wealth Management Inc.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd2VUdGd1aFVjNEZ5d0s3a2lmTG9wM05RZ2NqMnVTcUdWT3hmVU5ZR1ZVbklQajgyV1NkNV92UExuNk1ZQ2xEaDNuTkZCLXpmMlFwMjF1UHFGZER6OHZ4OFBmczFISy1qQUp0RHluRU9lMnZYckxDSDNORkswLUJ4TXdWdS1xTUtmaGRfM1hqc0xtT2hmY0cyVDJQa3BYSElLa0lyZ0tXT2h6UEg0VlBHUnZ2QVl6UnRnN2dkNlVUc0xraUc2SGYwc2ZrOVRtLXJKejdLWg",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T11:33:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "KSOLVES|OTHER|crm-envestnet-inc.-purchased-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-25T12:56:11.018399+00:00",
-  "last_updated": "2026-10-08T19:27:33.519041+00:00",
+  "last_updated": "2026-10-15T12:03:56.341579+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:11.018445+00:00",
@@ -123,6 +181,21 @@
       "timestamp": "2026-10-08T19:27:33.519038+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 2 -> 4"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:40.452517+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:56.341555+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:56.341574+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (SECTOR)"
     }
   ],
   "price_reaction": {}

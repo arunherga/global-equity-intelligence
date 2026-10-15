@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -32,17 +39,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to HDFC Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -95,16 +102,26 @@
       "published": "2026-10-05T22:52:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q1FY27: Jefferies, Bernstein Stay Bullish on Strong Loan and Deposit Growth",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSnFzMnN6RklvQzB5UE51NGIxQkRWeDdGMzBfOHVzR3M1NS1mUndxQVBGNDd2cm9HM2FiVUgtN3RRcTlwZHZDVGZIUDFqTzBQQjB1cUZhWEd5MW5pNjFuQlVaR0toNjJyZ2lxTTNiVnJWQ3liU1U3azBYRkQxU1NPd3lOZXRaWmhOcXYxWllORkpyUmtldFc1YTZ2V3VtVkpsNkh2S3JXeVNVUEFNZ0pNZXc1V1pKMWZi",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T19:33:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-hdfc-margin-profit-q1fy27-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.365969+00:00",
-  "last_updated": "2026-10-06T13:46:11.053486+00:00",
+  "last_updated": "2026-10-15T12:02:25.395875+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.366019+00:00",
@@ -115,6 +132,16 @@
       "timestamp": "2026-10-06T13:46:11.053469+00:00",
       "change": "sources added",
       "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:25.395849+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:25.395868+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

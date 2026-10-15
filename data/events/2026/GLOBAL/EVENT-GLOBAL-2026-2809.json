@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -114,16 +105,36 @@
       "published": "2026-10-14T09:32:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank schedules October 17 results: what it means for IBN stock - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQUJMRGxJaC14eXZtdmF3bU81S01zYVcxTkFkX0Z4ODVzWDg2NGJmNGlaUGRXakp2d2U2LUtxVTNFcjFsU0ptaUZFUFhoZ0FEWlZaY3NWQkw5Ul9qTzRXS2JCUEhzWFJRRWZXemZGaHRDS2hWT0RpOWgzMnhUS0xCMjBVMm1tZUlCazZiYnNmanJ6b1BaZU1VOHgxa2tFUFMyWHNZMVl4WU9yWm1nZTU0MVNPQ3hCVW5kVFNqQXdzSldQYlV6akpOM3hB",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:12:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank schedules October 17 results. HDFC Bank stock trades at EUR 20.50 - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUEs0R1JIZU1JcXh5Z1pCYmNtQ3ZhQzQ4UDhsS3lVQWlaM0xITk5SSGpjZXpsTkxjem9hVlBCTVBwb0l6TFNpRm1hcEtubW9vZWUzQi0tUzJhS0NScjRxbUM5TkNvdGFLbjlZSERjV0NTczIxZm82RWdMZGJhZk55T3dwMTRiMXpfVGpYcmo1bFh4VkJGMTdSQ2gyMGxFaFN1SmVWVV93bVl1UHpUTVhpeFhQQ0U2YWVHNkl3YktQUXY3WmlYaWhWN0pHUQ",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T10:03:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "ad-hoc-news.de",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-icici-icici-results-schedules-second-quarter",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:35:29.789329+00:00",
-  "last_updated": "2026-10-14T12:19:21.993035+00:00",
+  "last_updated": "2026-10-15T12:03:47.577254+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:35:29.789414+00:00",
@@ -139,6 +150,21 @@
       "timestamp": "2026-10-14T12:19:21.993019+00:00",
       "change": "sources added",
       "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:29.325192+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:47.577228+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:47.577248+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -4,19 +4,21 @@
   "summary": "Banks are taking a conservative approach to forex hedging after RBI’s latest measures, with oil demand shifting out of the spot market, forward activity turning cautious and lenders flagging possible double counting of the 20 per cent reserve. FEDAI is seeking clarity, which bankers expect within days.",
   "event_date": "2026-10-14",
   "event_types": [
-    "CURRENCY"
+    "CURRENCY",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,33 +32,38 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection"
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -70,21 +77,25 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection"
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -108,21 +119,51 @@
       "published": "2026-10-14T07:43:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI extends 20% cash reserve rule to banks’ own forex hedges, tightens NDF trading",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTzJuUlF6SXE0STE3RHpZcjNuRm9ZTUN2VFlwWTFLYlpVcTJtS3J4VW5Yam1MeTJ0ajItZkVXX00wQ2o2eTdnMHhpdmhlUFRfcG5aeW1QTVlicGpvSlVTY3NGRVJDejd5d0FJZ1R2MnRwT2NybEh1M25Ncl84eU9sUUNfcjEzUzNybGUyS05GbXJ0SkhKLVA0WTNzZzR5WndEemNDeS1HQVdoSmZoXy1JWTRrUUlzbUlwQ2h4NlpwOHpERjlPVVBSU1RPeGg",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T21:31:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "ETBFSI",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|bank-ferr-own-puts-rbi-rule",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-14T12:10:05.694846+00:00",
-  "last_updated": "2026-10-14T12:10:05.694929+00:00",
+  "last_updated": "2026-10-15T12:02:33.858526+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:10:05.694919+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:33.858459+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:33.858506+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:33.858516+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:33.858522+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

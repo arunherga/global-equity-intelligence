@@ -36,6 +36,45 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -48,21 +87,41 @@
       "published": "2026-09-28T07:50:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank - 8 Nifty stocks delivered negative returns over 5 years. Do you own any?",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaTJmc0NrOFAzY0ttYUlseUxkNlNQNHZaa2hpLVV6WUpfTFhycjNhSU5LSEYwMllDbnJKMjgxaVU0LU9yc1hZM3lTSkVCU3ZEd1c2NDJlMW9JTl9mWnp6aW90UVA1THFkX2VDM1MwUlZVS3NESFJxWlEyOGN5S0VVbzNFUERla2tNZWxabFBBd253V3I2Sm1WUkp3X2VReDc5aVJGZFNtNkFBMS15VFJXNGVtWkl2RVRFTWREVWhZZmJ0Uk5nOS1kWEhYZjA2N2xhbGJtSkl1amladC1mM2szWnR1VUdvZw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T05:55:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Trade Brains",
   "cluster_key": "HDFCBANK|OTHER|40%-negative-nifty-returns-share-worst-performing",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.565817+00:00",
-  "last_updated": "2026-09-28T14:12:11.565888+00:00",
+  "last_updated": "2026-10-15T12:03:10.358867+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.565883+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:10.358843+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-15T12:03:10.358861+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

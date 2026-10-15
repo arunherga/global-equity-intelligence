@@ -11,15 +11,13 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE",
-        "PRODUCT",
-        "COMPETITION",
         "SUPPLY"
       ],
       "time_horizon": "LONG_TERM",
@@ -43,6 +41,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -56,7 +55,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, revenue, product. Classified as acquisition.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, revenue, supply. Classified as acquisition.",
       "ai_analysis": null
     }
   },
@@ -80,16 +79,26 @@
       "published": "2026-09-27T02:21:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce Acquires Listen Labs to Revolutionize Customer Insights with AI",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV0RyQjdlb0pEZTBKeUZSNXNlZjRsRWZSWms1NlJZQlRIMWgxVFBBTlZvMEtsMGlnNE1uUENfcWxjaTd6UUVMWWZjMVVtTFZ5cnNPRTVHVktmNWxlVDNGSzh2cmRQdFB2d3pzNk9RQXoteGM0MjFpNWJJTXlfNDlwMFkyczNPUE8xbVFtSjZCdUlFTXI4LVg4MVFaZXNRX1BkY0xnbw",
+      "source_name": "Small Business Trends",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-14T14:11:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Small Business Trends",
   "cluster_key": "KSOLVES|ACQUISITION+TECHNOLOGY|acquire-customer-fin-revolutionize-salesforce-service",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-09-26T11:38:32.604469+00:00",
-  "last_updated": "2026-09-27T17:50:20.857837+00:00",
+  "last_updated": "2026-10-15T12:02:03.903414+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-26T11:38:32.604522+00:00",
@@ -100,6 +109,16 @@
       "timestamp": "2026-09-27T17:50:20.857823+00:00",
       "change": "sources added",
       "detail": "stocktwits.com"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:03.903390+00:00",
+      "change": "sources added",
+      "detail": "Small Business Trends"
+    },
+    {
+      "timestamp": "2026-10-15T12:02:03.903408+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 6 -> 8"
     }
   ],
   "price_reaction": {}

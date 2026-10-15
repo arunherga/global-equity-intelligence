@@ -1,0 +1,142 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3039",
+  "title": "Rajasthan’s 2.45 GW solar-plus-storage auction yields INR 3.42/kWh",
+  "summary": "31 bidders participated in the e-reverse auction for the 2 GW Lot 1, with NLC India and Rama Reflection India securing capacities at INR 3.53/kWh. Coal India emerged as the lowest bidder in Lot 2, quoting INR 3.42/kWh for 225 MW.",
+  "event_date": "2026-10-15",
+  "event_types": [
+    "TENDER",
+    "CONTRACT_WIN"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.56,
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (Coal India)",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.56,
+      "business_impacts": [
+        "REVENUE",
+        "COMPETITION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "NLC India",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Strategically important competitor development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "a competitor (NLC India) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "NLC India's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to NLC India, and India. The parts of the business most likely touched are revenue, competition. Classified as tender.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Rajasthan’s 2.45 GW solar-plus-storage auction yields INR 3.42/kWh",
+      "url": "https://www.pv-magazine-india.com/2026/10/15/rajasthans-2-45-gw-solar-plus-storage-auction-yields-inr-3-42-kwh",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-15T06:26:48+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "PV Magazine India",
+  "cluster_key": "COALINDIA+MSTCLTD|CONTRACT_WIN+TENDER|2.45-auction-inr-rajasthan-solar-plus-storage-yields",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-15T11:47:42.026610+00:00",
+  "last_updated": "2026-10-15T11:47:42.026699+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-15T11:47:42.026688+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
