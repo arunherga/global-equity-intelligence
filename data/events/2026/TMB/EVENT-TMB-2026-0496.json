@@ -9,14 +9,23 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "asset quality",
@@ -33,21 +42,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to asset quality, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to Indian Bank, and asset quality. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -61,21 +70,41 @@
       "published": "2026-10-12T15:24:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian Bank Q2 FY27 slides: profit up 15%, asset quality improves",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZGRLWWJidTVPeUlPM0I2LVhNTG84X3BoUnZ6MjRRQmZIdV9OVXVxOUMwSFU0MTN2ZU96RTNFVXFqcXkzbENobFdxaUJpb0FVVkQzam1fS1lDQzVRVFp4aWk4dXpUTVJmQXpnekw0V0hTcEEwVkxFU2Q3MVJFaHIwcXhUbFZHOTF5bW5DcVVDb3RSZXkxSjJuWGV4clg1dGVEc2lWcDZZcVhJU2JEM0FIbWRxd1U1SGhXb2U5VmVGUzc",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T13:24:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "TMB|OTHER|bank-fall-fy27-profit-rbl-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:30:14.044374+00:00",
-  "last_updated": "2026-10-13T14:30:14.044455+00:00",
+  "last_updated": "2026-10-15T18:01:56.895447+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:30:14.044445+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:56.895424+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:56.895441+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

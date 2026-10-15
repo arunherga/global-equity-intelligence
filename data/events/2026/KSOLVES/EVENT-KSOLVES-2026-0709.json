@@ -10,8 +10,8 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
@@ -40,6 +40,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -97,16 +98,26 @@
       "published": "2026-10-13T13:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Argano Acquires Oktana To Expand Salesforce, Data, And AI Capabilities",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU3N1MnBUUEE2ZWpGWlBad3hUQm5xbUhSNGF4dE5mS2VSTGVaak9kUWRIWXVhanlBb1lhQWtoaFJ5RHl0dDg3M0dUZmdSM2cwdDZQSEJkaVhlWnRXVUpXVzliX1puTFpXQk9qeVRjbnZwSUxJNVZEOFNLd21HM0pnLWd3TmRTUExhQ05PTlJxVUJVQQ",
+      "source_name": "Pulse 2.0",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T14:49:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "citybiz",
   "cluster_key": "KSOLVES|ACQUISITION|acquire-compass-data-expand-kicksaw-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-07T13:43:04.615085+00:00",
-  "last_updated": "2026-10-13T20:06:36.747667+00:00",
+  "last_updated": "2026-10-15T18:02:05.460471+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:43:04.615155+00:00",
@@ -122,6 +133,16 @@
       "timestamp": "2026-10-13T20:06:36.747654+00:00",
       "change": "sources added",
       "detail": "Business Wire, citybiz"
+    },
+    {
+      "timestamp": "2026-10-15T18:02:05.460449+00:00",
+      "change": "sources added",
+      "detail": "Pulse 2.0"
+    },
+    {
+      "timestamp": "2026-10-15T18:02:05.460466+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 6 -> 8"
     }
   ],
   "price_reaction": {}

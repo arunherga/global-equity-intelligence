@@ -10,9 +10,9 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING",
@@ -31,11 +31,10 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving down"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -54,9 +53,9 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING",
@@ -70,23 +69,15 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "Russia",
-          "relationship": "WEAK",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving down"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -99,15 +90,15 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to diesel prices, and Russia. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING",
@@ -126,11 +117,10 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Movement in a relevant commodity",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving down"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -157,21 +147,51 @@
       "published": "2026-10-11T09:26:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "U.S. diesel prices rise year over year despite weekly declines and Russian fuel deal",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPOGMyWkNHUkZTdUcydVlIbGJSdE0za0pHVm9fN0xuQjJqUjV1X3RDcWtKRW85WXJ1bmxWWWYxeWdVaTBlT0tIdXhrbXo3YTZiaXFFOUJSWGVoX2JuVVQ3MFlsSFQ0TXZBb2I2bF9xUkNxdThNM2pLUW81VHNYZGxJWTNrMXRuMVJHSkQtQjM1Y1JzV1VJUFBZbHFnYzI0bHpBem1FSTVmMmVpZ1JDUmd2ZFkxOGkxZnJsRHg5YjJPRVpJRGJlU1RwWUZuQ0RKaWVVMUZpaFlVZk54T3hON1dYNEtzQVpuRXAyYTlwbVo2N0E",
+      "source_name": "FleetOwner",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T12:24:21+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Daily Sabah",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|COMMODITY|can-contract-diesel-fall-price-trump-russia",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-11T18:11:14.144093+00:00",
-  "last_updated": "2026-10-11T18:11:14.144153+00:00",
+  "last_updated": "2026-10-15T18:01:45.537722+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-11T18:11:14.144145+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:45.537689+00:00",
+      "change": "sources added",
+      "detail": "FleetOwner"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:45.537707+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:45.537713+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:45.537718+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

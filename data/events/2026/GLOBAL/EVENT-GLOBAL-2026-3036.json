@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.65,
+      "confidence": 0.59,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -32,14 +32,13 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -55,10 +54,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.65,
+      "confidence": 0.59,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -76,14 +75,13 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -199,21 +197,46 @@
       "published": "2026-10-15T08:25:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Q2 Results Highlights, 15 Oct: Wipro PAT rises 9% year-on-year; Tech Mahindra profit jumps 32.7%; Nestlé shares tank after Q2 results; IIFL Finance, IRFC, Polycab, KVB and HDFC AMC report higher PAT; Heritage Foods posts decline",
+      "url": "https://www.thehindubusinessline.com/markets/q2-results-highlights-wipro-nestle-india-tech-mahindra-jio-financial-persistent-systems-irfc-polycab-hdfc-amc-tata-communication-results-groww-tata-tech-leela-emmvee-15-october-2026/article71586591.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-15T13:43:12+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+KSOLVES+TMB|EARNINGS|nestle-pat-results-today-wipro-y-o-y",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:47:25.126485+00:00",
-  "last_updated": "2026-10-15T11:47:25.126646+00:00",
+  "last_updated": "2026-10-15T18:01:07.989304+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:47:25.126635+00:00",
       "change": "created",
       "detail": "5 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:07.989273+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:07.989293+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 3 -> 4"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:07.989299+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 3 -> 4"
     }
   ],
   "price_reaction": {}

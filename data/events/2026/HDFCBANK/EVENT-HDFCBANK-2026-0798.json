@@ -9,11 +9,11 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -33,7 +33,8 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -41,13 +42,58 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its geography, subsidiary exposure to HDFC Life, and India. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (HDFC Bank) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -61,21 +107,46 @@
       "published": "2026-10-15T10:39:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Life's quarterly profit rises as sales via India's HDFC Bank recover",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONkJyQ3Yzb0U0VkhteGdiMzhUVnFaLW4yRE1lZnhuUUZsTllKdHBEVmI3eWR5LXlOWkFLa0FlTXozNk9vWXV6MWtvaXVXdktERjhxTGNNbXo4RnBqT0RyQ3N3cnNoRWxOdTZqTlVxSGxfNWRrZktLM2l4emcwRE1pdUxxeDdZWG5mVnZaQ2R6OWtfWFpmM081Vm45akdRVUF3LWt1SVVWNTJFNFhaZFpESzVCTnUyRE1UMVd4eV9NQ1E",
+      "source_name": "marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T10:36:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Reuters",
   "cluster_key": "HDFCBANK|OTHER|hdfc-india-life-profit-quarterly-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:55:29.622213+00:00",
-  "last_updated": "2026-10-15T11:55:29.622384+00:00",
+  "last_updated": "2026-10-15T18:01:31.294491+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:55:29.622365+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:31.294463+00:00",
+      "change": "sources added",
+      "detail": "marketscreener.com"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:31.294480+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:31.294486+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 5"
     }
   ],
   "price_reaction": {}

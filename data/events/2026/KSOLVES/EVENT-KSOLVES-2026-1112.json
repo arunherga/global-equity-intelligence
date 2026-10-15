@@ -10,24 +10,33 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
-      "business_impacts": [],
+      "business_impacts": [
+        "SUPPLY"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NASSCOM",
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,9 +48,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NASSCOM. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +64,41 @@
       "published": "2026-10-15T08:41:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce (CRM): AI Integration Enhances Core Enterprise Software Platform Value",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQN0xscEVHY0QxbUNDamtSclplNTRVcjZUczcxNGNUcHhzekpydkhoNDBYa1JZbzQ0Wk16LUxIREpOTTBnLXBaSWd6Tk53TDZDc1RMc2xla2d6YVA4QzhHd1plQWVEX01udDY0N1ZCZGVYN0dCa3pPemVfdVJNSU1mcl82cDhwdzJ4OWt3ZXdpYjY4a1VXbzJIVHh0cVd3ak1UbW90WjhR",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T14:13:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Nasscom",
   "cluster_key": "KSOLVES|OTHER|creates-enterprise-software-value-where",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-15T11:54:49.193872+00:00",
-  "last_updated": "2026-10-15T11:54:49.193944+00:00",
+  "last_updated": "2026-10-15T18:02:03.159335+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:54:49.193935+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-15T18:02:03.159311+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-15T18:02:03.159329+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

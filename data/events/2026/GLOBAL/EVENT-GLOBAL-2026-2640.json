@@ -89,6 +89,47 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are product, revenue, margin. Classified as new product.",
       "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.26,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "rupee depreciation",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to rupee depreciation. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -131,16 +172,26 @@
       "published": "2026-10-13T07:24:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee Depreciation – RBI Measures to Control Forex Volatility",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRDRRVUQ4YW4wSTdncnR2VWlwMmFWUFpILWYtWmF3ZmNFVlZ4N3dtZzVsN2RHYmx6WlgyWk1GQXhhSzBhTDMzV290VmNzZ0x4WlhNWU5HS3dNV25PRFVteTBlREVjcG83QnpuVy01MHcwV0lyblVYUmp4MTctY1hWLXpvdjJTbWplT1hvem0xVzBYa0R6VUxnYWs1SWswZS05Zzg1R3B3",
+      "source_name": "Vajiram & Ravi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T06:10:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "illustrated Daily News",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+NEW_PRODUCT|emergency-forex-launch-measures-rbi-support",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-11T13:08:35.259239+00:00",
-  "last_updated": "2026-10-13T14:44:11.700069+00:00",
+  "last_updated": "2026-10-15T18:01:23.382029+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-11T13:08:35.259307+00:00",
@@ -151,6 +202,16 @@
       "timestamp": "2026-10-13T14:44:11.700053+00:00",
       "change": "sources added",
       "detail": "FXStreet"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:23.382005+00:00",
+      "change": "sources added",
+      "detail": "Vajiram & Ravi"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:23.382022+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (MACRO)"
     }
   ],
   "price_reaction": {}

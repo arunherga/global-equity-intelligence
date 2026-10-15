@@ -11,15 +11,15 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "REGULATION",
+        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -27,22 +27,14 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Kotak Mahindra Bank) is doing well"
+        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,12 +42,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "reason for the change",
+        "successor's background",
+        "further exits",
+        "Kotak Mahindra Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Kotak Mahindra Bank, and RBI. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Kotak Mahindra Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
       "ai_analysis": null
     },
     "TMB": {
@@ -122,16 +114,26 @@
       "published": "2026-10-02T21:37:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank appoints Anup Saha as CEO: Goldman targets Kotak Mahindra Bank stock at INR 540 - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOF80Y1BKZW1zVTJza0hfaEFRZUVTai1DckUxaHQ0SG5ULVgyeEwxR1lZdm9LZzZZejVvY3lOa0NkbVFrYldFWFpRT0xWVmI0UkdpZGZGZVZ1bG5tV2VkYTFCZy1mMXN3a1F0cVpsajNzUnl1WXloZUxNWktNUnltNHo3am4xRzBfMkJOdXJVa3dnTkhRTGRPei11cUR2ZjdCb0o1Y0MwTE96b3g1amdJaVVJWVVjcW03NFpsYWdYRnoyZzVsYkRESWZ3",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T08:42:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Rediff",
   "cluster_key": "HDFCBANK|MANAGEMENT_CHANGE|anup-appointed-bank-kotak-mahindra-saha",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T18:31:36.678470+00:00",
-  "last_updated": "2026-10-03T18:06:41.434099+00:00",
+  "last_updated": "2026-10-15T18:01:27.229928+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T18:31:36.678524+00:00",
@@ -157,6 +159,16 @@
       "timestamp": "2026-10-03T18:06:41.434093+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:27.229906+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-15T18:01:27.229923+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
