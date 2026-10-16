@@ -1,0 +1,106 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1260",
+  "title": "[SMM Analysis] Silver Down Nearly 20% From Stage High: Why Are Solar Cell Prices Not Following?",
+  "summary": "[SMM Analysis] Silver Down Nearly 20% From Stage High: Why Are Solar Cell Prices Not Following? Shanghai Metals Market",
+  "event_date": "2026-10-16",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "COMMODITY",
+          "term": "solar cell prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "solar cell prices",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver, and solar cell prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "[SMM Analysis] Silver Down Nearly 20% From Stage High: Why Are Solar Cell Prices Not Following?",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdFE0ZXpRX1MtbnVMY1cxT2lXaHloWlRtNmVwdDl1bExXaHhXLWNpbzYtbEMxcWtJOHFlZGlnc0ZpV25pdUZVclZ0NUtLWW9sMzc2NGhBZWRvSXlxTmttZ1p3Smk5dURDSVRZYk5mLVZLZTNsQlNzdll2elFjc3ZoYUFaZjZVa1VNeWR5bDdtMnNFaUhvT0JuT0ZPRFBZbjMtZ0I3dkFGN0ZZbVZLcFRJM19vUjdpcHhuTkY3MHdUTVFRVWpGWlh1Y2pFWVhhQ1BYQ185OQ",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T09:16:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Shanghai Metals Market",
+  "cluster_key": "WAAREEENER|COMMODITY|20%-analysis-nearly-silver-smm-stage",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-16T11:42:17.217436+00:00",
+  "last_updated": "2026-10-16T11:42:17.217503+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-16T11:42:17.217494+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

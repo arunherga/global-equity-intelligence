@@ -4,20 +4,27 @@
   "summary": "Watch. Food inflation rising again: why vegetable prices are surging in India | Trending Commodity Picks | EP 118 BusinessLine",
   "event_date": "2026-10-06",
   "event_types": [
-    "MACRO"
+    "MACRO",
+    "EARNINGS",
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.26,
+      "confidence": 0.47,
       "business_impacts": [
-        "DEMAND"
+        "DEMAND",
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "MACRO",
@@ -36,21 +43,24 @@
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Earnings or guidance at a related company",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to food inflation, and India. The parts of the business most likely touched are demand. Classified as macro.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to food inflation, and India. The parts of the business most likely touched are demand, revenue, margin. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -74,16 +84,26 @@
       "published": "2026-10-15T08:53:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nestlé India says rising inflation, particularly food inflation, is a reality",
+      "url": "https://retail.economictimes.indiatimes.com/news/food-entertainment/personal-care-pet-supplies-liquor/nestl-india-says-rising-inflation-particularly-food-inflation-is-a-reality/134963073",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-15T09:22:56+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "BusinessLine",
   "cluster_key": "FRESHARA|MACRO|again-food-inflation-rising-vegetable-watch.",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:37:27.298105+00:00",
-  "last_updated": "2026-10-15T12:03:37.773911+00:00",
+  "last_updated": "2026-10-16T11:43:42.958434+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:37:27.298183+00:00",
@@ -99,6 +119,21 @@
       "timestamp": "2026-10-15T12:03:37.773906+00:00",
       "change": "direction changed",
       "detail": "FRESHARA UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:42.958408+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:42.958425+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, COMMODITY, INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:42.958431+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 0 -> 2"
     }
   ],
   "price_reaction": {}

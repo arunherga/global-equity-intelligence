@@ -4,23 +4,32 @@
   "summary": "Q2 Results Today, 15th October 2026 Live Updates: Stay tuned to get real-time market, business and financial news updates",
   "event_date": "2026-10-15",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "ANALYST_ACTION"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.59,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.54,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "REPUTATION",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "COMPETITOR",
           "term": "Wipro",
@@ -32,15 +41,17 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (TCS, Wipro) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -48,7 +59,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Wipro. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to TCS, and Wipro. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -96,37 +107,31 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "relationship": "INDIRECT",
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "confidence": 0.61,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "COMPETITION"
+        "REPUTATION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
+          "exposure_type": "REGULATION",
+          "term": "NSE",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "+2 International market development",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
@@ -134,8 +139,8 @@
       "confidence_reasons": [
         "best source quality 7/10",
         "two independent sources",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -143,7 +148,329 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to Indian Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "REPUTATION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -207,16 +534,36 @@
       "published": "2026-10-15T13:43:12+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Tech Mahindra shares jump 8% after Q2 results, Jefferies upgrades stock",
+      "url": "https://www.thehindubusinessline.com/markets/tech-mahindra-shares-jump-76-after-q2-results-jefferies-upgrades-stock/article71591220.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-16T11:09:11+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "TCS vs HCL Tech vs Tech Mahindra vs Wipro: Which IT stock won Q2 results 2026? AI revenue, deal wins compared",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPRGhMLVZLNDhhTGh1ZTFxVEhIYVREZnZZR2wtdXNZeGowM2Nxbm84bkpvNTQ1UzRJU3pjTXVkZWw3T2NxdU5BU2xab0hJZnk0X3NDOWJOa2JBWWI2elZfeWhicHNBYUNTSFZpWFozUXNJRmFNNlBsb28wRWdFNzRScnlrWjNNVmhqQUpVMHU5TUxUVGxLR3RZbFhfTFd1T0pIdGlDc1BSZXBwSTZvamkyc3RZdUlUTjBXS0kxa0dmMVljc1MwMEJZQVlYRE0xaHBOTFhyeVA3NGgxcGFjRnk1SlpFck4wbVhiZ3M0OUd2Q1pKdnEyVm0tMjFEaDFXOWVVZy1NcXBBSdIBjAJBVV95cUxNNno2bnpsX3kxZ25BcGk1M1VKcnY4ckxEUnBXRG5oRVJyTGV1T0owYzdfd2xUNWNpSzJMU0hiNE96dDhHVF93ZXR1NVl1bHpGaFFvNXBXMDItY3Y1dDc3b1BHVnlUb2lidm14RGpSWllTYWFvT1FfTjJqMnJPQkUzWWc3S3ltZ2RsaUlSQk9aT3k2T1FWUlA4dU1lT2dYU3RES3BQTWtUdVlCNkpEWk1OaEZWNzhQZUY3QmxqQVBsWHh4QmptTTVIY0hYMDNRdFZla0VKMXdmcjYycGxxa2JpV3EwaTlwMnVTQmtzV3FyMmdGYktEdnlDaGRJMDJCbFA1aUdxNzBycWZnNGFU",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T07:00:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 8,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+KSOLVES+TMB|EARNINGS|nestle-pat-results-today-wipro-y-o-y",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-15T11:47:25.126485+00:00",
-  "last_updated": "2026-10-15T18:01:07.989304+00:00",
+  "last_updated": "2026-10-16T11:43:41.793229+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:47:25.126635+00:00",
@@ -237,6 +584,61 @@
       "timestamp": "2026-10-15T18:01:07.989299+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 3 -> 4"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793176+00:00",
+      "change": "sources added",
+      "detail": "Livemint, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793192+00:00",
+      "change": "categories added",
+      "detail": "ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793197+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793200+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793203+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793206+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793212+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793215+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 4 -> 5"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793219+00:00",
+      "change": "impact raised",
+      "detail": "TMB 3 -> 4"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793221+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:41.793224+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

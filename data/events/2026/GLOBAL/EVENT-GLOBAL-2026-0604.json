@@ -10,16 +10,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.54,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -30,25 +29,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -625,16 +620,126 @@
       "published": "2026-10-14T04:35:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price remains the same on October 16, 2026; check today's gold, silver rates",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNXBXZ2dlN29KWENXS0JtX3lSNUxUclVmZFZwRXlYSEVwbVY2M01qQ1ZVaEQ5MnVsX1A0YUhzY3o1dDdCcWk3ak40bnFSQmVsbm9MZldreEtYMWk1VDBpcl92UFgweEpGOUg2ZTRwVnlUZHFsVDU0em1mWTFoMnZvakMxV2ZOZGpzTmVhbFJvbFFNdjdzNy14aEthVE9BNFYwUlczLVNESXJpZHdYVU81OFNjLTFXaE9iODVudtIBygFBVV95cUxNLU42NHljU0g2ZGFQLXJLQnhCY3JBdjRCNkNoRGFvNlB5MzVqTU1qS1plY2RYbjhZd3VUUkkyd1NCbGpZMzJQcEtCWmdHcTd4V0VKWGVuZE9TTWFXTE00cEEzVjZTYkxIb1JlVVdVZF9DR1dSOG80aW9ua1JBRnVUTXVudW9aTUdHSjhjNlFKa2w5eEwySTBCcnY0b2pGbGxWVEhEdExnSGJNZU9sTGNBUWRvV2Y5MXJxQXlza1RNVmxvSHZoZEktaFZR",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T04:30:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today In Raipur, Check Live 22 And 24 Carat Gold Price",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1jbUlJajlBbi1rWHNwNG1Pbk92cVFNb21XckFhU1FMTU9hYVNGbkY3d3huZXUtcnBDVUpxYzZfR2dHSy05ejFRQ21ubjgxOHhqd2xVSDdaOVphczJOeWpPcWtldl8tS19YQVBDZ3R6ZjE4UQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T07:34:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 16: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQWlpQeGhQNTFsNnNTUEdvQ1JDSTVEanM0YS1JUzF0aEVhbUQ1RzRGRlpYU0t2bXVlQzJ1eU5uQllTOEZ1UXhmdzRkM190b05pNWRmRUxOeTdJdXZhcjZCRkpkbHNEZ2VEUEVuTmQxWFBrZFBweGE2aDM3THcwTVRpRVFzR09hWWtfNDJSRTBrdlNpV0VETmNrZ0dLSmoxblFDZTB2YW5lWWg3OU1aSzM0YUVjWUpIYmlqY3ZWOU9JVkhMc001OExUenltTkxIcWxWeVRsY1QtQjVGY2o5RjZ1al9rQUtBc2pxbWNYdi1qWHV2UXlhYUxndTBCV2NvenB3RXdiREpuQUN4S0ZaNE5nTFB3UmtLWldWbEdHeGJ1NmFhd9IBqAJBVV95cUxNV0xoandrSmpTM2g0VUliNTBpeUZoMFNGakxkcUx1RFhPMEg1a3l6djNlSHpiWjFTREJNLWxVcEx2OGRHSFJ3cVZudENGZFcwMjVZeEdVdkZDS09hM2RPRWdJYS1MWXJOUjJfOTE0bFUzb3lwYUtiZVdVMnAyNlB6TUlnRkRLMkVMS1pDMjEzaXpGVXl0MWhfbXZnMVZwaGRLRjV2VmFvN1ZPTDVTUnVEU255OXhsX19ZX1pia1VONTZJbXN0TXNtRE5EbE56SGprS3lGU1hPMGhNUkNtMjhsQ3R6V0lIeUNJakU2bTRvWm5kcDR4X0g4dUd5bGNIUVpDN0xpbDBCN0ptU0pnQkhYdGpmNnctMWZnT0lncDlMR2gtckIwZDRQLQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 16: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQZ1hmUU0wSTVNY3p0STFtNTNZMUVtbERWU2h1MjU3alAxX21GUmhkTFRqeWI1Z2wxOVlFOVdIc19lSGhQVWU1eHdGYkF4Ykgwb095c0VOeXRBM2pxVmpNa3U0OHFCVnFBUEsxVUhHelQtQ2xqaDhpY0dTQnFkaW1ZdC01NGxtZ0NtWXBSQlBpNDhRYlM3eW1HMFF1bldoQWphNGZIbGRicG12c1ZNdF80bHdjdmhPVkMwREV3V09ZY3RIQmFod1h4OHpreDEyV05ZWGJ3bEJsUE9HS0h5XzBZMjhyaWlGZndhaXdlT2JyYTBVZGVwSlhPUHRDOEhqSWFrX2hicThaRmF5a0tyc0hQeHQ3NC3SAZsCQVVfeXFMT3pUcmFKTEZoNUk0TnYydmRMQWlvZjVfazdXZ2dNd3FjZkQtdWVvSjhya3BFTUdiRDgtQ0lqanlUS0FwTWJpYVF5NXZMUUpIMDlvQmsyR3ZQYVNzOXpYTGM5YlE1Mzl5QTYzZlJidGJvQXJnU1NHX1lQaDFSQlBvTXR0TFE0X29IQjFBakQ2d1U1ZlBXc1F4SndheWxVbmxzQXJjSVNTY1NXS21OU1N2RlBPN2xQd24yOGxXQnJBaW1VWEJ6cUprR253YXpYcWkxcTVZQUtSV3V1YmtfZkJVd1p3X25FS3YwNy05SjlLMFBFOUJhMGZ0YUEwekU5R21IV2kzaHl4X2lILVNJRFJHUi1GbU5QcHZsbmZvOA",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in Uttar Pradesh 16th October 2026 : 22 & 24 Carat, Todays Gold Price in Uttar Pradesh",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SeGZIWl9hZERFamdMT3dQR0g5WUI3elBZYm54V2FuZlQ2ZUpuT0JlVG9NUkxwSXZieDZYeDlDdDR6Z0tyM2x6VWctQ3RIRGtRWXVDVkQwbTZyNW1vYWtxbjMyX3lHRW8wN0xuRFdNODdURVBlN1BmbVplZw",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T07:39:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, October 16: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZy1BZ0hoWHp3RDBYa3JYeGhVWDJBbHdKaTZwVmtDU1ZCS29mQU9JVnBxT2l2Y05wMTBrT1hOTUhOMEU1VEVhZGNSd0o0R29wQm9FYnE3b2tCZmgySFhMYXhobE1SYlZfN1ZObnZXLWllM095VWdLVlJCd0xOdjh6VnZZWm5JTjhxSnNWUTJzV1BYT3VZbnhBUzN2SHhpQWg5SkpYc3NPOUtpQlAwQXFHQ3ZFY2V1QzdFUkdhc3VfWm1saTN6aFhtaFdQdzFRNjk1eVpkaDF0YWFyWUZncV9mQm9BaDdya1dKLTNTX2RLZEplNGdE0gH7AUFVX3lxTE5MSzJ3UFp0X3BNTlFYZDJWYV9vRjc2X20yd3BfNkI3SXBOZU5zakd4LWRMVE11YUxuYW1fVlN5N3BkcFNqVE84VURNd0QwYzR2blBKNGIwLURNWndfQ1R6eWJXeUpiZkFFdEVjbzNMQ1lGdFR6cVRITzlybGg4S1VvbVpvZnBvbS1la2tXaE0zM2lPcW9mVDJfdl9kTUExVXR5Z25EbmRWZUE1b3gxcFpNZWxINmhkRnRBenZWNWxGVmIyMS1TcjJRSHJBaW5odjdBX1BNOUQ3S3ZyeWRrQXhEbjBOSFVEanQyX0pHVm4yR1RISk1oRU9YRHdj",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T04:49:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver price today, October 16: Check rates of 24K, 22K gold in Delhi, Mumbai, Kolkata other cities",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNN3FFajVjY0dyU1MwczdpNzJHRWwyS0VHc0w3UURBaERNOGNoTXk1V0l6X09sVlktVFRmQkUwakVueFY1WUIyRWpGNksxa3M0T3QxRWFSZGNZU2ZiUWhjelBGMWVqREN2NWRWVnhsczdDazlEWmF4WEtIU1BJR1NTM0dfUHIya1Vld0dHWDMxYk9STUcza0FkVkRJTkFibFA3Sml0eTh1YkNQNF9nUlZ1Tk0zYWMyby01WUc4dnlDSlhxd283ek1EOWdkdFVpYXFwdzc3MmNleUtQcEp1eF9zOHhjZHF2aGFBV09uS3pDUFdBRjBlNGprbkJXOEFoMzl5cVRLRjk2NFA",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T02:44:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in India: Rates on October 16",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcm56TTNlTkdpSEE5Zm5qdFZaOGNkaXFfOXhGQl91SWlza2xvTFdPR0hHWkthTkxVdTc2Y0pZNW5PUFI0TmlvRDVhZ01UV1lJeHc2bnhNX09CODFYSzBibnN6dkRBc3J6MENVa25VUTlLQ0JoMUw4X2RqSlVBa250dzYwWmhvUm5UcUJjTzMxRmJCUElEaXY2YmVtOEhXWERvT1J3VmdR",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T04:36:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 16 October: Check retail rates of 24K, 22K gold, 999 silver in Delhi, Mumbai and Kolkata",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQQVd4NXN3cU42YmdZd0JFMmltcmR4T2F6bWxsX2hFaVZianRJb2htQTBCcGMxNzktMnVrVkJzSUFpNnRBbXBWeE1YSTJQZThjZHRBMFdRM1Q4Y0lZUE85NUh6YnlvZjgwTTZXd3J1WnROQkJSUndBWVV3aXlNMjhfNnJMZ3k4NHd2X21RbTVOZzdiS3NHR0VtY1BDU3pqeGtWVWhST1NPZ2I1SkctOENLa0FRem5JWEVxUDl0ZkpsbmhwT3F0NFk4dnlpNHpSSXFoMHNSeEpHQUJDZjBxbkkwRTk1NG9Hb09mR2JDMXpHdnV6WWVMeWFYbFB3RG52YllHTXF5cHVEbXbSAY4CQVVfeXFMTndOcTAwV2RvTFNUVW83Q0hFTE1NYkVtMzVCTVBMd0xlZUVBWnVrUHppUDNESW5GUDl4WV96eXR5SzJNQWFkWllqVEYwMGg2Qjc4elBvR24wT3pLUnBxd25oXy1Bc2FVaWpYOE9zWl9nR01QU1ZWUVp1UU42RTRRN2x6aFU3alRTTW9QT2doWEI1SXBpZnlzNFVmWWJhSDZZaGFKYWdVRkFHNlpEZWRERm9FR00tdnZJdmVMMVRtRlRKUU85ekRNYm0xR0pjdkc5M01FSnhWX0thTjZMVTdhdkduVm9TQlpzUHBFX2V2RUFyUHhZZ0ltZE9JRzNvb2VTaGRPRmRZSjNCQ1ZIUWpR",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T04:04:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, October 16: Precious metals extend rally; buying jewellery this festive weekend? Check 22K, 24K and 18K rates",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOMm53MlFIMDRuU29nOUVFMVNELVh4WlllZEU1bmVxWWNKVVhCUEFKMzFSLTg1eXF4YkVBVW5KNElKRG1wR2dDS0FHUGVMM3YzbEVtZDhabk96WTdtREtGMHg4N1p0bGZDQTgyazZ6VmluMTNqYW92Z2lZNXc3eklDbnI1ZURFVnNHMWdaVnYwRVZRYUtuc3JqWTdQSXR2Mzl5Y3FndmFlRVVVeDExQm9TVGJjRlRIaVVJV0lJS3g4eURfb2VTY25CdVBCbnQzT0VOWmk2Z2lWRFpjODM0UTJHMDlCZWc4RkhFeGEyWFhxNzNLUENmWm5MakpKN3p0X2lXdEJqajZvb1hGUmxlYTRUZ1ltZFRhR1lmUWlVcFdtOUFsY3lLbHJHYkNZdWkyOXpxMEE",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T05:06:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Silver Rate Today In Hyderabad Live, Latest Silver Price",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBqRFp1U0lIWmhfbllNUDk3b0VaYjc1ejNPYXZINXFnVk04bXZwbGt0cTAxbnQ3cHdlTzVlaVBzM0FNLUZjMWZaQmFvREtldHdkUE5kd3B3NG9qd01CcnFXamYwNGhHN01DQkg0MnoyQXlyaWY5ZmdlS1lfMA",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T03:24:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 53,
+  "article_count": 64,
   "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|check-gold-gold-rate-september-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.922604+00:00",
-  "last_updated": "2026-10-14T12:18:46.796348+00:00",
+  "last_updated": "2026-10-16T11:44:03.980931+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.922734+00:00",
@@ -715,6 +820,16 @@
       "timestamp": "2026-10-14T12:18:46.796330+00:00",
       "change": "sources added",
       "detail": "Business Today, BusinessLine, DT Next, FXStreet"
+    },
+    {
+      "timestamp": "2026-10-16T11:44:03.980906+00:00",
+      "change": "sources added",
+      "detail": "Business Today, BusinessLine, DT Next, FXStreet"
+    },
+    {
+      "timestamp": "2026-10-16T11:44:03.980925+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

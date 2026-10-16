@@ -12,27 +12,31 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.78,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
+          "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 1.8,
           "detail": ""
         },
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": ""
         }
       ],
@@ -40,13 +44,15 @@
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
         "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
+        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -54,35 +60,40 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders"
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.78,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
+          "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 1.8,
           "detail": ""
         },
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": ""
         }
       ],
@@ -90,13 +101,15 @@
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
         "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
+        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -104,9 +117,10 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders"
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -150,16 +164,46 @@
       "published": "2026-10-01T10:10:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Money Market Operations as on October 15, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63815",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-16T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "Result of Underwriting Auction conducted on October 16, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63816",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-16T09:55:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "RBI absorbs net liquidity of Rs 2.42 lakh crore in money market operations on October 15",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ3cyUFd0ejFGa2k2b2hCbjlobmNoVWNtV0ZVR1dJeVNXUC00R256elU0c29ucE44SkhaVVVTQ2RTUWZRNTQ0MUlDQWM0eUNsSmo5cVVfM2ZtZHA5T2w1bVR0Z3Jlc09JNTNIUmtHTmdsOWZsaXNPZDVVODlMM3pGVnRMWWVHMXhtcGJmMTFjcDFhNmRxRjNKNUgzRXpEa0p6QlE",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T04:19:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|DEBT+TENDER|2026-auction-conducted-result-september-underwriting",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-25T12:56:10.548226+00:00",
-  "last_updated": "2026-10-01T13:36:05.344659+00:00",
+  "last_updated": "2026-10-16T11:43:40.711932+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-25T12:56:10.548310+00:00",
@@ -180,6 +224,21 @@
       "timestamp": "2026-10-01T13:36:05.344653+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 2 -> 6"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:40.711906+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India, Traders Union"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:40.711923+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:40.711928+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

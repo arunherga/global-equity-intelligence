@@ -10,10 +10,10 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.61,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
       "business_impacts": [
         "EXPORTS",
         "REGULATION",
@@ -32,17 +32,17 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "+2 International market development"
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up",
         "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "scope of the measure",
@@ -56,10 +56,10 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.61,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
       "business_impacts": [
         "EXPORTS",
         "REGULATION",
@@ -78,17 +78,17 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "+2 International market development"
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up",
         "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "scope of the measure",
@@ -120,21 +120,46 @@
       "published": "2026-09-30T03:07:44+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Oil Price Today (October 16): Crude oil dips to $105 as Trump mulls easing restrictions on sanction-facing",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOYXdtb25tVVFTdG9wYTA5dmNNbXo1b0U5R0I0N1VIS05yQU5JSDNvWXR5LVN1QXNIMFJBTVd5bjBEMk1SV05EWG1naXRmTVpGUU1YcHlid3llRG0wYUZsODFBYnZ0VVdNUktWSHZvemRMSmdfTEZBcHQyNDRFS1FEVUxtclp1dEhiUEdWVzEtYVZEZldYNHI3QkNNbFpTakNhelZVbms3R2w0dFhjRlJKcExLdGtTSDYxQlBaaHBuTkxkUGlmbFFpeElwYktLOVRxbWJDUjczZFZ5N2d0TEVhWHlxNHRXRzlyOXVhMURqOW5WcWktcVBnQW5EaE1Xb3M4N0lkVkFxNHdRVG5JOGlqeEphLXNDbDhYS0hsQUJCQjloVy14aHdleDVlLUbSAawCQVVfeXFMTmF3bW9ubVVRU3RvcGEwOXZjTW16NW9FOUdCNDdVSEtOckFOSUgzb1l0eS1TdUFzSDBSQU1XeW4wRDJNUldORFhtZ2l0Zk1aRlFNWHB5Ynd5ZURtMGFGbDgxQWJ2dFVXTVJLVkh2b3pkTEpnX0xGQXB0MjQ0RUtRRFVMbXJadXRIYlBHVlcxLWFWRGZXWDRyN0JDTWxaU2pDYXpWVW5rN0dsNHRYY0ZSSnBMS3RrU0g2MUJQWmhwbk5MZFBpZmxRaXhJcGJLSzlUcW1iQ1I3M2RWeTdndExFYVh5cTR0V0c5cjl1YTFEajluVnFpLXFQZ0FuRGhNV29zODdJZFZBcTR3UVRuSThpanhKYS1zQ2w4WEtIbEFCQkI5aFcteGh3ZXg1ZS1G",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T02:25:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 3,
+  "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|TRADE_POLICY|crude-denies-easing-oil-price-trump",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.804527+00:00",
-  "last_updated": "2026-09-30T12:51:04.804604+00:00",
+  "last_updated": "2026-10-16T11:44:02.265297+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.804597+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-16T11:44:02.265271+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-16T11:44:02.265289+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-16T11:44:02.265294+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

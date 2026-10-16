@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -53,10 +54,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -73,7 +74,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -82,7 +84,51 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -104,21 +150,51 @@
       "published": "2026-09-28T05:57:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Petrol and diesel prices jump again as annual fuel costs surge",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZGRta3Q2cXF6SkZGTHdVM3NxU3ZjWlNwOXJwTFA1VmhFZ2thbkxveXFiOTN0NGNpYl9XWkZXTDU5bTlGNXZjd3FSOUhDWjNFS01BV3JkQU16dFdEMFRRWFh2RFdBTkc2X05NMmgxTk1KQUdIeGItR0RRV2ZPNzUtTHEyUUhJTnRfVU9vNjFwdm5CMmkwWmdmdTY4OVhXemp3N21Z",
+      "source_name": "Stuff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T22:27:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BurgasMedia",
   "cluster_key": "COALINDIA+JKIPL|COMMODITY|diesel-dip-methane-petrol-price-week",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.513123+00:00",
-  "last_updated": "2026-09-28T14:12:11.513184+00:00",
+  "last_updated": "2026-10-16T11:43:57.178270+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.513179+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:57.178244+00:00",
+      "change": "sources added",
+      "detail": "Stuff"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:57.178259+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 3 -> 5"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:57.178263+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 3 -> 5"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:57.178267+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

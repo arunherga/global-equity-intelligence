@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.2,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -29,17 +29,16 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-4 Opinion, preview or stock-tip piece",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a platform or supplier the company depends on is investing"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "supply terms from Komatsu"
@@ -68,16 +67,36 @@
       "published": "2026-10-07T02:42:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Goldman Sachs lifts target for Komatsu stock to JPY 9,000.00 - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMHhSNlFVSENvWWFIVjUwa3BUSHFvbVhoY2IwQk16dWRZVU1oYVBiVk5DdEE1ME5pX0dURFNOSXJsVFBRTHBKNEZHX2dFWmpWb3ZoYWY2U05pMzNya3BVUWZaM2lSWUZIQkhFRm1hQ3hpQkJRZ2lnZDJqRjlVZVJ0bk5DUXdYY051bEM3V08yV0M5ZFNJeE1ucmNaZXFuODY5OWhKcGZqVjRaMWgxeXJSRnllem85RlRmbDIw",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T18:53:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Goldman Sachs sets JPY 5,000 target for Hitachi Construction Machinery stock - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV0dHOUEyM2h2Z1NycFZKdHpjb09VWU9YWDV6RERSdVZOOTBGNF9zYkxvRzN1eUpya2RCekZtZmJab1loNkpPcWdoXzhJc2ZhR0Q5dzNJaGMwenFXVElELXpYWVhPeWlzazJpX2xYbzduc1g2Sjd5Qi1MRjBoREh5ZUc1UzZ2dGkxWG9yanMyRFJ3am1HREhyMkRzenFBMFBqTzJWWk1ZdGZnY3M4ZmdJM2hnaENxNjNRcWJva0l4R3MycjQ2dThieQ",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-15T19:11:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "AD HOC NEWS",
   "cluster_key": "JKIPL|OTHER|000-goldman-jpy-komatsu-share-win",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-07T13:43:49.124453+00:00",
-  "last_updated": "2026-10-07T13:51:47.636154+00:00",
+  "last_updated": "2026-10-16T11:43:54.169548+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:43:49.124526+00:00",
@@ -93,6 +112,21 @@
       "timestamp": "2026-10-07T13:51:47.636149+00:00",
       "change": "direction changed",
       "detail": "JKIPL UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:53.906705+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:53.906720+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-16T11:43:54.169532+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
     }
   ],
   "price_reaction": {}
