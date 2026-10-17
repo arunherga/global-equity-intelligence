@@ -10,8 +10,8 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
@@ -31,6 +31,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -61,21 +62,41 @@
       "published": "2026-10-01T10:40:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Weekly global ferrous scrap markets mixed; Turkiye weakens, Pakistan prices rise after shipping disruption",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQlJhbzZrLW5vTlZVRC1TTW9RckpCSWg3UFlhY2gwcHNnTFBSVzhxVzVJT2d6RF9waTRhbi1BU3RtU2RWRWxYX3dZMDQ5Ri05amY3d2E2WGF4akR6ZFl5bWViVG9ENFFvdkQ4QTJSa1hkampNX29GaXRMSmVpU0MxbnE3ZVdwU01xdkd1dFdVT0F1Z3dHR1UtNzlZRmpxb1lPSGhlelFKU1RBSFNVVUtPQVlQUUY0TC1CSmZkTG5Yd05UOGw3QjExYS1sVURZQWR1Q3lsNXQ3X0llYUVSaGVWN1VIQXM",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:55:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "MSTCLTD|COMMODITY|export-ferrous-markets-mixed-scrap-usa",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.761942+00:00",
-  "last_updated": "2026-10-01T13:34:27.761999+00:00",
+  "last_updated": "2026-10-17T16:36:35.956870+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.761994+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T16:36:35.956847+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-17T16:36:35.956864+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 2 -> 4"
     }
   ],
   "price_reaction": {}

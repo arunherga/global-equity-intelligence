@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
         "MANAGEMENT",
         "COMPETITION"
@@ -26,17 +26,24 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -46,16 +53,16 @@
         "further exits",
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank, and HDFC Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.6,
       "business_impacts": [
         "MANAGEMENT",
         "COMPETITION"
@@ -71,15 +78,17 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+5 Direct company event",
+        "+4 Senior management or promoter development",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 7/10",
+        "two independent sources",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -88,8 +97,26 @@
         "further exits",
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are management, competition. Classified as management change.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are management, competition. Classified as management change.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear in the short term, but could face mild growth friction in commercial and semi-urban/rural lending if Axis Bank successfully gains market share in these segments.",
+        "margin_effect": "Unclear, though potential price competition for commercial borrowers and rural deposits from a strengthened competitor could put mild pressure on lending yields and margins in those segments.",
+        "cost_effect": "Operating costs could see a modest increase if HDFC Bank raises compensation or incentives to retain key relationship managers and senior talent in its Commercial and Rural Banking divisions.",
+        "competitive_effect": "Axis Bank strengthens its leadership in commercial and rural banking ('Bharat Banking') by hiring a former HDFC Bank veteran, potentially intensifying competition for SME clients, commercial loans, and semi-urban deposit market share.",
+        "regulatory_effect": "No direct regulatory or compliance consequences expected.",
+        "short_term": "Minimal immediate financial impact over the next 0-3 months, though HDFC Bank leadership may focus on safeguarding client relationships and key personnel within its commercial banking units.",
+        "medium_long_term": "Over 3 months to several years, HDFC Bank could face stiffer competition in MSME, commercial, and rural banking segments, potentially forcing faster digital adoption or tighter pricing to protect its dominant market position.",
+        "second_order_effects": "Potential talent poaching of mid-level executives and relationship managers from HDFC Bank's commercial banking team to Axis Bank, alongside heightened deposit and lending rate competition in semi-urban geographies.",
+        "key_uncertainty": "The extent to which Rahul Shukla can successfully replicate HDFC Bank's commercial banking operational strategy and poach key personnel or institutional client relationships for Axis Bank.",
+        "monitor_next": [
+          "HDFC Bank's Commercial and Rural Banking (CRB) segment credit and deposit growth rates in upcoming quarterly results",
+          "Reports of senior or mid-tier executive attrition from HDFC Bank's commercial banking team to Axis Bank",
+          "Axis Bank's Commercial and Bharat Banking growth trajectory relative to HDFC Bank over the next few quarters",
+          "Pricing trends and yield spreads on MSME and commercial loan portfolios across major Indian private sector banks"
+        ]
+      }
     }
   },
   "sources": [
@@ -102,21 +129,76 @@
       "published": "2026-10-17T09:13:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Meet Rahul Shukla. Axis Bank appoints former HDFC Bank veteran to lead Commercial, Bharat Banking",
+      "url": "https://www.livemint.com/companies/news/meet-rahul-shukla-axis-bank-appoints-former-hdfc-bank-veteran-to-lead-commercial-bharat-banking-11792245846191.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-17T14:11:14+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Axis Bank appoints former HDFC Bank executive Rahul Shukla as head of Commercial and Bharat Banking",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPX3BkWmFRV18wMkhFOXBLbEpUSDN5aks1dnNBSjVRN1JUWXU2ZDlhM0FaMDF0UnVyczFOX0FteldMMURzVTFYVGd4S3UtYkhscTRaZTNpa2JkOFVKcGc4dkt5cU5sT2hQcTBnNnpkdUh2NDJ1alROaF9LdXNGSTcyV2gtU0taMHBwZVFwUjA1V2VqZWZsbEtRS25LMzh2SFFzY2l6RktpN3dXSDhlNkMyUEt3bWV6ZzF6U3dMT1V3RWVhMnBOcGV5NFhjajJOOFhqUm1EWUgyc1I4LVpGTmh5cUtpaFEtaF9uMmV0eWFET194ZDk40gH6AUFVX3lxTE5KYXBGMHJ2YVJvVnZOVmpzcXhfQjhnT0dUOXMtX2hDeklrRXlHaVlhanVTeDNoWEpxY1U0LTdNdXl0aXY3UHVIc2htQzNjSTN4cV9YNFBfNk1OQkN3WW9EZVhCTFFLRE40OW9IQkUxVmFvOWNjT01iQVJ0WjBNOVZzcWdjU0gxbktTNUJvM1FCMkZTUmxERE5DQXFMWDV2S05vbG5YMk9aRnV5R3NhUTZ4STR1b2t0WkJzLUxRWG5wVUJQNFM3U28zUEtjdmMtWEpwZ3pBZlpGMjJzUm8xYUJQY2tjV0VHTTVrQ3JUR3pnV280dV9UdWFBcEE",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T14:03:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank appoints former HDFC Bank veteran Rahul Shukla to head Commercial, Bharat Banking",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNV0Z0cmFIQnBETXQ0bF9jREdsUm04ZGFlYnRqSXc2MEItWEduNUhYWmJsaHhRQ20wS0d3Y3V5NVAxSXJJbllqZm5Pb3A3UTRzWVEzR05uV0g3eEw4c3hNZld5bC0tdnZxVkw3d1VnZWlFck1kRmQ3djFWZF9sTVFEVV83NW5jekJqSjF4NmZvVmtvRzhBLVFOSDFjanZTTGZYVGo4eVFtUzZCb2ppbUZBNzJkek9kVml6YlJpUUJfWW9xRTBIVnEyTDhyQS1MSVhNZUpaNFBoZktKdFFWTGh0ZE9MWjJBcHBkOWR1d01jTEp3QlRiMm1EQXFjYmhyaHQ0dEgxR2s1ZljSAY4CQVVfeXFMUGUwbXpLSXYxRVpPSFM2c0xKX0dtSDBFdXp1Q0tiQ3dtQ3pHMDR0SjIzRFl0MHV3MTdLUTkxc0tyUGZoZGItWnRjWmxyVnk3WkMwMEZyd2JxbnM1QUlKVF9VN1hKTVJISWhDZ09sZmIyeDFxcl9yWUhYeFdvY0p0OHZxTVhLdjdfdnFyemZMa05iOWhYclA3ZWxHOTkxQmFXWTB3MkxTN0hIT0ZsUWQwOXdFWjFOMXhMeEdpc2dDbUl1UnJzQ204TmVkelpTOFNmVFVWQ18xRVN5V3ZXWkwxWS1uQXNrU01LQmdsSDBqSGZLc2ExSGVqTHNxZUhHTV9Yd1d2T0pjWVBXdlc1SkdR",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T12:22:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Meet Rahul Shukla. Axis Bank appoints former HDFC Bank veteran to lead Commercial, Bharat Banking",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPajhUOGtDV1NaQTEyQVdUYWhOb2VXYW5tenRyamUzOGRabDZxTVkyVVVBVHYyQTFJdU1WR1ZCaEdscndzUFhES0R1X3ExNWM0WkVJZnNqZm05bW56UGFELU9MekdPdEwzMkJaQWVOcnVBcndsOEt5WmY0Mml6TEhNakwzV0JMNmNBaUY1eGpoUC03TmVKSldqOU84S2N3VWRPQk1UWFN4Z3hUeFo4dy1JX3lueE9TOU9xX0otQnJCRGRja1JlZFluRlIwM1dVMm5yR0lIUThzVl8wbXhVLVNKUDExekJnR1RGalhj0gHwAUFVX3lxTE9ZNjd5U3F5S0RQY1QzcFN3SHd1ellSaDNUSWtNR3ZDSi1wLURUWUR2azlMbW9LSUQ5bHRKUFJvVVYxUmpub3VzUS1VNUV6ajhyMC1CS2l5MFhfSmswc3dZdnF0aTFFelhHR3hDU3Rrc0JaTGhXSHFvaDVGSzZMbGVwcjFHNDRYNFl4OWlVQmlJTzU4R3E5XzA0R0NRTnJPS0JDTURzVTVubHBPSzBVTHlXdk5PanczbjdBVUtuVi1iZVNaNEdEOFpSbVdqMzNEMGFfXzlnMGxGSVlBN3JaUGIzalozNFZ0RDVaMWNza2FneQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T14:11:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|MANAGEMENT_CHANGE|appoints-axis-bank-group-rahul-shukla",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T11:06:46.713345+00:00",
-  "last_updated": "2026-10-17T11:06:46.713424+00:00",
+  "last_updated": "2026-10-17T16:36:19.792967+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T11:06:46.713414+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T16:36:19.792936+00:00",
+      "change": "sources added",
+      "detail": "Livemint, Livemint Companies, Moneycontrol.com, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-17T16:36:19.792954+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-17T16:36:19.792962+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 11"
     }
   ],
   "price_reaction": {}
