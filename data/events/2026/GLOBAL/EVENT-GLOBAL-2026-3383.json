@@ -1,0 +1,178 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3383",
+  "title": "US: Steel prices rise to highest level in over 4 years due to tariff impact.",
+  "summary": "US: Steel prices rise to highest level in over 4 years due to tariff impact. Vietnam.vn",
+  "event_date": "2026-10-17",
+  "event_types": [
+    "TARIFF",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "EXPORTS",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Material international trade or tariff policy",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "TARIFF cuts both ways — growth against capital, cost or execution risk",
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "EXPORTS",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up",
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "EXPORTS",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up",
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "US: Steel prices rise to highest level in over 4 years due to tariff impact.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObWJUVmdyMkp5UFFRWVBnYlZ1amFDWHVQa3JranEyakttYUN2RFRvYW9DbGprQ09tQzFWbi1hS0M5VTMzdGM1Uk11a0JMYjVYMGRFVDJxWllHUDB3RmpHSm5NMW9McFp3a1g5ZzVPYkVuZnk1MjI0T3hkWl9hTzlyT3A4Ykh1MW9EYTFXSHNCZW1mSlR4d3A4UE5fTTYxcFBmSGpR",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T00:44:45+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Vietnam.vn",
+  "cluster_key": "ASHOKA+JKIPL+MSTCLTD|COMMODITY+TARIFF|highest-level-price-rise-steel-usa",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-17T11:05:12.378289+00:00",
+  "last_updated": "2026-10-17T11:05:12.378374+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-17T11:05:12.378365+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

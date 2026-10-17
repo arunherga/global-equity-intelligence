@@ -4,7 +4,8 @@
   "summary": "NTPC, on behalf of NTPC (Mauritius) Energy, has invited bids for an engineering, procurement, and construction (EPC) package to develop a floating solar project integrated with a battery energy storage system (BESS) at Tamarind Falls Reservoir in Mauritius.",
   "event_date": "2026-10-16",
   "event_types": [
-    "TENDER"
+    "TENDER",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -52,59 +53,39 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [
-        "REVENUE",
-        "CUSTOMERS"
-      ],
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
           "relationship": "SECTOR",
           "weight": 1.2,
           "detail": ""
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "battery energy storage system",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "bid outcome",
-        "order value",
-        "competing bidders",
-        "order flow from NTPC"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and battery energy storage. The parts of the business most likely touched are revenue, customers. Classified as tender.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to battery energy storage. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -161,21 +142,46 @@
       "published": "2026-10-16T11:42:33+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "GRIDCO Seeks Consultant for Floating Solar Project with Battery Storage",
+      "url": "https://www.mercomindia.com/gridco-seeks-consultant-for-floating-solar-project-with-battery-storage",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-16T18:17:42+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|TENDER|battery-floating-ntpc-project-solar-tender",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:39:18.590317+00:00",
-  "last_updated": "2026-10-16T11:39:18.590385+00:00",
+  "last_updated": "2026-10-17T11:09:56.079581+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:39:18.590375+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:56.079553+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:56.079569+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:56.079577+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

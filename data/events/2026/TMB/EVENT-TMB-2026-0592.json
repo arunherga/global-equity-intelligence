@@ -9,52 +9,119 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
+      "relationship": "SECTOR",
       "impact_score": 3,
       "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "direction": "NEUTRAL",
+      "confidence": 0.55,
       "business_impacts": [
         "REVENUE",
-        "DEMAND",
-        "COMPETITION"
+        "DEMAND"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "asset quality",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
         },
         {
           "exposure_type": "PRODUCT",
           "term": "deposits",
           "relationship": "SECTOR",
           "weight": 0.9,
-          "detail": "in headline"
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-2 Single unverified source"
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect strong relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "assumptions behind the guidance",
-        "execution track record",
-        "Indian Bank's follow-up announcements"
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Indian Bank, and deposits. The parts of the business most likely touched are revenue, demand, competition. Classified as guidance.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to asset quality, and loan growth. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEUTRAL",
+      "confidence": 0.55,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth, and net interest margin. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -88,21 +155,56 @@
       "published": "2026-10-16T08:13:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Canara Bank expects to beat FY27 guidance as loan growth and asset quality improve",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/canara-bank-expects-to-beat-fy27-guidance-as-loan-growth-and-asset-quality-improve/135006286",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-17T02:40:35+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Canara Bank expects to beat FY27 guidance as loan growth and asset quality improve",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVmZMWU1uSW9RYi1tSjMwZ0gyOGpIWkhDMzBPblc5UVYyZzdPOWJXYTBkbFdmbE1lVXJGTHhndTlBRWVCLVNFOTRjdkh3UFl4WElxcFlMRXIwYk9wdzBzeU9uekU5ejlJOF9FaDRjM1dXdjkzVlZWdjQwY1p0SW10eGU3MjNPd3RvcDNSaTlHMUVYRnFQSzAyUHhqcTZxRFlZU29IUkc4NXh4WE1sR2hNVHBzMjloMW9hZGptc0pQVnUyU2hQSWVtcGNLVjVoM3NSX3hVU2RQTEhUOU5BNWpCatIB4AFBVV95cUxQVmZMWU1uSW9RYi1tSjMwZ0gyOGpIWkhDMzBPblc5UVYyZzdPOWJXYTBkbFdmbE1lVXJGTHhndTlBRWVCLVNFOTRjdkh3UFl4WElxcFlMRXIwYk9wdzBzeU9uekU5ejlJOF9FaDRjM1dXdjkzVlZWdjQwY1p0SW10eGU3MjNPd3RvcDNSaTlHMUVYRnFQSzAyUHhqcTZxRFlZU29IUkc4NXh4WE1sR2hNVHBzMjloMW9hZGptc0pQVnUyU2hQSWVtcGNLVjVoM3NSX3hVU2RQTEhUOU5BNWpCag",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T02:40:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "Sahi",
   "cluster_key": "TMB|GUIDANCE|bank-credit-expects-fy27-india-south",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:41:10.656505+00:00",
-  "last_updated": "2026-10-16T11:41:10.656580+00:00",
+  "last_updated": "2026-10-17T11:09:57.252652+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:41:10.656571+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:57.252622+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:57.252640+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:57.252647+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (SECTOR)"
     }
   ],
   "price_reaction": {}

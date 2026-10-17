@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1265",
+  "title": "Gold gains on softer dollar, but heads for weekly fall",
+  "summary": "Among other metals, spot silver ‌rose 0.7% to $57.81 per ounce, platinum gained 1.1% to $1,642.75 and palladium climbed 1.5% to $1,143.46",
+  "event_date": "2026-10-17",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold gains on softer dollar, but heads for weekly fall",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gold-gains-on-softer-dollar-but-heads-for-weekly-fall/article71591186.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-16T19:51:21+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "WAAREEENER|OTHER|dollar-gold-heads-rise-softer-weekly",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-17T11:00:29.715364+00:00",
+  "last_updated": "2026-10-17T11:00:29.715452+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-17T11:00:29.715441+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

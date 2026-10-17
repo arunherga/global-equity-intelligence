@@ -10,10 +10,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.59,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -27,15 +27,15 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -54,21 +54,41 @@
       "published": "2026-10-16T08:24:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Life shares slip despite analyst upgrades after steady H1 results",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-life-shares-slip-despite-analyst-upgrades-after-steady-h1-results/article71591560.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-16T20:30:17+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "BusinessLine",
   "cluster_key": "HDFCBANK|OTHER|analyst-despite-hdfc-life-share-slip",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:41:59.940310+00:00",
-  "last_updated": "2026-10-16T11:41:59.940358+00:00",
+  "last_updated": "2026-10-17T11:09:44.545011+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:41:59.940345+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:44.544970+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:44.545004+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 2"
     }
   ],
   "price_reaction": {}

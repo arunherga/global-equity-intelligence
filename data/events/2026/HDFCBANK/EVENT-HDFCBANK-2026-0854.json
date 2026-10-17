@@ -1,0 +1,150 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0854",
+  "title": "HDFC Bank Q2 Results: Margins at record low; Treasury income drops 67%",
+  "summary": "HDFC Bank Q2 Results: Margins at record low; Treasury income drops 67% IndiaIPO",
+  "event_date": "2026-10-17",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.51,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "treasury",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+5 Earnings or guidance with a surprise",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "reported results moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Total operating revenue is negatively impacted due to a severe 67% contraction in non-interest treasury income, combined with muted net interest income growth resulting from record-low net interest margins.",
+        "margin_effect": "Net Interest Margins (NIM) hit record lows, leading to direct compression in both operating and net profit margins across the bank's core banking operations.",
+        "cost_effect": "Operating expenses may remain sticky, while elevated cost of funds and deposit pricing pressures continue to increase interest expenses on the liability side.",
+        "competitive_effect": "Compressed margins and reduced treasury profits weaken the bank's flexibility to aggressively price loans or offer premium deposit rates compared to key private sector peers.",
+        "regulatory_effect": "No direct compliance violations reported, though regulatory liquidity coverage ratios and central bank rate decisions will heavily dictate the timeline for margin recovery.",
+        "short_term": "Stock valuation and investor sentiment face downward pressure over the next 0-3 months as markets digest earnings compression and monitor management updates on NIM stabilization.",
+        "medium_long_term": "Over 3 months to several years, performance will depend on optimizing the loan-to-deposit ratio following the HDFC merger, re-expanding CASA deposit ratios, and benefiting from eventual rate cycle turnarounds.",
+        "second_order_effects": "Slower internal capital generation could moderately constrain risk-weighted asset expansion, while prompting competitive repricing of deposit products across the Indian banking sector.",
+        "key_uncertainty": "The pace at which the bank can mobilize low-cost CASA deposits to reduce funding costs and rebuild Net Interest Margins amid fluctuating interest rate environments.",
+        "monitor_next": [
+          "Net Interest Margin (NIM) trends in subsequent quarterly reporting",
+          "CASA ratio and low-cost deposit growth rates relative to credit growth",
+          "Reserve Bank of India (RBI) policy rate decisions and yield curve shifts",
+          "Treasury portfolio duration adjustments and mark-to-market trading performance"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "HDFC Bank Q2 Results: Margins at record low; Treasury income drops 67%",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTUU1Rk5qMDlBQ2NWZ3R6MTlUQUt5NDBxRWdxUnEtN1NfSEctTzlweXR2QU8wVXlWOHRjZTNEU040ZUszZG12WXVCRGEtUmw2d0ZTZ2hYclVJR2U4OHd6TDhubllsUnNxSEh2bk9yM0JOSWY2aG5jZS1yVTdjMUJvTko2VVdNQzh5cnpHQWdNZ1ctUzJ0a3dLRTNFcVQyN3VmQUpNU3hB",
+      "source_name": "IndiaIPO",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:35:20+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "IndiaIPO",
+  "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-hdfc-low-margins-record-results",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-17T11:07:09.991122+00:00",
+  "last_updated": "2026-10-17T11:08:43.974669+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-17T11:07:09.991193+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:08:43.974652+00:00",
+      "change": "ai analysis",
+      "detail": "HDFCBANK via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

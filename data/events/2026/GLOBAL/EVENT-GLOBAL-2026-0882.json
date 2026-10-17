@@ -10,9 +10,9 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -29,11 +29,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,9 +48,9 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -68,11 +67,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -83,6 +81,44 @@
         "crude oil over the next few weeks"
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -106,16 +142,26 @@
       "published": "2026-10-02T16:56:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "US Dollar Ends 4-Week Winning Streak, Metals Show Mixed Performance, LME Nickel Leads Gains, NY and SHFE Silver Fall Weekly, Crude Oil Climbs [Overnight Market]",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOV2JoYWpJUWdmdzJfN18yRTJVRk1PNG5QdVhyRGkxR0laODZURUluNndnUk02Rkx0bnQwM3NfOExZNnBzY0h1VVAyZXhIQlVUUEJMVzduSGdpc0NGaDNCdmtGUVVCV3ZfbG9EX0MtbEZ2cERQejVHUFlvTl8taUMzMnd3MFh3WE9LLS1EaHV6MHIyNERrMEtnQ29PY1RXQWc1dzNHd0JFSjRpTzhtWVpIRzZYeFVjZ1prclFwTi13OUpLWXBkaG9tNHBZa1IzV2xWUjJlSzlzYjBxTDhKSTZ5UGg5QzdLMkNkd05CUjVGRVFaejhxSmNHS0VBajU0TWxvMEdOTFNpektib2pQRk9vd2tKNWhwdy1Kb2xuYm15OWtkaEE2Wmc",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T02:05:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "tradingpedia.com",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|96.15-crude-oil-rise-rise-usd/inr",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.556413+00:00",
-  "last_updated": "2026-10-02T18:33:45.168037+00:00",
+  "last_updated": "2026-10-17T11:11:09.041301+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.556464+00:00",
@@ -136,6 +182,26 @@
       "timestamp": "2026-10-02T18:33:45.168033+00:00",
       "change": "impact raised",
       "detail": "SUPRIYA 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:09.041268+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:09.041284+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:09.041291+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:09.041297+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -11,20 +11,17 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "REPUTATION",
-        "REVENUE",
-        "MARGIN",
         "PRICING",
         "INPUT_COST",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -32,31 +29,35 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-4 Opinion, preview or stock-tip piece",
+        "+2 Indirect but real exposure",
         "-7 Share-price listing or roundup page, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Karur Vysya Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified",
-        "opinion piece"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are reputation, revenue, margin. Classified as analyst action.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Karur Vysya Bank, and India. The parts of the business most likely touched are pricing, input cost, competition. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -150,21 +151,51 @@
       "published": "2026-10-16T08:17:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank Share Price Hits 52-Week High; Q2 Profit Rises 37%",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdjk3RENYWDEtZGxpdXREdTJRZVU0M3NDSUM1N1F1cTNpSWV1Uk1FTy16RDBWenZIbHgzN25SZUxkc0pqamJrT0VpTW90S29ia0h4REVHX1I3Wko1MmZmeUd0a1VOVm5kWG9HZkFoVGdmZTNLWlNlMnpocG0xd2xZU1FQUjhJSU4yWnVnZkhKZlFBa3AzWHc",
+      "source_name": "The United Indian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T13:19:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank Shares Rally 6% as Q2 Profit Rises 37%",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZXhCX1BuMm1HaVlvNjVkQjBwYXNlaktsVEVtMWdZX1RXdEtqMjNHTy1aNGRXYjZ4U0ozLVpqYWNrLUxLeHBxTFJZaEhxZkJwYUZaWV9LdGF6UU50dF9zcF9icFNuWDRSU2x1alBOUnRHXzlSX1Jib3ZaaHNUejgzZW0zbUJldmlnMU9rOGdKNldhdndiQl9NU3hjWW1qVjU2bFhEQ2pGcGg0Mnd4ODhxQkFIODFIYmhRTThJdw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:27:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 11,
   "source_count": 1,
   "primary_source": "Investment Guru India",
   "cluster_key": "TMB|ANALYST_ACTION+EARNINGS|bank-hit-karur-rise-share-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:40:40.881216+00:00",
-  "last_updated": "2026-10-16T11:40:40.881290+00:00",
+  "last_updated": "2026-10-17T11:10:02.721878+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:40.881286+00:00",
       "change": "created",
       "detail": "9 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:02.721855+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, The United Indian"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:02.721873+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.65,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -32,14 +32,14 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -55,10 +55,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.71,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -69,14 +69,14 @@
         "+5 Direct company event",
         "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -100,21 +100,56 @@
       "published": "2026-10-16T07:48:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares near ₹728 ahead of Q2 results; Sell orders at 77%",
+      "url": "https://www.thehindubusinessline.com/markets/hdfc-bank-holds-near-728-on-results-eve-sell-orders-overwhelm-at-77/article71591542.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-16T20:24:35+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares dips ahead of Q2 results as selling pressure dominates 70%",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQYlNPeFo1aHUwWmJnTXpTeER4TThKRldRWG5hS1VLTzZVZmJZbXVBYXdYXzA3M2p1ejFoMFA5MnFkNEMxaGFLVkw1aEFuY1ZEUy1uM294VmFTWngwcHlLZlRMUkNYcWNBOVZxNzdjMTd0YVFZZ1pCRWZSVnN3Zm8yRmhfY1ZNMEludW1fWkpxTmVFZksxSUNHWkVDLUtQMjFZMGhLVm5sbC1GTEFESkgzRkltN0Zxc1lIYXBCdWIzdERqYjE4c1NOc21mcFNNNHdQVHJvelNUU0pscHc4b1lr0gHmAUFVX3lxTE5qU0lMVXZEVkRCWHR2aTBzOUNfT1ZuWUtrVjM0UVk1YTlxd1g4eHNWZHAzZGhkS1EtajBXZy13Mm1LNEFpRmYyN1JramI5WFhWdi1EaS04bllwUWttMnF0Y0xYNlhDbjh5TFZjODJpSm1DamE1T3ZxWkl6SXg3WFhEa09YTzk2SDg3T3NtVkRaWWRXTjFGRWZWT3o3UEFYdXZuQk1JZkpqakg3cWNLcXNXV1JjS3B3NmZhZ3ZXVFc3THNnZmxCZFk2QVllNnFid2hNY25ZazRtRHRoVHVTQmZpSzJYQXp3",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:02:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "BusinessLine",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|728-bank-hdfc-near-results-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:41:41.357185+00:00",
-  "last_updated": "2026-10-16T11:41:41.357232+00:00",
+  "last_updated": "2026-10-17T11:09:44.099816+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:41:41.357227+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:44.099787+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:44.099805+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:44.099812+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 6 -> 8"
     }
   ],
   "price_reaction": {}

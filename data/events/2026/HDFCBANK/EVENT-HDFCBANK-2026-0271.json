@@ -4,27 +4,44 @@
   "summary": "HDFC Bank reports 5% profit rise in Q1FY27 amid margin pressure scanx.trade",
   "event_date": "2026-09-27",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.65,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "COMPETITOR",
           "term": "HDFC Bank",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
         },
         {
           "exposure_type": "PRODUCT",
@@ -35,50 +52,486 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "HDFC Bank's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to HDFC Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank, and HDFC Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.6,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "reported results moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "direct relationship",
-        "financial implication is quantified"
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -122,16 +575,566 @@
       "published": "2026-10-16T07:15:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
+      "url": "https://www.livemint.com/companies/company-results/earnings-preview-deposit-surge-margin-pressure-in-focus-for-hdfc-icici-bank-11792148167976.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-16T12:26:39+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank (NSE:HDFCBANK) Q2 FY27 Earnings Preview and Margin Outlook",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZkJ4SXY5bUJfcVprY21saFdocTZQd1pkanRvVS1kamttV19ZcW5EWHdJTU5FZnNIdThKb3NZc0dVNDZxdEl4aFBvTmtLVkhzSUNmRjFLZmVVSHhPa0dzYVNwRVJNT3NKbUt5MVJxZ1FBTk1xUzBYODVCblpfU2dhelhrT2t1aGFneEw2VHA3U3lqVmVGSW5tU3RoWHZjSm9TVkpXZDhDZGlmc0lNMlMzZHU3RDVMZW1NSlFkT1dvNzdsaVRUY1ozUw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:11:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Vs ICICI Bank Vs Axis Bank: Here's What To Expect Ahead Of Q2 Earnings",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQajRyeDF1ZUtYcGg5YU12eVNRWDlYN2xKdi1PREc3MFZlN1lwZ21SMGVSWEtOWGtxRnJhQk40TlFuRzlNWkU2eEwyQjk5SG9LSW1UdGtrU3d3RDZwZHd5eEtYX3lqR0JtYXBQdXF6ZUlQU0VQRU14MXl3UTVYNWxLZ0xNY3FtUWhmRjBuYmtoZW5mZXFkVGlFclVVWnRCNnJ0ZDRRd21KeUR5bV9KNm9fZ21mWHRibWtHRVlfVERrRdIBxwFBVV95cUxOU2JVeXpSLVVIc3RhUGZKVUJ1OFNjU3l2WWEzVDNiYW95UXZJaDFBZ2Y1aXJ0Ni1KblQxM2lHLXJGVWFxUi1MYzg2eXc3czBKdnlmTjF1S3NTZ05wcUtVN0YzVi1MQkJiNTJwZW5BZXVKZ01LeXdiVF9SbnJ2R0hNN1RpS0VIUXlJaU4tZmlrVjU4SXNwQk03SmZTQUNwN3hsUDU3QVQ0M3JDOHowejZRRkVGeFJoWU5qYTE2REJLdTE0c3l2cEM0",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:42:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Vs ICICI Bank: Which Banking Heavyweight Stock Offers Better Risk-Reward Ahead Of Q2 Results?",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaXlyVWlSYnlOSnEzOHlTMkF4WFdpRVlfOG5Lb2NpSk5xQlZBd1JJQXR2bDBTRDBHWG0tVWtjX3k0VEgxYVA4a1pkR3JaTndUX2N1TThfWFFId2dfLXNHcUxGR3JjS19vY0lQdTlfSkV5amFWZjU5TXNJUk1JR253YlUwQjh2a0JnZzI5QzdQd2NrbEhjTGJDc2dNUGFueGdDQXh1dktLeC1QbTY0d1BYT1VGSDdhYlVCU0l1MVA1YXI2eE8zV29CbkdkOXRySGxwcFNWTk1TTjlzYTBfeWfSAeYBQVVfeXFMT1FDaUdYcXhyc25KV0FYY2s0bXJmbzJrZ2pkTkdTdnBleVpla2R5a0Y2Qm9yajZCWUVONWJHeXhRenBxTUVBbDU1YXc4TW9iWTZERV9JMXE1RVRRVUpsc2JxLVdCN3RhQmFZSW5wdjVQR1VyMkVNMlRmTUlteVFRMUdRenhzWUhXU3BOSWdmem0xeDcwR3VEUWlSNmVLaVJsX1ZfeUd5YlVvN3JNRFhpU253eDg1b1RwSVp4djJBZ3d3blk2M2pseEx0MnEtYVZOSHNJa0Yya2dWVVZrYjdmZnFSSmFwUXc",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:57:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank, ICICI Bank, Axis Bank Q2 Preview: FCNR(B) inflows may boost deposits, weigh on NIMs",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOFJOb0t3U3Y0c2FwVkI2VVg4RXJrR0xDdGcyamxxRXV5UjY0YXp4UUp1WmVWbmlmdU5FdERLajNnMmxWOTF3Z0RDSFFWSXM4WlJlSEZ2dUdqX0tjR3lIaTNyZFFmRDdRWXJZWmpuVWpSSE13RG5pVHNfSGI5bmpQS29zZzhOc2V4M1IzY2hnUW9JLXU1aDlmNi1QUlBpOURDWUFYUWdDc1U3UEhCSWFrQUNRM1U1N081MWRXLVFjLUFHYzJyMjJVRllrdTdxLU9PTExYcmdYbWhMeTJwZE1pVDRBcXR0T2xqWUI00gHyAUFVX3lxTE1Cd2s4WU51TXNWUmhlVmlNQWRJS3drX192OUMtMGhNRFlwU1NSVUtnYTBDLUNzTTkxTGtzZ2VwOGpaNnhReFpSbDNRMVZmWHN1bHU2bS1WMVJ1UnpYTncyY1gway1LNDctSzd4dVZIS2JRemJHdkJXUUJCeTF2VEx3anRfTHNpT0ozYjc1VzJOQlVTOUVDekNUc3B1al9WS0F5RjEyZFBEX3prdk13OHllTVFqOEszOV94QmNXendnWnhuV2JtRHJOeHZSMEFfcnFDUkxBb0RMaXE2TmtQTUVhLURxM3R2VFJScndfcml1Tk1R",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T12:09:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank, ICICI Bank, Axis Bank Q2 Results: Key Metrics to Watch",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb3FLSE4wd0xKd08za0djLWdyNlhVbVJ4Nm50NWlST2Q2M0lvMFdaX1M5aFI3bk84c1BKdW5zcUlnLUNZVkVlQkJTeExTUHpOTXQ4NTJoeWhDX1VGb2NUR0JmNEN1MEpPSTA1cXpDNTNRTV9LMEpQWTlzNURnS1VDcHJYOUdJVTJhb0EyNUNmQmlqM1hMdkU2Y0hwZXAwS2xOS3p4aENmNDNpTFFqWTRjN0cxOA",
+      "source_name": "Dainik Jagran MP CG",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T20:08:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC, ICICI Bank Q2 earnings preview: deposit surge, margin pressure in focus",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNS3JVbWJJSUpRelBaSnVlRXp2amQxZkQ3dmF4amlaS181QjBfaThHc29Wcmw1S0NYSjkxVlZvMFhIWWRFN2lKMGozam1LRTVYdVRXVTlCbEZIeC1qODRvV0VHZmFja1dpcGlIb0ZDdmRGN0pxZmtzT2hhU28wY2x0UG9uSy1VWF9CNDFpNDNGWExib21iaXpmSDdOeVRXVTh4bjBTckRlQVVoQ3NnNTlGOFVEYnFRLXRjQThaRzF0RjNDelVWdkc4UnlXZEkwMGF4V3BnTTZmQlZ1S000Y3dB0gHkAUFVX3lxTFBsTkN5TkpTN0RQTTN0T2xhakhuWUhNRDFVVWtSQ1ZXVWxrOEpKcnV5QlZseldTcTI2d2RwZ0NETUdpdWFQeHVDWHU4NlZVRGNYa1B0ckoxc05EV0dUNGxteFZjcWp5cE1IVXYtRG5PTWJuM1NhREc0Nlp5QjljWGJVVGJyNXhEYjhGU1BWdjctdlY5ZmIzU0hZeVpDRDFqNW90Wko1SDlCZmJIejRZWV84eUdoUHFCNEN4am1KUDF6Y0xnVTZjVFI0Wk1GV08zMFNpN3F5dmlOTlJSc0pTTUZRTUNITw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T12:26:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 Results Today, October 17, 2026: Axis, ICICI, HDFC, IDBI, Central Bank, 13 Others To Declare Q2 Earnings",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcUVpTW9VOHotbUROZkxxcjIzVVJfVTVoeWdSZzktNTdwcmYxNnhTdXVJcmFjS19ncDZ2dkpMTk91V1Ewd1RPOUIzWmkyOE9iaHF4dXpDZTBVWDJOb3ZlY2ZwU1AtcGdIcjF0SjhTZjh5MHU0Yndsemk3dmlLd3BUMHhUTHZBbHh2SkUxd1RrRFpoczNwUHhicFZqTkpnYXBwTlVCS0dPcDNXVy1henp1S2dqczJkYXQzTnRyX1plNXVaakpkQlZpNTMxSTVNU3ZEUEJOWl9pVlNGUlJT",
+      "source_name": "Goodreturns",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T03:18:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 Results Today: Axis Bank, HDFC Bank, ICICI Bank Among 18 Firms To Report Earnings On Oct. 17",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV3gwTTVfX1d5enFHeU1iOGRVdTdIdTVIUllIVjdXVHZBMkthMkUycWlnUTBTNnBIRFlRb2xuaUFIU3paN3JpYkhnc1d2VFpmMFVJODV3MXVrenBmdEtFNEYzeW4tR2R5YnEyRllabGZKaTZMV3UwdGdsR05IYkZRbHRkQnlSOW95WkcxZllLdEZPUTlwNEhWdVFsY1hVQ2I2djN2UzdIMUVFUEU2dHRNRlBET0tTN0FneXhlS2N3THFMY2JyWjE5YVA5NDQwLVnSAdcBQVVfeXFMTmtnYnUwbks3ekdEWXpnSHZxdUhzN29FMERUdlhPRi1wdnJ2cWZyc05JZXlEU3RpSDhlbUN2V0oyYWp4b1VZcGdQa0J2RThaODhidUxwUmxJTk1KbWNPYk5BNEdjUjZpa1czWTI5REE1QjlZemZqWk5sOFhNTW1PdHJkeVV1YXdLbmtrVGxVZF9FWHUyc2JON20taFJRQVFETWkyMnVmSUsxTlNiWXdOd2JFOVhEc2hxc3RrOERrclVxTm9LbFl3WVdiSnpfd2tVUXZKMWJITjQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T01:30:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 Results Today Live: HDFC Bank, Axis Bank report profit growth; ICICI Bank, IDBI Bank, YES Bank in focus",
+      "url": "https://www.thehindubusinessline.com/markets/q2-results-today-live-updates-hdfc-bank-icici-bank-axis-bank-idbi-bank-yes-bank-central-bank-of-india-punjab-amp-sind-bank-results-company-results-17-october-2026/article71595336.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-17T10:06:57+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank vs ICICI Bank vs Yes Bank Q2 Results Preview: Which Big Bank To Perform Better In The Quarter?",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPUktyNXVjSnhUTEpvdGZJUGdQeGR5YkFOb0pvSlNXQ21DY3ZNQV95ZWdDMFJHZnpSMGduQ1lSTDFZc3R4Y1VXakg2WFh4dHBFTHJFNjlRM09haDhuOXFFTE1qTVhYNHBWOU90eDlXN2VqUlZpblRYRXlkQVlLM2FVaG16Z1NzeDRSVU5TRDRuT1B0Wi1iaWVBQ0tfMllnRmdLQmMzMzVlS0N5aFN5X0xMTVpWTjY3Wlh3c09KRWQzR29kdXptaGtvTGJzQW5hZ1VrSTFUUFNDZHZlSEE",
+      "source_name": "Goodreturns",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T02:52:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 results today: HDFC Bank, ICICI Bank, Axis Bank among 18 firms on Oct 17",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNY2xUSzlIUmVIcS0xMWxpT0xocDZ5dFlqZmEzSm9zRV9sRzdsb0ViOEh5VUJ0VG9PeFRZWmhNb1l1RjZCM0RaNjJYTW1BUWpYTkRGbjc0OHlSWkd4NVJBMWdUSFlKamN5SXgtcWZReEtTaVN0NHNZQnM0aks4MFR1VzdOX1RRZjA5Y2VlbjdNVVhublFmdFg2RFBIWUhCQmRJblVrQ1dKVm9KU3JVX1lWeDF2ZzFQcnlOWXVpcFduT2czWU53TG5venNjaDlmMEVtVTEyeHRJdHpsV3RxdmtDWTNXdGg3MHpaT1HSAe8BQVVfeXFMT05oMVFLOU11d2UxOWFCa21UdmZraWtxUVdvcXdSSnlaTnJ0RTdmWmFNM2VaYzRwUUtiWjNORTBCTjdYYWMzNjg3ekgzdkJ5bkN2bjNJLUxhbXViNDQ1dEZWZGRnTDQyMnktcVA2SU5MNWZUUmpLUDhLbWxYd09qTUgzejV3RlN1MHkwYk5kZlRDUzFZaS1TS2wzVWN3ei1hbVgzR2pZOTZSVzRYOXNseVI1WDV4WkJFOVFaLWJIcmFtQ1JYRUJPQ3VnUkhKcjVxSHpKMFRWUVlIdUJkbnNBcDItb2lyeXNTT2N3WjNFUmc",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T04:38:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Video | Axis Bank, HDFC Bank, ICICI Bank Among 18 Firms To Report Earnings",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY09YNy10a0QyeGlCbWxERDh2dHdVWEdCdThyMTNGdVV6T1JnbXFyVWNFV2NPN3g4WXd4OGFEUnFINDJxX2kxVVlsWU9sSC1vaHpZZFRFZkpfaGgySEQ3RGVUSHJsb0t6Q3ZUendnQnc0dVA2RlhTbmZYYUVQM29UYW5Ia2VXM1RfYjQ4WDZSWHVXR1B6by1HdUJ5MDRtYUcyTkZ0OXI3dDZzZzJ3MVRBa2NuOUE1Zw",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T05:40:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Net Profit Jumps 38% YoY to ₹7,003 Crore, NII Rises 12%; but Misses Street Estimates",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQnNoVmVhV2VXMDdoQ2RMVWJJS1ZKdE5kdnhqUFVSM3lfSVBMQWdVSFNYLTZJYU5QUGEyODBxaWhwd3R2eV9Yd2RDUkMzemZHNlBXWFZ6XzdmQThLUkJ6Z2hBaDJUWE9pdUdLcGs4S1VlS2pLZ1dyMC1ueGhRTmRVajREVkdMc2tB",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:10:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Net Profit Rises 37%, Provisions Fall By Over 50% To Rs 1,694 Crore",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVkQtZTJBVDktaUZDNWZjaEk2aGF4M29rNzdSaklnMld6bGxHTjN6Q2ZHM1lmc3NVUXprdGtURVNNbUNtTHFGRHRSZlpqSWQ0LTNBREhKaGFtY1lReFRFemlhT2ZpUnlwbmdQcExUeUpNVFk0UnZPNUd2VDhfdXRHUlJVOHhCQmNuU3B1N3dFWXd1OWNBRkJMU0FDTmVpU2xRUU95V214R1J3X25DN0FNQUhFZVRFWVpNTUVrWlBZRFJiN05CUnAwYtIB0AFBVV95cUxOSXRTeUFsaERlRk9VOVNKY05PejlDM0k4VGlGZUhRRTVjei1xSF9vR0hNdFhTY3ppUlBRRUZmamtOSURVbWp6Wmd4aXM5a2Y1MkVLZGQtRDBfSElGZzgtOTBVN2I2dGhTa3ZSal9OM3J5OVB0bFBrX0pFenpuN2ZxRExWUnlaS0pNNHlRaloxMmxibEpQOHNFN25UeEw5dTZsT2VTby15REUtS19heHBFa2o0c1ZieFRSSTdyTzRzbV85QmxROFhMb1YxYldMLU84",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:36:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Net profit jumps 38% YoY to Rs 7,003 crore, NII rises 12%",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMUZvWE44VXJQSWlRMHVKQWZiYk1XWDNUT0VWWWtCcS0zWTE5MHJqTmhLVW9EUmFISXhvR040ZlI3Y3hXb2pZRFBEdmI4dlVHaFZ3Nzc2STJEQV9QTVM3THg3d00tbUZRWW5JQUpHYWlkQkFRUDR0bjB1REo2T1poZVRXbkNoWG9CblRROFNQVlo3RGVraUE5aGx3dlN3MXV4blF4bnViRHlFOVpvR2UyaUlhTzhiaWFQUURWejdkRmxrQ05XdHI1bU1hRzhRczhiZEhSUThpLTZiaFduc0JQbFVuYlFHbk3SAewBQVVfeXFMT00zYUoyTl9TVFdEb0RONW95ekdkRnY5eEJOdU1kNGFsc0lPYVVCcTc0TE1OY0M0UkhrS3VKNDcwdmEybElTYTJEOEpwRUNWTlh6ZGNDZjFyRl9vTHN4SGN4bGNBUVA3SnFjbGFSVkQ4V3o2R1cwbmp6V3VWdUlFME9iMlVzQXpYTFJleDRWbGd2NHJFMngxQkhCVEdMckhzbTg5UmxReEVpbVBuNTQyUDhuWmpvTjZBNERRT2czVkpSd29rRE5EWXRCRGNSeGR6eEZsTHVENnlIZjhLSFh4U1dGd3FuaXUzcnJpUko",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:42:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Net profit jumps 38% YoY- Check asset quality, stock trend, and other key highlights",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVlRQQW9IdEYxOTcyaTJ0eEZBRlBMU21rZVduaElLM3VLajAzTGFZbjFRQVNzeTYySHFvVjkwV3dhQURQLVJDZzJGeXJuYTdOeVd5ZTlRS2FtMDFiX0VvRTVQeGxpWDU0bGh1bnhyd0RhMVpBZlZjMTl2U1NLSjg4NnVwWkpFT1ZBa0w1ZklHWmpTZ1hUVFZkTmFxV3E3d3g1YmhWckI5WEJ3aXkyeTM5eTc4azR0VjQwY0hzT29nQmd2Y3BjdjRNSHNFRUJXQ2dSelNwNV92NjhmSGdqeUZ3a1FBdXpVb2tUbVEwdjRsdkdUZzlIeUV3QtIB_gFBVV95cUxNd213MV93NHkyU0hiVVR6MUFLdjVSRFZhS0JqRUZhNGJKRGFkekFKV3h4TVlDbE8wa2VNa0NndzF6QzFNY1NrakdTMzJuQ2Vnc05kUVRScTVSOUoyaUlfTTV5ZGUtOXRZajd1Zy1CajV1MlB6Rjc5TnFUQkFSVk1VUXVVTzJnZ1RBbXE0dnJERFpuNjJaOG5XejRFbGRrVHNWNk5uUFJ4SGFGVUYtNDFQWXZWZnRhZDRjYmFNT2doaWE0a3I1UG5XQ1JuZFVMYi1VRUdGeHlQdjFDMkp0VTByYkFXb1JjMWJ5U1dESE9qRnpPNEdUak4xLS0ybnZnUQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:02:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 net profit jumps 38% to Rs 7,003 crore, misses estimates; NII beats poll, asset quality...",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSURnSHEzd2NiYUxDRVA1Ul8xdm5qYjYyenR4ZFpPQ0dqRl81YWJsQTUtcHVnZHRlVnR5a1o2SzkwN3liYUxYQVBub2M3SE4yYmg4TGFJcGNtMVY2U082Y3hYZTdqb2NPWHg2eGVhcDFmbTNJaU1NYklQeE9qNXd2cTRrMTh6cGgyUWlBMzkyU3Z4UUFYMTMySzE4UjdVbHBzSEVHNXpOMHUtUXFEMG5Tb1JqVzg1VHFfZnN0T3NqR1ZXQkFSaTkwb3FSWkIyNUNCMTN1SloxQ0dTTHRTOERWc0drRWFYSlpYSEJvakxNcXJnRTB3N2tZ0gH8AUFVX3lxTE8xSmZSQzVhcy1POEU3TVZvY0VyaVl4dGo1UHNjeGs1dlg2Q000UE84Qmh2dkhmZmJUbzZDT0tNa3A2NVJ5NklVTzZ4RXA5TDlWUGpiQlluQ0RSVmYxR0Z0djFCaWUyYmRzZVZTQWF5dXI0djd4QlozQ2ZZNXRvSEpPZ0Fsa1Ftc0NKOHR0ZnhzYWZ4WC1tRElsWGlQWG5kYWZEMWV6Z19lTmZGdHZ5ZjNvT3RnMU9pdTZaR2pmYmZUdlR0YzRlcXRqVDZidGxqeWFIdF9xajBvbUtXUms3SHVuNUFKV014Y3BuZm5EZlpnaXdhakRCN0lnMXk3TQ",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:34:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 net profit rises 38% to ₹7,003 crore as provisions fall",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pQ3JibEpuNjJCQnNwbmdWOGJqcjlaVmg3Sk9tOGd6Yjh6LVV5ZWRhTXRaTUZOX0RkR08xTnUxNHJoVE5iU3I0aXpxZE9adkV2SGJyNFd3",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:41:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 net profit surges 38% to Rs 7,003 crore; NIM at 3.36%; key details",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWGNiYTllRTc5YWZoVFVhUzJBX3F6Tnhhd1lGRFJwZmZhY0JFNlRlaHNZUktZdjRxQTAyV0dTZTZfMVp1MVlydnd0QTdkU2Z2VEl2X2ZUYkRhZlBYeUstRWxjZEpiaWdWNDJxQXQ3OEw4SkpvYTZLVy02T1FrSjRsMkJ4bjVGaWVMV0QxSFEtRjlXaDIyVDVPSlA0UXF0QUYxSGlvbkdqMGFqcmhvZ1lnNVF2WTVEQXdpclpHcWVxZmdoWmNUeDc3dXBlQnd6Z1pneGtTZFVQa1BsUdIB3wFBVV95cUxNQ080SXZrd1JLUnphUFRmU0VoYmpsRGlXWUk2N29KaTF0OWtZYmp3X0NEMTZNR1BFQ0ViUnd5RjNiWHVDMjhKLUU2V1RBeFZFYnV1cEYyRThMMGFNQXlRV1IzNlBrNTNvM29md1BlTGxxY2FGc0thamdUdUN2YzZMZ3VCdUFjTXlITWFXckx2bzl3dEdyNG5RX1lzaThKV3hveWpRSkNGcTczS25jRjRpWVQ0SnNTTWNyajZEYklUeUltWmU4Wmc3ZlJPcjVwX3VpTTNFeVY5SnFtZlZ0WVE0",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:19:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 results: Net profit jumps 38% YoY to ₹7003 crore as provisions fall 50%; GNPA at 1.16%",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQjZjdkZQaFlkXzBNQzRsNXRwX0p5elIweWdnN011MUlsSExrUFpiUUtxbE5XanVwejB1TDBGdXZHaE05eWhQRm95Yzlrc0g1ZGNVVnk0RUhkcG53alZ2TzNKVERRQ0lLNE1VYlEtX3VXOWota1RBcEVpc3lUU3RhNXFSQmxjQmxDWi1rX1BBMkFyYzFaNG9TYVVZM1J4ZU5pdElId0RxU2dDM2JDX1lUa1VHSEh0ZmpKRTdhQjd4UXlNWnc",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:42:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 results: Net profit rises 38% to Rs 7,003 crore, misses estimates; NII beats expectations",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNQWY1WmxpUlBmVHdyb1NEUDZGVGY5RU94b1NFNTgtWUdNMFZHV2kwdWdjYVdtcGdsam9oNnNlQ1otc1cxYThxb3Q3X1JUcGpOZC1IZ1RydTRSRzN0MHZHNW9NczEySTJwWmhxcVNSNzg0SjdDa3FieEdjdUxabTZ5SFRWS2dEcElFa1Z3V2dOOEM4bzAtY2ZhUmRXaEFwYTZyNy1zMG9CU0VvaGRpMnVldmFyRHNoazNWVDlOSWJSbUY4MEFDSFJUWnZ1UjFSTGZ6dE10aGU1VEdRRUJnTFRTRFhndHpWam14bHZsd1RIbzVFWTA",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:34:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2FY27 Results: Net profit jumps 37.6% YoY to ₹7,003 crore",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZWV2bXUxSEZXREVJTEpkTC1aWFdaTnh1ejBJa2l4VjhyRDVMVkhuNDNaR2hJc1pJXzFFSFN4QnBsRHMyTnYyb2RJams5Vm1xMzR2aDJJb1dPS1cxSHBYSk42OXE5ZnRTZjlyOHVHczRYa3AzVnRJU0FCMEhvcUFZRjVNNVVZYjZEakZMa2tKczhyRTIxR2EydHQ5SjlaOVFIWi1Qcm1abWJzRk9DN3NIZzBMNko0VFdJTVNv",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:35:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2FY27 Results: PAT Up 38% YOY to Rs 7,003 Crore",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNzRQMXM3cWd4QnVNd3FIcEY5RjRYOFcyT3NOczdlS2gwQUJqS0twdmROMm9CZWV0eldwMGhCSU9pclFKMmhVOFRueFVpbmx0Z3VxTnVNWU1qNzRMcXhrVzlOZHVlRmc1cVJxaGdUdjBzak5GYklpNXMyZVFibEF3UWFnQkZlT29vbm9oOHZNcGFfcGJzOEhlVjZQbWI5N01uTDRUdUJsUExRTzdY",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:37:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2FY27 result: Profit rises 38% to ₹7,003 crore, misses estimates",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOT3BMTHFfRXRDb2d6MVBqbEtfTVlhLVRDeDM5Qk5tUWxDNGZqWmxIeVNHWXR3R09VMDJmckh5OVl6WG44UzFWbVJfLWNwaU5CX21pM3FjRTZMSnZMSEVVMzhHWmZTc05RRnc3Vk9QQ3lRRDZwNzBVZnlRSFFuRXRBeHJfTG5ydGdJTURvYWE3UmtFenhVSEo1Xzd0czRDVS1QV0pzeFd6U3JUbHd1blRVcXpZQV9GUE11OTM2MHh6dnNVQy1BLUV5S2pLdTRMTnlDWm5xZ1hxQUtmZkVZdzZfSGh6ZkJicGJP0gHuAUFVX3lxTFBWQlhIMllvNmVwa0xZTzh2VEZIaWdNZ3U3d0FJR0FXUmxGSGpQa1J3RzJKbVdHRm5JaU1yc2VLVndRVUpSYTFha2p2azBsLVBha2N0VWpMd2FOR09SalYxNTJEc0VuaHNFbDR4RjVRcnQtRGRyRlJFRlQxYXQzVUtDNmVVZ2xoNmpyTmtBTERBY1BnNGhrNlo1ejJsQ0F4LUxFX29IUUtydHd0RDd0X3g2U0V3cUFKWjZfbjVaeDVDVGlzYUZiS1F1M2NQZ0NoZ2FiT2pFbzJ1VnQyS3VsS3Z5TG1YVTVfSjV4UlM1a3c",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:17:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank reports ₹7,003 crore net profit for second quarter of FY27",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdmoxNXJ2MFBPRGdIYnl0R1F3SGsyRzltSHpHSEY0aS15MW9XalI5RFc0Ykp0NTBZU2RxRmFEWXMxT05GYTA1ekFCb2Z2ZGV4RzRTeVVlODFOTUxQcWJQOU1ZX3E2SEMwbkRBekpGOFc0WlhwVkR4ZUVzZlpuUV9NX2d2ajdoV2d0Mi00dGZSekx0X3M4Z3kzbEFaTHdqMHhEQVdVREtXRkJuN3M1V0hB",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:47:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank Q2 Profit Jumps 45% To Record Rs 1,386 Cr",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRDdqYVhoMEdfcUJ3Q3VnUW9ueHJuSU1SeUtQQXd3enVuTkxLaGVBZVFuVVBkV0x1T1EyREpVMHlOQW5ENG5ydTBYSmh5Mk93bDlMVENtdnNzc0ZMY0dmSFNMTGJ2dmUwckVuTGM3cU9fNjNqTVR4UHQ1LXF4TGhydmVvRkRfajRhc1lUSzN2TkhLeUl1SXFlQUJ6VGJ4Zw",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T20:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank Q2 net profit jumps 45 pc on FCNR deposits",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZzMyYjdOVWFCTmpzNjJGV1JDaVFQZDMzSWdrdnk0SHhyVVdEajlZN0pnYjNhLVk4UzBaQW1kQnJsVWtELWhRSHo2ellmNGdQQU82MHVkYXBNalJRalktRTJaeEE0RFcwZkRJelhDcnBHNlBfOHo3YVdsRThIamtDcnItUWRSZEZiQjBVV0RKUTNLdmNpOTExZGpSbnNVQVRHaUtnbDkxT2lncWU3U3E1S1dxOWJydFVza1pKedIBvAFBVV95cUxOZzMyYjdOVWFCTmpzNjJGV1JDaVFQZDMzSWdrdnk0SHhyVVdEajlZN0pnYjNhLVk4UzBaQW1kQnJsVWtELWhRSHo2ellmNGdQQU82MHVkYXBNalJRalktRTJaeEE0RFcwZkRJelhDcnBHNlBfOHo3YVdsRThIamtDcnItUWRSZEZiQjBVV0RKUTNLdmNpOTExZGpSbnNVQVRHaUtnbDkxT2lncWU3U3E1S1dxOWJydFVza1pKeQ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T12:08:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank Q2 profit jumps 45% to record Rs 1,386 crore",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNank4b0tDakx5ellOSE1JT0EtVkFZYTVOaW1OenM4VUY3cFB4UE1tOUxkS21vS3RDdkhKV3hrRzlLVXE3LXNDQUh1TTZ3VU1zdjUteUw1Z0ViMjJaZzNkT3lOTlhnTEJyN3FjUG5qUlpSNjFORFJsOHJ4clIwZGZzTnByT3AzNEdUUUxTMjRlWTRXVElaZ1hfY0tfNU4zc1pKNlFJc0tVaEpHNndfWjQzRXZlN0MwaE54SkJFWDlMNVBfaVJ3bGtzbjNBVmhRYUFUeDJfallvZ05Sd9IB0wFBVV95cUxOQ1RCM0UybFYwQWtYWVRTV0dyWUFTT19FRFQ3YWFSMU56RU1qTEs1RFZTaDJuWmtsSGpXSzdnb2NKUkh5THgzOVRFY0NGVTNYbHZIeUlPWHZWNjRMOWVDVkxOay1aVEVkY0NhTmt1WUpPVUZLRzlXWEU5bWxzWWVVM1EtRzVDUDdYQ0NncWc3NUVBdDlVcVNyd2FLWFA4T2VlMUNRTDdKZWgxNHdQdElRalBTM21JRzQ0SUZ4MGlDLWxxdUp5Uk84OUpqY1VRa0F3SnFr",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T13:09:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank logs highest ever net profit at ₹1,386 crore in Q2FY27",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPMGh0V091cU5jVjFORWdpSUduc3NoM1dsVEJPYXFpMktyeFVZbURTWThMSUNVVTlZTlp4SUtGSW9rTlgtOEFHMm9sRmJqZkpuVmlpeHQ3cHBZa3dLSV8xMDBqajdENDFKWW85Q3k5VVZpM0lUT3Q3VncyUkRSb1JfbzNqT1JqcUlweDNsQWJxZHRrWUJ1OTFNUktzbDZhUmE3QkpHaHo4VTRzNVBLajZxT1A0Y1hMOWRpT0JkeldHelRjQWZ4WTJSTFJZeG9iN19uM042b1pqRS1rMnpZekFMdng1Y1R2dG1iOWRFZzBGSHVXTGhsNW1tRzVTLTNOaHpNRzBIa2lCcl96aXlTaWVN0gGWAkFVX3lxTFBJUnFMdVF2QUxidHdPd0RkMlhvWXNYTUlKd1JqR1pMOTlWTVNhU2JWaFpOQ2kxZDBlSE9tWGVIQ2x0eXcwSF9ORkxKdm0tTVZlOFVpT3JkRVlFVTRpOEN0YlFtNmY2eVFBVEdfOEJtS1M2MGcza3pLcGZDYlhEd0JRR2xkcGJ2ZDJqeDVBV1UtTllZSXdpZ2tPV1FWR1VLdUc4SWQycUFFSUpWeHhfNHo0QkJYN3lNZ0NLUjd6aW5TZ1IzQ211UVc2RVM3QXBzaTBwa2R5MFhjVzF1RC1YLUNLVlpheElENXFkdldNampOdDhsVERCdFhyN1lYaXJTRjdrZXB1OXIyOGtZRzFXMklZM2ZrNlBn",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T14:57:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank net profit jumps 45% in Q2",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM2ZRc3RaREhfdHZKT2psbEw1YTI1MzZXT1o1VGMtaGdnRzREaUlpQ1RMTGtQczQ4aGlxZDBRUFItSmo3U3U1WXB6ZWptLVlRTWItM3lGNXhQd3lIeDVjdU0yUWJhUDRzZDlXM1dERWRTV3laWGZuRkh6TFh1WmVNVlRSRXNvenJEc0FBcGJxazdJamF5U25Qd1dJMWs",
+      "source_name": "Deccan Herald",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T01:10:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank net profit surges 45% to record ₹1,386 crore on higher NII",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMklYUll5bE1wbVFNZ1FMeHlROENNYmxMMk9TV193WXJsSnJRSXZ6cXBfOHVWeEMzVHViMERfT1drTzZONzZPZzJnLS1Lemx0aUZPNlBEUFNLMENyNXZtRGcyc2x2UHpfZ2IzYU5NT1NWOEtWbVJBa19NYkU1dENNWU5nd3JCVlQyUS1BUndqWEl4a1dCUEM1Ri1JaFMxNnRXaWhRcExIcDMxT2hycXZ4TS1VdHV3TXIxSXBjeV9NU3VaVk1QM3d3dktCeUE5aXlxRzd3OXdUenVSWjJPLVo40gHkAUFVX3lxTFA0cllGUERBVEIySWNfdFdSbzhFVGZtWU9jMHNKeVBuc2dhNEV3R282M0taU0w3bzktcnpNTHZyRDZEdW02RWVTQUJPMnhYUlFwLW9lajZnM3hxR01xR1ExZGtVaXVWSlNWUnlTTm1Xdk92OWNqMWpHaF9mYVRQWl9xNkM0Qm5EcVFIbDdrS3puWFF2c1ZHd3FQallBaEdmOFJWWHEzVm1OOUdJMzNLbkNSWGRLQ0FWOUl2TlNtZnJJT3FuMlNoWko0X21RSV81RXh5d3Y0cElDRTNvYTdyMGF2Z0ZtRg",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:55:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Federal Bank profit rises 45% to Rs1,386 crore on Treasury gains",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVnNXbllJV2RHMWhKdjh2UzF4Mlk2X3NoTS1TYWFFanlvZ1pGMEdTdmoxamJxY3F6RVptcUpHc2VWWnNuQVZNNXA0VzUzZ19tcXB2YUhldWxqd0FiX3ZnX0xWc1VTWmR4RjhMN0VORk5YUVNXYnFwOTlZSEZoWHVKOVNhVGdiMWc3UTA2UWJnb0xhT2NsOWxJVVZpYkh4U1dBU1ozMlB2clF0MktmMEU3TWM0Z0JJWkHSAcQBQVVfeXFMTy1VOGN5U01fSmZaR1BPNkZDanJJUjdGRF9Ea0NWY29TRkVxV1Y1RzRtbDYxRHBOTEd4NXpmNlBjTEVKRXBBaHM1RFBMbmNkZTdBdzJXUE5HZFVNTUhrMGRsTFFfeGhlenhPMExmalZ4UV91djgzVzlKS1B4dWExRURlZmNUdXR2dHdfSHBPRTYyMnUxT3dfWXkteFlDYkpfbkk3SW9zeFVseEluSHBlZ2RSeDFyem5xdnUyRmVieTJ2TlQ3bg",
+      "source_name": "The New Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T18:22:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Results: NII growth meets estimates; Asset quality stable",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYk1jTHNPTUZyNGJxcXAtNnhNaVF0Qmk2OUg3TjJ1WUQ4TnVyMTFxZURfRnhtejZiUFY4emg4emp1eGVOZ3ZZd2d0NkdJYXE3MGtCNENxcXotTlc3QTRqX3hmeVNzdkNpLU81M2RWNndjQTJXSkZvUVdsWUFNckxOa1pKTDhwVTMxODNQRXlGQWNjSEFGUkJ3aHJjUVh5cGtKa1R2cU1kM3JMdDdHcmNYWW9ER21vbnRfTGdxUDBWYnh2MHBjYUFuQ3BROFTSAdIBQVVfeXFMT2l2VFpGdm1iaGlYTlhlU3l3TlNBMEVtRGEtZmZBYWhHVVhIdnlqN19GcE5Ta3lVc2hnR0FhNjJaajlQZzFESXFpaXB2aGNGbWxHalgwVnhNQXo4dWcya3VHV1NsWWVZR0UyWjdqVGNNcTY1MGVUbzlrLTN1UEQzUzM2Y2RfREJ5dHp0RTRSbW1PZVEzcXlCd01jb2x6Y0s1b1FPY3NCRHRTR0lITndNZVNacE5WVjFrSGJfeG5vRi02TFQzM0VyaVBjcHJGWXdyMHZR",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:38:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Results: Net Profit Below Estimates, Provisions Rise Marginally",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYUFyTTZOM2VFVmxJV1BDbUw2ZWVmS0Y4U0RjTm9IajRmanhTZncyY09VYnlQb3IzZ2E2M0pJODBBSDF6aXAtTVBUR2Qxc1V3SEFjdUZQanJQU3JZTHVocEUybzlEVDdnNzVKcFM3VG14NFdtWHlKZWhiVTRqZENxNDRIQ0JnUV9LWEtnTUFLUmNUS0tZc3RjQ0FQQ19FNjFJYmk1QmR1eDlubUFuajNXS1FwVUxQU1FvZUHSAcIBQVVfeXFMTnhZc3RtRnhOamRhMndwMFMwVkFKLVdLTUM4cG8wNGV4WmtibUZadW1lOXdwUzY3dXNLcmhEQjU2MXJWMEFrMll2aFpjVnBwVTFfU2JrZzFFMUZxTWdIMGZhVU9tVHhlbjZwSUxZamptcEtNU1g3X1A3TTE4QmExdTJGN0haa09FcnFQbmowTG1tWmJRT2lWLUZQODJ1elUwTnJER3ROZ3pBUmZDTDI4Mi1yOENqd1pUWFUzSVRwU3BfUFE",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:33:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Results: Net profit rises 5% YoY to Rs 19,510 crore; NII grows 10%",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbk94M2w1ajZnYzlxV3p5RHRoeDBaa3dZWVpORmFucGNUREJYUklKclctcmUtd19PSlVyQWY1eV80dklGcVFPMlVMMVN1NlRMcnYwQ00tNnhOMmZxU0pTcEcxTTRwak45c3hmSjdLbFZQcmhEbUt3SGY1U2hRRUFQcHdsSjdZS19mcXpFVTlRaVFkWFZXNnEzdHZyX3ZOQkxCMVEtb3h0OTY3dkhYWkh6LTlpWVl6UUFteG5xWExZakQzSWllMExRVE1CRFdrTUNmdzdKYXJkeDdfcW9QcVhrRjF4dnJDSms3eHplaNIB7AFBVV95cUxQbk94M2w1ajZnYzlxV3p5RHRoeDBaa3dZWVpORmFucGNUREJYUklKclctcmUtd19PSlVyQWY1eV80dklGcVFPMlVMMVN1NlRMcnYwQ00tNnhOMmZxU0pTcEcxTTRwak45c3hmSjdLbFZQcmhEbUt3SGY1U2hRRUFQcHdsSjdZS19mcXpFVTlRaVFkWFZXNnEzdHZyX3ZOQkxCMVEtb3h0OTY3dkhYWkh6LTlpWVl6UUFteG5xWExZakQzSWllMExRVE1CRFdrTUNmdzdKYXJkeDdfcW9QcVhrRjF4dnJDSms3eHplaA",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:46:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Results: Net profit rises 5% to ₹19,510 crore, NII jumps 10% in last quarter under outgoing CEO Jagdishan",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNMTllQnNRRVlUVVR2TzJDai16QnRqWkUxY2k5TmJVUVBKN3ozUm9leHBudXRZcHJkVHRNbzZsU002N1dPYm40aUJISUw1cUlESlNJcEpleElvTU1KcnRrNGJIWG5WV2NiWk53cGEwdExnM3p6UnRuWXFzNUFURE5uNG5vU3J4bXg2aWVXVnlYZks3ZWdFSDhoQWxJcmE4VEJtcDVqX2JGYjdyNWliYmZwQnhrNElEMXNZZlZqVUU5NlhSakJqWnJ1OENpYTA5QmxnV18xQUFPR3Q1OEM2ZHlRamt4VXctS09hUk5WTGxjdWFWRGFGbVVDQjU0cklqOE5HdEQtYXptT3Q5cUh6Nm9MbHUzSDnSAZoCQVVfeXFMTVdzWnpWSDQyV1ctZU4xZlFKSHVLNFJCTUdGeU0zeS12YmJDY2Q4VXpnSE5WMm9YV3FUaFo5MFFaTUZWdEx2ZmNMZ0g5dkZ1YzJWQmt3VjZhemdONWhaa0ZoblJDSmRSeEl0LTZCOEJYbFhWQ1FMLVp5WWV4VnhpeWpXNmVpdkhISzhuVGdFbVgxYklBUlQ5Z3BOalFSZ0FHbFUxUUdvQmdyWkVJekkyUy1rNlRfbFZOWmFHUkVYbFJJQnRTUFRneERsdlRELXpiLXZPb0sxOF9fTnhBOVVoZWNoMGkycDZFeEpqOTA5cjFSVDB2ck9RTWpDRERJaXFyVVFYNWhNYTVNU19nT0lGYURHNFdXMHNVbWVB",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:49:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 earnings: Net profit rises 5% to ₹19,510 crore, NII advances 10%; Asset quality improves",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPb0owdks5YnVUQkZkckZKU1lOb2tsUDhIYlZvV0dHbEdFOEJBeDRHQ2Vta1RjaXhwOHJSRk5jWW9wdmVTTmMtdG8xYnpoa3E0Y2hCV2g2cUgtR3RoRUNEcnlfNnlhc1ByMW93cjRBemVNb0hmU3BPdEx6Tktkb1RGXzFKQkdQbkdvcXFLQXc1VGhTTUdBYTZsbW9kc29wQmwtLUgxcTNwc2VELXFsdnFEdEVSbFQ5b2d3YjF4LXg1VnRkYV9yd0RXN2UtMk91aUJnSWtOaEs3clVsYnQ3dkhhcjFoQmdENVlxdFI2Mg",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:09:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 net profit rises 4.7% to ₹19,510 crore as NII grows",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMWhQRUJwV3c3QWNDWk9rVGdVb2M1RWZkdWJNaDhfek05aFpuR19GbVBzMExmcEZBdEszWUU2RWF5TGx3WElWUnN5Ty1LbFVKNmhIWHlRVFN5Z25lVndPT1FoOWZHUGVJMGhxd2JNeEh4ZjZNbHRRWVRXdXpaSmNtWWFmdkI5WlhoYkxhTkw5bUYtTWpCUFoxbzBYYnpBWXhRTXVmSXpEMzBOYTlZbHBZRHU0TkRqT0FaYzdxaDVwMER6ZDB5SXFucm85YjJBZHNXcGpSdUZLYWpFN0ZqX3ZsZ3g3ZDPSAeoBQVVfeXFMTUlSVFphdmpSeWhfMkhOUnZybUVMSWxjcmRNd0d5ZTZsZUxhXzAySEtuVzg0eHgtcUo1ZzZLNlVvOXNiYTh0ejJOVVFEd0V5YVhXRFIyMXJKM01hcXlpcGN4NExsVmVTaXcwenVLR2YyUG51cTVfQ3hXRnkwSnJFM19pOEl3QkVBRXpOeVdFNVFiR2FiZ1k1VnU3RDFJbXJYaXotMXphMUpsVG9HLTRhU25TanlUcnA3M1JJejJqcjRlUURFNTkxSzUzQUsyTVI4YzRqUjJTVEh4SHpzNUdzV010enNiNWhmcU5n",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:48:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 results: Net profit rises 4.7% to Rs 19,510 crore, broadly meets estimates; asset quality...",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZjQ0dnpBQ2JjWEVTMnc1MWxyTFcyY0NJTW4tVFhub3AzVERNX2xFbWp2M25GWFlpSnVFXzZRUUgwc2NOTW9XY2xXazF0ZEVXWm12Q0ZOaTdvdWtIbzdST0dpTDVOWTlsbThHcVkySk1SQTZSUk43R3J3MFg2ZXFIQ2VKY2tOY0FSemdQY1UtS2hZMFl3UkpWTDlFZTFPUWp1R0VWWWZEVmtsWERIVTNCRDQ1dkx1SUlZLVFEZF95MEZTZkxNbHJna3hqZ0p6UGdaMXNfYm1ycFdid3VoWm8tajhITmZoNVd60gHuAUFVX3lxTFBjcmtVZnM2MjdpV3hCMkxGalNIeHUtX0Z6NnlqSHlNLXE5azd1c2F5aW5vUXRWczJtTHZ6SVhkUFAtd3hwd292RG5HTk9keUo3NUFuZDhLbG1DUnB6Mm1iM25XQmxnMmtaX3Y1bVZ3RDgzRWNOUU1QeF93MGs3VUlzQktUaUM1NTJHZGRzZk1ZYk9FdWtjZFpFS1JWMTNvT19rR0ZnLTNucDZjT0NfYTJ6OEUtdXlFOE1qQm5aamlBZXhCaVBlYzZabUItV1pBVnpvSEgzRllGc2dkU08xLXVpRnRlWnpUajlWXzRjUmc",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:32:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 results: Net profit rises 4.7% to Rs 19,510 crore, meets estimates; NII up 9.7%",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQbTNmdUw2Umk3blotX1piWnJVbTdlZUhEVEdPZjBjZHh3TGFVR3N6c3UwX1JzTkdxU0NqeDFlNU0zSU9RNms5RFJzSnk3M29FdkY5Xy1TbmRTbmV5MUVVS1dYMjc0V0NQQ3cxVTdHNEdEVUFXNGNJNDlQc3g0NnItcGxXZVRpSmRWZXVUMTA5NDN4eC1tcDAySTFWTkkza0RzNVZ2c0txQkF1X0ZrX0F6VWR6UkJFOUdET25qandLU08yTFJzYzRxMk5ERmxsdGtSekpLN2pTcEFnSDBKdHpDNkpPdFdCcTZhWFNvSXk3Z1FWeUtVTWVuU1hKZjhNZnM",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:32:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 results: Net profit rises 4.7% to Rs 19,510 crore; key highlights",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOakp6em9nRVl1WnJLM19mdEtqQi03RXBpSEl0SDZfMW15WGgzaWVhTy1zS3hiVGNkVEtWV0pCZUVna0dLYWFJcFhYTlp2RWVkc01kRV9PbE5FaTFTYUtzTTI5WEJON3AxcTkwcFFtQW1ySEZId3d0OGJVNG42UW1iMGp3ZVlvbWgyVDRtOVFtQ3ZWNGJzTkJXUFhPTEszRVM0V1h3RWNLTDhaNjR5eW9aS1RyeEx6NVlHZFRFN2NaUU1SdEhVeEFHT0NUbmxrVGlSQ0dXYlJqVnJTZ9IB3wFBVV95cUxPd3NlX0pLYkhwdnN3aEtHZkNCcnNPOVE0WFgwOEJDMkxZbjJKTmJiSG1UZjl3bEh3WHM3bGk3VVkzeHJveno1STVpTFZuMlBmYmxEVGYxTjA0enJvQ056X01NdWotR0FfWXhnVUI5ekFQb3UxYXFieWNfM09ZcS1GQ2dQUzRUMUJrdmVza2Q5bm5nWUdqbUlCREVXZExhWFJGcXc5RHhaMlpBWVBCa3R0LUlvS0U1cExJVnhmWC1BXy1xSjlnVXlWWUtXeHc0TUZGSVRkbHNCUUFxY3duN3pZ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:56:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank’s Q2FY27 net profit edges up 4.7%; asset quality improves",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOamZVdmRnZFJ2d2EwNlJuYTQzS0JSUXhRSnc0WENGcGNESk0xdF96c19xQ0R5RGFZYjZ3b3BsUS1BYmtzZm55OWxRRThGem00RUwtOGhvazdBNHBZR0M0ZUxkS0tjOFRYMWRqdmNuR3JDeUQzX1dfb2xzSXVLV3hlRm9sQ1oyYjhCY05ZY1hPUFVOX0xhMk5PVEY4dTZpUkxYOFdoTHI1LThsZktHd1JUSmJKSVNQaGNzWHI1bm1DMXVod9IBzwFBVV95cUxORzM0VTJLcG01NUd3VVdOb3RrLWdsQ2hFYjZHUlFiLXAzcXZsOEJjWEVoS1FGSWdqV1JkN1dpYnhRbDBGcFRTd0w3eTltY2lPeDd4SGo1UXJaZDV6OXJXcjhSY3pjc1JhczF0cEMycGFVMGJnS19rZzFGSF81UDgxdmQyZHctZXlzQzE0UFI2akJfUkdxSGUzNXJzOHFBUmw3ZjRwdTZRUHNSNnY5LV9XTHRTQWVHaEdyY3BoWXVGNEE4Z0JZVW1HakIxQVdwbGM",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:47:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank’s Second Quarter Profit Meets Estimates",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjR4SmY2NXg5ejlKTml1ZWJjbVJSV0pvYVluYXBCMXBTbkpWOHlWWWh6eVVtSmtkSnRzMXhnMl9hRHhEbzRhRks5V0paTExRMmd6ZTB1bW94a01aZmxTeGdQUXg5bTZWcFlQQnNRY2Z4SVU4eHJETXRXb1QwNHdQeERrU1BSS0tobGprY2s0SFRlMURublpwRW1CUE1hWkZXbFE",
+      "source_name": "Bloomberg.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:59:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 Results: Net Profit Rises 20% To Rs 14,843 Crore; NIM Dips To 4.18%",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMWc3OUtOVUU2Vy1pUGUwb0JpQzRGS1JJTDc5MzZKRFJYalNNdnJNQWx4UlZHZ0dSNW5nZ3BFY181SEk4X2NuSnN5YXdhZnVjMGJrRmhpU1VCQVoyYkJsTzBtY3RxSzlTczRnV0kzVU5mTGk5N0lINFM3Y2FoaV9jQ2o4bDZiRWtYUkJleWRRckJFeTYyNkRzbTItcFJXMF9wYUlRMWs1eGwxeFdzS2lZTkE4Smw2ZXpEdEZtUVl30gHGAUFVX3lxTE1hNDlCRHo1ZzlWczBZRGhXM0tvSTVyVERBMTg5SmhUSWVid0xCYUxjUXhfSzk0c0FuVU4yMkxVSFFQX3ROWmcxQlRtWnQxb2VyOXBpQ1JNVWpYUk1mQnRYc01ka0ZrRFlrU2Vhd011QUFaWk5BTWg1UDIxbUs3TUZyWkRubEJIMHV3cWFsdFBXc19HQWRMcHMyQXI1ejlLYS1FZWZmQzhITGgySWk5cDU2THJqUFRLak9CeG5pZ1J2VHQ5QkUzQQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:57:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 Results: Net profit jumps 20% YoY to Rs 14,843 crore, NII rises 18%",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQcm4tRXFFWVI5RV92bmprdDRMdzJmTjlsdkpUMGhpalJBNHBvWTVLZVhITFhhQTltV3lLZk8tUHM0akdEaU9IYjJsNExhdjcySmxJOW5nckZfR2pENHJERVBsWjJreVVjQzFLTFlMeGNPRUF1MHBZYnlFZGJZeFctbGpHMHBHbE55cHVFc3lERGZvSU9mSFFzdmQ1WkprNGhydmt5SEQ4d3pXRnJ6Szh2Z2pWNXctTHVwOENZTGc4ZnlsRWZQd1doNkV4RHhwV3hCXzI3amJHQzRBMmhGMEN6LXJJRnVvcDJ2dUHSAe8BQVVfeXFMT3JpN0NFMUt6SnFQY0tHc1gyY0lLS2p2eU50NnNoZkVqU0JGengtSFo2TkYyN3prLWp4Y1VCOXVCakg1VnZpSEhlNjNrTHo1RF9DU1NIUEZKVkpUSUJ5aGRVdEVuYUtNdEtWZVFMLVdUUUxHcllGbXlwNW1hYWlyZF95QmpwcTFkWGVOZkZVaTQyQllrVzdHQ1c0c2dhdlVwX25KQS0tRkRYOS0zOUZ4SWgzM0hsZkVsUVhONGZ0bzgzN3dtaTBHeklDVTNPbEQyQ3ZEeGpVY1QxY01tSmtHbUlNSjlXZ01xLVFRTTlKbEk",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:17:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 net profit jumps 22% to ₹16,333 cr",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNREdoek96TFRpQTVOQWdIV3pwcWk0VXpFdWtMVjNhSEJUclExa04tRFlGOEFjTmJuRmx3RVFZXzhJeFBwc1JsREhrdlQzcnVoNThSQjd1a0ZEV0F4dG54SGI2Y1JzNzJwaVVLSUxPanliYUZHak9FWlVLNVJGbWJ3dll2N2trS0Z4QVdrQzl4T2JjaXZxZndoNVdJcl9uX2J6RE12NXFTeEJDTE8wZkZfZGlJRVJfa19md3RQYtIBwwFBVV95cUxNQkdXTjZ0RklFT2FBTmJnQV9NYjBDX1BMQnhEaF9Ma0VVY0JVNm40Sk5mMzM3eXBmSks0Xzc1N0VtQzdxSjd3WHNFeEZFV09BdF9MYXFGSkZPWGNsbmZ2TjVCSVMtanRmOU0xc3FfWWFCaV9NZmdPeVdHaE1VeUlDNlE5RnViblc2QVQ1QjhESG13VWxOZUdLdGVhZGRqVndrMXh5R0daMExYNUpadkdSN01tRHZFWEduMmhGRjdNNUczczg",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:40:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 net rises 20% to Rs 14,843 crore as provisions fall",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNSGZSWjZ4MmxMcV9NSkJ2OFZzdGljblo1dno5eU55NmhCTWJLaDl5Tlk5clc1ai1aY3RaNGFTVE1JRktSbURKUDlQeExfSGM0bWwxSzJUS3l5eG1oVlQwcGZDZXdZVTk3T0RueVR5NnpTOU41eUtzNEsxOWR3RWNlSXN1QmlDZGJPMUNzRUFXYnBVTUxuYS15M1dCN1RtOVhPdVFYaTY0Zi1sOFcybmNubXFuc25hanlqNVR0Z044UHY3S2F0WTJzUm9wQUh1Ny1EZEdNcExyODVpQjdjaVHSAeMBQVVfeXFMTnAzNHB3aEs3NWdzSjV1cTVtVVczNGpKT1hwZjZldmhnN21pZU9VcF90Vk9uVWlmUmZBcjVKYlVRZ21CUW5XdmJsRlEwOUJidjR1UW9EZ2Zqa3JNcDdWVDN2dVlwMkRRUF9CeFNyUUJ1eTAtUTA1a3FjdUFCLWs4Z2xTbUtzNTVMTWJ4Nm1qai1ZY0lhb3B6bm56VGNaWl83S2wwVlhMSkNwUktzamxucy1URzZuN1FBM1B1bDNtN1dNY1VkNFpTYTFWMFZiRlhXcWJPdWRSUzhDbEJqSzNHc2xObEk",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:10:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 results: Beats estimates as lower provisions aid profit, but margins face pressure",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZ3h6Vm5YdS1oQUhpOEpXV2RYdzZ4UHdsbVZFbF9UcElEek5HSHhIZmJpb1A0dkxpeWt4clQ5UUtFY0pEVDcyZ05QakJmT0ptSE92bk5JVF94dnJKdWhZLUtNTkZ2cjNFanNfX1VtLWV5WS0yajJweDZ6dldiVENMUjZ3UG1uR21kY21Fcmx4SWJWSEtjTkk4OEVHajBMbnBIa2RvTVhsSzJPcmlFUV8wV085S3hwcWYycFNDSWprZ9IBxAFBVV95cUxPY25qT0ZTTFVPYTBuNFhKRFJZN3l3RzFyVkpjT05hZDBodEpTaG5uam1rZTUxYmRqNXg1cU80SDdjT0U2U3BPbm0zVTUtcS1NV29UcUpjdVhZRUI4NFp1WGtqMkRjckd5RGZJc3kzbVVnWGE4WEExOXRERnhGSzkzVGx3YlNSMjVwT254WHFoSFhHWWhBc1JGZDEyVEd3Zk9pRVhGbVo0anZ3RUxjU0dkdHFSNFlkemRNVU5WblV0M0t2OEM3",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:05:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 results: Net profit jumps 20% to Rs 14,843 crore; NIM contracts",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdVVhYUVnbkZBM1Bsdkw3cTlENmpQbjlIQkJPN0VZUDNicmF6Q3VHNTVfU2p4T2FBdnN1X2gta2lPNWQtalRTWFJTdW53LVdZbDAwb0d6aHFBckVGOUJXU2JLa01DaVVmUU5Ja294Vld4WW12VTNvS1Z0ZmJVQ2Rwa0tCSnhwUXdiTGdZcmw4UkNWaEV1dHBJNUlCS1RSN0dTT1I1c08wTUhicWI2WmdjdzR6ZXdkYkJzRXQ5bWpRVXRZMTlNd0dmY3d1ZHVVUklCNldrT2ZscmzSAd4BQVVfeXFMUHpubDJXNkxNZ3hNTXRqX2N6UDh1MFNlRUQ1SnM3QUlUeTFsRDY1TlZxTHhmdWlTYWVhSWJOalY5REF4NU1CdWdBMzQyRkJuNGF0cFRDbm5VLVVwbnJIeEJ5dFY0dmFGR3NnLUZtWWJmZDd2NVFEN01acGpLQTQ4UklMMEVhUG1MUFF1T1NuaWl4NWlIWkdWVzBBN0pKRnNMQUc1b0trMmN5RVZmVm04U09ZcURIUl9VZjRBSndSNFBsbVB4aFExODQ2WTZzSnZyZ1MwaFhaTXEzUmZ2UEdR",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:36:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 results: Net profit rises 20% to Rs 14,843 crore, beats estimates; NII up 18%",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQnZ6RXBSRkZQUUdNTGl3LUhUMFlrLTRkQnRRVkNvTWp3cVk2Y3NVcWxwb25kRXRteGZGNGFqYUpZcjAtZUszQ0hvQ3l0aElzMzBlYkhROHVndXVOQUZVU1R0SmduYTRNOXN6NEN5ZFZPUnlIcHdDZ09xem4zWjlJU1M1Zkt5V3hQY0xaS2pPaHp1akZoSUw5UTVjcDlfcDh1cUh6RmY5SWFlWE1IU1ZZczh4Ty15Y3ktRFJlNlJlbjJQdktibHByMFpSMW9STElWMU00OWM1VE1MRWFjeHBUYzU0b05IVFZWQjZUQtIB7AFBVV95cUxOQnZ6RXBSRkZQUUdNTGl3LUhUMFlrLTRkQnRRVkNvTWp3cVk2Y3NVcWxwb25kRXRteGZGNGFqYUpZcjAtZUszQ0hvQ3l0aElzMzBlYkhROHVndXVOQUZVU1R0SmduYTRNOXN6NEN5ZFZPUnlIcHdDZ09xem4zWjlJU1M1Zkt5V3hQY0xaS2pPaHp1akZoSUw5UTVjcDlfcDh1cUh6RmY5SWFlWE1IU1ZZczh4Ty15Y3ktRFJlNlJlbjJQdktibHByMFpSMW9STElWMU00OWM1VE1MRWFjeHBUYzU0b05IVFZWQjZUQg",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:01:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 results: Profit rises 20% YoY to ₹14,843 crore, NIM down 12 basis points; asset quality improves",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPWDcxeUF6ZHFxSWhwRWx6RHE3ZDJtZTNJSkpZQWh6azI3d0ZjNXE4NE5ZeGdiOGtPaGlrSmpnSG1PX3JKZVJvTTBZOVlSQ0kzQUZaNXlzbnp2UzMyamRGNWZjY21UTG1ESG94aTVZaHFvY1hEbkhzMmNrRkVSVktTcjl3RDVLQndaZ0J4QmNnTk5fZ212clR1Tmx4R3VKektrTVRiSnk0OEJZcmZXUDVuQnZjS1BHbjhBbFFRV283aUZLMURlcWhBS0tzWVhKdTJ6dE1uTy14NUxaTGQxbFdZTGVnaHdvVHRqaFRva0EwVVN3SzRFMGUzSHFicw",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:11:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2FY27 net profit up 20.1% to ₹14,843 crore; NII grows 17.7%",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXoya1VYSTBPXzRzVGZFNzF1OUlQd3VzandWcFlsa285TmVPOTNjM04ydDMzQWJCWXBhSlZoVHp3N1BPdTRTSnZsQk9lOTk4RE9uNmwxWDhGejNmTmxYcXhJQU9weXJnQ3VVcXpnMHFyUFdmY1htZ3U2VlVkeWwxSGszUThGMTk4aDhlWnYtY2VETnltc1VKYmhfc3RSSWpDQ3huOGhnNVZhaXNfcFItbmRTY3ZaRllfdWRKUFhB",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:23:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Reports Standalone Net Profit of ₹14,843 Crore for Q2 FY27, Core Operating Profit Grows 21.8% YoY",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE83Y3YyamVORTJGV2hwOUhqX28xQVV0WnNhN2ktMFJYVUlhM2R4SzItNkp5My1obHYyQjR5dVd4MEhET1hEOXdjUjB6ZGZTOTMtU3A3cTA5YnZHMU9FeFl3",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:33:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's ICICI Bank Q2 profit rises 20.1%, beats estimates",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWTF4cTF3c1Awdm9pZ3ZnZEtUV1ZVZ0FSR3ZUMDlvWEkwS0pNYzFnNV9UbU9zcHp0dU11WWhTdzYyMWd1SDY2czd5a1lMbWZ1NF9hYWJaVXZUdktUUEVCT1UyaU9GYnVBcVFxZWRyUEdHSGhzVmYxZWVlM0Q4Q0NLeXc1VUdpNTdfUzdaUG9IRWJTbmpEaWtuU3I0ZzdKSFhSVHdPbVVEX3prMTRCaG44WW14QXJvTFJjZ2t6UEcyU1lvUDA",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:19:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 59,
+  "source_count": 3,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-hdfc-margin-profit-q1fy27-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.365969+00:00",
-  "last_updated": "2026-10-16T11:44:24.047100+00:00",
+  "last_updated": "2026-10-17T11:10:06.707692+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.366019+00:00",
@@ -157,6 +1160,81 @@
       "timestamp": "2026-10-16T11:44:24.047083+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616722+00:00",
+      "change": "sources added",
+      "detail": "Dainik Jagran MP CG, Goodreturns, Kalkine India, Livemint"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616739+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616747+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616754+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 5 -> 8"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616759+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616763+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616767+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616771+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616774+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616778+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616781+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:41.616784+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:53.243857+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Goodreturns, NDTV Profit, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-17T11:09:53.243875+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:06.707673+00:00",
+      "change": "sources added",
+      "detail": "APAC Media, BW Businessworld, Bloomberg.com, Business Standard"
     }
   ],
   "price_reaction": {}

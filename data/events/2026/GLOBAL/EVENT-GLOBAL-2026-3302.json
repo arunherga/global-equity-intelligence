@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -32,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Federal Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -42,7 +49,7 @@
       "watch_next": [
         "Federal Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Federal Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -50,7 +57,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
@@ -63,6 +70,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -70,7 +84,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Federal Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -80,7 +94,7 @@
       "watch_next": [
         "Federal Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Federal Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +108,46 @@
       "published": "2026-10-16T09:04:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Federal Bank Q2 FY27 slides: record profit, decadal-low NPAs By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbVJyNHRGTHA5WGtfUm1LaFRzWDF1bWthdWg4bWNlTUQ1Vmh6dU5FUHlSaEZuOHoxN3BBVHRrNk0zNlFSUndpQmpvQTQ4aXJUSWZ3MlI1VlhVSUlfVEFIQzZITVlTdF9FZEdheWRUV1VyQVYzSEdkNkRfUmhGS3h2eXlZSFNGMkpxWFp1Slh4WDNoSkJueUIxUDhTSFpIanlBYWlJakZsWWdCZWJXb1dObjI5U0RVVjlkRlE",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T12:14:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "NiftyTrader",
   "cluster_key": "HDFCBANK+TMB|OTHER|45%-bank-federal-fy27-profit-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:42:14.612694+00:00",
-  "last_updated": "2026-10-16T11:42:14.612760+00:00",
+  "last_updated": "2026-10-17T11:10:10.833214+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:42:14.612752+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:10.833185+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:10.833203+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:10.833209+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

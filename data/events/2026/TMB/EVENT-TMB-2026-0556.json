@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -23,7 +23,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Karur Vysya Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -34,21 +34,27 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "slippages",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Axis Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -56,7 +62,51 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Karur Vysya Bank, and asset quality. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Axis Bank, and asset quality. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (Axis Bank) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -70,21 +120,46 @@
       "published": "2026-10-15T09:16:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Core Income beats; Asset Quality, slippages better sequentially",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNeVUzem9FQ3FJTlY1R1lrY0NseEk1UUlJZXByMUNmY24xcXYtNWRTOXJBNUVrSDBvVHBIc0t6MXktRkQtaFJpSERUQW1XalZfaWhnRllYeEl0ZkhCU0FYQzNCWDlvamtFd3NlbzFsYmdaSy1LYVk5MzAzbFd4aTlwTGZFaURVY0FJX3J6SWRsZzZHVURKX1dYUkJva203OFkyZTNBZGZ4bWJPeXBYZjhFODhPUWt0RmFwWURJcUU0X3l5N05yREl0RTJfMDJSLUluNkh1dtIB2gFBVV95cUxNUGNGb3V4RENVVm1qZ3dCdTlZcDBKUHVMZFBwYU5oX1h4bVJkSjROSkt5VW1UOW5rbkYxOHE5X016eUVJelF6OUNnOGd6eFFTdndzcEVieWhheXRYMFkwYl9nNWdGOXJTbU5fX2NNZHRRa2tXQ2JrT0VzeElwRUZPYmFLazJ3U0Zvc0pwYXdYMW9DdUhjaHdsUXgzSm5yZkk3b2ZEZ3pVUldUNEk0VXlsY3lwZUdGc2wyRDNiX0xCN2Y1N1B6SEdhb1U2bVlyU2MyN05jTFg2MW94UQ",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T07:36:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "TMB|EARNINGS|bank-core-income-karur-results-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:55:06.074701+00:00",
-  "last_updated": "2026-10-15T11:55:06.074827+00:00",
+  "last_updated": "2026-10-17T11:11:24.439332+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:55:06.074815+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:24.439304+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:24.439321+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:24.439328+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

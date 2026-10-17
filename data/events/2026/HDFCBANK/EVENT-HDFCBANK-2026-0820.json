@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.31,
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -29,17 +29,16 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-3 Speculative or unconfirmed report",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -49,8 +48,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -58,16 +56,16 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to HDFC Bank, and deposits. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.36,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -75,36 +73,27 @@
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "deposit growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-3 Speculative or unconfirmed report",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -146,21 +135,86 @@
       "published": "2026-10-16T09:07:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 FY27 Results: Net Profit, NPA, EPS Disclosed",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVnZUOVRFNWV2Y0RNY3JEU2FtX1g0N1hVXzRQYW5hU1ZOX0NBMjN4TngySHIyRFVrU2s0RVdGT2YtTlRNNmFiRGZSTWI4aVkxRmxRLWZ4WkpVMkJLaFF5TGtCcFJYanFLZXRqVzF1OEJaNjAxVmw2dFIyZWdEaDliZlNOLXVBbEpwTXd0a2w3ZmtLQ05kSmtxT3oyYkg4WVpiaklWMThHSjk",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T08:26:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 Results 2026: Net Profit at ₹18,610 Cr",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd256SkhjTXZBN2VobmxxSlltd05GT0pvT19JYTYyM2hJNXhIQzdDNmxfeEZCQ2s2d0NZR2pLVXlxTlF4U0J5Tk1tSHJmUnBXaEU0UG5PLUktbV9lMWZsQllkVmdaTWlhV2FLYVcwZWlUNEpQSEU2YjB6MDdwVllfVHpjME1DUDd1ekdhdW1R",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:15:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 profit rises 5.2% to Rs 19,610 crore, misses estimates",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iTWRWdGxDU1ZrWXNnOUdOTTZkdWVuMVpvcm9jbGZRQzMxMWRMNXd3Q3JkdzM3VG16bFpUajVJRExtQ3N3MzA0NmhoVC1KYkVoQ2VPVkZVd3d4cW9kOHE3QV9xVFBuWE5vS3c",
+      "source_name": "Daijiworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:34:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 results: Net profit rises 5.2pc to Rs 19,610 crore, misses estimates",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSjRRT0xUWE1SN0ltOEowUk5IMXlmSVJPb3ViWmFTNXhIN2pOMEtyYnVpZHRnOTlnZkJERk00YTJuSEx5X0lnX3dGS2VibkpWU3RfNEc1SFFBa2FMZlNJLWw4d1RkMXUzc0IyUmtqLUpxeGpLbm1vRjN6Rld4WVhWbGdyMUFBYWdqWDU4XzZwQU1TQXVXNVNmaFRYa3VBM3kxTFB4cy1jRzU",
+      "source_name": "Telangana Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T10:07:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank reports 5% increase in Q2FY27 standalone net profit at ₹19,510 crore",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNLTQzTXpTZjROR3NZLXZsT2NPZjE2MU1MQnh6VnU3TzJ5eXFvQ0VDbVpCNmRQRjg2RFZpdzIzcHE5NGN4NTItajZ6VTRCcUNwcmRCM2tFLUt1d1ZPWm1VRldEeUxhZEM0TTFaNWVKb3YwenJ6UTlRSjJWNVpTUTdqNW05M0JXVUdTU3R5NzRpYVZMdmx3ZDY0cU9QeHpqSmRobHkwNzJYZ2dIdnNfek9tMlJqRjE4d1ZCeU10cm1GNTA5T0diTXRVUVFDZS1fUQ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T09:51:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-hdfc-likely-net-profit-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:40:58.103089+00:00",
-  "last_updated": "2026-10-16T11:40:58.103167+00:00",
+  "last_updated": "2026-10-17T11:11:28.836453+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:58.103158+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:28.836425+00:00",
+      "change": "sources added",
+      "detail": "Daijiworld, Kalkine India, PSU Connect, Telangana Today"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:28.836442+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-17T11:11:28.836449+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 3 -> 6"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-0600",
+  "title": "Brent crude hits $110 a barrel for first time since May as supply concerns mount",
+  "summary": "Diesel and gasoline futures also climbed as traders assessed geopolitical risks, disrupted energy infrastructure and limited prospects for immediate supply relief",
+  "event_date": "2026-10-17",
+  "event_types": [
+    "GEOPOLITICAL"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
+      "business_impacts": [
+        "SUPPLY",
+        "GEOGRAPHY",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-3 Speculative or unconfirmed report",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "sector relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are supply, geography, customers. Classified as geopolitical.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Brent crude hits $110 a barrel for first time since May as supply concerns mount",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/brent-crude-hits-110-a-barrel-for-first-time-since-may-as-supply-concerns-mount/article71594804.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-17T00:27:54+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "TMB|GEOPOLITICAL|110-barrel-brent-crude-first-hits",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-17T11:00:38.779833+00:00",
+  "last_updated": "2026-10-17T11:00:38.779919+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-17T11:00:38.779909+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3330",
+  "title": "How IRDAI commission curbs could reshape HDFC Life’s distribution economics",
+  "summary": "If payouts fall to half their current level or lower, the expense ratio could mathematically decline to around 15%, though the actual outcome will depend on the final rules and their implementation.",
+  "event_date": "2026-10-17",
+  "event_types": [
+    "REGULATORY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.43,
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "IRDAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to IRDAI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "IRDAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Regulatory or legal action",
+        "-3 Speculative or unconfirmed report"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its regulation, subsidiary exposure to HDFC Life, and IRDAI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "How IRDAI commission curbs could reshape HDFC Life’s distribution economics",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/how-irdai-commission-curbs-could-reshape-hdfc-lifes-distribution-economics/135006235",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-17T02:35:52+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "How IRDAI commission curbs could reshape HDFC Life’s distribution economics",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWlNUYVJUNWNVX0VLWjdOcEY3WG92cEZCQ19zQTNOcFo1dktzQk1pOUtScjRlNDh0T3JibkxaNnEzaEp4NUJBeHlZbk9ibThhQmxKcmRSaHNDQjdpWVhxZHItVHFNaGNjZVh5TDA0NC0zWVI3TjBDS0I4dS1lR2lJNmdPSG1sZURLTTBFSTdKenRNaWlndzdQVUhCajdfY3RYXzZkeFB0R3BDY3dNdXZtZjF2X000bF9hMVViWVBhZlhIdjVkUzc4eXBVSV9jNjdj0gHWAUFVX3lxTE80eDZQWnl6bmJRZDlYR2Z6aDVORTRodEhnb1cxVW5jSXc2QTJtMFhvN19PaHI3V0dCQmp2aENXUHNIUlhsUUt1YUhYRFZ0VmtJTTR4MVpJN2tqZHV6aEppR2l5NkVWV3pBWkhBeGtlU1pya25sWWNYc3hWQUpaWmhMblBmRWxQTFFNbGUtdmNyd0ExNWt5MEpJT0ZYR1Z2dTFibElycThub2FqOXFhUHA2T3NvLUdmUkpvVmhxMUlDWUthNHFobk10YktSTElpNWhMYkxBakE",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T02:35:52+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|REGULATORY|commission-could-curbs-hdfc-irdai-reshape",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-17T11:01:01.766052+00:00",
+  "last_updated": "2026-10-17T11:01:01.766141+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-17T11:01:01.766132+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 2 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "PRICING"
@@ -32,13 +32,6 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -46,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "thermal coal prices is a selling price and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -70,21 +63,41 @@
       "published": "2026-10-09T13:06:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indonesian thermal coal prices edge lower at Indian ports amid muted buying",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTVFBN0VDQjVVMmVpaUlkbm0tMXlBTTRYVjd2ZGZDMjRFSnJHbXJJSHB1M241cDJUTVhjTzJEN0xTVHduRldDcFNPcVhILXNFdGxTZHFYa2RYelluaWt6NzhXMTR0cGxJRVJlc0NyLTVVYTRWWnZhX2t4UUV4Y0dyX1FGTzJEVkNGUXpHTWJ3VWwxYW9RUUc4WWNqelpHY19XWEEwZC16QWlTS3NuTjVGZHNib0t3UlhYR3BaZ1NB",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T15:49:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "COALINDIA|OTHER|coal-india-indonesian-portside-price-thermal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:43:17.373622+00:00",
-  "last_updated": "2026-10-09T13:43:17.373731+00:00",
+  "last_updated": "2026-10-17T11:10:35.968539+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:43:17.373720+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:35.968516+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:35.968534+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
@@ -22,6 +22,13 @@
         {
           "exposure_type": "COMPETITOR",
           "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "South Indian Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -46,7 +53,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Indian Bank, South Indian Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -54,9 +61,10 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "Indian Bank's follow-up announcements",
+        "South Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to Indian Bank, and asset quality. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -80,16 +88,26 @@
       "published": "2026-10-15T13:24:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "South Indian Bank Q2 FY27 slides: record profit, asset quality shines",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQblkwSmN4el9xWV9VcUR4U3FSVGsyWExkWnpEb3MzY1M3VFNfT0RZT25DelVDcEppTFR2a3M5WFJDVlZ2TTJyZFFiV1hzYU5iMnd0YlFuV1l1SW9GV0x5ZmtKSmVCZENONnduQmRqSFZ5X21VcGxMV21Rd2hkcWZqSkJxcU1lZllBd0poRVloc0g3MzhJeWlGV0JvZ09LYWUtdVZ0RTUwT1JnZ180d09RRExMY1VlLW55U08waXJ3SFA4YTB1Rk84",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-16T11:58:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "TMB|OTHER|bank-fall-fy27-profit-rbl-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:30:14.044374+00:00",
-  "last_updated": "2026-10-15T18:01:56.895447+00:00",
+  "last_updated": "2026-10-17T11:10:07.766418+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:30:14.044445+00:00",
@@ -105,6 +123,16 @@
       "timestamp": "2026-10-15T18:01:56.895441+00:00",
       "change": "direction changed",
       "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:07.766396+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-17T11:10:07.766413+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}
