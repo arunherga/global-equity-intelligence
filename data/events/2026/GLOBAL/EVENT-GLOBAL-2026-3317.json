@@ -9,61 +9,39 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "direction": "NEUTRAL",
+      "confidence": 0.24,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION",
-        "CUSTOMERS"
+        "MARGIN"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "loan growth",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -71,58 +49,44 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to ICICI Bank, and loan growth. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "direction": "NEUTRAL",
+      "confidence": 0.24,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "loan growth",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -130,7 +94,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to ICICI Bank, and loan growth. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -164,16 +128,26 @@
       "published": "2026-10-17T10:39:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bajaj Finance Q2 preview: Profit may jump 29%, NII 24% as strong loan growth lifts earnings",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPcVdfZGZJZUR1UkFSQ2ctWkVGZFQzSFZYVUsxRlRWRmRwZDZCRUlsSnMzMi1CcmF1NmJOUWNqc0dwTzhBOERpSm5oZzhCVlQya3lpMUFGaFlRSGxhd2M4b1dKQnV0dlZPUldSTjFZMGFkR0xqNjkyRG0yNXBDam1yVWVpNUtqN0RJYjJzYnBJYXk0eWJqdXNBT09tZlVsSm1wUTBvS1RURjBUSEY0eHc2WVZja0FsRXFVekExOEliT0lSY2k5Q0lJNHdvcGFWcUVZbmxMRkhMOVRlUUlUOGVSSXc0S05zVzBvMDQ2TnpVR3ZOWjUzVUxxamhrQVBLWE5xUnNFc9IB_gFBVV95cUxNVlhqSWp2T25CdEloQWk0WGJpbEZBcWg2VmJYaEw5bkFvbHdMNXV4RGszeVBPczV6Z05qcjVSY0x0RnB1ZFRZT0Q4SzNIZXpfdWhBSklRR0dtM1NTNlJFVFZqYm1BVUlidGN6Y2VHdEFsc3EtMEFXOC1ETExZUGR2c3p2MnNKeGN0MVhORDVyUjM2eHdrZllHa19NMXVtYjJjekp4NVk3bDFKek5sNnJ6blRRWGlRRXljY0FrYzZEWjJleFZReFM0S3pld01aSndPa1JYVktZNDJLbmdIOUoyMWFQZWE1eXh5bTg3WUFlVTdXaV9adG52UUo4VWxMUQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T09:50:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "www.marketscreener.com",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bajaj-finance-housing-india-profit-quarterly",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:42:45.006059+00:00",
-  "last_updated": "2026-10-17T11:11:41.094950+00:00",
+  "last_updated": "2026-10-18T16:41:00.488407+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:42:45.006115+00:00",
@@ -199,6 +173,21 @@
       "timestamp": "2026-10-17T11:11:41.094945+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:00.488377+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:00.488395+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:00.488402+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

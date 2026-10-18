@@ -5,20 +5,21 @@
   "event_date": "2026-10-18",
   "event_types": [
     "GUIDANCE",
-    "MANAGEMENT_CHANGE"
+    "MANAGEMENT_CHANGE",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
-        "MANAGEMENT",
+        "REGULATION",
         "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
@@ -29,42 +30,29 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "asset quality",
-          "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company"
+        "+2 Earnings or guidance at a related company",
+        "+4 Regulatory or legal action",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "assumptions behind the guidance",
         "execution track record",
-        "reason for the change",
-        "successor's background"
+        "formal order or circular text",
+        "compliance deadline"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Indian Bank, and asset quality. The parts of the business most likely touched are revenue, demand, management. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Indian Bank. The parts of the business most likely touched are revenue, demand, regulation. Classified as guidance.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -140,21 +128,46 @@
       "published": "2026-10-18T09:48:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian Bank raises FY27 growth guidance, pegs ECL impact at ₹3,500 crore",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOazdfZHg5bGdUVUZxY3dEb2hWVDRFWDlfXzhnak4xbEhtR0hRWnFVVGlyNHB2bWdsNTdsaXZTQmlMVW5oS09pcTRxZWt4a0RaVG1Qa05EU3JNai14alFtZE1EY2MxOEtoei1OazFtTXh1NG5pLWcyd0xMbFZwcVVOSWxSUzh3M2hVSDVDR0VhOXNNQ0dJTHdhQUlxMFp6RXZTQloyLVFmRHk2ZXVfWlNzcVJqWnlkbVRDUzVma3M5YUtuNFNMcURlT2hOQWU3VGRYMDJOZEpQeGjSAd4BQVVfeXFMTXFoRk51aVMzX0tNQmdOWGU5NF9yVTZQQmRHTFI4TWlJbkhSbUMwREI2ZEQtRXhRZzIzeFpDaF9FOFNjdE5PM0RwaHJiUWZwRkxTQ25wTDFxdnVvVFZRRmU2bzB0V2pOZDkyVlhpWkNqbDA4Y2g3aEpYQ19HODduU1hVcE5Eb2pZWXYtOGhQTlU0ZU5wMS1QZ3ctbnJXaG5hc0dqcFY1aDNrUldpT2dtQWZXZmNHcTFGU05HYm1weTRhMXNkSzJKdkNWdEM5MW9UQlZfdGdqejJSVnhyVlpR",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T12:04:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "Livemint Companies",
   "cluster_key": "HDFCBANK+TMB|GUIDANCE+MANAGEMENT_CHANGE|bank-fy27-guidance-india-raise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-18T11:23:19.744129+00:00",
-  "last_updated": "2026-10-18T11:23:19.744234+00:00",
+  "last_updated": "2026-10-18T16:41:10.793144+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T11:23:19.744223+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:10.793115+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:10.793131+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-18T16:41:10.793138+00:00",
+      "change": "impact raised",
+      "detail": "TMB 5 -> 7"
     }
   ],
   "price_reaction": {}
