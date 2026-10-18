@@ -49,8 +49,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -76,12 +76,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order flow from NHAI"
@@ -100,21 +100,41 @@
       "published": "2026-10-14T07:40:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI invites bids for Rs 2,554 crore 6-laning of Nagpur-Bhandara stretch",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWFA2eXViV3JHempJMUMxSUhxSTJrSWRYdjhPeVR3VDRfVWk4X1NyYlpXTjN2V2VKdS14VXJ1X1VKdFVhS0lKZW9JWlFpOTR0eTNPLWl1M3g3RmN2d2JRMEgwbHZmOGVLQ3pBNGRUU1RGWC1NYkNhb2QxVHh0aTFoc1BYRTlScVFEQW5zbDhaYnlMUllSLThqTFVDN1VKNnpBdUNvZFdiZldISEhoOVdEb05BMVpuZ0NGSF9CY0hB",
+      "source_name": "The Hitavada",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T06:35:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Equitypandit",
   "cluster_key": "ASHOKA+JKIPL|OTHER|554-bids-highway-invites-nagpur-nhai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-14T12:13:29.216434+00:00",
-  "last_updated": "2026-10-14T12:13:29.216491+00:00",
+  "last_updated": "2026-10-18T11:27:51.862534+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:13:29.216484+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:51.862514+00:00",
+      "change": "sources added",
+      "detail": "The Hitavada"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:51.862529+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

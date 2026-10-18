@@ -35,6 +35,43 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -47,21 +84,41 @@
       "published": "2026-09-27T05:39:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank holidays this week: Will SBI, HDFC, ICICI, PNB be closed for festivals from 19–25 October? Check city-wise RBI list",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOa053ZEFpeVNJdFpiZFFqOHZ3a1QtWjZJNDhnRzl3Njg0U3U4UWpRQ0s3dkdnMjhwMXB5ZGY1T1dMQk92aEdpLXhRb2FuTnVhc2RhVjZfMnQtdDlCV2tlSWxpUUlnSUV3dU1JSTAzWVNYSUFsT0JxNEFyUlRKalVJZ21OV3NIQWRTVWNKaFprZE5kLWVBS0t1cktrS3hsZjNySnd5NzdVVW9Ma00xNkFWNVBCUlE0MkVHZ1EyWWVITDRaVk1sb1Exb2duTC1ZMHRmVGhVbTUxYmNHbTFVcWk4MnpRVDBRNm1BQ3FWUXVmaEs4ZkN0eXo2LV91cDg5eUJad3VsMXA3d1HSAY4CQVVfeXFMT3lnOXdnN2lYWTBkU3VQSWtUS21mbVdwYkZkbFRvRS01LWRMaUZHYTRERkp1SzMwdVJRZ0gzRW1wcTBud3hhM3VqX3F1a2ptYW9JaGQ0OThNTS1YYVJrM0lETlBwVS05ejh1STF5UExLQmpXeUZEUFhtWVJZa0g3REdDcXJmVHZjbnlvNE5oenU0Z1lVWk1aaDhzbUZVdkw4LTB4eXdMVHJIUWxvQ2VndGU3MUIxem5LWE02ckNWN1QwSkwxR2I0OEdsUl9DbUFmY01QeHhJaWlWa1ROdHA1MlQtaVZFR0FEYnMxWHlSS25oS1d1Q1BuX0RqQmI4V2kwV0lCQW80Q043OThzeklR",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T01:29:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "HDFCBANK|OTHER|bank-holiday-holidays-national-strike-week",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-27T12:15:56.700502+00:00",
-  "last_updated": "2026-09-27T12:15:56.700571+00:00",
+  "last_updated": "2026-10-18T11:27:35.944124+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-27T12:15:56.700566+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:35.944102+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:35.944118+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

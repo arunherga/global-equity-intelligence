@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "GEOGRAPHY",
         "REVENUE",
@@ -32,6 +32,7 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Development at a known counterparty (Caterpillar)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,7 +41,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "supply terms from Caterpillar"
@@ -59,21 +60,41 @@
       "published": "2026-10-05T14:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Is Caterpillar (CAT) Undervalued After Its $1 Billion Expansion Plan?",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcktPZDloakphQVQzU2twT1RWMk9DV1Z2ci14bFB3ajIxVUVuakxPbTdNNFN3RkdQMFhLbUQxVl9VelhqQXV6WXVLRnRsNkFCWFh6c0ZkS3BJZ19BcGlweWFjMWdiN1BYckxhWm0wZnhFS0Q5QjdoNkpFdER4OFNnYjhlSWhXb3ZUVzlhbERROGdzaVJlSEJoaGI5UjZTQU9FNEpTS2hiZ05VMzkwRDhYdVNVMmdueWtZcV9nemo4MmNsRHBmcFRGanFmNWRCNHNGNnfSAdIBQVVfeXFMT3JLT2Q5aGpKYUFUM1NrcE9UVjJPQ1dWdnIteGxQd2oyMVVFbmpMT203TTRTd0ZHUDBYS21EMVZfVXpYakF1ell1S0Z0bDZBQlhYenNGZEtwSWdfQXBpcHlhYzFnYjdQWHJMYVptMGZ4RUtEOUI3aDZKRXREeDhTZ2I4ZUloV292VFc5YWxEUThnc2lSZUhCaGhiOVI2U0FPRTRKU0toYmdOVTM5MEQ4WHVTVTJnbnlrWXFfZ3pqODJjbERwZnBURmpxZjVkQjRzRjZ3",
+      "source_name": "Simply Wall Street",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T23:45:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kalkine Media",
   "cluster_key": "JKIPL|EXPANSION|attention-cat-caterpillar-drawing-north-nyse",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T21:38:55.080736+00:00",
-  "last_updated": "2026-10-05T21:38:55.080831+00:00",
+  "last_updated": "2026-10-18T11:27:34.458539+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:38:55.080819+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:34.458518+00:00",
+      "change": "sources added",
+      "detail": "Simply Wall Street"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:34.458533+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 4 -> 6"
     }
   ],
   "price_reaction": {}

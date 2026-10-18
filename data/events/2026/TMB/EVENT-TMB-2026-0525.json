@@ -4,7 +4,8 @@
   "summary": "Oil prices rise as traders weigh Saudi supply risk, Russian diesel flow Business Standard",
   "event_date": "2026-10-14",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -12,14 +13,12 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "direction": "POSITIVE",
       "confidence": 0.28,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
         "CUSTOMERS"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -31,12 +30,11 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 International market development",
         "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -44,12 +42,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "order flow from traders"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -63,21 +58,46 @@
       "published": "2026-10-14T02:44:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Oil Prices Diverge As Traders Weigh Russian Diesel Relief Against Saudi Supply Risks: USO, UCO, In Focus",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNmlxLXZaSDJBNzB6VWJsMlcxOEo5bHdRNDJHQ2hXSVV3ekJZQV9HcjVnN01jSTJaTmpxY3hFRy01WDRxS3BNUXVtcGNTR0F2eWU5eXJPYnIyZGs4clowdUdxcnlGVHpzTnB6UXNWaTlQcm0zQktMOVdRX0tBLXdDdmNVUjBIWlJPUEVhLXdnTzRDblBta25xX1U3ZXV0c2c4QW5xcTFXTDB0QUxFdWEzYWVKdDh1aFVfQ2ZLRXVxazZ0LXg3NFdjNVBPZjBCNk9jY0U0dW40OHQwUHZkbno0ckIySDYxejA3QS01b0ItcVJDSVpLZF9nbQ",
+      "source_name": "Stocktwits",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T20:08:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "TMB|COMMODITY|oil-price-rise-saudi-traders-weigh",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-14T12:11:42.814108+00:00",
-  "last_updated": "2026-10-14T12:11:42.814178+00:00",
+  "last_updated": "2026-10-18T11:27:27.460320+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:11:42.814168+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:27.460292+00:00",
+      "change": "sources added",
+      "detail": "Stocktwits"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:27.460307+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:27.460315+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> POSITIVE"
     }
   ],
   "price_reaction": {}

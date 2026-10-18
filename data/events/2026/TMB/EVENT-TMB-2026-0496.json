@@ -9,40 +9,39 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "asset quality",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "financial implication is quantified"
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to asset quality. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -144,16 +143,26 @@
       "published": "2026-10-17T14:06:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Private banks post good Q2 profit growth, asset quality improves",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYkc1LUQwSTNNcVAzZWgwM3lGbmhBUVNJcXlpUVVlY2ZrSFI3MEduM2tvV3k3dkxYOW42YXpLb2lieGd1RHJ4NUZyNnlFNG1kaWtIRXdkMU5uMTJuZlZvR00tai0tYjhZdG9vUGQ4VVhGeGx5eU5FSGd2RmJjVmdvZnRfWTUxc091NTVySWtBMjl0eXRzSGpMaVlKTVpfZw",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T01:56:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "TMB|OTHER|bank-fall-fy27-profit-rbl-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:30:14.044374+00:00",
-  "last_updated": "2026-10-17T16:36:48.801066+00:00",
+  "last_updated": "2026-10-18T11:27:36.401745+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:30:14.044445+00:00",
@@ -194,6 +203,16 @@
       "timestamp": "2026-10-17T16:36:48.801062+00:00",
       "change": "stock added",
       "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:36.401712+00:00",
+      "change": "sources added",
+      "detail": "The Indian Express"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:36.401740+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

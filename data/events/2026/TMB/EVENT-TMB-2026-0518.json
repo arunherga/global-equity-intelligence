@@ -4,7 +4,8 @@
   "summary": "22, 24 carat Gold prices down across metro cities on October 13",
   "event_date": "2026-10-13",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
@@ -54,15 +55,16 @@
     },
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -73,7 +75,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -81,26 +84,30 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -111,7 +118,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -119,26 +127,30 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -149,7 +161,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -157,13 +170,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -427,16 +443,136 @@
       "published": "2026-10-17T03:33:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India October 18: Gold prices steady in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur (Other Cities)",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-october-18-2026/article71599412.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-18T08:11:46+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Today’s Gold Rate in India October 18: Gold prices steady in Delhi, Mumbai, Kolkata, Chennai, Bengaluru (Metro Cities)",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-october-18-2026/article71599411.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-18T08:11:01+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Check out petrol and diesel prices in Chennai on October 18, 2026",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUmk5LUEwTUtPOGRKQWJ3ZllCVXZ6OTU3UnJjbUprbk4zcTFXLWJ5RmszU3NjeFNxNEc3MjM2RUwxaUd5VlVCMDVGRFlNUVE0X3ZJMGprMmRTaFpXRnFYQ2RYQkgwUXhDazRTampDb2VQMlBoSGpOMV9JNzhTRlFuT1BYd2NqaUc0WEtkNHB5d3Y5bm5xajRLZnJLcU9iTTFi0gGuAUFVX3lxTE9mdDE4M2lINElRX3daZW42ZFRMUzZETUFCZW1IMmh3S0V4YjhJN2hhS3BDa3JwdUsyUGxFdm1YRVYyc2p0RVE1OUViSDVROEVha0NDNEJGUTU2TEFPTGpIMTFJUnhOOWE3WDR4LVk3Z0NWMzdPaUFqVlF1VGVYTjlVNUFSZXpwWXM4djhxNVdPdV9rN2k4ZndjVDdtTVpOaXhSYUNJdzliRUNnb0pDQQ",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T04:12:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Diesel prices",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE52allGdXdWZVJRZ2JicUVHY1dYQlVmSDRrUURQUmdLa2RFSUExT2U2LU5QTDU5RE55Mnh5WGw5MEphRE1kWDZQTFVFVklyd2RRNFdyRGxrZlZwNk5NbGg5S3lad2RUYktNMzVrSWtqZHNWQjcySlRWX19R",
+      "source_name": "Trinidad Guardian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T06:36:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Fueling frustration. High diesel prices bring spike in heating costs",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONVFCYlZMbVRHaldwWjBWT2hoRERZWmZuZEd0cXNZMm0wTUFwcW9JVXdlWTMzNVR1bEdxLWdIMUs5OEFheUpZR1l6eDE1enFYUzI5alpOV2ZGeTQ1RFNQLXBScVoyYUFrV0ZYRldLejBEeU9vLTBhS3RHakJlREtJdVNta0s3OURYY2N5RVQyR0NLempIZUFEc1ZxbG4wZnBOclJqM1A1TDVPZXA3UlFEOEVJM01MbEJxNjFObU1KY0ZseGZaQ3Y5ZnZ6X2dHYk5PMUl2bS1LMEc",
+      "source_name": "Akron Beacon Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T10:03:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol and diesel prices today, October 18: How much does fuel cost in Delhi, Mumbai, Bengaluru",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZEE0ZnBZb3Vwb0M4MDFxLTJTR3ZuNDdTWUtLZFRyWlRhelU2WnZPWUtDd0xBSk9qQjQ2cjV3emhWS2x1YUt2dF9rZk12T0JTTERTSkRiN2NsZHRBSDcydGJRNXlsZk5ZN21fMENPWHg3ZUNJSGZCLTNacHcwSWJub0dnVXNmWmRxWGJObHo5VTI2ZVpiSk1xLWg1UkhiWUV2aDUzbnNrMS1Ncm55UDB4aHNTN2tNZDRXaURhZllJRkozU2Z3RDViS3JYVktxbEJGYlpUa2RYNnlFWTN2eWxSYtIB5gFBVV95cUxNWF9TZ0RIQUtyTkhmb2E3QlF3OXBxRDFPSUFPZ2J0LW9sZ0VlOG9aVzBldEppd2tVYmo3bGlKVEZ6YnEyd0x6MDFnSUREVHhyMVVuX2pRaHJmNHcta29RWHRjcS0tZEJKaHJlS0hlVjN2bl90VUhqN04td3d6WG9xdWFIVk5tZEZEZzJocnl2Rm9iYm1BaEM1bWUyNWQ4aGVmZEd5RmQ2YVdJZTd3T19PRW9sa0tFQ0IxYVdxYzFIaUVOUVVjLXFyYTVFWVJzTTRhNWM3cG5qbHBpQkhITGZwZVJ0MTFGQQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T03:28:11+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Petrol, diesel prices today (October 18): Check latest rates in Delhi, Mumbai, Chennai, Kolkata & more",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYkM4MWRuYXppYXZEZHRvaTRRTm5vYnk0VVpVby1vTmdPQ2FWRW9VbG03OWpTWFphcExZQjFkbEM5ZVp2QlB2akN0dV81NG9aQlU2UDl6WTVBZ3pwbzZ1bUIwYWtKaHZKVTNXRjMxbmVkWkU0QTZBV3gwZnVvRWg2VWFEWWdvamF6a01PdWl2aFVma2F2aTJ0M0xTTG80SWhFV213RWNaUTJXZDVWbUJ1OFlsaW9HcmM1R3VOMXkwNkstOTgyb0lYdm1uMVlFUW5WSWd6bzZPQk1tRGdLNlhtSGpYZVhiR2PSAewBQVVfeXFMT29ESEZubU9vTFltQ2Y1RzZuLWNXekFEZmREZ0sxSXhWWGFXa2F0clJEQnllZVlhQjNBNXNOb0NPQ2FaV1NGLUxPeFVXS05qMGxXN0lKY1EwT0JhMXhTSURNNFlEdGo0TVJQaFhxNXRoY29aTTY3d290aEpYWlYwZzkxeHBMclVQU0I1d1B2Rlp0cl9YbjlLU1p3ckVreG5rVUZvVHVuOXZ5TUxISXJOTnJsYlpaNUI4X0FFWWpKOFk1YUVmeHU5QzdjS0FJcXh4TzJzZVAxNTRzTU8xS3k3bnh0UDd0TXRmN3pPRW4",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T02:28:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "US Diesel Prices Hit Unprecedented $6.53 Record High Following Global Oil Shocks",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVzZab0NRdTc2MTJYMWFZam52bmpTdXRsMnctMGVKbDZndUFMUnpnbkZ2V3dmVTZ3ZkpHZU0tU2ZWenB6bzRQdHJGOER4QUpvVFdSbk1naFdURWp3bnZDYzVEZFoxMU55MGlwYkxqRWJONTF3LWFFaVZSRmRzSXQ3ajZveDMwU1VGX3djTVV4dDlCMkdMaXRwTnpVUmtJbm1CTzVxYy1Cb202cy1Zd3J2dUtEU0FYelNZ",
+      "source_name": "cristinaiglesias.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T10:48:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today Ahead of Dhanteras 2026: Check 22K, 24K Gold Rates in Delhi, Mumbai and 20 Cities",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlFtaGpNaVVFUG9tZVRZSEFXLWlFOTM5SDk5REZVeEZNakNucmFqeG5ZQjZ1M1dwbnU5LUdpZWpUN29lSV9Ra0FEZS1NdUg0RnZuMmVNWGxUT0JjU3RZY0ZrMzFYMVd2RXhLN1VUNm8tOWRNbkpJdnA1YlVTU3BrZjMwT1JkemdINm0tTUpZWmpRWm13aTNGMkZrSWNYSWxSWDdvTHBUanNkdw",
+      "source_name": "https://ascendants.in/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T06:06:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today Hyderabad: 22K, 24K Gold Rates",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9pTHFGTENCc1JmcEVqbEdKXzA5YlctVVlLamZCZ2xiT3ZCSU5fTk90dDh1QU5pOFcwQ3lCMEZSZXlaM09aai1ZRExoay1ZeDcyUjhPNnQ3ZnlCQkNkZ1RmNDNIeEFqeGlsdGdQT3ZrcHk1TkdRLUE",
+      "source_name": "INDToday",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T05:23:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today in Cuttack – 18K, 22K & 24K Rate | 18 October 2026",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbDExVHNfMEEtWkh6VHd1VDFFNGNydXFsbWtIZ3RQSXMxbnBQNFNMZlQ5RDJJN3lyVVhHWGpUX01vc09RUmE5d3BzNl85ekpva0dhel9zckNhQWxnbWwyWlJuY3hVanNQT29SWERTN3hkU3laLTFnNnQxRzg3VWhESnRNQ3dGYnNnOElZ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T08:27:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold rate today in Hyderabad, October 18, 2026: Check 22K, 24K and 18K gold prices",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMTdiRkV5Nmkxc0d2UkQ2WG40Z0lYV2Fqdkc3XzF0OXYxaDhPSEF6bXY2RjkzTXdXTHBlaXNxMTh2VXB2UnVrMTJTWGNnRktZU3VyVzFHR0pkQ01ycTAtRHUxN09qa2w2b2VhNnpXdWRWTVFsVEdBcF9IVWd5dDNYZWFoMUlCalF0N1RqRFdwejZXTGp5QnVTZDlxZTBUeEdjWW1GaUxOdVc",
+      "source_name": "Hyderabad Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T08:30:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 26,
+  "article_count": 38,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-october-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:01:22.158272+00:00",
-  "last_updated": "2026-10-17T11:11:09.625931+00:00",
+  "last_updated": "2026-10-18T11:27:47.090964+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:01:22.158391+00:00",
@@ -507,6 +643,41 @@
       "timestamp": "2026-10-17T11:11:09.625912+00:00",
       "change": "sources added",
       "detail": "Business Today, DT Next, Livemint"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:05.310752+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:37.790551+00:00",
+      "change": "sources added",
+      "detail": "Akron Beacon Journal, Business Today, DT Next, Livemint"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:37.790567+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:37.790575+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:37.790580+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:37.790585+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:47.090946+00:00",
+      "change": "sources added",
+      "detail": "Hyderabad Mail, INDToday, The Times of India, https://ascendants.in/"
     }
   ],
   "price_reaction": {}

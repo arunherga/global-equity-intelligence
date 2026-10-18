@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -29,6 +29,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -37,7 +38,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "supply terms from Komatsu"
@@ -56,21 +57,41 @@
       "published": "2026-10-08T05:27:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Komatsu reports results October 29, 2026 with Komatsu stock at JPY 6.4 trillion - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZnRHZTdaZ003NnpZMlJmNjBvZWVRb2JBU2J2ME1RMEc0UVJPU2hWMEhtRENXekk5WW5nRU5lTVhfSEo4ci15Z1JtNXg1cS1FcDluNThLeDFyUG9TNFphNEdYQ2tKeHV2WWozUXgtejV2YXdYZHVsSThfLXJBMGVJNkctZXlWeFRscm5NVF9IME1YTVlzVE9IS3ViMzNkRUwwMWxiT2pUOVB3WVFHc0lMdW5xQlVMYWdnRnNzbG1OYUZ1aGptZEJwU0tKZEIzck0wMlF3",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-17T20:18:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "AD HOC NEWS",
   "cluster_key": "JKIPL|OTHER|5.70-before-fall-komatsu-october-share",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-08T13:50:40.609783+00:00",
-  "last_updated": "2026-10-08T13:50:40.609863+00:00",
+  "last_updated": "2026-10-18T11:27:28.300770+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:50:40.609853+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:28.300749+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:28.300765+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
     }
   ],
   "price_reaction": {}

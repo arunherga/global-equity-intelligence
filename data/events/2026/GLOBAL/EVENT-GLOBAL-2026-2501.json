@@ -267,27 +267,20 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "INDUSTRY",
-          "term": "asset quality",
+          "term": "credit growth",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
+          "weight": 2.0,
+          "detail": "in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -298,21 +291,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to SEBI, and asset quality. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -455,21 +449,41 @@
       "published": "2026-10-10T07:09:25+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "AA-enabled lending drives inclusive credit growth in India: Report",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaURDUFhxbnFaOWM4RE9XaVo3U1lob0dUZ0tsaXFuU3czTnROWUZJdmM5MHNWVUxxczAwak9nVDBILTlRcm9VSE5MLU1xWm9aZWlZeDVaTmF6V3B5aS1JMjROdlQ4ZWFyRDZ6bVM4X1JUaHBOX2JnRVZRMFprbFJmRzhDM0Z1cWZrM0lPN0tiMW5uamw4a3NNUzcxTHF1ZmxuOFRFdXlNeVVIUk02cEt0VTYxamVvcV9IeVdKS0djQWJHdEVSMXfSAcsBQVVfeXFMTVFzTzlxQk13cEJYd1ExVHk4V2RuRHpWME1fTnR1aGE0cHQwZkdXcVBILVdDMlZDVVRXSTNhd1YtZktOOTdTQVNTU1dnOTRiVUU3bUp3d1Y5anVRODVwcjljQWVGZjVpaGZBR1JSdmdIck93eThzZDVITzU3UDlMOXp6QW1qTGNSd09Vai1RTXh1LWhNTmozaXlFR0VHT2dsdmZyUENiTHVickpfd1d5WmpNaVhGUXJGX3dUVWdKRjNLUndhX2t6VDFVb00",
+      "source_name": "Asianet Newsable",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T05:01:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "ETBFSI",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|lending-msme-must-nbfcs-prioritise-quality",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-10T12:47:43.059768+00:00",
-  "last_updated": "2026-10-10T12:47:43.059868+00:00",
+  "last_updated": "2026-10-18T11:27:44.954882+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-10T12:47:43.059857+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:44.954860+00:00",
+      "change": "sources added",
+      "detail": "Asianet Newsable"
+    },
+    {
+      "timestamp": "2026-10-18T11:27:44.954876+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
