@@ -4,20 +4,23 @@
   "summary": "New Zealand to now build with 'Made in India' JCB machine: Piyush Goyal Investment Guru India",
   "event_date": "2026-10-19",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EXPORT_ORDER"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "EXPORTS",
+        "REVENUE",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -25,31 +28,29 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (JCB)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a platform or supplier the company depends on is investing"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from JCB"
+        "shipment timeline",
+        "currency hedging on the contract",
+        "destination-market duties",
+        "repeat-order potential"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, supplier exposure to JCB, and India. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to JCB. The parts of the business most likely touched are exports, revenue, supply. Classified as export order.",
       "ai_analysis": null
     }
   },
@@ -63,21 +64,56 @@
       "published": "2026-10-19T12:17:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Made in India, Made for world! Piyush Goyal flags off 1st ever JCB machine export to New Zealand, made in Pune",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNOG9ibEY4dktoTWVPaVdNNkF2VmtTRkxFeXpKaXVCVGx1VDVzMk1Mbm12M01zb285QWJmWkZFVU9qZ2F1M3I0YS1PZlQ3OHNpYkdEZ09GY1Y1RlFBYy1VTzg4YmVpcGlhUW01V2JmUVhfeHpZcUZHaTFxRWl6dWs0akVfTFFUcmFGUHNMeXhzZWpmdkp0bjZWeUI2d2lNWjRCTFJEMV9sYW8zeUx0NWhnOUxqZmVaRkx0NW4xVTY5QUpDMXlBbEdtZWVockNBSTMzWDVfU21fa256RW9CQ0t0bGtmcTFpd0JqYy1CbzFHaXFOUXZL0gH6AUFVX3lxTE1Hdm43RGx2T2dFclNRQU1wek5mWW5kS05lbWZTeWd3WmpWSmlZSVdKZjBlNHZyZU9wMHRZbDFDMU5JVWdSR3JybVBmTVdUdTZkSUZaeEZxOUJmQTFNTmFZTGwxZFJjU3M3TjJzU1NGMjB1VGhRcThWbU9LX2NrVko5SElzWXdnTjM1N3hGTzZRV1pXMUhNQ3BRMEdwRUY1UlNGVXdhbzQ5ZVl1TzZ4ZTg3aHVZV2h0RVVtUlVzMHA5c3RGVEhUX3BPczVvb3BBdmpYMFl3VkQ1TDlheVlFWjRmVVhHQmtCYndJSTR6c2dyb0JweTFsVjFWTXc",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T15:48:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Piyush Goyal flags off first JCB machine export to New Zealand as FTA takes effect tomorrow",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQUpfYU1GeDh6cHFFTFV3UHF2RmhjWWNZd01wekhyWXFNOUJkUGNIZDl5ZDZDZElsRUZvY0dyeXRCWFVHdE9JNFJramxQRERiSjgyRVpRNmp5TFZUdmNzdmFXRFAxcW9nTHYyQ1lMbURBejJnZHFHY0wzYlNFc0x0TkVuNVRTeV84eURpS2s0dlhBMmNlZnVlS2JwcHNNME5NZURReFRNeG1VQXNwdmxlZ054Mm9tc0NVWmJOdFA4dTBrZWNDb2JLWXRoT3lnVThGbG5Ra0FFMDhEZw",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T13:58:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Investment Guru India",
   "cluster_key": "JKIPL|OTHER|build-india-jcb-made-now-zealand",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:43:58.100479+00:00",
-  "last_updated": "2026-10-19T13:43:58.100565+00:00",
+  "last_updated": "2026-10-19T20:06:52.400078+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:43:58.100554+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:52.400050+00:00",
+      "change": "sources added",
+      "detail": "ANI News, Livemint"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:52.400067+00:00",
+      "change": "categories added",
+      "detail": "EXPORT_ORDER"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:52.400074+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 6"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,117 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3723",
+  "title": "AMZN climbs nearly 5% after AWS delivers fastest growth in four years and bullish structure holds",
+  "summary": "AMZN climbs nearly 5% after AWS delivers fastest growth in four years and bullish structure holds Traders Union",
+  "event_date": "2026-10-19",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from AWS"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "AMZN climbs nearly 5% after AWS delivers fastest growth in four years and bullish structure holds",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRkdRcEU1QlpGbFhYNHpUaTNSaEJmQkpIV1U4eUpzeV9KYjJMRW5QV3NzSWpYTnZ4V2luM3J2TjN0T3Z6LVNSSXhfUEhfVldQcjFRV01lR3A4bXd6WHdGajF1TVNMWlB2elpGYk9sV2tjamFlUF9XY080REJuSnhEMjJ6YVZ5UFotSTI0cDJuQ0dTR3M",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T17:46:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "KSOLVES+TMB|OTHER|amzn-aws-delivers-fastest-nearly-rise",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-19T20:06:02.302803+00:00",
+  "last_updated": "2026-10-19T20:06:02.302893+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-19T20:06:02.302882+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

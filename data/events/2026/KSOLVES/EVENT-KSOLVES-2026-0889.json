@@ -45,6 +45,46 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -57,21 +97,41 @@
       "published": "2026-10-09T14:45:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Amazon shares seen gaining on AWS and AI push",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd1B2TVo1cmJrc2ZpbC01UTBVSURUdE5QdnhnbFBtMXhzbG9GbG1McHAyNXRpWDB5aXBfSmRiVk44Z2R0SUxLNTQta0pScXF1emhCTklYMVEyVHFNU21CQWt3Uy1rZHdZM2dTWk96T2hpT3lkNXFGN2h0QjlySURQa3NNc3E",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T11:11:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Pluang",
   "cluster_key": "KSOLVES|OTHER|ai-driven-amazon-aws-fastest-quarters-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-09T18:59:07.237729+00:00",
-  "last_updated": "2026-10-09T18:59:07.237815+00:00",
+  "last_updated": "2026-10-19T20:06:39.540670+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:07.237804+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:39.540644+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:39.540664+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

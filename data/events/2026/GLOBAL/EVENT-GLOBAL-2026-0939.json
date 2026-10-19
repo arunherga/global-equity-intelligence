@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (ICICI Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -47,31 +47,40 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (ICICI Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -165,16 +174,26 @@
       "published": "2026-10-09T10:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank falls Monday, still outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdTFSWXdRV2NkUmZjcGxMckhXcEhhUDB0MmxzaXVBSHEyYWZvTmRyY0NjYVRoOF9TWkNLVllnd3BUdTJVX0NzODZQSEVxUHdpMloyQ1dSS18tOUszTkEzaWd2UDFCR2xTR0p3Y1daNzBDVlZSQlBmeFZ5OWpiZ0gweVAzb2RlUmY5ODdNdTJQNDBGbXRGVDNFYld3VGUzVmUtQUpuMmNqTjBYbk9abUphd29vWllDNERRR3NZSC1ZV2ZZb19n",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T10:32:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-fall-icici-market-monday-underperforms",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T20:41:16.669941+00:00",
-  "last_updated": "2026-10-09T19:07:02.843293+00:00",
+  "last_updated": "2026-10-19T20:06:36.214094+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T20:41:16.669991+00:00",
@@ -220,6 +239,21 @@
       "timestamp": "2026-10-09T19:07:02.843273+00:00",
       "change": "sources added",
       "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:36.214012+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:36.214082+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:36.214089+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

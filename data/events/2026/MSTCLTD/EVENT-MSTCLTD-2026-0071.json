@@ -51,6 +51,96 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to ferrous scrap, and India. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -103,16 +193,26 @@
       "published": "2026-10-15T13:48:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India: BigMint's ferrous scrap index up INR 400/t d-o-d as steel prices strengthen",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMjBhSlpsXy01LXV6T21iU2lpX3V6Z2dIeHkwb2tKcW42bzNCVC1hejd3RS1JY05VaWVKejhrRUpEdE9PWVpxcjN3RS13bWxiZldZenNhMTZBRV8wYmgxSWhIaWZRakJ6bUtPeHdGXzViekhrMzY0V1RvRTZDMllVNWhzQU40ei1BSUVWZTZDX1VHdk50NUMxWnZZOU9pclRPUzBSYVBIbnI1TzdQT0t1SHJFV1dvWDh2Q1k3aUdDcldpM0NO",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T13:21:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "MSTCLTD|OTHER|bigmint-ferrous-index-india-rise-scrap",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-28T14:12:11.689982+00:00",
-  "last_updated": "2026-10-15T18:01:58.853623+00:00",
+  "last_updated": "2026-10-19T20:06:48.701685+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-28T14:12:11.690040+00:00",
@@ -138,6 +238,21 @@
       "timestamp": "2026-10-15T18:01:58.853607+00:00",
       "change": "sources added",
       "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:48.701657+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:48.701675+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:48.701680+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

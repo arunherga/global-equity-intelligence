@@ -10,10 +10,10 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.3,
       "business_impacts": [
         "EXPORTS",
         "REGULATION",
@@ -27,12 +27,20 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Middle East",
+          "relationship": "WEAK",
+          "weight": 1.3,
+          "detail": "export market; in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "-3 Speculative or unconfirmed report",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -41,8 +49,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "scope of the measure",
@@ -50,16 +57,16 @@
         "retaliation risk",
         "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are exports, regulation, input cost. Classified as trade policy.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and Middle East. The parts of the business most likely touched are exports, regulation, input cost. Classified as trade policy.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.3,
       "business_impacts": [
         "EXPORTS",
         "REGULATION",
@@ -73,12 +80,20 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Middle East",
+          "relationship": "WEAK",
+          "weight": 1.3,
+          "detail": "export market; in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "-3 Speculative or unconfirmed report",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -87,8 +102,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "scope of the measure",
@@ -96,7 +110,7 @@
         "retaliation risk",
         "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are exports, regulation, input cost. Classified as trade policy.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and Middle East. The parts of the business most likely touched are exports, regulation, input cost. Classified as trade policy.",
       "ai_analysis": null
     }
   },
@@ -130,16 +144,26 @@
       "published": "2026-10-16T02:25:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Crude Oil Price Today, October 19: Brent Crude near $109 as Trump waives Russia sanctions; Middle East risks persist",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOS3c2MHduV2JRMVp3RWZmWkxoazUyczJrN0VBVWE0UjlFX2dBeVdaUEtnNzRSS1dmUEpjRVpIeVIwNFQyU2lqcDc0aEc3dzhrVVBQUFphQzVKTjRUVUxfdkpxTFplZHVwVllPaDduYS1oZnR4Qjk0WG9KVjJfbDhWampRQ0xONDVWMUVHaVBnc3Q1T0lBWmduQ3FIeEY0blBLOTRDNmlkdzRJcklUVFJ5Tlc4R3Y0RGl6ZlI2TGdKbHdSS0d6ejNWWWo1RVlleE51UWM2ZXEwMk5LUnZIY0w3YXRVNkQxLWN3Rnpsak1ZUzJmaFMwcE9j0gH8AUFVX3lxTFB4VVN3bV9RR05VbktPOHREOUF1bUViY0xFajFaeGRib1psNE9yOUFJWWd0cVFYUHJYcWY2LXQzUmFqajRrWDJGRDFiX29pTFEyNjV1eG9Pbkd2Wm90aGswZTJlbjdYVlcxWU1JaHhaS3lmOUY5S2xDS19hblJfdGNkU21ZZHQxWlVBX3p2SFJfaEVQYzY5SExFT3lHZUR5empzQzRrS2tFTDJBeHJKY1lWM1FqWDA0MlFvRHpMQXN2OEdURUQ0TlE4bXpJUGRJMzdoM3pYbFNJQVlQdlMxcHpMbUZZbzlFUkdXcWg1bTlyMjBJajZyODN5N055RA",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T02:22:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|TRADE_POLICY|crude-denies-easing-oil-price-trump",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-09-30T12:51:04.804527+00:00",
-  "last_updated": "2026-10-16T11:44:02.265297+00:00",
+  "last_updated": "2026-10-19T20:06:25.877132+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-30T12:51:04.804597+00:00",
@@ -160,6 +184,21 @@
       "timestamp": "2026-10-16T11:44:02.265294+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:25.877100+00:00",
+      "change": "sources added",
+      "detail": "ET Now"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:25.877120+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 1 -> 8"
+    },
+    {
+      "timestamp": "2026-10-19T20:06:25.877127+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 1 -> 8"
     }
   ],
   "price_reaction": {}
