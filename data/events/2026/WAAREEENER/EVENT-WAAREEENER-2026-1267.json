@@ -4,29 +4,33 @@
   "summary": "China has proposed banning exports of selected high-efficiency perovskite and tandem solar manufacturing technologies, alongside new restrictions on advanced polysilicon, wafer and crystalline-silicon cell production processes. The proposed measures would cover 12 photovoltaic technologies, with public consultation open until Nov. 15. The post China proposes ban on exports of perovskite, tandem solar manufacturing technology appeared first on pv magazine Global .",
   "event_date": "2026-10-16",
   "event_types": [
-    "TECHNOLOGY"
+    "TECHNOLOGY",
+    "EXPORT_RESTRICTION",
+    "EXPORT_ORDER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "relationship": "DIRECT",
+      "impact_score": 15,
+      "impact_band": "CRITICAL",
       "direction": "UNCERTAIN",
-      "confidence": 0.47,
+      "confidence": 0.57,
       "business_impacts": [
+        "EXPORTS",
+        "REGULATION",
+        "REVENUE",
         "PRODUCT",
-        "COMPETITION",
-        "INPUT_COST"
+        "COMPETITION"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "polysilicon",
+          "exposure_type": "COMPETITOR",
+          "term": "Vikram Solar",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "input commodity"
+          "detail": "in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -34,18 +38,82 @@
           "relationship": "WEAK",
           "weight": 0.9,
           "detail": "in headline"
-        },
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+3 Order or contract",
+        "+4 Material international trade or tariff policy",
+        "+3 Strategically important competitor development",
+        "+2 International market development",
+        "+2 Company appears in the headline"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "shipment timeline",
+        "currency hedging on the contract",
+        "destination-market duties",
+        "repeat-order potential"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are exports, regulation, revenue. Classified as export restriction.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear in the near term; potential revenue growth could be constrained if capacity expansion plans are delayed by machinery export curbs, though higher end-product pricing from global supply tightening could provide an offset.",
+        "margin_effect": "Margin pressure is possible if alternative non-Chinese equipment, technology licenses, or specialized manufacturing inputs carry higher costs, unless domestic module prices rise sufficiently to pass costs on.",
+        "cost_effect": "Capital expenditure and procurement costs for cell, wafer, or advanced module production machinery are likely to increase if key technology must be sourced from non-Chinese vendors.",
+        "competitive_effect": "Favors established domestic players like Waaree over newer, unscaled entrants by creating technology barriers to entry, though it may widen the technology gap relative to Chinese peers who retain sole access to cutting-edge manufacturing processes.",
+        "regulatory_effect": "May lead to increased scrutiny under Indian trade and renewable energy policies (such as ALMM and PLI schemes) to ensure domestic manufacturers can meet national targets despite foreign technology export controls.",
+        "short_term": "Increased uncertainty and potential procurement reviews as management assesses the exposure of its current expansion projects to the targeted technology categories.",
+        "medium_long_term": "Could force a strategic pivot toward non-Chinese equipment vendors or domestic tech development, potentially extending timeline milestones for upstream vertical integration into cell and wafer manufacturing.",
+        "second_order_effects": "A surge in global demand and front-loading of orders for non-restricted manufacturing tools, along with potential state-level incentives in India to foster domestic solar equipment tooling industries.",
+        "key_uncertainty": "The exact scope and definition of the 12 proposed export-restricted technologies, specifically whether they target capital machinery, manufacturing process know-how, or specific wafer and cell architectures.",
+        "monitor_next": [
+          "Final policy details and technological scope released by China's Ministry of Commerce.",
+          "Management disclosures regarding Waaree's equipment supply chain exposure for planned cell and wafer expansions.",
+          "Delivery status and timeline updates for imported equipment at current project sites.",
+          "Policy or deadline adjustments from India's Ministry of New and Renewable Energy under the PLI scheme."
+        ]
+      }
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "EXPORTS",
+        "REGULATION",
+        "REVENUE",
+        "PRODUCT",
+        "COMPETITION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
         {
-          "exposure_type": "TECHNOLOGY",
-          "term": "perovskite",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Commerce",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development"
+        "+2 Order activity at a related company",
+        "+4 Material international trade or tariff policy",
+        "+2 International market development",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
@@ -57,9 +125,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "polysilicon over the next few weeks"
+        "shipment timeline",
+        "currency hedging on the contract",
+        "destination-market duties",
+        "repeat-order potential"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to polysilicon, and China. The parts of the business most likely touched are product, competition, input cost. Classified as technology.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Commerce. The parts of the business most likely touched are exports, regulation, revenue. Classified as export restriction.",
       "ai_analysis": null
     }
   },
@@ -83,21 +154,61 @@
       "published": "2026-10-16T13:01:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China Proposes Export Restrictions on 12 Solar Manufacturing Technologies",
+      "url": "https://www.mercomindia.com/china-proposes-export-restrictions-on-12-solar-manufacturing-technologies",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-19T15:47:10+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Energies, Vikram Solar and Other Solar Stocks in Focus After China Proposes Export Curbs on Solar Technologies",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOTgzZWZ2N3cwcmtuQ2U0WFlyMFUzdnpiVDFDc1BCWVBERzFxTzFTVkN0TXhMaWdXb09CUTVUYmxDR1dtbGp5OGVGaFp6ZnR3QlVqRU1nR2NqLXFGT2xJU19EY2tCX3BDZUE1dzNVWDFDQ3ZxUXI4aUdCQ011bUxCUU9vc1JxeFpzM2EyUXZvY1JLY1IxRk04ZUN0c3BYYkR2NkRQUzNwQzZUeTRUSWlBLUs2TTlPRlJUMEhPcVZrMUcxWmhuYjRSUHI3QnczUmw1Q0pNUlcyakRnaDVheWhqMms1WHdDeElkNVZtZ0g2cnZPMUl4UGc",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T05:54:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|TECHNOLOGY|ban-china-export-perovskite-proposes-tandem",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-17T11:00:53.004677+00:00",
-  "last_updated": "2026-10-17T11:00:53.004768+00:00",
+  "last_updated": "2026-10-19T13:48:19.952290+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T11:00:53.004758+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.952253+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, Trade Brains"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.952271+00:00",
+      "change": "categories added",
+      "detail": "EXPORT_RESTRICTION, EXPORT_ORDER"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.952278+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 4 -> 15"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.952286+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -82,6 +82,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -94,21 +132,41 @@
       "published": "2026-09-29T08:16:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Taiwan’s Feng Hsin keeps rebar, scrap, section steel prices unchanged - Yieh Corp.",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWUt0QlVmQ21kQ0dPNTY3Zm9qV3ZEeGR3ZzNKYXBuMTNSUjgtMDY1Wng5WFB4U055Vng2cDFUU2E3bzVNQThJZkluYXNKTkoyRk03Z29WdnF1cmw0Zy01LU5JcXBvRW1UaTRfdEp1d3k2Y2hqXzktc19ocGppbWlLVHA0V0ktYXlvWndhak1RYzBhRG5TcGFtOVlucDRmQ2s",
+      "source_name": "Yieh Corp.",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T08:31:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "yieh.com",
   "cluster_key": "JKIPL+MSTCLTD|OTHER|domestic-feng-hsin-keeps-rebar-taiwan",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.792549+00:00",
-  "last_updated": "2026-09-29T18:47:06.973034+00:00",
+  "last_updated": "2026-10-19T13:49:46.287063+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.792610+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:49:46.287040+00:00",
+      "change": "sources added",
+      "detail": "Yieh Corp."
+    },
+    {
+      "timestamp": "2026-10-19T13:49:46.287058+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

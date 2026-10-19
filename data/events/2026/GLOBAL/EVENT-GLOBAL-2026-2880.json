@@ -56,13 +56,12 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
-        "REVENUE",
         "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
@@ -80,17 +79,23 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "+3 Government policy or tender development",
         "+3 Development at a known counterparty (NHAI)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -103,7 +108,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are regulation, revenue, customers. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -117,21 +122,41 @@
       "published": "2026-10-13T14:26:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Makes Weekly Toll Plaza Inspections Mandatory",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQczVfQnV3clBiVkpnbUR2NGJxTUpxS3JYVVdZQnhUNGRldTcxVEZzTUJFV2ZyN05URl83WnNoQnFqNVFNWXJIVlRVQUFxeXl2dzZISDRjLTMtLWFIN3g3S2pfd0NBTGsxX1hEeGg4czNDSnBmTXotNGJrYzljdkhYQmVlSXc4VjZxLW5IdmlyVE55MC1xU1FnVlAtU3VhTzZsMGtPUExVVlQxbENCUFc5ZXd0NWZvVUFKOFV6M1BhRXdtQXZqd1FYTC1iWjF5bUQ2WjdKMFZuQThHX3ZDWkJqcUVR",
+      "source_name": "Construction World India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:50:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The New Indian Express",
   "cluster_key": "ASHOKA+JKIPL|REGULATORY+TENDER|inspections-makes-nhai-plaza-toll-weekly",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T20:03:08.250485+00:00",
-  "last_updated": "2026-10-13T20:03:08.250571+00:00",
+  "last_updated": "2026-10-19T13:49:30.708119+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T20:03:08.250561+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:49:30.708079+00:00",
+      "change": "sources added",
+      "detail": "Construction World India"
+    },
+    {
+      "timestamp": "2026-10-19T13:49:30.708113+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

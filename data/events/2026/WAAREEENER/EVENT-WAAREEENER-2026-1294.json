@@ -11,10 +11,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.35,
+      "confidence": 0.56,
       "business_impacts": [
         "REPUTATION",
         "PRODUCT",
@@ -33,16 +33,17 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
+        "+4 Regulatory or legal action",
+        "+2 International market development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "a competitor (First Solar) is under pressure"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "First Solar's follow-up announcements"
@@ -61,21 +62,41 @@
       "published": "2026-10-16T17:48:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Swift Current alleges widespread module defects in lawsuit against First Solar",
+      "url": "https://www.pv-magazine.com/2026/10/19/swift-current-alleges-widespread-module-defects-in-lawsuit-against-first-solar",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-19T05:26:26+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "pv magazine USA",
   "cluster_key": "WAAREEENER|LITIGATION+PRODUCT_FAILURE|alleges-current-defects-module-swift-widespread",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-17T16:32:02.991323+00:00",
-  "last_updated": "2026-10-17T16:32:02.991412+00:00",
+  "last_updated": "2026-10-19T13:48:15.784914+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T16:32:02.991401+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:15.784891+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:15.784908+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 8"
     }
   ],
   "price_reaction": {}

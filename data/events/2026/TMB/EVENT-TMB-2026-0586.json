@@ -14,14 +14,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
+        "REPUTATION",
         "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -29,35 +28,27 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
         "-7 Share-price listing or roundup page, not a development",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Karur Vysya Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "Karur Vysya Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Karur Vysya Bank, and India. The parts of the business most likely touched are pricing, input cost, competition. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
       "ai_analysis": null
     }
   },
@@ -171,16 +162,26 @@
       "published": "2026-10-16T11:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank Share Price Target at Rs 413: BOB Capital Markets",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObWd3RmhxRVk0VklpR1ZYZEc1djNOYzQ3cmdVRGNFWGViS2hxRUFEdF9hTnpTLVJNQnVTUkFtaDdkZ08zXzB4Q3dKUjUyNWJCcEhxVjlBQmtxc0xlOXItQkVMdVZFaGs0SFRGWEJkbk9iRFdiNEs2eGExTlA4U0tYaHc5S1FnWWVvWGRnRTVybkl1R00",
+      "source_name": "TopNews",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T12:11:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
+  "article_count": 12,
   "source_count": 1,
   "primary_source": "Investment Guru India",
   "cluster_key": "TMB|ANALYST_ACTION+EARNINGS|bank-hit-karur-rise-share-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:40:40.881216+00:00",
-  "last_updated": "2026-10-17T11:10:02.721878+00:00",
+  "last_updated": "2026-10-19T13:50:21.684729+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:40.881286+00:00",
@@ -196,6 +197,16 @@
       "timestamp": "2026-10-17T11:10:02.721873+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-19T13:50:21.684706+00:00",
+      "change": "sources added",
+      "detail": "TopNews"
+    },
+    {
+      "timestamp": "2026-10-19T13:50:21.684723+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0165",
+  "title": "Oman sees 20% jump in vegetable prices, 10% in meat",
+  "summary": "Oman sees 20% jump in vegetable prices, 10% in meat Oman Observer",
+  "event_date": "2026-10-19",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Oman sees 20% jump in vegetable prices, 10% in meat",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMjdMdEp0RWVWbUhYb29LWWhjSHJEZnNJYmQ5MUlLU1VqWWlXTXRIMlMxVmxFU3MwUzk2ekVodjF1a1R1TUU2T3FoVDNhM0wxa2dQNGF0SzF2Sm00czJHWFZSR1lMVlBiTFpwRmNhaGtxRm5DRGg3X3YxR2RsQlIxeXpXVXNFWG5qU1BYM3R2U0VPdVBFdnlzeFdTUmVqYWpXa3hEdmxpLVpfME3SAVpBVV95cUxQampNb1ZBNk50NEtVcUlhd1dBMHdPOVNScWhocUp4Tm9pMFc4UUN1MUpQbnZfSnN3SzZGQ19MZEYtNjI0X0FFUXJsT2dpX1VlLXVRUTFCb1NmQmc",
+      "source_name": "Oman Observer",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:03:50+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Oman Observer",
+  "cluster_key": "FRESHARA|COMMODITY|20%-oman-price-rise-sees-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-19T13:40:22.018025+00:00",
+  "last_updated": "2026-10-19T13:40:22.018120+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-19T13:40:22.018109+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

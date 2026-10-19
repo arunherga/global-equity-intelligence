@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "financial implication is quantified"
+        "direct relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +85,51 @@
       "published": "2026-10-06T08:49:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank: 3 Key Takeaways for Long-Term Investors",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbHdlbFRGMktTUzNGNVpuV2EySDlKWmNwa3pMeVl2bzJRT1pEY3RKaDJtcXprMjZ3MzRGeGF2dFJlVXE5QkN1WmpRbTY3VVl6SlppcXh2amQzZWNlbWJEM1BuWXA4bXpicnZna2haNXdpcC1rRDh6TEZvNmFqZkVlRTNVcnlEdmRYd3VjVDAzaTVUdENWQk9LdUFwQzBSTTNsVjViM0VIUmhzTEhSSnh5RndiNzd1UnhrY1U3aHYxVUZVa25udkR3",
+      "source_name": "The Globe and Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T21:53:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank: 3 Key Takeaways for Long-Term Investors",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUlc5Y3lnYTBXLVBmazN4VVc2dndSWWdBcGpWM3l4cVNwZkxJWWd0OWx6OG9yNm1lWnJVN1hNSUtSNHFRcnVQQnVNTFJIdzZvTDlHZjQwZUxleWU2MXNoR2dfbVNHMWQyQkU3LXl0RHdUYTdXZTRDTzJtM1hwc1ZLalZfOUNWVXFfbWk3U1A2eHhxdFJ6aWc",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-18T20:17:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "HDFCBANK+TMB|OTHER|52%-jindal-life-saw-sbi-upside",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:37:44.660640+00:00",
-  "last_updated": "2026-10-06T13:37:44.660749+00:00",
+  "last_updated": "2026-10-19T13:48:29.052245+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:37:44.660735+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:29.052222+00:00",
+      "change": "sources added",
+      "detail": "The Globe and Mail, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:29.052239+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,134 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3648",
+  "title": "Japan's Electricity Prices Surge 25% as LNG and Coal Costs Soar",
+  "summary": "Japan's Electricity Prices Surge 25% as LNG and Coal Costs Soar Crude Oil Prices Today | OilPrice.com",
+  "event_date": "2026-10-19",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Japan",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Japan. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Japan's Electricity Prices Surge 25% as LNG and Coal Costs Soar",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNDZRT0NWWDZXNjVnYS03ei0zakNlNkdPRkRkbFlKQmQwdndOaVJldUkteGtocy1RbC1jdFA3NTVOelVhMTVHbElPMlVmaWN5NzR4Y2YyNmFrQ25Ka2pIQmYyN2M2VVFBdWhwdGRhbFJWMmoteDFXZTRjNmVSMlBoTng3ckVqWEdyX0lOSDZLTHNCNkZFNU5QcDV3aFdiM25ITXQ4dzdUcXF2ZXdRX1BjTnoyNzFjbW1mMGtVazNR0gG-AUFVX3lxTFA0NlFPQ1ZYNlc2NWdhLTd6LTNqQ2U2R09GRGRsWUpCZDB2d05pUmV1SS14a2hzLVFsLWN0UDc1NU56VWExNUdsSU8yVWZpY3k3NHhjZjI2YWtDbkprakhCZjI3YzZVUUF1aHB0ZGFsUlYyai14MVdlNGM2ZVIyUGhOeDdyRWpYR3JfSU5INktMc0I2RkU1TlBwNXdoV2IzbkhNdDh3N1RxcXZld1FfUGNOejI3MWNtbWYwa1VrM1E",
+      "source_name": "Crude Oil Prices Today | OilPrice.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Crude Oil Prices Today | OilPrice.com",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY|25%-electricity-japan-lng-price-rise",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-19T13:42:35.050521+00:00",
+  "last_updated": "2026-10-19T13:42:35.050597+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-19T13:42:35.050589+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

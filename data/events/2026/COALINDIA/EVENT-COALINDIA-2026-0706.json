@@ -11,15 +11,12 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.49,
-      "business_impacts": [
-        "PRODUCT",
-        "COMPETITION"
-      ],
-      "time_horizon": "LONG_TERM",
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "INDUSTRY",
@@ -27,32 +24,25 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "rooftop solar systems",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 Major industry-level development",
+        "-3 Passing mention without a quantified development",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
         "sector relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to rooftop solar, and rooftop solar systems. The parts of the business most likely touched are product, competition. Classified as technology.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -133,16 +123,26 @@
       "published": "2026-10-17T11:45:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai Port Authority Invites Bids for Rooftop Solar Project",
+      "url": "https://www.mercomindia.com/chennai-port-authority-invites-bids-for-rooftop-solar-project",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-19T14:39:51+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "Construction World",
   "cluster_key": "COALINDIA+WAAREEENER|OTHER|086-bids-coalfields-invites-mahanadi-rooftop",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:40:28.930840+00:00",
-  "last_updated": "2026-10-17T16:36:53.527380+00:00",
+  "last_updated": "2026-10-19T13:48:19.181465+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:40:28.930904+00:00",
@@ -173,6 +173,16 @@
       "timestamp": "2026-10-17T16:36:53.527364+00:00",
       "change": "sources added",
       "detail": "Solarbytes"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.181443+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:19.181460+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

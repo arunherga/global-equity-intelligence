@@ -9,14 +9,21 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "credit card spending",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "credit cards",
@@ -33,22 +40,67 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to credit cards, and India. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -62,21 +114,46 @@
       "published": "2026-09-29T05:47:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Dominates Credit Card Spending in India",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaXV1UlExNnh4VndhMUZJZ21NZ2dkR2xURkVWZHYtTUE4VEV3d25qNWl1Ri1jNG5YUWhvT256cXUxV3VPek43LS1nRE5qdURWQmxPRUpiRWhHNzhsN2hiY3FibkVvZE1scWRCdktobzN5WGlZdk1aQXpmajVDLVlzcV9mXzBCd3ZmYmNSWGhJVTBHX1NJbFl4OWFGQ2N4cWfSAZ8BQVVfeXFMTml1dVJRMTZ4eFZ3YTFGSWdtTWdnZEdsVEZFVmR2LU1BOFRFd3duajVpdUYtYzRuWFFob09uenF1MVd1T3pONy0tZ0ROanVEVkJsT0VKYkVoRzc4bDdoYmNxYm5Fb2RNbHFkQnZLaG8zeVhpWXZNWkF6Zmo1Qy1Zc3FfZl8wQnd2ZmJjUlhoSVUwR19TSWxZeDlhRkNjeHFn",
+      "source_name": "Analytics Insight",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T12:19:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "HDFCBANK|OTHER|bank-card-credit-defaults-fall-india",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-09-29T13:08:35.689783+00:00",
-  "last_updated": "2026-09-29T13:08:35.689851+00:00",
+  "last_updated": "2026-10-19T13:50:24.852929+00:00",
   "event_history": [
     {
       "timestamp": "2026-09-29T13:08:35.689845+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:50:24.852903+00:00",
+      "change": "sources added",
+      "detail": "Analytics Insight"
+    },
+    {
+      "timestamp": "2026-10-19T13:50:24.852919+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-19T13:50:24.852925+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -4,26 +4,28 @@
   "summary": "Erste Group Bank Lowers Earnings Estimates for ICICI Bank MarketBeat",
   "event_date": "2026-10-14",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "ANALYST_ACTION"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "REPUTATION",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -32,7 +34,6 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -49,35 +50,36 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "REPUTATION",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+5 Direct company event",
+        "+5 Earnings or guidance with a surprise",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -85,7 +87,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -94,8 +96,26 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Top-line revenue and Net Interest Income (NII) remain tied to core credit expansion, though yield pressure and intense competition for deposits may constrain overall NII growth relative to peers.",
+        "margin_effect": "Net Interest Margins (NIMs) face immediate downside pressure, as brokerages flagged margin compression post-Q2 results due to persistent elevated costs of deposits and yield competition.",
+        "cost_effect": "Operating expenses could rise as the bank invests in deposit gathering infrastructure, digital platform upgrades, and competitive compensation to mitigate risk from leadership turnover.",
+        "competitive_effect": "The bank faces intensified rivalry from peers like ICICI Bank and Axis Bank, which are contesting market share in high-yield segments and aggressive retail deposit acquisition.",
+        "regulatory_effect": "No direct regulatory changes stemmed from this earnings event, though compliance with Reserve Bank of India (RBI) liquidity guidelines and credit-to-deposit expectations remains ongoing.",
+        "short_term": "Expect stock price volatility over the next 0-3 months as analysts digest Q2 margin pressure, adjust earnings estimates, and assess the operational impact of executive leadership exits.",
+        "medium_long_term": "Over 3 months to several years, performance hinges on successfully balancing loan-to-deposit ratios, restoring margins to historical levels, and maintaining retail banking dominance.",
+        "second_order_effects": "Senior management departures could lead to talent drain or strategic shifts, while margin protection efforts might push the bank toward higher-yielding, potentially riskier lending segments.",
+        "key_uncertainty": "The timing and extent of Net Interest Margin recovery amid tight deposit competition across the Indian banking sector.",
+        "monitor_next": [
+          "Net Interest Margin (NIM) commentary and trends in subsequent earnings releases",
+          "Quarterly deposit growth rates and Loan-to-Deposit Ratio (LDR) progress",
+          "Further developments or announcements regarding senior leadership succession",
+          "Relative asset quality and NII performance compared to ICICI Bank and Axis Bank"
+        ]
+      }
     }
   },
   "sources": [
@@ -118,16 +138,186 @@
       "published": "2026-10-18T10:31:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Buzzing Stocks: Urban Company slumps 9% on widening Q2 losses; HDFC Bank jumps 2% on better earnings",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRVpsS1I4clFLVHg4WnhvM3RtQmd0dFVCZEs3b0E3WlM5djdPdzk1bm1qWTNZMUJBb0QxNkNNU3dOOFQ0TDB2T2FkVzdiQUg1aVE0a2RSamRRVzQ3N0ppY1dGZFV0cjJyMmZnbEE0R21qSmphMGpGTEdkVTFGT3p2ZFBZSDc3cU5hNm16YlFndWxqOVVwMW5qUFhHQVVSS1JSekxPYnhlVi1TQ2NlRGYwT19yR3dMLTBycXlOb1FNcHRpZ19lbjh1MFl4WWR3TEJPVmJFQWxPZ0FNLWI3UDhzSkZQMXBJSGFsUG5mc3dpczZQQWfSAfgBQVVfeXFMUEEtM2FQZ2lCd0NLT0s4cVB6LUhCWnlWbmVSQnJJdkhYampFOU9IT3E3cklra1VrTlJaRUtMQjN5XzNvYWZMd0JZYk9DaC1VNlZEWll4bUh4QkNWSGg2eUtEOUhKdXJHT0dtZVAwM3FpTWlGRFdJdmNsVUpPQU9RZ25vTW5WUktCemdneS1zRWNLTmo4Vnp3LTEwSHE2ZmlMS0JlU2xVYnNoaHowbnFiS1k2eGhyMFdYR011dEJwTDExQVlnR1d6aDBKbC1QcUNfTFRtdl94SUJKTmhJd1ZKRlUyZ3Ytd3VYcnNQTXRxTm9iYVJSMmNiY0c",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T05:34:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank sheds another leader as stock slumps post Q2 earnings release",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRHJFejREMk5aSXdvdTBxN0pBOGpQZzFBMUR4bDNNUk9HYjBORlpBa2FKVTNHOEFoN1NlQ1dlWE9CMmMzMzhNQmpaRF9BQmZfYWQyZmRVMFFMN0tLSnc2OFYxYVJHTW1vQzYxU3gxcW8wVGhwbTNvai1jWUdaRkNJMTY1OXJWWElyR29oNjlZQ3VlYm1qZ0VN0gGcAUFVX3lxTE5DWVJyWHV4SERHUnJhUEg4OWxWcjBENTQ1X2Y1Y2FlYUJOSUktVHd2eUFMUjlsNTBZanlzdjNrMUkwbC1aWGdBYzJTeHBUdDNNNmpCdy1VLXBiZUFrYmVGM2FJMzFaclB2V0Z5NXd1eEZqLTI4Wllnalh0UmNlbDdicWVaaTZGVGVZZ1N3dlQzT3NxZzVGRnJkSEd3Sg",
+      "source_name": "The Week",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:54:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank stock falls 2%, among top Nifty losers after Q2 results; brokerages flag margin pressure",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOcDRpQTlZYmxGMjQwWFBqQkUtd2dvbEl6VzNuTzVfY29PdFM3bjNELUtTSzRnYzhNbThDTlc3UTNyQXRJYjFpLVJUd3FqeHR5T1Y0ZDI1VnhGMHRUSVNjQnpPNk80UzZQbm84dmwtRXVScHo5THRUY0t0ZmJaZ09mQ29zbllhZkFZbnVRVmFkYXVSRnFKdzExTmFQU3BuLVJ0RUdGeWZnVkx0RjY1cmloUU5kbW5VOGNlR1NkbDRwYTM4LS1qSTdvMC1mWlhFdFM0Nzg3MmUtOFRvRGdLdWl1MHU2aS1DOWswdEVzTHVPcnQtQdIB9wFBVV95cUxPcGVTN1V5NnJqb2pFVTB4Y1dhTzdlZ2ZReWNEVjNmeU5DMDNXWTZoeDFxUllHVkIxR2sxclN0Z0x5M2huOV92alRTcWg5NXdOTWF5MmN6WThXUDlHWktvYVhsclh5cHZ2SVlfNmZNa2xjQ2JlVHBocmQtUWtLTkdJUFUxX1p1ZVBNb3BqVmN6elIyQjN3d1RZSlBFaUJHYXBRZ081MmZaYm9LYW1IUVA4bjJQRjFoX21FbWxjc0l3bVBGWHMyakhxZTEwcnpjRWRDQ01PWEdvR3hmeUxfS1RnWUw3UlVSNEM5REhfRXdBSVBrMzNVeWQw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T03:59:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank vs ICICI Bank: One has the growth, the other has the valuation edge. Which stock to buy?",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPQTFPNlpta3RJdW5HMkMteExPTUwzSVhCOXdfbXlma1cwSWtvOEdqWGhiYkR2Ukc1Q2tHUHYtRmlhQ1hJMzYwYmJCcjVHcE54QW5Oam5XUWJCcjNmU2xHNmpnWjBpMlRXTExIdWhvWnFPN3A2bDNCQlNGSGEyTnhERk0tS1NrX0UtMFlaOXZiTTZSWXZ2YXhmV0lUaTAwd29ZZ0lZMzdPZkRhYkNFQzQ0NnhpVVh3V0YtLUNuZDFwOGJsaExnZllLLWJiRmkxSm5tLXJPcWM2M1BwRHRzSVIwbVhEZldIYklnRE1FOHI2SzlGNURwSFhhUkdTUlDSAYICQVVfeXFMTnJ2SVpic3N1UXYzZkxYdWhmWUMyQVA2YVFKcThhSVowMFhKVFNmOENINWhJYmlHVDY0clFNeVpQNXlPWGdKQlEyYm1YTFdSVmhDOEJsQmpYbTlvTDZNN080TlV0ek05cVZDdzRZaVZOcGNVWlNxamk3ZjFrQTAzU2dFYWlrcERtbmFtUUlnZjNXTHRTY0hRRkdXd2ZRaUUta1l2eVZTOXhKdUFHTjkzMVhkU2RwZHRjM3E4eGRTSnpnUzYxWEJxVWRlTFZTZVFZYlFjUVdtUTQxazNpU0NBTC15VXpzZXdIZDRCNTFOdVFxcDItQkppUUNSck5nSjVnYWFn",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:56:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Vs ICICI Vs Axis Bank - Which among the three major lenders has the highest upside potential - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMm1SQVNYd3RKcURrWnVQTHJhaXBmUlhyeVRhWDNqekxtWVA5Q2dTUUE3NFdrWHJCbzB5QVJVdjltektSTlZOU0tfbFVOU2JYeEkwM3dlUklsc0p2bEJaQzdMOWxiMDZJeUt6bldhR2Y0VXBJQVhrdThwZ1V1SmExbDB4Sm81WmlGVWpzckZCb0p3cUZhQXdUdVk2RmVOLWJNNURjZms3bkc2LTZNSTJJYVFWOA",
+      "source_name": "LinkedIn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T05:02:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC, ICICI or Axis Bank: Post Q2 results, which stock is showing the highest potential?",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTkp3UlNzZXBnY3hpUkZzNTlsNWNqR296aUM5TFFCR0R0MnRGa1QwUERDeXpIMF9lOGsyQWxjaDN6WnRJSWtiVXFiZjZsTTFQYTh6Tzl5LTVUUFRBZFoxX1NkV2tKakhPcThsT1M2YTdPSTVWQlhhMV9GV0J3cWJ1dy1MQ0NZV2RxOW5iWGdJUjdMOTd4NDNFejVfUjdmOWYwRy1KTTc3Ump5UUU4YWE5QUZydnA4Z1RGelAyQ0RKbzNnT3R6bDNZNGdWelJFNlNV0gHWAUFVX3lxTE9uamVWX3FVa2RfaE5LYVY4WHEya0E4ZUNtcUNSM2hUOHB1b1RnYWc0bkZZZTVYZmYyVDZLQTR1ay1Qd04xems5TEFtZU90OGlhVlRFQjhvUzMwX1JUS3N4dWtOekk0UVp5NUN2UWZNaXB0RUUwUnZPbE1KT3RvVzdnTVZXNFBHdXFHeURzb3ZzU09xN284VTRjQ25hOXFFdWxhNFZyLUU1TVhqeUxQRzl5ZVNSRDQ4NW5tdXJLLUFOUllsdW0taW9GdHJ4M25BZ25sR01yemc",
+      "source_name": "News9live",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T01:25:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank Shares Gain, HDFC, Axis Bank Slip Up To 4% After Q2 Results",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOEFCUFJ1c0RIRGJ1clp2UTYwZmhlMm92M0dheUN5a1pfT3hyaTNBMGZZa3Y0Wi01cUkwY2ZHQkVOY0gwX01NVy0za0JIdzNDZkhSYlp4eXVhMk1lZUYxb0p0Wi1ZcnpHcjhoUlRxZWFEb2kzTUpLTThrRUZESk16dEpndFJNOWk0dWpHeHhrb3hmMzJlMXFTcVR4VjZ3UG9SbG1vNllpSzJjLXhlT1ZYLdIBuAFBVV95cUxQc1lNQXhKd0V2LXp3N1VjTXVJbHJ4THlPQzA3UHNWRWN2amJFTjk3VGJ1VUpvZlFmdk9zS0t0STVlYmp3elJPOWZTM0x2QmFsOFNWVWpPZnZPbWJTUFBXRUk1WkQ1T1h5cC10S244SDdDOUNWWGFxLWNVUUV2NVVyVHZsQk5XX2VkaFViVDhnbVVHZXA3UVgyWl9NSHAtcG5FTjJwSUs0Qnc1T1dBaFI0OVM2YzlmRG5T",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T03:52:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank remains MOFSL's top pick; HDFC Bank earnings growth seen at 15%",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUnVFclBia3c3ZzBrSmlMRzR6aHNYdHd6NFlHUDZKSWV4T0EzTk1zN1BacW94MTI0VVhOSTlOcXdKRjdsVWdmV0ZRemExelExQU5xUzRpRFNZUmM5bHZmOWJKbE9tcFU5WjdUT3lnbGd0TXlOQlA1dnZuRG1scTJHbG4wYmp4alFJLTZBd3l2dXNZal9wZ0pUdnBkNnpZQnEtRlZTenlTU1lwd9IBrwFBVV95cUxNTHFiNGRCNFJqU29wYnpBdmpFQVpQcXJXbmd6RGdoc0wtX1Z1V1FiNGx6TGxYbWlkbnE1UUZFRTE1Q21BTy1QcTB2ZXVNeUdrVC1fbHpTWG5KbURRX1B1TnF5b2JIZEpGQTFYakR0RnRIVjRwYVl3TlcxMzRiSUlMVWgtaGE2aVVJU0c4NjlQdk1nT2UzNFZrcXF0MmJGdGpJeUwwNmk5TTUtR2s4YkVj",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T04:41:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank shares close lower after Q2 earnings; 3 brokerages remain bullish",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZlRlZGZ1U1NhZVpDRDgxRy1RckkzaHZMbjc1N1RIUktFSTVFUjV2UGRVdkIzeWREY1dYaFp4TkZVd2RtOGtkbElQZjhScUtHa3VQUWxEcUVBb0dTVVY5OTZTbDhsRVhwNW5KRDVlUnZQSEg3WXBHR0FFSkk1SkpxV3FpU1dKNjFRN05LNEp2cDYtRXdKdWhuMjNyWVFLcWQyU1dTeGVEb3dJT0p0Uk4yc2dPREtnTGpsX0JYYTA2ZjZhQmR1SkxrMDhWTVJTc2hMdGxuQUZtd2dfMjTSAeABQVVfeXFMTkt0V1B2dF9iLVBrTXBMX1hZTWwzeGsyY2FhVmJ0cVJFRFVIWDNib3VIaHM5U1FLQy00TmJubFJLV2dJbzZFT1RfWUZrb1FRWUpuR25fem9NeHF5VV9YWEg4RGNRalF2RTJsZGNVdmo2VWxPZkhsWDdZekRDRjFuT2N6TGFNZVh3R3RRVl9yQXVmTWFLYXRPZ3NuSk5zTjBLU20xLXN5UExnN0pZbElBR0VjNzVpLXlnQ1BKUXg2d2tDckVHQnNncUxTdC1hMjhDU0g2RFFLVHlVdWhHd3YyTXk",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T10:48:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank stock falls 1% after Q2 results, among top Nifty losers; brokerages bullish on growth,...",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQeUZNakZueDdQbFZ4X2xmNnkyaEotVWUwaDhtSWJGUGd0YWJZR3dCTWpWRlh0Y0tLcF9TVnhaM2tpTEVNRWNXZ2d2dGt6V1BzNFJ2amZyVkE2WTdZemtZcUZFQWVQc0JKaGw2cF82LWNHS2ZqS0swWHMtTHJBWFdGMWFMTWVvWmV2ZmRLMVpxMkxXOW5Td2FZblkwa1o5LVpSOUhaR29sTzRGZVlwZm8wSm9lUkdFQUlrRk9BUDExcDhDUmtadlphS2JaLUlOUno2SFhKUlhMQWNEa1dDN3JLRGpSMGZjRGMyOEk1WXY1ZldpS2xHZWhFN0hSMW9CTXc2dUHSAYcCQVVfeXFMUG9la0Jubk5VNHFROVFObTZVWmpKcGRQaTgwRlVZbXZzM25IaWJ5bDJxTWdvVnE1NnZxWWEtVkl2YVRkS2RKbWtJcXZXVnV0UlVKUHRFVjNVU3JjTVZZTUxIeWJTcUJhNFZkTWYtWGNzdWZnV1NqUUl5Mllua3RVajEzZEFyQnVScEFqa0JkVU5oejU2OW51RlZTZWR2THJVRHRqQkY2dmdJUW12Z1lUeGdkc1ZzSTlTMXpVUmlzN09RX01GQjJSRDh5dlA2LTc2aEhaVnBGeUdSQnBKVDJQU3R2YUQtUXpvcEVqTDk2ck9fMER5d254YzV3WUtuYWZfeXBqT2tkQTQ",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:07:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank, HDFC Bank, Yes Bank, Axis Bank shares fall after Q2 results; here’s why",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX2sydGZicFRKTTBxN2xLNTY0X1BULXZBWktxRGhaV3c3UjI5YTF4WEtGNE8tN3NvS3A5YlRaeldtaW9GNTR6d1NHb0JjZlJkZVJ3ZmkxOGVrU0ROdnllQ2JTTlc2Nm9YRmVIdWtpRk1KX3VDLUlBUEZPc1Z0TnV0UTBpWUIzLW9oakhDZ2hQOUhlRlFpeDRkbl9jWWJlU3hzMnBjNnJVckJ3SWg5US1aWEpNNUYtZHZJN0lVNlVPY9IBzAFBVV95cUxNckRXQTUtMmY0cHJkOU9IU01QLUYySUpRZGtBUHNKLXRxWUlOTElEMFg1MUZGNEZpeE1sQzItNm9GRFJCYVF5d3FBNl9fVW9FMXhia1FENnMyOTVib1dZVnFfWmZFLVBTLTR5UnowUGpyNXVCSnQ4TDNGQlZKcmU5NXJqSmJOVXpCdUF6TDdFRnI5ZHpnTzN4VjRLWmZsWVZsMWhrYlZLbnhKUG5jZVVPOW5KdTdiZzZlbkFFdzFIVDlhS3dtWjVGMmxud2k",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T05:29:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PRE-MARKET INDIAN STOCKS NEWS: Q2 earnings from HDFC Bank, ICICI Bank, Axis Bank and Yes Bank; India to cut prices of up to 137 cancer drugs",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNVWphN3FuVEV3dDJsVnE5bTE2MjZQelM3WEZYa3hqeF9hM3JTeUVORmtSYUx5ZGlYRmdoZWtpUzc2c3o1ZVNscURnRV8zUGZlMkNTdWpQRjBGYjhMYVdPakEwbGdELWZVQVhkeXhTbXlaeWxDaG9WQkduVG1wSkJIdlJFQzlRaFM1dmRQZXBrWFMwRU9iWmE5enFiQXFHbjVqNHRTLW80ZXBld3YwNnZqNmVVZFoxMDdNbWEweFZ4b3V0Q3pRd2VxR2d4dHZrMjVNOVhTQXVlSkdPRU1rcEVKcXFWUW12bEozMmVydDF3U0pBclRiTTU4SDVMTkJBQmpOYWc",
+      "source_name": "Newsquawk",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T03:11:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PSU bank stocks soar up to 8%, but HDFC, Axis and other private lenders fall up to 5% after Q2 results. Wh",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPdFE2RTk0Ym81REw2d1prZXMwSUdTdHN2ZHhrTkhmTDN3aFdsNzBiMWVRcnctdTBSZlB5X2ZNWWJTU1ZKaHJvblNsM1d4OUxBbmtrZW5kZ0pFX1pzeXFlN1pqMVRuaVNVNmRWRG5UM2VlbVdfaUpFN3NLMHhkb2xoMXJOTUtnbUU2eDZsVHRoQnBNUk1ibkgzTHdnUFlqc2xWWXRUYzFEOWw1ZTFBVHAyaWl6Z3dmYkpVd2Z0c3JVM0E0TjZ6Zm9Ndy1RM2hiWUFKRUQtbC1IOTFmT0hIZmJQdU1OdXhKOGJYZmxrVnR1NU5vVVo5LVpjblozaHVsY1RrcGpKQWxoUFdnTWNyM2pVdmxJajV2SEhJVmtJalpsWTliZmvSAaMCQVVfeXFMT3RRNkU5NGJvNURMNndaa2VzMElHU3RzdmR4a05IZkwzd2hXbDcwYjFlUXJ3LXUwUmZQeV9mTVliU1NWSmhyb25TbDNXeDlMQW5ra2VuZGdKRV9ac3lxZTdaajFUbmlTVTZkVkRuVDNlZW1XX2lKRTdzSzB4ZG9saDFyTk1LZ21FNng2bFR0aEJwTVJNYm5IM0x3Z1BZanNsVll0VGMxRDlsNWUxQVRwMmlpemd3ZmJKVXdmdHNyVTNBNE42emZvTXctUTNoYllBSkVELWwtSDkxZk9ISGZiUHVNTnV4SjhiWGZsa1Z0dTVOb1VaOS1aY25aM2h1bGNUa3BqSkFsaFBXZ01jcjNqVXZsSWo1dkhISVZrSWpabFk5YmZr",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:24:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Performance Analysis of ICICI, HDFC, and Axis Banks After Q2 Results",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQ3RwN2tsc1REV2g3V2Q2WG1vcWMwWElnV1BGYV8xM2czQXNyQVk2dFhjbkFJUTVXcHpDNEJzVEt1Z2dZVHZQMzNtcjVMWGtHMGZzVDFSLS1jLURiTV9OZjZYbWw1NzlNUzNVSGhUUFZMT3VjdXFYYk1vYmxxM0ZJYjg5OHNLaF9tWXluNDNVTTlwUUFHb05QQ04yWmRkc3VkV0lkc1FtQQ",
+      "source_name": "India News Network",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:36:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 FY27 Results on October 17: ICICI, HDFC Bank, Axis and More",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQYnlUcC1Yd28ySTlRRVJyVWZLZElXMWNyS3dNaUhkSFc3eTNuWkc0eGUxZkFSTzFuR2E1VFpVMkxKVHBMRms3cWhSU0NCcW9OXzh5WnBISkVBb1dIblpNUDltdUlTelBsUkVRM2tBNTNyNkl3Mk90ZnhpZldyLXlHbUxEeVJscC1lQ19qTW0tNzZSUklDRnc3ZGctb0dCYl9CVXVNY3F5UXR4XzVfSWowMWlhLWJGNGNyeE9VbUd1WVJfYXY1VjJCZmhiNkxVdDF1QXlfdg",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T08:42:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to watch, Oct 19: HDFC Bank, YES, Axis Bank, HFCL, Vedanta, HZL, DLF, IDBI Bank, IREDA, LTTS",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdkphRjVNTzc1MGJFQ0phUFQyOFJybFR5U0l5eWRCeDNtTjhTVi04eHNGam0tcnJLYUtkb3JLQUYxRktaTlowcFd2dlVuRVpNNnlGMm1hcDkxMkFodHgyVThoTUk1YUhrcnU3MVlwY3JpT0FRbUMwY3Y4VlNPeWdQamZYMlZ0WDJFVzVRV3NlNWxHVklORVBXeGpaMndGM1NTNTlJZ3RYazdHbjNUUjUtNFdrOXRCV1RYTzVmRDkxTklDWHJqcGRsLWI4NXA2eC1TWjI3elZVa3FyckFJUExMOHQxWVk3S2RFZnlLWEp6QXQzQm1GdmJoTUpoZXo0UQ",
+      "source_name": "Dailyhunt",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T08:28:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "hdfc icici axis bank q2 results comparison loan deposit growth",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQk40T2VGektydkk2d05QaHpBVHZqVUxnOXJySnhLeEJ1ZndKN1ktRFhDOXRBRmxQQWVDdHp3NldzblNSbkV5T0l6MWVkOUlWd3lNMkJJYXVwdm9JLU4zZV84bkU0UFR2TFBGVDZnbkoyMEVDVWpIME85M3hwenIyTmh0OUZSVGR5M0xnVTl2Zjk5S1ZqaGxPX1E0b0Y0WVEwLWZEdFhnSjRHemRNVnllbzhlQm5fVzJZeHc",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T10:09:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 19,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-cut-earning-erste-estimates-group",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-14T12:14:51.616111+00:00",
-  "last_updated": "2026-10-18T11:28:07.518541+00:00",
+  "last_updated": "2026-10-19T13:48:42.101184+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:14:51.616168+00:00",
@@ -138,6 +328,26 @@
       "timestamp": "2026-10-18T11:28:07.518524+00:00",
       "change": "sources added",
       "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:42.101144+00:00",
+      "change": "sources added",
+      "detail": "Business Today, CNBC TV18, Dailyhunt, Fortune India"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:42.101159+00:00",
+      "change": "categories added",
+      "detail": "ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:42.101167+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:42.101179+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 10"
     }
   ],
   "price_reaction": {}

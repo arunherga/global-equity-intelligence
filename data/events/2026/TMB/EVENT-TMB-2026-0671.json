@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-TMB-2026-0671",
+  "title": "Gold prices today, Monday, October 19, 2026: Little change in gold prices as oil sailed to May highs",
+  "summary": "Gold prices today, Monday, October 19, 2026: Little change in gold prices as oil sailed to May highs Yahoo Finance",
+  "event_date": "2026-10-19",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold prices today, Monday, October 19, 2026: Little change in gold prices as oil sailed to May highs",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQSVktUXNWNFhGRlc5TG9pMFJfal9fSXY5cmpHblZKRHR0MlRXQjVOeWZjZkZJOWF2UUdjTnpicHZCQ1FPWDc1MkthVVdNbkhYWHYxbDFCdnJ5VzlUUldpXzJiNS1VUG1Td2w5NTY3TTRQUjRVeENvVnV0ZVMwSWJ6anFRZ0Rpa3p0VTZUaXBzRFdKSFJkUHQ2ZXNyeWFtTE5lTGd4a2tlak5QOTdXblpocGk3d1hzU3dLSk5Yd3UwbE1fV1VfUXF6NnNVMXZCbm5IZ1l6RFZvRjZ3ODJKRC1yd25jR1FoNnFYbE91dFpnbEpieUNJamVxX19mNnJXcHBhM2c",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T11:21:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Yahoo Finance",
+  "cluster_key": "TMB|COMMODITY|2026-gold-monday-october-price-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-19T13:43:18.585994+00:00",
+  "last_updated": "2026-10-19T13:43:18.586083+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-19T13:43:18.586073+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -5,7 +5,8 @@
   "event_date": "2026-10-01",
   "event_types": [
     "OTHER",
-    "INDUSTRY_DEMAND"
+    "INDUSTRY_DEMAND",
+    "COMMODITY"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -58,16 +59,25 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "DIRECT",
+      "relationship": "INDIRECT_STRONG",
       "impact_score": 7,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "direction": "POSITIVE",
+      "confidence": 0.56,
       "business_impacts": [
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "LNG prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "output commodity"
+        },
         {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
@@ -77,23 +87,26 @@
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
         "+2 Major industry-level development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "LNG prices is a selling price and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "direct relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are demand. Classified as industry demand.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to LNG prices, and India. The parts of the business most likely touched are demand, pricing, input cost. Classified as industry demand.",
       "ai_analysis": null
     }
   },
@@ -167,16 +180,26 @@
       "published": "2026-10-05T06:35:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India’s power demand rises 11% in September, coal stocks fall 60%: Report",
+      "url": "https://energy.economictimes.indiatimes.com/news/power/indias-power-demand-rises-11-in-september-coal-stocks-fall-60-report/135041604",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-19T06:21:40+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 7,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "ET EnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|coal-coal-india-raise-september-supplies",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.749092+00:00",
-  "last_updated": "2026-10-05T15:06:54.556107+00:00",
+  "last_updated": "2026-10-19T13:48:16.272605+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.749162+00:00",
@@ -222,6 +245,21 @@
       "timestamp": "2026-10-05T15:06:54.556090+00:00",
       "change": "sources added",
       "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:16.272577+00:00",
+      "change": "sources added",
+      "detail": "ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:16.272592+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-19T13:48:16.272600+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

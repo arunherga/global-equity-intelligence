@@ -1,0 +1,187 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-0936",
+  "title": "HDFC Bank shares fall over 2% as net interest margin hit new lows of 3.1%, net profit jumps 4.7% YoY",
+  "summary": "HDFC Bank shares fall over 2% as net interest margin hit new lows of 3.1%, net profit jumps 4.7% YoY Upstox",
+  "event_date": "2026-10-19",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to HDFC Bank, and net interest margin. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.51,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+5 Earnings or guidance with a surprise",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "reported results moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Net Interest Income (NII) growth may decelerate as lower net interest yields dilute the top-line benefits of overall loan book expansion, increasing reliance on non-interest fee income.",
+        "margin_effect": "Net interest margins suffer a direct negative impact, dropping to new lows around 3.10%-3.16% due to high funding costs and post-merger balance sheet rebalancing.",
+        "cost_effect": "Operating expenses remain elevated from aggressive branch expansion, while cost of funds remains high due to intense competition for deposits and tight market liquidity.",
+        "competitive_effect": "Margin compression temporarily weakens the bank's profitability relative to private-sector peers that possess higher low-cost CASA deposit ratios or higher-yielding asset mixes.",
+        "regulatory_effect": "No immediate regulatory compliance issues identified, though central bank guidelines on liquidity coverage ratios (LCR) may constrain funding options.",
+        "short_term": "Stock price weakness and market underperformance over the next 0-3 months as investors digest downgraded earnings estimates and margin contraction.",
+        "medium_long_term": "Multi-year operational pressure to expand low-cost deposit gathering (CASA) and substitute expensive wholesale borrowings to rebuild margins toward historical norms.",
+        "second_order_effects": "The bank may pivot lending toward higher-yielding retail or SME segments to boost asset yields, which could incrementally alter its credit risk profile.",
+        "key_uncertainty": "The timeline and pace required for deposit repricing and CASA mobilization to effectively reverse the margin decline.",
+        "monitor_next": [
+          "CASA ratio trajectory and total cost of deposits in subsequent quarters",
+          "Credit-to-deposit ratio (CDR) and deposit growth rates",
+          "Net Interest Margin (NIM) recovery path in Q3 FY27 results",
+          "Asset quality trends, specifically Gross NPA and provision coverage ratios"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "HDFC Bank Q2 FY27 Profit Up 4.7%, Gross NPA at 1.11%",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRHUyV2xBU0dmcmtEdklBVWlkaWQxT2Vpa01IWkgtaXY4aUdLX1RoNUk5WElveFQ1UGhuQVFuY2VOTDA2SWhudjhjdGNvZDlLQmpfTEtUaG9HUURkT0MwTUxxQVA2c2VwRFJUejhaamNfRzk0OGVtX2g0NlVLMWw5R1pfZjZ0UElhSWVNZ1hZXzlTQ21XeTBTSGM2dVFPdjlSeV96bS10RERVenNTLXRiZGlyUUNZUjM2b2hDaGdOdnFOVGFiZDhIcl90Nk5mZw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T08:57:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank Q2 FY27: Net Profit Up 4.7% to ₹19,510 Crore, NIM at 3.16%",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNaEdxVi1Da1BvM2J4X0wwRlJhUi1OQjBQakpRWTZkSUk4WThHUE81LWxjTGNQZjQyV1FONGtRR3BGd2NOOVFDNjByZnN1Q2xYVldyUTd5SE9neDBpMlJIY3ZVbUFIdUFlZlJSOEJLZEFLd09VeTd4a2djOXN1M1A2TlZOZ1E2RURULUV2TC1NS0YxUFEyQ2JSZ05pRFRsWUNRVDhvNFdsYlZ2dDE4RU5CalR5amp5c1FTQ3RudDlOMVBnYkRCaG9QTHhvRkRsZTRk",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T06:43:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares fall over 2% as net interest margin hit new lows of 3.1%, net profit jumps 4.7% YoY",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTHlOQjVBOGxUZUszOEFna2t6OG9nQ0gzR0NKY3U2cUZuWGNoTWNXTGU4eVdBbmxnT1VNMUtBRGpuOWlfMWEzbmhhNmNyeTZZWVViNjJJQVdsQ0YwV0JMbVJnT2w4dzNjOFdiaFRzNVRCMXpmcXhmanNwR2g2aDYwTl9tc0VUWk9EQnJfZGxnX2tldHh0SWtsdWoxQnJ4SGhmbzF4dnhMQV9ITktlNU9wdHdWVnVhN0hxYkFtbFN1eGxHbDZIU2g4ZzZLZHVoUnRTQVF1OUt1ZlBfTm1NNUJKZ1gzbjM1aWFNaDdLRFVoOHpBeGs",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T03:51:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank Q2 FY27: Net Profit Up 37% to ₹788 Crore",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQR0lDLXBwbDFuNUlKd1VpYWIxakoyX2RUakhmQnJTR001NUJnUld1Wl8yZ2lfWHFVOXJldG5jbjJ0YVRoWjVla20tNnI3a3FGMGlnRUVEcHk2NGNkS0oyTjczS1ZwOFUzZzkweEVqUkM2SlhqZ1JIajJ2amZMVm9aZWsyMWZQUTFGb2VZbjQzTGZENlhycE5tTHVlNVlaWTlFQWRkT1NaV1lyV3dpUkZzZjJrMjh5Mk1JVGZfUDRUUllEMXEzUUFVeFVB",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-19T08:41:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 4,
+  "source_count": 1,
+  "primary_source": "Kalkine India",
+  "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-fall-hdfc-interest-net-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-19T13:39:14.532949+00:00",
+  "last_updated": "2026-10-19T13:46:22.440120+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-19T13:39:14.533047+00:00",
+      "change": "created",
+      "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-19T13:46:22.440088+00:00",
+      "change": "ai analysis",
+      "detail": "HDFCBANK via gemini"
+    }
+  ],
+  "price_reaction": {}
+}
