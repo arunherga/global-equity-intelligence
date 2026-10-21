@@ -60,43 +60,29 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Emmvee",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "exposure_type": "SUBSIDIARY",
+          "term": "Indosolar",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -105,7 +91,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -114,7 +100,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to Emmvee, and NSE. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "FRESHARA": {
@@ -536,21 +522,41 @@
       "published": "2026-10-17T10:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indosolar Ltd announces Unaudited Financial Results for Q2 and H1 FY27",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPa1A3MlBNb0htSG50aVdnVWRGbWxKWHRjSWhlcXZ2RFMxc1E2VzlmM0JiUGZJZVZMMVcyVkdJQllhaGlmWEV6Zi15VnRiQlIyVmJPTVc1dDFRMDVWYkJjRl9Na2JpVkxWZElVX1VKMzZvencydHdtdWNsR29NZEtJQ3VCRGpUdktNT2xoeHNKV0gzZ3pYSnlSWVlGZ0RFaDZSWTVkMnR6NmtONXNKYVpR",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T14:29:54+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|EARNINGS|did-emmvee-emmvee-nse-photovoltaic-power",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T16:32:43.567328+00:00",
-  "last_updated": "2026-10-17T16:32:43.567419+00:00",
+  "last_updated": "2026-10-21T18:19:13.953896+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T16:32:43.567410+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:19:13.953875+00:00",
+      "change": "sources added",
+      "detail": "EquityBulls"
+    },
+    {
+      "timestamp": "2026-10-21T18:19:13.953892+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 6"
     }
   ],
   "price_reaction": {}

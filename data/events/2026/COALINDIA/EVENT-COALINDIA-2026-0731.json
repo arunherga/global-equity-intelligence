@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "CUSTOMERS"
@@ -22,13 +22,6 @@
         {
           "exposure_type": "CUSTOMER",
           "term": "Coal India",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -46,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -54,10 +47,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from Coal India",
-        "order flow from NTPC"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Coal India, and NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -172,21 +164,41 @@
       "published": "2026-10-11T12:56:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India supply outpaces production, challenging Coal India stock",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTTdWbm5KU084M1h0Qk04bXlJZE1xeUVNU2ViYkttMG10QmdseUUtbG1NcEZOOEpacndlb0p2NTFUaERHbjNWa3B6TEpycHNuMHlrQkhKSi1tOUw4Wi1MWE9OelRMR3NveXpBRHFXNTJfN0JuQVJBVGpsdll4QU40MUhGQ0ZxcGt3bjh4aEx2ZDlDN2JkOEktTmx0U25mUlhTcVhQcVhkNHhSWl9jeXQ0a01vUVNRUVM3MW11UVcwbTl6aEhGTXlTSQ",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T08:34:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Urban Acres",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|coal-denies-india-ntpc-shortfall-supply",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-11T18:11:24.839001+00:00",
-  "last_updated": "2026-10-11T18:11:24.839084+00:00",
+  "last_updated": "2026-10-21T18:18:43.549111+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-11T18:11:24.839074+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:43.549091+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:43.549106+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

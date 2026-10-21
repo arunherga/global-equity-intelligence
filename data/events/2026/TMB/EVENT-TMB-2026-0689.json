@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-TMB-2026-0689",
+  "title": "Foreign currency deposits squeeze Indian bank margins",
+  "summary": "Foreign currency deposits squeeze Indian bank margins Asian Banking & Finance",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "CURRENCY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Indian Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to Indian Bank, and deposits. The parts of the business most likely touched are revenue, margin, competition. Classified as currency.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Foreign currency deposits squeeze Indian bank margins",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYnk2TjBIT1dhMHRNdGM4RUt0MjZneEYtbTBuWGFKdW1nVDdzME9zdDRTcnlQR3ZKWmZvR3IwbTFBeUNiall0WVNxeWtYRk9yUkpqVi1sRkJaamYxb01vUkNTVTJCdU9UemJNV2p4dzd0dU8zcVpsNy1EbEM2N0N4TVRGUGx4ZDlXeHFsLTRQN041X1VQeDJUdkZSSmQtWmJEbDBV",
+      "source_name": "Asian Banking & Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T04:00:54+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Asian Banking & Finance",
+  "cluster_key": "TMB|CURRENCY|bank-currency-deposit-foreign-india-squeeze",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-21T18:11:02.585024+00:00",
+  "last_updated": "2026-10-21T18:11:02.585084+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:11:02.585074+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

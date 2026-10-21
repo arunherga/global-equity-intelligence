@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3779",
+  "title": "Gold prices near Rs 1.47 lakh/10 grams, silver falls by Rs 1,144/kg as traders await Fed rate signals. Wha",
+  "summary": "Gold prices near Rs 1.47 lakh/10 grams, silver falls by Rs 1,144/kg as traders await Fed rate signals. Wha The Economic Times",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, customer exposure to gold prices, and traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold Prices Fall to Rs 1,45,898 per 10 Grams Ahead of Dhanteras Festivities",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPV25uMnNaYm9aNmhnRGVqODFkRWdnbnZ2bEdYTG5PY3g1WU5ueEllT1F4UHVJLXY4cUNIX3ZfZ0Z4dUhRUFQ2MThFc0xKbDQ5cVU0ZkxWQ1NJTXdKaTVOREl0b1VlSEU5ZmpqcnFhNTRUYWdsSE9qUkNKdC16dFFpUWR3T2dpNDgwZkFRaXc1UXlVeTNHVFY3SVF2Y0VZNFFZN2xvTzQ5c0VoN2JOekVMRkgwZ01XZUd6cU43djFzOFpaOTNCZUhnT0hYaWI3d2Y2X3FZTEtxQnNhdTFsbGlFQmx3",
+      "source_name": "The CSR Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T06:59:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices near Rs 1.47 lakh/10 grams, silver falls by Rs 1,144/kg as traders await Fed rate signals. Wha",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOUjFSLTZLZnN6TGJMYWpQWmtBQ2p5dTgxckpFYjY3V3luY3ZUd0RMMTBfSmgwd2tFWlVva3lReURtYXV6dWlFMW9IaXhhM1dIbzFzRl9VajU0X3Rzdm9ZN0d6bkZKaWJCekF5aXJhOHJfUUdaeThaVHdqMEVYNm95MDZqSGg1T2FsRWwzZVhjRHRvWmNyWnlfUHJON1ljZ3o0cVhuOHBvRWVCLW93cFFTNkRpNlBQdHlTWFRta2dyVTVhTDV3WjE4NFB4MFFMeGNBd3hxSnJBY01UUmt2MnFqR2NKSjQ2MlpYMGxqSnBVT0YwczBoc1FFa3NtQjFKYk1OV3dPNEJNZllETi1tdEJxT25nQXV1LVd4M0RLaHRQSdIBpAJBVV95cUxPRFJUQU5maGZ4a0RKbnpUV0lNb0otY3RpdWVXQlhHNnF0NzNHVmlGVnJxUkhvNUVRMk9uY3g0dVRoVUt5eFQ5cE5JUVlnRnEydHVtdTRqaUdiQ2xoTElncWpVbHljUlNvZnBXTUdjcXhrc1ZqeVdESjUtXzN2QXg0S2hTNlNsRUYtVmYxUWRiTGpkR2d3amVHdjRlTWhRX0J5b0k2YzlsbWJ2cnFGNDZMZlhqMXItM3JGMUFNWHZPUUsxTGFVcVFpNEw0TXJFWVV1TUk4dkR4cXdfZTBsLWQ5UHNzcW4xRWs5RnlMYS1WVVlmYjFueHpGMTZENU9OZGRpdW02TjhnMWtyUTRGZXBmem5PV1h6RkhUb1FUWkg0cjVqaUtn",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T06:10:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "The CSR Journal",
+  "cluster_key": "TMB+WAAREEENER|COMMODITY|1.47-gold-grams-lakh/10-near-price",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-21T18:11:26.655714+00:00",
+  "last_updated": "2026-10-21T18:11:26.655789+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:11:26.655779+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

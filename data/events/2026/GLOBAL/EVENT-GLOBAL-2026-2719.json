@@ -10,8 +10,8 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
@@ -32,7 +32,6 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -55,8 +54,8 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
@@ -77,7 +76,6 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -138,16 +136,26 @@
       "published": "2026-10-18T06:09:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2FY27 net profit jumps 20 per cent to Rs 14,843.03 crore - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTWZYcUhlUnc1LU9CZXA3U2pQemVDMElJRXVwRlpFbXdoemc0V3JwN1NjMEUycGpjZ0tnMDVVSmpHRDBzVEtCQm5GU3NidVBHZkp6a3I0NnppNFNyVlFUN3JjbEVYZ2NLb2hfWThGbG5nLXV2T19ubFdqYTBDY0NadlMyMnpHM3kyVy1yb21KdXE0c2hJZGp1RjllamhsMEw2a0lyMUFzbVRaMXFmRHBB",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T02:40:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-net-profit-q2fy27-rbl-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:30:01.141856+00:00",
-  "last_updated": "2026-10-18T16:40:51.533506+00:00",
+  "last_updated": "2026-10-21T18:18:24.183007+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:30:01.141928+00:00",
@@ -168,6 +176,21 @@
       "timestamp": "2026-10-18T16:40:51.533501+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:24.182984+00:00",
+      "change": "sources added",
+      "detail": "Mid-Day"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:24.183000+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:24.183004+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 3"
     }
   ],
   "price_reaction": {}

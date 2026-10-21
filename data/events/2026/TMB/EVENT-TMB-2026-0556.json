@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -23,7 +23,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -34,27 +34,21 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "slippages",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Axis Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -62,43 +56,36 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Axis Bank, and asset quality. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to HDFC Bank, and asset quality. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "DIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Axis Bank) is doing well"
+        "reported results moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -106,7 +93,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -130,16 +117,26 @@
       "published": "2026-10-17T07:36:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank stock: Asset quality improves to 1.11 percent in Q2 results",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObVUyalplODNMX3BGRVdUdTNrZXpVbDF5VmNxcHM3Z2JCLUctelZkR3F1cEJBNlNHZnB6aXhHUUh0ZzE1RjBZRFVCUnVkYktscUlwa2RQYlZ4bnB2dEl0Y0xTVGtxVXdIMDVvcndJN0oxbF9WM0lHS0lMZUV1eENtQjNvTDJVeVU4VTRVUHF0Zms0YWhtc2VRRjdPbjVrTXdmajlhTjkwN0lmblNpQUZ1cjJWUmVGaUxPSi15Q0NPRTJRYkFWOFI5enVwQQ",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T14:01:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "TMB|EARNINGS|bank-core-income-karur-results-vysya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:55:06.074701+00:00",
-  "last_updated": "2026-10-17T11:11:24.439332+00:00",
+  "last_updated": "2026-10-21T18:19:12.046700+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:55:06.074815+00:00",
@@ -160,6 +157,21 @@
       "timestamp": "2026-10-17T11:11:24.439328+00:00",
       "change": "stock added",
       "detail": "HDFCBANK (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-21T18:19:12.046673+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-21T18:19:12.046691+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-21T18:19:12.046697+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 3 -> 6"
     }
   ],
   "price_reaction": {}

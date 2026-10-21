@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.51,
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.68,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -31,15 +31,14 @@
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
-        "reported results moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -50,7 +49,25 @@
         "any guidance change"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue pull-through for Waaree Energies remains strong as 36% top-line growth at its EPC arm indicates robust demand for solar installation and module supply, though consolidated revenue realization depends on internal transfer pricing and sales elimination.",
+        "margin_effect": "The 30% drop in profit at the renewable execution subsidiary points to potential downstream margin compression, which could weigh on consolidated profitability if driven by elevated component costs or aggressive project pricing.",
+        "cost_effect": "Operating and input costs for solar projects—such as Balance of System (BOS) components, logistics, or module procurement costs—appear elevated, impacting project-level execution margins.",
+        "competitive_effect": "While market share in solar execution and module delivery remains strong given top-line growth, profitability pressures highlight intense price competition in utility-scale EPC bidding.",
+        "regulatory_effect": "No direct regulatory changes were announced with the earnings, though compliance with domestic content requirements (ALMM) and grid connectivity schedules continue to influence project timelines.",
+        "short_term": "Negative sentiment spillover from the subsidiary's 10% stock decline could create near-term price volatility for Waaree Energies until its own consolidated earnings report clarifies standalone module margins.",
+        "medium_long_term": "Strong volume expansion in downstream renewable execution supports long-term manufacturing utilization for Waaree Energies, provided project margins normalize through input cost stabilization.",
+        "second_order_effects": "Margin compression in project execution may prompt Waaree Energies to shift a higher proportion of module supply toward higher-margin export markets or direct third-party developers.",
+        "key_uncertainty": "Whether the subsidiary's profit decline was caused by higher transfer prices paid to Waaree Energies for modules, external Balance of System (BOS) cost inflation, or execution delays on specific projects.",
+        "monitor_next": [
+          "Waaree Energies' standalone and consolidated Q2 earnings release and margin commentary",
+          "Inter-company transaction details and module transfer pricing mechanisms between the entities",
+          "Management guidance on EPC raw material, logistics, and Balance of System (BOS) cost trends",
+          "Order book growth and execution timelines for solar projects in the downstream arm"
+        ]
+      }
     }
   },
   "sources": [
@@ -93,21 +110,81 @@
       "published": "2026-10-19T13:45:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies’ Q2 Revenue Up 36% but Profit Drops",
+      "url": "https://www.mercomindia.com/waaree-renewable-technologies-q2-revenue-up-36-but-profit-drops",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-21T12:10:20+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Indosolar Q2FY27 Results: Net profit down 89% YoY to ₹502 lakh",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcGg2bUVaR01YbHhVR2dqTTVYWFBTVnVnMkJ3NV9SN2VQaVlDZUp3eEZYZEdfQk1hVjVzN3lLNF9qNTZPWnBMRXoxaU13NnVKdHpBbEIwcXVFcWV1VFZ0SWxUVWVGSkM3b3lINElaM09hLTJZdnVHb0Y5OWNxdThvNXYzYlBkMVJueXZQb3IzTGV2NEhYWUtNWjhHZ042ZWRiSml4b3pCMFEteGtnT0lPcmI1NXptQzA",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T15:24:34+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Q2 FY27 Results: Revenue Up, Net Profit Down 30%",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV05kTGNROG1tUXBIVVI4aGxlZ0d4cEV2TWpHekY2M3psNk1GZGZZMFJaR2NaYnN3M3ktVE1vMEJqLTdaRFR1a3BsLUwwYmQtUXhSczYxWEtHdTVRU3NwQVR5WVFYVmpIT3hMSTBFMGZhcmJQbHRNMTQ3YWdOdW5uSlFYMDF1c3IyOTFIbFliNk51QjM1eVFtS08xcEs2Q2tJbGhDanV4N29HbUJTQWtXM1RzOUNxdmNn",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T12:17:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Q2 FY27: Revenue rises to ₹1,057.84 Cr while net profit slips 30%; Shares Fall 10%",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLWpXUW1sX3Y2ZVVqaHY0YWFFYmkwOXI5eHpmUU1Kd0IwWFJzUzZScUxwbXRLT2t5dlp0WUFwOEUyajc2TWJNeE52V0hpRmhCN2plbmJQOUcwZ3RNTEs3eldIMWNIV1daSi1QYzg3TzkxOW5VTVFZT2kzbjdnT2dDU3RjNnJ0VDFqM19WeEJwYnQ2NmtlWkZzNEhTNjFLVVNyOWlXMkIxQ3R4SVp5NlJOM1BtY1RYcVRtdjM5dzlmUVBfbldCeDVSdEU3bUZmZG1wMXI1VnFn",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T08:31:16+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Reports 36.53% Revenue Growth In Q2 FY27 As Profit Declines 29.98%",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWFdRNkhCa0dFbFhzNE9Pd3pHeTBqd1FYcU9hVnpmT0YtZDVNVnZpZ3M5NnpMbERYRHh5N1h0WTYxbl9JMWViYzY1R1VJTHRXVmt0S1oxeWpQOWczMTVxLV81dTYxS1JiZHZhR1ZNem1ZcWNyeVdQT25naTFkX0xRT01TS3VOZmJNVkZ4UFFOTlozUXhxSWNXVmVLQ2o0b3RTVkhNWVQtb2MtUHBNWlpRanM3ZUpWR0syZUtkTWpXTG0tZ1czYnRVSGZPSQ",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T05:03:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 9,
+  "source_count": 2,
   "primary_source": "Power Peak Digest",
   "cluster_key": "WAAREEENER|EARNINGS|fy27-net-profit-renewable-technologies-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T20:04:29.974492+00:00",
-  "last_updated": "2026-10-19T20:04:29.974600+00:00",
+  "last_updated": "2026-10-21T18:18:14.068601+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T20:04:29.974591+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:14.068581+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, Mercom India, SolarQuarter, Trade Brains"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:14.068598+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 10"
     }
   ],
   "price_reaction": {}

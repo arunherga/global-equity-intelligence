@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-GLOBAL-2026-2618",
-  "title": "RBI’s Monetary Policy Committee meeting begins in Mumbai | Akashvani News",
+  "title": "Minutes of the Monetary Policy Committee Meeting, October 5 to 7, 2026",
   "summary": "RBI’s Monetary Policy Committee meeting begins in Mumbai | Akashvani News News On AIR",
   "event_date": "2026-10-10",
   "event_types": [
@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.67,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -22,22 +22,30 @@
       "exposures": [
         {
           "exposure_type": "REGULATION",
-          "term": "RBI",
+          "term": "Reserve Bank of India",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 10/10",
+        "official confirmation available",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -47,16 +55,16 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.67,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -65,22 +73,30 @@
       "exposures": [
         {
           "exposure_type": "REGULATION",
-          "term": "RBI",
+          "term": "Reserve Bank of India",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 10/10",
+        "official confirmation available",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -90,7 +106,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -104,21 +120,51 @@
       "published": "2026-10-10T20:48:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Minutes of the Monetary Policy Committee Meeting, October 5 to 7, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63839",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-21T17:00:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "News On AIR",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|begins-committee-meeting-monetary-policy-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-11T13:07:27.252237+00:00",
-  "last_updated": "2026-10-11T13:07:27.252319+00:00",
+  "last_updated": "2026-10-21T18:18:01.385395+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-11T13:07:27.252307+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:01.385364+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:01.385383+00:00",
+      "change": "official confirmation",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:01.385388+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:01.385392+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 3"
     }
   ],
   "price_reaction": {}

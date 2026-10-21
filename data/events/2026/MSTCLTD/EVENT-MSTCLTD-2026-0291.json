@@ -1,0 +1,93 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0291",
+  "title": "Commodity market: Soybean and iron ore prices fall sharply.",
+  "summary": "Commodity market: Soybean and iron ore prices fall sharply. Vietnam.vn",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "iron ore is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Commodity market: Soybean and iron ore prices fall sharply.",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQY21PMlFLdHBXT1h4ZDRFei0wU1oxRWJiSThOM2pYbU93RkZfVk9rYlFzLVVmcWtQbG5fd19zNE90U3dHOS1Db1dPMEtaR3dxbmFjdThaaUFKMWE4ekFlX1RwZ0pZUGlGbHU1UzJlUjBsanhlQnhRTElOUmc2amVXNWVsY0RkaS1jSEZEb09WTUtJczA",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T09:01:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Soybean and iron ore prices both fell sharply.",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ITXpPeXBFMENiWXRmb3dPSnF2Uy02cnNVcjFCR0VLTnZZekxXZG5YdG1kNmFnM2JSNVl4NFoxTzVzcXljMFdNeFhFQ2ozWDlSamRxR1lvY1NINlR3VEFZZmhKa0tpcWFncHVIbmRFbXRNLUZBdjRNbA",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T06:08:41+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Vietnam.vn",
+  "cluster_key": "MSTCLTD|COMMODITY|commodity-iron-market-ore-price-soybean",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-21T18:11:25.280889+00:00",
+  "last_updated": "2026-10-21T18:11:25.280960+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:11:25.280949+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

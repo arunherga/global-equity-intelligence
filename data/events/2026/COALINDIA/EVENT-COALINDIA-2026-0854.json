@@ -1,0 +1,133 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-0854",
+  "title": "Indian newsprint makers warn PM Modi of production threat due to Coal India supply disruptions",
+  "summary": "Indian newsprint makers warn PM Modi of production threat due to Coal India supply disruptions Adgully",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Development at a known counterparty (Coal India)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are supply, input cost, customers. Classified as supply chain.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Indian newsprint makers warn PM Modi of production threat due to Coal India supply disruptions",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNWozNXlOOElxNldYdnZvcXE3enp2dUlTb2FLYkM4cjVkcTRLMXRrd1VFQ3FKOXB1R0JObmUxSDlOWVlXeG1OMTV2RVdFbHRWdk9BcDVlX2dGdkcwNW90dlFvWDJRbWhXcU5yaUpHN2psZEswZ3B2Y1NjQnFGZTZLZXZYaDZBVm5yU25hSmltZHVpUTVjVFBhNVFVUUtyelU0dENKQ2VxSzc2Ym1qZ1lVdUhKTm43YnBqVXZKSzh5Y0JUc0pFc1NwMw",
+      "source_name": "Adgully",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T07:41:47+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Adgully",
+  "cluster_key": "COALINDIA+MSTCLTD|SUPPLY_CHAIN|india-makers-modi-newsprint-production-warn",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-21T18:11:48.847022+00:00",
+  "last_updated": "2026-10-21T18:11:48.847088+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:11:48.847079+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

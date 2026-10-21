@@ -12,15 +12,13 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
-        "SUPPLY",
-        "INPUT_COST",
-        "DEMAND",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,11 +28,18 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -43,29 +48,27 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "duration of the disruption",
-        "alternate sourcing",
-        "inventory cover",
-        "cost pass-through"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are supply, input cost, demand. Classified as supply chain.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
-        "SUPPLY",
-        "INPUT_COST",
-        "DEMAND",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -75,11 +78,18 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -88,15 +98,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "duration of the disruption",
-        "alternate sourcing",
-        "inventory cover",
-        "cost pass-through"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are supply, input cost, demand. Classified as supply chain.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -110,21 +120,46 @@
       "published": "2026-10-12T22:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India's Coal Crisis Deepens as Power Demand Surges",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOakttQnFsYk8xT05KREExMzZiNkZ1X3JhY2YwRlNxa0Uzc3lHekNiaDVEbllEVjR2S0FzODJqZU9MeFZST05sVndTWk1CaEQ0djJ3d1k4Y2Nac2hKTVAwaUxfMWtpMXZNTXNmV3h0RVFfdmhjWnpiWjNDWkpXU08wWFlYemNMY3BHcDR0TnpOUVpTdUFkMUQzdy1pdFZ3V1dDOGVZcVZIeGnSAa4BQVVfeXFMTndjLWVkVW1qTXRPS3FLNmNHeXlXOWhVZlJITUw4WlY2bGRUNEJOT2ZNY3lIVHdZNC1aQnpQRWZnTWZGVmlfRW9FaUNOMzN5dXFNQnRpMllzb3JLX01QWlZnWlRZR0JjTFgwcThoa2lvMWJXdUFQNHhtTnZCR1ZzMm9lVktQY29RX2hDdWdFRDhMSnpLUnlPVlhEeVZnZVVYeGxQaXI5M2RDQWlmMU5n",
+      "source_name": "Crude Oil Prices Today | OilPrice.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T08:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Crude Oil Prices Today | OilPrice.com",
   "cluster_key": "RAVEL+SUPRIYA|INDUSTRY_DEMAND+SUPPLY_CHAIN|coal-demand-global-lng-rise-shortage",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:31:56.222788+00:00",
-  "last_updated": "2026-10-13T14:31:56.222866+00:00",
+  "last_updated": "2026-10-21T18:18:42.914443+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:31:56.222856+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:42.914419+00:00",
+      "change": "sources added",
+      "detail": "Crude Oil Prices Today | OilPrice.com"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:42.914436+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 3 -> 4"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:42.914439+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 3 -> 4"
     }
   ],
   "price_reaction": {}

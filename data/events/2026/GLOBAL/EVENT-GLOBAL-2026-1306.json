@@ -11,10 +11,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.47,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -27,18 +27,31 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -48,16 +61,16 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.47,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -70,18 +83,31 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -91,7 +117,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -105,21 +131,146 @@
       "published": "2026-10-01T10:53:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI keeps further rate hikes on table as inflation pressures build",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/rbi-keeps-further-rate-hikes-on-table-as-inflation-pressures-build/135094360",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-21T14:12:50+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Extent of rate hike cycle to depend on growth-inflation outlook: RBI Governor",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPb29KZ3dHYVR1b2s2WkhnRmNTRWVwZEx6b1NpQU9BVjQ5QjRicDJKUEZXMTlXMXo3Ql9NcTRJVmJjeGczS2xQSUw0VlQtMWMxaVlMU2lpV1Fwb0RjNGc0cG41T0ZwMVI3dHBoVXJtNVNRVVF4NWlxVTkwSWZ2dUNPRmpVQXlZUzBuVFRhaEVFMlFUZnRuU3hkUFR2T0ZwcEFtQTk5Z3BUSk9Zazg0Q0RBZ1hFSVJzQmI3QkJRa2Ixb3ZMeXZrVG03SzNOazRRbFAxdzJ3a2VUTmw0X25IVHNvZnlEWnHSAeoBQVVfeXFMTkFGcmFRUW13UmU5TUlEZjZwQlFhZmNZQ3NuUmtSa1FNVGNuQ0xEcWNBMm11R2NPWkxMN1pzNDdRY0FlMWNMRlhqVURzaVZsUHVDaDFSUFUtSllialhINFlzT09oV29QdmJBaW9XUEZnSHplWGpHU0g3SEJzR0poZzk1NDh4d2o2dWlFMHE4cVV6SDAzRG9TZ2lJM1kxWnRBRVZMNE1tS1g5c0t2ekNSMklBY3Q1d0V2UFo5bUt1MW5kMldjclA0TzA2ejBORXJDQXh3ZHpZQUh4THBpUmM5bzJ6ZUo2bFZLNDF3",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T12:26:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Extent of rate hike cycle to depend on growth-inflation outlook: RBI Guv",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaGFIZXRENHVMZXdUb3l6WGJWM2UxMmhPVXlaVWNTQy1TRTlsRDVTM0p0MnpzSnFQOEYzSlBjOUNUUFlHSU1Sc3B1eUZlZTB5U1RzRmFGUkt0UDRLcEl1VE4wLWtPVEhNUzlWX2MwRHNVX3Q1RS1HbEVfX3JsR3BxcmxHN0VoMS10LXhqT3EzajdUd1hhSi11b0hlc3hfcmtCVV84Z08wM0phNHhyTEpKQ0l30gGyAUFVX3lxTFBoYUhldEQ0dUxld1RveXpYYlYzZTEyaE9VeVpVY1NDLVNFOWxENVMzSnQyenNKcVA4RjNKUGM5Q1RQWUdJTVJzcHV5RmVlMHlTVHNGYUZSS3RQNEtwSXVUTjAta09USE1TOVZfYzBEc1VfdDVFLUdsRV9fcmxHcHFybEc3RWgxLXQteGpPcTNqN1R3WGFKLXVvSGVzeF9ya0JVXzhnTzAzSmE0eHJMSkpDSXc",
+      "source_name": "ThePrint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T11:47:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Further Rate Hikes To Depend On Growth, Inflation Outlook: RBI Governor",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUmx0X3QyOU41Mm1tXzVHbEVhQkFiMVJFM0xNbGtCOHU1ZXc2VWJKSVlEUUpadmdXcGwtU3pQdzhUZG9TR096cFN3TWUwWHhqaVNRX21fcTNuV2xJUk9Bdi01dDc3ZGdSNmhaRF9LWGF4aFplSFp6QzY2dGo3bGFKUTNJbmtDeVVydVh1SHBoR2ROc01Ncjd0ZlFydDVEQXVBT1VCWFRLMlFUWGJHOGppTXVNdw",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T02:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Future Rate Hikes to Depend on Growth and Inflation Trends, Says RBI Governor Sanjay Malhotra",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVFQ2elJYa0tnbnYyNzZpVmQ5ejVBb3MzSHJtVDdLb1VETjhnNzFFNUdxbnpJRzlwLTVValo0ZW1XOTBNdENtNThlVzZyV2JYUHVTa3h2WWpJS1U4MG5UdzZfeHk2bW1CZUVzMGgteEVGMExVa2Z3VGE0X0J1Y054X2F1NThnTk9sWWtmTjhwVjNWbm5oRnhuOVFXcWFUSS1VaHdsd211b204MVY2cUZUcEFaYTBGODBXLXc",
+      "source_name": "News On AIR",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T13:14:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Guv: Rate Hike Cycle Depends on Growth-Inflation Outlook",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZnpwdDl2a3lfb2lrbEVVLUFibmpsVUJQMmZIVTRBMWw3RGZ4NU90ZW0xUFItQjdFWi1SRWtmN2NnVjMyTWRnNWtLQ3o1R2loWjA1QW1qM3BpWlI3SVltN2FLbnRXZmdXQ0RzN0phOWlISW9iRGFBSjBYVmNRaEd5ai1QQVRpU3QyeVBDVXVLYTlTaG1FTktlTlgyM09zSUxPNENJbWFfQlN3bmNSbnBhWkVsVDFMQdIBtgFBVV95cUxOZnpwdDl2a3lfb2lrbEVVLUFibmpsVUJQMmZIVTRBMWw3RGZ4NU90ZW0xUFItQjdFWi1SRWtmN2NnVjMyTWRnNWtLQ3o1R2loWjA1QW1qM3BpWlI3SVltN2FLbnRXZmdXQ0RzN0phOWlISW9iRGFBSjBYVmNRaEd5ai1QQVRpU3QyeVBDVXVLYTlTaG1FTktlTlgyM09zSUxPNENJbWFfQlN3bmNSbnBhWkVsVDFMQQ",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T12:15:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Minutes: Governor Sanjay Malhotra ties future hikes to growth-inflation outlook — here is what he said",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOS0JRbk1odVl6aWdGZFlnbEZ5aWEtdU5vZDBaNkc1TFVTeU56RXAxQ3cteGdCY3RzLUZBMU9Vd0xNQkp2Q1pzZUFpbzlSM28ybHpkVFZjLUZueE1sa1VkdzJ6dUo5anY1cjhWUnRraTAydC15OXhHek5rUEU4dFRpd0RYTlF4Z3FoMFZJa21OOGRac2diYzJhZW9xQ21LZmtYaWItbTNJSTJQSkNPOFVXOTIzVWt4aG1RbXBrVXlIMTlPSmtIeDhFMGVRYmFtUGx5d1pia2NxUDFudjBjRDVXSjFmTkhmcXBZTlZDYndRUHBVd9IB9wFBVV95cUxQVnVmME9Hc3drUC12YWZBV1QtSlhoTHIyOUFXYW1ibE1Ndm9LVC0tTEc3RERfOTd3c2tVamNlVnBfbFB3N251Qm41X0lYUC1xTGNqOHR1azNUYWRBS3NpQ2ItTmwxVDFnRkFVQVZtUnlJbGVMYl9sa1NrQVpUODROZGpUWURxUHBqZ1Y1UmswZnB1N3lVT3dKUGFfcmNqMUpiblJqbEgzakZFUER5azlhMk1mRC03WC1IYzBpYXhEUzVSZ2JhaDFlTTZfR0tNcEV0d3FpcnJPaHNGdkNSbDFDd2daQ2Qxa2lpV19Ya19RSURjWFp5MDlr",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T14:44:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC Minutes: Malhotra says rate cuts off the table as inflation pressures build",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPX1B4M3ZJSnJrY00zdXhBTzlIcXAwbHhYNVFsRnd2MVZhcy00M2RhUjFsVFVMVlY0NjNLUUFaYmRTUUpvdzNxRkNrbUY5ZVJXVEFoQmxJUjFCTjBsQmVSdm1CVThZSVhfdDFyM3JSU3BtU2N5OVc1RGFNYWNCTE4yRVBkXzNNM3hKbHE5TGR0ZnpnVVdhT0FPajZtdnYydlFndHF5QXppbVpDZXJKRWNIWjA0TjhsS1M4Y1pCelZEQy1maFdOWkxwZm1iRnBZOFdWQkVuY1JKTXRyRU9j0gHiAUFVX3lxTE1OTk83cmZIVnFsUE5OWTRPWUJBSmZCN0dvWW9fMVZlQkpNZ1pteGpwdHVLZkdZSnFBamhNWUszcE1BNGlXU3NLTlJJZUJJeWVqeVhfcFNRV29HTWFxYjVQUzJoXzVpNTl2Q1ExT2RLLXJVeUtfdFN3ak9Za0xMQ1BkYTVqSzV5UkRuRWFOTnpxazEzZmNudHRRTTcyU0tfYlFRLVl3dFBRMGV2bjZ3TGcxYTNfSmw4aUxuOFlnbER0T1p4bmY5MnozTHg5NExTNmEzc3lFLTB5VmprYXVFaW0wY0E",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T13:21:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI MPC minutes: Malhotra says further rate hikes to hinge on growth-inflation outlook",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdmVuRlFScDNqcnc4M2I0N3VPOXpMdTBxYTY2OUw0bmNUMDR3RlZBdkdmcW1xUGtVMWRKX1hPenNhOFNnVzF5b05QWGtpOGd2UVdCZ2dCYThkMHNvT0pGLVR2Z0I5Z29uTGQ2SlhIVVlMemFHN3pjZUVPVUo4UWxmMHAtMnVYMEUxT2Y3cXB5N25OclF0eWloTlVQMmI2R08tU1A1eGZB0gGsAUFVX3lxTE5fNHIzQVNvc29JelE2UU9IVXdHMWNEekFWTkpLMGU3MEhvM241d05fYW1NVnRsZDVJT0gzMlNKOE11RHB6d2pTRFFqN01ZX0ExWHZWUUxoWkF5emtZWDFhYjNFNkN1elN0RXBxTm9QcUJJSFMza2cyM0V5UndHNGVrT3FMTDNDT2c2ZVhyZ0l5RG5mUVFzanhNaHBnb05fdGppQjFXSllNa0ExeFc",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T13:54:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI keeps further rate hikes on table as inflation pressures build",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdWQ2U2Fmc292cUJtd2tVNGRzWjlwcm9abU93bDZ6bk9xalQ4cVRpb1h3Skp0bVM0XzNpWUozdWRrQ1hITXBSTjhidHZCSWlsU2pNcHRwd0xQOURfbUxabnk0TEgyN1hDRU1iM2VyRVRvdUVIcWlqaVctQ1BFRnE1NWpXX2xNSnQ1cWZVT0JWUG90V3hVTFlnMjItRDVwdl9QeEtUMWZSbi13RWp3Z3NXWHJCNzVJaFJlM193cGNWRU5CUkNGWE5wNzlWSdIBywFBVV95cUxOdWQ2U2Fmc292cUJtd2tVNGRzWjlwcm9abU93bDZ6bk9xalQ4cVRpb1h3Skp0bVM0XzNpWUozdWRrQ1hITXBSTjhidHZCSWlsU2pNcHRwd0xQOURfbUxabnk0TEgyN1hDRU1iM2VyRVRvdUVIcWlqaVctQ1BFRnE1NWpXX2xNSnQ1cWZVT0JWUG90V3hVTFlnMjItRDVwdl9QeEtUMWZSbi13RWp3Z3NXWHJCNzVJaFJlM193cGNWRU5CUkNGWE5wNzlWSQ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T14:12:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rate cuts off the table for now, further hikes depend on inflation outlook: RBI Governor Sanjay Malhotra",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWmdZeU9valJadTZua1o4UnFzNHZsTEkzaFlyTXd0NUl1cVNIcGRfMVgzYXA3Wm9lYi1YektBX3pwV3BLZnpEY0h4WFhwZEg3MjFlYkphRmxZTzJmczNZMkxxMnZ1MnlsNUVpSEs1a0ZvOUgzcVdiRW1kdGFNcmc1LVEzMGhYbURPd3JsVy1faS1IUHZOTV9hU0V5cGs0bkx1alFCR0hjWm1xUDhWTERhcV85eFd3QVF6bV9hSU13NlZaRGNscWVuOHBfN3dqbXEzVHhLcXN0THA2dnpfNm0xS2x2elRxaDV1",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T12:48:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 12,
+  "source_count": 2,
   "primary_source": "SME Futures",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|cards-economists-expect-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.768509+00:00",
-  "last_updated": "2026-10-01T13:34:27.768570+00:00",
+  "last_updated": "2026-10-21T18:18:14.726002+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.768566+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:14.725977+00:00",
+      "change": "sources added",
+      "detail": "ANI News, BW Businessworld, CNBC TV18, ETBFSI"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:14.725994+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:14.725999+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

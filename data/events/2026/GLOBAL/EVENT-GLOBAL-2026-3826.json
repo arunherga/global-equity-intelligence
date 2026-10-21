@@ -1,0 +1,141 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-3826",
+  "title": "India: Copper scrap prices fall as weaker global sentiment weighs on market",
+  "summary": "India: Copper scrap prices fall as weaker global sentiment weighs on market BigMint",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to copper scrap, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to copper, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India: Copper scrap prices fall as weaker global sentiment weighs on market",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTTY5WHZZOVhaX2s3LW0wTVdqZDBLVzZKSkFRMm1LU3JoQzZaVTliMnVtWFloMmNHaTA5WWRRRDBOVHFGRWtpQksyMXN6OVV3NFFlZFZDZGJqZzVGVDAtOG84eWFob091bjR4WWRsWEFjY2N3QjBSV2xaSkFROVNIeEtwTUNsMWhtM0Z0VURlLVd3Y0RYTHJ1THdiRmluSVBzdF9YSk5tU09QUXB2OVp0VDRqR0JXQUc4c1Vzbw",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T13:11:55+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "MSTCLTD+WAAREEENER|COMMODITY|copper-fall-india-price-scrap-weaker",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-21T18:13:25.419055+00:00",
+  "last_updated": "2026-10-21T18:13:25.419125+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:13:25.419115+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

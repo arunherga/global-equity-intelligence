@@ -9,40 +9,48 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 International market development",
-        "-2 Weak indirect connection",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from traders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer, geography exposure to traders, and India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -104,16 +112,26 @@
       "published": "2026-10-07T00:14:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Lessons for retail traders from India’s neighbouring stock markets",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZFJBR0lPV2d2eGZ3cExpUDZ1aGIwMGNpdzBhMkFUQTAwNGQ0S3pDU3BCaTN3aTJlYmI3QlkweWJuRnl3UlByb3J6SHUzMTNqcFFBUXJWZ2dhSTBuc2NwTHZKV3NXQTc5Z0NoM2lyVnFUMklXSi1yYUVrcHBFNEVQUHVHZkYtVTJnaXU4aEVoU0pnTnVaQ3l0eW9Idm1nZzNUejlKdmkxNFJoSThmUjdEUGFaMklXQVFaVmhQc21raDIwRDJS0gHEAUFVX3lxTE1kUkFHSU9XZ3Z4ZndwTGlQNnVoYjAwY2l3MGEyQVRBMDA0ZDRLekNTcEJpM3dpMmViYjdCWTB5Ym5GeXdSUHJvcnpIdTMxM2pwUUFRclZnZ2FJMG5zY3BMdkpXc1dBNzlnQ2gzaXJWcVQySVdKLXJhRWtwcEU0RVBQdUdmRi1VMmdpdThoRWhTSmdOdVpDeXR5b0h2bWdnM1R6OUp2aTE0UmhJOGZSN0RQYVoySVdBUVpWaFBzbWtoMjBEMlI",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T03:55:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "boldnewsonline.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-india-rebound-retail-share-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-06T13:37:49.755326+00:00",
-  "last_updated": "2026-10-07T13:51:38.784111+00:00",
+  "last_updated": "2026-10-21T18:18:27.745398+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:37:49.755403+00:00",
@@ -124,6 +142,16 @@
       "timestamp": "2026-10-07T13:51:38.784094+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:27.745376+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:27.745394+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

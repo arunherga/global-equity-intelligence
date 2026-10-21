@@ -50,6 +50,50 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Steel. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.64,
+      "business_impacts": [
+        "REGULATION",
+        "SUPPLY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "steel producers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+3 Original regulator announcement",
+        "-7 Recruitment or examination notice, not a development"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its supplier exposure to steel producers. The parts of the business most likely touched are regulation, supply. Classified as regulatory.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +106,41 @@
       "published": null,
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Ministry of Steel: Recruitment Rules/Notification ›",
+      "url": "https://steel.gov.in/vacancy?category=recruitment-rules",
+      "source_name": "Ministry of Steel",
+      "source_domain": "steel.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Ministry of Steel",
   "cluster_key": "MSTCLTD|REGULATORY|classifications-guidelines-ministry-producers-steel-steel",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.281679+00:00",
-  "last_updated": "2026-10-01T13:34:27.281756+00:00",
+  "last_updated": "2026-10-21T18:18:00.792612+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.281747+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:00.792589+00:00",
+      "change": "sources added",
+      "detail": "Ministry of Steel"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:00.792607+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (SECTOR)"
     }
   ],
   "price_reaction": {}

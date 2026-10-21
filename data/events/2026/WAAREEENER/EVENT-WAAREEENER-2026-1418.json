@@ -1,0 +1,128 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1418",
+  "title": "Hong Kong Stock Market Watch: Junda Shares (02865) rises over 5% ahead of imminent Q3 earnings release; solar cell prices have recently shown signs of recovery.",
+  "summary": "Hong Kong Stock Market Watch: Junda Shares (02865) rises over 5% ahead of imminent Q3 earnings release; solar cell prices have recently shown signs of recovery. Moomoo",
+  "event_date": "2026-10-21",
+  "event_types": [
+    "EARNINGS",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "solar cell prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "solar cell prices",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (solar cell prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "solar cell prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to solar cell prices, and solar cell prices. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. Higher solar cell prices could support higher solar module Average Selling Prices (ASPs) if passed to customers, but could also dampen demand or project execution if module buyers resist price increases.",
+        "margin_effect": "Squeezed/Negative. Solar cells represent a major raw material input for solar module assembly. A recovery or increase in solar cell prices raises procurement costs, compressing gross margins unless fully passed on to end-customers.",
+        "cost_effect": "Higher direct input costs (Cost of Goods Sold) due to increased market prices for solar cells purchased from third-party cell manufacturers.",
+        "competitive_effect": "Pure-play cell manufacturers gain pricing power over module assemblers. Fully integrated solar manufacturers with in-house cell production will hold a cost advantage over module-focused players reliant on external cell sourcing.",
+        "regulatory_effect": "No direct regulatory changes from this market event, though trade policies such as India's Basic Customs Duty (BCD) and Approved List of Models and Manufacturers (ALMM) will determine the net cost impact of imported versus domestic cells.",
+        "short_term": "In the next 0-3 months, rising cell prices will begin impacting inventory procurement costs, potentially putting downward pressure on operating margins for ongoing fixed-price module supply contracts.",
+        "medium_long_term": "Over 3 months to several years, sustained higher cell prices reinforce the strategic necessity for Waaree to accelerate its backward integration into captive cell manufacturing to protect margins and supply security.",
+        "second_order_effects": "If module ASPs rise to offset cell costs, solar project developers may experience reduced project IRRs, leading to potential delays in utility-scale project execution and temporary order slowdowns.",
+        "key_uncertainty": "Waaree's ability to pass on rising cell procurement costs to downstream customers through higher module [redacted] or volume.",
+        "monitor_next": [
+          "Spot price trends for TOPCon and PERC solar cells in global markets",
+          "Waaree's captive cell manufacturing plant commissioning schedule and ramp-up progress",
+          "Blended module Average Selling Prices (ASPs) in India and key export markets like the US",
+          "Gross profit margins in Waaree's upcoming quarterly earnings releases",
+          "Import duty (BCD) and domestic sourcing dynamics for solar cells in India"
+        ],
+        "redactions": [
+          "key_uncertainty: recommendation language redacted"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Hong Kong Stock Market Watch: Junda Shares (02865) rises over 5% ahead of imminent Q3 earnings release; solar cell prices have recently shown signs of recovery.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNclg5c3VELU1jSkxkTlUzeTRyUEMxZTQ1Vjd0NnRUZkJ6MjVhbDU0Wmd4cS1tck1KaDZ3T0JLOENZNDVuNkREVG1rN0FvY2JQenVqNlBmY1U5aGdrT1BJTzZNSHY3TnV1UjRxaTRBVkUyZHIwMVZER3g1QWRzSDlLX0wwdXZMbDBobXBTWW9YTFp0eFpoX3J2QV9sVHhXcWFieEtDZQ",
+      "source_name": "Moomoo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-21T10:14:08+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Moomoo",
+  "cluster_key": "WAAREEENER|COMMODITY+EARNINGS|hong-junda-kong-market-share-watch",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-21T18:12:33.068251+00:00",
+  "last_updated": "2026-10-21T18:18:00.602570+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-21T18:12:33.068320+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-21T18:18:00.602551+00:00",
+      "change": "ai analysis",
+      "detail": "WAAREEENER via gemini"
+    }
+  ],
+  "price_reaction": {}
+}
