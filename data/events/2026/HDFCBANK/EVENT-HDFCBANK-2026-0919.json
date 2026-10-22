@@ -35,6 +35,44 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -47,21 +85,41 @@
       "published": "2026-10-19T00:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank reports Q2 profit growth as leadership change nears for HDFC Bank stock",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPR0x3VUtMOU1mMWhSbkpGcDNMYUNSRkVRb1ZOQmlaUjJpZkNtZ0plRnNBb2JnV2I3RnhwTHNjSVV0X2FmYUk3cEZaOFJ6bTNsUENOYXRNX0w1dXZVX183Vm1rZ0lOSkJ1dmxuMWJBaFdnZkkybGtCM3VybXhyWGlMV0d5cXRIeVVQNWlnUDhuU3p2djNmdVdXMDlHajFqTXVhS21Fd0tKMFg3WTExM3c1MUpqaFFZMkdLenJCMWhZOFRGWjBlakR2bm4wblRCUjlaRExFQ0g4andlLVkx",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T07:36:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Financial Express",
   "cluster_key": "HDFCBANK|OTHER|bank-beyond-hdfc-icici-share-southern",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:37:43.540171+00:00",
-  "last_updated": "2026-10-19T13:37:43.540248+00:00",
+  "last_updated": "2026-10-22T18:20:47.468020+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:37:43.540240+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:47.468004+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:47.468015+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -42,6 +42,44 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC Life. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Axis Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -54,21 +92,41 @@
       "published": "2026-10-09T10:16:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank reports Q2 profit growth. Axis Bank stock sits below its high",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYmM1MmdTU2p0V2d0dmVBcFBOWFB0ejJZN3B2ZWZMR09KZE4xeWdrMEVPMHNfY2RpZS1zQVhHX3E2OFRDM1JySzFWS1dlMnN0LVJtU0xUU1E1UWxha2txUnBUWnQ3WkZ6LWhtNk9SV3Q2MUFHeTJrdy15WUxtNFE5MDF1Sm9lRzZVUlkxM3NWRWJBcWJXQlZ5dHZzVHRrRy00MGxiektQQ3dkUXl2OUdCMGktX3ZLVHkxTHZWWXl6emV5azJVTXE5VkpsWWZyZw",
+      "source_name": "AD HOC NEWS",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T07:42:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "AD HOC NEWS",
   "cluster_key": "HDFCBANK|OTHER|growth.-hdfc-hdfc-life-life-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:41:54.809887+00:00",
-  "last_updated": "2026-10-09T13:41:54.809975+00:00",
+  "last_updated": "2026-10-22T18:20:47.980643+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:41:54.809965+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:47.980627+00:00",
+      "change": "sources added",
+      "detail": "AD HOC NEWS"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:47.980638+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

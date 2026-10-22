@@ -9,11 +9,11 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -27,6 +27,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "PRODUCT",
+          "term": "AI agents",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "TECHNOLOGY",
           "term": "Salesforce",
           "relationship": "SECTOR",
@@ -35,7 +42,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 International market development",
         "-2 Single unverified source"
       ],
@@ -44,13 +51,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its product, supplier exposure to Salesforce, and AI agents. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -74,16 +81,36 @@
       "published": "2026-10-21T09:47:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Guardian Partners Inc. Buys 6,000 Shares of Salesforce Inc. $CRM",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYzEtbG1CQnJqQ1g2S1RraTd1M0I2WlR0aEVZOUdvX0JLTUVDaEptblgtLTIxSkt6RjJNSG5YdGc5OGJNNXBob2VLUGdlRlhVcHYxa1VPVWg3Zy1QLTFfbFR2SGZCbzZIZ0Nqa3N5dHM3QTkxWFdueUwwQlBFNDJlUm9UNUROdHpxa2J5LUh3Y1hIblZjc29LeF9RRFlOTFJFMHNmSndZUWFvOXdzSmQzMTlITWF4ZGNvMWJ4X1N3",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T08:14:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce (NYSE:CRM) stock climbs as its AI agent platform goes global today",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ25xUVFsb3ZoLUhfM2c4NGQzbVluc1BLX2ZwWXd6VFpvWkw3UEhnVTUzRG1mdlM3QWlsVEtRc0hSbno4NWJVNTNyNjRJb3FsZDRzeGt4cUgxOWM4QVpvVWYtcXREYXlNa0lXZUtFVHdWbmlibTJPdWE4YlRCVDdhWG85amtUY0RHU3JEcHpiR2dEU0t0aTMxSkZ2OUlpekxENXBTcU1uVlNOai16R1Q3WnVERjdYcDgybzhwQw",
+      "source_name": "Kalkine Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T10:16:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Barchart.com",
   "cluster_key": "KSOLVES|OTHER|acquire-crm-loops-play-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-16T11:40:02.869274+00:00",
-  "last_updated": "2026-10-21T18:18:47.460063+00:00",
+  "last_updated": "2026-10-22T18:21:13.033261+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:02.869315+00:00",
@@ -94,6 +121,21 @@
       "timestamp": "2026-10-21T18:18:47.460047+00:00",
       "change": "sources added",
       "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:53.172805+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:13.033245+00:00",
+      "change": "sources added",
+      "detail": "Kalkine Media"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:13.033256+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 3"
     }
   ],
   "price_reaction": {}

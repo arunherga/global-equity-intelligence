@@ -4,7 +4,8 @@
   "summary": "Higher inflation, price pressure spillover led to RBI hiking rate: MPC minutes ThePrint",
   "event_date": "2026-10-21",
   "event_types": [
-    "MACRO"
+    "MACRO",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
@@ -12,12 +13,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
+        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -25,15 +27,21 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -41,9 +49,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -51,12 +62,13 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
+        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -64,15 +76,21 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -80,9 +98,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -96,21 +117,51 @@
       "published": "2026-10-21T13:46:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Higher inflation led to RBI hiking repo rate: MPC minutes - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNczl5OGNZcWNISUVQUlFGLUNScTF6MXFQLWQ2ZDkyZERUVmlCY3AyYkJxTnR2YzMzckxkM1lKX2Z6TjBvQmxoTkc3RjQwUG02ZEdTMGxSVlRGbTVZNm5qOEEwbFJFY252NkFoNV9pTVJHMnZad2VaRnpxY3B4TlBZWEN4WF92Y2pXVHhTSHdjR1NlUW00UWNueHRrb3VWT3pnanpkMDVJM19keUd6LWRkTVNXWmh3a2pORXhVLTJOWmZyQnhhN3E4",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T04:10:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "ThePrint",
   "cluster_key": "HDFCBANK+TMB|MACRO|inflation-led-pressure-price-rise-spillover",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:13:37.013192+00:00",
-  "last_updated": "2026-10-21T18:13:37.013257+00:00",
+  "last_updated": "2026-10-22T18:20:18.338158+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:13:37.013247+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:18.338113+00:00",
+      "change": "sources added",
+      "detail": "Mid-Day"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:18.338123+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:18.338130+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:18.338153+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

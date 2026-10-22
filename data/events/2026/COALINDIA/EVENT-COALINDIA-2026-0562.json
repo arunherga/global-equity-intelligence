@@ -66,36 +66,36 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "REVENUE"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
+          "exposure_type": "PRODUCT",
+          "term": "coal e-auction",
+          "relationship": "SECTOR",
+          "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
+        "+1 Industry-level relevance",
         "+3 Government policy or tender development",
-        "+2 Company appears in the headline",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -103,7 +103,7 @@
         "order value",
         "competing bidders"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal e-auction. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -147,16 +147,26 @@
       "published": "2026-10-02T14:15:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NCL Coal E-Auction for October 2026 on 23 October",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQXAtQ0ZicTBlMHVtVmJoclNXNFo4ZE03RkphTHFtZk5aYXc4NmtqYld0TnlmRWhwQlVfWGtaSzA1SjNmbi13WWtDWDQ5bmk2UndHeVZDeGJ5dVF4a0pKWmk0Mm1wWkd2eURPdWFQMlBkRXRrZndsanRUeFJYblEwcEM1SENLQWpNXzlkcw",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T08:51:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "PSU Connect",
   "cluster_key": "COALINDIA+MSTCLTD|TENDER|coal-data-e-auction-india-september-swma",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-01T13:34:27.681232+00:00",
-  "last_updated": "2026-10-02T18:33:37.107288+00:00",
+  "last_updated": "2026-10-22T18:20:57.586480+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-01T13:34:27.681302+00:00",
@@ -167,6 +177,16 @@
       "timestamp": "2026-10-02T18:33:37.107269+00:00",
       "change": "sources added",
       "detail": "EquityBulls"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:57.586462+00:00",
+      "change": "sources added",
+      "detail": "PSU Connect"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:57.586475+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

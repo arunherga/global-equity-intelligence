@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +39,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -61,21 +61,41 @@
       "published": "2026-10-18T02:58:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Today: Rates Fall ₹1,700 per 10 gm on Thursday; PC Jeweller Gains 4.11%",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3lwa2N0Z1h0MnRUaFNhSlJtbE05V0R3VkVPcHRUYlNwYi1lejhtMWtsUkNQZGtBZk9qVUdiYVlNSG5SaWdsSnAyTXc2OU96THBUZlExVWotZ0xuZFpsRGktX3p3aXhFNlZpeWdtUkM5Ni1VS2xVY0wwUHA4dnM5cW5ndGkxVG9LNTVST19rS25OOFE5dkJKRlpyZFdwcXhUazBFNFE4N09YSHJadU1fUmJR",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T05:04:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Jagran Josh",
   "cluster_key": "TMB|COMMODITY|diwali-dollar-gold-price-shopping-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-18T11:25:05.557370+00:00",
-  "last_updated": "2026-10-18T11:25:05.557461+00:00",
+  "last_updated": "2026-10-22T18:20:23.562831+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T11:25:05.557450+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:23.562815+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:23.562826+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 3"
     }
   ],
   "price_reaction": {}

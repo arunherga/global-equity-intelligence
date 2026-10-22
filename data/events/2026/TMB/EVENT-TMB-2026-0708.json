@@ -4,20 +4,24 @@
   "summary": "Surging gold prices take sheen off jewellery sales in festive season The Economic Times",
   "event_date": "2026-10-21",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.52,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,20 +33,25 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 Major industry-level development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -56,21 +65,46 @@
       "published": "2026-10-21T18:00:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Surging gold prices take sheen off jewellery sales in festive season",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/surging-gold-prices-take-sheen-off-jewellery-sales-in-festive-season/135105154",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-22T02:33:05+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB|OTHER|gold-off-price-sheen-surging-take",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:14:23.255892+00:00",
-  "last_updated": "2026-10-21T18:14:23.255956+00:00",
+  "last_updated": "2026-10-22T18:19:45.823444+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:14:23.255944+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:19:45.823423+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-10-22T18:19:45.823434+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY, INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-22T18:19:45.823440+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 6"
     }
   ],
   "price_reaction": {}

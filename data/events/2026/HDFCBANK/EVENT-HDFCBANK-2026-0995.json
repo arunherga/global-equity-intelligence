@@ -50,6 +50,43 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit growth, and deposits. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +99,41 @@
       "published": "2026-10-21T11:34:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CATY Q3 deep dive: margin expansion and loan growth offset by credit charges",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdHc0c1IyY2g4R3psa0Q4dXA1Sno0OF8ySW9yb3NNYTFrc2pTazNNdVVBdW10X255TnlUZGVoY19DVmRxZ0lVZS0yaEwxN1ktMjVLdUQzQmQ4MHlyMS14YUdBQXB2MFlzTVN6LVVZTEdLVFRJTjYyZ0NwSXVvMFhMMDViYTV4Nk5oNmwyX1J4VEszUk5QTXYzQVVGTjlFMjBwdzYzVWhETWhENkNqSnBRQlBlYWtLRGZvU0Iwd1VDUDE1NGM1T2hQMTRFZm1nbHBnRUE",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T05:35:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "HDFCBANK|OTHER|activity-deep-deposit-dive-m&a-pebo",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:12:52.289710+00:00",
-  "last_updated": "2026-10-21T18:12:52.289781+00:00",
+  "last_updated": "2026-10-22T18:20:26.202267+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:12:52.289770+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:26.202250+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:26.202261+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

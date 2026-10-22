@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 4,
       "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST",
@@ -24,8 +24,8 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
+          "weight": 2.5,
+          "detail": "input commodity"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -49,7 +49,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -67,7 +67,7 @@
       "relationship": "INDIRECT",
       "impact_score": 4,
       "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST",
@@ -79,8 +79,8 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
+          "weight": 2.5,
+          "detail": "input commodity"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -104,7 +104,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -138,16 +138,26 @@
       "published": "2026-10-21T14:08:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India's Middle East Oil Imports Jumped 32% in September",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQN1dCNF80SnV5cFU5cm5QWi1BT3h1UHR2ckd6b0lPSDE3ektnUVNuMDhIb3lwcmNldUR1MXZsbkVtTVRINi1JT19RZjJQNFZ0OWRSVHFzbzU0cURSTWVCUDZKYU1mYXRISU5fWWVkZ3NwbkxsM2diRE9DLVctaUxhLTc0UlFtYUM3cjhEMXdHd2Z5azNyVllwZ2VSdHQ3YlphSVFCN2doSHZaYnQ5ZWfSAbMBQVVfeXFMTzJ1eEY1VnlzTURZX3Z3eE9xV2ZOLVBDNWpXbnhCelZEdXk3V0xjNFZkTTN0a0lzOVlxRTVBYjkwdlF0bWxFR2FKdHRTNUlZS0NIMDFfdW52TmlwcjFJN3Jxdm9FTzZMVExub0FHbnNvbU5abV9XNXVRU2N1SnhjMjVfU3BXXzdBbDJ4aXF0UXNrUFpZVmg3QW80ckVDUFNYcXFGRTlsN0hDMm5OUDNWYXBEWDA",
+      "source_name": "Crude Oil Prices Today | OilPrice.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T11:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Crude Oil Prices Today | OilPrice.com",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|bill-crude-import-india-oil-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-19T13:41:47.402473+00:00",
-  "last_updated": "2026-10-21T18:19:12.271983+00:00",
+  "last_updated": "2026-10-22T18:21:16.306697+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:41:47.402549+00:00",
@@ -158,6 +168,21 @@
       "timestamp": "2026-10-21T18:19:12.271967+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:16.306674+00:00",
+      "change": "sources added",
+      "detail": "Crude Oil Prices Today | OilPrice.com"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:16.306686+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:16.306693+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

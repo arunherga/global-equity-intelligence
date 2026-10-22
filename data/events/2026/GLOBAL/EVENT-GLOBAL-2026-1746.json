@@ -10,9 +10,9 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
         "PRICING",
@@ -31,10 +31,11 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -53,13 +54,14 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -69,15 +71,24 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "input commodity"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -90,7 +101,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Europe. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -104,21 +115,46 @@
       "published": "2026-10-05T15:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Record Fuel Prices Accelerate Europe's EV Sales",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVDMxVEtwMloySWZJQ2paYXFwMGJVVy1sZFNFUktpcm52Q1U3QzIxdlRZMzFPYUxfMzBOSEtjelJvY3Y5c2VjNDY4MWVIS19YN1YwbXBZOEk2U2FFSVVvaS15QlZKdE40ZU5qelM0dXpNS1N4TkFjTmt4aXpiTlhtdlQydnVpRlhmcjZfeFpSaTZua1hNN1FrRzFDc2F6NDdOd3pleNIBqgFBVV95cUxNZ2FyUS1vbkZvOFoycldBNUI1MHFYV0ZUaG51a083YUZZbHlQaGlVVEt6Q0g4cnQ5Vm9FX1dMLTVYdWlMU3ZXZ0ppeWQ5UldCa0kxOENjcm1QM1ZreXp0X19wQzVnVWVfcm1hQ01iNDFySDkxYXBpTm1sdU5xQ0dTQTNnaGxwOERxMHJFZ0NscmNiVWZxYTR4cmlmOUlKQmZHeC1zOFVmckoyUQ",
+      "source_name": "Crude Oil Prices Today | OilPrice.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T12:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Crude Oil Prices Today | OilPrice.com",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY|electric-europe-hit-record-sale-vehicle",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T21:39:15.928955+00:00",
-  "last_updated": "2026-10-05T21:39:15.929041+00:00",
+  "last_updated": "2026-10-22T18:21:23.403474+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:39:15.929029+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:23.403453+00:00",
+      "change": "sources added",
+      "detail": "Crude Oil Prices Today | OilPrice.com"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:23.403464+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 4 -> 6"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:23.403470+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 4 -> 8"
     }
   ],
   "price_reaction": {}

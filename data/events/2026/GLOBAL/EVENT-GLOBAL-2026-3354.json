@@ -10,9 +10,9 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -29,11 +29,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -96,21 +95,41 @@
       "published": "2026-10-16T13:35:54+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bengaluru Bullion Rates: Gold & Silver Prices Oct 22",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRmhpMDdyOG5FWE1EenRZQkplS0NlMlRLNkZTVi01WlR6UklQa3VXN2c3aTU4Q1ZCSDVSSkZ6MG1ETE1XYnNPa2lnZUM0eDdHaVVNVWxmVldicTlYak5OVVhhd3lxX3ZPRjZydU9VT2xfdExBVXUybkFUTGlSVkhyd1N0S1VZYnNObXEwN2xMQ1BkanI2c3VwM0ZsVzU0WlBQV1lN0gGoAUFVX3lxTFBVcnQ5NjNHZ0RIRlA5SloxdmFWS25NYXJkT3R5NllIUWkweGdUZEUxbHdHaXI1VlYyM1FnQXJFR29wTXdJZnlxZlY0MnZHRzFSX2lFa21qSVZRX285Ny1zdzBmcUc2NldDRnc3eFdXVWQ4RTVkalBydTNvZUpZby1oZEdiYzBLaXUxVkxTVU1zbW5fYWZwTHRtR1h1RzFZck4zT25xNjJFag",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T12:50:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB+WAAREEENER|OTHER|gold-price-rate-silver-suffer-weekly",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-17T11:02:30.347621+00:00",
-  "last_updated": "2026-10-17T11:02:30.347706+00:00",
+  "last_updated": "2026-10-22T18:21:30.358825+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T11:02:30.347696+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:30.358808+00:00",
+      "change": "sources added",
+      "detail": "Rediff MoneyWiz"
+    },
+    {
+      "timestamp": "2026-10-22T18:21:30.358820+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

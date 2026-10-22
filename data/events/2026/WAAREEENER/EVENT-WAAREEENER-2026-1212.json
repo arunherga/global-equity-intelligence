@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,17 +30,16 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (silver) is the subject of the headline",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -62,21 +61,41 @@
       "published": "2026-10-15T09:34:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, Silver Lose Shine: Yellow Metal Prices Fall By Rs 1,700 To Below Rs 1,45,000; Silver Falls By Rs 5,200",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOVl9rU3lNVTJOQ0U2WlJsQ1FvQklSNGlqMFA1a1hkVXB1UWNVLXhMUjdWY2RwbW1YX2hQLWVMMF9wdkNkbm5XVHNXMGZrQXoydnpLVGNJdGlsenB2dUxTYktjT2lwZFEyWkpmLVdEQk5RWlVsSm95cVRyVFltc3dWbjlWeW9zSmV5RWhQMDBMRFU2V3EwODYtc2ZTTU1sdjk0WFVhSHpSSm05emFSUWJBaGduTURFdmtKLWxhd0pZUm1JY3VnZDBoVzJyam5JM2dnN1ZuQWdZWUZXbTM3T1h30gHnAUFVX3lxTE1YNjlNbTh3bkdMNGppNVlyS2ZfN0xVX3gtQVhDcURMekUtV2s3TzE0QmpKUFJfZ2ljUmZpTjk1c3M0VTNfcU80TkNGWE5ueXJFOHJ4SUJ0VDZrcXJ3dV9sV3ByVkdwME04UnA5VGtLd3o0bTJWaUFBbHZtYmxneWR2M3FjVkdvMlRveTlWYXE3MkhFR3JIT0g0WHhwUWt2bnhselExNUJlVGJsRkdieHNFcEZmSTMtQmF2dXBOOGZzdzFNSWpkeGdDd2J1Nm5WSkJxZHBySUhyUzJ3VjZqNzdXYXl1djlEaw",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T05:37:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "WAAREEENER|COMMODITY|gold-metal-price-recovers-rise-yellow",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:55:10.045893+00:00",
-  "last_updated": "2026-10-15T11:55:10.045995+00:00",
+  "last_updated": "2026-10-22T18:20:27.283443+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:55:10.045983+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:27.283426+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-22T18:20:27.283438+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

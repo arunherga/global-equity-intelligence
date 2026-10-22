@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.52,
       "business_impacts": [
         "PRICING"
       ],
@@ -23,8 +23,8 @@
           "exposure_type": "COMMODITY",
           "term": "iron ore",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "throughput commodity; in headline"
+          "weight": 2.0,
+          "detail": "throughput commodity"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -36,13 +36,13 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "iron ore is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -153,21 +153,41 @@
       "published": "2026-10-21T13:29:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India’s core infrastructure output grows 7.9% in September on coal, steel gains",
+      "url": "https://infra.economictimes.indiatimes.com/news/urban-infrastructure/indias-core-infrastructure-output-grows-7-9-in-september-on-coal-steel-gains/135091956",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-21T12:13:53+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Times of India",
   "cluster_key": "MSTCLTD+RAVEL+SUPRIYA|OTHER|7.9%-accelerates-core-india-rise-sector",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:13:30.641440+00:00",
-  "last_updated": "2026-10-21T18:13:30.641518+00:00",
+  "last_updated": "2026-10-22T18:19:44.002741+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:13:30.641507+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-22T18:19:44.002723+00:00",
+      "change": "sources added",
+      "detail": "ETInfra"
+    },
+    {
+      "timestamp": "2026-10-22T18:19:44.002735+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
     }
   ],
   "price_reaction": {}
