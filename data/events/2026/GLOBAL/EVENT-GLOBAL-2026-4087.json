@@ -4,7 +4,8 @@
   "summary": "India's IndusInd Bank beats profit estimate on loan growth, asset quality boost www.marketscreener.com",
   "event_date": "2026-10-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
@@ -60,15 +61,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -83,31 +86,29 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (IndusInd Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "IndusInd Bank's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to IndusInd Bank, and loan growth. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to IndusInd Bank, and loan growth. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -121,21 +122,46 @@
       "published": "2026-10-23T10:43:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IndusInd Bank posts Rs 1,176-crore profit in Q2 on loan growth, asset quality boost",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNN24wZTVoalg4YTF4QlE5YVh0Q011bXBOMk1FOGJ6XzFNblNsWFdRMjJVVk5xRmlKeUxiSnpDUWZUdlM1Z1dEbEVmUUlrWFliTWh2QnFoVDRFRFVfMTJYRzM0bFpWZnJrWVpYbWV1ZlZwMjFwbUY2cU0zYllDRXFjMVJVMmY2c0lRVlRFOU5WSWpfb25mREJ0N25jZk1lSnZHbWd4dDEteVZTVFZTLXBlaDJEZUFpYTZrdUk0Rm1sR3k0WlNpZUZmRGd2c2xLeGFRN2pxYjZZR1nSAd4BQVVfeXFMUGJFYXdLSUVfaTltY1UyeXA1QktXQ3pOU0o0X1hTOGpMYVhnZ3FNSnAxdFZva2k0bGxoNzZiY1pQMF9MQTJ6SW9CRTk2eGlRY1YtZk1LYjB1cE5QaHc2YmFOMEwycDVpLTRLTWZXcU5mRk44NjJnZ0dmMnB2U25JSDg2bTZtblcwODNOU0p1aHRDSFpseWJ4TlZaWV96eFFuWlZmLXZwRmZXQXVrYUl2YlN1a1pVRk5KMWljZFNNUFpBZ3NoT0Noc25tUktscUpnc3FXSmU5TXM0RTNoeUpB",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T11:06:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "www.marketscreener.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-beats-estimate-india-indusind-profit",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:03:11.461359+00:00",
-  "last_updated": "2026-10-23T12:03:11.461449+00:00",
+  "last_updated": "2026-10-23T18:07:04.854638+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:03:11.461438+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:04.854608+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:04.854624+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:04.854633+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

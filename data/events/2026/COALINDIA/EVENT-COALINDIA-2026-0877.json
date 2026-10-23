@@ -54,11 +54,11 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -75,32 +75,25 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
-        "financial implication is quantified"
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to coal gasification project, and coal gasification. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -134,16 +127,26 @@
       "published": "2026-10-22T12:30:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Odisha Coal Gasification Project Enters Construction Phase",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPemppRmxTejQtczR5QzAyXzc1M0lPTnlfYVNjVllta0lkM3ZlTHgzWXRZN0ZUSjNZLXdSeEdDSXVuVm9HSUVSMzlCNzI0aUtCU2J3bHpIcWJNUy1MazI5WnlPNFFQX2JVTi1BYk1PMEdwaF80b1JCMHRxdWt5aWh0SVRBRW0xcHk3ZTBfUlpsc01jRWF2UmgtZnVGM2g1YjhqekNqaEdFTXEyLWI5TXoyYl80MTNDc2lv",
+      "source_name": "urbanacres.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T00:07:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Motilal Oswal",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|000-crore-coal-coal-gasification-india-bhel-project",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:15:23.276921+00:00",
-  "last_updated": "2026-10-23T12:06:09.649122+00:00",
+  "last_updated": "2026-10-23T18:06:53.360337+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:15:23.276993+00:00",
@@ -154,6 +157,16 @@
       "timestamp": "2026-10-23T12:06:09.649104+00:00",
       "change": "sources added",
       "detail": "LinkedIn"
+    },
+    {
+      "timestamp": "2026-10-23T18:06:53.360311+00:00",
+      "change": "sources added",
+      "detail": "urbanacres.in"
+    },
+    {
+      "timestamp": "2026-10-23T18:06:53.360331+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

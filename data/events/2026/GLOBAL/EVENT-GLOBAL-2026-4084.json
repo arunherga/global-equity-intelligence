@@ -11,10 +11,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -29,19 +29,12 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +43,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -58,7 +51,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -66,7 +59,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 7,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
@@ -92,7 +85,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "steel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -113,7 +106,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 7,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
@@ -139,7 +132,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "steel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -176,21 +169,51 @@
       "published": "2026-10-23T11:14:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "JSW Steel Q2 results: Profit zooms 225% YoY at Rs 5,279 on record sales, firm flat steel prices; revenue rises 10.7%",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPNi1Kak1SWngyN0lXblo2UEJjNzZsSm5yRTV3M2RGR2hleDBvYUJ2UGlOcVp6aWxwZnFxVlpsQnBzWFF0b201TXRGNVBlNGR5SnVnWE1qS1hBYjVzc21URGdBbk9kZUJQUkxXUHI3X0t5dmlsbjFLajVjTFpBSWhkTVpCendmTHpfWHFTcWlib2FUR25LNWU3UnZKanJrN3dOeDM1SmpuWm5peDdybWd4NjluZjBLamJLdFBBUHlPZHFZc19sVFQ5d1g4bEE5dmplMy1EYmpIR3FtdHlJMXd0RTFxb0NQZm1uVmcyRk1fZnVwdVZmQVJsZlF4UVZmUUJlNlpDVA",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T11:14:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Reuters",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|COMMODITY+EARNINGS|225%-jsw-profit-results-steel-zooms",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:02:44.903569+00:00",
-  "last_updated": "2026-10-23T12:02:44.903675+00:00",
+  "last_updated": "2026-10-23T18:07:05.703161+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:02:44.903665+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:05.703127+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:05.703143+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 4 -> 5"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:05.703151+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:05.703157+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -10,9 +10,9 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
@@ -39,10 +39,11 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -61,9 +62,9 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
@@ -90,10 +91,11 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -120,21 +122,46 @@
       "published": "2026-10-21T10:12:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank Q2 FY27 Earnings Call Key Highlights",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSXdTNWllOGYxWWhVVTVXcWRrV1NLeTI1UnVxVjZfME4xUTNoSWNOODJud0RIT01mMnhZVm5aYndPNzc4QWZVYUNET0d0QVF5RXZOS3h0RjhuVk9vWDlPeGJSRGdCRkwwTjNKZ1dEX3BZS0tNcEJSX2JOcmRVTXZ5VU03Wk9ERVpQS3loYTR4ZHUwdURrbEZ6NWNHVzgwM1FpNFg0OGZBbnVfemNtRWc",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T12:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-beat-driven-earning-fy27-icici",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:12:31.455750+00:00",
-  "last_updated": "2026-10-21T18:12:31.455815+00:00",
+  "last_updated": "2026-10-23T18:07:16.686335+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:12:31.455806+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:16.686307+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:16.686324+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-23T18:07:16.686331+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
