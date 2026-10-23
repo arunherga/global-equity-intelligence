@@ -9,14 +9,23 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "coking coal prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "coking coal",
@@ -26,22 +35,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "coking coal prices over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coking coal. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to coking coal prices, and coking coal. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +63,41 @@
       "published": "2026-10-21T12:01:24+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "World coking coal prices show volatility in October",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdk0xc0NfSGZpNGZRam12ajNHLWNWWEs2VzNrNGNsU1VHZ1FzNDNDLWczZ3NiTVdkLUJJWjJ6SXJHeUVRNENHVjhuUDNsN0prYXdHdWtYa2NUaG00NGFqaU9GdEx2M2M4eFg1TlJUbmF5RHNwQ2ZsWUFmLTdYNTJiLVEtYjUxU1U",
+      "source_name": "Новини аграрного бізнесу",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T18:04:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "GMK Center",
   "cluster_key": "COALINDIA|OTHER|been-coal-coking-global-price-volatile",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:12:59.352917+00:00",
-  "last_updated": "2026-10-21T18:12:59.352980+00:00",
+  "last_updated": "2026-10-23T12:06:27.674384+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:12:59.352970+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T12:06:27.674360+00:00",
+      "change": "sources added",
+      "detail": "Новини аграрного бізнесу"
+    },
+    {
+      "timestamp": "2026-10-23T12:06:27.674378+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

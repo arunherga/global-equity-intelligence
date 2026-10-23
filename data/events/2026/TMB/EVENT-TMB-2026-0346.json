@@ -4,7 +4,8 @@
   "summary": "gold rate today october 5, 2026 check 18k 20K 24K ibja gold price malabar gold kalyan jewelers joyalukkas The Economic Times",
   "event_date": "2026-10-05",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -48,6 +49,49 @@
         "hedging disclosure"
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -241,16 +285,56 @@
       "published": "2026-10-21T06:20:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price falls by Rs 1400 on October 23, 2026; check today's gold, silver rates",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNkVMUHlBV1Z6Rmc3X1l2dVdBZmJTX2VMbFQ1dEQxZVptNVV0SHMyZEJXcmR3Vi1qVkFKSDRYOWQ1bHd2QkpKYmxlZXkxNFVYRjdsUGRNOTdDbVJJT0p1SlJZb2NMSndkeEtGSWpxRTlJMDRxNjBIdU9ucEJuZnJqVUxmMVFORFdVUE5nMzNqNVlQQWpoQzctUHZ6dWE3ME1GUW1UT0N4MklMeGxNMm1uaHByVjFrTHpyU2NiT9IBygFBVV95cUxNdXJNZXdsS2wxZFJrbS1MZWNvNkk3ekJ0ekc5MUJlck0tM2ZxbWFhVEpWeXVoSjJaTVBhNU1hMFdhcmRnOWpHT3RmdUx1QVNvSllXSHFPNEQ5TFBoaTVfbnhUWkdUd1p2UmVqNEtydjZPWmtIa2h6bXNtZEY1a3JMdFg0dklIQTZiamZ1YlNZbDlYQ1JjdUJnNXA4OUNHSjFQVWp3d1NkOUhjaXNJUFhBWmg5ek1LREUwcGxYX055REgxR3dULTBaWXRn",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T04:30:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver rate today (October 23, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJA",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOT1hBT0V2S2dreE5tSmNkTkRNeGlobGNyNXUwTWFyaUFsLVpWUTBrYlF0X0JTZ2ZnbFN0cGFSMFZnbDdRa1U4aHJGT3hjbEptT1ZvRXlYem4yVlRGZ3JNV1JrSkdkRzB3LUdUUVpMWHlfbzZUcmg2ZE9lUEJhZGpORXVnVUljekFKNzMwVmJSbk9FWWx2ck5nVVJacGEwSnY1emtOSFJNbjBNRnZfc0dDWjRtVXdMZTNMS0VRMGQ5a0NFb0s4V0l6WUY5N3BJeHlkVnlRWW02YzQ2T2NId01YaExwOHoyV1p0a1RyTDNHOWlSblk2cUZxbGI2QTAwc3FlYUxidFJqOV9KNUxvTXlSSzlReWVKU0UtSzNEbURGS2FwMGR3MlY4a1I3ejNqbi0tZUR5YlpvT1pFSEx6S0Z6ajhSRVRlUU5WVXfSAc8CQVVfeXFMUEt3U1NrQlk2NFd3SlRGdXZIOTUzbFZoXzJmOUpBNVBVa0Roc2dPWFh0b0VhQ1NKZTlOZTVtOEh0WUYtbGQzYVZwUUdLQXYxbDNIVDZURl82a0NoYWp1U28tOEI0aC04N2JwamQxMEE0Tkp4TGd2ZHVJc1FYUTFpUmc1TjZ2di1Oa1ZXUGlfWG5FQmRpS0oyZ25NdU9EcFZ4V1ZQRVdBZ3dtaVZOS3pCUzh6MVFXS2UzTndYQndnYjFLQmxaMTU4WGRLLVFUNkRja2F2ZV9uN3ZDbC1idW90c0Jjdm9DQkxMRTduVXpLRkx2dGM4UHF6dm1ISUVYNnU1YXVDNlhPRnh4S1U4TWFQVEpNcVM0NEdJZjFfQjNOUWs4aGduNGZHME1CRjZoelR2aWduUVhHbUpsbHFuVWRudzRkSFdEMmNsVi00X0IyclU",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T05:18:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold rate today: Gold price falls Rs 1,300 per 10 grams; check 22K, 24K rates",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWUwtR1E5Vl9EUUFMcmdzVUw3XzR2ZURaOUM3Z1JGbWFodEhrT0diS3BaXzJtcVlrY2pKMVlUSmVVX3R6SW8zdmU0c3ZEUHg1VGRRbzFqNjdoeVhEWEN1dWdfWHlyZnYyV2tQc080OTVHa3BwUkRncjlEUDhWYmEycVctbl9aQjRQMEZRV0pSU0dIUlczM0V4SUJrTkRsSDJVeDZ5aEdvenNYRmJ0SFBaMXB5Qm1QT1BzZHQ2ZnZkaTROT1AxOFRLZlRtRG03RjBST0U1MzJzaWRTQdIB3wFBVV95cUxOeFM1RC1RRDNha2VLdXdkejhZcHcxRlY0cXp5aEd6OFZXWHJRNVBYUXNEOUdiU3doTjdnWWZRcjk3U0FCTWsxMlE0NEVKZndPM2R1eW9sT0JJNENmanR3Q1VkY185VnNIdTNmOVkyVHZqOGROVElTSVVDOF9hSnZtbUdYT1pYNFZVdWs1Y2xBc0ZXaDVTaERGU3dvTnhyekFfNmhjRzZKa2hETzdUa1pHWlRCSlhmVlBKNmpGWVpJRGVJQTBGdkpQQ01OcWc5NHBJcHpvdmt4V3A5Mmk1Qnl3",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T05:10:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold rate today in Hyderabad, October 23, 2026: Check 22K, 24K and 18K gold prices",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWXhxZHFJemJuX050WW13YzhOSHRESzNlQnNhOUhCV2Y3MHdkZjFsRDlCaUJRN0M2SmJSQWJxcEQxaXNXb0FWd3lzUkFkallXSmUzUFV2Zmc2bFJpRmlhWnIxSXZmSkVwS3BmZlR1U2VwVmVvdGFzajFIUXJhTTRZUFNzZVNEOVlRYTFDckNPOTBOeG53Uml3SUtkTTV0bHI3VnN5eEdJbUU",
+      "source_name": "Hyderabad Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T04:36:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 19,
+  "article_count": 23,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "TMB|COMMODITY|2026-check-gold-october-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T14:58:12.858647+00:00",
-  "last_updated": "2026-10-21T18:18:30.778284+00:00",
+  "last_updated": "2026-10-23T12:07:11.184829+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T14:58:12.858761+00:00",
@@ -261,6 +345,26 @@
       "timestamp": "2026-10-21T18:18:30.778267+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, Hyderabad Mail, INDToday, The Times of India"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:10.710319+00:00",
+      "change": "sources added",
+      "detail": "DT Next, India Today, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:10.710337+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:11.184805+00:00",
+      "change": "sources added",
+      "detail": "Hyderabad Mail"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:11.184822+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
     }
   ],
   "price_reaction": {}

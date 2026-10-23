@@ -1,0 +1,168 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4030",
+  "title": "BHP Share Price Risks R634 Breakdown as Copper Output Falls 19%, Despite Strong Iron Ore and Coal Production",
+  "summary": "BHP Share Price Risks R634 Breakdown as Copper Output Falls 19%, Despite Strong Iron Ore and Coal Production FXLeaders",
+  "event_date": "2026-10-22",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "iron ore is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (copper) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "coal production",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to coal production. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "BHP Share Price Risks R634 Breakdown as Copper Output Falls 19%, Despite Strong Iron Ore and Coal Production",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSWRsQ3lIWDlRVnJzeVR6eGJfV0hlZTdLUWFjV0N3TEpwWHJFNTVGZnRCUFFiNXlhRUFrWFVqQjRMaTFEUmFzUU91RUV3YmF2eS1rRWRTR2tJTDdfQ2ZldG9pdDJjbTFMdUxaWnlFdWVfa3FTcU10TVJ0U2tfM0J5YUoyakU1ZUMtUmhSS2RpZnA3SldqdjQ3U3Q5V2gycVVOT3dYdmFLb2l6aEgtZ2laZ1RsZXFFTVJOZjQzdnFObHI3VjloMVRGUFUwT0pSLXVpa3FwMDJVamhZRG9KVWdibmVyWQ",
+      "source_name": "FXLeaders",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-22T21:54:50+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "FXLeaders",
+  "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|COMMODITY|bhp-breakdown-price-r634-risks-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-23T11:58:47.661148+00:00",
+  "last_updated": "2026-10-23T11:58:47.661240+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-23T11:58:47.661231+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

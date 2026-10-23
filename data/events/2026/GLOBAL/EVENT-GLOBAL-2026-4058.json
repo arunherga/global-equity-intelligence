@@ -1,0 +1,134 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4058",
+  "title": "Gold price falls Rs 1,500/10g; silver plunges Rs 7,000/kg as soaring oil fuels rate hike bets. Time to sel",
+  "summary": "Gold price falls Rs 1,500/10g; silver plunges Rs 7,000/kg as soaring oil fuels rate hike bets. Time to sel The Economic Times",
+  "event_date": "2026-10-23",
+  "event_types": [
+    "COMMODITY",
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "MIXED",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions",
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price falls Rs 1,500/10g; silver plunges Rs 7,000/kg as soaring oil fuels rate hike bets. Time to sel",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQUzMzZ1AxUlEybm8tQ012TjJZNEtsaUJxQkoyUm5IV0VFdFZHSy1MbFFtYnphM0JEYkUyVWltbGk5YlpNR2hsTF9KdENRYzVqVldlblkxaHFrYzU3enlkRnJXT0IzNll4c2lqWm91d1ptV2VfS1MwUUoyVzc2RHIxSHpPM2RuaFphTl9ISWRuemVjSG9UcGlYMWY1X3k0c0lxQ1ZmM0NDa1M0bjhqTFhKWFFpVFNKNEs4NFc2SHdMREpjbGVodHA1amdpbmF5eUtiTXBWNVdhVzBqdUFSdGdmeU5kM0ZRbnVHeDhkaHlKMWlQZGIzdGk4OE1lWF9uVGo2THJsZmp5aE9naW9oc2hz0gGUAkFVX3lxTE90VGJ2V2NrYUk1bkpuUUs3ZndsWFhRNkFJSTBpVkxCNC1SMVR4ZFZOenpMUzJfZFljVDlnSGpGU05oT3kyNmZVWDdYR0NjbUNIUWdIYm5LZl8wTXhFbkxYQ3lvWk50a3JfaGR5Y1dCLUJMYjROV05pVHRfb29na3JCb0o3UlhOT3BfSHNheEs0UG1DYWU2azNQYnhWNlNzcjhDMzlabllNTm5idC0zdGMzUVZ2c1hWWFJ5bno2VTNES0xDWnV1MWJiRGFraW5LX28xX0ExM1A1N1NUZC1VOHVHY2ppOEpFNmM1YXhZcElrV2p1LXQ5d3A5RlhidUtpYlJfaXNfalhKeVhSRTBkd2p5MkEtbg",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T05:39:32+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "TMB+WAAREEENER|COMMODITY+INTEREST_RATE|500/10g-fall-fall-gold-price-silver",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-23T12:00:49.452448+00:00",
+  "last_updated": "2026-10-23T12:00:49.452567+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-23T12:00:49.452555+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

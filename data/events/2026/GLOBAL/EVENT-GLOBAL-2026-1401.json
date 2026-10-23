@@ -4,20 +4,22 @@
   "summary": "Diesel prices went down by P1.55 per liter, while gasoline went up by P0.29 per liter. Link to the full story in the comments section. | Via ANC 24/7 facebook.com",
   "event_date": "2026-10-02",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,34 +30,39 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -66,34 +73,39 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -104,21 +116,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -142,16 +158,26 @@
       "published": "2026-10-07T15:13:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Diesel prices are set to rise by P2.88/L, while gasoline prices are set to go down by P1.07/L. Link to the full story in the comments section. | via ANC 24/7",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNllGSmtYNk9sTUFnbUVFTW40S0ZJSEp6Q3JURl8yVWdZb3RjX2s5RUxfbFhRTjBaTHl0SWhlSTRPalFyTzhoN2dGY19DbWY4T1BzdDBHUGstRk1LZnY4RFpUTTNXQURCSUtRajRMSTM2b0RZdHUzUkhpbTNGcVd2Um9TUGlPcUQ1MkJhY3Q5Y2hjbmhLbWRjcWQtOGViT2QtX3diWkxQMTBNRkJOUFVwa0dVUEd3MjBFQ0l1X2tHUnBzaXJONXotQ1pSZTQzd3p2ZHM1b0tKOA",
+      "source_name": "Facebook",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T07:43:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "facebook.com",
   "cluster_key": "COALINDIA+JKIPL|OTHER|diesel-liter-p1.55-price-went-while",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-02T12:51:59.324241+00:00",
-  "last_updated": "2026-10-07T19:34:11.445093+00:00",
+  "last_updated": "2026-10-23T12:07:29.997529+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-02T12:51:59.324316+00:00",
@@ -177,6 +203,31 @@
       "timestamp": "2026-10-07T19:34:11.445088+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:29.997491+00:00",
+      "change": "sources added",
+      "detail": "Facebook"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:29.997508+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:29.997514+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:29.997520+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:29.997525+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 3"
     }
   ],
   "price_reaction": {}

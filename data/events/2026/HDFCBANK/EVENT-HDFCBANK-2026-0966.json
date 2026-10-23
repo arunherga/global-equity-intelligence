@@ -57,8 +57,8 @@
       "relationship": "DIRECT",
       "impact_score": 6,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "direction": "NEGATIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -73,12 +73,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -100,21 +100,41 @@
       "published": "2026-10-19T16:13:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank stock falls over 2 per cent post Q2FY27 earnings announcement - Mid-Day",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVTFvbkd2djJCUFdHZ29IcDY5UDJYbXJTN1hkY2lMN2lqTHJxVzZVdmxtLTl3anhrdmU5SHFFR1dINHZNaEVhQ3YwNDRsdmQ3S0sycTBUVjIxa0kyZU5Oa1hQaGJpVkR0QjcybE1xNWlYeXE3ZHlfRUNwTnZKQkR4YnZkbzJxemhNUFZoc2xGZG4tdDJ2YWpwTG96WXBQdFBJbXhvU2dYd1JoRVZ2emUzLS1ZTmE5a09JNXc",
+      "source_name": "Mid-Day",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T03:57:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Pluang",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-earning-expectations-hdfc-meet-q2fy27",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T20:05:33.891586+00:00",
-  "last_updated": "2026-10-19T20:05:33.891687+00:00",
+  "last_updated": "2026-10-23T12:07:05.395012+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T20:05:33.891673+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:05.394988+00:00",
+      "change": "sources added",
+      "detail": "Mid-Day"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:05.395007+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

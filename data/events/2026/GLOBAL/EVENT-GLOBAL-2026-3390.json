@@ -51,10 +51,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
         "REPUTATION",
@@ -79,16 +79,16 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+4 Regulatory or legal action",
+        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NHAI"
@@ -117,16 +117,26 @@
       "published": "2026-10-19T06:28:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Wins Arbitration Case over Rajasthan Highway Claims",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQcmI4Ukg0Qjl0Zm9FeFRJWVA5a0VzYnpaM0w5WkR6Z0ZPS3BWQWFYMGhYaEZJN0JxME9GY041b2hvQ05nUjRkR2xjZUhJYllXcF9OWnd4X01kYWhENUl4ZmhwRnF4RWhVZ25HYUR3cjIwWnd3SzhwXzA5RG94YTZ4QkFSZ1JKamU0SURjY0dTemQwZV9tb2ZaVkk2OUUxNUQ0bHExWWlPQUlKclFMSXJsWFZxVFduNl9fd2xWbkhSczFodjVKVm9XY2RSMWpxU0JPNHpDbWNtSHBMZ2FQekhSV3ZSTXpseHVMMGc",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T07:02:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Swarajya",
   "cluster_key": "ASHOKA+JKIPL|LITIGATION|another-arbitration-nhai-scores-tribunal-victory",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T11:05:37.027161+00:00",
-  "last_updated": "2026-10-19T13:49:27.863568+00:00",
+  "last_updated": "2026-10-23T12:07:23.936445+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T11:05:37.027243+00:00",
@@ -137,6 +147,16 @@
       "timestamp": "2026-10-19T13:49:27.863553+00:00",
       "change": "sources added",
       "detail": "ETLegalWorld.com"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:23.936420+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:23.936439+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

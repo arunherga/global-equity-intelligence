@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.44,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -36,13 +36,13 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -55,10 +55,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 6,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.54,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -73,13 +73,13 @@
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -100,21 +100,46 @@
       "published": "2026-10-22T16:47:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Who is Dr Ashok Kumar? Why former Coal India GM is back in college after retirement",
+      "url": "https://www.livemint.com/news/india/who-is-dr-ashok-kumar-why-former-coal-india-gm-is-back-in-college-after-retirement-11792685730009.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-22T16:47:00+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Livemint",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|ashok-coal-former-india-kumar-who",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:17:08.385211+00:00",
-  "last_updated": "2026-10-22T18:17:08.385281+00:00",
+  "last_updated": "2026-10-23T12:05:46.056896+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:17:08.385274+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:46.056862+00:00",
+      "change": "sources added",
+      "detail": "Livemint Companies"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:46.056883+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:46.056890+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 6"
     }
   ],
   "price_reaction": {}

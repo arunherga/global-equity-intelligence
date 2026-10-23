@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.3,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -31,7 +31,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,8 +39,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -63,21 +61,41 @@
       "published": "2026-10-19T11:21:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price today, Friday, October 23, 2026: Gold opens at 3-month lows as oil prices keep rising",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZnp1ZFhreERCV0F0bEs4emx4WlVNdW40OGJhWThrY0pIazRJY1FiTkIxeTFIbVRQX1NmYWVSaktzbzhTdEhocjZMMzdMUHBmeXFJOXUyLXRBSm9OMkdDWnJuMmg0SXBuNUxsSEd4U2ZRbndoN243LVl4ZEFzc2JkdVRCWWFIell2SW5IdEFXZGZ4b3AzUjNQbU41bFBCNnhpNXFsUkUySU9FaUhXem8tTDJuU1pGakZYM3A1UzRTZHY0aDJiZlc1WTZpWWJ0ZW9MQml0Rkdta05KZTFQbFNqeGREQXlseVVhQXNmaDFnbzZMeFgzcHZzc0FTVXc",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T11:12:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "TMB|COMMODITY|2026-gold-monday-october-price-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:43:18.585994+00:00",
-  "last_updated": "2026-10-19T13:43:18.586083+00:00",
+  "last_updated": "2026-10-23T12:07:55.700733+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:43:18.586073+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:55.700710+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:55.700728+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

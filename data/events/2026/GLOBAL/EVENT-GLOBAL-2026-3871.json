@@ -47,10 +47,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.47,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -72,14 +72,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer is under pressure"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -140,21 +140,56 @@
       "published": "2026-10-22T11:47:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI deploys anti-smog guns, sprinklers across Delhi-NCR for dust control",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVjdzYU5kTnJLaFhBeURnWXlveGJUcmV4b3l2Y2tSNlRSclNDRUJhX2Z0MHRaeGNLaEd4aFhuOWxBSGdRRUtHU3g1SlA0dEdVOFNUSEoteDVpQ01ENkpyRGNaVF9uWURjZmxHcGg2cklHamJkb0x5WkhNRzV5RUI1N19IS0prcXhVNndxeUxjbjd2WTJkUE9SOF9kbEszWU9OU0hVbDZYY3pqZUJvRDlQcXJfVWo1RTA0UkxRc0NHQWhaaUdhU1BPekR5OHVsSXBaMUxmUWpSbUhIMTNCOVE",
+      "source_name": "Hindustan Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T02:05:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NHAI deploys anti-smog guns, mechanical sweepers to tackle winter pollution in Delhi-NCR",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaHg5TFhuV3pLaWdCUXVZaWdUb3J4eHRtRU9WeUpHb3RjVElJa3E1NGZCbjlUNmdmRVN0M0tFWjZYVzJPRVV4REZmVUdXaUtIMFpQWF85V1dRYjdiUnNUM0ZVQ1VaMjNQYlprTVNBOFhkTFJHTVVhY29rV3doLWJBRXQ4TUlHNkowWW95eDBzOG1qNUZIT3lVT2RkRDg1ZzdLcjNidnItYnM0VWJtQS1NR1RxUFNJdXVOTkRoRXJoR3ZOTjFmdHZPd01zNNIBywFBVV95cUxNaHg5TFhuV3pLaWdCUXVZaWdUb3J4eHRtRU9WeUpHb3RjVElJa3E1NGZCbjlUNmdmRVN0M0tFWjZYVzJPRVV4REZmVUdXaUtIMFpQWF85V1dRYjdiUnNUM0ZVQ1VaMjNQYlprTVNBOFhkTFJHTVVhY29rV3doLWJBRXQ4TUlHNkowWW95eDBzOG1qNUZIT3lVT2RkRDg1ZzdLcjNidnItYnM0VWJtQS1NR1RxUFNJdXVOTkRoRXJoR3ZOTjFmdHZPd01zNA",
+      "source_name": "The Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T05:57:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "ETInfra",
   "cluster_key": "ASHOKA+JKIPL|OTHER|anti-smog-curb-deploys-guns-nhai-sprinklers",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:09:40.098782+00:00",
-  "last_updated": "2026-10-22T18:09:40.098875+00:00",
+  "last_updated": "2026-10-23T12:07:17.160778+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:09:40.098868+00:00",
       "change": "created",
       "detail": "5 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-23T12:06:53.714976+00:00",
+      "change": "sources added",
+      "detail": "Hindustan Times"
+    },
+    {
+      "timestamp": "2026-10-23T12:06:53.714995+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:17.160760+00:00",
+      "change": "sources added",
+      "detail": "The Tribune"
     }
   ],
   "price_reaction": {}

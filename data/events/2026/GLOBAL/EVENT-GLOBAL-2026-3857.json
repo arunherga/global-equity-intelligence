@@ -4,20 +4,26 @@
   "summary": "Government of India has announced the sale (re-issue) of Government Securities, as detailed below, through auction to be held on October 23, 2026 (Friday). As per the extant scheme of underwriting commitment notified on November 14, 2007, the amounts of Minimum Underwriting Commitment (MUC) and the minimum bidding commitment under Additional Competitive Underwriting (ACU) auction, applicable to each Primary Dealer (PD), are as under: (₹ crore) Security Notified Amount MUC amount per PD Minimum bidding commitment per PD under ACU auction 6.53% GS 2031 19,000 453 453 7.71% GS 2066 14,000 334 334",
   "event_date": "2026-10-22",
   "event_types": [
-    "TENDER"
+    "TENDER",
+    "DEBT",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.78,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -27,30 +33,26 @@
           "detail": ""
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "+3 Original regulator announcement"
+        "+3 Original regulator announcement",
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
+        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -58,40 +60,27 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders"
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Unclear. Any impact on revenue will depend on treasury trading gains, mark-to-market (MTM) adjustments on existing bond holdings, and commission earned if TMB directly participates in underwriting.",
-        "margin_effect": "Unclear. Sovereign yield movements following the ₹33,000 crore debt issuance can shift benchmark interest rates, impacting TMB's Net Interest Margin (NIM) and investment portfolio yields.",
-        "cost_effect": "Potential slight increase in short-term cost of funds if the large G-Sec issuance temporarily tightens domestic banking system liquidity.",
-        "competitive_effect": "Neutral. Large primary dealers and major public/private sector banks dominate G-Sec underwriting, while mid-sized regional banks like TMB generally participate based on individual balance sheet management needs.",
-        "regulatory_effect": "Helps TMB meet and manage its Statutory Liquidity Ratio (SLR) mandates set by the Reserve Bank of India (RBI).",
-        "short_term": "Immediate volatility in government bond yields around the auction date could lead to minor mark-to-market gains or losses on TMB's treasury portfolio over the next quarter.",
-        "medium_long_term": "Sustained high government borrowing supply sets sovereign yield curves higher, anchoring benchmark lending and deposit rates across the banking sector over several years.",
-        "second_order_effects": "Liquidity absorption from the auction could intensify competition among Indian banks for retail and bulk deposits, driving up interest costs across private sector lenders.",
-        "key_uncertainty": "TMB's actual participation level in the auction and the post-auction movement in sovereign bond yields.",
-        "monitor_next": [
-          "RBI auction cut-off yields and underwriting commission rates",
-          "Movement in the Indian 10-year benchmark government bond yield",
-          "Systemic liquidity status via RBI Liquidity Adjustment Facility (LAF) data",
-          "TMB's quarterly treasury income and SLR portfolio duration in upcoming earnings reports"
-        ]
-      }
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.78,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.84,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "DEBT",
+        "BALANCE_SHEET",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -101,30 +90,26 @@
           "detail": ""
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "+3 Original regulator announcement"
+        "+3 Original regulator announcement",
+        "-6 Scheduled statistical release, not a development",
+        "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
+        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -132,28 +117,11 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders"
+        "competing bidders",
+        "deposit repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "HDFC Bank may earn modest underwriting commission fees and interest income or trading gains/losses on allotted government securities, though the impact of a single auction on overall revenues is minor.",
-        "margin_effect": "Unclear; depends on the yields at which securities are allotted relative to the bank's cost of funds, as well as subsequent yield curve movements affecting treasury margins.",
-        "cost_effect": "Short-term capital allocation and liquidity commitment required to fulfill underwriting obligations and fund potential bond purchases.",
-        "competitive_effect": "HDFC Bank's substantial balance sheet and active treasury operations allow it to absorb large debt issuances more easily than smaller primary dealers and regional banks.",
-        "regulatory_effect": "Fulfills primary dealer underwriting requirements and Statutory Liquidity Ratio (SLR) compliance mandates under Reserve Bank of India regulations.",
-        "short_term": "Liquidity deployment for the auction on October 23, 2026, with potential short-term mark-to-market fluctuations in the treasury trading book depending on yield shifts.",
-        "medium_long_term": "Contributes to the bank's ongoing SLR bond portfolio management and helps set benchmark yield references that influence medium-term corporate lending rates.",
-        "second_order_effects": "Sizable government borrowing absorbs banking system liquidity, potentially raising short-term interbank money market rates and influencing benchmark pricing for corporate loans.",
-        "key_uncertainty": "The final underwriting commission rate determined by RBI, the actual allocation amount to HDFC Bank, and market yield volatility around the auction date.",
-        "monitor_next": [
-          "RBI auction underwriting fee cut-offs and allotment details",
-          "Yield movements on benchmark Indian Government Securities post-auction",
-          "Overall banking system liquidity deficit/surplus levels reported by RBI",
-          "HDFC Bank's quarterly treasury income and SLR balance sheet metrics"
-        ]
-      }
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -166,16 +134,46 @@
       "published": "2026-10-22T11:45:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Money Market Operations as on October 22, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63849",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-23T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "Result of Underwriting Auction conducted on October 23, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63850",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-23T09:55:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "RBI money market operations record net liquidity absorption on October 22",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUEtuUnBKQ09hX0ZzWmdQWVZUNEJfWWVQSEpIRXlUY0d3VHl3TzJ2RWlsUFlmSDFwcnZ5THg3Z01oZWZEblNKM0cwWllrNkZKNmlCWlBEQXZkMUZQMjJzdWMwdlZTVlFWbks0QTN6MS1fdVRxUGszRUUtbllib2FwMW5oUVozNDRVVThVMEtwWi1yMXFCbEFpQTFPVQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T04:18:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|TENDER|000-auction-government-sale-securities-underwriting",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:08:53.527773+00:00",
-  "last_updated": "2026-10-22T18:19:12.142630+00:00",
+  "last_updated": "2026-10-23T12:05:45.457784+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:08:53.527851+00:00",
@@ -191,6 +189,26 @@
       "timestamp": "2026-10-22T18:19:12.142618+00:00",
       "change": "ai analysis",
       "detail": "HDFCBANK via gemini"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:45.457744+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India, Traders Union"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:45.457762+00:00",
+      "change": "categories added",
+      "detail": "DEBT, INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:45.457771+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-23T12:05:45.457779+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

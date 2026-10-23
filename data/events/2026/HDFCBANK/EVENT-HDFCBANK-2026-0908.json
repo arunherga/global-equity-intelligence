@@ -9,38 +9,46 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "loan growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "Punjab National Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -48,7 +56,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to Punjab National Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "TMB": {
@@ -126,16 +134,26 @@
       "published": "2026-10-19T05:48:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Punjab National Bank Q2 FY27 Earnings Call Key Highlights",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYzdLZWFBbi15NlhmVVk2a0ZmWkRNUFVHZDhxS2w2MVR3SXMyb3RPemg3ZWhQRHhkczVXbXFpMGZ4aVlPNWlmSFU1ZG5iZlhRU3E2QmJsbXhoaGRyZzk0YTFha3ZiRnVvMzRvSUFtdnBwbGhLSEotRF9na0tIUGtiTm5WWjRzWW93OHFmSjZrQno0ZW9HanpaVTBkVGRuQWNIZDRQRjJ6TGFMYWg0eFh4aGoydw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T09:49:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK|EARNINGS|000-bank-eyes-national-punjab-quarterly",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-18T16:39:37.325521+00:00",
-  "last_updated": "2026-10-19T13:49:23.188629+00:00",
+  "last_updated": "2026-10-23T12:07:44.897176+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T16:39:37.325611+00:00",
@@ -156,6 +174,16 @@
       "timestamp": "2026-10-19T13:49:23.188624+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:44.897153+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-23T12:07:44.897170+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}
