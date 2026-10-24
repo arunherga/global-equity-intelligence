@@ -4,28 +4,23 @@
   "summary": "RBL Bank Q2 FY27 slides: profit surges 170%, asset quality improves Investing.com India",
   "event_date": "2026-10-12",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "SECTOR",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
-        "COMPETITION"
+        "REVENUE",
+        "MARGIN"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "asset quality",
@@ -34,29 +29,33 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to Axis Bank, and asset quality. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to asset quality, and deposits. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -198,16 +197,46 @@
       "published": "2026-10-23T13:17:54+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank of India Q2 FY27 slides: profit surges 25% amid asset quality gains By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUXJnRHdER2NZSWJSbUxKSjJzNVlDZ0p3eWp1ekM3VkgxcTFOYjE0MHVMdW96SVlwbGZhMzJUNmVkcHp0RUdwcjkzTjRZaEVvdVVtbFFKSFozMEhHNGpwTkpZX2swRkJ1RERDTW1VX3JEdExZVjBsUFJKNWpZYXBiSExxdjZiREZLTDdyYUUxcFZId09kRWFKYjJqVks2ZHVuTVNnb01maXowZ0o3ZHlRYjBaM283bW5lVmNFWFdpa05HRk5VU2dzRnluRQ",
+      "source_name": "Investing.com South Africa",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T18:08:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "AU Small Finance Bank Reports 53% Q2 FY27 Profit Rise, Deposits Grow 28.6% As Asset Quality Improves",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNd2VwSzBNM093eVBYZFIzRnN3UlhPZkt5dElTUDFSOFRlZ0w4WmVPbVFTS3JhTm9GMERTNWdLb0ZHUC1HOFhPQXBmMGRJWXNqV0VJQUFTNkFNQlJVbEJJLUV4OGItX3ByOXRZT0lJYl85X1AxSUhXRzZST0tNTHZCYkM1QzhQcWVMbndJcEtrd3hrUlBINVFoQjNJUXdIRlZlMkhRUl9hTmZaNEhUVWsxWmtyMWVYR3BZMWt0ZmZSc1NiTElrcE05bnp6cHVDTkpkTVVN0gHYAUFVX3lxTE55ZDBEUE9VMG5Lby14b2FIU1c2QmVVelEtRWpxeWdCenRlbEw1d1Q1RmNjNkNxc3N3aXNzaldsVkhKVWdHZ3hjanNsbzhuTWlKNnpFUzVsdW44YUQwenl5MHRUMkZGaTByRXRtN0ZNckRVQndVU0JXVlAydUhCTUJuS0p2SlBsQ1h4Y1NlbFE4Q1h0NE9XRkNMX25oZF9PYnFwdlRBMENPdjVSbU1Jdk1kWng1c3FWcmRMaWE3OEJicXg3YVhQbWIzTHdGS3d5bmhjMlByWTBKVA",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T10:17:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "AU Small Finance Bank posts 53% rise in Q2 net profit; asset quality improves sequentially",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNjhGQm93N0t0RW1NeWxhTDRSLUppUWxvZlRBN3hfVl82andQMGxHZlRnWWV0WFdjMVA4ZXo0bzU5VVl5ZE1ZYkRNcE9CelV6UVdiZDdNVkM3Q0hLTHk4WHFxZlJiSmhUWE9hdjhQa1A4aVNNMDdNVG9VLUNaRkNXT0VKcGFHeUVIaV9nMTNuQ2taRzJyaVdueXljMzBNRHVzTG9pX3dmRGFldnhXYXRaUTE2NlNEQ29US2phVzJrWjFuYknSAcgBQVVfeXFMUGFJajRCS3ZkbmRDQVJ6dUZQOFpFemEyQ1NoU0NfYmRkeGRXd1B2N21xbjZJQjR1Z2g0YlJnYko3ODY5SU1xTVNfaEJrU3o3Njh5ZjhRZnA0Tk9ackhIdWQzNW95dFBZZHFwRDE3a0p1OUplVW9UemV4clg4cWRQNkxRZ0RqLW50Z0tZUDltaWk4MnlvSnAzM21ScmxiVXhFTUMtUkUxYnpQdkd4bW5iNVFacEZfSWNMUmFVN0x4NW5qUTUxSVJhVTk",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T11:07:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 13,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "TMB|OTHER|bank-fall-fy27-profit-rbl-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:30:14.044374+00:00",
-  "last_updated": "2026-10-23T18:07:28.916164+00:00",
+  "last_updated": "2026-10-24T16:49:50.326506+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:30:14.044445+00:00",
@@ -278,6 +307,31 @@
       "timestamp": "2026-10-23T18:07:28.916145+00:00",
       "change": "sources added",
       "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:35.663614+00:00",
+      "change": "sources added",
+      "detail": "Investing.com South Africa"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:35.663632+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:50.326481+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18, Free Press Journal"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:50.326497+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:50.326503+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

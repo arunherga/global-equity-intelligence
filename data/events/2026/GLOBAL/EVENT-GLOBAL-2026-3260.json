@@ -384,11 +384,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -408,7 +408,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -416,13 +417,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -528,16 +529,26 @@
       "published": "2026-10-22T07:56:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFCBANK Share Price Today - HDFC Bank on NSE/BSE",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1TQy1XYndZWDl2dzR6OXFVU085ZFEtUml4dHY0eHJuTUZOSHZPNEgwZW1mUTlidlREQXUxOE1YeWtfaWFkUS1BbFlUcERVMDFacjZZ",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T08:57:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|price-rail-rvnl-share-today-vikas",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:40:45.749510+00:00",
-  "last_updated": "2026-10-22T18:20:49.820200+00:00",
+  "last_updated": "2026-10-24T16:49:42.969819+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:45.749546+00:00",
@@ -563,6 +574,16 @@
       "timestamp": "2026-10-22T18:20:49.820184+00:00",
       "change": "sources added",
       "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:42.969791+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:42.969813+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

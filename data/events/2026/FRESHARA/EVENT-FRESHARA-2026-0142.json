@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -32,12 +32,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "vegetable prices is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "vegetable prices over the next few weeks"
@@ -56,21 +56,41 @@
       "published": "2026-10-13T08:10:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Winter vegetable prices see sharp decline",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5td2JCeGx0Wl93YlF0bzRnM2xnY2RJbnl5SXc5MDFrME5ZOTdVbUpBS2Jma2J0bmZQajNxbWpHYnNub2pBVmpJUU1JVDl0TVlac2M0R1Zn",
+      "source_name": "Daily Sun",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T18:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Daily Star",
   "cluster_key": "FRESHARA|OTHER|dhaka-price-taste-vegetable-winter-winter",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:35:18.862419+00:00",
-  "last_updated": "2026-10-13T14:35:18.862498+00:00",
+  "last_updated": "2026-10-24T16:48:34.870187+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:35:18.862489+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:34.870168+00:00",
+      "change": "sources added",
+      "detail": "Daily Sun"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:34.870182+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 7,
+      "impact_score": 6,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "direction": "POSITIVE",
+      "confidence": 0.6,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -24,36 +24,35 @@
           "exposure_type": "SUBSIDIARY",
           "term": "Bharat Coking Coal",
           "relationship": "DIRECT",
-          "weight": 3.5,
-          "detail": "subsidiary; in headline"
+          "weight": 3.0,
+          "detail": "subsidiary"
         },
         {
           "exposure_type": "PRODUCT",
           "term": "coking coal",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
         },
         {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
-        "-1 Single source, unconfirmed"
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -69,10 +68,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.48,
+      "confidence": 0.54,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -98,21 +97,21 @@
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
-        "-1 Single source, unconfirmed"
+        "-2 Scheduled disclosure with no surprise"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -123,6 +122,49 @@
         "any guidance change"
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IDFC First Bank, and Kotak Mahindra Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEUTRAL",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "net interest margin",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to net interest margin. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -136,21 +178,76 @@
       "published": "2026-10-24T09:38:30+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Kotak Mahindra Bank Q2 Profit Jumps 29% to Rs 4,212 Crore",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRU9ZclNRYTZTZVdqMzYydnZNaVE2SWd1SjhqOWQ4RFBnSjVkZFJodWp6Sm9KZ0ZrdE56YXZoUEp1U3laNTBjRGpnZi02QnRjdkFSQlJCb3k3LXQ3dkFKSjBPYTBvanNMSEstbXo3VnlFeEgteWR0a2JEMERpMndoTnBobFVsYjc1LXFGQmNhcktyNUFNWXQ4OGxGUFdBUjFHODZrd1d2VXFaaFNFNXNLVVN4SHN1dnR5Mnl2R3hRSTZ4OHpuZlFiVElrRzlQVktIb1VlOURFMzZsSnJIY1BkVEt2MDFwRDQ",
+      "source_name": "Whalesbook",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T08:05:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank Q2 Profit Rises 29%; Net Interest Margin Falls To 4.31%",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMzU3cVBjRU9ERFBRZFZYd3hLZWNiMGt2NEN6TklWSFhqNHo3cGcxTlR5bFNXemtkSUJORmtzUk90bHJvcVRsMkd1YW1ILXpCMmNqcXpzN0w2OG5nTnNIRWlVQ2hRRGdVRWFMN1pxMHVlSDlDN2VZREczY0E0MU9zdjJXZ0pXQjlsalZyOE9FeXdNazhVRTB3ekEwckRheFBGUVJzRHdqM3ZRUm9ZdldubHdFVE9NTXNLZ2RsMmxDQ1pWeDBVWlBLRg",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T12:46:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 results today, October 24: IDFC First Bank, Kotak Bank, AU Small Finance Bank, JK Cement among 22+ companies to announce quarterly earnings | Full list",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNd0dibEt6Mkh4OFh2OFFmemoxd2t1TlFOYVpCZTVTeEpEc0w0UkFQMUtMVlI3emhIeU5HamU1US1sNE1fSk10bGNkX2xld0VHNXJBUnV1MzRNWVJBeUhCWnhFUGN5TF96Q0ktdmt6Sk9Vek1SZU1kRExVWUFXaEZES3VIcGJVVXVWZGRGdHQ3OVg2bTBFUVljakM2UTAxMDJEbEstMnFsWXFZSFJhOWQ1Uk1aUExPdTFLT2t4TlRHQ0hpRHl2U05kRk95TXFDelJRSVkycGI4enM4LVU1RVRXbEtVNjhtVDlWcDJCc05pcHQxSDdiVGpfOG1FTkpDZnNXWmd4MFZ6WkJPcmF5S2hRejRvX2FoMEHSAZwCQVVfeXFMT2JLT3pWaDJxeVZ1VWJRMnhRb1BFbmkxblFheURWWWZCNDVGSlE2NDFabjZOMHhnV2hYdzVaQTQ2c1dnMXBOc09XS3ZuNW5TT3cwWHo4ZDJvZ0swUVRjaTBRdzNpY2Jua0JKSUcwczhvNV96OTJ5R3d4ZFVzQXRkLWVpclpsZEEzQ2VnN1hwZEVOOUkzMmZPdHZwT1FPS2l6X2FuUGpmdDRiQjY2OWEwVGFHajBNVVNIWjdhSEotRFNldUJNUjl5bkNkXzNiYV9yamZ3M3MyS0dsSzhRaVo2cEwzaWVfNzlXUjF4Vno0MHlBNDQwa2FEQnhnd2pxX0dVM3JhSW9UNXJQY3pIZVlIZ2Vza2Q0RXFrdjExd1E",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T03:11:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+HDFCBANK|EARNINGS|bank-kotak-mahindra-results-small-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T11:13:45.079090+00:00",
-  "last_updated": "2026-10-24T11:13:45.079190+00:00",
+  "last_updated": "2026-10-24T16:49:06.934143+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T11:13:45.079178+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:26.711640+00:00",
+      "change": "sources added",
+      "detail": "TradingView, Whalesbook"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:26.711659+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:26.711665+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 3"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:26.711670+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:06.934126+00:00",
+      "change": "sources added",
+      "detail": "ET Now"
     }
   ],
   "price_reaction": {}

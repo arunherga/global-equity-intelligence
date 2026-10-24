@@ -1,0 +1,99 @@
+{
+  "event_id": "EVENT-TMB-2026-0795",
+  "title": "India Gold price today: FXStreet data show a fall in Gold prices",
+  "summary": "India Gold price today: FXStreet data show a fall in Gold prices www.tmgm.com",
+  "event_date": "2026-10-24",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price today: India records a decline, FXStreet data show",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWXVhR3EyRlB4T0NXeGF5eVhfdnhncmlRTnRfMW5nVXVJVldLa2J2YXFBQ2tSbWd6M21sYTIzT0plbXRsNmRaVHJmMVEzWjk4MDUwY2pPanNxUVJZUDlFdFRPaW9FVHhqNl9OZ2VUcnU0V2JKcHFXaUJUTWYwV0VXUXRpeFJ5RTlPRmRJTjR3YURzWnRRYmhzUndYT1Byazh0bXl4blFJTFEyTTNEZEM5cDVYX3BUZ1Z5TUdjSDlXVWo4SmdZbnc",
+      "source_name": "www.tmgm.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T01:56:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India Gold price today: FXStreet data show a fall in Gold prices",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPenZnTE1SY0pySDdKMTREMDFyNHgyOGR4SmhEcTlERzc5RDNxTnlXcXg4NGJHYlFfcW4wcEZjOVd3MjZHZENSVHFnRmN6ME1PZm1wenVOa1RPckhPYi1qMm1IZDlHSXJROVkwOUpnNjAxYUFUdVN3LU5JZUlEWllqTUZveHdWOTc3WmtrMlM3b2pENmJDM01IUllDUmhCcWx3LTNob3lqY3pwOUpVTXRvSG03YXd6U2dxMnduOFg2Z3ZxTU1vaktBSw",
+      "source_name": "www.tmgm.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T00:56:13+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "www.tmgm.com",
+  "cluster_key": "TMB|COMMODITY|data-fxstreet-gold-india-price-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-24T16:44:21.973395+00:00",
+  "last_updated": "2026-10-24T16:44:21.973472+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-24T16:44:21.973462+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

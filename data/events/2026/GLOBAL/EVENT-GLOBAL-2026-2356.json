@@ -4,93 +4,101 @@
   "summary": "Repo rate hike: FD rates up to 8.50% for senior citizens; check banks Moneycontrol.com",
   "event_date": "2026-10-08",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND"
+        "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "repo rate",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "ICICI Bank's follow-up announcements",
+        "Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank, and Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND"
+        "COMPETITION",
+        "CUSTOMERS"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "repo rate",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "depositors",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "ICICI Bank's follow-up announcements",
+        "order flow from depositors"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to ICICI Bank, and depositors. The parts of the business most likely touched are competition, customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -124,16 +132,26 @@
       "published": "2026-10-10T07:32:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank, Indian Bank hike FD rates: Check latest rates for senior citizens and general depositors",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQbnNwa05vUVBGRUlVSE9NLXVIYTRXTDNtR3VtajFwMFNIMEwyQ0hOTW0xd0tfXzhoNG5jWEZpVVhBdzUwRDRfWnduOXBmLXNIdklCbjBneDZmSl9UcWZWbHZHNHJ6NkV1b01vT2c0UlNiSk9VMG5BWHVHSG5NT2RaOFBJLWdqT2MzMmpmZTl5TVc5b1N0aGlFOS1SSzl0S1owXy1yaVZjMlhNV2tjWWlUTDYyd2F1dFR3c2xnS3lZNmd2dkxhU0t2WEk0SnJ6ZE8xTkVkLVdLMl9yTnEwYS1VeTR1c05sNnNpYlVETHhONlJpaWlRNFJ6eFFR0gH_AUFVX3lxTE1NRjdlTjJ3dnM0enZreHBNbXVTZzNDMjl2VWVZRm9xSldUQWRlbGg5OF9yazFUTWZld3VQa0tTQXNHcF9XQUR6RFlpTnQ4bndoUkdxbm0zNUJUSVZLbGNMOWp5em5VLXJENkh6cFROaWlBX01GR0pLMHZsU1NDZTY2SkZzME9YZDVUN0RnWUJ4VTBzWDRwOUl1WkZldDdCeFdxU3NDYnl6Tl80Q2cybkx2TERhYjF5Y2pFc2pXZ20yYjdRUmhMYnJPa25jNGlMLXRLZ3Y4bGpjZ3NBRmFQdDIxX2I1dkVGYldZdi1sY1A4NGMxVmI3eFg3a1NzX2Q4MA",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T05:42:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Deccan Herald",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|8.50%-raise-rate-rate-repo-senior",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:37:31.754499+00:00",
-  "last_updated": "2026-10-10T17:59:47.246452+00:00",
+  "last_updated": "2026-10-24T16:49:26.136524+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:37:31.754584+00:00",
@@ -144,6 +162,26 @@
       "timestamp": "2026-10-10T17:59:47.246436+00:00",
       "change": "sources added",
       "detail": "Outlook Money"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:26.136491+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:26.136508+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:26.136515+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:26.136520+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

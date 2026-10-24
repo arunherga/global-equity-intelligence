@@ -35,6 +35,44 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -57,16 +95,26 @@
       "published": "2026-10-21T01:18:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank Holiday Next Week (October 26–November 1): SBI, HDFC Bank & other lenders shut on 4 days; check city-wise list",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPRU5OckM3eDNrVXZpOV8yU3JLX3BJWGJwZldFUHYtQUg4UUgteUtyZkxpVXRCaG5YU3lLeGNjVkVWSVpEWnFpVDducDEwUkNJeGF4V3VrU1IzNjIzRHlJZHhlNFctTVg2NmZuZWxkd01iMml4dC1CU2dpcXZYb2hfTG4tQTM2RFZHaVBka1ZvM0YyVWNBbEZsanhVUDVzd2VCZ3VnUUg4RFdkS3FFN3UxanptWmFHTzFUS3F3ZzB4QkY5a09KbWNfd2tyUng4cnhfdVdDb1d3cUhSdFk1amppVGxHeVd2T0t6RTRvUWJIMWV5M3lpQU9KYWVjNnU",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T00:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "ET Now",
   "cluster_key": "HDFCBANK|OTHER|bank-hdfc-holidays-pnb-sbi-week",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-18T16:38:48.429516+00:00",
-  "last_updated": "2026-10-21T18:18:21.738945+00:00",
+  "last_updated": "2026-10-24T16:48:55.294624+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T16:38:48.429629+00:00",
@@ -77,6 +125,16 @@
       "timestamp": "2026-10-21T18:18:21.738928+00:00",
       "change": "sources added",
       "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:55.294600+00:00",
+      "change": "sources added",
+      "detail": "Zee Business"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:55.294618+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

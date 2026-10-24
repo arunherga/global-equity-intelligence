@@ -4,7 +4,8 @@
   "summary": "China's Ministry of Industry and Information Technology (MIIT) has proposed stricter manufacturing standards for solar cells and modules, introducing minimum conversion efficiency requirements for different technologies and setting limits on energy consumption, water usage, and module degradation.",
   "event_date": "2026-10-23",
   "event_types": [
-    "TECHNOLOGY"
+    "TECHNOLOGY",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
@@ -12,20 +13,17 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.38,
-      "business_impacts": [
-        "PRODUCT",
-        "COMPETITION"
-      ],
-      "time_horizon": "LONG_TERM",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
           "term": "solar cells",
           "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
+          "weight": 1.7,
+          "detail": "in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -33,26 +31,33 @@
           "relationship": "WEAK",
           "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 International market development",
         "-3 Passing mention without a quantified development",
-        "-1 Single source, unconfirmed"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
+        "best source quality 3/10",
         "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar cells, and China. The parts of the business most likely touched are product, competition. Classified as technology.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar cells, and China. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -66,21 +71,46 @@
       "published": "2026-10-23T18:33:13+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "China Proposes Higher Solar Cell, Module Efficiency Standards",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcTJ6MmZHTC13cnh3S0lpOG94Qm4yS19tRnktak1OWHhZM3pJbmJCd3JuTTFDNERZZjFGSlBKRDNWaWF1YlFlcnpLdFNEbWxKSmJoVFJrTHF5VzdJdWtJNE9VU2JGMHlFSjEzWThtOGkyQmRRdUhIenVFU29JaGcwMmZINEtxdU5kcHVQZFpTUGNyMEpBcEptc1pSMHRLb0U",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T11:07:54+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|TECHNOLOGY|china-efficiency-proposes-solar-standards-stricter",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T18:02:16.434253+00:00",
-  "last_updated": "2026-10-23T18:02:16.434337+00:00",
+  "last_updated": "2026-10-24T16:49:57.303491+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T18:02:16.434327+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:57.303465+00:00",
+      "change": "sources added",
+      "detail": "Energetica India Magazine"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:57.303481+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:57.303487+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

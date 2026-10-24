@@ -10,45 +10,49 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT_STRONG",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND"
+        "DEMAND",
+        "INPUT_COST"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
           "exposure_type": "PRODUCT",
-          "term": "PV modules",
+          "term": "solar panels",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
+        "+3 Close, specific exposure to this company",
         "-7 Syndicated market-research advertisement, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "aluminium is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record"
+        "aluminium over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to PV modules. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to aluminium, and solar panels. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
       "ai_analysis": null
     }
   },
@@ -102,16 +106,36 @@
       "published": "2026-10-22T04:46:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Aluminium Profiles For Solar Panel Market To 2035: Utility-Scale PV Demand Drives Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPc3M5M3E3VV9qUGNuNDI0cmU2U2hDOFh1NU5Cc2dmYUNJeVMza052QUtRVEk4NGh3ai1zSDlkR0lFQmFBSF9TeXl3X0pZSFdXbHFkY3ZNR3BnRk14VDJqVWZob3BFMnNIMFR0bU5jUU9VRWdISTRjTGs3bDdXbk9qdGVJZ09TUmZ4VlNieVpEMDd6aC1IZVVON294MVppLTQ4cnRFd0dMWDMzRFVfRXZITHAzdXRQTlU0OS02SG9KSVZYU0NN",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T21:06:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rooftop Solar Pv Module Market To 2035: Distributed Generation Demand Drives Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOczlKR2RLb01JNUpwc1J1Y0RWVWVlZEJ1UjY2MkR1WmRHSm1KcGx6NHRWcnVTNzZDVjl5cW9PMHU2dXlmNW9iaTNsQ1hpQWsxU1piNnMxNWdueGgyd0pPNDJQUzdPMXNyY0p5THFfMkVLR0RMU0ppM3d0Rl83clhuQ2ZiM3A2aThiUGZVSWJaRG12SmdlUVlYWVJyNFpBQXc2WVkxTUlEM3gzekstNWxyOHBlQTV3ODQwYnRwRXl0UnhPbFJqdXdodGhUUFBYTHFhSHJjNlBPRF90UzQ5OXk2RDN0aTJWRC13dU9TZHZiSDhmdw",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T19:56:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|GUIDANCE+INDUSTRY_DEMAND|forecast-ground-market-module-mounted-solar",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-05T21:39:47.409440+00:00",
-  "last_updated": "2026-10-22T18:20:21.515640+00:00",
+  "last_updated": "2026-10-24T16:48:42.820888+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:39:47.409523+00:00",
@@ -132,6 +156,16 @@
       "timestamp": "2026-10-22T18:20:21.515628+00:00",
       "change": "sources added",
       "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:42.820852+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:42.820883+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -4,7 +4,8 @@
   "summary": "Highway Infrastructure Receives Acceptance Letter From NHAI For Palayam Fee Plaza In Tamil Nadu Sahi",
   "event_date": "2026-10-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN"
   ],
   "stocks": {
     "JKIPL": {
@@ -46,15 +47,17 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -72,21 +75,26 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NHAI)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from NHAI"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -100,21 +108,46 @@
       "published": "2026-10-23T15:40:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Highway Infrastructure wins ₹340 crore NHAI contract for Palayam fee plaza in Tamil Nadu",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPYXBBSWJMV3FqNzFmaUFzN1NoOTd0OHFOTC1XZk9MVkJ5VFp4c3FILVhhMDVuZGgtaVFUeVU1bDJvczhaSkFtMERLbGVlTE5vVDZQRDZJY3dCaGIwRGwtTXFxejNJU0Qzd1Z0QlQ5Z3lfUUlIdVRZeWxqbXdBZkdXQkZZNFQ5MHdQcUlsVEFYLXFtUmhhYkotdTFETFdHSWVaaFRxanphNHd2UWQwVy1PNVUxSTVkNDlUMjI1NUtZeU5LMm5uZFhfQm9sLUlGU0UzR0w1Umo3eG9mQl9aUzhET2w2MjNHajUxVmfSAe8BQVVfeXFMTm5NSV84Yk4tdXhxdld0VTEyaWxUVjRJaGtKd1ZyeWNSZ05TbExJemZ4Q19PbE1PVkozZmgtUHdqTHRtQk15bVkwUUNzaUVIYmZXdzRwbVhIVWhnYmxGT25IdHYzeTdEd0NUTDVQSzlCMXRaQl9Rc0hwV2t5elJFNkZhNTNTSHVMMmVZd1VOOXY4MzJZRVl0TlNfeVVyNGxNbUJmR1hmVUNmMnhJUWZ0R1JnNTNMbWN2SHNmaElOTm15eU5NbkZRTGNiLUNKVW1pZE5qX21tWktSM09idy16c1M0bXozV1JGWmFIWHhlRDA",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-23T16:36:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Sahi",
   "cluster_key": "ASHOKA+JKIPL|OTHER|acceptance-highway-infrastructure-letter-nhai-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T18:05:49.092449+00:00",
-  "last_updated": "2026-10-23T18:05:49.092540+00:00",
+  "last_updated": "2026-10-24T16:48:27.107586+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T18:05:49.092530+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:27.107556+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:27.107573+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN"
+    },
+    {
+      "timestamp": "2026-10-24T16:48:27.107581+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 6"
     }
   ],
   "price_reaction": {}

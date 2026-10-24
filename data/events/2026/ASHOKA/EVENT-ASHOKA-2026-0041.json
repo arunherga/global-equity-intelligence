@@ -43,6 +43,43 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +92,61 @@
       "published": "2026-10-09T15:57:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Ltd receives Provisional Certificate (COD) for NHAI Project",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQLUJRRFBWX2RwSE5fYklERDNnLVZLSFRvczJHNVpnd1J5UTJvS0g3WDJNbnQxZkx4QXVOTXdvdS1XN0dfazA4VjJkQnpTdFZYc005Q3FQSWpuVC1BZGVPbXMtVy1vZXFTSTNiSml0RXR5WlNyb0pNRmJ3dWVKUkxqNXZiVWNpaDFheS1DUVFrR2dJWDBIRG44MjEyOEJhZm02T05NVXo0ZmRqVFBEMHRUM3ZtUQ",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T10:00:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon completes 47.196 km NHAI project in Karnataka",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUjZkcktCejhnZ1ltanp4cjN3elllZVBQRjdJOUU2S2JIazBQaWx1N0JzczF1Q0hmTmszcURCUHV0MDVNQ3pLdDQtcl9sN1U1VGlVWmVpUFFaS096RHRRWS1hZldmYTBBWkxoTGlhZEJfeTVCcGgtQ1h0WS1OOEFFblUzNEkwZllWOWhKZmxYUHhxUmxKZVR0bWc3c2N6S1JoS1ZXeDdyR2h3cE9zUjRiUXY4UE4xQQ",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T05:25:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon: Provisional COD Received for 47.196 KM NHAI Project",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZEpJSmxXekhDQTJYYU45Rzk4VGZBa1dCeE9WVVZ6Ym9TdGhLeENfbFUzSi04d1YweEdwOV9icl9NYzVYZWVKeHUyeDFHT1BZbkJBaXVON05DUzl2dGNpZnF5dlFpckZRY2tyMWU1YnVwS09xeVJiSW1JYTBnalNIbTdxMENsVFZOdHJrREhKNkJjNThFdS1zRlVn",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T05:55:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "EquityBulls",
   "cluster_key": "ASHOKA|OTHER|ashoka-buildcon-cod-declares-ham-project",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:22.189261+00:00",
-  "last_updated": "2026-10-09T18:59:22.189350+00:00",
+  "last_updated": "2026-10-24T16:49:22.230312+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:22.189337+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:22.230290+00:00",
+      "change": "sources added",
+      "detail": "EquityBulls, InvestyWise, scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:22.230307+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
     }
   ],
   "price_reaction": {}

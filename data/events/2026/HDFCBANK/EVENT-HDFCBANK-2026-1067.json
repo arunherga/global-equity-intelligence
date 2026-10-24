@@ -4,20 +4,23 @@
   "summary": "IndusInd Bank posts ₹1,242 crore Q2 profit as provisions decline sharply Business Standard",
   "event_date": "2026-10-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,7 +31,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +41,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "IndusInd Bank's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -66,21 +74,46 @@
       "published": "2026-10-23T13:01:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IndusInd Bank posts Rs 1,242 crore net profit on lower provisions",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTHB4OEJOaDNuaUpnYzlxRHB4R1hhZFA5MGNDS1hNRFhmR2NOUDd0cktLb00tcDlaOXg5QnBsak4wc2RKeWxVRlgzOW5WUFc2U3VEMzJWckZheTNFQkZjaHh0WG9QRkotb2NjVkdWc2ZTcUVtQUlNMExPdTdxbDNHVy16ekFnVDVyc0x1QzZtYmg5c2RvSFItOG9rT2pTMm1lY2pranhaR0doOFVHbWZIRzJpWGNvUXNJV1JwVlZoc092SUdBWE83YkhJUjI2MTdKdlU1blp3YVBtenNURTBF0gHfAUFVX3lxTE5McHg4Qk5oM25pSmdjOXFEcHhHWGFkUDkwY0NLWE1EWGZHY05QN3RyS0tvTS1wOVo5eDlCcGxqTjBzZEp5bFVGWDM5blZQVzZTdUQzMlZyRmF5M0VCRmNoeHRYb1BGSi1vY2NWR1ZzZlNxRW1BSU0wTE91N3FsM0dXLXp6QWdUNXJzTHVDNm1iaDlzZG9IUi04b2tPalMybWVjamtqeFpHR2g4VUdtZkhHMmlYY29Rc0lXUnBWVmhzT3ZJR0FYTzdiSElSMjYxN0p2VTVuWndhUG16c1RFMEU",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T03:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "HDFCBANK|OTHER|242-bank-fall-indusind-profit-provisions",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T18:03:25.052796+00:00",
-  "last_updated": "2026-10-23T18:03:25.052891+00:00",
+  "last_updated": "2026-10-24T16:49:06.137646+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T18:03:25.052880+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:06.137621+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:06.137637+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:06.137643+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

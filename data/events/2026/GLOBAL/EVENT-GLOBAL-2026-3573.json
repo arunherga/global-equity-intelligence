@@ -46,11 +46,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -63,8 +63,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -72,13 +72,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -92,21 +92,51 @@
       "published": "2026-10-19T01:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank Holiday Today: Are SBI, HDFC, ICICI, PNB and other banks open or closed on Saturday, October 24, 2026? Check RBI calendar here",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOSWx3UFNnWnhLdWtvZmRTUTFYX0otTmJGNEhTcWNJMnR1c2JIUW5yMjY5MW4zQ0Z1TWh4eXR6MDgyV2JRdUtjblQ2Z1hQb0hJd2x1TUxZQjl5V0lyUlVuOWNPMlBkc0ZxYXdxdDc5OVh5bk9QX3Z5bXg1bnY5S3JJbFQ4OERxVlY5T2dhN1pfZmRVdENWb0ZFaVRHTDlabTdFS0V0QkxpUmw3Y3Q3dnJNMklQelVwanNqUE96MERvS0VxRVJWd0ZZNXV3N21BMkczNGpzaXVILXBhSGVuWUp0dTVqeENuWmxzOFN4ZnBGZkY2QnlNMTdqd2R6OUFqSXZJVEVybkF0a2ZvaEM2VXM0QjdEY9IBmAJBVV95cUxNc3NscHBpT1dGZUZDaEt4UHkwSWdsUXdfSHNnS2J4Y1FCTDlkYWZ6aWlnSXBfbHpJZXhKM3BTSE9oQ29IS1FlaDAwLUZFOF9tYXlBU0VOc2tERjJackIydU5jVmJOYWNfdHJNYl82dzdwZFZKY3p4RHJGWWs2Qm5UWEFOTjYtLVdHZHNTMWlIajFHYjI0TjFHR0VrRU95VXJGMXV6ZC1WY3J5SW9ESzJ0eHpCWFkyRmltZDVIRDFtTVBRTU02Y0o0QXlkQ2ZWWGxwblBaaW1kREg2QUFZanJ5NDhrSWxlZHFvUUE5cGFTUnZrd1U5LVBFLXlDeDNGcHh4ZXk5SXNzam5UWWZveXpQdC1XN2hSMmlQ",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T03:27:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank holiday today: Are SBI, HDFC, ICICI, PNB branches closed on 24 October for fourth Saturday? Check RBI calendar",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQOEh6cnljLThwaHdab1pKenoyNkxZbGxYaldIWTRqSDdLeGJDQk9wQ3lqa3hLOW5ob1pkUkF3SEJhZVlJaTRUMTRnZFR0OVJxeENZQU5yb2tNa3VRbkR5bkZCX0FyR3k1Zld4OXByWmdiTkJrdllmenJFLThFcFU3dU50ZmVrRno5T0hkLWlBb3ZvUjFJeV9sd2tYcVpwRVFpY0RWTS1mTGNjeFpjTnAtQlNCYmZFVnJBTU42Nm5sRk82em04Y29mWDFER19Yal94SlY0X2NpZ3NxYUVnRjJ4TFFmWmpCdTZXWVpTZ1dyTlNQdmIwbm05ekpyUQ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-24T05:01:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-bank-closed-holiday-mahanavmi-open",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:38:13.501193+00:00",
-  "last_updated": "2026-10-19T13:38:13.501298+00:00",
+  "last_updated": "2026-10-24T16:49:07.545734+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:38:13.501286+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:07.545711+00:00",
+      "change": "sources added",
+      "detail": "ET Now, TradingView"
+    },
+    {
+      "timestamp": "2026-10-24T16:49:07.545730+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}
