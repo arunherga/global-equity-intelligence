@@ -1,0 +1,3289 @@
+{
+  "run_date": "2026-10-24",
+  "started_at": "2026-10-24T11:08:40.190633+00:00",
+  "finished_at": "2026-10-24T11:14:07.730281+00:00",
+  "dry_run": false,
+  "tickers": [
+    "MSTCLTD",
+    "WAAREEENER",
+    "FRESHARA",
+    "JKIPL",
+    "RAVEL",
+    "COALINDIA",
+    "KSOLVES",
+    "TMB",
+    "SUPRIYA",
+    "HDFCBANK",
+    "ASHOKA"
+  ],
+  "stats": {
+    "articles_scanned": 498,
+    "unique_articles": 325,
+    "events_detected": 22,
+    "relevant_events": 5,
+    "high_impact_events": 1,
+    "critical_events": 0,
+    "international_events": 6,
+    "official_announcements": 1
+  },
+  "diagnostics": [
+    {
+      "source": "nse",
+      "ok": false,
+      "attempted": 0,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 61.97,
+      "errors": [
+        "session warm-up: HTTP request failed for https://www.nseindia.com: HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=20)"
+      ],
+      "note": "",
+      "skipped": false
+    },
+    {
+      "source": "bse",
+      "ok": false,
+      "attempted": 5,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 9.39,
+      "errors": [
+        "MSTCLTD announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=542597&strSearch=P&strToDate=20261024&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=542597&strSearch=P&strToDate=20261024&strType=C&subcategory=-1",
+        "WAAREEENER announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544277&strSearch=P&strToDate=20261024&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544277&strSearch=P&strToDate=20261024&strType=C&subcategory=-1",
+        "JKIPL announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544547&strSearch=P&strToDate=20261024&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544547&strSearch=P&strToDate=20261024&strType=C&subcategory=-1",
+        "RAVEL announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544629&strSearch=P&strToDate=20261024&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=544629&strSearch=P&strToDate=20261024&strType=C&subcategory=-1",
+        "COALINDIA announcements: HTTP request failed for https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=533278&strSearch=P&strToDate=20261024&strType=C&subcategory=-1: 403 Client Error: Forbidden for url: https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w?pageno=1&strCat=-1&strPrevDate=20261023&strScrip=533278&strSearch=P&strToDate=20261024&strType=C&subcategory=-1"
+      ],
+      "note": "circuit breaker: 5 consecutive failures; skipping the rest of this source for this run",
+      "skipped": false
+    },
+    {
+      "source": "company_ir",
+      "ok": true,
+      "attempted": 10,
+      "succeeded": 7,
+      "articles": 79,
+      "duration_s": 37.58,
+      "errors": [
+        "COALINDIA IR page: HTTP request failed for https://www.coalindia.in/en/investors/: 403 Client Error: Forbidden for url: https://www.coalindia.in/en/investors/",
+        "COALINDIA IR page: HTTP request failed for https://www.coalindia.in/: 403 Client Error: Forbidden for url: https://www.coalindia.in/"
+      ],
+      "note": "WAAREEENER: no filing links found on https://www.waaree.com/investor/stock-exchange-disclosure/; FRESHARA: no IR page configured; JKIPL: no filing links found on https://www.jinkushal.com/",
+      "skipped": false
+    },
+    {
+      "source": "regulators",
+      "ok": true,
+      "attempted": 7,
+      "succeeded": 5,
+      "articles": 88,
+      "duration_s": 15.91,
+      "errors": [
+        "DGFT: HTTP request failed for https://www.dgft.gov.in/CP/?opt=notification: 403 Client Error: Forbidden for url: https://www.dgft.gov.in/CP/?opt=notification",
+        "European Medicines Agency: HTTP request failed for https://www.ema.europa.eu/en/rss.xml: 404 Client Error: Not Found for url: https://www.ema.europa.eu/en/rss.xml"
+      ],
+      "note": "",
+      "skipped": false
+    },
+    {
+      "source": "government",
+      "ok": true,
+      "attempted": 4,
+      "succeeded": 2,
+      "articles": 27,
+      "duration_s": 10.38,
+      "errors": [
+        "Ministry of Power: HTTP request failed for https://www.powermin.gov.in/: 403 Client Error: Forbidden for url: https://www.powermin.gov.in/"
+      ],
+      "note": "Ministry of New and Renewable Energy: page reachable but no release-like links found",
+      "skipped": false
+    },
+    {
+      "source": "google_news",
+      "ok": false,
+      "attempted": 5,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 124.71,
+      "errors": [
+        "query '\"Ashoka Buildcon Limited\"': HTTP request failed for https://news.google.com/rss/search?q=%22Ashoka+Buildcon+Limited%22+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Ashoka+Buildcon+Limited%22+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "query '\"Ashoka Buildcon\"': HTTP request failed for https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "query '\"Ashoka Buildcon\" order': HTTP request failed for https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+order+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+order+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "query '\"Ashoka Buildcon\" results': HTTP request failed for https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+results+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+results+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "query '\"Ashoka Buildcon\" expansion': HTTP request failed for https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+expansion+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Ashoka+Buildcon%22+expansion+when%3A1d&hl=en-IN&gl=IN&ceid=IN:en"
+      ],
+      "note": "circuit breaker: 5 consecutive failures; skipping the rest of this source for this run",
+      "skipped": false
+    },
+    {
+      "source": "rss",
+      "ok": true,
+      "attempted": 14,
+      "succeeded": 14,
+      "articles": 240,
+      "duration_s": 12.98,
+      "errors": [],
+      "note": "",
+      "skipped": false
+    },
+    {
+      "source": "reddit",
+      "ok": false,
+      "attempted": 5,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 10.03,
+      "errors": [
+        "'Waaree solar panel review' in r/IndianSkincareAddicts: HTTP request failed for https://www.reddit.com/r/IndianSkincareAddicts/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25: 403 Client Error: Blocked for url: https://www.reddit.com/r/IndianSkincareAddicts/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25",
+        "'Waaree solar panel review' in r/IndianHaircare: HTTP request failed for https://www.reddit.com/r/IndianHaircare/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25: 403 Client Error: Blocked for url: https://www.reddit.com/r/IndianHaircare/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25",
+        "'Waaree solar panel review' in r/IndianFashionAddicts: HTTP request failed for https://www.reddit.com/r/IndianFashionAddicts/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25: 403 Client Error: Blocked for url: https://www.reddit.com/r/IndianFashionAddicts/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25",
+        "'Waaree solar panel review' in r/india: HTTP request failed for https://www.reddit.com/r/india/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25: 403 Client Error: Blocked for url: https://www.reddit.com/r/india/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25",
+        "'Waaree solar panel review' in r/IndiaInvestments: HTTP request failed for https://www.reddit.com/r/IndiaInvestments/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25: 403 Client Error: Blocked for url: https://www.reddit.com/r/IndiaInvestments/search.json?q=%22Waaree+solar+panel+review%22&restrict_sr=1&sort=new&t=week&limit=25"
+      ],
+      "note": "mode: anonymous (public JSON); credentials: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET are not set; a cloud runner gets 403 Blocked without them; circuit breaker: 5 consecutive failures; skipping the rest of this source for this run",
+      "skipped": false
+    },
+    {
+      "source": "youtube",
+      "ok": true,
+      "attempted": 20,
+      "succeeded": 20,
+      "articles": 64,
+      "duration_s": 15.68,
+      "errors": [],
+      "note": "quota: 20 search call(s) of a documented 100/day allocation",
+      "skipped": false
+    },
+    {
+      "source": "consumer_signal",
+      "ok": true,
+      "attempted": 22,
+      "succeeded": 22,
+      "articles": 22,
+      "duration_s": 0.0,
+      "errors": [],
+      "note": "held out of clustering; opinion is not a development",
+      "skipped": false
+    },
+    {
+      "source": "link_resolution",
+      "ok": true,
+      "attempted": 0,
+      "succeeded": 0,
+      "articles": 0,
+      "duration_s": 0.0,
+      "errors": [],
+      "note": "0/0 aggregator links resolved",
+      "skipped": false
+    },
+    {
+      "source": "ai_enrichment",
+      "ok": true,
+      "attempted": 1,
+      "succeeded": 1,
+      "articles": 1,
+      "duration_s": 0.0,
+      "errors": [],
+      "note": "provider=gemini model=gemini-3.5-flash",
+      "skipped": false
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVENT-ASHOKA-2026-0001",
+      "title": "Ashoka Buildcon Limited: Abl q1fy27 Concall Invite bse nse",
+      "summary": "",
+      "event_date": "2026-10-03",
+      "event_types": [
+        "ACQUISITION",
+        "DIVIDEND",
+        "OTHER",
+        "CREDIT_RATING"
+      ],
+      "stocks": {
+        "MSTCLTD": {
+          "ticker": "MSTCLTD",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "FRESHARA": {
+          "ticker": "FRESHARA",
+          "relationship": "INDIRECT",
+          "impact_score": 4,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release",
+            "-2 Weak indirect connection"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "JKIPL": {
+          "ticker": "JKIPL",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "RAVEL": {
+          "ticker": "RAVEL",
+          "relationship": "INDIRECT",
+          "impact_score": 4,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release",
+            "-2 Weak indirect connection"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "COALINDIA": {
+          "ticker": "COALINDIA",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "KSOLVES": {
+          "ticker": "KSOLVES",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "SUPRIYA": {
+          "ticker": "SUPRIYA",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE, and NSE. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "ASHOKA": {
+          "ticker": "ASHOKA",
+          "relationship": "DIRECT",
+          "impact_score": 13,
+          "impact_band": "CRITICAL",
+          "direction": "UNCERTAIN",
+          "confidence": 0.61,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CASH_FLOW"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "BSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "NSE",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+4 Acquisition, merger or divestiture",
+            "+2 Company investor-relations release",
+            "+2 Company appears in the headline"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 9/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, revenue, cash flow. Classified as acquisition.",
+          "ai_analysis": {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "revenue_effect": "unclear",
+            "margin_effect": "unclear",
+            "cost_effect": "No direct impact on operating costs, but the call will provide critical updates on interest expenses, debt reduction strategies, and input cost inflation.",
+            "competitive_effect": "No direct impact, but the call will clarify the company's bidding competitiveness, order book-to-bill ratio, and execution capabilities relative to civil construction peers.",
+            "regulatory_effect": "Ensures compliance with SEBI LODR regulations regarding timely disclosure of investor interactions and material financial information to BSE and NSE.",
+            "short_term": "Increased stock price volatility as the market reacts to Q1 FY27 financial results, management guidance, and potential announcements regarding dividends or asset monetization.",
+            "medium_long_term": "Clarifies the long-term growth trajectory, capital allocation strategy, progress on asset recycling (BOT projects), and the execution timeline of the order book.",
+            "second_order_effects": "Revisions in analyst earnings estimates, potential shifts in institutional shareholding, and impacts on credit rating outlooks based on balance sheet deleveraging updates.",
+            "key_uncertainty": "The specific financial numbers for Q1 FY27 and management's guidance on order inflow targets and margin protection amidst competitive bidding.",
+            "monitor_next": [
+              "Q1 FY27 revenue growth and EBITDA margin trajectory",
+              "Management commentary on order book execution timelines and new order inflow guidance",
+              "Updates on the monetization or sale of BOT (Build-Operate-Transfer) toll assets",
+              "Details on debt levels, interest costs, and capital expenditure plans",
+              "Any formal announcements regarding dividend payouts or strategic acquisitions"
+            ]
+          }
+        }
+      },
+      "sources": [
+        {
+          "title": "Ashoka Buildcon Limited: Abl 33rd agm Proceedings bse nse",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_33rd_AGM_Proceedings_250926_BSE_NSE.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl Window Closure",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_Window_Closure_280926.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl agm Book Closure Intimation",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_AGM_250926_Book_Closure_Intimation.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl agm Voting Results bse nse",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_AGM_250926_Voting_Results_BSE_NSE.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse Notice Publication",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_BSE_NSE_Notice_Publication_030926.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse Sakoli acquisition",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/503_ABL_BSE_NSE_Sakoli_acquisition.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse rvnl Lo A",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/501_ABL_BSE_NSE_RVNL_LoA_290826.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl q1fy27 Concall Invite bse nse",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/ABL_Q1FY27_Concall_Invite_050826_BSE_NSE.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Company Announcement to Exchanges",
+          "url": "https://www.ashokabuildcon.com/company-anouncements.php",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Presentations",
+          "url": "https://www.ashokabuildcon.com/presentations.php",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Unpaid & Unclaimed Dividends",
+          "url": "https://www.ashokabuildcon.com/unpaid-unclaimed-dividends.php",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse cp Redemtion",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/505_ABL_BSE_NSE_CP_Redemtion_071026.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse C Ps issue",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/506_ABL_BSE_NSE_CPs_issue_091026.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse ner Lo A",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/507_ABL_BSE_NSE_NER_LoA_091026.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon ASHOKA Rs 100 Crore Commercial Paper Issue",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPS3k4ZG5odTJUM3l5T2JTX1JVeXozdXBKLTViQ3ZYMjl6Qk1TQXdOS05vNE9nSjRVcWYtSHRBbDZBa0RSSFo0UkR6VWZYYnFOOE1lbTdQSDctbi1RRjBhQTBVb3lHODR5M3VUY0FHUFM2VVQ3ZGo4ZW82YWRNNnU3eXNQQW9LdUV4dEsteFhVMmllck1FbXVOSFBkNUctenJoWHVYT0NsMmxLVmJKOS10cXJaWFNZdjlBU09ONTBWaHhmVTZSSVdfUXphTQ",
+          "source_name": "Kalkine India",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-09T11:59:00+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Ashoka Buildcon Releases 2,000 Commercial Paper Units Valued At ₹100 Crore For 88 Days",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPc3hWRHA4YkJOZDctR1ZuazZWT1lCal92QVlwZnItbk9OU1lidVpXWU1KODBXZXk0Vnc4M0xPN0V2ajZmQXFhb2hrV29NcElYMEYwNUFiWEJfbi1fYVg4V2RXNThwYnhPN1ZLNXBWUnRFTnFwWjd4QWZLT3Rfcy1iRzlFRm1GTG85WlBXb1Q4bWVtYzAxWmI3dXhFN2dVUXBuOGRtd2pOZVU5WjViVnVhRg",
+          "source_name": "Sahi",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-09T12:21:16+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse esg Ratings",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/509_ABL_BSE_NSE_ESG_Ratings_161026.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon ESG 60 Rating by CRISIL: Key Details",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWUxlVWQzYm9UYkZZWENkd2pTMVVGcE5RTUNwV0NkYjFaSTBiaUY3T2YxcHVlMm9MbnYxbVIxNUJiTjAyWFB4SDFhN1NrNTJUcGpmWXo2RDhkY1huazBGbldpUGhpelJ3bHloUEh4R1d6cmVzVzQ2UVBWUHdKRERTT3BhYjlkVXlLMm1OLWZPcHNQZlNSUFdNQ0lNNzNIX3JoYlhCUFg1a3dROUpscHBhUTZfU1ZKOFJE",
+          "source_name": "Kalkine India",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-17T04:33:00+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Ashoka Buildcon receives CRISIL ESG 60 rating",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQLUxYMXp2SDdHcWVlNVozWVZyMDdsQ0NxaXdUVFpFRnB4enJaa01aSjhZclVHbmxiTzU2NkFwcEcxajBqOHdiT05MeHFHblV6N2phT3ZyUHZZMWRWYjd1QkhnT2Z3TFhvTHJFRjc1U0ROTlJmbzBvTkhCdWlRNWIzQzR3WFVzbFhEX0E",
+          "source_name": "Business Upturn",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-17T04:41:53+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse esg Resurgent",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/512_ABL_BSE_NSE_ESG-Resurgent.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        },
+        {
+          "title": "Ashoka Buildcon Gets 'A+' ESG Rating",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE03RUJBNHdGVGJGbk1GVi00MTFoc2ZrYU9QVFlsWGp4MVJxbjFtNkNteXcyYl9Fb05QU1BtZGRkeTQ1eHJlemxDV1dPMGRlT0xSTDlnTmFNNHU4ZU5kbnhySUhvM01EMGZUcVJkUlhpV3hRb0NJ",
+          "source_name": "InvestyWise",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-21T12:18:50+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Ashoka Buildcon Limited: Abl bse nse pcod iii Banwara",
+          "url": "https://www.ashokabuildcon.com/files/investors/company-announcements/513_ABL_BSE_NSE_PCOD_III_Banwara_24102026.pdf",
+          "source_name": "Ashoka Buildcon Limited investor relations",
+          "source_domain": "ashokabuildcon.com",
+          "source_type": "company_ir",
+          "published": null,
+          "is_official": true,
+          "quality": 9
+        }
+      ],
+      "article_count": 22,
+      "source_count": 2,
+      "primary_source": "Ashoka Buildcon Limited investor relations",
+      "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|ACQUISITION+DIVIDEND|abl-ashoka-buildcon-concall-invite-q1fy27",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-03T18:04:47.756690+00:00",
+      "last_updated": "2026-10-24T11:14:08.357739+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-03T18:04:47.756855+00:00",
+          "change": "created",
+          "detail": "11 source(s) from 1 domain(s)"
+        },
+        {
+          "timestamp": "2026-10-03T18:06:26.672271+00:00",
+          "change": "ai analysis",
+          "detail": "ASHOKA via gemini"
+        },
+        {
+          "timestamp": "2026-10-08T13:56:42.746134+00:00",
+          "change": "sources added",
+          "detail": "Ashoka Buildcon Limited investor relations"
+        },
+        {
+          "timestamp": "2026-10-08T13:56:42.746158+00:00",
+          "change": "categories added",
+          "detail": "OTHER"
+        },
+        {
+          "timestamp": "2026-10-09T13:44:53.080062+00:00",
+          "change": "sources added",
+          "detail": "Ashoka Buildcon Limited investor relations, Kalkine India, Sahi"
+        },
+        {
+          "timestamp": "2026-10-17T11:09:40.185768+00:00",
+          "change": "sources added",
+          "detail": "Ashoka Buildcon Limited investor relations, Business Upturn, Kalkine India"
+        },
+        {
+          "timestamp": "2026-10-17T11:09:40.185783+00:00",
+          "change": "categories added",
+          "detail": "CREDIT_RATING"
+        },
+        {
+          "timestamp": "2026-10-21T18:18:02.662649+00:00",
+          "change": "sources added",
+          "detail": "Ashoka Buildcon Limited investor relations, InvestyWise"
+        },
+        {
+          "timestamp": "2026-10-24T11:14:08.357710+00:00",
+          "change": "sources added",
+          "detail": "Ashoka Buildcon Limited investor relations"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4158",
+      "title": "IRDAI to examine LIC agents’ demands as LIAFI opposes key distribution reforms ahead of October 25 deadline",
+      "summary": "With the feedback window closing on October 25, the coming days will show how far IRDAI is willing to adjust commission levels, disclosure rules, and clawback provisions to address LIC agents’ livelihood concerns.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.44,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "IRDAI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to IRDAI. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.44,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "IRDAI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to IRDAI. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "IRDAI to examine LIC agents’ demands as LIAFI opposes key distribution reforms ahead of October 25 deadline",
+          "url": "https://www.livemint.com/companies/irdai-to-examine-lic-agents-demands-as-liafi-opposes-key-distribution-reforms-ahead-of-october-25-deadline-11792778423510.html",
+          "source_name": "Livemint Companies",
+          "source_domain": "livemint.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-23T19:23:47+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint Companies",
+      "cluster_key": "HDFCBANK+TMB|OTHER|agents-demands-examine-irdai-liafi-lic",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:40.457399+00:00",
+      "last_updated": "2026-10-24T11:13:40.457483+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:40.457472+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-MSTCLTD-2026-0326",
+      "title": "Trinidad and Tobago in talks with ONGC Videsh, Oil India to refine Venezuelan crude",
+      "summary": "The Caribbean government has proposed that the two Indian oil companies process crude from neighbouring Venezuela at the Guaracara refinery in Pointe-à-Pierre, which forms part of the former Petrotrin complex and is currently under renovation.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "MSTCLTD": {
+          "ticker": "MSTCLTD",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.29,
+          "business_impacts": [
+            "CUSTOMERS"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "CUSTOMER",
+              "term": "ONGC",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-3 Speculative or unconfirmed report",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect relationship",
+            "no quantified financial implication",
+            "speculative language"
+          ],
+          "watch_next": [
+            "order flow from ONGC"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to ONGC, and India. The parts of the business most likely touched are customers. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Trinidad and Tobago in talks with ONGC Videsh, Oil India to refine Venezuelan crude",
+          "url": "https://www.livemint.com/companies/news/trinidad-and-tobago-in-talks-with-ongc-videsh-oil-india-to-refine-venezuelan-crude-11792749605379.html",
+          "source_name": "Livemint Companies",
+          "source_domain": "livemint.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-24T00:05:09+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint Companies",
+      "cluster_key": "MSTCLTD|OTHER|oil-ongc-talks-tobago-trinidad-videsh",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:41.459363+00:00",
+      "last_updated": "2026-10-24T11:13:41.459458+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:41.459445+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-KSOLVES-2026-1519",
+      "title": "SpaceX’s $40 billion AI debt plan faces market turmoil. Can investors stomach the growing borrowing risks?",
+      "summary": "SpaceX’s efforts to finalize a $40 billion off-balance-sheet debt structure for its artificial intelligence buildout have been roiled by recent market turmoil that’s driven up sector-wide borrowing costs and complicated price talks.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "DEBT",
+        "TECHNOLOGY"
+      ],
+      "stocks": {
+        "KSOLVES": {
+          "ticker": "KSOLVES",
+          "relationship": "SECTOR",
+          "impact_score": 2,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [
+            "DEBT",
+            "BALANCE_SHEET",
+            "PRODUCT",
+            "COMPETITION"
+          ],
+          "time_horizon": "LONG_TERM",
+          "exposures": [
+            {
+              "exposure_type": "TECHNOLOGY",
+              "term": "artificial intelligence",
+              "relationship": "SECTOR",
+              "weight": 1.0,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 Major industry-level development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "sector relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its technology exposure to artificial intelligence. The parts of the business most likely touched are debt, balance sheet, product. Classified as debt.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "SpaceX’s $40 billion AI debt plan faces market turmoil. Can investors stomach the growing borrowing risks?",
+          "url": "https://www.livemint.com/companies/news/spacexs-40-billion-ai-debt-plan-faces-market-turmoil-can-investors-stomach-the-growing-borrowing-risks-11792809682686.html",
+          "source_name": "Livemint Companies",
+          "source_domain": "livemint.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-24T02:52:14+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint Companies",
+      "cluster_key": "KSOLVES|DEBT+TECHNOLOGY|debt-faces-market-plan-spacex-turmoil.",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:42.274233+00:00",
+      "last_updated": "2026-10-24T11:13:42.274323+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:42.274312+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-KSOLVES-2026-1520",
+      "title": "Amazon's cloud is nearly sold out through 2027. Can its AI spending keep up with demand?",
+      "summary": "Amazon plans $220 billion in 2026 capital spending, but CEO Andy Jassy says AI demand is outpacing AWS capacity as the company pushes its own chips.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "KSOLVES": {
+          "ticker": "KSOLVES",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.55,
+          "business_impacts": [
+            "SUPPLY"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "SUPPLIER",
+              "term": "AWS",
+              "relationship": "INDIRECT",
+              "weight": 2.0,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "supply terms from AWS"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Amazon's cloud is nearly sold out through 2027. Can its AI spending keep up with demand?",
+          "url": "https://www.livemint.com/companies/news/amazons-cloud-is-nearly-sold-out-through-2027-can-its-ai-spending-keep-up-with-demand-11792813908903.html",
+          "source_name": "Livemint Companies",
+          "source_domain": "livemint.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-24T04:07:12+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint Companies",
+      "cluster_key": "KSOLVES|OTHER|2027.-amazon-cloud-nearly-sold-through",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:43.247016+00:00",
+      "last_updated": "2026-10-24T11:13:43.247116+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:43.247105+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-TMB-2026-0790",
+      "title": "Indian Overseas Bank privatisation: What is the buzz about? Centre's rules and regulations for the process, explained",
+      "summary": "While the Centre is considering reducing its stakes in four public sector banks to 75% to meet public-shareholding norms, it also plans to privatise at least two public lenders besides IDBI Bank. Here's a look at the rules and regulations for the process…",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "REGULATORY"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.45,
+          "business_impacts": [
+            "REGULATION",
+            "COMPETITION"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "Indian Overseas Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+4 Regulatory or legal action",
+            "-4 Opinion, preview or stock-tip piece",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect relationship",
+            "financial implication is quantified",
+            "opinion piece"
+          ],
+          "watch_next": [
+            "formal order or circular text",
+            "compliance deadline",
+            "company response or clarification",
+            "precedent for peers"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Overseas Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Indian Overseas Bank privatisation: What is the buzz about? Centre's rules and regulations for the process, explained",
+          "url": "https://www.livemint.com/companies/indian-overseas-bank-privatisation-what-is-the-buzz-about-centres-rules-and-regulations-for-the-process-explained-11792819469291.html",
+          "source_name": "Livemint Companies",
+          "source_domain": "livemint.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-24T08:33:17+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "Livemint Companies",
+      "cluster_key": "TMB|REGULATORY|about-bank-buzz-india-overseas-privatisation",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:44.065070+00:00",
+      "last_updated": "2026-10-24T11:13:44.065160+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:44.065149+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-COALINDIA-2026-0921",
+      "title": "Q2 Results Today Live: Kotak Mahindra Bank, AU Small Finance Bank, IDFC First Bank, JK Cement, Netweb Tech, Castrol India, Kajaria Ceramics, Bharat Coking Coal to announce Q2 results",
+      "summary": "Q2 Results Today, 24th October 2026: Follow the latest announcements and developments on the September quarter earnings, key companies in focus today include Kotak Mahindra Bank, AU Small Finance Bank, IDFC First Bank, JK Cement, Netweb Technologies, Castrol India, Kajaria Ceramics and Bharat Coking Coal",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "EARNINGS"
+      ],
+      "stocks": {
+        "COALINDIA": {
+          "ticker": "COALINDIA",
+          "relationship": "DIRECT",
+          "impact_score": 7,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.54,
+          "business_impacts": [
+            "REVENUE",
+            "MARGIN"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "SUBSIDIARY",
+              "term": "Bharat Coking Coal",
+              "relationship": "DIRECT",
+              "weight": 3.5,
+              "detail": "subsidiary; in headline"
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "coking coal",
+              "relationship": "SECTOR",
+              "weight": 1.7,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+3 Earnings or guidance",
+            "+2 Company appears in the headline",
+            "-2 Scheduled disclosure with no surprise",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "direct relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "margin trend versus the previous quarter",
+            "management commentary on demand",
+            "order book or loan book disclosure",
+            "any guidance change"
+          ],
+          "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 2,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.48,
+          "business_impacts": [
+            "REVENUE",
+            "MARGIN",
+            "COMPETITION"
+          ],
+          "time_horizon": "IMMEDIATE",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "IDFC First Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "Kotak Mahindra Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "+2 Earnings or guidance at a related company",
+            "-2 Scheduled disclosure with no surprise",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 7/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "margin trend versus the previous quarter",
+            "management commentary on demand",
+            "order book or loan book disclosure",
+            "any guidance change"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IDFC First Bank, and Kotak Mahindra Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Q2 Results Today Live: Kotak Mahindra Bank, AU Small Finance Bank, IDFC First Bank, JK Cement, Netweb Tech, Castrol India, Kajaria Ceramics, Bharat Coking Coal to announce Q2 results",
+          "url": "https://www.thehindubusinessline.com/money-and-banking/q2-results-today-live-updates-kotak-mahindra-bank-au-small-finance-bank-idfc-first-bank-jk-cement-netweb-tech-castrol-india-kajaria-ceramics-bharat-coking-coal-company-results-24-october-2026/article71618989.ece",
+          "source_name": "The Hindu BusinessLine Markets",
+          "source_domain": "thehindubusinessline.com",
+          "source_type": "established_newspaper",
+          "published": "2026-10-24T09:38:30+00:00",
+          "is_official": false,
+          "quality": 7
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "The Hindu BusinessLine Markets",
+      "cluster_key": "COALINDIA+HDFCBANK|EARNINGS|bank-kotak-mahindra-results-small-today",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:45.079090+00:00",
+      "last_updated": "2026-10-24T11:13:45.079190+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:45.079178+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4159",
+      "title": "RBI says Basel III operational-risk capital norms to take effect from April 2027, specifies BI mapping",
+      "summary": "The Reserve Bank of India has set April 1, 2027 as the implementation date for the Basel III Standardised Approach for operational-risk capital, while adding detailed mapping of Business Indicator components to financial-statement schedules and clarifying treatment of leases and derivatives.",
+      "event_date": "2026-10-23",
+      "event_types": [
+        "REGULATORY"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 3,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [
+            "REGULATION"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "Reserve Bank of India",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Regulatory or legal action",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "formal order or circular text",
+            "compliance deadline",
+            "company response or clarification",
+            "precedent for peers"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are regulation. Classified as regulatory.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 3,
+          "impact_band": "LOW",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [
+            "REGULATION"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "Reserve Bank of India",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Regulatory or legal action",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "formal order or circular text",
+            "compliance deadline",
+            "company response or clarification",
+            "precedent for peers"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are regulation. Classified as regulatory.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "RBI says Basel III operational-risk capital norms to take effect from April 2027, specifies BI mapping",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/rbi-says-basel-iii-operational-risk-capital-norms-to-take-effect-from-april-2027-specifies-bi-mapping/135152837",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-23T17:59:58+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETBFSI",
+      "cluster_key": "HDFCBANK+TMB|REGULATORY|basel-capital-iii-norms-operational-risk-rbi",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:46.448223+00:00",
+      "last_updated": "2026-10-24T11:13:46.448303+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:46.448291+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4120",
+      "title": "RBI Bulletin | FCNR-B deposit inflows help lower banks' deposit costs, RBI says",
+      "summary": "RBI Bulletin | FCNR-B deposit inflows help lower banks' deposit costs, RBI says Moneycontrol.com",
+      "event_date": "2026-10-23",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "deposit rates",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and deposit rates. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.52,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "deposits",
+              "relationship": "SECTOR",
+              "weight": 0.9,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "RBI Bulletin | FCNR-B deposit inflows help lower banks' deposit costs, RBI says",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOcW5aaks4ZnNlbEFtNGdGMmotR3ZWRk90YXdwYlpSUWFUQ0txVkFDRzVORmM5VDMzZlZaejZLZkNSYTJLeHFLMTdaODJ0UEVDWm9QeWNIMGdCZDBabV80UHA1SkZIc3pQbEpjclgxRGtmS0RNREc2RzdYNGwxYi1ma25FLTk5ZmJtZXgxY2ZtZHk3WjV3REFGTTd4TmpXTmVkZS1nSFVxb0VFTnZnREVzSkdobWJITVVjWDJwY1hqaVFPRER5Y1BGVnpraFBTVm5ueEtYSV9SVdIB3AFBVV95cUxPazEzUGVfcEc5dm14SmVxbnQwYWhpQURHYzNITWVhNkV6UlVtdVU5bGdsUjlpekp3RFBSa1ZKS3lvVW90NzZlWkhOS1FZaHh2d2ZtcElrLWdUa1h4NFdNMThoZ1VZZTh0THk3YXhZNHpWM2wxYkZjZHowM3h4Tml4MXU2LXFWdVpTSE5MWEZOb29VY3o3NG9iWHBLSDJnSHk2SWJzZzZyMzVTbHFCZG10UDVvdlBEN1NnaXl5MkVqN0gwOTdVdkJ5ai1qNk9mdThaQV9kWjVLS2xtT1Ux",
+          "source_name": "Moneycontrol.com",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-23T13:12:16+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "RBI says USD 133 bn FCNR(B) inflows help ease banks' deposit costs",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/rbi-says-usd-133-bn-fcnrb-inflows-help-ease-banks-deposit-costs/135153621",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-23T18:28:16+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 2,
+      "source_count": 2,
+      "primary_source": "Moneycontrol.com",
+      "cluster_key": "HDFCBANK+TMB|OTHER|bulletin-deposit-fcnr-b-help-inflows-rbi",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-23T18:04:32.652228+00:00",
+      "last_updated": "2026-10-24T11:14:10.880869+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-23T18:04:32.652308+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        },
+        {
+          "timestamp": "2026-10-24T11:14:10.880838+00:00",
+          "change": "sources added",
+          "detail": "ETBFSI"
+        },
+        {
+          "timestamp": "2026-10-24T11:14:10.880859+00:00",
+          "change": "impact raised",
+          "detail": "TMB 0 -> 1"
+        },
+        {
+          "timestamp": "2026-10-24T11:14:10.880864+00:00",
+          "change": "impact raised",
+          "detail": "HDFCBANK 0 -> 1"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4161",
+      "title": "NBFCs shift towards secured retail credit as microfinance loans decline",
+      "summary": "NBFCs are increasingly shifting towards secured retail lending, with credit to microfinance and self-help group loans declining at end-December 2025, while gold, housing and vehicle loans drove credit growth, the RBI said.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            },
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "credit growth",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and credit growth. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "NBFCs shift towards secured retail credit as microfinance loans decline",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/nbfcs-shift-towards-secured-retail-credit-as-microfinance-loans-decline/135153797",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-23T18:41:29+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETBFSI",
+      "cluster_key": "HDFCBANK+TMB|OTHER|credit-nbfcs-retail-secured-shift-towards",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:48.131913+00:00",
+      "last_updated": "2026-10-24T11:13:48.131970+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:48.131962+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4162",
+      "title": "IndusInd Bank expects NIM recovery in Q3/Q4; FCNR drove 7-8 bps hit",
+      "summary": "IndusInd Bank expects to recover part of the 12-basis-point quarter-on-quarter decline in adjusted net interest margin in Q3 and Q4, with management attributing 7–8 basis points of the compression to FCNR(B) mobilisation and the rest to loan mix.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.38,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "net interest margin",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its industry exposure to net interest margin. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [
+            "COMPETITION"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "IndusInd Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "net interest margin",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "IndusInd Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its competitor, industry exposure to IndusInd Bank, and net interest margin. The parts of the business most likely touched are competition. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "IndusInd Bank expects NIM recovery in Q3/Q4; FCNR drove 7-8 bps hit",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/indusind-bank-expects-nim-recovery-in-q3/q4-fcnr-drove-7-8-bps-hit/135154922",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-23T19:37:30+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETBFSI",
+      "cluster_key": "HDFCBANK+TMB|OTHER|bank-expects-indusind-nim-q3/q4-recovery",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:48.865169+00:00",
+      "last_updated": "2026-10-24T11:13:48.865235+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:48.865226+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4163",
+      "title": "CSB Bank board yet to discuss Fairfax-IDBI deal, CEO says",
+      "summary": "Fairfax Financial Holdings’ proposed acquisition of IDBI Bank has put its existing stake in CSB Bank under review, with the RBI giving the Canadian group two years to either merge CSB with IDBI or sell its stake. However, CSB’s board has not yet discussed the transaction, its MD & CEO Pralay Mondal said.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "ACQUISITION"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT_STRONG",
+          "impact_score": 7,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.45,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "COMPETITION"
+          ],
+          "time_horizon": "LONG_TERM",
+          "exposures": [
+            {
+              "exposure_type": "COMPETITOR",
+              "term": "CSB Bank",
+              "relationship": "INDIRECT",
+              "weight": 2.5,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+3 Close, specific exposure to this company",
+            "+2 Acquisition, merger or divestiture",
+            "+3 Strategically important competitor development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect strong relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "CSB Bank's follow-up announcements"
+          ],
+          "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to CSB Bank, and RBI. The parts of the business most likely touched are balance sheet, revenue, competition. Classified as acquisition.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 1,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE"
+          ],
+          "time_horizon": "LONG_TERM",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 1.8,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 Acquisition, merger or divestiture",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "CSB Bank board yet to discuss Fairfax-IDBI deal, CEO says",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/csb-bank-board-yet-to-discuss-fairfax-idbi-deal-ceo-says/135155370",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-23T20:07:55+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETBFSI",
+      "cluster_key": "HDFCBANK+TMB|ACQUISITION|bank-board-csb-discuss-fairfax-idbi-yet",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:49.546456+00:00",
+      "last_updated": "2026-10-24T11:13:49.546527+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:49.546517+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-TMB-2026-0754",
+      "title": "Bank fraud hits public sector stocks harder: Study",
+      "summary": "Bank fraud hits public sector stocks harder: Study The Financial Express",
+      "event_date": "2026-10-22",
+      "event_types": [
+        "FRAUD"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.28,
+          "business_impacts": [
+            "REPUTATION",
+            "MANAGEMENT"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "bank fraud",
+              "relationship": "SECTOR",
+              "weight": 2.0,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "-3 Passing mention without a quantified development",
+            "-2 Single unverified source"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 3/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "regulatory response",
+            "quantum involved",
+            "auditor commentary"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its industry exposure to bank fraud. The parts of the business most likely touched are reputation, management. Classified as fraud.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Bank fraud hits public sector stocks harder: Study",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRDk2bndXcVhyVnQ0X1dOYk11YVhGNE5wTzFwdGNSS2t1NGVMakR4VG05YzNfTy1BTENDR1BHMzJCU0FIT2p2SUFKdUtNSl9xS0ppc2FmcURuV3h1MGRzMUJKVVF4WGVzOExEajhJWVVvU242eXJHMmYtM3Y3NDI2U2xfRXB4MlFJc19BdFR4QWlrTjhqNUN0V3N5aVZLUzhkNkhVOFV1dWQxcS0xakxPOWxBaEhvTFXSAb4BQVVfeXFMTmFwckFOcGEzcGxHUGl5bWprSlhONkNZbzA2clhlOF9Kc3lNUTQxeXRIQjZRdnkyaFhFUVVpMi1sY3ZKTk8yWWtWanZpbzdWT2E2bklQOWc0bWdtTjFFSjJPTVVsZWpBSFRZT1QxRURHb09lbl9rZjROUE00Q2FQZUtoWmN6VGxXSDNQYmxLanE3TlNGcDlZYXVVU1haaFQ3OUNQdjA4N1dXVEhISjBzUldLSFo4RVZpcHpzN19PUQ",
+          "source_name": "The Financial Express",
+          "source_domain": "news.google.com",
+          "source_type": "unknown_news_site",
+          "published": "2026-10-22T16:09:56+00:00",
+          "is_official": false,
+          "quality": 3
+        },
+        {
+          "title": "Bank frauds hit public sector stocks harder than private lenders, study finds",
+          "url": "https://bfsi.economictimes.indiatimes.com/articles/bank-frauds-hit-public-sector-stocks-harder-than-private-lenders-study-finds/135159305",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T01:01:46+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 2,
+      "source_count": 2,
+      "primary_source": "The Financial Express",
+      "cluster_key": "TMB|FRAUD|bank-fraud-hits-public-sector-share",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-23T11:57:39.241396+00:00",
+      "last_updated": "2026-10-24T11:14:11.978946+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-23T11:57:39.241465+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        },
+        {
+          "timestamp": "2026-10-24T11:14:11.978928+00:00",
+          "change": "sources added",
+          "detail": "ETBFSI"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1588",
+      "title": "Diet Coke, beer makers get 6-month breather as govt extends aluminium can certification deadline",
+      "summary": "The government has extended the deadline for quality certification of aluminium beverage cans to April 2027. The extension provides manufacturers necessary time to increase production amidst growing demand. Many brands are experiencing supply challenges due to disruptions from the Middle East conflict. The beverage industry had hoped to produce additional cans but fell short of expectations. Consequently, manufacturers are seeking regulatory relief as they attempt to meet rising consumer needs.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "GEOPOLITICAL"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "INDIRECT",
+          "impact_score": 5,
+          "impact_band": "RELEVANT",
+          "direction": "NEGATIVE",
+          "confidence": 0.41,
+          "business_impacts": [
+            "SUPPLY",
+            "GEOGRAPHY",
+            "INPUT_COST",
+            "EXPORTS"
+          ],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "COMMODITY",
+              "term": "aluminium",
+              "relationship": "INDIRECT",
+              "weight": 3.0,
+              "detail": "input commodity; in headline"
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "Middle East",
+              "relationship": "WEAK",
+              "weight": 0.8,
+              "detail": "export market"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "+2 International market development",
+            "+2 Names a key geography for this company",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "aluminium is an input cost and is moving up",
+            "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "aluminium over the next few weeks"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium, and Middle East. The parts of the business most likely touched are supply, geography, input cost. Classified as geopolitical.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Diet Coke, beer makers get 6-month breather as govt extends aluminium can certification deadline",
+          "url": "https://retail.economictimes.indiatimes.com/news/food-entertainment/personal-care-pet-supplies-liquor/diet-coke-beer-makers-get-6-month-breather-as-govt-extends-aluminium-can-certification-deadline/135159641",
+          "source_name": "ETRetail",
+          "source_domain": "retail.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T01:46:59+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETRetail",
+      "cluster_key": "WAAREEENER|GEOPOLITICAL|6-month-beer-coke-diet-get-makers",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:50.960520+00:00",
+      "last_updated": "2026-10-24T11:13:50.960593+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:50.960584+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-RAVEL-2026-0555",
+      "title": "D2C brands target 30 pc festive growth as acquisition costs rise 20 pc, baskets shrink",
+      "summary": "D2C brands in India are projecting significant festive growth, looking to surpass 30% compared to last year. Customer acquisition costs and selective spending are increasing pressure on brands during this period. While some brands report growth of 18-20%, early trends reveal rising costs affecting profitability. Tier 2 and Tier 3 markets are critical for reaching new customers and expanding revenue.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "ACQUISITION",
+        "NEW_CUSTOMER",
+        "EARNINGS"
+      ],
+      "stocks": {
+        "RAVEL": {
+          "ticker": "RAVEL",
+          "relationship": "SECTOR",
+          "impact_score": 2,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.49,
+          "business_impacts": [
+            "BALANCE_SHEET",
+            "REVENUE",
+            "CUSTOMERS",
+            "MARGIN"
+          ],
+          "time_horizon": "SHORT_TERM",
+          "exposures": [
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "D2C brands",
+              "relationship": "SECTOR",
+              "weight": 2.0,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "customer acquisition cost",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            },
+            {
+              "exposure_type": "GEOGRAPHY",
+              "term": "India",
+              "relationship": "WEAK",
+              "weight": 0.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 Earnings or guidance at a related company",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "margin trend versus the previous quarter",
+            "management commentary on demand",
+            "order book or loan book disclosure",
+            "any guidance change"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its industry exposure to D2C brands, and customer acquisition cost. The parts of the business most likely touched are balance sheet, revenue, customers. Classified as acquisition.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "D2C brands target 30 pc festive growth as acquisition costs rise 20 pc, baskets shrink",
+          "url": "https://retail.economictimes.indiatimes.com/news/e-commerce/e-tailing/d2c-brands-target-30-pc-festive-growth-as-acquisition-costs-rise-20-pc-baskets-shrink/135160184",
+          "source_name": "ETRetail",
+          "source_domain": "retail.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T02:38:26+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETRetail",
+      "cluster_key": "RAVEL|ACQUISITION+NEW_CUSTOMER|acquire-brands-d2c-festive-rise-target",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:51.873508+00:00",
+      "last_updated": "2026-10-24T11:13:51.873591+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:51.873580+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1589",
+      "title": "Waaree showcases 520 Wp flexible mono PERC solar module with 19.69% efficiency",
+      "summary": "Waaree has showcased its 520 Wp flexible, lightweight mono PERC solar module, designed for surfaces and applications where conventional glass-based panels may be difficult to install. The module has a conversion efficiency of 19.69%.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "DIRECT",
+          "impact_score": 6,
+          "impact_band": "RELEVANT",
+          "direction": "UNCERTAIN",
+          "confidence": 0.62,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar modules",
+              "relationship": "SECTOR",
+              "weight": 1.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+5 Direct company event",
+            "+2 Company appears in the headline",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "direct relationship",
+            "financial implication is quantified"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is news about the company itself. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Waaree showcases 520 Wp flexible mono PERC solar module with 19.69% efficiency",
+          "url": "https://www.pv-magazine-india.com/2026/10/24/waaree-showcases-520-wp-flexible-mono-perc-solar-module-with-19-69-efficiency",
+          "source_name": "PV Magazine India",
+          "source_domain": "pv-magazine-india.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T04:03:42+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine India",
+      "cluster_key": "WAAREEENER|OTHER|520-flexible-mono-perc-showcases-waaree",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:52.700180+00:00",
+      "last_updated": "2026-10-24T11:13:52.700246+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:52.700236+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-GLOBAL-2026-4164",
+      "title": "Upper layer NBFCs have to list: RBI guv on Tatas; dispels doubts on Sept order",
+      "summary": "RBI governor Sanjay Malhotra’s comments also suggest Tata Sons is in breach of RBI rules. The consequences of continued noncompliance remain unclear. The governor declined to be drawn into the question of Noel Tata’s proposal to merge two Tata Sons subsidiaries with the holding company, a move that could help it sidestep a stock market listing.",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "TMB": {
+          "ticker": "TMB",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+          "ai_analysis": null
+        },
+        "HDFCBANK": {
+          "ticker": "HDFCBANK",
+          "relationship": "INDIRECT",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.41,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "REGULATION",
+              "term": "RBI",
+              "relationship": "INDIRECT",
+              "weight": 2.3,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+2 Indirect but real exposure",
+            "-2 Weak indirect connection",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No clear directional signal in the available text"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "indirect relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Upper layer NBFCs have to list: RBI guv on Tatas; dispels doubts on Sept order",
+          "url": "https://bfsi.economictimes.indiatimes.com/news/nbfc/upper-layer-nbfcs-have-to-list-rbi-governor-on-tatas-dispels-doubts-on-sept-order/135162087",
+          "source_name": "ETBFSI",
+          "source_domain": "bfsi.economictimes.indiatimes.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T04:41:50+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "ETBFSI",
+      "cluster_key": "HDFCBANK+TMB|OTHER|guv-layer-list-nbfcs-rbi-upper",
+      "is_international": false,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:53.474619+00:00",
+      "last_updated": "2026-10-24T11:13:53.474685+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:53.474676+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1590",
+      "title": "Couple travels through 10 African countries in solar-powered motorhome with battery storage",
+      "summary": "A Brazilian couple traveled through 10 African countries in a motorhome equipped with rooftop solar panels, 15.36 kWh of lithium battery storage, and alternator charging. The system powers household appliances and satellite internet, enabling off-grid travel with minimal reliance on external electricity connections. The post Couple travels through 10 African countries in solar-powered motorhome with battery storage appeared first on pv magazine Global .",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.38,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "rooftop solar",
+              "relationship": "SECTOR",
+              "weight": 1.5,
+              "detail": ""
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar panels",
+              "relationship": "SECTOR",
+              "weight": 1.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to rooftop solar, and solar panels. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Couple travels through 10 African countries in solar-powered motorhome with battery storage",
+          "url": "https://www.pv-magazine.com/2026/10/24/couple-travels-through-10-african-countries-in-solar-powered-motorhome-with-battery-storage",
+          "source_name": "PV Magazine",
+          "source_domain": "pv-magazine.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T07:00:00+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine",
+      "cluster_key": "WAAREEENER|OTHER|african-countries-couple-solar-powered-through-travels",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:54.261628+00:00",
+      "last_updated": "2026-10-24T11:13:54.261699+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:54.261690+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1591",
+      "title": "Vietnam orders provinces to introduce rooftop solar incentives by December 2026",
+      "summary": "Vietnam has instructed provincial and municipal authorities to introduce support policies for residential rooftop solar installations by the end of December 2026, as part of efforts to secure electricity supplies between 2027 and 2030. The government is also pushing for faster deployment of battery energy storage systems, particularly in northern Vietnam. The post Vietnam orders provinces to introduce rooftop solar incentives by December 2026 appeared first on pv magazine Global .",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "REGULATORY",
+        "ORDER_WIN"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.38,
+          "business_impacts": [
+            "REGULATION",
+            "REVENUE",
+            "CAPACITY"
+          ],
+          "time_horizon": "MEDIUM_TERM",
+          "exposures": [
+            {
+              "exposure_type": "INDUSTRY",
+              "term": "rooftop solar",
+              "relationship": "SECTOR",
+              "weight": 2.0,
+              "detail": "in headline"
+            },
+            {
+              "exposure_type": "PRODUCT",
+              "term": "battery energy storage",
+              "relationship": "SECTOR",
+              "weight": 1.2,
+              "detail": ""
+            },
+            {
+              "exposure_type": "TECHNOLOGY",
+              "term": "battery energy storage system",
+              "relationship": "SECTOR",
+              "weight": 1.0,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "formal order or circular text",
+            "compliance deadline",
+            "company response or clarification",
+            "precedent for peers"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to rooftop solar, and battery energy storage. The parts of the business most likely touched are regulation, revenue, capacity. Classified as regulatory.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Vietnam orders provinces to introduce rooftop solar incentives by December 2026",
+          "url": "https://www.pv-magazine.com/2026/10/24/vietnam-orders-provinces-to-introduce-rooftop-solar-incentives-by-december-2026",
+          "source_name": "PV Magazine",
+          "source_domain": "pv-magazine.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T07:30:00+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine",
+      "cluster_key": "WAAREEENER|ORDER_WIN+REGULATORY|introduce-order-provinces-rooftop-solar-vietnam",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:55.151087+00:00",
+      "last_updated": "2026-10-24T11:13:55.151158+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:55.151148+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1592",
+      "title": "Glass-free European photovoltaic modules for vehicles, noise barriers and boats",
+      "summary": "A European research consortium is developing glass-free photovoltaic modules using fiber-reinforced polymer composites. The technology could enable lighter solar modules for curved and complex surfaces, including vehicles, ships and infrastructure. The project aims to demonstrate industrial feasibility by May 2029. The post Glass-free European photovoltaic modules for vehicles, noise barriers and boats appeared first on pv magazine Global .",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "TECHNOLOGY"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "UNCERTAIN",
+          "confidence": 0.38,
+          "business_impacts": [
+            "PRODUCT",
+            "COMPETITION"
+          ],
+          "time_horizon": "LONG_TERM",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar modules",
+              "relationship": "SECTOR",
+              "weight": 1.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules. The parts of the business most likely touched are product, competition. Classified as technology.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Glass-free European photovoltaic modules for vehicles, noise barriers and boats",
+          "url": "https://www.pv-magazine.com/2026/10/24/glass-free-european-photovoltaic-modules-for-vehicles-noise-barriers-and-boats",
+          "source_name": "PV Magazine",
+          "source_domain": "pv-magazine.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T08:00:00+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine",
+      "cluster_key": "WAAREEENER|TECHNOLOGY|europe-glass-free-module-noise-photovoltaic-vehicles",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:55.918796+00:00",
+      "last_updated": "2026-10-24T11:13:55.918862+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:55.918852+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1593",
+      "title": "Mozambique entrusts small solar panel factory to UAE’s Jampur Group",
+      "summary": "UAE-based Jampur Group has been selected to manage and modernize Mozambique’s Beluluane Solar Panel Factory, which suspended production around 2022 due to technological limitations and market competition. The initiative aims to revive domestic solar panel manufacturing, improve competitiveness and create local employment opportunities. The post Mozambique entrusts small solar panel factory to UAE's Jampur Group appeared first on pv magazine Global .",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.38,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar panels",
+              "relationship": "SECTOR",
+              "weight": 1.7,
+              "detail": "in headline"
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Mozambique entrusts small solar panel factory to UAE’s Jampur Group",
+          "url": "https://www.pv-magazine.com/2026/10/24/mozambique-entrusts-solar-panel-factory-to-uaes-jampur-group",
+          "source_name": "PV Magazine",
+          "source_domain": "pv-magazine.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T08:45:00+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine",
+      "cluster_key": "WAAREEENER|OTHER|entrusts-mozambique-panel-plant-small-solar",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:56.705738+00:00",
+      "last_updated": "2026-10-24T11:13:56.705805+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:56.705796+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    },
+    {
+      "event_id": "EVENT-WAAREEENER-2026-1594",
+      "title": "Gritt Robotics brings AI-assisted robotics to bolster shrinking solar workforce",
+      "summary": "California firm working with top EPCs to install six million solar panels in the next two years. The post Gritt Robotics brings AI-assisted robotics to bolster shrinking solar workforce appeared first on pv magazine Global .",
+      "event_date": "2026-10-24",
+      "event_types": [
+        "OTHER"
+      ],
+      "stocks": {
+        "WAAREEENER": {
+          "ticker": "WAAREEENER",
+          "relationship": "SECTOR",
+          "impact_score": 0,
+          "impact_band": "NOISE",
+          "direction": "NEUTRAL",
+          "confidence": 0.38,
+          "business_impacts": [],
+          "time_horizon": "UNKNOWN",
+          "exposures": [
+            {
+              "exposure_type": "PRODUCT",
+              "term": "solar panels",
+              "relationship": "SECTOR",
+              "weight": 1.2,
+              "detail": ""
+            }
+          ],
+          "score_reasons": [
+            "+1 Industry-level relevance",
+            "+2 International market development",
+            "-3 Passing mention without a quantified development",
+            "-1 Single source, unconfirmed"
+          ],
+          "direction_reasons": [
+            "No company-specific directional signal"
+          ],
+          "confidence_reasons": [
+            "best source quality 6/10",
+            "sector relationship",
+            "no quantified financial implication"
+          ],
+          "watch_next": [
+            "confirmation from an official or company source"
+          ],
+          "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
+          "ai_analysis": null
+        }
+      },
+      "sources": [
+        {
+          "title": "Gritt Robotics brings AI-assisted robotics to bolster shrinking solar workforce",
+          "url": "https://www.pv-magazine.com/2026/10/24/gritt-robotics-brings-ai-assisted-robotics-to-bolster-shrinking-solar-workforce",
+          "source_name": "PV Magazine",
+          "source_domain": "pv-magazine.com",
+          "source_type": "specialized_trade_publication",
+          "published": "2026-10-24T09:30:00+00:00",
+          "is_official": false,
+          "quality": 6
+        }
+      ],
+      "article_count": 1,
+      "source_count": 1,
+      "primary_source": "PV Magazine",
+      "cluster_key": "WAAREEENER|OTHER|ai-assisted-bolster-brings-gritt-robotics-robotics",
+      "is_international": true,
+      "tags": [],
+      "first_seen": "2026-10-24T11:13:57.405572+00:00",
+      "last_updated": "2026-10-24T11:13:57.405637+00:00",
+      "event_history": [
+        {
+          "timestamp": "2026-10-24T11:13:57.405628+00:00",
+          "change": "created",
+          "detail": "1 source(s) from 1 domain(s)"
+        }
+      ],
+      "price_reaction": {}
+    }
+  ],
+  "consumer": [
+    {
+      "ticker": "WAAREEENER",
+      "mentions": 11,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 9,
+      "engagement": 0,
+      "terms": {
+        "Waaree solar module": 9,
+        "Waaree rooftop solar installation": 2
+      },
+      "examples": [
+        {
+          "title": "☀️📍இதோ நமது WAAREE பிராண்டின் புதிய அத்தியாயம் Solar Street Light💡",
+          "url": "https://www.youtube.com/watch?v=_GjxDSBL7DI",
+          "source": "Nellai Solar System for home and agriculture",
+          "polarity": "neutral"
+        },
+        {
+          "title": "Waaree SOLAR plant Washing",
+          "url": "https://www.youtube.com/watch?v=R4V1JNQQFjA",
+          "source": "Kamlesh SOLAR Technician",
+          "polarity": "neutral"
+        },
+        {
+          "title": "What Solar Companies Don't Tell You 🤐 #Shorts",
+          "url": "https://www.youtube.com/watch?v=gJ3apVb2sxM",
+          "source": "SunZetric",
+          "polarity": "neutral"
+        }
+      ],
+      "net": 2,
+      "leaning": "mostly positive",
+      "previous_mentions": 11,
+      "mention_change": 0,
+      "net_change": -1
+    },
+    {
+      "ticker": "RAVEL",
+      "mentions": 10,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 10,
+      "engagement": 0,
+      "terms": {
+        "Anti Grey Serum": 10
+      },
+      "examples": [
+        {
+          "title": "Ajay Kumar Shares His Experience with Buddha Natural Anti Grey Beard Serum #naturalblackbeard",
+          "url": "https://www.youtube.com/watch?v=PEZhA-kVpX4",
+          "source": "Buddha Natural",
+          "polarity": "neutral"
+        },
+        {
+          "title": "Ajay Kumar Shares His Experience with Buddha Natural Anti Grey Beard Serum #naturalblackbeard",
+          "url": "https://www.youtube.com/watch?v=RjKMZ8z_-OQ",
+          "source": "Buddha Natural",
+          "polarity": "neutral"
+        },
+        {
+          "title": "Ajay Kumar Shares His Experience with Buddha Natural Anti Grey Beard Serum #naturalblackbeard",
+          "url": "https://www.youtube.com/watch?v=nF9ZQLVTUng",
+          "source": "Buddha Natural",
+          "polarity": "neutral"
+        }
+      ],
+      "net": 0,
+      "leaning": "mixed",
+      "previous_mentions": 7,
+      "mention_change": 3,
+      "net_change": 0
+    },
+    {
+      "ticker": "JKIPL",
+      "mentions": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "engagement": 0,
+      "terms": {
+        "backhoe loader review India": 1
+      },
+      "examples": [
+        {
+          "title": "JCB 3DX BS-V Hidden Features 🔥 | Profit or Loss? | Full Review",
+          "url": "https://www.youtube.com/watch?v=7znqvybs3KY",
+          "source": "TONY TRAVELING VLOGS",
+          "polarity": "neutral"
+        }
+      ],
+      "net": 0,
+      "leaning": "too few to read",
+      "previous_mentions": 1,
+      "mention_change": 0,
+      "net_change": 0
+    }
+  ]
+}
