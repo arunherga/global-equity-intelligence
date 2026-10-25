@@ -10,35 +10,28 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.68,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "SUBSIDIARY",
-          "term": "Waaree Renewable Technologies",
-          "relationship": "INDIRECT_STRONG",
-          "weight": 3.5,
-          "detail": "group company, separately reported; in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving down"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -49,25 +42,7 @@
         "any guidance change"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Revenue pull-through for Waaree Energies remains strong as 36% top-line growth at its EPC arm indicates robust demand for solar installation and module supply, though consolidated revenue realization depends on internal transfer pricing and sales elimination.",
-        "margin_effect": "The 30% drop in profit at the renewable execution subsidiary points to potential downstream margin compression, which could weigh on consolidated profitability if driven by elevated component costs or aggressive project pricing.",
-        "cost_effect": "Operating and input costs for solar projects—such as Balance of System (BOS) components, logistics, or module procurement costs—appear elevated, impacting project-level execution margins.",
-        "competitive_effect": "While market share in solar execution and module delivery remains strong given top-line growth, profitability pressures highlight intense price competition in utility-scale EPC bidding.",
-        "regulatory_effect": "No direct regulatory changes were announced with the earnings, though compliance with domestic content requirements (ALMM) and grid connectivity schedules continue to influence project timelines.",
-        "short_term": "Negative sentiment spillover from the subsidiary's 10% stock decline could create near-term price volatility for Waaree Energies until its own consolidated earnings report clarifies standalone module margins.",
-        "medium_long_term": "Strong volume expansion in downstream renewable execution supports long-term manufacturing utilization for Waaree Energies, provided project margins normalize through input cost stabilization.",
-        "second_order_effects": "Margin compression in project execution may prompt Waaree Energies to shift a higher proportion of module supply toward higher-margin export markets or direct third-party developers.",
-        "key_uncertainty": "Whether the subsidiary's profit decline was caused by higher transfer prices paid to Waaree Energies for modules, external Balance of System (BOS) cost inflation, or execution delays on specific projects.",
-        "monitor_next": [
-          "Waaree Energies' standalone and consolidated Q2 earnings release and margin commentary",
-          "Inter-company transaction details and module transfer pricing mechanisms between the entities",
-          "Management guidance on EPC raw material, logistics, and Balance of System (BOS) cost trends",
-          "Order book growth and execution timelines for solar projects in the downstream arm"
-        ]
-      }
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -160,16 +135,26 @@
       "published": "2026-10-21T05:03:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Q2FY27 Results: Net profit falls 30% to ₹81.48 crore",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaHgwTWdiWXh5LTVXS193NDZSbWhralpQb0lzTUk2SjRTdUI4LXd2YzgtUkJrZGtfOThZWDJVT3JTNGZVVHp1aHYzeHkyblFzbExsN1Y1WEh2Vzd4eTRsbkZyZGM5blBEdEhCYWxhOENlNVdmNTFyajFtTTNwMVNOZW9keERISVIwSDhoZ3V6aEN1U2dzNUlvOTNJbFpna1hoRnpnNDRNdXZVZTBCdjAzZG4wbGYwUE9MX0VPcFdXM2Q4dw",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T12:38:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Power Peak Digest",
   "cluster_key": "WAAREEENER|EARNINGS|fy27-net-profit-renewable-technologies-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T20:04:29.974492+00:00",
-  "last_updated": "2026-10-21T18:18:14.068601+00:00",
+  "last_updated": "2026-10-25T17:14:36.510378+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T20:04:29.974591+00:00",
@@ -185,6 +170,16 @@
       "timestamp": "2026-10-21T18:18:14.068598+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 6 -> 10"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:36.510358+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:36.510373+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

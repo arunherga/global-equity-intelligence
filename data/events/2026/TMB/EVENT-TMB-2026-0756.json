@@ -4,20 +4,23 @@
   "summary": "Indian Bank hikes FD rates on 555-day, 777-day deposits; check revised rates from October 23 CNBC TV18",
   "event_date": "2026-10-22",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "direction": "MIXED",
+      "confidence": 0.3,
       "business_impacts": [
+        "MARGIN",
+        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -27,10 +30,10 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "INDUSTRY",
-          "term": "deposit rates",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
           "detail": "in headline"
         },
         {
@@ -42,21 +45,74 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Indian Bank, and deposit rates. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, macro exposure to Indian Bank, and interest rates. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its macro, product exposure to interest rates, and deposits. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -90,16 +146,26 @@
       "published": "2026-10-23T04:12:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian Bank hikes interest rates on special-tenure fixed deposits — check how much 555-day and 777-day FDs are offering",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPZC11NDNNNlBfbDZDbzYwU3Nma0pSZWViSk96TVJfVTZBRk9oSElKdHdBTUtvSlhjc290Y3ZhVHJGN20yRTllMjlWZWg0bW84NTJycUhScTJRb056ZUtQdHFDSkprZ3J3VHBxQzU1NDZ2NjV0TUQ3dlhTYXpuUkYwUGFZUEtHZ1RoUkxvZWhwcDlyeTJEUnI2U1RkUFRhZEJWbXdTOC15cjFMTGRPOElxR3YtbnBLN1RKWTJrVzJNV3lBMHo1eHExVW1hX3cxM3lISGlOSzc5Ukg2RUdjZXR1UWF0SXBDZ3pGRV9XYjFNVTNoYmJJenZGQWtsem40Q2ZkaGZLYVFrN3BGb1Q1U0lRb3U5SdIBmAJBVV95cUxPQ2hKYVhrMGZpS2hiNkhuNFo1NmdCTE9QbVBWTVJqbWZySWNwNk0tUGtUM2FSZHRNcjFVMmZDWi1pUmZCQXR3Ri1hc0hQYkdoOHlrV0pfMlVDX1VzMENYM2NnSjJvMlg4VW1hTmtNa293UnpfN1d2VmxDbDg3eG5fOGtHRnpYMW92MjdIUDNiajNSZERuRkN0cnJyRzlfVHJHVmQzcEJFUVo3YTAwWDJnOXZpOW5KRldsclVKNHlTUXdjV2ZnSm0za2lIT0xrRXRtQnlSdXotaktFd0ZyamU5TmpkTFFZRzFGclBJS1RYMEpqSmxFcHZseDBraUJTaXFQelM3Z2JrbE9LeEpocUhkcDZHeGY1cmFp",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T14:59:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "TMB|OTHER|555-day-777-day-bank-india-raise-rate",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T11:57:41.207062+00:00",
-  "last_updated": "2026-10-23T12:07:06.701239+00:00",
+  "last_updated": "2026-10-25T17:14:44.234167+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T11:57:41.207141+00:00",
@@ -120,6 +186,26 @@
       "timestamp": "2026-10-23T12:07:06.701221+00:00",
       "change": "sources added",
       "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:44.234131+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:44.234147+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:44.234155+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:44.234163+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (SECTOR)"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -53,10 +54,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -73,7 +74,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -82,7 +84,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -96,10 +98,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -116,7 +118,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -125,7 +128,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -167,21 +170,51 @@
       "published": "2026-10-06T14:36:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nigeria’s Diesel Price Rises 82.7%, Highest Worldwide—UNCTAD",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYS1NS1BzM1Y0REJVclBBbzNZNU1FTFozZ1NNZjEycVhHcVhjZm9zejViSUtvVmJDczlHZjJtU1R3YTNiNVJlTl9JWF9xWk1jUUpIV2FmVUdpRXZpSFkwdXVOYml2RVoyd25kYzZlWHE4Y1lHR0NVdnVvZ1prSjNvX0RfYVRTVDQ",
+      "source_name": "LEADERSHIP Newspapers",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T02:12:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Mobility Energy",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|COMMODITY|highest-hit-level-petrol-price-since",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T19:05:00.942212+00:00",
-  "last_updated": "2026-10-06T19:05:00.942308+00:00",
+  "last_updated": "2026-10-25T17:14:18.047920+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T19:05:00.942299+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:18.047883+00:00",
+      "change": "sources added",
+      "detail": "LEADERSHIP Newspapers"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:18.047899+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 3 -> 5"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:18.047906+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 3 -> 5"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:18.047912+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 3 -> 5"
     }
   ],
   "price_reaction": {}

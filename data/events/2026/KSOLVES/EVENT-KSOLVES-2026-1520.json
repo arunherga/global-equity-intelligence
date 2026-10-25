@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.55,
+      "confidence": 0.41,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -23,20 +23,20 @@
           "exposure_type": "SUPPLIER",
           "term": "AWS",
           "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -57,21 +57,41 @@
       "published": "2026-10-24T04:07:12+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Amazon (AMZN) Says AWS Is Already Nearly Sold Out Through 2027 as AI Demand Surges",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN3RFanBaVlRZRWVtZ2lNY2lEVXJDejJBd0ZHVTgxNFpPT1FzWHBtdFZtUjlZZTFVLVh2YXlSWWhkc2RsQTh1djhkcmhWZEowV2F3eTFXUGI2LUYxS3pSSGtldzV5U2toOUcxSHQtRnJPYlVLa0FkTVFETVVZRG9zYVpxMjk0VlJTVXNjNGFpVDJsajYxTldvd2hxckxyaGUyc3Y0RUFDVlkybkM0Mm1J",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T09:30:11+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Livemint Companies",
   "cluster_key": "KSOLVES|OTHER|2027.-amazon-cloud-nearly-sold-through",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-24T11:13:43.247016+00:00",
-  "last_updated": "2026-10-24T11:13:43.247116+00:00",
+  "last_updated": "2026-10-25T17:14:25.234308+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T11:13:43.247105+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:25.234287+00:00",
+      "change": "sources added",
+      "detail": "TipRanks"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:25.234303+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

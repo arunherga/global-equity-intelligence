@@ -4,7 +4,8 @@
   "summary": "CBI books IL&FS Energy Development Co. and top directors in Rs 212 crore Canara Bank fraud case The Times of India",
   "event_date": "2026-10-24",
   "event_types": [
-    "FRAUD"
+    "FRAUD",
+    "MANAGEMENT_CHANGE"
   ],
   "stocks": {
     "TMB": {
@@ -12,8 +13,8 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
       "business_impacts": [
         "REPUTATION",
         "MANAGEMENT"
@@ -26,33 +27,27 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "regulatory response",
         "quantum involved",
-        "auditor commentary"
+        "auditor commentary",
+        "reason for the change"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to bank fraud, and India. The parts of the business most likely touched are reputation, management. Classified as fraud.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to bank fraud. The parts of the business most likely touched are reputation, management. Classified as fraud.",
       "ai_analysis": null
     }
   },
@@ -66,21 +61,46 @@
       "published": "2026-10-24T14:33:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CBI files bank fraud case against IL&FS Energy Development over alleged ₹212 crore loss to Canara Bank: Details here",
+      "url": "https://www.livemint.com/companies/news/cbi-files-bank-fraud-case-against-il-fs-energy-development-over-alleged-212-crore-loss-to-canara-bank-details-here-11792930880236.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-25T13:01:17+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Times of India",
   "cluster_key": "TMB|FRAUD|books-cbi-co.-development-energy-il&fs",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-25T11:46:41.138923+00:00",
-  "last_updated": "2026-10-25T11:46:41.138994+00:00",
+  "last_updated": "2026-10-25T17:14:14.845966+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:41.138984+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:14.845938+00:00",
+      "change": "sources added",
+      "detail": "Livemint Companies"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:14.845952+00:00",
+      "change": "categories added",
+      "detail": "MANAGEMENT_CHANGE"
+    },
+    {
+      "timestamp": "2026-10-25T17:14:14.845960+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
