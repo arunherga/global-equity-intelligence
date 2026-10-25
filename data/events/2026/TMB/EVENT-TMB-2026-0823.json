@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-TMB-2026-0823",
+  "title": "BSP short-term bill yields rise as rate hike tightens Philippine liquidity conditions",
+  "summary": "BSP short-term bill yields rise as rate hike tightens Philippine liquidity conditions Traders Union",
+  "event_date": "2026-10-25",
+  "event_types": [
+    "INTEREST_RATE",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "BSP short-term bill yields rise as rate hike tightens Philippine liquidity conditions",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUVA3N2xOaV9tejNlTWVEbGp1Rm1xeWM2REd5Vk9RS0k1cExaQmtxRml5V0NGckd0aU05UTRqVE9aUmprOG9IOVp2ejQteEFodS1RaUxaU2VvWXNJSVQtTXpqMEdUdTBCTmNHTW0za3QyUWxZcDQybE9ZNjRpQlBULVUwaUFpRl9Xdm9NbkphdDlRQQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T10:41:20+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY+INTEREST_RATE|bill-bsp-rate-rise-short-term-yields",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-25T11:48:18.795066+00:00",
+  "last_updated": "2026-10-25T11:48:18.795136+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-25T11:48:18.795126+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

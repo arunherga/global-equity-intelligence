@@ -10,7 +10,7 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -26,12 +26,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,13 +51,13 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -67,12 +73,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -86,7 +98,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -100,21 +112,46 @@
       "published": "2026-10-19T12:20:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Industry backs RBI, govt measures to support rupee, attract long-term capital",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaWh4QlYtM1c5akdMOTZFTWhldTFnTllRZloyYzhPSXFzQkYyRmhQQjlxYVhjLWQ1ZEpwdG0tU1FfcUo4Z2FXWHhRb3BXV0hTOUpYQkZWa1IxdG1fSENTZGNYcHpsZG5yVUV3bjRjd3JQMVV0b0VpNVZRZXYtNU5FNkVtMmpTSk9ObF9vMDMwd3JZQWlxWmUzejV5TmtLNWVJZXhvMGRCdGI",
+      "source_name": "IBTimes India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T09:42:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Zee News",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|backs-finmin-industry-measures-rbi-support",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-19T13:44:01.564491+00:00",
-  "last_updated": "2026-10-19T13:44:01.564570+00:00",
+  "last_updated": "2026-10-25T11:49:20.074246+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:44:01.564561+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-25T11:49:20.074222+00:00",
+      "change": "sources added",
+      "detail": "IBTimes India"
+    },
+    {
+      "timestamp": "2026-10-25T11:49:20.074239+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-25T11:49:20.074243+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

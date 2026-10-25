@@ -177,6 +177,47 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "Infosys's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -239,16 +280,26 @@
       "published": "2026-10-11T00:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks to Watch for October 26: RIL, Infosys, BPCL, Kotak Mahindra Bank, Torrent Pharma and more",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNUk4yem1XVlhFWXhRc2hhUHFkcHEtdHlza1YwLVZiN0VaSEVtenVubWVtUFY1ckxUQjYzM2Vrc3ZCMjBpaS1vQ3pKMnFlNHYwUUhwY25sS0x0UjkxNkpwUC1Yc0hlckQ5X1RfNlVEUHVPbFFveml2cDVPWDJPcjNYTHBlMzdTZjYyaGhuWjRrVkp1Q0ItQk5DMEVZTXo2akhnbURSQmQ0MU80QjlEZUdYcW9kM2pwc1RtcE1NaUh5MGRFR1JDMU9fbmxKTklxLWExMUpZWUxoVmRKaUFhbnROUThqejRqVFRtUFlXeVhjWURsaGhN0gH6AUFVX3lxTE1MUm8yMXgwMVZ0amtBZFoyMzNOaTJFZHUwWXhibUtqemhVUXFSRFdQVGF1T2tIbDZIdWVtTVBzT1VkWHc1OHFSTV9tckI0VGJSMlpLWnVUcDNkb2JBSE13S19fUFlZUm4zNHV5VkFmQk83WXpkRFRrZGVsMU5nb181WE9wRVkxbVE2M2tTX29qeVNRUUtCMXJ1ZFI0RnpfdmJqcHBPZ2pPT2pDMXRTVmc0QXdGZmx4VUVoYW1Dc2lEQlZMR3JERndwd2tKakJ1Z0UyS2FNenVIVGdKSkFfdDRZWUh5Wjl1NldLalBIN0VCZlRid29kdWlrbHc",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T07:36:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "cnbctv18.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|axis-bank-kotak-october-share-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T21:38:46.814395+00:00",
-  "last_updated": "2026-10-11T13:10:56.820852+00:00",
+  "last_updated": "2026-10-25T11:49:13.323699+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T21:38:46.814477+00:00",
@@ -289,6 +340,16 @@
       "timestamp": "2026-10-11T13:10:56.820833+00:00",
       "change": "sources added",
       "detail": "Equitymaster"
+    },
+    {
+      "timestamp": "2026-10-25T11:49:13.323678+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-25T11:49:13.323694+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}
