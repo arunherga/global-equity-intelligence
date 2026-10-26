@@ -11,10 +11,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.68,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -34,26 +34,20 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "coal production",
-          "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving up"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -64,26 +58,7 @@
         "any guidance change"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Bharat Coking Coal Limited (BCCL) is a direct subsidiary of Coal India. A 39-40% YoY surge in BCCL's quarterly revenue and a 10% increase in offtake volumes directly contribute to higher consolidated top-line revenue for Coal India.",
-        "margin_effect": "Consolidated net and EBITDA margins for Coal India are expected to improve as a historically margin-dilutive subsidiary swings to profitability (₹124 crore net profit). Higher realizations from coking coal also enhance overall blended profitability.",
-        "cost_effect": "A ~10% YoY increase in offtake volume leads to better operating leverage and fixed cost absorption per unit of coal mined, reducing unit operating costs at the subsidiary level.",
-        "competitive_effect": "Increases Coal India's market share in high-value coking coal within India, reinforcing its role as the primary domestic supplier and helping domestic steelmakers reduce reliance on imported coking coal.",
-        "regulatory_effect": "Supports the Indian government's policy directive to reduce national import dependence on coking coal, mitigating potential regulatory pressure on supply fulfillment.",
-        "short_term": "Provides an immediate positive contribution to Coal India's consolidated Q2 FY27 financial results and reduces loss drags from subsidiary operations.",
-        "medium_long_term": "A sustained operational turnaround at BCCL improves long-term dividend potential and capital allocation efficiency for Coal India, supporting the parent company's long-term production targets.",
-        "second_order_effects": "Improved operational stability at BCCL could spark renewed market speculation regarding a potential future listing or value unlocking of the subsidiary, while domestic steel producers may re-negotiate long-term supply agreements.",
-        "key_uncertainty": "Whether BCCL can sustain this turnaround given global coking coal price volatility and underlying geological/operational constraints in its mines.",
-        "monitor_next": [
-          "Coal India's consolidated Q2 FY27 financial performance and commentary on subsidiary contributions",
-          "Average realization per tonne achieved for coking coal in upcoming quarters",
-          "Monthly production and offtake figures reported by BCCL",
-          "Global coking coal benchmark prices (e.g., Australian coking coal index)",
-          "Capital expenditure plans and washery capacity additions at BCCL"
-        ]
-      }
+      "ai_analysis": null
     },
     "MSTCLTD": {
       "ticker": "MSTCLTD",
@@ -542,16 +517,26 @@
       "published": "2026-10-26T06:47:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bharat Coking Coal Limited Q2 FY2026–27 Earnings: Revenue Hits ₹4,412.58 Crore as Profit Returns - Sci-Tech Today",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV0RVd1ZWTnhyOE1EMzFZd3RlUFJCMmZCdW43OWphcG1uOHhZRkg5R2x1NnB6V0otTUQ4UkRMYWpYbmczSXlFc2szZ3RZMjF5RmU3YjZkazk0UFBPTV9xV1NzczNkQUsyLVYxbWVKanNyVG5jNVZwUlJzU3NxUzllR0tqZ0pHUTdac0RqdA",
+      "source_name": "Sci-Tech Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T11:25:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|EARNINGS|124-bharat-coal-coking-profit-swings",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-25T11:46:33.075163+00:00",
-  "last_updated": "2026-10-26T13:39:54.817759+00:00",
+  "last_updated": "2026-10-26T19:28:36.217377+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:33.075243+00:00",
@@ -617,6 +602,16 @@
       "timestamp": "2026-10-26T13:39:54.817755+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:30.977157+00:00",
+      "change": "sources added",
+      "detail": "Sci-Tech Today"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:36.217362+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

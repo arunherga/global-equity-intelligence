@@ -4,7 +4,8 @@
   "summary": "ICICI Bank advances Tuesday, underperforms competitors MarketWatch",
   "event_date": "2026-10-13",
   "event_types": [
-    "COMPETITOR"
+    "COMPETITOR",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -12,48 +13,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
-      "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "HDFC Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "a competitor (HDFC Bank) is doing well"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "pricing response",
-        "market-share shift",
-        "capacity announcements",
-        "HDFC Bank's follow-up announcements"
-      ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as competitor.",
-      "ai_analysis": null
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -73,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -81,12 +41,47 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "pricing response",
-        "market-share shift",
-        "capacity announcements",
         "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as competitor.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "ICICI Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -160,16 +155,26 @@
       "published": "2026-10-21T10:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank advances Monday, underperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOc3RLNzQzUTFMSHFzVmwwcHdwNkxLbVgxVUxEVlFXY0JRamJmbTdjRHZoNFp3V0VTdFE4Ry10U1pEb1RXTEtNcmVPMnpnNVdSdWYxMVpSMzlaUkxTSHhKcGxxX2xFLU5vNS1vWEs3dG9iMzRycTVQdTBwMkxsbm03WVVidXRLWGE1amtPUjM4c2tmbmxNQmh0Y01sNE1KZGVyRVdfVlJRNEhSdVpyTm80dWhmeGdwN1ZpcGE5bmpleUhZNms",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T10:32:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|COMPETITOR|bank-competitors-icici-rise-tuesday-underperforms",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-13T14:36:23.196476+00:00",
-  "last_updated": "2026-10-21T18:18:54.227078+00:00",
+  "last_updated": "2026-10-26T19:28:29.158137+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:36:23.196548+00:00",
@@ -200,6 +205,26 @@
       "timestamp": "2026-10-21T18:18:54.227075+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:29.158103+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:29.158119+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:29.158127+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:29.158133+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

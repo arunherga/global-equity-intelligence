@@ -11,16 +11,15 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.61,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
         "PRODUCT",
-        "CUSTOMERS",
-        "COMPETITION"
+        "CUSTOMERS"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
@@ -30,31 +29,29 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "TECHNOLOGY",
-          "term": "TOPCon",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
           "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 3 independent sources",
-        "+2 Major industry-level development"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "3 independent sources",
+        "best source quality 3/10",
         "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to solar modules, and TOPCon. The parts of the business most likely touched are product, customers, competition. Classified as partnership.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar modules, and India. The parts of the business most likely touched are product, customers. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -88,21 +85,41 @@
       "published": "2026-10-26T08:12:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "INA Solar partners with US-based Caelux for 3 GW of hybrid-tandem solar modules, targets 29% module efficiency by 2028",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPcTZZTHJYdE5NaGt5bFZfaXJPQ3RfTWpQbE1fNjQ0VUI5OWJRZWNDSWdOQmh2Yk81U3hxYkt3NlFYbzNpdzFEUENNSlJrRzJfckFyVXIzaXpWNU40SHhLS3prZDFMaDRWVFBFNVhKTUl4c29KWEdxOWx1ak5FRmRlOVhtMjBDcUFDS3hZRDFkLXV3ZUtEYmY3N29DRXFITUNJbVlJWmNlVnVXUkVoX2lzNHBoUHpZeUZoWGtHeTd1ZTI4eWhRcnZuQl9ndFpHNFRwTlhDUG9NRFplRnlLcEpsNkhCaVJJRUZZa3Vnb0NfT2lXTGJt",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T09:25:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 3,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|PARTNERSHIP+TECHNOLOGY|caelux-hybrid-tandem-ina-partners-solar-us-based",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T13:22:02.461181+00:00",
-  "last_updated": "2026-10-26T13:22:02.461295+00:00",
+  "last_updated": "2026-10-26T19:28:28.412501+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T13:22:02.461284+00:00",
       "change": "created",
       "detail": "3 source(s) from 3 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:28.412476+00:00",
+      "change": "sources added",
+      "detail": "pv magazine India"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:28.412495+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

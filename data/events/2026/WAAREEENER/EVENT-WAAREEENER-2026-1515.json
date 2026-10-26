@@ -13,14 +13,13 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "PRODUCT",
-        "REVENUE",
-        "COMPETITION"
+        "REVENUE"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
@@ -30,38 +29,37 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "inverters",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": ""
-        },
-        {
           "exposure_type": "TECHNOLOGY",
           "term": "TOPCon",
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 International market development",
-        "-3 Passing mention without a quantified development"
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules, and inverters. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to solar modules, and TOPCon. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -105,16 +103,26 @@
       "published": "2026-10-26T11:46:00+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Shakti Pumps unveils 620 Wp TOPCon solar module at REI Expo 2026",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOQmQ1WXYwd1NqUUtXaXUyUFRBbmducEdEdHhfWHd6R1Y0RGdyVXkyRXpIWl95OVNFbGF0RjNzbHpRbGI1VkJjeDg1UHdGZVhfMUpndk5oNHAybnkwSWRueUtYMzcwQ0VkSEZ6dDlTY0E0czBZS0Yzd2F5RzBYWU5ndGVZM1BqSmlMWHZ3Z3dybklBVmVXaTJEbWNPdk5BN2lZRElQcVMwYnJVSDd4ZWNV",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T15:05:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 3,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|3.0-green-launch-quad-cut-saatvik-topcon",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T11:56:29.101821+00:00",
-  "last_updated": "2026-10-26T13:38:51.377667+00:00",
+  "last_updated": "2026-10-26T19:28:57.918573+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T11:56:29.101913+00:00",
@@ -135,6 +143,16 @@
       "timestamp": "2026-10-26T13:38:51.377662+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:57.918550+00:00",
+      "change": "sources added",
+      "detail": "pv magazine India"
+    },
+    {
+      "timestamp": "2026-10-26T19:28:57.918568+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
