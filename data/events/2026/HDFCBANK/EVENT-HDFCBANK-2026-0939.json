@@ -58,33 +58,38 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.51,
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "REPUTATION"
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Kotak Mahindra Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
-        "-5 Market commentary rather than a company development",
-        "-7 Share-price listing or roundup page, not a development",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -93,7 +98,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Kotak Mahindra Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -117,21 +122,41 @@
       "published": "2026-10-19T04:18:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Kotak Mahindra Bank shares climb 4% after Q2 results. What are Jefferies, Goldman Sachs saying?",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPNmJOQ0ZoY3dSUVNvNGw1eGZ5ZWR3OVRwM0JsaVl2RldpaVJFUTBPQmVXS29hbjdodE9RQ3plcGIycHRKeDR3MVVCR2VseHBKZkF5VFpicVVKSzNUNEU0SVlRazJod2RKUzNGaVU0NXM3X3kxSlpRYjN5ZHJuTFJSMVBzNjZ5SllPVzhYeDc4c3NoWklPU1gtNWlyR1p2TUp1dVFLZWw5d0xyXzZ3VXFXb2I0bGg2UXpiODFSaG4wOEJyaWNjdWJfSklHWDhMNC1iUm5wQ3EySXdWNnYybkdPakV6RDhXdnBsMnpvZFRRR1ZycTJKOGVvU1NycXBEQdIB_gFBVV95cUxPNmJOQ0ZoY3dSUVNvNGw1eGZ5ZWR3OVRwM0JsaVl2RldpaVJFUTBPQmVXS29hbjdodE9RQ3plcGIycHRKeDR3MVVCR2VseHBKZkF5VFpicVVKSzNUNEU0SVlRazJod2RKUzNGaVU0NXM3X3kxSlpRYjN5ZHJuTFJSMVBzNjZ5SllPVzhYeDc4c3NoWklPU1gtNWlyR1p2TUp1dVFLZWw5d0xyXzZ3VXFXb2I0bGg2UXpiODFSaG4wOEJyaWNjdWJfSklHWDhMNC1iUm5wQ3EySXdWNnYybkdPakV6RDhXdnBsMnpvZFRRR1ZycTJKOGVvU1NycXBEQQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:06:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|ANALYST_ACTION+EARNINGS|bank-fall-hdfc-jefferies-results.-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:39:27.379515+00:00",
-  "last_updated": "2026-10-19T13:39:27.379612+00:00",
+  "last_updated": "2026-10-26T13:39:33.418546+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:39:27.379602+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:33.418523+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:33.418541+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

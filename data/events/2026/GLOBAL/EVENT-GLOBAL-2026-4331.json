@@ -384,6 +384,43 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to KNR Constructions, and BSE. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -396,21 +433,41 @@
       "published": "2026-10-25T09:40:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "KNR Constructions Limited Estimates – NSE:KNRCON",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9PSzV4NGtkUS04bnh3N29pdDZrR1Z4OTBmUDlLMU52TTI1cmxLWFZUb2dqcmpyQllwQkVaeDhTXzI2RXFBRWNMUldMcEF3QjJFbTJla3UyaVZBd2VqSWVhUlJUQl9xdE5aM3JhYkkzV3ZCMWJpcDhB",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T02:13:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|OTHER|bse-constructions-estimates-knr-knrcon",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-25T11:48:11.768184+00:00",
-  "last_updated": "2026-10-25T11:48:11.768248+00:00",
+  "last_updated": "2026-10-26T13:39:18.790585+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:48:11.768239+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:18.790556+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:18.790576+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
     }
   ],
   "price_reaction": {}

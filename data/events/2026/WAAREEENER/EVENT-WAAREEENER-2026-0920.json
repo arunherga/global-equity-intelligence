@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.39,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
@@ -30,7 +30,7 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +39,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -58,21 +58,41 @@
       "published": "2026-10-08T11:17:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "TCL SunPower launches 505 W back-contact solar panel with 24.7% efficiency",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM2xOTTZrRnhIVXM3MDFubjZXUW1GVjA2QXE2SEdkdG44VDB0UkozdkZncWduTEE3YWRUUWNoeDNaa1ZFM285a1p5SWwwZzRGeVh5ZmVLU3ZZRTdNNWZXSkt4a3hKV0pQVHR5d01LMkxiSUQ2Rk9KaHpyLVlqSzhzZ05weXduOVFCdTZWSEVpbDZrbmI2Wm1RMWJ2aDdWVGd3czdPaEVSM21sa2lDOGhBbElmVQ",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T07:25:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com Nigeria",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|522-watt-launch-monolith-panel-solar-sunpower",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-08T13:52:54.439031+00:00",
-  "last_updated": "2026-10-08T13:52:54.439116+00:00",
+  "last_updated": "2026-10-26T13:40:04.778737+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T13:52:54.439103+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:40:04.778714+00:00",
+      "change": "sources added",
+      "detail": "pv magazine Global"
+    },
+    {
+      "timestamp": "2026-10-26T13:40:04.778732+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

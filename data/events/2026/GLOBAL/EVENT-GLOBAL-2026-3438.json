@@ -5,18 +5,24 @@
   "event_date": "2026-10-17",
   "event_types": [
     "OTHER",
-    "NEW_PLANT"
+    "NEW_PLANT",
+    "LEGAL"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REGULATION",
+        "REPUTATION",
+        "CAPACITY",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -24,6 +30,13 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -35,31 +48,39 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Regulatory or legal action"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are regulation, reputation, capacity. Classified as legal.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REGULATION",
+        "REPUTATION",
+        "CAPACITY",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -67,6 +88,13 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -78,20 +106,23 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Regulatory or legal action"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are regulation, reputation, capacity. Classified as legal.",
       "ai_analysis": null
     }
   },
@@ -385,16 +416,136 @@
       "published": "2026-10-25T14:24:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI’s 4th data centre in Bhubaneswar to improve uptime, reduce downtime of fin services",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/rbis-4th-data-centre-in-bhubaneswar-to-improve-uptime-reduce-downtime-of-fin-services/135197519",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-25T20:32:07+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "RBI’s 4th data centre in Bhubaneswar to improve uptime, reduce downtime of fin services",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQdWhBZnU3WDVhX3VHR01ndjhQWlV4Y3haZVNJX25MV0lsaTBTbU5UNzJyS2FydHhvYXZTaUJBeW9jWlBObWxFMlpRVTZqT0RwOXhUQUNGQ3BaLWgzOTd1amNOSG03SVJTRElTNFhLeXRMTVZVSXUxOXViNGZocDdCQ1BNWmFvb2JpRWVSR2UtVUdzYndHWEpLYTFxY1lzM0UzNFNGRWRlYmRMVzl5ZXV4ejFDMnluVTBqemJwTjZFdmhENllvcDlUYk93SEJFd2FwMm5WcGtjeUxscG9sSGJ30gHkAUFVX3lxTFAxaHBobkRWLU93TEgtUWNTT001MUZsTDdOS0RqS2QyWkd2ejloM2E3aWhxZ05LNFV3WDRzRk56SFp4NXgyWTdubWt5NlZrSGJ1MlVvam84YWEzZjVoNERYXzVOd2dOanZJSjkzUmZtNmtTUzViQXFRVjFfTF9OZUpjUm8wdmlMTENnWG9nOGs4S3VJblhoQmdMOTVNcXNhM29BWDhFQlFhZXhzcnpxcnoydFBLM0tza0RHbDg0RlRFOXRkQnYxOWhfTUhteUs3N1l3LVd2S1hmbEp4bDBVc0xsd2pEMA",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T20:32:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Odisha: PM Modi inaugurates RBI Data Centre and Cybersecurity Institute to strengthen digital financial security",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPU3V0RksxV21WRVgtd1d0M1lybnZkaWVybk5oNEszNEUwRG5BTEVDeU4yQ2JhMXNOVkF2Nnlxa04xb1E1Q2gyRVJYYWYyaEhiTXNFYVNJbE5ub3dGa1JGZGU2ZUhRczJMZG0tbnUzdlZUZkhVaGtwcW0xZUxLTzc4Ry1KakhRODNfQ1E1cXJPb2VPTHYycnkxWWhzaVB5Y2N2ZGQzV2RqN0V0STdBQ3Nna2RFR0liNWdtSk02dldPZlRUdFJWT21qZXNrZThVQ1FBZTdQeE5sU05jRnJWeDRkdzcyOVVIdGNhZkc4TGJlT1Vncl9TdWfSAfYBQVVfeXFMT1N1dEZLMVdtVkVYLXdXdDNZcm52ZGllcm5OaDRLMzRFMERuQUxFQ3lOMkNiYTFzTlZBdjZ5cWtOMW9RNUNoMkVSWGFmMmhIYk1zRWFTSWxObm93RmtSRmRlNmVIUXMyTGRtLW51M3ZWVGZIVWhrcHFtMWVMS083OEctSmpIUTgzX0NRNXFyT29lT0x2MnJ5MVloc2lQeWNjdmRkM1dkajdFdEk3QUNzZ2tkRUdJYjVnbUpNNnZXT2ZUVHRSVk9tamVza2U4VUNRQWU3UHhObFNOY0ZyVng0ZHc3MjlVSHRjYWZHOExiZU9VZ3JfU3Vn",
+      "source_name": "Organiser",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T05:08:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM Modi Inaugurates RBI Data Centre and Cybersecurity Training Institute in Bhubaneswar",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRHNlUXRkQktZajJ4ai1pUUxxRzVLTjhsdWNpaDN4bklzX3JseWRJclctdWxaY05xZjFFel9GaHZiWE9iZW1POWFhandtbWdidUlIMmtlclc0UlZzU2xnMW1OckhWLV9hamZwQXA2ZXJDR21aZzVXazlhLVB2YXlTWEZ1cUJqS09QSXRmY2tHc2ozWnZodTcxY2gtUEN4TnBsd3JDeUtzakNIWVl4R0t3cmdzazVvWVZVOUtWSGJB",
+      "source_name": "India Business Trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T19:05:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM Modi Inaugurates RBI Data Centre and Cybersecurity Training Institute in Bhubaneswar",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTGE4VFp6TTgwYVozNTQ4Q1hhTjB3NGl2YjNaR2k3Ti16MzJJX3B5RXBFLTZpamhwNTg2aF84aEtrbkF0Ym1aUUhiamNLbG9keEtTUml4ZHF1UncxZmJXMkxLaHczNEtUR2E0emRUZHlpVnhBbWZMX3I4SUR6M2ROdlkyRzF4Zll5ODJxTDFVa1V1RS1wbkNXUkNueUJqTHltdlg1QlBkUWtYaERaWW5Td3hFNjdQbWs3LVE1aEszbEI5Y253M0plclNR",
+      "source_name": "Business News This Week",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T02:58:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM Modi Inaugurates RBI Data Centre and Cybersecurity Training Institute in Odisha",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUGlKRHVfOF9MdEhlMjJBaUV6QWUzWk03eWlrdFVob1doa0FYaEZRa1NEUHBHUkZ2WXNFNXRfUExWZXZPV1NTa2hBY09aSF8zZGQzQTdCckdiSDN4c2JZYl8yX2pQV2JyRTRQRVduaTRUQmhyYnpod2xrVzJkWkRlLWpaeENuOWZ0X21LckQ4d2ZGWGt2RnV6SnN3",
+      "source_name": "www.nationpathindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:08:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM Modi Opens RBI Data Centre and Cybersecurity Institute in Odisha, Warns of Threats to India’s Financial System",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLWZHYXFESVdUM1ljNHZCcS1xbFNXZFZRNk9iNWZjLVZTZF90TDlZS2lBMzFuX1VZTlpreFFES0hDTmZSZ3F2ZzU2YlhvNzc4ckJqYXVZSVYtT09fUWd5ZHhQbldwT2UyZnpZbDk2Wk9WMU1yb1J6Sl9fSUpaajNsejc4NW51bVVrS25TT2Vwb19tUFhjQWtpM2UwcVVZb2hfc005SnN3",
+      "source_name": "Indian Masterminds",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T05:22:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM Narendra Modi Inaugurates RBI's Data Centre and Cybersecurity Training Institute in Bhubaneswar, Odisha",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTkNDZVBZZ0tJRjc5ejhfRkZ0eW9ZMXVRTUNTVGVFdWhiMXVzY0tWWWpVZDRNS25OR25FT1owNXd2Qjh1QTFlR0hJUUhfUUQxSXFlT1hUeTNwWnNmNVZaVUlVMEhENzBxVEk2cGNMX09fNHd6NnV4OWZYMnFnUlFUUUo1MF9ReVRCXzhHYTVPaVhxQXFYRFhXQVVPemZtLWs2Q3JXcmo0blFtRldpaGJieUJHdlI3VmQzNUNqeld2WXMwcWZraWJDcWUzQjBTZw",
+      "source_name": "Bankersadda",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T07:07:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "PM inaugurates RBI’s Rs 169-cr data centre, Cybersecurity Training Institute in Odisha",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1PVGlzNUwyNS1EWjJyemVtc1N2d0tEZWZGcEZwdnpuTmVnYXNRRmJ3UDZvQWhob3ZOT1JCQkJkQlh0TW9jbndNYWtYQWxiZmJIaWZhVjZOVQ",
+      "source_name": "Asia Insurance Post",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T21:31:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Data Centre and Cyber Security Institute Open in Bhubaneswar",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU005enFVWUppRjBvU2FNSm5ORHdXeUgxczJfZ3o5Zi1aYXdNc25wSWlUVndMZ2ZRa1hNcnlleHctcTg0b2RDelZ5QzM5Rl8yOG5vOHlxaVprVW4yWFNQNHRMVTU0d2pPM0hIbWJkeHprc3pfN1g3bFpsVjdkT01TYUJsZzM2MlJpOTZJaTJ3",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T20:39:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Opens Data Centre and Cybersecurity Institute in Odisha",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONEFNS29rS2pDdDdqSWszTXlJWEdDaXh0NzdRUlo5eHQyaW5UX1Jwd0FhNDZ5VE1xN01SLVo4VjhuSHptZmY2SVZpcXhjbTN4YmQ2TXFRVUpKbnktSVZCWU84R2ExLUVTTDZrQ2o5c1p4ZDR4TV93bWhjNVZwZHY0cFRIRDN1YXBOcl9kQQ",
+      "source_name": "OpenGov Asia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T14:34:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "‘Rs 1,000 cr given to billionaires earlier’: PM Modi inaugurates RBI’s data centre in Odisha, slams Congress’s ‘phone banking’ era",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNNHNaWk1kekw1RTN2cjczVV9LdkxiYmdLaDFRd3lfUEp3c2hzRUpjMVozMjdkY1JGMXJaMHVCWk9KQVl6Y3E2OFZZSFdoQVdfbThBdjlBOHVzajYyaXM5dkJfYzVnV2VSLVkySnE1NTJPN25ZNUVTZEdETnZXa2dhVldnSTFGTzlfa2YyWWlJV3VuLWMzYzNDU0JOcFdPZURsMmV5VldvWTNlU2VIZjZwa2xOOGs3UFc5YjVzdFJLM3h0Yk82VVNrN1F0aEFZZm5YSXBPWFZBc2F5aGxqQ3pZZ3RmZEI5Q0JuV0xXcmkyektKUTZlbmdoeWp2Q3ZBUERSN0Zv0gGIAkFVX3lxTFAyaWFnY1VQUHdzV1FuSEw3OHRwaXhYdG4zajlaVDRUNVpPME5GMGlmY1FDcmhEUENJenBRcnVoV0lZTDZORzJjcUVDTWNlbm4za0xqVVpHQW1zR3NOMmN4cUhiT0d0V2hidnhwNkVUSmtZQW1DOV93MEx0YU1mWEJGUl9HM1QzRnJQTGM2b0VhOTdVSTlEQ05jQTBqWjRFdVZONVQ1cWlXblVQTWd4NS01WGVRNmpqTThLOUFyQXJ6cDNNMlgwRVFKdnlwYVdBb0lnTjI5NlFOUlpMX0I4aHQ0cmxkX250Nmx0QndYTUpOWThoSGNERHNyUzFqbm1rSW1QSzlqdnhyag",
+      "source_name": "WION",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T09:41:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 29,
-  "source_count": 1,
+  "article_count": 41,
+  "source_count": 2,
   "primary_source": "The Times of India",
   "cluster_key": "HDFCBANK+TMB|OTHER|bhubaneswar-centre-data-inaugurate-modi-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T16:32:40.637544+00:00",
-  "last_updated": "2026-10-25T17:14:41.754121+00:00",
+  "last_updated": "2026-10-26T13:40:26.162456+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T16:32:40.637619+00:00",
@@ -480,6 +631,36 @@
       "timestamp": "2026-10-25T17:14:41.754104+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:46.614666+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:46.614684+00:00",
+      "change": "categories added",
+      "detail": "LEGAL"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:46.614691+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 4"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:46.614696+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 4"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:54.431573+00:00",
+      "change": "sources added",
+      "detail": "Asia Insurance Post, Bankersadda, Business News This Week, India Business Trade"
+    },
+    {
+      "timestamp": "2026-10-26T13:40:26.162438+00:00",
+      "change": "sources added",
+      "detail": "WION"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,185 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4369",
+  "title": "Brent crude oil price falls after Friday’s close above $116 a barrel",
+  "summary": "At 10.03 am on Monday, December Brent oil futures were at $114.48, down by 1.92%, and December crude oil futures on WTI (West Texas Intermediate) were at $101.01, down by 2.19%",
+  "event_date": "2026-10-26",
+  "event_types": [
+    "COMMODITY",
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Likely neutral to slightly positive. While lower crude oil prices do not directly drive sales, broader easing of energy inflation can improve discretionary consumer spending on personal care products.",
+        "margin_effect": "Positive. Lower input costs for petrochemical derivatives, plastic packaging, and transportation are expected to expand gross and operating margins.",
+        "cost_effect": "Decreased cost structure. A fall in crude oil prices lowers procurement costs for essential personal care ingredients (e.g., mineral oil, paraffin, surfactants) and plastic packaging (PET/HDPE resins), alongside reduced freight and logistics costs.",
+        "competitive_effect": "Industry-wide cost relief, but Ravelcare could gain a competitive edge if it uses expanded margins to reinvest into brand marketing, advertising, and promotional trade schemes faster than peers.",
+        "regulatory_effect": "Unclear or minimal direct regulatory impact stemming solely from crude oil price movements.",
+        "short_term": "Immediate relief on freight and distribution costs, though margin benefits on raw material inputs will materialize after existing higher-cost inventory is consumed over the next 1–3 months.",
+        "medium_long_term": "If lower oil prices persist, sustained gross margin expansion will allow for higher reinvestment in R&D and consumer acquisition, or potential price cuts to drive higher volume growth.",
+        "second_order_effects": "Sector-wide cost savings could lead to aggressive promotional activity or price reductions by competitors; lower headline inflation may support general retail footfall and discretionary spend.",
+        "key_uncertainty": "The sustainability of the crude oil price drop and the exact lag duration required for lower commodity spot prices to flow through Ravelcare's supply chain and inventory cycle.",
+        "monitor_next": [
+          "Brent crude oil price trends and spot market volatility over the next month",
+          "Plastic packaging resin prices (PET and HDPE) in India",
+          "Gross margin trajectory and inventory holding commentary in Ravelcare's upcoming earnings release",
+          "Competitor pricing changes and promotional intensity within the personal care segment"
+        ]
+      }
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to crude oil, and intermediates. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear to slightly neutral. While lower input costs may lead to downward pricing adjustments passed to end customers under cost-plus contracts, API volume demand typically remains inelastic.",
+        "margin_effect": "Positive. Lower costs for key starting materials, solvents, and petrochemical derivatives should expand gross and EBITDA margins if finished product prices hold firm in the near term.",
+        "cost_effect": "Decrease in raw material and operational costs, specifically for basic organic chemicals, solvents, intermediate reagents, and freight/logistics overhead.",
+        "competitive_effect": "Neutral across the broader Indian API sector as all manufacturers benefit from lower input costs, though players with flexible contract structures may capture higher short-term margin gains.",
+        "regulatory_effect": "None identified for this specific commodity price event.",
+        "short_term": "Relief on raw material procurement costs over the next 0-3 months, leading to lower working capital requirements for new inventory purchases and minor gross margin expansion.",
+        "medium_long_term": "Over 3+ months, downstream customer pricing negotiations may absorb some cost savings, normalizing margins while keeping overall operating costs lower if crude prices stay down.",
+        "second_order_effects": "Lower secondary costs for packaging materials (plastics/polymers) and reduced freight surcharges, alongside enhanced working capital efficiency due to lower inventory holding costs.",
+        "key_uncertainty": "The magnitude and sustainability of the crude price drop, and the time lag before basic chemical intermediate suppliers pass savings down to API manufacturers.",
+        "monitor_next": [
+          "Trend in Brent crude oil prices over the next 30-60 days",
+          "Price movements of key organic solvents and intermediate building blocks",
+          "Gross margin metrics reported in Supriya Lifescience's next quarterly earnings release",
+          "Customer contract renewal terms regarding raw material cost pass-through mechanisms"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Brent crude oil price falls after Friday’s close above $116 a barrel",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/brent-crude-falls-after-fridays-close-above-116-a-barrel/article71625601.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-26T05:04:45+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY+RAW_MATERIAL|brent-crude-fall-friday-oil-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-26T13:21:28.758846+00:00",
+  "last_updated": "2026-10-26T13:34:17.127419+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-26T13:21:28.758919+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:31:17.200896+00:00",
+      "change": "ai analysis",
+      "detail": "RAVEL via gemini"
+    },
+    {
+      "timestamp": "2026-10-26T13:34:17.127402+00:00",
+      "change": "ai analysis",
+      "detail": "SUPRIYA via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

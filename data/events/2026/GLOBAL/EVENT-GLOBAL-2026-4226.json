@@ -11,10 +11,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -27,18 +27,26 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
-        "-2 Single unverified source"
+        "+2 International market development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -48,7 +56,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -205,16 +213,86 @@
       "published": "2026-10-24T18:29:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India October 26: Gold prices up in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-october-26-2026/article71626054.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-26T08:44:07+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Fed Rate Decision This Week: Will the US Dollar Strengthen and Gold Prices Fall? (26 October 2026)",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd3EtUWZLbjQ3TTBmaEZyQWlCT1VaTGp1Y2lrMTM2MW9wOUsxUUVfUmM4T1ZhN1RSdnRkaGxrX25vZmxMaHJsbTdnQ2xvLVlOcnR2M0R0LVl0QUZGamRJUEVYWlpwRzUtTm5UY0JMSFFuSUlkZTFHMHVPdEVqdTlYel9ZVm41eF9vWmlKcnNB",
+      "source_name": "Mitrade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T09:47:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today Hyderabad: Rates Surged On October 26",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVJUSldUY0lITEU2VWdpdlBTbXktbGQwVy15Rjh1dzctb3lRVGw5a3dfQVBod0ZaekZzbmV3d0xNQnFwX1dPY2JhYWkwazlTZkN3YmFFaTQzT2pHVW5uRWwxTjFEY01ncDkwLXRNQldWangtRGNIdDJVazUtT091Z2lR",
+      "source_name": "INDToday",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:37:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 26: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPU1o4VklUSFlILTdoXzZzTDlqYlhGTFpSWm1XNkZkcWdfVW1xU0ZmUTBSMTJ0NC0zdjNwc0VyUGN5N0xycHRHRnJmbC1ubnRxcHgtLWRzVGtQcGVzSlA4NVJtRGZLeDBQTXVXV3Y0UlVxb19INnM0NEMwdFEtLTZ2UXhSVjRoLTJfQ2ZSNWdKaklKT0hjYVN0Ty1SSEJWSllHLXlDRTYxQ0ZBU011WFBxQTdZekE3a3I0XzVSRlVCYzJUTjNrd0FpSW4wTUhXdHlNaGY3WmJyX1pJUTAyWWk4ZzAzZUhMNS1oeU01NmFWX19GTTBaR21VNW10ZjdrNjRYWlRxeGZIRnlvVHpfTHljQjhvNDZRMmhIQUZOSnpWTGgxQdIBqAJBVV95cUxPakNfTDgzNFB2ZE5kcmVFcE1BdXd1cThfelFLY3hHVjZLVElnWFNXOXZUU0JOQWtObjBHWTdQOWJLU21EZ3FsYU91ekY2V3YzczlJRkxHbjZWTVdOWUU0MmxnbWNLU1IxYkNMY1hsUnFwazVnVXJ2aFpmZ3pfd3hWVFFYcTJRa29HbEJKMWZFaVQ4NFRUMlEwQk5RamozdExsYjVLNzNTc0JoeURvMVdoMEdaRWJvakpYc0VWSFU1Y0VBV2tJZ2VSNzFrTkFLTlBtX3JvVUREUWdLRVIzSVBqY3dWUm9tNXgtVFQwOUNTUUNGaUM5RUZ2c0UxRnpyYjhIX2hOa0kyZk94Q2FoRmFWYi1lSHZNbFBuMjhNRnJyRHdmR3lpVFJKTw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today October 26: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOYUVBT1JiNXJZOGoxQ3B2eGdFYlFxRlB1clVYZlRjbHFfYWctTHZjQ1UzOC1ua21DbEI5eDhNTTlIVkdwbGVHeHlJTUhDNXJRWjYxa1BhV3gxbFVpbjFQRDhKenZueFRwa19UMkVSSXJ5S2cyZVBNNlJwUDVmaV9Tc3Z2X1lCLTI4UUZWTVFMTlMxRjFwVG1KaTRDQnE5NjFIRWJXUDhiTV9hdjhzRzZub3psaW9HaWE4eldkR0prS0xlVWtHMzBaSG9SRnlad25Mc2UwYV9DUTR2dlAzMkpDcHJ6TWhUZHRETXNFd2ttN0lUWVFITUo5bjFXU0pUckVtbUQ3X0ZOT0QyeXVUNmJkaWh2OFXSAZsCQVVfeXFMUGFocUx1bUNBQ2oyMkQ1LVRvbnhDYkJVZWdoTFd5a0o1VTVseVZlSk16czh5SmNMWkhnWTY1YTB6MmFId29RN0RvcS1xOVQyQjVYYUVQaUV5M1YzZnUtRFBYWk4wT3VNNlN4bGZfUnQtUUZRc1NXLWhuOGc2cTBDcnJfQm5CNDl1OFZDeTZJRWYweWEzcXFzUWVHUmhCVGFoWHktUEFsdXQ5ZlNXUGhzdlIyWVpGV2Q1R2tPUnc0OURGaUhBcVhQbWV5NE5kLVR4aDhXcTkxZ0FDZGRkckxqbmVvNk9jdmlOY1p4b1ljUy1iajdqdFJuRzkxNFFnNWpjZW0tQ1VnRVlJR19IbzdmWG9wSmNhT0c0QnVnYw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in Muktsar 26th October 2026 : 22 & 24 Carat, Todays Gold Price in Muktsar",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZeU84VGpxNnV2dVRzV00wbmpGVmFtX1RpVTVTTlR3bWxZTVhrVk1WZkN2SDBIWmtQX3RNLXRNdnB4dm5tZENjaUJURDVDaU5zX1ZGdkd6QlhPVDZoazViLURaNnRiSklCSHliYnFGa1RIRmc",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T05:54:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in India: Rates on October 26",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVFlOS3I2bXlld2hyakN3Y3p5Z2o3TGZXc2x6VlRZNEhmdy1XX0xLRFp2VXl4RVVxY3BhMmRiMFMzTm1pM2M0YkstM3lwdmNhZElER2dFV1VnNDRjUDBKdFY3dXlVdFBiXzBhMEo4elIwYkVPb19kYXNOVDFjRWJ5SGx2V2oyaGt4eTNSc0NvT0VkaTJiZk5hRzF3b1ZYSnpOSThkeFRR",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:35:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
-  "source_count": 1,
+  "article_count": 18,
+  "source_count": 2,
   "primary_source": "DT Next",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|check-gold-gold-october-rate-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-24T16:45:00.178908+00:00",
-  "last_updated": "2026-10-25T17:14:16.389967+00:00",
+  "last_updated": "2026-10-26T13:38:42.446265+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:45:00.179019+00:00",
@@ -230,6 +308,16 @@
       "timestamp": "2026-10-25T17:14:16.389958+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:42.446240+00:00",
+      "change": "sources added",
+      "detail": "Business Today, BusinessLine, FXStreet, INDToday"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:42.446259+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 6"
     }
   ],
   "price_reaction": {}

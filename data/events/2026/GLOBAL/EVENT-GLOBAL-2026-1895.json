@@ -9,28 +9,14 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.62,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "credit growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "gold loans",
@@ -40,21 +26,22 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and credit growth. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -208,16 +195,26 @@
       "published": "2026-10-06T18:55:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Glitter of gold loans",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObnFmUHNkeE1FX1d6emZfMUVSV2ZROXM4OC1fMGFlSDNXSGtEY25YYWhPSG15dVBsUVlLZGFQQXRIQmt4QmFXc25YRVR5Vl9HX2hhbFZqY3B0dEtNYWQwb2otYWE1YUZMR2RnendzaWFEaFVEeWhteVZfVDhjdWUyWGZFcFdMS0pGUmtSQklab2c2eGdsNXVqbNIBngFBVV95cUxNNTFscldGTHgyWDlTVmFZRi1HaXd4MUdYN3FqWndTLXQ5X3JRZU5Va0NBeG5ZN0ljeTd2Y3lLeG1vdFlxN0RuVVZFLU5XMjcwQTZwcDR6XzJCTW1GN1FaV2phWlBPYWJsTjdVUmEzd3R2Ui1YZ2hNcjFqR3F1QmplLVdMelIyYTRpQVA1eThTdTVMQnBxWHJZUVNwRmZ2dw",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T16:47:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 11,
   "source_count": 2,
   "primary_source": "prameyanews.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|22%-accelerates-loan-nbfc-retail-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:39:12.383760+00:00",
-  "last_updated": "2026-10-07T13:51:23.663295+00:00",
+  "last_updated": "2026-10-26T13:38:58.291359+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:39:12.383839+00:00",
@@ -238,6 +235,16 @@
       "timestamp": "2026-10-07T13:51:23.663276+00:00",
       "change": "sources added",
       "detail": "BW Businessworld, CNBC TV18, Magzter, MillenniumPost"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:58.291334+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:58.291353+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

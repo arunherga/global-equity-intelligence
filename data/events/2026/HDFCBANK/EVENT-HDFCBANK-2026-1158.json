@@ -1,0 +1,151 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1158",
+  "title": "Ashima Limited ASHIMASYN: DRAT Settlement With HDFC Bank, BBK",
+  "summary": "Ashima Limited ASHIMASYN: DRAT Settlement With HDFC Bank, BBK Kalkine India",
+  "event_date": "2026-10-26",
+  "event_types": [
+    "LEGAL"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION",
+        "REPUTATION",
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are regulation, reputation, competition. Classified as legal.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REGULATION",
+        "REPUTATION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, reputation. Classified as legal.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "unclear. A DRAT settlement typically involves a write-back of provisions or direct cash recovery recognized in other income, but specific recovery amounts have not been publicly detailed.",
+        "margin_effect": "unclear. Any one-time provision reversal or cash recovery would temporarily aid net profit margins, but the magnitude relative to HDFC Bank's overall balance sheet is likely minimal.",
+        "cost_effect": "Slight decrease in legal and court-related operational expenses following the resolution of the DRAT litigation.",
+        "competitive_effect": "No meaningful change to competitive positioning, though successful legal resolutions reinforce disciplined asset recovery practices.",
+        "regulatory_effect": "Resolves outstanding DRAT litigation, contributing to legal compliance and alignment with RBI guidance on settling long-standing NPA cases.",
+        "short_term": "Resolution clears a legal headache; any recognized write-back or recovery could provide a minor one-off boost in the immediate quarterly results.",
+        "medium_long_term": "Negligible structural impact on long-term growth or strategic position due to the massive scale of HDFC Bank's loan portfolio.",
+        "second_order_effects": "Frees up internal legal management capacity and establishes a completed recovery precedent for multi-lender consortium arrangements involving co-lenders like BBK.",
+        "key_uncertainty": "The precise financial settlement value and recovery terms agreed upon among Ashima Limited, HDFC Bank, and BBK.",
+        "monitor_next": [
+          "Official exchange filings disclosing the exact financial settlement amount",
+          "Provision reversals or bad debt recovery figures in upcoming quarterly financial statements",
+          "Final DRAT court orders confirming formal case closure",
+          "Management commentary during quarterly earnings calls regarding legal asset recoveries"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Ashima Limited ASHIMASYN: DRAT Settlement With HDFC Bank, BBK",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbWVLNUVqQmYzb3Z0cXhKZ3l5a0JtOWVXck5fbFU4cFB3V3RaQjloakh4bkc5MW1RemFuTGVEZjdJU0kybmN4THU0bVJiQ2s4U0c4TW9TWFdtY1FiN0ZVVmNkU0dqLUs2QUpjVXF0NEhrTkxuQ281WFVnTW5ad01sazB6VGhpTzd5YkhCbmxXcS1udkpqanZCdmNIMXhiT25XV3hfcGpCVGZBQlBRSExB",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T11:26:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Kalkine India",
+  "cluster_key": "HDFCBANK+TMB|LEGAL|ashima-ashimasyn-bank-drat-hdfc-settlement",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-26T13:28:12.169898+00:00",
+  "last_updated": "2026-10-26T13:37:25.502486+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-26T13:28:12.170316+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:37:25.502470+00:00",
+      "change": "ai analysis",
+      "detail": "HDFCBANK via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

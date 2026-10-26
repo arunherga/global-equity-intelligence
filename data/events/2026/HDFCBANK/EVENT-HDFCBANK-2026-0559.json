@@ -138,6 +138,47 @@
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REPUTATION",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Infosys's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -160,16 +201,26 @@
       "published": "2026-10-19T01:38:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stock Picks Today: Infosys, Kotak Mahindra Bank, Dr. Reddy's, SBI Cards, And More On Brokerages' Radar",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNMnNuV1E1NzhRNkZ3dFcxWFJQMUJKNnNSYnZEWmtPcWFOc0UwSjJfWkx0ejlzY1BkQlNDdFdfb1pEbmNnekpmTzVpSUZoM1Zyb05sUDRVb1lKRlNTWkpfNkZzeEN1cy1RMnItUFRWZ2MzWWE4Yk1naHVvbEdCYnBBb0N2TkVweTRhMTdHWkdvWmRyUVFkdG4ydGFJNVJmMWVmZjl3T1NkcmUtTERHUEpYSXpIVG90UUZTYXZ3a21maHFEeW5vV19LaTc3OTBGUmx2UVZKdTQwYnNHbHZQN2hCQkxTQTJQX2JtQ2FKUFktQzlJa0IyWXpmX1o1NEZaWGtRcnNRbFpGTXk3WlVMUzZUdzI0UDMxMlpPUTJaY0VHZ9IBpwJBVV95cUxPcVFBcW53LTY5V1ZyU3V1a2FadWdMSDYtbnlHd29wMnpZUDF1REc3MVZOLVNDbkZQU3BIQTZ4N3VXaXhhazlERVNXaWJLV05UN1VYOG5pR2tOTTVDX21iR293QTQtQm04VWx5VGNDMFp3YmRwYkc4dXVfQ3pwUFdaekUzejA0cmM2dDNQSnJOdVF0SUxiVzZkYXlOWHl0RjNYVmNHYW9tOVRGMUJOX0RZcm13cUkxWldneXZsa3FiZEdwZWV2ZU9DcU1wb19pZTUwM2o3eDdGZUM3TF9pRFBZX2QxZVVDaUwwRkR4LWN4aWlvRGI1bEFrcFF3S2ttQXB5R204V0pLUk04VmtCdzl4b3RpMFhuSlBEbVJyS0hnMnhZUS1mb2NN",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T01:07:08+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "HDFCBANK+RAVEL+TMB|ANALYST_ACTION|axis-bank-hdfc-picks-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:35:04.586458+00:00",
-  "last_updated": "2026-10-19T13:48:44.591485+00:00",
+  "last_updated": "2026-10-26T13:39:15.526935+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:35:04.586532+00:00",
@@ -180,6 +231,16 @@
       "timestamp": "2026-10-19T13:48:44.591468+00:00",
       "change": "sources added",
       "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:15.526912+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:15.526929+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}

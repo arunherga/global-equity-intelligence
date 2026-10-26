@@ -1,0 +1,135 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0181",
+  "title": "Perfection Fresh Admits Aldi Vegetable Price Fixing",
+  "summary": "Perfection Fresh Admits Aldi Vegetable Price Fixing Oz Arab Media",
+  "event_date": "2026-10-26",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.39,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Perfection Fresh Admits Aldi Vegetable Price Fixing",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0tTHhTWW8yUW5BVmo2Ri00Z0R6T2h6OFI1dThQYkEwei1ZSWlVQm5leXhiRUFwZFR4UWZmcHItNlpXdmRWTDRBY0VCWUw4WmQycEd5UkdFRlh2WTBuNGVxaVZka3V4NFB6cTBKMGdidm5IM1ZiTjEzYnZjMEVyQQ",
+      "source_name": "Oz Arab Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T03:01:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Perfection Fresh agrees $12 million penalty in Aldi NSW vegetable price-fixing case",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb3Y3QjFrblFTU3RxZS1DV2dybVU2NFg5QUhwTE15WU1BbFdfcHBMbHdZTWV5bDNvakE3MzNfSXdVRC1fSE90VXJ6U3hYcUJocFAwZHJvQlJjakRSOHRDX1ZKWXVTTjVtUjN3RW1EOEZiWkJoN2wxUExwNXZpTWhoNnBiYmJXMTVrbjVMaWh4aWpjQnB6dEtnTkVSYjM",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T03:11:18+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Oz Arab Media",
+  "cluster_key": "FRESHARA|OTHER|admits-aldi-fresh-perfection-price-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-26T13:23:53.844093+00:00",
+  "last_updated": "2026-10-26T13:39:24.057635+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-26T13:23:53.844170+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:24.057611+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:24.057630+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
+    }
+  ],
+  "price_reaction": {}
+}

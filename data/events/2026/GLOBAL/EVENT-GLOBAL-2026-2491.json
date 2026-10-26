@@ -4,19 +4,21 @@
   "summary": "Gold Price Today: Delhi Gold Jumps ₹1,900 to ₹1.544 Lakh, Silver Rises ₹4,500 Sangri Today",
   "event_date": "2026-10-09",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "REGULATORY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,16 +32,18 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+4 Regulatory or legal action",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -47,19 +51,39 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, regulation. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. Rising input prices like silver may lead to higher average selling prices (ASPs) for solar modules if the industry can pass costs on to buyers, but demand could soften if project IRRs for developers are negatively impacted.",
+        "margin_effect": "Negative pressure. Silver paste is a major raw material cost in solar cell metallization. Higher silver prices directly elevate cost of goods sold (COGS), which compresses gross and operating margins if contracts are fixed-price and costs cannot be fully passed through.",
+        "cost_effect": "Direct increase in raw material input costs. Conductive silver paste is essential for solar cell contact formation, making procurement costs sensitive to spot silver price increases.",
+        "competitive_effect": "Neutral relative to domestic peers as all PV module manufacturers face similar commodity inflation. However, manufacturers with advanced silver-lean technologies (such as optimized TOPCon paste laydown or copper-plated contacts) or robust commodity hedging will hold a cost advantage.",
+        "regulatory_effect": "No direct regulatory impact anticipated from commodity price fluctuations.",
+        "short_term": "Immediate margin risk over the next 0-3 months as existing low-cost silver paste inventory is consumed, requiring replacement at higher market rates for unhedged volumes.",
+        "medium_long_term": "Pushes the company to accelerate R&D into silver reduction (e.g., zero-busbar technology, silver-coated copper paste) and structure long-term supply agreements with index-linked price pass-through clauses.",
+        "second_order_effects": "Increased working capital requirements to finance raw material inventory at elevated price levels, and potential acceleration of industry adoption of alternative metallization technologies.",
+        "key_uncertainty": "The proportion of Waaree's silver paste exposure that is effectively hedged or covered by existing customer contracts with cost-escalation provisions.",
+        "monitor_next": [
+          "Spot silver price trajectories and silver paste premium trends",
+          "Waaree's gross margin commentary in upcoming financial results",
+          "R&D updates regarding silver consumption per watt (mg/cell reduction) across cell lines",
+          "Average Selling Price (ASP) adjustments for solar modules in domestic and export markets",
+          "Management disclosures on raw material hedging strategies"
+        ]
+      }
     },
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -73,6 +97,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
         "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
@@ -90,7 +115,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, regulation. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -104,21 +129,71 @@
       "published": "2026-10-09T16:54:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices fall today, silver becomes costlier: Gold falls ₹340 to ₹1.41 lakh/10 gm; silver rises ₹635/kg",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFRlRVE5a1prS1F2bGtVTXVITjI5WmE0Ym5hNklsU0ZmR2ZLTk1yU2RraW5rZF9zMzFJcFJTd0VaTTctY0ZHTnRuQlBMVHM3RjlEbjdqNFQxWW4zdE1hNFlmbkF0UG5Ydjk4UXBfQ2RZM3NzZkZ2UHY5TTZYWm80MGE1YlM1WVQ5TlBFcUN1QVZXS2FOVXYyQTNWYU5PalRteGlXUjFjWdIBrAFBVV95cUxOYUlVaWpFSHdoVmEtLXRyOWFUUEdyellELW1PSzhoSW5SUjNERHV1bFAtYUt4VGJvTVk1LVNxYTR2MnNaOXJRMmg2eU1mOUVuMGlrTXN0VFFNVmhMdE5yUTlJVDNsbDFsQTlmZWVudFNYaE9HZ1A1TzlSb0NVbmY5NG5mOTJYTWxxZEIwWi1YSzdjb1ZRUExfLWJZUlFkZDlLMUg2eVJ4Q2tobF9F",
+      "source_name": "Bhaskar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T07:12:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices rise Rs 700/10 gram; silver gains Rs 1,500/kg ahead of US Fed meet. Key levels to track today",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOSG1XMlRSQmNlbDBzTHR2c2pFY2lGTWtVR1IzM3IxMERSRFlmdm9EY2JVbmhtZkx0SllncFNkbTZaeEVBbFY5QkFaZnlsV0NYUDByeE9neDJ1cE4zUUJEZ1FlQ01Rc3A1YUl3OExnOVE4WURSeGVMa1JiY1ozSGNOdWlUcnNPeTl0LTRrUi1aSU9na2w5S2laczNidGVjNmpmQWtsN21rVUZaVWlPWlBleEVHNGtQcEw0cU9KV19PRHpSYVB3LTA0cVRDLWUzMEFqQjF5RVgtWFpTMFpNM2RFYUpMUjM0ZjdrbWlva3FveGpfYzhHRl9tSkxkU293ek84V3FDb0pPNjJXeHNScjlrMXVKc9IBkwJBVV95cUxOSG1XMlRSQmNlbDBzTHR2c2pFY2lGTWtVR1IzM3IxMERSRFlmdm9EY2JVbmhtZkx0SllncFNkbTZaeEVBbFY5QkFaZnlsV0NYUDByeE9neDJ1cE4zUUJEZ1FlQ01Rc3A1YUl3OExnOVE4WURSeGVMa1JiY1ozSGNOdWlUcnNPeTl0LTRrUi1aSU9na2w5S2laczNidGVjNmpmQWtsN21rVUZaVWlPWlBleEVHNGtQcEw0cU9KV19PRHpSYVB3LTA0cVRDLWUzMEFqQjF5RVgtWFpTMFpNM2RFYUpMUjM0ZjdrbWlva3FveGpfYzhHRl9tSkxkU293ek84V3FDb0pPNjJXeHNScjlrMXVKcw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T06:52:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices recover after sharp fall on buying at lower levels",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSDR2UWFUYlVVVlZhQXFMcjNFUnlhalBGemRyc2ZFSXY4eDJOb1ZLWXNoZW5hT011M19uSVNsZER3M3BrUUhkWDA0dFNuWlFxOHJoR25tVFhhbDA3VmdEMGJZNW9LQmQ3aklYeTFGbjBVUTB0NkVqUDVqTUFDTXZhNWpVYUJ5czkteHFFaEE3V0pMM0prR1dTUHE2aXp0alNTclJVbUN2ZTNFNzMzVWVaMG1jWkIzbU5hT2c0VlYxNzFRaXU5ekgyT2hRZ2d4c050b0VMbVRKcnNvS03SAeABQVVfeXFMUFEweFppY2d2SUk3b29HSXNMOWNTZlJFRnExSnY3eTF2T2VGYS1vM2dyYlQ2YVQ4M0cwU0J5ZG4yWC1pVjRqSVI0TkpxLXFleTN1Tm1xSl84MGhqTU1PMEpMRFl0VVV3VjIwb0xnOTRyVnZXeHhkbm5kTkFKZUJicU9lN05velJBNEljWnJWVkdQZkhOaF9tR3cwTXdtTURRdWR4dzZQd051cnpENnZiR1JqbzdidmhNVTZtbG9SazJTY2VRWW41QVBrM2VpZ0tYMFplbTBrYy1KWmhQdEhGeFQ",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:37:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Sangri Today",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|gold-gold-india-price-rise-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:41.676861+00:00",
-  "last_updated": "2026-10-09T18:59:41.676941+00:00",
+  "last_updated": "2026-10-26T13:39:38.050993+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:41.676931+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:38.050958+00:00",
+      "change": "sources added",
+      "detail": "Bhaskar English, Business Standard, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:38.050976+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:38.050982+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 9"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:38.050988+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
     }
   ],
   "price_reaction": {}

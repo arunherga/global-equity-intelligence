@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.55,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -29,15 +29,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "DCB Bank's follow-up announcements"
@@ -56,21 +56,41 @@
       "published": "2026-10-09T08:12:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Broker’s Call: DCB Bank (Buy)",
+      "url": "https://www.thehindubusinessline.com/markets/brokers-call-dcb-bank-buy/article71626523.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-26T12:58:47+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Whalesbook",
   "cluster_key": "TMB|OTHER|axis-bank-buy-dcb-direct-strategy",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:40:53.828132+00:00",
-  "last_updated": "2026-10-09T13:40:53.828214+00:00",
+  "last_updated": "2026-10-26T13:38:44.745506+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:40:53.828204+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:44.745481+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:44.745501+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -13,7 +13,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
@@ -24,7 +24,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "IndusInd Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -37,7 +37,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Axis Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +50,52 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (Axis Bank) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -84,16 +129,26 @@
       "published": "2026-10-24T03:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank Q2 Results: Net Profit Rises 37%, Provisions Fall By Over 50% To Rs 1,694 Crore When Is Father's Day (WWO7W3oJqo)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOMm9mTGtpUXd5V1JXWEcxeDhhNFdPZDhlYkE5NkNCZFpDWEh2elFSZkZTT1p5SDhZOFZRdVNpalI1S0JrY0xmQ2dfQy1KbjVLR0J0U2ZNVzJ6QnpqMHhTUGlMQUJ6QkRoYnNv",
+      "source_name": "Unisba Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-25T14:43:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "HDFCBANK|OTHER|242-bank-fall-indusind-profit-provisions",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T18:03:25.052796+00:00",
-  "last_updated": "2026-10-24T16:49:06.137646+00:00",
+  "last_updated": "2026-10-26T13:38:55.219120+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T18:03:25.052880+00:00",
@@ -114,6 +169,21 @@
       "timestamp": "2026-10-24T16:49:06.137643+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:55.219089+00:00",
+      "change": "sources added",
+      "detail": "Unisba Media"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:55.219108+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:55.219115+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

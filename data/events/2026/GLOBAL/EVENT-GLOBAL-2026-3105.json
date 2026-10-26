@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -104,16 +95,36 @@
       "published": "2026-10-22T10:09:41+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Form 6-K HDFC BANK LTD For: Oct 24",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYkstZDlmZS1tSlpxRWZ4NzZSZWhITUY3VGZRc0Z1aHk0dElIZWxiT1BaSTU4eGpjMUNCSDlYTHRiaEFNckdyMFI2aEZLd2Z1eXo1YjVXQzNWWWhuaHp1UC1Xb0p1cnJ5cV9xZlkwNU95bHQ4TmtJWWZxRkw3RmtGQ0pWVTlnNkdoR2Utb2N3eUtmRHZFMlF3",
+      "source_name": "StreetInsider",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T10:51:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Form 6-K ICICI BANK LTD For: Oct 24",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR2QzY3JldG5ueTFCR3FKZXRwajdnVlp1OWtxUEJNTENFLWRINzQtcmhfZmZRX0Vxc3BpdndoVHJhUWZRZEVrWnZpUUJCaGNUcF9zWVZuNVRfRFpQaE9ldC04RThsRHJSMFB6cXY1NkYtOGlodjREX054Q1lwekpoTGF0aWI4M0pvTG9HWW5YS0ZEZDV5VXN2cA",
+      "source_name": "StreetInsider",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T10:05:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Moomoo",
   "cluster_key": "HDFCBANK+TMB|OTHER|6-k-bank-foreign-icici-issuer-private",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:51:51.836351+00:00",
-  "last_updated": "2026-10-22T18:21:10.884799+00:00",
+  "last_updated": "2026-10-26T13:40:33.756479+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:51:51.836426+00:00",
@@ -124,6 +135,16 @@
       "timestamp": "2026-10-22T18:21:10.884788+00:00",
       "change": "sources added",
       "detail": "StreetInsider"
+    },
+    {
+      "timestamp": "2026-10-26T13:40:33.756456+00:00",
+      "change": "sources added",
+      "detail": "StreetInsider"
+    },
+    {
+      "timestamp": "2026-10-26T13:40:33.756474+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

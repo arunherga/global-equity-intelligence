@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
+      "impact_score": 4,
       "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.45,
       "business_impacts": [
         "PRICING"
       ],
@@ -58,13 +58,13 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 International market development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -85,21 +85,41 @@
       "published": "2026-10-23T07:45:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China solar module prices steady as proposed price floors meet skepticism",
+      "url": "https://www.pv-magazine-india.com/2026/10/26/china-solar-module-prices-steady-as-proposed-price-floors-meet-skepticism",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-26T05:09:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "pv magazine Global",
   "cluster_key": "WAAREEENER|OTHER|china-module-price-proposed-solar-steady",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T12:01:49.063912+00:00",
-  "last_updated": "2026-10-23T12:01:49.063991+00:00",
+  "last_updated": "2026-10-26T13:38:48.571103+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:01:49.063982+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:48.571079+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:48.571097+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 4"
     }
   ],
   "price_reaction": {}

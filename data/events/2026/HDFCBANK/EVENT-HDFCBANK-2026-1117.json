@@ -5,27 +5,30 @@
   "event_date": "2026-10-25",
   "event_types": [
     "EARNINGS",
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "COMMODITY"
   ],
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.25,
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
         "REPUTATION",
+        "PRICING",
+        "INPUT_COST",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Kotak Mahindra Bank",
+          "term": "IndusInd Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -34,9 +37,6 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-4 Opinion, preview or stock-tip piece",
-        "-7 Recruitment or examination notice, not a development",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,8 +45,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -54,7 +53,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Kotak Mahindra Bank. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are revenue, margin, reputation. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -68,21 +67,66 @@
       "published": "2026-10-25T06:31:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IndusInd Bank shares in focus after Q2 results. Why Jefferies cut target despite lender swinging to profit",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNYlFnNzlKUUNmaWtSTlREbjcwQmpfVmlGblNPZDdYWjdfSlVfQk1KbUFQNjlJTUVaM29uZ0Y4TEZJRVg1amFrLVpHTzZZLTh3UmNVaExlWFV0NDNpaXltMUdnODYtcU1DM0NjV3NHYk9HYWhWZ2F4dzk2cmtfclQ4QkxfdnpUelpfM2hOaU5oVXFmWFJnYUJXVzhIdkpmR3JLOWpGTlFGZXlCMl9wMDdIdnZ3OGJOMW5VOUZVNzZsR0w2bjh4Njkxam9ld1NmVFRDbDlkWUk3V3ZwWGJ6b0dzMjh3Xy1mSHhqZnFpQWdLWFl0Z2xyRTViWDNLekdsWHdXT0pYakRUM0ptN2tEdjZOR9IBkAJBVV95cUxNYlFnNzlKUUNmaWtSTlREbjcwQmpfVmlGblNPZDdYWjdfSlVfQk1KbUFQNjlJTUVaM29uZ0Y4TEZJRVg1amFrLVpHTzZZLTh3UmNVaExlWFV0NDNpaXltMUdnODYtcU1DM0NjV3NHYk9HYWhWZ2F4dzk2cmtfclQ4QkxfdnpUelpfM2hOaU5oVXFmWFJnYUJXVzhIdkpmR3JLOWpGTlFGZXlCMl9wMDdIdnZ3OGJOMW5VOUZVNzZsR0w2bjh4Njkxam9ld1NmVFRDbDlkWUk3V3ZwWGJ6b0dzMjh3Xy1mSHhqZnFpQWdLWFl0Z2xyRTViWDNLekdsWHdXT0pYakRUM0ptN2tEdjZORw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T03:52:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IndusInd Bank shares jump over 2% after Q2 results. Should you buy, sell or hold? Brokerages weigh in; target price",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNS2IzUTlwX2hLczhrVHBqTlNwa1duV0plTUhCUkxBa0E2QTVLWVBRbWJwNVE0ajFrZG1kVlJXd0NnVDZGZVNucGNmM05zNEtDOG9uaEd0SHZVcXRWMG5LUGxBc0pURmlMXy1vVWNkQm5LZjVpVGR4UUYxTkYydmFDNVFVZlJKWXFtRnlnLWQ1UHZ4by1mV01nVzk1LVJrUUhSZFViS2RMdVpFVHJZUzNZZWU0eHdEZWZJTzRSMGdzd1RiNXhYa0RqTUR5b0JEdVNhVXdOMHQzWUloc1NXOV9mZ0drLS13M0hHRjhURHp3Tk9ub1BIUXZ4ZS1qNEVTakdINWo1STBlSmJaWGdFeVo5dWFBMFTSAZoCQVVfeXFMUGZxbXZFZFdLSEhzdVdISDFzbjBTZHNMZ2ZJWUVPRC1ZNnJWQ3daMk9WTGoxTTdzRWpfN2VyLWwwWDJwLUQ3Z1B1SjV4NkZoUGpGWEdsU2RmaFdscUJfeVZvSTNxZ2pkT0gwRHUzZ05kNnVJc0FzbV9fYWRiZWVxVFB6SkRjWjJPMnNRbk9jRk1JN3hKRUdJeFFpTjlveEtnSldhNGphX0RaTDZnTWtXQXNMM20yaGZ3WDdDQnA1OTY4b3ZuRlprSXh6M21hcXlwbXQ0VWlYalNxNmdsTlVZNE1kUEtuN1pPbGZtT2ZXcktwS2tSRjdmWE9MWWdfb05venNsa21qb2Z4RUo0YUJqOHZUTFA0NWVCV1dR",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T07:30:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IndusInd Bank shares rise 2% after Q2 results. Why Jefferies cut target price despite lender swinging to p",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPdnBwS0F6ZHd5YXNHUmhMRjVfUVREZDNfby16aWVPZHZpekhHVkJ1RndMdTM1dFhRek95VG93bUJOak9WREJOXzlHTXg5Zmd4bTJvM2FKSm9QLTF3T1UzVS12aERyYnh0Qk90cmZJWmZ1N3lhemxFNXVaYjMzRGdDbXdYcHJsdlppREFnY2czN1RaQkNQYUlxSE5sd3FGR2s5RDBQeExOZ19xZDF3LUV4eHVQaVZOdTFoUWNHY0RseHUyOTZMaFVwaG9kZjhJdmFGSTNWVFJlbnAtSEgxX3FCd0pwM1duNzZGWnZHX2ZoekVKMWlYOG1xblJsYWdRQkJhOElITVV0ZjBVZUHSAZACQVVfeXFMTWJRZzc5SlFDZmlrUk5URG43MEJqX1ZpRm5TT2Q3WFo3X0pVX0JNSm1BUDY5SU1FWjNvbmdGOExGSUVYNWphay1aR082WS04d1JjVWhMZVhVdDQzaWl5bTFHZzg2LXFNQzNDY1dzR2JPR2FoVmdheHc5NnJrX3JUOEJMX3Z6VHpaXzNoTmlOaFVxZlhSZ2FCV1c4SHZKZkdySzlqRk5RRmV5QjJfcDA3SHZ2dzhiTjFuVTlGVTc2bEdMNm44eDY5MWpvZXdTZlRUQ2w5ZFlJN1d2cFhiem9HczI4d18tZkh4amZxaUFnS1hZdGdsckU1YlgzS3pHbFh3V09KWGpEVDNKbTdrRHY2Tkc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T03:52:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "HDFCBANK|ANALYST_ACTION+EARNINGS|bank-focus-kotak-mahindra-mon-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-25T11:47:47.795724+00:00",
-  "last_updated": "2026-10-25T11:47:47.795802+00:00",
+  "last_updated": "2026-10-26T13:39:30.938281+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:47:47.795792+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:30.938252+00:00",
+      "change": "sources added",
+      "detail": "Livemint, The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:30.938268+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-10-26T13:39:30.938276+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 3"
     }
   ],
   "price_reaction": {}

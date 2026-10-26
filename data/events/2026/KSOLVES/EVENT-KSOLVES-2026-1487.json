@@ -5,16 +5,17 @@
   "event_date": "2026-10-23",
   "event_types": [
     "GUIDANCE",
-    "EARNINGS"
+    "EARNINGS",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.65,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
@@ -33,13 +34,14 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Single unverified source"
+        "+2 Major industry-level development"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -112,16 +114,46 @@
       "published": "2026-10-24T04:58:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Infosys shares fall 4% after FY27 revenue growth guidance cut",
+      "url": "https://www.thehindubusinessline.com/markets/infosys-shares-fall-4-after-fy27-revenue-growth-guidance-cut/article71625657.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-26T04:58:35+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Infosys Shares Drop as FY27 Revenue Forecast Cut to 1%-2% on Weak North America Demand",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10ZVlDWXhuUkhXd20tQWFTaW1fakNxNTU4VTMxZlo2NVV3SVo1RnprWncwMEV3N1Nja1ZsLXd3T1ZfUGFQSmR2ZkxXZHRwZG0tbHVjd2dLeHBWazhZdGxkamZRcVlXZktQQkZfNTRTeXU3M2xIbWc",
+      "source_name": "BigGo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:25:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Infosys shares fall 4% after IT major lowers FY27 guidance. What are Goldman Sachs, Nomura, others saying?",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNYUoySDJaQ2FCM3NxOTFXSFM5ZDQ5MEZiaEdLLWowSW16elVPNk9mMlNaS25iNGZYQjA0TjVuVFNadm9ISkd1ZWhfZklRbUVUMjd2eUdybXN3SGhPb3V5N0VUVm0ydE9qMTlmeEprczJMbE9iZUJkY1NER0xaa2V6Nm9lc194OWVUblJSYTEwVHA0emRBcnFxMFI3ME8wcjZMa25EWEc5Ql9mNE9OZGdmZkVHcDVKYVBQVmpwX0l6ZVBnYnJEVjlzNHZzQklxY2IxNW90QXBvY3ZMUGIzbFNRNnhUMG9HQllCWkNDWjhqdjZmUnNob3NId2Q1V0E1amFCT2dMZmZR0gGLAkFVX3lxTE5SS0s4M2NmaEp5TWFNTzZONldYQV9ndFItT1pJcG9VYmYweUNZRy1xTEhORFN2VUNKeWpVQWczR0xCS0w2VEtoTlhFamtDS0Y5STJPR25pOFc0ZW5DV1l3cUs1c21USGFBZnNDUlNGOW1iN2p0VkRTeXlhZGlHNHdqek9zbE9mZ2NqNGJ2Yi03eEo4RHMyVlpsbFpYX09IaUd1SktMeFh6SE1WenBaTFIxVWc4X0EzdkxzN19abkZTY0RJMGJyTnZLT2EzdTRESGhvQVRuX1BERV9RZ2dKMjNmbU53Uk1ldW5yeWVaUl9sQ3l3dnZELWxUdW44aFR1Yk03UnZyMkZDV0otSQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T04:07:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
-  "source_count": 1,
+  "article_count": 9,
+  "source_count": 2,
   "primary_source": "Analytics India Magazine",
   "cluster_key": "KSOLVES|GUIDANCE|29%-fy27-infosys-revenue-rise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:03:26.147937+00:00",
-  "last_updated": "2026-10-24T16:49:18.931292+00:00",
+  "last_updated": "2026-10-26T13:38:37.566838+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:03:26.148012+00:00",
@@ -157,6 +189,21 @@
       "timestamp": "2026-10-24T16:49:18.931288+00:00",
       "change": "direction changed",
       "detail": "KSOLVES NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:37.566802+00:00",
+      "change": "sources added",
+      "detail": "BigGo Finance, The Economic Times, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:37.566820+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:37.566829+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 3 -> 7"
     }
   ],
   "price_reaction": {}

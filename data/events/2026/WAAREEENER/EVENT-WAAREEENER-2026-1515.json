@@ -4,34 +4,36 @@
   "summary": "The n-type TOPCon solar module delivers a rated power output of up to 670 Wp and a maximum module efficiency of 24.8%, with output reaching up to 745 W under standard bifacial rating conditions.",
   "event_date": "2026-10-22",
   "event_types": [
-    "NEW_PRODUCT"
+    "NEW_PRODUCT",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 1,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.55,
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
       "business_impacts": [
         "PRODUCT",
-        "REVENUE"
+        "REVENUE",
+        "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
-          "term": "bifacial modules",
+          "term": "solar modules",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
         },
         {
           "exposure_type": "PRODUCT",
-          "term": "solar modules",
+          "term": "inverters",
           "relationship": "SECTOR",
-          "weight": 1.2,
+          "weight": 0.9,
           "detail": ""
         },
         {
@@ -40,31 +42,26 @@
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "bifacial",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance"
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
         "two independent sources",
         "sector relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to bifacial modules, and solar modules. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules, and inverters. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -88,21 +85,56 @@
       "published": "2026-10-22T22:55:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Shakti Pumps releases 620 W TOPCon solar module",
+      "url": "https://www.pv-magazine.com/2026/10/26/shakti-pumps-unveils-620-wp-topcon-solar-module-at-rei-expo-2026",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-26T11:57:40+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Shakti Pumps unveils 620 Wp TOPCon solar module at REI Expo 2026",
+      "url": "https://www.pv-magazine-india.com/2026/10/26/shakti-pumps-unveils-620-wp-topcon-solar-module-at-rei-expo-2026",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-26T11:46:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|3.0-green-launch-quad-cut-saatvik-topcon",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T11:56:29.101821+00:00",
-  "last_updated": "2026-10-23T11:56:29.101923+00:00",
+  "last_updated": "2026-10-26T13:38:51.377667+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T11:56:29.101913+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:51.377637+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine, PV Magazine India"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:51.377654+00:00",
+      "change": "categories added",
+      "detail": "TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-10-26T13:38:51.377662+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
