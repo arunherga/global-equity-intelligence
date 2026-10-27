@@ -1,0 +1,200 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4598",
+  "title": "US Federal Reserve policy decision pressures Silver to the downside",
+  "summary": "US Federal Reserve policy decision pressures Silver to the downside Traders Union",
+  "event_date": "2026-10-27",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "US Federal Reserve policy",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its macro exposure to Federal Reserve, and US Federal Reserve policy. The parts of the business most likely touched are margin, demand, customers. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "US Federal Reserve policy",
+          "relationship": "SECTOR",
+          "weight": 2.3,
+          "detail": "international topic; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "US Federal Reserve policy",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry, macro exposure to US Federal Reserve policy, and Federal Reserve. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "US Federal Reserve policy decision pressures Silver to the downside",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcHhKUWhCYThXMkNHR1MwOGNHdmpPZ1JfdnVuVEFHdjVJM25aejlRWnpBN2ZfN1VZSlRPVjMtRUg0RGs1V1JEbXJxNlhvV0w1VnZrSWhINDdHOHhHTjhjelR6bWJudFdhQ2t6MGZqM2t0SkJCbFoxNERFRDBmQ0pDTVhEdVF5QXFiUFFTdDAzTnlMU241eTVqcw",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T12:07:24+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "HDFCBANK+TMB+WAAREEENER|INTEREST_RATE|decision-federal-policy-pressures-reserve-usa",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-27T12:31:47.065210+00:00",
+  "last_updated": "2026-10-27T12:31:47.065277+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-27T12:31:47.065266+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

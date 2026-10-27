@@ -47,11 +47,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -64,22 +64,22 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to credit cards. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -93,21 +93,41 @@
       "published": "2026-10-06T11:10:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC, ICICI, SBI, Axis or Kotak banks: Which credit card offers the biggest festive discounts?",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQOEhlTzBqUDRNQzFvcmJUWFR4cGhNY1ZrVE4xaWRNUlFlMEx2ZXRhejhwZURwY1E4a0FnWjB0SWJTQV9WVXFPVXJlWDlKYUpTQ2pUVTI1SHVOaEpRVU5WSldJUDIzTGtQZlpqblNsRmxsMHNRWm80NXRYNnlrRXUtdDBXa1FzdDN3VGo5ZkRDRWpvWmhjNDFlbDRJSi1HcGdldnFVeUFEcFhQWG5GN29YOWRSV3hEVFAwc0FOdElVVlNuMXl5SXVHMTBkTmlReU42QUdaR081YnM3dS1tM2hDWnVRNGtOREhQcFJIbnpRV3dGcHlRTFE",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T07:48:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "HDFCBANK+RAVEL|OTHER|2026-axis-festive-icici-sbi-shopping",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-06T13:38:38.418799+00:00",
-  "last_updated": "2026-10-06T13:38:38.418886+00:00",
+  "last_updated": "2026-10-27T12:35:12.298620+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-06T13:38:38.418875+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:12.298597+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:12.298616+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

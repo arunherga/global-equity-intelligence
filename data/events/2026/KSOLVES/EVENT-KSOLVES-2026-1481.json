@@ -99,29 +99,29 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "SUPPLY"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "SUPPLIER",
+          "term": "Daqo New Energy",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -130,7 +130,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -139,7 +139,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to Daqo New Energy. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
       "ai_analysis": null
     },
     "FRESHARA": {
@@ -508,16 +508,26 @@
       "published": "2026-10-24T05:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Daqo New Energy Announces Unaudited Third Quarter 2026 Financial Results",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVG5lbWMtRlRFLWc3NGZqa3B5LTl1RHhjM0FBX2pIdy16dkF3VjNKdzNDLUtMbmI1bjJzNXhOUUVNZXhTaklFVjhfdElXVTY5ZldsNDVGS1FYYU12WUExby1yNXpuRXVsQTJnZ3BHX2ZweTJWY1J2dmptNngzZGI4NnBpR2djVlptRFVGMTlpNWx2SDNOZ0s0UlFkV2lTWEhENm9fNWhtVTRzNjE3QzFhcFFqRzg4STdGRUxUOEI0YmRLcWZXc0p1TXFFV0JWdw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T10:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Business Upturn",
   "cluster_key": "KSOLVES|EARNINGS|announce-financial-mastek-quarterly-results-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:02:57.183700+00:00",
-  "last_updated": "2026-10-24T16:49:20.309377+00:00",
+  "last_updated": "2026-10-27T12:35:20.224680+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:02:57.183774+00:00",
@@ -573,6 +583,16 @@
       "timestamp": "2026-10-24T16:49:20.309373+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:20.224649+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:20.224676+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

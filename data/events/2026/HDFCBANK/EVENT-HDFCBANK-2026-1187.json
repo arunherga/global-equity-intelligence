@@ -1,0 +1,91 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1187",
+  "title": "Euro zone mortgage demand falls as rates rise, ECB survey shows",
+  "summary": "Euro zone mortgage demand falls as rates rise, ECB survey shows Reuters",
+  "event_date": "2026-10-27",
+  "event_types": [
+    "INDUSTRY_DEMAND",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "mortgage demand",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "mortgages",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to mortgage demand, and mortgages. The parts of the business most likely touched are demand, pricing, input cost. Classified as industry demand.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Euro zone mortgage demand falls as rates rise, ECB survey shows",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeDN5b2ZWSHU5c0ZoTHhWNXR4ekdKZDJVeXdYZjlDcDRzVDYyakRURVVPRTlHU3Z0MFBfc0E5RWNTME1HRmhvSHA5X0ZoVHExbVNhLUFIY3VJazctT2FPdVdrQThUd3ZETnpYQ05kbzViX3h1MFpjR25rOVhPOEJlODVzZXBvSW9MT3hoem9VYWZHQjFyNENVSUEwakxZV0JJZGtNM2tidG8weFZ5Sm1XbHRB",
+      "source_name": "Reuters",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T09:06:09+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Reuters",
+  "cluster_key": "HDFCBANK|COMMODITY+INDUSTRY_DEMAND|demand-euro-fall-mortgage-rate-zone",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-27T12:31:00.549242+00:00",
+  "last_updated": "2026-10-27T12:31:00.549312+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-27T12:31:00.549301+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

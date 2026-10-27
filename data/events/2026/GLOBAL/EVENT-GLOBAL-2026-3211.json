@@ -9,48 +9,48 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.13,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
-          "exposure_type": "COMPETITOR",
-          "term": "South Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements",
-        "South Indian Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -111,16 +111,26 @@
       "published": "2026-10-19T13:41:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why India’s bank credit growth may slow in FY28",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWTc2SnlJUGI0SnpVWEVRT3Q4aXlOY0JDdmNCVVlXQzNoSjh5WFV0Rlp3dm12clVfMHh3WFJEbkxCZVpTb092Rnl6Q09ORU5nbzNoRlpnMkZtZHhvSkVXNnlJQTMxY21lYkVrNXMxMVRudHpZVGxLWl91RUFoaU1QY0RXdlJpOHpJR3Q1eEZqRC05NnVTdVFyMlBrR21IZTZIX2VZZVQtUzludk04TmtVRk9XeVfSAboBQVVfeXFMTmNSWjczUXlxVTZzTjV0V2tKalVJMzZPY0NBWV9Gdkt5Vm0yWng2cEk0TGVRODJVNlFxcTFJT2V0QU9YZkJxMkRxUjdIc0pMcHVuNEhXWThvc1pNc3JPc05rSC1WLUZySDhaamRDSWh4b3NuQ3M1REphYUlURDRjTkNRaHZvcVU0QmEzUlhraWgtaHFINmRfb2RBVUx0V3dINzBTQkhOSTF4bEdQM3pDWmtHTmRZaC1DNHJ3",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T11:26:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-card-credit-enter-india-south",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T17:59:43.484834+00:00",
-  "last_updated": "2026-10-19T20:06:50.477430+00:00",
+  "last_updated": "2026-10-27T12:35:26.519993+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T17:59:43.484913+00:00",
@@ -131,6 +141,16 @@
       "timestamp": "2026-10-19T20:06:50.477413+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:26.519970+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-10-27T12:35:26.519989+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

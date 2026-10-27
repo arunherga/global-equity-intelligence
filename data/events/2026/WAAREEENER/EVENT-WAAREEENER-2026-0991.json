@@ -9,44 +9,39 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "CUSTOMER",
+          "term": "Tata Power",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (Tata Power)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -54,7 +49,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to Tata Power. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -528,16 +523,26 @@
       "published": "2026-10-26T13:06:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bajel Projects bags ₹200 crore order from Tata Power for 400 kV substations in Mumbai",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPR1plOEc0TVljaHhHZ1dlX1c2aVc1dmZGQ09WcjFIUlkzU0ZiSWtuUG0zc05ET1ZVMUZqcXJKd0RsRm82YXRUUXBrNlNORzN3bkI1NnVwcllfMnRwcW9JUUJqU2ZvWHdzSmJWSDFvREFvajJ0SWZBb0ZvU2Rjd0ZYRlhXTVA5WE5la2o1LXBvSjFCZk9UQVNRX2VmakZuc3paSy14dEFHUFZuTllZalVQQkg4WE1hUWY3SVEwRWhQWXVkakJydzhRSHZ2dWlseXFfSnFRNV9fZXBacTRmWWFHcEotNzhEdjBhM0ZN0gHrAUFVX3lxTE9HWmU4RzRNWWNoeEdnV2VfVzZpVzV2ZkZDT1ZyMUhSWTNTRmJJa25QbTNzTkRPVlUxRmpxckp3RGxGbzZhdFRRcGs2U05HM3duQjU2dXByWV8ydHBxb0lRQmpTZm9Yd3NKYlZIMW9EQW9qMnRJZkFvRm9TZGN3RlhGWFdNUDlYTmVrajUtcG9KMUJmT1RBU1FfZWZqRm5zelpLLXh0QUdQVm5OWVlqVVBCSDhYTWFRZjdJUTBFaFBZdWRqQnJ3OFFIdnZ1aWx5cV9KcVE1X19lcFpxNGZZYUdwSi03OER2MGEzRk0",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T13:47:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|ORDER_WIN|bajel-epc-power-projects-tata-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T18:59:19.631028+00:00",
-  "last_updated": "2026-10-26T19:28:37.608018+00:00",
+  "last_updated": "2026-10-27T12:34:41.057030+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T18:59:19.631095+00:00",
@@ -598,6 +603,16 @@
       "timestamp": "2026-10-26T19:28:37.608015+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:41.057011+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:41.057026+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 6"
     }
   ],
   "price_reaction": {}

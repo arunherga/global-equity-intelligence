@@ -11,15 +11,14 @@
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.65,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
@@ -28,43 +27,38 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to"
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.65,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
@@ -73,30 +67,26 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to"
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -140,16 +130,26 @@
       "published": "2026-10-26T04:54:28+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee closes marginally up 3 paise at 95.12 against US dollar amid elevated crude oil prices",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-closes-marginally-up-3-paise-at-9512-against-us-dollar-amid-elevated-crude-oil-prices/article71630954.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-27T10:44:40+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|94.92-against-close-fall-paise-rupee",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:36:28.304081+00:00",
-  "last_updated": "2026-10-26T13:38:37.324330+00:00",
+  "last_updated": "2026-10-27T12:34:33.746004+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:36:28.304187+00:00",
@@ -165,6 +165,21 @@
       "timestamp": "2026-10-26T13:38:37.324320+00:00",
       "change": "categories added",
       "detail": "GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:33.745976+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:33.745996+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:33.746001+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -9,20 +9,22 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "SUPPLY"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "exposure_type": "SUPPLIER",
+          "term": "recyclers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -33,21 +35,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "supply terms from recyclers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, supplier exposure to recyclers, and India. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -458,16 +461,26 @@
       "published": "2026-10-26T09:06:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gravita India Limited Incorporates Wholly Owned Subsidiary 'Gravita Recyclers USA Inc.' in the United States",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYWpkb0dhODlJakFDaFBDc1I3SHRFYWJrT1EyUDNfYk96eEEyX19CN18tZXk0OEFXN2ZadGZnUk9NS2V6c0VSYTU3dEpRbG9mT3pvQ2VZZmV2dHBFZE1URENlNTk4Tmg4NlhaWHFkM0M4RnBoWHJCa3dXUU95VEgwTzVUTHhiSzlJVkpFZlgtOFFnb3phWE1ISGdQWDN3V2RSZ09KYnZPbDJzRDFoQXJvMDlsbEE5ZjFMb1FZcg",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T17:15:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Business Upturn",
   "cluster_key": "MSTCLTD|OTHER|gravita-gravita-incorporate-india-subsidiary-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-05T14:59:49.923592+00:00",
-  "last_updated": "2026-10-26T13:40:21.065703+00:00",
+  "last_updated": "2026-10-27T12:34:44.471743+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-05T14:59:49.923646+00:00",
@@ -528,6 +541,16 @@
       "timestamp": "2026-10-26T13:40:21.065698+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:44.471722+00:00",
+      "change": "sources added",
+      "detail": "EquityBulls"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:44.471739+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1724",
+  "title": "Gold steadies near $4,000 as Fed policy meet begins; silver near 11-month low",
+  "summary": "On the MCX, gold was trading around ₹142,900, down 0.12%, recovering from an opening gap-down near ₹142,580",
+  "event_date": "2026-10-27",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "silver over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold steadies near $4,000 as Fed policy meet begins; silver near 11-month low",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/gold-steadies-near-4000-as-fed-policy-meet-begins-silver-near-11-month-low/article71630140.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-27T06:57:06+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "WAAREEENER|OTHER|000-fed-gold-near-policy-steadies",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-27T12:28:21.889597+00:00",
+  "last_updated": "2026-10-27T12:28:21.889686+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-27T12:28:21.889675+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

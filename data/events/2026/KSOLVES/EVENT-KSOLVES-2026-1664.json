@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-1664",
+  "title": "Stock market ends flat as Infosys drags IT stocks, defence shares rally",
+  "summary": "Investors weighed corporate earnings concerns against policy developments, while upcoming market events are expected to influence trading direction on Wednesday",
+  "event_date": "2026-10-27",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.48,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Infosys. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Stock market ends flat as Infosys drags IT stocks, defence shares rally",
+      "url": "https://www.thehindubusinessline.com/markets/stock-market-ends-flat-as-infosys-drags-it-stocks-defence-shares-rally/article71631323.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-27T12:06:01+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "KSOLVES|EARNINGS|drags-ends-flat-infosys-market-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-27T12:28:33.693850+00:00",
+  "last_updated": "2026-10-27T12:28:33.693918+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-27T12:28:33.693907+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

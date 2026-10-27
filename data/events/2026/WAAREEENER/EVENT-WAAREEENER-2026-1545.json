@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.62,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -25,24 +25,59 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "PV modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "TOPCon",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "Vikram Solar's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Vikram Solar. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Vikram Solar, and cell manufacturing. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -76,16 +111,46 @@
       "published": "2026-10-23T09:09:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vikram Solar advances 9 GW TOPCon cell plant in Gangaikondan; first cells expected in December",
+      "url": "https://www.pv-magazine-india.com/2026/10/27/vikram-solar-advances-9-gw-topcon-cell-plant-in-gangaikondan-first-cells-expected-in-december",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-27T04:37:31+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Vikram Solar advances 9 GW TOPCon cell plant in Gangaikondan; first cells expected in December",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQemJOU19jUjl3MHZra0Y4ZXZWQTBEN3VXMEs1cTVjd3pVN0ZKSVZubEY3UThnbWlxaFZSOHdhaG05RVlFcVZ0Qmp2QnFZWTV5aVNlUmplTmtUYjNpQzR1VElVMjRYaDJVdFRSYVpPZjRaX1ZDM0ppam9hZmE2RlNRUzh6V1pmdVNZVUtseGtkamVMcXA4RDJSaTR1ckdCQ0ctTHM3QmJKbExCM2xGOG45d24wRGloME1tcUxWR0syOXYxd2Y4SWd0YUtjczlobWo2Q2paUXNR",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T08:54:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Vikram Solar advances 9 GW TOPCon cell plant in India",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbHl5ZkhKdFBzWUFrZWNfUkNhU1A1UW9VX3hnRTVYeUVpcHZwTWxqZnkzRDVSTVRjOUVSNXUxbnBia0FwNWZIeUpFSU1zcWpsUlJnZHdpRExzYVV5d2xqWnZPYU1EYXhYZ0QzR3dka0xpSWxZQnlyenRWdzJYcnd3ZWJVVnNINm9yMllxNXduOXV0dS1xb05USWxBX0xLeTFlQ1NZX3l1MnBvS2NNaXhqOU5ybndlU0p1RVJNMGxFVU1MdUZ4THFRdlpyREJKUQ",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T07:42:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|OTHER|9-gw-cell-plant-produce-solar-vikram",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:00:24.705681+00:00",
-  "last_updated": "2026-10-23T12:07:39.873858+00:00",
+  "last_updated": "2026-10-27T12:34:36.951619+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:00:24.705754+00:00",
@@ -101,6 +166,16 @@
       "timestamp": "2026-10-23T12:07:39.873840+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:36.951598+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, pv magazine Global, pv magazine India"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:36.951616+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

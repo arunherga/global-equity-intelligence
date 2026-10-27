@@ -4,7 +4,9 @@
   "summary": "RBI Rate Hike and Home Loan EMI: 5 Steps to Manage the Cost Value Research",
   "event_date": "2026-10-22",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "MACRO",
+    "GUIDANCE"
   ],
   "stocks": {
     "TMB": {
@@ -52,14 +54,15 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "REVENUE"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -71,6 +74,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "PRODUCT",
           "term": "home loans",
           "relationship": "SECTOR",
@@ -79,7 +89,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -87,7 +98,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -96,7 +107,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and home loans. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -110,21 +121,106 @@
       "published": "2026-10-22T12:04:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank of Namibia faces pressure to raise repo rate to 7%",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNkhMdmF4RmlhRFJ4WW1DWUZfRlFULWRkSkNGVTlkV0VGQ3hZOHYtWmZPY0IwWTQ2U29uWDV0c04xbDFrbjJhemRXbW80TlluenJzcUhCYTRGVldyRE1GanBWNC1odzRhQUE4SFFJNl90cFJDNTY3djZoLVNNbmlha0F1VkVEYjN6",
+      "source_name": "Windhoek Observer",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T04:06:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Banks raise home loan rates after RBI repo rate hike: Want to move back to lower-interest loan? Know this hidden cost",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOYVNVLXFCU3BGQXBFNTVaXzctaXZ1Wkc1UEIxUjBJdTdlZkZQMzFGZDdLMGNXbXA0cWpDbXRtcVpUeXBCZmlEcnNvYjJsSXRzeDdKblZyZVV0aDNxTnZ5TjRCWjFXdmttZTRhSXVKOC1oTzNaTTFuZGFjUzU3NEhYV3YxMTFXRnY3aG5FTFpnWmZkQkVjM29PLVk1MVVSRk1Zbk5PTHo1b0J1b0RQa0xuNWwwVUpBR3E1RVhkb2hYcmkzRGhwQ1VTcm1NeHhQOWNmbzkzaTBwNVVZOWVQazhPXy1PNkt1cFhGdWFIblZHdDlZeUQxbGNrMGtZQm9HRm5iZ1JyZnVvZ09pd0RpdGljRdIBlgJBVV95cUxPd3d4akRFdUlpNHZxS2NpaTBkWnRrVEJsVU4yZl9hUU1QZC1kTmo0V1hsZXlFa1ZZb3NSSm5RRXg2WGs4TV9HYTNtRXgyakV0Tk5pTy12QXZUTVVGR29saGY0UXN1dlZ1Ykk4SVB4U3NpeGFOWkgxT1Y4V1RFT1N3bzlBeGpGYWszcG80V2lOSXMzWFdVcWl3WlhiR1ZpWThiVnFvaGtiWlh0a2xiNUZRY0Q2RDZsNjZsZTBRSFg3Mm9hS2xNVDJWOWhETmVVM0ZCbUFsdUxiYVJiZWx2RmpScl9lcnhOOTIyS2lWTkljVTF5Z2V5SVNHZzR3bjBRcnlBN0ZaanRnWjQxQzRXSTRDX1lSVy1Wdw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T09:02:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI May Raise Repo Rate To 6.25% By H1 2027 As Inflation Risks Persist",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb2t2QS00Vy1HRnBsNEU3T05Oa0JyTElCUGtCNVA2cm1jMEpKalltWDhzNTF6QlBHNUkxX19PLW8za2xYa1dFNGJnenVoWUIxUXY3bzVKcTNMaXdmNU9vVTd2TU8tWTM3djVkai1ETTZsNTBLUjVJRU11c0ZadXptMHBlVC1qXzV6NlNhQTBtcWNFZklVOWlESmJPQzJoZ18wTDlLcXdfMlNHVkxDMXpqRlFWQ2dsdjVVeTY3RXNmeU16dkpyWmFWZllpVWdIeDFlRmUzQXR0V1TSAd4BQVVfeXFMTjFCOXppOHk1YXdxRUM5ZnNhTzhEeElyMWxERVdueGc0TXlHb3FqMTRBQ1p2V0xzRkk3TGp1RkRPdzZTZi1ydHo5czZZY1pDU004eWFkZ21VQmIxV2RGNlUxb2ZLb0J5X2ZkZGpieENUSE90STNrckhjaVN0U0l6d25rSV9ieW9wbDE1YzJMdDVKTWJ1QjI1UjlaV3NHV0RRcGtNU1pYMjlxcUhVbElYQm9ja3o1TVdsWF9wV01ocE1VSVhmMVpEWU5vbktBWXhfTC1SNUJjSmZZQjg3ZmZ3",
+      "source_name": "Times Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T09:23:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Repo Rate Forecast: Deutsche Bank Sees Rate Rising to 6.25% by Mid-2027; What Borrowers Should Know",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWFVkT0hFRzZZU2V6VHBudkRIaVVtT3FsRFRvRkJBUUJmeS10ZmVjWFZXT1lsWFpuZlJnMU5GeWVEN3hqd1RoSXc2RU1WcEM0SkJrT0ZaN04wajFPU1pOMmtvbFlSSHZOMndZZmV1WFZQTnFyX19Va2ZVTXhzSFp2d2ItNzM5Q2lWVXpNaUZHRXRmY2pjbXdKSkphcE1JbXpGMlBUTXBXZm4yeW4zUXh4SDlxb0U1NF9adU5mZ3BxN1F3YzF6cUYtVkc4Y0hXVzJtVHdjWWtNSmVaY2FrNUhMedIB5gFBVV95cUxNU0Uya2tvQUlacGEzc0k0WlNGNWFzOVJNQ1Y3V3NxSktaMFphVlJLUURhQVBQaWpfcGMwTGowZmZRZ1V5QjRtUXRzSXhjR3BpRFlrV2dQdktjQ0Z5bmJEQnNrRU1sZ1BDWWU5dEtsTVZSbjkwSGthXzA2TS1oQ21abG9Ma1dNZElRMUhQa29RZ3hxZWVxU1JRNnJBOVJkaE9mWm14M2d2NTZjekV1SjdhazhWUkFKNzluUk5mZ1RBd0tVVVNRLW5fcXNwNFlHMGh2ZG1HVHUyS2MwcGdoeFRTcjV6YlVmdw",
+      "source_name": "The Sunday Guardian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T11:52:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may hike repo rate to 6.25% by H1 2027, warns Deutsche Bank as inflation risks persist",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUFNvVV9ZcVdISk1qdm8tOWMyWWJwUFB1eVpfVEd4czFrSTlaS0h6TUQtX0d0S1BoY3hEUlAxM3Atb3JxXzVBTnBJdzBrb0pQOHBXY2k2M2NFaTN4UE5HVldBVEd4VDBlaGRFX0FXVF9ZTjBwMnhrcEpmeUV0N3EzdVpjNGI4LXhIdmkwV3NlbkJNeWliOHpIYnh4SjZvNHFWU1RteGpfSWxHYzRjYTNxdWRlVm9SREswVnZUYjd4ZFhpVUtLVDVDb1JsSGxxQ3l0RE0xOHZZNXnSAd4BQVVfeXFMTXlaV1hRTWJ4MjBfTWFqelFyOWpNNlNkOEloem5DenFuSEY0bHE2MGlScGw5bmE0Vlh6VG1HX19vQ0ZlNVF6elkyYTYtNlpFWFFiVG1hd0VpT0Q1MkVtb3NDZEl4SnZzV2xrNUY0VmJuZlNnd1dCTXpxTEt6T3Flc0FkbmswTVlQLU5Xc01ac01DVFQ5UGd4NHZuYmQyeXNOVGhqUlJueVIwNUcxQmVkSGstcEs4QlZTd181ZTBhV3BzVXl4aGxXUVZfX3hnWnRNWHhVbHFndlpOaV8xQ1Rn",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T12:01:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may raise repo rate to 6.25% by 2027",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaEwwUTZxWjdrRVo2aG1aOHRnMUZSZjFJNGxXX2liR0VmQmhiQ2VqNlN4bW9RUlJkTndseVV3S0RQd1ZpcThVcFUxWTNpVXJJQS1hWGtOUjhIX1Q3aHdROF91Nlo4R08wOHdqNG1iMXZwMTBEeVRLU1B3R0tLWWM1UXVWb0ZXTmQtNlFla0ZmZTJxRm5kcTZYclRfazB6SFBJVDJJNVhTbUN3cTRNM1BoVnpNVS1JZG5vQ1lEQ1JZMTM",
+      "source_name": "Rediff",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T08:56:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI may raise repo rate to 6.25% by 2027 amid inflation risks: Deutsche Bank",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQN3FmaDRWTTBEaFZPVGF6U19ZSUQxU21vdWhQUlhtS2pESXZ5MkRiYlA2WDdGS3lMMS1leE9UR1BReGM0ZTlwM2kxNC01c0NUakd6VFJxY2RDYU1MSlZ1QUV3bUxHb280d1pjZ3ZhZHN2TEtyaElmcjlNVEw2QW51UkxjY3V6SlYzZXVEVWhRRUNEVGZ5U0NOdVVsdnBiNmxkQkRDNlRReG4tMzJVSi1JX2NTSjhUZFlhNHlOZWgzWVJRdEFpYmJnUmMwV3FPOVlKdHRzR0VGb2JkZ9IB2gFBVV95cUxQN3FmaDRWTTBEaFZPVGF6U19ZSUQxU21vdWhQUlhtS2pESXZ5MkRiYlA2WDdGS3lMMS1leE9UR1BReGM0ZTlwM2kxNC01c0NUakd6VFJxY2RDYU1MSlZ1QUV3bUxHb280d1pjZ3ZhZHN2TEtyaElmcjlNVEw2QW51UkxjY3V6SlYzZXVEVWhRRUNEVGZ5U0NOdVVsdnBiNmxkQkRDNlRReG4tMzJVSi1JX2NTSjhUZFlhNHlOZWgzWVJRdEFpYmJnUmMwV3FPOVlKdHRzR0VGb2JkZw",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T08:26:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Value Research",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|emi-home-loan-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:15:21.024208+00:00",
-  "last_updated": "2026-10-22T18:15:21.024276+00:00",
+  "last_updated": "2026-10-27T12:34:57.405644+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:15:21.024269+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:57.405617+00:00",
+      "change": "sources added",
+      "detail": "Livemint, Rediff, The Sunday Guardian, Times Now"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:57.405634+00:00",
+      "change": "categories added",
+      "detail": "MACRO, GUIDANCE"
+    },
+    {
+      "timestamp": "2026-10-27T12:34:57.405640+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 3"
     }
   ],
   "price_reaction": {}

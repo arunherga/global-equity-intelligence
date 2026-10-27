@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-JKIPL-2026-0466",
+  "title": "CAT|Caterpillar Inc|Price:692.130|Chg%:+6.760",
+  "summary": "CAT|Caterpillar Inc|Price:692.130|Chg%:+6.760 TradingKey",
+  "event_date": "2026-10-26",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Caterpillar",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Caterpillar"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Caterpillar. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "CAT|Caterpillar Inc|Price:692.130|Chg%:+6.760",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBSdTJkWDgyRVJyLVRJUHpENHo2MURfNkRrTExIMHF2dThycTdMZ3kwT1F3V19YRUFpUW84Y191THQ5d2c5UEZhdXNHX2JJMXV1WEZZRDdVYzM",
+      "source_name": "TradingKey",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-26T20:35:18+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "TradingKey",
+  "cluster_key": "JKIPL|OTHER|+6.760-692.130-cat-caterpillar-chg%-price",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-27T12:29:15.258211+00:00",
+  "last_updated": "2026-10-27T12:29:15.258276+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-27T12:29:15.258266+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
