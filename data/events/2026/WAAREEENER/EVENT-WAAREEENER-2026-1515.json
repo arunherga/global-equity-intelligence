@@ -10,11 +10,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.47,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
@@ -29,37 +29,50 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "rooftop solar",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": ""
+        },
+        {
           "exposure_type": "TECHNOLOGY",
           "term": "TOPCon",
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to solar modules, and TOPCon. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This reaches the company indirectly via its industry, product exposure to solar modules, and rooftop solar. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -113,16 +126,46 @@
       "published": "2026-10-26T15:05:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Avaada unveils 745 Wp DCR TOPCon solar module at REI Expo 2026",
+      "url": "https://www.pv-magazine-india.com/2026/10/28/avaada-unveils-745-wp-dcr-topcon-solar-module-at-rei-expo-2026",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-28T07:09:53+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Avaada launches 745 W DCR TOPCon module, rooftop kits and HALO storage at REI 2026 - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXg3ZE8zbTFTenpEYS1aeXBmU3ZXa3F4cnVaeW5XNlN4NmJLc05tMDRBcjVhMnhfbWpueUdlNEw5cFlqX0pDa3luRFowLURVRFhrd0llZG80RHFacHo4U2ZlNndWU0VBS3FCWHFQaWlBektEelFBQ0VSNkVXWWtYckEtaHdvd0NKaUJxMU0wQXc0dXlIMV9MYktCWEtoWjU1MXZibTJR",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T11:11:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Avaada unveils 745 W TOPCon solar module with 23.98% efficiency",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOWdOMmdOTXpZMGNRMXhHOTZPZi1xVTlMZWpoNmp5cTkyVlJWaC0tcXNlcmNtS2tGY1dXZS1KSVh5dXBuYjhHNnRKRTJuUElXdDRNTFpncVQwdXdkYWZQVjJDOHZVVzZ6elpOUWZIS0xfTHFWQkN2S3dzT0MwVHhXSURfVmJzdkJXUFJ5SmhBekNiSWRCV1QxQzFZUVlmSExUTVNJNw",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T08:24:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 8,
   "source_count": 3,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|3.0-green-launch-quad-cut-saatvik-topcon",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T11:56:29.101821+00:00",
-  "last_updated": "2026-10-26T19:28:57.918573+00:00",
+  "last_updated": "2026-10-28T13:20:50.366646+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T11:56:29.101913+00:00",
@@ -153,6 +196,16 @@
       "timestamp": "2026-10-26T19:28:57.918568+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:50.366623+00:00",
+      "change": "sources added",
+      "detail": "IndexBox, PV Magazine India, pv magazine Global"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:50.366642+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

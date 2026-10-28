@@ -11,15 +11,16 @@
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.44,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
         "REVENUE",
-        "MARGIN",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -32,34 +33,40 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect relationship",
+        "best source quality 3/10",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, revenue. Classified as commodity.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.44,
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
         "REVENUE",
-        "MARGIN",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -72,21 +79,26 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect relationship",
+        "best source quality 3/10",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, revenue. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -140,16 +152,26 @@
       "published": "2026-10-27T10:44:40+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee falls to 95.28 against US dollar as crude oil prices rise",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNzZEMDg3Z0FfckdWTG0yTHl5WVVYU0s0Q29PUnF6SWpkWG1wWGtGT051ckpmdUo4bndEc3NjMk1QS0FseDh3emhkenV1NzdZOUVvR0s4U0FSTVdmZ0xTWm0zcUYyakxhb2V0ZWZvY0NpQzF2SlhMR0dWRFIwU1MyeHNuOWVwemVUb3ZobzlJNEE0RlBy",
+      "source_name": "Telangana Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T10:49:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|94.92-against-close-fall-paise-rupee",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-19T13:36:28.304081+00:00",
-  "last_updated": "2026-10-27T12:34:33.746004+00:00",
+  "last_updated": "2026-10-28T13:22:20.165794+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:36:28.304187+00:00",
@@ -180,6 +202,21 @@
       "timestamp": "2026-10-27T12:34:33.746001+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:20.165770+00:00",
+      "change": "sources added",
+      "detail": "Telangana Today"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:20.165787+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 1 -> 5"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:20.165791+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 1 -> 5"
     }
   ],
   "price_reaction": {}

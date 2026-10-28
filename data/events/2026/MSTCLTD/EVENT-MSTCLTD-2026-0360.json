@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0360",
+  "title": "PSU stocks today, October 28: MRPL falls 8.56%, HPCL down 3.95%, SAIL declines 3.21%",
+  "summary": "PSU stocks today, October 28: MRPL falls 8.56%, HPCL down 3.95%, SAIL declines 3.21% Business Upturn",
+  "event_date": "2026-10-28",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "SAIL",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from SAIL"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to SAIL. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "PSU stocks today, October 28: MRPL falls 8.56%, HPCL down 3.95%, SAIL declines 3.21%",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTzN6Y3lCOUh1ckdra3JHOGpybkRMdlZSRUJxLUxNTE1LQS04eG5jX3BiZ2RhcWJzbS0zVEMtQ1ZiNkJMTEMwNDdvd0JSRDNXdnFVcUIzcVRWc0pKTFM3NklGZWFta2JxQklMQnZ4MlhkcmpNbVRJTU5ORXRTYktzdlJvdDJHNjFORWlrYVhFMkZ5RE4zWHZzdVpSWk5Ia0hxdjlueGhUYlpuc3dULWl6RzNOWnp0dTkzY252NjhTd3RudWJV",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T05:05:38+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Business Upturn",
+  "cluster_key": "MSTCLTD|OTHER|fall-mrpl-october-psu-share-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-28T13:15:03.735022+00:00",
+  "last_updated": "2026-10-28T13:15:03.735083+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-28T13:15:03.735074+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

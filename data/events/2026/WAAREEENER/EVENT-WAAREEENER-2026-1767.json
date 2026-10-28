@@ -10,13 +10,14 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 8,
+      "impact_score": 10,
       "impact_band": "HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.4,
+      "confidence": 0.57,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -26,19 +27,26 @@
           "relationship": "INDIRECT_STRONG",
           "weight": 3.5,
           "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "independent power producers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Order or contract",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -48,8 +56,26 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potential positive revenue growth if Waaree Energies is selected as the primary module supplier for this 450 MWp project awarded to its group company, Waaree Renewable Technologies.",
+        "margin_effect": "Generally stable; group synergies can lower customer acquisition costs, though margins will depend on inter-company transfer pricing and prevailing solar cell and module prices.",
+        "cost_effect": "Increased production volume for this order could improve manufacturing scale efficiencies and unit fixed-cost absorption, while raw material input costs remain subject to global supply chain trends.",
+        "competitive_effect": "Strengthens the group's overall competitive positioning by showcasing an integrated value proposition that combines module manufacturing with turnkey EPC project execution.",
+        "regulatory_effect": "Minimal direct regulatory impact, though the project must comply with Approved List of Models and Manufacturers (ALMM) regulations and any local grid-connection rules in Rajasthan.",
+        "short_term": "Limited financial impact in the next 0-3 months as the project is slated for completion in FY2027–28; initial activities will focus on contract finalization and manufacturing scheduling.",
+        "medium_long_term": "Provides medium-term revenue visibility and supports higher manufacturing plant utilization through FY2027–28 as module orders are fulfilled for project execution.",
+        "second_order_effects": "Successful joint execution could boost market confidence in group synergies, leading to higher win rates for integrated solar bids and requiring short-term working capital expansion for inventory ramp-up.",
+        "key_uncertainty": "The specific percentage of module volume and contract terms that will be awarded internally to Waaree Energies versus sourced from external suppliers.",
+        "monitor_next": [
+          "Formal announcements or related-party disclosure of module supply agreements for this 450 MWp order",
+          "Project execution milestones and timeline progress updates for FY2027–28",
+          "Waaree Energies' quarterly order book additions and module capacity utilization rates",
+          "Regulatory developments regarding ALMM guidelines or domestic procurement rules in Rajasthan"
+        ]
+      }
     }
   },
   "sources": [
@@ -62,21 +88,61 @@
       "published": "2026-10-27T11:52:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies secures EPC for 450 MWp solar project in Rajasthan",
+      "url": "https://www.pv-magazine-india.com/2026/10/28/waaree-renewable-technologies-secures-epc-for-450-mwp-solar-project-in-rajasthan",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-28T11:30:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Renewable Technologies Secures 450 MWp Solar EPC Order For FY2027–28 Completion",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOY1JZTFJmSG1Ta3BwOVAwY3NtS1kwZDVzNXk4cmRqUk9pNlVzdHdQME4wTUc4RW1GYnpXWWpTVTVCRGEzbWxqOThncHYtZHktODBDa3JRUVhONTRnUmZhTXF2VVFQN3ROdHBXdVMzNUJFaWs2MFJEX3ZSR2h2VE1WY3prM0duc0cxYzF1WDFxNW1UUWxOdzRWaG9iSXJ0OFY4RmdkZE1JOWVCUDJBck8xQXdfX2d3MnBVN0p2RWJzRFE",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T12:23:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies secures EPC for 450 MWp solar project in Rajasthan",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYTR0TXhQeWFGMS1mNDVrN1FmWVhRV0M0OVM5SUdCSF9lVGFIOGpWQlFoM1ZXTEdMbzNodUlHeUM5RTJ2cVRQUGtDcHp1Qlh6UzVvZEpWS3dINlZxZ3BpY1hubVdFcThRVWdyeGowSVpiWFN1cy14ckVHTEhjQ2dRN1Q2ZkdfT25fY2ZIV2IwMVlvYUpaV253cEtzYmhNX1JnWHh0d09rUW00OTFhT0ZsRUtSbDNhLThiay1ueng0OTZZOGZqZXBv",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T11:42:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Trade Brains",
   "cluster_key": "WAAREEENER|ORDER_WIN|450-mwp-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:44.681017+00:00",
-  "last_updated": "2026-10-27T12:31:44.681084+00:00",
+  "last_updated": "2026-10-28T13:20:52.559567+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:44.681074+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:52.559543+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, SolarQuarter, pv magazine India"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:52.559563+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 8 -> 10"
     }
   ],
   "price_reaction": {}

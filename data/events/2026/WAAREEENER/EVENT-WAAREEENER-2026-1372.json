@@ -4,31 +4,35 @@
   "summary": "Waaree Renewable Technologies Q2 FY27 Net Profit Falls 30% To ₹81.48 Crore; Revenue Rises 36.5% Free Press Journal",
   "event_date": "2026-10-19",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 6,
+      "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.51,
-      "business_impacts": [
-        "REVENUE",
-        "MARGIN"
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Waaree Renewable Technologies",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        }
       ],
-      "time_horizon": "IMMEDIATE",
-      "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -36,12 +40,9 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -145,16 +146,26 @@
       "published": "2026-10-25T12:38:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies: Q2 FY27 Revenue Surges 36.5% to ₹1,057.84 Cr",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOb1RPU2FZVmJOYlFPcVdEanhCWDFLV1R4UlpGMW9kM1YtYVlkZnJHbHI5dVRLbjFaNXJRbGd0U3ZkY1B3OTdQYkM1a0Q1d3JVRlUxQXo4UUdMeXBVSjBoZ3h0bFZ0cFNFV0drQjR0VzN0QXBXRlMzZjliQXhyZFRpSzdjaklvbWRsb0gwUVllLWN1VU9ya3AyNE9lRm8tdXFTcE01QjZWZHB0QzIyMnFDQkhTNi0",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T11:13:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 11,
   "source_count": 2,
   "primary_source": "Power Peak Digest",
   "cluster_key": "WAAREEENER|EARNINGS|fy27-net-profit-renewable-technologies-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T20:04:29.974492+00:00",
-  "last_updated": "2026-10-25T17:14:36.510378+00:00",
+  "last_updated": "2026-10-28T13:22:21.317902+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T20:04:29.974591+00:00",
@@ -180,6 +191,21 @@
       "timestamp": "2026-10-25T17:14:36.510373+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:21.317879+00:00",
+      "change": "sources added",
+      "detail": "InvestyWise"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:21.317894+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:21.317899+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

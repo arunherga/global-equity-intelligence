@@ -46,11 +46,11 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -69,10 +69,17 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "asset monetisation",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,13 +87,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NHAI"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -110,21 +117,56 @@
       "published": "2026-10-26T05:01:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI prioritises InvITs for 1,260 km of highway asset monetisation in FY27",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSDEzT0otS1F1RDVRc2tRTmxkRXlOYUlNSjBSMEpzQ1hpVjMyQW53dUVJVEIwcDN1QW9KSUl2aE1Hb0t4S2MxNFBRN21SZW1vTzZNdXY1MFFiQ1paaFpPaUNPQkhhUFNMbktkbzdOZmtzZ2dzNzdiNXdXU1RnMHZHLUtlckxWeHBRZEVsZjhZTlJoaE4zdFJYTGc0b3FCNWh2a0F4eDhKUTdiMHZwT1lWOEhwZVZQOEc2MmZLMm9kNVVnX2tt",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T14:03:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NHAI routes 80 per cent of highway monetisation pipeline through InvITs",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPREZ5ZDFBT0tPcGFva1RPR3JCSTBLVHZvbm5HdHYzcFBuX0RNOGZMNTc0SXhXaEY5M25QMjNaSC1pUmljbWlwY3I2WlRZUHJJTmlyTjVvTGU3Z2s2R3hVT2VsWlhZU0E5UnJOM05tREF6LXUzdU4xZXJMQ1FoSW8tZ1hPWjJGOEs4bWF2QUYwanJydGRZREFubWNvV3BNM0hWSDRGR3JEWXZtb1diT21SeE5CX0lxZUU",
+      "source_name": "Indian Infrastructure Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T07:09:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Equitypandit",
   "cluster_key": "ASHOKA+JKIPL|OTHER|highway-invits-monetisation-nhai-shifts-towards",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T13:25:00.505295+00:00",
-  "last_updated": "2026-10-26T13:25:00.505382+00:00",
+  "last_updated": "2026-10-28T13:21:57.407350+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T13:25:00.505371+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:59.182413+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:59.182431+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:57.407312+00:00",
+      "change": "sources added",
+      "detail": "Indian Infrastructure Magazine"
     }
   ],
   "price_reaction": {}

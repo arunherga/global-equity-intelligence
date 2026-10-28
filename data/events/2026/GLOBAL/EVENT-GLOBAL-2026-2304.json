@@ -5,17 +5,19 @@
   "event_date": "2026-10-08",
   "event_types": [
     "ORDER_WIN",
-    "CURRENCY"
+    "CURRENCY",
+    "ACQUISITION"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
+        "BALANCE_SHEET",
         "REVENUE",
         "CAPACITY"
       ],
@@ -32,11 +34,12 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Order activity at a related company",
+        "+2 Acquisition, merger or divestiture",
         "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,17 +52,18 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are balance sheet, revenue, capacity. Classified as acquisition.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "POSITIVE",
       "confidence": 0.46,
       "business_impacts": [
+        "BALANCE_SHEET",
         "REVENUE",
         "CAPACITY",
         "CUSTOMERS"
@@ -84,11 +88,13 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
+        "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (NHAI)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "a customer's business is strengthening",
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -101,7 +107,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are balance sheet, revenue, capacity. Classified as acquisition.",
       "ai_analysis": null
     }
   },
@@ -185,16 +191,46 @@
       "published": "2026-10-27T08:45:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Highway Infrastructure Wins Rs. 3.4 bn NHAI Contract in Tamil Nadu",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPcFU4WnFIdHFEV2lTQkRrZmJVNlVoUjJCMEw2ZHk1RG9rblpSODB5ZkRTdXE2YzlMcEtITHZnRGoyOTRTaEVBSlh0N3ZfSDRTLUoyMlJPc2pKb0N6aHR0M1M4am94aFFFZ21WbldlQjU1UlBLbjctY19EcDY3UVNkM2cyMGlkMHJPU1ltc3NGbjV0TDFpWGRPZFhtbUtOMmpjOVg4S1paTUN0WS10aGxaTVl1Qllxb0tiN2tPaXJ4SFc0bTFhT1dNZER2Q3hMMDdaRGNsamxGclRaN093TU1FU01wY2JOU3MzZlVGbEhiOW9kb1ZjQkYw",
+      "source_name": "Construction World India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T12:40:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Highway Infrastructure secures ₹431.86 crore NHAI Contracts, approves ₹49 crore warrants and 51 percent Stake Acquisition",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOakJzb1kzeFBkSkppb2FNeUxUVXoyMVo5aTQ1SnNjSno4Q3B4TWYzWUF6ajJCcmhBMWs0dlJWNHlJWW1nMnYwNWxkRlFsSnpSeTFHVnJET0JCT24wMVRmM2pWOGFDZE1BZmdtLVFhbkkwTnJUVzdlVnlKZ3dCaG5oQWx6cDZ3UlRuU0cyM2Y3cEdzYmk2enY0QlJTNko0em8tVzlkR2dJY2htYzNpdWZ3ZTV5a1oxVXZ1RUN2eFlZV25WNEVsaGpNS25GWVY1RXZNcWtiZTNicHJNeDZvNmFyTHdpZU9ybFl4ZDdmSmpYckdMOUFsSENOWkloNWFqOUlJdVJSX20wUQ",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T08:46:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Highway Infrastructure secures ₹431.86 crore NHAI contracts",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbGhVTzdQWE5vTVpjUEJKQ1YxWE4zVkJqdkF4WHRiQThabHZUUWcxSWRubS14QUNJRkFuc3pibTV3WkQwbEZiaE1ibmNocWd3M2o2a0Rkc0hBU09rdjRocjIyWE1uYzJ6V3o3X08wVXdwZHgyb0F6R2w1SUtFU1I5cGs3STdRdmZDM0p0V2Jrb2RrSi1ERnZndWZER1oyMjF4UmJxT2Q0WHF4dFdmWFlVY09vN1c0ZXo5SklNQzVHeXRvUnRMbFlGU2ptbElaMGfSAc8BQVVfeXFMUGxoVU83UFhOb01aY1BCSkNWMVhOM1ZCanZBeFh0YkE4Wmx2VFFnMUlkbm0teEFDSUZBbnN6Ym01d1pEMGxGYmhNYm5jaHFndzNqNmtEZHNIQVNPa3Y0aHIyMlhNbmMyeld6N19PMFV3cGR4Mm9BekdsNUlLRVNSOXBrN0k3UXZmQzNKdFdia29ka0otREZ2Z3VmREdaMjIxeFJicU9kNFhxeHRXZlhZVWNPbzdXNGV6OUpJTUM1R3l0b1J0TGxZRlNqbWxJWjBn",
+      "source_name": "ET Infra",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T10:54:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 11,
   "source_count": 1,
   "primary_source": "Whalesbook",
   "cluster_key": "ASHOKA+JKIPL|ORDER_WIN|24.46-contract-highway-infrastructure-nhai-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-08T19:25:38.236900+00:00",
-  "last_updated": "2026-10-27T12:34:41.564487+00:00",
+  "last_updated": "2026-10-28T13:22:08.680840+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-08T19:25:38.236957+00:00",
@@ -225,6 +261,26 @@
       "timestamp": "2026-10-27T12:34:41.564470+00:00",
       "change": "sources added",
       "detail": "Motilal Oswal, Trade Brains, Whalesbook"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:08.680810+00:00",
+      "change": "sources added",
+      "detail": "ANI News, Construction World India, ET Infra"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:08.680826+00:00",
+      "change": "categories added",
+      "detail": "ACQUISITION"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:08.680832+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-28T13:22:08.680836+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 6 -> 8"
     }
   ],
   "price_reaction": {}

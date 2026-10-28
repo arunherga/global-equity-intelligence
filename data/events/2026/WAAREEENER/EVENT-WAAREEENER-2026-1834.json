@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-1834",
+  "title": "Fed rate hike expectations are easing, as aluminium price technical rebound gains momentum",
+  "summary": "Fed rate hike expectations are easing, as aluminium price technical rebound gains momentum AL Circle",
+  "event_date": "2026-10-28",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Fed rate hike expectations are easing, as aluminium price technical rebound gains momentum",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOREhTV1hMazhsdWhlaWtNVnUtZEY5MVAzdGNiakpVV3JsSnAxVTdNLW5OTTMtRWdJaHRFWEU5NUtwdDBpalNfQ1YzTlVPVmVUdThDdXRJTGRqR3dzcDR3SXhUcXlWcmw2WTJiUVpxSFBueVlGS2h2ejNTUk5HN2F0bTg5M1lEbEZfbEt5WGJHUjY3RmZmZlZQVlNvNEY2R3RLNnd4WGJPQ19IWXVILWw5QmlKNXBuTV90R0Uzdkpyc1ljd3hvSFZYbmhyZENwMFBqYjVNOGZBdw",
+      "source_name": "AL Circle",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T07:18:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "AL Circle",
+  "cluster_key": "WAAREEENER|INTEREST_RATE|aluminium-easing-expectations-fed-raise-rate",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-28T13:15:46.661862+00:00",
+  "last_updated": "2026-10-28T13:15:46.661922+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-28T13:15:46.661914+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

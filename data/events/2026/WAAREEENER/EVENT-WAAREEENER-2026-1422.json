@@ -9,37 +9,21 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION",
-        "CUSTOMERS"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Adani Green Energy",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "Adani",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -48,7 +32,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -57,7 +41,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -71,21 +55,61 @@
       "published": "2026-10-21T12:07:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies Limited Reports Earnings Results for the Second Quarter and Six Months Ended September 30, 2026",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTW85T2JPY1ZpQUFHSVpLRWR0bFN2RGk0SDFvN2VKM29pVldLOGE5OEk4S3hqUjhIWGx4NXdLSG9vdFl6SUgxRE1DQV9Td0ctUmY5X1o5RGEtVFl1Nm4wVl9qS3pJTlJqTEpBaFlnRHhWNThkOGd6d1Z3NXBrY0FFRlRkTkJELVVveGNmcmJrV1Qyei1SdmdIVWRYOEloY05YZWNUQ1dlSC13M2gycWhKVkVWQ2hLZXA5dGxtMnhTRGtmQXZTRENoUFBxVWpjTklXQ0M4b1dFeDFOS3lUWTRvX0xDZDRLalQx",
+      "source_name": "www.marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T17:05:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies Q2 2027 Earnings Call Is Live",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX21pUFBRWVhTUXg4NWF4S0ZlUHNmZnJDa1hOekItS1hnenV6RjdXYVVYWHJtU2xYSllNc1BIYUswSkFQYWlJbGJWRWRXX1h5dFhoeEtxWDBqeDZ6YjY5THlEZkN6WmVUdFZxQjZtN0N1WXBpWElWTThFOEIxLWpzcWp6MWwwWV9pVUtoM19mN1RwaGh0RURRLW9kUTY0cUtOWVNqamRncDJlOTJVUEFRMEJUemc",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T08:27:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies Q2 FY27 earnings in focus on results day",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZkc0RjFPOVlGY1JIQkhZOFRXVmFqNkRobl9JRGVUNWtpTzFSUnlJVFp3VGNNOTJKVmVsMldMUnpqbkNqN0ZiMTRaOFNsSDEyY2NqYm4tbGRCYzZiTDBaX1dFdkZGYm1GM2dDWS1fZGdzMnFJU0E1RncxSDFwRGllZjNKREMwaE9lVHhPOVJYcTR5RnZqakVTR3N2aENiNHlUb3AtUXBJdEVON0lRbGtvdVFXbHo5djkwZlZXTHNrZmYyUWNKRDNKRm8wUU9YbV9NMFhLZmZ3",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T18:13:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "www.marketscreener.com",
   "cluster_key": "WAAREEENER|EARNINGS|adani-earning-energy-green-results-second",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:13:00.788611+00:00",
-  "last_updated": "2026-10-21T18:13:00.788682+00:00",
+  "last_updated": "2026-10-28T13:21:11.341837+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:13:00.788672+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:11.341815+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, TradingView, www.marketscreener.com"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:11.341833+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 6"
     }
   ],
   "price_reaction": {}

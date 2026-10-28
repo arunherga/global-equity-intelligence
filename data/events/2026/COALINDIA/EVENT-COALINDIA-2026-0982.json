@@ -12,19 +12,17 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.62,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "CASH_FLOW",
         "BALANCE_SHEET",
-        "REVENUE",
-        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -42,47 +40,23 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "+2 Acquisition, merger or divestiture",
-        "+3 Development at a known counterparty (Coal India)"
+        "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Coal India)",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening",
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are cash flow, balance sheet, revenue. Classified as capex.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Positive potential. Increased capex by Coal India expands mining operations and equipment deployment, leading to higher coal output and greater generation of scrap/surplus equipment. As Coal India relies on MSTC's e-auction platform, higher transaction volumes drive service fee and commission revenue for MSTC.",
-        "margin_effect": "Slightly positive. MSTC's digital auction infrastructure carries low marginal costs per transaction, allowing higher Gross Merchandise Value (GMV) from Coal India to yield positive operating leverage and improve EBITDA margins.",
-        "cost_effect": "Negligible direct impact. Operating costs are largely tied to fixed IT infrastructure, software maintenance, and personnel, with minor variable costs needed to scale up portal capacity.",
-        "competitive_effect": "Positive. Solidifies MSTC's entrenched position as the flagship e-auction provider for major state-owned enterprises, maintaining high barriers to entry for private platform competitors in government auctions.",
-        "regulatory_effect": "Neutral. Direct regulatory impact is minimal, though MSTC remains dependent on Ministry of Coal mandates requiring transparent public e-auctions for PSU coal sales.",
-        "short_term": "Modest upside over the next 0-3 months as Coal India's robust operational momentum supports steady e-auction schedules and immediate scrap clearance activities.",
-        "medium_long_term": "Strong positive driver over 1-3 years. Completed capex projects will expand Coal India's total production capacity, permanently lifting the baseline volume of coal and end-of-life machinery sold through MSTC's platforms.",
-        "second_order_effects": "Increased auction frequency and volume from Coal India enhance overall platform liquidity, attracting more industrial buyers to MSTC and creating cross-selling momentum for its other B2B auction categories.",
-        "key_uncertainty": "The proportion of Coal India's expanded coal output allocated specifically to competitive e-auctions versus direct Fuel Supply Agreements (FSAs) to power plants.",
-        "monitor_next": [
-          "Coal India's monthly coal production and total e-auction off-take volumes",
-          "MSTC's quarterly Gross Merchandise Value (GMV) growth in the e-commerce segment",
-          "Changes in government policy regarding the percentage of coal mandatory for e-auction",
-          "Surplus asset and scrap disposal listings from Coal India subsidiaries on MSTC's portal"
-        ]
-      }
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are cash flow, balance sheet, customers. Classified as capex.",
+      "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -150,6 +124,374 @@
           "Thermal power plant inventory levels and domestic coal demand trends"
         ]
       }
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -322,16 +664,56 @@
       "published": "2026-10-27T09:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India (NSE:COALINDIA) Capex Rises 27% to ₹7,966 Crore in H1 FY27, Crossing Half-Year Target",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMDlDVHVTUWxhWGJuUW9kdTg4SmdwakdIYS1jOWkwam9HekpBblpUUnNPTVRSM0NVLUJPbHhnR0duYjI4TlJXci11ekZTdGhYQTJYLUpVN0tHcEZFSWhXcjhNUWtqaGVKTmVUXzJTZ0dwZ1FOX0xoZWFvdzdsZmU2V0lUbm50bmF3QkpMN1lDSkU2dkNTTUgzWjF3V0N2UU9sNE1mb1Q1UDhUR2Q3aGZ6VUlkQ2hkVm1XUGs3WExVVjZJcHg5ZW5wY1Bn",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T17:38:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India H1 capital expenditure surges 27% to ₹7,966-cr, exceeds target",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV0YxZ3pKb2QxS3dvb0lQSE1WR2o0ZmxWUnB4N3JBT0x3dE14OGRrd2R6R0dzR1ZVcDdkLTItbnF0OHlaelJxS1U2MlUzOXhqazBmNG9CU0syeTB3TmpJT3JQemtaNlNTRDFMemVRYmo0U2c5QXNJX1RLX3h4U3lTdjhpRVFYRWRxYURLdGU1bWhId2FjRnhHN3RFeEtEU0V1bmlULWZyV3VjZ01mOTNpQ2RnTDZiQWtjZkhHQmc2OFlHbmJ1ZXgwUlFzb9IB0gFBVV95cUxPWnZocnNzbDFZZEpBLU53djFmb29Vckd1V0hhTE9DUFNFQ213Tl92bW0yOEk5RkNIY2NoYXEtUVg5R2RlWkluN2FCSTNXSXdSTVlwSEpGR1RBa0UzYnNtX205Z0lvSktkR0ZkWFJGWnVkUTVRN2Q5VE9ERW5wLUtCZW9Vdi1GV1ZlMnpXNFR6bzRrWUd4WnFBTlF4MzVDR1Y0X1I0S1QyelA1VThjRUlLcE5QTi1wdlhHWDhudDdEbTJQRl9ZUVFBTHZscTJIanZ2bUE",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T13:55:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India's capex jumps 27% in H1FY27 | Business Standard - newspaper",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQVY1YVhSQ3R1RGFiTmhxTGt5cmx0Ykp1RkVLVFpsWVU4ekcwUVh6dnB4R1RPZ0NkMTZTcHZ5M3A5OGdkVDVBd1NBdjBndXdSZHM0eFlRbEk3dTZTQ1hvcEtZZGRGeGxybHJkNjNxYVJoc2dISm1ZdEZoNmRpR2lrb0ZRVDRfNERpMF96eHpuWDU5U1VPOVY0STlKNjA",
+      "source_name": "Magzter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T06:43:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India’s H1 FY27 capex rises 27% to Rs 7,966 crore, exceeds target",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYkZMM0pVNlNrdWlJYkJ4RkpYc3NFODRyMnBwbEE3a3kyVEdGaGJ0M0pXektFQ2lJOUxrTWhlWUlSdDhWbUdHdFRSSmpaOUc2V01USEg1WjE2a1pwMG5jVE1ONmh1SWVqUFYyd3VWWnF0OWVKdmVrUldheVpBLVlTclBzbzJFSHFlZ2lhcTVlUTNDR3dyanhpVDV4S1Q1d0Y00gGuAUFVX3lxTE1EbXc5MDN0N01jenhjNWVEWmFRZkxieUQzR0ttaXEtQ0NWVW5wQ2NvVEswbE4tdHVQNGkyQnlmbVlPZDRuMG4xUFZmSWV1b2JBQ1YwakloRVpURmtLaWQyWDVkZklVQlZ0cFJ2UlZkYnF0X1ByQUNLY1V3eHZrM2Z6WUppMGVRVGR4YTh6Zzg2Zmt4SVYtUk1RT3dSMlpWQXNaWXhyOWhlemRJYWpGUQ",
+      "source_name": "PSU Watch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T15:17:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 17,
+  "article_count": 21,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|ACQUISITION+CAPEX|27%-966-capex-coal-india-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:28:43.118435+00:00",
-  "last_updated": "2026-10-27T12:32:52.991817+00:00",
+  "last_updated": "2026-10-28T13:20:58.690546+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:28:43.118552+00:00",
@@ -347,6 +729,56 @@
       "timestamp": "2026-10-27T12:32:52.991797+00:00",
       "change": "ai analysis",
       "detail": "MSTCLTD via gemini"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690499+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, Magzter, PSU Watch, The Hindu"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690520+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690525+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690528+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690530+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690533+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690535+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690538+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690541+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:20:58.690543+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

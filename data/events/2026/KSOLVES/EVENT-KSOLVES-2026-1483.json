@@ -4,20 +4,23 @@
   "summary": "Mastek: Q2FY27 Revenue Rises 3.4% to ₹1,018.7 Crore, Signs 53 AI Deals InvestyWise",
   "event_date": "2026-10-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,7 +31,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +41,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Mastek's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Mastek. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Mastek. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -66,16 +74,26 @@
       "published": "2026-10-23T11:59:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mastek Announces Q2FY27 Revenue at Rs 1,018.7 Crore, Up by 3.4% Q-o-Q",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQWhXX0RZQUNMcXBnZ2VYQUw2UUUtWHNqb1BFSng5NU1mMVpNU0ZpcFBiODRsMnppcU5HbVB2WW9VWW9QLXJVVHVydDF2QkFha0VwWWlIVTBkT0swZHN2ZllZdTVMRlRISzlMdHFadlBxMUM2X0RFT040aVQycFpMdmRsOVVLRXQ2d2pZbm9nOHZJZWFwNGpQeHF0YVZvUQ",
+      "source_name": "openPR.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T05:40:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "InvestyWise",
   "cluster_key": "KSOLVES|OTHER|018.7-3.4%-mastek-q2fy27-revenue-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:03:07.529829+00:00",
-  "last_updated": "2026-10-23T18:07:10.461610+00:00",
+  "last_updated": "2026-10-28T13:21:48.391976+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:03:07.529903+00:00",
@@ -86,6 +104,21 @@
       "timestamp": "2026-10-23T18:07:10.461592+00:00",
       "change": "sources added",
       "detail": "EquityBulls"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:48.391953+00:00",
+      "change": "sources added",
+      "detail": "openPR.com"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:48.391968+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:48.391973+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -4,17 +4,20 @@
   "summary": "Verizon signs $2bn AWS AI infrastructure deal Data Center Dynamics",
   "event_date": "2026-10-26",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "PARTNERSHIP"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
+        "PRODUCT",
+        "CUSTOMERS",
         "SUPPLY"
       ],
       "time_horizon": "UNKNOWN",
@@ -29,7 +32,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
+        "+3 Development at a known counterparty (AWS)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -43,7 +46,7 @@
       "watch_next": [
         "supply terms from AWS"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are product, customers, supply. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -57,21 +60,46 @@
       "published": "2026-10-26T18:20:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Verizon Expands AWS Partnership With $2B-Plus AI Infrastructure Deal",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9GUk1Ca2QtOGhFMXVzTUliNU9TVXVxWWZKT0pfX3dQUjJNSjFDRDc5NXZCVXEwdnd1LVh3TURoQXNiZGYyRUYzdW9vNTAwWEp0MWZiblFMRnhkc09VaVlPdjFqQUloV3VUaHRycWh0bTl0Y2EzYWpjNzVKYUdsUkE",
+      "source_name": "Channel Insider",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-27T17:37:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Data Center Dynamics",
   "cluster_key": "KSOLVES|OTHER|2bn-aws-contract-infrastructure-sign-verizon",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-27T12:29:06.224070+00:00",
-  "last_updated": "2026-10-27T12:29:06.224133+00:00",
+  "last_updated": "2026-10-28T13:21:13.591249+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:29:06.224122+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:13.591223+00:00",
+      "change": "sources added",
+      "detail": "Channel Insider"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:13.591240+00:00",
+      "change": "categories added",
+      "detail": "PARTNERSHIP"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:13.591245+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 3"
     }
   ],
   "price_reaction": {}

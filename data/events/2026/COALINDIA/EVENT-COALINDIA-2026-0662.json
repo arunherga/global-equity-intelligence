@@ -91,6 +91,35 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
@@ -103,16 +132,9 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Kotak Mahindra Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -129,9 +151,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Kotak Mahindra Bank's follow-up announcements"
+        "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Kotak Mahindra Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -145,21 +167,46 @@
       "published": "2026-10-07T03:43:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mitessh Thakkar recommends buying Sona BLW; advises selling Ambuja Cement, HDFC Bank",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeWZWaDVLTmpaZlpWbkIzTDdvelJzZEtxQ2lJbnRjRVBXRmlWX3ByRTRsTlFIRlpSeVJScTY0V3AxaHlIeDZYYUgxUnRNZHMtT3JmbXNYQmhwbmI1WXFKbU8wQXpkNzdrc0Rya2kxQXl6R3ZFMUJTTVQ3QTFtVF9rNS1UNG8tcTFzNUpXckZ3Y2lGMDlUeE1LQVJBSlN2WTdFTzAteXM0X0lPTTZ6SnVzT2hBMlVqRklkZWdJ0gG7AUFVX3lxTE15ZlZoNUtOalpmWlZuQjNMN296UnNkS3FDaUludGNFUFdGaVZfcHJFNGxOUUhGWlJ5UlJxNjRXcDFoeUh4NlhhSDFSdE1kcy1PcmZtc1hCaHBuYjVZcUptTzBBemQ3N2tzRHJraTFBeXpHdkUxQlNNVDdBMW1UX2s1LVQ0by1xMXM1SldyRndjaUYwOVR4TUtBUkFKU3ZZN0VPMC15czRfSU9NNnpKdXNPaEEyVWpGSWRlZ0k",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T03:46:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "COALINDIA+HDFCBANK+MSTCLTD|OTHER|buying-kotak-mahindra-mitessh-recommends-thakkar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-07T13:44:11.877117+00:00",
-  "last_updated": "2026-10-07T13:44:11.877215+00:00",
+  "last_updated": "2026-10-28T13:21:38.543721+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-07T13:44:11.877203+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:38.543693+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:38.543714+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T13:21:38.543718+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}
