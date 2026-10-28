@@ -10,9 +10,9 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -29,10 +29,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "copper is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -43,6 +44,46 @@
         "copper over the next few weeks"
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.28,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +97,46 @@
       "published": "2026-10-28T08:34:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mitsubishi Materials to halt copper processing in Johor by March 2027",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSjVtVjRkZUN2Y2xQMEVJRkdTNG9nenh5dHhKM2hFUDA5VUE0NnFnYUZRSUNrSzc1NEs4VmdVXzYtN3dKV21Pb0UwNm10b0ltWVAxWV9rMGxuZzhOcThPbjdTQ1QwN2wzMXd6bFlGai1OcGZZZ05laVlGcjdLVS1XYkNNbGJYdWE5WmdyQnhIdjlvTXJJUzF2emRQelRpMVlt",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T08:41:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Edge Malaysia",
   "cluster_key": "WAAREEENER|OTHER|copper-materials-mitsubishi-ops-processing-shut",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-28T13:16:11.700885+00:00",
-  "last_updated": "2026-10-28T13:16:11.700967+00:00",
+  "last_updated": "2026-10-28T19:46:16.146334+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:16:11.700955+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:16.146300+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:16.146320+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:16.146329+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

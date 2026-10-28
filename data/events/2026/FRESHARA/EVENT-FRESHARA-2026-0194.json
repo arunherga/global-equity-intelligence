@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0194",
+  "title": "Tomato and cucumber prices rise as unheated greenhouse cultivation winds down",
+  "summary": "Tomato and cucumber prices rise as unheated greenhouse cultivation winds down Hortidaily",
+  "event_date": "2026-10-28",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "cucumber prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "cucumber prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to cucumber prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Tomato and cucumber prices rise as unheated greenhouse cultivation winds down",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVzJpTWdZWjhLNk5Yb25XRDhaaVZ4eElsZm01S0lBeng2U1l2MnJVd1JfV0prSEVNSG1GV1Myd2tfbG9GT1NkTmJ4LUYxaFhJb0dTTjdNV3czaTZTTHZsS0NHeUhYMFBxR1loWUJDalA2ckdxX1lDRU1BSE9iekJ6aGRmUGZGOG5IU2FxSzlEdEIwVFh2Yy11UllQRUVvWm5YZWRlanRTS0k0Mm52c0JIaU11VXlxVzVRdVVzNlpn",
+      "source_name": "Hortidaily",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T13:29:15+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Hortidaily",
+  "cluster_key": "FRESHARA|COMMODITY|cucumber-greenhouse-price-rise-tomato-unheated",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-28T19:43:32.143961+00:00",
+  "last_updated": "2026-10-28T19:43:32.144054+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-28T19:43:32.144042+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

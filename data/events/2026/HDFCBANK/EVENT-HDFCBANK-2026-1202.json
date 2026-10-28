@@ -9,14 +9,23 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "credit cards",
@@ -26,22 +35,68 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to credit cards. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "Axis Bank's follow-up announcements",
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank, and HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +110,46 @@
       "published": "2026-10-27T18:59:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Credit Card Additions Hit 1.26 Million in September, Second-Highest of 2026; HDFC Bank and Axis Bank Lead",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQd3laNmpiSUFzSEVZZ0xKNDhiYWNpT2JDNTM4cHJUOWRrSmVnRnA2YUxSRGgyMnNFYTBabllSOE5mOThvZ3RCRkM5Ym54LVlQN2dNZTJ1VW1sOER6YTVQVE9wLXhfUGZ5NXpTSjhkOFVfUHA4Q24wZWZYSHVJcl9nZjJpeHdyOW55QUNhWG9ObUZfRm4yQnJfaUx3UnBYRVpHVnRMamQ0ay0wUW91Mmx0V2NB",
+      "source_name": "Elets BFSI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T08:38:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK|OTHER|additions-card-credit-hit-monthly-second-highest",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:13:29.821530+00:00",
-  "last_updated": "2026-10-28T13:13:29.821618+00:00",
+  "last_updated": "2026-10-28T19:46:13.979809+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:13:29.821604+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:13.979777+00:00",
+      "change": "sources added",
+      "detail": "Elets BFSI"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:13.979798+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:13.979804+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

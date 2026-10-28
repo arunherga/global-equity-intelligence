@@ -1,0 +1,78 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-1778",
+  "title": "UBS Thinks the Street Is Too Low on AWS. Amazon’s Quarter Is the Test - 24/7 Wall St.",
+  "summary": "UBS Thinks the Street Is Too Low on AWS. Amazon’s Quarter Is the Test 24/7 Wall St.",
+  "event_date": "2026-10-28",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from AWS"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to AWS. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "UBS Thinks the Street Is Too Low on AWS. Amazon’s Quarter Is the Test - 24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT0FwNDZFc0RPRjUtU3ZyTHhtQzNKZWEwQVJCbkhueHVQQXFnSkU4eDc1WGpMalVJU2JrT0NqaWpLOXVWaXFWS1c2ZUVNUDhqNWpUM1lEcmZ3eDM3eFBIRzlGUFVXTW5CYWNCQ3pvSE13T2d4YTB1QTJUM2JrVlNkajdqUkw1VXpWa3hrM3ZjUkstV0JNdjFUZW1Vdk5tbmRaYmJoZ3FEQ1JST3NJZVRmTQ",
+      "source_name": "24/7 Wall St.",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T15:58:11+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "24/7 Wall St.",
+  "cluster_key": "KSOLVES|OTHER|aws.-low-street-thinks-too-ubs",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-28T19:44:36.915323+00:00",
+  "last_updated": "2026-10-28T19:44:36.915421+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-28T19:44:36.915410+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

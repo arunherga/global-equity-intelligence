@@ -83,6 +83,45 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to EMA. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "City Union Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "City Union Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to City Union Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -105,16 +144,26 @@
       "published": "2026-10-28T02:00:37+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "City Union Bank, Kalyan Jewellers, and 4 Other Nifty 500 Stocks Taking Support at the 200-Day EMA",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNem11VVZSWFNhUmFaWVprZG5GUWtHMmdKZ2oyenN1VEx4ejZzQmdDa1V4LWQ1R1lWcUctdzNOTHlHX1ZzNFFaQXhXRUIySjNQd0xaSy1xLWYxOUo0R3hNU2lfdUNvcU9kR01pZ1JvQzI5T09MUTQyV05QUjRXeGVPZmdtQ2RBSzhEQWRpNWEtMTRtRTN6X2JnTHBCQWJhUFFhVU9nemlLWWF3dWJRWEk0WXFGeVM5bnFzbEhqUnN2Uy1BRWZNZnJESnNxQWZLQndxeE9zQlpuTkJmQQ",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T09:55:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Trade Brains",
   "cluster_key": "SUPRIYA+WAAREEENER|OTHER|500-adani-nifty-other-power-power",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:38:16.108190+00:00",
-  "last_updated": "2026-10-28T13:21:34.685671+00:00",
+  "last_updated": "2026-10-28T19:46:17.555343+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:38:16.108267+00:00",
@@ -125,6 +174,16 @@
       "timestamp": "2026-10-28T13:21:34.685647+00:00",
       "change": "sources added",
       "detail": "Trade Brains"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:17.555316+00:00",
+      "change": "sources added",
+      "detail": "Trade Brains"
+    },
+    {
+      "timestamp": "2026-10-28T19:46:17.555336+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}
