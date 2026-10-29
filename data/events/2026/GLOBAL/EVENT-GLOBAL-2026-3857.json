@@ -14,16 +14,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.84,
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
       "business_impacts": [
-        "REVENUE",
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
-        "DEMAND"
+        "REVENUE"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -33,10 +29,17 @@
           "detail": ""
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
           "detail": ""
         }
       ],
@@ -48,11 +51,10 @@
         "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
-        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -60,10 +62,9 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "competing bidders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -71,16 +72,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.84,
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
       "business_impacts": [
-        "REVENUE",
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
-        "DEMAND"
+        "REVENUE"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -90,10 +87,17 @@
           "detail": ""
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
           "detail": ""
         }
       ],
@@ -105,11 +109,10 @@
         "-7 Share-price listing or roundup page, not a development"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
-        "two independent sources",
         "official confirmation available",
         "indirect relationship",
         "financial implication is quantified"
@@ -117,10 +120,9 @@
       "watch_next": [
         "bid outcome",
         "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "competing bidders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -164,16 +166,26 @@
       "published": "2026-10-23T04:18:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Underwriting Auction for sale of Government Securities for ₹33,000 crore on October 30, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63880",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-29T12:05:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|TENDER|000-auction-government-sale-securities-underwriting",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:08:53.527773+00:00",
-  "last_updated": "2026-10-23T12:05:45.457784+00:00",
+  "last_updated": "2026-10-29T13:24:32.967206+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:08:53.527851+00:00",
@@ -209,6 +221,21 @@
       "timestamp": "2026-10-23T12:05:45.457779+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:32.967186+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:32.967199+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:32.967203+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

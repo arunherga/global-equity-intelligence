@@ -10,8 +10,8 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
@@ -27,12 +27,20 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
         "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -49,7 +57,7 @@
         "competitor exposure to the same duty",
         "pass-through to customers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to solar glass. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to solar glass, and Europe. The parts of the business most likely touched are exports, pricing, input cost. Classified as tariff.",
       "ai_analysis": null
     }
   },
@@ -63,21 +71,41 @@
       "published": "2026-10-26T14:50:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Europe Scraps Antidumping and Countervailing Duties on Chinese Solar Glass",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQY0xCYUFXaUVYM3ZkTjVqV1VpdkZkMUlQRG9fTURZY0hsLXJ4YUNVOE9uWlc3MnhhalpsR0NJREFPRjduM1J1b2s5d3VONnRsa1A4Y1FVNHdIVi0xc0gzcG81a1d2b28zd1JidGdZOHhBU1o2SEEyeF9JbFVXdUs1a21NSUJwZU5NUjdKbU1yOGVGdTF5MlNndm94NDhLc2VGV0hUSg",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T06:23:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "USGlass Magazine",
   "cluster_key": "WAAREEENER|TARIFF|china-ends-europe-glass-solar-tariff",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-26T19:26:20.426607+00:00",
-  "last_updated": "2026-10-26T19:26:20.426684+00:00",
+  "last_updated": "2026-10-29T13:25:14.096909+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:26:20.426674+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:14.096892+00:00",
+      "change": "sources added",
+      "detail": "Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:14.096905+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 8"
     }
   ],
   "price_reaction": {}

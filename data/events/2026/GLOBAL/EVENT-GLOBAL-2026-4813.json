@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4813",
+  "title": "Gold prices remain flat after Fed holds interest rates steady; investors await US inflation data",
+  "summary": "Gold prices remain flat after Fed holds interest rates steady; investors await US inflation data Moneycontrol.com",
+  "event_date": "2026-10-29",
+  "event_types": [
+    "INTEREST_RATE",
+    "MACRO"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Fed holds interest rates steady despite persistent US inflation",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWk05dEpJaWtQRDM2R3haQThWMHhkaTBDRXl1VGlLRjRvNjE4ZnRXYVgxNzN4Z0g0SXFfYW5aWUxfcnJSVTc3amxRZ1pVbWgxME1UT29HUUk3aXNaVDU4Rk5MMWF4NE9SMEs2aWxGM2xobUo2Y2RrVUhXNnVRbTRsbF9sOGViYnlSM1pxSHprZmdBYlh2OTBkQ2xLYXhtbWFfczFVekpnZ23SAa4BQVVfeXFMTW1fZlRESmNOUnZxWTZ6NWZ0SmlxVlRPUWZvOVhHX1BqRGpic1N6SlJyS0Zhb1lHSHJqR1E4ZEZsY0hEWW4tTHFGbGVzRGkzaDBmUUdMdnZRQUV2YWhYV3ZVWHZad2xBNFlLTnktcmdqNVZwck1EYUU2aHZQTXpkT01KWTZGaU4wM0Uzb0l0STVXTkR3NEFXNXc5RVAxZkpDZE5NY1Yyajd6ckdTdTlR",
+      "source_name": "Free Press Kashmir",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T09:24:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices remain flat after Fed holds interest rates steady; investors await US inflation data",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOUzFSdmNZenVkY285dlBSTFNlakFZQnR6bXg1T1FfODhDR3Y1eWUzQkxHbXR1NXFhbkdsZkZjWlRxT090Tk1NM21SZXFFLTNMRFItdmVOblBQU254a0p4LW42SUVkWUVTcVZfcnNRd1hZclpSalJld0VreHpxeU5udzBOaEU4WmQ3RjRoVXVFNER3V012RG9SYkNMMEtKVGl1YmxvQ1FYdTJtZktwQUtHS09EM0JzeWlMdWR2RWZ3SDZuTUtYYnpkUHBXM1RpQk5SUFVEX1d5V0pPdzhnZm5ZMThTVEhLZnZlZmpHd3lzWnItWnpKbk1wMl9wdkJ1QdIBgwJBVV95cUxQc2piREhNRFl0VWxPb1hEWlJ0WGlZOW9pbHVyTk1IY04yRms3UVc3R2hZdzNrUGZiUXluamNTNUhZQVo0SnQxN2VaM0dQWVFEaFJnWURhTnZkcWR3VmhjTGtua01yUnhjWHFsWWpBRkZSNWh1WFdZLThYaDRDeG9BLXA4dDBnS242YlhlSnpxaUxnaGk1ZlBaTkFkbkdBYnhPTk9IQTVheHNqRVhmX0JNcS1WbEdHemhLZThQRTlpU1Z1bG5tak96bUVIWExlbzRyekdpQXBCbC1HdEgtQ2E0Rk4zZk5EbUxDc3N5VXB2MmQxYnp6UHVFRkxnUWk1Szl3bEhn",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T03:45:21+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Free Press Kashmir",
+  "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-flat-gold-holds-price-remain",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-29T13:20:03.092054+00:00",
+  "last_updated": "2026-10-29T13:20:03.092114+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-29T13:20:03.092106+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

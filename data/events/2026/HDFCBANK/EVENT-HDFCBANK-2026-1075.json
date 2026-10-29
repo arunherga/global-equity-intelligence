@@ -61,37 +61,46 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "asset quality",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "COMPETITOR",
+          "term": "City Union Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -99,7 +108,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to asset quality. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to City Union Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -183,16 +192,36 @@
       "published": "2026-10-27T05:56:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Earnings call transcript: City Union Bank posts strong Q2 2027 growth as stock holds steady By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNbXBEdlVmUS1sTUZoLXN2VkxzSW1WakVHRVVUNElqSkQzb2JEUUVMellYOU5Na0dJQkZ0am13VnZBVkd6UUptaVpEY2xaci1KNVZEREdvb3ktSWZ1TGE0X1QwQjg3eGN1b05ITjFrZ0VEb3EtNXBKN0Y2OUxkalM5STNLQlhRbldXUTRra0FEYWtzcHNYRFNjNzBUcUtUQU0wQ21OLWZMSDg3Y3RRWHBDa3hGdU04UmJpNEFQem80bE9WUkhzZTdZMDhuMHREenp3bk44aGt4RHktRUdZM3lNNzcyWjNMQQ",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T14:22:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Earnings call transcript: Karnataka Bank posts record Q2 2026 growth, shares slip By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONVBubVE1dWxtS0tHbTVybmdOTkFKRkFrMURoc3VNTDVycUdlVWp5YjdpTHAxS2VqWmJ6VUxGSkZMejUzNk5Ba1V3a01PUFhpQlRaYzRXMlAwcHhmMGZLRF96Wm9XREVoR1VMd3liclN1T19xamZKWHFWalRUMTluQThRTUdYN0ZXV3BqR0xUc0Z5cVE1YjJUYnpnMUEtdHNmaUlFeTBlbDlmMTNiZTJ0LXQ3SXZ0M0xIeU1ZZXp6WmlobS1WWGVKR3JraTRNR1dZOE9FX0pZRQ",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T12:02:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "HDFCBANK|EARNINGS|bank-call-earning-indusind-stronger-transcript",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T18:04:35.207361+00:00",
-  "last_updated": "2026-10-27T12:35:03.847589+00:00",
+  "last_updated": "2026-10-29T13:24:46.042787+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T18:04:35.207435+00:00",
@@ -213,6 +242,16 @@
       "timestamp": "2026-10-27T12:35:03.847571+00:00",
       "change": "sources added",
       "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:46.042764+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:46.042783+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

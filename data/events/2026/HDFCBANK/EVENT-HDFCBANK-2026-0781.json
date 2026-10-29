@@ -9,6 +9,35 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
@@ -21,16 +50,9 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "State Bank of India",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -47,9 +69,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "State Bank of India's follow-up announcements"
+        "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to State Bank of India, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -63,21 +85,46 @@
       "published": "2026-10-15T03:56:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Stock Update: Shares Edge Lower Amid Leadership Transition",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeVZLMlpLdHhESlIxN01HeDZ1WEpEaE9QQTc5cC1vb2VBX3d3c3Q5cE9YWEpoOXNVT0RIUHF1b0JZZFhaSUhBSXNLREFESDk3VENNZ085ZThxX0cxNFo1VXV4WTJXQmFyMmJFRm02TUtJOEhjc2EzWFMtVk9TUGpXcEtYaDRGV2ZKX1ZCcGF2WlJIbkpNOTJZM3FvMTNYTkJJUWE3X3ZydWRzTUZVbUpiWGtKTU_SAboBQVVfeXFMUHd5dE51c0lFXzUtTWJoVzl0YVhJRWxZcDRzVWM5TzFOaWc0UnNlUy10bFdyeVppTDYtdG54ckVpaUliZkZVQzkyWHZhTVVwRUlJMWw0OG1HaDBmdEVOT1hNUmdMWE5UNjBWRmFNT2pLM2tJYnZkWkVqY3dnTlkwMFoxa2N5WHc0S0dXSXRZOHU3V1U4b0RHSVZWa3RXS1lwblFDYWxKRV9VVDBETENGRTNpWWowRGw3Qjh3",
+      "source_name": "LatestLY",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T03:59:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "LatestLY",
   "cluster_key": "HDFCBANK|OTHER|bank-edge-india-share-share-state",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:52:38.380108+00:00",
-  "last_updated": "2026-10-15T11:52:38.380193+00:00",
+  "last_updated": "2026-10-29T13:25:02.924740+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:52:38.380183+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:02.924717+00:00",
+      "change": "sources added",
+      "detail": "LatestLY"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:02.924733+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:02.924737+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

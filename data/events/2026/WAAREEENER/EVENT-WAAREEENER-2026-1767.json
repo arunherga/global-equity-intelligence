@@ -10,14 +10,13 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 10,
+      "impact_score": 9,
       "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.57,
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY",
-        "CUSTOMERS"
+        "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -27,28 +26,21 @@
           "relationship": "INDIRECT_STRONG",
           "weight": 3.5,
           "detail": "group company, separately reported; in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "independent power producers",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Order or contract",
-        "+2 Company appears in the headline"
+        "+4 Major order or contract",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -56,24 +48,24 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Potential positive revenue growth if Waaree Energies is selected as the primary module supplier for this 450 MWp project awarded to its group company, Waaree Renewable Technologies.",
-        "margin_effect": "Generally stable; group synergies can lower customer acquisition costs, though margins will depend on inter-company transfer pricing and prevailing solar cell and module prices.",
-        "cost_effect": "Increased production volume for this order could improve manufacturing scale efficiencies and unit fixed-cost absorption, while raw material input costs remain subject to global supply chain trends.",
-        "competitive_effect": "Strengthens the group's overall competitive positioning by showcasing an integrated value proposition that combines module manufacturing with turnkey EPC project execution.",
-        "regulatory_effect": "Minimal direct regulatory impact, though the project must comply with Approved List of Models and Manufacturers (ALMM) regulations and any local grid-connection rules in Rajasthan.",
-        "short_term": "Limited financial impact in the next 0-3 months as the project is slated for completion in FY2027–28; initial activities will focus on contract finalization and manufacturing scheduling.",
-        "medium_long_term": "Provides medium-term revenue visibility and supports higher manufacturing plant utilization through FY2027–28 as module orders are fulfilled for project execution.",
-        "second_order_effects": "Successful joint execution could boost market confidence in group synergies, leading to higher win rates for integrated solar bids and requiring short-term working capital expansion for inventory ramp-up.",
-        "key_uncertainty": "The specific percentage of module volume and contract terms that will be awarded internally to Waaree Energies versus sourced from external suppliers.",
+        "revenue_effect": "Consolidated revenue could increase if Waaree Energies supplies the solar PV modules for this 450 MWp EPC project awarded to its subsidiary/group company, Waaree Renewable Technologies. However, standalone revenue impact depends on whether modules are sourced in-house or externally.",
+        "margin_effect": "Unclear. Consolidated margins will depend on EPC execution profitability and the transfer pricing or contract margins of solar module sales from Waaree Energies to the EPC arm.",
+        "cost_effect": "Input costs for raw materials (such as solar cells, glass, and backsheets) may rise to fulfill the module manufacturing volume required for a 450 MWp capacity installation.",
+        "competitive_effect": "Strengthens the integrated market positioning of the Waaree Group, reinforcing its ability to offer combined EPC execution and in-house module manufacturing capabilities for large utility-scale solar projects in India.",
+        "regulatory_effect": "Project execution will be subject to ALMM (Approved List of Models and Manufacturers) compliance, local land acquisition norms, and state grid connectivity regulations in Rajasthan.",
+        "short_term": "Initial contract finalization, procurement planning, and potential announcement of internal module supply agreements between Waaree Renewable Technologies and Waaree Energies over the next 0-3 months.",
+        "medium_long_term": "Phased revenue recognition as the project is executed, leading to higher capacity utilization of Waaree Energies' manufacturing plants and an enhanced execution track record for future large-scale utility solar tenders.",
+        "second_order_effects": "High utilization for this project could reduce idle capacity costs across Waaree Energies' manufacturing lines and build stronger regional supply-chain logistics in Rajasthan for future projects.",
+        "key_uncertainty": "Whether Waaree Renewable Technologies will source 100% of the required PV modules directly from Waaree Energies Limited and the specific timeline for module delivery.",
         "monitor_next": [
-          "Formal announcements or related-party disclosure of module supply agreements for this 450 MWp order",
-          "Project execution milestones and timeline progress updates for FY2027–28",
-          "Waaree Energies' quarterly order book additions and module capacity utilization rates",
-          "Regulatory developments regarding ALMM guidelines or domestic procurement rules in Rajasthan"
+          "Disclosure regarding inter-company module supply contracts or procurement source for the 450 MWp project",
+          "Project execution milestones and completion timeline in Bikaner, Rajasthan",
+          "Quarterly updates on Waaree Energies' consolidated order book and module manufacturing capacity utilization",
+          "Solar PV cell and module price trends impacting raw material costs"
         ]
       }
     }
@@ -128,16 +120,66 @@
       "published": "2026-10-28T19:25:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rajasthan: Waaree RTL Wins LoA for 450 MWp Solar EPC Project in Bikaner",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbVFWRWl6VGxIZWhiRjh6M0xCVWhPNmdyRTdzRXJRbGR6Q2V1Q2NCVFdyU1pBX1pfandJSV9SRldnZ0x1MlVaMEhnOFN4YmJxdFdqRUg4R0ZLV1lmT0F3bEZSOHdfd09OdzM2a0VoWEVzWGwtZF90ZS11LTZidkRoWUVsdmJMYjhCcXJ2a1V3Y3dKRkIzeGpxOXZXTl9SejMzUmRXREpDUkd6RW1GQWs1LWw1UWd5aFUtc0ZydmdNMnJ3UQ",
+      "source_name": "Saur Energy",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T03:52:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Secures Letter of Award for 450 MWp Solar EPC Project in Bikaner, Rajasthan",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdW0tMDE3NGl0YzZjVDRuWXllaXVfbnU1MkREUE9jNjRpTkRuSkRvOWQzSFpQNk5zM3lONWU0SjBBU0hQSU5aR1lnRUFKRXp2WnlVZDZueUdfUzltTDNBWlh1VkdXemtfVmRGNmdCMnRha0V4V1BYbzJRXzhCVHZSRlFoUVpSR0xmYUlpVjJwbHl0RVVBWXlVNHBEWlJPSFphYnUxTU9qMDRhQ283anhQSUd4NUU3VDIzWUJtOUJvQTRjcV9sWDhEQVlHcFMtbHZjS0JOREdDby1pdVE",
+      "source_name": "Passionate In Marketing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T02:45:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Wins 450 MWp Solar Project in Rajasthan",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdm9MaC1JcnpBd20wOWRSdEZSOGRIOHZ5WHN2TmRiNzZrb29xeGhPQ3hxQjduLWgteDFITG1FZGJ3N3pybGVZcW03RmFjdWhOOVo0WTVvU21CRHVSaVNUdEtod0VrVUNuNDNVUjdGNExwcjVBSUdjT2otS0JrOUh2U003a3locmlWbE1XdUctODF0WlFLLTE3ZFkzM24wVlg3Y2FpWWxyYzlPbUE",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T05:20:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies bags 450 MW solar EPC project in Rajasthan",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc1VrN2Y2SXJiTkhPa2ozWDg3N1A5d0pjUHRkWUtwU3h6R3Nhb3M2a203andTeTRueDZ0cU1EOUtCQkxyNzF4VngxT3JuZzlLWDAyT3duSDMzRXR2T2VNX3ljU3BIRTBFczl6VjI3RnNkVHdnTzQxZmNpSGRMTzE4THFPYVFiWVM5QkFUOGhtamxNNkdyZkNsMzE2dDFuaW1qallKc3c2S0owQW9sWmZNdWJ2b2Y0c2V6UDlmWVBNOXdXQ0o0TzRHZ2FCXy1odzV4TDRMcWpZeWFOOXNaOWfSAeMBQVVfeXFMTnBWN3VYMXFyZmRiUHFuaGs0V3A2WC1HbkNqR25RblAweVRvU0JxMmF2WVlhYnZVdEQ1aDEtZEdIOHE1ajVoNmhFbWZvejNmQzBIbFF6bUtoT3hNYnBLOVJSTWItSjhFdWFSNGNxVGRrQnFPMXF2Zk4wUk5XWVQwQ1Z0b1U4a2xBOEE4UExyeXJFWDkxTk4taC12RFhLN0lKbkRrS0t0VWNDVmFwS1lfUDJ5dHc2d0QxOUlIb1lFQ2tTTjVpeTV5bXgxZ1NLR3JHWXpXdVV6enN3S3hSci1UbWt1Qzg",
+      "source_name": "ET Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T14:45:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable bags order for Rajasthan solar project",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORTJFbFAtU1o4TE12SFlMSGltejlSaUlfaU5KbjVOUGVDc0tvaWdhWkxqM0REUmJaTmh6bElWalpVZlpHaWFGSmJBa0xwNjFjZEZnaWJqWWdPU3hHSDNMZERCdXJPVmpIQ3pNRjBEcDZ0Yno2cVFVdE5hSDdkWkFHTkZJWWVmenVVa3VMa3FjYVpBNFVxLUJzdjdUUUN3NklWY085MA",
+      "source_name": "Construction Week India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T04:15:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Trade Brains",
   "cluster_key": "WAAREEENER|ORDER_WIN|450-mwp-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:44.681017+00:00",
-  "last_updated": "2026-10-28T19:47:00.440177+00:00",
+  "last_updated": "2026-10-29T13:24:47.017370+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:44.681074+00:00",
@@ -158,6 +200,16 @@
       "timestamp": "2026-10-28T19:47:00.440154+00:00",
       "change": "sources added",
       "detail": "BigInfo.in"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:47.017348+00:00",
+      "change": "sources added",
+      "detail": "Construction Week India, ET Manufacturing, Energetica India Magazine, Passionate In Marketing"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:47.017366+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

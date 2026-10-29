@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.2,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,8 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,8 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -100,10 +99,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.2,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -120,8 +119,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -130,8 +129,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -190,10 +188,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.2,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -210,8 +208,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -220,8 +218,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -243,21 +240,51 @@
       "published": "2026-10-28T10:26:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Petrol Diesel Prices Face Pressure as Crude Costs Surge",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOczZpZ0FkZEwyZGg4YmdBcENsUjJBUEtFNXA0TTE2ZDBLZDh2Q19LZXhXNURJTzk2RGQ5R3p0STYwSTJnVVBtNWdZOF83QTFENjFKcko4cldmVjhfYkgtMFRvU0NpWGpJNWZfcFZIUkRwUDRIRUhHTVNsYXZNX3M2QWo1YmN4UWpiblpESFRR",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T03:35:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL+RAVEL+SUPRIYA|COMMODITY|crude-diesel-diwali-petrol-price-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:16:39.563013+00:00",
-  "last_updated": "2026-10-28T13:16:39.563088+00:00",
+  "last_updated": "2026-10-29T13:25:01.263621+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:16:39.563077+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:01.263594+00:00",
+      "change": "sources added",
+      "detail": "Urban Acres"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:01.263611+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:01.263615+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:01.263618+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 5"
     }
   ],
   "price_reaction": {}

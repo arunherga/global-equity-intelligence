@@ -4,19 +4,22 @@
   "summary": "Amazon's AWS Backlog Takes Center Stage Ahead of Q3 Earnings TradingView",
   "event_date": "2026-10-26",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "CAPEX"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "CASH_FLOW",
+        "BALANCE_SHEET",
         "SUPPLY"
       ],
       "time_horizon": "IMMEDIATE",
@@ -32,8 +35,8 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "+3 Development at a known counterparty (AWS)",
         "+2 International market development",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +53,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to AWS. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to AWS. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -84,16 +87,36 @@
       "published": "2026-10-27T21:38:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Amazon Earnings Preview: AWS Backlog Meets $220B Capex",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdWpuZ2dFY3UtYTJwNXk0SGpYV2tpZ2Qtdk1mRFZUc2FVVWhUQXROTXRtOVFkSDFCeWV1TVEtdXJRd213Y2ZRS2M2RHNvLTMtUmdlTWFSa3p0eXVJX2JOQXNfTVBrd3d5S1M3Nk50RThrWUgya3R4WGlTd2JkdmhUNnNUQU9tX0p5NXJMa1F6QTlsemdHWFJV",
+      "source_name": "tastylive",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T20:06:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Will Strong AWS Performance Boost Amazon's Q3 Earnings Report?",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVGtMemFvQ2VuQ3JEbG1LcDhDZ21nNThPeExzWnFTN3Jpc2l0T0xfcjZIdy1EMWt6SHlSblgxVWNCVzFYVDRkdGhzbU9KRVAyMW0ycTh3cHVKaDBBX2Y0NmE1Uk1FaDRfLXZ3MUtmQnJTUUVZcGU2RmRXTlFLY1dXNm9XWkY1UkhmdDhCcFFpUjVIZFJRNGRDajJrSXhtN0R4dnFB",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-28T16:42:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "KSOLVES|EARNINGS|amazon-aws-backlog-center-stage-takes",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-26T19:26:38.588224+00:00",
-  "last_updated": "2026-10-28T13:21:25.586107+00:00",
+  "last_updated": "2026-10-29T13:24:48.789077+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:26:38.588317+00:00",
@@ -109,6 +132,21 @@
       "timestamp": "2026-10-28T13:21:25.586089+00:00",
       "change": "sources added",
       "detail": "Zacks Investment Research"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:48.789058+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance, tastylive"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:48.789070+00:00",
+      "change": "categories added",
+      "detail": "CAPEX"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:48.789075+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 3 -> 8"
     }
   ],
   "price_reaction": {}

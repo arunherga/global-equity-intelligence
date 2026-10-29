@@ -7,7 +7,8 @@
     "OTHER",
     "TENDER",
     "DEBT",
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
@@ -293,16 +294,36 @@
       "published": "2026-10-27T09:00:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Money Market Operations as on October 28, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63879",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-10-29T09:00:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "RBI's money market operations report showed a net liquidity withdrawal of 13,453.13 crore rupees on 28 October",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ01yOFR6RDBpOFN5LURRekpQak9Ra2dQcmVxellZSDhmVVI2bWJoNnkzVTJmMTRTbERMN1VoQ2Q5QmxqUXhzZFRjZ3dYMmdrbkZDR29jNWdfZzd6VXdXT0lkRllwX2RObEVwRTNyUG9iVk82c1dHbWFLQ0lWSnhLTlh6NFhRVHlGQk1FejROSW9vRmE5czRRb2Q4RlV1QQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T04:19:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 17,
+  "article_count": 19,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|OTHER|market-money-operations-rbi-rise-saw",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:39:12.463459+00:00",
-  "last_updated": "2026-10-28T13:20:38.181422+00:00",
+  "last_updated": "2026-10-29T13:24:32.846293+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:39:12.463528+00:00",
@@ -388,6 +409,16 @@
       "timestamp": "2026-10-28T13:20:38.181418+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:32.846272+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India, Traders Union"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:32.846287+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
     }
   ],
   "price_reaction": {}

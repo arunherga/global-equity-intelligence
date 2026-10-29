@@ -11,29 +11,36 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.68,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Earnings or guidance",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving down"
+        "reported results moving up"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -43,27 +50,8 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Revenue grew 24% YoY during the quarter, reflecting robust volume expansion and strong demand for solar modules. However, persistent downward pressure on global solar module average selling prices (ASPs) could offset volume gains in upcoming quarters.",
-        "margin_effect": "Margins suffered significant compression, as evidenced by the 15% YoY decline in net profit despite top-line growth. This indicates reduced gross margins and reduced operational leverage, likely driven by lower module realization prices or higher input cell costs.",
-        "cost_effect": "Input costs and operating expenses increased at a faster pace than revenue growth. Fluctuations in raw material prices (such as solar cells, wafers, polysilicon, and glass) along with higher freight or operational expenses associated with ongoing capacity expansion added to the cost burden.",
-        "competitive_effect": "While top-line growth shows Waaree maintains a strong domestic market share and volume execution, profitability pressure could limit pricing flexibility relative to vertically integrated global and domestic peers.",
-        "regulatory_effect": "No direct regulatory changes were triggered by the earnings release, but the company's reliance on domestic policies like the Approved List of Models and Manufacturers (ALMM) and Basic Customs Duty (BCD) remains high to protect margins against lower-cost imports.",
-        "short_term": "Over the next 0-3 months, sentiment around the stock may reflect concern over margin deterioration. Focus will likely shift toward inventory management, cost control measures, and realization trends for current contract execution.",
-        "medium_long_term": "Over 3 months to several years, restoring profitability will depend heavily on the successful execution of backward integration initiatives (e.g., cell and wafer manufacturing) and expansion into higher-margin export markets like the US.",
-        "second_order_effects": "Lower operational cash flow from reduced margins could increase reliance on debt or slow down planned capital expenditure cycles for backward integration, potentially elevating future interest costs.",
-        "key_uncertainty": "The precise breakdown of the profit decline—specifically whether it stems from temporary inventory revaluation/higher cell import costs or a structural decline in finished module realization prices.",
-        "monitor_next": [
-          "Quarterly EBITDA margin trajectory and raw material input cost trends (solar cell and polysilicon pricing)",
-          "Average Selling Price (ASP) realisations per watt across domestic and export order books",
-          "Progress and capex timeline on backward integration projects for solar cell and wafer manufacturing",
-          "Management commentary during earnings conference calls regarding order book execution and target profitability",
-          "Government policy enforcement regarding ALMM implementation and foreign module import tariffs"
-        ]
-      }
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -236,16 +224,26 @@
       "published": "2026-10-28T05:51:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies soars despite reporting 15% fall in Q2 consolidated net profit",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNQTlta0JGM2xkTk1xc0ZrQTBtc3BlMEs3cmlXYTRJT2dNVG5EdTRQaHpvU19qcXJQTDVsS2FMNFR1ZXlqZXN6VThONHphMzFFcDRDWjJsM19HQW1QUktPV0FWRVZYVVl3ZnJuZDlaN1padGtPU1MxZEFpZEdlT2ZvVjhiNS00MG95enVUUExha0ZTVzh0QTNGQUNjQUdzQ3hlM2VQNXVCOWhUdGd3cnlNb25kOFBCMHVfQmRmSlJKN2RaS2F4",
+      "source_name": "Investment Guru India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T09:22:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 17,
+  "article_count": 18,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "WAAREEENER|COMMODITY+EARNINGS|15%-energies-fall-profit-results-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:11:51.429896+00:00",
-  "last_updated": "2026-10-28T13:19:44.522881+00:00",
+  "last_updated": "2026-10-29T13:25:26.144338+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:11:51.430033+00:00",
@@ -256,6 +254,16 @@
       "timestamp": "2026-10-28T13:19:44.522860+00:00",
       "change": "ai analysis",
       "detail": "WAAREEENER via gemini"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:26.144317+00:00",
+      "change": "sources added",
+      "detail": "Investment Guru India"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:26.144334+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

@@ -48,10 +48,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.47,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -59,28 +59,43 @@
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
-          "term": "NTPC",
+          "term": "SECI",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Solar Energy Corporation of India",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "order flow from SECI",
+        "order flow from Solar Energy Corporation of India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to SECI, and Solar Energy Corporation of India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -132,21 +147,61 @@
       "published": "2026-10-19T07:30:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SECI Invites Bids for Solar Project on Delhi-Dehradun Expressway",
+      "url": "https://www.mercomindia.com/seci-invites-bids-for-solar-project-on-delhi-dehradun-expressway",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-29T13:06:53+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "SECI Invites Bids For 4 MW Solar Project On Delhi-Saharanpur National Highway",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQVhTa2RjQ2g0cnNOMlJvckU0cXlKN0hnenEyQTlmZkh3MWg2djU0d0tzT3dsdVFZNTBsN3VMYTZGS2pVaEtNbUdibmxadXpDTlZUQkxUOEIwYThQWXBWT3N4VmtJMXZqcHM1VzV5elJGT05kTGVoU2VobjdzVXJlb2tfTTJzeVhpQVp4dVc3bjlhSDZhb2h5RnN1YkNSektNUXE4LUtRdlBBMlIzcExPbERCc2s",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T07:59:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SECI Invites Bids for Solar Project on Delhi-Dehradun Expressway",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNenJBbElvOWxJQWJ1bzFzMkwyeEZ3MVFlblhUcDFKQ3lOM3hjQnBMWlVVeTh5ZDVjaGFYQkRqOHVFbWFsVjVycFBmTnc1eGNQZVJwWmpmTWRDVE9xRVBZTjdmOG1MU0lWdnBoaFhCM3ZMblhkall5LURJRkRPOFFfaTdmYlJCTDFOZG9pdkJoNzhFUGNjZkRj",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T07:46:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "https://www.mvapulse.com/",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|bids-invites-ists-ntpc-rel-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:41:10.789721+00:00",
-  "last_updated": "2026-10-19T13:41:10.789799+00:00",
+  "last_updated": "2026-10-29T13:24:41.807937+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:41:10.789789+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:41.807916+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, Mercomindia.com, SolarQuarter"
+    },
+    {
+      "timestamp": "2026-10-29T13:24:41.807934+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

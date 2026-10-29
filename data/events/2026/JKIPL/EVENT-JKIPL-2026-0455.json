@@ -10,9 +10,9 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.41,
       "business_impacts": [
         "SUPPLY"
@@ -29,11 +29,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a platform or supplier the company depends on is investing"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -77,16 +76,26 @@
       "published": "2026-10-25T16:02:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Caterpillar Beats Q3 Estimates on AI Buildout, but Stock Slides 10%",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WUWlLZ3FpaGYtVUVQVE1keFk2TXNwR3Z2eDhEbjNzNEpPUkFwU3oxZDk0NFQzd0VmSHYzQUx2Mm9TbkQtWGJjRGNCQVZYS3dBVHFFMHdualdrNGVVZ29wcnQ4VWFwZ1VLYnVoeDlZd25KVjZpYUE",
+      "source_name": "BigGo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T12:25:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "AOL.com",
   "cluster_key": "JKIPL|OTHER|72b-backlog-can-caterpillar-save-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-25T17:13:00.688948+00:00",
-  "last_updated": "2026-10-25T17:14:48.497424+00:00",
+  "last_updated": "2026-10-29T13:25:38.676460+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T17:13:00.689031+00:00",
@@ -97,6 +106,16 @@
       "timestamp": "2026-10-25T17:14:48.497410+00:00",
       "change": "sources added",
       "detail": "Pluang"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:38.676442+00:00",
+      "change": "sources added",
+      "detail": "BigGo Finance"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:38.676457+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

@@ -9,23 +9,14 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "credit cards",
@@ -35,22 +26,22 @@
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
-        "financial implication is quantified"
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to credit cards. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -120,16 +111,26 @@
       "published": "2026-10-28T08:38:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Festive credit card offers from 5 banks in 2026",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWl5OURpcU9JVXJVanhJaVRGcEFjTGphSWUxUXlTSEdVRnVNWC1UM3VKdk1FN0hTalk4VUt2dGpZYVc2a05JZFJmSXdqa2p3NWkzdWxHRXpOWV9PWDAxSGhJNlFBalo5SkpfZW94dEFXMnB3OWpIN2x3aEdPTnVLamZLZ0c2TXl1a2RCSUJUb0RvNmtlRXc",
+      "source_name": "News Karnataka",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T05:01:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK|OTHER|additions-card-credit-hit-monthly-second-highest",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:13:29.821530+00:00",
-  "last_updated": "2026-10-28T19:46:13.979809+00:00",
+  "last_updated": "2026-10-29T13:25:06.740857+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:13:29.821604+00:00",
@@ -150,6 +151,16 @@
       "timestamp": "2026-10-28T19:46:13.979804+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:06.740838+00:00",
+      "change": "sources added",
+      "detail": "News Karnataka"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:06.740854+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -58,18 +58,19 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "CUSTOMERS"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
@@ -85,17 +86,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are cash flow, customers. Classified as dividend.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -235,23 +236,16 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "CASH_FLOW"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
@@ -261,21 +255,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "DIVIDEND is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
       "ai_analysis": null
     },
     "TMB": {
@@ -489,16 +484,36 @@
       "published": "2026-10-23T19:19:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Declares 2nd Interim Dividend of ₹10.25/Share; Record Date 4 Nov 2026",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTWNxdW8teFp2VkRzXzdzbTdpUVA3UjNOZlhhV3NEaXpqdG8xOVZDbFJ1cHRCdl84S19MRFVLRm9aVTh0UWEzQWhXZWpPYzFyUTdjWTV4d1NhUmNXaUZZVjRXS2VHZWJhNGJtbEVFTHNKM2FZZ2pxZ045eHQ5YWw5dFFZM3RoVlUzZ2pTZV9tTkJHb3daRU1BdFUtOA",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T12:39:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India Declares Interim Dividend Of Rs 10.25 Per Share For FY27 | Check Record Date",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTG5SN0k1d05mNmVLanQ0VnI0UVR1U295VE9yQkFORWdqNDlpcjFaVl9wNUdhVDlwQlJMMkUtWlpDSEhjaERHZzNmTHRRdnZQRDhHZ2dUTThlQXdIWVM1bi14WGtCWnVsaUZ3OHphNXRhbHFMQVVONW9qcXpSZnJHU3oyZjQ2M2xtYnFxLW1JYW9RaHFBNFVVd2t6ZEpiOVFyNXRwM2steDRBUHpHOC1qc0ZMOTEwdHdOanBNMWhsZG5SbXNXWlRYYdIB0AFBVV95cUxQN0lWMGJWZ21qLTBodVNmOGNPYkF3Z0dodzlVQVZ4NnNXRElydXJfTXBMMXowczZCd2dYY2d1QlpBNm9tdW51MlN6ZTZqNTgxN2xaSHlSMnVQMGNLRkRfYTFoNEE0NmtPUlJTa0JOMG56T2QzYkFoZ0pWbElhV0pEd2o4Zmo3X2tsaFhnVGZRby1PYTR0RmRwTkZaclRVUXBKLWl3aEtuSE55RU9SVDc2MmExTW94cmhHVGZyTnlLbTlrX0w5ajN0U2UwVWtLVFlf",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T12:53:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "KSOLVES|DIVIDEND|fy27-india-interim-ksolves-ksolves-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:01:21.479773+00:00",
-  "last_updated": "2026-10-24T16:48:40.685422+00:00",
+  "last_updated": "2026-10-29T13:25:39.699804+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:01:21.479837+00:00",
@@ -559,6 +574,21 @@
       "timestamp": "2026-10-24T16:48:40.685419+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:39.699783+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit, PSU Connect"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:39.699796+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-29T13:25:39.699801+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

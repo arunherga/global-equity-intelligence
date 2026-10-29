@@ -1,0 +1,172 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4832",
+  "title": "Taiwan's stainless steel prices expected to remain flat or rise despite lower raw material costs - Yieh Corp.",
+  "summary": "Taiwan's stainless steel prices expected to remain flat or rise despite lower raw material costs Yieh Corp.",
+  "event_date": "2026-10-29",
+  "event_types": [
+    "RAW_MATERIAL",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Taiwan's stainless steel prices expected to remain flat or rise despite lower raw material costs - Yieh Corp.",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnloa0VjTlZiLVE0TmZPOHNoTGQwMlFrMjBnU2JCbW9KTTdDZmR5Y1phYnFpQlhyMmZ2d0Y4SGpMTk5paHEwSkNpa1JJWWMyX25NQ3RuVDMzRWxYNDM2QXNLVGt6SVBIb3I4bW9GZkpfRFBJdWNsdldkZEMybU5YbDhGZ1NJREJjaWl3M3dJRTdsZVA4OWU5Q1RiQnA1N1BJYzUwMGg1a1lBR2s0bXh1cjc3ZWdSa1RPM1VUb0lmcThZdGRQdVE",
+      "source_name": "Yieh Corp.",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T06:50:47+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Yieh Corp.",
+  "cluster_key": "ASHOKA+JKIPL+MSTCLTD|COMMODITY+RAW_MATERIAL|expected-price-remain-stainless-steel-taiwan",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-29T13:20:51.497624+00:00",
+  "last_updated": "2026-10-29T13:20:51.497696+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-29T13:20:51.497686+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
