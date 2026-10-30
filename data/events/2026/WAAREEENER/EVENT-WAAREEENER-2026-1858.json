@@ -9,46 +9,73 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.49,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.62,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "battery energy storage",
+          "exposure_type": "REGULATION",
+          "term": "ALMM",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
           "relationship": "SECTOR",
-          "weight": 1.2,
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Approved List of Models and Manufacturers",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
           "detail": ""
         },
         {
-          "exposure_type": "TECHNOLOGY",
-          "term": "battery energy storage system",
-          "relationship": "SECTOR",
-          "weight": 1.0,
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
           "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of New and Renewable Energy",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "+2 International market development",
-        "-1 Single source, unconfirmed"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "sector relationship",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to ALMM, and cell manufacturing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -62,21 +89,51 @@
       "published": "2026-10-28T17:00:00+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Solar Cell Manufacturing Capacity Under ALMM-II Grows to 45 GW",
+      "url": "https://www.mercomindia.com/solar-cell-manufacturing-capacity-under-almm-ii-grows-to-45-gw",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-30T13:19:38+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Solar Cell Manufacturing Capacity Under ALMM-II Grows to 45 GW",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcDZ4bDNXWGVUWTVldXpDZ0dJVGpSX1M4QWI4SzcweENlQi1lSmdPdE84QzVON3ltTGRtWlR1RDcxU1F3SEJBZmRpSTVENF9OTkRVb09XRUprX1ZtS2FvTTNoTHVNRWsxYzZMcEFpMzRIeVNrMjQ4RDlGS2tCSlpOaEE1VEo4ZUZyWnFiazFLdS1LUFVO",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T07:49:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 3,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|OTHER|retrofits-rise-under",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-28T19:41:52.259833+00:00",
-  "last_updated": "2026-10-28T19:41:52.259913+00:00",
+  "last_updated": "2026-10-30T13:25:41.349965+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T19:41:52.259901+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:41.349919+00:00",
+      "change": "sources added",
+      "detail": "Mercom India, Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:41.349959+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 3"
     }
   ],
   "price_reaction": {}

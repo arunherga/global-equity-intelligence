@@ -11,46 +11,48 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "MACRO",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "MIXED",
+      "confidence": 0.26,
       "business_impacts": [
+        "MARGIN",
+        "DEMAND",
         "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "gold prices",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "throughput commodity; in headline"
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
         "-5 Market commentary rather than a company development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "gold prices is handled rather than bought or sold; volume matters more than price"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "macro relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -119,16 +121,26 @@
       "published": "2026-10-25T10:27:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Drops Below $4,000 as US Inflation and Interest Rate Concerns Weigh on Precious Metals",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaFM1eFNJRjBhakpQWnEwY2U1Z1B3UzBFMVVlM0xGZWpaUFZpR2FneTVOR0NXM04taUx3TWFTR3JPcE1CRkM0N0lFTk5nNFkxdWNFTFA2Zjh5aEpIS05YeWFXV1BxalpvaGY0cHVzVHQ0YmVXYzktYXhCcHU1OFJfbk5DUlNaUURKcnBOZGRuOFdYZUk5WHgw",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T10:04:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Share Talk",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+INTEREST_RATE|000-below-fall-gold-price-rising",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:46:55.434012+00:00",
-  "last_updated": "2026-10-25T17:14:27.699855+00:00",
+  "last_updated": "2026-10-30T13:27:56.899110+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:46:55.434084+00:00",
@@ -144,6 +156,16 @@
       "timestamp": "2026-10-25T17:14:27.699849+00:00",
       "change": "direction changed",
       "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:56.899084+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:56.899102+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

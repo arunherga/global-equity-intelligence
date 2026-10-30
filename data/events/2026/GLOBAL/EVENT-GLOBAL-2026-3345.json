@@ -46,45 +46,46 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "deposits",
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to deposits, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -118,16 +119,26 @@
       "published": "2026-10-29T03:45:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India’s foreign exchange reserves fall weekly, while bank deposits and credit continue to grow year on year",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRDdfMXJUWllNdU1ZdXVsZU1lYXNXbTV5SnBMTG5INE5VMWlmamJQVUtNYkhZTUpIVTlwWm1LT1U3cUlkVXhmWm9OeEFOOXEwbkhCWmZxMlNqeGRaTU11MzZwZW1SSlFxNlZMMmc1YjhnSTdTYkhkNGsyUGpNaTBidUNwemdObzQxNkc4QWVUbXJ0S1hkM1JxSDNLYXdNUQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T12:21:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Traders Union",
   "cluster_key": "HDFCBANK+TMB|OTHER|above-exchange-foreign-india-remain-reserves",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T11:01:53.000581+00:00",
-  "last_updated": "2026-10-29T13:25:02.001758+00:00",
+  "last_updated": "2026-10-30T13:28:21.408190+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T11:01:53.000667+00:00",
@@ -158,6 +169,16 @@
       "timestamp": "2026-10-29T13:25:02.001754+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-10-30T13:28:21.408164+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-30T13:28:21.408184+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

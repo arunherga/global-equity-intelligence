@@ -5,20 +5,23 @@
   "event_date": "2026-10-29",
   "event_types": [
     "EARNINGS",
-    "DIVIDEND"
+    "DIVIDEND",
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "relationship": "INDIRECT",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "confidence": 0.58,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN",
         "CASH_FLOW",
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND",
         "CUSTOMERS"
       ],
       "time_horizon": "IMMEDIATE",
@@ -39,39 +42,40 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Coal India)",
+        "+2 Major industry-level development"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 6/10",
         "two independent sources",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are cash flow, pricing, input cost. Classified as dividend.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 8,
+      "impact_score": 9,
       "impact_band": "HIGH",
-      "direction": "NEGATIVE",
-      "confidence": 0.6,
+      "direction": "UNCERTAIN",
+      "confidence": 0.68,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN",
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
@@ -85,27 +89,44 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise"
+        "+2 Major industry-level development"
       ],
       "direction_reasons": [
-        "reported results moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 6/10",
         "two independent sources",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow, pricing, input cost. Classified as dividend.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue growth is driven by strong domestic coal demand and higher off-take volumes, though realisations depend on the proportion of e-auction sales relative to fixed-price fuel supply agreements.",
+        "margin_effect": "Net profit expanded 57% year-over-year, but operating margins face sequential pressure as rising input costs offset strong demand and volume growth, leading to a consensus profit miss.",
+        "cost_effect": "Operating costs are escalating due to higher expenses for diesel, overburden removal, contractual logistics, and potential wage obligations.",
+        "competitive_effect": "Coal India retains a dominant near-monopolistic position in domestic coal mining, shielding its market share despite gradual increases in private commercial mining entries.",
+        "regulatory_effect": "As a public sector enterprise, the company remains subject to government expectations regarding high dividend payouts, public welfare commitments, and priority coal supply to the domestic power sector.",
+        "short_term": "Strong reported net profit supports immediate dividend payouts, though equity sentiment may be muted by elevated operating costs that caused the earnings performance to miss street estimates.",
+        "medium_long_term": "Sustained growth will depend on expanding mining capacity, improving rail evacuation infrastructure, and managing cost inflation while balancing India's long-term energy transition goals.",
+        "second_order_effects": "Robust earnings and dividends provide non-tax revenue to the Indian government, while high domestic coal production helps mitigate power grid fuel shortages and limits coal import reliance.",
+        "key_uncertainty": "The trajectory of e-auction price premiums over baseline notification prices relative to persistent operating cost inflation.",
+        "monitor_next": [
+          "E-auction allocation volumes and realization premium trends over notification prices",
+          "Quarterly coal production and off-take volume targets",
+          "Operating cost escalation, particularly diesel prices, employee expenses, and contractual mining costs",
+          "Progress on critical rail linkages and first-mile connectivity infrastructure projects"
+        ]
+      }
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
@@ -159,6 +180,59 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to Laurus Labs, and India. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.58,
+      "business_impacts": [
+        "CASH_FLOW",
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Major industry-level development"
+      ],
+      "direction_reasons": [
+        "a competitor (Infosys) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Infosys, and India. The parts of the business most likely touched are cash flow, pricing, input cost. Classified as dividend.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -211,21 +285,176 @@
       "published": "2026-10-29T02:46:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Q2 Results Highlights: Milky Mist, Coal India, IEX, Laurus Labs post profit growth; IndiGo loss narrows, Thyrocare profit falls",
+      "url": "https://www.thehindubusinessline.com/markets/q2-results-today-highlights-coal-india-asian-paints-indigo-trent-laurus-labs-ambuja-cements-godrej-welspun-corp-motilal-oswal-blue-star-strides-pharma-milky-mist-company-results-29-october-2026/article71635445.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-29T13:33:55+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Coal India Reports Sharply Higher Quarterly Profit Year on Year",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUU1lZW1zbUVQNUpPMG41ak1SdHJfSUhqRVdWVFI0bHRBZTkzRG1RMXFCNVR5U210Q3Z1aDhfSGxRdElaZkowcHRKM1o1bXVyelNEWE1aMUpkMlZXZkVmNk5xc21EdUpRdWlCQUNzb2Ryc3EyN3VMVmtsb2VpTFNhbE0tOWtYTGt2YU0zQ1VoWUxGdEk",
+      "source_name": "energynews.pro",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T21:32:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India Q2 PAT rises 57% to ₹6,547 cr",
+      "url": "https://energy.economictimes.indiatimes.com/news/coal/coal-india-q2-pat-rises-57-to-6547-cr/135317347",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-29T13:22:28+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Coal India Q2 PAT rises 57% to ₹6,547 cr",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc3RNLTM1RWJlV3IxdUVGeFctTTVFbmNVZXVxMGtxbktfdVBncFQ1Z3pobnpseXNKN1BTQUJkRXRuelFQYXNUbjg0T1VSMnc5ejY1NjBSOTBybVdUUTFvVzhhblQ0Wi1temFEMGFIajBvbElBMlE5eWNOS1p2V0hqMXBjcXp3ei1aMGhzZDhDWV93ZWNuWVVnRUFSYXZPdHNRb2lR",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T13:22:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India Q2 Profit Jumps 57% to Rs 6,547 Cr",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUjNXcTdDUU1rRl9xcE9OWW1JM3dzajFlOU9zc3k0MnJ5bnlUTmZKbFdzU3JYM0hLa1BLX0xSTnN0YUU1azNsM29STnFkNGNqMTAyVzRvY0RhcFVFb2NnZkgtYi1XSUlRaUhja1dJVjBDVm1qUHZnSDZ6aU92NDJKaDVmNnIwcWZaRDNZNmFJY3lmaFcyelVMd3lnZTfSAaIBQVVfeXFMTWk4Y0FtM1R2aWJWNE9RNlZIVG9xLURLUjkxdDFLRkE4dU9uYzlNbTcxUkFMS2E3WW5IbU91bUNnOXB5VFZFZmdaSjhrMmhxVEYyTThHZzIwd0pxckxYZVNEODdZQ2hMTVV1OUtzR1JMQTB3Yl9xOXZHU0tCZ1NYUUZYdTNBQ283T1MzeHFVZ2EwbFRtYzQ0eGs3T3lYSmk3bURB",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T13:36:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India dividend 2026 declared - Check amount; PSU quarterly profit up 57% - When is record date?",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQaEx3M21oNU5kRzZybFJwNldvbWpEdVExNGRocUJILVV3dkZCVXMtczNZOVBaUzlUajJ0a0Z6dmY5LVYyMWJSTDVJeV9VOWI1cDlQc21iMFdJeERnbW9QcjhfZVdEcmNWVnJPU2xxdEFFdkxuYkY0S0hsTEZ4ajhtMjdfcHdubC1OT2lhcTFzREd5VUdlZXlPMi1xaVRHVkhhRC0yVEZPcUJ3R01lUUJvLUxkNFRXNTlseExMQlk3LWJfenZCWGtlT1llUDJXU1JwSEdIb2steUFoa3V5Z29CbUkwbzlRXzJheWlvd0dCOGxITWVPTEHSAfsBQVVfeXFMT0xQSks3TS1UVnZHeWdIYWYxWFFzaERVS0gtUGtRUHFqdVVtd0FOT1VfU2EwcGhsMjBsam83d2lnY1ZSdzRHa0huNjhrb2JQMGtOWld3dEFUM2VJcjRRQkJwd3lSZ25ob005MUtXbTF6WUhOVFU0ZFRNTXNiS05LeE1YVkVFMmxrNFFYY0g5V25WT1cxYWpkSEJnNG4ybEgyNzlxV2pMdVBWLTROLUtEZlFNUWloT0tDV0lXdm1VUmJFdXAzSF9wU2NjYjJTdFYxNGRCRkd1VzVaTDZLMFFsMFBXV2ljV0M3VG5sZ3ZBNjhMdUcyS1dZQTNZRk0",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T14:44:49+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India misses profit view as costs rise amid strong demand",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMGdJbGM1R2lyalRFLWNnV0dqS1JyVkVueXJJaXBDU2hMb0Vzc0IwVk1vWVE5N2FRQ1gxb1kwb1dOVGxEMnlXeHZhYm1PZjREaml0dmF2UjZUUkZ1TGlNUWpRcWJfZ2lPUHhTeW5kTXh6aVBHSTV6OGQ2SG80aGlkd2R0eEszYmRFYkNNNGM4UVZrNlU3",
+      "source_name": "Mining.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T19:56:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India profit jumps 57% as higher offtake, prices weigh over costs",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeHl1MkhvZEtNNWRSTmdVTnE1ZUZXdzlXSE9oWm1xOEppb3FMcVhfTk14V3BVQ3QtdloteUpLOUlmSFJOcmoxbkJodlhaVFVPQzJNSnBoVEMzVlBJcFdzd3dhSG5ldlZWTzNUWS12YnViRS1YYjl4bWRaSUhBYjdGX3p5SGtkWW1lcWlnZW9lMDVQR0FTZnpRaXd6THBodWVwNXR1QXJMRmZZMThqOVZXZ2EwNW4tNkQ1cTRNY2ZhS0g5QW5yZk1qcXZ30gHQAUFVX3lxTE5acHMxckpWWlZIS3EyMHBVb19uYVJvVk1HY1V3dE9KbUFUU1lsaFg4eVFucXVZV0s2cmNTSFRjOXNwNTBuWWJ0NmZpSTIyTThLTHVXY3NKa2g3T2RUdmFtcWFCdFowcm1wVWxVXzZ5SWdIcXl4d0dodERBRU9hbUctakUwQkVnbVd2d2lGMkNya1BLWHlEVmF4eUtaQV93V19VdElQeUxTZHZleUlWVXlQc2kzRWdVMGpvTTN1b3lkSFpudzNaTG1mN1E5NG1ici0",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T15:24:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India's Q2 Profit Soars 57% to ₹6,547 Crore Amidst Robust Revenue Growth",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDB1ZlZqUXV0LVpuODRrWW5UY2tyY052WC1TR1B0YzR1V3VLS1FtdnNJRjlSdDRwdEYyV0NLQ2hURnVIelFfTGlHNHVvbTFtU18zWUlnSkQ5TGd4d0dmblN3WDBIOFAtTXBjb3dKV19URXNfbjg4bDlQSWlWTjFoMmpqQUJTcFA4NlEzVXhINGQyNG0zN29FNFFwZ3JzQnZGQmJnVjJ6QXJYano3UUlTSDVaOTNuZndWRzM5QzA0MNIBxAFBVV95cUxNdW5zOFcyYWVuLXVxS00tVzhZX3Z1dDQwSjJWWkw2QnY1TTQ4TlNvalVzWlFDdzhqeUd5NVZVYUxWa2g5ZE01ek1pNS1lVVJiVW14MEhZcTdsd1g1N2l6eTBYMGlKcTZ3YVMwdFltOTh5VjBBZl9mNHI4QU4tX2FYS05Vcm9HcWVqbUg5YlphNXFqQ1J6cFlSeUNVRzBaekpnTWs5b2tJX3paVmJxSUhWY3pyYkc0WFVKak5fSnNwUFJXcmJE",
+      "source_name": "Lokmat Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T14:24:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "October Dividend Stocks 2026: Infosys, HUL, Coal India Payouts",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd2dJUTFCQjZicGdsNnIyanREMHVETzJYTFhSRk0yXzRWVVhYR0V5RXdvYlpPQVE3U0xsUkM4QmRNVWwxck1lOEhWN3ozc2xULWlZTHp1b1FScUZqMmpJUGdQTjl4V2M0bjFEWlJtTllZRzQ0UDFBMEdjc3V1QkNpTGFwb0FMUHZUMnN3d1dxelZacER6LTNHRkJLVi1UVWwzbmNNWWRMc0JYZENrSnJoWlZ0SDhzcjdkRUJjWUs0ZjVpdUprVkhHRm1PTkRxQQ",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T07:07:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Q2 October dividend champions: Infosys, Colgate, HUL, CPCL, Coal India | Big payouts - amount, record date",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOX0RYTm1PVlVHa0NfRGZTY0o0UmpIT0hhdks4bElGTXNZRXM0ZUZEN2o5X2huNHV0SlVnOUg4UEtsMkR0ekNVWk11VTF5THFxTThyRTdXWkNXeEFXekV5MENoVk9OWGtxX2Z0YXd4N3M5cTBfMUdXU1BmMDRLVFN2Wkd0MzJDMUdUTlN6ZEMxdFpVeHZpMFUzakxYdThhWUYtUU1wSGh3S0lsa2pUM21yRExNUHRYN3gtQjZVUWVkSWF4bEZMZXFWU3kzZlVpZmtTUWN5d1pYTVdhQ3JFUk1BRjU0MzZDd1d6",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T19:32:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rs 235 Dividend, 1 Bonus Issue, 2 Stock Split: 34 stocks to turn ex-date next week — Infosys, Coal India, Asian Paints on list",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNWZKb0twbjExVjNJeXE5UktVRWxRV25wTHlLa0E2T3NOeG5mRW1KZXpMcldsRzdPLTA0b0dhQUlJclhsbUpQV3I5ZGdYV0VWbkExc3E2NlQtbjBIa2xjTl9wcUt4TGVzZW52NTJQYlFXSm9RQVhzOTN2eHJtRHh6cVFhSkpXa2RxOFg3T3ZWRVNncm5yYTVjcWw1Y1JIU0p2MUZyOVdwR0dpaEhBOUFkSlZZQ1R0eTRXZUhQaG9mYlJaVTNXZTdwOEFJZGk0QklVTDNLTEZmeTVybnd0bGhfMVkwbi1LS2NWSVZpT1JGMF9XRzlpcnlydHNn",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T12:13:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
-  "source_count": 2,
+  "article_count": 17,
+  "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+MSTCLTD+SUPRIYA|DIVIDEND+EARNINGS|asian-indigo-lose-narrows-results-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-29T13:18:36.326848+00:00",
-  "last_updated": "2026-10-29T13:18:36.326953+00:00",
+  "last_updated": "2026-10-30T13:25:35.208971+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:18:36.326944+00:00",
       "change": "created",
       "detail": "5 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:23.302891+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets, energynews.pro"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:23.302913+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:35.208909+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld, ETEnergyWorld, Livemint, Lokmat Times"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:35.208945+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY, INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:35.208955+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 3 -> 7"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:35.208960+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 8 -> 9"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:35.208967+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -4,122 +4,223 @@
   "summary": "ACME Solar Signs 400 MW Firm and Dispatchable Renewable Energy PPA with NTPC EquityBulls",
   "event_date": "2026-10-29",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.56,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
           "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.5,
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NTPC)",
+        "+2 International market development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Slight positive potential if MSTC hosted the power procurement e-auction or provides land/scrap auction services for the project, though direct transaction fee involvement for this specific contract remains unconfirmed.",
+        "margin_effect": "Slight expansion potential if revenue is derived from e-auction hosting fees, which carry high gross margins relative to scrap trading.",
+        "cost_effect": "No significant impact on MSTC's direct operating or input cost structure.",
+        "competitive_effect": "Reinforces MSTC's market presence as a trusted portal for government and utility power procurement tenders if the deal was transacted on its platform.",
+        "regulatory_effect": "Neutral to supportive, reflecting alignment with India's mandated competitive bidding frameworks for renewable energy expansion.",
+        "short_term": "Minimal immediate financial impact over 0-3 months unless platform fee realization for this specific tender occurs within the current quarter.",
+        "medium_long_term": "Continued expansion of India's renewable energy capacity drives recurring transaction volume for utility-scale power auctions, land leasing, and eventual equipment scrap management on MSTC's portal.",
+        "second_order_effects": "Increased solar installations create future demand for end-of-life solar panel recycling, electrical equipment decommissioning, and scrap sales hosted on MSTC.",
+        "key_uncertainty": "Whether MSTC was the designated e-auction platform facilitator for ACME Solar's 400 MW power deal.",
+        "monitor_next": [
+          "Confirmation of the e-auction portal host for this specific 400 MW tender",
+          "Quarterly fee revenue growth from MSTC's e-commerce and utility auction segment",
+          "Upcoming renewable energy tender listings from major power producers like NTPC and SECI on MSTC's portal",
+          "Expansion of MSTC's scrap and recycling auction pipeline for solar and power sector assets"
+        ]
+      }
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.56,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
           "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.5,
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NTPC)",
+        "+2 International market development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potentially positive. ACME Solar's 400 MW firm renewable power deal expands total domestic demand for solar modules in India, creating a prospective supply opportunity for market leaders like Waaree Energies.",
+        "margin_effect": "Unclear. Profitability will depend on whether Waaree secures module supply contracts for this project and the negotiated pricing relative to polysilicon and wafer input costs.",
+        "cost_effect": "Neutral to slightly inflationary on input costs if surging project activity across India increases localized competition for raw materials and cell supply.",
+        "competitive_effect": "Neutral to favorable. As India's largest solar module manufacturer, Waaree is strong candidate for OEM supply contracts, though it faces competition from domestic peers such as Premier Energies and Adani Solar.",
+        "regulatory_effect": "Favorable framework context. India's Approved List of Models and Manufacturers (ALMM) mandate restricts utility-scale developers like ACME to approved domestic suppliers, benefiting domestic makers like Waaree.",
+        "short_term": "Limited immediate revenue impact over 0-3 months, as project developer RFPs and equipment procurement tenders are typically finalized over subsequent quarters.",
+        "medium_long_term": "Positive order pipeline implication over 6-24 months if Waaree wins module supply contracts, aiding revenue visibility and manufacturing capacity utilization.",
+        "second_order_effects": "Consistent utility-scale project awards strengthen developer demand, reinforcing Waaree's strategic justification to expand backward-integrated cell and wafer capacities in India.",
+        "key_uncertainty": "Whether ACME Solar will select Waaree Energies as a module vendor for this specific 400 MW project or choose competing domestic suppliers.",
+        "monitor_next": [
+          "ACME Solar's equipment procurement tenders and vendor selection announcements for the 400 MW project",
+          "Waaree Energies' order book additions and client disclosures in upcoming earnings reports",
+          "Solar module price trends and raw material cost movements in the Indian domestic market",
+          "Changes or enforcement strictness in India's ALMM policy regarding domestic content compliance"
+        ]
+      }
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.56,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
           "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.5,
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NTPC)",
+        "+2 International market development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear in the near term, but potentially negative in the long term as firm renewable power displaces thermal coal demand from major power producers like NTPC.",
+        "margin_effect": "Unclear short-term impact; long-term margin pressure could emerge if reduced coal off-take volumes hurt operating leverage and fixed cost absorption.",
+        "cost_effect": "No direct impact on mining input costs, though lower production volumes could lead to higher fixed overhead costs per ton of coal produced.",
+        "competitive_effect": "Erodes coal's core competitive advantage as the primary provider of firm, dispatchable baseload power in India as renewable storage solutions mature.",
+        "regulatory_effect": "Reinforces India's policy shift toward Renewable Purchase Obligations (RPO) and firm renewable energy tenders, potentially reducing future state allocations for new thermal coal capacity.",
+        "short_term": "Negligible impact over the next 0-3 months as the 400 MW solar project will take time to be constructed and commissioned.",
+        "medium_long_term": "Over 3 months to several years, the commissioning of firm renewable capacity contributes to lower thermal power plant load factors (PLFs), slowing the growth of coal off-take demand.",
+        "second_order_effects": "Power utilities like NTPC may reallocate capital away from thermal expansion toward hybrid RE projects, prompting Coal India to accelerate its own renewable energy and coal gasification diversification plans.",
+        "key_uncertainty": "Whether the 400 MW firm renewable project directly replaces existing coal-fired generation or simply absorbs new incremental electricity demand growth in India.",
+        "monitor_next": [
+          "Commissioning timeline and grid-integration details of ACME Solar's 400 MW project",
+          "Plant Load Factor (PLF) trends of coal-fired utilities including NTPC",
+          "Coal India's monthly coal off-take and dispatch volumes to the power sector",
+          "Pace of upcoming SECI and NTPC tenders for Firm and Dispatchable Renewable Energy (FDRE)",
+          "Progress on Coal India's own internal solar and renewable diversification targets"
+        ]
+      }
     }
   },
   "sources": [
@@ -132,21 +233,56 @@
       "published": "2026-10-29T04:09:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ACME Solar signs 400 MW firm renewable power deal in India",
+      "url": "https://www.pv-magazine.com/2026/10/30/acme-solar-signs-400-mw-firm-renewable-power-deal-in-india",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-30T08:45:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "EquityBulls",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|400-acme-dispatchable-firm-sign-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-29T13:20:08.867874+00:00",
-  "last_updated": "2026-10-29T13:20:08.867932+00:00",
+  "last_updated": "2026-10-30T13:25:38.032315+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:08.867923+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:38.032269+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:38.032290+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:38.032299+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 9"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:38.032305+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 9"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:38.032310+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 9"
     }
   ],
   "price_reaction": {}

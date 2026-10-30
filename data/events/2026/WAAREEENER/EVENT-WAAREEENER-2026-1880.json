@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "confidence": 0.56,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET",
@@ -27,18 +27,25 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Strategically important competitor development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -48,7 +55,7 @@
         "utilisation ramp",
         "First Solar's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to First Solar. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as new plant.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to First Solar, and solar modules. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -62,21 +69,41 @@
       "published": "2026-10-28T15:20:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "First Solar opens 1.7 GW module plant in South Carolina",
+      "url": "https://www.pv-magazine-india.com/2026/10/30/first-solar-opens-1-7-gw-module-plant-in-south-carolina",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-30T04:31:21+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|NEW_PLANT|first-gaffney-module-opens-plant-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T19:44:22.231990+00:00",
-  "last_updated": "2026-10-28T19:44:22.232083+00:00",
+  "last_updated": "2026-10-30T13:25:36.688308+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T19:44:22.232072+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:36.688285+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:36.688303+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 4 -> 5"
     }
   ],
   "price_reaction": {}

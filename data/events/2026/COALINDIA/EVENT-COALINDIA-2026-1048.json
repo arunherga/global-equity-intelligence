@@ -1,0 +1,121 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-1048",
+  "title": "Coal India’s stockpile is shrinking fast as coal dispatches outpace production",
+  "summary": "Coal India’s stockpile is shrinking fast as coal dispatches outpace production The Economic Times",
+  "event_date": "2026-10-29",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Coal India’s stockpile is shrinking fast as coal dispatches outpace production",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOOWk3VVpoc29CN2F2V1lpVnBJUzNSaWZNM2ZndmJaRnNqcG4yRlAxcnRoZVEtV3hmZWtyajVqbjYxamxZaEIzazBxdDN3cUFDZmVfWXZzeW5pM3RPbGJ2bW16cGRRRTJDNzdUN2lEU01DTXNLUFRoczNibXJvdVRHelBKRk1Ma2FBdXZ4NEtBc1ZjWkl6V1hHZDREN0ZBZGxFSmRTM1puU2VlVXg0TnBEZ0dzMGloSFhRMi1sY3JjeHBmQzZ4RTYtTzE3d1ZIY1dMQzZJSFB6TFNQUUN6akxDZ2Jabmo5UHBoWkd5RGVnWnh0VVl5SmVCeTVDaS1YeWJaR1ZHb3hNLXp6QdIBgwJBVV95cUxNOW82bHJ4RUlYWUNCZDhwLXpvelpZMW13VDRhcXhKSVRiQmZrcGJHUC02cEZUR0pWT3RLWEJPbHNHOTF0X29GVW1Kd3ZnMGlISXh4NGJSV3RsNHBNZG1qdVBQUTZXczFRX3FjT20wZWp1aGtjZE1lOUNjVTBiOHlRN2N1YmFSbFdsWnJVYy11MnV1c2pKazNmYnBlOHdJUWlDYzBMdW1ITldTdmI4MkxEQUVNck9aU1lNb29iUWtfRXR1cjZhOHJ6bUF0TWExNmtqMGFrU0ZmQ1hvUmFndHhCNnMtVHFveVd0cXUxQkxIdDlVS0VpZGVOVEJMX0dkVFRIWmRr",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T15:11:43+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "COALINDIA+MSTCLTD|OTHER|coal-coal-fast-india-shrinking-stockpile",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-30T13:15:15.498241+00:00",
+  "last_updated": "2026-10-30T13:15:15.498334+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-30T13:15:15.498322+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

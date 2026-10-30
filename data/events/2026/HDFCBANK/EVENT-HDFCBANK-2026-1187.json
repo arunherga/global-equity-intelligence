@@ -5,7 +5,8 @@
   "event_date": "2026-10-27",
   "event_types": [
     "INDUSTRY_DEMAND",
-    "COMMODITY"
+    "COMMODITY",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "HDFCBANK": {
@@ -13,9 +14,10 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "direction": "MIXED",
       "confidence": 0.28,
       "business_impacts": [
+        "MARGIN",
         "DEMAND",
         "PRICING",
         "INPUT_COST"
@@ -27,6 +29,13 @@
           "term": "mortgage demand",
           "relationship": "SECTOR",
           "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
           "detail": "in headline"
         },
         {
@@ -43,7 +52,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -51,12 +60,57 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to mortgage demand, and mortgages. The parts of the business most likely touched are demand, pricing, input cost. Classified as industry demand.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, macro exposure to mortgage demand, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -70,21 +124,51 @@
       "published": "2026-10-27T09:06:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Euro zone mortgage demand falls as interest rates rise, ECB survey shows",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUVcxUHVlZ1ZSQW15ZXI5UFA2QlFMZUVwNDV1eUx6d0hKVWNOYkozSTlJMFZNQ0RqMV9RRmFQMmdFSGd4OWc0ajRyb1pMQUpUZVpaMDBSUlRqMWRNQ3k3YTE0SDNJZGJVNVcyYTBNU05Dd1FDc29KaGp3bXdvUUgwWFpEWjdQNWV6dXFhVTVjTG04b1VSVUM2VXZxak9kLWlxZGZ1dUNRbzJ5MEw1WnhZamhldFpETUR6VFduTXp1aWY",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T18:33:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Reuters",
   "cluster_key": "HDFCBANK|COMMODITY+INDUSTRY_DEMAND|demand-euro-fall-mortgage-rate-zone",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:00.549242+00:00",
-  "last_updated": "2026-10-27T12:31:00.549312+00:00",
+  "last_updated": "2026-10-30T13:26:27.158607+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:00.549301+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:27.158572+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:27.158589+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:27.158596+00:00",
+      "change": "stock added",
+      "detail": "TMB (MACRO)"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:27.158603+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEUTRAL -> MIXED"
     }
   ],
   "price_reaction": {}

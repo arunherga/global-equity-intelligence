@@ -1,0 +1,117 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-4942",
+  "title": "Tax-inclusive supply \"cleared within 1-2 days\"; invoices and invoice tax rates choke off volume growth [SMM Copper Scrap Weekly Review]",
+  "summary": "Tax-inclusive supply \"cleared within 1-2 days\"; invoices and invoice tax rates choke off volume growth [SMM Copper Scrap Weekly Review] Shanghai Metals Market",
+  "event_date": "2026-10-30",
+  "event_types": [
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "copper scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper scrap. The parts of the business most likely touched are demand, pricing. Classified as industry demand.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "copper over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Tax-inclusive supply \"cleared within 1-2 days\"; invoices and invoice tax rates choke off volume growth [SMM Copper Scrap Weekly Review]",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPM0h1LWU2RVZSZkxDYUJ0endjcERHOTlWNXRWRl9aMmhDM1p5bG8yMGJ2c2lsV2tUeHRuZEZTd3FxbVB5WlYwUEJkN3dfS1ZSTG9iMWkyQzQ4QjJmZE5qODFET1FJZFIzdmZCUmE5NjQ4UG9YU3lHZXVvamU4eUlwS2w2UVgzMGZtTnF1aDZzaUJLM3BnTE5INkVjQ0NRdkg2UjB4RlF0RUZtT09qZjlhS1QyU0YxRnVaYTFkWGlkNks0UXd3S21JdXFzZnBqeUVXOUNzVUV6SVNEbVFpZElWbG0waTA2Vk15NUtIMUx6V2drTGxWUEhFYjdLM2JRLS1DWmFFdjhn",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T01:59:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Shanghai Metals Market",
+  "cluster_key": "MSTCLTD+WAAREEENER|INDUSTRY_DEMAND|1-2-cleared-days-supply-tax-inclusive-within",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-30T13:17:59.127295+00:00",
+  "last_updated": "2026-10-30T13:17:59.127388+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-30T13:17:59.127379+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

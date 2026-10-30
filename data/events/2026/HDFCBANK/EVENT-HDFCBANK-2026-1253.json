@@ -1,0 +1,110 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1253",
+  "title": "PNB settles ₹43 lakh in claims amid alleged fraud at Greater Noida branch",
+  "summary": "Bank says three claims have been settled as complaints mount over alleged unauthorised transfers from savings accounts and fixed deposits; 25 customers had complained by Wednesday.",
+  "event_date": "2026-10-29",
+  "event_types": [
+    "FRAUD",
+    "OTHER"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Punjab National Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Punjab National Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to Punjab National Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "PNB settles ₹43 lakh in claims amid alleged fraud at Greater Noida branch",
+      "url": "https://www.livemint.com/companies/news/pnb-settles-43-lakh-in-claims-amid-alleged-12-crore-fraud-at-greater-noida-branch-11793293216860.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-29T17:41:44+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "PNB settles three claims worth Rs 43 lakh over Greater Noida branch account irregularities",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/pnb-settles-three-claims-worth-rs-43-lakh-over-greater-noida-branch-account-irregularities/135327170",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-29T18:38:10+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "Livemint Companies",
+  "cluster_key": "HDFCBANK|FRAUD|alleged-claims-fraud-greater-pnb-settles",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-30T13:12:52.173134+00:00",
+  "last_updated": "2026-10-30T13:25:36.288500+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-30T13:12:52.173220+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:36.288472+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:36.288488+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:36.288495+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
+    }
+  ],
+  "price_reaction": {}
+}

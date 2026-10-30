@@ -11,24 +11,33 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "DIRECT",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
-        "+5 Earnings or guidance with a surprise",
+        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -42,25 +51,7 @@
         "any guidance change"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Core operating revenue, driven primarily by Net Interest Income (NII), experiences a strong positive surge backed by the fastest business growth in 18 years and strong loan book expansion.",
-        "margin_effect": "Net Interest Margins (NIM) likely expanded or held resilient, driven by higher yield on advances and strong top-line interest earnings outstripping increases in yield/cost of deposits.",
-        "cost_effect": "Operating costs may rise moderately due to business expansion and tech investments, though strong NII growth improves overall operating leverage and the cost-to-income ratio.",
-        "competitive_effect": "Record net profit and rapid business expansion strengthen TMB's competitive position among regional and mid-sized private sector banks, particularly in its core SME and retail lending segments.",
-        "regulatory_effect": "Strong profitability bolsters the bank's internal capital generation, boosting capital adequacy ratios (CRAR) and providing a comfortable buffer above RBI minimum regulatory capital mandates.",
-        "short_term": "Elevated market sentiment following the record Rs 451 crore quarterly profit; management focus over the next 0-3 months will likely center on mobilizing deposits to sustain loan growth.",
-        "medium_long_term": "Sustained high profit growth allows TMB to fund geographic expansion beyond its core regional markets, invest in digital banking infrastructure, and enhance return on assets (RoA) over several years.",
-        "second_order_effects": "Rapid credit growth could lead to elevated asset quality risks or increased slippages in subsequent cycles if underwriting standards soften to meet aggressive growth targets.",
-        "key_uncertainty": "The sustainability of deposit growth and cost of funds in a competitive liability-gathering environment to continuously fuel credit expansion without diluting margins.",
-        "monitor_next": [
-          "Net Interest Margin (NIM) trends in subsequent quarters",
-          "Asset quality metrics including Gross and Net NPA ratios and fresh slippages",
-          "Deposit growth rate and cost of deposits relative to advance growth",
-          "Provision Coverage Ratio (PCR) levels"
-        ]
-      }
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -133,16 +124,36 @@
       "published": "2026-10-28T01:07:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Posts Q2 FY 2026-27 Earnings Call Transcript for Investors",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObDItUzdYYXN2dDc0SFQ4eldzUjBUaUlfcHhGZlFTei1UMU9LRjBfakJNNEZGajZjdmRsakloUEduTldmNS16NjI1ZG1iLUVMSzZoTm95QXdjeDZEbF8zX1N0d2x1VjFQTEd4eUMtejJmMThXZnhxMEpXbHB5ZGNJR25GQ1RaTUxzMTBsY1JNMWVFS0VlSnM2LUgtYUlWMlhDRU0tMUNMY1FTSFFLNmRNanlIakV3QWFDQVB3Q0p6dEprbTVFU0V2OEQxLXNSTHBE",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T15:09:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank TMB Q2 FY27 Earnings Call Transcript",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN1lfY0RzWEpHUzFpdWV6RmZ0NDdFN3pXbFFHc2hZVWZYSm9nYkxfeWJ3Y0dWZHp0V2V4U2V1YzdMZU1XLXJEY3dxNkpaZUhseTJiWGRPY1pjRVhnZzRKMF83U2RWVk9KaEZmT1lWbWk5dzhtVEtzTDZodEZLUWFSbGt2ZkpWUU1DaGtFcklzbGNuRkZ1bjdlNGczcXZEV2tpVzBRYzdFUElUYjVESWY2eEN5eFUwQUlONUFxcGxVWFI5Wk0xUmFydHpUQQ",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T13:55:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 9,
   "source_count": 2,
   "primary_source": "Tamilnad Mercantile Bank Limited investor relations",
   "cluster_key": "TMB|EARNINGS|bank-mercantile-net-profit-results-tamilnad",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T19:25:44.551256+00:00",
-  "last_updated": "2026-10-28T13:20:39.392417+00:00",
+  "last_updated": "2026-10-30T13:25:56.268970+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:25:44.551405+00:00",
@@ -168,6 +179,16 @@
       "timestamp": "2026-10-28T13:20:39.392413+00:00",
       "change": "official confirmation",
       "detail": "Tamilnad Mercantile Bank Limited investor relations"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:56.268944+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, TipRanks"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:56.268964+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

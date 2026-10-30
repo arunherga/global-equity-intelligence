@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -29,13 +29,13 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -101,10 +101,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -120,13 +120,13 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -177,16 +177,26 @@
       "published": "2026-10-29T07:46:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NTPC REL Invites Bids for Solar Project in Andhra Pradesh",
+      "url": "https://www.mercomindia.com/ntpc-rel-bids-solar-project-andhra-pradesh",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-30T11:25:20+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "https://www.mvapulse.com/",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|bids-invites-ists-ntpc-rel-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:41:10.789721+00:00",
-  "last_updated": "2026-10-29T13:24:41.807937+00:00",
+  "last_updated": "2026-10-30T13:25:40.353357+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:41:10.789789+00:00",
@@ -202,6 +212,21 @@
       "timestamp": "2026-10-29T13:24:41.807934+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:40.353328+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:40.353345+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:40.353353+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 1"
     }
   ],
   "price_reaction": {}

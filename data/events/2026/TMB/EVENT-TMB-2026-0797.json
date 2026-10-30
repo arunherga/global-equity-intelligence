@@ -305,39 +305,46 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "INDUSTRY",
+          "term": "provisioning",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to provisioning, and India. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -418,16 +425,26 @@
       "published": "2026-10-27T07:24:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank TMB ECL Provisioning Clarification",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNFB3c24tcG01MXFvLWxGUk52TVJCQndKa0JweGEtVGo2WThkc2ozemVhLWoxLXZyOTUwM2xtdGtsWDA1ODJYZUNNbFBLOWplLWVUYzVLWDloVi1lN0E5WnBhN05zN3RMVTJ2dzExMXpndFhzS1NkTmlqSTI2eEFNTmd0anpfZzY3Rm9NMUVUZjUxc282Nm5ILXJDbEZfc1UwVjFlMHJ6a3VIVWtUZklOOVlackNvT3Bnay11YXcxV21QWDFtbkhyYjdValhBRDg",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T08:28:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-estimates-mercantile-nse-tamilnad-tmb",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:45:06.198695+00:00",
-  "last_updated": "2026-10-27T12:35:09.896088+00:00",
+  "last_updated": "2026-10-30T13:27:42.165267+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:45:06.198757+00:00",
@@ -448,6 +465,16 @@
       "timestamp": "2026-10-27T12:35:09.896065+00:00",
       "change": "sources added",
       "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:42.165241+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:42.165261+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

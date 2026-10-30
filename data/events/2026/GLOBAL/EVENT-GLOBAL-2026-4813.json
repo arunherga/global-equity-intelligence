@@ -11,16 +11,15 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
         "DEMAND",
         "PRICING"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,22 +27,14 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -51,12 +42,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "gold prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are demand, pricing. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -124,21 +112,41 @@
       "published": "2026-10-29T03:45:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices edge lower as US inflation data reinforces Fed outlook",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPR0hBaHluLVIxenVCTzg0WERZRkVvaVBPQ0F3VG9jSnhHend5X2tRQVBLTDg5azlyYmhvN0ZpT1RFWGU1d1dHem11OTVUbzktYXdKSTZMc3M1aW5uZDRzZndCbTRDTmpUREJYbU5KVXhEM0hmclF0UlpmOHlCMEhPS3NEYUQzT2h3S1RLLUtobVAzdnN0VTljVU9tZjdRTXFHWWNyQ2lUcE1FVFV6NExfZzFtRTBqRnhYNkZIZ2RMQXloTGIyY3BCYXpSZUl4NjZGV1FKUDFRNXBjN2tNdEd2RGtFRdIB4wFBVV95cUxPR0hBaHluLVIxenVCTzg0WERZRkVvaVBPQ0F3VG9jSnhHend5X2tRQVBLTDg5azlyYmhvN0ZpT1RFWGU1d1dHem11OTVUbzktYXdKSTZMc3M1aW5uZDRzZndCbTRDTmpUREJYbU5KVXhEM0hmclF0UlpmOHlCMEhPS3NEYUQzT2h3S1RLLUtobVAzdnN0VTljVU9tZjdRTXFHWWNyQ2lUcE1FVFV6NExfZzFtRTBqRnhYNkZIZ2RMQXloTGIyY3BCYXpSZUl4NjZGV1FKUDFRNXBjN2tNdEd2RGtFRQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T01:52:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Free Press Kashmir",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-flat-gold-holds-price-remain",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-29T13:20:03.092054+00:00",
-  "last_updated": "2026-10-29T13:20:03.092114+00:00",
+  "last_updated": "2026-10-30T13:26:53.072525+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:03.092106+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:53.072501+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-30T13:26:53.072520+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

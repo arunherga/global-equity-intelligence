@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.31,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -33,18 +33,15 @@
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
         "+2 International market development",
-        "-3 Speculative or unconfirmed report",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a platform or supplier the company depends on is investing"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -66,21 +63,61 @@
       "published": "2026-10-22T14:27:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Caterpillar (CAT) Q3 2026 Earnings Call Transcript",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ0tzc1pqajFuLUZScWxYejhBVDNpeDRlMTcyeVFWTHhzMWliOUNIVHBhVVBKdFJ3dXZLWkh4WG5hX01ISGpCZDRnNFFaOV9LUEszVFJlZGgyM0trU1lOcnVCMUJjMUdnRVpCSkpqOFU0ZjRtY0dPT3QtVFYwOXJDcmtfZFJ1WUlVZm85NktWVFpGUW9wMzg0eXNncjBuV0t5U0M5NEtzMnhqNm5rUWJqZEdaa1hkMndIaXcyeTFPWFYwakk4cF9qZENUZDgwTlU",
+      "source_name": "The Globe and Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T17:45:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Caterpillar Stock Slumps 9% Despite Q3 Earnings Beat As Revenue Falls Short Of Estimates",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQlhocGZIRndSYzQ1dTJlZUYzVmpZdVRXYlF6QzZnc095NU5DNkY1WWJpMlkxZUx6dkM3U1lhYWIzSTBPTHNnUThaTTZKRGJ0S0g5QU9IYkF2Z2kwa3FvdG1HUnA1YlZHdzFPZjZXODVFQWFfbFkxaHFRVDZQX2xpbEFmRkFkYWZ4NGd3UnJodDhNZzVUUkxBdDJVelFUTDRZ",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T13:16:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Earnings call transcript: Caterpillar tops Q3 2026 estimates, shares drop By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZkNWZkZoWTRtY0tuTWhadWRfV25Na19pb3RtZTkwV1RJS2Y2TFhTZEdHYlRkNnAtYTZIa19hWnN1WnpnQWd5UXh0RWpZd0dpMVM5bjFRTUx0dk5sX19aSkhjNnFSemZfMzdmMDV3Smozd0Q2M0gtRGNnSTFNRE1PbExBcXRhXzVPZGlvUUZxSFdwSEF6NWhzWUhTV2g2dGtidFF4SEVvMUxaaWFBZTRUTXBaZGl4S2N5V0R2ZkYwaXZHd0V5MmVJYnVlZ0E",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-29T15:40:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Investing.com Australia",
   "cluster_key": "JKIPL|EARNINGS|6.3%-caterpillar-earning-move-oct.-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T11:57:24.240058+00:00",
-  "last_updated": "2026-10-23T11:57:24.240152+00:00",
+  "last_updated": "2026-10-30T13:25:46.450155+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T11:57:24.240142+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:46.450131+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India, The Globe and Mail, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:46.450150+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 5"
     }
   ],
   "price_reaction": {}

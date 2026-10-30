@@ -12,47 +12,43 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "MACRO",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.39,
+      "direction": "NEUTRAL",
+      "confidence": 0.41,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN",
+        "CUSTOMERS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "MACRO",
-          "term": "Federal Reserve",
-          "relationship": "MACRO",
-          "weight": 1.5,
-          "detail": "in headline"
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
-        "+1 Economy-wide relevance",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "macro relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "order flow from traders"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to Federal Reserve. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -343,16 +339,26 @@
       "published": "2026-10-29T05:54:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rupee rises 7 paise to 95.19 against US dollar in early trade",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-rises-7-paise-to-9519-against-us-dollar-in-early-trade/article71643625.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-30T04:36:31+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 15,
+  "article_count": 16,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+INDUSTRY_DEMAND|94.92-against-paise-rise-rupee-usa",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-14T12:09:37.867164+00:00",
-  "last_updated": "2026-10-29T13:25:09.916042+00:00",
+  "last_updated": "2026-10-30T13:25:29.693943+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:09:37.867238+00:00",
@@ -428,6 +434,16 @@
       "timestamp": "2026-10-29T13:25:09.916025+00:00",
       "change": "sources added",
       "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:29.693901+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-30T13:25:29.693920+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> NEUTRAL"
     }
   ],
   "price_reaction": {}

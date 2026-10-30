@@ -16,55 +16,46 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.78,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
-        "DEMAND"
+        "CUSTOMERS"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.3,
+          "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
           "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": ""
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "+3 Original regulator announcement",
         "-6 Scheduled statistical release, not a development",
-        "-7 Share-price listing or roundup page, not a development"
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "official confirmation available",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "bid outcome",
-        "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "order flow from traders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -72,55 +63,38 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.78,
-      "business_impacts": [
-        "REVENUE",
-        "DEBT",
-        "BALANCE_SHEET",
-        "MARGIN",
-        "DEMAND"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": ""
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "+3 Original regulator announcement",
+        "-2 Weak indirect connection",
         "-6 Scheduled statistical release, not a development",
-        "-7 Share-price listing or roundup page, not a development"
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "official confirmation available",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "bid outcome",
-        "order value",
-        "competing bidders",
-        "deposit repricing lag"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are revenue, debt, balance sheet. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -314,16 +288,26 @@
       "published": "2026-10-29T04:19:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Net liquidity absorption at ₹30,454.13 crore in RBI's October 29 money market operations",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX2ExZU1HcklWNUxGLWlrMjEyWXQxM2Y5MUFGMUtHQTVjT0psWFN4eHVUT1pmM0NpQ0JFaTF6Nlg0eG1OM3R4bVJwakFqY3MwX1YzZlZ3emFCbWhxck03bVJ1ZkxrYlYtOGctdDdWNkhaWHB5LWdFRFZLWUtCRlNCZ0JqSUl3ZnR1Z2tCTnFHZjJ6U0NwV1Z5c3dlUQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T04:19:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 19,
+  "article_count": 20,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|OTHER|market-money-operations-rbi-rise-saw",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-09T13:39:12.463459+00:00",
-  "last_updated": "2026-10-29T13:24:32.846293+00:00",
+  "last_updated": "2026-10-30T13:27:08.193367+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-09T13:39:12.463528+00:00",
@@ -419,6 +403,21 @@
       "timestamp": "2026-10-29T13:24:32.846287+00:00",
       "change": "categories added",
       "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:08.193336+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:08.193355+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-30T13:27:08.193362+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
