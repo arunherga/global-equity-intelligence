@@ -54,6 +54,96 @@
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CASH_FLOW",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CASH_FLOW",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer's business is strengthening"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -66,21 +156,46 @@
       "published": "2026-10-24T08:48:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NTPC Q2 results: Net profit jumps 41% to Rs 7,351 crore, declares dividend",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOWNGNW85R2NYai1TUTNyeFFiNzNoZzAxbHFaWHR1d2tQZ0hTOFhZTlFMZWlaRmhieENLUHBJemQ1dnFZemduVUdGYkE4WXdQejM3ZmFzdjlIYjdoS0ltcGVuTmFHSFhXdnFnalY2TXNITGJ6ZElvTmpQNmZETjB4U1RUZTB5aVgzV1hRZmNiNGNDeG9wSVMwRW1uaDBKdTRidWZpQmFTUFpGMEJoUE5IYUlwdVNtS00xR0lQOUVIQm1aVzF4WWRPcHBZUdIBywFBVV95cUxOOWNGNW85R2NYai1TUTNyeFFiNzNoZzAxbHFaWHR1d2tQZ0hTOFhZTlFMZWlaRmhieENLUHBJemQ1dnFZemduVUdGYkE4WXdQejM3ZmFzdjlIYjdoS0ltcGVuTmFHSFhXdnFnalY2TXNITGJ6ZElvTmpQNmZETjB4U1RUZTB5aVgzV1hRZmNiNGNDeG9wSVMwRW1uaDBKdTRidWZpQmFTUFpGMEJoUE5IYUlwdVNtS00xR0lQOUVIQm1aVzF4WWRPcHBZUQ",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T12:36:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Indian Masterminds",
   "cluster_key": "COALINDIA|DIVIDEND+EARNINGS|cmpdi-net-profit-q2fy27-results-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:46:25.152198+00:00",
-  "last_updated": "2026-10-24T16:46:25.152271+00:00",
+  "last_updated": "2026-10-31T17:52:44.860175+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:46:25.152262+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:44.860148+00:00",
+      "change": "sources added",
+      "detail": "The Financial Express"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:44.860167+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:44.860171+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

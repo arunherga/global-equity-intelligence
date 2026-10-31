@@ -4,17 +4,21 @@
   "summary": "Gold price slumps to one-year low, silver price breaks $50 as mining stocks tank Mining.com",
   "event_date": "2026-10-30",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "INTEREST_RATE",
+    "MACRO"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.35,
+      "confidence": 0.59,
       "business_impacts": [
+        "MARGIN",
+        "DEMAND",
         "PRICING",
         "INPUT_COST"
       ],
@@ -30,24 +34,25 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-2 Single unverified source"
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "TMB": {
@@ -104,21 +109,46 @@
       "published": "2026-10-30T16:30:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold plunges ₹3,200 to 10-month low of ₹1.42 lakh; silver slides ₹4,200",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gold-plunges-3200-to-10-month-low-of-142-lakh-silver-slides-4200/article71649831.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-31T14:01:17+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Mining.com",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|fall-gold-low-one-year-price-silver",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T12:50:40.008687+00:00",
-  "last_updated": "2026-10-31T12:50:40.008758+00:00",
+  "last_updated": "2026-10-31T17:52:24.877042+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:50:40.008746+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:24.877014+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:24.877030+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE, MACRO"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:24.877038+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 6"
     }
   ],
   "price_reaction": {}

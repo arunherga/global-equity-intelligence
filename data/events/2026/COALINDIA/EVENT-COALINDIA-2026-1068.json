@@ -4,7 +4,8 @@
   "summary": "When the conflict in West Asia disrupted LNG and LPG supplies from late February, coal stocks at mines and power plants allowed the government to assure the country of steady power",
   "event_date": "2026-10-31",
   "event_types": [
-    "GEOPOLITICAL"
+    "GEOPOLITICAL",
+    "OTHER"
   ],
   "stocks": {
     "COALINDIA": {
@@ -12,12 +13,9 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.47,
-      "business_impacts": [
-        "SUPPLY",
-        "GEOGRAPHY"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
@@ -37,21 +35,21 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development"
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to coal production, and India. The parts of the business most likely touched are supply, geography. Classified as geopolitical.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to coal production, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -75,21 +73,46 @@
       "published": "2026-10-31T05:10:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Domestic coal production shielding India from global price swings: Coal secretary",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOR3NieXJWcHdSclVrOC1PVmFFdHdwNDRIMWFHanR6MGdCUXlzSERWdldybTluN1h3SGxUZVdxRDlnSG1HVnFZcGhDNWlsdUtWaEtRSFFLVXZDcEY1N3Q0cWlOdzVTUFBPVnlhSmIzRHdSSjhOZVNMano4QUdiSGJHak1SQVFsRzdoRVNwam1SQlZvOVRlSW12VHljX2oyX2lCQ3VzVlFPZUxObzhta0tlUHFUMHhzVTFiSnVxT0lTY2tyLTFTbFZQakRiakVnVkZGbnZSWXhqVC1XMEgyMjVrd3Nn0gHiAUFVX3lxTE5Hc2J5clZwd1JyVWs4LU9WYUV0d3A0NEgxYUdqdHowZ0JReXNIRFZ2V3JtOW43WHdIbFRlV3FEOWdIbUdWcVlwaEM1aWx1S1ZoS1FIUUtVdkNwRjU3dDRxaU53NVNQUE9WeWFKYjNEd1JKOE5lU0xqejhBR2JIYkdqTVJBUWxHN2hFU3BqbVJCVm85VGVJbXZUeWNfajJfaUJDdXNWUU9lTE5vOG1rS2VQcVQweHNVMWJKdXFPSVNja3ItMVNsVlBqRGJqRWdWRkZudlJZeGpULVcwSDIyNWt3c2c",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T12:25:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA|GEOPOLITICAL|coal-domestic-global-india-production-shielding",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T12:49:05.758995+00:00",
-  "last_updated": "2026-10-31T12:49:05.759087+00:00",
+  "last_updated": "2026-10-31T17:52:43.507975+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:49:05.759073+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:43.507949+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:43.507964+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-10-31T17:52:43.507971+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}
