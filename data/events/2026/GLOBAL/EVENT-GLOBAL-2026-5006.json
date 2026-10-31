@@ -9,88 +9,95 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "gold loan growth",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
           "exposure_type": "INDUSTRY",
           "term": "loan growth",
           "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "gold loans",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.5,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to gold loan growth, and loan growth. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and loan growth. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.62,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "INDUSTRY",
           "term": "loan growth",
           "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "personal loans",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and loan growth. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -104,21 +111,81 @@
       "published": "2026-10-30T12:13:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank credit grows 19.4% in September; services, NBFC lending lead sectoral growth: RBI",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/bank-credit-grows-19-4-in-september-services-nbfc-lending-lead-sectoral-growth-rbi/135365429",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-10-30T14:03:06+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Bank credit grows 19.4% in September; services, NBFC lending lead sectoral growth: RBI",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUGQ0MXZRdDlQcmNoUTV5bHN5a3o5bnRCOHN2MjZSMXlYa3gya05BZ0NoM0xHN2tlTDdmQmV3bEk5dWp1c3YtMU91ZjAxR2tSUjM5R2FPaHZEc2JoUW5HbWs1NkdvTTJuTFE0SC1yT2NISnc3QzlDYXdJa0VtMUp4SXBmRlMzWGFaQnhvbTlPNTk0ZW5OUVRkbGVQMjFSNmRwUGNrb3RIN1NzR0ZKT2h0eG1aYm1peHlZSk50LV9ZY3RfaWJ3OWVOcHFhcjA1VEhIZEI5aml0XzEzMm_SAeABQVVfeXFMTzRyNW82ak1YeWEtdlh2dGNvZk9xcWkxc083SlR1a2NBclVFSnI4cThfby1QaU0wbU9TaXJta20yZ0xZNlRrUXp0MGZud2UwN0dxOHA3aHluZHpTbE8xMXc5ZC1fM3M0aEg1eTBJVzR1MDQ3SHl5TGZpMDRMaFpEZjVxWWd4eDVVaWhPdG90S25weWRLeFZtSDBvaVRCY2dYS25BQzJWTlpWblpsZTdaRkVrOUtsRjVyQm1zaERYbl9oU3JtQVRkWEJzU19WaXNqa2xpR3RaNXZ6VGpxYWo4Ri0",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T14:03:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank Credit to Services Sector Surges 28.3% in September, Industry and Agriculture Grow 19.5%: RBI",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWE5PQ2NZWlhwSER2TFQ1OVVVZWNySEFRblFsRU9NczRNZER4S0JCQjRKUWJvc19vR2lfX1BWdUk2cDRROHVvSTk1aXhJREVjT216LS1WanZOSjB2TjhlY3owV29KVDFfYWQ5dzVDWEFGcnN6ZF9WaEZJc1dqMl9ZY1dJVnZIc1l0MFdvN2FZbWpHUzRDRlN5d3FKQ0xGQV9ueWRXUWhKR25salVlSElUMFQ2RDFhMmtBVTY4cmZnYjZUSDJTOHJuWHVGSnB1WURjOXJjVERiRQ",
+      "source_name": "KNN India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T10:28:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank credit growth accelerates across services, industry and agriculture in September: RBI",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeDFXRnhRXzJVeDlDZ2c1VjFrSUE5eG9Dd2g3LWpqYmNwbHRHelhkQUc0elRtMTB3dEZrMFFMTGFuTDRUY3N5ZzdCVnExdzlSYklNZmtKODY4cXB3djE1R24wUnBPSUJwMTNOa3ZRTmRtcVB6M1paYjk5NzhnUDkxNEZHb0t4aXJYM0l5cDJEMDJmM2t1eG1vUGNrOXIxWVFvWUYtQmdBa2NIMmhHZ2lVUTZUd05WNlVyX1JwOTMtREF6LXF4eXM4N0dR",
+      "source_name": "India's News.Net",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T21:32:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|28.3%-bank-credit-rise-sector-services",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:22:40.312466+00:00",
-  "last_updated": "2026-10-30T13:22:40.312553+00:00",
+  "last_updated": "2026-10-31T12:56:59.610959+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:22:40.312545+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:24.239391+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:24.239409+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:24.239413+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 3"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:59.610939+00:00",
+      "change": "sources added",
+      "detail": "India's News.Net, KNN India"
     }
   ],
   "price_reaction": {}

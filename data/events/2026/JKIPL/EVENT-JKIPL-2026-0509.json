@@ -4,20 +4,23 @@
   "summary": "Caterpillar Q3 Revenue Rises 17% to $20.7 Billion grafa.com",
   "event_date": "2026-10-29",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -28,7 +31,10 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+2 International market development",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +42,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "supply terms from Caterpillar"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Caterpillar. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to Caterpillar. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -66,16 +75,26 @@
       "published": "2026-10-29T20:24:15+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Caterpillar reports 17% revenue growth in Q3, s...",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcGlEbHZvU2RvemJUbDRGaEFOLVRjMWIzNTZLTVNDVTZxZXIxR1F0c0hBV3ZUU3R6OHd2eFZvUTFWOXo0bU5KYWRHeXpkWnBLbzA2WlU3OFNodFJmQl82am51bGUwNFBhNW1La2Q0M25KT0gxN1p3MURrTGZoZFlwM0ItdThLd3BPM1hkYjVLbUpqc2dRYXpIcWZR",
+      "source_name": "Pluang",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T17:12:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "grafa.com",
   "cluster_key": "JKIPL|OTHER|17%-20.7-caterpillar-revenue-rise",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-29T13:21:58.872834+00:00",
-  "last_updated": "2026-10-30T13:26:35.092275+00:00",
+  "last_updated": "2026-10-31T12:56:49.250640+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:21:58.872886+00:00",
@@ -86,6 +105,21 @@
       "timestamp": "2026-10-30T13:26:35.092258+00:00",
       "change": "sources added",
       "detail": "AlphaStreet"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:49.250615+00:00",
+      "change": "sources added",
+      "detail": "Pluang"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:49.250631+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:49.250637+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 3"
     }
   ],
   "price_reaction": {}

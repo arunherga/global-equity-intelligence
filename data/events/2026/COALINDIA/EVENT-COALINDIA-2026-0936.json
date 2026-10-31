@@ -11,15 +11,12 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 6,
+      "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.51,
-      "business_impacts": [
-        "REVENUE",
-        "MARGIN"
-      ],
-      "time_horizon": "IMMEDIATE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -38,26 +35,21 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -527,16 +519,26 @@
       "published": "2026-10-26T11:25:22+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bharat Coking Coal - Turnaround Story: 8 stocks shift from loss to profit in September '26 quarter",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb1VTdXpTOUQ0QVExT19xM3c5RFhqRl9xYldnUVZlYlM2UDM0dlkwejBPeldBWmNkbEM2el85R3dmNVphRW5GcllqTDdqdVlxUGJ5QkdMcldYcXJtME1yUHdsMGJTUTZ5MDlPSUpWNllrcWhma0dYVUYzSV9GSVFGcHdwZlY3elNUdmVQZG1OdzREQlpuZm9mWFVaV19mTlBPUkJoZnI3TkpLckhhbU1aSlBNZmJmQnNDY1gyczZ4N1BjNjVfVC1xbXl4SEhHd2ZWa2hfNmthRVNTc1hpc2lYLVJnNXVCazhjUzJaYlVkQW5iSHYyUWdfWUxB",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T09:26:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "COALINDIA+MSTCLTD|EARNINGS|124-bharat-coal-coking-profit-swings",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-25T11:46:33.075163+00:00",
-  "last_updated": "2026-10-26T19:28:36.217377+00:00",
+  "last_updated": "2026-10-31T12:57:20.943993+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:33.075243+00:00",
@@ -612,6 +614,16 @@
       "timestamp": "2026-10-26T19:28:36.217362+00:00",
       "change": "direction changed",
       "detail": "COALINDIA UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:20.943969+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:20.943989+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

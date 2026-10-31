@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.39,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -35,7 +35,6 @@
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,7 +43,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -63,21 +62,41 @@
       "published": "2026-10-16T08:44:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China’s Solar Module Exports Rebound 45% In September 2026",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNT3FYMlVkRFNzTkQ0UV8ycHBzZHdYYkFFeG4tU3JmODQ5dEJ5QlZ1cXZXTk84UUVqN1Z6UFRlNHFxQVB3TTFNdGRIclp6N1Axd3pQRmZqOG16UG5UUzcxMlZoWk5kTlhMU3NIQ0JISFQzdWlNN0MxTllidG5ZZnpTbVBJTEE1Vk9URDdBajd5eW1lYVpTeXppZjd3",
+      "source_name": "TaiyangNews",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T07:21:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "SolarQuarter",
   "cluster_key": "WAAREEENER|OTHER|2026-august-china-export-module-solar",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-16T11:42:10.676176+00:00",
-  "last_updated": "2026-10-16T11:42:10.676220+00:00",
+  "last_updated": "2026-10-31T12:57:17.773122+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:42:10.676214+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:17.773100+00:00",
+      "change": "sources added",
+      "detail": "TaiyangNews"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:17.773118+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

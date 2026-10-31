@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-0981",
+  "title": "Gold prices drop sharply at the end of October. The collapse of the safe-haven myth or a search for liquidity?",
+  "summary": "Gold prices drop sharply at the end of October. The collapse of the safe-haven myth or a search for liquidity? XTB.com",
+  "event_date": "2026-10-30",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold prices drop sharply at the end of October. The collapse of the safe-haven myth or a search for liquidity?",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNcWh6TGR5aUlDd04yYWhxN2pMRUJGRVdIcUN3aWpHRFFDSUZ0WFFfb1VDV2hfejlWVjk5a3B1NWJLT09Hbjk0NEltaVJxTHpweFg3cDYwMndaVFpvRk5NZTlPSE9BWVdxb1o2NWE1UXNDNWhGSWNtS0lmZk5vMkhObXlfSEs5MHVUcUhZTHFwWUpRVHVTNHZVMXl6eE83VkFNV09fVHlIT2RqVWM1RE1Nb2d4MUI1ZHhxYVRYaFRYZnFwLXY0X296eXJyaWx6VjFYQUJscDRNcDNKNlA3WDdURFNORFJmVllta3lnWlVhYndGcl82bDhBMQ",
+      "source_name": "XTB.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T15:56:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "XTB.com",
+  "cluster_key": "TMB|COMMODITY|end-fall-fall-gold-october.-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-31T12:50:32.299781+00:00",
+  "last_updated": "2026-10-31T12:50:32.299854+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-31T12:50:32.299844+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

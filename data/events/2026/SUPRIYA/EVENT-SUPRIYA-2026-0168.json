@@ -10,7 +10,7 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -25,12 +25,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,7 +53,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to USFDA. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to USFDA, and India. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -71,16 +77,36 @@
       "published": "2026-10-19T01:16:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Sun Pharma Gets USFDA Approval",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB4c2FxTGVhUmxTdHYzWEVhd1JxaFZwbnE2bjhXVzlFUWhBbWpwTVFOdGVUUW0yTGVtLTNyd3dUMmZ6SHFyOW1wQ0lycEdZLUVhVl9JS3ExT1F6am1QYXZSbGlTYjVpdlAxRTJiNmFGYW9TQQ",
+      "source_name": "India Business Trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T17:08:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Alembic Pharmaceuticals Receives USFDA Approval for Venetoclax Tablets",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUR4SmlqZkJYZEYwTFBSeENHUlB3T0wwM2hEbUl6LVB6SEZPQTNUTk1ELVIxcFpwTjZxR2ZDYTdpMk1Fb0xtSHF1TWdCcjFjTk0wc3pVTGRERjc1MUUySHY3c3ZmT0ZLcmVuZldvODFyQmREVXMyNU9HeVZvVTVsZVJJT1JaSmFyc2VRMFAyeW01eGJsN2NjRkI3WGFvd3VwNmJ6QVVtMA",
+      "source_name": "Machine Maker",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T05:33:54+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "SUPRIYA|REGULATORY|alembic-approve-otic-pharmaceuticals-usfda-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-18T11:23:34.746280+00:00",
-  "last_updated": "2026-10-19T13:48:40.342640+00:00",
+  "last_updated": "2026-10-31T12:57:12.499173+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T11:23:34.746350+00:00",
@@ -89,6 +115,21 @@
     },
     {
       "timestamp": "2026-10-19T13:48:40.342624+00:00",
+      "change": "sources added",
+      "detail": "Machine Maker"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:48.945271+00:00",
+      "change": "sources added",
+      "detail": "India Business Trade"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:48.945287+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:12.499155+00:00",
       "change": "sources added",
       "detail": "Machine Maker"
     }

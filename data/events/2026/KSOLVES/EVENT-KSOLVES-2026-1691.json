@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -63,21 +64,41 @@
       "published": "2026-10-27T11:03:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce stock expands defense push with planned Rune deal - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd3UxWHRqcE4wTlN0UEYtSjVQMGtkSFZkTm5LXzVDTTF4LUZfRTVJRUx6cll5NTJ3aWFVQjFXNHFRZlA5MzF6ejllZnpCNkhaQXRKc2hfT3paMGVXbDhnRzk1ZUpBcC1VS1hCcjF3cldSUlhEZi1DTGdnS0J4eUVaTTlSVzJidk9BX1ozUDllUDhfclhVX3EtN25oaDlLMkpjaURYZnJVMEkwU1YwX0VZUWNEdzBjYld3MW9ScmYxSnI",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T16:31:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "ad-hoc-news.de",
   "cluster_key": "KSOLVES|OTHER|agentic-commerce-expand-means-salesforce-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-27T12:31:30.120057+00:00",
-  "last_updated": "2026-10-27T12:31:30.120124+00:00",
+  "last_updated": "2026-10-31T12:56:47.897887+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:30.120114+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:47.897858+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:47.897884+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

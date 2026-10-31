@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "cucumber prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -56,21 +56,41 @@
       "published": "2026-10-24T06:27:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Another wave of cucumber price increases in Ukraine",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT2ZjYmNHUzRnUjdtVzJ6TXdDcTgxVGkyNEVJa3NDc09QRWZ3TThpY2JFVU0xRTBkTk9DdjZLRDl1SDVueC0wSXhjUWlIeEhWc2p4TFRTamdtWmhJSHFsTE5qbHpXOUZPZHgxX1J0VkdyYW1XSTlEVVZWTlVvUkxQMTVlRlRGVzJjWERUQnBnZjA",
+      "source_name": "EastFruit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T06:10:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "EastFruit",
   "cluster_key": "FRESHARA|OTHER|again-cucumber-price-rising-ukraine",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:45:49.925455+00:00",
-  "last_updated": "2026-10-24T16:45:49.925523+00:00",
+  "last_updated": "2026-10-31T12:57:13.627228+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:45:49.925513+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:13.627206+00:00",
+      "change": "sources added",
+      "detail": "EastFruit"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:13.627224+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

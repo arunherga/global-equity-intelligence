@@ -10,7 +10,7 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -29,6 +29,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -56,21 +57,41 @@
       "published": "2026-10-18T06:38:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "GE Vernova vs. Caterpillar: Wall Street Splinters on the AI Power Trade",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNamRwRUpZY2ltYTBZV3gyRXI5SWVmMWN0SHQ1eGZQYUdYNWNvVVF1OTBLNVppUm1UZ0hXQnVvR2lpNHduMFpvTHNjM2pEazRzVmJmZWsxUktYWmxmTnljUVN3NGFZZnVBZU9jRWRjSklNT3JldUZ1UDlhZlJLM0h6SGk2ZllQcnVQ",
+      "source_name": "Barron's",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T15:46:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Motley Fool",
   "cluster_key": "JKIPL|OTHER|caterpillar-exposure-more-vernova-vs.-which",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-18T11:25:48.198095+00:00",
-  "last_updated": "2026-10-18T11:25:48.198183+00:00",
+  "last_updated": "2026-10-31T12:56:44.592000+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-18T11:25:48.198170+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:44.591984+00:00",
+      "change": "sources added",
+      "detail": "Barron's"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:44.591997+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
     }
   ],
   "price_reaction": {}

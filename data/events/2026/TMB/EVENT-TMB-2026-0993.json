@@ -1,0 +1,90 @@
+{
+  "event_id": "EVENT-TMB-2026-0993",
+  "title": "Bangladesh gold prices fall further as Bajus cuts 22-carat rate",
+  "summary": "Bangladesh gold prices fall further as Bajus cuts 22-carat rate Traders Union",
+  "event_date": "2026-10-31",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, customer exposure to gold prices, and traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Bangladesh gold prices fall further as Bajus cuts 22-carat rate",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWjZFWWtyWmhyMHpWYnFYd3JESjJhREJlUS1xWExwQUtxeDlwNkFGTUhkcU12WnpNVGh4YkQ0WHNHZW5HMWR2NmhUNF8zY2J0UTRFWlVDRFEzLS1PNm14UEhCTGhmU3ZRUVN6RDVJOGxMTnRscEtBeF9vbTBaWHhyX1BHRnVSclNvcHc3Uk1oU0ZkVVk",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T06:39:20+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY|bajus-bangladesh-fall-further-gold-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-10-31T12:52:14.401830+00:00",
+  "last_updated": "2026-10-31T12:52:14.401867+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-31T12:52:14.401863+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

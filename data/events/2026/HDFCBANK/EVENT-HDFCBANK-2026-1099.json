@@ -10,17 +10,15 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,28 +26,31 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (IDFC First Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "IDFC First Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IDFC First Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to IDFC First Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -143,16 +144,26 @@
       "published": "2026-10-30T11:49:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IDFC FIRST Bank Q2 profit rises 196.5% to INR 1,045 crore, deposits grow 25.9%",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWmtUTUE3QUt1QnRNdmJvWDgzWDdHdVZJeTNRQ1hOVGdGenZFSVhYX0dTWUN5U3JMMzc2YmRMcUJwdnhNekdTWFpVeXNJNXhsR0R5UzQtMXJ1bmpRdF9VT0hPbDZRVHhzVERCS29xdXlSMXFWX0sySzdqbmJFSVQ3cWVlTVloSV9fb0thYmVqVUREaURyZnUwQzBCZGt3aDZNT0h1SFNRdEtDaFYtaGdfUkFwMmlpVXFLVlhJRDJGSGFCR29teTI2WA",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T20:00:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "HDFCBANK|EARNINGS|bank-first-idfc-profit-results-tax",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:47:04.077295+00:00",
-  "last_updated": "2026-10-30T13:28:13.798376+00:00",
+  "last_updated": "2026-10-31T12:56:56.425531+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:47:04.077365+00:00",
@@ -183,6 +194,16 @@
       "timestamp": "2026-10-30T13:28:13.798358+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:56.425506+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-10-31T12:56:56.425527+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

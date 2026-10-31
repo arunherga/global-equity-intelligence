@@ -10,41 +10,46 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "MACRO",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "MIXED",
+      "confidence": 0.26,
       "business_impacts": [
-        "DEMAND",
-        "PRICING"
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "gold prices",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "throughput commodity; in headline"
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Economy-wide relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "gold prices is handled rather than bought or sold; volume matters more than price"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "macro relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are demand, pricing. Classified as macro.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -122,16 +127,26 @@
       "published": "2026-10-30T01:52:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "US Fed holds interest rate steady ahead of midterm elections",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQW9ncGU1T0doWmh0ZUtIcHRncUhzMjZ6NE5HcnRLTDltSXNLcGZaS3JrUkRpSEtSTmU5c2ZKcTUzejFXY2ZrWFBHNTNEeVpScW0td08tUnZ5QnR5Y1FKb3VFZ3U5OXJQU2JLOUU5aXJGdjlyVE9fX2ZMZUE2dmZ1T0FB",
+      "source_name": "China Daily Global Edition",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T05:15:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Free Press Kashmir",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-flat-gold-holds-price-remain",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-29T13:20:03.092054+00:00",
-  "last_updated": "2026-10-30T13:26:53.072525+00:00",
+  "last_updated": "2026-10-31T12:57:10.801343+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:03.092106+00:00",
@@ -147,6 +162,16 @@
       "timestamp": "2026-10-30T13:26:53.072520+00:00",
       "change": "direction changed",
       "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:10.801320+00:00",
+      "change": "sources added",
+      "detail": "China Daily Global Edition"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:10.801338+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

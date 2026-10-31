@@ -57,6 +57,110 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Adani, and India. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -69,21 +173,46 @@
       "published": "2026-10-28T12:47:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Earnings call transcript: NTPC posts strong Q2 2026 growth as stock rises By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWlpTbWdlN3FfTVpoWHB1cTFSU1VtZjJKMzVCUHJOaW9yRkVMZGl3MmUtNVpHMlRVRUUzcUQ1TkJseVk0YlFIOWRsQUpSc1ZNSkVCUjhzUGJHcUxxYWkzd2FHN1ZBaUVjRUVna2JIZkFDek9CSUFxNktybGtMVU0tTWkzTENjUGY2cHpLd05sS3QwRVdCSnl5a1MwZTZWYmVCTUlxZFRSMFVmNXdEMlg1Ry1RTGNZeXBOdk82VXlEMXNJaDRibktXcWZCanBRdw",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T12:19:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "WAAREEENER|EARNINGS|adani-call-earning-enterprises-record-transcript",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:17:23.165965+00:00",
-  "last_updated": "2026-10-28T13:17:23.166030+00:00",
+  "last_updated": "2026-10-31T12:57:26.683583+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:17:23.166020+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:26.683559+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:26.683575+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:26.683579+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

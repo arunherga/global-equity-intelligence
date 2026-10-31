@@ -55,10 +55,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.25,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -75,8 +75,9 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-4 Opinion, preview or stock-tip piece",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (copper) is the subject of the headline",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -85,8 +86,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -108,21 +108,41 @@
       "published": "2026-10-27T18:02:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "With abundant supply, why is copper still experiencing a price surge?",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OdVRNYXRVTVpBSS1lQnV4WmUtWVk5aVFDR3VkOHhTcEV0cU91VURmUEFpUmsteHozS1dZZU84MWdJWjFpTGhvYzZpTEFxZUI5a1AzZ1hhZi1OMlVMMVF1UHptcTJXYWxJOHpTSFFIaGMwRTdxVjY0",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T02:51:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Shanghai Metals Market",
   "cluster_key": "MSTCLTD+WAAREEENER|COMMODITY|analysis-copper-payabilities-rise-scrap-smm",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-28T13:13:19.309308+00:00",
-  "last_updated": "2026-10-28T13:13:19.309406+00:00",
+  "last_updated": "2026-10-31T12:57:07.845197+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:13:19.309391+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:07.845175+00:00",
+      "change": "sources added",
+      "detail": "Vietnam.vn"
+    },
+    {
+      "timestamp": "2026-10-31T12:57:07.845194+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 7"
     }
   ],
   "price_reaction": {}

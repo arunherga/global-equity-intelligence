@@ -1,0 +1,91 @@
+{
+  "event_id": "EVENT-TMB-2026-0980",
+  "title": "Gold price drops almost 3% after hot US PCE data and Fed policy weigh on demand",
+  "summary": "Gold price drops almost 3% after hot US PCE data and Fed policy weigh on demand Traders Union",
+  "event_date": "2026-10-30",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, customer exposure to gold prices, and traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price drops almost 3% after hot US PCE data and Fed policy weigh on demand",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbXBwUmtUTVhnTzI3YUh5NjdjYTBmeE5Cc2FfX1NtU1F6MkRMUm1MYUtqeDExS0NLZXBQLWZNOVl2UUc2Mk4wX1NueTN6Mklra3RMYjI3ekhkMmFFVFdTNExrOThQUGVRQ05UZ1NpY1ViUndsREZoQ3dXWFYzUUE1b1dKekJBVS1YODNwcXExUzk0UQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-30T15:42:33+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY|almost-fall-gold-hot-price-usa",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-10-31T12:50:28.326330+00:00",
+  "last_updated": "2026-10-31T12:50:28.326396+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-10-31T12:50:28.326386+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
