@@ -1,0 +1,91 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0213",
+  "title": "Vegetable prices drop, keeps food inflation at bay",
+  "summary": "Vegetable prices drop, keeps food inflation at bay Dhaka Tribune",
+  "event_date": "2026-11-01",
+  "event_types": [
+    "MACRO",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "food inflation",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, macro exposure to vegetable prices, and food inflation. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices drop, keeps food inflation at bay",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNM3duV3g2a1c2aWpZeGFKaDVVbFlNS2VPc0JDMmdvd2JwdHI5bjFhdmQ2YzRJWlludE85cmFQa3ZzUC1Zc3EzV0JpYkVBRE1ldUpMeE4zbmV1QW9VQXlkTElZV0lRQlpVMmQzWmhjM3VnajZfN2JEdjk0N2V2b2t1NGlteUhHVnJqZmwzUkptalN1S3FBVk96VUxlSkZhWHfSAZ8BQVVfeXFMTTN3bld4NmtXNmlqWXhhSmg1VWxZTUtlT3NCQzJnb3dicHRyOW4xYXZkNmM0SVpZbnRPOXJhUGt2c1AtWXNxM1dCaWJFQURNZXVKTHhOM25ldUFvVUF5ZExJWVdJUUJaVTJkM1poYzN1Z2o2XzdiRHY5NDdldm9rdTRpbXlIR1ZyamZsM1JKbWpTdUtxQVZPelVMZUpGYVh3",
+      "source_name": "Dhaka Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T12:42:19+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Dhaka Tribune",
+  "cluster_key": "FRESHARA|COMMODITY+MACRO|fall-food-inflation-keeps-price-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-01T18:34:15.650073+00:00",
+  "last_updated": "2026-11-01T18:34:15.650159+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-01T18:34:15.650149+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

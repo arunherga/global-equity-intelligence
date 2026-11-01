@@ -4,20 +4,22 @@
   "summary": "Gold and silver price today, October 13: Check rates of 24K, 22K gold in Delhi, Mumbai, Kolkata other cities Moneycontrol.com",
   "event_date": "2026-10-13",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,22 +30,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 International market development",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -407,16 +412,26 @@
       "published": "2026-11-01T03:06:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold and Silver Rates Fall: Check Today's Prices in Delhi, Mumbai and Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOC1sdnRUUFBRLTI2WDhXcEF1NVJOZ0RhS1BUelpXRmJ5RGRUUHNEdTEzZ3VFeUV1WXVTemtXTnp6c0xJdUhVX1hHNGdsS29rZXExWFJZT2prcHEwcWZ4SkRGa3hFMUpNZF9JbnhDV0Njb18wdjVidjFrYnVURDVIc0wwdml2NV90djRfdjhNSk9RYkJVNVJtdU8yZHRSVkFSNDhqeEJ2WHBZSFdGMGFWTTlYUm54Y1FF0gHGAUFVX3lxTE9hdW5CQVBEMkNaRW5CZndmT0NoSmFoV1VKVjNPeFoySl90ek1IeldMWXlONTJ5ZWtvOVhMc1d5d3FVZzV2QkZpQU02YTRwVVVIMTFzWTJkU1l5bzJNbkw2Q3RuOTI0SHdpdHRaN0pXUXhhM3BmajViMWt6N096TmR1UExOcHdpNkdpWjF3em5RVzJXREhocUdFTGJHdE1qRDNReTJFTlNDUzlDMWM2ZERxLThNZ1dlazkyR3RTWjFOdFkxcDdOUQ",
+      "source_name": "Analytics Insight",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T06:35:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 36,
+  "article_count": 37,
   "source_count": 1,
   "primary_source": "Rediff MoneyWiz",
   "cluster_key": "WAAREEENER|OTHER|check-gold-october-price-silver-today",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-13T14:32:56.828871+00:00",
-  "last_updated": "2026-11-01T14:31:27.128593+00:00",
+  "last_updated": "2026-11-01T18:35:06.027833+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:32:56.828968+00:00",
@@ -527,6 +542,21 @@
       "timestamp": "2026-11-01T14:31:27.128577+00:00",
       "change": "sources added",
       "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-11-01T18:35:06.027803+00:00",
+      "change": "sources added",
+      "detail": "Analytics Insight"
+    },
+    {
+      "timestamp": "2026-11-01T18:35:06.027821+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-01T18:35:06.027828+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 3"
     }
   ],
   "price_reaction": {}
