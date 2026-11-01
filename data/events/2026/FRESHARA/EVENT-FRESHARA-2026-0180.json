@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "cucumber prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -66,16 +66,26 @@
       "published": "2026-10-31T06:10:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Cucumber Prices Are Rising Rapidly in Ukraine: The Main Reasons",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcVYyX2JKTUhSN1Y4RGozZFo4ODRjUGZnRzZrOFFlQzNoQURrTWlxRFJ0dmJWclBSWGI0cHRoUEtHNTBOaU5XUGxfMTRERDJTbDZGbHhSaVBkR1l5bHkxS1JJSVViTllWNjluX1Z4VENZWHNJVXpKVTRvdzdDZGRybmlmX1NXdw",
+      "source_name": "Комерсант Український",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T14:05:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "EastFruit",
   "cluster_key": "FRESHARA|OTHER|again-cucumber-price-rising-ukraine",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:45:49.925455+00:00",
-  "last_updated": "2026-10-31T12:57:13.627228+00:00",
+  "last_updated": "2026-11-01T14:30:58.984668+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:45:49.925513+00:00",
@@ -91,6 +101,16 @@
       "timestamp": "2026-10-31T12:57:13.627224+00:00",
       "change": "direction changed",
       "detail": "FRESHARA UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-01T14:30:58.984648+00:00",
+      "change": "sources added",
+      "detail": "Комерсант Український"
+    },
+    {
+      "timestamp": "2026-11-01T14:30:58.984662+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

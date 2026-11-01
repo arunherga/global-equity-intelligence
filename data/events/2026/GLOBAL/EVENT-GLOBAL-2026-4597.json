@@ -9,55 +9,46 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.47,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "PRODUCT",
-          "term": "deposits",
+          "term": "gold loans",
           "relationship": "SECTOR",
-          "weight": 0.9,
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 7/10",
+        "two independent sources",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements",
-        "Indian Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank, and Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to gold loans, and India. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -116,21 +107,51 @@
       "published": "2026-10-27T11:35:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India’s gold loan market is entering a new phase of growth",
+      "url": "https://www.thehindubusinessline.com/markets/gold/indias-gold-loan-market-is-entering-a-new-phase-of-growth/article71646198.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-10-31T04:16:42+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "India’s gold loan market is entering a new phase of growth",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYXdiRU5wNmlsRl9qRFgyQ1NIUmlFR0t1UUd6azZLdjVlRndQVmg1S0ZCWVBVaWdIbUlkM3VSTE5iUmJVWDFiWnJzMWUtZnRpYnRXaXotbFplV0E1UHNQMmJSc3Y3OXZkUGdoSnE2RXdPMDJMUWRRVDNuUl85djRLUU5YNHI2ajlfa2c5WVFrZEktS1owNm14WXJGZk5Pa0Nhb1p2ZTUtc21fVTV0UWt5dk5kRnMzaENXN2xvM3gzYmFMdV82cG11eXc5R0bSAcwBQVVfeXFMT2F3YkVOcDZpbEZfakRYMkNTSFJpRUdLdVFHems2S3Y1ZUZ3UFZoNUtGQllQVWlnSG1JZDN1UkxOYlJiVVgxYlpyczFlLWZ0aWJ0V2l6LWxaZVdBNVBzUDJiUnN2Nzl2ZFBnaEpxNkV3TzAyTFFkUVQzblJfOXY0S1FOWDRyNmo5X2tnOVlRa2RJLUtaMDZteFlyRmZOT2tDYW9admU1LXNtX1U1dFFreXZOZEZzM2hDVzdsbzN4M2JhTHVfNnBtdXl3OUdG",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T04:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Free Press Journal",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-difficult-entering-india-phase-rising",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:42.091120+00:00",
-  "last_updated": "2026-10-27T12:31:42.091192+00:00",
+  "last_updated": "2026-11-01T14:30:54.662922+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:42.091181+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-01T14:30:54.662901+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-01T14:30:54.662916+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

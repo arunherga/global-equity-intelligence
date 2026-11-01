@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0212",
+  "title": "Most wholesale vegetable prices fall, but market price index rises 1.23%",
+  "summary": "Most wholesale vegetable prices fall, but market price index rises 1.23% BurgasMedia",
+  "event_date": "2026-11-01",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Most wholesale vegetable prices fall, but market price index rises 1.23%",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZWVYZ18zd2ktdGMwR3R5V0xEbV9xUzUwa01FbURVdGdoR1pfcDA1TFVDQVJkdWczTHJqbWppV0dLZk82MmF1TGVJeTZrNjNNd3YtX2VzT25hcGxEU05QNnZud2ZzOGJ5YWRlY3Y4MHBYeC1zd2UyODRYZ0k2WGxpanI3LVJVUkVRbHpYUk41Y01icm1UNTJFMU8tc2pDTGVhX0J5Q1dYTnlwNkNRakZpU0dPMUlKbXNxck1OMk90RnhldFZv0gHKAUFVX3lxTE9RTFZpM3JZYk9NelFSVTNWNC1KaW53M1RCbDU3dnpzekNVTlE4S2pFN1M4UE8tUGVGTV9id09UeTlrUnpia3lGNmZXbzE1bEFrTkhMQTYxaHdwQ3JOTC16b3JRdnJ6d3AyV0hyZVJxd2FiOGRHZWc0VGwwMURfSzFHTXY1QnlVeE1RWXpRMDdtaEpMRHB1WG9VZ2ZwMzBQcWxkUzRPS1JHSzA3RkJpWUZkekwtNU8xZHFFMFF6WXNlMWkxbEdQWFA5TlE",
+      "source_name": "BurgasMedia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T06:08:55+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BurgasMedia",
+  "cluster_key": "FRESHARA|COMMODITY|fall-market-most-price-vegetable-wholesale",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-01T14:28:53.685208+00:00",
+  "last_updated": "2026-11-01T14:28:53.685289+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-01T14:28:53.685279+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

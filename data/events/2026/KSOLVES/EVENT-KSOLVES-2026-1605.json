@@ -12,13 +12,21 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "CUSTOMERS"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "NSE",
@@ -40,7 +48,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,9 +56,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Coal India, and NSE. The parts of the business most likely touched are cash flow, customers. Classified as dividend.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -193,52 +201,6 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "CASH_FLOW"
-      ],
-      "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "No clear directional signal in the available text"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "confirmation from an official or company source"
-      ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow. Classified as dividend.",
-      "ai_analysis": null
-    },
-    "KSOLVES": {
-      "ticker": "KSOLVES",
       "relationship": "DIRECT",
       "impact_score": 3,
       "impact_band": "LOW",
@@ -282,6 +244,52 @@
         "confirmation from an official or company source"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CASH_FLOW"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are cash flow. Classified as dividend.",
       "ai_analysis": null
     },
     "TMB": {
@@ -479,21 +487,51 @@
       "published": "2026-10-26T00:34:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Limited (NSE:COALINDIA) Looks Interesting, And It's About To Pay A Dividend",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWV9xZnZLcFRfekUtZHNuREZiUGRLaGFzU0NVaENVT3NvV05nWVg1VlBkaWgwd002Z2ZIeE1XTTNUZnkyVktQUmNmRVB2aGpBdnRYcmZDY0dKeUdKaFF6dllQbkx6STk0VjI3WFIyMF8xTUdJV3JmRDBRLTN3R2NWWkJGUUNUZXlYZm13RGE2bkV0VFBOVVNnNEV4SkV0T0xZTGRWV3FhQVlwcHB4RW5nQjllRkhOZWk5Z3RsRGhzMXFDLV9yT1dDdkZSbnpHRzZodktlZ0czSdIB1wFBVV95cUxPWV9xZnZLcFRfekUtZHNuREZiUGRLaGFzU0NVaENVT3NvV05nWVg1VlBkaWgwd002Z2ZIeE1XTTNUZnkyVktQUmNmRVB2aGpBdnRYcmZDY0dKeUdKaFF6dllQbkx6STk0VjI3WFIyMF8xTUdJV3JmRDBRLTN3R2NWWkJGUUNUZXlYZm13RGE2bkV0VFBOVVNnNEV4SkV0T0xZTGRWV3FhQVlwcHB4RW5nQjllRkhOZWk5Z3RsRGhzMXFDLV9yT1dDdkZSbnpHRzZodktlZ0czSQ",
+      "source_name": "Simply Wall St",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T04:28:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Simply Wall Street",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|DIVIDEND|about-india-ksolves-ksolves-like-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T13:23:17.338336+00:00",
-  "last_updated": "2026-10-26T13:23:17.338428+00:00",
+  "last_updated": "2026-11-01T14:31:36.636471+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T13:23:17.338417+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:36.636433+00:00",
+      "change": "sources added",
+      "detail": "Simply Wall St"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:36.636450+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:36.636459+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:36.636464+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -4,26 +4,32 @@
   "summary": "Tamilnad Mercantile Bank Q2 Profit Jumps 42% to Record Rs 451 Crore Whalesbook",
   "event_date": "2026-10-29",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 6,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.51,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -31,9 +37,12 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -47,21 +56,46 @@
       "published": "2026-10-29T14:07:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Q2 net profit rises 42% to INR 451 crore",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQU1E5LWFjVktaTGhmOGtVQXVRaEZqMWI2cmwtQjZUM3RSa1hjUndUOWVxb3JNU0x6MC1aUl9qWExIUGk5YTZ2eFdhM1lqdUlNbWVoQmVYWlhyeGVWeW9lWldCS1h1dVhpWmpsdFZnQWpCMGs4OUM4SmQtSWJNTDBkUXRIcVF5TklMampxUW5GNVJ6OTVkTWdvZW5fdEJtVTg4UkFuQm56Sk95QV9Fbzl1R2xMdFZqdVFm",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T21:02:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Whalesbook",
   "cluster_key": "TMB|OTHER|42%-bank-mercantile-profit-rise-tamilnad",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:14:38.391750+00:00",
-  "last_updated": "2026-10-30T13:14:38.391835+00:00",
+  "last_updated": "2026-11-01T14:31:12.120423+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:14:38.391824+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:12.120395+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:12.120411+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:12.120418+00:00",
+      "change": "impact raised",
+      "detail": "TMB 5 -> 6"
     }
   ],
   "price_reaction": {}

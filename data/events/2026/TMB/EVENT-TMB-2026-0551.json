@@ -5,19 +5,22 @@
   "event_date": "2026-10-15",
   "event_types": [
     "COMMODITY",
-    "OTHER"
+    "OTHER",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "SUPPLY",
+        "GEOGRAPHY"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -32,6 +35,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,7 +52,53 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, supply. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "SUPPLY",
+        "GEOGRAPHY"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, supply. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -92,16 +142,86 @@
       "published": "2026-10-30T07:00:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, Nov 1: 24K, 22K Gold Prices in Delhi, Mumbai,",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ1RhazhUY2JtSXkxLUJTQjBmTk1XbHREb2ZvSmtZdVFmLTlOT2lyZVlRY3pObXptVWZkLVBQc3NaVDhpREhaQy13MUdsVnFJdGY2LWpsNFAzbVo5b185NUYxb016OUlKWHJtRUgxTElsZFlwYWZ3ZDVtT2E5LXRNOWFUTTljakYxd2JTaw",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T12:44:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices fall Rs 3,200 to 10-month low in Delhi; silver down Rs 4,200",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORjUxN253NEJvSjJDMm9zWmRjbmN1ZzVFR0ozajZkWUtjUVVZOGFJQWNTY29JNGhTdU1mYVhocTdBZnM5WTctLWZhYjE3N3lCMGVsZVBoOUZJVjU2V3VDN3F6RFpLM0FhdktYUFJTWVJNTm1HQUttOXlRWFNvY1AtTHp4STBEVGtfVmNkZUZTLXctUGZiamdIUVRoV1JQOUdFM3hxMVRPTmxVdExHTERQLURGdWVKbXgzcXk4M09FTmJGdDBRMGN2ckhBV1BuRFpBd1hSd0pjRFN6RjVjakHSAeMBQVVfeXFMTmN3VGVpWm42VjByd3JHNnRvbE9TRXVoTmRTSVl3LWNXRTJFY3ZUaGNJVnRMYnJJbWFldkdvNXZPYnRDb3RzNE1XWG5LY0dMbUszZWU1cUpXTUZmR1VyVmdnOVI4cjk3eXhzdHVaTzZ2QVdGOFdIYkQzdjk3dzMyX2xiN3lUY1BGdFBkQW56eG52cmpxaU1PRmR0YVBfLUpydkhwc0l3Wl92Mi1nTG8tYm44NERLR2c1OTk3d2k4N25ublI0M2tyVDE1RTZFYkdJV29QZ1drSUJnU3JlRkgtSnV5MXc",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T14:41:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "LIVE | Gold Price Today: MCX Gold Falls ₹1.38 Lakh, Silver Crashes ₹10,000 as Oil Surge $118, Trump-Iran War & Fed Rate — Check Latest 24K, 22K, 18K Gold Rate in Delhi, Mumbai, Kerala, Chennai & More",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQVTM3TWlZTG1Tbi1wSk1TWExXbHVYSjNjaF9mc2o4WGYwUld6ZzJJRGFsNkVJbjBkRmxTS1djbktvdmo5VDBnZEVIZUxQNXhOZVh5ZUZxN3U2TWEtQ2hUT0lvQ1V5cHJ6WXJXQVF1NDVHR2hFWkM1NmdXMVVaWUxVSnh6SmlBNVJETmVJbld0eUFKVy1YMVdjS245SWthYmFweGF2MGxsbVl5Q0xxbjJWblBOdzhEeEYyNlU0SHdmRXk0UC1oYWI4VFdlUXpqSm1nSm1SZ3dodEtZYm9UcXVhSlNpN25nMjdxQ29aZFV5dGR3Mk1YVXc2SVR1Z0o3TUVNNjUwZ2wwMmppSkZGY2k1WXJhUXpKVDdydE93RmtHcFlQd3p1bkhQMFJjTjEzMDR6RzVxYjdzcTR6ZHBIc1p4aVllVTJMbzltNEHSAc8CQVVfeXFMT0d4cHNQbXNSTmkzNF9WWm43Uk03NE1TZWQtWl9PZ1UwTnd4WUJWc1ZHalZ0Zl93cE04M2t5M3dPS1ZtVVNTa3dEOVJTcEZsVnNSN2RJZ3pGS2VYNFM5VmxGNXJUeHVqYVJOOWpxaDRNWnp6RUp0RFBlSU5aemJfZm9fLU5RVFUxdW1pVnE2OG81bnZObVVWYXJ3ejlJZTBVdGZMRTFMVXp6SXFTc2VqNjVQdkc4a25KUWlaU2ZRWUptMWY1eHVaN3NKeEpaaDBzTUlLYVZmSHBOaVZXT093YkVHeV9FbE5sNVQzRktRT2sxUF9FbTVhRS16N2JCZld4MUxmaV9PbVNGOVBhWTY3TkFiS2NyRGk1dFRBbGdBVGU4ZjNPZ2FsTVZ0QkVNR0JlR2VuS0d2emM2emRmNDd4Wng5cExnUzMya1R2eHIwekk",
+      "source_name": "The Sunday Guardian",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-10-31T22:25:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today in Amaravati – 18K, 22K & 24K Rate | 01 November 2026",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORTJZcUFoT2lnR2daR2diQk0tTmhRQVF4cEVWcjRxVEZidnJNM3djZ2pJcFBZSkk0M3JpWHRqaUdNVVZuNEFwYzBOZV9MbGpNQ3ZtaVgtSUlnXzlnU2FTRmRpWUxMaFdjcVhySktheTBCallRejItZF8zX19kMkw5SDZaUnl1ZnlBeWVIcXpn",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T02:10:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today in Ayodhya – 18K, 22K & 24K Rate | 01 November 2026",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQenc4dlNVcWZPRjIzbUszeVlyQWk5Y1JZZW9NNG81TmIyTWFmZXg4ODhrVm04RDRwZ3FhMGgyMXdZczN0WGt6UkJvNmhrYnZjTEVCbnY1ZmROVnd1NHoxbW5vNkpoV0JJUWw5QS1pRmpKOG5GV1VFRjFJbmNTMzlZbFBGSEJ2bFdfZVlZ",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T11:02:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today in Gurgaon – 18K, 22K & 24K Rate | 01 November 2026",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUE1PQ3hjaVZBcVhhcDlMSzFIMGpjNDhiRWdnQUpxWmZ5VmxaenRZSTEzVkUwWkxuejJBYUZTVDRRU3RfQkI3bmtvVVItUzdQSWQ0c1c1V3hPR05saHFnczdSeUxDbm43Nk04YkNsMEtqUE5NWEJQTVdrQ1hnTlp6OXdMd2xrTGYtQlpv",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T05:38:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold rate today in Hyderabad, November 1, 2026: Check 22K, 24K and 18K gold prices",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWVNPNVdVRWdHd1c1S2VuTFpPOWY0ZEJNNkprNXR2b01MdUVPREF2azRfU0tGaGhYREJtQmE5alpsMEc5OUUzS2ozTTA0OGtPdDIzZUxWWGtBQkVwWlExUkxVSUtlVzdpd2ZGMWpaTElWTTlRTC1qdW05OFRaMjVMdFFtZDF5dWNTSlM3NlpmUi11YWJlZGc5QzJ1ay1UNHdRNVZPZC1SSzQ",
+      "source_name": "Hyderabad Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-01T05:10:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 11,
   "source_count": 1,
   "primary_source": "INDToday",
   "cluster_key": "TMB|COMMODITY|22k-24k-gold-hyderabad-price-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-15T11:52:57.437311+00:00",
-  "last_updated": "2026-10-30T13:26:55.244727+00:00",
+  "last_updated": "2026-11-01T14:31:23.997065+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:52:57.437384+00:00",
@@ -117,6 +237,31 @@
       "timestamp": "2026-10-30T13:26:55.244720+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:03.432626+00:00",
+      "change": "sources added",
+      "detail": "APAC Media, Moneycontrol.com, The Sunday Guardian"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:03.432644+00:00",
+      "change": "categories added",
+      "detail": "GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:03.432652+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:03.432660+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
+    },
+    {
+      "timestamp": "2026-11-01T14:31:23.997049+00:00",
+      "change": "sources added",
+      "detail": "Hyderabad Mail, The Times of India"
     }
   ],
   "price_reaction": {}
