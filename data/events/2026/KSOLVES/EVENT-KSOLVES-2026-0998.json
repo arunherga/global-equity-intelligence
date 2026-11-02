@@ -10,9 +10,9 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "SUPPLY"
@@ -36,10 +36,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a platform or supplier the company depends on is investing"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -63,21 +64,51 @@
       "published": "2026-10-13T12:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce agrees to buy Cresta",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZmN0cm5UVUhDOHFYT016RmZjc3dsT29tT0JXcGVYZzh2eE5PSXZWMThXQnk5ODNhSjZuX2dwTXc0c3h2V3F3S1NHVUpVb3h2a0tQMm9mYkFFeGlCMTlfbllBTGlSekRxV2RWVFJwWFp6R18zVktmQ0kxZFpuYjFwX1RJVHEycHRVWWlubkxhNWlGeGZnQTVELVNB",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T21:38:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce agrees to buy Cresta (CRM:NYSE)",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1obGdsMk12VHI2RTFSdFM4ZThnSjJtWTJsYmlSb193SUl0dW5pY2UwVGE4QWhwSWxweW8zNWtJRnozQTcwdWN5bXJYMFJha0NKVzdnTU1XOEM0ZWFJenF6cEdvdERoNGFtbnZPY1lZbGNTaGF6OVBETw",
+      "source_name": "Seeking Alpha",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T21:38:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "kalkine.ca",
   "cluster_key": "KSOLVES|OTHER|500-crm-nyse-rallied-s&p-salesforce",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-13T14:37:02.691784+00:00",
-  "last_updated": "2026-10-13T14:37:02.691864+00:00",
+  "last_updated": "2026-11-02T22:38:44.361472+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-13T14:37:02.691856+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:44.361450+00:00",
+      "change": "sources added",
+      "detail": "Seeking Alpha, TradingView"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:44.361467+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

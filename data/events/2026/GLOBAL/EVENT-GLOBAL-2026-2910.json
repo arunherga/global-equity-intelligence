@@ -101,12 +101,11 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 4,
       "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "direction": "POSITIVE",
       "confidence": 0.48,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
+        "MARGIN",
         "PRICING",
         "INPUT_COST"
       ],
@@ -126,7 +125,7 @@
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -134,12 +133,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -147,12 +146,11 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 4,
       "impact_band": "LOW",
-      "direction": "NEGATIVE",
+      "direction": "POSITIVE",
       "confidence": 0.48,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "REVENUE",
+        "MARGIN",
         "PRICING",
         "INPUT_COST"
       ],
@@ -172,7 +170,7 @@
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -180,12 +178,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -349,16 +347,26 @@
       "published": "2026-10-30T04:36:31+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee falls 21 paise to 94.97 against US dollar in early trade",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-falls-21-paise-to-9497-against-us-dollar-in-early-trade/article71655321.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-02T04:51:48+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 16,
+  "article_count": 17,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+INDUSTRY_DEMAND|94.92-against-paise-rise-rupee-usa",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-14T12:09:37.867164+00:00",
-  "last_updated": "2026-10-30T13:25:29.693943+00:00",
+  "last_updated": "2026-11-02T22:36:41.889104+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:09:37.867238+00:00",
@@ -444,6 +452,21 @@
       "timestamp": "2026-10-30T13:25:29.693920+00:00",
       "change": "direction changed",
       "detail": "TMB MIXED -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:41.889074+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:41.889094+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:41.889100+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

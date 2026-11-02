@@ -11,10 +11,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 9,
+      "impact_score": 8,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "direction": "POSITIVE",
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
@@ -31,17 +31,17 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Major order or contract",
+        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order execution schedule",
@@ -50,25 +50,7 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Consolidated revenue could increase if Waaree Energies supplies the solar PV modules for this 450 MWp EPC project awarded to its subsidiary/group company, Waaree Renewable Technologies. However, standalone revenue impact depends on whether modules are sourced in-house or externally.",
-        "margin_effect": "Unclear. Consolidated margins will depend on EPC execution profitability and the transfer pricing or contract margins of solar module sales from Waaree Energies to the EPC arm.",
-        "cost_effect": "Input costs for raw materials (such as solar cells, glass, and backsheets) may rise to fulfill the module manufacturing volume required for a 450 MWp capacity installation.",
-        "competitive_effect": "Strengthens the integrated market positioning of the Waaree Group, reinforcing its ability to offer combined EPC execution and in-house module manufacturing capabilities for large utility-scale solar projects in India.",
-        "regulatory_effect": "Project execution will be subject to ALMM (Approved List of Models and Manufacturers) compliance, local land acquisition norms, and state grid connectivity regulations in Rajasthan.",
-        "short_term": "Initial contract finalization, procurement planning, and potential announcement of internal module supply agreements between Waaree Renewable Technologies and Waaree Energies over the next 0-3 months.",
-        "medium_long_term": "Phased revenue recognition as the project is executed, leading to higher capacity utilization of Waaree Energies' manufacturing plants and an enhanced execution track record for future large-scale utility solar tenders.",
-        "second_order_effects": "High utilization for this project could reduce idle capacity costs across Waaree Energies' manufacturing lines and build stronger regional supply-chain logistics in Rajasthan for future projects.",
-        "key_uncertainty": "Whether Waaree Renewable Technologies will source 100% of the required PV modules directly from Waaree Energies Limited and the specific timeline for module delivery.",
-        "monitor_next": [
-          "Disclosure regarding inter-company module supply contracts or procurement source for the 450 MWp project",
-          "Project execution milestones and completion timeline in Bikaner, Rajasthan",
-          "Quarterly updates on Waaree Energies' consolidated order book and module manufacturing capacity utilization",
-          "Solar PV cell and module price trends impacting raw material costs"
-        ]
-      }
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -181,16 +163,46 @@
       "published": "2026-10-30T06:34:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies Bags Five-Year O&M Contract for 360 MWp Solar Project",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLTJCU3VLT3U0bkYxaWJoc0VES21lZ09LRzdqTDRUeDUyVjBlVnJ4SXJ6S0ZIeUxPOXdlM1NTM29rbXJ1Sk1oS2QzSUtCQlNnWjZpV21jcWVwN1UybVR4cjRDNlFtdUFfZjgzaFhJX3FFU3JNbF9LYVYwMTJFSTUxdlZxbUFjU2JWcFBUbU9tUzZzSEVxbEFVc1pHMXI2Wmo0bFZheTZrSkRGT28tOWNJbGN0a3dkM2JFNGR0bnYyOG9BWnNyTmhuVA",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T06:12:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies signs five year O&M deal for 360 MWp solar project",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSndIdm95ZkZrQV9fUlVuV0NxUjEyYnFMak1ic0tWbF9OQTU2aGUzdGZ6QXZnRXFLcXZJZ29XbFRjZHp4MGc4NVozRVBZdGpFdGdOU0xaSG9yNVNWVzdpRTJZb1I1V1VUd1duLTJvUjNPcFpWMnlkZGwtZVBhRUdSaHRDWWw4NzV3LTNkZFQ2Wm9yOHg5ek1ZRWRvNFFGSkNlczM0Vm9iYUZKN2c",
+      "source_name": "BioEnergy Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T07:43:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable signs five-year O&M deal for 360 MW solar project",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdnNERnQk5PWlpBLXFoc2dXRHFSUTFPd0h6MEN1bFJlUERHUzZ2SFZaZW95ZkF4S0QzaHlkcnBKWjYwUnNGMUhCTi1VM0hGcmhqTjhtWlJFYVQwblFRaDd5ZTVwWkRNYzNFTTduSzRncEktV2xTUi1NS2ZEQk9lVVlUQlBsaTI0Y1lSTHVfYk9jSW9CQ295Q3lGWFVQWW90cXVlcVZObXhjTURpaW42UGlHU3Q",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T09:00:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 11,
+  "article_count": 14,
   "source_count": 2,
   "primary_source": "Trade Brains",
   "cluster_key": "WAAREEENER|ORDER_WIN|450-mwp-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:44.681017+00:00",
-  "last_updated": "2026-10-30T13:27:25.654943+00:00",
+  "last_updated": "2026-11-02T22:37:28.567514+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:44.681074+00:00",
@@ -231,6 +243,16 @@
       "timestamp": "2026-10-30T13:27:25.654917+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:28.567490+00:00",
+      "change": "sources added",
+      "detail": "BioEnergy Times, Solarbytes, Trade Brains"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:28.567508+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

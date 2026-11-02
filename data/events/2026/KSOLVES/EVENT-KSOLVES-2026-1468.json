@@ -9,48 +9,42 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "COMPETITOR",
+          "term": "Happiest Minds",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+2 Indirect but real exposure",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Happiest Minds) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Happiest Minds's follow-up announcements"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Happiest Minds. The parts of the business most likely touched are cash flow, competition. Classified as dividend.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -504,16 +498,36 @@
       "published": "2026-10-29T12:53:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Happiest Minds Technologies Q2 FY27 Results and Rs 3.05 Interim Dividend",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3E5U2ZFcGk1NkJvWXloVnI3NkxUTFRmdko5SGFKT3otemhhMHo4VWl5QW1jWjk0akYxbHpmZmMxekI3dWdTbUJWbTRXMnlOeWgzejBmVUIxN3ZmWktLN296aE5TMnM2Rm54U3lDRTFEOExJcWlyVEF2ZDlrOXU5ZURsVU5jRkJaTTZLMnlLWmYyeXdtUzRReDJ2bVhvcWJmLXhHVVM4dTFna2tUeWRIWDBOYThZZF9TUlVCU3VELUZhaGdxMkVseXVJSGxLM29SYnRoQmFVMElaNVEwTmVlLXlB",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T17:37:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds board considers Q2 FY27 results, dividend",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQ0YwT3VZNnpGNzJmWmNHRXdMemh2dzhVSzFpUzR0N0xnQlJlZ0pNaExjX3NzSXNtZ0E4dWhVdEtGWmNCaUdtdFczd25fWDhqR0hJUjNlYzdlTFZOSHRUamRNRnNjc3hqdVp6eTVmZlRQNWlHUnFpTzlwdzY5bFpwVUxPaXdhUzdoaXNNRkRBNEwzWFpYT0ZIbGxWSDljczFaZGRIcERjMFhadw",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T17:34:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "KSOLVES|DIVIDEND|fy27-india-interim-ksolves-ksolves-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:01:21.479773+00:00",
-  "last_updated": "2026-10-29T13:25:39.699804+00:00",
+  "last_updated": "2026-11-02T22:38:35.280772+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:01:21.479837+00:00",
@@ -589,6 +603,16 @@
       "timestamp": "2026-10-29T13:25:39.699801+00:00",
       "change": "impact raised",
       "detail": "COALINDIA 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:35.280750+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India, Multibagg AI"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:35.280767+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

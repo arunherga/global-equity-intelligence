@@ -12,8 +12,8 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
@@ -42,6 +42,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -129,16 +130,36 @@
       "published": "2026-10-31T13:11:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce stock sharpens defense push with Rune acquisition - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQLU4ycDItVzdTcndReWU4bjdUTWVRejNWUVAxRmxQcUxic3h3WmJIcndIZmd6SFV4eDJzTTN4Ni03WmI4aFJDdDNGUkNiQXA0MEJWQkhJdXhJdFdwLWFlZUE2NEY0REhXaGR6WFc0ZWx1UHBybXhlT0Fobi1kSUlBYm9SU0I1RnZyWXdhUEZPUEctaDNyNmJQd0JhLTBfWkJoRE1DZG5XNHJtc2xSeTJTQkxVR0dpZzBNcVU2QS1wbks",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T11:16:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce acquires Rune Technologies to add offline capabilities to Missionforce",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM3Azamo0MGlnU0xzWmdGSWVVMzNnbnVSZ3RaMzRXdDEzYlBQdUNEZDM1bllHUm53VEtqRmJCX3E2UEo2dWhTTFc1Z05GQ3hWU0RTVXNKdlNlUHJudFRGSUJOLUc3NXRBSHhLMDlwSVVEdWFqVVl0WHhqS25yd3g3ZEVaUHR0VjJoMm9LbFp5d2Y2NzZWR2hpVTZ5T0d6eGtPdlJWbVRFN0NmTHpTR0drT2x1Z0hmTklqWTRBYmgybw",
+      "source_name": "CIO",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T12:59:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "Axios",
   "cluster_key": "KSOLVES|OTHER|acquire-defense-portfolio-rune-salesforce-technologies",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-30T13:16:58.968711+00:00",
-  "last_updated": "2026-10-31T17:52:45.626729+00:00",
+  "last_updated": "2026-11-02T22:38:14.776358+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:16:58.968775+00:00",
@@ -189,6 +210,21 @@
       "timestamp": "2026-10-31T17:52:45.626713+00:00",
       "change": "sources added",
       "detail": "Pulse 2.0"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:03.405025+00:00",
+      "change": "sources added",
+      "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:03.405042+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 6 -> 8"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:14.776342+00:00",
+      "change": "sources added",
+      "detail": "CIO"
     }
   ],
   "price_reaction": {}

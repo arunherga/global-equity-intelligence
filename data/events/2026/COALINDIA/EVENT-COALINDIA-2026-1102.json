@@ -10,10 +10,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.58,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -35,14 +35,14 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -55,13 +55,20 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.68,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "coal production",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
         {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
@@ -72,14 +79,14 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -100,21 +107,81 @@
       "published": "2026-11-01T16:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India records all-time high coal supplies at 70.3 MT in October, up 19%",
+      "url": "https://energy.economictimes.indiatimes.com/news/coal/coal-india-records-all-time-high-coal-supplies-at-70-3-mt-in-october-up-19/135449240",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-02T07:00:02+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Coal India records all-time high coal supplies at 70.3 MT in October, up 19%",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOGk3MThNd0hNWWVlRWp5Y2hGSEpab285SHVWSVVMX0RzT0JvNkJ0cGhDMjJqZ3l4UlhJZmY0aWJHUVYwT3JQc3p0N213MGNyNTE1Q2ZGTFQ0SjU1RlMzMjdrZzMwdDF2WGRDS29HeDJZME9xVk4tMkJqZFNaTzBIUlBHb180NmV1ZmVfeFJpcXJpX3ZyakdZV0ZfV2VCak9sV29lWndoVlNYRFN1N2ZJaHdVRTFBWXpQQTlOMVFUOXl2cml1amJyWF9oM0FCVExzVEU5T9IB2gFBVV95cUxQWkU3aTFqQWJyZktaVFVzbEFMdlk5YUFhSVd0dE52aGliV01kQWU3NW1tOW1EVTE2bkpqRDNpZTVuTndCd1VRSzBJcXFUYUFsMk9XWG5aanI4S3psNmFaanB2a1p2WmtENG9ucU9kN2JnZTNOM0h0VE5fcGo3X3BzTmVRMGMwNTFTSHRwR2R5ZTc1WXpSMDdjMkp6QzZLTGFITXc1UUZJUndTSDRERC1BdHpmQmdZbTdBTGxwZVZEb294NHRTMUJodG55T29xLVNGeWdOVmV0NWVGUQ",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T07:00:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India Shares Jump as October Coal Supply Tops 70 MT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTkpqaVVuNWRhRndVd1ZoUTkyN0YwZlNGVlJobUZrUVJZdXl6OG5UU0ltM0NoemtxcXF4SkRhbzFuY2dCQnB2WUF0VDJGWkcydlFrQjdEcTdTcnYxY09FN3VNeDN0TVZiUTV6bWRyeHp5NEtPSnZfMGpfX3BnV2pwU2plYXBtS1pXbWRqX3NPMA",
+      "source_name": "Equitypandit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T08:23:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India shares jump 4% after firm records highest-ever monthly coal supplies in October",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQbGFfTmk0TlRmM2Z5a2w3SWllemNZbGdsalVmYW1VZTNFYWxQY1U5LXE4dXdVd1RnUVZMTjlCY2c2RlUzSUQzNmxvdmVNdzNPeTltMko2aUJYblBDMlZmUnlOSldQVF9sTXdHNkJtbWl1ZWVDUno0VVdRVG1xX0pPZG02UjBnN0NXMU5YQmtkY19yN25sVTE5aloyZV92VkU4NXVSYlZ3dl9WT0g2a011QkVQNXAzaUdfSzRSWXhxeEtIcGpnRHVrV0NzQlBJM1phMlJUSHhzd0hBdEp0UXZCRUQzVjBGTE0wVXBJb2dCZVhUaDNzSTR0R2hpNNIB-wFBVV95cUxQbGFfTmk0TlRmM2Z5a2w3SWllemNZbGdsalVmYW1VZTNFYWxQY1U5LXE4dXdVd1RnUVZMTjlCY2c2RlUzSUQzNmxvdmVNdzNPeTltMko2aUJYblBDMlZmUnlOSldQVF9sTXdHNkJtbWl1ZWVDUno0VVdRVG1xX0pPZG02UjBnN0NXMU5YQmtkY19yN25sVTE5aloyZV92VkU4NXVSYlZ3dl9WT0g2a011QkVQNXAzaUdfSzRSWXhxeEtIcGpnRHVrV0NzQlBJM1phMlJUSHhzd0hBdEp0UXZCRUQzVjBGTE0wVXBJb2dCZVhUaDNzSTR0R2hpNA",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T07:27:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "The Times of India",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|coal-highest-ever-india-monthly-records-supplies",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T18:34:42.831515+00:00",
-  "last_updated": "2026-11-01T18:34:42.831612+00:00",
+  "last_updated": "2026-11-02T22:37:37.222448+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T18:34:42.831601+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:56.710803+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld, ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:56.710820+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:56.710827+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 7"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:37.222431+00:00",
+      "change": "sources added",
+      "detail": "Equitypandit, The Economic Times"
     }
   ],
   "price_reaction": {}

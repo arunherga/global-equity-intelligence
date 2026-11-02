@@ -120,6 +120,55 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "DIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -142,21 +191,51 @@
       "published": "2026-10-28T02:49:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks to Watch Today (Nov 2): NTPC, IOC, IndiGo, Maruti Suzuki, Coal India and more",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeTE2QUszblMweGNVcmJ4X0ZjZzg0R0NoVDFMbloxMTZyVkhUaU90N09zV2JUMkRlNnZqdlVGcDk4VHBJaFpHN2YwYzZZdGUwRjBLV2dqWWVNZmNwVmNlWmhIcXg4b1NOU1VWR2xWbEd2OU1HaEFzcmhvb2k4dW5QQmxsWVNlTWxwbXQzSHk0VkFFZmg2a0kxN24xckNPd0NkYllzX2M2bGlXaEk1RjlFc29HSTk2TTBIOFFtR1dQTkIydw",
+      "source_name": "Zee Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T02:12:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to Watch Today, Nov 2: RIL, Jio, Maruti, Affle, Coal India in focus",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVEh2RmIzM21xZThfNzk0TzNOT29lQ0dPeHE2cnVvRk9rTUl0OEZIYWRVSzZFUkRmSjZhMnZJRWxKR1JPQVB1cUFMd3pYYldwUzdYYlpucU1KR0czRTV1dkhUbVYtSVlvRkZvYWdSeWlwR0FFelhsdU1CNzVxckE4WW5uSFE",
+      "source_name": "NiftyTrader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T03:27:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "KSOLVES+MSTCLTD+WAAREEENER|OTHER|l&t-maruti-oct-share-today-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:13:27.568175+00:00",
-  "last_updated": "2026-10-28T13:13:27.568251+00:00",
+  "last_updated": "2026-11-02T22:37:06.100446+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:13:27.568240+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:06.100423+00:00",
+      "change": "sources added",
+      "detail": "NiftyTrader, Zee Business"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:06.100441+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (DIRECT)"
     }
   ],
   "price_reaction": {}

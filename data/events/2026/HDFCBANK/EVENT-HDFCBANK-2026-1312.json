@@ -51,6 +51,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to State Bank of India, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Axis Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -63,21 +101,41 @@
       "published": "2026-10-31T05:36:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank Ltd. is Rated Hold by MarketsMOJO",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa1NyOG45di1XeHRXSjR3TnUxVUxkS3o2ckwyalJEclVIY2hCQ2U0R3VweVFSMHlBOEdVYy1EaERCLWN0RWdGNmJVbHRXOUM0bDg0ajJMRWdmTFJqWVU1eFpRTGp5b2hiMEdXUVhJR3BUQXZPZU10TjFranJ4YUVsdnU1SFdUN1kzLXJfc3ZreFFpSDlsNzNNYVo1VzdvVC16ZFlVc0tscw",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T05:11:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "HDFCBANK|OTHER|bank-hold-india-marketsmojo-rated-state",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T17:51:02.060499+00:00",
-  "last_updated": "2026-10-31T17:51:02.060569+00:00",
+  "last_updated": "2026-11-02T22:37:23.641722+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T17:51:02.060558+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:23.641700+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:23.641717+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

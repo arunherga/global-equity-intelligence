@@ -9,26 +9,17 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +27,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -165,16 +156,56 @@
       "published": "2026-10-31T07:42:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank Limited (IBN) Options Chain - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMW5teE5kaTh4TTVfYTJLdVpPS3JSWTc0cDMzMmJ5UDE0SXNYdU5wQ0hscDZEellHSlk4bFNfOVNlV1EyalBXY0NWNTAtNlJVb2ZKb1NRZWdXdTJTanJoYXQxQWs2RTlfYUtrZ21lUWJXaDZTX2I5U3RHQVp5eHdFWXpvNC14Ujl4d29xV01fZzc",
+      "source_name": "Yahoo! Finance Canada",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T08:15:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "KARUR VYSYA BANK LIMITED (KARURVYSYA-EQ.NS) Seasonal Returns Chart - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9hY1NXenY4d1dZTHVRc3Y4bHBUQk1LbktxVlU4Vk8yVFFKTkFEX2dvMTJLTENRQ0ZFVmx5bkJjb3NvSEhfUndacVljQjU0cEFDVHhsenNZWGVqaEt2S2JiLWEzSjNCYUt5cGpxMnFoLUJCZw",
+      "source_name": "Yahoo! Finance Canada",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T08:16:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited (TMB.BO) Seasonal Returns Chart - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53Y2NuVmhmTDlaQ0pCakFYZDdDbHpBY1pWZ3E3Y19Kc1ZxSXNtQ05pZVJxbFlrbU9FS3dpel8wV2NTT0lkMXUzWEtCMW9BLXN5WjlJTE8yTy1Zd2xrY2QxVE14dW0",
+      "source_name": "Yahoo! Finance Canada",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T10:15:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indian Bank (INDIANB.BO) Seasonal Returns Chart",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OX0lJaE1iUVBobWcxc0JURjdxU1UzQlN4SndxR0JIUnh0NnlmeFRPdGRsV1laZ3dTMTJvWEV0dGg5cEIweWJaWHBLVmhnZlREbFVtMnR0WG1wck5NX2pIejQ2MElLWnhHTnc",
+      "source_name": "Yahoo! Finance Canada",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T16:38:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 13,
   "source_count": 1,
   "primary_source": "Yahoo! Finance Canada",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-chart-icici-icicibank.ns-returns-seasonal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:17:17.629359+00:00",
-  "last_updated": "2026-10-31T17:52:37.963333+00:00",
+  "last_updated": "2026-11-02T22:38:33.285428+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:17:17.629448+00:00",
@@ -198,6 +229,26 @@
     },
     {
       "timestamp": "2026-10-31T17:52:37.963317+00:00",
+      "change": "sources added",
+      "detail": "Yahoo! Finance Canada"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:43.164504+00:00",
+      "change": "sources added",
+      "detail": "Yahoo! Finance Canada"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:43.694883+00:00",
+      "change": "sources added",
+      "detail": "Yahoo! Finance Canada"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:43.694901+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:33.285410+00:00",
       "change": "sources added",
       "detail": "Yahoo! Finance Canada"
     }

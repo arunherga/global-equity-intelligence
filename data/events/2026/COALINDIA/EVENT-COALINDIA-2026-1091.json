@@ -50,6 +50,51 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -62,21 +107,56 @@
       "published": "2026-11-01T08:44:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India’s October Coal Output Rises 19.3% to 67.2 MT",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaDlub1BjQUFmaHpmV05iZTNqUzJzWlNfc1BVS1BVU0lwekROQVJWdnhwTVlpMXVTSzc5ZFp1ZTd0Mk5pcmNhOWZXUVhDQ3laM3FyZDVpV0RSU3RLNHptZl9UWVh5dnprRWF6RzltWnpTSHRETTFZcmpEOHgtalp3QlNKMU9MWXRCRC02TmxwSHRWSDg",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T04:02:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "[Bharat Coking Coal October 2026 Raw Coal Output 2.86 Mt, Up 7.1% YoY]",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOWppcE9YcmExMjdKY2EtRk5BR3FIOWtELTdhOFBIZTZyNUJ1M2ZCNUtUd2p4TmtRdkpBZmdnZWNOMHdVaGF3SUplZ0VzWmRhZ19hbnRUOXFwWUxRY0dhTDlxaFctR1dHRjZfbkhpZmlLWGpPNk80TmVvSDJiaWNwcTNPYmdaYmN6OTQ5WW5MVHFkWVNjdlkzdExFRUZuVnZDN19aZFRDWDR0ZllPcUE",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T09:09:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "COALINDIA|OTHER|bharat-coal-coal-coking-october-raw",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T14:29:14.689231+00:00",
-  "last_updated": "2026-11-01T14:29:14.689309+00:00",
+  "last_updated": "2026-11-02T22:37:51.781870+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:29:14.689299+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:16.003547+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:16.003564+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:51.781853+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
     }
   ],
   "price_reaction": {}

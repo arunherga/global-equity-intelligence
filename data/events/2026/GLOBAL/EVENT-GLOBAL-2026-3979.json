@@ -4,20 +4,22 @@
   "summary": "Govt raises diesel price by Rs1.64, cuts petrol by Rs1.60 per litre Business Recorder",
   "event_date": "2026-10-22",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,34 +30,39 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -66,34 +73,39 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -104,21 +116,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -152,16 +168,36 @@
       "published": "2026-10-26T17:52:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Govt cuts diesel price by Rs7.76, petrol by Rs3.40 per litre",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSDlRRllQLTBWWlpocG9LXzRwWjFZWnl3RW1ISW14ald1aXdQbThCRDRYNWZYTExWTjFNTGtXYUNrRnhwaDhJalBYS2N1UXR6aGprSzR2QWJZR3M4NXlPVmhNRnNZWDAzNVNVelYtMEFwZ0ZwdGV5bjFaNEo2WlNVRm1ESnIxNGdLMVJDTHZWMm9zdnJxb3lkZHVYSzVhZ9IBVkFVX3lxTE11QWVTNzd4WWVKN3FrRzVmQUlfZEswOWlnX2VLSGkyU0NfT0toLW90WkFiWHdOYW9Ha2tZNWlMNUdGeGtRX0ZBaFNxOGh0ZTJVSHRObUln",
+      "source_name": "Business Recorder",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T17:25:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Govt slashes high-speed diesel price by Rs7.76 per litre, petrol by Rs3.40",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QQ25fRlQ1MzNOTmU0b3h4UlJQT3dCZ1NzdkFqaVlJY1Fac3JtMzVpV25QNlVLSmpQOERGNjJ3ZkwtWmMxNV9RTA",
+      "source_name": "Dawn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T17:35:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Business Recorder",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|OTHER|cut-diesel-govt-price-raise-rs1.64",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:17:20.898373+00:00",
-  "last_updated": "2026-10-26T19:29:12.639106+00:00",
+  "last_updated": "2026-11-02T22:38:34.821567+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:17:20.898433+00:00",
@@ -192,6 +228,31 @@
       "timestamp": "2026-10-26T19:29:12.639102+00:00",
       "change": "direction changed",
       "detail": "ASHOKA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:34.821534+00:00",
+      "change": "sources added",
+      "detail": "Business Recorder, Dawn"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:34.821550+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:34.821556+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:34.821560+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:34.821564+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 3"
     }
   ],
   "price_reaction": {}

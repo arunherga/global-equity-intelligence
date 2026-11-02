@@ -55,46 +55,45 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.31,
+      "direction": "NEUTRAL",
+      "confidence": 0.24,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Kotak Mahindra Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "deposit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
-          "exposure_type": "INDUSTRY",
-          "term": "loan growth",
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
           "relationship": "SECTOR",
-          "weight": 2.0,
+          "weight": 0.9,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
         "+2 Earnings or guidance at a related company",
         "-3 Speculative or unconfirmed report",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "financial implication is quantified",
         "speculative language"
       ],
@@ -104,7 +103,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to Kotak Mahindra Bank, and loan growth. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit growth, and deposits. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -118,21 +117,41 @@
       "published": "2026-10-23T04:24:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SBI Q2 Results Preview: PAT may rise up to 25% YoY; NII, margins, deposit growth in focus",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQczFiVC1mWm9qcjc3dnRJWGJrNFRDbEMxV3RRcS13NjRaUkxubGxiUk52Tjd3UHVseHZkYkxnY1VHNmZNRnkwTFJKQVNYSzZ1eExNZC1FcDBlRlpkNExnUC1BTkFsRjFrdWF2cEpmaW5BUjExZWh2NFVMTTBSX3NiLU1xWXVkaDYxTEdObkZRc2pOc1g3T3NiTDNBYWxmUjNDcmg4RG5TZElFbko3Ui1sVlhnVFBHSmEzNEt1QU1vZDRHREhFamdHX2RLTUFIXzBNanY1emwyY2tiRXV0THFGN2ZaQW9wXzkyRjRpcE9QblVRZUHSAfgBQVVfeXFMTklpdnlXM3V1Y21mRzFOdlhKclh6VHdVb19wSEZaWHJIa3NqdjNQUno3Nm9nZXVfc0QyVW9jWko0cldPMUtrUXV1TllNRkQzZlRHODFISnJvbDgxc1dIbW05a2pRcy1ucW9XLVdpdFpiazdkeGx4OUNiVjNuX0dkUU5QR3RsWW0wWlgzSFczMktTYWh4QjJ2cFpHekNraVZFTEZOMmNGT3Y5SkF4ZVFPYjM2ZmJ5dXFwZW5PQUpTSWZVYTBILTFoWkFOQlRLMGpBcVZXTVVLTWJQQ1ktSzE4dDNqdmNXaFRFQW5hLVFMLURncWptUnhuNkc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T11:22:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-kotak-mahindra-pat-preview-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:00:23.205117+00:00",
-  "last_updated": "2026-10-23T12:00:23.205213+00:00",
+  "last_updated": "2026-11-02T22:38:03.765701+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:00:23.205202+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:03.765678+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-02T22:38:03.765696+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

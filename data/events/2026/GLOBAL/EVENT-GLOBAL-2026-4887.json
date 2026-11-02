@@ -4,7 +4,8 @@
   "summary": "The Telangana Electricity Regulatory Commission (TGERC) has approved the procurement of 2,545 MW of solar power by the state's distribution companies from NTPC, NHPC, and the Solar Energy Corporation of India (SECI).",
   "event_date": "2026-10-30",
   "event_types": [
-    "REGULATORY"
+    "REGULATORY",
+    "TARIFF"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -62,60 +63,34 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.52,
       "business_impacts": [
-        "REGULATION",
-        "CUSTOMERS"
+        "EXPORTS",
+        "PRICING",
+        "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "NHPC",
+          "exposure_type": "REGULATION",
+          "term": "CERC",
           "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
-          "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "SECI",
-          "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "Solar Energy Corporation of India",
-          "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
+          "weight": 1.8,
           "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Regulatory or legal action",
-        "+3 Development at a known counterparty (NHPC)",
+        "+4 Material international trade or tariff policy",
+        "-2 Weak indirect connection",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
@@ -123,12 +98,12 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NHPC, and NTPC. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to CERC. The parts of the business most likely touched are exports, pricing, regulation. Classified as tariff.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -194,21 +169,46 @@
       "published": "2026-10-30T17:27:17+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Central Power Regulator Approves Tariffs for 400 MW Solar Projects",
+      "url": "https://www.mercomindia.com/central-power-regulator-approves-tariffs-for-400-mw-solar-projects",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-02T17:43:24+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|REGULATORY|545-approve-procurement-regulator-solar-telangana",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:13:44.388857+00:00",
-  "last_updated": "2026-10-30T13:13:44.388957+00:00",
+  "last_updated": "2026-11-02T22:36:59.783905+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:13:44.388946+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:59.783877+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:59.783895+00:00",
+      "change": "categories added",
+      "detail": "TARIFF"
+    },
+    {
+      "timestamp": "2026-11-02T22:36:59.783901+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

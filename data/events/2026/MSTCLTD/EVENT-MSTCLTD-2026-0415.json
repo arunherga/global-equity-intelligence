@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0415",
+  "title": "South Asia: Imported ferrous scrap trade remains muted; Turkish prices rise amid demand pick-up expectations",
+  "summary": "South Asia: Imported ferrous scrap trade remains muted; Turkish prices rise amid demand pick-up expectations BigMint",
+  "event_date": "2026-11-02",
+  "event_types": [
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "ferrous scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "ferrous scrap is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to ferrous scrap. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "South Asia: Imported ferrous scrap trade remains muted; Turkish prices rise amid demand pick-up expectations",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNNmxYVUtfNXZzY3p2U0R6QXN4UVNIMGI5aTd3enFwR3ZkdV9KYjNfZTJnT0ZlS1B4ZkdOV0NyOXJBVWdJaWkwbHZOUGQ2dWxDQjE3b2l1S3owLXNkWlVTSEdZZFZZQzJpUTVDSDBfLUUxVnBJMzQ1Q2ZjWjlobEFSanFRZ0gtMFZvbXNKakNEbE5MYjJoN1hUNEhNMnVpUEV5Vm1CYVJyd2NBa1Z2bE1wS0RIX01waWVmRVY5ZEFVeDBvckp2Ri1QeHVSOXlpYzBOTVQ0aFlQb29NUHVfSjZrc1VOSXJjaUU",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T14:05:20+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "MSTCLTD|COMMODITY+INDUSTRY_DEMAND|asia-ferrous-imported-scrap-south-trade",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-02T22:33:27.253416+00:00",
+  "last_updated": "2026-11-02T22:33:27.253495+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-02T22:33:27.253485+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

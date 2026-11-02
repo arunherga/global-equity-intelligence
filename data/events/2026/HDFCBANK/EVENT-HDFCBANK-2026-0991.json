@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -115,16 +115,36 @@
       "published": "2026-10-28T10:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank slides Monday, underperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWFXdTJNQXkySmJPdVFvcXptNDh0bFkzdkNMUlc0WWtKWHl3RkdKUUpBYlpyVXRxZzJMZXNFVVFrWVIzN3d6YVE5UVlpV3JtMmU2X3ZfRnNEYkU1UGxJMFdtWDB5VFdBZ1VFc2Q4QU9XVzlhMlVzWWZ0STU1b0VmSXU5LXhHRDZxbmg3WEdubVltSHQ4S3dPd29SWEx0eEt1aHc",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T10:33:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank rises Monday, underperforms market",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYnpBUGtmOUdzTlZnbWVqQmtTSEFYREplUHZSQjB4ZmxPNWJyVHFnbm5BQkVSLWZDS08zamRuZmVhY1BRclBFdm8zajJPTTNNWnh5UVBIS2puaFZFRm1lOWZTdTZOcnI4M1oza0stYVBhQ2NSSnhRaDc2d0RlWjVGZzlES0xKMWRLOGpQampiakRBU3l6eFc0THQzc1FHWjJia1JpdHV3ZExpdl9XRzFtSUpsd3NpemdIMlMzUTBn",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-fall-hdfc-market-underperforms-wednesday",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:12:37.674924+00:00",
-  "last_updated": "2026-10-28T13:22:18.204351+00:00",
+  "last_updated": "2026-11-02T22:37:59.286955+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:12:37.674971+00:00",
@@ -150,6 +170,16 @@
       "timestamp": "2026-10-28T13:22:18.204345+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:59.286932+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-11-02T22:37:59.286949+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
