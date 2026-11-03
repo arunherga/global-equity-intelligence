@@ -4,29 +4,36 @@
   "summary": "Listen to this article Waaree Energies’ subsidiary, Waaree Solar Americas, has commenced commercial production at two new solar module manufacturing lines with a combined annual",
   "event_date": "2026-10-30",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "CAPACITY_EXPANSION"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "impact_score": 15,
+      "impact_band": "CRITICAL",
       "direction": "UNCERTAIN",
-      "confidence": 0.68,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.74,
+      "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "solar modules",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "exposure_type": "SUBSIDIARY",
+          "term": "Waaree Solar Americas",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+4 Capacity expansion or capital expenditure",
+        "+2 International market development",
+        "+2 3 independent sources",
         "+2 Company appears in the headline"
       ],
       "direction_reasons": [
@@ -34,15 +41,37 @@
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "two independent sources",
+        "3 independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "funding mix for the expansion",
+        "commissioning timeline",
+        "demand visibility for the new capacity",
+        "effect on return ratios"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Increases potential top-line contribution from the high-demand US market by doubling local manufacturing capacity from 1.6 GW to 3.2 GW, directly boosting consolidated solar module sales volume.",
+        "margin_effect": "Unclear in the near term due to initial ramp-up costs, but has potential for medium-term margin expansion if modules command domestic pricing premiums and qualify for US Inflation Reduction Act (IRA) Section 45X manufacturing credits.",
+        "cost_effect": "Increases US-based fixed operating and labor overhead while raising demand for input solar cells and components, which may carry higher domestic procurement or tariff costs.",
+        "competitive_effect": "Strengthens Waaree's market positioning among US utility and data center customers seeking locally manufactured modules to meet domestic content requirements and supply chain security.",
+        "regulatory_effect": "Heightens exposure to US clean energy policy frameworks, including IRA tax credit guidelines, Foreign Entity of Concern (FEOC) rules, and US import tariffs or trade enforcement on solar cell inputs.",
+        "short_term": "Focus will be on operational stabilization, initial factory ramp-up of the new 1.6 GW line, absorption of commissioning expenses, and customer product qualification tests.",
+        "medium_long_term": "Full operational integration of 3.2 GW in Texas can establish Waaree as a major foreign-headquartered manufacturer in the US, diversifying revenue away from the Indian market and expanding multi-year revenue scale.",
+        "second_order_effects": "Reduces international freight exposure for US deliveries, increases reliance on imported or locally sourced solar cells, increases US dollar exposure, and attracts closer regulatory scrutiny over supply chain provenance.",
+        "key_uncertainty": "The stability of US renewable energy policy and tax credit frameworks (specifically IRA 45X incentives) alongside tariff treatment on imported solar cells used as inputs.",
+        "monitor_next": [
+          "Capacity utilization rates and production yield on the new 1.6 GW Texas line",
+          "Sourcing strategy and tariff exposure for solar cells supplied to the US facility",
+          "Receipt and realization of IRA Section 45X manufacturing tax credits",
+          "Announcement of major off-take agreements with US utility or data center developers",
+          "Impact on consolidated gross and EBITDA margins in upcoming quarterly earnings"
+        ]
+      }
     }
   },
   "sources": [
@@ -85,16 +114,106 @@
       "published": "2026-10-30T13:31:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Solar Americas begins commercial production on 1.6 GW of new module lines, doubling Texas capacity to 3.2 GW",
+      "url": "https://www.pv-magazine-india.com/2026/11/03/waaree-solar-americas-begins-commercial-production-on-1-6-gw-of-new-module-lines-doubling-texas-capacity-to-3-2-gw",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T10:26:25+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree doubles Texas solar module manufacturing capacity to 3.2 GW",
+      "url": "https://www.pv-magazine.com/2026/11/03/waaree-solar-americas-begins-commercial-production-on-1-6-gw-of-new-module-lines-doubling-texas-capacity-to-3-2-gw",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T12:31:51+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Energies doubles Texas solar module manufacturing capacity to 3.2 GW",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZFJJUmNMS0o2M3VnaWtjME5hdEZIdW1IMjJfc1B0bHd6TU1uQ0VkUlJBZmdDNVBEWTdQSG1vMVhiZHJpS0tuTWdia1lGcVBpV0RJcGxkVzdUZ184aGRkRjNOX2huYl9XUTg4ajdqSGhGM0JITEpYUzloV3NrRzVmLTZwYS1aYWhWVHRDalJIZ2F6SGNaalRnWlY0ZWd3Tm11bVlxRVV6Z2JIR2ZJZE9ldUNpOElSYTlQMFBkaGRPS21CV1luRmNrZ3hoWGlCZnJSbUMxMjFSa0TSAd8BQVVfeXFMT041Y1dzYnNJWjJVSHBPcHplSDZyUGhrNWczOFRsRkdFX0hUT2FPbVlhZDdlbW5fakY1cDRsVDlUcjdCLXZHLUl1amtTbFZWdktLcEx3ZUE5XzEwMmZuX2pyaWZiQ1JaTHVUdUxEb21MeldWNTYzTG9GeEJDZ3I4akhJWWxfZkVLd0NTY3hyUEFycmxuVzQ5aFVIcVRDTGVySF9ieVBwd2gzMk5ZZ1M5bjJvQzRtTzlrVkFaeTdOWFlzVDhtaGtLYVc0SUJ0QVhFd0c0eGlWR1hBU3pvWW92SQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T08:00:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies starts production on 1.6 GW module lines in the US",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdTNFNk0wd0pLdzJ1aWNVYVVqR3FKUVZBelZ2WThDczNYYVY2Mll6MXZEVF8tbnV6ZGdwdUpzbUwyLVhreXJZZHpRRmI3akMyWEUycVhBUGFnNFM3bUVMakhtd20tWWc2NVZSNERTZVlTeFJzclJpVmJRNm9xZ0FWcWx4aVluSy1lV3J6WlIydGtmSEpIcWg2Q3poNFptc2NzS1Fmag",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T06:45:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Expands US Solar Manufacturing Capacity To 4.8 GW Amid Data Centre Demand",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOTdjeDBQV1ZhM0VRUFdEVnVjRWl1d1dMOFNQVEVxM3ZQN0ZudnhOOF9FbHA1WkdlSUxVVmpidmxrenJzcG1BSEwxbXpSMmF4aVVkRlV5dzJnTjY5Yi1rY1VSVE9LV1NiZzlsbnB2RHQ3aHBWM2xsdWRRTGdsRnBrellILVNaQmJKV2xESjVFOG1kZXhfYTk4Ny1YbzlVQzdXdk1QTWNYaEQyaXhrVHFyNi1YQml6V0QyZ1RPUENIOHBrTkZJWWgwakV5VlBSVTlIbVBJ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T09:00:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Solar Americas Starts Production on 1.6 GW New Module Lines in Texas",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYXBzUG1USkpnZ0xpT2ZsR1VHaHluN2Jsb2w0bHFyOHNOYXlWVGIzd1Azbk9FdDEyYTR3eGIwMWRBTGlqQzdqVEFGRzYyUU56T2hmaFpFV3ZJN1ZtUWc3MmV1bWhLVFhYU2JZMEJnWVplWVowMTdDbkFSeWVIaFkxdGR4bmJnazJkVlNOejhZd3dLeHpXQS1VYm5XWHBqQnJjSzY0QVkxLU84QklsSGY5b2xB",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T11:03:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Solar Americas begins commercial production on 1.6 GW of new module lines, doubling Texas capacity to 3.2 GW",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOS3RQM2otanFGaGlsTjEyTTJESERLNjFUcGVQcUYyNTFKcFJlZkcwNWJ3eFE5U3pmcmFIVWh6TGZMUFNDQk41MVo0OWRvNlpLcnBhWlFyVkluZHlxOTNZcWNGTW95WkZzYjJvR056OUczWFZPR3NYNEhxajZMR3NXTWFKRDdfMC0yZEtrRFB3eEs5TlFoUGUwWFExd3lvWmhOTkl6djBiMlZQYmkwVmVxUXZLTzFmTFY3ZElORFZfeDV3X21QVU80Qm14RUxINnhiWXdlbkU1b2hqN2lDVWxmR3htMDRXTUtsMFFsbXVhbjdmZw",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T12:10:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Solar Americas doubles Texas manufacturing capacity to 3.2 GW with new module lines",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOX091dG45MDRkMVI4VVJDcjRQWG1RRWdreEFhVUJRdC0tc1ItQ2ZXRlVYX1k2TTZacXpBV0VBWnBxNjZMdm1kY3pzZGZmNTFQRXFjSk1oQXRtLS1IemVMNWpUNTA0aXNKSEpDckJJWHl2eXBWN3JXVTZWYTVRUEFIeEVjUkN3TTlNakU2cldlMEc5cjYwUW5iWFZyUTFlRU1JcW1pdk9zY3NvSmROQ3RFenFqMnRlV0ktY3NKNTgxZTNtdzZOeWkteFRNTms5YjFKOHlWVUE5cnlQMm5MRWU2SzlXNUZWYmIwU1RmWXRULVDSAfYBQVVfeXFMTnpJTFZrYWVHQXFoakZPdExTRlBtdGNTY3lfUl9TZGEwWElhOV9pUWlKSjlWRHJNX2N3TUdOWE1lWVhNMnp0a2N1aUlMR0pnTUFmSXNTc1VtSndNNFFQRUhkbkdXN1Jha1hOdENBM19qdUF4RG9TcUo4SHV1eEdKTlpVVWh4ek1VMnZSZHVMOElCOFpUSlg2MEQ1eG92aTJXOHkxbnA1NGZUQ1RKVl8zTEhORHJJZDFHb3Jsa1dzRmxJVl9zdl96WWp0a19MZHVsdllPMllqTUhLMHpDOC0zcjVqcDJQU255dWxwWEhGS01lb2RvT3JR",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T10:15:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree doubles Texas solar module manufacturing capacity to 3.2 GW",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOeFFqMmx4Y2dlV2phUWIwOTA4cUI1TE1rakRtNHJKQTZMR0k4MTdoaVBmZl8wRUlIaEktTXZibXhGMWZhbDNhYjdHQ3piUmh6ODFnekNKRWpxRkdXSzlhRGpqRk5tMEhKTHRwdDl1anhhNlZENnFoTjNrMGMxREMxOTFLN2JWVlB4UWl3ZldNbHdsb1FFdDdnZnFzMFVaMXlGdlFwMjJqUFZURi1Kb2U1M0lHUjZSNzBxWW1ZV01uNVhkVEpacVdaTlVGRTlDWUdIc2dPdGVNSlY1U1UwVEowTURyb05odXU4TFE",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T12:35:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 2,
+  "article_count": 13,
+  "source_count": 4,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|OTHER|1.6-begins-module-production-solar-waaree",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-30T13:13:45.540746+00:00",
-  "last_updated": "2026-10-31T12:56:32.050968+00:00",
+  "last_updated": "2026-11-03T14:48:14.940945+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:13:45.540834+00:00",
@@ -105,6 +224,21 @@
       "timestamp": "2026-10-31T12:56:32.050952+00:00",
       "change": "sources added",
       "detail": "https://www.mvapulse.com/"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:14.940917+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, ET EnergyWorld, Energetica India Magazine, PV Magazine"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:14.940934+00:00",
+      "change": "categories added",
+      "detail": "CAPACITY_EXPANSION"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:14.940940+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 7 -> 15"
     }
   ],
   "price_reaction": {}

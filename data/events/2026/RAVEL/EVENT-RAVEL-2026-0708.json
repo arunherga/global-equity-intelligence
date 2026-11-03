@@ -4,21 +4,25 @@
   "summary": "Marico sees copra prices ease 35% from peak, but crude-linked costs and vegetable oil inflation pose risks The Economic Times",
   "event_date": "2026-11-02",
   "event_types": [
-    "MACRO"
+    "MACRO",
+    "EARNINGS",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.56,
       "business_impacts": [
         "DEMAND",
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -29,21 +33,26 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+2 Major industry-level development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Marico's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Marico. The parts of the business most likely touched are demand, competition. Classified as macro.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Marico. The parts of the business most likely touched are demand, revenue, margin. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -57,21 +66,46 @@
       "published": "2026-11-02T16:53:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Marico sees copra prices ease 35% from peak, but crude-linked costs and vegetable oil inflation pose risks",
+      "url": "https://retail.economictimes.indiatimes.com/news/food-entertainment/personal-care-pet-supplies-liquor/marico-sees-copra-prices-ease-35-from-peak-but-crude-linked-costs-and-vegetable-oil-inflation-pose-risks/135479490",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T02:45:54+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Economic Times",
   "cluster_key": "RAVEL|MACRO|35%-copra-ease-marico-price-sees",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:34:05.095666+00:00",
-  "last_updated": "2026-11-02T22:34:05.095747+00:00",
+  "last_updated": "2026-11-03T14:48:10.286691+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:34:05.095737+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:10.286661+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:10.286679+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:10.286687+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 6"
     }
   ],
   "price_reaction": {}

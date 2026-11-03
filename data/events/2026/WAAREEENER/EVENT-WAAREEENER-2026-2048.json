@@ -10,27 +10,49 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.51,
+      "confidence": 0.68,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "Waaree Renewable Technologies",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.5,
+          "detail": "group company, separately reported; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
         "+4 Major order or contract",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
@@ -44,20 +66,21 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Positive revenue contribution as the 200 MW/500 MWh BESS EPC order is executed and recognized over the project timeline, expanding top-line growth into energy storage systems.",
-        "margin_effect": "Unclear until project value and component sourcing terms are disclosed; BESS EPC projects typically carry different margin profiles than standard solar PV module manufacturing and can face execution risks.",
-        "cost_effect": "Increases procurement costs for battery cells, power conversion systems, and related hardware, along with working capital requirements during project construction.",
-        "competitive_effect": "Enhances the group's positioning as an integrated renewable energy and storage EPC provider, strengthening its ability to win utility-scale hybrid (solar + storage) tenders.",
-        "regulatory_effect": "Aligns well with central and state energy policies promoting grid stability, round-the-clock (RTC) renewable energy, and battery storage integration.",
-        "short_term": "Expands order book visibility over the next 0-3 months with immediate focus on design engineering, site preparation, and supply chain locking.",
-        "medium_long_term": "Builds a formal track record in utility-scale energy storage, opening opportunities for larger combined solar-plus-storage projects over the next 1-3 years.",
-        "second_order_effects": "Could create pull-through demand for Waaree's solar PV modules if the BESS project is part of a broader co-located solar infrastructure development.",
-        "key_uncertainty": "The total financial value of the contract and the specific supply agreement/pricing for battery cells are currently undisclosed.",
+        "revenue_effect": "Positive impact on consolidated revenue upon financial consolidation of the subsidiary, as well as potential intra-group module and battery storage hardware supply from Waaree Energies to its EPC arm for project execution.",
+        "margin_effect": "Mixed to positive; service and O&M contracts typically provide stable, recurring revenue streams, but large-scale EPC execution carries potential risks of cost overruns or lower gross margins compared to core solar module manufacturing.",
+        "cost_effect": "Operating and procurement costs may increase in line with contract execution, specifically for sourcing battery cells, balance of system hardware, and deploying O&M field personnel.",
+        "competitive_effect": "Strengthens the combined group's market position as a turnkey renewable energy provider offering integrated solar PV and utility-scale Battery Energy Storage Systems (BESS) beyond pure-play equipment manufacturing.",
+        "regulatory_effect": "Subject to compliance with Indian grid connection standards, Central Electricity Authority (CEA) guidelines for BESS integration, and local regulatory mandates governing renewable storage infrastructure.",
+        "short_term": "Mobilization of resources, contract execution initiation, procurement of battery storage components, and initial setup for the O&M operations over the next 0-3 months.",
+        "medium_long_term": "Phased revenue recognition during the EPC construction period, recurring steady cash flow from the 360 MWp O&M contract, and establishment of a reference track record to bid for larger hybrid solar-plus-storage projects.",
+        "second_order_effects": "Higher capacity utilization for parent company Waaree Energies' module manufacturing and emerging battery packing lines if components are sourced internally, alongside improved group bankability for future storage tenders.",
+        "key_uncertainty": "The proportion of BESS components and solar modules to be supplied internally by Waaree Energies versus third-party vendor procurement, as well as the exact execution schedule and margin terms.",
         "monitor_next": [
-          "Disclosure of the total contract financial value and execution timeline",
-          "Quarterly order book updates and revenue recognition milestones",
-          "Battery cell procurement partnerships and raw material price trends",
-          "Margin trajectory reported in upcoming earnings for the EPC business segment"
+          "Execution milestones and expected completion schedule for the 200 MW/500 MWh BESS project.",
+          "Internal sourcing share of modules and BESS units supplied by Waaree Energies to Waaree Renewable Technologies.",
+          "Quarterly financial disclosures for consolidated revenue and margin contributions from EPC/O&M segments.",
+          "Raw material procurement pricing and supply chain stability for imported battery storage components.",
+          "Subsequent order wins in the high-growth utility-scale BESS and hybrid renewable segment."
         ]
       }
     }
@@ -72,16 +95,36 @@
       "published": "2026-10-30T18:23:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies secures 200 MW/500 MWh BESS EPC and 360 MWp solar O&M contracts",
+      "url": "https://www.pv-magazine-india.com/2026/11/03/waaree-renewable-technologies-secures-200-mw-500-mwh-bess-epc-and-360-mwp-solar-om-contracts",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T05:35:11+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Renewable Technologies secures 200 MW/500 MWh BESS EPC and 360 MWp solar O&M contracts",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcGJuWkxvV0owRG1yMkdoTkx5ZTQ3dTlzV3FpRGVmb3VVZS1Pd1RXN2FXSmlKakFKTklKLVhGckxjZ1dERTNkOGc0NjRKSEN4OC1UM1d0THZBVUlweHAxZWx1ZHFSQ2lZUUpkWVkzUUNHM0xrRHJwMXlCU3dCdWdaWTRVSHU4aVBmSm5yc1A5NXhiVGFPbTlaaWNDSndRN1hvT0NfM1JNeDhYSzRCQUZtTl82YXNaeW9kNW5ZTThZQld1MGxxN0NWOWlJMTBsZEE0MXAwNw",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T09:30:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Power Peak Digest",
   "cluster_key": "WAAREEENER|ORDER_WIN|200-mw/500-mwh-rtl-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T12:50:58.329871+00:00",
-  "last_updated": "2026-10-31T12:54:07.872517+00:00",
+  "last_updated": "2026-11-03T14:48:11.421311+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:50:58.329926+00:00",
@@ -92,6 +135,16 @@
       "timestamp": "2026-10-31T12:54:07.872501+00:00",
       "change": "ai analysis",
       "detail": "WAAREEENER via gemini"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:11.421287+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, pv magazine India"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:11.421305+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 9 -> 11"
     }
   ],
   "price_reaction": {}

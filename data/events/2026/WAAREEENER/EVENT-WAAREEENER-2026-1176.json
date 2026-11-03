@@ -12,26 +12,27 @@
       "relationship": "INDIRECT",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.52,
       "business_impacts": [
-        "COMPETITION"
+        "COMPETITION",
+        "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Emmvee",
+          "term": "ReNew Energy Global",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
+          "weight": 2.0,
+          "detail": ""
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "solar cells",
+          "exposure_type": "CUSTOMER",
+          "term": "independent power producers",
           "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
@@ -39,7 +40,7 @@
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "a competitor (Emmvee) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
@@ -47,9 +48,10 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Emmvee's follow-up announcements"
+        "ReNew Energy Global's follow-up announcements",
+        "order flow from independent power producers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to Emmvee, and solar cells. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to ReNew Energy Global, and independent power producers. The parts of the business most likely touched are competition, customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -73,16 +75,26 @@
       "published": "2026-10-15T06:01:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ReNew’s Q2 Revenue Grows 29% YoY Amid Solar Manufacturing Expansion",
+      "url": "https://www.mercomindia.com/renews-q2-revenue-grows-29-yoy-amid-solar-manufacturing-expansion",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T19:02:29+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|OTHER|emmvee-expand-manufacturing-profit-rise-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:47:47.978339+00:00",
-  "last_updated": "2026-10-15T18:01:22.815974+00:00",
+  "last_updated": "2026-11-03T14:48:18.557506+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:47:47.978413+00:00",
@@ -93,6 +105,16 @@
       "timestamp": "2026-10-15T18:01:22.815956+00:00",
       "change": "sources added",
       "detail": "Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:18.557480+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:18.557500+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

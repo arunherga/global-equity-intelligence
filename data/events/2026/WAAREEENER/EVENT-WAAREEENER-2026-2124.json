@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.49,
+      "confidence": 0.39,
       "business_impacts": [
         "CAPACITY",
         "BALANCE_SHEET"
@@ -28,13 +28,6 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "solar cells",
-          "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
-        },
-        {
           "exposure_type": "TECHNOLOGY",
           "term": "TOPCon",
           "relationship": "SECTOR",
@@ -44,13 +37,14 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
+        "best source quality 3/10",
         "sector relationship",
         "financial implication is quantified"
       ],
@@ -59,7 +53,7 @@
         "commissioning date",
         "utilisation ramp"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to ingot wafer manufacturing, and solar cells. The parts of the business most likely touched are capacity, balance sheet. Classified as new plant.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, technology exposure to ingot wafer manufacturing, and TOPCon. The parts of the business most likely touched are capacity, balance sheet. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -73,21 +67,41 @@
       "published": "2026-11-02T12:12:00+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Rayzon Solar to start production at 5.1 GW TOPCon cell facility in December, plans ingot-wafer manufacturing by 2028",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQmhmZXNmeHA2czUtYldseVdfZXM2RzZYdG81T2FZTDRIdE9NcUZPRC01QjBUZmVrZFlscjJxaTcwZWhwWmsydVNLa0NBSGhjUk1OQ0VPUkNfbldfS1ZIb0N0MG9qZGJJcWw1akV1eC1HT1JpRHVkN1pzY0FrZVQ5eF8ydkVwSHFQUHBzQ3g1ODFCcktsWEdRTlNfS2FQekxuZl8wSzRqUERsZEVBbG5BcDV2eFh0Qm9rZk9CX0ZScU9hSnppRjBOaFBhMElHTzhaeVhTSFlBTy03bUZXTnN3QWNFTmQ3NDhoMVpN",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T06:57:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|NEW_PLANT|5.1-production-rayzon-solar-start-topcon",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-02T22:28:45.127562+00:00",
-  "last_updated": "2026-11-02T22:28:45.127645+00:00",
+  "last_updated": "2026-11-03T14:49:15.082634+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:28:45.127635+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:15.082608+00:00",
+      "change": "sources added",
+      "detail": "pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:15.082628+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

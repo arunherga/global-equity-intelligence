@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "direction": "POSITIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -30,17 +30,15 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "silver over the next few weeks"
@@ -157,16 +155,26 @@
       "published": "2026-10-29T05:01:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver recover from October rout as oil drops, Fed tightening bets persist - Kitco PM Report",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTndKcXZ4VVA3WGVudkdINUVpOVhxSzd5eTFORm9jWXZYWGZ3d2dtN25jbUVpSUFnVWo0cmhITi1jR0pXM0RRYmhuMHUxXzVScEhWTG9GSHhPOUd6V053VUJFMFZJTDMwVUl5Um55TFFxbXlsTi1qQ1ZnQWVCdWlQOEdhUG9jdXNUY2RNZkdacTVTUDF0S3N0bHhsaVdRX0FrRWxianE3TFJrVXJLQ2hzaXI1aWdpTU0",
+      "source_name": "Kitco",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T22:02:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "SD Bullion",
   "cluster_key": "WAAREEENER|OTHER|falling-fed-gold-oil-rate-silver",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-25T11:46:37.319464+00:00",
-  "last_updated": "2026-10-29T13:25:06.895242+00:00",
+  "last_updated": "2026-11-03T14:48:25.384737+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:37.319522+00:00",
@@ -212,6 +220,16 @@
       "timestamp": "2026-10-29T13:25:06.895228+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:25.384713+00:00",
+      "change": "sources added",
+      "detail": "Kitco"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:25.384732+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

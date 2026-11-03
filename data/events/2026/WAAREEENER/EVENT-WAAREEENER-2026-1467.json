@@ -51,6 +51,96 @@
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -73,16 +163,26 @@
       "published": "2026-10-24T05:04:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NTPC Ltd (BOM:532555) (Q2 2027) Earnings Call Highlights: Strong Profit Growth, 91. ...",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTDhobVY3V09HcV9RVk5FUXF3RHNFU3JrQ05Ra0JsY0hGM004aVNQN1pod3BIYXZTSXRqSzVqYzRiUnFIMi1MR3NVMTJLb0lVYXY5SjlUTnZTZUJEaDhLMVlJM04taVUyeEdqMks2dFZ3UkFCaUh2Q0xyYlBVYzVVMmpnbVVkcUtjSVhkMklfRjQ",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T09:07:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "WAAREEENER|EARNINGS|2027-534618-bom-renewable-technologies-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:11:02.446682+00:00",
-  "last_updated": "2026-10-24T16:49:20.724610+00:00",
+  "last_updated": "2026-11-03T14:49:31.392815+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:11:02.446751+00:00",
@@ -93,6 +193,21 @@
       "timestamp": "2026-10-24T16:49:20.724593+00:00",
       "change": "sources added",
       "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:31.392788+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:31.392805+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:31.392811+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

@@ -4,7 +4,8 @@
   "summary": "Dividend, bonus issue: Last chance to buy today — Godrej Consumer, Coal India, Asian Paints and others Livemint",
   "event_date": "2026-11-02",
   "event_types": [
-    "DIVIDEND"
+    "DIVIDEND",
+    "FUNDRAISING"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -57,12 +58,13 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
       "confidence": 0.4,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "BALANCE_SHEET"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
@@ -77,11 +79,11 @@
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "DIVIDEND is favourable for the company"
+        "DIVIDEND is favourable for the company",
+        "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -91,7 +93,55 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow, balance sheet. Classified as dividend.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Godrej Consumer Products",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (Godrej Consumer Products) is doing well",
+        "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Godrej Consumer Products's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Godrej Consumer Products, and India. The parts of the business most likely touched are cash flow, balance sheet, competition. Classified as dividend.",
       "ai_analysis": null
     }
   },
@@ -105,21 +155,71 @@
       "published": "2026-11-02T18:10:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Dividend Stocks Today, Nov 3: Coal India, Asian Paints, Godrej Consumer; 12 Stocks Turn Ex-Date Tomorrow",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUVVBU0pWa3F0UlFOYnBsNlVGR0t5aTZsX0JWS3F2OHpzSWtseHRKV3N0Z05GRTB5aE5Qa0c3WDBmcDM3Wk5CSlFGRWcyY25HN3BTSUVHaE5DX0hPU0xYcHF2RlkxQmQtSjlWTEV5Qkx3S0xnVHhqVDBiMkprYkVDSFg4RGljVktsRk5JM2hoN0ZYUEhaWldxaC1xYUJIRm1sMTRrOW01cTJ2TXNyWWdESFVIRG03OGpnYXNpbGV6ZFloVWFlVHJla1JwaV85VFpYQld5RVB3ZExIUFV4TnRiWnhtMnljYWc",
+      "source_name": "Goodreturns",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T03:48:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Dividend alert! Last day to buy Asian Paints, Coal India and 6 more stocks for dividend payout worth nearl",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOdVg2bXFGOXV3MlY3N3I3RjVxb0d3Z1pLYmkyaUxmN2JCVU1weTFNLXAxNTNyMzhIdjQwaWFRMmViaEdsWldWYUxxekQ5U09VbzJQRFdYTmhfYmFRc0xNQkY3NlF6eHpsTm9Td09zX1RoNlVVTk9Ja3dodTNkUU1wSzRkbzlaNzVHUHh3UDBMbWh6ZUN4MUtZaDNJRW0wSHFVODd5QU0zM2twY3pESzNOU0VPZC0xNDhDNy1jSERKV20wYlBfU2xjSGpZMzRpTEpOal9yRjZvMHpIMXRaelpiWFNkZC12bDhmRFR0aG9TWUxHVm5VNjROVXFMSndLbGxhQ1h0N2MxV1JWdzJ4bUkwMGpRVUJxcDZBa05BWDYxWlJBRDQ5ejJz0gGsAkFVX3lxTE0tVE5WVU1ZdmptUnRtYVVSTnFyMU9rREFaWUhJbThPMWl1ZV9NM1pfSzYzMkI2aWR3YTE5ZDZxZWxFZEt4azJKNTFraWlURHcwempWd1NPbTdOeE1KN2xOa1hsNTdJdG9sbEowS05XcllUSWJNQUJKMU9OYkc0c1Jlb3lvMWpqMjdkNkFZUUZib2gzR2hDR25MZm5GQWo1NFdQSnlTQTVzSldHWG9ZYlBTQzhudG1YSEhLZ2N3N1FsZU9keE1xSHd2YnB0QWdzWkN5Q0lfSzdBV2d0WlZBZ2F6b0lQOGhtQnFXVTkxNTNiRFZBS0hfbGd3VXZQWE1XdnJ6Yjh4cmRCc3pKWlJaN2ZCQU5Xb3NXakFJc29sTF9HRUR1RjdIdnlqdEtFRg",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T02:37:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rs 31 dividend payout, bonus issue, right issue: Last day to buy Coal India, Asian Paints, Godrej Consumer Products and 9 other stocks ahead of November 4 ex-date",
+      "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNMTBsa0N2NU01NXVobS1icFItUDRjSkp4c0QyaURmWTJCRWRRdGpvVDJpRVE3TnJjdU5kSy1xeE1XdVdLaHgtaExfdXJRbDRzeUNJNUl1eEVGanJZUHRnLVFNWnUtZ05pczAwM1NWZDFoQTNPZWZDdEVzXzJlOTBua2RZbDliYTRQTko5WXY4TGhWY3BHT1didzVhUWtONGJqYTlBR0xKT2lralN2VFNVNk81bURhSHpPeEpqRVJaanFrZ1FzM0lCbFNTQ2tQc195MXh2WlIxbzBhVDhqZkpTd0wxSDl3aWNmR1l6TURCaXlvRnl6VjdrbkVvNWNwMERLeDhWTEVUSmFlLW4yWi1PX1NFZ0NsU0xkRkVVY1d3blRsSjdfbkcyNWo4dFVmRkRJRkNv0gG4AkFVX3lxTE9DWlVuMm9xQ2c4OWQ2LWtNNlhiaElPWE5kMGlpZGt0aWxwOF82TTBlWlN0SFk4M2ZFUWp5VWtkejVReXpuYWlmUTdmcEdZNzg1b2I2QWdpNVlUNEF5Y1J4WW1pSXpVNHlVZmRaTFBDYlljNl8tN2VlNUpaU2FiMzh5RFB4N19UQkh2UjFoLXdPTVFvbC1zUnB2d2JRQkRfbTVOTG1ISGhyQ3dTZ1VkTkxBYW5qaGozS3RqR3B5dktNSG40NmMzaVFLMXFvZ3RjamxYcEc2Qms4NHNwaHhHMmJtSThLM1V0d3dlbTNNMUl4eW5udTZrRm5JeWxHREx5bUlyTEpnVTdoNmN4bjltLXlKbjNvejdPT0MyNVNMSEFqZHphazUyYjhXbEFacjh1djRvb0RWQTM5YQ",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T02:29:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "COALINDIA+MSTCLTD|DIVIDEND|bonus-buy-chance-dividend-issue-last",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:34:19.795057+00:00",
-  "last_updated": "2026-11-02T22:34:19.795139+00:00",
+  "last_updated": "2026-11-03T14:48:43.827051+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:34:19.795128+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:43.827014+00:00",
+      "change": "sources added",
+      "detail": "ET Now, Goodreturns, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:43.827032+00:00",
+      "change": "categories added",
+      "detail": "FUNDRAISING"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:43.827041+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:43.827046+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 3 -> 5"
     }
   ],
   "price_reaction": {}

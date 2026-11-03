@@ -5,7 +5,8 @@
   "event_date": "2026-10-14",
   "event_types": [
     "OTHER",
-    "EARNINGS"
+    "EARNINGS",
+    "DIVIDEND"
   ],
   "stocks": {
     "KSOLVES": {
@@ -13,9 +14,10 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
+        "CASH_FLOW",
         "REVENUE",
         "MARGIN",
         "COMPETITION"
@@ -37,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Happiest Minds) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +52,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Happiest Minds. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Happiest Minds. The parts of the business most likely touched are cash flow, revenue, margin. Classified as dividend.",
       "ai_analysis": null
     }
   },
@@ -94,16 +96,76 @@
       "published": "2026-11-02T09:04:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Happiest Minds Q2 Results: Declares ₹3.05 Interim Dividend",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSThiWjBGYXNhOEtUWm5UMjZZWThkaFdOb09uM3QyZkFkTGpLTWNEWHdETUdMOXhlTnlDbWFWVk9DaDd4TDNHTXJDU01ycTN6VzRfZ3BSVFNuNDluUlpCUUJnU2oxYzZ0ZW5fUkNSdVhYM1dZelpCcDNDNzRoc1Q3SDctYVA5M08xYTh4N1BuNA",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T04:19:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Q2: Net profit rises 15.1% YoY to ₹62.19 Cr on 12.5% revenue growth; declares ₹3.05 interim dividend",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPa3lYSWNMUUlkUV80Y2lWNDYyb1Y0UVdRcDNseTlBa2ctS0pHTmFxa3dlM1VBZ09ya1hnSldFQkw1TUdwU3BlX2lwOUtoVmhteU5Vc2FlQmF1UjFKZ3ZXOEw2WGpvTHRha1c1S0E2d0pGZzVvR1ZnY0dBM2dOS1U5ZVF6Z1haUWNYSWx4OEQydUJkaWJmWmpydXRmN3dwZEM2X1p0T1BhcGxPS09hOHY2T2xNWXdkMjZrVE1oUmpmN2g0SFVHU2NHTlpISVdPZjZHR2JNM2JCeVN3WUpXY2RvTFBjU0RKZGc",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T06:26:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Reports 12.5% Q2 FY27 Revenue Growth",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUVQydHdwaXBXc2xWb25WcDJsT2dUQzJ6SXNGVG00T29jZFF4UlRBOE0tdDNQZlI0WmR3RDNPX1JtQkliY1R3cGJpMEdob2tkVzR3bmRHRmNUTDVyZEo0WkNLSTNSakNYY2RUS29HMTAzT04tcGZab2JSaDJhUHhWZWRWU1M4dzNsRzQzOC13NzhWb0kxQmh1NU8zcW1kdzlTV2k0cA",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T19:35:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Reports Q2 FY27 Revenues of ₹645 Crores, Up 12.5% y-o-y; With Operating margins growing at 22.4% y-o-y and adjusted PAT growing at 20.7% y-o-y - HappiestMinds",
+      "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQSDloN0NwcS0xTjFIYldBQ2lFYmlST3hnUmtWRXdycllHUnR3emEyWXBjN2Jsbm1hMDNlM0tYelhPaFFhQ1E3cXRVcVMyaGYzV0dIdGVuOGtsNnRuNlpXTHpESFBGaW8ycmY4Q0tFSWpHeVRjU2hCOHJDdWJtbk9BdUk1eTh4eEFfRFg3M29pcGJxS0MyUzJjMHl3SmQ3bFdjRnNpVURtdHFuaWZULVJNNEUwRndyUmlPbFBHNm82QXAtVnc0Vk8xVEpWaGw5Q0I1T3NuLTl5RGh4MTZ4WUdpQlR4NFVIaXZyNDh3OFA2YlZzSDl3eTBKWGtLWF9wN3N2bGtKQk5lUmxOT3V2Zjl6QlVhLTR1V3Z6RHN1dEdra09HVlYzZ0R2ZXZpUzM1M1k",
+      "source_name": "Happiest Minds",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T01:08:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Reports Q2 Revenue Of ₹645 Crore; Targets $1 Billion FY28 Revenue",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOXNPc0ZleTI2VWwwYXVWNTJtcnRBdlQxMGg4X1NEWFIwQ2VLM2dVRjVLMFpzODV0LUk2R2NwdElMdXU3ZmZ6WXcycW9Hb2pxWm9GN2tETkZJZFBRa2VlNFUyQTBEV0Q4LXhlcWw2SmQwMno5M1BRRFpyVGlFR2RIdkZ2LVoyNFhCS1I3NHhLSVZocE1MaVZVWVktRmZzaUFrMW9V",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T05:33:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds reports Q2 FY27 revenue of ₹645 Crores, declares ₹3.05 interim dividend",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWm45TU5tczRfQ19ySmphQjdLNTh4YkJpV0ZXTmlyU0xoQkd2LUw3UFVuRVFPclBDdXl3TFhyaV9OTEhGX2hLRTFEQ1VwcWlDZUpLLWVHRGdvc1hEenNBS29aT0VaZEpxaXdRdW8zUjZURHZNTWZ1Zi0tSU1ISlJ6ZUJlQlVoUDJTc2c",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-02T18:26:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "https://www.fintechbiznews.com/",
   "cluster_key": "KSOLVES|OTHER|12.5%-grow-happiest-minds",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:50:53.396312+00:00",
-  "last_updated": "2026-11-02T22:37:50.847799+00:00",
+  "last_updated": "2026-11-03T14:48:22.066491+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:50:53.396387+00:00",
@@ -124,6 +186,21 @@
       "timestamp": "2026-11-02T22:37:50.847795+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:22.066459+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky, Happiest Minds, InvestyWise, Sahi"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:22.066478+00:00",
+      "change": "categories added",
+      "detail": "DIVIDEND"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:22.066486+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

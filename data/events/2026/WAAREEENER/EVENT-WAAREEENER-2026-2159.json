@@ -4,54 +4,73 @@
   "summary": "Yingfa Ruineng launches 7.5GW TOPCon solar cell manufacturing plant in Indonesia PV Tech",
   "event_date": "2026-11-02",
   "event_types": [
-    "NEW_PRODUCT"
+    "NEW_PRODUCT",
+    "NEW_PLANT"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.49,
       "business_impacts": [
-        "PRODUCT",
-        "REVENUE"
+        "CAPACITY",
+        "BALANCE_SHEET",
+        "EXPORTS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
           "term": "solar cells",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "TOPCon",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
         },
         {
           "exposure_type": "GEOGRAPHY",
-          "term": "China",
+          "term": "Middle East",
           "relationship": "WEAK",
-          "weight": 0.9,
-          "detail": "in headline"
+          "weight": 0.8,
+          "detail": "export market"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Southeast Asia",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 International market development",
-        "-2 Single unverified source"
+        "+2 Names a key geography for this company",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar cells, and China. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to solar cells, and TOPCon. The parts of the business most likely touched are capacity, balance sheet, exports. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -75,21 +94,46 @@
       "published": "2026-11-02T12:41:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Yingfa Ruineng establishes 7.5 GW PV manufacturing plant in Indonesia",
+      "url": "https://www.pv-magazine.com/2026/11/03/yingfa-ruineng-establishes-7-5-gw-pv-manufacturing-plant-in-indonesia",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T10:06:39+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Renewables Now",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|7.5gw-launch-ruineng-solar-topcon-yingfa",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-02T22:31:39.790603+00:00",
-  "last_updated": "2026-11-02T22:31:39.790684+00:00",
+  "last_updated": "2026-11-03T14:48:13.998584+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:31:39.790673+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:13.998554+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:13.998572+00:00",
+      "change": "categories added",
+      "detail": "NEW_PLANT"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:13.998579+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 4"
     }
   ],
   "price_reaction": {}

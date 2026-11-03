@@ -11,92 +11,23 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "MIXED",
-      "confidence": 0.35,
-      "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REGULATION",
-        "PRODUCT",
-        "REVENUE"
-      ],
-      "time_horizon": "SHORT_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "deposit rates",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Regulatory or legal action",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
-      ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and deposit rates. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
-      "ai_analysis": null
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "REGULATION",
         "PRODUCT",
-        "REVENUE"
+        "REVENUE",
+        "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
@@ -116,24 +47,74 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are margin, demand, regulation. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to ICICI Bank, and deposits. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "ICICI Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to ICICI Bank, and deposits. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -177,21 +158,56 @@
       "published": "2026-11-02T11:52:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BOI Akshay Fixed Deposit: Bank of India Launches 500-Day FD Offering Up to 7.50% Interest – Check Rates for Senior and General Citizens",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQSFpFei1GdHlqeHk5dHFBNHRqODk0UVQtS0daNG11d2E0bk1EMElkb1NKa0xzZ0d2NEhremtfcXlZR21ZWTV4RVVWTnJVR3JTTm1jRlJHblYzX3RGaEJEWjkyU0JVTUpuWDhDblJoUkMtV3VUX1FYYnNDSVRZVUF3bnFSMlJzY2RTd3hfdGR2ZUpQUUNuRnRFQVFDajN3ZjdTRkNYUWZmcElHR1NpMzhnQWktN2RJYUozQ0RhajRTUEZQZl9wYzNYdFFTNmNxUVRLX1d5OVZfeG1NSzNHVDVmVTFqWjZmeDhrMHMyRkgyVzlQeThsSkdISWhtT0c",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T07:49:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank of India revises FD rates, launches 500-day deposit; ICICI Bank offers up to 7.20 percent interest",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNcEtUNnMwbHZaZnhmdzJJVXZab3Znc1BUVW1MbEp5MTVZYjBZZEZDQk5Rdl84eHBob0xlQ29yYmlGWGxSLWgyVXpadmE1bzlsQ05zVFUzTWN5UF9BaFdLSDNqU1Y1WDlfWnNoZElDTWQzTTJUMTdMV3pmNmdoNUZjUGtyc05DYU93cVN6NjlvUjU5U1ptbk1NOWxnVXFucEtKWURrVVUzWlJGX3J0YmFBTS1hQWRPV0o5dnF0bTF1a2JSN0RGSVhDZ2llbjUxTlhYSTFVUDJjbHBLc1A5cVNhcjRZYlFKMDI4Yld1MzVXblk0YmNMeXhUdU9LN05lTnVvTWJUZUd30gGLAkFVX3lxTE0zY0E2VzFNNjhna0pFdDNpQUZGLW5aV3ZsMjhMWEloemJxTlhHUVQ5OWQ4NXN6MWNvemRuY0t1c3pZTEhoZlVIa0lvZGxzbllicGgyUk9GZVJKLUUtNFZxU085ZGZ2SV9DZ1JOX0ctMkpmdVV3WjFXb2pwUGJQN3JTOFl1MlNoOHpLbFZzblhKZUpZeGVEUlRCcWlKeWZ1eXBkZGRscU5DQzFMUS1JTkp2a3Q2NzljUE1WY1ZnVDZJc05sdlRESjBGVGQxZXpGTG13NjJmZWp6QVVzT0Vjc3J1UkNUTzhiUkRJRW5JOGdMeV9SN05LZDFIeXpxX1I3SjVWZXBDWGxrX05Kaw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T07:30:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+REGULATORY|bank-india-interest-launch-rate-revises",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:30:42.887383+00:00",
-  "last_updated": "2026-11-02T22:30:42.887490+00:00",
+  "last_updated": "2026-11-03T14:49:21.975330+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:30:42.887479+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:21.975301+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com, Trade Brains"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:21.975319+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:21.975326+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -10,7 +10,7 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -23,11 +23,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "K-beauty",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "international topic; in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -41,7 +48,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to CDSCO. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to CDSCO, and K-beauty. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -102,16 +109,26 @@
       "published": "2026-11-02T06:29:37+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CDSCO Cancels FatX Registration Over Fat-Dissolving Claims, Tightens Scrutiny Of K-Beauty Brands",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTS1zQk9EcFpSUnBNNGpXOExxU2plZFM3WkRqOXFhTWUzaXp0cGl3ckVRZWFMbWlBSUdjdXl1X3d4ektuMjZiV0RibG80bms0WEtmN0NiMU0ySTdmVEpjdlN1U2JZbkZsOEw0anJnaEJSR0I4QjNUOG50b0tVZDhCYWNOalJNREVxZUJXN1RuSzZRZkh6REJHRUtfUGVLZTViTG9TQVEtN3UyVDh3Y0NqckVNSzNUdzZieE94UVZUUFM3Q25aZGcyakpRQWpPRTFHWmFVOFc4UE9YVDltWWlsYjliazNVdEotNXE3aG9nV1hicW04aFBV0gH8AUFVX3lxTE9hOTA2d0hfTEdJRHYyamU0ZVN6MUROUnBEUGFQdnU4Q19LWUM3X1RsMTN5dnRMR1l0RlQ0c3N0dU1Oek9KQnZYaV90dmlpdm5QQXk4ZzlJQlp5R3JoZnNfOGZhRkY5UUFmQUVLWTBnUlJIaW5BMlQxTHFiMXctWjRTRk84ODVqWFdHLTkyenVFVktndGFSTnpFNDRoQU5KYUNBVVdJVGVPcVN5ZktwYk9wckhZdklWNkx0aUMtZ3ZkZkMyai1EczI4YmxwVkZJQ1VuQnhKOGJ4U1dDcl9SV2N1bnh0TjRfRWMxVk9FbjlZcmRqQWdjQWZSbmY3WQ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T08:02:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Devdiscourse",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|cancel-cdsco-claims-fatx-misleading-registration",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-31T12:51:57.112376+00:00",
-  "last_updated": "2026-11-02T22:37:30.656211+00:00",
+  "last_updated": "2026-11-03T14:49:25.143559+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:51:57.112412+00:00",
@@ -122,6 +139,16 @@
       "timestamp": "2026-11-02T22:37:30.656193+00:00",
       "change": "sources added",
       "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:25.143534+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-11-03T14:49:25.143551+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 2"
     }
   ],
   "price_reaction": {}

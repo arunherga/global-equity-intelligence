@@ -7,7 +7,8 @@
     "CURRENCY",
     "INDUSTRY_DEMAND",
     "COMMODITY",
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "TMB": {
@@ -15,12 +16,15 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "CUSTOMERS"
+        "SUPPLY",
+        "GEOGRAPHY",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -38,7 +42,7 @@
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
@@ -46,9 +50,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from traders"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, supply. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -98,15 +105,14 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.48,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
@@ -115,43 +121,39 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-1 Single source, unconfirmed"
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.48,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
@@ -160,30 +162,27 @@
           "exposure_type": "COMMODITY",
           "term": "crude oil",
           "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "input commodity"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
-        "-1 Single source, unconfirmed"
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -357,16 +356,36 @@
       "published": "2026-11-02T04:51:48+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee rises 13 paise to settle at 94.71 against US dollar",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-rises-13-paise-to-settle-at-9471-against-us-dollar/article71660490.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-03T10:34:40+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Rupee Gains Ground As Crude Oil Prices Ease, Indian Currency Strengthens 12 Paise To 94.72 Against US Dollar",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQN3d3WjAyVmhiQUF1MlotVE1YUm9ObzFYcHBaNktJYzFGc3hZQjExaHY4NE01TXBEUk9FRUZ3ZmdiRXVtY1Iyc2x5UkRUVG1XOVpxWk9xcWszWS0wX2VBWm94dzg5YVNDVU1yQUEyRVg3cXpfN3l5UmZVclBrLVljVk1yV25kM0IyYk1PblRhUWo5S3dqb0NhbG9wVDBycHAxY1c4TTdwUlhKc1h2cnF6OUxvSUY2SGJBeGFpMXR0bldqdzdxTlhKNllHeGFiaUNUOThBZzFkYXZ1dGlTUHBtVDRJR205RGhPdTNKVkhzSUdjUFhKT3NxY2N0Mm1ldnktNzkxRlNDd1Nra2pOSGdwMnRNWEI1VF9oOXZN0gGgAkFVX3lxTE1pV3F6X2ZzZF9KUWsxYVFYMjZqcGtGSGFJOHhvb282aTFvdUNYcWFwdkJFYlB6OW05TkExOF9NWEJpelBIdWV1dGRDVUZqbGM4bGcyclFEMW11blF3cFFZMFNFaG45RTJITkhlSGZkS0tGRmotaWcxc3N2VXBZU2RGSXFLVklkWi1rYmZFZXhhOFB6SHdfQWRwWldVNTdFOEtxb0xISHhQczhLWEw4TGlSaXI1cFFnR1liZHM1TWpzVUNpX1BoaUFhbVA1TDJOVzNENHJHZkxLVVlDWlZDUzVTcW40aGhIMXBPdGdfaktnV19NOGNWV0dlTmE2T0dTUjFhQkVqb09yM25nVXlLNkxhdnNiNkVER1FYVlJwUEtIZA",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T04:24:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 17,
+  "article_count": 19,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+INDUSTRY_DEMAND|94.92-against-paise-rise-rupee-usa",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-14T12:09:37.867164+00:00",
-  "last_updated": "2026-11-02T22:36:41.889104+00:00",
+  "last_updated": "2026-11-03T14:48:54.933365+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-14T12:09:37.867238+00:00",
@@ -467,6 +486,36 @@
       "timestamp": "2026-11-02T22:36:41.889100+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:00.521953+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:00.521971+00:00",
+      "change": "categories added",
+      "detail": "GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:00.522001+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:54.933334+00:00",
+      "change": "sources added",
+      "detail": "Free Press Journal"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:54.933354+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-03T14:48:54.933361+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

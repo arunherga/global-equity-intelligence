@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-2204",
+  "title": "Copper price rises on downgrade to Chile production outlook",
+  "summary": "Copper price rises on downgrade to Chile production outlook Mining.com.au",
+  "event_date": "2026-11-03",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Copper price rises on downgrade to Chile production outlook",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNa1BIdC00RF9pa2ZXYmRYN3Etb2h5WVlNeXd5eVI2b0pXV1dQd1hyYW5QZUhGdzc3VDdGNTg3VGNocm9hS1lHTGJVMEc0c3RhWl9EOElHZ0tyandKRTU1TWd0SW43SnMzZHg3elV4cU55bk9nU1NiYnFRZGlveU1CbXRDVmF2OFNNckE",
+      "source_name": "Mining.com.au",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T04:19:01+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Mining.com.au",
+  "cluster_key": "WAAREEENER|COMMODITY|chile-copper-downgrade-price-production-rise",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-03T14:38:06.570091+00:00",
+  "last_updated": "2026-11-03T14:38:06.570169+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-03T14:38:06.570157+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
