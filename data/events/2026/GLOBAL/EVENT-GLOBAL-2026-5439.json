@@ -10,7 +10,7 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
@@ -26,12 +26,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Acquisition, merger or divestiture",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,13 +51,13 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
@@ -67,12 +73,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Acquisition, merger or divestiture",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -86,7 +98,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
       "ai_analysis": null
     }
   },
@@ -100,21 +112,46 @@
       "published": "2026-11-03T14:26:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Q3 2026 presentation: record NII, strategic acquisitions By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPaTI4T0NRY0FQZ1dnOU1BWmp4anlGaVBCUkJlVzNfbklreF9ab2FKeUJGTUczcFNEeFJJZUF6UDk4OWw0dXhNbTJyMEV4X0ozeEctMHMzektKcU9td1JVX3VTUnpoTnlUYXJBbmJUczRwVjJ4U0ZoeDVqXzNqLU96eWxjTi1iQ1lKXzhzNWNmcEJEdUp4YVpPdnNjdDNMNFR4Y1FLanB3X2NwSTlNeTVNeXdaZ3Zscl9GdUJn",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T14:37:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com",
   "cluster_key": "HDFCBANK+TMB|ACQUISITION|2026-nii-presentation-rbi-record-strategic",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:42:32.611500+00:00",
-  "last_updated": "2026-11-03T14:42:32.611583+00:00",
+  "last_updated": "2026-11-03T20:19:01.579976+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:42:32.611572+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:01.579947+00:00",
+      "change": "sources added",
+      "detail": "Investing.com India"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:01.579965+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:01.579971+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

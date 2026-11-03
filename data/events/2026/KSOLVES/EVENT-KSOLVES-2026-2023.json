@@ -4,20 +4,23 @@
   "summary": "Salesforce Adds Cresta to the Cart in Its 2026 CX Shopping Spree CMSWire",
   "event_date": "2026-11-02",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
+        "PRODUCT",
+        "COMPETITION",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -36,10 +39,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Salesforce)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,7 +53,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are product, competition, supply. Classified as technology.",
       "ai_analysis": null
     }
   },
@@ -63,21 +67,46 @@
       "published": "2026-11-02T23:52:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce adds Cresta's customer-service agents as its pre-holiday shopping spree continues",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOU2FRNFRJd09UOTcxYnZnMFY3eU12NlRndFZ3QXVmbEtENFN0cFJTQkdPSVhjTDItdHU3VnpJeWh3aml5cGw5VmJvTFVzR3RvaURTVFdodExXR1pLWUZTWnZVRVhZRU9kRkRCRFJtTENwX1p6czVDMU9JRWRheHFuSl9wQjdvZWlwcmJ2TEZ2SC1xdkUzNW0xSGtKMGZVQjdzQTgwby01VjFlUFREMncyUFBVcEQ4M0s1UnpSOXlSZTBMZw",
+      "source_name": "www.thestack.technology",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T14:12:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CMSWire",
   "cluster_key": "KSOLVES|OTHER|2026-adds-cart-cresta-salesforce-shopping",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:36:49.608477+00:00",
-  "last_updated": "2026-11-03T14:36:49.608559+00:00",
+  "last_updated": "2026-11-03T20:18:58.010616+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:36:49.608548+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:58.010592+00:00",
+      "change": "sources added",
+      "detail": "www.thestack.technology"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:58.010605+00:00",
+      "change": "categories added",
+      "detail": "TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:58.010612+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 3"
     }
   ],
   "price_reaction": {}

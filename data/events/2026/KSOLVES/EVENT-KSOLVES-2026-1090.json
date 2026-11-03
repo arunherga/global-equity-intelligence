@@ -11,18 +11,15 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "CASH_FLOW",
-        "REVENUE",
-        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -33,26 +30,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Happiest Minds) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "Happiest Minds's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Happiest Minds. The parts of the business most likely touched are cash flow, revenue, margin. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Happiest Minds. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -156,16 +148,56 @@
       "published": "2026-11-02T18:26:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Happiest Minds Q2 Results: Profit rises 15% to Rs 62 crore; revenue up 12% to Rs 645 crore",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYmFpSTMtQW40bzdkanBSTjhYLVVVbzVCSDl3bDI2UWlmMEVocmhyTGprS1BXQXFGaDJrdDRWMUJpa0lkak9pTW9HcUtBNTlYaVVxYkpzeUY3Um9jQ2lnamVDT1YyT3dQNHNnbVhwczUxb1dYTTRYNkl0NnNkRTF4M3NiMUwxR0RYSWUtVlFPczhHRzZDLWlheVhwMk45cGk5UGh1T0Ixb1hNekZMbjk3eWpzREdEWmQ0SFhPYWpPNDU2c1ZlZjBZS0x4VzZLQjdiZkVvUW5MRVBSdmFOZmoxUVZWdUVJdnNEdzRCckszZDd0dFV4dEdn0gH8AUFVX3lxTE9hdm1WSTdRbm9xNHJnWUFlZ2RLX0tNYW5jYi1QMEYxdHp5S05sVk94a2FzY3VjT2pfZjlqVUtsYUJxNUNLRHY5MDVES05fTFVvS3gwV0VSYS1BNV9ONEI5V0RWSFNYYmE3TDJnUndKT0I5MjJ4UWRFSnZ0YTY4NHMzTlB4SGttY0l5amFYUExHX1dCRTd5cGxoblU5R1dCYjEwQ3hCc0ZiNkI2UmdkM00tWUVUMUUxaGRUaUR5a2c1U1J0cWQ2LUhIV25CNWpQdUdNc1NnYlloZ0RCY0FnOFh3bktuYmRvNTF0aFpPc1hZZExkQkJPdUFrYldOSw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T13:15:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Technologies Limited (HAPPSTMNDS) Reports Q2 Revenue of ₹645 Crore, Up 12.5%",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTE9JWjV5M055WnQxM0k1ZGY3NEhGelc0YTFaRjdpSWZibVdHX19CX3AzVVdoRkh3TU5JeXkwM0xhSFFRRURXblJoMllzeUgxUjZrTUlIaXV1b2Y0eV8tQUlDUjhYbWJwc2lzYWpPQXFZbVN3enhBLVE2eFFpRGU4a1VFSHZlUEJ6cnhkLTJFcXdUX0M0Q1ZYOVhvSHVfZGFaWUJZRlFEWnVNeDYxZU96dmNDMlRmQ3F6eUJNcGtmalM2TzU2SzJvVS10ZzZOUFF6T3ZwLURzVDhzZFVhNUUtLXNn",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T14:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Q2 revenue grows 12.5%, margin reaches 18.5%",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSXRkaTk2d0FoMDY2cnMzc1hlV010VnlnMThsaE5YQ0F1VlVxWXRVcXh3ZkQydkRYb2pldmZzb2kyX1U1RzdJbHZkZm5lV3RHN3F2Ym45TXhkamxLazFjaVJGdlNhVnh6RzVmd2t4NnotZjFSVjVtb05YR3MyYTZMUThhMHBrblptNHNpM3dtalBHWmQtT3JKWksxM1dET2xMeWo1YW5PU3pjeWdyZUE",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T18:28:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds Q2 revenue rises 12.5% as PAT falls 8% sequentially",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaTR0SllmOHluaHY3ZFlWcWlNLXZiSUZGZi1SZWZwZTJIYjNEX3RMTlJDbElpVE1URnk5Y2xNTXJsYVRFVVhJUWQ2MUJuZ0NTUzRrZjJMdGhscFJTVWF1RmpCUTFoaklsWDdQdFJLeEJWTzhVcjhBVUZaWVk1OVZ5VW1aamgyakxoV3VGWGJjb1l2Nk9EbGJSZ0RfUk91VmJ4cXM3eQ",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T20:00:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 14,
   "source_count": 1,
   "primary_source": "https://www.fintechbiznews.com/",
   "cluster_key": "KSOLVES|OTHER|12.5%-grow-happiest-minds",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-15T11:50:53.396312+00:00",
-  "last_updated": "2026-11-03T14:48:22.066491+00:00",
+  "last_updated": "2026-11-03T20:19:38.730457+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:50:53.396387+00:00",
@@ -201,6 +233,21 @@
       "timestamp": "2026-11-03T14:48:22.066486+00:00",
       "change": "direction changed",
       "detail": "KSOLVES UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:55.933116+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times, TradingView"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:38.730435+00:00",
+      "change": "sources added",
+      "detail": "Multibagg AI"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:38.730451+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

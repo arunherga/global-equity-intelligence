@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1396",
+  "title": "Investor home loans collapse as rate hikes smash market",
+  "summary": "Investor home loans collapse as rate hikes smash market inkl",
+  "event_date": "2026-11-03",
+  "event_types": [
+    "INTEREST_RATE",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.39,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "home loans",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to home loans. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Investor home loans collapse as rate hikes smash market",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLVo5TTM0YkM1ZnJINFBzOUpnZzl2V3IzNG8xTEJycWMtWjlwdDNBRjl2blRPRG81YWlMWU95RGRHOG10RGR1LU9QVUlZazR1VEVnUFVFNk1lQXRRWnlnUlcyQXN1c3FvcE1NcDJ1OVNpczhHdlpQT3RreGxzV1RyWEc3S1EyTm9p",
+      "source_name": "inkl",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T16:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "inkl",
+  "cluster_key": "HDFCBANK|COMMODITY+INTEREST_RATE|fall-home-investor-loan-raise-rate",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-03T20:17:06.606287+00:00",
+  "last_updated": "2026-11-03T20:17:06.606382+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-03T20:17:06.606372+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

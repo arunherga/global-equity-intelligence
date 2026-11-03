@@ -9,26 +9,17 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Premier Energies",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +27,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Premier Energies's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Premier Energies. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +47,41 @@
       "published": "2026-10-31T16:56:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies Limited (WAAREEENER.NS) Seasonal returns chart - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhUkZ6NlhmU3Vfelp2NlVrQ3pkaGdmdDR6aHhCNmp0Ny1FNW9yTE1RQlYxejFlX2daX25zLXdrYUNXWGxjOFFVcDBJdkJXbzV6VF9WQ3NKUmkzY0gzT3Btc194aXVHcGpiZ0h4UGpB",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T15:42:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Yahoo! Finance Canada",
   "cluster_key": "WAAREEENER|OTHER|chart-energies-premier-premierene.ns-returns-seasonal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T14:26:58.885203+00:00",
-  "last_updated": "2026-11-01T14:26:58.885279+00:00",
+  "last_updated": "2026-11-03T20:19:11.323631+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:26:58.885270+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:11.323610+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance Singapore"
+    },
+    {
+      "timestamp": "2026-11-03T20:19:11.323626+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -9,91 +9,40 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
-      "business_impacts": [
-        "REVENUE",
-        "MARGIN",
-        "COMPETITION"
-      ],
-      "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "HDFC Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
-        }
-      ],
-      "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "No clear directional signal in the available text"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
-      ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
-      "ai_analysis": null
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "direction": "NEUTRAL",
+      "confidence": 0.13,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -101,7 +50,53 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.13,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -185,16 +180,26 @@
       "published": "2026-10-17T09:51:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SBI Q2 results: Net profit likely to grow in double digits on higher NII and strong loan growth; NIM, NPAs in focus",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQaS1JdnFBMDRHM3lURlhuckxWNlhLR2VQcjlxVHd2UVAwV25CX1dUMDJVYlhkMHZRMFBDY0VjRG5JZWJNVWtEUXV5SjZoQnFFX2NWaE4tTHdRV1owQmFkaHByTGlzcElLMmY0cDJwWEN6d3NhVGpCTmRKQW1Qa0hlVTZlelIxOXJ3ZkFzME90Wl93aVNYU1o3VnpPS1RpdHFkVmNWcEFHMS16cnpnc3VWYXo4S2tfcGlFSE1MZVpXUDUwVDdOV1FMQzl0YzVFaHJxMEEtQ0Z6enNuUjdWeVpWZUZ2bEhhY1p2WlMyMUNkVUVJSTUzVGUtZFlxWUs2TzR1Sy1pTA",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T03:15:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|EARNINGS|bank-hdfc-likely-net-profit-results",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-16T11:40:58.103089+00:00",
-  "last_updated": "2026-10-17T11:11:28.836453+00:00",
+  "last_updated": "2026-11-03T20:18:41.326072+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-16T11:40:58.103158+00:00",
@@ -215,6 +220,21 @@
       "timestamp": "2026-10-17T11:11:28.836449+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 3 -> 6"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:41.326043+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:41.326062+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:41.326068+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

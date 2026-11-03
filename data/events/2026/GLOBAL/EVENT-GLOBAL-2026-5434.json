@@ -10,10 +10,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.45,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE",
@@ -36,6 +36,20 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "PRODUCT",
+          "term": "wealth management",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
@@ -47,14 +61,14 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Strategically important competitor development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "a competitor (Kotak Mahindra Bank) is doing well",
         "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
@@ -65,29 +79,30 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Potential slight pressure on retail banking and wealth management revenue growth if Kotak Mahindra Bank successfully retains and cross-sells to Deutsche Bank's affluent retail customer base, though HDFC Bank's massive scale limits total revenue impact.",
-        "margin_effect": "Unclear to slightly negative, as intensified competition for high-value retail deposits and low-cost CASA accounts in urban markets could incrementally push up cost of funds or compress net interest margins.",
-        "cost_effect": "Minor increase in customer retention and marketing expenditures in key metro markets to defend market share in premium retail segments.",
-        "competitive_effect": "Intensifies competition in urban affluent retail banking, wealth management, and premium credit cards, as Kotak Mahindra Bank gains scale and access to Deutsche Bank's high-net-worth client portfolio in India.",
-        "regulatory_effect": "No direct regulatory impact on HDFC Bank; the approval indicates regulatory willingness to permit private banking consolidation.",
-        "short_term": "Minimal immediate financial impact over the next 0-3 months, but HDFC Bank may proactively target Deutsche Bank's transitioning retail clients during the integration phase.",
-        "medium_long_term": "Over several quarters to years, HDFC Bank faces a larger, more scaled rival in Kotak Mahindra Bank across high-yielding urban retail segments and wealth services.",
-        "second_order_effects": "Operational friction during Kotak's integration of Deutsche Bank assets could create opportunities for HDFC Bank to poach wealth management talent and high-value deposit accounts.",
-        "key_uncertainty": "The exact asset size, deposit mix, and client retention rate of Deutsche Bank's Indian retail business once absorbed by Kotak Mahindra Bank.",
+        "revenue_effect": "Slight negative risk to fee income and high-net-worth retail deposit growth if Kotak successfully captures and retains Deutsche Bank's premium client relationships.",
+        "margin_effect": "Unclear, but could face slight downside pressure if heightened competition for affluent, low-cost deposits forces higher interest rates or promotional costs to retain sticky balances.",
+        "cost_effect": "Operating costs could marginally increase due to elevated spending on client retention programs and competitive compensation for wealth management relationship managers.",
+        "competitive_effect": "Kotak Mahindra Bank gains a higher-tier affluent customer base and expanded wealth management footprint in urban centers, increasing competitive pressure on HDFC Bank's premium retail segment.",
+        "regulatory_effect": "No direct regulatory or compliance impact on HDFC Bank, as the antitrust clearance applies specifically to Kotak Mahindra Bank's acquisition.",
+        "short_term": "Minimal immediate financial impact on HDFC Bank while Kotak completes integration, though competitive rivalry for premium urban retail deposits will heighten.",
+        "medium_long_term": "Kotak may cross-sell credit cards, loans, and investment products to the newly acquired high-net-worth client base, incremental erosion risk to HDFC Bank's market share in affluent urban banking.",
+        "second_order_effects": "Intensified talent poaching for specialized wealth relationship managers across major private banks and possible pricing adjustments on premium banking product packages.",
+        "key_uncertainty": "The precise size, customer retention rate, and wealth management assets under management of Deutsche Bank's India retail division being integrated into Kotak.",
         "monitor_next": [
-          "Kotak Mahindra Bank's post-acquisition integration timeline and customer retention rates.",
-          "HDFC Bank's retail CASA growth and cost of deposits in urban/metro branches.",
-          "Market share shifts in Indian wealth management and premium credit card portfolios."
+          "Kotak Mahindra Bank's post-acquisition deposit growth and wealth management AUM figures",
+          "HDFC Bank's retail deposit growth rates and CASA ratio trends in upcoming quarterly results",
+          "Customer attrition or retention rates among legacy Deutsche Bank India retail account holders",
+          "Talent movement among top-tier wealth management relationship managers across Indian private banks"
         ]
       }
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE"
@@ -112,13 +127,13 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Acquisition, merger or divestiture",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -126,6 +141,53 @@
         "confirmation from an official or company source"
       ],
       "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to CCI, and India. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.38,
+      "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to deposits, and India. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
       "ai_analysis": null
     }
   },
@@ -139,16 +201,26 @@
       "published": "2026-11-03T13:42:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CCI approves Kotak Mahindra Bank's acquisition of Deutsche Bank's India retail banking business",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/cci-approves-kotak-mahindra-banks-acquisition-of-deutsche-banks-india-retail-banking-business/135505777",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-03T15:59:29+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Economic Times",
   "cluster_key": "ASHOKA+HDFCBANK|ACQUISITION|acquire-approve-bank-cci-kotak-mahindra",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:42:17.484576+00:00",
-  "last_updated": "2026-11-03T14:47:47.673854+00:00",
+  "last_updated": "2026-11-03T20:18:39.201840+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:42:17.484657+00:00",
@@ -159,6 +231,26 @@
       "timestamp": "2026-11-03T14:47:47.673838+00:00",
       "change": "ai analysis",
       "detail": "HDFCBANK via gemini"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:39.201806+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:39.201823+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:39.201829+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 6 -> 7"
+    },
+    {
+      "timestamp": "2026-11-03T20:18:39.201836+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 2 -> 3"
     }
   ],
   "price_reaction": {}
