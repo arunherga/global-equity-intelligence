@@ -9,51 +9,51 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
-        "CUSTOMERS"
+        "REVENUE"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "state governments",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role; in headline"
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from state governments"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to state governments. The parts of the business most likely touched are revenue, customers. Classified as contract win.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Road Transport and Highways. The parts of the business most likely touched are revenue. Classified as contract win.",
       "ai_analysis": null
     },
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE"
       ],
@@ -65,39 +65,61 @@
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to highway construction. The parts of the business most likely touched are revenue. Classified as contract win.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to highway construction, and Ministry of Road Transport and Highways. The parts of the business most likely touched are revenue. Classified as contract win.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.45,
       "business_impacts": [
-        "REVENUE"
+        "REVENUE",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "highway construction",
@@ -107,22 +129,23 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (Ministry of Road Transport and Highways)",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from Ministry of Road Transport and Highways"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to highway construction. The parts of the business most likely touched are revenue. Classified as contract win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to Ministry of Road Transport and Highways, and Ministry of Road Transport and Highways. The parts of the business most likely touched are revenue, customers. Classified as contract win.",
       "ai_analysis": null
     }
   },
@@ -156,16 +179,26 @@
       "published": "2026-11-03T14:37:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Road ministry signs MoU with Bihar to use river silt for national highways construction",
+      "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/road-ministry-signs-mou-with-bihar-to-use-river-silt-for-national-highways-construction/135519973",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-04T03:01:02+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 3,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "ETV Bharat",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|CONTRACT_WIN|bihar-morth-mou-pioneering-sign-use",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:41:08.947639+00:00",
-  "last_updated": "2026-11-03T20:19:01.855606+00:00",
+  "last_updated": "2026-11-04T14:59:17.740373+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:41:08.947728+00:00",
@@ -176,6 +209,26 @@
       "timestamp": "2026-11-03T20:19:01.855591+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:17.740339+00:00",
+      "change": "sources added",
+      "detail": "ETInfra"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:17.740358+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:17.740364+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:17.740369+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 7"
     }
   ],
   "price_reaction": {}

@@ -5,24 +5,33 @@
   "event_date": "2026-10-21",
   "event_types": [
     "OTHER",
-    "INDUSTRY_DEMAND"
+    "INDUSTRY_DEMAND",
+    "COMMODITY"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
           "term": "ferrous scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
@@ -37,10 +46,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ferrous scrap is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,9 +58,112 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ferrous scrap over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to ferrous scrap, and India. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to ferrous scrap, and steel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -124,16 +237,26 @@
       "published": "2026-11-03T13:46:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India: BigMint's ferrous scrap index rises INR 250/t as steel prices strengthen",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZDNST09ELWlEUmJfSG1pbEdjOWRYRm9nNXVqbjBKQ3h4N1NTNjNyNGxJNjREcFlvbEw2V2t1RHJPdm1CMjJTNFdPZHh3OGRPeVQwVDduRFh6MUUyaWFqUWkxUFg4bnA0cndVTXFFMXdmaVNfdjZkSHBYLVFiMDFBVmhxVGd3QV9taEE2R3FBQzk4VXhoaDdiLUtiSkdfaXB6dm1XQTNLZzVZdUhwVXpvOS1RMXV1VkpIeTNBQzJwVUhOZw",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T12:42:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "MSTCLTD|OTHER|bigmint-eases-ferrous-index-india-scrap",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:13:26.852402+00:00",
-  "last_updated": "2026-11-03T14:50:10.642253+00:00",
+  "last_updated": "2026-11-04T15:01:22.877163+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:13:26.852458+00:00",
@@ -174,6 +297,31 @@
       "timestamp": "2026-11-03T14:50:10.642236+00:00",
       "change": "sources added",
       "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:22.877124+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:22.877141+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:22.877149+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:22.877155+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:22.877159+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

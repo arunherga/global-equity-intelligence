@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -135,16 +135,26 @@
       "published": "2026-11-02T10:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank climbs Wednesday, outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUGdtM0VUMEhodTlBRDllSUlVUE5DTXQxNmdiVkR6bzZWTHh3cjN2Vi1tMVcxMlUtWkRETENMZWM2MENmU2wzOFdad0xkamVSSDBwcklTSk4tNVk4SVQwNzk2aE94aXBqYm5UMDRYZl9xZkdRN1RhSUxpbWVBUXFva05RVWFOSFBGa040NTNQT2VUcjB4VXFsQ0lnU2NkSVdyX2FXQWZYS1dRSzFiVHJQdmFmUUZqMGpGWDRyZlVyYnc",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "MarketWatch",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-fall-hdfc-market-underperforms-wednesday",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:12:37.674924+00:00",
-  "last_updated": "2026-11-02T22:37:59.286955+00:00",
+  "last_updated": "2026-11-04T15:01:03.250269+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:12:37.674971+00:00",
@@ -180,6 +190,16 @@
       "timestamp": "2026-11-02T22:37:59.286949+00:00",
       "change": "direction changed",
       "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:03.250244+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:03.250262+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

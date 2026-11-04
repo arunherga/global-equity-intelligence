@@ -4,20 +4,23 @@
   "summary": "Salesforce to buy voice-AI startup Cresta for $2.7B Dealroom",
   "event_date": "2026-11-03",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
+        "PRODUCT",
+        "COMPETITION",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -36,11 +39,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
+        "+3 Development at a known counterparty (Salesforce)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +53,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are product, competition, supply. Classified as technology.",
       "ai_analysis": null
     }
   },
@@ -84,16 +87,26 @@
       "published": "2026-11-03T16:09:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce to buy customer service automation startup Cresta for reported $2.7B",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWmU4akY3b1M2RWhvLUphLUM1TVc5bmU0WFozald1anQ5ZWo2Z3RvQ1hseU15T2V5U1drS0hjUm91bXhXYzE0cGtzcHFnVWkyVldUUGlXOU9YUjZhR21KVkg0TW1uQlN0UDhXQlFDaDE4OUhRbW1pbUkzUmFaVFlHeUF2YUY0a3dfc0FDa0V0TzFiWHNESmtpNExSbmMzb3h4Zzd2SjVNRlBIdl83VnJLdGZOTlFLZw",
+      "source_name": "SiliconANGLE",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T21:20:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Dealroom",
   "cluster_key": "KSOLVES|OTHER|2.7b-buy-cresta-salesforce-startup-voice-ai",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-03T14:37:00.280859+00:00",
-  "last_updated": "2026-11-03T20:19:15.068415+00:00",
+  "last_updated": "2026-11-04T14:59:37.737584+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:37:00.280929+00:00",
@@ -114,6 +127,21 @@
       "timestamp": "2026-11-03T20:19:15.068409+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:37.737556+00:00",
+      "change": "sources added",
+      "detail": "SiliconANGLE"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:37.737572+00:00",
+      "change": "categories added",
+      "detail": "TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:37.737579+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 3"
     }
   ],
   "price_reaction": {}

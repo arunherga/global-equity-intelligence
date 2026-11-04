@@ -10,12 +10,13 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.55,
+      "confidence": 0.41,
       "business_impacts": [
-        "CUSTOMERS"
+        "CUSTOMERS",
+        "EXPORTS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -25,24 +26,33 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Africa",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-1 Single source, unconfirmed"
+        "+2 International market development",
+        "+2 Names a key geography for this company",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Adani, and Africa. The parts of the business most likely touched are customers, exports. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +66,56 @@
       "published": "2026-11-03T04:15:12+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Indian billionaire Gautam Adani's group seeks $1.5 billion loan for AI data centres",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTU1Oa21RRVBQVDhNZzhjSUpuLXl4eElfOS1yTDctUFlTMHZWWHV5RXlDa3RucnlRcFBidGJPbGtWVmdVZHAwMWtTWnhERjJBeVFYMGtNbm1YQWZIRUs5SHZQRXB5SDlocEdtM3YzQVM5Z29oTkhucUcwb1dDNldOclRBQWtwUk9JSEEzUjJmSTdKSFZqQ3h4bnM4d1B2eVlrMVcwcnJ4WmFpM2xKMzEzODRDNWk5U01ocW5hZXVDeDBCeUU",
+      "source_name": "Billionaires.Africa",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-03T23:50:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Group to seek $1.5 billion for data center financing",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPazFaRW13SmxyTDd2eDdiOHdzOEx5RzlENlRNNmdtQ3NQeXNyRmJfTXp3WlBUT21USWRGRExoWDFyOU9rYXlrc3RJQzdaQ0xiLVdfUjM0TWVvVjEyQmJIMGR3c1FISjRUekk1b0VPX1FCM0VDc05SczZIbktidFROV081bk15UDBQSHFvVHFlcVBJSHdnWGtwT1VoQjhGaklqMUlsRWNSWkpMREdObzZFVW1qM2Q5d1EzMkZwd0VIR2ZLeGdJNkFyRllNWDlRNUMz0gHQAUFVX3lxTE9rMVpFbXdKbHJMN3Z4N2I4d3M4THlHOUQ2VE02Z21Dc1B5c3JGYl9NendaUFRPbVRJZEZETGhYMXI5T2theWtzdElDN1pDTGItV19SMzRNZW9WMTJCYkgwZHdzUUhKNFR6STVvRU9fUUIzRUNzTlJzNkhuS2J0VE5XTzVuTXlQMFBIcW9UcWVxUElId2dYa3BPVWhCOEZqSWoxSWxFY1JaSkxER05vNkVVbWozZDl3UTMyRnB3RUhHZkt4Z0k2QXJGWU1YOVE1QzM",
+      "source_name": "cfo.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T02:15:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Livemint Companies",
   "cluster_key": "WAAREEENER|OTHER|1.5-adani-centre-data-group-seek",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-03T14:34:49.603624+00:00",
-  "last_updated": "2026-11-03T14:34:49.603717+00:00",
+  "last_updated": "2026-11-04T14:59:59.233153+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:34:49.603706+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:42.477398+00:00",
+      "change": "sources added",
+      "detail": "Billionaires.Africa"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:42.477417+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 4"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:59.233136+00:00",
+      "change": "sources added",
+      "detail": "cfo.economictimes.indiatimes.com"
     }
   ],
   "price_reaction": {}

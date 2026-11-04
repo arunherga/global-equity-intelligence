@@ -10,16 +10,15 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -32,27 +31,24 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (silver) is the subject of the headline",
-        "+2 International market development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
       "ai_analysis": null
     },
     "TMB": {
@@ -113,21 +109,41 @@
       "published": "2026-10-23T05:39:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MCX gold prices at Rs 1.39 lakh/10 gram; silver tanks Rs 2,000/kg as US jobs data fuels rate hike bets. Ke",
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNdE9TT3lIR3BPNFFxNlRrUWNzeW5aRklWTDFPTDg1dVZaZTFFSEw1dGVlMXZaYlVNVFlhbFZDcGktSFhEU2pzdWRUV2Z1eHg0QWM3bWlZTURzT3FQaTJYUTdXclh1bm5Lb3RKSDZva0lrelI3Qkx2dGVFZlcxQ2JTMXBXbEgwNlFDYnNjOUt4SXlmT0FFNkEwLUhNeUVfcmJEOE5nRkFnLU5WUElkZjJEaTFpTFhvWDlUS0t2cEtQNFRqYlU3VGFfQUwtcndDRlUyTFpqbXVKSkh5eHlIWm5HOGZ4RTNBMHhsVzk1ZlAwbmdWWDNqTHJQMEJ1M0FnTWFxUHI5eXd6U2EwNk84a0R2MlY2N0NtcHRWbzVqYi1LSllKQ3VwSzJJZUFieDU1emdwU1NpWjNpVWo1cDhjUGNiS0lOX1HSAcQCQVVfeXFMTXRPU095SEdwTzRRcTZUa1Fjc3luWkZJVkwxT0w4NXVWWmUxRUhMNXRlZTF2WmJVTVRZYWxWQ3BpLUhYRFNqc3VkVFdmdXh4NEFjN21pWU1Ec09xUGkyWFE3V3JYdW5uS290Skg2b2tJa3pSN0JMdnRlRWZXMUNiUzFwV2xIMDZRQ2JzYzlLeEl5Zk9BRTZBMC1ITXlFX3JiRDhOZ0ZBZy1OVlBJZGYyRGkxaUxYb1g5VEtLdnBLUDRUamJVN1RhX0FMLXJ3Q0ZVMkxaam11SkpIeXh5SFpuRzhmeEUzQTB4bFc5NWZQMG5nVlgzakxyUDBCdTNBZ01hcVByOXl3elNhMDZPOGtEdjJWNjdDbXB0Vm81amItS0pZSkN1cEsySWVBYng1NXpncFNTaVozaVVqNXA4Y1BjYktJTl9R",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T04:12:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB+WAAREEENER|COMMODITY+INTEREST_RATE|500/10g-fall-fall-gold-price-silver",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-23T12:00:49.452448+00:00",
-  "last_updated": "2026-10-23T12:00:49.452567+00:00",
+  "last_updated": "2026-11-04T15:00:11.968081+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:00:49.452555+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T15:00:11.968056+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-04T15:00:11.968074+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

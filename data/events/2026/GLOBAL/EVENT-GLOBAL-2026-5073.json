@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +85,41 @@
       "published": "2026-10-31T02:46:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Ltd. Technical Momentum Shifts Amid Mixed Market Signals",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQ2NaQWpPcVZIVGdFMk1CN0IxNVJzTWxFSVAwWUFzdDZaRGhRREZBYnk5SXA3RWlwM0tKckIya29XQ05IZWJ5VGVScXFSN0tBMlhjSXFjY2huQzlHejdEWGpSbVpFblA2MWk3LXUtTkM0S09rWEdrRll1Y2JPQmFIajNsc3VuYzA4em1zemJkYWY0aFlQbS14ZExxbFRzbmoxX2JTUE9KR3lFVzFiWDFiOTN4d2VSNTBCd25aUm9PeHY",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T04:30:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-icici-ltd.-momentum-shifts-technical",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T12:51:47.855234+00:00",
-  "last_updated": "2026-10-31T12:51:47.855273+00:00",
+  "last_updated": "2026-11-04T15:00:14.624128+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:51:47.855269+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T15:00:14.624104+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-04T15:00:14.624122+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -4,19 +4,22 @@
   "summary": "Q3 Earnings: Andy Jassy on why AWS growth keeps accelerating About Amazon",
   "event_date": "2026-10-30",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "COMMODITY"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "PRICING",
+        "INPUT_COST",
         "SUPPLY"
       ],
       "time_horizon": "IMMEDIATE",
@@ -33,7 +36,6 @@
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
         "+2 International market development",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +52,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to AWS. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to AWS. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -64,21 +66,46 @@
       "published": "2026-10-30T16:37:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Andy Jassy’s AWS Grows at the Fastest Rate in 5 Years, Yet Amazon Stock Falls After Earnings. Blame the Spending.",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPaFpOSlRhM0Y1S0l1c3h0RlhsYTFPMlpWYmx0RXlHaF9HcHdwWVRMa29PZmFCbFppV1cyQ004MmlJVnBHUHAwa3ctd3NOQVpBTnY4Q2hrM2xJQ3pMZ3dDWndtM29hRnBHMC1iVU1ReklxT2JHUW9qYklIcmFRZkFwYlhVV3NHc1A1TjY2a3VhYUpIRmR2cFBlWl9vYzdZbmVYeUNtUUp6TVIxMElQeUtPZTdfNEdKWGFsd2RmUWdhc3Ryb2c1SC1faHF6ci1tWWJpaEcwUGF4T1pfc2V5U1ZzSUE2cE9KT1Jl",
+      "source_name": "Barchart.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T14:00:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "About Amazon",
   "cluster_key": "KSOLVES|EARNINGS|andy-aws-earning-jassy-keeps-rise",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-31T12:50:43.309159+00:00",
-  "last_updated": "2026-10-31T12:50:43.309217+00:00",
+  "last_updated": "2026-11-04T15:01:33.657053+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:50:43.309209+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:33.657026+00:00",
+      "change": "sources added",
+      "detail": "Barchart.com"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:33.657042+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:33.657049+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 3 -> 5"
     }
   ],
   "price_reaction": {}

@@ -10,19 +10,19 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "ALMM",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
@@ -33,36 +33,30 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "INDUSTRY",
-          "term": "ALMM",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "TECHNOLOGY",
-          "term": "TOPCon",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its product, regulation exposure to ALMM, and solar cells. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to cell manufacturing, and solar cells. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -166,16 +160,46 @@
       "published": "2026-11-02T06:50:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Avaada Electro Achieves Major Milestone with 7.1 GW of ALMM-Enlisted TOPCon Solar Cell Manufacturing Capacity",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVlBCWHVPVGg0TF90R1pnTjNLM0V5ZkM1ZEl6RXBGYTNCS1dFTmtMSXNhWkVweWYtc1NVNTVqQVhrc0I1bk5SbkxtLWlyQmlIMmZDVF9lWW85X0kxMUpjb3lfOHBhUXk0WFd0bk42SHJUZ2p1NXI5WjVadmhGTktWZFhNZmdOZE9WQU5DbTFkeTFTSF9wVVVKWVNxX3hUeEpDRmtDaEloZHhhX3VkOWhiWG8wU3F5dWo1YVh0SFNDMHJtVUlEZ24zSThLaEpGVFFVT3pOdHJjLWNGR2xxcFhyVDlnTHloaFhU",
+      "source_name": "The Malaysian Reserve",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T03:34:08+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Avaada Electro Gets 7.117 GW of TOPCon Solar Cell Capacity Enlisted on ALMM",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX0JnQXR0UnZ3YWU5aUNMX0FIc1g3Y051dF9uX1dTeUgyUTJSemk3T1R5X0ZLYzJObmVWalZhMFBjMWszUVFma2VaNGw2T0NCTkhpenhqVEpqbEdVdG15N251cndWT3BaZlJEN080Y3I0aHhTLXlmaTU4SENjZFlISVdwcUNIWWNJS2Z0endLQ1d0RWVlMXZ5eHFBaGZFX2ZYX0E",
+      "source_name": "energynews.pro",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T12:02:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Avaada Electro secures 7.1GW solar cell manufacturing milestone in India",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRkw5OW9tX3hJczc3N1gyV3J4WncxakRlUmVrNmdkemtFOEhjTEFVRlhPNVlOd3BYeUlncWRMaERhWDg2S0VOWWZ3U0luUXV4bV9VY3VyczdfUWRWSVpXbUE5UDVpTV8zR00zQm03N2c2dTlCaERtRDk5Wi15MFhyNkhDcUpFbjFuN2xTc1k1YjRFb2ZlUWxVN0JhNjBMMUdnek84RW5sN2FEOFZuWE1ORktMTVlJa1pqQ21vRHVyY2Qwck0",
+      "source_name": "Northumberland Gazette",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T12:54:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 10,
+  "article_count": 13,
   "source_count": 1,
   "primary_source": "Machine Maker",
   "cluster_key": "WAAREEENER|OTHER|7.1-almm-avaada-electro-enlistment-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:21:46.664195+00:00",
-  "last_updated": "2026-11-02T22:37:19.208973+00:00",
+  "last_updated": "2026-11-04T15:01:25.642502+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:21:46.664283+00:00",
@@ -196,6 +220,26 @@
       "timestamp": "2026-11-02T22:37:19.208967+00:00",
       "change": "categories added",
       "detail": "NEW_PRODUCT"
+    },
+    {
+      "timestamp": "2026-11-04T15:00:05.716596+00:00",
+      "change": "sources added",
+      "detail": "The Malaysian Reserve"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:17.443763+00:00",
+      "change": "sources added",
+      "detail": "energynews.pro"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:25.642477+00:00",
+      "change": "sources added",
+      "detail": "Northumberland Gazette"
+    },
+    {
+      "timestamp": "2026-11-04T15:01:25.642496+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

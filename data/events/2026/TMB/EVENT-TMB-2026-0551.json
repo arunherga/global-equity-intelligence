@@ -57,16 +57,15 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -77,25 +76,22 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -279,16 +275,96 @@
       "published": "2026-11-03T09:33:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Today: Mumbai, Delhi, Kolkata, Chennai",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVTNkRUhVb1UwX09tbk5sblpSa3lmNGtnQnVSaUdTTUtic1k4QjVvT0NIQ1JMWGpOX3h0eUZfRHN3bndpdHNhUFZXdTJFZ3dCcm4zcWFrb0pNd0EwdGlsVEF5cTVZVTdaeGtQVWtrQV9GUHg4U21WMGpyd3htejNwandwNTN6UFZSS1VJc253",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T06:10:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today November 4: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQaW5DaGtpekEydEFpSS1yWHNfMldReFNmTTBzZzZMbXNnaUdxWUo2QjNsaDRVSGZWbEhiMXJGek9JZERrdTFDU3FzV096QkxmNlJyb3poWmtqYktvaE5WNW9uYjQwN0JRTnNEVGY0OWlmQUluaUVXWDVUcVFmcklYUTdkNElsZ3Z2WldRRExLUEI1U0RjT3hBT184c3lwYlBPQU1ydm9rOFRWUVdQb0cwLUVOal96eWdGQ01DTmlrMXRKX1hIRjdscm90UzQ2TWJ3dzBXVU5aSHVWdmFWdGlKYUJnTTdBU2UzRGJDc2dnTUFkc1M0TW94VFRSVExHRHhjb2E0ZXlmNjJTeHN0ZmZZMmI1NUnSAZsCQVVfeXFMT0VLX3JBZUV4NXliTDRlUjloUDRZdGNFZUhTdnRKb0xyalNHVjlub0NSbnMyMTN3SENVOWY1OG9xVk1Va05WNlBkN3l0b0hFT2xBYVhNVzRJUk1EVFJ2OEJxdGdxZHk4bWtHc0k3SFRTRmU1UHQ2ZmVPemtzOGhEWko5TXhWTndEQXJKYTdlR1Z6eUEwa3dwa05HRGVpUk1IQThielZGdHlucTZFRzdvQW5uLVM4WFA5VHJocW9pNXlSUkwzTzBsX1gyZDgzenVPYmJVNGVjczB3cEJwbjYxeWZSNUlqM3dLLTZsemlHTmxQRF90cHVjOTh2eXc4cFNjWmtkXzJfT2V5MnpaMVNOWXc4SnhsMDZNRDJUdw",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today: Check 24K, 22K Gold Prices In Mumbai, Delhi, Chennai, Kolkata, Bengaluru On November 4",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRE85RjhxQW1FM0VaMW9EbU9kc3RBY2poZy1Hc1J3NUg2QnhxSnVLOV9IZi1BU0hfZWVudHBQMHFtcms1bGRsNVRuUVNsQmZUT3dsNm1neF9Hamw0TkY5VTNZYWxUbWFlM3pmaDdsUUhiejdFQnNvSE55Rl9fXzQyYWp6V2VXQjdWa0l3TlpuQlcxSzNJd185MHdKRzJNTGJoSEtPRlBiVFFkOFk1ZTBKTmRraDcyVDliT1F3a0ZHWTVXbDJ1N0x4Y3BTbk80Z0kxa0JmM055MmbSAeABQVVfeXFMUEZadk9wVUpuYnVyZmg2LThsa19ONkRzSFBFOXFMMnhPcGxvVVh4Q2pCTEF4Q3Q2UE5pR3BxenJMZmZ6Tk5VRHVKb1ZvN3AzQ0NGRzR4RTRwNUE4alhUbWJuMFZkTmt0OXNYVWFEeVh4eFBWQzVhMGY1YUE3OUtrR05VX3hFOVZUMjdLZ25rakFJS3kxdTBqUFdoaW1DT2kzZjg1RE1sTlpfNjQ0Y3d1SzVJTkxTZnVaWU1Vbm1zMTN6SUwzM0pUVWJhVk8tQTdDNlF5bDRva0tXanFjUGdmZXc",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T01:25:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in Kolkata today - Gold rate today (November 4, 2026): Check 24k, 22k, 20k, 18k gold jewellery prices from Malabar Gold & Diamonds, Kalyan Jewellers, Tanishq & IBJA in Delhi, Mumbai, Hyderabad & more cities",
+      "url": "https://news.google.com/rss/articles/CBMiiANBVV95cUxNNmFQRWVWTkEyamVJV0dFa09IRUVWVWp3MkFKRkR1ejJZV0RjS3lpQ0l5akxDenRLcTVDd1EwYUllNzN3UXZWRUtFYzVRcGNUMmR4U1hlcWdJc2NiWHlibW1LTnZGSlhSY042TGlGcTlrcE85blpGc3ROaEpzR3NSYThSUzRSa0lqQ0xEZUxHTUhBNEJjcGNBM2hlWjdYVkVtVzhIZWVjMXdJRWREUnM3azBKWDQwS1RlLTBsM3hwUEZsc250T2tYVW1qUkNWcU5UWDZDakhtbDAzbVlZRmZ5UG90cU1sNFBzQWxDVkVaLVFPWW9tQnZ5OVdPVnZNaGlRUUQxd3dTTUNseVlfYlRuTzdNS3I5TjRoLVMzTDRGaGdDZm5GWTB1NDBVSTg4Rk5WQlJZWjV3aGhEaVR6Vm1MRXd0ekFJX2swY1JyZ1FleUQxNkw1Q1BmS1BqWm1BNERCS204TV96eFRjdDRJb01ZWnlHY2VxcDJTMEVoRmhOVWNQbFVuZW5heQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T11:24:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver price today, November 4: Check rates of 24K, 22K gold in Delhi, Mumbai, Kolkata other cities",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQSGNaakxVMnNnU1hkUExsX3RzQ2xQdG92WDdwMVVDTFA2RzlLNl95cDgxcTh3MExfV3N2Vk1Qb1hSbVRoY2Q0S0ZlRW5fcWJGS2t2YXNVRGZDRTlOcmljY3F6QnlUaGVwOWpvU04tc0VhZnU3M2hFSVEyaFh2QXdNZHBwQnB4S3lrTWF5bElWTVBnOXNyNGxkNk5SYmNIclRoX0tfWDNsVkdSdEtxNlBfZEZLYmdydU5iYUNtTjlGa0dNQXVoVUY4SFRya1QyNDJDMXNXVktxa3JNaENHNzBXeEotY2NNZ1czeHdNX3dBRTNjWENjeGI5T3hMdV9lOXhoMllEMjFVcHk",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T01:54:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver rates today (November 4, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IBJ",
+      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQNU1jSE9oOWIxQXVjOUQ3RzVuUkd0d1hNbDdDOGM5cW9xdE1PeVBtSmw1SFBPVEQ3MWM4dVBlbjJzVUQ2U2JsX201UVU2bzZwM0NYOHdfXzJUY0RLRlk3cnFvYl84cWlOTEZDZGo3Q1Z3dktnQTJoaGdhRGhzTU5kemJQSndLdGdyVWZiR0J0X1dLMGJsX3FYTUE3Sjg0bTdkbENidUo4aWFSRkFueWJxTlVqd2g1VTZ4UFg5U3NmTXpaNmM3M3ZsSmxLY3lNQzNDUVdFalFhWHJlWnBYYmhubWxGVm1VandsbzF2S2hzd3FLYVozU18tMVA1QkJNU0Jrb29yTDVoMXhxelVvSk5lWlJTRU1UVFp1TzV0SWZxT3FiaUZQb1FPeUJWN09SQzYtekdCb0w1ZHVNN2ExWlNuRjFOREVsa2RRU3dQMlZSR3nSAdYCQVVfeXFMT2JFNDcyWUY4V1RLajBLSXd1cFpLVWVQLWtKU0FFaFVZY002NV9NMWhoMTBYYmFjQU94WGM0RkJNLVRydmNtTnJCQTdZZVlFTGViLTdXd3BHUUlJVHNnQXQ3blBTeGFXTGJFSWlNeHVvcUFsd29sOHYySWY0ZHZYOUhMQUExSjh4cXJyNTRGeE1odmEyWVFmU0pjMHZsRVl3ZXEzdmYxYnJrOWUtVjc5ZldwQmZEVUlVUEFERHk2TGt5QXJIRDFyZnFMUC1obFVLMk5kN0FaUGxKMDFqYnhkcWhMS0p4cHc0c3k4ZXVkVmNmdlJBbm53Z0lOOXpRdzh4NUxURzE1TFZNb1RldjFLNUpkRmprOThJeG11eWc2cndNTDcxVnhSRG9NNVlPSUhkTC0yYjNrMjVLRGV5SmI2S2xETnJqeUtUNEFfaVJ2UWw3Rm9jeTJB",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T09:10:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 4 Nov: Check 24K, 22K gold, 999 silver rates in Delhi, Mumbai, Kolkata ahead of Dhanteras",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOdUFuOF9BWWdISXZrdVhBTXRkRDJ4dDFGa1NWdjh2dFpYMHRBbnBaTVBGMEtwOHMzYmxjYXBuZGxUTm1yamg4NU1QYlNKT19PRVM0NmxCbThLd1NKM0tGS2JEVjVyV2NRYzc3Z2txMmJsMjMzS1R3LWNnYXVkYmJ1aTh2dzBzTmRBeUlnanBCbktiYUp5UF84UjhlSzF6ajN5RnFQZXpHWkVBUDV0UWREUnhzOGlzZUJ6RWRhdzlQQWxhSHNJR3VuUGQxU1loNXRleGVzeC1ySTVVaVFsaFA2YlFYYUhUbXNMUVMtQ0hGdWtRQUhza3Z1NWhQSUdERDRLa29Lc0lXZEPSAY4CQVVfeXFMT3dSVnZhRVAzOWNIRVBfUnNnYWtTVUxvRGRvckFrRzU2dnNxZndrOW5sWUlVS0M5dWxHdzd3bVZqZ3c1ZEhVRmYtSkd1dVZPWFQtR0ozVGY5el9rWktHbDlfTDlhTm9LUzRRVGNkSExLMzROZ1NBa2stS2R1TUIyRzA0X3FTNURXaGNRbmFDQ2R0LUE5SFJhRlN3Y0x2OTlwYkVDNXlWWWpfRzB6SVV6ZElGM2Fkbmt5Z3owdjBDNlJCXzJMWUlQdkJpWlR1dUdyQmM3YVFPcGtQNjh3QW0zc0x0NWFBXzBZN0pIQkplSnJLSUZhNVVUWmF5ckdOLURkMHc4VkFHZ093cGRRQTF3",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T04:05:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver rates today, November 4: Check Tanishq, Malabar gold prices; 22K, 24K rates in Coimbatore, Kolkata ahead of Dhanteras",
+      "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxOeDlaRFpRa2VBVThMRGVtN0VtRjctWi13Y0RFSVpudHo0R0YyZ252cVF4THlWWHM5WTlpVGRrNWs1ajgyazZ0V09DemRLNzV1S05BalhSeHNfdFlhb3hkNGo5QU9XYXhEU2pfaW0zQTBheUgyQVFjNGMyV0NiSnh0bmdBNU1fbEVUdjBjTUt2SFdzUVNzVTA0UUVrQVhBQzlyNTVhMXJ4OWphWmd6dWhtNDZoOEJYWjl4dlBVX3MyeFdwZ21aZE1JdVNTc0FMZno5akF1cUF5VlIySXQ0ZzJpemZhVE9UcTFYZkdJZzc0aW9lWGw4LTFzLTY2UU0xWlhndnZ5UW1YaGJGdXNpUWJTRFNlRGtlVEhMWXlrMFpmOFEtMmZCMmpWclIyZG1oVm9xTENEQVNqWmd5SjQ",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T08:54:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 18,
+  "article_count": 26,
   "source_count": 1,
   "primary_source": "INDToday",
   "cluster_key": "TMB|COMMODITY|22k-24k-gold-hyderabad-price-today",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-15T11:52:57.437311+00:00",
-  "last_updated": "2026-11-03T14:48:53.652388+00:00",
+  "last_updated": "2026-11-04T14:59:57.964337+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-15T11:52:57.437384+00:00",
@@ -339,6 +415,21 @@
       "timestamp": "2026-11-03T14:48:53.652379+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:52.775798+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, India Infoline, NDTV Profit, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:57.964312+00:00",
+      "change": "sources added",
+      "detail": "Livemint, Moneycontrol.com, The Economic Times, Upstox"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:57.964330+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

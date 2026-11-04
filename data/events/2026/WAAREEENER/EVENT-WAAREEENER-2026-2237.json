@@ -10,54 +10,44 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.13,
+      "confidence": 0.55,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "PM Surya Ghar",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "rooftop solar",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "rooftop solar systems",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-3 Speculative or unconfirmed report",
-        "-2 Single unverified source"
+        "+1 Industry-level relevance"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to rooftop solar, and rooftop solar systems. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to PM Surya Ghar, and rooftop solar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -71,21 +61,61 @@
       "published": "2026-11-03T14:04:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Govt targets 1 lakh rooftop solar installations every 4-5 days under PM Surya Ghar: Pralhad Joshi",
+      "url": "https://energy.economictimes.indiatimes.com/news/renewable/govt-targets-1-lakh-rooftop-solar-installations-every-4-5-days-under-pm-surya-ghar-pralhad-joshi/135527887",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-04T06:40:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Govt targets 1 lakh rooftop solar installations every 4-5 days under PM Surya Ghar: Pralhad Joshi",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNRzdOb1pValRydk5RSUZpN2NhMGd5VjFWUVdtUDJ6MGk1YkUyVFU0S1ltbWlkMDRfYnVGdzNXY0plWEEtSjQ3N1Z1ZWx5R1B6RjNoc3JrQkdiSUZURXBYMDJDVjdWazdQb3laSlNKNWN2ZVhpWUJaQ3dHaVl4LXJERy1HbWtIVWNzSlA3Sk5wZFdnUjNsRGY5Z3dMNUYyV1lCTG93WmNXMGVHVmRFM1VtOTF6V290eGRzZFpzdFduWXQtVE85dC1kTVBOZlcya0Y5Mm1EVEM0N1RmeG5BdEphbHhtckp5WUU0aERySUFLR0dEdnNXSEdlS9IB_gFBVV95cUxOYTR5OGVjY3paUEpzalctTWFqc0lsYVRwanVON0JNQ3QxYUZyS0FLaFlFdzdXek5KQjhzRE9lU2lDVG5XRGEzbWVVYnVnblEzUnZGUXN2b3dCbmluMHhkQy1pZWlHU3RnVUVHcTVHUXRDaFhpZ2ozdFhRbUNOZ0VDaFg5WkNydmR3aUI2OWhfazJRUXFSNHRiVmlBLXFyYXVVUVpfUzRUcy1KajNpdDVHcEs0M082MjFEcV9CdDJXTDI1QUFjR0YxWVRCMTRyVzlGWlRwSFg3NHhjMXdSVEpTeEszekNKRzR6Tl9MMUxKQTI1M0w3YllDc2ZjTk5GZw",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T06:40:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India crosses 65 lakh rooftop solar installations under PM Surya Ghar Muft Bijli Yojana in 104 days: Union Minister Pralhad Joshi | Akashvani News",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNmVhdGd1cU5VVXozbTl4NzhGMnR2SUNSVGxmTVlzNHkxUzhxU1NmN0lPc1FOdmV1SU5XYkNKbFpSdWszdGFqVUpEeE1KRWNya1pyX3RGM1lnT3FMSjNSTDk0SVcwQ2FEOGhYUjlJbWhPNTg3cnItRG9LLTJrMVQwbkdLRk9HZUQ4bzBBeTVLTEo5dHdlcjg1RUVpN1RselctdlV4ekFIbVcyaFJCWHlUcm1JN0xabkgxSUU2S18tLWxDYTZUMW0wUG9YOWNfNzJCNGJfTk5kYTFRU3dkcXB1MHFaVVVkRS1teHc",
+      "source_name": "News On AIR",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T08:39:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "Business Today",
   "cluster_key": "WAAREEENER|OTHER|india-install-rooftop-solar-soon-systems",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T20:15:52.630542+00:00",
-  "last_updated": "2026-11-03T20:15:52.630628+00:00",
+  "last_updated": "2026-11-04T14:59:19.345726+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T20:15:52.630617+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:19.345704+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld, ETEnergyWorld, News On AIR"
+    },
+    {
+      "timestamp": "2026-11-04T14:59:19.345720+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}
