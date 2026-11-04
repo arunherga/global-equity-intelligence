@@ -13,8 +13,8 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.5,
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "MANAGEMENT",
         "REGULATION",
@@ -26,21 +26,28 @@
           "exposure_type": "COMPETITOR",
           "term": "Equitas Small Finance Bank",
           "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "-2 Weak indirect connection"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "a competitor (Equitas Small Finance Bank) is doing well",
         "MANAGEMENT_CHANGE cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -50,7 +57,7 @@
         "further exits",
         "formal order or circular text"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Equitas Small Finance Bank. The parts of the business most likely touched are management, regulation, competition. Classified as management change.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Equitas Small Finance Bank, and RBI. The parts of the business most likely touched are management, regulation, competition. Classified as management change.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -168,21 +175,51 @@
       "published": "2026-11-04T04:37:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Equitas Small Finance Bank Names Interim CEO, Awaits RBI Approval",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNREI1ejBTNEw5UTJOaVZ2XzJmamxoQ2lycHBNSDZ5UGJGd1I5elI1T3NCcU9iNkg0Sm9fVG84UU1oVGFNRi1JREc4dVRjTU1pX1RHa0hJSzJXQ21zTmdLUlNZT2l5VWF1RFNmQVR0MlVUejdqZEtIcUstaHFpaHhvLWlBem5IMXA0Nl9ETmZwMW5fYWRQX1hZQkVETHdteEo2NjFWenVSZl9aMDJBV1IySGg2Q2JjQ0U",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T04:30:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Equitas Small Finance Bank names Mr. Balaji Nuthalapadi as interim CEO, pending RBI approval",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVFRKRkNOTnFPSC1VYjl5bjZObzV3X2k4Z2QtMFlRZVJycnVQblRLd0hzdFNBRzNwUEdHbEExTFlPVk0yNjFBQUJCSFYtSmtKMzMyTXlBdUhQMG9RUUZielRYajhzcTFzbV81U0d2UnBFek5MTFdfazZkR0JjS1NaR0tHazRqX1NGenVQSEc4QThyd3hSMUo4b09RVGNnWS1nTkFORThYYUd4Snp2NEoxTzROTE1jX1hnaHhVMWl5ZTFpaElTZHc",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T03:11:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 9,
   "source_count": 2,
   "primary_source": "Livemint Companies",
   "cluster_key": "HDFCBANK+TMB|MANAGEMENT_CHANGE+REGULATORY|balaji-equitas-interim-names-nuthalapadi-sfb",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:49:49.468564+00:00",
-  "last_updated": "2026-11-04T14:49:49.468681+00:00",
+  "last_updated": "2026-11-04T20:39:35.646090+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:49:49.468671+00:00",
       "change": "created",
       "detail": "7 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T20:39:35.646064+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, TipRanks"
+    },
+    {
+      "timestamp": "2026-11-04T20:39:35.646083+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

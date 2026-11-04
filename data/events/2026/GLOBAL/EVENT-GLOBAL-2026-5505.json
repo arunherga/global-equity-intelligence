@@ -54,33 +54,17 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "MIXED",
-      "confidence": 0.54,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION",
-        "CUSTOMERS"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Premier Energies",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NHPC",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "BSE",
@@ -90,19 +74,18 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "-2 Weak indirect connection",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "Positive and negative effects both present",
-        "a competitor (Premier Energies) is doing well",
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -111,7 +94,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, customer exposure to Premier Energies, and NHPC. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -161,32 +144,17 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.54,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.44,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "COMPETITION"
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Dabur",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Nykaa",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "BSE",
@@ -196,17 +164,18 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise"
+        "-2 Weak indirect connection",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "a competitor (Dabur, Nykaa) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -215,7 +184,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Dabur, and Nykaa. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -509,21 +478,46 @@
       "published": "2026-11-04T03:23:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Q2 Results Today Highlights: BSE, Apollo Hospitals, Sundaram Finance post higher profit in Q2; Biocon, Zydus Life profit declines",
+      "url": "https://www.thehindubusinessline.com/markets/q2-results-today-highights-bse-cummins-zydus-apollo-lenskart-nykaa-aurobindo-nhpc-dabur-torrent-power-biocon-sundaram-premier-energies-physicswallah-nse-sbi-results-04-november-2026/article71660621.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-04T16:35:06+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|EARNINGS|dabur-finance-nykaa-results-sundaram-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:49:58.630373+00:00",
-  "last_updated": "2026-11-04T14:49:58.630506+00:00",
+  "last_updated": "2026-11-04T20:39:29.220045+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:49:58.630495+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-04T20:39:29.220000+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-04T20:39:29.220022+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-04T20:39:29.220031+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
