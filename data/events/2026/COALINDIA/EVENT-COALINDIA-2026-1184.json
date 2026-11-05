@@ -10,7 +10,7 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
       "confidence": 0.39,
@@ -26,6 +26,13 @@
         },
         {
           "exposure_type": "GEOGRAPHY",
+          "term": "Australia",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
           "weight": 0.7,
@@ -34,6 +41,7 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,7 +55,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to coking coal, and India. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to coking coal, and Australia. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -61,21 +69,41 @@
       "published": "2026-11-04T18:11:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "[India's coking coal import dependence on Australia falls to 54%]",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUlppTThxT1hlTjJudFRRcDdhUWVhaURjUHBLNjF6UU5tZ09CZ3JIUGQwNWlyZWxSbUd3eDJIRlMxcjJ2clZ4Sm9wNTZib0dkYlZ6bDNSZjQxT3dBMmw2NHhpcnFnSlgzMkdoNVFmd3I3cm1CNU1pSFcyYzNkUUptX0ZUcUt5VjE5RjZCamh3R2prc29qa0VEY1Q3UEQ5V1hYeDhCZXJ4WWcxZw",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T02:26:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "MillenniumPost",
   "cluster_key": "COALINDIA|OTHER|australian-coal-coking-cut-dependence-india",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-04T20:38:58.249950+00:00",
-  "last_updated": "2026-11-04T20:38:58.250035+00:00",
+  "last_updated": "2026-11-05T15:02:13.145627+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:38:58.250025+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:13.145606+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:13.145623+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 1"
     }
   ],
   "price_reaction": {}

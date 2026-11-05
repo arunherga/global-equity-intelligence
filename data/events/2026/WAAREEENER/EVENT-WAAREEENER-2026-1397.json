@@ -10,57 +10,42 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.56,
+      "relationship": "SECTOR",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [
         "PRODUCT",
-        "REVENUE",
-        "COMPETITION"
+        "REVENUE"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "JinkoSolar",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "rooftop solar",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "PRODUCT",
-          "term": "solar modules",
+          "term": "PV modules",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Major industry-level development",
-        "-1 Single source, unconfirmed"
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "JinkoSolar's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to JinkoSolar, and rooftop solar. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to PV modules. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -84,16 +69,26 @@
       "published": "2026-10-27T04:05:22+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "JA unveils 510 W back-contact PV module with 25.5% efficiency",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRUtCNEltUlFxeERwU0c4dXdjdHRtZmxEbV9IZGtOWEZqYWkzbVN4OEo1bl9EcUNkRThWZlhRZUdGaXZ2Z2tDVEpRT3hldFAxWUY2Mmw0eVdqbEZ3ZFFsMENQTDMyVjlDMG1uVzlnbU81SWdKT1IyR2xURlhodlFLTzhtMGRnaEVwVHRTd280bWJmYUtaT3RQcVNhZmZoU0xySEJfc3hwaUtwVk5aT05ZekJhOEUxVDhzZ0h6clQwX09LZw",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T08:05:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "pv magazine Australia",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|510-jinkosolar-launch-module-rooftop-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-21T18:10:37.947584+00:00",
-  "last_updated": "2026-10-27T12:34:36.763288+00:00",
+  "last_updated": "2026-11-05T15:02:34.222358+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:10:37.947641+00:00",
@@ -114,6 +109,16 @@
       "timestamp": "2026-10-27T12:34:36.763284+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 1 -> 4"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:34.222334+00:00",
+      "change": "sources added",
+      "detail": "pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:34.222355+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

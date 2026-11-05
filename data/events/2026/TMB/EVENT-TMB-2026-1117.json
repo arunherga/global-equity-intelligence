@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-1117",
+  "title": "Gold Prices On Recovery Mode: Yellow Metal Rates Jump By Rs 6,600 In Two Days To Rs 1,46,100",
+  "summary": "Gold Prices On Recovery Mode: Yellow Metal Rates Jump By Rs 6,600 In Two Days To Rs 1,46,100 NDTV Profit",
+  "event_date": "2026-11-05",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold Prices On Recovery Mode: Yellow Metal Rates Jump By Rs 6,600 In Two Days To Rs 1,46,100",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOZUF2cjNCazZlb2FaWkpoVlhLZFBFNkt0cnJublZZZ1ZDalpfdnllRmUyN3BHbFlfUlhMYlAwUVo5R1RwdEdxRXBFRl9YTHRHazZwRWRlSTJMLWl5d2MxY256U0ZoNmpFeDgyUk9mSXdpcW9MblRoaUlIOEtOeURaNi1wanFTbkxxTWtHYnh2azREQ0F3NkVZTFhqYm5vR19oS0UwZ29VV3R0RkZXcmg1dWE1VFhNYVh6S0xIa0Y5ZWc0a0RNTjduZUpxelRaNzM20gHYAUFVX3lxTE5NQkV1SjIyMl82c2ZKaFppd1F6UjZfSDQ1WWNQVkdGc1Y5V0JFVUV2eEtUWGx4a0xsT3huR3VkUV9xUHkycUozYy1VUWxzX1pPQjBJbEw0cHM0bWowTnlYdnZIcU1kemhVQW0yOFVUQWtWSFJ6Nk9hcG5rN2hEaGtVOXNIWFA4UzZqZmFsZnRSbGRFaC04OS13Y1lveDZQVVZFTUhKRno5RVN5VlBxZlhtMjd1YVBrTlg3bHFzYzgzNnpSYy1CUlBYOGV6V3E3WVE5emFCb2pxWQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T06:51:28+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "NDTV Profit",
+  "cluster_key": "TMB|COMMODITY|gold-metal-mode-price-recovery-yellow",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-05T14:56:03.608085+00:00",
+  "last_updated": "2026-11-05T14:56:03.608163+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-05T14:56:03.608153+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -47,26 +47,25 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [
-        "SUPPLY"
-      ],
+      "confidence": 0.51,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "SUPPLIER",
-          "term": "Indian Railways",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +73,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "supply terms from Indian Railways"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Indian Railways. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -172,16 +171,26 @@
       "published": "2026-10-28T07:14:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India records all-time high coal supplies in October FY27",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMUl4WW1uQ3duUXQzYjJ3bnhLWnl0MlBvWUJtQklTV2VCamhnWGxZZldUN2V1VFMxVkZLd3JkejI0ZkdQVUhpcmJkQnl4VWEyb1hKYUFQc3JhQmcxVlA0UGtubVBuckQxa2JBRWJkTmFRYWlxS2YwSkt4Z3VHZTFTaGFUc0pWSFo1R1hoc1F6TnRiMXQzVGZMY2hkZW13Y3c0eG4yS3dn",
+      "source_name": "World Coal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T12:06:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Pragativadi",
   "cluster_key": "ASHOKA+COALINDIA+MSTCLTD|OTHER|all-time-coal-high-india-railways-sets",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:15:40.848491+00:00",
-  "last_updated": "2026-10-28T13:21:51.515497+00:00",
+  "last_updated": "2026-11-05T15:03:01.007710+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:15:40.848565+00:00",
@@ -197,6 +206,16 @@
       "timestamp": "2026-10-28T13:21:51.515475+00:00",
       "change": "sources added",
       "detail": "Construction World India"
+    },
+    {
+      "timestamp": "2026-11-05T15:03:01.007687+00:00",
+      "change": "sources added",
+      "detail": "World Coal"
+    },
+    {
+      "timestamp": "2026-11-05T15:03:01.007706+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

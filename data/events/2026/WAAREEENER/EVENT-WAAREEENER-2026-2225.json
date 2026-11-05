@@ -9,40 +9,41 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "INPUT_COST"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.18,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMMODITY",
-          "term": "silicon wafer",
-          "relationship": "INDIRECT",
-          "weight": 3.0,
-          "detail": "input commodity; in headline"
+          "exposure_type": "PRODUCT",
+          "term": "solar panels",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "sector relationship",
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
-        "silicon wafer over the next few weeks"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silicon wafer. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +57,41 @@
       "published": "2026-11-03T11:23:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar Panel Manufacturing Plant Setup Cost 2026: Business Plan, Feasibility Study Report & Profitability Analysis",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPN1hCTTVBSl9hbFRkTkhPMm1qMXJzNzRramVHbEhiTFUzbU9GV2M2T3NxbVRnMXdYdVMyOU02MG9DR0tVaW85YzFjbTVkX00tLUNUVjRzS3pNMEdJTERIdmZBSndOWkota2ZZZEVMcWNsNlJNbEJVRG1qRUQwbWN4Y3RfMTdGSkdrT0ctQ3FMRkk0OXlPRlprbXdzeGpvQQ",
+      "source_name": "openPR.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T07:41:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "openPR.com",
   "cluster_key": "WAAREEENER|OTHER|cost-manufacturing-plant-setup-silicon-wafer",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:41:07.369862+00:00",
-  "last_updated": "2026-11-03T14:41:07.369945+00:00",
+  "last_updated": "2026-11-05T15:02:33.517089+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:41:07.369935+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:33.517065+00:00",
+      "change": "sources added",
+      "detail": "openPR.com"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:33.517086+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

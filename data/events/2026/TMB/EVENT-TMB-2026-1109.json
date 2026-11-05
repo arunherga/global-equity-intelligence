@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-1109",
+  "title": "Dhanteras 2026: Gold prices fall over 30% from peak, remain 10% higher than last Dhanteras",
+  "summary": "Despite a correction from January's record highs, gold has delivered nearly 10% returns since last Dhanteras and grown over 4.6 times in a decade.",
+  "event_date": "2026-11-05",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Dhanteras 2026: Gold prices fall over 30% from peak, remain 10% higher than last Dhanteras",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/dhanteras-2026-gold-prices-fall-over-30-from-peak-remain-10-higher-than-last-dhanteras/135565014",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-05T08:11:20+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "TMB|COMMODITY|2026-30%-dhanteras-fall-gold-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-05T14:53:55.628018+00:00",
+  "last_updated": "2026-11-05T14:53:55.628084+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-05T14:53:55.628072+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

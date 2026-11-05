@@ -47,6 +47,55 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are demand, pricing. Classified as industry demand.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.26,
+      "business_impacts": [
+        "DEMAND",
+        "COMPETITION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "GeM",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "GeM's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to GeM, and India. The parts of the business most likely touched are demand, competition. Classified as industry demand.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -59,21 +108,41 @@
       "published": "2026-11-04T13:43:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price correction to lift Dhanteras sentiment, but sales volumes likely to remain flat: Jewellers",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/gold-price-correction-to-lift-dhanteras-sentiment-but-sales-volumes-likely-to-remain-flat-jewellers/135556473",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-05T02:42:17+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "TradingView",
   "cluster_key": "TMB|INDUSTRY_DEMAND|correction-dhanteras-gold-lift-price-sentiment",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:57:32.291063+00:00",
-  "last_updated": "2026-11-04T14:57:32.291157+00:00",
+  "last_updated": "2026-11-05T15:01:54.236737+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:57:32.291146+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T15:01:54.236715+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-11-05T15:01:54.236732+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
     }
   ],
   "price_reaction": {}

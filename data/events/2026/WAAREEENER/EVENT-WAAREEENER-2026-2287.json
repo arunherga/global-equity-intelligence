@@ -4,51 +4,57 @@
   "summary": "Cabinet clears ₹14,500 cr funding scheme for battery energy storage systems Business Standard",
   "event_date": "2026-11-04",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "GOVERNMENT_POLICY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.49,
+      "business_impacts": [
+        "REGULATION",
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
         },
         {
           "exposure_type": "TECHNOLOGY",
           "term": "battery energy storage system",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": "in headline"
+          "weight": 1.0,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+3 Government policy or tender development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "notification text and timelines",
+        "budget or allocation attached",
+        "which players qualify"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. The parts of the business most likely touched are regulation, demand. Classified as government policy.",
       "ai_analysis": null
     }
   },
@@ -62,21 +68,46 @@
       "published": "2026-11-04T10:12:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Cabinet approves INR 14,500 crore viability gap funding scheme for development of 92 GWh grid-scale energy storage systems",
+      "url": "https://www.pv-magazine-india.com/2026/11/05/cabinet-approves-inr-14500-crore-viability-gap-funding-scheme-for-development-of-92-gwh-grid-scale-energy-storage-systems",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-05T10:53:55+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Business Standard",
   "cluster_key": "WAAREEENER|OTHER|500-battery-cabinet-clears-funding-scheme",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:55:44.347611+00:00",
-  "last_updated": "2026-11-04T14:55:44.347693+00:00",
+  "last_updated": "2026-11-05T15:01:56.178303+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:55:44.347684+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T15:01:56.178278+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-05T15:01:56.178294+00:00",
+      "change": "categories added",
+      "detail": "GOVERNMENT_POLICY"
+    },
+    {
+      "timestamp": "2026-11-05T15:01:56.178300+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

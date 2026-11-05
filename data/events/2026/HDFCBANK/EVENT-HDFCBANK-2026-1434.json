@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEGATIVE",
+      "confidence": 0.41,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -27,11 +27,11 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -39,17 +39,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to HDFC Bank, and deposits. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -130,21 +130,41 @@
       "published": "2026-11-04T14:35:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank share price gains over 3% as lender gets nod to offer capital gains accounts: Details",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOajhWVWwxSzNUd1RkY0U3Vm9fOHRXSG9wWTF1MUxnNzJpYTIxemhlcEdnZW1pa01VZzk5d3ZLS09JN1FtdURuZHpiX2o1ckttbjVvR3djN3FST2VOMldYY2cxa2RWTG1FWWZ6emFLM1VEQnVyTUpRWlJVN3JZS3dCYmE2VlNYb2w4Nk9ONnNUeXFJV1RtVlJkdDc0VjFXS1lQd0hjLWYtbmg0Q0ZtZ3VNaEhTckloSFh2bUpZSmhidzBzeUZ0UEtVQUs1Vk9XWm1HZHlGb0ZzRGkwMFViYVcydnN3dkUxNEtfZDdmYmJ30gHzAUFVX3lxTFBnZ0d4eTE1Uktwbl9hQ0FXbzhLY0dnYW9pZmJoUUhEQjRWRllZMlFraHhaRUx6UUwwWjdHNUNmS1ZuMUV6Z0NDUG95aUFyN29vZWNFVzFQcHlqUTJIeFBCVVJHa0VpN1EtUzVYeTlMbUthRDJsVU5vbHp2Z2YzLURnNVE2aG1nSkczMkRLYVF2dWVNeTV3M0piemFiOVkzZERwMFFoX3kwTndJN2R5MWtzaS0wRW1rVzE2d0t0Qmd1ak5xc2xXLXotNHl4ZTloUHlEUHNBUmNkMkxFdTFwbFludTBGOWpnT2lBUmtvSDljUkc4NA",
+      "source_name": "India TV News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T05:12:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "DeshGujarat",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-capital-hdfc-nod-offer-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T20:37:28.954034+00:00",
-  "last_updated": "2026-11-04T20:37:28.954147+00:00",
+  "last_updated": "2026-11-05T15:02:22.513183+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:37:28.954136+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:22.513155+00:00",
+      "change": "sources added",
+      "detail": "India TV News"
+    },
+    {
+      "timestamp": "2026-11-05T15:02:22.513178+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}
