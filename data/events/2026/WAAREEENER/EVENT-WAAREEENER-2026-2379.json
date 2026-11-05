@@ -10,8 +10,8 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
@@ -33,6 +33,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Adani)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -60,21 +61,41 @@
       "published": "2026-11-05T13:47:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Ports to Acquire Dutch Operator Evos in $2.88 Billion Deal",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUmVrdWJ5Um9WemsxZGFaZjBfVVBvTy1Kai0xLTJiRXJKcVEzREM2bmVNNnk0RFk3QndNdkdTWE82VnFKNDNSWTlTQnJVbjVlQmY2ZUFPUzNNYW1HTFB5QjFFckJjc0tRaktKdjVMVlc3cFV3bV8yaDF5ejhhNVRrVmY0QW1pc3FOV3NuMzRacXduRE1raWNUVWt4bWg",
+      "source_name": "Global Banking & Finance Review",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T10:26:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "WAAREEENER|ACQUISITION|acquire-adani-dutch-evos-operator-ports",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T14:58:20.347197+00:00",
-  "last_updated": "2026-11-05T14:58:20.347257+00:00",
+  "last_updated": "2026-11-05T20:50:46.676512+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:58:20.347248+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:46.676500+00:00",
+      "change": "sources added",
+      "detail": "Global Banking & Finance Review"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:46.676509+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 8"
     }
   ],
   "price_reaction": {}

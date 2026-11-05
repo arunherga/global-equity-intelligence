@@ -4,7 +4,8 @@
   "summary": "Senior citizen FD rates in November 2026: SBI, HDFC Bank, ICICI Bank, PNB, Axis Bank compared; which offers the highest interest rate? - CNBC TV18 LinkedIn",
   "event_date": "2026-11-05",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -62,27 +63,16 @@
       "relationship": "DIRECT",
       "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
-      "business_impacts": [
-        "MARGIN",
-        "DEMAND",
-        "COMPETITION"
-      ],
-      "time_horizon": "SHORT_TERM",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
           "detail": "in headline"
         }
       ],
@@ -92,7 +82,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -100,12 +90,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -129,21 +116,46 @@
       "published": "2026-11-05T13:08:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Senior citizen FD rates in November 2026: SBI vs HDFC vs ICICI - Which banks offer the highest interest on 3-year and 5-year deposits?",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPcnRqcXNqcFNWZUU0ZzNsU2FaWFp4Ri1PMEtScDQ2Q2NZSHRmYmFmcTVFMTlHcG5GUGVVQjBXWWZ0LW5WdUUxY2VuWk1jNEdkTmh5WWp6Nmh6djlIendLN0d4ZlJrdDB4NXFxT1VuZWdvRWNWRkMxcVY2Qm56ZzhuMFctU1YxOHNjd0dlclpndjRzWmZwdWVDLXlhSW9pd2EtVG5fQ1lER1lZVERZdmhCdGRQRmk1bmJMYTdYYjBIMlJSbGNacEdUQkZjU1d4SElfaVhoeUdMTHhDanVsYmowU3Jla05YVGxSVy10R1F3b1pGSzRyNzVoNGZYZWxCaGhHOFhqMDl0ZFQwOWVQWnZuSVJodWN2Q21hZkV30gGgAkFVX3lxTE9mWWJkdTdFOGJHeDFod0VFM2JITUdMMENaY1BjelZhUUxoQnlDOEpSX3ZkYnNiUlVlUkZCYVNQbExRUHdKY1c2WlVQSzhubTFNN2VtaWhORmNkZ1lkdlA0bFhHRXIxMkhqLWoyWUcwZG41anJnVEtsSm5jMlctV0dJNEtmSVloQ1dLRlBPQlpZR1JiczRrNEpZSXVrYmFScG1ZRllMcUxoOVBsZUM2OEZzajU2d1JkT3NTLXc4b1RXMzhCSlVtem9vMU9ObFdSaDZBbTJjR0RBRDJTRE5BOFVVY2tVak8tX19DRmVLNWszbktaNU5qYk56bjlSdlYyY1JuT0FBUmk0ZzBtbnFpS1llcFUxQXJlSUVfelQ2RGFyZQ",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T17:05:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "LinkedIn",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|2026-citizen-november-rate-sbi-senior",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:58:11.972827+00:00",
-  "last_updated": "2026-11-05T14:58:11.972905+00:00",
+  "last_updated": "2026-11-05T20:51:05.435311+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:58:11.972895+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-05T20:51:05.435294+00:00",
+      "change": "sources added",
+      "detail": "ET Now"
+    },
+    {
+      "timestamp": "2026-11-05T20:51:05.435304+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-05T20:51:05.435308+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

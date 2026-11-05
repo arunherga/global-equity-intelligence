@@ -11,33 +11,23 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "DIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
       "confidence": 0.4,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN"
+        "CASH_FLOW"
       ],
       "time_horizon": "IMMEDIATE",
-      "exposures": [
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "DIVIDEND is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -45,12 +35,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
       "ai_analysis": null
     }
   },
@@ -144,16 +131,26 @@
       "published": "2026-10-29T13:55:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank approves ₹12.50 dividend at AGM",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQY0dOYzFDeWtDNlJtX3JIMVBra2hZYzZub2RwREctWW9kM0pGWGZXTDNaZVdzcWdkS3QxZm9YR01pNzNUcWc1ZFhwOVFjdDB4Z0Z1SDVyUThhUEFNaVEzekowSUItb2FXak9qZnE5a05HcDdWN2dKRGhZZ0xYY1NpWGpzbXdTY0lJQjRBc1plcHhqenI1eTlOMFdkY2JaZm5RVHMtaDVRWnd1NG5rRTA0YlJn",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-04T23:38:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Tamilnad Mercantile Bank Limited investor relations",
   "cluster_key": "TMB|EARNINGS|bank-mercantile-net-profit-results-tamilnad",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T19:25:44.551256+00:00",
-  "last_updated": "2026-10-30T13:25:56.268970+00:00",
+  "last_updated": "2026-11-05T20:50:41.080808+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:25:44.551405+00:00",
@@ -189,6 +186,16 @@
       "timestamp": "2026-10-30T13:25:56.268964+00:00",
       "change": "direction changed",
       "detail": "TMB POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:41.080792+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:41.080802+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

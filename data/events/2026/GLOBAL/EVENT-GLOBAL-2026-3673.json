@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -29,15 +29,17 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
         "ICICI Bank's follow-up announcements"
@@ -50,8 +52,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -67,15 +69,17 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (ICICI Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
         "ICICI Bank's follow-up announcements"
@@ -104,16 +108,26 @@
       "published": "2026-10-29T11:22:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank (NYSE:IBN) Hits New 1-Year High - Here's Why",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVjF1dGsxZVJmT1ZlVVhmWWhsRXpwX1hIVS11eHp1ck1yOTF1SXZMekFfQkpDZ3lEcDRXV29qeVhmRXlEUFVsZ05aTjZTQjdMWHhRNVhnVmZ1R0RZMmNlOG45blk3R2o2SEQwVUFQZHBnZXVzQ1RYODdjbWRDbk9NdUxCOHRXSUd2TUZzdUl5MDR3SHl5SHVkcFQ1YzE4Sm9rMEw1aTJtNF94d0tJamNj",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T15:06:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Seeking Alpha",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-favorable-icici-performance-prospects-solid",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:44:08.628431+00:00",
-  "last_updated": "2026-10-29T13:25:34.542204+00:00",
+  "last_updated": "2026-11-05T20:50:55.933751+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:44:08.628503+00:00",
@@ -134,6 +148,21 @@
       "timestamp": "2026-10-29T13:25:34.542201+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:55.933736+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:55.933745+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:55.933749+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

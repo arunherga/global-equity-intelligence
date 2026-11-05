@@ -10,9 +10,9 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -29,11 +29,10 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -165,16 +164,26 @@
       "published": "2026-11-02T22:02:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why Gold Crashed Below $4,000 — and What the Fed’s Rate Pause Means for Gold and Silver",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNGdWcS1ESFRTbkNSNndnRkxmc3V4VjZpUjZTQlJRN3JMQ1VHZnJKYjNPNDlLa2Rndml1VUlNWTUxQUxjdHBvbVJlZFU2WXNvOW9kYlN2b3VZSnpQcUhzdzlpUkZEcGNKcHpfYzZYYnRTMmhDUkVreVNwN2NZQ1NRUzZ6SWpCMDNvRC0tcG9BYUxkM1B2ejRDdFBhY0hXbE1YMU9JYU5FbS03d0NCZU1GUHhCbXJ2ck5fNUZOd2xqS01PQU1FRGhTU1AwVERsVUky",
+      "source_name": "Medium",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T11:31:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "SD Bullion",
   "cluster_key": "WAAREEENER|OTHER|falling-fed-gold-oil-rate-silver",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-25T11:46:37.319464+00:00",
-  "last_updated": "2026-11-03T14:48:25.384737+00:00",
+  "last_updated": "2026-11-05T20:50:47.976222+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:37.319522+00:00",
@@ -230,6 +239,16 @@
       "timestamp": "2026-11-03T14:48:25.384732+00:00",
       "change": "impact raised",
       "detail": "WAAREEENER 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:47.976209+00:00",
+      "change": "sources added",
+      "detail": "Medium"
+    },
+    {
+      "timestamp": "2026-11-05T20:50:47.976219+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
