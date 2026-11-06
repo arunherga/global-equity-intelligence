@@ -9,24 +9,25 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "SUBSIDIARY",
-          "term": "HDFC Life",
-          "relationship": "INDIRECT_STRONG",
-          "weight": 3.5,
-          "detail": "group company, separately reported; in headline"
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -34,13 +35,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC Life. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -482,16 +483,36 @@
       "published": "2026-11-05T18:40:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks to buy today: Experts recommend L&T, Axis Bank, HDFC Life, Infosys and Sai Life Sciences",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRmdCOWZkbm5NT2hfd0d2cG9JUjBtTUxubDJXeWw3Qkx1S2Jra0VQQ2R3a0tsR2t3dzVxY2t4b2Z0VEw4YkpTemFBc0JBX1p2dnNBVXJvcmpZeGx3aThHUlpGbV9SdERCVW56SUw2WnBIc0JieFFrd3Y4dUJHSHEwUk12LWstOFRnZHduRkh3UnNKbXhPVVF5RlBvbGJLbjBJekFXbHpNVExTZmg1ZXdxRTV5RVZQRlRVVGtSMnU3UG8xUQ",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T03:45:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank (HDFCBANK) Share Price Today (BSE), Market News",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB3NFFLZFdDOUdaT1N2SkFCdXJSdUV6cjd5bVRYSFE2WmNvNVkzS2poUVNBQjJfdkdORU5QYWZNVkNGS19jQXNPSGVzaGFvemNVSWxFNGtaeWRMdnZIT0JwMTVB",
+      "source_name": "TechGraph",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T08:44:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "TechGraph",
   "cluster_key": "HDFCBANK|OTHER|hdfc-hdfclife-life-price-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:01:10.967330+00:00",
-  "last_updated": "2026-11-05T20:51:11.440603+00:00",
+  "last_updated": "2026-11-06T14:44:00.184455+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:01:10.967404+00:00",
@@ -552,6 +573,21 @@
       "timestamp": "2026-11-05T20:51:11.440600+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:52.716050+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:00.184423+00:00",
+      "change": "sources added",
+      "detail": "TechGraph"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:00.184446+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 5"
     }
   ],
   "price_reaction": {}

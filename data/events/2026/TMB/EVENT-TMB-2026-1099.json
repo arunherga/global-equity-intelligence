@@ -4,20 +4,22 @@
   "summary": "22, 24 carat Gold prices up across metro cities on November 4",
   "event_date": "2026-11-04",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.5,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -35,7 +37,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity"
       ],
       "direction_reasons": [
         "gold prices is handled rather than bought or sold; volume matters more than price"
@@ -47,9 +50,55 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -113,16 +162,166 @@
       "published": "2026-11-05T08:01:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India November 6: Gold prices down in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-november-6-2026/article71673484.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-06T08:13:06+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold Rate Today November 6: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPOXBYdFVmRjF2dTBkeW9DdEhaUlo2RHFIMXJwV3JTaERWTWoyclQ4TEQteWtfRnpfVXVIRVFKclZ6bFdpdXlwbkJjSFJJWjE4TjBfaTFrczNIVWpCTEJrMmxXcnh5WlI1c1lhaEF5SndPTndBbFl0SmFNQm0tS3BnMTRvazBqRHM2MFh6cEk2VzBLZXJ1OG1sZUVLb2NTVjlkWEtFWWdNYkVFbURkOU5sMHhnX1BlY0RfZFJ3WXBQc0d6N0dpODRIWVl3QkFha0FnR1htNHRjV09NNXdaYmlvM1pLbWhTRzBYeFl2TUUyaFJmRThkTEx1dUdtM1BPa1lsN0JqRDFJTkxaTFg3Tl9WQUZGdVB2ZE9yR1ZGX0NXMElIQdIBqAJBVV95cUxPcS0zc0xzRnZISWVFbWxVdmc1WDd2U0lfN05pcnJ6eDV5VkRpQlh4LWdaa3JVR3p4WUlwWkl6REl0bGhyQzRtbHFRR2o5em9YVlRIRGYwUVB2MC1tdjdocUZHek12Wl8tQjE5SzJTT1lud2NETDlNT2RhMU8yZDJJQWZ3Vk93RDI1RHNpVnVURjJpYzlwUWJrVlBmLURNdGhIazJnb1ItXy0xTTFaZnJlWDNZRGVWd1o4cWd1Ung4YkVCOG9DUHFkMzA0ZXNwV3JPMWFvdkhWUHU5djdxVlFpXzlRbS16QWgzajFmREJlMFBGYUhqZkhOajlEa2lQRThDRkVDV0Vsb1NIOXNjd2c5b1R1bVlfMnpKcGZZM090U21ocl9wb0dHWg",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India November 6: Gold prices down in Delhi, Mumbai, Kolkata, Chennai, Bengaluru",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-november-6-2026/article71673483.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-06T08:13:10+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Dhanteras Gold Price 2026: Gold Price Today, Rates & Outlook",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYU5zRERPQUk0VjZsSDJ3OUUwZVRDMVM3a05kcVpqUnUtelI5cS1UWmdydjJUb1ZJYzF1SzNPS1otOTN1bmdMSmFkNFBmdEpHdThtZFZBc1k5QmdYUXladlVEeFR1YWZVYmtqeEtZODQ3d19oVXVlWE9nOE8xTVdfN29vWHI2V09uLWpncFVCdXhVNk5H0gGUAUFVX3lxTE9hTnNERE9BSTRWNmxIMnc5RTBlVEMxUzdrTmRxWmpSdS16UjlxLVRaZ3J2MlRvVkljMXVLM09LWi05M3VuZ0xKYWQ0UGZ0Skd1OG1kVkFzWTlCZ1hReVp2VUR4VHVhZlVia2p4S1k4NDd3X2hVdWVYT2c4TzFNV183b29YcjZXT24tamdwVUJ1eFU2Tkc",
+      "source_name": "SMEStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T07:24:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Drop Rs 2,500 on Dhanteras Amid Weak Demand",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ0w2MUxkVS1zSmxWazZjaEx6UWttM3hLb2EyYkZkUzMzNFdyczVtTGVFMjJZTXh0SER0eWVZcWJEQnFxcGJGaTloZno5dEE5LXMxSmRmclpwc0gyQlpXSTFiNmFDNGhobERNakp4WV9sV3pSQk9aZTdzUEp4WkZ0eGlCcWs2aE9wRnVUVThJczRZaWJlQnZYbXNNSTdNLWQyQlJMRVpoTEIwdEHSAbABQVVfeXFMUHdVbkFIT19uejhjQm1mRURkN2JaOFlualJyT0ZDYTJpT2lfSWQ4Rl9fZ3lZUDRQcVZhZHhoNDhQM3ZhUy1yTVRwSlhkdEc3NkdmY05kdDFiZ0VRVEFmZ0VaMnoyaVhpNU5LQjVicjhyLVcxMm85TXhwS3BDbFgtZXZteW9KcDRfM28yZ2YzVUpZaTlrZHAwckttSElncG1YSXp5NXNodGRXTXhRWTBBSzc",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T13:03:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today November 6: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOLWx2bW5fRFFpQUk4VGl2TFJnLUtGSy1Gd2R6LVhhWHozY2NucGxGVS1iR0IybFkxNHdWYjJhZ2xWdmFKMms4TktocW9VQTZUcDVOOElCbGhrYm9KYW5hVmF5TDRVZDc0cVkxN3J5WFE1R1JqZTh3NDlCVGRGZ3lMZzRpSEJka3hySW41S0tRN1puV1FtLXN4dVVyQVRMR09nUTBsM0tGN1pXWDNfQnF5ZkhIazFLbzlWYi1VZzNGMEpfeEpfUHY5YzdPZ0lQZl9FclRyY1AzLUJrZUNyemllU3V3em1zSFlMS29hb2JyeFdfbkE4TEFXS0xybDFnbHppcWp1NllqelVvUktkWXVBQWN2N2bSAZsCQVVfeXFMTVhqcUMwaHZxZ3AtR3hwRWtpdWVNMkNzSmU0UFJwU2Rnc0tudlJzOVdhVkwtMUs1c3l1M1lKdDAxck8xc0xGWkRmMjg3SUVvT0M0alRYYkJzSWtsV3dHc0p2SU45aFZaWTJsbTlmRnpjakc1cXNIMThGcWNxdWVKVUxqUElrX3J2OHJzem9feHB3SUhXclc2UmVmOS11blBQR0o0SDdmb3pWbkE5LVQwSFVYaTJrRjNzRjdhU041N2xOM1FoUTdxR3hYLUl1Y1RoY3B2N2Q3RkFyVDRyYzRCLUR0eGZCcll3ZlpwSFY1V0ZvN0ZQVFZ5WHNmbThZX1hBeG1wenBqdGtwMWlHU2YwY0hKRHBPVDBTYW80NA",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, 6 November: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities on Dhanteras",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVkp3RE01U0dGZVlfcC1NN2Z3el9iUjhxaHM0UXl2T3BSdE9EejlYSWVCNWM3dVhyeG1iQnlDX2REclBiSkxmb1RUa0x6c0g0TU9CRW1qYUprZmZBV282RjhzazcyTmZHNE1seGs0ZzZjR3VySHE2ZDhKR0dnN0Q1VllLWVcycG5FYjlqZ3pIc3h4aVNWeVR5ZUNoSFlrMDR4WEZwSkhxS2I5elZ3N29wRTJxTW50LTFnYzU2YWp3akFkbWxaSUM5cThtbGVNX25jd3ItTHpZWU9WT2VoczNhdzc4c1hZOVZlc2Jz0gHyAUFVX3lxTFA4RkJ0OVBacXA5aFhSWkY0eS1FVmd1TVFrazZWX01vaUQxSXN1NXJuZG9nVzBNNXFURUVheEd0dXdWT29oYlFLWVVnYmphb2xYX015RENVaDlHWi0xN2syNE5hMnhXSWFjbjdJWVZHY1VzZGRpVnhFYW9lUGdTbnNWb2ZXYUdHM2M2TXljeGdOZ1FTcXY1cWthMldLUl9wNXNZVF9reXFTQTM0Ni1VSnd1bWZMaHMtellCMlcxMG5CUVdRakZ0WUdpYjlWNHFNSWcyRzkycmo0eWpndnZWby1Kd2dtY21SLXlFdWgtdElMYnp3",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T04:19:52+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price on Dhanteras: 60% return in 2025, 13% in 2026 - what’s the outlook for yellow metal for the ne",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNVlVoa3RtSDhDekxMSVZCcE1FaXVaU0lucXJZQUVidEluY0stOTU2c0F3RDR4cGVrRW1Pc3hjM0RsMWNUZWg0SzFyUlR4eVM3NHdmc01Falp0WW9QYmp0LVdhdVBUaHkyUHNEdnR5NUFIWWtUTnlBWndIekdzd3VKV05JS08tQzloeGdORnctX2NCbHpPZnFteE5aWVRDOXB0bW9ZR1hhcU5UQUU4eDJNamRjMW44UnBhTE53czVMZFhVYzExSW1zTW9CZ3JqTkVlSTZhVE1oTTZVYzB4STFLdW5HMlFuZldzN3B6X2U2eUhCVGE5SS1fWm9HUWlOeHJPTHlCam5xYm90LTJuYXJWME1wVdIBmAJBVV95cUxPejJfUDNOLWNRZGRDejdhUjRVZjJnVkNUanZidG9OcjBmUUhFWndQSFZubFRVSkZ0UUxMNmZXZ3hMbkNzTzllLUVCTGprcWpVOVBMZEZCZzBNSmlUYUpsaVBZcGc1LWJDUkZrd1RnOTh4dkpVUkthcWhsYXVCcUpWYkRNcnRqcmhScUwta3dZeHRmOEZUVTBBMFF4VjlpcG50LUpfV1loVzJyMlNIOUgwSV9FclgtUDBwZ1RWejBxcVltaERJdWVkNzFhRHIzQnRsQy1pekpXSEpoU21HTVlnVklOZENtdGZxd1hxYndKUzA4Tnd0QkhtMTZsUzVtVHRydENVRWpQM1hlendxY0FwTEg1XzJrWmFh",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T07:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price today on Dhanteras: Prices fall sharply; check 24K, 22K city-wise rates in Delhi, Mumbai, Pune",
+      "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxOaEtfYVM1RFpDSlB4SV83b3VfR0szdVplTjdFMGRjX2Y5N2h5UzVlYzFRdkhzZlBVeWpmbm5jM1VwS3NQWmJwa2hob05RMkRJZnVGektRRFA1RlNyT0llZTVxRXU5WjVyWXhSd0lqNXpCQlhJQUd0WnJ1bmdDTGNUT1pydm5CaEd1NGdtS2ZqQ1VTd1NUSmxuZ0lHeURqeWw5YVJfNk0yek9KNW81UG02VVhpMHl3emJ3NHJNaGk4TmYyYXg2WHR0ZmlUN3l1UFUxVXVaQjBqQ1h4aDRadDhzNEV2V25kdWxWbi1qbXJtZUd6WjB2Uml5YXlQOFpCTHZfNkZ1ZzNYdkc4b1oyMVpkZjBrbDN6SmZpbjFTSEVGM1BhVFQxOTlqUUU2SThnNXBKOUNoazh4RkpnellMZ0ROQkMyT1ptTV84cG1KZ3FoVdIB1AJBVV95cUxPMlNvbi1pb0ZyOE96Q2hnSkhNd0xOOU54dkFpZmJwSTRmMG9VejVGaWs3OXY3b1AzYU5RMEprVVd3ME9JV0Y3TnNLNV9zb21VLWpfQU0yQll0aTNXRlVxZ2Y2MHNBUzg0MUtEd3o4RGI5cWQyNWxYYVpZbnNidzYyWnBIM1diUk5TNUhFd09XWEVyR01vSTAxV3hiZG5NTzhoWUxzNVFCREhSOWkwM1UwaUswejc2WS1tWE5mRGktbnZlaWRkMzhHaWdBUzl6QjA3Sko4XzNUUmYxZUxvdFFQTzR2U1hZb0JWMVozbTYteGxicUlYT2NsVzYzdmRYanBUcXFVQ0EwbFJTMmJRY3RQT1RFdTZkTUpnVXB2OW9tVUVyM2RzaUU0ZHltWmtHWHpmX2NLcEdPeGp3SmNZdm5fYVl0T0piVlpBY29FSEw1TWIzaU1U",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T08:22:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices drop by ₹3,000 per tola on Dhanteras: Rajkot youngsters favour rose gold and bracelets",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeEs0bDk2Vi05RVRLbU02RkZnSmlrWFNYd2pFMlBxakJhalVzZmV4YmpPWllxVG1QNUNRTkFHd2hraGlRYnlGYWdjNHpNMmtrbFdKejFBWnQtVzcxckZFbGxvaTZ4Y1lmMVBUWDhRZlAxNVRxYmN2Z0t0Y2Z3MGRNOHl1dlJQUFJuenltX1pKWl93bFg2dUVjeS1TVE8zVDRmalJRYkdvVGtlQ3BYSS1XOTNWck9FVE1RNkxvWl9VUllqTmsxbkRfZDVrelFZN2xs0gHWAUFVX3lxTE52OWdMRktTb3JZbi1ZN3Q0dVRjTjZYMlZRNFdXcExMWDh5UDkzaG1ZZTEweGF4bEJ1Y1dGVHhzSUNSSms1WGd6RnRfcjQyUk5iS3hTQkNsSGVQeDZ2eW01ZlhaU2d2ZGpqMEV0bnRJZHNWN1B1bzFIWkhZSEpCTVVZWHhhemxxYV9GdXVUUm01dWJYTXdKUUV2TThiSTdjMU1FZmlOTjlaX24wX3NlZzVYRnhON0l0RnBJTk8zRFd5RFNpTG50ZlFBazA4bzZlcnRzenpQMUE",
+      "source_name": "Bhaskar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T13:18:23+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, Silver Rates Today On Dhanteras: Check 24K, 22K Gold Prices in Delhi, Mumbai, Other Cities On Novembe",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOU2ltYjQ5eXNaWGxyUG1fcmc5RVYtcFRlZko4b0w4RW00U3RUN1VWTG9ZTUR5NS1KZVROaVdWQ2Q3enhlMGdfYTcyeHdvbGRqcGloUU91aFlUU1A4RVFfUjZYOFNwNC05R0VqZURlUDRGM2I5S0ZLbWN6ZXliRHY5RUlGa2JBRm9Ibk9HMDFzX1hrMzUxcGVySy1tQm5yWk0wQVRyNERmMmpac0ZyN2U4aUQxc0tFc2h3bU9SNXpfd3Z5WXdGMUkzdEUyTVRkU2RfMUQ5UURYZURHdEZ4NHVtelJQcDVqQzFuVDJsM1h0MTBGbVdrak84a1owU21sQnlEWDdpV0J30gGLAkFVX3lxTFBudXd2YVFzVnFXUUEtek1Rbk1IdWhzNmpKcGxVUFJoY1l5Q19IRWtaSWwzT3F3akxtbnZMQ0hzUF9kMm5rTlEtbzZTMExsWldYWDFCUUZ3ZlVIbUpZV3hoWjg1TXUzSV9KbjdQb0JRaUh3OFBXUWFUbzdCTFM0Vy1WcE9EcXNNNEl6YVplUzhvdkEyQ3d6WllUdHRVT09pV0h5d25OM0R6Qk5jc0JOMFlMeTNTZkY5RWl1UjBLMzUwYXZGM2FmYWdrQVQ4RWlpMGRYS2c0cEdFMHF5Y0xuRE1hcW8xOTNZYXVOeUU0V2lzX1JOWk56Yk9jeG5BVzY1NzE5OV80eVZuUHBfcw",
+      "source_name": "News18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T06:36:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "22k gold and silver rates today (November 6, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from",
+      "url": "https://news.google.com/rss/articles/CBMilANBVV95cUxPWUhiVnVfMHd4RXlYSmF1bTVzaWtvOXEzY05kT0J3djlxc3dzalplLU54VG5GLTltU1Q4d0tibmt5ZDdEbzBUdDBtVi1nQnAzTlN0NWVtOGM5djl1QmNNcjlRcU9MUEpiQW5NUDdUdTZCZmlqdlBwUFg1eXlrbEhWcUpMUDhMcmZ1WXhKODRJZ2NBWEtXNEw5V2dBaVBBSFA4NGg2OEd2M01HNVFWZzd6RmJ3MGJfVXRKaWltVnNqUnVRaEhtNEticHd4c29PSFp6b05PLWNHd2QyTlZTaXJlaDFnSFkxdHdMTHVZUDdoNU4wNlV4S1VEOVJBMk4zVmNwaU5xUkk5dEpLQnJrMU54UDJQRlk0WEtHU1NFdXk3UzF5bU5FQWhYQThqeXBmZWhjYzBnSEkwMXpNVjNpOTRyX3UyMmRodFFoNWFCUWplTlJuaHZfYnRsNzhxd1BpWUZHbEdlMWN6NUwxY1JMaGFWbEpxUVhGUjV5UmQycFVrMzdtUDNPSnNta29LNjI5dWJrSFdYZNIBmgNBVV95cUxQTktFVGxkcGtiR0J5X0k1cWExbFQ3UlBRQ0pkazU5eC1mZjltT3g3Yi1nUWNRdm1hb0lGNnZmQ25pQXJNS3RwOVRYMkVjVk5Qbk9faWI3VTRYRkNGMU9Gc3lIaTE5RlJWX0x2a3h5aEpTWG5wY3BvUUVBeHBDandrYlRDdDBLM3JmZTNIQkNPYWhGd0pObl9GZlJzM2RCU1ZmdXhPLXEwaV9tZWJ0V21hVXRaeTROa0U0WUF6ODhQWXVsRElDTmtkQTJXQmVhSTJuRzR4UVJWc0NVdUxicWNsN1FfT2taRFZDYThsOVRXRG9VTF90M0xwRkplV216ek9heXJxczVHRVRuM1R2X19jX0J5SjlmTWtYekRNdGcteU8tNEZmVW5VRjZSM1hzRlUxMGVTdDNxZC16VWFjaTNuVWFfeVhVNjdveG5sYndaNVdzWDF3R3prdjZISTVTaEdpb3JQbU1kR0ZCdFZSLTdBY2xRN21KaExJM3VqRTFtMnpzelRWQ2dZbURRQ2RMc2kzUzNjUGg2ckVkQQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T05:54:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and Silver Prices Today, 6 November 2026: Check 22K, 24K Gold and Silver Rates in Major Cities",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQS1rWVZNNDBlcjlsUkpnaVlieThYaGhTbTVIdUxDWnRTY25YcmV3ZE4zQmZVc09nTE9KTzJrX2hDM2FLUnNXUnJwNEFuZ19VQWVkU0hydXpBRFNWeU5lTXZvZ19jTVpNYWx1VWF6RW9xQTRXRC10dHZuZWh3MXVQVmx4VEJKbXIxNTdmOFVMdDVqVThvYWNmeHJveDZLbFNUYWpZUl9PMVg3bjBwR2xPUldtU1had1RlUUQySFlvSWpkVk1FMGt2V0thdzFFYzE4UUE",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T07:02:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 6 November: Check retail rates of 24K, 22K gold, 999 silver in Delhi, Mumbai and Kolkata",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMjR5aENNWGVNLWZzY3IxWWY2Wm5EOUR2WUw4bV9pTU8tWHg2bDFhcDE0ckloemExTldJNlR3dmV2QXVXREVkdmlWRmJEbWc0eEdtOFRlb2xZaFlOV2RXZElRUG56a3AteUc1aXB6WXVFZk9VSWVBdl91MzRfbGVka2xDVDlEZVBlY3pOQm9mZXRfMFBIdXJrVkdMLVJiS1dsTU41dy1sQmJnS0RRNXlMRnNLRTJOT3ptSGt1Wko3N0drREVaYjBxZTZfRVVLOFdxV1hCMGswWWxMQTlTcDV6QmF5VUtPZmJUTTF3RVN5bDNqc19EMVlIQTZpcEtnNkpZUEc5UFk4dWLSAY4CQVVfeXFMTUxwanVpS2Q1RUhIN01FZjZRWW9MLURVZ2R0OGIxajhGdGdJWlNrWkRYN1hxMmR3ZUlTT0xHSjk4R3N0WWZrRE94N2QzUTdlcDFXS0U4RUdkUWNNUmVzZ3VWZThCbmxWUlZ6QndOMm9kWnhoTGlkT1U1Szd3Y0wwa3UwNHpSQ2JnaFhRMGFlbWV4WkZueXRidWpyb2Z2V2M3V21fbHdzRF9YaGRZc1ZwMzNwYWVhVWtNekptamZRQnFuOG40SFpMbVFuVVJhMkxoSXVPUHFtUkFZVDduSFVvU2NRbS1FLXZDeDZURkhUOUdCUDJtX1ZZaUllVHdrdjBtcld2dTBkVUxhVjJNQ0V3",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T04:03:59+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold And Silver Prices On Dhanteras 2026: Know Rates In Mumbai, Delhi, Kolkata & Other Indian Cities",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTXhjWTJEMGY5SG9IaWZTT29ESi1wY0h5WVZXSjZZVDJYLTRpaG9qNURvR3FGTTU1WGoyWkZRRy02YjcxVkEtZXJNVTdJNEZROHZWTVlrS3llbk9lS016NXNyS0FZakZPT2tGcjNOeDluQ1JXZTRLM2RNbXlRQy1yS1V0djZSMjhrYjZzRmQyQWdIbHZqSC1wVG1UUTBYMHBtb2E5OVl0dUM1UEliOExtRF9TbXRHQU1fZUg4YkN0emZmNG_SAcgBQVVfeXFMUC1vbkREd25tUGFOZzlmN1JCYWRVYUJvZ2U0VE1rNXlESnRnWFdIWlFJZm95cjh1RnROLWhjbXRrbTFJVFp3VnRvczFrc3FGNHZRX213RVhnTGVNT2pFV09TWlpCMElMckc4Sm00WklVODhCeG9GakpWWDZSN3NXMmEtVE1rRGw0aGJhVHhCcFAwRGY5SFRlNEc2eHc1eHZVVnBuUnVaa3M0WmctWnliMFhmeXNzMUNLaTVqSEJUdXE3azItalFucXo",
+      "source_name": "ETV Bharat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T06:08:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 21,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-november-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T20:35:53.265894+00:00",
-  "last_updated": "2026-11-05T15:01:49.616564+00:00",
+  "last_updated": "2026-11-06T14:44:06.510764+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:35:53.265997+00:00",
@@ -143,6 +342,41 @@
       "timestamp": "2026-11-05T15:01:49.616547+00:00",
       "change": "sources added",
       "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:06.579234+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:07.469360+00:00",
+      "change": "sources added",
+      "detail": "Bhaskar English, BusinessLine, News18, Rediff MoneyWiz"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:07.469377+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:07.469385+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:07.469391+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:53.655024+00:00",
+      "change": "sources added",
+      "detail": "India Infoline, Livemint, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:06.510747+00:00",
+      "change": "sources added",
+      "detail": "ETV Bharat"
     }
   ],
   "price_reaction": {}

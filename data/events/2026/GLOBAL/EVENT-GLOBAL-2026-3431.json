@@ -10,7 +10,7 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -29,6 +29,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -48,7 +49,7 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEGATIVE",
       "confidence": 0.3,
@@ -63,10 +64,18 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,7 +89,7 @@
       "watch_next": [
         "copper over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to copper, and China. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +103,46 @@
       "published": "2026-10-17T04:36:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Copper prices continued to pull back, with hold-back-from-selling sentiment driving the coefficient higher [SMM Weekly Review of Ex-China Copper Scrap]",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNTW5QMHJvbC16RmZheTc2d0VEa2F4SDZFNmdCUGdYc09ORjBPM0RoemlrZ25NOGRXY0l4c3NKZ2FVRHlfVUw0XzFEMTlFT1hPbWlNMjlaMUNmX2V4RlVob2xodkhHTnY4SlZPV09LaFR0Zm5NYXpFZlBRTVItOVdhRXVGU0k0NTZGbW5JMnVGTkVmYlZBejVLRTB5cm5sdU5oUXd5eDlSdHducmxZaEZtTG4za2I5UUZvR244YWZaU2ZJbk9SS0J1RTJGbVRsdS1aVE5HWmtUWDg3OWpmb0ZxVTNkcmRCYzBpNEtNWkVxVUUzVXo5S2FDd1ExankxMGN0MEc0THlEU0tySEpSanppVkdRMjI0WmVqNXROeGJB",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-05T21:03:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "EUWID Recycling and Waste Management",
   "cluster_key": "MSTCLTD+WAAREEENER|OTHER|copper-lift-lme-price-rise-scrap",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-17T16:32:22.362197+00:00",
-  "last_updated": "2026-10-17T16:32:22.362270+00:00",
+  "last_updated": "2026-11-06T14:43:32.871605+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T16:32:22.362261+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:32.871575+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:32.871593+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:32.871600+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

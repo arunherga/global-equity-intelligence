@@ -46,11 +46,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -63,8 +63,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -72,13 +72,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -92,21 +92,41 @@
       "published": "2026-11-04T22:57:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Are banks open or closed on Dhanteras 2026? Check if SBI and HDFC Bank are operational on 6 November: RBI holiday list",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPV1hSam5PRFNhQ0NQZ0pQN1p4eGhXZmprRmZtdWVPUUhWZmdmS1phVTJxRFV4WEl0Z0JRNGVrZzZMMWtuUkd0NFpVdF92Z3FjekdrN0ZGM1NkTllMeGFfSTlXZXREWXhzZGZJNVIxbzBhZUdENzlYRlY5akJBaGRrb1N2cFVJOHVhWjk0MlZWanltQmdFNU1PdkhTb0dQa3g1ajZQN1ZGcDRzQzBEN1NEbVRyMVBpYS1neE1MTmdEYnFLOUVjTWxLTG9zd2Nzam42NGhKYld1eTI4TUhTNUV4RUt4WTktNjZDd0x4Vml1T09kUEtLbkdLRmhndlNkeUlkZWJ2SHY0V3pWUFNzZzhkQWpR0gGXAkFVX3lxTE1TbDZ1cDBlMkxldHREZk9sTm1RVTB2TnI5b3lSUzQtRXliOWYyQmJSLWxzYVZmb1A1UjJaYm1ZSkpHc0FjZGdZTEJDeFAzV1hWTjhZRy1SenM1Nkp2RmdPOE8teDJQQVdxYTROdkRlencwUk1OaU5tdF9HWVpHamwtMTBKY0UweGMyWmoySEZXd0VkdE5qb0RwekRROHN0YW1KX1VrMU45emVqM21YUkNqUjZHVUthcnhZdDlpMWhTRzRreVBPcXlYLVl3OEF1eG9DT19vY3N4VnBwV2twRkVfZzJJQ2ZGYjA3aW5jUUJ0NmN3MW4zcllzTkpZQUNXLUhkdElJNWxDeV8wR3duQkU5emJ2RDE2TQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T01:28:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "gmdcalibration.in",
   "cluster_key": "HDFCBANK+TMB|OTHER|2026-bank-dhanteras-full-holiday-november",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:54:37.473781+00:00",
-  "last_updated": "2026-11-05T14:54:37.473858+00:00",
+  "last_updated": "2026-11-06T14:43:45.191857+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:54:37.473848+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:45.191834+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:45.191852+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

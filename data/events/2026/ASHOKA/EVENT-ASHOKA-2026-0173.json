@@ -4,36 +4,44 @@
   "summary": "Ashoka Buildcon emerges L1 bidder for ₹866 crore Vadodara-Mumbai expressway project CNBC TV18",
   "event_date": "2026-11-05",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN"
   ],
   "stocks": {
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.51,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -47,21 +55,46 @@
       "published": "2026-11-05T15:12:41+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Emerges L1 for ₹866 Cr Vadodara-Mumbai Expressway Package; Order Book Stands at ₹15,964 Cr",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPa3kySnVXYS12dlVkTjhNWHNPbVRhZHVkWWd4cHk2WlBvajBYOGZHN2VRLWVIcGxsQk1uRTFfVXVWWnY1QmNoU3ZmS1NVdDRkaHlrUEVhMVNrQjJkaHBVLUpiY3FmbXE4blpnR1RfRi1GZFhod2h5akhiNmN6QWRKOGFGT05iYWM4MjFjUlY5Q2gtdHoyNjRxbUNDVmdIZnA1dmJoT0p2NzFFSlhLeW0tUThGbVdXOU9pdVR1RThqRDlkY05ZQVQxVWZiYUkxXzdoc19tdEhMUDUzWlBZVnFQVzljcw",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T06:49:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "ASHOKA|OTHER|866-ashoka-bidder-buildcon-emerges-vadodara-mumbai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:48:46.053788+00:00",
-  "last_updated": "2026-11-05T20:48:46.053848+00:00",
+  "last_updated": "2026-11-06T14:44:10.360259+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:46.053839+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:10.360231+00:00",
+      "change": "sources added",
+      "detail": "Trade Brains"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:10.360248+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:10.360255+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 5 -> 8"
     }
   ],
   "price_reaction": {}

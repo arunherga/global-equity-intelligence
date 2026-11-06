@@ -135,6 +135,88 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -187,16 +269,26 @@
       "published": "2026-10-30T11:25:20+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "SECI invites bids for NHAI Phase I solar project",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbVIteEw3SVQ4Q3ZJMm1rbTNTRFRod0FJNmJxNThhR3AyV2VMb0l2ZUFwZU9WaWZTN3V1dGhuUjlTdHh1RzhUQUJ5aS1ET3d3d1Z1akRnblE0bGZYd0FRYVByNjZNTFBRbG05TklfekpFYmpjU3hWTWRKZDZWcEVXZFphOFBlajFKd1hCRkdiNA",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T12:38:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "https://www.mvapulse.com/",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|bids-invites-ists-ntpc-rel-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-19T13:41:10.789721+00:00",
-  "last_updated": "2026-10-30T13:25:40.353357+00:00",
+  "last_updated": "2026-11-06T14:44:56.456841+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-19T13:41:10.789789+00:00",
@@ -227,6 +319,21 @@
       "timestamp": "2026-10-30T13:25:40.353353+00:00",
       "change": "impact raised",
       "detail": "COALINDIA 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:56.456812+00:00",
+      "change": "sources added",
+      "detail": "Solarbytes"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:56.456831+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:56.456837+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

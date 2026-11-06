@@ -4,7 +4,8 @@
   "summary": "Bihar and MoRTH sign pioneering MoU to use river silt for national highway construction under Nadi Sanjeevani initiative Swarajya",
   "event_date": "2026-11-03",
   "event_types": [
-    "CONTRACT_WIN"
+    "CONTRACT_WIN",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -96,29 +97,28 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.45,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
-        "REVENUE",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
-          "term": "Ministry of Road Transport and Highways",
+          "term": "NHAI",
           "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
         },
         {
           "exposure_type": "REGULATION",
-          "term": "Ministry of Road Transport and Highways",
+          "term": "NHAI",
           "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
+          "weight": 2.3,
+          "detail": "in headline"
         },
         {
           "exposure_type": "PRODUCT",
@@ -130,22 +130,20 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Development at a known counterparty (Ministry of Road Transport and Highways)",
-        "-1 Single source, unconfirmed"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
+        "best source quality 3/10",
         "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from Ministry of Road Transport and Highways"
+        "order flow from NHAI"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to Ministry of Road Transport and Highways, and Ministry of Road Transport and Highways. The parts of the business most likely touched are revenue, customers. Classified as contract win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -189,16 +187,26 @@
       "published": "2026-11-04T03:01:02+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "NHAI to Use Bihar River Silt for Highway Construction",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNdy1mY1dmZXM0c3lGTlpFVFZyUk1JdUxnOVRQeXRYbXpoT3VMYlhFdEJyN2Q1VTFNUkRHb2Ffb1M1S3RMMFNYTVh4UlVnYnFOeEFSWG5XeWNiWXZ4UHZGanJtTkVieXFGdFdXS25GdVhSZUhjUlkxbmp0aXlZZlJ2QkVSZ2JXR0lXWWNNUjlKM0FFd2RIaF85SWg1eVJOVEpKWU1YRGFhajZKLXNPUVRPNGVvcHctS2t1RFFUMnhPYU43ODhnU1dXTl9MVzBCcDBMU0FfVWNFd290S1VJWWZQZUdXWmJtdw",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T07:48:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "ETV Bharat",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|CONTRACT_WIN|bihar-morth-mou-pioneering-sign-use",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:41:08.947639+00:00",
-  "last_updated": "2026-11-04T14:59:17.740373+00:00",
+  "last_updated": "2026-11-06T14:44:18.278719+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:41:08.947728+00:00",
@@ -229,6 +237,21 @@
       "timestamp": "2026-11-04T14:59:17.740369+00:00",
       "change": "impact raised",
       "detail": "ASHOKA 0 -> 7"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:18.278689+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:18.278705+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:18.278714+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

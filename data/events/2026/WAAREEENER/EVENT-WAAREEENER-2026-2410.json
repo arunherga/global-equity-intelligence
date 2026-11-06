@@ -1,0 +1,124 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-2410",
+  "title": "Saatvik Green’s Q2 Profit Down 76% as Solar Cell Shortage Bites",
+  "summary": "Haryana-based solar module manufacturer Saatvik Green Energy reported a revenue from operations of ₹9.03 billion (~$93.8 million) in the second quarter (Q2) of the financial year (FY) 2027, up 17.5% year-over-year (YoY) from ₹7.68 billion (~$79.8 million).The company's profit after tax (PAT) fell 76.2% YoY to ₹202 million (~$2.1 million) from ₹847 million (~$8.8 million).",
+  "event_date": "2026-11-06",
+  "event_types": [
+    "SUPPLY_CHAIN",
+    "EARNINGS"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.56,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST",
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Saatvik Green Energy",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Saatvik Green Energy, and solar cells. The parts of the business most likely touched are supply, input cost, revenue. Classified as supply chain.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could see mixed impacts: Waaree may capture market share from constrained module assemblers like Saatvik if it has sufficient captive cell capacity, but any cell supply bottlenecks affecting its own unintegrated lines could limit module shipment volumes.",
+        "margin_effect": "Gross margins could come under pressure due to elevated cell procurement costs, though Waaree may protect margins better than pure module assemblers if its captive cell capacity shields it from spot price spikes.",
+        "cost_effect": "Direct input costs will increase as raw material solar cell prices rise due to sector-wide supply shortages.",
+        "competitive_effect": "Waaree's competitive standing likely strengthens relative to less integrated domestic peers, as customers favor suppliers with secured cell supply chains for timely module deliveries.",
+        "regulatory_effect": "Widespread domestic cell shortages may prompt industry lobbying for temporary relief or waivers on cell-related Approved List of Models and Manufacturers (ALMM) regulations or import tariffs.",
+        "short_term": "Elevated cell spot prices, potential order fulfillment delays for un-integrated module capacity, and heightened scrutiny on raw material inventory over the next 0-3 months.",
+        "medium_long_term": "Accelerated capex allocation toward backward integration into cell, wafer, and ingot manufacturing to insulate the business from future supply chain bottlenecks over the next 1-3 years.",
+        "second_order_effects": "Solar power developers could experience project commissioning delays, potentially leading to renegotiated delivery schedules or temporary project cost overruns across the Indian renewable sector.",
+        "key_uncertainty": "The exact proportion of Waaree's module manufacturing capacity that relies on external solar cell imports versus captive cell production.",
+        "monitor_next": [
+          "Waaree Energies' captive solar cell capacity ramp-up schedules and internal cell self-sufficiency ratio",
+          "Changes in merchant solar cell pricing and global cell import trends into India",
+          "Government policy updates regarding ALMM compliance timelines for solar cells and Basic Customs Duty (BCD)",
+          "Management commentary in upcoming earnings calls regarding raw material availability and margin management"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Saatvik Green’s Q2 Profit Down 76% as Solar Cell Shortage Bites",
+      "url": "https://www.mercomindia.com/saatvik-greens-q2-profit-down-76-as-solar-cell-shortage-bites",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-06T10:47:54+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Mercom India",
+  "cluster_key": "WAAREEENER|EARNINGS+SUPPLY_CHAIN|76%-cell-green-profit-saatvik-solar",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-06T14:33:34.067269+00:00",
+  "last_updated": "2026-11-06T14:42:05.892222+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-06T14:33:34.067347+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:42:05.892205+00:00",
+      "change": "ai analysis",
+      "detail": "WAAREEENER via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

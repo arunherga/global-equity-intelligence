@@ -1,0 +1,144 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-2413",
+  "title": "China’s Proposed Tech Export Curbs Test India’s Solar Manufacturing Push",
+  "summary": "China's proposed curbs on solar technology exports have once again exposed the vulnerabilities in India's plans to ramp up domestic solar manufacturing. On October 19, China proposed revising its catalog of technologies prohibited and restricted from export. The proposal includes 12 solar manufacturing-related technologies, including polysilicon manufacturing, silicon wafer manufacturing, and solar cell manufacturing.",
+  "event_date": "2026-11-06",
+  "event_types": [
+    "EXPORT_RESTRICTION",
+    "TECHNOLOGY"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.45,
+      "business_impacts": [
+        "EXPORTS",
+        "REGULATION",
+        "PRODUCT",
+        "COMPETITION",
+        "INPUT_COST"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "polysilicon",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silicon wafer",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 International market development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "polysilicon is an input cost and is moving up",
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "polysilicon over the next few weeks",
+        "silicon wafer over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to polysilicon, and silicon wafer. The parts of the business most likely touched are exports, regulation, product. Classified as export restriction.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue growth could experience delays if planned solar cell and wafer manufacturing expansion projects face operational bottlenecks due to restricted access to advanced Chinese technology and equipment.",
+        "margin_effect": "Margins could face downward pressure due to potential increases in CapEx, higher technology licensing costs, or elevated prices for imported wafers and upstream equipment.",
+        "cost_effect": "Capital expenditures for backward integration into cell and wafer production are likely to increase, as procuring non-Chinese equipment or alternative technology solutions generally carries a premium.",
+        "competitive_effect": "While most domestic Indian module manufacturers rely on Chinese equipment and inputs, Waaree's relative position will depend on its existing supply contracts, buffer inventory, and ability to pivot to non-Chinese tech vendors faster than peers.",
+        "regulatory_effect": "The event could prompt Indian policymakers to extend execution timelines for the Production Linked Incentive (PLI) scheme or introduce new subsidies to foster domestic solar capital goods manufacturing.",
+        "short_term": "Increased supply chain uncertainty, potential rush to expedite existing orders for Chinese equipment, and administrative review of ongoing expansion plans over the next 0-3 months.",
+        "medium_long_term": "Potential delays in reaching full vertical integration targets (wafer-to-cell-to-module), higher long-term depreciation and CapEx intensity, and a strategic pivot toward non-Chinese equipment partnerships.",
+        "second_order_effects": "Slower domestic cell capacity additions could prolong India's reliance on imported solar components, potentially elevating domestic solar module prices and slowing down local solar project deployment.",
+        "key_uncertainty": "The exact scope, specific technological thresholds (e.g., wafer size, N-type/TOPCon machinery), and enforcement timeline of China's proposed export curbs.",
+        "monitor_next": [
+          "Final policy text and targeted technology lists issued by China's Ministry of Commerce.",
+          "Waaree Energies' commentary on equipment delivery schedules for its upcoming cell/wafer capacity.",
+          "Potential timeline or guidelines revisions by India's Ministry of New and Renewable Energy (MNRE) for PLI beneficiaries.",
+          "Price movements and availability of imported silicon wafers and solar cell manufacturing tools."
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "China’s Proposed Tech Export Curbs Test India’s Solar Manufacturing Push",
+      "url": "https://www.mercomindia.com/chinas-proposed-tech-export-curbs-test-indias-solar-manufacturing-push",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-06T11:04:27+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Mercom India",
+  "cluster_key": "WAAREEENER|EXPORT_RESTRICTION+TECHNOLOGY|china-curbs-export-proposed-tech-test",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-06T14:33:38.128798+00:00",
+  "last_updated": "2026-11-06T14:42:23.309544+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-06T14:33:38.128879+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:42:23.309527+00:00",
+      "change": "ai analysis",
+      "detail": "WAAREEENER via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

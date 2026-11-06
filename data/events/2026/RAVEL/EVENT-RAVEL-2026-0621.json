@@ -4,32 +4,36 @@
   "summary": "Results for the quarter ended 30th September 2026 Hindustan Unilever Limited",
   "event_date": "2026-10-28",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Hindustan Unilever",
+          "term": "Honasa Consumer",
           "relationship": "INDIRECT",
-          "weight": 2.0,
-          "detail": ""
+          "weight": 2.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -37,13 +41,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Hindustan Unilever's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Hindustan Unilever. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Honasa Consumer. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -57,21 +64,56 @@
       "published": "2026-10-28T02:24:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Honasa Consumer Limited Reports Earnings Results for the Second Quarter and Six Months Ended September 30, 2026",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSTV4R2M5cU5mYWNzcUhJUnJ2Z2VlVnhWdEN3LU1rc2JSRXNyUl9KYVdzX3gyQjZ3eHlkODRqRnl1LWo4Snl1SmJmbGRmVGIydzZJVk8zdFV0d2tsNFVUMmtWM0NCOTBCQkljMkhWSUc2UG1Ca1Y0SC1hVkJiX3F3Y0tYV20tU20zY2NxRHF3NkV1cHRpTzdEVXRZMVl5MHVhclpSanZ0TVlIODdyN1JSUmN5blI4NEpoN1FrSTZDS1FfU2paRmdTTTZLVXNtSGdpV3BUYkxMRm5SUWpCOU04R2h4MzNBNGdH",
+      "source_name": "www.marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T11:20:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Honasa Consumer Q2 2027 Earnings Call Is Live",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUTVZRlRKTE5kMzRBUXZTZ1NrRlQ5WlNRZlRmU2VobGttY3NHcWJFcUdmYmE3cTFlMTF0OWtoWjhRV3NSNGdsUlYydDZFN2lSVVgwMnBGM0RLcFhEM2kzVUZ5X2lObU95cnpKaS1xNlJWWi1NVnhIdE81TU9SVXpzZUlHZXFLVkdGQm50bkFYelVmVC1TWVlBV0s1aU0tYnZjelFwS2tRci1Tc1BaUmFua0RkSHVsX0VVeW5sZDcwZGJFZG5xelFwWGlicmJKQQ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T10:27:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Hindustan Unilever Limited",
   "cluster_key": "RAVEL|OTHER|2026-30th-ended-quarter-results-september",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:14:32.222404+00:00",
-  "last_updated": "2026-10-28T13:14:32.222469+00:00",
+  "last_updated": "2026-11-06T14:44:42.177258+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:14:32.222458+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:42.177231+00:00",
+      "change": "sources added",
+      "detail": "TradingView, www.marketscreener.com"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:42.177246+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:42.177254+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 1"
     }
   ],
   "price_reaction": {}

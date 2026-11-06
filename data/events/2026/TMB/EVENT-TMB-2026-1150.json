@@ -1,0 +1,97 @@
+{
+  "event_id": "EVENT-TMB-2026-1150",
+  "title": "Traders raise bets of Fed rate hike after jobs report",
+  "summary": "Traders raise bets of Fed rate hike after jobs report The Lufkin Daily News",
+  "event_date": "2026-11-06",
+  "event_types": [
+    "INTEREST_RATE",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.28,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Fed rate hike bets rise after U.S. jobs data",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWkFES1d3dmNMWmduQkRMakVVNTdMRWdRYmlOb2tFN2JybklrX0U0S1ZGbHFDaW5vb1RjTnVzUXJsa3dvWkQzVC11RWNzbTJVWDdRQUYwdjZOX2lwWS1DYkRtTmx6QXo0ZnVWQl9PdlNjNkhNWC1KNzNQSTVvSTVtNENFNU5SbVZxbGlfb0Jsdw",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T13:55:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Traders raise bets of Fed rate hike after jobs report",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQR29xQ21TYndNb3lXSnEtWUZhWW5GVTcyeFplSFJhOW1mVk42UWZzOVdtN2hrbjl6enpQbzZRU29BTGc2ZjFXVUZ6OTZkWkw5V1dKaWo0YjQ5Rk5POE1ob3czOEtHX1dPdjczMjNRTUQwQUI5LUY4Mi1PYWRCeXZaekxNNlc2QzIwaHVKUnJpdjdZOTM2YWQ2OU1JVElhU2lqVXlzUXBieEpTdkFTeXhGNFVnbXMzNEUtQ1hZczNtWmotSFVKQy1JaDlVaVdxMW9wVEJ6ZjM3dkc1elZrbUI5NXI2TTViYVpZ",
+      "source_name": "The Lufkin Daily News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T13:44:02+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "TMB|COMMODITY+INTEREST_RATE|bets-fed-raise-raise-rate-traders",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-06T14:39:51.407258+00:00",
+  "last_updated": "2026-11-06T14:39:51.407343+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-06T14:39:51.407332+00:00",
+      "change": "created",
+      "detail": "2 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

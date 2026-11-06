@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.55,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -34,16 +34,16 @@
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 International market development"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -62,21 +62,51 @@
       "published": "2026-11-05T15:25:11+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "U.S. startup secures $9 million to scale production of 22.33%-efficient perovskite solar modules",
+      "url": "https://www.pv-magazine.com/2026/11/06/u-s-startup-secures-9-million-to-scale-production-of-22-33-efficient-perovskite-solar-modules",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-06T09:05:45+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "U.S. startup secures $9 million to scale production of 22.33%-efficient perovskite solar modules",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOGkyc0ZWYlNXWlliNkJLcl9TWW5BYWNtNmg3bU9Qb080bHdMVUlJLV9nWWhsNzNuaVowNnJIQWJoekVvOWduV2JteENwc0d2QUc1anRodXZaSTE5Wnl3QUtSLWxQUDZWXy1pc2ZtM0lnSm1UdzdNN2l4TUlsYkk3VWExaU1uVGJ1a2dDdGY1N2VKQ1g4YjZQeERkdk9VcTJxNkVKZjk0dU9JbEt4SG5IWnhEUFJpYWRMdmNmd1g5UGdudVVWZ05wQ094SXlZdw",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T11:15:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|OTHER|certified-perovskite-radianx-scale-solar-win",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T20:48:48.951924+00:00",
-  "last_updated": "2026-11-05T20:48:48.951985+00:00",
+  "last_updated": "2026-11-06T14:43:15.799962+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:48.951975+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:15.799940+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine, pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:15.799957+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

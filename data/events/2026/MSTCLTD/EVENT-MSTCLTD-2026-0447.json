@@ -4,20 +4,24 @@
   "summary": "NCDEX BigMint join hands to develop transparent steel scrap price benchmarks The Week",
   "event_date": "2026-11-05",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "CONTRACT_WIN",
+    "COMMODITY"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "REVENUE",
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -25,10 +29,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,9 +54,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "steel scrap over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel scrap. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel scrap, and India. The parts of the business most likely touched are revenue, pricing, input cost. Classified as contract win.",
       "ai_analysis": null
     }
   },
@@ -56,21 +73,46 @@
       "published": "2026-11-05T10:43:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NCDEX and BigMint sign MoU to bring transparent spot price benchmarks to India's steel scrap derivatives",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNGtaTUNfTzk0ZlJBcHEwT3NocUdkYW93OUVlUHoydDMtS1JjenJuOTlkSG9mY0RpdjJrWnlQamd0OVRRdVB5OXhDb2dKX0RxSE1FMEhwRVA3TUdQNVBUcUhDWDJWcGpfR0FpUmJ0eTZjOFhVVmhzYnVjeDFFX00zV2lMVzE4YnIzaUNXY2UzWkpfajAtazhDRGpwekxiajRPVGN0RC1ZMmxMT2xzQ1M2clBMRmNNM0YyVHYyX0Nvci0zLWRUQzhYcm0tMV9hMUs1VU5LLVg0VjFzQk1zemFYeGVfb2dlTXo5",
+      "source_name": "Investment Guru India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T04:03:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Week",
   "cluster_key": "MSTCLTD|OTHER|bigmint-develop-hands-join-ncdex-transparent",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T20:48:24.109266+00:00",
-  "last_updated": "2026-11-05T20:48:24.109326+00:00",
+  "last_updated": "2026-11-06T14:43:53.197118+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:24.109317+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:53.197088+00:00",
+      "change": "sources added",
+      "detail": "Investment Guru India"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:53.197106+00:00",
+      "change": "categories added",
+      "detail": "CONTRACT_WIN, COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-06T14:43:53.197114+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 6"
     }
   ],
   "price_reaction": {}

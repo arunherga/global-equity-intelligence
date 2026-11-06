@@ -59,43 +59,28 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [
         "MARGIN",
-        "DEMAND",
-        "COMPETITION",
-        "CUSTOMERS"
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "MACRO",
           "term": "interest rates",
           "relationship": "MACRO",
           "weight": 1.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "depositors",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role; in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -103,7 +88,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -112,7 +97,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, macro exposure to ICICI Bank, and interest rates. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -126,21 +111,41 @@
       "published": "2026-10-30T11:31:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank hikes FD interest rates: Check latest rates for senior citizens, general public - CNBC TV18",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQjhHZGc4WWFZaDl5SVVSQlhMZlJVVElScWctWUV3U1ppYlpGX3liNF9KRHJORkZCOUhtMFNxVXJFU1puNlhsSUZTRTYyRHBwMkFDUlVMcThMbVhCV3NoYUEtdndTeThRdTVJWVpzNW1tc2hCV1B1OXRHWnl2Q0JOaFliVUV3Q0E0N2Y5UC1RODlDM1lRUXlhbmtoa0xvSWhuSGdFbTZTZGh6ODB3b2pXaF9CN3g",
+      "source_name": "LinkedIn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T12:00:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "LinkedIn",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|bank-check-icici-raise-rate-revised",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:22:19.141263+00:00",
-  "last_updated": "2026-10-30T13:22:19.141359+00:00",
+  "last_updated": "2026-11-06T14:44:52.532252+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:22:19.141348+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:52.532228+00:00",
+      "change": "sources added",
+      "detail": "LinkedIn"
+    },
+    {
+      "timestamp": "2026-11-06T14:44:52.532247+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}
