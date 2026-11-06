@@ -4,22 +4,21 @@
   "summary": "KNR Constructions KNRCON Bags Rs 1,397-Cr HMDA Order Kalkine India",
   "event_date": "2026-11-05",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "OTHER"
   ],
   "stocks": {
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "REVENUE",
-        "CAPACITY",
         "COMPETITION"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -27,36 +26,24 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Strategically important competitor development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (KNR Constructions) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "KNR Constructions's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to KNR Constructions, and India. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to KNR Constructions. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -80,16 +67,26 @@
       "published": "2026-11-05T18:23:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "KNR Constructions Ltd receives LoA from HMDA",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPa3FVQjEwdlVDa2o4UExBenZlYlZjX3pVSkFIMVp2SG5GWEFVWVh3T2VBRUhWMFRwUEZKUUJaS3FvaDU4QkZOWUhkZWdBdFMzUWtjQWhVSmpQLU1wN2FUU1Y1aDJBX3kyNGtFUXFNa0NBVG9EQTdWaUJLMHJxRU5MOFlYUms2blJNdS1STg",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T02:44:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA|ORDER_WIN|397-cr-constructions-hmda-knr-knrcon-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:57:33.971958+00:00",
-  "last_updated": "2026-11-05T20:51:09.919494+00:00",
+  "last_updated": "2026-11-06T20:08:09.439544+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:57:33.972008+00:00",
@@ -100,6 +97,21 @@
       "timestamp": "2026-11-05T20:51:09.919484+00:00",
       "change": "sources added",
       "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:09.439518+00:00",
+      "change": "sources added",
+      "detail": "EquityBulls"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:09.439535+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:09.439541+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

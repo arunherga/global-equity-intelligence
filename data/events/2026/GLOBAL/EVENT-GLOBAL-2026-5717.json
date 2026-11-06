@@ -4,21 +4,21 @@
   "summary": "Gold, silver rates today, November 5: Gold climbs to over two-week high a day before Dhanteras; check city-wise prices Upstox",
   "event_date": "2026-11-05",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -26,28 +26,31 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -114,21 +117,46 @@
       "published": "2026-11-05T09:26:24+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Silver Price Today: Check City-Wise Rates in India, US, UK on Dhanteras",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQejMtek5kbDFhdDI3aVVvR1lRdlJ5QWVWbnU5TVRlM1pIaXBDTDJtdnpMMEdXMDBITU1KbnQxSmp1Tm5PTVozLUhaN0JWbDRfN04zbHJ0Nk1jajVuTVlodUVoT0tvZDJiV2xXQ2d4QnA2U1NQT3RMZW01SUMtOEFzUG96NnN3bzhmX1ZuakdGRzdpRnNNWDAwWmptbXFOc01EdXFKdlZBWG16ckhFdDZGZGRNdklnd1VNVkxhOdIBvAFBVV95cUxQejMtek5kbDFhdDI3aVVvR1lRdlJ5QWVWbnU5TVRlM1pIaXBDTDJtdnpMMEdXMDBITU1KbnQxSmp1Tm5PTVozLUhaN0JWbDRfN04zbHJ0Nk1jajVuTVlodUVoT0tvZDJiV2xXQ2d4QnA2U1NQT3RMZW01SUMtOEFzUG96NnN3bzhmX1ZuakdGRzdpRnNNWDAwWmptbXFOc01EdXFKdlZBWG16ckhFdDZGZGRNdklnd1VNVkxhOQ",
+      "source_name": "Analytics Insight",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T06:26:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|gold-gold-november-rate-silver-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:56:42.944624+00:00",
-  "last_updated": "2026-11-05T14:56:42.944694+00:00",
+  "last_updated": "2026-11-06T20:08:12.032958+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:56:42.944684+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:12.032935+00:00",
+      "change": "sources added",
+      "detail": "Analytics Insight"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:12.032950+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:12.032955+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

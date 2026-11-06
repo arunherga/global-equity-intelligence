@@ -12,17 +12,16 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
-        "MARGIN",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -35,6 +34,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
+        "-7 Share-price listing or roundup page, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +50,7 @@
         "execution track record",
         "fragrance over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to fragrance. The parts of the business most likely touched are revenue, demand, margin. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to fragrance. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -74,16 +74,36 @@
       "published": "2026-11-06T01:04:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "International Flavors & Fragrances (NYSE:IFF) Stock Gets Price Target Increase from JPMorgan Chase & Co.",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdWVlU2gyb3VjRkloZ2FFRXFLTDlyck1pQ2JydDk1aEpYYVVwYmlUQXhoLXE2d3JlS2JUTS1WNnlEandOT3BHMV8yTzVzNTFEVGZVeUVqWlg4SlZHSWVtTmVNaHhxQy1oazV4QkJEeFpUQmQ4TS02MHlBYVJmMEtqbUdYb2tacEVCYkl3cThMdHR4UTN3TjBKeTA1MlM5UDFHWUwxdW9tRGQtUlZ3YnZ1M1N3a0Z0RFljMHcxZUlQWm9zTXRENVhEUkh3WW9fbFhPSWJ6RzhPV2paYXAyMFg1V05KcV9PblVUYnAwNkFhaE4",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T00:06:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Barclays Issues Pessimistic Forecast for International Flavors & Fragrances (NYSE:IFF) Stock Price",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPalAxa0tFRTM3UnI1TFYwSmp6d2trLWViOXVfalNZVzJ2X1cxT0VBb3JnNDJQWmpUeThTNmhsSEdYelNVSlZMbmFaUkJQMDI2T2JxYVBkdHVIb0ptZEFLN2F2Z1g1WEg0bmJnNFpjYTliOV9KSmdNc2c4RzZjc1FiYWJsbnRSM1NubUw3MDREZHl5Vkg2bUJQREJ1dVotR2pXWl9KMEh2NUhBWHpjUlZKTjJWNFZUbFV4MXd1amNaUHBxdkI3Z2ktMlkwdnlzTi1EQXdWNEVVNGh0bndvVjY2VkJyRlVrSzRsZUI2Zg",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T16:47:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "RAVEL|CURRENCY+GUIDANCE|appreciation-citigroup-flavors-forecasts-international-price",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:34:45.951559+00:00",
-  "last_updated": "2026-11-06T14:43:41.254964+00:00",
+  "last_updated": "2026-11-06T20:08:28.825517+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:34:45.951639+00:00",
@@ -99,6 +119,26 @@
       "timestamp": "2026-11-06T14:43:41.254956+00:00",
       "change": "categories added",
       "detail": "ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:08.694126+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:08.694141+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:28.825494+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:28.825514+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

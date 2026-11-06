@@ -463,6 +463,50 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Honasa Consumer",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Honasa Consumer. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -485,16 +529,26 @@
       "published": "2026-10-25T07:02:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Honasa Consumer Ltd (NSE:HONASA) (Q2 2027) Earnings Call Highlights: Record 36% Sales Growth ...",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdDc4N05NaUxjQzJ3bWtpQmJka3JSNnFGckRPNjBHZDRWQmRTeTMtbGFRR0M2cmE3dFdhN1hlVWtxdW14X3Z3ekgtb1VsR0ZMcXJDeHh2SDFVUjZYU0NYcks2a25lMk5SUHJic0dRLWplZzctRHBsVmlTM19uZURTQ3BCb3gwV1RTbkVHVm12VmU4TjhkbC11dkJPUQ",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T19:15:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|EARNINGS|2027-bajaj-bajajhfl-finance-housing-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-17T16:33:50.137278+00:00",
-  "last_updated": "2026-10-25T11:49:12.205837+00:00",
+  "last_updated": "2026-11-06T20:08:34.159689+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-17T16:33:50.137360+00:00",
@@ -510,6 +564,16 @@
       "timestamp": "2026-10-25T11:49:12.205831+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 0 -> 6"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:34.159664+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:34.159683+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

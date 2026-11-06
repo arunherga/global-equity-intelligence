@@ -10,24 +10,17 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "Ministry of Mines",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "mineral block auction",
@@ -41,19 +34,27 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
         "+3 Government policy or tender development",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -61,7 +62,7 @@
         "order value",
         "competing bidders"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to Ministry of Mines, and mineral block auction. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to mineral block auction, and mineral block auction. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -171,21 +172,41 @@
       "published": "2026-11-05T11:38:24+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India Launches Ninth Tranche of Critical Mineral Block Auctions Now",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ0tRdm1BdERRQmJVc0ZuOUFGSHprdjB3eGIwdTNwVUZvX3hBSEN1SzRzQXgxMXlCOWNraF9RVnJ1YWZBTkhtOGQycXhWd3YydzltTkxlZDRMd1NLUnhMd3pMVkY0UEFDclZwSUVudWd4SnByUEEzV0Vic3o1bTVnckY0S1N5bG1zYUYyUkdDckxFNUNpdW1tSTl4NXN1UEJjd1VsMzhhOUVYeUZtV1BfMGFSYy01UHg4eFR6dmVQUHpkLUttVUhlbNIBzgFBVV95cUxPVEVHSFk0NE9GLXhwSHR2WVBtc3d4by1ad2haVWFnbXN3MldlMjFZUEw3YlFqNDg5X1VUTHk2el9QN3RibjBXbm8xRExtRlgxV2xleGE5bWIwS0hPXzNLT0F4SjVtdVRaSkRRdGZ4N01DTWVlVkc0NmZmNnVPLUFFUzZublRhQmFyN3hEbmc4by1OYkQ5REtyMnF1THJRSVZSbnI4eXowLWMzTHduelF5ZFhLNEpERm9vendNbnNydHBxNEUxaW9hZUxtNnNldw",
+      "source_name": "Asianet Newsable",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T06:11:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Pragativadi",
   "cluster_key": "COALINDIA+JKIPL+MSTCLTD|NEW_PRODUCT+TENDER|9th-critical-india-launch-mineral-tranche",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:57:40.494477+00:00",
-  "last_updated": "2026-11-05T14:57:40.494548+00:00",
+  "last_updated": "2026-11-06T20:08:11.857681+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:57:40.494537+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:11.857658+00:00",
+      "change": "sources added",
+      "detail": "Asianet Newsable"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:11.857676+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -4,20 +4,23 @@
   "summary": "Nykaa Q2 FY27 slides: profit surges 207% as fashion turns profitable By Investing.com Investing.com India",
   "event_date": "2026-11-04",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -25,17 +28,12 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -43,13 +41,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Nykaa's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Nykaa, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Nykaa. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -63,21 +64,46 @@
       "published": "2026-11-04T13:24:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Nykaa Q2FY27: Net profit up 207% YoY; Fashion turns profitable",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMF9IMFl4MkFUS3EyQkFzV2lLV1prR0hPLXlVXzRqUFpScUdOdkdvaFdzSG8yTk1pWC1rakZkb2dYOGVCMERHYTVuWmw0UXBEYmZScGRLRjQ4SXFpTlowOXlPSno2WGo0UWdoVWN5U0xRVFkyQzNWV3RvQWEtaDZHMmVaZWFnTGV6LUF3UjdMOFlYMldtakhvNnZqU1ZXWm9xWmIwN0NIbUtXNm13dmFsWlpiRFU2U28",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T17:17:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Investing.com India",
   "cluster_key": "RAVEL|OTHER|207%-fall-fy27-nykaa-profit-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:57:26.779618+00:00",
-  "last_updated": "2026-11-04T14:57:26.779706+00:00",
+  "last_updated": "2026-11-06T20:08:29.900343+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:57:26.779696+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:29.900316+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:29.900333+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:29.900340+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -305,19 +305,19 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "provisioning",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
@@ -329,22 +329,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to provisioning, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -435,16 +434,26 @@
       "published": "2026-10-30T08:28:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank (NSE:TMB): Why Did It Revise Its MCLR Rates From 7 November 2026?",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0VvUHFBcGQ2dGMwcEdKYjdmc3d1RkFVSklLa0JmUHd3anpWNi1aQ3hVc0pGTlVxenowMFVuNmJRdVhBYXF3STh5YXFkSUlJM0lwQkZmV0pSRk9IenZCSERqQ2VFTHlUQV9ZVjRNRnRCc2F0Y2JfQXpwUjRDTW8wamxZdDZtWHBCdDRSYzRhTHk0QmV3MmpiUGc5TURyZk90RE4zQm1mUzZWQTFwcm91QzQwRWx3NWxuS085a3JtVW9NY0YzYzlHNHZZWlZMQQ",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T15:01:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-estimates-mercantile-nse-tamilnad-tmb",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-24T16:45:06.198695+00:00",
-  "last_updated": "2026-10-30T13:27:42.165267+00:00",
+  "last_updated": "2026-11-06T20:08:22.964980+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-24T16:45:06.198757+00:00",
@@ -475,6 +484,16 @@
       "timestamp": "2026-10-30T13:27:42.165261+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:22.964953+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-06T20:08:22.964975+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
