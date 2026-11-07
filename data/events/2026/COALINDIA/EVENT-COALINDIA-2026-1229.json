@@ -9,49 +9,49 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "PRODUCT",
-        "CUSTOMERS"
+        "CUSTOMERS",
+        "COMPETITION"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "SCCL",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "critical minerals",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "SCCL's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to critical minerals, and India. The parts of the business most likely touched are product, customers. Classified as partnership.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to SCCL, and critical minerals. The parts of the business most likely touched are product, customers, competition. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -95,16 +95,26 @@
       "published": "2026-11-06T16:27:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SCCL will partner with US companies in critical minerals sector",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbDU3QThSTlVFeW9ZRHdoVWE3cFVyX2RRR0FuYmRPS0x3dFRIMjU2YmJpSTJXOVlSZGZpREhhQVQtX09lYlhfSTBNSDhsZVc0eTlSSlUtV1lKSEcwN3BvQm9IRElfbThEeGFXek1ZalpnMEhsYktENGpfTl9ONG9keXNtazJFOXJjSXBrc0dfU1ZhVWU0RGZwYVFlONIBoAFBVV95cUxQMXEtU1M2QnVNZ1QwNUw0VGI2eVFtTGZ4My1fazJvMHAtd01feXdFOVJWb3hWVk5kY0xrWGV1N2FPenNlX1ctNk1DNnV0LXNhSTQxcElySW9NQXJ0c2JmdU55RV9OU0tLZXZLOXlweXpWNDd4Sm83QXJELWg3MElzVkY2SHBZODhkdlNxRTFiaTF5T19kdGZKckwyS19qN0tT",
+      "source_name": "The Siasat Daily",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T17:52:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The Hans India",
   "cluster_key": "COALINDIA|PARTNERSHIP|companies-critical-partner-ready-singareni-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:39:38.832381+00:00",
-  "last_updated": "2026-11-06T20:08:20.088472+00:00",
+  "last_updated": "2026-11-07T13:25:56.535772+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:39:38.832454+00:00",
@@ -115,6 +125,16 @@
       "timestamp": "2026-11-06T20:08:20.088454+00:00",
       "change": "sources added",
       "detail": "Deccan Chronicle, Hindudayashankar, The Hindu"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:56.535747+00:00",
+      "change": "sources added",
+      "detail": "The Siasat Daily"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:56.535767+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

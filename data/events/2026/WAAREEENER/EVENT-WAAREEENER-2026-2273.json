@@ -9,19 +9,19 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "PM Surya Ghar",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
@@ -33,22 +33,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to PM Surya Ghar, and rooftop solar. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to MNRE, and rooftop solar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -72,16 +71,26 @@
       "published": "2026-11-04T05:23:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MNRE reports one lakh rooftop solar installations every six days",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObjROUFM5dDk2UnpNaW05ang5QUFpR3JrRXpUSHNDazJqYjdpd21CSUxuVXUxaXZDR2lfYjZkRkM5N1VSMElLWW0yLUJjaVdya0N4dVFZbXZvVy1JNE4xVDlGSktVXzNwQm13UGpEcUVoVjdKRXhZTHVXYkgwbW5YYnhWSEtnS0poNWt6MURTc2dkbjA5bmRTdlhuclNZQ1dYT0d2YUdtV0pqMGZ3aXdNblIyQmZ0ejJDd2JETG53",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T05:41:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The News Mill",
   "cluster_key": "WAAREEENER|OTHER|000-100-ghar-reaches-scheme-surya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:53:29.034066+00:00",
-  "last_updated": "2026-11-04T15:00:19.697813+00:00",
+  "last_updated": "2026-11-07T13:26:32.774918+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:53:29.034141+00:00",
@@ -92,6 +101,16 @@
       "timestamp": "2026-11-04T15:00:19.697795+00:00",
       "change": "sources added",
       "detail": "Devdiscourse"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:32.774894+00:00",
+      "change": "sources added",
+      "detail": "Solarbytes"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:32.774913+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

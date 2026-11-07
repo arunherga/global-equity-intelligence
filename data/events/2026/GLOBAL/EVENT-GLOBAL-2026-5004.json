@@ -10,21 +10,19 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
-      "business_impacts": [
-        "DEMAND"
-      ],
-      "time_horizon": "MEDIUM_TERM",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         },
         {
@@ -36,22 +34,21 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Major industry-level development",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. The parts of the business most likely touched are demand. Classified as industry demand.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit growth, and deposits. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -148,16 +145,26 @@
       "published": "2026-10-30T12:58:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank credit growth outpaces deposits, rises 17.94% to INR 232.54 lakh crore in October",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxON3VRMzNNV0JRTFhJM05KeXJqNDZkQnp3UGNuSzBtUGVMd25DUUphcWs5WlhmMFR4TWlmZEkxTGhSb3h1U1dZSzFjMllHa201dWFKTjVlN01GUHpaSlpsV2lVS29NTW9zZUtnOENwX04wdU9VLVM2VmFwREQ1Vm5fbEZhV2EyR1Joa0gwQVlmZ3RCUjl4dTZZRXJ0UTdzeHRhTUNyNjI5ekpGaFh6OHBiVzN2YnBaZ1BjY2VZcGpHNGktQlRsOGFORWdEQzItTGR2YzRr",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T20:03:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "HDFCBANK+TMB|INDUSTRY_DEMAND|17.94%-bank-credit-deposit-outpaces-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:22:35.666657+00:00",
-  "last_updated": "2026-10-31T12:56:29.525449+00:00",
+  "last_updated": "2026-11-07T13:26:04.672697+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:22:35.666749+00:00",
@@ -173,6 +180,16 @@
       "timestamp": "2026-10-31T12:56:29.525444+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:04.672658+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:04.672691+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -4,20 +4,23 @@
   "summary": "10,091 Shares in Salesforce Inc. $CRM Purchased by Greenup Street Wealth Management LLC MarketBeat",
   "event_date": "2026-10-31",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "GUIDANCE"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "REVENUE",
+        "DEMAND",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -35,8 +38,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 International market development",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+3 Development at a known counterparty (Salesforce)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,13 +48,15 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are revenue, demand, supply. Classified as guidance.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -172,16 +178,26 @@
       "published": "2026-11-05T09:13:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce, Inc. (CRM) Stock Forecasts",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQVBwTDliT2xTSzA5Nms0LWl4dUlUS055NGpMQnlmR281WlpIWWZQcks2SkQ0VmpxYzF6ZlNwZ0YwMXc4UFVnZ2pDNGtfTHpuRkNxQWN0QzlydHh2NHF5eHlkOXdRZER3WmpaQldOZ3dFTTZNemY4TE5pRWdXS3JkZXBiM0g0amF3b0thNA",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T01:51:23+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "HDFCBANK+KSOLVES|OTHER|091-crm-inc.-purchased-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-31T12:52:24.553945+00:00",
-  "last_updated": "2026-11-05T15:02:40.916806+00:00",
+  "last_updated": "2026-11-07T13:26:17.809854+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:52:24.553992+00:00",
@@ -202,6 +218,21 @@
       "timestamp": "2026-11-05T15:02:40.916787+00:00",
       "change": "sources added",
       "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.809826+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.809842+00:00",
+      "change": "categories added",
+      "detail": "GUIDANCE"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.809849+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 6"
     }
   ],
   "price_reaction": {}

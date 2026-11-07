@@ -60,11 +60,11 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 4,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
       "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.5,
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -80,16 +80,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity"
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -98,7 +98,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -312,16 +312,86 @@
       "published": "2026-11-06T06:08:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "22k gold and silver rates today (November 7, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from",
+      "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQdUMyNDUxYm1KLUpJV2NaSDREa05NU3huS2IxN0J0VEVXMUZ1T1ZZc3NVN0FFY0xCWkVSWW9wZWJ5MzFtVzJ1eVNnZXVDZDA3RXZLbnlfaTBPXzBrOUZuMk1IUFU0MTNlZVlWUzY1U2s5bC1YMlF5Unc3Zmt3ekpQRTFJeFA3X0JFNDl1MjNUMnNuWkpFcVpRZllhVHA2MmtQS1hJM3NFRC0zaDl2U3JQYndOQzlIQ3RkOW90UkZ3Y0kzRmNPNXhBZ2hvblBsczA5MGFpVzd2NDduRVU2THdJR1g0cVRJZzQzZURBcjVqUE1uYzE2aWc3dE9wdnZQUEZHTzVqS09xVlBZVnpmTUFibWZrT0lZOHo1bE00THdWVGRIRmpqQlExYkRUMVJ3TzZ2MXk5NHdoQkRlWjVxWXNjNGhLTDZZalVaSlc5bVliVWMtSkFwbEhoVmNVMWFIa0IwdW4yazM4S0NPcVdi0gHyAkFVX3lxTE5ZeWhSUll3bFc5OE10U2ZPWXF4WVhoWDJPY2JnSHQxLW81ZDZETk9sVGtpNlNGVVpxaDI5UTJYYmI4SnVhTU9pT2Q3SFlKTnRkaWs3MS1veGQ4Z2VFX1JheS1lcUJaTy1GYjFkN2RCanhrWW9wUmdUTHBvaDdjbHZacExsblB4S3kydWhHUW8zWTNHOUhiakEyU1ZsRWtNTExuRDhKTXdpTVZUV2czQXZlYVhkc1lQX0U2ZzQ3TjFKTmt2TEt4NFpSZEpGSjFZZWtBcFJWT2ZIZkNJd1JOalY2aVlJcWpUR2FtOTByaUc0ekZlY0QzN3g3dEJIbm12MndNZ1FQaXJmeWpnV3p4TTBZRUJ3eXNVZ1BXTXo5VXhyQVFzSzJZWXp1Q19LTEdDcHpjanRidTlVT0xiclJHVzN1ZFg3eVBoWFB1elVQUktldFY1a3VZNVdmbGdGbV92R2FhWTBKMUpVSjJnNFR4V3JlSFE",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T05:51:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Chennai gold price rises by Rs 160 on November 7, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeVB4SnpvR09HYWhQeDdIWmRqZ3RHNWVpZWxROERsajlZTTlOdkFBcUVSQlhkNVRmV1lYUW94OWhEVGFJV3VjS29qRzJ5X3FPQTBJdEFRWkhDVm5GTnpjMEt6LUhwQ2Q5MHZ2emxEMzlhWkw0QzhYRTNJUFV4SHgwQ2VzNC1fd2MxUzA3ME04Sk84SVB5Ulk3ZDNRNHh1aE12aTlfeWFwSEo1bjVnaXlMUmwwMEVqN3VnVkHSAccBQVVfeXFMTUVMM1VFVEZ0Z0x3YTZCTFh0aTlrQmRmWURRb1FvMzhVMFh4dm1fWXZOdVNRQlV4MlRFZEpTWHpuYUFHWWhYZE5xaWpDczY1eHNZQkQ3RFlQMXhWeDB4dWZOclo4RnA4TzhkUXZrQVpIS2s2MXQtMVNEV3U2U1pZc2xMbHlyZXdOQ2Zmb1ZZVVNRQnIweThkQVlnX2QtUUhhTFVqS2k2TF9BQUhmaVBzY3FJdU5tU2NLeDJQRjhKOEhhS3NpNXIzOA",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T04:50:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today Hyderabad: 22K, 24K Rates On Nov. 6",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9uVlJzdlJIX2swc05hYUFfX0o2ZzY5YVVaQ2lmSGZaNDZtU0pOTnYwU0YtY2t2NDlXSVpQQkh5b193QWtRZGtZM3dhblhCbVpEY1NFVm5RZG16T3BuR1RWNkZ4S0FaUThXSmFHSWdoeEpXQnctQmEtdkt0SQ",
+      "source_name": "INDToday",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T10:05:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today In Gairsain, Check Live 22 And 24 Carat Gold Price",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhXzVfamdLbGRfcXNTMjBnaGw5VUc2NW56b0JLaVFoMGVGNndIM0Z5MGVnWTVKZlhqRnJTa19rWXFXOTJ0bzJ3YlFucjZfYmRKeXdtZ2dNYjczZTdJOHdwNy0wUUlsc3FyOURuU3VWV09JQzE1",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T02:46:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today In Kohima, Check Live 22 And 24 Carat Gold Price",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wNEk2QThQY3NNSURobURGeElCRGZFZlhKXzJGWHhOWUxmSFF1b2dRdWZKamZCeTh4RWR5azY0bWpQdjJUWi1uWXZQM1B3dnk3bXVxODd0aEtpSWZ1a21DN2JmazRtd05SZ01lcnBIVUQwQQ",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T02:48:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today November 7: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNQndqLUs5eVg5UTZiay1zZ1JWZGJPc0FHbUdRUG5PbzY0V1pDV1luRFVNSkdZeTJjbUNZVFlpSU9xTkZiLTRoN0JtN2laZS1tREpaS3dsUVllcTdwdWg5VXFEZkY0Z09UVzM4Vm5MU25rSnFRaEkwOWRrSVB5ZVk5NkpsNU1iNnpTVUViUFRWX2xndlFxS2c5bmpVWmNqQVJhZWtxbmN2Y2M4ZHVURzRUY3pkUTJncWt2eVZ1NDN1TkQ1N1g0UzJjZlQ2N2ExUnh6OUc1SzNmeFhjV3dvR1YwSjBtSG40bWZsOW5MNFlYNFUzT0RXdWRLVl9VQWtJSW5TS1Z0VFFvNHF0MW5fb00zZElMbHLSAZsCQVVfeXFMT2tNelZvYk5zaFJkZWFPRUxGR3I1cW5uZzQzVExDX0o3YUY5bThUNFBMZE5LSUJPeGoxMVplQWE1anBscThHaFZ4SC0xNUFCMnJFOVBuWVNNejE5dHRZWUJYb0VrOXc5V3hBQlFYNDNHMUo1blY5RW9VbGxoV1dTeFNpeG5fT3RORXZXSkRzMjNzLXQwUWZmSEhfRjZEZjZPS3VOZHlnejBycWswYko3QWJiYWVqazZNV21OUzAyWm5JNnF4aEJEcENMdF9MZlZUUTZTT2wybjhhYWp2Y2NnNmNBZXAzWU1JOTJLSU9jUGhPQ0RFSHZMNU9zRmFaWFdCVjhHVENuM3lQQy1yRUFNQkpCQzRuaGdJaTVqSQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T08:01:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold rate today in Hyderabad, November 7, 2026: Check 22K, 24K and 18K gold prices",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLWpFRFc2dV9yd2lIOGtjZmd0UkdGYVN1S0FxZVhHd2xjTHdvU3ZtRmJDTFRNeldNUTNld04zX0UxYzN2YlpqeUZoVk5zcmhPelo0WWJpVmtYRU5LU2NuRmRUWXFOZHJVM3Q3MXphVE5Gam5BUm5BR3o0alV3N21IZVdabkI0ODNMQV9RUmwwMDFPT29CT3hibG1qeG54MWVrT0lva0taMkg",
+      "source_name": "Hyderabad Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T03:14:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 21,
+  "article_count": 28,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-november-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T20:35:53.265894+00:00",
-  "last_updated": "2026-11-06T14:44:06.510764+00:00",
+  "last_updated": "2026-11-07T13:26:23.087640+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:35:53.265997+00:00",
@@ -377,6 +447,16 @@
       "timestamp": "2026-11-06T14:44:06.510747+00:00",
       "change": "sources added",
       "detail": "ETV Bharat"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:23.087616+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, DT Next, Hyderabad Mail, INDToday"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:23.087635+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

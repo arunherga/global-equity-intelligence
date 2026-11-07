@@ -13,7 +13,7 @@
       "relationship": "DIRECT",
       "impact_score": 8,
       "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
@@ -36,7 +36,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,6 +50,49 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "EPC contracts",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to EPC contracts. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -203,16 +246,56 @@
       "published": "2026-11-05T07:04:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Tech Secures 285 MWp Solar EPC Contract Aiming for Completion by FY28",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcFJIS2tHczRyZWQwTXpEbkxNWEpTVlNRSHd5c2lRODFxd0pKUnU0QjA2MEIwVFJTbjgwa2ZERkhZYkdjeGRRU3hMMHA2clpOSXpRdzhsaTFTQmpYTl9rY3BaMEVXT1pHNVZ2Qk5uOTBLYXV6dFFEWnAyeVFwMTA1TFVDNzJ2M3duNmpEZXJraDJZLVNOX1E3MmV4bDdKV2ZqTmdBaF9nd09PUFd2VmJ4WXBB",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T07:46:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies signs 285 MWp solar project work order",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWUlVbEd3ekhXR01IU3pIRDQzaERkd0ZtVmtscThlUjZSU2w2UHFHM1pPMm42aTAwd1Z0X2xpZ2dsaGIxTERpT1lHbVJyalduY2JuR3c0X1dNUlg1UXY5VF9SeldPYWRNN0padDktcU9EU090S0lWVWZMd1d3ZzlWNGJLNjM2YzJyRm9VdUM5N29jU1FiWkJJY1V0cTI",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T07:01:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies signs EPC contract for 285 MWp solar power project",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX25uVmxYZUZUWmJLR29Ub3dGM3NraDFzc0s4MUUyemMyRmwteUl2SmtvWWQ0NkVXVzkxVDV3Y2hkVWswNTlJcm1pVE1UUDlCZ0pwRlhOTnZDbzRUSDUtNTNTN0hWNFRic1kzMW1OSEdSSUswWkxqMkdQaGdLTU5EeHZTRHgwZjR0MUN0MHlvNFNzSkMwU2hvNGJEWjFkLXp6OXZ2NXluMW1fMU1pUjNSTC1fbzNMeVll",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T06:13:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Renewable Technologies wins 285 MWp solar EPC project",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHY3UndNdy1XWmlDQWxsUFBMcDlOZFdaVi1CQmRNY3N0U0dpTGFINElscnYyWWpnSWF1YURaSWZkQUJoRURXVTkycjNSMFJ5aVNERWlnVDg3YjJfcVVYRnl2LXYtbTJOVlFkVzZJekFQR29aUm40RDZfdUJTTnAyRllUVmFCSTNuWnFQZEhWMzFudFVlOExuVVhsaXppVmIzTGJFMjhKSFh0RUVOYzdSc3hTMGRUdGF0LTNqVU5B0gG-AUFVX3lxTE1MdjdSd013LVdaaUNBbGxQUExwOU5kV1pWLUJCZE1jc3RTR2lMYUg0SWxydjJZamdJYXVhRFpJZmRBQmhFRFdVOTJyM1IwUnlpU0RFaWdUODdiMl9xVVhGeXYtdi1tMk5WUWRXNkl6QVBHb1pSbjRENl91QlNOcDJGWVRWYUJJM25acVBkSFYzMW50VWU4TG5VWGxpemlWYjNMYkUyOEpIWHRFRU5jN1JzeFMwZFR0YXQtM2pVTkE",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T09:12:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 15,
+  "article_count": 19,
   "source_count": 2,
   "primary_source": "Trade Brains",
   "cluster_key": "WAAREEENER|ORDER_WIN|450-mwp-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:44.681017+00:00",
-  "last_updated": "2026-11-05T15:02:30.824932+00:00",
+  "last_updated": "2026-11-07T13:26:35.544929+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:44.681074+00:00",
@@ -268,6 +351,21 @@
       "timestamp": "2026-11-05T15:02:30.824913+00:00",
       "change": "sources added",
       "detail": "Solarbytes"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:35.544900+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, CNBC TV18, InvestyWise, Sahi"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:35.544918+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:35.544924+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (SECTOR)"
     }
   ],
   "price_reaction": {}

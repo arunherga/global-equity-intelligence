@@ -11,44 +11,59 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [
-        "REVENUE",
-        "DEMAND"
-      ],
-      "time_horizon": "MEDIUM_TERM",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "ALMM",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar cells",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "ALMM",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "+2 Earnings or guidance at a related company",
-        "+2 Major industry-level development",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to ALMM, and cell manufacturing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -92,16 +107,26 @@
       "published": "2026-11-05T08:37:24+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ALMM-II Solar Cell Manufacturing Capacity Grows to 47 GW",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT01OS1FIY2o3MEZxVUlfbUYxbm1rWXlELWo1ZFRsRjM2MThqbWZHRzJuVk1oUWdzRm8zekpwZW5aY0E4cHFUT2FBNExhREJjbzlybG9SSkNmV0NhX0t1eS1FTDNWelBnZmQtN0xXSTRiSk5lRXExTVZYc05pSFg5c18tRnp5ODNuNVE",
+      "source_name": "https://www.mvapulse.com/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-06T13:31:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "https://www.mvapulse.com/",
   "cluster_key": "WAAREEENER|OTHER|capacity-cell-dominates-india-solar-topcon",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:11:46.215840+00:00",
-  "last_updated": "2026-11-05T15:02:38.691478+00:00",
+  "last_updated": "2026-11-07T13:25:47.173781+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:11:46.215896+00:00",
@@ -127,6 +152,16 @@
       "timestamp": "2026-11-05T15:02:38.691460+00:00",
       "change": "sources added",
       "detail": "Sarkaritel.com"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:47.173754+00:00",
+      "change": "sources added",
+      "detail": "https://www.mvapulse.com/"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:47.173775+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

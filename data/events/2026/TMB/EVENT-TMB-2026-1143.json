@@ -47,6 +47,56 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its industry exposure to bank fraud. The parts of the business most likely touched are reputation, management. Classified as fraud.",
       "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.56,
+      "business_impacts": [
+        "REPUTATION",
+        "MANAGEMENT",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "State Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "a competitor (State Bank of India) is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
+        "State Bank of India's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to State Bank of India, and India. The parts of the business most likely touched are reputation, management, competition. Classified as fraud.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -99,21 +149,41 @@
       "published": "2026-11-06T11:03:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CBI books Kishore Biyani, Future Retail in alleged Rs 904-cr bank fraud",
+      "url": "https://retail.economictimes.indiatimes.com/news/food-entertainment/personal-care-pet-supplies-liquor/cbi-books-kishore-biyani-future-retail-in-alleged-rs-904-cr-bank-fraud/135624978",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-07T02:54:53+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 5,
-  "source_count": 2,
+  "article_count": 6,
+  "source_count": 3,
   "primary_source": "Livemint Companies",
   "cluster_key": "TMB|FRAUD|biyani-books-cbi-future-kishore-who",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:33:12.487543+00:00",
-  "last_updated": "2026-11-06T20:08:04.740245+00:00",
+  "last_updated": "2026-11-07T13:25:44.101720+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:33:12.487650+00:00",
       "change": "created",
       "detail": "5 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:44.101696+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:44.101715+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

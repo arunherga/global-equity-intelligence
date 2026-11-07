@@ -190,10 +190,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -206,12 +206,19 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Australia",
+          "relationship": "WEAK",
+          "weight": 0.4,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -221,7 +228,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -229,19 +236,20 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and Australia. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     },
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "EXPORTS"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
@@ -251,12 +259,20 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Australia",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -266,7 +282,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -274,7 +290,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and Australia. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
       "ai_analysis": null
     },
     "TMB": {
@@ -324,29 +340,30 @@
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "COMPETITOR",
+          "term": "Divi's Laboratories",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -355,7 +372,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -364,7 +381,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Divi's Laboratories. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -415,10 +432,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN"
@@ -431,12 +448,19 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Australia",
+          "relationship": "WEAK",
+          "weight": 0.4,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "+2 International market development",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
@@ -446,7 +470,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -454,7 +478,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and Australia. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -468,21 +492,116 @@
       "published": "2026-11-05T11:04:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "All Time Plastics Ltd (NSE:ALLTIME) (Q2 2027) Earnings Call Highlights: Margin Pressure and ...",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNX0Q0UnJYWnFoU0cyb240QXpweUtQX3JpY3dlb2hGc3RvWU0yVlhGY0RuOGlJaXdLRFlrN2pYNXlmQ2RyZkZMVmNWNU54LTA0SVlVUlhIWVpGVno5ZVg4Z2FUZV9zVkkzRl9KeFVKZEgzVEJBZTlVci1vbnJUdHY3QXZkbmI",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T11:13:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Blue Jet Healthcare Ltd (NSE:BLUEJET) (Q2 2027) Earnings Call Highlights: Record Revenue of ...",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNV0JydEUxUHBaT1BQUmZfMUJMQzRKMnBtbk5SZWxmVVVzTXFpSGxmTm4wVGM2M1ZRckMwQ2h1Qng5UHZGYUU4ZHYwbU5oUHhDQzNmQURVTGJTQWh2Z0RpMXhwTU01OUYxSDBEaGV3anZrTW9teGdwOVk1WFZqdGZwNHdR",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T05:16:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Capital Small Finance Bank Ltd (NSE:CAPITALSFB) (Q2 2027) Earnin",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNdjIyTTgxWXctUWNBRmt1WFUtZ2U5SHpqMXg2WW1vcHpUR2x2MllLSElGdVkxd1RRZkpGQkJNbFgxQ1NKeXNfM3BVQzNYdWF2YWpvQWNZNW1maEtjekJlcTVmX3Y3djhOV0pyUHVIVjdka25GcDVUNTRvN1o4UWthUEpUZ0g0VlJsYVM0ZFhoSFk3ZHlBRkFTQ2w3SDBEdG94U0tUcGdKV2RwYnRvQkstOE9xaDc2LTJEZzBrRmliSGZkbTY1SElYQXNWVUVLdU1ZUF94SzFTR3A4NVFxaTd1RDVuTHdablFyUmVfSnJvX2NUMF9SYUZhMjc0VXEwOW84bVl2UUdwRHZ6SWpjV2pN",
+      "source_name": "GuruFocus",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T02:15:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Capital Small Finance Bank Ltd (NSE:CAPITALSFB) (Q2 2027) Earnings Call Highlights: 23% Loan ...",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT2tXZG8wN0phcnZsZjhRVmFIVnVxbnVnMmEwWnNMZC1pV0JROEFyU21Dd3AzN3VQdzg3UU5oZEU2ZDdfNE0xYVB5cFdsWEk3VDNSSDF2N3Vob1hXYXoxa3VIZ2hnOGVDWHh0OENtT1F4aXQ5X1Z3bnF6VVFFSHFsVVpHUFB3dw",
+      "source_name": "Yahoo Finance Australia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T01:18:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Divi’s Laboratories Q2 2027 Earnings Call Is Live",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNGx0dFM2STNqTGJqdGMtVWhUNTQtN05QMkZEMHVVMnZGOFQyZmRhZnF5cnlrWDhVSE15WFp4NlFXS0x4MmhfWU9TVDI5Y0JwMV9RWkI5ZGVRUlA0QWlKdU9paThIcUhOdkhqV0d5NmhheDFhamVlajVHaTJxU2FJcW55c1dRcTRrblA0VVNBTi1ZNzBudlFlZVg3WjU0ejB2c05IaWpvLUwyTGdaTkZqRF9pbWRWY1dBd2c",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T08:27:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Indus Infra Trust (NSE:INDUSINVIT) (Q2 2027) Earnings Call Highlights: NAV Jumps to Rs 12,862 ...",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdGFhUUVKY2dheEhFd2tkaU4tWXozUWdRU3RSdHZDbWM3cjVmNHg5OWl2R293SGM5TXktMTE1VTNkREVIbW5OSWVhcUVYazBTMHRxN0doM2k3M3R0MWV3ZWVQZ3ptdHBMdkhvRTlNV3NYSTNIbE5OekRJM2E1dHhPQlBoQW9PUm9s",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T07:59:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "KRN Heat Exchanger and Refrigeration Ltd (NSE:KRN) (Q2 2027) Earnings Call Highlights: Revenue ...",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORWFjSWpiT3NCWEVSRkVrQTAxQjdQVHVLNnZsR3dHTVdNYkdVLUE0M3cxeFdZN1I5a0w4Mm1kakQ2ejBDX0R5ODJ0ekhyeng3ZkZYMS12NzRRU0hxV1MyRHhmYUtMdnFsb29sTmRmVmZ4YmV5UnRkTzYzcmR5YXF4YU1ITU15WmxEVVpUMkc2R1FsT0t2ZFZIcXRIbFVWX29UcWhB",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T01:49:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|EARNINGS|clean-energy-enviro-max-nse-solutions",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T14:57:23.261142+00:00",
-  "last_updated": "2026-11-05T14:57:23.261214+00:00",
+  "last_updated": "2026-11-07T13:26:17.289327+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:57:23.261204+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.289288+00:00",
+      "change": "sources added",
+      "detail": "GuruFocus, TradingView, Yahoo Finance, Yahoo Finance Australia"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.289308+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.289314+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 4"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.289319+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:17.289323+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 2"
     }
   ],
   "price_reaction": {}

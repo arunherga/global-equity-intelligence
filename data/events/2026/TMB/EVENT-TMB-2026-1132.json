@@ -49,6 +49,57 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "GeM",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to GeM, and India. The parts of the business most likely touched are pricing, input cost, competition. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -81,16 +132,26 @@
       "published": "2026-11-06T15:12:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Jewellers report brisk Dhanteras sales as gold price drop lures buyers; volumes seen flat",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/jewellers-report-brisk-dhanteras-sales-as-gold-price-drop-lures-buyers-volumes-seen-flat/135624683",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-07T02:42:05+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 3,
-  "source_count": 2,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|COMMODITY|boost-expect-fall-gold-jewellers-price",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:47:58.003847+00:00",
-  "last_updated": "2026-11-06T20:08:25.209945+00:00",
+  "last_updated": "2026-11-07T13:25:43.123136+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:47:58.003917+00:00",
@@ -101,6 +162,16 @@
       "timestamp": "2026-11-06T20:08:25.209926+00:00",
       "change": "sources added",
       "detail": "Rediff, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:43.123112+00:00",
+      "change": "sources added",
+      "detail": "ETRetail"
+    },
+    {
+      "timestamp": "2026-11-07T13:25:43.123130+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
     }
   ],
   "price_reaction": {}

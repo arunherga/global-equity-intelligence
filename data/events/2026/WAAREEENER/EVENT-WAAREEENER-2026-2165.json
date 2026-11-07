@@ -10,14 +10,25 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
+        "COMPETITION"
+      ],
+      "time_horizon": "LONG_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Saatvik Green Energy",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
@@ -27,21 +38,26 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+3 Close, specific exposure to this company",
+        "+3 Strategically important competitor development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect strong relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp",
+        "Saatvik Green Energy's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Saatvik Green Energy, and solar modules. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -75,16 +91,36 @@
       "published": "2026-11-05T13:14:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Saatvik Green Energy Begins Commercial Production at Odisha Solar Module Facility",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN3VnTFdRaEVZdFJkSHZ2YUh4YTVKZi1rcnpPOWw5MmFKTFhiQTVTakRuRElTRkEyU1RWaS1JdlJQWEtvbUR2WXd2NWVWVnQ0dGxrX2N1bXhHbEEyWXBMX3hPbmp0dU1PdHRrOEhUUkNWRjd2RXJYQmFLV3h4V0hCS2NaTF9uZXE5eFBFeVRZWVBiN2w3Q2hkb3Nta2ZJRTBwSHUxSXNjazFOVHpnNTVadjdoQXlmQQ",
+      "source_name": "Machine Maker",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T11:36:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Saatvik Solar commences 1.3 GW PV module production in Odisha",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM3JSLVpIQWU1blF0dzVadUVwNGF1eS1WRlplY1gwUENzZHZQT1pEX3FsWWVUYUx6dENMazNvUUlZU2s0ME1nODd5NVVpbzlJSElpUm1HVWhfU2NMTXJvbTllRnFFcTRZNmROZDY1dExEU2xkUU5NRWhKR3ZkaFhQWmJZRldIQ0xqWk9SR0dYRmd1bXdmVng1Si1aWWxHbFlabDg5WnVn",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T04:41:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "WAAREEENER|OTHER|1.3-energy-green-saatvik-solar-starts",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-02T22:33:45.332401+00:00",
-  "last_updated": "2026-11-05T15:03:08.718039+00:00",
+  "last_updated": "2026-11-07T13:26:30.792717+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:33:45.332454+00:00",
@@ -110,6 +146,16 @@
       "timestamp": "2026-11-05T15:03:08.718035+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:30.792694+00:00",
+      "change": "sources added",
+      "detail": "Machine Maker, Solarbytes"
+    },
+    {
+      "timestamp": "2026-11-07T13:26:30.792712+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 6"
     }
   ],
   "price_reaction": {}
