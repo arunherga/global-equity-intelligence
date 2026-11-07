@@ -10,9 +10,9 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
       "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
@@ -24,10 +24,11 @@
         "+5 Direct company event",
         "+3 Earnings or guidance",
         "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "reported results moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -93,7 +94,7 @@
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:37:06.378522+00:00",
-  "last_updated": "2026-11-06T20:08:21.531712+00:00",
+  "last_updated": "2026-11-07T18:11:29.146367+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:37:06.378607+00:00",
@@ -104,6 +105,11 @@
       "timestamp": "2026-11-06T20:08:21.531695+00:00",
       "change": "sources added",
       "detail": "Rediff MoneyWiz, Sahi"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:29.146352+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

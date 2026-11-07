@@ -12,26 +12,20 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "COMPETITION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "repo rate",
-          "relationship": "SECTOR",
-          "weight": 2.0,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
@@ -40,7 +34,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -53,47 +47,33 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "repo rate",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -102,7 +82,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -136,21 +116,56 @@
       "published": "2026-10-21T08:02:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank raises FD interest rates by up to 50 bps",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE83Z1lCcjlMT2dCZ3k3bU1lNWNFX1BvblFianF0MlY5am84clVYNGV4VWVmMjFlbFNYYW0wcVN1SEV6eHItcVNXamRZSWZzYm43SUxBTlU2ZlJSWEhpdWU5UlduQmE",
+      "source_name": "Daijiworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T16:07:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank raises FD rates by up to 50 bps on select tenures",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUjZfbllZTFFZZUJVT193R3Z1ZnJXZjFHd3d1YU4wVThiVDBLSzhoVWhKX0FIaG1RUllYd3ZnMkFPM1c0c2pFdTl3ZHZ0M3pYbklCTkJWRUI3OEhDd1BiNWRQU3F5NjNJbWszWmFHR3pMVV9uajBJVHo0U0VFeUlBV3hFWGs4T21oUlNTT0dLSjd6WHhoMlNQWUFEQXBXTGRRaGlnd9IBqgFBVV95cUxNMlNTSGlXeHU4VXE0bzVRMUhhcE9ERlFwMkpmTWpzUVdabzJDVVJ6VEVyRVFkS3ZNWHdrRVUxZnlMUlh4MWR5V1kwc1RpMkVXQVF1akxMX0tfYlRoOVFsYkhMOVZRNXhPcFktc2NLb1A3RDRwRVNYazNxSGxJWVplXy1SdFN3MEo3YW9Ja2RaVHZJZFdhTFBGc3pyOWhHM0Z6d3RoUHd4T1FWdw",
+      "source_name": "Punjab Kesari English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T13:31:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Realty Plus Magazine",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|bank-bps-margin-rbi-recovery-see",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:10:45.736660+00:00",
-  "last_updated": "2026-10-21T18:10:45.736722+00:00",
+  "last_updated": "2026-11-07T18:11:40.533390+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:10:45.736715+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:40.533363+00:00",
+      "change": "sources added",
+      "detail": "Daijiworld, Punjab Kesari English"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:40.533381+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:40.533387+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

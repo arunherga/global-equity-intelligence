@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -61,21 +62,41 @@
       "published": "2026-10-31T22:59:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices today, November 7th: World gold prices fall sharply.",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1vVEdBZklYOXltcGppME5NN1c3NnNwUjVZM0h6ZFZfVEZFX1Ita3RPSkIzM3NVeXphV0ZuMThqaTdHb2lwdjkzeWhsbjVQcWo1TFZPdzIyQl84Wkx3dDJqRzZ2NE14VUhGVjJNWVFNUm5zQXQyVXpPblYwZw",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T15:05:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Vietnam.vn",
   "cluster_key": "TMB|COMMODITY|1st-freefall-gold-november-price-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-01T18:33:34.666348+00:00",
-  "last_updated": "2026-11-01T18:33:34.666457+00:00",
+  "last_updated": "2026-11-07T18:11:44.475273+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T18:33:34.666444+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:44.475252+00:00",
+      "change": "sources added",
+      "detail": "Vietnam.vn"
+    },
+    {
+      "timestamp": "2026-11-07T18:11:44.475269+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 5"
     }
   ],
   "price_reaction": {}
