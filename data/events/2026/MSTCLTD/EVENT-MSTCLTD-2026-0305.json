@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-MSTCLTD-2026-0305",
-  "title": "SAIL to host analyst and institutional investor meet on Oct 28",
+  "title": "MSTC Limited: Analyst / Institutional Investor meets",
   "summary": "SAIL to host analyst and institutional investor meet on Oct 28 scanx.trade",
   "event_date": "2026-10-22",
   "event_types": [
@@ -9,40 +9,31 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "confidence": 0.61,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "SAIL",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+5 Direct company event",
+        "+2 Company investor-relations release",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 9/10",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from SAIL"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to SAIL. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +47,46 @@
       "published": "2026-10-22T11:27:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MSTC Limited: Analyst / Institutional Investor meets",
+      "url": "https://www.mstcindia.co.in/content/InvestorsMeets.aspx",
+      "source_name": "MSTC Limited investor relations",
+      "source_domain": "mstcindia.co.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "scanx.trade",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "MSTC Limited investor relations",
   "cluster_key": "MSTCLTD|OTHER|analyst-host-institutional-investor-meet-sail",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:15:09.789673+00:00",
-  "last_updated": "2026-10-22T18:15:09.789739+00:00",
+  "last_updated": "2026-11-08T18:32:49.586753+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:15:09.789731+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.586723+00:00",
+      "change": "sources added",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.586741+00:00",
+      "change": "official confirmation",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.586748+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 9"
     }
   ],
   "price_reaction": {}

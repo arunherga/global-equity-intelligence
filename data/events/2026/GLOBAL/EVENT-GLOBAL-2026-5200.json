@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-GLOBAL-2026-5200",
-  "title": "SEBI warns PC Jeweller promoter, compliance officer on failure to maintain insider-trading database",
+  "title": "MSTC Limited: Compliance Officer",
   "summary": "The markets regulator cited the company’s failure to maintain a structured digital database related to unpublished price-sensitive information concerning its June 2025 business update.",
   "event_date": "2026-11-02",
   "event_types": [
@@ -9,36 +9,28 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.61,
       "business_impacts": [
         "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect relationship",
+        "best source quality 9/10",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -47,8 +39,26 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unlikely to have any direct impact on revenue, as changes regarding the Compliance Officer are routine administrative and governance matters.",
+        "margin_effect": "Unclear, but expected to be negligible as compensation or transition costs for executive compliance roles do not materially alter profit margins.",
+        "cost_effect": "Minimal impact on operating costs, limited strictly to standard administrative, recruitment, or executive compensation expenses.",
+        "competitive_effect": "No observable impact on the company's market position or competitiveness in e-commerce auctions and scrap trading.",
+        "regulatory_effect": "Fulfils mandatory disclosure and governance requirements under SEBI (Listing Obligations and Disclosure Requirements) regulations and stock exchange rules.",
+        "short_term": "Administrative transition of corporate secretarial and compliance responsibilities to ensure ongoing compliance and timely regulatory filings.",
+        "medium_long_term": "Minimal long-term operational or financial impact, provided governance processes and legal compliance remain steady.",
+        "second_order_effects": "Ensures uninterrupted communication with stock exchanges and regulatory bodies, preserving corporate governance standards and investor trust.",
+        "key_uncertainty": "Whether the filing pertains to a routine appointment/resignation or stems from broader executive turnover or compliance scrutiny.",
+        "monitor_next": [
+          "Formal corporate announcements filed with NSE and BSE detailing the specific change in Compliance Officer",
+          "Stability of Key Management Personnel (KMP) across MSTC's executive leadership",
+          "Timeliness and accuracy of subsequent regulatory and financial disclosures",
+          "Any exchange inquiries or notices regarding secretarial compliance"
+        ]
+      }
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
@@ -448,21 +458,46 @@
       "published": "2026-11-02T09:27:28+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "MSTC Limited: Compliance Officer",
+      "url": "https://www.mstcindia.co.in/MSTC_Static_Pages/frontpage/ComplianceOfficer.pdf",
+      "source_name": "MSTC Limited investor relations",
+      "source_domain": "mstcindia.co.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "The Hindu BusinessLine Markets",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "MSTC Limited investor relations",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|REGULATORY|compliance-jeweller-officer-promoter-sebi-warns",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:28:21.495585+00:00",
-  "last_updated": "2026-11-02T22:28:21.495663+00:00",
+  "last_updated": "2026-11-08T18:32:49.817185+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:28:21.495653+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.817156+00:00",
+      "change": "sources added",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.817174+00:00",
+      "change": "official confirmation",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:49.817180+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 1 -> 13"
     }
   ],
   "price_reaction": {}

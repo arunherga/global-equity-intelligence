@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-GLOBAL-2026-4831",
-  "title": "Gujarat Ambuja Exports (NSE:GAEL): Did Crisil Upgrade Its Credit Rating to AA/Stable?",
+  "title": "MSTC Limited: Credit Rating",
   "summary": "Gujarat Ambuja Exports (NSE:GAEL): Did Crisil Upgrade Its Credit Rating to AA/Stable? Kalkine India",
   "event_date": "2026-10-29",
   "event_types": [
@@ -9,49 +9,35 @@
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
         "DEBT",
         "BALANCE_SHEET"
       ],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+5 Direct company event",
+        "+2 Company investor-relations release",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 9/10",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "rationale in the rating note",
         "covenant implications"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are debt, balance sheet. Classified as credit rating.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are debt, balance sheet. Classified as credit rating.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -488,21 +474,46 @@
       "published": "2026-10-29T06:48:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MSTC Limited: Credit Rating",
+      "url": "https://www.mstcindia.co.in/content/CreditRating.aspx",
+      "source_name": "MSTC Limited investor relations",
+      "source_domain": "mstcindia.co.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "Kalkine India",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "MSTC Limited investor relations",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|CREDIT_RATING|ambuja-did-export-gael-gujarat-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-29T13:20:50.744580+00:00",
-  "last_updated": "2026-10-29T13:20:50.744646+00:00",
+  "last_updated": "2026-11-08T18:32:50.055720+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:50.744635+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:50.055692+00:00",
+      "change": "sources added",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:50.055710+00:00",
+      "change": "official confirmation",
+      "detail": "MSTC Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:50.055715+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 9"
     }
   ],
   "price_reaction": {}

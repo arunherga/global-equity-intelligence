@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-FRESHARA-2026-0201",
-  "title": "Examine the role of the Agricultural and Processed Food Products Export Development Authority (APEDA) in promoting organic exports. How do strict conversion periods impact small-scale mountain farmers? – GKToday",
+  "title": "APEDA: कृषि और प्रसंस्कृत खाद्य उत्पाद निर्यात विकास प्राधिकरण Agricultural and Processed Food Products Export Development Authority",
   "summary": "Examine the role of the Agricultural and Processed Food Products Export Development Authority (APEDA) in promoting organic exports. How do strict conversion periods impact small-scale mountain farmers? – GKToday GK Today",
   "event_date": "2026-10-30",
   "event_types": [
@@ -10,10 +10,10 @@
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.67,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -27,14 +27,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 10/10",
+        "official confirmation available",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -55,21 +56,46 @@
       "published": "2026-10-30T06:38:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "APEDA: कृषि और प्रसंस्कृत खाद्य उत्पाद निर्यात विकास प्राधिकरण Agricultural and Processed Food Products Export Development Authority",
+      "url": "https://apeda.gov.in/",
+      "source_name": "APEDA",
+      "source_domain": "apeda.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "GK Today",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "APEDA",
   "cluster_key": "FRESHARA|OTHER|agricultural-examine-food-processed-products-role",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:19:49.144447+00:00",
-  "last_updated": "2026-10-30T13:19:49.144569+00:00",
+  "last_updated": "2026-11-08T18:32:46.563596+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:19:49.144558+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.563565+00:00",
+      "change": "sources added",
+      "detail": "APEDA"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.563583+00:00",
+      "change": "official confirmation",
+      "detail": "APEDA"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.563590+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 0 -> 3"
     }
   ],
   "price_reaction": {}

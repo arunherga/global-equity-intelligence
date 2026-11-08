@@ -1,6 +1,6 @@
 {
   "event_id": "EVENT-COALINDIA-2026-1098",
-  "title": "Indias coal imports fall 5.83%, imports for power plant blending drop 35.23%: Coal Ministry",
+  "title": "Ministry of Coal: Coal Import Monitoring System",
   "summary": "Indias coal imports fall 5.83%, imports for power plant blending drop 35.23%: Coal Ministry The Tribune",
   "event_date": "2026-11-01",
   "event_types": [
@@ -9,45 +9,116 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "India coal imports",
-          "relationship": "SECTOR",
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Coal",
+          "relationship": "INDIRECT",
           "weight": 2.3,
-          "detail": "international topic; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to India coal imports, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Coal",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.67,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Coal",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -61,21 +132,56 @@
       "published": "2026-11-01T10:02:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ministry of Coal: Coal Import Monitoring System",
+      "url": "https://imports.coal.gov.in/CIMS/public/home",
+      "source_name": "Ministry of Coal",
+      "source_domain": "imports.coal.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
-  "primary_source": "The Tribune",
+  "article_count": 2,
+  "source_count": 2,
+  "primary_source": "Ministry of Coal",
   "cluster_key": "COALINDIA|OTHER|5.83%-coal-fall-import-import-indias",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T18:34:03.786560+00:00",
-  "last_updated": "2026-11-01T18:34:03.786648+00:00",
+  "last_updated": "2026-11-08T18:32:46.833964+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T18:34:03.786637+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.833923+00:00",
+      "change": "sources added",
+      "detail": "Ministry of Coal"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.833942+00:00",
+      "change": "official confirmation",
+      "detail": "Ministry of Coal"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.833949+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.833954+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:46.833959+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
     }
   ],
   "price_reaction": {}

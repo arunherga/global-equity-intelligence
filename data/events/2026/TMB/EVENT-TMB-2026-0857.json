@@ -5,39 +5,478 @@
   "event_date": "2026-10-26",
   "event_types": [
     "EARNINGS",
-    "DIVIDEND"
+    "DIVIDEND",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "DIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.4,
+      "impact_score": 15,
+      "impact_band": "CRITICAL",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
       "business_impacts": [
-        "CASH_FLOW"
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
-        "-2 Single unverified source"
+        "+3 Earnings or guidance",
+        "+4 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
-        "DIVIDEND is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 9/10",
         "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Minor or neutral. Fee revenue from dormant account maintenance or transaction charges may be minimal, while any successful account reactivations could slightly boost transactional and cross-selling revenue over time.",
+        "margin_effect": "Unclear. If dormant low-cost CASA deposits are transferred to the RBI's Depositor Education and Awareness (DEA) Fund, the bank loses low-cost funding, which could slightly pressure Net Interest Margins (NIM) if replaced with higher-cost wholesale deposits. Conversely, reactivated accounts preserve low-cost CASA.",
+        "cost_effect": "Temporary increase in operating expenses related to public notices, customer communication, identity verification/KYC processing, and administrative handling of account closures and fund transfers.",
+        "competitive_effect": "Neutral. Managing dormant accounts and adhering to RBI directives on unclaimed deposits is a standard regulatory procedure applicable across all commercial banks in India.",
+        "regulatory_effect": "Positive compliance outcome. Adhering to RBI guidelines regarding the identification, notice period, and closure or transfer of inoperative accounts mitigates regulatory scrutiny and penalty risks.",
+        "short_term": "Increase in operational workload for branch staff to process customer claims, verify KYC details, and execute account reactivations or formal closures within prescribed timelines.",
+        "medium_long_term": "Streamlined deposit registry with reduced administrative overhead required to maintain inactive ledger entries, alongside a clearer picture of the bank's core active customer base.",
+        "second_order_effects": "Customer outreach for account reactivation creates an opportunity for branch staff to cross-sell digital banking services, fixed deposits, or retail loan products to re-engaged account holders.",
+        "key_uncertainty": "The total deposit balance sitting in the affected dormant accounts and the exact proportion of account holders who will choose to reactivate their accounts versus allowing them to be closed or transferred.",
+        "monitor_next": [
+          "Quantum of deposit balances transferred to the RBI Depositor Education and Awareness (DEA) Fund in upcoming quarterly disclosures",
+          "Trends in the bank's CASA (Current Account Savings Account) ratio following the closure drive",
+          "Customer reactivation response rate and resulting operational cost impact reported in subsequent disclosures",
+          "Regulatory updates or audit observations from RBI regarding unclaimed deposit compliance"
+        ]
+      }
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REGULATION",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
+        "+2 Company investor-relations release",
+        "-2 Weak indirect connection"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -141,16 +580,116 @@
       "published": "2026-11-04T23:38:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Annual reports",
+      "url": "https://www.tmb.bank.in/investor-relation/annual-reports",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Basel disclosures",
+      "url": "https://www.tmb.bank.in/basel-disclosures",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Disclosure as per Regulation 46(2) of SEBI (LODR), 2015",
+      "url": "https://www.tmb.bank.in/investor-relation/disclosure-as-per-regulation",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Financial results",
+      "url": "https://www.tmb.bank.in/hi/investor-relation/financial-results",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Investor Relations",
+      "url": "https://www.tmb.bank.in/investor-relation/financial-results",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Letter of Credit (LC Issuance)",
+      "url": "https://www.tmb.bank.in/doc/bcf9eafd-9240-4576-a02d-accd5c42a861.pdf",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Press release",
+      "url": "https://www.tmb.bank.in/press-release",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Public Notice - For closure of the dormant / inoperative accounts",
+      "url": "https://www.tmb.bank.in/sites/default/files/2026-03/PublicNotice.pdf",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Sales notice",
+      "url": "https://www.tmb.bank.in/sales-notice",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    },
+    {
+      "title": "Tamilnad Mercantile Bank Limited: Securities and Exchange Risk Management System in Banks",
+      "url": "https://www.tmb.bank.in/sites/default/files/2026-03/recentrisk.pdf",
+      "source_name": "Tamilnad Mercantile Bank Limited investor relations",
+      "source_domain": "tmb.bank.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
     }
   ],
-  "article_count": 10,
+  "article_count": 20,
   "source_count": 2,
   "primary_source": "Tamilnad Mercantile Bank Limited investor relations",
   "cluster_key": "TMB|EARNINGS|bank-mercantile-net-profit-results-tamilnad",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T19:25:44.551256+00:00",
-  "last_updated": "2026-11-05T20:50:41.080808+00:00",
+  "last_updated": "2026-11-08T18:32:54.962471+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:25:44.551405+00:00",
@@ -196,6 +735,66 @@
       "timestamp": "2026-11-05T20:50:41.080802+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962409+00:00",
+      "change": "sources added",
+      "detail": "Tamilnad Mercantile Bank Limited investor relations"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962426+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962433+00:00",
+      "change": "impact raised",
+      "detail": "TMB 3 -> 15"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962439+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962443+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962447+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962450+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962454+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962458+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962461+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962464+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:54.962467+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

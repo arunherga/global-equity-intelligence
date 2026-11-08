@@ -1,0 +1,100 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0475",
+  "title": "MSTC Limited: Financial Results & Annual Report",
+  "summary": "",
+  "event_date": "2026-11-08",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "DIRECT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.61,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company investor-relations release",
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 9/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Directly reveals MSTC's top-line revenue generated from e-commerce auction commissions, e-procurement service fees, and bulk trading volumes for the period.",
+        "margin_effect": "Unclear until financial statements are released, but the report will show operating margins across high-margin digital auction services versus lower-margin traditional trading activities.",
+        "cost_effect": "Details operating expenses, platform technology infrastructure costs, employee expenses, and potential bad debt provisions or impairments.",
+        "competitive_effect": "Provides visibility into MSTC's market share in public sector scrap disposal, official vehicle scrappage auctions, and government e-procurement relative to private competitors.",
+        "regulatory_effect": "Highlights compliance with SEBI reporting requirements and provides operational context regarding government mandates like the National Vehicle Scrappage Policy.",
+        "short_term": "Immediate market valuation adjustment based on whether reported revenue, net profit, and dividend declarations meet market expectations.",
+        "medium_long_term": "Determines confidence in MSTC's strategic pivot toward high-margin digital e-auctions and the multi-year trajectory of its auto-recycling joint ventures.",
+        "second_order_effects": "Financial earnings performance dictates dividend yield payouts to the Government of India (majority shareholder) and influences cash available for tech infrastructure upgrades.",
+        "key_uncertainty": "The actual financial performance metrics (revenue and profit growth) and segment-wise margin distribution disclosed in the reports.",
+        "monitor_next": [
+          "E-commerce e-auction volume growth and service fee revenue trends",
+          "Segmental operating margin split between e-commerce services and trading",
+          "Updates and financial performance of the CERO scrap recycling joint venture",
+          "Board resolution regarding dividend payouts and cash reserve allocations",
+          "Management guidance on legacy receivables and trade debt recoveries"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "MSTC Limited: Financial Results & Annual Report",
+      "url": "https://www.mstcindia.co.in/content/Financialperformance.aspx",
+      "source_name": "MSTC Limited investor relations",
+      "source_domain": "mstcindia.co.in",
+      "source_type": "company_ir",
+      "published": null,
+      "is_official": true,
+      "quality": 9
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "MSTC Limited investor relations",
+  "cluster_key": "MSTCLTD|EARNINGS|annual-financial-mstc-results",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-08T18:29:52.130516+00:00",
+  "last_updated": "2026-11-08T18:32:19.274309+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-08T18:29:52.130583+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T18:32:19.274292+00:00",
+      "change": "ai analysis",
+      "detail": "MSTCLTD via gemini"
+    }
+  ],
+  "price_reaction": {}
+}
