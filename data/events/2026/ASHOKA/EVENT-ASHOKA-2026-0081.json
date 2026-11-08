@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -32,12 +32,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "cement prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "cement prices over the next few weeks"
@@ -56,21 +56,41 @@
       "published": "2026-10-21T05:27:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Relief on cement prices",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjSFFPTHptRHZjZnFhZlRPNFkzc2lKQVdTdUZoaXU0Z3BXVHhjMWdwMElzbjl3MUR1UmVBbnRHbEpHX3V6WERHR2JpQm9rcV9tYkI5bDZKc2UtTUMx",
+      "source_name": "Daily News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T05:27:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "ASHOKA|OTHER|cement-jefferies-post-price-recovery-ultratech",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:11:18.651304+00:00",
-  "last_updated": "2026-10-21T18:11:18.651359+00:00",
+  "last_updated": "2026-11-08T13:45:48.136320+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:11:18.651351+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:48.136298+00:00",
+      "change": "sources added",
+      "detail": "Daily News"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:48.136316+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

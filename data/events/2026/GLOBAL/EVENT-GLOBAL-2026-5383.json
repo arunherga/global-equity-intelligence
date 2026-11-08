@@ -4,7 +4,8 @@
   "summary": "Axis Bank Offers Lower Interest Rates On Select EV Loans, Festive Benefits On Vehicle Financing BW Auto World",
   "event_date": "2026-11-03",
   "event_types": [
-    "INTEREST_RATE"
+    "INTEREST_RATE",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -12,27 +13,18 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
           "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
           "detail": "in headline"
         }
       ],
@@ -41,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,12 +41,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, macro exposure to Axis Bank, and interest rates. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -62,27 +51,18 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
           "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
           "detail": "in headline"
         }
       ],
@@ -91,7 +71,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -99,12 +79,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, macro exposure to Axis Bank, and interest rates. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -118,21 +95,51 @@
       "published": "2026-11-03T07:03:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank Offers 10 bps Lower Car Loan Rates",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE95aU50RzVlblpnRUdWYUV1VXpSWERfdHprdUZZZUFIeDZhbVVOUmVubjFlM1NicXk3QWhuX2NQX3g3cGRZV1JjU0locHdoQlFUNENQQlZ6blduYmRJS1BZQjdMS1E4RnQxRFNsXzZ0bWdCMl83R1hoNzBIQVc",
+      "source_name": "Thrust Zone",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-07T20:19:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BW Auto World",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|axis-bank-fall-interest-offers-rate",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:39:16.508829+00:00",
-  "last_updated": "2026-11-03T14:39:16.508920+00:00",
+  "last_updated": "2026-11-08T13:45:20.400597+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:39:16.508910+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:20.400562+00:00",
+      "change": "sources added",
+      "detail": "Thrust Zone"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:20.400580+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:20.400587+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:20.400593+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

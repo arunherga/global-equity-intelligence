@@ -372,13 +372,21 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "IRB Infrastructure",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "NSE",
@@ -389,12 +397,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (IRB Infrastructure) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -402,9 +409,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "IRB Infrastructure's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to IRB Infrastructure, and NSE. The parts of the business most likely touched are cash flow, competition. Classified as dividend.",
       "ai_analysis": null
     }
   },
@@ -418,21 +425,41 @@
       "published": "2026-11-01T03:07:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IRB Infrastructure Developers Limited (NSE:IRB) Looks Like A Good Stock, And It's Going Ex-Dividend Soon",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPMm01bkNOcWNkSmIzcVZLQlNwdW5GVjdaZzRjRFl3NlRmemxlVi1SYm8wLWkyUE5YellWdFBudk9ZQ2lvT3hzOUJyNFNSWGdpc1liSFI3UTFmX3ZEV1hpUDg0ZGU4ckV1Rk0xM3RHYWIyZlhDVUp6eUpJOWhKR1dPblRYY1ZETGNkWGtGdTFSMlBfZWFoTXlOaGNNVGNpMnhFWXlIVjlHc0xQV1NKNWE0Ui1velQ0a2d0NlhXN0JuNDI2UXdOT1JzeHBoOGRsZllPWnRKZnp6bUMzbnhVbjgwTkM5VExTdWZKNmZZc0RhQkpyUdIB8gFBVV95cUxPMm01bkNOcWNkSmIzcVZLQlNwdW5GVjdaZzRjRFl3NlRmemxlVi1SYm8wLWkyUE5YellWdFBudk9ZQ2lvT3hzOUJyNFNSWGdpc1liSFI3UTFmX3ZEV1hpUDg0ZGU4ckV1Rk0xM3RHYWIyZlhDVUp6eUpJOWhKR1dPblRYY1ZETGNkWGtGdTFSMlBfZWFoTXlOaGNNVGNpMnhFWXlIVjlHc0xQV1NKNWE0Ui1velQ0a2d0NlhXN0JuNDI2UXdOT1JzeHBoOGRsZllPWnRKZnp6bUMzbnhVbjgwTkM5VExTdWZKNmZZc0RhQkpyUQ",
+      "source_name": "Simply Wall St",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T04:23:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Simply Wall St",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|DIVIDEND|chemicals-looks-nse-privi-priviscl-speciality",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T14:28:07.036325+00:00",
-  "last_updated": "2026-11-01T14:28:07.036413+00:00",
+  "last_updated": "2026-11-08T13:45:44.408544+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:28:07.036404+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:44.408518+00:00",
+      "change": "sources added",
+      "detail": "Simply Wall St"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:44.408539+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

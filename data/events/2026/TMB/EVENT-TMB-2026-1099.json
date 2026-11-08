@@ -60,16 +60,15 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -80,25 +79,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -382,16 +377,76 @@
       "published": "2026-11-07T03:14:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Today’s Gold Rate in India November 8: Gold prices steady in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-november-8-2026/article71680754.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-08T08:23:41+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Today’s Gold Rate in India November 8: Gold prices steady in Delhi, Mumbai, Kolkata, Chennai, Bengaluru",
+      "url": "https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-november-8-2026/article71680753.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-08T08:25:05+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Gold Rate Today November 8: Check latest Gold prices in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur, Lucknow, Chandigarh & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNbHRPMGo2Z1dPNnlsLUxRc1N4aDVNMUZoZ3o0UWNNMFBkb2FRLWUxSXJOM3lhVFlwTjVIZ0dwUjVoOXQ0SzBrcE9XMmdwdzNCZ3Zfa3VjQ0NickswMmxCNkpoS2c1elhMRTNJQ0tLUDhCdHF5TVYxcHpsVlBhX2xWd3pJRGJtNjI4aVo3TTZZNU1qVmVsWGY5RDVadll3c1VIQkxBQ0F1UU9EZDRVNFY5bVp1WUZvdXczek1sRWR3UGxsNEItV0pvQ3pQZWxVR3p1Q1VKazNRSU1MelN4YUNia0dBOE9lcTI0SW9SQU5CdXllYU41VGJzTjBNRkgzaWlSM2twN1JsMVpyZ19WYXNzNlZFaFNfUjBha19PbDNVTXdUUdIBqAJBVV95cUxQNXlBRUYybml1VThXT29GdkpTcDdueW9yR3R4dERQS3EzZlBWM3Ftcjh2VV9xOWhtbVNLSko3X0dMa2t0WjNsa0NZYlhYU0s1eE9tVEQ1aGZCOVdHenZkSEw2dS0zVlF1cWZ2ZGoyNGtRbUlCSVdla1k1U1FHMUNZUER6Yl9vaW5XT1VhWHlISWhVSm1WVU96UkREbVFwV2ltOVFUNjdDWmIxZ0t5V3NYcVBQME95d2swU3BFcU13aXJkZWxkc0djZXlvdnZrVGtwN3psdHVfUS04TjBnLTk4d3VLRGE1UHMzWk9va2Fzb0hTbW4zSkFZcGg2blJqUFhOQzZhVkMwRW54Z0pqcjlJZDlIT1cwS3Q5QjJud0FqbzRYMTNSczkxYQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T08:01:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today November 8: Check latest Gold prices in Delhi, Mumbai, Kolkata, Chennai, Bengaluru, Hyderabad, Pune & Other Cities",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQU1NBTGFIWGdmeWd6WVVMR0RYeTZWZmlreEhneHhrRjJydEJLN3lYUVpDalF6RzdRa0ZhOThzVUE4bmhXYlYyY3VJLWh5WHRPRF9PVG9QV0lqeHdybHc3UWJ3RGkycTl2VnpQTVRtTmw3dkI5M0dsd0NLeU5uSHBuSnM0RHo2ekw2bUtxUnlwdjFxN0I3b3lPdnNObnA4OC00VEI3ak5PZ2pGNHgxa3BpeS1Ja2RfNUFVNTdCQzRYS3ZQRVp5UndsR0kwTXlIVTFIbzM1OUROMTdwQW5LQ0U1b3RmeHVBNmE1N3IzZGR6bUc1WUtGU20zZFR0VExXNkFGMUNpeFBqUEZrRnluWHJSUE9SeS3SAZsCQVVfeXFMTVhOcHJzYnZsY3JHd0Qta1JETXJlR3EtUTYtWlFfZzNFaTdYV2pDZHgwcXZtY2RXUEc2RnZ4UkFKVXpRYVNsNVRxWjlPVkVjMU1sTTBnb0VTcDZIQmtldWFQb1hfWC0tNHcyVlB6V1JxYm9xTTFZODV1bU9VbDJCQjBFWDlSbGhoSy1VOHMwRTVzOWl6V0dlTVhtYzRyVHFJVDI5WV94aTV1Rm9idkRyN09Hd0NDdzdHdUJmZndTS3VDOEluOE55b2JkaXNKcjZyZndsRVBUUERBUDJRN0xyaWdILVpnTTg3dHNxUHpPbGpWNGpNN0tPa3ZCMmpTZ1hQWEdMX18ydExJQTZLa0lLdjJma0dIbEZKRktpWQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T08:01:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "22k gold and silver rates today (November 8, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from",
+      "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxPZFBzWlBmbDdzY3VpUGZVUmZyTUo3VDJJUUlsd0RwSzliU0lNNE9tU1NsbmN1NFpjLTQwZnB2TXhUb3dqWUpDYThYeHYxd1hDb1dJRHlvbWh6YlB2Z3YtXzMtMUtFZlpwb1R2ejQyTFNUd2NKYTN6aFFfaFcwRGx5S1d1N1BpVkJkR3dFeGU2RWlZcVVSSVZpYTU5a195UHdfblI5Mmhoa0tSeDEwR2tWYmEwbUwtMXhmaDZNcDlxcFM1ejZXekZBZ0lxbHJJUmxwNWF2SS1OTU5ySWZQdE1TSV9mZTc0SUhVU0R2UW1HU0xaZ1JIUzJZV1EwSHVtUzk0MmdhekNlNVN5QXZmOEM0WC1KRE9adTJFbGM2ODNfS0VCdFUwZGVUTHlxOTNWTWJJSko5LXJBQmxsRUVqYnRlSXd6dWh6WnhPU1dWdzNSVVp6bWRxSGtHVnhXLV9rWEp6MVZMUy1UQ2JhTk4x0gHyAkFVX3lxTE4xZW9lWlpOSG5nNFlZS08zNFdLVDBxaXFWZHViM1NZU0pIQzBqdTIxRWZKM0p5TjB4ZkMwcTF4YW02M1BYZ3lVYWJ0QkNKRlBtaXQxaFg2NHZ0UWltRi1jMUZLcWVOZUJGS0pfcVR2eEFxNTZuT3VyOWNOWFY5akw4WmtJMTlKM2YxUjd3R05NaXFqU00xQlg2SVBWZG9sZ3J0ZHJCMHpyYzJsR0JROXJ3Q2stYkhDWGdxckx3MXM1eDJCZlJfcm51dVBqc2VSYURXeUJTQk5WUm5Ka2xYY2w4czNLWWhkZjZKa2ZUUTZNMEVkQVMyNVl2VjdTOE1MOTI2MFpTM1hLVF9QWDZObUU4QkEzNGtPZXRUc3JTeDlPRU9tc0MxOXRBbTBjTWF4bzlDQ052OVpiN3JDRzJOM2lmMTNnU0VBTE1KVi1ZUzg0Q0Q1ZnVGeDljSW9kYXN3U0FycGlsNXdINVBKdEp6MF9qVWc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T06:17:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 8 Nov: Check Diwali 2026 retail rate of 24K, 22K gold, 999 silver in Delhi, Mumbai, Bangalore",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNdUlGNUtYNXdDX2ptQk1VQTEyOTRaTnVaT2hXNTFCVi1UaDVDdHkxVzE0NE4zMV94emxQTFV4R0hxM2pKclpzWlRCYjd0V1dWTVY2WnlkbXVidkc2X2ZfRjJFNGZnZy1TVXRNNkRCa2tvTm5vVlB2X0pPRjRkZUVOX2ZJQ1Z2NGJoVTJqT3RsNDBDMGZrZlpEVU5BVnhjaERmdTZoZkRuS3F2UTY3R3BNSElZWHFjNk5BeVU0YTUwamRxQWx1NEVZLUFZOVoyNERvc0tSeDY5NE5yY29RNG10RXhYaUdYY05WdWdVRl9NODh4NUd5THFwUWZteG9rS1HSAYQCQVVfeXFMT1hpS3BITGRzMFlJYWhZeUhYNV9VcGN0QTdUWVlHUmdZNGVSU0FzaWwzZmsweUNpU1drNS10ZnZxUTJ3WGl6ajd3QWt1MHdyRE1aWmJldS1nYWREdGp0WDE0TEhiMUItY2JLcFRvZkpqdTZHU19yWmtwQ3VoeUJ5SlF1TW1qb28xSmQxVEpsUGN5TnNzbDNlaWVxV1djVmZZOGpleS1zVHdKZmFXVWpNMzV5MkUzV0J0empuT2hSWXFCbkkzUzUtdzMzWTlrV3FiUUwzNTZYend1R3ZGVTBrTnhQdC1ydGxGekQxVWRNY1hUTDZTWmkzbkJ4bzc1Y0M3N3BGZXg",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T05:17:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 28,
+  "article_count": 34,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|OTHER|gold-gold-india-november-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T20:35:53.265894+00:00",
-  "last_updated": "2026-11-07T13:26:23.087640+00:00",
+  "last_updated": "2026-11-08T13:45:47.665329+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:35:53.265997+00:00",
@@ -457,6 +512,21 @@
       "timestamp": "2026-11-07T13:26:23.087635+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:09.843708+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:47.665307+00:00",
+      "change": "sources added",
+      "detail": "Livemint, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:47.665324+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -4,20 +4,22 @@
   "summary": "Hindalco flags coal supply constraints, sees 5% rise in aluminium costs Business Standard",
   "event_date": "2026-11-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "SUPPLY_CHAIN"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
+        "SUPPLY",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -28,7 +30,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +39,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "aluminium over the next few weeks"
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to aluminium. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
       "ai_analysis": null
     }
   },
@@ -56,21 +62,46 @@
       "published": "2026-11-06T13:24:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Hindalco flags coal shortage, expects 5% rise in aluminium production costs",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMTVsTzhRY2NMZHFfZXg0X2djYkxXbW5ZVjZGTWNVNDgyV0VDVW5vSEc2aWsyNGxVczBjOWI3dmRFWTE3Y1NTbXE1cUpQQmxkN2pzeGVfcUY2ckQ1b25JQTZLNWdGRzQ0cGdiZnhSS0NvaGZlNzRVU0d3WFZ4WTRnWEQwcGtVenhYV25oRDdfZjlVTmhST0U2WmE3bkU4cElUaGZNN1hEYnc2RjQwVkl2bHNJWnNMM21DbGY3UmpwYWZONTVWVU9ENmhMNEtnYXFuNHBISUJjU05Yd9IB3wFBVV95cUxQSENxSWV1ZjM2NGNPdXRDUk9oMnp1OTJHelBBbDdCYTk2UHlyRlNUN09YYl85dEEzYl9xYlRDWm9aZWt1b2JJYzJHU2FDUHEtWFExVmhfRXliWThEekdxUDNOZGViWGpJTGZ6T1AtNmRYVXQ2SzNtT1NvMWRtcy11U1VtRUY1eW82NlUyY1RaWmxrQ0xBZFdVOEJoWUUydEJzRkdGakMwVXplRy1KSjA4ZFV4M3laYUUxajVOaVk3QmZ3UWJQVVUwODFJQ2tpTnV3VU5RQVhuOXNlNzMwMXo4",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-08T08:26:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "WAAREEENER|OTHER|coal-constraints-flags-hindalco-sees-supply",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:39:40.247036+00:00",
-  "last_updated": "2026-11-06T14:39:40.247160+00:00",
+  "last_updated": "2026-11-08T13:45:56.961778+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:39:40.247146+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:56.961753+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:56.961768+00:00",
+      "change": "categories added",
+      "detail": "SUPPLY_CHAIN"
+    },
+    {
+      "timestamp": "2026-11-08T13:45:56.961774+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
     }
   ],
   "price_reaction": {}
