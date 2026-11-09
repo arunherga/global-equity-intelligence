@@ -46,39 +46,48 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "direction": "NEGATIVE",
+      "confidence": 0.52,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "loan growth",
-          "relationship": "SECTOR",
+          "exposure_type": "COMPETITOR",
+          "term": "Punjab National Bank",
+          "relationship": "INDIRECT",
           "weight": 2.0,
-          "detail": "in headline"
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "a competitor (Punjab National Bank) is doing well"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Punjab National Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to loan growth. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Punjab National Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -92,21 +101,41 @@
       "published": "2026-11-01T10:38:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "SBI-led consortium advances Vodafone Idea loan; NaBFID to approve ₹4,000 cr, PNB and Union Bank to decide",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/sbi-led-consortium-advances-vodafone-idea-loan-nabfid-to-approve-4000-cr-pnb-and-union-bank-to-decide/135668719",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-09T02:43:14+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Rediff MoneyWiz",
   "cluster_key": "HDFCBANK+TMB|OTHER|aims-corporate-housing-loan-pnb-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T14:29:44.437632+00:00",
-  "last_updated": "2026-11-01T14:29:44.437712+00:00",
+  "last_updated": "2026-11-09T16:52:16.159833+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:29:44.437702+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:52:16.159809+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-11-09T16:52:16.159828+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEUTRAL -> NEGATIVE"
     }
   ],
   "price_reaction": {}

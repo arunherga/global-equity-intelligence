@@ -9,40 +9,39 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.67,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "Ministry of Coal",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "PRODUCT",
+          "term": "coal gasification",
+          "relationship": "SECTOR",
+          "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "official confirmation available",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal gasification. Classified as other.",
       "ai_analysis": null
     },
     "MSTCLTD": {
@@ -162,16 +161,26 @@
       "published": null,
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Coal gasification scheme: Second-round applications to open on November 10",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPX205U3NVWWtTN2FuNU9OMk1GZ2NON3ROaVEwU2pWNENGYWF0SDd5d2drVGVOTlNvSnVmWlViSzNRMkljeUZyQ0FRcmtnSjVVV2RiQm1WaUhHMERxX2RtakFBcENKUzVsM2dfTjRyVkNpeUd4ckxEejdlb0dudmFFWEZ5X24yU1hVamVWcVZHNVZZbGNhWDhCMnljRlBXTEljTmg2MU9JeGdpU1ZQRmwtSlR6VThhdHFYYXE0NXEyMGVOaDVnb0JVSS13WURKUXBocDZ0T3VFUWw3d9IB3wFBVV95cUxPdXpKQ1ZMNm1DWnhNUWZTTWVHcmJMUlQ0N2JNb1RSeXFCVGcyTG95UGJ4ZWhDbjJWQUVHYVlwVkljYkY5UGxUM3pocGIwdUlBM3BnQlRsTkpuQ1A2SHdBUWlDYkRacTJBakRublptNUNBeFFfVVJSb2dEdlZkNFpZakdSdVE3ZVNnMmxOQmNCYnpDTHRhTDBfUlhJU2ZKdEprNHJTNFZvMGlRMEFMZXFnZHp4ckRZbjJIRlRZVlFaTHZlbmltRHQ0V0tRLVVqMlRMM19hd0NqcG9mdWFjRXo4",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T09:54:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "Ministry of Coal",
   "cluster_key": "COALINDIA|OTHER|500-applications-first-received-round-seven",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:13:33.872160+00:00",
-  "last_updated": "2026-11-08T18:32:47.932129+00:00",
+  "last_updated": "2026-11-09T16:53:22.175760+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:13:33.872226+00:00",
@@ -207,6 +216,16 @@
       "timestamp": "2026-11-08T18:32:47.932108+00:00",
       "change": "sources added",
       "detail": "Ministry of Coal"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:22.175737+00:00",
+      "change": "sources added",
+      "detail": "Business Standard"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:22.175756+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

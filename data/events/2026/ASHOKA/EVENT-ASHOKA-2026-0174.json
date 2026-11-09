@@ -11,14 +11,13 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "CASH_FLOW",
         "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
@@ -29,16 +28,22 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "toll collection",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (IRB Infrastructure) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -51,7 +56,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to IRB Infrastructure. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to IRB Infrastructure, and toll collection. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -65,21 +70,41 @@
       "published": "2026-11-05T15:15:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IRB Infrastructure Q2 net profit jumps 85% to INR 260 crore on strong toll collections",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOcnJBZXFwZ2UzSEpESnBLLTE3cWszd1ZLdDQyZHBya0Vtc1k5cWNvaVFISXowU3F0a0lxcnhaZ1o3a2o2eHdpWWpraWVmY1prNHRPV2ZvdGNMTzg3dUh2QjZvTzBJR2syUVZET292b0JZT2lmYU9yQ1VnT24yOGhtTW1JclJTQ1h5Q19fWUdqZTFXb2VjQndjZWFvM2s0dl9FX19FUTl0d0NqNnktcjMyVWhJcklsRi1HS2NnY3lvQWdtX3NtYndfX1FIY2VjUHR4bi03eg",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T12:30:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Financial Express",
   "cluster_key": "ASHOKA|DIVIDEND+EARNINGS|85%-infrastructure-irb-net-profit-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:48:46.873466+00:00",
-  "last_updated": "2026-11-05T20:48:46.873528+00:00",
+  "last_updated": "2026-11-09T16:53:38.819270+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:46.873519+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:38.819249+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:38.819266+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 1 -> 3"
     }
   ],
   "price_reaction": {}

@@ -12,10 +12,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -35,7 +35,6 @@
       "score_reasons": [
         "+1 Economy-wide relevance",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,7 +43,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -58,10 +57,10 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -81,7 +80,6 @@
       "score_reasons": [
         "+1 Economy-wide relevance",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -90,7 +88,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -112,21 +110,46 @@
       "published": "2026-10-25T23:51:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BoU Maintains Interest Rate at 12% as Inflation Rises",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZUR4TkpGalRVX0ZSMG1NaUl5R0ZUcUZ2NlIyT3pwakMxVVNkS2l1WWpmQUpVSUliU1ctWUtVVWx1bEpjazlFczYtdktMdXZRVVJOUzRhcVRXWk44UFlXa0tMdVlPMllIcGx4OVhsQUtZaUFRSTRUZEJJa2NvdDNyOXVzdnk",
+      "source_name": "ChimpReports",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T13:18:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-fomc-interest-meeting-puts-rate",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-26T19:24:37.443424+00:00",
-  "last_updated": "2026-10-26T19:24:37.443525+00:00",
+  "last_updated": "2026-11-09T16:53:44.889884+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:24:37.443512+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:44.889857+00:00",
+      "change": "sources added",
+      "detail": "ChimpReports"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:44.889875+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:44.889880+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

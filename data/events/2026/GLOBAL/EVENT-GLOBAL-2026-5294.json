@@ -51,7 +51,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -60,7 +60,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -72,7 +72,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -80,9 +80,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "ICICI Bank's follow-up announcements"
+        "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -155,16 +155,36 @@
       "published": "2026-11-06T10:23:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank rises Monday, outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeVAxbU1JMzJYS2FKNWRzclZTT3Y2N2ZVMVUtZUhxRzFocnoxV0JJVDJleGotUXc1UWpIWnZsOTJ4elp0QUlKbFZ2TzNjTk5pU3Y4aXJGSUtEN2prNGpYZUt4YVhXOTJBTzNkSHJ1XzBnLUk2R21jeWlEUTlZeHl3UmVkVTZCcnduOEJOcWprUG9LZmFibF8yNUh0WWJhSG5KU1dSQmlnZUl2NkdYNnlodkxIdy1UeHhqOXlF",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Bank advances Monday, outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNWmlSU29VNnJsR0lnVFFEcEwyZnNNdFBRcnltTVdqQlQ1NW5NcV80SkNMR25EQTZPbkdlOF9PLXNsWk1wTE9pZTAyVmlncHJuSTNsN0h5NlBUZW1DQjFhMVVkdXNUZFE2d3JJaDlRVUxmV3JrNlkwUW9zd0NranVCMDBXZWh3dXFJeVNKa2JVZGllejEyVHIzX0g5REFHUHFKU0xFU2E3cTl1OUlWUTE3dWI4cUR1QUZCdThF",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T10:32:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+KSOLVES+TMB|OTHER|infosys-market-ril-steel-tata-wrap",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:33:06.747533+00:00",
-  "last_updated": "2026-11-06T14:44:41.930847+00:00",
+  "last_updated": "2026-11-09T16:53:24.844728+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:33:06.747593+00:00",
@@ -175,6 +195,16 @@
       "timestamp": "2026-11-06T14:44:41.930830+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:24.844703+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:24.844722+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

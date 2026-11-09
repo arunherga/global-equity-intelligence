@@ -9,21 +9,14 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "MNRE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "rooftop solar",
@@ -33,21 +26,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to MNRE, and rooftop solar. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to rooftop solar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -81,16 +75,36 @@
       "published": "2026-11-07T05:41:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "PM Surya Ghar Scheme Reaches 100,000 Installations Every Six Days",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWkVCcW16Ny15U3lMR0JQSUk4ZUdYSllQNUtRMHFneEZQV2lEYUNEWjdYYkw5ZnR6Um5OTjRsWks5YzRSS195MVZDWjl3eGFRZ1RpRnFZV1FiQkxHR2x2N2M3clYyaXRnS25XYV9CVFZ3OENvRklCQ3dCTWx0T29MSWVHVUtoSzJUOUVNeURrblFwY2RRbzRMejBxbnNaZFRlRUd5a041eDBZeDBqTFZQZmdOV2tfU1BiSWkxREpwT1FNUVpWVGYtbDkxcGtrOTRWVnlNeHVZRzJBV1pPYU5STlAyWGpmYTBo",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T07:28:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Rooftop Solar Scheme Reaches 100,000 Installations Every Six Days",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZ1lGeXV1T2FwdlB0amtKRXZMR0w4Skp4cWJpZHhZU0hQZzJ0VW5PRzdobEJ1MFlVOXhwbmhrNFFxalFia00zclNqRmVBRDRGaUlNeEhfVmQwZjloSkZfMTh1RktvTW4yamN6ZExrcXh5amdMUWVNLTV4eHIxY3hGckRLT2VtNVZRUXY3bTBQZFhwUXZXQ1dEVzc3eHVBeXY5VGw2aHBmTzdGLTl4eTBKeldIMFdMeUFZMEF1amIwd0dJV2l5aEtyUlZiU0JPQzZxMlRxTy1sNTBpemFaTklvd1VnV1N4amN0",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T07:28:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The News Mill",
   "cluster_key": "WAAREEENER|OTHER|000-100-ghar-reaches-scheme-surya",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:53:29.034066+00:00",
-  "last_updated": "2026-11-07T13:26:32.774918+00:00",
+  "last_updated": "2026-11-09T16:53:00.645005+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:53:29.034141+00:00",
@@ -111,6 +125,16 @@
       "timestamp": "2026-11-07T13:26:32.774913+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:00.644982+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:00.645001+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

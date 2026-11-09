@@ -12,30 +12,21 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 11,
-      "impact_band": "VERY_HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.61,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "BALANCE_SHEET",
-        "REGULATION",
-        "CASH_FLOW",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
           "term": "Coal India",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
           "detail": "in headline"
         },
         {
@@ -48,60 +39,33 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+4 Regulatory or legal action",
-        "+2 Acquisition, merger or divestiture",
-        "+3 Development at a known counterparty (Coal India)"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening",
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Coal India, and SEBI. The parts of the business most likely touched are balance sheet, regulation, cash flow. Classified as fundraising.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Potential positive impact if MSTC is engaged to facilitate the Offer for Sale (OFS) bidding platform or if MCL's post-listing operational expansion leads to higher coal e-auction volumes and scrap trading fees on MSTC's portal; otherwise, direct revenue impact remains unclear.",
-        "margin_effect": "Unclear, though any incremental transaction fees from coal or asset e-auctions typically carry low variable costs and high operating margins for MSTC.",
-        "cost_effect": "No material impact on MSTC's input or operating costs.",
-        "competitive_effect": "Reinforces MSTC's strategic positioning as a core e-commerce and auction service provider for Public Sector Undertakings (PSUs) within the Coal India ecosystem.",
-        "regulatory_effect": "Increased SEBI compliance and governance standards for MCL as a listed entity may mandate higher transparency and standardized electronic auction procedures, favoring established platforms like MSTC.",
-        "short_term": "Implications over the next 0-3 months depend on whether MSTC receives any specific service mandates associated with the pre-IPO process or OFS execution.",
-        "medium_long_term": "Post-listing capital deployment and potential production expansion at Mahanadi Coalfields could increase long-term volume of coal e-auctions and scrap disposal handled by MSTC.",
-        "second_order_effects": "Successful listing of MCL may encourage Coal India to divest stakes in other operating subsidiaries via IPOs, potentially expanding the market for PSU divestment transaction platforms.",
-        "key_uncertainty": "Whether MSTC receives direct fee income from the OFS process itself versus relying solely on downstream coal e-auction volume growth.",
-        "monitor_next": [
-          "Official announcements regarding the designated platform/agents executing the MCL OFS",
-          "Coal e-auction volume and realization trends reported by MSTC from MCL blocks",
-          "MSTC quarterly revenue disclosures under its PSU e-commerce business segment",
-          "Final listing date and valuation of Mahanadi Coalfields Limited"
-        ]
-      }
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are balance sheet, customers. Classified as fundraising.",
+      "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 15,
-      "impact_band": "CRITICAL",
-      "direction": "POSITIVE",
-      "confidence": 0.71,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
       "business_impacts": [
-        "BALANCE_SHEET",
-        "REGULATION",
-        "CASH_FLOW"
+        "BALANCE_SHEET"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -109,13 +73,6 @@
           "relationship": "DIRECT",
           "weight": 3.5,
           "detail": "subsidiary; in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -127,27 +84,21 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Regulatory or legal action",
-        "+4 Acquisition, merger or divestiture",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "favourable regulatory outcome",
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, regulation, cash flow. Classified as fundraising.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
       "ai_analysis": null
     },
     "TMB": {
@@ -767,16 +718,26 @@
       "published": "2026-11-06T14:01:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Plans $1 bn Mahanadi Coalfields IPO in November",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQRFJIdDllalJjaHRPRTlTRkFTN0RSU3lPR00tVnhTY3QyQkFBdFo5Rk52Q0dBekdYQjRHWHR2aDZwb3V0YnpEdmtYWHo0VXFQa1hsb3djbUxpeFZXbHZUdzRmTlNLQmNwMXJKZXhPU3A5bTdoOEZwXzA0MGZmZkZMVF9VT3RmLWwzWHdxTWFxaTJySXMtUF9ESGI4TVFiOHd1bnpQSGRtOTBOQ25qNEtkaUk3RnB0cXBUSUVDZkZFWm12eHdEQXM5SHJRTy0wT2Vm",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T07:28:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 20,
+  "article_count": 21,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+MSTCLTD+TMB|FUNDRAISING|coal-coalfields-india-ipo-mahanadi-plans",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:34:55.187818+00:00",
-  "last_updated": "2026-11-06T14:43:26.786438+00:00",
+  "last_updated": "2026-11-09T16:53:01.150787+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:34:55.187926+00:00",
@@ -857,6 +818,21 @@
       "timestamp": "2026-11-06T14:43:26.786414+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, Kalkine, Livemint, Mid-Day"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:01.150759+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:01.150776+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:01.150783+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

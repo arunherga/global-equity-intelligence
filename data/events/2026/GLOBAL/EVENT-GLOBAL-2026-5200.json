@@ -278,34 +278,34 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 1,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.3,
       "business_impacts": [
-        "REGULATION"
+        "REGULATION",
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -315,7 +315,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -363,36 +363,28 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.44,
+      "confidence": 0.4,
       "business_impacts": [
         "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
-        "-1 Single source, unconfirmed"
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "indirect relationship",
+        "best source quality 3/10",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -401,8 +393,26 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear directly. Effective compliance leadership helps protect revenue by preventing regulatory embargoes or business restrictions on key product lines, but executive appointments rarely impact top-line revenues immediately.",
+        "margin_effect": "Unclear. Shifts in compliance leadership generally do not have a direct or measurable impact on net interest margins or operating margins.",
+        "cost_effect": "Operational expenses could rise slightly if the new Chief Compliance Officer mandates upgrades to compliance technology, risk management software, or expanded audit staffing.",
+        "competitive_effect": "Maintaining strong compliance safeguards HDFC Bank's brand reputation and reduces the risk of regulatory penalties, helping preserve its market-leading position against major peers such as ICICI Bank and Axis Bank.",
+        "regulatory_effect": "Directly impacts the governance and oversight of the bank's regulatory compliance framework, ensuring alignment with Reserve Bank of India (RBI) directives and reporting standards throughout the three-year term.",
+        "short_term": "Immediate focus will be on leadership transition, operational handovers, baseline reviews of ongoing compliance programs, and direct engagement with regulators.",
+        "medium_long_term": "Over the three-year tenure, successful execution could strengthen the bank's systemic risk culture, minimize regulatory fines, and smooth out compliance across post-merger entities.",
+        "second_order_effects": "Demonstrated compliance rigor may lead to faster RBI approvals for new financial products, digital channels, or structural expansion initiatives.",
+        "key_uncertainty": "Whether the new leadership will implement major structural changes to existing compliance protocols and how effectively the team addresses ongoing regulatory scrutiny.",
+        "monitor_next": [
+          "Reserve Bank of India (RBI) supervisory findings and compliance-related communications",
+          "Public announcements regarding internal compliance infrastructure or technology investments",
+          "Speed of regulatory approvals for new HDFC Bank product rollouts and digital initiatives",
+          "Quarterly disclosures regarding administrative and legal expenses"
+        ]
+      }
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
@@ -468,16 +478,36 @@
       "published": null,
       "is_official": true,
       "quality": 9
+    },
+    {
+      "title": "A three-year term begins for HDFC Bank (HDB) Chief Compliance Officer V. N. Srivatsan.",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZURoeFRzd2VRVFBrSnhBUXZKTE5abnRZRm5JRTR2ZW5VWm5ZN0dMZjA0VEE5M21WNUxpTWZQeDFOcFZpcGdFanBqNElkajZhcVk5VExvQTlCRzlWUnZ2Uk1DeEk1V1ZDcmUxQW1IZkl2NkxuVGY5WDRkamkzWUd6UUMzZUNacVR3SHZCd3k2aTQ3V2UxVzRLdC1mYkNmakNhamFQN1dhQ3VKN0Zz",
+      "source_name": "Stock Titan",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T11:04:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank’s V. N. Srivatsan Assumes Chief Compliance Officer Role",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZ2sxaXUzVndTVEE5WTRNQ1hvb2NsLWFwM3lkNW53RFh5Y2lJSWdwTTA5YVNMOVpUSzR5bFJKc0lwS0VzRlNpX25sZzlSVW43ZVE4TWJSaS1TV3I4T2ZISS1wWFRZMzk0YkV2dmtsOGQyZF9YN1dBQUlBUV9GWENhQTIyS2hWdW9QaVRGYzlMekxtQ0dMcVo2VzNDckVic3NYbFhOdHg1UE1Hd2xaUVZyVnRhOEs",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T12:20:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "MSTC Limited investor relations",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|REGULATORY|compliance-jeweller-officer-promoter-sebi-warns",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:28:21.495585+00:00",
-  "last_updated": "2026-11-08T18:32:49.817185+00:00",
+  "last_updated": "2026-11-09T16:53:28.458503+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:28:21.495653+00:00",
@@ -498,6 +528,21 @@
       "timestamp": "2026-11-08T18:32:49.817180+00:00",
       "change": "impact raised",
       "detail": "MSTCLTD 1 -> 13"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:28.458476+00:00",
+      "change": "sources added",
+      "detail": "Stock Titan, TipRanks"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:28.458494+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 2"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:28.458499+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 1 -> 9"
     }
   ],
   "price_reaction": {}

@@ -9,47 +9,39 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Indian Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to credit growth. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -63,21 +55,41 @@
       "published": "2026-10-27T12:14:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank profitability to improve in FY27 on margin recovery, healthy credit growth: Systematix",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQaFpfZkY2cC1ic19SbkZJMm03bThOUWN3dUI1NGxFeXFWRThEVkxWV0hnWXZzOHR3Vk5PckN3ZGtqVzVVd2dBZktNTTBLaUdwYTJvcElERkUzOUw0TG5SVXNlOVdvcXRac3JYallZbXlpdjdhcWIyREU2aFEweHFVTGNzRU90R0FscGZyYkQzY19TSHR0b1Z6WDhTRkp5LW1fRnRUU3hmZjdrRHlaQk42VjQ3dVN2Z3A4UFAwVU9iVEhRbFVMSU5IMUNJLUlGNEdNZVHSAdIBQVVfeXFMUGhaX2ZGNnAtYnNfUm5GSTJtN204TlFjd3VCNTRsRXlxVkU4RFZMVldIZ1l2czh0d1ZOT3JDd2Rralc1VXdnQWZLTU0wS2lHcGEyb3BJREZFMzlMNExuUlVzZTlXb3F0WnNyWGpZWW15aXY3YXFiMkRFNmhRMHhxVUxjc0VPdEdBbHBmcmJEM2NfU0h0dG9Welg4U0ZKeS1tX0Z0VFN4ZmY3a0R5WkJONlY0N3VTdmdwOFBQMFVPYlRIUWxVTElOSDFDSS1JRjRHTWVR",
+      "source_name": "The Tribune",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T13:17:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "India's News.Net",
   "cluster_key": "TMB|OTHER|credit-demand-india-margin-recovery-support",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-27T12:31:47.751552+00:00",
-  "last_updated": "2026-10-27T12:31:47.751620+00:00",
+  "last_updated": "2026-11-09T16:53:44.479761+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:47.751610+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:44.479740+00:00",
+      "change": "sources added",
+      "detail": "The Tribune"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:44.479757+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

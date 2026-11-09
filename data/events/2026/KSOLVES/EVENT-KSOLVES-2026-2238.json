@@ -13,10 +13,9 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.46,
       "business_impacts": [
-        "CASH_FLOW",
         "REVENUE",
         "MARGIN",
         "COMPETITION"
@@ -38,7 +37,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Happiest Minds) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -51,7 +50,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Happiest Minds. The parts of the business most likely touched are cash flow, revenue, margin. Classified as dividend.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Happiest Minds. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -65,21 +64,51 @@
       "published": "2026-11-06T02:06:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Happiest Minds Technologies Q2 FY27 Revenue Rises 12.5% to ₹645 Crore",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQVV4R2Z6NWJtRzVLcW1hNWs1cUpxY2JmTklpYUdpZG5YNXBQOTRqWFFLOGNSNlE2Y2VKd0gwWGJFamdtV0JxYUY2TFE0ampzaldDWlhQZW5oMHFQVVN5Mm96WDNTN1NFTElOUnNlZGVxaS15cUhmQTN0eE80SnpiYzRETG0tamx5QjBHajFGcUp0eFhHSE80MlJhQVY1ZVg3c2otTUFR",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T12:14:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Happiest Minds reports 12.5% revenue growth in Q2 FY27",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONkRUdU40Ty1iTEV4V2ZjdGNCV2sxTThTelBBWFE5bEFzbDhMbVRzTjN0UVp4QWFZWGlJeThLbEFJUjNtZFNGVkktUS14Y3otV25oYzRLQUZEMm5oN0R1N2dTM0thRDREcVJBcGlKbE11WDNmQzA1dXVmZk85YmZVM1VRT3FMN2NZbmxjR1ZvNUtGNkFCYVFseXpGaXgzUUhmMVF4azhB",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T12:13:16+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "KSOLVES|DIVIDEND+EARNINGS|12.5%-declares-happiest-minds-q2fy27-revenue",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:35:22.725174+00:00",
-  "last_updated": "2026-11-06T14:35:22.725260+00:00",
+  "last_updated": "2026-11-09T16:53:36.660694+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:35:22.725249+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:36.660671+00:00",
+      "change": "sources added",
+      "detail": "InvestyWise, Multibagg AI"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:36.660689+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

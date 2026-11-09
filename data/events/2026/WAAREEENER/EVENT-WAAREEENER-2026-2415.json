@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.45,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -25,10 +25,24 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
@@ -36,13 +50,13 @@
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Tata Power"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Tata Power. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, product exposure to Tata Power, and battery energy storage. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +70,41 @@
       "published": "2026-11-06T11:16:55+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Tata Power deploys 60 MWh of battery energy storage systems in Mumbai",
+      "url": "https://www.pv-magazine-india.com/2026/11/09/tata-power-deploys-60-mwh-of-battery-energy-storage-systems-in-mumbai",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-09T05:56:21+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "ETEnergyWorld",
   "cluster_key": "WAAREEENER|OTHER|energy-installs-mwh-power-storage-tata",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:33:40.840946+00:00",
-  "last_updated": "2026-11-06T14:33:40.841020+00:00",
+  "last_updated": "2026-11-09T16:52:17.197502+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:33:40.841011+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-09T16:52:17.197480+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-09T16:52:17.197498+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 2"
     }
   ],
   "price_reaction": {}

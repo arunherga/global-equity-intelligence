@@ -58,6 +58,50 @@
           "Trends in key raw material prices like bitumen, steel, and cement"
         ]
       }
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -90,16 +134,26 @@
       "published": "2026-11-06T15:18:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon secures ₹865.90 crore contract from NHAI for Vadodara-Mumbai Expressway",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNjNScmd4UDhpTVpVWElHNVBZcExqMVAyNlRuSDFoZU1OSXZHX2ZsOThPNXVuUHI1YnB1LWx5YlZHWDd0WTRNM1dGWDQ2OVdkb1EzWG9KRXVabm91V2R5b2w1dXBVODc1eUlzZmU5WVVmUGlRV1JiYTJmbnZLZ2dQYWJUcnR3eXVkdENVcHBMdEhrODd1NE14NmRfVFlkdGFzeWlTa0VicnhFci01TlZOM1hZYzVSbzhGYUctNjVMX0daVzg",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T16:12:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "ASHOKA|OTHER|866-ashoka-bidder-buildcon-emerges-vadodara-mumbai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:48:46.053788+00:00",
-  "last_updated": "2026-11-07T13:25:53.020395+00:00",
+  "last_updated": "2026-11-09T16:53:57.071516+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:46.053839+00:00",
@@ -135,6 +189,16 @@
       "timestamp": "2026-11-07T13:25:53.020390+00:00",
       "change": "impact raised",
       "detail": "ASHOKA 8 -> 9"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:57.071491+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn"
+    },
+    {
+      "timestamp": "2026-11-09T16:53:57.071511+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
     }
   ],
   "price_reaction": {}
