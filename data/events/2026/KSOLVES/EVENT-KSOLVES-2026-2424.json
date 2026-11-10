@@ -1,0 +1,99 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2424",
+  "title": "Reco pulls Databricks Genie agents into the same security graph as Salesforce, ServiceNow and Microsoft agents",
+  "summary": "Reco pulls Databricks Genie agents into the same security graph as Salesforce, ServiceNow and Microsoft agents iTWire",
+  "event_date": "2026-11-10",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Databricks",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "ServiceNow",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Databricks",
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Databricks, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Reco pulls Databricks Genie agents into the same security graph as Salesforce, ServiceNow and Microsoft agents",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTmxTa292MjBXd3BPZFhadE4wb2x0cFBScHQtQm1YMGxub01UajZtMEd0ekJZUS1UWTJJNk9RWmE0V3ZGTWhXMkV2TmZFRERkQnNubXlURl9Ib0VTTEI4cUwxZmdVLXNTVFJYUDB3dVhPbmVNbEtFanNpNlFXT0JjUFNXb0RsUzRnN05UWWI4OXpWb3p3UzloWnpUblo4VXhZV3J3enlzbU11TGw0YmVjMXlsNm5rb19scEo2dmhjSFNqODJTOXhiR1UwRjVNT1RMVk9fblNiMjNFTm9xdTFqREpkaC0",
+      "source_name": "iTWire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T15:58:29+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "iTWire",
+  "cluster_key": "KSOLVES|OTHER|agents-databricks-genie-pulls-reco-same",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-10T20:39:46.138542+00:00",
+  "last_updated": "2026-11-10T20:39:46.138633+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-10T20:39:46.138623+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

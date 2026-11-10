@@ -10,10 +10,10 @@
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (cucumber prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -61,21 +62,41 @@
       "published": "2026-10-28T13:29:15+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Cucumber prices rise 40% and tomato prices 37.56% in Belarus",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ0g5WDkwblpoNW9CbVBjV2xTcFg0TXZoM1hpUTBUalc3bVF4VUJhbGY4eHNzbURvekNURGFyZXFSTS1RVVhaa0dhSVQ1emZ1LTdKd1pvaDFTcUhtMDRLdFdsLTlyY1c5bFV1MEVFVHFJNy1FcGhnQmtHcWtoVnZyekhtdXloaGJYSVZFOXpNVmFWaGJIYXVMNDZFNUdIMFU4andISlp6WllFXzQ1X3hOcGhZcVZEeU0",
+      "source_name": "FreshPlaza",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T15:13:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hortidaily",
   "cluster_key": "FRESHARA|COMMODITY|cucumber-greenhouse-price-rise-tomato-unheated",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T19:43:32.143961+00:00",
-  "last_updated": "2026-10-28T19:43:32.144054+00:00",
+  "last_updated": "2026-11-10T20:41:27.051830+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T19:43:32.144042+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:27.051807+00:00",
+      "change": "sources added",
+      "detail": "FreshPlaza"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:27.051825+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 3 -> 5"
     }
   ],
   "price_reaction": {}

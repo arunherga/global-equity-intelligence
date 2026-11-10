@@ -9,14 +9,23 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.39,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "coal gasification",
@@ -26,21 +35,97 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from NTPC"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal gasification. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and coal gasification. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -64,21 +149,51 @@
       "published": "2026-11-10T11:49:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal Ministry receives 2 applications, only from NTPC, in Round 2 of Rs 37,500-cr coal gasification scheme",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSzIwR2NidVljYy1LQW1aV2VYUXJSU3NXRXNHYkVpclhFSmYtZG1LWjNIU0w5QzctYjNjcXNUY0dyX2tuMy14NVl2cDE1SURRcHJUY2xDVDdjVkdQVVlMOG0yNkt0cTlfOGw4V0dnNURmZDFrZThRQlZ1eEdsT0wzRjVVNWdRendOenRUWklCdGZEQUxEVGN0c2Y1cFBDY3RkMXpmMzZsU1prRms4Tk50Yk9nTDZpdjc0MEJEMXVIVnZIYzVpTkkxTlhGbVpnQ2hJc0HSAd8BQVVfeXFMUHRBOXFLODRjX1lOdU1DR3d5UXo2UHUtcTc3V2JVb25UXzEzNFRTMUJyT1dqTFFZQXJLZ0hwSDRYdFVHR0Y3Ym5zaDFmWnlGLWJrNWlzSGVzUVVkVWtwWV9QRU4yTmtCdkVGTzJjbVhNZ2FtanppQVB3NkV6VVpSMXZCdzYybXVEVVhyOEdlWFFReUFpRzMwZEk5UTRNei11UnhLS0lHMVlKNE9sWjNqOERLU0hySWU3dWtvZU9SZ28wVWViZXZTaWE2dGtWT3dER2UySGRqM2lnRmVfUWNPdw",
+      "source_name": "PSU Watch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T14:45:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Sarkaritel.com",
   "cluster_key": "COALINDIA|OTHER|3rd-500-crore-coal-ministry-opens-round",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:13:03.863272+00:00",
-  "last_updated": "2026-11-10T15:13:03.863358+00:00",
+  "last_updated": "2026-11-10T20:41:26.149365+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:13:03.863347+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:26.149332+00:00",
+      "change": "sources added",
+      "detail": "PSU Watch"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:26.149350+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:26.149355+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:26.149360+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

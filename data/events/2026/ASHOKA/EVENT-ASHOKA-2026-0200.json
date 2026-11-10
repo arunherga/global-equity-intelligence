@@ -10,38 +10,30 @@
   "stocks": {
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "DIRECT",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [
         "REVENUE",
-        "MARGIN",
-        "CAPACITY"
+        "MARGIN"
       ],
-      "time_horizon": "SHORT_TERM",
-      "exposures": [
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "EPC order book",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        }
-      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -50,7 +42,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to EPC order book. The parts of the business most likely touched are revenue, margin, capacity. Classified as earnings.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -64,21 +56,61 @@
       "published": "2026-11-06T03:20:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Ltd (BOM:533271) (Q2 2027) Earnings Call Highlights: HAM Monetization and ...",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR2hHcElodkdBYzRkRzlRUEpsNi14U0QtVGlMUjBmYmExbDZlcXFwYnk1Q2ZSYVBacFRPVFRydkJqX0JJSjc1ZV9RMFE2cWJkd0tiaFZPcUVYVmpZTzlNOEZGeEFZRlNxeTA3LW5rY0swcEZ5NERfS1JKek1fQUd4ZEoxQkFaQQ",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:05:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IRB Infrastructure Developers Ltd (BOM:532947) (Q2 2027) Earning",
+      "url": "https://news.google.com/rss/articles/CBMimANBVV95cUxQOTZqV2Vvd1p1NFh2ZURlNTlFb0dPMkVqWDQycU1KbjNWVzRIOU14Z0lUOVRkRGs1V1FWalpPOTFqTFFKeklxVlNKakhVV0F4amhGd2hwYWdkNHh4b2U0TzIwVWtqamRTZkJZTDRlb3VBc2M5WHRfbHM4WTRGSU9vS3dqSUxLME9Ic3BMUnNldXJ1TlVHS3BsV2RpaVFwbWVRa3pId0VYam5HaWE4dmJxa1BHeGtwLVVBaFgyUWd5RUkzanM4SW91cE9EU0dUTk5xWjQ0VVA1VHlNZkVEdndaWGJqQlhsQ2w4NDVZbUstQmhfUUt3NGlTWF9oMWZRcTZCYml0emlUNVZvWldHRFpSNkJoVGdhYXNRSFppQkh2QjVBSVkwQ0htVWpZNWxuQXRsVGlwQkVYdDJ1ZFNtSVNTelo1VlVPcWVJYUpoUU1FSkZ4dEVVTEtiZ3liMU1aTjNQMFRNMmtud3BIOEFTLVdXTnIxUE9XWjFUcmR4MHZvNWQzbHFnWHp3dldkOUxzME5qWnRjNmJ4MUo",
+      "source_name": "GuruFocus",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T17:07:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IRB Infrastructure Developers Ltd (BOM:532947) (Q2 2027) Earnings Call Highlights: PAT Surges ...",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbXIzd2FrbWVTOEozSnVkcmMtQ2c5bkp0WHNBYUh5TW9ldjRYeDF3X1diX09MM0VRUmtoMXlwUl9jRlpuNC1sOUxMNWh3dTVxczJuN3pJTnhsekpISTRhWm4wdG1GWkxtdHJMZlZZajJ6Q0d5UWx0M2FUR011c3dHTGY4SzVEUERFYnRGVUhvTQ",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T17:02:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "ASHOKA|EARNINGS+ORDER_WIN|2027-533156-bom-earning-engineers-vascon",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:35:35.282762+00:00",
-  "last_updated": "2026-11-06T14:35:35.282852+00:00",
+  "last_updated": "2026-11-10T20:41:13.607563+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:35:35.282840+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:13.607540+00:00",
+      "change": "sources added",
+      "detail": "GuruFocus, Yahoo Finance Singapore"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:13.607557+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 6"
     }
   ],
   "price_reaction": {}

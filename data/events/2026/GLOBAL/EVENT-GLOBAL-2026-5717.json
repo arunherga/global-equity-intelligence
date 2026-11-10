@@ -13,7 +13,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -26,13 +26,6 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -40,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +43,7 @@
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -127,16 +120,26 @@
       "published": "2026-11-06T06:26:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price, silver rate today: Why is gold rate down on Tuesday? Check latest bullion outlook",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPa3g1aTM5eFUwZ3VtSjdpTjV0R1hnM0lMazRGMlF3MGlQTXlFUVc1Z2t1NTFzeTlSMFY1YXlnV1BfamlLb2IyeTdNaElmZDFpd25xdW1EbXhERzlRZ20wbjdPZUZtMEhEUU1YMmZmWURZNjdwNjNYMTdLV3ZiaW5QeXFsVWlSeVBLZFpFdjlxdEM1WkpsMTdLQ3dsU2dIUTdXZU9NbEZEdVRGQWY1YmZ3TV9FUW5TWjRTdW11WkkwV0hWVl95b3RFanQxb0RmdVI1Sno5N0h3cG9qSm5BbG8zeFVEQmFhbklCV0FqYlZRRkx6Zkd0cWhoZXRR0gH_AUFVX3lxTE9HMHlOY2V1eEpxWFJUX0NlVlY0TFh5b1FBbEhaNENJbUo0aTFsN2IwRWZ0Q25FeUNETlRsYTh0M3N4ckVwQk10WU5JY0pZUmdkbFlGYmU4elIwalJuT0RkN3dweGNBQUREMG1XWk5Wakx2czdjT3JJbTBpVDVJVnJMbVJPblhTN0gtTUVHbHhaMDNqVDVIc3Z2NDFrQXBBd1duS3hIRVFrRmVac2lZRjZseW5VY2xhMjdUNHduMWxYbHpoTFZzSHpka3p1TWJrZmlOMUpZbUFfTXdlZEtoM0NhbUl4OHZpdTdtdTNtWDFCSkg3N2VXcUE3TEU4ZTA5TQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T13:45:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|gold-gold-november-rate-silver-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:56:42.944624+00:00",
-  "last_updated": "2026-11-06T20:08:12.032958+00:00",
+  "last_updated": "2026-11-10T20:41:23.926100+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:56:42.944684+00:00",
@@ -157,6 +160,16 @@
       "timestamp": "2026-11-06T20:08:12.032955+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:23.926072+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-10T20:41:23.926093+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}
