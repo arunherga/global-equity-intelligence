@@ -4,21 +4,23 @@
   "summary": "Indonesia's Antam Gold Price Plunges Rp 20,000 per Gram, Buyback Also Corrects BigGo Finance",
   "event_date": "2026-10-31",
   "event_types": [
-    "SHARE_BUYBACK"
+    "SHARE_BUYBACK",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
         "BALANCE_SHEET",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -30,6 +32,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -38,12 +41,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are balance sheet, pricing. Classified as share buyback.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are balance sheet, pricing, input cost. Classified as share buyback.",
       "ai_analysis": null
     }
   },
@@ -57,21 +63,46 @@
       "published": "2026-10-31T16:55:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indonesia's Antam Gold Price Rises Rp15,000; Buyback Jumps Rp25,000 per Gram",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QYXBBdWVKU2VmWnVFbmxGT1pVVnFWVGxuek5LQ1dBQ2lxSDJzeklZWENNa3dveDd0bGlVYWlpa2hFa2ZRX2FCbHZRQnZ4akVFaVJrSG9iSjNTNmoxLUp6R0U4c2RMQzJwZnJQMkJnUWppZTNLdGc",
+      "source_name": "BigGo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T11:55:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigGo Finance",
   "cluster_key": "TMB|SHARE_BUYBACK|000-antam-fall-gold-indonesia-price",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T17:51:53.377107+00:00",
-  "last_updated": "2026-10-31T17:51:53.377184+00:00",
+  "last_updated": "2026-11-10T15:17:27.865478+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T17:51:53.377173+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:27.865452+00:00",
+      "change": "sources added",
+      "detail": "BigGo Finance"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:27.865467+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:27.865474+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

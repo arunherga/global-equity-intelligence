@@ -10,17 +10,32 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "MACRO",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "US interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "MACRO",
           "term": "interest rates",
@@ -30,17 +45,17 @@
         }
       ],
       "score_reasons": [
-        "+1 Economy-wide relevance",
+        "+2 Indirect but real exposure",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "rate moves hit margins and credit demand in opposite directions",
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "macro relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -49,7 +64,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and US interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -137,16 +152,26 @@
       "published": "2026-10-31T05:15:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices reverse after strong increase, US interest rate pressure increases",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcVhiU0JKNC1zTDZialZNS0lWT3QyQkI3S0oyQzJLNGk4M2FrRGJUcmFRa050Y3hqRkVMa3NtMVZoVFFiT3RuNU9yaUJoVC11WW0ya2x6UWRVMDQ0eXo0YW5qV3Z0RUJHcHB0bEdhWE0yWXFKT2llZm9OX2piZlRJVzd5WS1vYUhOVTA2QWxkOWI4dU55c0lHbVpsTzdYMGpDaFNGX0hHN2VFaHNVRHk5NUZ1YU4tcnM",
+      "source_name": "Laodong.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T08:44:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Free Press Kashmir",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-flat-gold-holds-price-remain",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-29T13:20:03.092054+00:00",
-  "last_updated": "2026-10-31T12:57:10.801343+00:00",
+  "last_updated": "2026-11-10T15:17:10.203553+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:03.092106+00:00",
@@ -172,6 +197,16 @@
       "timestamp": "2026-10-31T12:57:10.801338+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:10.203530+00:00",
+      "change": "sources added",
+      "detail": "Laodong.vn"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:10.203547+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

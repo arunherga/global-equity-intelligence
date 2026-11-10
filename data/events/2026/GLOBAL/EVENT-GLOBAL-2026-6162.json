@@ -1,0 +1,124 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6162",
+  "title": "China’s October trade surplus hits 712.78 billion yuan while crude oil imports remain under pressure",
+  "summary": "China’s October trade surplus hits 712.78 billion yuan while crude oil imports remain under pressure Business Upturn",
+  "event_date": "2026-11-10",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and China. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "China’s October trade surplus hits 712.78 billion yuan while crude oil imports remain under pressure",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaWx6LTVJemFCQjB6N3UwMGRyMFNqOS11M2FBcnBlNW9ILWdwS1JBVkl1aDcwZ1JiM2xHbEhTbU10Z1hIZ2Q5dDZWZGJHR0JhNUx5dmJzR1l5V2hoRkkxLWJWMU82aE1icEphWUM2dmtjQjdvRjgxVHRSZFFXc1A5cFZFV1dkamtGQ05uQ3pOOXlpOUFXVWhBWUgyallUcEw2b0UwbExTU2daYWlCQW5UbW9OMnhQLTIzWFpXS09sTjA5VTdFazZ4TUdfdE5HTXltM1NZ",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T02:59:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Business Upturn",
+  "cluster_key": "RAVEL+SUPRIYA|OTHER|712.78-china-hits-october-surplus-trade",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-10T15:10:48.590076+00:00",
+  "last_updated": "2026-11-10T15:10:48.590155+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-10T15:10:48.590145+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

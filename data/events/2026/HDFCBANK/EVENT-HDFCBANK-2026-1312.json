@@ -9,33 +9,17 @@
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "State Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -43,13 +27,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "State Bank of India's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to State Bank of India, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -111,16 +95,26 @@
       "published": "2026-11-02T05:11:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Ltd. is Rated Hold by MarketsMOJO",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa1QybllwN1hhMHplZy1jLWlsQUNEaW5vOHpJMTZSLW5ad01QNVdqWlhwbEdQUjZfM3RZMUZTUUNFc0pOclFNa1lrb2cxcE5iY0NpV1pORGV2cTc5TndIYVRJdFM2V0xIQXY4RHoybEM3N2ZVMVlQTGRTUlZfRGtpSml2TVNaREdnUW5DZzFqZTNaRDE2LVQxcXpBczExMVhsc24zVGFtdw",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T05:38:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "HDFCBANK|OTHER|bank-hold-india-marketsmojo-rated-state",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T17:51:02.060499+00:00",
-  "last_updated": "2026-11-02T22:37:23.641722+00:00",
+  "last_updated": "2026-11-10T15:16:52.409637+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T17:51:02.060558+00:00",
@@ -136,6 +130,16 @@
       "timestamp": "2026-11-02T22:37:23.641717+00:00",
       "change": "stock added",
       "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:52.409616+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:52.409632+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6132",
+  "title": "India's investment outlook strengthens as credit, exports rebound; inflation relief likely: HSBC",
+  "summary": "India's investment outlook is improving as credit growth and corporate revenue increase, pointing towards stronger private capital spending. The report from HSBC highlights that funds to the commercial sector have risen significantly compared to previous years. Additionally, rising services exports have helped maintain a steady current account deficit in the economy. However, challenges such as weak rural demand and inflation continue to impact households and corporate margins.",
+  "event_date": "2026-11-10",
+  "event_types": [
+    "MACRO",
+    "EARNINGS",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.36,
+      "business_impacts": [
+        "DEMAND",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "rural demand",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to rural demand, and India. The parts of the business most likely touched are demand, revenue, margin. Classified as macro.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
+      "business_impacts": [
+        "DEMAND",
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. The parts of the business most likely touched are demand, revenue, margin. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "India's investment outlook strengthens as credit, exports rebound; inflation relief likely: HSBC",
+      "url": "https://retail.economictimes.indiatimes.com/news/industry/indias-investment-outlook-strengthens-as-credit-exports-rebound-inflation-relief-likely-hsbc/135698097",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T03:37:07+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETRetail",
+  "cluster_key": "RAVEL+TMB|EARNINGS+MACRO|credit-export-india-investment-outlook-strengthens",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-10T15:09:01.738800+00:00",
+  "last_updated": "2026-11-10T15:09:01.738880+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-10T15:09:01.738870+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

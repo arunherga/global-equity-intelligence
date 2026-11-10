@@ -12,21 +12,29 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
       "confidence": 0.41,
       "business_impacts": [
         "BALANCE_SHEET",
+        "REGULATION",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
           "term": "Coal India",
           "relationship": "INDIRECT",
           "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         },
         {
@@ -39,9 +47,12 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
+        "+3 Development at a known counterparty (Coal India)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "a customer's business is strengthening",
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
@@ -50,22 +61,44 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from Coal India"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are balance sheet, customers. Classified as fundraising.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Coal India, and SEBI. The parts of the business most likely touched are balance sheet, regulation, customers. Classified as fundraising.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potentially positive. As Mahanadi Coalfields (MCL) goes public, capital expenditure and production capacity expansion could accelerate, leading to higher coal output and increased e-auction volumes routed through MSTC's platform, which generates transaction-based fee revenue.",
+        "margin_effect": "Unclear to slightly positive. Additional e-auction volumes from MCL can drive operating leverage for MSTC's platform, as incremental transactional volume carries low variable operational costs.",
+        "cost_effect": "Minimal direct impact on operating costs, though MSTC may incur minor administrative or IT costs if custom integration or reporting is required for MCL's public reporting needs.",
+        "competitive_effect": "Neutral to strong. MSTC retains a dominant position as the trusted e-auction and e-procurement partner for Indian state-owned enterprises, and higher corporate governance standards at a listed MCL may reinforce reliance on MSTC's transparent bidding platform.",
+        "regulatory_effect": "Direct regulatory compliance impacts fall on Coal India and MCL via SEBI listing rules. However, MSTC may need to maintain stringent reporting and audit trails for auctions involving the newly listed entity.",
+        "short_term": "Limited immediate operational impact over 0-3 months, as the approval pertains to corporate restructuring and stake sale rather than immediate changes in coal allocation mechanisms.",
+        "medium_long_term": "Favorable over 3 months to several years if the capital raised from the IPO aids MCL's capacity expansion, leading to larger volumes of coal and scrap sold through MSTC's auction systems.",
+        "second_order_effects": "Increased public market scrutiny on MCL could encourage greater use of third-party e-procurement and e-auction providers like MSTC to demonstrate arm's-length fairness and legal compliance to institutional investors.",
+        "key_uncertainty": "Whether Coal India and MCL will maintain MSTC's contractual share of e-auctions or introduce rival platforms/in-house solutions for future coal allocations.",
+        "monitor_next": [
+          "Timeline and execution of the Mahanadi Coalfields IPO listing",
+          "Quarterly coal volume trends auctioned through MSTC's platform",
+          "Updates to MSTC's fee structure or contractual agreements with Coal India subsidiaries",
+          "MCL's post-IPO capital expenditure plans and production targets"
+        ]
+      }
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
       "confidence": 0.51,
       "business_impacts": [
-        "BALANCE_SHEET"
+        "BALANCE_SHEET",
+        "REGULATION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -73,6 +106,13 @@
           "relationship": "DIRECT",
           "weight": 3.5,
           "detail": "subsidiary; in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         },
         {
           "exposure_type": "GEOGRAPHY",
@@ -84,10 +124,12 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+4 Regulatory or legal action",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "favourable regulatory outcome",
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
@@ -96,10 +138,32 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, regulation. Classified as fundraising.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Operational coal sales revenue will remain unaffected, but consolidated cash flows will receive a significant boost from the secondary sale proceeds, alongside potential non-operating exceptional gains upon completion of the stake sale.",
+        "margin_effect": "Core operating EBITDA margins will remain unchanged, but reported net margins in the period of execution could see a temporary positive spike due to divestment gains.",
+        "cost_effect": "Incurrence of minor one-time administrative, legal, underwriting, and merchant banking fees associated with the IPO execution.",
+        "competitive_effect": "Strengthens Coal India's market profile by establishing transparent, market-driven valuations for its key subsidiaries, though its dominant domestic market position in coal mining remains fundamentally unchanged.",
+        "regulatory_effect": "Secures key approval from SEBI; requires ongoing compliance with public market disclosure and corporate governance standards for Mahanadi Coalfields post-listing.",
+        "short_term": "Improves market sentiment around value unlocking; focuses management on market roadshows, setting the price band, and completing the book-building process over the next 0-3 months.",
+        "medium_long_term": "Provides substantial cash proceeds to Coal India, expanding its capital allocation flexibility for renewable energy diversification, coal washery capex, or capital return via higher dividends.",
+        "second_order_effects": "Heightened public and ESG scrutiny on Mahanadi Coalfields as an independently listed entity; potential increase in dividend expectations from Coal India's primary shareholder, the Government of India.",
+        "key_uncertainty": "The final valuation and equity price band achieved during the IPO offer period, which dictates the total capital raised.",
+        "monitor_next": [
+          "Announcement of the final IPO launch dates, price band, and valuation for Mahanadi Coalfields",
+          "Coal India Board decisions regarding the deployment or dividend distribution of stake sale proceeds",
+          "Filing of the Red Herring Prospectus (RHP) with SEBI and stock exchanges",
+          "Institutional and retail subscription levels during the IPO bidding window",
+          "Quarterly production and dispatch performance metrics for Mahanadi Coalfields"
+        ]
+      }
     },
     "TMB": {
       "ticker": "TMB",
@@ -728,16 +792,26 @@
       "published": "2026-11-09T07:28:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Gets SEBI Nod; Coal India to Sell 10% Stake",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZ3VnV050aWhOSG10RkNIOXRKWU5sbEIwSzRHZFdoeWQzWmxiUHdFaW00VzFhcVlCd3NxYnlkTkVKMGdKQkMwakppUHZoRFRMUHBPd3lwU0dWakgza0k4ZUltVldMZWtoYnZnSEo0WHZXZ2FnV0FDbXlZTFAyWXo5RGJJSGI4MHp3QzhIUFJYQ1ZJdXJkc1JkTmZUQTAzV1Y0WjFGVUhVak5YSlRwT0VUVzlRbmdYTWZadS11ZTlLS25NanZwYVMxSlNGUnJzZEFzWUxkOHQ4cy1MVE5m",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:48:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 21,
+  "article_count": 22,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+MSTCLTD+TMB|FUNDRAISING|coal-coalfields-india-ipo-mahanadi-plans",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:34:55.187818+00:00",
-  "last_updated": "2026-11-09T16:53:01.150787+00:00",
+  "last_updated": "2026-11-10T15:17:02.141168+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:34:55.187926+00:00",
@@ -833,6 +907,21 @@
       "timestamp": "2026-11-09T16:53:01.150783+00:00",
       "change": "direction changed",
       "detail": "COALINDIA POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:02.141137+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:02.141155+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 7"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:02.141162+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 9"
     }
   ],
   "price_reaction": {}

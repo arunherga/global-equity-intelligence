@@ -1,0 +1,137 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6199",
+  "title": "Inflation rises further in October; surge in natural gas prices",
+  "summary": "Inflation rises further in October; surge in natural gas prices eKathimerini.com",
+  "event_date": "2026-11-10",
+  "event_types": [
+    "MACRO",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "natural gas prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "natural gas prices",
+          "relationship": "SECTOR",
+          "weight": 2.3,
+          "detail": "international topic; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (natural gas prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "natural gas prices is a selling price and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to natural gas prices, and natural gas prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "natural gas prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (natural gas prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "natural gas prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to natural gas prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Inflation rises further in October; surge in natural gas prices",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWklDVjE2bGlUTHc4dFAtMG5NNGt2OE1fbk40Wk93N2dBRmcxaEMzd1RMRmZwLWI5aC1WaHZyUmVnS0JHaDRTWWNiRmJtRTIyRnlIYlRUUlhfU3dYZmVUYXRPa2hQR1FpdV9tQ0tTalluS2xCWF9GQWQxNnI3eFVTcHBEbE93NTZSLXZLMVRsU0ZjNGlSUFJEX3lVMkNCeGZfLVZvYjNra0dacDNR",
+      "source_name": "eKathimerini.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T11:53:48+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "eKathimerini.com",
+  "cluster_key": "COALINDIA+SUPRIYA|COMMODITY+MACRO|further-inflation-natural-october-rise-rise",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-10T15:13:05.159057+00:00",
+  "last_updated": "2026-11-10T15:13:05.159131+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-10T15:13:05.159120+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

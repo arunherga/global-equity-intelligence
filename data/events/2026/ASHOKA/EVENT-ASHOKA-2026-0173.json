@@ -12,23 +12,20 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.51,
-      "business_impacts": [
-        "REVENUE"
-      ],
-      "time_horizon": "MEDIUM_TERM",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Major order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "CONTRACT_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -38,34 +35,16 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue. Classified as contract win.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Winning the L1 status for the ₹866 crore package will expand the company's order book once the formal Letter of Acceptance is issued, providing multi-year top-line visibility as project execution proceeds.",
-        "margin_effect": "Operating margins will depend on bidding intensity and raw material price stability; aggressive bidding to secure L1 status could cap EBITDA margins within standard highway EPC ranges (typically 10-13%).",
-        "cost_effect": "Direct operating and capital costs will increase due to upfront equipment mobilization, labor deployment, and raw material procurement (e.g., bitumen, steel, and cement) for expressway construction.",
-        "competitive_effect": "Reaffirmation as a competitive bidder for large NHAI expressways enhances Ashoka Buildcon's market position in national highway EPC projects.",
-        "regulatory_effect": "Subject to standard NHAI compliance, environmental clearances, and timely handover of land/Right of Way (RoW) from authorities.",
-        "short_term": "In the 0-3 month period, revenue impact will be minimal as the company awaits the formal Letter of Acceptance (LoA), submits bank guarantees, and completes contract signing and site mobilization.",
-        "medium_long_term": "Over 1-3 years, execution of the ₹866 crore project will drive revenue construction progress, subject to timely project completion and milestone approvals.",
-        "second_order_effects": "Increased utilization of non-fund-based credit lines for performance bank guarantees, along with potential local sub-contracting and equipment leasing demand.",
-        "key_uncertainty": "The exact timing of the official Letter of Acceptance (LoA) issuance and the extent of encumbrance-free Right of Way (RoW) provided at the project start.",
-        "monitor_next": [
-          "Issuance of the formal Letter of Acceptance (LoA) by NHAI",
-          "Contract signing and project start date announcement",
-          "Right of Way (RoW) and land availability percentages for Package 9",
-          "Trends in key raw material prices like bitumen, steel, and cement"
-        ]
-      }
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
     },
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.58,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
@@ -83,14 +62,14 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Order activity at a related company",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -101,6 +80,406 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.58,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -144,16 +523,116 @@
       "published": "2026-11-09T16:12:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon secures ₹865.90 crore NHAI expressway project in Gujarat",
+      "url": "https://infra.economictimes.indiatimes.com/news/roads-highways/ashoka-buildcon-secures-865-90-crore-nhai-expressway-project-in-gujarat/135703741",
+      "source_name": "ETInfra",
+      "source_domain": "infra.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T07:45:44+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Ashoka Buildcon (NSE:ASHOKA) Gets NHAI LoA for ₹865.90 Crore Project",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPekNHWFJHSGQ3Z053THd3S2ZQMlBRS0NzcnFFbUJaVW02Zkp0N25NRGRPRFplZkxtazljNFFLSTRGT1VJOTVobnBNUHVrV1lSRWZjSWEwckpUR1lzOUFPcnpGNFh5OVV5cW10V21OUzRCOV9HX1pWc0NfQk96bGxzNlV4czBCbUVOZ09wdVRfd1hsMDg5WVN5eVJuRjEtTWF4cHp0VDczNTZTS0FwbTZTaXIxVnpVcVFUbEoybmUyaWRrVFVIaVY1RS1iMjZFMkVYbDk5cEc3R243ZWt0S2h5bEJmd3pGTnc",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T08:16:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Bags ₹866 Crore NHAI Expressway Order, Order Book Nears ₹17,222 Crore",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaUlEMGhlcEFLTmRZV0g4d1UwVS1CRUd4RlRoX1Z5ZzNZUGhhc0JWRVAwN1hOc1JTSG9uVGFvVE4xOWVfSmNJcV9KMU5KRmZrUXpHUjc0aWZZV0FGRExVcjNJMGtSTHJNUG04S1Q1Yms4WmhEaGJlWklabUhadDVpTWNrazRfX2tIM1F2Q1FWMkcwcWZVanN4b1ByaUJYS2MxNUxnWlc5dkhVd2pDeGlsNFE1MTlvYkVzYmxCRjZRM2lFTVQzNmM0",
+      "source_name": "Trade Brains",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T05:44:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Receives LoA for NHAI Expressway Project",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0NuVVJmbFQ0VzNQc01laC03WUdXaG1hbmpQTDRNaDh0azYzeHNNNm5YbTRyVDVHVGstWTdjRExUMlEzb296YXJPQkg0ZV9ncHk3YmFXOE1Jem9rWEthcEVmSUVZWno3UU9PcEtHQnhwaUFTWXB3TFk5Z0MyQVRUWUsxMVVrR25xRk52U05wSnJRTHRvcjdjUWstMzJWMTVDVzVqREFHOC1QVUoz",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T22:11:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Receives ₹865.90 Crore Letter of Acceptance for Vadodara-Mumbai Expressway Package IX",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdDI1NVNUSkpqejM1ejN2QkdTNGdXWXRFR2VCTkRjRllRejdUbkpaYURad1E3cGx0VC1xbk00VmtzLVNmRFpSX0NLY0RsZ2dQZWJlaDB4Sm4ya3BPdjQ5bm9zSmR2eTUxT1pPZEhxbE5JLXRPS3BOOXVvSFZUS01sZjJTd0U0Wm5tSlRaTlRMcVhsS2p2cV9hLXFDM25tOUxTMjZOOUZrb21uUjhFUS1zalBMeGN5eGNGWjNJNg",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T16:12:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon bags LoA for ₹865 crore Vadodara-Mumbai Expressway project",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdGVWSnZaRkQ1MXJ2Z1pLRHBEQlFTWklsT01rSk0zaE9xQkJDVExucGhpNEE0QnlQVlNuTFl6QVpCUmZmVTVka2dEUjFnTGxDamRTZy0tQkxhU2VZVVdLY1lLMzJkWmlXbkd5NVR4THlyNlk3ZWFORXJrSUV3cnpfbGxRTUFRQnVyMTI0LUktVjY3YnVaUHNFWG5WclJHeDQ0S0hVelZ1QnNYbFdmUVE",
+      "source_name": "IndiaIPO",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T06:53:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon secures ₹865.90 crore NHAI expressway project in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVjZheThNRFZZMzYtY0hMRHdCeldEc0RsNTFzVE1ReDhEdlZXUXV3TjdwUnYtLVg0aE9fWVVreXgtZDkzd2xmMmZYVVptMFY3aDdna3N6UUFJMHBQM1ljQnpXaGNjWjJxeGdpMHhUdl9yR2taMHRNQi1UcVM1elZmUXduS3FaaWtxZFdpYUJ2U1VPSXJvdE44WmNIZmZsaWVyQS1tNEtPN0ZRcGJZNU5rS3EwYWRSZ2Z1TnpVVXNVeDRXSV9nVlFOdjBMR3pKcl9Fb1JHY1AzVzIyLTlf0gHgAUFVX3lxTE9pRmg4NzhaNFhKV3dfRm5nR196S0dTa2p5ZTZnQ05UcllRYWZFb0djSXZNVjZRSnFnTm16LXNhUERsUk1reDNVRkhQTFNISVNxUGFxY2ZoemRIeldfWXYxanppZDNMaFFFQXBTa2FhNUk3b212MDNXRkFhQ29GOXUzMjFZdzkyRmFYNUEzSUs0SkV6d2FFanRYRXk2aTM2NVl3ZmV0M2ZWNVhjZ1JhaDNsblVGM3hBRGlJR19CT01FTWJFV0lkZzRjdHlnX1FqV2J2MGhGRkZ4eWxOVHpmY05Z",
+      "source_name": "ET Infra",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:52:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon shares in focus tomorrow as firm wins NHAI contract worth Rs 866 crore",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNWGp5Sk9hQ3NPRGg0Nm1kRVZPSmlaRnJOSnVNMWhwT2VNX3I5OUNmbTVxcGVHUnZjeUg4ZE5Dd253U3U0X1BUaC1PcU16VG5Ma3dXNmdSWEdGdjg4dlFDT1VjbnRSdm02YWJ3cU1vUmJDVi1ZX2tlRnotMWI4blZLTi11RnBlaVNsTU1GbUdMOF9WQUdya0ViWU53U3k2Z1FBZTh6RmJWa2JRay0wS0N0d0ZYVm9iOXpOWjUxcTlYeXRqeFJ6aE93TVZGWWpNdTVid3RKUmM0S0NWZmJpWlVHSXZiLXV0dTlBQmdXRVFwTTRhRXRtSldFRkdyanNGZDBON1l4alRjdHlSdm_SAZACQVVfeXFMTzhXN25mOGZQZ1h6a2x6ZldtMzUzdVZsSVJqN0NMSWhvNFUwYzBnQTk5NnI2TDlmekxYUTZDZlE4QmwwVk5rYkoyOHI2U2ZLMjVtRDlkclVlMkJzVEtnamRxeXhJdmMzX2k4STI4LUR0ZHNvR19KMzhBTTdXcFZtYnkzY0dNYmRNeUpCY3BYcmVscWdIR2R2WWs0Z3dYTThkN0dZZFBfempxS2JlVERmeWx1Zkl0UGliU2VGRkRWVVhLcHdaNlNTd0txQ0lnLTByUnkxWTQ5OWZyNUI3aEFhNDdldlhJZHlSRUstYUVWN0JfcG1vQWJRbXpHUW9SMy03cDVrWkM4dTdLZWF4SEEza0I",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T08:59:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon wins Rs 865.90 crore NHAI expressway LoA",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNREx4TkJIbWo5RXpXbU1PalM1cFBQZ0t4S1Jta1NINGFHWUZQNVhfd0w0LXNwRVEyVjBGVVJ5QkNSZVlvZ1Y3Tk9qQW1ZbWpQclJYV29ZRXNUZlV5d2VvOFNrWF9ZZUlLZmROaFVjQ1ZDdjBzSVEzSE8zaVVhRFBkTFBBY01YN1NGU1hWMWx2MnQzbnU1aVBRZFdCUUhtTk9CRG5NUUM2NjlpYzNlN2Vld3FiWnkxWFBkMGw4ZDlB",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-09T16:12:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Emerges L1 Bidder for Rs. 8.66 bn Expressway Project",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOeXdFRTNwZ3FGSkxQMF95b0c1OGRfT21RNldSTjhRa1g4X2VOazRVZ2VpdUNTaldjRUNFX3hOaG5KZUpfRHNLWkd0eDQtby15bWp6eGxQSmQ0V214X3FWVXF5R3I1ZHdJU212SDkxanZLaTF6RmVhQzFMUkU1cmh6ZFZyS25vRzFMUk5yMWZyc2xFNDFkUHJUempIMlpINldlNXk1TnUxWHJmZjNCbFhtMThXQWJvZkFKY1AweE9xN1BrZjhPLW1qM0pKWlJKekF2RldxR1BLUnI5SVZjUE1ydVJKS29nUGxwUDBpSkRhYmh4bWZtRjgzZmJUbw",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T13:40:24+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 14,
+  "source_count": 2,
   "primary_source": "CNBC TV18",
   "cluster_key": "ASHOKA|OTHER|866-ashoka-bidder-buildcon-emerges-vadodara-mumbai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:48:46.053788+00:00",
-  "last_updated": "2026-11-09T16:53:57.071516+00:00",
+  "last_updated": "2026-11-10T15:17:33.756221+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:46.053839+00:00",
@@ -199,6 +678,71 @@
       "timestamp": "2026-11-09T16:53:57.071511+00:00",
       "change": "stock added",
       "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265396+00:00",
+      "change": "sources added",
+      "detail": "Business Today, ET Infra, ETInfra, EquityBulls"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265415+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265423+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 9 -> 11"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265428+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265432+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265435+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265438+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265441+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265443+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265446+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:16.265448+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:33.756200+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:33.756216+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

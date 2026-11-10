@@ -4,20 +4,26 @@
   "summary": "NHPC invites BESS developer bids for 1,200 MW Jalaun solar park Solarbytes",
   "event_date": "2026-11-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "CONTRACT_WIN",
+    "NEW_PLANT",
+    "TENDER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.62,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "BALANCE_SHEET",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -25,25 +31,63 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Development at a known counterparty (NHPC)"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening",
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from NHPC"
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp",
+        "bid outcome"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NHPC. The parts of the business most likely touched are customers. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, product exposure to NHPC, and battery energy storage. The parts of the business most likely touched are revenue, capacity, balance sheet. Classified as contract win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potential positive impact on future order book if Waaree secures solar module supply contracts, BESS component orders, or EPC packages from winning developers in the 1.2 GW solar / 800 MW BESS tender.",
+        "margin_effect": "Unclear; utility-scale tender supply typically carries tight gross margins due to intense competitive bidding, though supplying integrated BESS solutions could offer higher realization per watt.",
+        "cost_effect": "No direct change to baseline production costs, but executing large-scale storage and module supply requires upfront working capital commitments and cell procurement.",
+        "competitive_effect": "Enhances Waaree's addressable market in India's emerging solar-plus-storage segment, testing its competitiveness against domestic module and storage integrators.",
+        "regulatory_effect": "Requires adherence to domestic content requirements (DCR) and Approved List of Models and Manufacturers (ALMM) regulations applicable to public utility tenders in India.",
+        "short_term": "Evaluation of tender specifications, preparation of bids or commercial partnerships with IPPs bidding for the Jalaun Solar Park capacity.",
+        "medium_long_term": "Potential revenue execution over a 12 to 24 month period following tender finalization, expanding Waaree's track record in utility-scale BESS integration.",
+        "second_order_effects": "Increased domestic tender activity for hybrid solar-storage projects could accelerate Waaree's capital expenditure plans for internal battery cell and module manufacturing.",
+        "key_uncertainty": "Whether Waaree will participate directly as a developer/EPC or act as an OEM component supplier, and the final volume of supply contracts awarded to the company.",
+        "monitor_next": [
+          "Tender auction results and winning developers identified by NHPC",
+          "Subsequent vendor selection announcements for PV modules and BESS supply for Jalaun Solar Park",
+          "Waaree's official announcements regarding bid submissions or order wins tied to this project",
+          "Updates on Waaree's operational capacity timelines for battery energy storage system (BESS) integration"
+        ]
+      }
     }
   },
   "sources": [
@@ -56,21 +100,76 @@
       "published": "2026-11-06T09:20:09+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHPC invites bids for BESS projects at 1.2 GW Jalaun Solar Park",
+      "url": "https://www.pv-magazine-india.com/2026/11/10/nhpc-invites-bids-for-bess-projects-at-1-2-gw-jalaun-solar-park",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T12:41:38+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "NHPC Invites Bids for 800 MW BESS Projects Linked To 1,200 MW Jalaun Solar Park In Uttar Pradesh",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPcUlVOFBUekpiRHViUUxRa19YSVlKQnU4Y0RHdkZTbnpVZ25IbktRVGFIZFRKc2RUSGpoSXdibU9odE9uWXFTSHB1S08zcy1OZ1R0clg2WU5KNXl3dnF3RWduYVNaWkhGS2N0T1pqa0FqUzdOclozdEV4NUhfMEk0SnAxSzhZaUExWEVTVkxMUE9GdUptajZZWU8xZWlXWVZsUFVIVW4tRnFWQjlXS2hGVmRwdmFrdmwzXzU3TkZuNjRkVl8yeXNxVXBINk8",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T05:05:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NHPC Issues 1,200 MW Solar & 800 MW BESS Tender in UP",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOGJhd1Y5cWkyQ1pqRGtQb3A5TngweFB2RmprTFR2Tlc2V0s3bDExVWV0VDR6SU8tWHZMRkpFMjFDYWU4MDVlUDVydWZhZXJXcHZPWDRyXzRxUWk1VnhrYmN6TVM3YjE0NW8tM1ZzM2FwenVhblhrNlY1aFM3ZEcxUDdR",
+      "source_name": "https://www.mvapulse.com/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:36:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NHPC floats tender for BESS at Jalaun solar park",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS1d5TnhzbEdTbUhqRGdBYWJEcWs3SHlEd3VUcW84d1MzMHNjZG1lS3VrenAzaFVHbTRENldzQjNpQXp4Nk5JcGJaZFIwVEViWlRMMWY2ZUoyaEY5UEZFOFU0d3l6MUR2NzRTWEtud3pDR2NJVmgyckJrdF9aeFlJMjQtX0xVQmpFRUpFS3I4YUdPZw",
+      "source_name": "Renewable Watch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:32:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "Solarbytes",
   "cluster_key": "WAAREEENER|OTHER|200-bess-bids-developer-invites-nhpc",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:38:03.688182+00:00",
-  "last_updated": "2026-11-06T14:38:03.688259+00:00",
+  "last_updated": "2026-11-10T15:16:18.253122+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:38:03.688250+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:18.253095+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, Renewable Watch, SolarQuarter, https://www.mvapulse.com/"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:18.253112+00:00",
+      "change": "categories added",
+      "detail": "CONTRACT_WIN, NEW_PLANT, TENDER"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:18.253119+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 8"
     }
   ],
   "price_reaction": {}

@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "vegetable prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -66,21 +66,41 @@
       "published": "2026-11-06T05:28:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Drought drives up vegetable prices in Nadi",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcl9WQVpUdnVwQktKSlVpbjhuU1NaVzNrb2NIMmZwQlZOYUFldEVINk50V1dMWUh3a05ZUGFIcUMtZW1fSzdGRTREZmRFSHRrekZoaDBFSlRvUG5CczlTWm1CcjBtNXQ3M1Y0dm5sN3V5cXhsRHdxT2N3Q1VMeGpaYVkwSQ",
+      "source_name": "Fiji Sun",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T02:29:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Fiji Sun",
   "cluster_key": "FRESHARA|OTHER|drives-dry-labasa-price-spell-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:36:23.386274+00:00",
-  "last_updated": "2026-11-06T14:36:23.386364+00:00",
+  "last_updated": "2026-11-10T15:16:41.810209+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:36:23.386353+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:41.810190+00:00",
+      "change": "sources added",
+      "detail": "Fiji Sun"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:41.810205+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

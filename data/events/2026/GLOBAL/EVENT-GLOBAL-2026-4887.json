@@ -63,34 +63,46 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
       "confidence": 0.52,
       "business_impacts": [
-        "EXPORTS",
-        "PRICING",
-        "REGULATION"
+        "REGULATION",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "CERC",
+          "exposure_type": "CUSTOMER",
+          "term": "NHPC",
           "relationship": "INDIRECT",
-          "weight": 1.8,
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.0,
           "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Regulatory or legal action",
-        "+4 Material international trade or tariff policy",
-        "-2 Weak indirect connection",
+        "+3 Development at a known counterparty (NHPC)",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "TARIFF cuts both ways — growth against capital, cost or execution risk"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
@@ -98,13 +110,31 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "duty rate and effective date",
-        "exemptions and carve-outs",
-        "competitor exposure to the same duty",
-        "pass-through to customers"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to CERC. The parts of the business most likely touched are exports, pricing, regulation. Classified as tariff.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NHPC, and battery energy storage. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potential positive impact on revenue as developer demand for domestic solar PV modules and battery energy storage systems (BESS) expands to fulfill the 6.3 GW state procurement mandate.",
+        "margin_effect": "Potentially favorable to neutral; higher capacity utilization could support operating leverage, though aggressive pricing competition among domestic module manufacturers could limit margin expansion.",
+        "cost_effect": "Operating cost efficiency may improve through manufacturing economies of scale, though raw material costs (solar cells, glass, polysilicon) will remain subject to global supply chain dynamics.",
+        "competitive_effect": "Strengthens position for established domestic Tier-1 manufacturers like Waaree, particularly if tenders enforce Approved List of Models and Manufacturers (ALMM) and Domestic Content Requirement (DCR) rules.",
+        "regulatory_effect": "Direct positive regulatory driver expanding the domestic addressable market for utility-scale solar and renewable storage integration in Telangana.",
+        "short_term": "Minimal immediate revenue impact over 0-3 months while state utilities publish detailed tenders, run auction processes, and award contracts to developers.",
+        "medium_long_term": "Substantial order book addition potential over 12-36 months as winning EPCs and developers (such as NHPC or major IPPs) procure modules and storage hardware for project construction.",
+        "second_order_effects": "Increased push for integrated solar-plus-BESS capacity could boost higher-margin storage sales; may also create localized supply chain pressure on grid interconnections and electrical balance-of-plant components.",
+        "key_uncertainty": "The exact proportion of the 6.3 GW capacity that Waaree ultimately captures versus competing domestic module and BESS manufacturers.",
+        "monitor_next": [
+          "Issuance of detailed tender documents and procurement timelines by Telangana discoms",
+          "Bidding results and capacity awards to major utility clients and partners, including NHPC",
+          "Applicability and strictness of ALMM and DCR compliance mandates in the specific tender guidelines",
+          "Inclusion and scale of Battery Energy Storage System (BESS) requirements within the 6.3 GW rollout"
+        ]
+      }
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -179,16 +209,46 @@
       "published": "2026-11-02T17:43:24+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Bihar Regulator Approves 300 MW Solar-Plus-Storage Procurement",
+      "url": "https://www.mercomindia.com/bihar-regulator-approves-300-mw-solar-plus-storage-procurement",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T19:27:55+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Bihar Regulator Approves Procurement of 200 MW FDRE",
+      "url": "https://www.mercomindia.com/bihar-regulator-approves-procurement-of-200-mw-fdre",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T19:11:58+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Telangana Regulator Approves Procurement of 6.3 GW Renewable Power",
+      "url": "https://www.mercomindia.com/telangana-regulator-approves-procurement-of-6-3-gw-renewable-power",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-10T17:00:56+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|REGULATORY|545-approve-procurement-regulator-solar-telangana",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:13:44.388857+00:00",
-  "last_updated": "2026-11-02T22:36:59.783905+00:00",
+  "last_updated": "2026-11-10T15:16:19.627103+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:13:44.388946+00:00",
@@ -209,6 +269,16 @@
       "timestamp": "2026-11-02T22:36:59.783901+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:19.627083+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-11-10T15:16:19.627099+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 7 -> 8"
     }
   ],
   "price_reaction": {}

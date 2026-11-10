@@ -35,6 +35,51 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Coal India",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Coal India"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -47,21 +92,41 @@
       "published": "2026-11-05T04:52:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Starts CSR Capacity Building Programme for Coal Sector",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQR2hobGJxM054SHdTSzI3OENCZHFqOVctVE1ldW5nZk9ycV9KRWZUelpBUjZFSDE1Q1UxQy1oN1Btamw0OFB0NEtfSTNkSG9TODFWOWE3c1MySFI1RGFIM0toMUVzQndHUzRDMjd5LUpQd0N6RmQ2aTIwRXYxUTNfdDFab1VFbzZ2cDF5d3QxZzEySHE5ZV9HSkdoQjltODlJTkRnVC1nTkZUWk5ELTg5d3NuenJvQ2hHSnozVEdwdWZ1aUpzVi1YaWp6MmtBMGZKQUQxdGVmYlIyY2s",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T07:48:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "PSU Connect",
   "cluster_key": "COALINDIA|OTHER|building-capacity-cil-csr-programme-starts",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:55:28.492228+00:00",
-  "last_updated": "2026-11-05T14:55:28.492288+00:00",
+  "last_updated": "2026-11-10T15:17:01.165241+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:55:28.492277+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:01.165218+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-10T15:17:01.165236+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
     }
   ],
   "price_reaction": {}
