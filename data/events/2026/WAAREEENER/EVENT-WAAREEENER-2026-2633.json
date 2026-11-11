@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-2633",
+  "title": "Border States: Copper Prices Rise 35%, Steel 31% as Data Center Demand Strains Supplies",
+  "summary": "Border States: Copper Prices Rise 35%, Steel 31% as Data Center Demand Strains Supplies Distribution Strategy Group",
+  "event_date": "2026-11-10",
+  "event_types": [
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (copper) is the subject of the headline",
+        "+2 Major industry-level development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "copper is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to copper. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Border States: Copper Prices Rise 35%, Steel 31% as Data Center Demand Strains Supplies",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb2NucXh6ZlBDYko2UXZIV1NWeWVDS3puUFZqZkRiMDJmbzd3THphLTRQejI3d215dks3ckxTaTlZMG1QUW1tMVhjdk9DakR5eEpVSDlQSTJRYnBSNFREWlZod1FlN202ZXF4N3A3QUFiR3lfd2wwSmppR25XMUxFZjVRaVdLTnRrMkQ4UWRJOWk3dHlCNjB4NHAxMHhnV2RfNXg0OEc2SThheU1zbUhRVzM5cTQ4SWwydTBWN0o1Smk0dUU",
+      "source_name": "Distribution Strategy Group",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T21:30:55+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Distribution Strategy Group",
+  "cluster_key": "WAAREEENER|COMMODITY+INDUSTRY_DEMAND|35%-border-copper-price-rise-states",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-11T14:41:12.313010+00:00",
+  "last_updated": "2026-11-11T14:41:12.313090+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-11T14:41:12.313079+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

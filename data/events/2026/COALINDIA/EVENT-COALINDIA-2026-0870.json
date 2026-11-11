@@ -119,6 +119,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -201,16 +246,36 @@
       "published": "2026-11-10T15:35:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Round 2 of ₹37,500 Crore Scheme for Promotion of Surface Coal/Lignite Gasification Projects Concludes with Two Applications from NTPC Limited; Round 3 Opens Today",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPbm9ETmhLU1hWVHJTMnczdnF2TWNyRzBvbFB2SWFzT3NiNlozVDFZOXZJdGN6bTQwSGRQRmxzenlRTUc4SzNLWjV3V3dFNUNQT1AxV2hTVW9wa1BRM0U2SXk1VWFFWFVldEVMSXVkWGk0T3VVYVdUenFtVDVJd3JGelJCSzVWU2hZaTl2TkhFd2lFdjBGMW9BRzVYYV8zZWR4RUhDbTNtVGVIY0FkWk1rQVlDUzVHR3piQ09oSFpJRlJvWDlydmNrUWRmZ1ZHNDlpSVhXclRXeldnbGszTmVCYnNKQnRfdnExQnFPZURJdERfNDVFMmhGX2tfR2k1RXZXWFA5Mm1xV2d1dXVkX2VJUkx6S09yYmZZbUJTTVU3TDVRejFES2lv",
+      "source_name": "India Education Diary",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T22:49:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Government Advances Coal Gasification with New Scheme Round",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaGNha19tdjB4Unc2X2RLWnNaYzhrTjBZYjdXQ1otLXBrd3pBbmI5a29pVlZCa3BldHVTWnF4QzVIYzMwLWpOV29HV3Y1LVJocm5BdmJJU3Jxc2FKcTRYb2xDLWRLazRvTEM3ZS1jQ2pBWHFpWG1sX3E1X1NRV3dLU0YzOFFyU0hPYUxHbUdjTVdyMllwcEt5eA",
+      "source_name": "Observer Voice",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T03:12:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Ministry of Coal",
   "cluster_key": "COALINDIA|OTHER|500-applications-first-received-round-seven",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:13:33.872160+00:00",
-  "last_updated": "2026-11-10T20:41:29.618842+00:00",
+  "last_updated": "2026-11-11T14:48:36.233650+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:13:33.872226+00:00",
@@ -271,6 +336,31 @@
       "timestamp": "2026-11-10T20:41:29.618823+00:00",
       "change": "sources added",
       "detail": "urbanacres.in"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:28.796427+00:00",
+      "change": "sources added",
+      "detail": "India Education Diary"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:28.796445+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:28.796450+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:36.233627+00:00",
+      "change": "sources added",
+      "detail": "Observer Voice"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:36.233645+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,132 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6298",
+  "title": "Gold Prices Recover Above $4,040 as Investors Assess Federal Reserve Rate Hike Expectations",
+  "summary": "Gold Prices Recover Above $4,040 as Investors Assess Federal Reserve Rate Hike Expectations Yahoo Finance",
+  "event_date": "2026-11-11",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and Federal Reserve. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to Federal Reserve. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold Prices Recover Above $4,040 as Investors Assess Federal Reserve Rate Hike Expectations",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbE9pY2xWMlFnbjZTNnNOU04tbE1fZzUzQ2xfS3JaUUZ3ZnM4bFpGLUM1QXJ1UEVSOVlzc3ctUUtkYVowR01lQTNEUExDMzlNTU53bnVYN0ZLTTB5ZXpzVE9rcDM3ME9ncTNYM3hoa21UY0trOG9IWHlOVzhHOFNONGtYOHF3WjZ2RXF4S0k5eDZpUEZWVU1IX1V5dGNzQQ",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T10:13:49+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Yahoo Finance",
+  "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|040-above-gold-investors-price-recover",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-11T14:43:56.584864+00:00",
+  "last_updated": "2026-11-11T14:43:56.584940+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-11T14:43:56.584929+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

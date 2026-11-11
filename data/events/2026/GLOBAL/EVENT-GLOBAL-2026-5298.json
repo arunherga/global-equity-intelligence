@@ -9,40 +9,46 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "credit growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to credit growth, and India. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -94,21 +100,41 @@
       "published": "2026-11-02T13:11:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "From banks to NBFCs, foreign capital chases India’s credit growth",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbExqRWNfWHliazc4dnp4UzJHOUFHa0lWZmt0LW5hTzVoZ3lKOVNmcmhydmcxcXc3elo1bHJwZmxUaWFfSVV0a01YNHVMMlBvVVhYMW5BREhwOGxhQ1JQdjdDQkx5U3BmQTlJNlJ6a011eDFPSncxODVBZkRQY3JMU1RvUnZ0WlREbjBLV2VOc3l2WnZZaDNHaEFNYkk1azJBUzdjeXdaUmJqTnVQLVFBWXhjd3hSMW83UkxtLUlnVkxhZC100gHKAUFVX3lxTFBGVjJXTnRkSHBfX3Z1VEUzMUphNjg0d2JiRElWY0RyQ0N1RmQxd0pCWEtuaklxdnpsTF8zckNTbm1LdFlYbDB0aVBIcnRUOElveE9ZU1NKaWNxa1FSSVhpc1VNc2lCRDN4bHJIdDQxS3R3aUlHdF9YR3FyUkJlMFdmeTdHU2I0eUF6aTFlMXluWnlRVmw0RkJmdU43eWNHRjJRYUJPM05lZU5mTmZvMGszYkhOTlQtQUUzUXozUnZJX1loMUY2QTlKUmc",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T12:17:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TaxCorp AI",
   "cluster_key": "HDFCBANK+TMB|OTHER|ahmedabad-axis-bank-favour-itat-rules",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:33:12.224317+00:00",
-  "last_updated": "2026-11-02T22:33:12.224403+00:00",
+  "last_updated": "2026-11-11T14:49:22.986672+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:33:12.224392+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:22.986651+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:22.986667+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

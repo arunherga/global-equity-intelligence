@@ -1,0 +1,175 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6281",
+  "title": "Global: Stainless steel prices fall despite production cuts, reduced imports on weak demand",
+  "summary": "Global: Stainless steel prices fall despite production cuts, reduced imports on weak demand BigMint",
+  "event_date": "2026-11-11",
+  "event_types": [
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "steel prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Global: Stainless steel prices fall despite production cuts, reduced imports on weak demand",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQjBraHBFSEFQYTRxWWVGa1piQTEwYzgzZUpqRzhpMEg4RFNiWE95eUdZVk1SdkNBdlRSOVRXdWFnRV83S1oxV3ZyNDlhcnB4T1YyV2VsZFAzLVBlbk9USzB5Q1dkaDBjbkhVdUV6RnZtSUxfRHpkRHphNWVfMmhOS3dULWR1a29NQ1M3b1k1NTZLbkN1eVd1YjFlUWZfVUFkNWx4Q1hkd2l4R0V3QTRwM0x2UWRjZ21xYzNSbVRrQ3hMNERRSlJueFNpUlFIQ0o1",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T07:53:33+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BigMint",
+  "cluster_key": "ASHOKA+JKIPL+MSTCLTD|COMMODITY+INDUSTRY_DEMAND|despite-fall-global-price-stainless-steel",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-11T14:43:00.730382+00:00",
+  "last_updated": "2026-11-11T14:43:00.730457+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-11T14:43:00.730446+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

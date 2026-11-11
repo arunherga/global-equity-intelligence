@@ -10,10 +10,10 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEGATIVE",
+      "confidence": 0.55,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -29,15 +29,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "crude oil over the next few weeks"
@@ -48,10 +48,10 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEGATIVE",
+      "confidence": 0.55,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -67,15 +67,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "crude oil over the next few weeks"
@@ -104,16 +104,26 @@
       "published": "2026-11-03T22:00:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Crude oil futures rise as US industry data shows decline in inventories",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-rise-as-us-industry-data-shows-decline-in-inventories/article71688277.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-11T04:43:48+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "Crude Oil Prices Today | OilPrice.com",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|analyst-buck-crude-inventories-oil-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:13:51.526697+00:00",
-  "last_updated": "2026-11-04T14:59:38.444478+00:00",
+  "last_updated": "2026-11-11T14:48:09.221151+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:13:51.526751+00:00",
@@ -124,6 +134,21 @@
       "timestamp": "2026-11-04T14:59:38.444460+00:00",
       "change": "sources added",
       "detail": "Crude Oil Prices Today | OilPrice.com"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:09.221120+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:09.221140+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:09.221146+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 1"
     }
   ],
   "price_reaction": {}

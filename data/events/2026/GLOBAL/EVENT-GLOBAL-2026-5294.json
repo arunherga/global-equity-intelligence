@@ -51,7 +51,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -60,7 +60,7 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "HDFC Bank",
+          "term": "ICICI Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -72,7 +72,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -80,9 +80,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "HDFC Bank's follow-up announcements"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -122,6 +122,45 @@
         "ICICI Bank's follow-up announcements"
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Adani"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -175,16 +214,26 @@
       "published": "2026-11-09T10:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Market wrap: M&M, InterGlobe, Adani Ports SEZ, ICICI Bank top gainers and losers on Nifty and Sensex on We",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQbDhweEs4SkhWMlBPQlRpbDQyODd5WWZveEVSeVF0OXFuOVlob19GQnd0Zi1WTm5uVTRCTjJRNDNkMk84TmNJNXV6c0pic1c3M0JvVkdyNTA3bDJ6TzVDb2F2VUlHUkQ1MlIyUjRzUmlVRGp3bnRFX3BzVkE4SWF0NTJCSURUXzBPOU5CT2cxbnM0R3JEbmkySm9EY3MybHA0NjhhUG1wX1h1V0d4S0FHanU3LW5zMTA2ekdTXzgyUDhsdkJkRXNVTWdfb3psQWVFalpaQWtsNVMyRFVrSktVN1Frd2dxQ0dtLWNTRDZVQnhVcFEzN1hEQmlsT3EwSzhEX0hOeW0zNmhtUmZPQTdz0gGUAkFVX3lxTE1wa3F1Q2ZSTTR1b3ZwaUhkdnJadGJhTWF6b3YtYkhrY013RVRlc0Q4aG9UVDBROWNxVFFBZmtTcDNxLTJ4aUVRaTVyMmxWLV9UOUE4d1ZodGVzS2VVR2lDV3VCV2VwVTItMmJ1Y2hPY0FXQ1MxNGVLank1MkJoWVN3SmcwcDFBQVY5b3VfUnpmVlFjOF9nOVRobHQxS1FUSk40cGhLMWlJT3U1VGJCYkV1OVcyMW42OThSLW1hUkFjd0tkZTVwajUxMHhVd2RJbTJhZkhFUHdjdUg2d1hRSDh1ZUVQQlB0ai1wSVB4eHExRFc2Nmk5SDAxTnJ6V3lnUVRsTFFpUFBRTkdWVnBWeUJ6Mi1xNw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T12:26:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+KSOLVES+TMB|OTHER|infosys-market-ril-steel-tata-wrap",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:33:06.747533+00:00",
-  "last_updated": "2026-11-09T16:53:24.844728+00:00",
+  "last_updated": "2026-11-11T14:49:24.368309+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:33:06.747593+00:00",
@@ -205,6 +254,21 @@
       "timestamp": "2026-11-09T16:53:24.844722+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:24.368283+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:24.368299+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:24.368304+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -9,51 +9,31 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.41,
-      "business_impacts": [
-        "COMPETITION",
-        "CUSTOMERS"
-      ],
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Adani Green Energy",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "Adani",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "Positive and negative effects both present",
-        "a competitor (Adani Green Energy) is doing well",
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Adani Green Energy's follow-up announcements",
-        "order flow from Adani"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are competition, customers. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -77,16 +57,26 @@
       "published": "2026-11-05T09:26:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies Ltd Surges 5.52% to Day's High of Rs 2520 — Outperforms Sector by 3.97 Percentage Points",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPV2N0b3ZiaFoxQ3NYYWFYcm1uTGR3dTdEUVNUMVFITllvY19hTlZWakRQWVQ0czVFdDhiN3NfU2xmRlpHTTZkRE1RNE9BMjZSSnE4OGFaTzhSREpWd3RzS3BnajBxYWpHclZBdVJYT1N0bzVOTE1SR1BDd1dvV2NweWZJZ3IzenBLblcxV243U181SlJDcmRoSTZsVmVwNmt2ejVkWVhtMTBockx4eUtUQUpmdTZ2T0dYRmt2blhkaWNISFds",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T13:18:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "WAAREEENER|OTHER|3.07%-adani-day-energy-green-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:33:09.875396+00:00",
-  "last_updated": "2026-11-05T15:02:41.719350+00:00",
+  "last_updated": "2026-11-11T14:49:29.137364+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:33:09.875473+00:00",
@@ -97,6 +87,16 @@
       "timestamp": "2026-11-05T15:02:41.719330+00:00",
       "change": "sources added",
       "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:29.137343+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:29.137359+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
     }
   ],
   "price_reaction": {}

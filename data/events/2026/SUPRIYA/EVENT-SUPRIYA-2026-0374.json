@@ -12,7 +12,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING"
@@ -46,7 +46,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "API prices is a selling price and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -70,21 +70,41 @@
       "published": "2026-11-10T16:06:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Google Opens Gemini 4 Carbon To The Public With Lower API Prices",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMkFXc1QySmlRWUtoV3JhZWdfdWJYcVcxYk85SEVxRVJNSE9ncmYzQ2lvM2tVaWVjTDYxcm1YdmJURHIzSGxqckRrdE54ekJpYzdLQ014eWNUWjI1ODhWV19Dd2U3MmtoNTgzbGY3Mlppem1GSjFZMGt0VjJkVllYRnNXY3FmZ2VSMmNuRkJocjc0dGQ5YkJr",
+      "source_name": "Dataconomy",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T08:41:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "VentureBeat",
   "cluster_key": "SUPRIYA|OTHER|available-carbon-gemini-google-now-publicly",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T20:39:54.266637+00:00",
-  "last_updated": "2026-11-10T20:39:54.266737+00:00",
+  "last_updated": "2026-11-11T14:49:02.422444+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T20:39:54.266727+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:02.422422+00:00",
+      "change": "sources added",
+      "detail": "Dataconomy"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:02.422439+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

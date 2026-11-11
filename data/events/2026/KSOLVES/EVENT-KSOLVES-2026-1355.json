@@ -10,17 +10,15 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.2,
+      "confidence": 0.3,
       "business_impacts": [
-        "BALANCE_SHEET",
-        "REVENUE",
         "SUPPLY"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -38,26 +36,22 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Acquisition, merger or divestiture",
-        "+3 Development at a known counterparty (Salesforce)",
-        "-3 Speculative or unconfirmed report",
-        "-7 Share-price listing or roundup page, not a development",
+        "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, revenue, supply. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -91,16 +85,26 @@
       "published": "2026-11-02T18:33:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce And 2 More AI Stocks To Own",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFZNVUt4Z09XWi1pSUV4Q3YwN1dwSU1aMHEyZUpiN09OLXFZNTByU2swb3pwaHNGT2FoNkZaY0FzWXFOTnlsOFNKcmttV1VVV21wNU80VDRMTzQ0VExLVmZNY2VTZWpZQlBONnlHY3FnWktkLVM5Y2VWOURXSUIwbDFEVEVSUUlrY0FuQmp4bWF0YmtrejJUY0ppTVhOeUllWENNZ3Bkbw",
+      "source_name": "Simply Wall St",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T00:47:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "KSOLVES|ACQUISITION|braze-crm-focus-jefferies-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-21T18:11:42.282935+00:00",
-  "last_updated": "2026-11-02T22:38:39.185002+00:00",
+  "last_updated": "2026-11-11T14:48:30.547181+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:11:42.282996+00:00",
@@ -121,6 +125,16 @@
       "timestamp": "2026-11-02T22:38:39.184984+00:00",
       "change": "sources added",
       "detail": "Simply Wall St"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:30.547162+00:00",
+      "change": "sources added",
+      "detail": "Simply Wall St"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:30.547177+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

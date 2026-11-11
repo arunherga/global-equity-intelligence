@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.47,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -23,25 +23,46 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "HJT",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "heterojunction",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+2 International market development"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, product exposure to solar cells, and cell manufacturing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -65,21 +86,61 @@
       "published": "2026-11-10T20:27:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Singulus signs SpaceX deal for heterojunction solar cell line",
+      "url": "https://www.pv-magazine.com/2026/11/11/singulus-signs-spacex-deal-for-heterojunction-solar-cell-line",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-11T10:05:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "SINGULUS Signs SpaceX Contract for HJT Solar Cell Production Line",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSnMyekstNEp5ejR0NWlqRjhwbFF1VnQ2dGt3MmE0RElTUG9mM2FCZUhmQnlmUGRFRTV5TEY5TV9hUnNJWU5takxPMGlaOUpPRXBQN2FieDdSODNsWndRR2lBNXFWc0dlX3N1LTNPSEFEQk9VQjlLZjlDYjU2TDBKN3M0UjRUYXVrU3RjS01sUkpMZEhHaFU3TEpRSWtBZEdfeUdYVklMbnhfZ0JVUUxLUERfZzduNU01",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T18:58:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SpaceX buys a heterojunction solar cell line from Germany's Singulus for its Starmind satellites",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcmtUMmxXbFVhSXJoWjFYS1k1MGtSUmV0b2hnUnl5dXo5WjVGM1d6TzVXUEU1X2c5UlFUdDNqZ3VqRHl3YTAzNzlpOFh4THlLNGtfOUl1cUwtZmxoQm5JMjJhNkFTNlh6c3dCY1VfbTJRV2NLNXVVZ3FLOE1RSW0wU0ZYclpXcVowY3VfWHhWRGhNNHVOMWI5cUp6VHZFcWlhZDdUM2NURmNXM1huMzFlTm5mLVVGYk0",
+      "source_name": "MLQ.ai",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T11:15:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "TeslaNorth.com",
   "cluster_key": "WAAREEENER|OTHER|contract-sign-singulus-solar-spacex-starmind",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-10T20:40:44.884426+00:00",
-  "last_updated": "2026-11-10T20:40:44.884515+00:00",
+  "last_updated": "2026-11-11T14:48:16.889373+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T20:40:44.884505+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:16.889352+00:00",
+      "change": "sources added",
+      "detail": "MLQ.ai, PV Magazine, TipRanks"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:16.889368+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 4"
     }
   ],
   "price_reaction": {}

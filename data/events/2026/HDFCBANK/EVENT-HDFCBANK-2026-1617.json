@@ -1,0 +1,140 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1617",
+  "title": "Guwahati: CID Arrests Man For Alleged Cyber Fraud Using HDFC Bank Identity",
+  "summary": "Guwahati: CID Arrests Man For Alleged Cyber Fraud Using HDFC Bank Identity Pratidin Time",
+  "event_date": "2026-11-11",
+  "event_types": [
+    "FRAUD"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REPUTATION",
+        "MANAGEMENT",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (HDFC Bank) is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are reputation, management, competition. Classified as fraud.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REPUTATION",
+        "MANAGEMENT"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "+4 Fraud, cyber or product-failure incident",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "FRAUD is unfavourable for the company"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation, management. Classified as fraud.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. While direct revenue loss from a localized cyber fraud incident is typically minimal, any broader loss of consumer trust in digital banking channels could temporarily slow retail deposit growth or digital transaction fee income.",
+        "margin_effect": "Unclear, though potential minor negative pressure could arise if operational costs for fraud prevention, legal proceedings, and public awareness campaigns increase.",
+        "cost_effect": "Operating costs may increase slightly due to enhanced cybersecurity measures, anti-phishing monitoring, legal cooperation with police authorities, and customer support expenses to address identity spoofing concerns.",
+        "competitive_effect": "Minor temporary risk to brand reputation and trust relative to retail banking peers, particularly if customers perceive the bank's identity as frequently exploited by scammers.",
+        "regulatory_effect": "heightened scrutiny from the Reserve Bank of India (RBI) regarding customer protection, cyber fraud reporting timelines, and digital identity security mechanisms.",
+        "short_term": "Reputational mitigation, cooperation with Assam CID during the investigation, customer inquiries regarding account safety, and public communications regarding fraud prevention.",
+        "medium_long_term": "Increased capital allocation toward advanced fraud detection systems, brand protection, cyber threat intelligence, and potential industry-wide push for stricter digital onboarding/verification protocols.",
+        "second_order_effects": "Implementation of stricter security protocols could increase transaction friction for legitimate users, potentially affecting digital channel engagement metrics.",
+        "key_uncertainty": "Whether the incident involved external brand spoofing/phishing or a compromise of internal bank systems/insiders, and the total financial scale of the fraud.",
+        "monitor_next": [
+          "Statements from police or CID regarding the total financial scope and methods of the fraud scheme.",
+          "Official clarifications or statements from HDFC Bank regarding internal system security vs external brand impersonation.",
+          "Any formal inquiries or mandates issued by the RBI concerning cyber resilience or customer compensation.",
+          "Changes in HDFC Bank's operational IT and security spending disclosures in upcoming quarterly reports."
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Guwahati: CID Arrests Man For Alleged Cyber Fraud Using HDFC Bank Identity",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVGpBTElndVdYT3hKY3oyNWNxd0tJaEh4akJGdjBHVGZJZWxwdjc5bVRqQXVxSkxsQkZ3X1FPVkxUbkxkcks4YWVTNG11bXFpOGE3ajlKblFWejhxbGY2dllXQ1B4SWVhNGJSak9QYS14MFpsNVdoanpwWnQwNDJXNWNqcW1SbGVmZUhFRnljRmdPOEFoN3ZFUEUtR1lUMlZNX0pfZFcxX1UxOHgtXzE3RVdHTE1PUlkwaFJTX2JIWlhsaE50dkdCSVhOVlQxbUQwUlNkVlFKZGrSAdgBQVVfeXFMT1RqQUxJZ3VXWE94SmN6MjVjcXdLSWhIeGpCRnYwR1RmSWVscHY3OW1UakF1cUpMbEJGd19RT1ZMVG5MZHJLOGFlUzRtdW1xaThhN2o5Sm5RVno4cWxmNnZZV0NQeEllYTRiUmpPUGEteDBabDVXaGp6cFp0MDQyVzVjanFtUmxlZmVIRUZ5Y0ZnTzhBaDd2RVBFLUdZVDJWTV9KX2RXMV9VMTh4LV8xN0VXR0xNT1JZMGhSU19iSFpYbGhOdHZHQklYTlZUMW1EMFJTZFZRSmRq",
+      "source_name": "Pratidin Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T07:26:52+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Pratidin Time",
+  "cluster_key": "HDFCBANK+TMB|FRAUD|alleged-arrests-cid-cyber-guwahati-man",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-11T14:42:54.137973+00:00",
+  "last_updated": "2026-11-11T14:45:45.884139+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-11T14:42:54.138035+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T14:45:45.884121+00:00",
+      "change": "ai analysis",
+      "detail": "HDFCBANK via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

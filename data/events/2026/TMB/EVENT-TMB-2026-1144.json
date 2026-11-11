@@ -4,20 +4,24 @@
   "summary": "Gold rate today in Hyderabad, November 6, 2026: Check 22K, 24K and 18K gold prices Hyderabad Mail",
   "event_date": "2026-11-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY",
+    "MACRO"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,10 +33,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -40,9 +45,56 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -86,16 +138,46 @@
       "published": "2026-11-08T04:12:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chennai gold price falls by Rs 1,560 on November 11, 2026; check today's gold, silver rate",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZEN0TnM1V0xMOWNNLS1vYW9GUklKaUFDdnJOQ0JTTDhER2hDR1NRWEgtSi1rZ213YzU2R2N5endyY1I3YlNjbmRybV84RHZYQlJsa3A0aVEtdUVSM3N0b0xaWGF1Y2MzOFJULTlKNE1PYWpjcVplY25xRExNN2M0R1BxbVZQOTAzR2U2RlVydmp5b1JTZXl1MTJBQWxCZFowRU9kTGFTVzFhamZpem9aakl1ZlZCazJjeUItdNIBygFBVV95cUxPakZDMmdBZ2Vta0l2UWlsb3d1ZE1IRjlVQ01PUzdUS1FtUDdiYWg1WG4xT3hjdGVTSksyYmtESUlyeHBxaUNkRnJXQS1VTndZTlF6RmhfMllSVm52VDRFSmROVHhNR1ZxWU9ydVFPTkk5dHFMUUhIN2Z5VUZkZXV3cTBseWFmR2JMMVk0bGpvSDBDMS1Gb0t4Zm1kNS1SNFBEVHAxQXBqTzdtN25FUHA1bVFIVVZLTlFYek5KU1llS1kzOTFjQUxaVGZB",
+      "source_name": "DT Next",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T04:20:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold and silver rates today (November 11, 2026): Check 24k, 22k, 20k and 18k gold jewellery prices from IB",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxOS1BHbnZNaVZ6OVNiZzlrbXk4dUx6ODZoNDhDODJ3OWVCMkd3ZHZNRmc0LTFpNC1PWnpHV1daZVhRRG5oS0wxOHhQOWVIcnN3NEVxdjF6dDFZd0VjMENHSlR2WGJCLVBiX0hjcjR5OEFUOHlJVnNoUFd3OE41UEhVS3N3d2hRV3V1QWUyMGVRbmo5TjRmUEVabWJJSjBZbEZjX25BS0RIQkp6VW5rRjRXOG5ZTkpibmpIOVNMZkZDZWE5UkI5VlE1X2hQYWxybkxEVW1lMjB6YWdSckRlV1ExQWlEUmMyLU81UzZqUTExOC1yOExOeFNLSFFpS2VCQlRkU0xFWVJ0Q3ozclFIaFZLckhfMVdjWVVIY3luOHV3cnVmcjNLT2laQ1ZqbHJKNVpBSE8zUjllOE8xZ3c5YnFxMncybVFRODBueWdyREEtZHVXQdIB1wJBVV95cUxNdzEtVmJWaTRrMGQxelhvaDJmM1lsVFYwdnptUEk5U1Q5bVdnRzJWbzIySlBBdTRnVEJWcFE2ci1PMExrUTVPUVJDZmNrcFl5bHFET3AyamdHakliWEFrMllRcXc3SHJXa0lrU3lzaWdRNDJwZVlRLXJuLXFmMG53QnZiMW1qY1dEaVk4c2VsZHVrZGE2ZjNsenE1QjdzRk1VMkp1YnZKWWFrUm5BM2VyNy1RX01kdENQTlZXZENaWTZmWHJnSUczUE9BTEtSbExwcW1oa2M1RE1SeHVsaGtSdkdHMDluOWYyeU96NWwzcFYwRHpRVWcxcVc5eGRkWHZfX185ZGs1MGhEUUM5WVhaTzFBUm83QUlPXzc0VXdKUVhWRndwa3N5cEhmdXBaRjFYS0pxOG9MUTN6Mk9nYmEwVnNtODNuaDgwM1QtcHJjZUd6VkxaWmxr",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T06:21:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price today, Wednesday, November 11, 2026: Gold prices fall back as inflation concerns broaden",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPa2ZWdnE1NlJaSFUzNWdvMnF5NXpwQzlKUFZ5MUczdFU1ZTNGZkRlRzNoUTFweTZ1aEVRVzR1cHEwWjJ4VS10R2dQYWJiaXk4a2F5UDZFLU1PX2JINGh0dnNBQ0Z1a1I4WXRiTTV5dFhPRWZaR1YxYWxJYzdoVTNCS0dWQ3pjZmJfMmlyX0ZFMk1rNXZEeGxRdWVXWlZmelR0RDA1WGtrbjZRU1FJMmMzaTI3cnJYaXBDVjF5cHJwNjZtTTY2dkpoLWprT2dOb1RENGhld3RBSjE4TU95YWNReGczOWZmYmxYLUc5cWlNQVVmOE9DRXJHRWJIbnpUa3Et",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T12:11:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Hyderabad Mail",
   "cluster_key": "TMB|OTHER|2026-gold-hyderabad-november-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:36:30.197375+00:00",
-  "last_updated": "2026-11-08T13:45:42.274563+00:00",
+  "last_updated": "2026-11-11T14:48:40.333844+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:36:30.197454+00:00",
@@ -111,6 +193,26 @@
       "timestamp": "2026-11-08T13:45:42.274547+00:00",
       "change": "sources added",
       "detail": "Hyderabad Mail, INDToday"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:40.333815+00:00",
+      "change": "sources added",
+      "detail": "DT Next, The Economic Times, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:40.333831+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY, MACRO"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:40.333836+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:40.333840+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

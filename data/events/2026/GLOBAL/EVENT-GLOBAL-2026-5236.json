@@ -13,13 +13,13 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 3,
       "impact_band": "LOW",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -37,7 +37,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -45,12 +45,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "TMB": {
@@ -140,16 +140,26 @@
       "published": "2026-11-06T06:07:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold prices near Rs 1.45 lakh/10g, silver jumps Rs 2,900/kg on MCX despite rising Fed rate hike bets. Chec",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOWUZhaHFRZVlCRF9FTDJkbzlHMnAwdTBXa093c1Jxc1RoenJtQlh0dkF1OGxzbHNYUTMyaW4xbXd1SU54TGNld2wwdUxMT3dzazR1LTM4d2IxRjhud2htMW9PcXBjMzQwMHNDLXlVendUUFp3SkNkbnFEYmNJQ0sxanJ5SUpNVURVUXhPR2NoUzN6d3NmVms3LVhNZXctV1BqNUZzd0VadWZWVTNCcldQRWMwTC1WTVA3UmhkR1piTFBRWnd3cXh2OTAwQUVuSWNwWklIYTFTNGxNNHZvel9wN1EyU0swTWVhelVCaUs4bjVQTDIzd3E4c1d1MU9pajBPSmhDTDNDeVB4dFIzbnZ1WFRQeXNSanl4bDFQMzJLNzY4OGxwbzJNWThR0gGvAkFVX3lxTE1mZktwZ1hYdExNSmVPMXRBaU5LRXhWVWZLMUdRS2JhMmlZWHZGTjRlTjBQUE1vcTZMc1F4OEt2OWhDZ1BEYnRYNlRqYmotdmxxM0V3cHJIeFVLcXQ2QWgzZEZ0SEd5dzZrdzE3NEY0Y1VrS1RPaUJjS3FCcWlaUnQ0alFnczFqTDY0MHpDU2VPZnAwNTZLVTRqVDdJeVhGUE85dHBCTzVPV1JOTThXZFhiak5mLTMxQURyZ1dra3pXMFNTeDFHU3FtVjQtbS1zZnZnWWg4ZzhTWEFRWnRPYk1JM1B4d1pBSWFVY0hqcEIwd0hNMEpMd3JTR0xRWDN6MXpfREhpV2xqWW0wUWV6MUMwb0NWaENRcnI4QkcyTW5makhkSXhYbXN4bzVhZHlLSQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T05:22:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB+WAAREEENER|COMMODITY+INTEREST_RATE|600/10-gold-grams-mcx-price-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:30:06.435589+00:00",
-  "last_updated": "2026-11-06T14:44:02.412571+00:00",
+  "last_updated": "2026-11-11T14:48:46.244409+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:30:06.435651+00:00",
@@ -170,6 +180,16 @@
       "timestamp": "2026-11-06T14:44:02.412552+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:46.244386+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:46.244403+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}

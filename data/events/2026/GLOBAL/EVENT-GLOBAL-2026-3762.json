@@ -9,11 +9,11 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "MIXED",
+      "confidence": 0.62,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -22,24 +22,38 @@
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "COMPETITOR",
           "term": "HDFC Bank",
           "relationship": "INDIRECT",
-          "weight": 2.5,
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "repo rate",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -47,16 +61,16 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, regulation exposure to RBI, and HDFC Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.57,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -65,14 +79,14 @@
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -136,16 +150,46 @@
       "published": "2026-11-07T13:31:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Large banks raise MCLR by up to 20 bps after RBI's repo rate hike",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/large-banks-raise-mclr-by-up-to-20-bps-after-rbis-repo-rate-hike/135730558",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-11T08:19:25+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "HDFC Bank hikes MCLR rates 15 bps across tenures: Check impact on your loan",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNb2VpZDRFMmw5RC1XcWppRWtscEgzS0hsNHEtMGtmTGFQdTM2cEtKc1pCQ0NMdXlBajJXd3hZVEdMUkt2TlZIX2RhM216Z0xKeldnb0xQMllrM3E4ZWswS2hOckdSekpDYWNMYkpFcUtYam42NGYxNlMwTW13N1JlY0VZc0w0ajk0T2FoeU83ZF84a2hNZlNQYzEtMVlfN3ZDcnluMEI1UnNmSV9yMFBQeC11Z0JHdWdPZF95SGhjbnZGRmhLSnZQbl9BaWd0VXdkLVNpdllNUGlqVU9EMDJRWmVQUDZRYXM50gHuAUFVX3lxTFBwUEl2eDZyVDFsZDRvT1dGSC1EZ29kV3hPUU04bGdPQk1OdnlqdVdxY19QdXpVWmNZMG5OUURycndWc1RBQ3M1WGhGV1lnMUdvd0dBMWpHUGoxY0dlZ3VsSGZpaWNpQ3lxVHpxMllfVnhYbkxFcWhkUmlvNGZLU3BhdVVyU2lmNGM0OGlxdDRhSGdvODdQNnF6U1ZNMVFpMGxNdjVJM2ZWM0lWR1I4U2N3WE5MT0U3UGlYNXRJbnhjN3ZSYndaQzNkcEhYeXBrbkwxVEJhTkVUc3VZTy0yMmR4SGpWamtwZFFYdnRPclE",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T05:18:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Large banks raise MCLR by up to 20 bps after RBI's repo rate hike",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZEJqMmY5dlh3MVo3M19DTjg3X0lwMGRBTXU5eTZCeEV5eGxCbGZwSTlhR2lYNFU2Wk94V2tCcTlIcjU0UUoyMlJOcWRVY21fdThYd3hfajlzaDVCV0QxYTdYX3NEUTZIaExiQWxHcjkyOFc1Z1FhaFNVNWRrTWZ5YzlaYkIxS1dyOFpySWRMbHRmSUVBUEZyb0NiR1lnanhSTDQxbkRCWFp3V2w1RFZoYld0THNITkpIU2pVNjdSbDZXSG_SAcgBQVVfeXFMT1Q3NkVvZ1dDaGFzY182MGxJN05qZ2JoX0xPdU9NMWFKSjl5U1VUMjFfX1ZsNF82SmRMUDFyOWFMOEtBMHREc2duSEpXWmN1NE5tbGNJcEt5XzRIZzVydi1wdzlYRG80cmhINTZrLVFLMUFNeDc1aUZwVlVCcXZ2QU03Z01NV1l2V3RPT29rYnZ1S3pRa0p4X3ZiMFdwamRtMjlBSjBEMEFqUmpYV0dmTkVVRkdlaHdHN1ZiVWpJYU0wcXViNFdTNVA",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T08:19:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "Realty Plus Magazine",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|bank-bps-margin-rbi-recovery-see",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-21T18:10:45.736660+00:00",
-  "last_updated": "2026-11-07T18:11:40.533390+00:00",
+  "last_updated": "2026-11-11T14:48:16.050958+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-21T18:10:45.736715+00:00",
@@ -166,6 +210,21 @@
       "timestamp": "2026-11-07T18:11:40.533387+00:00",
       "change": "impact raised",
       "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:16.050929+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:16.050948+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:16.050954+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 5 -> 7"
     }
   ],
   "price_reaction": {}

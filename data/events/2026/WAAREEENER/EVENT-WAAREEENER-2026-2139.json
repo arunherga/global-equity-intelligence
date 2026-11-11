@@ -4,20 +4,23 @@
   "summary": "Renewables news: Waaree Energies, ACME Solar, NTPC Green Energy GreentechLead",
   "event_date": "2026-11-02",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -28,7 +31,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,26 +41,31 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
       "ai_analysis": null
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 6,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -67,7 +77,9 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Earnings or guidance",
         "+2 Company appears in the headline",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -79,22 +91,27 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -105,7 +122,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -113,13 +132,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, margin, customers. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -143,16 +165,26 @@
       "published": "2026-11-05T05:46:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Suzlon, Waaree Energies, NTPC Green, ACME Solar shares: Targets post Q2 results",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSjhKZVhKVDVhOWpJTDUwdDhFUUg1ZUFKLXpMY0VaOVpUbzB0RngxMGo3NlNNNllEWnFGM3RVelVkZ1RzWWNJcWIzeHVlaHlhOTJrMjdybklVZ3JtYTM5bzY0cmFhMEFCUVp5b3FrUUZUa0l0UUtSSmp2OTg3RnNGVVZ3RldRdGsyVkxBTi1wSE9qX3lBTU12SC1jdGFkTG1SV0tVXzdTak1Qa055ZF9WNXRGcmRVZ3VfUGo5aTJuOEVQWncxRWtpQWNfZWV5MmlyaTAtQXlYdFN3elXSAeABQVVfeXFMTnBXazZadXpvbzRWQzduNVdYeVhtS2Q2cElQU19LSFJBVmNOZFFBRHpFQUpQNmkxTk03dExibVBHSjdwNjBKVG5kZDdrZmVUSk9UNUc3SUM3bTdrSFNkZG52X2RHTF82Mi1CeXp6eWg0QllCNnpFako2YmdsRW1namotOWFVeFhiUEUwWDEydks1bnNPMllVZWFoRGF2UXFYcGVzaWxza1FQeGh6YUVabFhrTEkydWNVWUFBME8zckRBdFdaVDZ2a0g2TlJCNi1lYW1MRGgzSE9EN2hsVmhGbkQ",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T05:01:06+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "GreentechLead",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|acme-energies-ntpc-renewables-solar-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:29:58.432800+00:00",
-  "last_updated": "2026-11-05T15:02:24.160445+00:00",
+  "last_updated": "2026-11-11T14:48:43.740766+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:29:58.432863+00:00",
@@ -163,6 +195,31 @@
       "timestamp": "2026-11-05T15:02:24.160425+00:00",
       "change": "sources added",
       "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:43.740734+00:00",
+      "change": "sources added",
+      "detail": "Business Today"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:43.740748+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:43.740754+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:43.740759+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 6"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:43.740763+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 1"
     }
   ],
   "price_reaction": {}

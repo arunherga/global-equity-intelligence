@@ -9,39 +9,31 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "US solar imports",
-          "relationship": "SECTOR",
-          "weight": 2.3,
-          "detail": "international topic; in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to US solar imports. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +47,66 @@
       "published": "2026-11-09T05:30:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree admitted misreporting solar import origin in submission to US trade commission",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTlZ1R1hLUnFiR0Nta2xleTNoS19yQVlHc1dXLXhBQm1ZVHgzdGNlSldCTmJDeF9MODFNZWtMSmwtRGItcDRKWkJhdHhIRUtMREdxR3hmS3VSWXhINDdDUjlLTXktdFdhUWo0clg1SUlJcXVWbFBVSnd1OHluSEplUG0yNDY2UkVpdjAyRmIwVGF5dnJkeXRuaGw2MGNBN1Fidy1QSzZWNW1PUDFwUjllcTl1RG5iVVM4cC1HM0Y0ZWVvYngyeDgxc0I4eFVscGx6Y2hYd3hicnY2Z9IB3wFBVV95cUxPSmxjcnF4WlFvWjZUdTZWMHJwSXhmWWN1UXhNZFJSN1JEY1BfZ1E5Z3FKalFxdVZQYi1wV1I2VzlUd0prMWVkTU1sM1NKT2dXNVVObTA3by1qVlBwM2tBbjRNTm9ZQzhDTW40V19MQVdETUxJN245d3RFTlp6c2hLM2c4dlNKUlRVcHJpT21Va05QTVhGaFYtNDhvYjM5alZ2RDkzcmpmMmQyTkI3T1psM2N6aG5WUVhaRHp3bWFtMktZUDhRLWswb1kxQUlwaW9GRWpzaERNcm9aeGs1TEFN",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T09:45:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies Admits Solar Import Reporting Errors In US Trade Probe: Report",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObnptZzBqWUF2UjdBVE93RUxRT1hXa2xmRnE3NEVyc2lLM1dvblNlakFIVTZncFZ4MU5wYWRSWnFjMEhDR2RtZ1MxdDJhMGpxM19FQVY4Zm1fNzJTZDVYWDRkbVdhMTdROERkRVRSbGxQZnpoMGQzdXRzekV4c05sQXpvSmVkSzZoNkJBVTBpS1VlS3pJVUZxQ3JMdHRXcWdsZDVYSEpEd3pGWHMzcEQxbm9BZ0gwSjFrR1HSAb8BQVVfeXFMTmdwQmlocEJOQWhwLWx2THp4aHIwLTZydURTSFVIWW5nMl8ybXV6bm9fay1LY2tmR3VzUEJWMkJsU240Tkg1eDZxd0g1ZFBRUlRTVEJwRjVVc3NNSkxJYTk3VmJhUG4zME9KUmpXS1hQNHlXeE5XeGxwYXFKU0l1MjgtV19QblM4VFVXUG9VOUlPLW9XWTZDMlc4SFQ4eThZTVJIdjZZRlJKUk52QXBybkRGZXpOMEUycXpsNW8zaXM",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T11:54:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies Admits US Solar Import Origin Errors",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZmwzMmdobU56RHNQNElkMHlPbnp3MHhUUms2RldWVnh6MldjN01YS2g1MDVkRmx1UUEzbEp4UWpZY0E0MTJDQ1JIaDAyOWJoMkV1RjFsSFl5SklFcVBoTHF2VnVvZlpjZkdaOW9CYkMyMTJ3NExQempua19qakVFNWNCNXlMTUpxZkE",
+      "source_name": "Equitypandit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T12:28:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|OTHER|face-import-shifting-solar-trade-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-09T16:42:16.057649+00:00",
-  "last_updated": "2026-11-09T16:42:16.057721+00:00",
+  "last_updated": "2026-11-11T14:49:20.969841+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:42:16.057710+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:08.442130+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:08.442148+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-11T14:49:20.969824+00:00",
+      "change": "sources added",
+      "detail": "Equitypandit, Free Press Journal"
     }
   ],
   "price_reaction": {}

@@ -13,27 +13,25 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
-        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
+          "term": "HDFC Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
@@ -42,7 +40,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,12 +48,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "HDFC Bank's follow-up announcements",
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, macro exposure to ICICI Bank, and interest rates. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -126,16 +122,26 @@
       "published": "2026-11-05T17:05:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank, ICICI Bank and PNB raise FD rates early",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNHl4R1RIdVRQSmFSVExzVnkzQVE3aEZ5aHRpelpIVlg2WWhFXzVLZk9qNXk3Mk16bWVlcExqY1NFd1U2RUg0VGx4bjU2bVkxT013bl9lOXV3Q2h5djBpOGhPNXZMMm9TR0xFRjFkcERoYmhUOXVkNmlVY1F1WHVidDBIRXZZVVViT0hRZ2tMRmhBdUFKV0JqOVI5ckFkdw",
+      "source_name": "NewsBytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T06:04:59+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "LinkedIn",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|2026-citizen-november-rate-sbi-senior",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:58:11.972827+00:00",
-  "last_updated": "2026-11-05T20:51:05.435311+00:00",
+  "last_updated": "2026-11-11T14:48:49.633163+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:58:11.972895+00:00",
@@ -156,6 +162,16 @@
       "timestamp": "2026-11-05T20:51:05.435308+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:49.633140+00:00",
+      "change": "sources added",
+      "detail": "NewsBytes"
+    },
+    {
+      "timestamp": "2026-11-11T14:48:49.633157+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
