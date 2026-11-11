@@ -1,0 +1,180 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6355",
+  "title": "Russian crude oil prices jump on China, India demand",
+  "summary": "Russian crude oil prices jump on China, India demand Nikkei Asia",
+  "event_date": "2026-11-11",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Asia",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and China. The parts of the business most likely touched are pricing, input cost, exports. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Likely neutral to slightly constrained in the short term, as price adjustments for finished APIs usually lag raw material cost spikes; nominal revenue may eventually rise if higher input costs are successfully passed on to customers.",
+        "margin_effect": "Negative impact on gross and EBITDA margins due to increased expenditures on petrochemical-derived key starting materials (KSMs), organic solvents, and energy costs.",
+        "cost_effect": "Input costs will rise, specifically for crude-dependent raw materials, chemical solvents (e.g., toluene, acetone), utility/power generation, and inbound/outbound freight.",
+        "competitive_effect": "Broad industry impact across Indian and Chinese API producers; manufacturers with higher levels of backward integration or long-term fixed-price supply agreements will maintain a competitive cost advantage.",
+        "regulatory_effect": "Minimal direct regulatory consequence, unless domestic energy pricing policies or trade tariffs on chemical inputs change in response to crude market shifts.",
+        "short_term": "Margin squeeze over the next 0-3 months as existing fixed-price contracts absorb elevated raw material and solvent procurement costs before price increases can be implemented.",
+        "medium_long_term": "Potential contract renegotiations to index API pricing to input costs, along with possible accelerated capital expenditure toward backward integration to build resilience against crude volatility.",
+        "second_order_effects": "Higher working capital requirements for purchasing inputs; potential supply chain delays if smaller intermediate suppliers face margin pressure and scale back production.",
+        "key_uncertainty": "The extent to which Supriya Lifescience can pass increased input costs on to generic formulation customers without sacrificing order volumes.",
+        "monitor_next": [
+          "Trends in organic solvent and key starting material (KSM) spot prices.",
+          "Supriya Lifescience's quarterly gross margin and EBITDA margin performance.",
+          "Discount levels and price movements of Russian crude oil imported into India.",
+          "Management commentary regarding client contract pricing terms and cost pass-through capability."
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Russian crude oil prices jump on China, India demand",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTzhibTN0Wk42eEN6U0syNjdGU0JMYUNpZm90bGdEWWhFbGNTUkstT1RXSDVvam81V1dQaS1udWk3X1ZKRTV1aEpuaXNNVjZnUGJfUGQ0ZUlWMTY2NVRtR0RSQXpsZDVwaXZrV3h4c0pLYlI1UE9wZHpzY0p6VEQ2RHczckhQd0pXYVFpU1lRb21hWFl5aHNRd0tNLVRqbUR3Yng1ZGxFWQ",
+      "source_name": "Nikkei Asia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T20:46:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Nikkei Asia",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY|china-crude-oil-price-rise-russia",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-11T21:36:56.292211+00:00",
+  "last_updated": "2026-11-11T21:37:09.441203+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-11T21:36:56.292283+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:09.441185+00:00",
+      "change": "ai analysis",
+      "detail": "SUPRIYA via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

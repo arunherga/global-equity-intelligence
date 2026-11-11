@@ -12,7 +12,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING"
@@ -46,7 +46,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "API prices is a selling price and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -70,21 +70,41 @@
       "published": "2026-11-06T08:43:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Google Tests Gemini ‘Hydrogen’ as Flash API Prices Double",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSTljTms4bU81TG82UzJjbVMzT1NKVEVyMGs5MDhYSFdyQi1kUDFZLUxEMUxRb3JUa21EN05JLTUzTjdDYjhUel9TQ0Q5YnhxQlJxQmljWjZVd0VtWUxmdzNpUVRfdXJHWWk1X2hSZGhVTW85bW8xZ2MwX3Ata2trY3dTbjB3YTl5OVN3",
+      "source_name": "FourWeekMBA",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T16:39:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Yahoo Finance",
   "cluster_key": "SUPRIYA|OTHER|3.6-3.8-flash-gemini-google-schedules",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:37:50.596578+00:00",
-  "last_updated": "2026-11-06T14:37:50.596664+00:00",
+  "last_updated": "2026-11-11T21:37:46.896016+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:37:50.596654+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:46.895992+00:00",
+      "change": "sources added",
+      "detail": "FourWeekMBA"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:46.896011+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

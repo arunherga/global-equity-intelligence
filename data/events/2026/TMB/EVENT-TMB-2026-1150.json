@@ -6,22 +6,24 @@
   "event_types": [
     "INTEREST_RATE",
     "COMMODITY",
-    "MACRO"
+    "MACRO",
+    "DEBT"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.28,
+      "confidence": 0.39,
       "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
         "MARGIN",
         "DEMAND",
         "PRICING",
-        "INPUT_COST",
-        "CUSTOMERS"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -36,7 +38,6 @@
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,7 +46,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -53,7 +54,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are debt, balance sheet, margin. Classified as debt.",
       "ai_analysis": null
     }
   },
@@ -97,16 +98,26 @@
       "published": "2026-11-10T15:15:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bond yields surge most in 19 months as traders brace for Fed rate hikes",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90VXBidVIzOGQ1UEpWNEZyYmdEWGs5b1czWmUtOEYxNzhxZEJVODlMVEJsOTZYSHRKWHdjWWFGTzltYWtZaVk3dGhfR0hyaVFuTXk5cEpMWDZZYmsxVG9rVF9ZT3VLYnQ4T2NCQllBVHVmT1lw",
+      "source_name": "CNN",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-10T22:14:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Traders Union",
   "cluster_key": "TMB|COMMODITY+INTEREST_RATE|bets-fed-raise-raise-rate-traders",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-06T14:39:51.407258+00:00",
-  "last_updated": "2026-11-10T20:41:27.541915+00:00",
+  "last_updated": "2026-11-11T21:37:14.759721+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:39:51.407332+00:00",
@@ -127,6 +138,21 @@
       "timestamp": "2026-11-10T20:41:27.541908+00:00",
       "change": "categories added",
       "detail": "MACRO"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:14.759692+00:00",
+      "change": "sources added",
+      "detail": "CNN"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:14.759709+00:00",
+      "change": "categories added",
+      "detail": "DEBT"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:14.759716+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

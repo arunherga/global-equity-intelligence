@@ -49,11 +49,11 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.47,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "PRODUCT",
         "REVENUE",
@@ -62,37 +62,365 @@
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "CUSTOMER",
           "term": "traders",
           "relationship": "SECTOR",
           "weight": 1.0,
           "detail": "generic role; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development"
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "sector relationship",
+        "best source quality 3/10",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from traders"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer, geography exposure to traders, and India. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to BSE, and traders. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -146,21 +474,111 @@
       "published": "2026-11-11T13:02:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "BSE traders face technical glitch; NCDEX launches steel scrap futures",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUnZ5TlgtMWZLRlp1UVp5NGo3Wkd3aFE4NjdlTEF1OVJNakRvS1NxQmw1YWJwVk1aY1JXY3lOTDFSWmI5b2RHaTBITXBINlhJOTJrc0JldDI2UXByUVpFbUFYc2xPLWNWWkRnVFE3a00tb0NaN3NVTXoybUl3ek53cTNPSGg4QzIwWUI2X2pPcDB2WWVlNzFZS28wbUFrUHZpWm5Da3JnYTYyUlduRDdfTWNWMHpIVDlOZ3FHWHgxSG1GTFBPcE10dWxfczRFMUNU0gHWAUFVX3lxTE95aXpRTzM0UlR5TDh0WG5TQkM0TGpBUC1SV184eTVGc2xaTjVRcnV6bTZEcFZJcF96b0k1ZmNhNDdCZERZZmt2OW5MSmEwTk5BWkJWSmt4bG9tTWplSXNyTzBTSHBNSWE0WXY1dnRXV204QTExVkswcEdkLTB3UFZoTDAxUkl1V2VDUnJra0ljbVJ5OHFwMWJMaEFEbXdlbnczYmg3OUs5SS1Yc1g1cjlXXzdGZWVMUVZrTElKTWFUTnJXLV9UaGNrQlV6S29NOGpKYmRlVVE",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T18:25:13+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NCDEX Launches India’s First PRA-Based Steel Scrap Futures",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeFBXaVp4bkFPOWVWTDRhOFRpZEptYllfdl9CU0JGbkRqMlBVYnFHSGZzaTNvSHhrRXh4UmlBNm00WjVrT3FGUkNoczU0VzdBSjBLMmYwSTd2ZkdmOUhQOFJYX2pMVXBQY25jYUVSbkZlM25wMksxZjM0WUVHNVpEaldka0VzRmVu",
+      "source_name": "GK Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T14:42:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NCDEX launches India's first steel scrap futures contract to help industry hedge price risks",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPOE1yNzNGZ3VmQ0NfM21OeGZreDlidmhYaG5MTzlkX0RFdDZYSWRmV3BHRmJWSnlpbFVEdGU5ZHNCTWxvRk5GeU5fN1BZQWhhaHpoX19RM1ZwSEhQQU5BZDJWb3VNTzdsRnJSLWpFOWxBM1h4Yno0d2M2c1BoMGo1SDljdzVSOVRBcS1saTFQQ2t5YkJnSlBjRmRIWExXeEJOWW9FMThGclV6TkpwYW1OOTlJUHVXNDhBUWlkVTRnNUh1Ni1zWTQ3TXZySjVEd2x1aXFYaWw2MHRLU0pxMGVqeFppQU9jekxSSTAycWpnTGJzbW5YYWVzZ2tPTzQ5QVF6NVNRd9IBhAJBVV95cUxPOE1yNzNGZ3VmQ0NfM21OeGZreDlidmhYaG5MTzlkX0RFdDZYSWRmV3BHRmJWSnlpbFVEdGU5ZHNCTWxvRk5GeU5fN1BZQWhhaHpoX19RM1ZwSEhQQU5BZDJWb3VNTzdsRnJSLWpFOWxBM1h4Yno0d2M2c1BoMGo1SDljdzVSOVRBcS1saTFQQ2t5YkJnSlBjRmRIWExXeEJOWW9FMThGclV6TkpwYW1OOTlJUHVXNDhBUWlkVTRnNUh1Ni1zWTQ3TXZySjVEd2x1aXFYaWw2MHRLU0pxMGVqeFppQU9jekxSSTAycWpnTGJzbW5YYWVzZ2tPTzQ5QVF6NVNRdw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T14:40:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NCDEX launches India’s 1st price- agency-based steel scrap futures",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcklvQzhGdVg0c2RPMWxfdTdJbllXMlViX3hab0dvMnVCaG10N1N1aDA5STBOZ2ZydkxZa0gtRUU0SVRkODdWMHhrWThuX3JYbF90djZDRm45UjBzbU04N29MUXdacnJXQWRqVFlMMTM4OUd4R2JQUGVWTE9LeE16QktydHZpNS1McUFoVTNydnNOa083WGlnNzQzaThaaG1xd0hMbVJaS2FtOGZI0gGyAUFVX3lxTE5kenM0X3VyY2RiUkZBd2RVMXRJV0NXOWlCelRtT0V2TFRJWGFuQXlxbGluMW13SnNSYnVWSWpYWnhnSHJxT0Q0N0V0MjAzcjkzT3lVV01vaV80NUUzbldQWEQ5RGdiMEFtbFdJWDRESUduTHBHckxhNUs4T2lFTm1Ldk9GeFZBX0t4bHYzN1FreWJlamwtVkNuWmU5ektidmRxbWJiTXFGU19mc19Ld2hxVXc",
+      "source_name": "MillenniumPost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T18:41:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 9,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "MSTCLTD+TMB|NEW_PRODUCT|first-ever-launch-ncdex-pra-based-scrap-steel",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-11T14:40:16.090452+00:00",
-  "last_updated": "2026-11-11T14:40:16.090544+00:00",
+  "last_updated": "2026-11-11T21:37:36.719896+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:40:16.090534+00:00",
       "change": "created",
       "detail": "5 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719841+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, GK Today, MillenniumPost, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719859+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719864+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719868+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719871+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719875+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719879+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719884+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719888+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:36.719891+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

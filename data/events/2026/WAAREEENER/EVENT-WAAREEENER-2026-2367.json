@@ -4,20 +4,23 @@
   "summary": "Saatvik Green Energy Limited Expects Cell Output in Q3 FY27 Multibagg AI",
   "event_date": "2026-11-05",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "NEW_PLANT"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
+        "CAPACITY",
+        "BALANCE_SHEET",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,21 +31,25 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Strategically important competitor development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "capital outlay and funding",
+        "commissioning date",
+        "utilisation ramp",
         "Saatvik Green Energy's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Saatvik Green Energy. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Saatvik Green Energy. The parts of the business most likely touched are capacity, balance sheet, competition. Classified as new plant.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,46 @@
       "published": "2026-11-05T10:44:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Saatvik Green Energy expects margin recovery from Q4 as Odisha cell plant starts contributing",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNZWpUOEpsbE96MU9weGpBTWRDSDg1Z0FIOUdtN3NNZHBWcWVBaGRwMnZUd3VYaVpHd2xvald0OXR1Q29PdkowMkM3b0RPOWhkT2puRUNVNkdWbC0wdGtOZDZhTEVMTXl4N1VNVGFUeUFaSDhsWEpHRTg4TTVuYzZGSDBHclQ2UnY0aGFhRlNDMGV3R1Rydnk0M1JkZkt1UXdWekJ1SHlGS3E1VUxYeUQ2YlJ3R29GS2x0cHNDTnkwR1d2WWUzM281REg0ZHpWYkdEcnJRRm02UzBLVWNuTWhGZ0w4LS1rRGdWcWx4ekRxSl9nV0lxQjdnVGRKRGlWWTJpQjR0S3ZDbDh5ZFJRVEo00gGPAkFVX3lxTE1lalQ4SmxsT3oxT3B4akFNZENIODVnQUg5R203c01kcFZxZUFoZHAydlR3dVhpWkd3bG9qV3Q5dHVDb092SjAyQzdvRE85aGRPam5FQ1U2R1ZsLTB0a05kNmFMRUxNeXg3VU1UYVR5QVpIOGxYSkdFODhNNW5jNkZIMEdyVDZSdjRoYWFGU0MwZXdHVHJ2eTQzUmRmS3VRd1Z6QnVIeUZLcTVVTFh5RDZiUndHb0ZLbHRwc0NOeTBHV3ZZZTMzbzVESDRkelZiR0RyclFGbTZTMEtVY25NaEZnTDgtLWtEZ1ZxbHh6RHFKX2dXSXFCN2dUZEpEaVZZMmlCNHRLdkNsOHlkUlFUSjQ",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T10:38:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Multibagg AI",
   "cluster_key": "WAAREEENER|OTHER|cell-energy-expects-green-output-saatvik",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:57:12.604712+00:00",
-  "last_updated": "2026-11-05T14:57:12.604775+00:00",
+  "last_updated": "2026-11-11T21:37:22.960656+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:57:12.604764+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:22.960628+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:22.960645+00:00",
+      "change": "categories added",
+      "detail": "NEW_PLANT"
+    },
+    {
+      "timestamp": "2026-11-11T21:37:22.960652+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 4"
     }
   ],
   "price_reaction": {}
