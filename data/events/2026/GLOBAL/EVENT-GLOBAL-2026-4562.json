@@ -11,9 +11,9 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -30,10 +30,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -49,9 +50,9 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -68,10 +69,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -115,16 +117,26 @@
       "published": "2026-11-04T04:28:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stock markets climb in early trade led by foreign fund inflows, lower crude oil prices",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTW5GWkNjbmU2d29FUzFzSUNfMEFnTHNEZkdXVTlpQ3ZuTjBrSkRSVXpyWDlseEw2ZFdVaUYwMDRjMnlubE9BeFNiNEU0Ui1kbi1TTzR4OEdzazJmUEJWRWU1V1pHUHltWWtBWlRER2Zfdm1vNVUyVnpzRVhBMUFrQUhiWV9raHN2UzFJbUNzWmpRcUpNMUNFWnlnNXZ2WGRmZW84ckM0NngzQWJGTmp0UU1XX09vbVhCX2tRSVhrVVhxZTZkZ1hwVTBsd0M1TTRBNVEtTjI3RVdwckY3d3lwWNIB5wFBVV95cUxNT0pIQ2ZJTHpfSEdKRVI2MkNMcTFvckYxNVFJaEp4VWl4cVFLSG5LVlZMZjJDeHhIU0FheVZ2bW9UUTVZWDlqMVB6aVVyYUtoN3paa1BTS1M0SUZWS091MkQ2bWFpQUZLV2x4cDRaYXNZenJDZUhfZERqT0hWanFCYXRGQjYzS1ktVktNVm1UOEJmbmpiSm9LYWQwbzVtZGMxcGg4ZG83ZEhuUGt4Q1o4a284eTVMUTctbnMtaVdVY2IwU1FKMkM5bzg3THZrQlV0aEJ3MjNfM2c0T181Z3U1eHVVOHhaQms",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T04:57:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "bfsi.economictimes.indiatimes.com",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY|early-fall-markets-share-trade-tuesday",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-27T12:30:04.898913+00:00",
-  "last_updated": "2026-11-04T15:00:14.118566+00:00",
+  "last_updated": "2026-11-12T15:46:50.384283+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:30:04.898975+00:00",
@@ -150,6 +162,21 @@
       "timestamp": "2026-11-04T15:00:14.118562+00:00",
       "change": "direction changed",
       "detail": "SUPRIYA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.384259+00:00",
+      "change": "sources added",
+      "detail": "The Hindu"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.384275+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.384280+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
     }
   ],
   "price_reaction": {}

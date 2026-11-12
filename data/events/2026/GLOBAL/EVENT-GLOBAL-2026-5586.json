@@ -361,24 +361,16 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.4,
       "business_impacts": [
-        "REGULATION",
-        "COMPETITION"
+        "REGULATION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
@@ -388,16 +380,17 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "+5 Direct company event",
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Axis Bank) is doing well"
+        "favourable regulatory outcome"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -406,8 +399,26 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Axis Bank, and RBI. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Direct revenue impact is unclear, but leadership continuity in executive management supports steady execution of ongoing loan and deposit growth strategies.",
+        "margin_effect": "Unclear direct effect on net interest margins, as executive re-appointments primarily influence high-level strategy and governance rather than immediate funding costs or yield metrics.",
+        "cost_effect": "Negligible effect on operating costs, with executive compensation already accounted for within standard corporate expenditure plans.",
+        "competitive_effect": "Helps maintain HDFC Bank's competitive standing by retaining institutional knowledge and avoiding executive leadership disruption relative to industry peers.",
+        "regulatory_effect": "Ensures full compliance with RBI governance standards for banking leadership, resolving key managerial approval requirements without regulatory friction.",
+        "short_term": "Eliminates leadership uncertainty around the Executive Director role over the next 0-3 months, ensuring smooth operational and strategic continuity.",
+        "medium_long_term": "Supports long-term strategic execution, post-merger integration oversight, and stable board-level decision-making over the multi-year tenure.",
+        "second_order_effects": "Reassures institutional investors and rating agencies regarding corporate governance stability and favorable regulatory standing with the RBI.",
+        "key_uncertainty": "The specific operational mandates and business units assigned to V. Srinivasa Rangan during his renewed term and their broader impact on bank execution.",
+        "monitor_next": [
+          "Regulatory disclosures detailing the exact tenure length and terms of the re-appointment",
+          "Upcoming quarterly earnings releases for performance metrics across business segments managed by senior leadership",
+          "RBI regulatory updates or commentary regarding overall board composition and managerial approvals for major banks",
+          "Management commentary during investor calls regarding long-term executive succession planning"
+        ]
+      }
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
@@ -483,16 +494,36 @@
       "published": "2026-11-06T09:44:25+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Approves Re-appointment of HDFC Bank Executive Director",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2VlcUx4bHJBOGo2UFcyMjB1LW9ITUsweVJ4a3ljZXQ1ZmZzNkVZTlFrbXlSZ2J1aVlWdUw2Wm1KaUZmNTY4a0dvaFBRYm5INHpjQjgwT2E3em9kR2N5ZEZTelBfSk4tQVUzLWpGY1hnTTg2dllLYTUtdk01a0xEbFpPWmxoeHUwSXd4akNJU1ptVHYzU0ZCVF9kRTdtcUkteHh5S3UzaWVoYWd6SWtXMw",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:26:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI approves HDFC Bank re-appointment of V. Srinivasa Rangan",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQnNFTjV2TXZ3empHNXdkRlRkRWE0R2pYcW81ZTNONk00RENCRFZ0OHBCYUc5bm5yM21LSHlOQlpzQ240cGxibEhrQ25qUXlSLUR2T2JDSmNEYnpwR25iWHZlY1o5NmxoZHp2RjBFSFgzVnRXSHhmNlhPS3JmbC03TFZnUm4xRm04X241VnRpaDFqTVM4aVZ3LU4zRWYyc0RwOEJmeVVJTm5VV0lLWERXOTU4VQ",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T12:07:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|approve-axis-axisbank-bank-nse-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:57:19.072752+00:00",
-  "last_updated": "2026-11-06T20:08:13.615074+00:00",
+  "last_updated": "2026-11-12T15:47:46.099649+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:57:19.072834+00:00",
@@ -523,6 +554,16 @@
       "timestamp": "2026-11-06T20:08:13.615056+00:00",
       "change": "sources added",
       "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:46.099625+00:00",
+      "change": "sources added",
+      "detail": "TipRanks, scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:46.099644+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 9"
     }
   ],
   "price_reaction": {}

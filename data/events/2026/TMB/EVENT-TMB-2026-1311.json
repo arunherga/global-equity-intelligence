@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-TMB-2026-1311",
+  "title": "Thai gold prices close THB1,400 lower after volatile trading",
+  "summary": "Thai gold prices close THB1,400 lower after volatile trading Nation Thailand",
+  "event_date": "2026-11-12",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "gold prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Thai gold prices close THB1,400 lower after volatile trading",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jSVRfWFdGRE1SbUZ4blVUek4ta2RfSEhITFl6YS1LTUFua3EwZmJBdXB2NmhTNnlNNS1qbC0tWlEzeU9Wd3o3c3lzVGVuNXVpUjZzTGhVdmFEZUtiSF84UHdILU12VDFneEVVdWQyTnlBeVhiZnc",
+      "source_name": "Nation Thailand",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T10:45:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Nation Thailand",
+  "cluster_key": "TMB|OTHER|400-close-gold-price-thai-thb1",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-12T15:36:19.054528+00:00",
+  "last_updated": "2026-11-12T15:36:19.054604+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-12T15:36:19.054593+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

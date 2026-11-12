@@ -46,11 +46,11 @@
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -69,24 +69,31 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "toll collection",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from NHAI"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -120,21 +127,41 @@
       "published": "2026-11-11T12:27:47+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NHAI Debars Bijwasan Toll Collection Agency For One Month, Imposes Rs 15 Lakh Penalty Over Misbehaviour With Road Users",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQU0RpZTRIdGtaTl81N0lBLVhrV3RZYlFsYkJlTkJvRGJQLW5TNGt1TjZ2T2FqYVRsZTVKZnlJc05wX0stZ1IwVVpUemJRRklndy02aGZsYmUtdGhCcjNaQ2lEb0ttTEY5OU5fa2lOajV2RUJ3Y2hRQnpMMnEwUUVDOXU5UjVSeW9FWXd1aWZOWWxxeHFtSWstbmZ6VzJVZF9GTUZyNDVoMWlwUk5DTEFBTV9BUHhQS3NlaW9lSjBXUUpObWxLNkN2Z3BKNmh0R1BrNUJoaTRXYTlETkQtcjQxOE5GSnJYbVJROTBFbVdn0gH-AUFVX3lxTE9NVWhhcWE1R3g0c3ByZkFITG5iNGROcWFHbmVXUzJLX290dG05QktYX2c3U2pHNGlsRm5QYjc3R1dfclBzbHNhUzdKX0thVFVTSldWV3RTOTNURkVQa3V1TF9ENTlVMVN0R0RtLU9vdENVSFkwUF95bU5MNmJ3dGhSTkN6YjRubUxBQkJGVzdNdmQxS3k3dlh6WGlSNWZtY0MwaFh1QjZFTXhHOXFodnUxLTVYanBBZTE2WDI1Y0JNcnlUajh2ZmdHQnBmTGxOUmxQVkxUbTBab2VqTi0xNmZCYzNrZlA3cFFDOTVadHdqUDQxVVFrRkpyZjYzaWRB",
+      "source_name": "Swarajya",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T03:33:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Rediff MoneyWiz",
   "cluster_key": "ASHOKA+JKIPL|OTHER|bijwasan-collection-debars-fee-nhai-user",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T14:44:30.390475+00:00",
-  "last_updated": "2026-11-11T14:44:30.390551+00:00",
+  "last_updated": "2026-11-12T15:46:43.736188+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:44:30.390543+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:43.736166+00:00",
+      "change": "sources added",
+      "detail": "Swarajya"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:43.736184+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 1"
     }
   ],
   "price_reaction": {}

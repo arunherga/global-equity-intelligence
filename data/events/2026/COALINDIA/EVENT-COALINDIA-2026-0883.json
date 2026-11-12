@@ -10,17 +10,23 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST"
+        "PRICING"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "thermal coal prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "thermal coal",
@@ -37,25 +43,22 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "thermal coal prices is a selling price and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "thermal coal prices over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to thermal coal, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to thermal coal prices, and thermal coal. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -79,16 +82,26 @@
       "published": "2026-11-04T13:52:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India: South African thermal coal prices extend decline amid weak domestic market",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSzI0SEJUZlczQ1l2Tm9adUh3X09sYkwzcGtNMk9UTWZxSzNxb09DOEI3ZWhFNUR1N2Y0WnZ5WTFkV1ZHVGRUY05EbzNKakN2cVhWejJCR3AzT25OYVRDWkpnNUFLbkx5OTV5cUtsY2Q0b3g2SlcyeWZhYXVYMHBqOHdSN283Y2JYSjlXTUpacGlBZEtNMVBNNHBNMU9rRkMyUjdFYi1VMEUwbVBBUG1RWU9KdEtYZWRjaHk0b3NNNXJ1M3FW",
+      "source_name": "BigMint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:16:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "BigMint",
   "cluster_key": "COALINDIA|COMMODITY|african-coal-india-portside-south-thermal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:16:03.032410+00:00",
-  "last_updated": "2026-11-04T15:01:31.182099+00:00",
+  "last_updated": "2026-11-12T15:47:53.319664+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:16:03.032475+00:00",
@@ -104,6 +117,16 @@
       "timestamp": "2026-11-04T15:01:31.182091+00:00",
       "change": "categories added",
       "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:53.319641+00:00",
+      "change": "sources added",
+      "detail": "BigMint"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:53.319659+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> NEGATIVE"
     }
   ],
   "price_reaction": {}

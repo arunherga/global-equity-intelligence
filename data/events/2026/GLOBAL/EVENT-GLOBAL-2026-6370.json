@@ -1,0 +1,127 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6370",
+  "title": "Bank Nifty crosses 61,000, closes in on record high; further gains hinge on 61,400 breakout",
+  "summary": "The banking index has gained around 12% in November, supported by renewed foreign investor buying, gains in public sector bank stocks and easing concerns over crude oil prices. A decisive move above 61,400 could take it to a new high, while failure to clear that hurdle may trigger consolidation.",
+  "event_date": "2026-11-12",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.56,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-5 Market commentary rather than a company development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.56,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-5 Market commentary rather than a company development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Bank Nifty crosses 61,000, closes in on record high; further gains hinge on 61,400 breakout",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/bank-nifty-crosses-61000-closes-in-on-record-high-further-gains-hinge-on-61400-breakout/135748212",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-12T00:30:00+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY|000-bank-closes-crosses-nifty-record",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-12T15:32:07.904116+00:00",
+  "last_updated": "2026-11-12T15:32:07.904202+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-12T15:32:07.904191+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

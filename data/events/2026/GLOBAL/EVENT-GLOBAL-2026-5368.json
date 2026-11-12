@@ -10,10 +10,10 @@
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.5,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -30,13 +30,14 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Single unverified source"
+        "-5 Market commentary rather than a company development"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -49,10 +50,10 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.5,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -69,13 +70,14 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-2 Single unverified source"
+        "-5 Market commentary rather than a company development"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving down"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -96,21 +98,56 @@
       "published": "2026-11-03T04:04:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Sensex today | Stock Market Highlights: Markets extend gains for 3rd day; Sensex ends above 81,900 on FII inflows, lower crude oil",
+      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-12-november-2026/article71689385.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-12T11:04:27+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Markets extend gains for 3rd day; Sensex ends above 81,900 on FII inflows, lower crude oil",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcGtzdFBZWGZza2l1TGJRd2h0LUZoRm9QemVBS2h1M0t4ZS02SEVUb3NqZXJyVUhCZjJVbXJma0pPalA5RUE5WmNOaHcxam5PS1Y2bTcyMFBRbVRuTGwyMjRibEVNQnRBUEJuSmx6eU5aSGJQQTdMZDJ6WndoX21nT1lIUkZYWVZSV2d2SkVRRTR6WXFxVklLQlZYTk95cS1pNXZjRjRoV3FCRkpMTU5acDl1UW9TWkFUWEI2a2FlWi1fTzRsNUp4YlYxS1cyN0lpVmlvVExDdzRWN05QV1dv0gHfAUFVX3lxTE5wa3N0UFlYZnNraXVMYlF3aHQtRmhGb1B6ZUFLaHUzS3hlLTZIRVRvc2plcnJVSEJmMlVtcmZrSk9qUDlFQTlaY05odzFqbk9LVjZtNzIwUFFtVG5MbDIyNGJsRU1CdEFQQm5KbHp5TlpIYlBBN0xkMnpad2hfbWdPWUhSRlhZVlJXZ3ZKRVFFNHpZcXFWSUtCVlhOT3lxLWk1dmNGNGhXcUJGSkxNTlpwOXVRb1NaQVRYQjZrYWVaLV9PNGw1SnhiVjFLVzI3SWlWaW9UTEN3NFY3TlBXV28",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:21:46+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "IANS LIVE",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|equity-india-markets-open-rise-slumping",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-03T14:38:03.495337+00:00",
-  "last_updated": "2026-11-03T14:38:03.495428+00:00",
+  "last_updated": "2026-11-12T15:46:16.022678+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:38:03.495418+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:16.022648+00:00",
+      "change": "sources added",
+      "detail": "The Hindu, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:16.022668+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:16.022675+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> POSITIVE"
     }
   ],
   "price_reaction": {}

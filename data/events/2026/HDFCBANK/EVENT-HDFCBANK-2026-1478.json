@@ -13,12 +13,14 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
+        "MARGIN",
+        "DEMAND",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -33,6 +35,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -40,7 +56,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,10 +64,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "HDFC Bank's follow-up announcements",
-        "ICICI Bank's follow-up announcements"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -59,11 +77,21 @@
       "relationship": "DIRECT",
       "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.4,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
       "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "deposits",
@@ -78,7 +106,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -86,9 +114,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -132,16 +163,36 @@
       "published": "2026-11-11T06:04:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "4 banks revise fixed deposit interest rates in November: HDFC, ICICI, PNB, IOB; which offers the highest rate to senior citizens?",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPVk5Da1RfYlRtUEJFNnJHa3ZzVkV3dERhcU5yWThVWjRlRnRXSHo1c3R6YVhNbl9hRHFQWFB4enpBeXF5ampfYzVXODFmVmNDbmJrU2xabmxjVEgzQzZpd0lUdEstZTdZa3BydzBRUkFoOWY5MlhoLWt0U05uMFpaZ0N5dDZCcjBnS191UXVkWVEyQlVDa0kxc1U3N3J6WXdUd240OHlEQk1oNjZFSHFGVVhEaDVlbjItck1YNF91Q0Q5amMtY3M1TDQxMzk3ZFQ5U2xLSDlSUzlzYlIwSjRMRFBwZU5RcS1jX09TRDBfcW8xQ1NXc2piZ19IcXAxTW90eUlYa0p1b25RakJmdVp2YzFFUkVPZnduWHc",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T04:53:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IDFC FIRST Bank vs ICICI Bank vs HDFC Bank: Which bank offers the lowest personal loan interest rate? Find out",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNX01DSEFrclA2cUJZMzNnUXF3TkhMN3B3YXdid0lPSUx6MUtlTVc2THNfZ2JnOFVlWVlsQ2dHQ1hVM0xFQndiT3FOa0hPN2MxTWY5VEVfdHh1Znhyc3pJVGVUOEtfRUFwTjBpSDBFUmRMVGp2b3RZektnN0ZwYzI2VlRrb2VqZEtNX1ppUUcyb19zLVBRWHFhbG9wZnlIT1lPZElUWngyaWV4LWVrTEtLdGQ4N1B3Z1dUZDd5SmtMR3dmOXdGVkJOMTRRWjVTcEFQT3BWTXNhdVMtYkZBNE05S3Nkdy1CbXplSVZKaXNibEhEQdIB9wFBVV95cUxPZUFZX3Z2QTZ3X2hSNVhNYThHdWI2M18zTFFiY0ptZmRaMHhEQV9xWHJjSzBiWVFmbk1QbEVDTWpla05JTXM4UEdWcV9XMTQwbWx0MUZMcXplRlZCTDlzTXcxX3BOLVh0eHJaQ21HSHpqeWxoMEZxVVNGTHJXYTQ0Q1VGUXV1VGlKZTlvd2taeXdfSERxWGNmYmdmb3ZQbFhVX3hydGtnR1J5c04tVUVUb3laYmo2RnpOc1F3bXdwblBkVzdGN2w2MlFibHJIbzlmRFFLcnAwRHZjb0ZRcXBHZlVWcEpkTm5fc3ZqME9WVHRSUzMteEo4",
+      "source_name": "India TV News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:07:31+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "LinkedIn",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|2026-citizen-november-rate-sbi-senior",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:58:11.972827+00:00",
-  "last_updated": "2026-11-11T14:48:49.633163+00:00",
+  "last_updated": "2026-11-12T15:46:50.156920+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:58:11.972895+00:00",
@@ -172,6 +223,21 @@
       "timestamp": "2026-11-11T14:48:49.633157+00:00",
       "change": "direction changed",
       "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.156893+00:00",
+      "change": "sources added",
+      "detail": "India TV News, Upstox"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.156911+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:50.156916+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

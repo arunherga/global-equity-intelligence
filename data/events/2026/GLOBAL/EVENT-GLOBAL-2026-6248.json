@@ -4,7 +4,8 @@
   "summary": "The Directorate General of Foreign Trade (DGFT), under the Ministry of Commerce and Industry, has prohibited the export of lithium-ion battery black mass and amended the export policy for waste and scrap of primary cells, primary batteries, and electric accumulators.",
   "event_date": "2026-11-11",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "RAW_MATERIAL"
   ],
   "stocks": {
     "WAAREEENER": {
@@ -226,6 +227,54 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to critical minerals, and India. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST",
+        "MARGIN",
+        "SUPPLY"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "recyclers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from recyclers"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, supplier exposure to recyclers, and India. The parts of the business most likely touched are input cost, margin, supply. Classified as raw material.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -258,16 +307,56 @@
       "published": "2026-11-11T11:28:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India bans lithium-ion battery black mass exports: What led to the move and what happens next?",
+      "url": "https://www.livemint.com/companies/news/india-bans-lithium-ion-battery-black-mass-exports-what-led-to-the-move-and-what-happens-next-11794466823336.html",
+      "source_name": "Livemint Companies",
+      "source_domain": "livemint.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-12T07:09:13+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "DGFT prohibits export of Lithium-Ion Battery Black Mass to strengthen domestic recycling and critical mineral recovery",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdlRDUjlVMlk1Q0kyQ0hQMHVnUnZrSzhjV3A2bGFCdGthZEtlQVBHRkJ5ZmxlYzhpWDJqT3l6ekpjTllWSW1ieVJkbHp6T2ZjdkNReDl6U3U5RkluUjl3VmJkRjVUckJIQXBnM2VMbllfem9BNlJaTEg1OS0zc1E0YkZ1QVhZUzZGU0tLRE5WZ0NGRE9jTUlTYUdtcXFFcy00UW91MXpaUWRjdVU1ZTBBV3U5RFUySDQxam9wU2cxa25ldjFOdG9jTTBOR3NWVVlIX1E2U2FPWjB2aVNHdUhiUHZxOWtSeDRxRHZWXw",
+      "source_name": "India Shipping News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T03:36:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India Prohibits Export of Specified Lithium-Ion Battery Black Mass to Strengthen Domestic Critical Mineral Recycling",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMWxlc1dOMWdISHJPaTlEeEJ4T2pXV0xpdG5rSFotaTFNcFcxUVpiMkk5QVBZN0RWRjViS3NYTDB2RENQMU9uYUZWNTk1akNIMnMxQm1RazEtME9vazNPb2hQWTRRQXc2TUdTQTVlTHhsaUdkQldpbHlJTndzbk10U0F3OXZXNXp1OTU5UDBRbkJXYzUyVE1TTXd3",
+      "source_name": "www.nationpathindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-11T18:47:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India Prohibits Export Of Lithium-Ion Battery Black Mass Under Revised DGFT Policy",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeUZtWWkwNG5BUkR4ZTBaeG5ZNGFqaGFCcEpvZnFGajRadmxIYU9INkxFcmxlVS1LeEV4RG9WT3NDRGFFR3VPSFV6Z2d0VzFfQzlhYnA3ZG5fQ0JLQ2J5dnVmb3BPZTJWSjRKZUZaaEVhNzlBRXNoZXBBWFM3cXB1TWdOTHFUUGlET29FNEdLR0FEeVljaW4yMWszWHJyRHZ4aUJVaVdQMUlCUFZfc19fak9WY21LS2ltanlv",
+      "source_name": "SolarQuarter",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T06:10:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
-  "source_count": 2,
+  "article_count": 7,
+  "source_count": 3,
   "primary_source": "Mercom India",
   "cluster_key": "FRESHARA+JKIPL+SUPRIYA+WAAREEENER|OTHER|battery-black-export-india-lithium-ion-prohibits",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-11T14:40:37.171089+00:00",
-  "last_updated": "2026-11-11T14:49:17.029966+00:00",
+  "last_updated": "2026-11-12T15:46:54.850891+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:40:37.171148+00:00",
@@ -298,6 +387,31 @@
       "timestamp": "2026-11-11T14:49:17.029963+00:00",
       "change": "impact raised",
       "detail": "SUPRIYA 1 -> 2"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:14.210097+00:00",
+      "change": "sources added",
+      "detail": "Livemint Companies"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:14.210112+00:00",
+      "change": "categories added",
+      "detail": "RAW_MATERIAL"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:14.210118+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:23.909600+00:00",
+      "change": "sources added",
+      "detail": "India Shipping News, www.nationpathindia.com"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:54.850872+00:00",
+      "change": "sources added",
+      "detail": "SolarQuarter"
     }
   ],
   "price_reaction": {}

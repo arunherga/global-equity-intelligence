@@ -4,20 +4,28 @@
   "summary": "West Asia supply recovery, Atlantic cargoes bolster crude intake significantly",
   "event_date": "2026-10-31",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS",
+    "TRADE_POLICY",
+    "COMMODITY"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 12,
+      "impact_band": "VERY_HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.55,
+      "confidence": 0.59,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "EXPORTS",
+        "REGULATION",
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -35,35 +43,65 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving up",
+        "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are input cost. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could experience indirect downward volume pressure if Ravelcare attempts to pass on higher packaging and raw material costs to consumers via retail price increases in the price-sensitive Indian personal care market.",
+        "margin_effect": "Gross and operating margins could face compression as crude oil derivatives drive up the cost of packaging (plastics/PET/HDPE) and key ingredients (surfactants, mineral oils, emulsifiers), unless offset by cost efficiency programs.",
+        "cost_effect": "Direct input costs for petroleum-derived raw materials, packaging resins, and freight/logistics expenses are expected to increase or face elevated volatility.",
+        "competitive_effect": "Larger FMCG and personal care competitors with higher scale and stronger supplier bargaining power may absorb input cost inflation better, potentially taking market share if Ravelcare is forced to raise prices.",
+        "regulatory_effect": "Potential exposure to shifting trade policies, import tariffs, or compliance risks related to India's heavy reliance on Russian energy imports and downstream petrochemical supply chains.",
+        "short_term": "Over the next 0-3 months, existing raw material inventories will buffer immediate impacts, but rising replacement costs for packaging and chemical feedstocks could begin pressuring operating margins.",
+        "medium_long_term": "Over 3 months to several years, persistent crude oil volatility may force Ravelcare to re-evaluate packaging materials (e.g., shifting toward recycled/bio-based plastics) and reformulate products to lower reliance on petroleum-derived ingredients.",
+        "second_order_effects": "Sustained high energy costs across the Indian economy could dampen broader consumer discretionary spending, leading to trade-down behavior in personal care product categories.",
+        "key_uncertainty": "The extent to which discounted crude imports translate into lower downstream petrochemical and packaging costs for Indian manufacturers, versus broader global crude price volatility.",
+        "monitor_next": [
+          "Domestic prices for polymer resins, HDPE, and PET packaging materials in India",
+          "Surfactant and specialty chemical raw material price indices",
+          "Management commentary on COGS inflation and planned price hikes in quarterly earnings calls",
+          "Trends in Indian retail consumer spending and trade-down behaviors in personal care categories"
+        ]
+      }
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 12,
+      "impact_band": "VERY_HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.55,
+      "confidence": 0.59,
       "business_impacts": [
-        "INPUT_COST",
-        "EXPORTS"
+        "REVENUE",
+        "MARGIN",
+        "EXPORTS",
+        "REGULATION",
+        "PRICING",
+        "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -78,33 +116,51 @@
           "relationship": "WEAK",
           "weight": 0.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "Asia",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Names a key geography for this company",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "crude oil is an input cost and is moving up",
+        "TRADE_POLICY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "crude oil over the next few weeks"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are input cost, exports. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and India. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could face downside risk if Western export markets (such as Europe or North America) introduce trade scrutiny or secondary sanctions on Indian products made using discounted Russian energy inputs, though direct product demand for APIs remains steady.",
+        "margin_effect": "Margins could be squeezed if potential trade restrictions or tariffs offset the benefits of stable energy costs, or if underlying petrochemical solvent prices fluctuate alongside shifting global oil trade flows.",
+        "cost_effect": "Input costs for basic raw materials, organic solvents, and utility/power generation rely on crude oil derivatives; sustained access to discounted Russian crude helps keep domestic energy and precursor costs lower for Indian chemical manufacturers, though supply chain volatility remains a risk.",
+        "competitive_effect": "Indian API manufacturers may maintain a cost advantage over European competitors due to cheaper energy inputs derived from Russian crude, but risk losing market share if global buyers mandate non-Russian energy compliance across their supply chains.",
+        "regulatory_effect": "Heightened scrutiny or potential policy changes from Western regulators regarding trade with countries importing large volumes of Russian fossil fuels could increase compliance documentation requirements for Indian API exporters.",
+        "short_term": "Minimal immediate disruption to daily operations, as lower domestic fuel and solvent prices support cost management over the next 0-3 months, though geopolitical sentiment warrants monitoring.",
+        "medium_long_term": "Over 3 months to several years, continued reliance on Russian crude could trigger secondary sanctions or carbon/energy trace-backs in key Western export markets, forcing supply chain realignments or trade adjustments.",
+        "second_order_effects": "Strict ESG auditing by international pharmaceutical clients could lead to demands for proof of energy origin, potentially penalizing manufacturers relying on Indian grid power powered by Russian fossil fuels.",
+        "key_uncertainty": "Whether Western trade regulators will impose secondary sanctions or import tariffs on finished goods originating from countries heavily utilizing Russian crude oil.",
+        "monitor_next": [
+          "US and EU policy announcements regarding secondary sanctions on Russian fossil fuel importers",
+          "Trends in organic solvent prices (e.g., acetone, toluene, ethyl acetate) in the domestic Indian market",
+          "Supriya Lifescience's export revenue share from Western regulated markets versus non-regulated markets",
+          "ESG compliance mandates and energy auditing requests from global pharmaceutical buyers"
+        ]
+      }
     }
   },
   "sources": [
@@ -117,21 +173,66 @@
       "published": "2026-10-31T05:08:26+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "India’s Russian fossil fuel imports hit record €6.4 billion in October, crude oil accounts for 91%",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/indias-russian-fossil-fuel-imports-hit-record-64-billion-in-october-crude-oil-accounts-for-91/article71692997.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-12T10:40:39+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "India’s crude oil imports from Russia hit record high in October; Jamnagar refinery biggest importer",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOVk1NMEVnYklveFFLUzRtN0tZNmFMb1JWdFRwekhoamFHTHpESXpXMTR0OTNTWTVvbUQyMkp3enozMFVsRmRhODQ0TlNlT2o4bzlJRWlaT3BYa0hmODk4N2QybTE4WmwtN0NUcnZYNDZkZC13YU1kN1FnZm45R1NQcTZ3LWJSUTFNYnM0TlNDQWpDNk4xUWpHUFRuREhZTFlxcjhCX1UwdWs1Y1JXS3JISE44NUdPOUJrckJRcHJjX1NIZU9QeTdSTUpxcjB0anFwZVRZdWR2UzVXX3ZTZHNyQUpGTnlRa1RMXzI5VEVmVWZLb2VGcUtRZXB6NE1jQ05ZbmUxeGVVVVU0OVROSGZPRERn0gGXAkFVX3lxTE1xVTh4SWNPdEVuclYtR0ZTcWZqdlNfM2x3NUs4RVl5Q3JCZ1pGUW0tdTJzb215UkFBd1dxa2lWZDlzbG5GWmxiclZCbnFoY3dnelVWZjlqcDBPLTdSYzY4cnJxakJmS1Z6dXYwb1FOOFdPYWZDWnVqclplRk9FQkpJWW9ta1lNSEFnUVoxQUNKTkpMV2tSdVl1bVpVMVpDd1pUN29FQnI4RklCM3dpclYyRmRleWlSUklLWnZDaE9IcDdqdEd3bGxmbFZEOVFFQkpxWEdZVjEtZnVDaTV6Vzl3MUctWWJzYkNidW5GVTFfRXo2bzZSQS15NGlLeTJpMDJBR2VOakJ2aEFGd3p3SHJ0YjYyX1Nhbw",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T09:24:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|OTHER|crude-hit-import-india-oil-set",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-31T12:49:04.343167+00:00",
-  "last_updated": "2026-10-31T12:49:04.343234+00:00",
+  "last_updated": "2026-11-12T15:47:19.769675+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:49:04.343224+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:15.717854+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:15.717871+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, TRADE_POLICY, COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:15.717876+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 1 -> 12"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:15.717880+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 3 -> 12"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:19.769657+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
     }
   ],
   "price_reaction": {}

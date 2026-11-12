@@ -4,20 +4,27 @@
   "summary": "October retail inflation may have breached RBI's 6% upper limit: BS poll Business Standard",
   "event_date": "2026-11-09",
   "event_types": [
-    "MACRO"
+    "MACRO",
+    "REGULATORY",
+    "COMMODITY",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "confidence": 0.41,
       "business_impacts": [
-        "DEMAND"
+        "DEMAND",
+        "REGULATION",
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -29,8 +36,8 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
         "-2 Weak indirect connection",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,26 +46,32 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, regulation, pricing. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "confidence": 0.41,
       "business_impacts": [
-        "DEMAND"
+        "DEMAND",
+        "REGULATION",
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -70,8 +83,8 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
         "-2 Weak indirect connection",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -80,13 +93,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, regulation, pricing. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -100,21 +115,261 @@
       "published": "2026-11-09T18:00:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CPI inflation soars to 2-year high of 6.09%; crosses RBI’s upper limit & raises chances of another rate h",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNXzQtTk96TncxLUVEbnRhdHVfVzk3U1dWaFFvbm9ZWGRuM2tNSjFQLWN5VXNTWDZabG41TFlpWi03a0p1eVRIV0VUT3dVTnJSVXh3NWl3dk5ud19XVDRDNlU0d21XWS1mcVFVaVJNYnAwcWxyWU15Y2ZNQ1RZanREbTdNU2R3UjlxVWI1QVU1MjRBSmVhTDVhT3VnR0x5RWdXZHRDOWxzQmtOWWlXNVBtaU1WM1l0WFZTbmxUaEFtSmw5eXBORUZrSUkxMUNac0Z6X0cxbUltLVlHOFp2MlhZMS1uSUU4ZVc4V1VLV2tQNExMZ2pjSXRTQkJKQnNfaWxoZ1Z6X2hXa3pZeEVWMmdrb2dWdE9GbGtHQXlybGdB0gGeAkFVX3lxTE1fNC1OT3pOdzEtRURudGF0dV9XOTdTV1ZoUW9ub1lYZG4za01KMVAtY3lVc1NYNlpsbjVMWWlaLTdrSnV5VEhXRVRPd1VOclJVeHc1aXd2Tm53X1dUNEM2VTR3bVdZLWZxUVVpUk1icDBxbHJZTXljZk1DVFlqdERtN01TZHdSOXFVYjVBVTUyNEFKZWFMNWFPdWdHTHlFZ1dkdEM5bHNCa05ZaVc1UG1pTVYzWXRYVlNubFRoQW1KbDl5cE5FRmtJSTExQ1pzRnpfRzFtSW0tWUc4WnYyWFkxLW5JRThlVzhXVUtXa1A0TExnamNJdFNCQkpCc19pbGhnVnpfaFdrell4RVYyZ2tvZ1Z0T0Zsa0dBeXJsZ0E",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India October inflation tops RBI’s 6% limit, strengthens case for rate hikes",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQemR3QldqTUU0MTQ5UTM2WEZYY3ByQUpJcGNvQW0zZ1dWTEJqdXZRY2x2X1FOQnBEY0Y0R3F6WmktTWFOMTBFU1plZVFGM2dqMGtaRXRycGtkekJXaVBGSlpvLXlrUEtBMmR0M3UyV1FlZ2JhR1l2dWRkTFVNWHVhME5Yc0NUREdlR1V6bXVDNUhaZ1g2Z1RET0RsaEYwemJpTm9FNA",
+      "source_name": "The Mighty 790 KFGO",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:03:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India Retail Inflation to Stay Above 6%; RBI Rate Hikes Likely",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPREs2ZkRTQ2t0VzZueXBWZzhWcC1wMVJDYXA0M2ZCQlhVeVRjeTd2bUE4UDhnSnZ2Qmpra1hJaThsendHNGtyXzREMnhSLXZ2UVl2a1ZKOHFfTkl4dkZZV2hRT0ExMG1Ic3FBTGtkQWhwQjRZMUJjWEdURk9ncUh6S3ltc0txQVBoZlZYYWl6Nk04MmxkRzJIZy1fZHY1YlREaU5NOGJZVERkV19EdE5yOW1B0gG3AUFVX3lxTE15SUlWMFMtN01SOUllRDVJWVJLX190eUVDNGYtbVcwUFJ5MTNiVU8tMnNkRTVoVWpENy1ZaFNpM2ZsS0E1MlZrU2k3MC1GRGtaNzVhZ3VlSUVPbXN3dFhYbmNtR2Q4ZTBLWWZBOVlMcGtWSnRVQ0M4NkVvMld0VzZoZXo3c3J4WU5hc0FCNlVFd2dZbWFpYmtPbFlvek1MVUhfOWwtX1dteURXWWJ6d0tONkVRMFJXZw",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T15:09:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's October CPI inflation breaches RBI's upper limit, rises to 6.09%",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZk1JcTVxdW5sQ0o0Y3dGbXd5ZDF3Y2g3aUJsZGcwZ1ROU2tSQUVsQmxCOE1WNTdiaXZQanpFMGItT2xuclhQSzRrWVFpMGxMYzhHdjF0TGdwdHdXeHhlNmsyR1EzX0J6cVVpaVdaZWNZaVJxbkEzYWpKSUMwTzgySTJISWNFak5BTFpMYW1VcG1RcWRKcHo3czlFWURaLWE3LVlDbGJIOE9ORmNnQ2pTTXpLQU41LUVsZ0Rva2Qwd05lOUthaVEtWE9IbV93bzjSAc8BQVVfeXFMTWZNSXE1cXVubENKNGN3Rm13eWQxd2NoN2lCbGRnMGdUTlNrUkFFbEJsQjhNVjU3Yml2UGp6RTBiLU9sbnJYUEs0a1lRaTBsTGM4R3YxdExncHR3V3h4ZTZrMkdRM19CenFVaWlXWmVjWWlScW5BM2FqSklDME84MkkySEljRWpOQUxaTGFtVXBtUXFkSnB6N3M5RVlEWi1hNy1ZQ2xiSDhPTkZjZ0NqU016S0FONS1FbGdEb2tkMHdOZTlLYWlRLVhPSG1fd284",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T10:41:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's inflation jumps to 6.09%, breaches RBI's upper limit",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRXkybENFNmFSeExvb202bVVTSEJ1clN4QVotdzVfcTN1UDRsNkJKdEdFdkc2UUZpYkNsa1hiUHU1azdwSzB1ckx4bWlGc1pKZVZVNkFMMnFoZ2tjSmdPU3NuSnk0dFRKd2RvRldjNkljWHN6Qzhlc2U5OVU3aU5tZVBmSFp4VkxTVVRUd2UycERxcExfTFowOHBoTnpxOFpHZXl4c0JjS2xuZzZLYkphUg",
+      "source_name": "NewsBytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:51:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's retail inflation crosses RBI's upper limit of 6 per cent in October",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSE5oeUxuWHZOeUhTa1R4a19qNDdzdm5tS1I5aExVUmFSM3R5NV92b3lXMlU0ZG93cjZ6azJuZnpHdWYzbnBGMDB4SFd0OWpmR2w0WENtRHJTMk9ndGF3VjdKcnFKT2g0cFE2QkppQWxnTVFkcG5iSEVMNUpZSVBoc21TcV9WME1RalZCUnVYVUZHUWk1c0lKVWd1RDhGZUREaDdkTWVEbTg1Z1AzZUE",
+      "source_name": "IANS LIVE",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:17:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's retail inflation hits 6.09% in October, breaches RBI's upper limit | Prices rise | News18",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQdGlQT1RZY2FzX3ZRdW1KaXhGbUxKVlhob3FzUHpnUGI3US04MUN0ZWZ0N2FES3BMX0ZzSG9DZW9IUm41V0RIN2pEZXRmUGdWbDFOeThCaUpOTXJRdnBObjd1ZjJUejRsVTdhN3AwbXlCelktY3JyMXVJMEFwTzcxTXc5Yl9IZzhDR1Z6Y1p1LXg5V0JsTzhfeUY2c3ZsZi1QUUZuTXRQaXYzTUVMMU9veTZNNV9jUmVNVUl3RVZvTzVpcmVkZXdFUVBjMl9Vc2VBN2xjZXE2OTR2UVd5NVdzNVdtUdIB6AFBVV95cUxQLU1qeVU4NzB3MFZmTFUxUjRrYXNVTGpyZ1BUUHUzVUVhWDcwYmdOcXgxN1hXdzM3Ymg1LWtEWGJGUzYtbk5KN0R3QlpoR2Y1aHRtRURNRXpSZjFjbGpNbGRjMk1iOHIyQ2tTYTJPWDNVZHRQVmJ0ZDhubG1xNXBzSXJIVldHdzlBbFp1alBHUm5GWWd1RW1XZEZxUHFSQTRrODdHSnJzTlNQeTh2RFBhWE1RTUk0cnVBTi15TnFvTk9fTHRJSzdaVmtibUp6OUQwaEphUktoWFRlQXM0ZUx4T040dXBPTmc1",
+      "source_name": "News18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:43:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India's retail inflation rises to 6.09% in October, breaches RBI limit",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMHRWV2E3bnVsa2J2MmtRb0JwQ09RaUgxNHlDVXFmeVh0UkR3U3VFUV94QU04eU94SmVfaUc3UHdzR3NGZmZERU5LcjRPQWR0V2VCa0lZOWdRYnBGZ29tOTNIMWxSQjdOcHVtSEs5T1Y2S1BqT0RfQklCakxvaTFLYmVBWWg2TUM5RVpDY3RsTUZLdE1fYTVxb3FpRFpnTkJLd25YXzBWZFg4Sk4tbU5rVGhUVE4xRERMTzdsRnpsTkliTXR5WC1tSjJEc1gzbnVXTWZwcDB5amFNNWxaNFJQOTVR0gHoAUFVX3lxTE1qWW5qa1p0SEh3bVNMekNkNDdZSHh6UjBLSDNqWm1ZelZLTjA1UHFOb0FOSjVFTUdOLTlXamRPVUxVZ0t2aXVwc3k1dG4wUFlNMm9xSUxPeUpFdHJTVV9QamxIdmdHT0E1dndBRHhOdVQ5UlFINnZqY29LaXo3VXdMdnh6UTRrLXZNbFM1S0dVVVEwOG9kTmlVbUlpZ0RlYzczTkJPN2c5dmJqZjlHMlZMVFc0dTlDVDRTdVpHLXd0NjRyZ1BKMGVNOG5mQ1c0My0wSlI4SU5XdldlVzBJdTJ5enZNRVhDbkU",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:09:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India’s October retail inflation breaches RBI’s 6% ceiling, odds of December repo rate hike rise",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVW8xZm5YdHQ5R0daS1NMMkliTnRCS2tLVENYX2NKdTg0YnE0WjB4ZVZybmFRcmJ4ZmdsbFRPUmN0MUxiQ2NaRlEwcjVUZXBaSEpXOUlUblBGbWNua0Z1SkJKc3RDRjlCNmtxVkdkR0VmeEpFTENua3NheTFRZno0endSTHRBQUhrMTFxa0xQT3kwV3ZLVU1LcnRtUXZpYWFFQUdOZE8tWkNqRTIwVjVhQVMzcnpaRS0zT0hUaVFTMFlSTFp4SWsyMNIBzgFBVV95cUxPR2FhMTdjUTlfdHAwc3oyaXlkUm9PeGFtd3BPWkN5UjVhTThqbVh2MURydmRUekxHSV9UZzVkOWctYm41ZlVZWjJ3V0FsRWxUODE5cWp6Qi12WUMtandDTDVodi1PSkE0RlEwSUR3ZXZXZ3k4akJ5UnNHcjJGNE5YR3laZDJYajFYNGE1OFY4QnlncnNmWTVSMVZkbVFjVEVBcVNLeklJOGZoVmhqNllLVTg1YlFmSTFNMnc3RGluLWFIT2pmdlBDX05PVWRUQQ",
+      "source_name": "ThePrint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T14:03:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "India’s retail inflation jumps to 6.09% in October, breaching RBI’s comfort limit for first time in two years",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPclZqWVUyN1dHeHNaS2VkZkdkYnBWMUZhbFJiTEY4R3VPbFQ2MWFOZWtxY0tlOTBxWXpQZER4dElVc0hwQWVDUzB4YnlzSEpwN196OXFvVmw5QUNwQjFjQ0dHX01DQno2NmxqSE5SNGtyQ0pLVzZHWlhUUThwQnJ4SlRFd1duUmxSMjFDMEFIQzVXaWpCcjF4ZkFnTDjSAaIBQVVfeXFMTkZyYzNIWm1mMXBGYjdDVjR0NzR2dU9aSmZXc0NmLW1DU1dhRUxWQjBUUGtUZVE2MHNDeVh1T2RwYmVHaUg0WlZtRzBGcTV3NzVtNVE4OHllclV4SUdxZk9NX0NQMkoxMmwzbmdCZ0pHMXd1U3YwQ3ZhdzUxT3ZaZlRpejFiUlQ0Z3Jub2lMS1dSNjJlUFI4QWhFOEk0aXdxOGFB",
+      "source_name": "PTC News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:46:41+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail Inflation Breaches RBI's Upper Tolerance Band At 6.09%; Rate Hike Likely Next Month",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZUJWZVVPWG5KSGRnaUczQXQxRC1SNTJYWV9zTVhhZl9wLWpFbENGMi1RVmhUaGI0UEczWmNqeGZYcWFJNWF1Vkp6MDZERC1WZnU5X1JWQjIyTHBPZmZZTEdGekoyUkd3N3BLSUJ2RTFfUmJDd2FQRmtJUndZbjJHTFc3TVBXZmVIWVptTmFSdzNBazN0VEJYR3JhLWpvODk0ckFzVnRBNEZ1cWFxeDdVZXBlUlU2OUxPSW5xdVdXWEt1c19SUlBqU3NvYjctMGFMNlFKNWdIZFFVNDctejZmTNIB4AFBVV95cUxQZUJWZVVPWG5KSGRnaUczQXQxRC1SNTJYWV9zTVhhZl9wLWpFbENGMi1RVmhUaGI0UEczWmNqeGZYcWFJNWF1Vkp6MDZERC1WZnU5X1JWQjIyTHBPZmZZTEdGekoyUkd3N3BLSUJ2RTFfUmJDd2FQRmtJUndZbjJHTFc3TVBXZmVIWVptTmFSdzNBazN0VEJYR3JhLWpvODk0ckFzVnRBNEZ1cWFxeDdVZXBlUlU2OUxPSW5xdVdXWEt1c19SUlBqU3NvYjctMGFMNlFKNWdIZFFVNDctejZmTA",
+      "source_name": "Outlook Business",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:44:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail Inflation Breaches RBI’s 6% Threshold After Nine-month Rise",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVWx1czhfNUhWWGVZN1ZsUTRwT0x0empkUnpTNDlaVW05R1pZaTNBak1EeEN3WnNMaDQ5MDUwQXR4RndFVW9ZMTRkOTcyQjU3WFZxWkdDak0weVZ3TnY2SHpVdGhydHF6N0I1M29tdC1tM1J1UnBBWUVwUkN6YkluU3E1alptLWc4MTc0S1hwanZKZ0ZfWWpJemVvZkJNYWFrWnhja0ZxOUlGYl9FaFE",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T10:30:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail Inflation Hits 2-Year High of 6.09%, Breaches RBI Limit",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQU0xheTNOMzA1UFo2bWhLalQzQ3Z4S0I3MEJiSHgtdlZTc2pndUxsYTdmbmUwb3J3RjRaS1cwV0JCQ3hrUmlDQmFFNFJnU3VpWExkbUVoTFJ0bExrUUxodk16V09xelBia0E3b3Q0NVlFdWdKQkhGM2lUYUhaQVZqWlBYRFU2eFVDcldiUGhpcnBNR3V6THhwRTZ6RmlqX002NHhkekkyeUhTRHMtcUNKTWlwQzZOeGfSAbcBQVVfeXFMUFNMYXkzTjMwNVBaNm1oS2pUM0N2eEtCNzBCYkh4LXZWU3NqZ3VMbGE3Zm5lMG9yd0Y0WktXMFdCQkN4a1JpQ0JhRTRSZ1N1aVhMZG1FaExSdGxMa1FMaHZNeldPcXpQYmtBN290NDVZRXVnSkJIRjNpVGFIWkFWalpQWERVNnhVQ3JXYlBoaXJwTUd1ekx4cEU2ekZpal9NNjR4ZHpJMnlIU0RzLXFDSk1pcEM2Tnhn",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:00:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail Inflation Surged to 6.09% in October. Repo Rate Hike Not Ruled Out Next Month",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVV9aVVVQNFdyNVVudWNZLWdKX3A2OG12TEFHYXhGbndOV211Xzdpcmp5VzN0Q29vakVMU1NnT3U5cmc0aWJDWXZYY2NDb05nMXdQMkcyZGlQSEdkTG4zc2FpS1pqaDZrczREaGdrY3pwX2N2R3NJSE9lX1FaTktBc2pkeGFVS0p3SlFTbGNOZ09ibElVa2U0bnhxYW1ZSFFOMXB2dUEzamVJSFFhMVFVbTBCcXJtUVhGLURrWTk5WlVpMnEybGUzWlU1Z9IBywFBVV95cUxQVV9aVVVQNFdyNVVudWNZLWdKX3A2OG12TEFHYXhGbndOV211Xzdpcmp5VzN0Q29vakVMU1NnT3U5cmc0aWJDWXZYY2NDb05nMXdQMkcyZGlQSEdkTG4zc2FpS1pqaDZrczREaGdrY3pwX2N2R3NJSE9lX1FaTktBc2pkeGFVS0p3SlFTbGNOZ09ibElVa2U0bnhxYW1ZSFFOMXB2dUEzamVJSFFhMVFVbTBCcXJtUVhGLURrWTk5WlVpMnEybGUzWlU1Zw",
+      "source_name": "The Hans India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:45:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation breaches RBI's 6% upper limit at 2-yr high of 6.09% in Oct",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcHlEM25SSjBvRUx5Wnc2V1lKQkRlZFVXZmZQREYyZTRaU1RtX2UwSmRUdzRsM3dRQXUxa0pOMmhzQWlfaXVGQ3hEalVMQ3JUZGJVRmhhVmx3VWM0WVFoUnFXUE54VE5DZ3d4RDBXVmlkM1JJX1NHN2VSMUhOZzdzVDhvUk4taUJ3VXRyRTd6clp3S2RLWHhCWjhacEktVWxzOG5XbmQ4bU1zRlI4d2tobHF6cVd2aS1jeUU3SmJGLTdmcDhRbmtvNlNJeVliU2ZjMUIwXzgtc9IB3AFBVV95cUxNWUVGQXF5aUo1YnhSYXRaUXhKT1JSby1IS01ka1RuRmhuV1BaRkozSFhGRGd3RFl0QW9MWnNieFFBNzA0MVVTUV9YSFAzRVpzdmtBdFI2ZlF5NHhleVlWQkw1ZlpfaGc3RG40ZkJTVzJxdTJ0aDVCYVpvU0c0dzZ6ODY5bWtUR0RPQTgzMzFfaXM0dmRUNW0wNHpqTEJqeVpFcHFqbkJENmtVS1FpRG9Rc1Y3YWQ0U1JMbjdGMTZjbjFkRDFtUWNDYXpxcXNxc1M1ckVxVWlvdGFGU2pl",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:37:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation breaches RBI’s upper tolerance band at 6.09% in October, first time in two years",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVktuYlpabXM4d3lvaGxuU1R6a05reHhGanNrdXNGTmhDU0RMbVNoRjdUZ2lHU2N5amtycmZrZVNqc2V4U0J3eWpJOHA5cXNrUXpTMXRfdEVBVi10eGhreUtvdE9JdFBZWEtWbXZjZHFwenUzNS1USUZqWjZMdVl6UmtuQW16YnhBeFlnVmw2Tlh5UFJ5Tm1sc2VfRW5CQnJtSlBZNVdtall1djBMT1JsZ1k1Sy1jSTFtNnNjdWZMbURaeDE1anBaeVlmdnJhTUkyY1VN0gHgAUFVX3lxTE5xSERjRVhnenlLNkgwaS02R3FvQno5NllINkpCSnN0anlkb2RacFIwMUhSZEdoYl9HQmFsZDV4ZGdVcEc3X05tWS1NbWwxNG5ZSlBRUDhlVWFhLWtDR3pXakVuQUcyUERCamhJdW12OTQ3MHdYa3ZENGh2OWs3RGxGNDhFVjNHU1RzQ2JxR1dsV2h1MjFjOFFnYk9ZRFgxVzZhdVBJaXhqYmp0eXhtcmtLSUZnUVhFQUYxWTB1QVhoMzF5blRMUE5JbUczNHRYa2JWX1lHRWNVQUFlc0RkdmRS",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T10:50:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcG1kVHc1UG84UnZ3NHhqUTRVczdDN3IyMFlVQnl6alQtN2I0MWZzRUZTYmRGSFJFUFQyYWVXOWswZ1hOUFJUZkFDX0VtUElFXy1vRjhJcEIydzM3c3pQYTcxcmNMWHM3U0FLTW41TWNLZnB1TkY5eUhFSmtZQnlVemN5ZlhPSm5weUVXRTd1eS1jTUN6TW03M3k1T01ydUY0NkEyREpNeHdtT2RGMWhaY3BSb2VPdUF1U0l6cVZnaVE5LVpUdnFNeFhHbEgtTkVwY2FwR21KU2luclFQa3diYXZUNkk3Tl9LS3h3cnktLW9fd1I20gH7AUFVX3lxTFBVYndrVHZBci1fN2ZiWExUTU54QWhhYmZOaGJEcGZMSy1nX1pGcmJLYWMyZVp1dG50OVMwOUxIRVpBeTQwUGZTN1M5SURNeEVocDQ1blRCaHZRZDdyb1lwVFVLek5lREdkc3RmZTNwMHhKbXVEclhfMGROZ0JocmNTeDhra3BzWVYzXy1TeFNxdGNxMnhtdVI0RERmNEE1UVpIMG1HZ1AzaHdYMU1qSm5LVkp6cHlZbll4N2pJRGFqdFdFQ0haSnp6S2VXVWFaVFZYVHE2Sjh6LTVzakxfTXFrRll2T0Q2d19PcndwT1dMdzNUMWlOSXZJRHlB",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:23:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUkFZcjg0ZEZzRzhmOEVYeWowM0phczEyRVFsMGtlbl95VUNBSzZFZzdDNEJVdGpHOXJZRkhkZHNDU3N0cW03MVUyM1NySkdHcXoyUGxXM21vZ21HRDRpbjljZ2JxVmN2R1BCUVZlQzhXdjNWSFJmZmdQWWFFUDQ5b1RZMjJqTTYtZjYtY2daTVhSU3RPVzNCcWNPNEo2QVhlODdicE94d3NGUXpFWk9sanpwX3NoNVZBNkNZ0gHAAUFVX3lxTE40S1Rna01kdXJ4bmJyMWJMQ1RsWXd1OV9rOXJsV0x5Q0VmaUVhQ0ZVWlJGU0RTMkoyNlhWcmdIbENaUkdXZkQ0NjlwZFlRbFlUSEhWZTBvekt6RTAtWDNXcHNVOXlrVGhvTDZwcnY3Ymo1ZnpDZVFnSUZBOGZfekVrMzZtYVMzaEtXMkUtc1dibHlsQl9yNTJTdWhmYUFzYjNxRlZCVUdlMUhuM2d6RXJpN0R1STdhUV9JSXItd0tMaw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:23:16+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation hits two-year high of 6.09% in October, breaches RBI ceiling",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbWhCVW96OXZkQVowc1haTE0zTVlHaWtLWU93aFdxUlE2cDN1N1d2RFlCWkFYQThTV1Vja1BtdldxTlRUWEdqWEcwSjVvM2VrYzlPVTZJdUw4UG1iaUMzVGxDVHZaYThCSUJ2aE9tc0tyczR5c3NhWW5jQVBYT1dNam5LYjAxcHNGblpLMFZQVmlrRE54dFF6QzI4MEcxN19MbXB6UnFRYWNRT2l0WVhzdE9KZzdaNFFydmF0MnJBNlVfN3AxcjVxUmc5N2ZVSFZmMVpfbV9pVWNRV0JNbEZV0gHjAUFVX3lxTE9DWWczbFA3cTVzR1JZNkNHNDd1SmVZMDVkUVNoLVdXTS1UNTMwZXdsaTRZa1BqMm55Vi1FY2E3b2F3Z3hnd3p3d1BUcmpCdXJEcW5qSWxlSGJVaHVoRWtMejk5TlI1Ykc5MEpNVG04eDVFM0FOQU10dEJrSmV2bndneDZaSi03d0NpWjQ4VGZzbmh1RXAzRUlKTXZucERtMzI1ZmpvVnAwWFB1MzhaNUhsd3ZFa2NKX09OZmVLaUU3YzlsOFk1dE4wR1d6RjhWSWVrODZNcDRIME8xVHVIQlNGXzlr",
+      "source_name": "ET Government",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation hits two-year high of 6.09% in October, breaches RBI's upper limit; rate hike likely in December",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcHp6cW0zWDJWMlZrb2VMNWUzeGFIQS0xYl9tVm1LZjk4TU9zMDdpMHlrQXVvSkVzcmhhYVREZjJKQ0dvWTBmdm9vM0lYS3ExR2FjZV93bC1NYU9RYWRwd3IxZU93RlpId3F0SVQ5U0htczMwNDNrVVM0eFBBUGpOd0Q1b0ZaeUphQjNKYmJmSl9makpPdEMtNjVnOUFmVFNId0hTbXgzUkJqR21LUU1ZczF1ZUFmNkJISVVVb2FwQXhKb3R1QUVnN1BSLXRaQTZFNWJDZC0tVmrSAd4BQVVfeXFMTjdYX3dZczM3d2szNG5EcEVLOHl4a01zLU9CMm42eHduNk5IbG9xVk1TWkYwRm9PcGZ6Q3JQZnF1eGJIempQNS1CRUhkdThZVGF0WmluN3YtM21NLXJLQ3JRMi1wZFZDRkhwZlg1MnBfUHlhZ1NjMDlKcDhILTZaVlNkdmFvczdhTWFpamc4NEhSamNyZGVyMXFJVmh2ZVVlZGl2NFNYNFJnRUtKdl85ZEt0WUlJUU5vRzYyZll3OHNGeEs3dmpzUUR1YWczMkszak0zdzk5RzZBaThuWGZ3",
+      "source_name": "Telegraph India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:13:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation rises to two-year high of 6.09% in Oct; breaches RBI's upper limit",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZk1YVmFBaWc0c1Z1ZWp5MHBZcHRQRWhsYXdtNjVrSVY3U2xRVlBOYkszQVBtQ0JJdWZRQnlOei1KelR1MlZhXzlpNHZIWnFhNFpVZHFscHdlM1FpR2w4Y1pLQnNyM1dxQmdqYm5SckhQbW1COG41RUYweDY2RVRIUFhkY1VLRlhTYkxXUkR6SXNmcV9TWlowV1B3OEw1UkVzVTJRaFM3X3l4YVZMZlA4RTVBeXl4aDMzU3VHYy1JSm9Jc2huU19OekFTMXR0ZEc0ZDJGbk85TUU0TTTSAdsBQVVfeXFMTmZNWFZhQWlnNHNWdWVqeTBwWXB0UEVobGF3bTY1a0lWN1NsUVZQTmJLM0FQbUNCSXVmUUJ5TnotSnpUdTJWYV85aTR2SFpxYTRaVWRxbHB3ZTNRaUdsOGNaS0JzcjNXcUJnamJuUnJIUG1tQjhuNUVGMHg2NkVUSFBYZGNVS0ZYU2JMV1JEeklzZnFfU1paMFdQdzhMNVJFc1UyUWhTN195eGFWTGZQOEU1QXl5eGgzM1N1R2MtSUpvSXNoblNfTnpBUzF0dGRHNGQyRm5POU1FNE00",
+      "source_name": "The New Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T12:24:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Retail inflation surges to 6.09% in October, breaching RBI's upper tolerance limit after two years",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNejl3TUJzR3U4aE1laTR4QVNFRTNTcGdsRU9oVHo5TDYyOE1YOHdxbHI4bkFiaHllaF9mM2VPTXJXSno3WEMzcENSc2RGSHpROUF5a29JMXdEbHI2RTFWdEQ1Vm9WMF9TcmJfbW5VaTNKVXpPLXRUVmlRVHF0bVZhLXpxNWNnbzZWQjZwZ0doandnT1Bxci1KZHhYZmx0OEJ5UTBuNUJEOVVtSGE5R3h5SlNna2tUc1JYc3Q3dmY3NkVoUWlTdTlYMjVUeUlMZw",
+      "source_name": "OpIndia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:04:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 23,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "HDFCBANK+TMB|MACRO|breached-inflation-october-rbi-retail-upper",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:09:40.770353+00:00",
-  "last_updated": "2026-11-10T15:09:40.770428+00:00",
+  "last_updated": "2026-11-12T15:47:26.840803+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:09:40.770416+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:26.840772+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld, Business Standard, BusinessLine, CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:26.840788+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY, COMMODITY, INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:26.840795+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:26.840799+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

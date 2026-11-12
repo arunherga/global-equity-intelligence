@@ -179,11 +179,11 @@
     },
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
@@ -191,31 +191,38 @@
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "PRODUCT",
+          "term": "contract manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "+2 International market development",
-        "-2 Weak indirect connection",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to contract manufacturing, and India. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -302,11 +309,11 @@
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
@@ -314,31 +321,38 @@
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "PRODUCT",
+          "term": "contract manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
         "+2 International market development",
-        "-2 Weak indirect connection",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to contract manufacturing, and India. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -421,6 +435,54 @@
         "confirmation from an official or company source"
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "contract manufacturing",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to contract manufacturing, and India. The parts of the business most likely touched are product, revenue. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -514,16 +576,36 @@
       "published": "2026-11-11T18:41:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NCDEX Launches India’s First Benchmark-Based Steel Scrap Futures Contract",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOGVMSWwyZi1NZXp3MWItdWVFTF9wSnZSeDF1NWROQTVBLTc4dGRFQ3l2NC1OUXV6S1NnR0lmTEdjMkduYnJZVU80QW1KOFdneFAwQ2JtOWQ3dFdDbTMwOXdPa0NGUjRrU05tVHk5N1JERVpiT2ZRdDhUNFBtaHlhb3FPa0FldC1MZGNuSmFwdk52YlZTZldNTWs2MGxkTFRZNVRUQkkzU0hIQUVOU2tiLTRiZjZ2RkdENzUtbUJueFh0QQ",
+      "source_name": "Realty Plus Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T03:40:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NCDEX launches India’s first PRA-based steel scrap futures contract",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5hNzBldHJqX0hUM0R2RWFocm4zRmYxZ01BMlphRjRFSUZ6LWdIUzBQY3hWblhIRTV2b0JGVEgxVmFlVEhOTEZrVFFxRlpReWJHQmRQU2ZqcG9ZTTY2RWxFQl84VFVBaWRlblA0QmpBSmszbk1yRzNR",
+      "source_name": "Manufacturing Today India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T08:08:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 11,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "MSTCLTD+TMB|NEW_PRODUCT|first-ever-launch-ncdex-pra-based-scrap-steel",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-11T14:40:16.090452+00:00",
-  "last_updated": "2026-11-11T21:37:36.719896+00:00",
+  "last_updated": "2026-11-12T15:46:44.247712+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:40:16.090534+00:00",
@@ -579,6 +661,26 @@
       "timestamp": "2026-11-11T21:37:36.719891+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.247678+00:00",
+      "change": "sources added",
+      "detail": "Manufacturing Today India, Realty Plus Magazine"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.247697+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.247703+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.247708+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

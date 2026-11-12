@@ -9,6 +9,56 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REGULATION",
+        "COMPETITION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (HDFC Bank) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to HDFC Bank, and RBI. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
       "relationship": "DIRECT",
       "impact_score": 9,
       "impact_band": "HIGH",
@@ -51,65 +101,22 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Unclear in the near term, but board approval for expansion could drive long-term interest and fee income growth as new branches and business lines scale up.",
-        "margin_effect": "Initial setup and operational costs from physical or digital expansion could slightly compress net interest margins (NIM) or elevate the cost-to-income ratio before new locations become yield-accretive.",
-        "cost_effect": "Operating expenses and capital expenditures will increase to support branch expansion, infrastructure development, and legal/regulatory processing costs for share transfers.",
-        "competitive_effect": "Expanding operations could strengthen TMB's market position outside its core geographic region in southern India, enhancing its ability to compete against rival private sector banks and small finance banks.",
-        "regulatory_effect": "Requires explicit approval from the Reserve Bank of India (RBI) for share transfers, keeping the bank under active regulatory scrutiny regarding shareholder eligibility and governance standards.",
-        "short_term": "Focus will remain on awaiting RBI regulatory approval for the share transfers and finalizing operational plans and capital allocation for the approved expansion.",
-        "medium_long_term": "Successful execution of expansion plans could expand TMB's loan book and deposit base, while resolved share transfers could bring greater ownership stability and governance clarity.",
-        "second_order_effects": "Clearing share transfer approvals could remove historical ownership uncertainty, potentially boosting institutional investor sentiment and facilitating future equity capital raising.",
-        "key_uncertainty": "Whether the RBI will grant full approval for the share transfers and the specific conditions or timeline attached to that decision.",
+        "revenue_effect": "unclear",
+        "margin_effect": "unclear",
+        "cost_effect": "No material impact on operating costs expected beyond routine executive compensation already budgeted.",
+        "competitive_effect": "Supports competitive position by maintaining leadership stability and senior executive continuity relative to peers.",
+        "regulatory_effect": "Direct positive outcome ensuring compliance with Reserve Bank of India (RBI) governance norms for key managerial personnel.",
+        "short_term": "Removes management transition uncertainty and ensures immediate operational continuity at the executive board level.",
+        "medium_long_term": "Provides sustained strategic direction, institutional memory, and stability in executive oversight over the re-appointed term.",
+        "second_order_effects": "Maintains investor confidence in corporate governance and prevents disruption in strategic initiatives managed under the Executive Director's portfolio.",
+        "key_uncertainty": "The specific functional portfolio assigned to the Executive Director and the precise length of the approved tenure.",
         "monitor_next": [
-          "Official RBI communication or announcement regarding approval of the share transfers",
-          "Detailed guidance from management on the scope, footprint, and capital expenditure for the expansion plan",
-          "Quarterly cost-to-income ratio and operating expense trends following the rollout of expansion initiatives",
-          "Trends in deposit mobilization and credit growth in new expansion markets"
+          "Stock exchange filings detailing the specific terms and tenure of the re-appointment",
+          "Performance metrics of business divisions overseen by the Executive Director",
+          "Any broader management reshuffles or upcoming board term expirations at HDFC Bank",
+          "Subsequent regulatory communications or guidelines from the RBI regarding private bank governance"
         ]
       }
-    },
-    "HDFCBANK": {
-      "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "REGULATION"
-      ],
-      "time_horizon": "MEDIUM_TERM",
-      "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        }
-      ],
-      "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
-      ],
-      "direction_reasons": [
-        "No clear directional signal in the available text"
-      ],
-      "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
-      ],
-      "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
-      ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are regulation. Classified as regulatory.",
-      "ai_analysis": null
     }
   },
   "sources": [
@@ -122,16 +129,36 @@
       "published": "2026-10-30T10:27:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Gets RBI Nod for Rangan’s Re-appointment as ED",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSmdMY2ZHVFEwQTBzRndCbFVuQ0J6Y1RCa3hkOFpHVzNHT1F3MEFkbFZLQ2IxOHdyM2tpd0ljZlEwMVNIWHl3a1BLX2NWY3dHcU9Ta0Z5X0JDakRRTGwzU3hxY1JKV2RlaXNwZkpCRmpLeUhIV2l2OTlhMWNYaXI2cUdhN1ZES2hyZE43MDJ2QmlBX1BVOUE",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T12:25:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank gets RBI nod for director's reappointment",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc2tpR3FOb3JLMXkxMGVVbjhRa21tYkwyTGswaGJ2MVVXUzYzQ2ppdU5QbWg5RnBHUkhoVG15RWZ2X0dfM050LXpZcVM3WGdkYmtWQ29JbHJsc05GZmF3dVI3c1JrQXVOdllCVFg2NmhMRWYwNVNxT2tOdU1tdktXWDNwSUl4VDJKWThUbw",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T12:00:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "HDFCBANK+TMB|REGULATORY|bank-mercantile-nod-rbi-seeks-tamilnad",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:21:45.154814+00:00",
-  "last_updated": "2026-10-30T13:25:19.086142+00:00",
+  "last_updated": "2026-11-12T15:47:44.419700+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:21:45.154898+00:00",
@@ -142,6 +169,21 @@
       "timestamp": "2026-10-30T13:25:19.086125+00:00",
       "change": "ai analysis",
       "detail": "TMB via gemini"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:44.419672+00:00",
+      "change": "sources added",
+      "detail": "InvestyWise, PSU Connect"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:44.419690+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:44.419696+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 9"
     }
   ],
   "price_reaction": {}

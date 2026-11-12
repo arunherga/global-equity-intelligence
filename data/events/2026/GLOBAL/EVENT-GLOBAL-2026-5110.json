@@ -10,15 +10,16 @@
   "stocks": {
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.46,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,7 +30,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -37,26 +40,30 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.46,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -67,7 +74,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -75,26 +84,30 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.46,
       "business_impacts": [
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -105,7 +118,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -113,13 +128,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "diesel prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -203,16 +221,26 @@
       "published": "2026-11-10T14:20:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gasoline and diesel prices will drop sharply across the board starting at 3 PM today (November 12).",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUVJEM1JBbXh1RnJNREhLZDEzTktZZkMwNUJ2OTM2d3hUT0hRN0lWdFVfWU9tM0ZXT2x3bHE3ZUlUcHlmdzZXbUUtSFdmSHE2SnRXdF9oWkJnRF9wa2g5RDFhTlM4T1gzUDZHN3dqZ29YZk9waGwzblZJTDRGQllpMkRodTRpUQ",
+      "source_name": "Vietnam.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T08:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 8,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "www.wam.ae",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|COMMODITY|diesel-fall-fuel-november-price-uae",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T17:51:05.507373+00:00",
-  "last_updated": "2026-11-10T15:17:35.413228+00:00",
+  "last_updated": "2026-11-12T15:47:10.113176+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T17:51:05.507434+00:00",
@@ -313,6 +341,26 @@
       "timestamp": "2026-11-10T15:17:35.413225+00:00",
       "change": "direction changed",
       "detail": "ASHOKA UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:10.113144+00:00",
+      "change": "sources added",
+      "detail": "Vietnam.vn"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:10.113163+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:10.113168+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:10.113172+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 5"
     }
   ],
   "price_reaction": {}

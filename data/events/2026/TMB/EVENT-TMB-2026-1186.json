@@ -52,6 +52,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Federal Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "Federal Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -64,21 +102,41 @@
       "published": "2026-11-07T13:25:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Federal Bank to host analyst meet at Avendus Spark INDX Conference",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWFhtaDF6cUVoVHg1MWM1UkVCaXNFLXlaQmVITTVQWGJFaGNEWFFvdWNaVnVKdjhtSm42b3RPa3lETVEzamw3c1NVY1ZMb3ZtbS1mOW5oblloMThQMXB3eVEwNmN1STdDVFNuQVNRQW1uenlPcl96Z3JrN28zTnJQYzFadzA2Z2h5SmpZY1hyaWNzYTkyNFoyamZkOXVnRkhoQm92cmFMbkxIeFBRVmswSDNyU2tDejNs",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T14:52:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "TMB|OTHER|bank-india-investor-meet-schedules-south",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-07T18:11:00.832019+00:00",
-  "last_updated": "2026-11-07T18:11:00.832091+00:00",
+  "last_updated": "2026-11-12T15:47:57.456951+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-07T18:11:00.832082+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:57.456929+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:57.456947+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}

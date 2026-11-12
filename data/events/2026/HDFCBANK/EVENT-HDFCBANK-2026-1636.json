@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1636",
+  "title": "Financial stocks hold Nifty steady at midday; Auto, FMCG drag",
+  "summary": "Insurance and financial stocks dominated the gainers board on the Nifty 50; HDFC Life Insurance surged 3.91% to ₹596.00, the top gainer",
+  "event_date": "2026-11-12",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.59,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        },
+        {
+          "exposure_type": "SUBSIDIARY",
+          "term": "HDFC Life Insurance",
+          "relationship": "INDIRECT_STRONG",
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-5 Market commentary rather than a company development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its subsidiary exposure to HDFC Life, and HDFC Life Insurance. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Financial stocks hold Nifty steady at midday; Auto, FMCG drag",
+      "url": "https://www.thehindubusinessline.com/markets/financial-stocks-hold-nifty-steady-at-midday-auto-fmcg-drag/article71692751.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-12T07:45:09+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "HDFCBANK|OTHER|financial-hold-midday-nifty-share-steady",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-12T15:31:55.218904+00:00",
+  "last_updated": "2026-11-12T15:31:55.218983+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-12T15:31:55.218973+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

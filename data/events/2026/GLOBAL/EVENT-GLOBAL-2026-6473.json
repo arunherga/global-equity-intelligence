@@ -1,0 +1,126 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6473",
+  "title": "ECB says the gap between refined diesel and crude oil prices has nearly tripled in Europe",
+  "summary": "ECB says the gap between refined diesel and crude oil prices has nearly tripled in Europe Informat.ro",
+  "event_date": "2026-11-12",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "crude oil over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to crude oil, and Europe. The parts of the business most likely touched are input cost, exports. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "ECB says the gap between refined diesel and crude oil prices has nearly tripled in Europe",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONzh5YXFDYmI2aXRVUGhNRjVHYlZtbWJ5S2ozRVEzM3AydFo4c2VfRjl0d2xUQ1hiNTdlMHZ5dzQ4Z3h1RTNMWmNxUnBYSzZBTTBGdkZrbjg0amFuZ3c1bzAycTh4QTlUQXBtMTdXanpVd2xsZmxacVlQQlBpTGFsX2V0ZHNZQzRzWGFHV2ZONVhUei1DNXlKTHlTSzZhd2E5R0NjMHY1Z0VQcjlYTS11THRiUjVxQnc5emRiUDhNQQ",
+      "source_name": "Informat.ro",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T13:43:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Informat.ro",
+  "cluster_key": "RAVEL+SUPRIYA|OTHER|between-crude-diesel-ecb-gap-refined",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-12T15:37:34.375786+00:00",
+  "last_updated": "2026-11-12T15:37:34.375863+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-12T15:37:34.375853+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

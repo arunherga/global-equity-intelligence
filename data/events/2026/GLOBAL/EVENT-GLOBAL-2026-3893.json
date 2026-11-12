@@ -15,12 +15,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
       "business_impacts": [
-        "MARGIN",
         "DEMAND",
-        "REVENUE"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,21 +29,28 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -52,7 +58,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are demand, margin. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -60,12 +66,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
       "business_impacts": [
-        "MARGIN",
         "DEMAND",
-        "REVENUE"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -75,21 +80,28 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -97,7 +109,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are demand, margin. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -121,21 +133,56 @@
       "published": "2026-10-22T11:48:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Hotter-than-expected US inflation: Fed may hike 25 bps in December; RBI?",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQVFKbkpvdFF3b3BHdzAtMVBPRGpwWHNaSndiRXFyUFJmeU9WVE5sMFZBSGRHN0xydl9uakRSY1N5amEtZXZtZVktSE9CU0FqbVpBalBBbjI1WHdBczlEZ1NtWkpMM05ndXZuQlE5b3J4dlN6N2p1UjNZRHpuU1A5VkdFY1J5ZVpTV19ZOHdCbU5lc05KQW5LQlh3NmZ0R01IZkc4VjNZZmw2VFRfUEFRTw",
+      "source_name": "Investing.com India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T07:23:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI rate hike in December: SBI now expects just 25 bps despite inflation crossing 6%",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcHNMSlM5Y3ZUWWRSRi0tMnFieFktM1NHTXZQMTVNbnFmbVhRdEVJQy0ybkhqaWtnZnlqeTg1UFFYd1hlSW5KWi00a3VBdjIyTUIzNGQwZHVldlItQmNXY1Q3eG9NN3Z0TGU0UDdpekdlZTRkRkVqbG9CVC1ZNTYwQWFuSm5MbE1lVjdja1pMOXpJcWlZRHlMT09qc0J5UC03QThTQlc1dWIzREdja21vV25FaTJrSTJJZkxCZ05XQi10TmF5X0pEUnhIQU5VVUNvQXRjVkV6dWJhRWtER0l6T3hUMjfSAeoBQVVfeXFMTmxpYzBmSnpMZUoyNUxDaWNTYlQ5OVVkbTUzZWJMMlIya1hVQ3M2RG9MdkNiUkFpWDU4cHlaNGRoMEhNR0lINlJfLVYxeFVNdFFUdUpTbm9ZUldOWUdnaWRoTFJUZnhENjdIR1hVWHRoejBUcThrb0FKV1Zocl9tWENKUndSUkxzMmhGR3pqNU1RX3JBdU1lc3RYYWNpQ2RrcGNIQ2tnQW4zUWp6aDUzQWlNelVvUnpsdkZNLUtTSzhZeFEzWW5zZy12bHNpYk5LaHNiMHpLNFJnbTl1Tm9XTm53VEVUSnJRalBn",
+      "source_name": "Business Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T14:31:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+INTEREST_RATE|bps-expects-nomura-raise-rate-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-22T18:11:23.468713+00:00",
-  "last_updated": "2026-10-22T18:11:23.468801+00:00",
+  "last_updated": "2026-11-12T15:47:04.919757+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-22T18:11:23.468795+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:04.919728+00:00",
+      "change": "sources added",
+      "detail": "Business Today, Investing.com India"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:04.919747+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:04.919752+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

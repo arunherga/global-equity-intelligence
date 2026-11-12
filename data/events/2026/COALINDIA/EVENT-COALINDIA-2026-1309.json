@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-1309",
+  "title": "Global coking coal prices fall in early November",
+  "summary": "Global coking coal prices fall in early November GMK Center",
+  "event_date": "2026-11-12",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "coking coal prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "coking coal",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "coking coal prices is a selling price and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to coking coal prices, and coking coal. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Global coking coal prices fall in early November",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVEZzdlIxWmNsNWhoVVc0T0JlNHlpTENiaTVHVDhGTC1UNzJlNmdmMG9pS3ZveFJkcU5fbVNGNTNSY2pkOHg4cEowTEdLcmJDMi1RLXNNUm8xTERhcXltcWJwa3hMaG5MOHJ5OTZXWU5NdDhfVHNkSVFtTnZsR3NvdjB30gGHAUFVX3lxTE1BV09ndVNnVFJFa3h2MlprSUxTVE5Sd3A0dGxrR3RjdWlMcUtURDQ0MVBYanJtTlI4WWhBWXhZaVI1Sy1FR1ZpcDdhWVctWkZyWmZ6YTBQTVAyMFVOUG5qMXkweU1qdVI3RV84XzNhOFlVUWV5V2l4V0FBdk1EcmNkdmo4alJOaw",
+      "source_name": "GMK Center",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T06:02:24+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "GMK Center",
+  "cluster_key": "COALINDIA|COMMODITY|coal-coking-early-fall-global-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-12T15:34:07.503068+00:00",
+  "last_updated": "2026-11-12T15:34:07.503141+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-12T15:34:07.503130+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

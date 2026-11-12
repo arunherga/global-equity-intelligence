@@ -47,31 +47,40 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "COMPETITION"
+      ],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (ICICI Bank) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -85,21 +94,41 @@
       "published": "2026-11-11T05:50:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "10,795 Put Contracts on ICICI Bank Ltd. at Rs 1,580 Strike Ahead of 23 Nov Expiry",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObGZsUW1wT0JhbGRiQTNCQUNvSVdqT3RGWlI4TWQ5ZWRyX1gzMW9scGwwU1BnZWFIakdkalUwUHlWNnZrNjdlTERzRDdycmdMNjR5RE5PTjd2elZSM2ZZNFhnR3MyNHVSS2pybXZzWnNJa3MxaXBfTkNEZW5wXzVlVlpLOTVLQjRpRTVHTldXVU8wT05GVTZ1WmdSYmxuajFfWlhzZWNVeXNUN2EyeEVkMjFCeUc2RkdVZktYdzgyTkp6SmI2NGc",
+      "source_name": "MarketsMojo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T11:33:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "MarketsMojo",
   "cluster_key": "HDFCBANK+TMB|OTHER|000-750-810-contract-draw-put-strikes",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T14:42:30.593739+00:00",
-  "last_updated": "2026-11-11T14:42:30.593808+00:00",
+  "last_updated": "2026-11-12T15:47:41.027323+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:42:30.593799+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:41.027286+00:00",
+      "change": "sources added",
+      "detail": "MarketsMojo"
+    },
+    {
+      "timestamp": "2026-11-12T15:47:41.027318+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> POSITIVE"
     }
   ],
   "price_reaction": {}

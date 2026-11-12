@@ -55,17 +55,15 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
-        "INPUT_COST",
-        "DEMAND"
+        "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -76,25 +74,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -168,16 +162,36 @@
       "published": "2026-11-11T12:11:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold and silver price today, November 12: Check rates of 24K, 22K gold in Delhi, Mumbai, Kolkata other cities",
+      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQNDBCb1o3azFqMEVjTzN3WXBkMDYyUWx4VXpCNUh2LW1aX3ZhMjF4VHZtSUhtdzNUM0lCZmFOUmhzX3FIbW1GNWxYdkJ6WVhZNms0R1Rick1xNDNtS3FyS09HYmJrQnNKSXZMdXRSaml5OTFaWVNaQjk0UVVWdEYxcVlyNjVyZE9WYXV5dFlqTjBPTUtOblRxZ0g2bmRsb2wtZXFYcGZlV3J3SDItUEhKdkdmTms3V3QwZkRFSGthSHp3Z3ZUTlNRRHAxc0VFNHpuck9DRGNfMWhsaW9MWVRvbUd5UGVkOVEtTkplRUd5cHVidFVWVnZVazBNTUk3d1BpLTFoaUlhaDQydw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T03:45:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver prices today, 12 November: Check retail rates of 24K, 22K, 18K gold, 999 silver in Delhi, Mumbai, Bangalore",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQSXA0ZHRuS1NZOENsWWYzTExMVldlT2h0REFYc19POU9seEF4cjJKc2g2S0xqY3FfYUpacTh3U2E3N3ZfUEpmUl9OSmZ3LTRZcFhreS1TZWlheGJKWmVGc2VwYS1IYnRqdDR1ckRTblIxNFRmb0pIZE1ldEdfZ2lydU51cFRjODJsb3EyNTJGRG45RnJyTG45VnBMdE1TZDRrQnhtT3pHZS1lQ3o5QlRfcnc3eF9Sc2tTS2w0dEswVWtqZnFhVTBzRkItUjFxQUZ4QzdnUVFDNWpFNEM0TU11X3pvMl9RVi1GOTcwQVJWdHZOWXRuOXZRWXc5LVdBd9IBgwJBVV95cUxPbjN6Yi14T1YtaGtvY2x4SXR5VDJsT3pONkZPYTAwbU82UGF0RVFqd1FTZHU4c2x5YUctbE5KSFl0R3BfdlFSQXhoSUdUU1diU2ZrU2R5SjZlWndtTlZYVHQ2R25OSXo4R3RMNE5BaEN0UV91bjgwcVY3bF9NRlk3TXJnTmUwU0tsZWNoRW1wS1FwVmtnUjZiNTJ4NTQ1d1BZZHZ3dklkX1FqMWI1aE45eGNqSkprdDltZHI2Mk9WaURsRTVieVRpQ1RUU0Z0MDdoYU43bHVzekQtdXZEUENES2ZtRFU3ZUpmUmJsRGVuUW5ES20zby1KQWpTeDQ1amJDS2dZ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T06:10:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 9,
   "source_count": 1,
   "primary_source": "Hyderabad Mail",
   "cluster_key": "TMB|OTHER|2026-gold-hyderabad-november-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:36:30.197375+00:00",
-  "last_updated": "2026-11-11T14:48:40.333844+00:00",
+  "last_updated": "2026-11-12T15:46:44.610107+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:36:30.197454+00:00",
@@ -213,6 +227,16 @@
       "timestamp": "2026-11-11T14:48:40.333840+00:00",
       "change": "impact raised",
       "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.610085+00:00",
+      "change": "sources added",
+      "detail": "Livemint, Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:44.610103+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

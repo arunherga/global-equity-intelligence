@@ -10,57 +10,71 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.35,
+      "confidence": 0.56,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "COMPETITION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Overseas Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         },
         {
           "exposure_type": "INDUSTRY",
-          "term": "repo rate",
+          "term": "deposit rates",
           "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
           "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "-6 Scheduled statistical release, not a development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -68,63 +82,77 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank, and ICICI Bank. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.35,
+      "confidence": 0.56,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "COMPETITION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Bank of Baroda",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Kotak Mahindra Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
         },
         {
           "exposure_type": "INDUSTRY",
           "term": "repo rate",
           "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
           "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "-6 Scheduled statistical release, not a development",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -132,7 +160,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank, and Bank of Baroda. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -176,16 +204,26 @@
       "published": "2026-11-04T02:30:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Large banks raise FD rates by up to 50 bps; highest return at 7.55%",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/large-banks-raise-fd-rates-by-up-to-50-bps-highest-return-at-7-55/135771970",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-12T13:43:59+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "Jagran Josh",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|2026-bank-interest-november-raise-rate",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:37:17.711629+00:00",
-  "last_updated": "2026-11-04T15:00:00.771255+00:00",
+  "last_updated": "2026-11-12T15:46:22.614320+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:37:17.711728+00:00",
@@ -196,6 +234,21 @@
       "timestamp": "2026-11-04T15:00:00.771236+00:00",
       "change": "sources added",
       "detail": "Times Bull"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:22.614281+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:22.614311+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-12T15:46:22.614316+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}
