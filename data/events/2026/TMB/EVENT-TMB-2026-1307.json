@@ -10,7 +10,7 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -25,10 +25,18 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -42,7 +50,7 @@
       "watch_next": [
         "gold prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +64,41 @@
       "published": "2026-11-12T09:43:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What's gold price future in India? Will it touch ₹1.50 lakh per 10 grams again by December 2026? Experts' view",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQODFtemVMeGNFQlRGb2EtNmEzcmVYT0xaNWRzNzJZQjVsSno5U2xqeXNOcFFlY1h6TzdjemtIWGlKZDMxMzd5RGUxSlRhVXZrUEFLaWVGZjktMDgwNlk4VGFlMVg4bFBOQ3E5Z3ZtX1Z3cWZzMXFkSG5VemhNWkx0Tm5jQ3pJQi1RMGxHZ0taTlBGNGZTWWRQamNQa1MxSkVMRHdEcFJjRFl1V2U0UXZTQzVMbW1CZlhtWWowQWF3RWxQaVYyVkZkNURxUUh0aXNRNGh4NGswM1hISDA5RmM3cHBEYTdhRHVUTjlhNzRpbUFzazQtRE0yZks0Q2owQdIBgwJBVV95cUxPazZXYWxWajI4NFY0c3cxTi0yaE9aSEdxNkNxdEdQRE1adXEtd21OemN4dFRoUm4xQkQtNGwwZ0RPR1poeV8zM1JGMUczbFBtdGFSZkRLQzBBdENvYl9pQXpWcWY4Wk5pTEhXTEVVTUVwZXBlMngzRV9tUm5Rb3o0SzJHVkZiOHVtNmxjUkkxZGl4dTBNbWNhb0NhZXdCaTk4X0VXanQxYVJmN3JtMFVWemVDYnJxQzBmREVzTW1PcFRsSkNUb3RkZHBzR2tCWmZ0Q29HMjVXaFVIcmRfS3h3eExSdVVxZ1BfZkdmSi1zNGh0VThGd1FaMDlhbWdPaTUyUUo0",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T08:17:41+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Udaipur Kiran",
   "cluster_key": "TMB|OTHER|1.50-2026-december-gold-price-reach",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-12T15:35:47.424942+00:00",
-  "last_updated": "2026-11-12T15:35:47.425016+00:00",
+  "last_updated": "2026-11-12T20:59:02.260327+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:35:47.425006+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T20:59:02.260303+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-11-12T20:59:02.260322+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

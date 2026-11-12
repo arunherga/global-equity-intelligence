@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -61,21 +62,41 @@
       "published": "2026-11-01T00:35:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Slumps 3% Below $3,900: What Is Causing the Continued Decline in Gold Prices?",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQYUxMamcxTS1KSFRiUXduM1FwQ3dCUDFJcEE2RGNfbGJmc2dqbXk1YVA3UGQ0eWxIQWlMYm5HWjNRSE1uMW82WjVZQXByZkNRUVhOOVVwNjJPejJILXVOYVhNZDlVd0pGc0tzMjFkdTY4X1E4OHZWbHE3dTJqY2ZrLWoyYnRPR3dlTERDX3Zjd2NsaWV0VVpjcUFNVGpPV1FxUHhTVlRmNUQyYlIzNFYxQ1lvMG04SzJrQmdNUnducVZlbGh1di1YSWhtLUJZUQ",
+      "source_name": "TradingKey",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-12T15:43:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigGo Finance",
   "cluster_key": "TMB|COMMODITY|900-below-fall-gold-international-price",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-01T14:27:42.658193+00:00",
-  "last_updated": "2026-11-01T14:27:42.658285+00:00",
+  "last_updated": "2026-11-12T20:59:09.942436+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:27:42.658274+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-12T20:59:09.942413+00:00",
+      "change": "sources added",
+      "detail": "TradingKey"
+    },
+    {
+      "timestamp": "2026-11-12T20:59:09.942431+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 5"
     }
   ],
   "price_reaction": {}
