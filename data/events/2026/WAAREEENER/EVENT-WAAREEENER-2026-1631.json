@@ -10,9 +10,9 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "POSITIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -29,10 +29,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -174,16 +175,26 @@
       "published": "2026-11-05T11:31:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver prices slide up to 2 pc as US Fed keeps rates unchanged",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYkZvZ0xvUmNWQ3loeG5hYnl0UlAxQk1WOWotV2VSZl9yb2dZc0hldnJDbmNZc3d1M0lHanJoUFBzZEpQM2JJM3lpOW1KOU0xUEV4NHBaQUduSkRWdmVKRWtYMjN2ZUswalFsQUkzN0pGcldjM0VUalJ2aVB6YW1YdkJJOVhsMW05VGpnaHpGeTFUZWw4TmlZZg",
+      "source_name": "DD News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T18:27:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 1,
   "primary_source": "SD Bullion",
   "cluster_key": "WAAREEENER|OTHER|falling-fed-gold-oil-rate-silver",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-25T11:46:37.319464+00:00",
-  "last_updated": "2026-11-05T20:50:47.976222+00:00",
+  "last_updated": "2026-11-14T13:59:24.484332+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-25T11:46:37.319522+00:00",
@@ -249,6 +260,16 @@
       "timestamp": "2026-11-05T20:50:47.976219+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:24.484308+00:00",
+      "change": "sources added",
+      "detail": "DD News"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:24.484328+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

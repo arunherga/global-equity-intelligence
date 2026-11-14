@@ -4,19 +4,21 @@
   "summary": "Jewellery demand remains resilient for Q3 despite gold price surge The Hindu",
   "event_date": "2026-11-06",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.55,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -31,13 +33,14 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Price shock in a commodity this company is exposed to",
-        "-2 Single unverified source"
+        "+2 Major industry-level development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -47,7 +50,52 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.55,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND",
+        "COMPETITION"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "GeM",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Major industry-level development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to GeM. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -61,21 +109,51 @@
       "published": "2026-11-06T14:54:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gem, jewellery exports up 34% on growing demand, rise in gold prices",
+      "url": "https://www.thehindubusinessline.com/markets/gold/gem-jewellery-exports-up-34-on-growing-demand-rise-in-gold-prices/article71697017.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-13T12:40:58+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "The Hindu",
   "cluster_key": "TMB|COMMODITY|demand-despite-gold-jewellery-remains-resilient",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-07T13:21:21.483453+00:00",
-  "last_updated": "2026-11-07T13:21:21.483527+00:00",
+  "last_updated": "2026-11-14T13:58:47.370966+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-07T13:21:21.483518+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:47.370931+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:47.370950+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:47.370957+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:47.370962+00:00",
+      "change": "impact raised",
+      "detail": "TMB 3 -> 6"
     }
   ],
   "price_reaction": {}

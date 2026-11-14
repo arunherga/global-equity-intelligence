@@ -11,47 +11,88 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
-      "business_impacts": [
-        "REVENUE",
-        "MARGIN",
-        "BALANCE_SHEET",
-        "COMPETITION"
-      ],
-      "time_horizon": "IMMEDIATE",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Overseas Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
+        "+1 Industry-level relevance",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Indian Overseas Bank. The parts of the business most likely touched are revenue, margin, balance sheet. Classified as earnings.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to loan growth, and India. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "loan growth",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to loan growth, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -85,16 +126,26 @@
       "published": "2026-10-27T08:54:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Profits of banks rise 20% on interest income, loan growth",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNc0tYWGVlWnItal9md01TVFVZcnl0clc3QzNTekl4ejBLaW9mMDI3Q2FrNDJPSFJSWUJkMy1IWGRMWnF0WERfWVJWUVNqeWJuTGw2S0JHV051TjZ6a2NTQ1BBSHFEaUdidEU0ZGNYX1pPM0FTd1VmNlFTb3dGOGRNTnJoeEVKbUd1SmZoanRvUHJXaWRDbWtZNFlYbWN6SDVDOERUOFhMS3VyWW13bmt3dGl3NUQ4VmdMLWV6Tm5fZ2UwOWpHZ1dZU1dzSVdQdTI0Q0stR25jVVDSAd4BQVVfeXFMUG9UUW5YdUVodm9sUXlydUtNX1pyRzhEdUJWSzdDZ255MUNFR1F4aGpFQjctUjhQSmRhZHVidW04d1QzX0NXZFZxaU80OE1JZmNQSGpwWVg3Q2dmb091a2hzcS1aUUpHbFVYVFdteGVuT3VvV2EwNlo2Y3dpbE9Dd1BHZXhSTGQzNV9LcGtVVGk2VGVMbnJpZ2VKVXZacUJMYXFjV3NnNjVMeWc1RHVKSl9PQy1mdjBTR2VON2VqMG1ERzBOSno2RjhGOWZRN3RnVnhKVGRiNC1NYWxiazlR",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T22:18:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "BusinessLine",
   "cluster_key": "TMB|OTHER|56%-bank-india-net-overseas-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-26T19:25:43.221831+00:00",
-  "last_updated": "2026-10-27T12:35:15.298544+00:00",
+  "last_updated": "2026-11-14T13:59:30.693089+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-26T19:25:43.221900+00:00",
@@ -120,6 +171,21 @@
       "timestamp": "2026-10-27T12:35:15.298541+00:00",
       "change": "impact raised",
       "detail": "TMB 0 -> 3"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:30.693059+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:30.693080+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:30.693086+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (SECTOR)"
     }
   ],
   "price_reaction": {}

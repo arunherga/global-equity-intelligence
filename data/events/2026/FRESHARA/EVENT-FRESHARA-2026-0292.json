@@ -1,0 +1,81 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0292",
+  "title": "Cucumber prices in Ukraine soar to S4.40 amid supply shortage",
+  "summary": "Cucumber prices in Ukraine soar to S4.40 amid supply shortage EastFruit",
+  "event_date": "2026-11-14",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "cucumber prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "cucumber prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to cucumber prices. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Cucumber prices in Ukraine soar to S4.40 amid supply shortage",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxObW1Ea0RKeFNwejBJT1lnem9ZN2NicFJUZUdmczVCTHBvbmhNTGpSVlN6QzBnY0dULW1IM1pNSi1DX19Va3U0bjY0OFVOeWpHQjRwT3VwcHpEb3owLW5pVm02Q0ZBcnZqNEpNUEFORnBxUkZTMjFRZEJld0FFOHMtV0Z1T2oyR2xWODNQRlNoOXR1bDM0bS03cXROTnpadw",
+      "source_name": "EastFruit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T07:16:37+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "EastFruit",
+  "cluster_key": "FRESHARA|SUPPLY_CHAIN|cucumber-price-s4.40-soar-supply-ukraine",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-14T13:52:00.088673+00:00",
+  "last_updated": "2026-11-14T13:52:00.088754+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-14T13:52:00.088742+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

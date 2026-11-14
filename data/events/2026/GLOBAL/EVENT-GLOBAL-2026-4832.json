@@ -11,14 +11,13 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
-        "INPUT_COST",
-        "MARGIN",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -32,7 +31,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -41,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -49,20 +48,19 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
-        "INPUT_COST",
-        "MARGIN",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -76,7 +74,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (steel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -85,7 +84,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -93,20 +92,19 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
-        "INPUT_COST",
-        "MARGIN",
-        "PRICING"
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -120,7 +118,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (steel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -129,7 +128,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -137,7 +136,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are input cost, margin, pricing. Classified as raw material.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -161,16 +160,26 @@
       "published": "2026-11-04T06:07:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Construction Costs Up 11.5% as Steel Prices Surge",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT1hkLVJDa3gxRkFlU0hnUjdCdXNnZFZydDdyRWNxdUNoaklpS181YTV3U1hRTGhLQVRvaV9WWGhkZmh0aGE4dWJiNm5OOGw0Tkx0b090Q1B4NGVEcXpQNkxyejdUOGZzcW5sVlV6MDM2YzJnSFQ3UFRjNWpNQjZxbXpLc21RaXAtOHNZZVV2TWNyLW9CVlFkYWJMbVN1UQ",
+      "source_name": "Roofing Contractor",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T19:00:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Yieh Corp.",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|COMMODITY+RAW_MATERIAL|expected-price-remain-stainless-steel-taiwan",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-29T13:20:51.497624+00:00",
-  "last_updated": "2026-11-04T15:00:24.190093+00:00",
+  "last_updated": "2026-11-14T13:59:26.104010+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-29T13:20:51.497686+00:00",
@@ -181,6 +190,26 @@
       "timestamp": "2026-11-04T15:00:24.190074+00:00",
       "change": "sources added",
       "detail": "Yieh Corp."
+    },
+    {
+      "timestamp": "2026-11-14T13:59:26.103977+00:00",
+      "change": "sources added",
+      "detail": "Roofing Contractor"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:26.103996+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 2 -> 3"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:26.104001+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 3 -> 5"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:26.104005+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 3 -> 5"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,141 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1673",
+  "title": "HDFC Bank faces US securities fraud investigation",
+  "summary": "HDFC Bank faces US securities fraud investigation scanx.trade",
+  "event_date": "2026-11-13",
+  "event_types": [
+    "FRAUD"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REPUTATION",
+        "MANAGEMENT",
+        "COMPETITION"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a competitor (HDFC Bank) is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
+        "HDFC Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank. The parts of the business most likely touched are reputation, management, competition. Classified as fraud.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REPUTATION",
+        "MANAGEMENT"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "+4 Fraud, cyber or product-failure incident",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "FRAUD is unfavourable for the company"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation, management. Classified as fraud.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Core domestic interest income is unlikely to be immediately impacted, but revenue from international operations, fee-based investment banking, or US deposit/capital raising activities could face headwinds due to reputational damage.",
+        "margin_effect": "Net interest margins and operating margins could experience mild compression due to potentially higher international funding costs and an uptick in non-interest operating expenses related to legal and compliance matters.",
+        "cost_effect": "Operating expenses will increase due to legal defense costs, independent audit expenses, legal advisors, and potential compliance remediation infrastructure required by regulators.",
+        "competitive_effect": "The bank's premium valuation and reputation for strong governance relative to domestic peers like ICICI Bank or Axis Bank may suffer short-term erosion, potentially impacting institutional capital flows.",
+        "regulatory_effect": "Increased regulatory scrutiny from US entities such as the SEC or DOJ, with potential secondary scrutiny from Indian regulators (RBI and SEBI) regarding corporate governance, public disclosures, and internal controls.",
+        "short_term": "Stock price volatility in both domestic equities and ADRs, elevated legal spending, and heightened public and media scrutiny over the next 0-3 months.",
+        "medium_long_term": "Over 3 months to several years, the bank faces potential financial penalties or settlements, higher cost of international capital, and long-term regulatory oversight if systemic compliance failures are proven.",
+        "second_order_effects": "Heightened risk aversion in internal loan approvals leading to slower credit growth, potential changes in senior management or board oversight, and higher borrowing costs in foreign currency bond markets.",
+        "key_uncertainty": "The precise nature, severity, and timeframe of the alleged securities fraud and whether formal charges or civil complaints will be filed by US authorities.",
+        "monitor_next": [
+          "Formal regulatory filings or statements from US agencies (SEC/DOJ) specifying allegations",
+          "Official clarifications or responses issued by HDFC Bank management",
+          "Statements or regulatory interventions by the Reserve Bank of India (RBI)",
+          "Foreign Institutional Investor (FII) equity flow and ADR price movements",
+          "Legal and compliance expense disclosures in upcoming quarterly earnings reports"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "HDFC Bank faces US securities fraud investigation",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM1F4TkdNSEhXVVcybG9FckVrZmhXSjg2eFQ1dnhtMlNvb3FPNEpFUEQwWkJrR3hkajZWS2RaSGZRV2psUHp4bFRiMnlyRWhTSG1lUHp3a0NKRHN6c2xpV1lsLXpPbUVEQmVrZVhESFZTMzA1WW1DQjk5WjJIYWJwcll0bzhES0hQc0dkbmM1X2J2Yk5NN1l6aVV0Nk56WFBKQzV4R3ZjUlpuZw",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T23:03:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "scanx.trade",
+  "cluster_key": "HDFCBANK+TMB|FRAUD|bank-faces-fraud-hdfc-securities-usa",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-14T13:50:39.978513+00:00",
+  "last_updated": "2026-11-14T13:55:19.211100+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-14T13:50:39.978579+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:55:19.211080+00:00",
+      "change": "ai analysis",
+      "detail": "HDFCBANK via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

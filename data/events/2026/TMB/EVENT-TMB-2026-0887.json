@@ -9,40 +9,76 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "gold loans",
-          "relationship": "SECTOR",
-          "weight": 1.7,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "+2 International market development",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +92,56 @@
       "published": "2026-10-27T12:17:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Dodging bullet loans hurt gold NBFCs after RBI’s revised lending rules trigger repayment stress",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPbmVhdEVMcl9DcjNBREFwbFgwV0NkZmpEYWl1XzBNUWwxT0ZvWlRNMDV0LXMtQWpPZzByZV9vbVNnRzhtOFFMbURRYVVUU3ZfR25pTi16dDFENGlEVTdUaTdvUkxlLU9yR3F0Z2JaUmVTeDJOdDAwVEJHU1Q5c3B3RHg3eWRNdFUxTjN6Z0ttd3MyUHdjb0pUSEdqQzZvVE1YeW80NG5CanJHRUpKOFNZX3J2cmZTa2lhTXJZd19uVFBldmxWNnBrYnhBM1J6WW9nMG0ydnlaRTNEb1IwUXRmYmpsXy00RXoxdzN2TC0yajBWN1A2RC02QzVtWEx0dm9ScU1nRjBxLUJHWlNXOG5aUlk0Y9IBkwJBVV95cUxPbmVhdEVMcl9DcjNBREFwbFgwV0NkZmpEYWl1XzBNUWwxT0ZvWlRNMDV0LXMtQWpPZzByZV9vbVNnRzhtOFFMbURRYVVUU3ZfR25pTi16dDFENGlEVTdUaTdvUkxlLU9yR3F0Z2JaUmVTeDJOdDAwVEJHU1Q5c3B3RHg3eWRNdFUxTjN6Z0ttd3MyUHdjb0pUSEdqQzZvVE1YeW80NG5CanJHRUpKOFNZX3J2cmZTa2lhTXJZd19uVFBldmxWNnBrYnhBM1J6WW9nMG0ydnlaRTNEb1IwUXRmYmpsXy00RXoxdzN2TC0yajBWN1A2RC02QzVtWEx0dm9ScU1nRjBxLUJHWlNXOG5aUlk0Yw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T00:00:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI’s revised gold-lending rules push NBFCs into repayment stress",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa1o4eU9BdW1yUmZ5aHRTX3Z5MGw2ZFZmaHJXU2ZoMU9UMXFEaHFhWHlLeUJGcllwdjVlZkFWYngxN05zRVplR0E3d1VuYnRUelhtQ1VST2dhTmhQcXVzV0hsZTBqU2JsU2djY0lwb3BsX2dHX0NmTmNpUlFtdjdEdUhycFdIYUljcFJaOS1RbV83bTZYRVhHekJHMA",
+      "source_name": "Elets BFSI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T10:58:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Financial Express",
   "cluster_key": "TMB|OTHER|faces-gold-loan-nbfcs-rush-stress",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-27T12:31:48.560369+00:00",
-  "last_updated": "2026-10-27T12:31:48.560431+00:00",
+  "last_updated": "2026-11-14T13:59:33.838036+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-27T12:31:48.560422+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:33.838007+00:00",
+      "change": "sources added",
+      "detail": "Elets BFSI, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:33.838027+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:33.838033+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.38,
+      "confidence": 0.49,
       "business_impacts": [
         "PRODUCT",
         "REVENUE"
@@ -45,7 +45,6 @@
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 International market development",
-        "-3 Passing mention without a quantified development",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
@@ -54,7 +53,7 @@
       "confidence_reasons": [
         "best source quality 6/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -73,21 +72,41 @@
       "published": "2026-11-09T09:45:22+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Shinsung E&G unveils 650 W bifacial TOPCon solar modules with 23.25% efficiency",
+      "url": "https://www.pv-magazine.com/2026/11/13/shinsung-eg-unveils-650-w-bifacial-topcon-solar-modules-with-23-25-efficiency",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-13T15:41:22+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|bifacial-launch-module-solar-solarwatt-topcon",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-09T16:40:33.060323+00:00",
-  "last_updated": "2026-11-09T16:40:33.060403+00:00",
+  "last_updated": "2026-11-14T13:58:56.081899+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:40:33.060392+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:56.081875+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine"
+    },
+    {
+      "timestamp": "2026-11-14T13:58:56.081895+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

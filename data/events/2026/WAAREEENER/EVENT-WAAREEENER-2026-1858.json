@@ -9,73 +9,41 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
-      "confidence": 0.62,
-      "business_impacts": [],
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "ALMM",
+          "exposure_type": "COMMODITY",
+          "term": "copper",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "cell manufacturing",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Approved List of Models and Manufacturers",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "MNRE",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Ministry of New and Renewable Energy",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "solar cells",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company"
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "copper is an input cost and is moving up"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "copper over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to ALMM, and cell manufacturing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -139,16 +107,26 @@
       "published": "2026-11-06T12:02:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Copper’s $13,700 LME Zone Is Under Pressure as Global Growth Signals Shift",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONk9KVWNDNFVlZTBFNzM2Z0lpTHRWRFNsRTQ2aTliQUU2RXItQnllZGNaUlRuTGo4aGJ1cEg5ODR1N2xzWHEzbmJuSVFQUllSUnJuZmFnU2p4ZWY5dTFXcmIxeHkzVFVBVnlYUUlYQnNLYklPN0xKVDJDMy1wUWtkWlJFQWZvbFk2Q19maXVlR1VhRlFhdkN5OFRUel9ZeDcxNW8yZmE2U2lzM2ZY",
+      "source_name": "kalkine.ca",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T15:10:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 3,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|OTHER|retrofits-rise-under",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-10-28T19:41:52.259833+00:00",
-  "last_updated": "2026-11-06T14:43:22.515250+00:00",
+  "last_updated": "2026-11-14T13:59:09.557268+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T19:41:52.259901+00:00",
@@ -174,6 +152,16 @@
       "timestamp": "2026-11-06T14:43:22.515232+00:00",
       "change": "sources added",
       "detail": "Mercom India, Mercomindia.com"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:09.557243+00:00",
+      "change": "sources added",
+      "detail": "kalkine.ca"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:09.557263+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

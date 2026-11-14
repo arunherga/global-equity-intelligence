@@ -55,6 +55,48 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to State Bank of India, and India. The parts of the business most likely touched are balance sheet, revenue, competition. Classified as acquisition.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
+      "business_impacts": [
+        "BALANCE_SHEET",
+        "REVENUE",
+        "COMPETITION"
+      ],
+      "time_horizon": "LONG_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Axis Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Acquisition, merger or divestiture",
+        "+3 Strategically important competitor development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "Axis Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are balance sheet, revenue, competition. Classified as acquisition.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -67,21 +109,61 @@
       "published": "2026-10-28T17:04:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Lombard Discloses Axis Bank Share Investment",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2pqMFVaRXl3UzRoTC1QZzZhQ3FVaFBqUHRzcFpNNWlPR3JIWFhqQWpTRHZWUGpsS3hGRDRpRk9rdldWOTcyTEdzTUMxclVVUTVyOTRRR0FWQjJiaDJ0YlpzaGF2dkVHMF9ScXJzSUZQRmhVUHNsRFV2cjVDN3JHOEhhRlZmektGSGh4UHdKNGFQLWFpYklwTnk1ZWlkemZ0RXJqVQ",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T17:25:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Lombard acquires 0.13% stake in Axis Bank for ₹0.40 billion",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWTdDQUdfZm5IaWJOTW5oODhiY1YzaEQwZDJnRlBIRWpXRThLbDB1cDZyajVvbEFHWm9Va2NfQW1ZNTVCODBfSkdSYV9WUlNxMDZ3ZDNYQnpDWU9mUWdhaC0wUVA1MndhajV6UGxHSmdJRGlNQXJXYVg5UnZ0QTc2TWFCMA",
+      "source_name": "InvestyWise",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T16:46:40+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "ICICI Lombard acquires ₹400 crore in Axis Bank shares, stake rises to 0.13%",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNd0FfMVVQcVdpYU9pTnYwUE9PZzVkN3NvOW5EWUc3X3hvTWVoMlotNmVGd05BSmt2emdtOUR0a3ZJQS1UT3hVV0w0VGV6N0tNamFVTVZ3SnM1N3JEcWpoN291VVJWYWhyYjVuUENPdk1NSzdzUFBDOXN4UEFYMVBoVEpsRnJDM0J3eVoxV1FiVEdTdkxpOEtnUmFVYlZkS0x3dGpEY2pYZk42QXNuNjJXUE9MXy1qOXBfVTRzcEVSTTU",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T17:11:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK|ACQUISITION|1.72-acquire-icici-lombard-state-worth",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T19:44:56.282671+00:00",
-  "last_updated": "2026-10-28T19:44:56.282772+00:00",
+  "last_updated": "2026-11-14T13:59:18.734933+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T19:44:56.282760+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:18.734908+00:00",
+      "change": "sources added",
+      "detail": "InvestyWise, TipRanks, scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:18.734928+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

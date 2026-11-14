@@ -10,16 +10,24 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
-        "DEMAND"
+        "DEMAND",
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Vikram Solar",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "REGULATION",
           "term": "PLI scheme",
@@ -31,7 +39,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,9 +52,10 @@
       "watch_next": [
         "notification text and timelines",
         "budget or allocation attached",
-        "which players qualify"
+        "which players qualify",
+        "Vikram Solar's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to PLI scheme. The parts of the business most likely touched are regulation, demand. Classified as government policy.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Vikram Solar, and PLI scheme. The parts of the business most likely touched are regulation, demand, competition. Classified as government policy.",
       "ai_analysis": null
     }
   },
@@ -61,21 +69,41 @@
       "published": "2026-11-12T12:05:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RIL, Vikram Solar among 22 bidders for 10 GWh battery storage capacity under PLI scheme",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPNmRfMjRSdFN5cExOcmFqOE95cXd1MlFjZ2t0QkVkMDlYWlZwS095NlVxN3NDZDM1d21iZ2RsQkNwdjdKZmNKZmROUTRwVkY2TG1LRzBBcXE2aGh0ZnlqbkpjR0lFbFBRbXlMOVNON2gzQ2xDVVl1SlczX1ZBTGxKaXg1V2hJbGhsNWU3TGxvTlU4bHBZVHVCazFFMFhyOWppU3d4Y2tUVURNSHJFX2ZhSDFXVURQcmxuYTlNQ3VtRkxjUVNDU242NS1wM1hFOHc1RU9GS3pDTzhDWmt0dkN2WThhdmxiOUVQXy1RS0V5ZGHSAfQBQVVfeXFMTkJnMC1ySFo4UzhaMlE5TlNucjNJZ05IYjNSb1B4eVBWUlBjeE9wVmFvbTFZcVlrM21nOXR5N05RdmhxOXlzY3NkTTJQNWFTalh0bFNBbHJwaGtQQTFicGhtZ3VrMU1uQ2tzYmY3bzVsajdTV2hFd19RZnFsQjMxQTNkSm5EYVJTTE0wODVGcXBxLVpBZWV0d2ZQUi0yb2pIdU92WkpVWmtST0tEc0VieEdoODZIQ09lRWk4a1RWWDhrQTQ4MkV1cWJhcm8zTEdZZmNaY2Y0Um5xSGp2ZU9neWJKU2JpeWtPS1p5QWtPWXRRVHF0Zw",
+      "source_name": "ET Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T04:52:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Pragativadi",
   "cluster_key": "WAAREEENER|GOVERNMENT_POLICY|acc-battery-bids-gwh-mhi-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:36:59.931709+00:00",
-  "last_updated": "2026-11-12T15:36:59.931788+00:00",
+  "last_updated": "2026-11-14T13:59:50.580337+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:36:59.931777+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:50.580314+00:00",
+      "change": "sources added",
+      "detail": "ET Manufacturing"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:50.580333+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 3"
     }
   ],
   "price_reaction": {}

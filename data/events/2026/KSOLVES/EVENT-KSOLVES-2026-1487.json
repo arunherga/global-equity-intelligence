@@ -11,46 +11,44 @@
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "relationship": "DIRECT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.65,
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
-        "DEMAND",
-        "COMPETITION"
+        "DEMAND"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Infosys",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Earnings or guidance at a related company",
-        "+2 Major industry-level development"
+        "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
+        "best source quality 3/10",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "assumptions behind the guidance",
-        "execution track record",
-        "Infosys's follow-up announcements"
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Infosys. The parts of the business most likely touched are revenue, demand, competition. Classified as guidance.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -144,16 +142,26 @@
       "published": "2026-10-26T04:07:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ksolves India Q4FY26: ₹43 Cr Revenue, AI-First Strategy & FY27 Growth Guidance of 18-20%",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQblBXZGNkYUN4OHFoaTN0bDhWQllhUmpRak5YTjlrVGpoV09vWUNkQV96cGFGQjdHcVUxcVFkdlZDWU1MdGR3ZHdSQU9DTERyNVFwSmlGSlRKQTlGbUl1Q2YyUHl0T2pGekpJYnFISEduV1llLURJdXMza1d4ZUlhQjFZU1pVNTZHcVQtRmZzczlVekowVEo5dGRFSzdxV3lWSTk2ZTZndG9UYTRWWGFNMWNZZmNYbGFWd1pzYWc3OWs",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-13T23:21:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 9,
+  "article_count": 10,
   "source_count": 2,
   "primary_source": "Analytics India Magazine",
   "cluster_key": "KSOLVES|GUIDANCE|29%-fy27-infosys-revenue-rise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-23T12:03:26.147937+00:00",
-  "last_updated": "2026-10-26T13:38:37.566838+00:00",
+  "last_updated": "2026-11-14T13:59:32.026112+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-23T12:03:26.148012+00:00",
@@ -204,6 +212,16 @@
       "timestamp": "2026-10-26T13:38:37.566829+00:00",
       "change": "impact raised",
       "detail": "KSOLVES 3 -> 7"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:32.026089+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-14T13:59:32.026108+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 7 -> 8"
     }
   ],
   "price_reaction": {}
