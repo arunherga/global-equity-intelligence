@@ -9,17 +9,25 @@
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "DEMAND"
+        "DEMAND",
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "SCCL",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "coal production",
@@ -29,24 +37,24 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "assumptions behind the guidance",
-        "execution track record"
+        "execution track record",
+        "SCCL's follow-up announcements"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to coal production. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, industry exposure to SCCL, and coal production. The parts of the business most likely touched are revenue, demand, competition. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -60,21 +68,41 @@
       "published": "2026-11-14T12:19:26+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Overburden removal must keep pace with coal production targets: SCCL CMD",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQV3JaNDVodHJSSjk5bmVReGFSekxCbTd1cEtJS3ZTR0pzVWktcGV3cXNlM1UxV2dsM2RkeHpGOWdsTm9saS1zcnhqTGNmM05pRGtIZkExYzlFOUgtYkhKTkZNSTU3TmlxMUpGNHFPMzNpZ2hBUW1oQlZoa0gxTHMtNzJ2RmhNNndlcjlPb0MtUVRyb09BdmZRWTduRUFvYWZmZjJsVnRvakNDaDVVUVliRms0VkxjS0NVekwyd3E2NU1vdy1hOG1paVZ3N2doSW1YVjdHaHBrVdIB3gFBVV95cUxPR1BPTTVYWWh3YjdxX3U5WGpLNXZ1SjY3RFRmeF9oSW9fWlRGU1pyWUNTVTZHSUhWLUNRdzBpdWc2RF9IZG5aUEJGcUQtbXhOZ19JS2dlVTBtbkRHNTdfUng2azY1UGg3Z2hkSGZBQ1NvejJLdXJEc1RnNTZJbHdmOUQtc1FtdEdrWlpUYkcxZEIwMFR2dWlsVVdITEVXUE1pLTlGcXU5V0htbGNxZkVOSy1DaHpsV2FyTElKTTZncklMT0otU3RIa2RYWVpxZV9HTEpZX0JEWGdvSy1MTFE",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T14:16:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Hindudayashankar",
   "cluster_key": "COALINDIA|GUIDANCE|coal-keep-must-overburden-pace-removal",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:53:09.045231+00:00",
-  "last_updated": "2026-11-14T13:53:09.045315+00:00",
+  "last_updated": "2026-11-14T18:56:02.913469+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:53:09.045305+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-14T18:56:02.913444+00:00",
+      "change": "sources added",
+      "detail": "The Hindu"
+    },
+    {
+      "timestamp": "2026-11-14T18:56:02.913463+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
     }
   ],
   "price_reaction": {}

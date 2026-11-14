@@ -13,7 +13,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -33,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -130,16 +130,26 @@
       "published": "2026-11-10T13:45:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Silver price in Pakistan for today, November 14, 2026",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaU5lRWJGbjFycHNBMllCRk0yZmJDVENPQnRoa19KX0lYa2VHQWViRldKNU9NSDl2c2YyTUlVQmEtcG9ocjFDQnVidXBrWHA3WkRiVmRrZnBrM0pLRnU2eEFNRURnM1h6akEtUnJhQkxHRFBKX0gwOUhxeWpXSFZWUG9ZMkY0bngzVUZZaVNIUXgtSGdJdVk3dkh6S1J3dkk",
+      "source_name": "Profit by Pakistan Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T03:53:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|gold-gold-november-rate-silver-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:56:42.944624+00:00",
-  "last_updated": "2026-11-10T20:41:23.926100+00:00",
+  "last_updated": "2026-11-14T18:55:45.575431+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:56:42.944684+00:00",
@@ -170,6 +180,16 @@
       "timestamp": "2026-11-10T20:41:23.926093+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-14T18:55:45.575408+00:00",
+      "change": "sources added",
+      "detail": "Profit by Pakistan Today"
+    },
+    {
+      "timestamp": "2026-11-14T18:55:45.575425+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
