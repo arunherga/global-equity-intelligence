@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-2808",
+  "title": "Micro Copper futures Quotes",
+  "summary": "Micro Copper futures Quotes CME Group",
+  "event_date": "2026-11-15",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "copper",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "copper over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to copper. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Micro Copper futures Quotes",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVFMwSXpyY3M3cmZwQ0V1VmtCOUhoS0Z3XzFBY2g0YTlSa1BjTHE5SjdZNVFYNTU1UkVRMU9tQm5UcjA3LTJFeThDWlFkeUhZY3IxOGJWazJuVktVNGxjdk1ubG9uTUFFbmFYeGVCalphSEpFMGdySXpFcG9UWGdCSTcwdjZJT01uVTMtWnNNcEwycE56QlByRGliTE5zTnhFbWVkdk9va1hucGpPZ3pDUnA0dk1RM1d5T2Jjb3FvUDMyc0xnSnJoT002WVExSjZ0UDMyZU9HZklKdG92a1E",
+      "source_name": "CME Group",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T01:41:57+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "CME Group",
+  "cluster_key": "WAAREEENER|OTHER|copper-futures-micro-quotes",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-15T19:31:24.359899+00:00",
+  "last_updated": "2026-11-15T19:31:24.359965+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-15T19:31:24.359956+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

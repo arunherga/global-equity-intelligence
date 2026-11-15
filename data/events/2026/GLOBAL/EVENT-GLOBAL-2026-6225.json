@@ -99,23 +99,14 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "coal gasification",
@@ -132,21 +123,22 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and coal gasification. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to coal gasification, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -200,16 +192,26 @@
       "published": "2026-11-11T04:55:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Private sector gives the cold shoulder to second round of coal gasification scheme",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQlBWSmJZWWxvMnJndGlIeThRWWJHdFVtZjZ4ekJKOEgwR21WWkpxUHZkem1IZDczaWJIWGxIVE1XRnUwR2xqV0VXdk80OFlfRTc3RnV6bUxRRkVMN3FNb0ppTzZVcDVDRnNtYXdkajRjV1RycEd4Wmt4VE51RUV1LVhUNHdqaW9sTlVGLU42UGFPTHZDVFp2MjVaZHJ4emFBYXNHQ2lyVG5PaUZ5ZlBPUlJXdFZLdW1oX1lvQ3RlZlo3cFU4RWVEWUhjY2bSAdoBQVVfeXFMUEQ5RHA5YVBPZVBDNE5yTHBkdldPOXQ0alAxS2lqN1NMX2s0ZHRZZ2p5d0ZVOGctZ1ZYaENsMW9FWkdtVUxQZnB1a2pZWktuTnBlVTE1NV9CUGlaRi1ERWlCcUxhNFFWd1hFdTYzR2NKVHdUVGd4Q1psc2Jwell3d1diWVlPSThpdnBRVm9VZnA3c2lxYVVwR1pfRFA2TkU0bXJDUUhrWXBlaDQwbnNRQnhXNkhpdG0wU3h1TmxPMEU3dDBaeFVzUEhrVEwxdW9sNUFZSHliV3YxQ0E",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T10:55:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|applicant-coal-ntpc-round-second-sole",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T20:39:40.655657+00:00",
-  "last_updated": "2026-11-11T14:48:40.928640+00:00",
+  "last_updated": "2026-11-15T19:35:23.827433+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T20:39:40.655734+00:00",
@@ -225,6 +227,16 @@
       "timestamp": "2026-11-11T14:48:40.928622+00:00",
       "change": "sources added",
       "detail": "Daily Pioneer, Swarajya"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:23.827407+00:00",
+      "change": "sources added",
+      "detail": "Fortune India"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:23.827427+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

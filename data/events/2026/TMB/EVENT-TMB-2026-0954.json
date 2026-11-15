@@ -12,14 +12,13 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "MIXED",
-      "confidence": 0.3,
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
-        "MARGIN",
         "PRICING",
         "INPUT_COST"
       ],
@@ -37,24 +36,25 @@
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
         "+2 Movement in a relevant commodity",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions",
         "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "assumptions behind the guidance",
         "execution track record",
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)"
+        "whether the price move persists",
+        "contract repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are revenue, demand, margin. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -78,16 +78,26 @@
       "published": "2026-11-11T21:07:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price forecast may fall another 500 USD/ounce",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN3ROUmhKbTVjRnRaa3RBb1NLT0xOYTItYUhqWDNHN1VJTDl1a3ZLWmRzbTk0LXBVYm5LaGZYZXk0cTZsRU9KNms5MGNnSVNHRXc4WHRsNzRVWTNQV1BzajRuQWlkOEdSengzTXRHUkxXZm82TnNQcVRsbXZMNEo0VjZjZkVGbjVycmdXbFM3SzZYQlZU",
+      "source_name": "Laodong.vn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T11:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "FXStreet",
   "cluster_key": "TMB|GUIDANCE+INTEREST_RATE|below-fall-forecast-gold-price-xau/usd",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:19:00.158378+00:00",
-  "last_updated": "2026-11-11T21:38:01.737021+00:00",
+  "last_updated": "2026-11-15T19:35:25.209019+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:19:00.158465+00:00",
@@ -98,6 +108,16 @@
       "timestamp": "2026-11-11T21:38:01.737003+00:00",
       "change": "sources added",
       "detail": "Mining.com.au"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:25.208993+00:00",
+      "change": "sources added",
+      "detail": "Laodong.vn"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:25.209014+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

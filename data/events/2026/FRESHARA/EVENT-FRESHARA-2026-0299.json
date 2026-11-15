@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0299",
+  "title": "Vegetable prices remain high as Tomatoes, Potatoes and Onions sell above official rates",
+  "summary": "Vegetable prices remain high as Tomatoes, Potatoes and Onions sell above official rates Daily Ausaf",
+  "event_date": "2026-11-15",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Vegetable prices remain high as Tomatoes, Potatoes and Onions sell above official rates",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbk02V185SjNkX2FfOWF0S0txUHZOVy1ObUtsUE40MERVVndTYkRRd2xFVHlsT05MNHZWeU15ZWlKVTRPMHY0X2EyTnZwVjVKTl9NV2FaSzVaRGR3LVU1QS1rNUJhREw2d25lQzlKaVVvRzVTUEZnd3htZWVLS1VRVzJ5UzdYZVpMcXppdEJwYlJoX0dNQnJGTV8zOFF5WTNUaXhMVXdWY0FCN0RoRHVHb0hpQnVOU2M4Y0sxb0tORdIBxAFBVV95cUxQZnJvMzJYckZLOHdfWE13aTJKM25YQmw4MzNTM05UZkhPbGZNU1gyWWxUS1lXdFhqWDRQVDZHZlJyRHJWMVMzTERiLWlJZHlTamxZVk5Vck5CS2VicGZ4azBSbmRxNUU3MW1BeW05aDlSVUVqeTF2dUVueEJUeEJEVjdMbnBMR1pSYWJLM21wVkY2NjFWLURpUDY5ZjItS2hUU2dCaHdCMW4ycEZLZWNqSnQxSU5WdHZ6X1YxYVRSRW9uUUR2",
+      "source_name": "Daily Ausaf",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T11:59:22+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Daily Ausaf",
+  "cluster_key": "FRESHARA|COMMODITY|high-potatoes-price-remain-tomatoes-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-15T19:33:28.439557+00:00",
+  "last_updated": "2026-11-15T19:33:28.439647+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-15T19:33:28.439637+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

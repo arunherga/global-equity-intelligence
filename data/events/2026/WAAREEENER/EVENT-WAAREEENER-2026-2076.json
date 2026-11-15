@@ -9,36 +9,37 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.28,
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "CAPACITY",
-        "BALANCE_SHEET"
+        "BALANCE_SHEET",
+        "INPUT_COST"
       ],
       "time_horizon": "LONG_TERM",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "solar capacity addition",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
+          "exposure_type": "COMMODITY",
+          "term": "polysilicon",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "polysilicon is an input cost and is moving up",
         "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -47,7 +48,7 @@
         "demand visibility for the new capacity",
         "effect on return ratios"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to solar capacity addition. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to polysilicon. The parts of the business most likely touched are capacity, balance sheet, input cost. Classified as capacity expansion.",
       "ai_analysis": null
     }
   },
@@ -61,21 +62,41 @@
       "published": "2026-10-31T15:06:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Polysilicon Market To 2035: Fab Capacity Expansion Supports Forward Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ0prWVdKQkxfdFNQRmZtbjNaRFEtQlh1a094OGpVcW9vaUs1enllcERzVmMwY1BvZFI3dk1UVVJFZkx1LWV4MzYtTFpxRXByTmh5VGV0elp0N1pYNHU2eUlUUmdBcV91MEJydDNJc0V6bHNwTkdMS0lOZTkwcmNfemZMbWJUWEdjdU9sUWhzV0JiMmtrNHlxaDBqRDh1UlRhLUlHVUgzVFN4SUc5X1loTWE3UWd3UEk",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T13:56:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|CAPACITY_EXPANSION|2035-boxes-capacity-junction-market-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T17:51:41.575215+00:00",
-  "last_updated": "2026-10-31T17:51:41.575294+00:00",
+  "last_updated": "2026-11-15T19:35:35.045886+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T17:51:41.575284+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:35.045861+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:35.045880+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

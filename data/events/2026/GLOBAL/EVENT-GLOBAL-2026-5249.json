@@ -4,21 +4,21 @@
   "summary": "Global PEG market to grow at 4.2% CAGR through 2035, driven by pharmaceutical and specialty chemical demand Indiatimes",
   "event_date": "2026-11-02",
   "event_types": [
-    "INDUSTRY_DEMAND"
+    "INDUSTRY_DEMAND",
+    "OTHER"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "DEMAND",
         "INPUT_COST"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,36 +29,34 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Major industry-level development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "specialty chemicals is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "specialty chemicals over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to specialty chemicals. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to specialty chemicals. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "DEMAND",
         "INPUT_COST"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -69,22 +67,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Major industry-level development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "specialty chemicals is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "specialty chemicals over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to specialty chemicals. The parts of the business most likely touched are demand, input cost. Classified as industry demand.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to specialty chemicals. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -98,21 +95,51 @@
       "published": "2026-11-02T07:11:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Chemical Distribution Market 4.2% CAGR to 2035 Driven by Specialty Chemicals Demand - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNd3A5NzRiRjFsdVVMTzZjdnU5MG9aanUwQV83eWYtY2dsQV9JVWZVaFM3eEp3Sml2QnZhWlBzWFhWZ1RDR3pjR2Z4ZUJtUWdNMml0WGFtN2hkSGpNZDB0aHp3UHJwWl9EMlFfdGt6dVhIaHR2cHlURnBVWTU0VkJzdEhVdWsyMDduODN6X0lzU0ZhRXlhWmRjb2NJVXBkXzhOMS1CSnFLQ2h0VnhVNThvRHZuZDM",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T20:26:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Indiatimes",
   "cluster_key": "RAVEL+SUPRIYA|INDUSTRY_DEMAND|4.2%-cagr-global-grow-market-peg",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:30:51.053825+00:00",
-  "last_updated": "2026-11-02T22:30:51.053894+00:00",
+  "last_updated": "2026-11-15T19:34:50.089032+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:30:51.053886+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-15T19:34:50.088992+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-15T19:34:50.089010+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-15T19:34:50.089019+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-15T19:34:50.089026+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

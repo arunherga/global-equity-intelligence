@@ -134,6 +134,44 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to diesel prices, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -156,16 +194,36 @@
       "published": "2026-11-11T11:54:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Cement and Steel Prices in Pakistan Today – November 15, 2026",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN1VicG5PYWxLUlNyZ2ZERFVHZ0RmckN5aVdhYU5mOVJzYlBLcTRmSlFjdDRZczZqNkotTDdUbVJqbEtWZHhPaS1zN3lQck9CSV9nX1ZPWDNFYjB5ejhQRWVaSkp5emlyWk83OWlKSzlHaGNLVDhmZ3lpNjJ0RG9hSGZtMjhCWDJCZGx2NlNJS2ZSNnh4QmRKRW930gGfAUFVX3lxTE1LaDQ3NDBvT3RGTUxKb3VZUS1GZDJUXzVKSkd3MFo4U3p1V0FuRlVtblV4aXVrd1oweVh1UnZ2VTdjdEpHRTM2aHZOMjF6M3BzNTNwSkI2T0swaDlYUVI3bnR1aG0wMTBIdkk0ZGlFMHNNek5LUGMwYXBoNHYzdGNkbU5IOVluQjFrRzU3aGduU21RbnlpbWlLLVA1ZUMyVQ",
+      "source_name": "Daily Ausaf",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T04:37:39+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Diesel Price in Sonepat: Diesel Rates, Sonepat Diesel Today (14th November 2026), Rs. 95.37/Ltr",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tWjhNdUdpamFSMFlpa09DTHZoNTltaXV3LWUwUUFRUHNiejQ0eTZ1TmFrQl90dkFxTEJSNzRaaFdVdWwySWdhRTRabVAyYnp1RzhuTVMyOFpnOEQwcmJCazVfMGxIemJzaTBYaC1Lbm1SR2c1",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T09:36:58+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Daily Ausaf",
   "cluster_key": "ASHOKA|OTHER|cement-november-pakistan-price-steel-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-02T22:32:38.683346+00:00",
-  "last_updated": "2026-11-11T14:49:20.683823+00:00",
+  "last_updated": "2026-11-15T19:35:20.098279+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-02T22:32:38.683411+00:00",
@@ -186,6 +244,21 @@
       "timestamp": "2026-11-11T14:49:20.683819+00:00",
       "change": "stock added",
       "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:04.776056+00:00",
+      "change": "sources added",
+      "detail": "Daily Ausaf"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:04.776076+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:20.098259+00:00",
+      "change": "sources added",
+      "detail": "India Today"
     }
   ],
   "price_reaction": {}

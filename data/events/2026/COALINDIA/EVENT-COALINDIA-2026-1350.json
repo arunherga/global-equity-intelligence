@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-COALINDIA-2026-1350",
+  "title": "Lee government pledges coal exit, but imports surge 10.8% as LNG prices triple",
+  "summary": "Lee government pledges coal exit, but imports surge 10.8% as LNG prices triple 헤럴드경제",
+  "event_date": "2026-11-15",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "LNG prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (LNG prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "LNG prices is a selling price and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to LNG prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Lee government pledges coal exit, but imports surge 10.8% as LNG prices triple",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8zNmJaRUpXWTBrcGtqejBkLW90UUZ4dmZGc1BVUUsyb3BpSWNzeURzcHBvR2RUYlAwQjR3QWxrWnBtcDctZmg2QWFaREVVdFNTQWdiS2h6MA",
+      "source_name": "헤럴드경제",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T02:16:24+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "헤럴드경제",
+  "cluster_key": "COALINDIA|COMMODITY|coal-exit-government-import-lee-pledges",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-15T19:31:30.892757+00:00",
+  "last_updated": "2026-11-15T19:31:30.892846+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-15T19:31:30.892835+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

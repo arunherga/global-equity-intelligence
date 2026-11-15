@@ -4,45 +4,99 @@
   "summary": "Indian Bank Stocks Worth Watching As Rising Rates Reshape Lending Margins Simply Wall St",
   "event_date": "2026-11-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
+      "relationship": "MACRO",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "MIXED",
+      "confidence": 0.26,
       "business_impacts": [
-        "COMPETITION"
+        "REVENUE",
+        "MARGIN",
+        "DEMAND"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Indian Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Economy-wide relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "macro relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Indian Bank's follow-up announcements"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.26,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -56,21 +110,66 @@
       "published": "2026-11-06T18:25:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "3 Indian Bank Stocks Worth Watching As Higher Rates Lift Lending Margins",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQjVhWDhpSDJfd0h3TloxekZYanlaOGUxODJBVy1zeGpwU21SSUFWRnk3eDZUTXZ2MmpPMGZVamF1VHBuSy00MGptbldPU2ZlTlM0clR4TkFFQXhlcmp5anpVTUplRmxKWEZtY2VpZlF6b2VXT1dTZGVFVy11TURtN2xoM3ZtNlBlM3RablFneS1Ha1NLNmhwRzhrWTMtWWVsQzJLc1ZJMjBlOHdrX1BsTklaVlNrQlRtanBmTGY4cGR5b1ZMOXhjOWx4cHRlSmphX1HSAdIBQVVfeXFMTkI1YVg4aUgyX3dId05aMXpGWGp5WjhlMTgyQVctc3hqcFNtUklBVkZ5N3g2VE12djJqTzBmVWphdVRwbkstNDBqbW5XT1NmZU5TNHJUeE5BRUF4ZXJqeWp6VU1KZUZsSlhGbWNlaWZRem9lV09XU2RlRVctdU1EbTdsaDN2bTZQZTN0Wm5RZ3ktR2tTSzZocEc4a1kzLVllbEMyS3NWSTIwZTh3a19QbE5JWlZTa0JUbWpwZkxmOHBkeW9WTDl4YzlseHB0ZUpqYV9R",
+      "source_name": "Simply Wall St",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-14T23:20:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "3 US Bank Stocks Worth Watching As Higher Interest Rates Reshape Earnings",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB5S1gtSHd2aENoNVMyTmhwb1FYdlV0d09RYzNwckUxaGZUUUcxSG4tZFBNMlFvbWJxMXdleURQRG5BdmRQLVFHb0Z3MWczc1RvWmV3VDhSdjM1X3ZPd19OX0lXZS04d1VNcEVKVnZueGVNdjZVU3RFZ01saw",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T06:08:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Simply Wall St",
   "cluster_key": "TMB|OTHER|bank-india-rising-share-watching-worth",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T20:07:26.082717+00:00",
-  "last_updated": "2026-11-06T20:07:26.082782+00:00",
+  "last_updated": "2026-11-15T19:35:11.044394+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T20:07:26.082772+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-15T19:34:52.660341+00:00",
+      "change": "sources added",
+      "detail": "Simply Wall St"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:11.044357+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance Singapore"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:11.044375+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:11.044383+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-15T19:35:11.044390+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (MACRO)"
     }
   ],
   "price_reaction": {}
