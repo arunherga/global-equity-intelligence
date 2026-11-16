@@ -72,149 +72,93 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "MIXED",
-      "confidence": 0.47,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
       "business_impacts": [
         "DEMAND",
-        "MARGIN",
         "PRICING",
-        "INPUT_COST",
-        "COMPETITION"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development"
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to ICICI Bank, and RBI. The parts of the business most likely touched are demand, margin, pricing. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "MIXED",
-      "confidence": 0.47,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
       "business_impacts": [
         "DEMAND",
-        "MARGIN",
         "PRICING",
-        "INPUT_COST",
-        "COMPETITION"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "ICICI Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.0,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 International market development"
+        "-2 Weak indirect connection",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified",
+        "speculative language"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to ICICI Bank, and RBI. The parts of the business most likely touched are demand, margin, pricing. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -278,16 +222,26 @@
       "published": "2026-11-14T20:47:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Food Inflation Rises To 8.9%, RBI May Hike Rates Twice By 25 Bps Each: Report",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVEdLQmVaSjBrQlBQbGNIa2JGaXFTdW1rRHdpZ01MVkRrV21oUVVMQzFyNDRsdS1FejN0Q2V0RWF5ZzdYeDk2MWMwekNxY1pCdi1ITWM1VDFIZ3JnakVpWXU5SlZ3eUM1eExhTF9ERXNKRkd3TnBDUU1PdzFheVVTOFF0ZVR4TENiR2o2dUx2ZmJ5TGRmMzVzSHdnMHVmVUlZWmJyZ2t0Nks5T2VjQnpadVRBTXRzUG9uSHc",
+      "source_name": "BW Businessworld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T07:18:07+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "ETRetail",
   "cluster_key": "FRESHARA+HDFCBANK+TMB|INTEREST_RATE+MACRO|bank-elevated-food-icici-inflation-stay",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-14T13:48:01.107647+00:00",
-  "last_updated": "2026-11-15T19:34:50.890136+00:00",
+  "last_updated": "2026-11-16T16:21:38.222800+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:48:01.107744+00:00",
@@ -298,6 +252,21 @@
       "timestamp": "2026-11-15T19:34:50.890111+00:00",
       "change": "sources added",
       "detail": "Awaz The Voice"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:38.222771+00:00",
+      "change": "sources added",
+      "detail": "BW Businessworld"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:38.222790+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:38.222796+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

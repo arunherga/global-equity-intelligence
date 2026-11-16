@@ -43,6 +43,45 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "recyclers",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from recyclers"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its supplier exposure to recyclers. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -55,21 +94,41 @@
       "published": "2026-11-09T14:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CSPR receives 2026 Recycling Industry Award for solar panel recycling",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMlc5RU9nN0RUY2dORHltazFjSEJkaERiMWtxLXoxSHNsT2F6dDhrUm5aZFNMOTJLNS1jN21yczhxWkE2aVRoekJmSDIwdVJGYXRGa3hhTVhoY3lSclJnU1pxaHFKT21WRzdPVzJQUGxEYjlNMjN4YlUydDJBQXJKdXl2b21EREE3MzhtQVhwRDA4VnFQdlhvRDkzdGJIWHBBeTVObzF6eDY4c0g5cG1oRnFpZkJvbzdrSHc",
+      "source_name": "American Recycler",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T13:44:43+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "EIN Presswire",
   "cluster_key": "WAAREEENER|OTHER|2026-cspr-jersey-jersey-recycling-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-09T16:46:09.873720+00:00",
-  "last_updated": "2026-11-09T16:46:09.873808+00:00",
+  "last_updated": "2026-11-16T16:22:18.957088+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:46:09.873797+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:18.957065+00:00",
+      "change": "sources added",
+      "detail": "American Recycler"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:18.957083+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (SECTOR)"
     }
   ],
   "price_reaction": {}

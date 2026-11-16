@@ -194,8 +194,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.61,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "DEMAND",
         "INPUT_COST"
@@ -208,33 +208,26 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-5 Market commentary rather than a company development"
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, regulation exposure to crude oil, and BSE. The parts of the business most likely touched are demand, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are demand, input cost. Classified as macro.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -383,8 +376,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.61,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "DEMAND",
         "INPUT_COST"
@@ -397,40 +390,26 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-5 Market commentary rather than a company development"
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
+        "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, regulation exposure to crude oil, and BSE. The parts of the business most likely touched are demand, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are demand, input cost. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -588,21 +567,46 @@
       "published": "2026-11-15T18:02:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stock Market Outlook: WPI, FII Flows and Crude Oil",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUnZwUHJGNkZwRnpndkRKS2NxMGRKTmJtOTc2UlhRa3ZUNDNyd3dqSGRGSGtqTmJOel8yZlRjUjhwRnd1S2hJd0UtaGRxOXFHOGFMQ0JZMHJ6eW5jN3pyTEtxZmFsemg4a0NmeDJKRW9EcGlIZlpkYXNXcTNseWxKSEFPTlhOemZraEVuaE11TWp6WlJSZlJQSg",
+      "source_name": "newskarnataka.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T03:26:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|MACRO|crude-fii-inflation-oil-price-wpi",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-15T19:30:41.156944+00:00",
-  "last_updated": "2026-11-15T19:30:41.157099+00:00",
+  "last_updated": "2026-11-16T16:21:20.393019+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:30:41.157086+00:00",
       "change": "created",
       "detail": "6 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:20.392993+00:00",
+      "change": "sources added",
+      "detail": "newskarnataka.com"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:20.393010+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:20.393015+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

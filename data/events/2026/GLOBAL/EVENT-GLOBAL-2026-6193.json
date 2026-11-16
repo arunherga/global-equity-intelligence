@@ -98,50 +98,39 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.9,
-      "business_impacts": [
-        "CUSTOMERS"
-      ],
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "Ministry of Coal",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
+          "exposure_type": "PRODUCT",
+          "term": "coal gasification",
+          "relationship": "SECTOR",
+          "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Original regulator announcement",
-        "+2 3 independent sources"
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "3 independent sources",
-        "official confirmation available",
-        "indirect relationship",
-        "financial implication is quantified"
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "order flow from NTPC"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to NTPC, and Ministry of Coal. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal gasification. Classified as other.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -235,16 +224,26 @@
       "published": "2026-11-12T05:48:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal Gasification Scheme Gets Two Applications in Second Round",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPVTJzUFJSRUdzR1VLTWN1VHo0c3l2S2dJOFVhZ1owb3Bwbko5a19RVUdxODdwVDMzQ09lNEFKU2V5dDFYNDJEX29BV05fOUQxRGVtMXgyWE1fWDJGc1NFSXN0MUMwdFR4UmlnZTA3LUdwUmJWYklHbUNuZUNUQ3F4UUJlOEw1X1hoWnhNNkdydDI3Smcxc3oxMW1saUNrSk5DVmk0QTNUYmZ5MUhfbE5Pdl8xOWxWclFJMEJDWW9tbjBKT3VHTTFuelR0Q0dFdXlPNF9scjktSkhiUHdfYWM5V2dlVVptUQ",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T09:52:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 3,
   "primary_source": "Ministry of Coal",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|500-applications-ends-ntpc-round-scheme",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:12:47.395617+00:00",
-  "last_updated": "2026-11-12T15:46:11.116389+00:00",
+  "last_updated": "2026-11-16T16:21:51.025155+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:12:47.395686+00:00",
@@ -280,6 +279,16 @@
       "timestamp": "2026-11-12T15:46:11.116385+00:00",
       "change": "impact raised",
       "detail": "COALINDIA 0 -> 7"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:51.025133+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:51.025151+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

@@ -4,7 +4,9 @@
   "summary": "Sr. No State/UT Amount to be raised (₹ Crore) Amount Accepted (₹ Crore) Cut off Price (₹)/ Yield (%) Tenor (Year) 1. Assam 1000 1000 97.55/8.0814 Re-issue of 7.83% Assam SGS 2046, issued on April 29, 2026 2. Bihar* 2000 1533.882 8.10 18 2000 2000 96.56/8.0816 Re-issue of 7.76% Bihar SGS 2051, issued on September 02, 2026 3. Chhattisgarh # 900 - - Re-issue of 7.68% Chhattisgarh SGS 2036, issued on April 29, 2026 600 - - Re-issue of 7.64% Chhattisgarh SGS 2042, issued on July 08, 2026 4. Gujarat 1000 1000 7.82 10 1500 1500 7.97 13 5. Haryana 500 500 7.61 04 1500 1500 98.99/8.0201 Re-issue of 7.9",
   "event_date": "2026-11-09",
   "event_types": [
-    "TENDER"
+    "TENDER",
+    "REGULATORY",
+    "LEGAL"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -53,48 +55,148 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "NEUTRAL",
-      "confidence": 0.81,
+      "relationship": "INDIRECT",
+      "impact_score": 12,
+      "impact_band": "VERY_HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
       "business_impacts": [
         "REVENUE",
-        "CUSTOMERS"
+        "REGULATION",
+        "REPUTATION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "CUSTOMER",
-          "term": "traders",
-          "relationship": "SECTOR",
-          "weight": 1.0,
-          "detail": "generic role"
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
         "+3 Government policy or tender development",
         "+3 Original regulator announcement"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 10/10",
-        "two independent sources",
         "official confirmation available",
-        "sector relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "bid outcome",
         "order value",
         "competing bidders",
-        "order flow from traders"
+        "formal order or circular text"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, customers. Classified as tender.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue, regulation, reputation. Classified as tender.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Treasury interest income may increase if TMB acquires higher-yielding dated securities, while trading revenue could fluctuate depending on post-auction bond yield movements and mark-to-market revaluations.",
+        "margin_effect": "Net Interest Margin (NIM) could experience mild pressure if rising bond yields push up overall cost of funds faster than loan yields, or expand slightly if high-coupon G-Secs are locked in relative to TMB's deposit costs.",
+        "cost_effect": "If the sovereign auction yields clear higher than expected, benchmark market interest rates could rise, indirectly increasing TMB's cost of wholesale funding and deposit mobilization.",
+        "competitive_effect": "Limited impact on competitive positioning, as all Indian scheduled commercial banks participate in or are governed by the macro yield curve established by RBI bond auctions.",
+        "regulatory_effect": "Participating in or [redacted] helps TMB fulfill its Statutory Liquidity Ratio (SLR) and Liquidity Coverage Ratio (LCR) mandates enforced by the RBI.",
+        "short_term": "TMB's treasury desk will assess short-term liquidity allocations, submit bids, and manage potential mark-to-market adjustments on its Available-for-Sale (AFS) portfolio post-auction.",
+        "medium_long_term": "Shapes the yield on TMB's fixed-income investment portfolio and influences duration risk management across its balance sheet over multi-quarter horizons.",
+        "second_order_effects": "Large sovereign borrowings can absorb excess system liquidity, potentially tightening credit market liquidity and compelling banks to raise deposit rates.",
+        "key_uncertainty": "TMB's specific bidding allocation, its internal investment classification (HTM vs. AFS), and the final cut-off yields established by the RBI.",
+        "monitor_next": [
+          "RBI auction cut-off yields and demand subscription ratios",
+          "Benchmark 10-year Indian Government Bond yield trends",
+          "TMB's quarterly investment portfolio yield and SLR disclosures",
+          "Net banking system liquidity levels reported by the RBI"
+        ],
+        "redactions": [
+          "regulatory_effect: recommendation language redacted"
+        ]
+      }
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 12,
+      "impact_band": "VERY_HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
+      "business_impacts": [
+        "REVENUE",
+        "REGULATION",
+        "REPUTATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
+        "+3 Government policy or tender development",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "formal order or circular text"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue, regulation, reputation. Classified as tender.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Treasury revenue could be affected depending on auction cut-off yields; higher yields boost interest income on new G-Sec holdings but can trigger mark-to-market (MTM) losses on existing trading book investments.",
+        "margin_effect": "Net Interest Margins (NIM) could face pressure if sovereign yield spikes drive up systemic borrowing costs (such as wholesale deposits and commercial paper) faster than loan re-pricing.",
+        "cost_effect": "Cost of funds may increase if higher government borrowing yields pull up broader interest rates, raising the yield required on certificates of deposit and bulk deposits.",
+        "competitive_effect": "Large private sector banks like HDFC Bank benefit from low-cost CASA deposit franchises and strong treasury desks, positioning them better to absorb yield volatility than smaller peers or NBFCs.",
+        "regulatory_effect": "Participation helps maintain statutory compliance under the Reserve Bank of India's Statutory Liquidity Ratio (SLR) mandate.",
+        "short_term": "Implications over 0-3 months include potential MTM gains or losses on the bank's Available for Sale (AFS) and Held for Trading (HFT) portfolios depending on final auction cut-off yields.",
+        "medium_long_term": "Implications over 3+ months depend on how the overall yield curve evolves, shaping long-term asset-liability management, investment portfolio yields, and corporate credit demand.",
+        "second_order_effects": "Higher government bond yields could prompt corporate borrowers to shift away from corporate bond markets toward bank loans, potentially boosting HDFC Bank's credit growth.",
+        "key_uncertainty": "The final cut-off yields accepted by the RBI and the resulting shift in the Indian sovereign yield curve.",
+        "monitor_next": [
+          "Cut-off yields and bid-to-cover ratios from the RBI auction",
+          "Movement in the benchmark 10-year Indian Government Security (G-Sec) yield",
+          "RBI liquidity management operations and monetary policy announcements",
+          "HDFC Bank's treasury income and MTM provisions in subsequent quarterly earnings reports"
+        ]
+      }
     }
   },
   "sources": [
@@ -137,16 +239,26 @@
       "published": "2026-11-13T14:22:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Auction of Government of India Dated Securities",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63983",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-11-16T17:45:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "MSTCLTD|TENDER|auction-based-government-result-state-yield/price",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-09T16:39:56.891703+00:00",
-  "last_updated": "2026-11-14T13:58:39.496837+00:00",
+  "last_updated": "2026-11-16T16:20:55.674896+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:39:56.891796+00:00",
@@ -162,6 +274,26 @@
       "timestamp": "2026-11-14T13:58:39.496831+00:00",
       "change": "stock added",
       "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-16T16:20:55.674862+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-11-16T16:20:55.674879+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY, LEGAL"
+    },
+    {
+      "timestamp": "2026-11-16T16:20:55.674886+00:00",
+      "change": "impact raised",
+      "detail": "TMB 7 -> 12"
+    },
+    {
+      "timestamp": "2026-11-16T16:20:55.674891+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}

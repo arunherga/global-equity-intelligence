@@ -52,11 +52,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "MACRO",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.4,
       "business_impacts": [
         "MARGIN",
         "DEMAND"
@@ -72,8 +72,8 @@
         }
       ],
       "score_reasons": [
-        "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -81,7 +81,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "macro relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -90,7 +90,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -104,21 +104,41 @@
       "published": "2026-11-15T11:58:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "FD Interest Rates Revised: HDFC Bank, BoB, Canara Bank Among Lenders Offering Higher Returns",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaktHaUF3Y0xpX25KazRfa1N0MkhCYklhbUZWYU96WTl4RVpoV1M2ZGN6d1U1cUxzWHF6eHV1ZXk0c3JHaWRUSzlvTUdzUzRJclI1Y2NPbU9aNUJnX09odkZNZ0xjS3VVRHJVNmNjSHN6TXR2N1lLRklnLXNTby1xekc2Z3FQc1hYNkNXQkJXZXhsZEJtMzRoVW9HZGhkNWhtTzBlZEJLMk5rbGptNmlqejZwb0J3ZlpGTTV0QXByTHhHOXJvTXVBY1J2cEM3RnZEbGVkS2Y3VjJUQdIB3wFBVV95cUxQeFRzZWFRRlJMTEY0TlRsbXdINE9vbmlzYkhSMDZSUkloVTVuaDZwY1NPVmRkVW5wZ1ZOdm9kNUlmdWFWWlY3ekZ1VXlPZG9NZzExckhGamlXVzZhYWE4Mi1fYV9ldndMc1dFTnN1aW9oelpfeDZqM1lnUjlZVjlNSUVRd2ZOLUQyajZ3MGc4TEN0RFdqM1ljcXhQYXFZVUZ3ZHFIbmZlNWZ2NVMzWFBjUmt3M3B1bFFnOElRUzlOaFhpckRnek9zZ3NCR1JMVmttQ2hXUDRPSWVUWVhxYlJz",
+      "source_name": "ETV Bharat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T12:07:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Udaipur Kiran",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|better-interest-iob-rate-returns-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-15T19:33:25.870283+00:00",
-  "last_updated": "2026-11-15T19:33:25.870371+00:00",
+  "last_updated": "2026-11-16T16:22:10.093144+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:33:25.870360+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:10.093120+00:00",
+      "change": "sources added",
+      "detail": "ETV Bharat"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:10.093140+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

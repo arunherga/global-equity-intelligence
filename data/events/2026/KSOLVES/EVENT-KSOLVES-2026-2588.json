@@ -1,0 +1,88 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2588",
+  "title": "Amazon Stock (AMZN): AWS, Earnings, Capex, Anthropic Stake and News, Tracked",
+  "summary": "Amazon Stock (AMZN): AWS, Earnings, Capex, Anthropic Stake and News, Tracked FourWeekMBA",
+  "event_date": "2026-11-15",
+  "event_types": [
+    "EARNINGS",
+    "CAPEX"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "CASH_FLOW",
+        "BALANCE_SHEET",
+        "SUPPLY"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "AWS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "+3 Development at a known counterparty (AWS)",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier exposure to AWS. The parts of the business most likely touched are revenue, margin, cash flow. Classified as earnings.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Amazon Stock (AMZN): AWS, Earnings, Capex, Anthropic Stake and News, Tracked",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1UNWtBX3ZqU3UwOWpiMkg4RDYyNTg5cE1EYWhTbk56TkpsVHJmdEk5RHRPMTc2aTVPVXctMms1Ujh4aDBQcUVvNEJYVm9NQQ",
+      "source_name": "FourWeekMBA",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T20:25:29+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "FourWeekMBA",
+  "cluster_key": "KSOLVES|CAPEX+EARNINGS|amazon-amzn-aws-capex-earning-share",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-16T16:06:02.693609+00:00",
+  "last_updated": "2026-11-16T16:06:02.693684+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-16T16:06:02.693673+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,21 +4,26 @@
   "summary": "IDBI Bank sale: Union urges RBI to block Fairfax takeover The Indian Express",
   "event_date": "2026-11-15",
   "event_types": [
-    "ACQUISITION"
+    "ACQUISITION",
+    "DIVESTITURE",
+    "REGULATORY",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.47,
       "business_impacts": [
         "BALANCE_SHEET",
+        "CASH_FLOW",
+        "REGULATION",
         "REVENUE"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -26,26 +31,43 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Acquisition, merger or divestiture",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Regulatory or legal action",
+        "+2 Acquisition, merger or divestiture"
       ],
       "direction_reasons": [
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are balance sheet, cash flow, regulation. Classified as divestiture.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -55,11 +77,8 @@
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
-      "business_impacts": [
-        "BALANCE_SHEET",
-        "REVENUE"
-      ],
-      "time_horizon": "LONG_TERM",
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -71,12 +90,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Acquisition, merger or divestiture",
         "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -86,7 +104,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are balance sheet, revenue. Classified as acquisition.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -100,21 +118,96 @@
       "published": "2026-11-15T11:54:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IDBI Bank unions urge RBI to withhold approval for proposed Fairfax stake sale",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/idbi-bank-unions-urge-rbi-to-withhold-approval-for-proposed-fairfax-stake-sale/135865102",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-15T19:47:14+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "IDBI Bank unions urge RBI to withhold approval for proposed Fairfax stake sale",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVWIwYjlORUw1dEp2dHJPTk1tUFVQeEQ0dWhWLU5GUnJXMmJEeTZPNTBBaEZZZHJORFZtNnhsQ0lUc1VsczZZb3B2ekh1WEl4N3JYZnRJN0J4aGZzcnc2dURpV1k4WC1yMi1ULTFoU1JSX2pZNWhIWl9DRVMzTWgxZklUYmV5aHU1Q3U3bWg0a2VESkNRUkhrdktuOGxYUksyUk9NVGw1MW5OdG9kdFpjbjBPeXBSRGxCelI5YXNxQk5JckxXWjMteEFlUU1hVWgzcWNiQ1NHS0dHajjSAdsBQVVfeXFMT1ViMGI5TkVMNXRKdnRyT05NbVBVUHhENHVoVi1ORlJyVzJiRHk2TzUwQWhGWWRyTkRWbTZ4bENJVHNVbHM2WW9wdnpIdVhJeDdyWGZ0STdCeGhmc3J3NnVEaVdZOFgtcjItVC0xaFNSUl9qWTVoSFpfQ0VTM01oMWZJVGJleWh1NUN1N21oNGtlREpDUVJIa3ZLbjhsWFJLMlJPTVRsNTFuTnRvZHRaY24wT3lwUkRsQnpSOWFzcUJOSXJMV1ozLXhBZVFNYVVoM3FjYkNTR0tHR2o4",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-15T19:47:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "United Forum of IDBI Bankers Urges RBI to Withhold Approval for Proposed Disinvestment, Raises Concerns Over Fairfax Acquisition",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVmVlUU4xYkNPM3ZYd05JeF9fS09GYVJJejVmQzBHZlJjQ0pGTGZlSHV4SElwU1F0RXNhRTNmblhUNlNtS3Jockg5eEVNc2FUVEo3V2JJQTFZSjV5SGtpT0F6ODI2OTcwYTJXRGN6VmxGek1HZlk1dUllYnNma0JRMUFOdGZfV2dJM1NQZnl2X2JOcDg5V2ljX04yTkYzcG42Y3NnRUMwNGc1Z0ZXT092a2YwTDRmN19nejN2MXdSeURKV2praVlETlRuN2J2dEFMYTI5VXdsTGVaN2JydWJzTm5xc2k2SmdQMGxGOGd5bFNqa0NlUmpDNnQ5cw",
+      "source_name": "Thekanal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T08:23:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "IDBI Fairfax Deal: Why Bank Unions Want RBI to Block Sale",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUjd0V0ZucmtzZTN6dXlfWTRwWmlGRlMyTU0wYm4zUHRqalVjV0lnSG9VV0Z6QUVwMDdHc3ZwTkxhd1YySjZqbk15bU9MWS1TVTFNOG80WGp1Wk5lREs3SXFsV1FmTURYQTVpbEx1Tk42OWhDNFhYTTJ2SEdtaFExTFJJa1R2UnVjMHBsZDZNOXFiTEJybno2T1FKVS1OZHRFd3FSYXh4QUhzbTA1bmJUYjRYVQ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T14:32:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 5,
+  "source_count": 2,
   "primary_source": "The Indian Express",
   "cluster_key": "HDFCBANK+TMB|ACQUISITION|bank-idbi-rbi-sale-union-urges",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-15T19:33:24.712407+00:00",
-  "last_updated": "2026-11-15T19:33:24.712490+00:00",
+  "last_updated": "2026-11-16T16:22:25.087423+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:33:24.712480+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:02.162297+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, Thekanal, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:02.162316+00:00",
+      "change": "categories added",
+      "detail": "DIVESTITURE, REGULATORY"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:02.162322+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 6"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:02.162326+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 6"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:25.087396+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:25.087412+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:25.087419+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

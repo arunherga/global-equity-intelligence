@@ -49,6 +49,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -61,21 +104,41 @@
       "published": "2026-11-12T14:21:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Prices Fall for Fifth Straight Session, Drop Rs 900; Silver Loses Rs 5,000",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRy1yanRsVFFlMUxPVm9GbDgzV2NoWjBmWlVYVTVBNTh6LVlXTUN4Y2NyY1VVZ1EwLWlWa3NDbmp5UnN6Z2Z5ZnJGdk5OLVNuV0pQaHFPdTJaX2lSY1NDeHpCeFdKcG05TnE1aF9zUnpNSnF5bVY2OUJxVnRlNDZQV2JlRDJaTTdZWHJKTGJ5RHNqVXhtTHlZaUVWOFNzS29FamNNY01la0E",
+      "source_name": "Kashmir Despatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T13:26:39+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kashmir Life",
   "cluster_key": "TMB|COMMODITY|consecutive-fall-gold-price-session-third",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:37:42.614882+00:00",
-  "last_updated": "2026-11-12T15:37:42.614954+00:00",
+  "last_updated": "2026-11-16T16:22:17.470277+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:37:42.614944+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:17.470242+00:00",
+      "change": "sources added",
+      "detail": "Kashmir Despatch"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:17.470260+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

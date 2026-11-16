@@ -4,7 +4,8 @@
   "summary": "RBI Imposes Rs 7.3 Lakh Monetary Penalty on Canara Bank Over ATM Cashouts at 73 ATMs in Karnataka and Tamil Nadu StudyCafe",
   "event_date": "2026-10-29",
   "event_types": [
-    "REGULATORY"
+    "REGULATORY",
+    "CURRENCY"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -255,42 +256,38 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
       "business_impacts": [
-        "REGULATION"
+        "REVENUE",
+        "MARGIN",
+        "REGULATION",
+        "COMPETITION"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "COMPETITOR",
+          "term": "Mastek",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
+        "+4 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Mastek) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -298,7 +295,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Mastek. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     },
     "TMB": {
@@ -569,16 +566,26 @@
       "published": "2026-11-10T08:20:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mastek Says RBI Imposes Monetary Penalty Of 1.1 Million Rupees On Co",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbXRnb1kwN2h4ZVd2QmE2QU5FeVoyWFdXR2xyX2wwNGhVa0lTTjRiN0FvQVl2U0MtdF9nQnR2NUlKaFdkWGpKT3ZJLUdzRkdhTEVzdnBWQU4xeWQ2OWhxSlVLQXQ2Ykd3T3N2QzJfX2tjRXFEWjlmSW5NVlJ1RUFNWVUtZlJPQzFybUhKdFZxNE9LUXhpN1IxS3NaYUU1VDhLc2g2STNkWmJXOHlGdkV1MlZ5cWNkVDZoWFoxV0lWQzVySlhaTkpaRi1NenpoSHlMMkkwMQ",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T13:38:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|REGULATORY|7.3-canara-imposes-monetary-penalty-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:15:01.889860+00:00",
-  "last_updated": "2026-11-10T15:17:08.262154+00:00",
+  "last_updated": "2026-11-16T16:22:18.200700+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:15:01.889989+00:00",
@@ -594,6 +601,21 @@
       "timestamp": "2026-11-10T15:17:08.262136+00:00",
       "change": "sources added",
       "detail": "ETLegalWorld.com"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:18.200673+00:00",
+      "change": "sources added",
+      "detail": "TradingView"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:18.200688+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-11-16T16:22:18.200694+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 4"
     }
   ],
   "price_reaction": {}

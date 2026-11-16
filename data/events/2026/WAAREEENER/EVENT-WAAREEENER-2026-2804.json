@@ -10,23 +10,39 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.63,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 3 independent sources",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "3 independent sources",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -47,21 +63,121 @@
       "published": "2026-11-14T15:22:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Commissions 5.15 GWh Battery Pack Manufacturing Line",
+      "url": "https://www.mercomindia.com/waaree-commissions-5-15-gwh-battery-pack-manufacturing-line",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-16T19:23:04+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Energy Storage commences commercial production at 5.15 GWh battery pack manufacturing line in Gujarat​​",
+      "url": "https://www.pv-magazine-india.com/2026/11/16/waaree-energy-storage-commences-commercial-production-at-5-15-gwh-battery-pack-manufacturing-line-in-gujarat",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-16T11:01:26+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Commissions 5.15 GWh Battery Pack Manufacturing Line",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVnhSVDBIN2pHWGlDUXc5U0hTeTBhMnNxNFBNNmpvQ1Z1cnE3bDNhamQ4SEVHTkVqQzh6Sm5FUTNObTNZdUZyT1lqTG1wZGcyRlVMVzMyRW1odXA0VEN4SG9pMVpsc1ZzSXdaaVJXUTVrRndlYXgycnMtSkdvSUpYdEpOMzVQMmZCekZoTHN0YmU",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T14:04:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree ESS begins production at 5.15 GWh battery pack manufacturing line in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQMmhSMW9yVkRjSG9XUlRCTGJKQklpQTlFd01ZSl95c2xBbF9OTEc5VzduWDlXLXROR29xSjJjcl9YM2h1RzZTUWEwRTNoX0dOa2hIX1c5aHdpVnJSVHhxMDdzWGt5aktncDJZaEFKU3hRV2thVk9obkw5WmVvM09jNTBrTmJPZm8xdHh6SmVIUW1mZkFxQjZjYlNSSjlLNHhRTTVfNTVPRnlwSDZMY1hTSlNRTTI0VDQ4WmhTQTNYemZ4bE10QVR2SE1FYUd3ZXZTRzFTWE1EY0RNRnlqMFZJZnFJRy1CUmVnZnE0dVJJRlDSAfABQVVfeXFMUDJoUjFvclZEY0hvV1JUQkxiSkJJaUE5RXdNWUpfeXNsQWxfTkxHOVc3blg5Vy10TkdvcUoyY3JfWDNodUc2U1FhMEUzaF9HTmtoSF9XOWh3aVZyUlR4cTA3c1hreWpLZ3AyWWhBSlN4UVdrYVZPaG5MOVplbzNPYzUwa05iT2ZvMXR4ekplSFFtZmZBcUI2Y2JTUko5SzR4UU01XzU1T0Z5cEg2TGNYU0pTUU0yNFQ0OFpoU0EzWHpmeGxNdEFUdkhNRWFHd2V2U0cxU1hNRGNETUZ5ajBWSWZxSUctQlJlZ2ZxNHVSSUZQ",
+      "source_name": "ET Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T11:17:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree ESS starts commercial production at 5.15 GWh battery pack line in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbW1vMThHN3FlQWNXa0phOFVUMEZ5SXhXZlpBUW1KTHgyMDVqUnJya0tNRDNOSmFYX1EyRHZLSU56am5XUDZnNHoyc1BkZlYzZDFLV3dWcDNxVXcwbkNuZmVoN3YxWkgwVEtkQlcyTF9JaFZab2kzNXdUeHRkY0JmWmpuYk13NDg1RzdycG1iSlRLalB6enQ0MzRpN29xR0ZwbFRmaUJGSHRXeUpNYVlldThnV2ZoRWRaN1hSUVg4QVpIajhHUVI5R3p4dXVEeFJoOURWY2VyZ3ZzTnJMcklv",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T09:14:47+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies Commissions 5.15 GWh Battery Pack Line in Gujarat, Shares Trade Lower",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUl9jZWZYTUh3T0FpRksxQ0djUW5sV2hCSnlDOUR2bHBVZU9Vdmw5WnktRTAwLTlBVmVSZWRfWTMwYVRIZVdRYy1fT3dDdXM1dXpTZnUtT1R4cDR2T1BiVGJuMkFoZVFiTTd3R2hqR2ZQTHBvbmNRa1FtX1RKOU1NcmF0WW1sZHY2WjNwb25zbWZhODJrOGd0ak9lTXltekt6eUxkWlkxdXZNd08yamtZdndhNUdWS0dtY2xIUGZZQl9HTThqSWFaYkpBQlc",
+      "source_name": "Dalal Street Investment Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T10:20:42+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies shares fall over 3% despite new battery line",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeEM3QTA3WVQ2MWVOWk90RDFRa3M0clhKMzBNYVNRNjVhZEFnUGRrZlc5aFRCdHhTa2RxZ0tyMjBlVG5maTBRenNMMnM0bVlzckRHZlZPN1NpWlVfQ082cUtLVVU5UnEtaTB5SUdrYUZvb2g0ZVZrSWR2TEtFUUhleDdHVXItbHZXWFF2RXMwbmc5LWtoSDBRTUZMRjhLUGh1NUdxZEthTFVia3VlZ0kw",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T11:46:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energy Storage commences commercial production at 5.15 GWh battery pack manufacturing line in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPOWotYzBqZVhIbkNmeXNjSHN1QnNCWkZYYnNDa2hPMndrSDhueGlOdndhajNNa0xSR0p5Z0NGRXpZcGsyNk5YNGZNWVFfWlFTZGx4ZFpaRVBrMkhnS1U4WVQxZGEteGtpYWJDa2RxVnJQMVZxdE1Vakhnd2xycTc0LS1fc1c1bnoyM0U4YXhIbl9xVnJmbzI4d2hBOE5fWU9NNl9GSUFzdTdSaGxzS3hLendORlFWOWlUTHc0MGJGdm1ZaXVDZzhKS016b1BFQ0JTWXFvSVN5SEJEak5ndXN1Q0R1Yjd1ZHZzVkE",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T11:15:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Starts 5.15 GWh Battery Pack Production in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZmtRVmhXbDJydmItRWRnUWE5OFhSaWFNRWhOdUV5a2tpdk41T1lpZjB6TWxfVEEwRnd1aVZ1Z2dnTnhuLWZDdkx1SjJfNkhPVzZ3ZnpINy1kTVhkT19ZcGVIeXE1Rzg2OFpkS1Y4TlRkeEhLMk5KdG55ZkRkdUpiWERJQ0NYRUE",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T10:46:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 10,
+  "source_count": 3,
   "primary_source": "Business Upturn",
   "cluster_key": "WAAREEENER|OTHER|5.15-commissions-energies-gwh-subsidiary-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T18:55:00.186448+00:00",
-  "last_updated": "2026-11-14T18:55:00.186535+00:00",
+  "last_updated": "2026-11-16T16:21:04.557154+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T18:55:00.186524+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:04.557131+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, BusinessLine, Dalal Street Investment Journal, ET Manufacturing"
+    },
+    {
+      "timestamp": "2026-11-16T16:21:04.557149+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 9"
     }
   ],
   "price_reaction": {}
