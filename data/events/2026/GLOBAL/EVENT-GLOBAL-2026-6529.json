@@ -74,12 +74,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "direction": "MIXED",
+      "confidence": 0.3,
       "business_impacts": [
-        "DEMAND",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -94,25 +93,23 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "-2 Weak indirect connection",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -120,12 +117,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.27,
+      "direction": "MIXED",
+      "confidence": 0.3,
       "business_impacts": [
-        "DEMAND",
-        "PRICING",
-        "INPUT_COST"
+        "MARGIN",
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -140,25 +136,23 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "-2 Weak indirect connection",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -232,16 +226,26 @@
       "published": "2026-11-16T07:18:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "DC Edit | Food Inflation Exposes Limits Of RBI Rate Hikes",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcXhKQWNiRzBKX1RpZWlhSl9UMmpYVERXX0MyMmUydmNwQ2d1TmFWMmp1T1JGOHExWWkyeXNrTktDR3d4bFUtU1dsdS1HMkZWTkpIcEh1eDdtczhQNExxdUtudFNLdnM1UEtVMHJISUV1OTdRRHdlNlg2blRIelFwOS1XTUUtczVORUt1RWtzbk9YMVF1V3hJM3p4MHVUbkwwZkVPYmNQbEVDYWZNLVVNVDhEdHDSAboBQVVfeXFMT25VUTZsQlhBVk1zWUR4dUhsN1ZqbXJHbjgxUjNheGI4eGl0R1lvRE9CM0tyQ0VwTlFyaGZPR01vckY2NXd5RWxuSVYxbkt2UjlRbXRzWU1iNE9tMzkxWDNlX25TM3lta3lsZHcyRWdhdDNfeS1wX2lUcTJBWVUwdWVtTWQ3cmd0cHl2VFhSZUtGLUNIWlV5SW5iajJicUcxbFRXSE5oRWFOekV5OTljdVdpeS1XMk0xSW53",
+      "source_name": "Deccan Chronicle",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T18:59:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 2,
   "primary_source": "ETRetail",
   "cluster_key": "FRESHARA+HDFCBANK+TMB|INTEREST_RATE+MACRO|bank-elevated-food-icici-inflation-stay",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-14T13:48:01.107647+00:00",
-  "last_updated": "2026-11-16T16:21:38.222800+00:00",
+  "last_updated": "2026-11-17T16:40:20.803607+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:48:01.107744+00:00",
@@ -267,6 +271,21 @@
       "timestamp": "2026-11-16T16:21:38.222796+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:20.803576+00:00",
+      "change": "sources added",
+      "detail": "Deccan Chronicle"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:20.803596+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:20.803602+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

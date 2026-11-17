@@ -12,13 +12,11 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.41,
       "business_impacts": [
-        "REVENUE",
-        "DEMAND",
         "PRICING",
         "INPUT_COST"
       ],
@@ -30,13 +28,18 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,16 +48,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "assumptions behind the guidance",
-        "execution track record",
         "whether the price move persists",
-        "contract repricing lag"
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -88,16 +90,26 @@
       "published": "2026-11-15T11:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price in Keralam drops below Rs 1 lakh after record highs",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdXZXcEs5Q00xMEFkSkMyZmxaNThLRE5ZMjlpSDJqLUR5aU5ocXNrX0FnTGhzRHBwb3NaUWRTTVQ3Nkx4TUNuUmo0U0Yxd2xBcHNyVThqLUhieG11TkQ5Z2JiN3FxUDllTEJ5UHBpSG9oNTM3eFFvRDFRQmM2SFJNUzdxN2J2T2RiWDZCV1NvUW1TdjZGVGZLTkliTWMxMlRmSlQ3ZHEzUmluWjVLTE42Q21hQjlKbDJUQmRJUkktX3Zmem9XeHNtZTlneGRqVTI10gHWAUFVX3lxTE5Ec0FXRnFqUXo2MmFtMk10RjctN2xjSGZCd3lUcEFEbWRWdXJNeVc4RzduLVBiYjRaOG9vNVo3a01mT21ZcHhMM0lXS0VOT0RmZW5XYXZMR3ZvOTdFelg0X1RxNnlBclc1c1BvTVl3VlppQTFmckhlWm8xOGFfWkhSVjFWa1hvdDZ1d2cyTXdiSHNNLWlTc24wNHJDdEx4c1FxTWVEcGtxRzhHNDZqcTVlU05iSXlUSi1IZ25oMzRpWVphU1c0SkVpdUlHLUgyUVdBT0R6V1E",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T14:43:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "FXStreet",
   "cluster_key": "TMB|GUIDANCE+INTEREST_RATE|below-fall-forecast-gold-price-xau/usd",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:19:00.158378+00:00",
-  "last_updated": "2026-11-15T19:35:25.209019+00:00",
+  "last_updated": "2026-11-17T16:42:29.134495+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:19:00.158465+00:00",
@@ -118,6 +130,16 @@
       "timestamp": "2026-11-15T19:35:25.209014+00:00",
       "change": "direction changed",
       "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:29.134473+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:29.134490+00:00",
+      "change": "impact raised",
+      "detail": "TMB 1 -> 3"
     }
   ],
   "price_reaction": {}

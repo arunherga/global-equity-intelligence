@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2640",
+  "title": "BBC, CNN, HSBC, Salesforce, Zoom among 178 organisations hit by malware: Report URI",
+  "summary": "BBC, CNN, HSBC, Salesforce, Zoom among 178 organisations hit by malware: Report URI CNBC TV18",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "BBC, CNN, HSBC, Salesforce, Zoom among 178 organisations hit by malware: Report URI",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNM25qdHNCd3ZZWWNieF8wZHBwUll0QkdBcFVWcm5TTHdZT3RZZTZlY2JEcFZxNDd6S2RyVjRhOFdYeWEtWVNzNUJ5WFI3Y1hyWE9pOWdTb0dJRW5DNDBadWt5T2hQUFota0xKX0NFUHNVSkdsd3lxQ0JGeXN5dnNGMUg5X0dFWnFuNmJWdEdYNTB5Sk9YTTRLSjhlTVo4bHg5Um92MGR6TkR3cThRdFp5am1xUzZGQXZKOVdDR2lKY9IBxAFBVV95cUxNZkdxM2NENzRPalh2QVFkMGYxeE1NQWJhZXd6a0p5YjlpdmFoa1ZZYlM5OFRrcFB0UjdJSzJIUzd2UWpPeVlNZWt3UXZJU0owOFNObFpfU2dLS3pUX05jd0p0MmhfdzZYaEx5Ulc2UTk4ZWRrZTRacS1EeVM4d09RSWItanBLbW00S0djZC1BNFo4elUwaTBFY05ldkhvR0lEaWZWMmJ1Z1lpUFJ0TzNaRUNkd0E3NlhGem80X0lXeHVBeUQ1",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T06:24:32+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "CNBC TV18",
+  "cluster_key": "KSOLVES|OTHER|among-bbc-cnn-hsbc-salesforce-zoom",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-17T16:23:43.619371+00:00",
+  "last_updated": "2026-11-17T16:23:43.619463+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-17T16:23:43.619452+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,7 +4,8 @@
   "summary": "EDIT: Investment in coal gasification Business Standard",
   "event_date": "2026-11-13",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "COALINDIA": {
@@ -12,16 +13,26 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "direction": "UNCERTAIN",
       "confidence": 0.28,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "PRODUCT",
+        "COMPETITION"
+      ],
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
           "term": "coal gasification",
           "relationship": "SECTOR",
           "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -31,7 +42,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -41,7 +52,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal gasification. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to coal gasification, and India. The parts of the business most likely touched are product, competition. Classified as technology.",
       "ai_analysis": null
     }
   },
@@ -55,21 +66,46 @@
       "published": "2026-11-13T14:19:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal Gasification in India: Is Indigenous Technology Ready for Commercial-Scale Investment?",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcVdJUy1RNWFPUGtHZWJfdHFBM2FxdlRnNzJmTUFCV19DUmR1My0zeDA4NWRaMFg1bWdqdGk4SFpKLV84T3Brc0hnbUNiYW1tcm80MUxnbXd4TmJ0RXlVRFc5N19RaW4tUGpKa01xNnN0RFdfOG1jNEtHT0F6U0Rqc21IWnNxeG1BZ3FxczdtLXRyaVFtRjZxVnZCRk5Gckl0MHFLelQ0VXo3aVl0T3NxM3pTTkhKQQ",
+      "source_name": "Chemical Industry Digest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T09:45:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "COALINDIA|OTHER|coal-edit-gasification-investment",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:48:45.922866+00:00",
-  "last_updated": "2026-11-14T13:48:45.922933+00:00",
+  "last_updated": "2026-11-17T16:41:45.292125+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:48:45.922922+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:45.292095+00:00",
+      "change": "sources added",
+      "detail": "Chemical Industry Digest"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:45.292113+00:00",
+      "change": "categories added",
+      "detail": "TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:45.292120+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

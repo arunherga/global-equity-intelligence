@@ -98,39 +98,40 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.78,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "coal gasification",
-          "relationship": "SECTOR",
-          "weight": 1.7,
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Coal",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure",
+        "+3 Original regulator announcement",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "best source quality 10/10",
+        "official confirmation available",
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to coal gasification. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Coal. Classified as other.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -234,16 +235,26 @@
       "published": "2026-11-16T09:52:45+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ministry of Coal: Scheme for Promotion of Surface Coal/Lignite Gasification Projects (₹37,500 Crore) Notice for Pre-Application Conference (Round 3)",
+      "url": "https://coal.gov.in/sites/default/files/2026-11/17-11-2026a-wn.pdf",
+      "source_name": "Ministry of Coal",
+      "source_domain": "coal.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 6,
+  "article_count": 7,
   "source_count": 3,
   "primary_source": "Ministry of Coal",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|500-applications-ends-ntpc-round-scheme",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:12:47.395617+00:00",
-  "last_updated": "2026-11-16T16:21:51.025155+00:00",
+  "last_updated": "2026-11-17T16:39:46.622567+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:12:47.395686+00:00",
@@ -289,6 +300,16 @@
       "timestamp": "2026-11-16T16:21:51.025151+00:00",
       "change": "direction changed",
       "detail": "COALINDIA UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-17T16:39:46.622538+00:00",
+      "change": "sources added",
+      "detail": "Ministry of Coal"
+    },
+    {
+      "timestamp": "2026-11-17T16:39:46.622560+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 3"
     }
   ],
   "price_reaction": {}

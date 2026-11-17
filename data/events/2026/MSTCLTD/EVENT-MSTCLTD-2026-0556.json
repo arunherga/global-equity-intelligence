@@ -1,0 +1,136 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0556",
+  "title": "Ministry of Steel: National Steel Policy (NSP), 2017",
+  "summary": "",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.77,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "steel scrap",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Steel",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "scrap recycling policy",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Original regulator announcement"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "steel scrap over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, regulation exposure to steel scrap, and Ministry of Steel. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Positive potential. Higher steel production targets and structured scrap recycling under the National Steel Policy increase overall scrap trading and auction throughput on MSTC's platform, potentially driving commission and service fee revenue.",
+        "margin_effect": "Slightly positive to neutral. E-auction platform fees carry strong operating leverage, meaning higher auction volumes can expand operating margins, though direct trading segment mix could temper overall margin gains.",
+        "cost_effect": "Operating and capital expenses may increase moderately due to platform tech upgrades, compliance tracking, and potential capital deployment into vehicle shredding and recycling infrastructure.",
+        "competitive_effect": "Strengthens competitive positioning. As a PSU under the Ministry of Steel, MSTC is standard-aligned to capture public sector scrap liquidations and formal scrap market auctions resulting from national policy pushes.",
+        "regulatory_effect": "Direct regulatory relevance. Operating directly under the Ministry of Steel, MSTC must comply with updated scrap recycling frameworks and formal circular economy mandates for metal scrap.",
+        "short_term": "Minimal direct earnings impact in the 0-3 month horizon, as the framework represents a multi-year policy orientation rather than an immediate transaction trigger.",
+        "medium_long_term": "Positive long-term structural tailwind over 3 months to several years, expanding the addressable volume of scrap traded digitally as India works toward its 300 MT crude steel capacity target.",
+        "second_order_effects": "Faster formalization of the unorganized scrap trade, pushing private scrap dealers and secondary steel producers onto transparent e-auction platforms like MSTC.",
+        "key_uncertainty": "The speed and enforcement efficacy of domestic scrap collection center rollouts and vehicle scrapping policies across individual Indian states.",
+        "monitor_next": [
+          "Quarterly gross transaction value (GTV) and volume throughput in MSTC's e-auction segment",
+          "Ministry of Steel policy notifications regarding mandatory scrap utilization in steelmaking",
+          "Expansion and utilization rates of MSTC's joint venture scrap shredding facilities (CERO)",
+          "Domestic secondary steel production growth and scrap import policy changes"
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Ministry of Steel: National Steel Policy (NSP), 2017",
+      "url": "https://steel.gov.in/national-steel-policy-nsp-2017",
+      "source_name": "Ministry of Steel",
+      "source_domain": "steel.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "Ministry of Steel: Steel Scrap Recycling Policy",
+      "url": "https://steel.gov.in/steel-scrap-recycling-policy",
+      "source_name": "Ministry of Steel",
+      "source_domain": "steel.gov.in",
+      "source_type": "regulator",
+      "published": null,
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "【SMM Stainless Steel Scrap Flash】Thailand Flags 134 of 146 Scrap Recycling Plants for Possible Violations",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQMkZRTFJtaVM1OVhYTVJJZGl0Z3hhMEdxd19BdWdxc1N4RGl2aVdTUDRrUFpmTl9tZ0NfdmtTV0lEbS1EbGh2Q284Ynp3MW5JY0F2ZF80LVZuUkZwS2dueFlaRkpSaFV1ZHQ5R21YMzJRQjh1QWpxdE1GMUk3bGI3QnB3cnJYZ1NNbzVNdFo5dlRYcU1pM2J6MldWMXg5aWVDbkl3NzhqVGRPbXlHcjhITlFIdnhzWTRSNC1kUFJnUlA0Q2E1TUZNdzlpVXRaMEtTQ2IxUWd3ZGRWelV4ODVkMDZMYVd5THczYWFFNVhXVng4U0F1MnpteDNmdEFqRGFpdURXZzNzX2NTWkFrNnc",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T03:03:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 3,
+  "source_count": 2,
+  "primary_source": "Ministry of Steel",
+  "cluster_key": "MSTCLTD|OTHER|ministry-national-nsp-policy-steel-steel",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-17T16:18:25.145116+00:00",
+  "last_updated": "2026-11-17T16:35:51.400279+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-17T16:18:25.145215+00:00",
+      "change": "created",
+      "detail": "3 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:35:51.400262+00:00",
+      "change": "ai analysis",
+      "detail": "MSTCLTD via gemini"
+    }
+  ],
+  "price_reaction": {}
+}

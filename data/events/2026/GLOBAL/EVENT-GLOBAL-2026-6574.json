@@ -80,6 +80,88 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to DIPAM. Classified as other.",
       "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to Ministry of Road Transport and Highways. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Ministry of Road Transport and Highways",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from Ministry of Road Transport and Highways"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to Ministry of Road Transport and Highways, and Ministry of Road Transport and Highways. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -92,21 +174,46 @@
       "published": "2026-11-14T07:16:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ministry of Road Transport and Highways successfully concludes Special Campaign 6 for institutionalising Swachhata and reducing pendency",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQSTRUWEMySFFpX0p2NE5Ib2RDQVFwN1BseFU2UkFhUXNaWW40TThUZDhrZ3c5Wkg5cS0yazZpQldvLW5URVUwamk2TzFxZzBQcjlKZzMtaGY0Yll4ejJzcmhvN1AwZVl1dWFkYjYtTTZrY0VfaXE3S2tHSTBYMWUxZE9SaG1Ba0pzWmlQNVpXUFprWW1tbmg0M0Vodk4wZnJUOVVxTmp3NVlpYXlhU0pEMDFTd2pDMWRKcmwxWUpmVmhaX1JENjRkdDQ0cHVLanZ5RHFlUC1KZUJ4czNxVWhMcUVQMkRvTEdnVzYtQkVrVG1iNGM",
+      "source_name": "Odisha Diary",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T05:51:21+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Odisha Diary",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|campaign-dipam-institutionalising-participates-special-swachhata",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:51:58.695628+00:00",
-  "last_updated": "2026-11-14T13:51:58.695712+00:00",
+  "last_updated": "2026-11-17T16:41:12.298161+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:51:58.695700+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:12.298134+00:00",
+      "change": "sources added",
+      "detail": "Odisha Diary"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:12.298152+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:12.298157+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}

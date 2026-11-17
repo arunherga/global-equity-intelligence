@@ -12,13 +12,21 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
+        "COMPETITION",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Adani Green Energy",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "CUSTOMER",
           "term": "Adani",
@@ -32,6 +40,8 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "Positive and negative effects both present",
+        "a competitor (Adani Green Energy) is doing well",
         "a customer's business is strengthening"
       ],
       "confidence_reasons": [
@@ -40,9 +50,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "Adani Green Energy's follow-up announcements",
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are competition, customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +67,51 @@
       "published": "2026-11-13T16:42:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Green Energy Says Tarali Pumped Storage Project Has Secured Required Approvals",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeUt5V1dCMHI0SUMyVXhwRE9TbEkyM1JId2ZWaUp6b2JyTTcxamVMT01OY3ZPUWVKX2dWT3NkREJ4NkxCeTBHSUZvUnR3aFJXTE9YQ2cteW9rZTlrUTJVdWNCdmdkTHdpeEJtQmpYYTVwTzd3eEZiYjkxZC1aenBOamhKMjRrTjdVSFJHcjhLQnJxZUVzNTNDdS0tUmFDWTg",
+      "source_name": "Oneindia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T19:07:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green says Tarali pumped storage project has all key approvals, construction underway",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQajJ0eVY0OVg4T1NNVVFSVlFqZU40alplWkg3ZTBvTXJMNGg2U3lyejZkUGsxbVBKWHFPUHUxbU9ETGhFMUpfZGEwclo1MXAydXh5bzhMc3RrR1lNZ1lqVGwycG1JUDhpZnI2VjFkM1VKUHF0MkFRdXpRenEySGFqUS1Qb0E3bTYxYUVUZ091WVdqMlBYbFVaOW1NWWlGMmdRX3JaS0o4dHB5SHRwTkVYQ2o3dm5LOVFDTmp2TmFnSC1BQTJGTnhQek5oVW7SAdABQVVfeXFMT01jU1ZMelVxSHZET3k4d0VoVWNRcVh5ODUzaGIyRUI0aGJpc0VyeWVvWmNfM3dVcE1qODIxTW5rdHhnaEdQYTZaVV80bE1BRTlOaDBiNXJCTmVxLTV0XzhXRWN1SE1VejhkNUNLeUdFYWlhZC02TWF5UFo3WGc4NU1KUERhUmNxQXhpcEcyQ1ZVb1FPSXNjUlZqTklLUU9mN1FETGpFVlZ1dGpGTjhEcUpCSE1vVHpnMGxMbWVZWW5BRl9sREpPVVlYdTlFSTJSWA",
+      "source_name": "News24Online",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T03:36:47+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "WAAREEENER|OTHER|adani-green-project-pumped-storage-tarali",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:49:41.378827+00:00",
-  "last_updated": "2026-11-14T13:49:41.378912+00:00",
+  "last_updated": "2026-11-17T16:40:21.574011+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:49:41.378901+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:21.573986+00:00",
+      "change": "sources added",
+      "detail": "News24Online, Oneindia"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:21.574006+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> MIXED"
     }
   ],
   "price_reaction": {}

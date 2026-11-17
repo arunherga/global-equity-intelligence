@@ -9,31 +9,40 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+2 Company appears in the headline",
+        "+1 Industry-level relevance",
+        "+2 International market development",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -77,16 +86,26 @@
       "published": "2026-11-11T12:28:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "News: TOYO suspends imports of Ethiopian-made solar cells to US amid ongoing trade probe",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeHZMbkJlZjZtV2dmZ1hWTzFlckRMcW9uMWFodjZMbWZReUhXNmNRWU1xOTVLZlVtWUpFRDQ1Q29UVDVOc1NqLWNHTVAxV3NyZW5GNThteTV1ZmJRblJ6aUJRUzFrWE1TOGVPVTFKU0x3ZFdvSUViTURNRm4tUVhRazJMNDdoNzU4cEtvV2tUYkRsUlpYSm9pX2Vsdkh0dlZaRzJqdFlHQmNkZk5GY1E",
+      "source_name": "Addis Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T12:31:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "WAAREEENER|OTHER|face-import-shifting-solar-trade-usa",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-09T16:42:16.057649+00:00",
-  "last_updated": "2026-11-11T14:49:20.969841+00:00",
+  "last_updated": "2026-11-17T16:42:12.843691+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:42:16.057710+00:00",
@@ -107,6 +126,16 @@
       "timestamp": "2026-11-11T14:49:20.969824+00:00",
       "change": "sources added",
       "detail": "Equitypandit, Free Press Journal"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:12.843666+00:00",
+      "change": "sources added",
+      "detail": "Addis Standard"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:12.843686+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

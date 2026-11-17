@@ -12,15 +12,34 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.51,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "business_impacts": [
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
+        "+4 Major order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
@@ -33,10 +52,28 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from NHAI"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, customers. Classified as contract win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could increase significantly as this large order (approx. ₹1,465 crore EPC) converts from L1 bidder status to a formal order award and is executed over the project lifecycle.",
+        "margin_effect": "Margin impact is unclear until execution begins; EPC project margins will depend on bidding aggressiveness, raw material price stability, and execution speed.",
+        "cost_effect": "Mobilization costs, labor, equipment deployment, and raw material expenses (cement, steel, bitumen) will rise in line with the project's construction scale.",
+        "competitive_effect": "Strengthens Ashoka Buildcon's position in large-scale expressway projects and reinforces its track record as a key EPC developer for NHAI.",
+        "regulatory_effect": "Subject to standard NHAI contractual compliance, environmental clearances, and right-of-way (land acquisition) approvals from government authorities.",
+        "short_term": "In the next 0-3 months, focus will be on receiving the formal Letter of Award (LOA) from NHAI, signing the contract, and setting up initial project site logistics.",
+        "medium_long_term": "Over the next 2-3 years, execution of the package will drive steady revenue recognition, enhance order book visibility, and build operational references for future mega-highway bids.",
+        "second_order_effects": "Execution may require tying up bank guarantee limits and working capital, while creating subcontracting opportunities for local infrastructure vendors in Gujarat.",
+        "key_uncertainty": "The timing of the formal Letter of Award (LOA) issuance by NHAI and the availability of unencumbered land/right-of-way for execution.",
+        "monitor_next": [
+          "Official issuance of the Letter of Award (LOA) by NHAI",
+          "Final project cost confirmation given minor summary discrepancies across sources",
+          "Land acquisition and Right of Way (RoW) handovers for Vadodara-Mumbai Expressway Package VIII",
+          "Quarterly order book updates and management guidance on execution timelines"
+        ]
+      }
     },
     "JKIPL": {
       "ticker": "JKIPL",
@@ -693,16 +730,76 @@
       "published": "2026-11-11T09:12:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Becomes Lowest Bidder For ₹1,465 Crore NHAI Project In Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdy1Jem5mcS0zZ3c2LUw3LWpBMTk1QVpKMlBZVnZacUVTYmNhdXpKUVJ2N1Z6UE13ekgwMHRSV3hOZW9fSFJJSGJkeUV1UVhkUUJ1VVUyekVtZm95bWdIVHA4eDJmUW01d0pqYVpfbGxUSUR5SGk1ZzJ4OG9LWG92RFQ0S3ZjRXFxY3NkMXE1bHE0S1AxM21yZEVTVDdWdHB5M3hNb0p3",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:52:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Declared L1 for ₹1,465 Crore NHAI EPC Project for Vadodara-Mumbai Expressway Package VIII",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNejZiOEJ4YnNvNjRJRS1VdWg1aE9ncnVlZ1M1c01uMjVMa2gxZXE2ejZudkxfQzRNVzRxeFpSNEJadXgyWGUyNDVPOHNCeWh3d0cxVkFuZHprVnpYbVpaZDNVUlJRWDdsZnFuZm53Nzc5VEJud3BNUnBibW9rTXRnbU5pSFVGdy1QTFVycA",
+      "source_name": "EquityBulls",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:28:20+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Declared Lowest Bidder For NHAI Project",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRlhnYWxEZVktLVp1NUM5RHBBaDJpTi0xUlpycEVKeEpncnM4MVE3NlJ3LXJJcFFmWEo0bkd2NmhoMk84ekF6SFJqYVgxSWxkSFJGckR4Z1hDenUyaHFtM2pWc19fOVhZdzZMaHBieEdidGlYemRrbWZyYjJVb05EZHM5T0xiZ3hjcU9yNlJiV2pab1VhOXJVNmI4SkxneTVIdGtvaXJFaFdjYk5xYlNRLUxIVFhiVzVaN2FURkdSNWlDT1U",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T14:25:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Is L1 for ₹865.90 Crore NHAI Expressway Work",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPT1QxZlpZLW1ObVVDRWRfQWlCaGl5MzFyQnFuNjZZb0JmSmpvMm1uY3c3eUJCaEd4SjV4YVdNZDVHQ0owODVZZ3hBdW9FWllCdWlQYlJJcGc3aW9IT1BfeXNjS1MtZHpSUkJQTXp5Vnhya2R4U01tZzFKS2NyT21wejIwNzRjaE4zMmZQckNMN3NLTnMydEFURDktLTdhTUNQNmRzWEp3dUFHYzg",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:04:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon emerges lowest bidder for ₹1,465 crore NHAI Expressway project in Gujarat",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOVllhTERsUF9MbTBvQm9rRXd3cTJmTjJsVXJEMDlNdTV0QWJuSlFwUXBYcklLSkctblZxMHlzUGFManJaZk5HalFraUd0c2FZY25IS0xFRThvNXZDVXRBOXNsTjZueGpGbG0tVWxDallQenl5c3BqcVJrU0JkLXF6LUNLM25Mdm43b3VrQ01pMWtzMnVMX2dhRVg5TFJmQl9ER1NGSmlKTzFjd2dtT2xMWjhkRVUyVUlCZnlrYXFmc1RxeGJka1R2QW5md3QwLUc0Sl8yaGFmeGdUb0Jjek5ZTzVDMnhQdTYya0EwTnJ0RdIB7wFBVV95cUxOVllhTERsUF9MbTBvQm9rRXd3cTJmTjJsVXJEMDlNdTV0QWJuSlFwUXBYcklLSkctblZxMHlzUGFManJaZk5HalFraUd0c2FZY25IS0xFRThvNXZDVXRBOXNsTjZueGpGbG0tVWxDallQenl5c3BqcVJrU0JkLXF6LUNLM25Mdm43b3VrQ01pMWtzMnVMX2dhRVg5TFJmQl9ER1NGSmlKTzFjd2dtT2xMWjhkRVUyVUlCZnlrYXFmc1RxeGJka1R2QW5md3QwLUc0Sl8yaGFmeGdUb0Jjek5ZTzVDMnhQdTYya0EwTnJ0RQ",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:20:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon wins ₹1,465 crore NHAI project for Vadodara-Mumbai Expressway",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLXBwQ21wajZ2UGREMEcxYnpUZ0RDb05mQUFWdzRaUUNfTUJlRFo3R2xUYUxJVExIZ05xZWo4VGFoZU5zWVROUHNXYmk1YUdMNFBUY3MyVnZoV0NsUVpXZDNoUl90MkhfNmswckRmVHR0SHlXNTVyb3hNVXk4MWhFRE54MHViSFJYMVlGLUMwdkZhMEc1RGdnbFBnSlB5akNyZkJSMkRMWTRyaUR4V1hJQ0RCd0d0Zw",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:25:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 21,
+  "article_count": 27,
   "source_count": 2,
   "primary_source": "CNBC TV18",
   "cluster_key": "ASHOKA|OTHER|866-ashoka-bidder-buildcon-emerges-vadodara-mumbai",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T20:48:46.053788+00:00",
-  "last_updated": "2026-11-11T14:48:42.221671+00:00",
+  "last_updated": "2026-11-17T16:42:18.013308+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:46.053839+00:00",
@@ -818,6 +915,16 @@
       "timestamp": "2026-11-11T14:48:42.221654+00:00",
       "change": "sources added",
       "detail": "Business Standard, Business Today, Moneycontrol.com, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:18.013281+00:00",
+      "change": "sources added",
+      "detail": "Business Upturn, CNBC TV18, EquityBulls, Multibagg AI"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:18.013302+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 5 -> 9"
     }
   ],
   "price_reaction": {}

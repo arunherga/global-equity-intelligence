@@ -10,53 +10,45 @@
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "INDIRECT_STRONG",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.35,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [
         "REVENUE",
-        "DEMAND",
-        "COMPETITION"
+        "DEMAND"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Minimalist",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "PRODUCT",
-          "term": "beauty products",
+          "term": "skincare products",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
+        "+1 Industry-level relevance",
         "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
         "-7 Syndicated market-research advertisement, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "sector relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "assumptions behind the guidance",
-        "execution track record",
-        "Minimalist's follow-up announcements"
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to Minimalist, and beauty products. The parts of the business most likely touched are revenue, demand, competition. Classified as guidance.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to skincare products. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -70,21 +62,41 @@
       "published": "2026-11-04T00:26:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Algae Skincare Products Market Forecast to 2035, Driven by Clean-Label Demand and Scientific Validation",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVUJYUmdmTjFud0pQUEJiQjZCRFFSLTRaY0JpSUhRQjNCRWQ2clR1Y3pXQnp2Q0t4WnlaZldPbjJBS1VyMUE0SjR0VkVDcHVQeHJ2YkhjT0l3OW9Ga2p4UjV0LUYtN3FGcWdsWk1kMDJQdmg4MGwtLUtpX3I5TXRHTFNsRFZFTUtLME1hd3VlLVV2WWhjYWQtYUN2NlJQTExaZm02TEc3bUJhNVZKYzdoZ1ZrUzhhODJ4eG4waHdxM3UtZjRDMk1VU1oyeHU",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T13:01:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "RAVEL|GUIDANCE+INDUSTRY_DEMAND|beauty-expand-forecast-market-products-through",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T14:51:54.541039+00:00",
-  "last_updated": "2026-11-04T14:51:54.541135+00:00",
+  "last_updated": "2026-11-17T16:42:16.572433+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:51:54.541124+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:16.572408+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:16.572427+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

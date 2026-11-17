@@ -10,45 +10,46 @@
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT_STRONG",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
-        "DEMAND"
+        "DEMAND",
+        "INPUT_COST"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "hair serum",
-          "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "exposure_type": "COMMODITY",
+          "term": "fragrance",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
         "-7 Syndicated market-research advertisement, not a development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "assumptions behind the guidance",
-        "execution track record"
+        "execution track record",
+        "fragrance over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to hair serum. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to fragrance. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -62,21 +63,41 @@
       "published": "2026-11-15T19:21:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Fragrance Free Hand Soap Market Forecast to 2035: Demand Accelerates on Skin Health and Ingredient Transparency",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdG9CSEdicWMtcGJxR3JYcGp0S3RxZVI2RnhKQ2pVTzBRMTVZMHkxaWdtOWZBR2dFeDFvcWszeDBHRTg2UjdoZ0ZVRUdIZDhXTnBBbGZUcnNrMnBJRFNtT0s1YXJ4Ni14MVZTaUJieHl1aEtfbXhwR3ZQam13RGxDU3o4Nmg4QmVSU002R2lfUW5odDdwTndfOXdjdUVoR3ljN2xoQWhWWi1rcm9kQkh3SWhiLU4yUHRFdC1hNmYxeHVlY1ZadmQwOEJPRlJpRWtJOGxscVBMZw",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-16T17:06:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "RAVEL|GUIDANCE+INDUSTRY_DEMAND|2035-forecast-hair-ingredient-market-serums",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:05:59.408464+00:00",
-  "last_updated": "2026-11-16T16:05:59.408549+00:00",
+  "last_updated": "2026-11-17T16:40:11.835247+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:05:59.408538+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:11.835224+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:11.835241+00:00",
+      "change": "direction changed",
+      "detail": "RAVEL NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

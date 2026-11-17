@@ -4,17 +4,19 @@
   "summary": "NTPC Vidyut Vyapar Nigam (NVVN) has invited bids under the Ministry of Home Affairs to install grid-connected rooftop solar projects in West Bengal and Bihar.",
   "event_date": "2026-10-28",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TENDER"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
+        "REVENUE",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
@@ -29,6 +31,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
         "-2 Weak indirect connection",
         "-1 Single source, unconfirmed"
       ],
@@ -41,19 +44,23 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
+        "REVENUE",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
@@ -75,6 +82,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
@@ -86,19 +94,23 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, industry exposure to NTPC, and rooftop solar. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, industry exposure to NTPC, and rooftop solar. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
+        "REVENUE",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
@@ -113,6 +125,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
         "-2 Weak indirect connection",
         "-1 Single source, unconfirmed"
       ],
@@ -125,9 +138,12 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
         "order flow from NTPC"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are revenue, customers. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -141,21 +157,56 @@
       "published": "2026-10-28T17:28:16+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "NVVN Invites Bids for Rooftop Solar Projects at Government Facilities",
+      "url": "https://www.mercomindia.com/nvvn-invites-bids-for-rooftop-solar-projects-at-government-facilities",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-17T18:04:08+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|OTHER|bids-invites-nvvn-projects-rooftop-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-28T13:12:07.128523+00:00",
-  "last_updated": "2026-10-28T13:12:07.128600+00:00",
+  "last_updated": "2026-11-17T16:40:06.518899+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-28T13:12:07.128588+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:06.518860+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:06.518877+00:00",
+      "change": "categories added",
+      "detail": "TENDER"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:06.518884+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:06.518890+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 1 -> 4"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:06.518895+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 2"
     }
   ],
   "price_reaction": {}

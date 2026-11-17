@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -104,16 +95,36 @@
       "published": "2026-11-16T05:46:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank Allots 14,12,278 Equity Shares Under ESOP and RSU Schemes",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaTdBcFFNcE9sT2NudHNqbDJYQkNOTy0xT1p6c25kTUNYSWhUdFpIeVVVelc5X2RnTDk2V1pveEZNcDYzRndDN1B3dl9JRUVaM1VSbFFRUk16Q1RweXdfNXRvbXh1QWczTHllcVZuUDR3QmRFck1xVFB5YndQQkUycWxhTV9YVXN6VDFRYnE5SHd3RlZFdGh3YVpyVWpUaDRRazZFUVp3",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T08:50:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Axis Bank Allots 3.41 Lakh Equity Shares under ESOP/RSU Scheme",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVFpZSkZWQ3RlMkRGVXRmQXkxYmJ4V2tNNVBwdUtWZXhlQ3pVN20ybVVzYmZkdmJNVU1wRzdFZmNSSjdJUWdEbjN3bFVZZWRXVzZQRmdubWV2TDY4bXZ3LXlKdER1cmdHdUJhRGhvRDJIZ1h1WHFaZlp3dWxTalhGNXpTblpPdThDM1RNeUphUTRqdlpUbWVTbmhSd1FGOXc",
+      "source_name": "PSU Connect",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T14:18:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "PSU Connect",
   "cluster_key": "HDFCBANK+TMB|OTHER|144-220-allots-axis-bank-equity",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:35:07.608233+00:00",
-  "last_updated": "2026-11-16T16:21:31.136131+00:00",
+  "last_updated": "2026-11-17T16:42:24.823850+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:35:07.608308+00:00",
@@ -122,6 +133,21 @@
     },
     {
       "timestamp": "2026-11-16T16:21:31.136114+00:00",
+      "change": "sources added",
+      "detail": "PSU Connect"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:37.328884+00:00",
+      "change": "sources added",
+      "detail": "PSU Connect"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:37.328904+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
+    },
+    {
+      "timestamp": "2026-11-17T16:42:24.823831+00:00",
       "change": "sources added",
       "detail": "PSU Connect"
     }

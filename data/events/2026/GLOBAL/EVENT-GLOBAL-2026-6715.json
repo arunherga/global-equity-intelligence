@@ -5,21 +5,23 @@
   "event_date": "2026-11-16",
   "event_types": [
     "GOVERNMENT_POLICY",
-    "CAPACITY_EXPANSION"
+    "CAPACITY_EXPANSION",
+    "CAPEX"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.62,
       "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET",
         "REGULATION",
         "DEMAND",
-        "CAPACITY",
-        "BALANCE_SHEET"
+        "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -31,6 +33,20 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "INDUSTRY",
+          "term": "solar PLI",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
@@ -39,16 +55,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+3 Government policy or tender development"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -57,21 +73,40 @@
         "which players qualify",
         "funding mix for the expansion"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to PLI scheme, and India. The parts of the business most likely touched are regulation, demand, capacity. Classified as government policy.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to PLI scheme, and solar PLI. The parts of the business most likely touched are cash flow, balance sheet, regulation. Classified as capex.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. While PLI scheme incentives directly boost income for eligible manufacturers, the addition of 24 GW domestic manufacturing capacity across India increases overall supply, which could weigh on domestic solar module realization prices if demand growth lags.",
+        "margin_effect": "Unclear. Direct PLI incentive payouts provide cash flow support and margin expansion for winning participants. However, intensified domestic price competition from expanded nationwide capacity could compress gross margins on module sales.",
+        "cost_effect": "Input costs could benefit in the medium term as the expanded domestic manufacturing ecosystem builds out local solar cell, wafer, and ingot capacity, potentially reducing reliance on imported solar components.",
+        "competitive_effect": "Waaree faces heightened domestic competition as total national capacity grows by 24 GW. To maintain its leading market position, Waaree must rely on scale, backward integration (cell manufacturing), and export footprint against other heavily funded PLI beneficiaries.",
+        "regulatory_effect": "High regulatory oversight and tracking under the PLI framework, requiring compliance with strict domestic content, integration depth, and commercial operational timelines to claim government subsidies.",
+        "short_term": "Neutral to slightly positive sentiment impact over 0-3 months, reflecting strong government policy execution and validation of solar manufacturing momentum in India.",
+        "medium_long_term": "Over 3 months to several years, massive industry capacity expansion could lead to intense domestic competition and potential oversupply risks, forcing manufacturers to increasingly target export markets or differentiate through backward cell-to-module integration.",
+        "second_order_effects": "Rapid expansion of domestic solar supply chains could accelerate India's independence from imported Chinese solar inputs and push major domestic manufacturers to seek aggressive international expansion (e.g., US market).",
+        "key_uncertainty": "The exact proportion of PLI fund disbursements allocated to Waaree specifically, and whether domestic solar project installations grow fast enough to absorb 24 GW of new manufacturing capacity without pricing erosion.",
+        "monitor_next": [
+          "Waaree Energies' specific PLI tranche allocations and incentive disbursement receipts",
+          "Domestic solar module pricing trends and gross margin commentary in upcoming quarterly results",
+          "Waaree's cell and module capacity commissioning timelines relative to industry peers",
+          "Trends in Approved List of Models and Manufacturers (ALMM) enforcement and domestic demand growth"
+        ]
+      }
     },
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.58,
       "business_impacts": [
+        "CASH_FLOW",
+        "BALANCE_SHEET",
         "REGULATION",
         "DEMAND",
-        "CAPACITY",
-        "BALANCE_SHEET"
+        "CAPACITY"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -92,14 +127,14 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Government policy or tender development",
-        "-2 Single unverified source"
+        "+3 Government policy or tender development"
       ],
       "direction_reasons": [
         "CAPACITY_EXPANSION cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
@@ -109,7 +144,7 @@
         "which players qualify",
         "funding mix for the expansion"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NITI Aayog, and India. The parts of the business most likely touched are regulation, demand, capacity. Classified as government policy.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NITI Aayog, and India. The parts of the business most likely touched are cash flow, balance sheet, regulation. Classified as capex.",
       "ai_analysis": null
     }
   },
@@ -163,21 +198,61 @@
       "published": "2026-11-16T07:37:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar PLI scheme draws ₹64,873 crore investment; adds 24 GW to India's manufacturing capacity: NITI Aayog",
+      "url": "https://energy.economictimes.indiatimes.com/news/renewable/solar-pli-scheme-draws-64873-crore-investment-adds-24-gw-to-indias-manufacturing-capacity-niti-aayog/135915754",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-17T07:37:17+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Solar PLI scheme draws ₹64,873 crore investment; adds 24 GW to India's manufacturing capacity: NITI Aayog",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPRGxMMGpJNnpLOWFidUI2eUEwV28wYlNiVy1hMlFaSm8zSXNjaGNYeU82eE15UUNzdlkxOTE3dG44Tk11YnVyN241aXFDWFVJSGNwVElmX05jbGxkejZzNXZ2dm1VUVRrSnZxSnNBckU0TElxVXpxclY3NlVpYUVIdkFSX1FRZFZwQUFPSEFyUkw1SlFwUWp0QVZ4U3ZRMnJiNjlyR2llaTZ0MTh6ZVVIRzJEMU1tanpvZGM4UkE1Q25sRk9NSVJGVmplVEFFOUdISmdhZmlVM19HZWQ3SWRSaTJ4Q0VtamVYUVlnblMwVUVCaVlBUTJIVUE5dVZiMXZSVjZ30gGDAkFVX3lxTE9EbEwwakk2eks5YWJ1QjZ5QTBXbzBiU2JXLWEyUVpKbzNJc2NoY1h5TzZ4TXlRQ3N2WTE5MTd0bjhOTXVidXI3bjVpcUNYVUlIY3BUSWZfTmNsbGR6NnM1dnZ2bVVRVGtKdnFKc0FyRTRMSXFVenFyVjc2VWlhRUh2QVJfUVFkVnBBQU9IQXJSTDVKUXBRanRBVnhTdlEycmI2OXJHaWVpNnQxOHplVUhHMkQxTW1qem9kYzhSQTVDbmxGT01JUkZWamVUQUU5R0hKZ2FmaVUzX0dlZDdJZFJpMnhDRW1qZVhRWWduUzBVRUJpWUFRMkhVQTl1VmIxdlJWNnc",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T07:37:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
-  "source_count": 1,
+  "article_count": 7,
+  "source_count": 2,
   "primary_source": "Lokmat Times",
   "cluster_key": "MSTCLTD+WAAREEENER|CAPACITY_EXPANSION+GOVERNMENT_POLICY|116-contribute-india-pli-backed-projects-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:06:46.165396+00:00",
-  "last_updated": "2026-11-16T16:06:46.165496+00:00",
+  "last_updated": "2026-11-17T16:40:04.131623+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:06:46.165485+00:00",
       "change": "created",
       "detail": "5 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:04.131587+00:00",
+      "change": "sources added",
+      "detail": "ET EnergyWorld, ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:04.131605+00:00",
+      "change": "categories added",
+      "detail": "CAPEX"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:04.131613+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 3 -> 5"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:04.131619+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 6"
     }
   ],
   "price_reaction": {}

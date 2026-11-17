@@ -6,7 +6,8 @@
   "event_types": [
     "GUIDANCE",
     "MACRO",
-    "COMMODITY"
+    "COMMODITY",
+    "ANALYST_ACTION"
   ],
   "stocks": {
     "TMB": {
@@ -54,6 +55,52 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.25,
+      "business_impacts": [
+        "REPUTATION",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are reputation, pricing, input cost. Classified as analyst action.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -76,21 +123,56 @@
       "published": "2026-11-12T14:09:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Falls to Rs 1.38 Lakh per 10 Grams, Silver Hits One-Year Low",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOT3dHOWFhRlJyQmpDTmVyNFlHQk41UzVjV25Dc1g4WGsxdVVKQVZzVFFfdVNlaU50U2dmTThmZTF6eWxMN00yY2J2aWU5a1VleDdXWmtaaUZhOVV4TW0zcW90TExaT0JXMVhrcmtQR0VwVW5jY2E3Y0hJbUNkbElhQ2toQ0h1TzE1TVl2Uy1KT2N3OEJwUkllX2NFYUd1Rk1MMXV5T2ZrRTZPdGJ3dG00",
+      "source_name": "Kashmir Observer",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T14:18:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices near 1-year low, silver slides as dollar hits 19-month high: Should you buy before wedding season or wait?",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPTFVZSHpDaUJvNDNsaHI2WXRTWGJwSXh5MUozdzRBeFZJbWtLNkg1MkM5SzF4Z3BRYTliX0FJUGE1ejhlRDFkYXljY2VwblRad2wzOU5SMG5wdmtyc1RlRUJpdW0tTlhqbFl0Znk2a0VCQmRCWHhkT01MREUxOEZoaEtCcE9nVk81V3N6Ujg0T3V0S0pta3JKcTBFUnp3WnBKdnNzLUV6T0tCWEZGODhSRnNxazRyQW4wdl9YSWdwc0N3WUdDdDJqUWJXaHJnZndSRU1BRG1fMldmbHZLUG5HcmVMc3doNjhvbWxONjhJU1c2eDVZNlJGVDF0UzNaYmdONElUNGxkNHNLbHdTVXhiczBOWdIBmAJBVV95cUxNUFFwamRpVWg1Y21VdG12RkFTQmxEWjg2U3BEY0VyZDNZN0dTOHZvRWxzZHNtRnU3emc2WW12QW9EUE42TDFma3I2SFNDYzdNdmdDSFA2djdYWHU0OC1hUFJVUk1yN1BTWHJvU2Z2RHNXN3VVVEpVYjFPV1RwQmhZTXFneVVfQTM3VENHc3RiX1Z6R1dUaFM5ZWpUdkszOFEtaFR6ZklHWkt0R0QzVU9OVzU2YUIxdHdTN0czMlAyb0lBNWZPbkhnN0tmU05maUZodGNSQVkzZWljdjB2SGRJRVVXcjNmeUpRbDRxQ1FVTGFxWTFxX182UlRzODlobnhFUkk4WVNvd2VKdnN4bEpmMnJIRTVacWV4",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T03:08:20+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "FXEmpire",
   "cluster_key": "TMB|GUIDANCE+MACRO|1.6%-below-fall-gold-price-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:36:00.615614+00:00",
-  "last_updated": "2026-11-12T15:36:00.615704+00:00",
+  "last_updated": "2026-11-17T16:40:45.419891+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:36:00.615692+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:45.419861+00:00",
+      "change": "sources added",
+      "detail": "Kashmir Observer, Livemint"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:45.419877+00:00",
+      "change": "categories added",
+      "detail": "ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-11-17T16:40:45.419886+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

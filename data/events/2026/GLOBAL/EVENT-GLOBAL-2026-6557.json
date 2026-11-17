@@ -10,10 +10,10 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,17 +30,16 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (diesel prices) is the subject of the headline",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -54,10 +53,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -74,17 +73,16 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (diesel prices) is the subject of the headline",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -98,10 +96,10 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -118,17 +116,16 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (diesel prices) is the subject of the headline",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "diesel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -150,21 +147,51 @@
       "published": "2026-11-13T22:12:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Why diesel prices remain high despite falling crude prices",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRFFPV0Z1RFdEcHdWaHFTaDctYzQ2X2pjUGVoMjg1YVd1R1F2UTJGTkdMVnRQejlSdmFFX3o4VnpqcTRrSHpfQVNwa2xBOE94SnpuTzBjNWVuQTFXOWVBaVkxYTg0bVhnbzVZcnBKblcteGg2ZVRVMzlZcU9wVFR3cEllTVFyVElJYUtsVUpmbw",
+      "source_name": "HGV Ireland",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T06:16:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Crypto Briefing",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|COMMODITY|despite-diesel-global-high-price-remain",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:50:32.299723+00:00",
-  "last_updated": "2026-11-14T13:50:32.299803+00:00",
+  "last_updated": "2026-11-17T16:41:16.169997+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:50:32.299791+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:16.169960+00:00",
+      "change": "sources added",
+      "detail": "HGV Ireland"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:16.169980+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:16.169987+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-17T16:41:16.169992+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
