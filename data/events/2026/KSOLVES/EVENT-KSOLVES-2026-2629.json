@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.39,
       "business_impacts": [
         "REVENUE",
         "DEMAND"
@@ -38,7 +38,6 @@
       "score_reasons": [
         "+1 Industry-level relevance",
         "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,7 +46,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "assumptions behind the guidance",
@@ -97,21 +96,41 @@
       "published": "2026-11-16T23:30:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India IT Spending to Reach INR 16.9 Trillion in 2027, Growing 10.6% Year-over-Year: Gartner Forecast",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONXMyVnNHMHZ1eFNjRzlCVDRKQkJWUlZuUjltUkx2QnREb0dQRkFHRnVFYVZ5enJHVjlfMmRFQll3NTZfQjZNME8wWXRMSnMzWGxZQlM3WDNkOXVReXNfMzV5WjhFRWg3WHZ3emhYQWVhTkhQTV9Ob2pMT1dTYXdxb2JQa1RzWWZEelJ0eWUtdUdhOU41b1JwV281STFSMllFSDRqMURnb0JVQ0Y4NW9tV19PMzBMTGZ0VFlOMUphUHk2X0k5NGZj",
+      "source_name": "CXOToday.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T19:28:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The Hindu",
   "cluster_key": "KSOLVES|GUIDANCE|16.9-cloud-drive-india-investments-spending",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:21:11.042937+00:00",
-  "last_updated": "2026-11-17T16:21:11.043061+00:00",
+  "last_updated": "2026-11-17T21:56:19.106665+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:21:11.043049+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:19.106645+00:00",
+      "change": "sources added",
+      "detail": "CXOToday.com"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:19.106662+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 1"
     }
   ],
   "price_reaction": {}

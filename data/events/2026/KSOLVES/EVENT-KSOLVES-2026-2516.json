@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -28,13 +28,6 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "SUPPLIER",
-          "term": "ServiceNow",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "TECHNOLOGY",
           "term": "Salesforce",
           "relationship": "SECTOR",
@@ -44,6 +37,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -55,10 +49,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from Salesforce",
-        "supply terms from ServiceNow"
+        "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Salesforce, and ServiceNow. The parts of the business most likely touched are balance sheet, supply. Classified as fundraising.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are balance sheet, supply. Classified as fundraising.",
       "ai_analysis": null
     }
   },
@@ -72,21 +65,51 @@
       "published": "2026-11-12T11:25:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Dow Slides 1.4% as Salesforce Leads Software Rout Before Anthropic IPO: Stock Market Today",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVDZEdzl5emlVbEI1ZXg4TGFnc0x2YVRzZE9idWg1QjFrVTI3b2xvN0dreExZNHhhZ19DWXl4eEpxZzRRZ3Jwamk5ZUtwRVJvZ3ZwaWJVbk1IbVE3dHA0MFRGVWFtVEJndGhETHpLT253Wmd2cUVVdFoyQWxQQ2wtTUUtbzB0cWxsX3NjbE01LVVRQk02REgtRlpjNG85QUxob3NhemxJaUZvTUpWMHJXSG1JbE5GcmJLOHBfSHRjZU00YV9PZG9YbFZ5UUFUUWdxZmVCXzRZTW9JMTVmamJOQw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T17:56:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce Sells Off Before Anthropic’s IPO",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONUhGLWltdVVWTUVfQ1VfUFphaWdpZjlnVlZscFZ5d0VrNkdzejhuZ0tCM21TbU9VT2lQTEotYlQ1bi0wVDRhSng0MWlGMk5NQnRjYTREYmxnSElVN2tsZXE2ME5hcUp6c3BmNXQwdkgzeTRWbzBGeUdFd1VfX3FvYTdCYTNlV0pHWmM1QmRCei1XUkVrTUZ2U01YdnVsQzk2",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T17:50:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Trefis",
   "cluster_key": "KSOLVES|FUNDRAISING|anthropic-bad-ipo-salesforce-servicenow-share",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-12T15:36:39.441555+00:00",
-  "last_updated": "2026-11-12T15:36:39.441637+00:00",
+  "last_updated": "2026-11-17T21:56:14.780293+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:36:39.441626+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:14.780271+00:00",
+      "change": "sources added",
+      "detail": "TradingView, Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:14.780289+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

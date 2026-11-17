@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2684",
+  "title": "Dow Jones falls 1.69% as Salesforce and Microsoft weigh on index - ad-hoc-news.de",
+  "summary": "Dow Jones falls 1.69% as Salesforce and Microsoft weigh on index ad-hoc-news.de",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Dow Jones falls 1.69% as Salesforce and Microsoft weigh on index - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdDFNMVBEQ1RTWnFEdHE1Q2ExaExwQ0hlM2JUWEM0NlNlaU16blRkQ0piYjFKQWp0X1ZGUkFpZTNpOXMzMVk1Z3RTa2diVGJnM0dGeFQwRG1BN1FDdE4xeVQ5ZDVNcWNzSnJoTUNXallJUkI1VjlkR2J2ekxXSklDUzZhRk40bzZqMlpySzFMUy1LazhHRktUQmhPMFZHTUhtU0F4WWVJdU4yMnhWLTVkYldLNW5mRG1Dd3Blal96RGtCYkk",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T17:40:52+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ad-hoc-news.de",
+  "cluster_key": "KSOLVES|OTHER|1.69%-dow-fall-jones-microsoft-salesforce",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-17T21:55:15.882516+00:00",
+  "last_updated": "2026-11-17T21:55:15.882581+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-17T21:55:15.882569+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

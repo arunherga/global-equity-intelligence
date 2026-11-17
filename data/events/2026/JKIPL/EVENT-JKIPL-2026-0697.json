@@ -10,8 +10,8 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
@@ -33,6 +33,7 @@
         "+3 Close, specific exposure to this company",
         "+2 Acquisition, merger or divestiture",
         "+3 Development at a known counterparty (Komatsu)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -90,16 +91,26 @@
       "published": "2026-11-16T22:30:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Komatsu To Acquire Roadtec And Carlson Road Construction Equipment Brands",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNelBzOW1COFhpWHEzb3lVeHNpMlBteE1yVENhZjdaWW54SVB3QUZOQXB4ZXdvUjZ0VFYza2lnenlVc29KdHU3bG9RQnh0WnhZX0hkMFNSRW9OMk9WelFQOWxaZ1ZxSDIwaTREM0JUSl9oZU5IbDk0Mmt3Q1c2aEg4dmRfVlhJQnI5RVZtcm84WHhuSEMwQ3NWdQ",
+      "source_name": "Pulse 2.0",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T21:11:33+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "JKIPL|ACQUISITION|acquire-carlson-construction-equipment-komatsu-roadtec",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-14T13:48:58.085515+00:00",
-  "last_updated": "2026-11-17T16:40:28.714369+00:00",
+  "last_updated": "2026-11-17T21:56:21.829716+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:48:58.085595+00:00",
@@ -110,6 +121,16 @@
       "timestamp": "2026-11-17T16:40:28.714349+00:00",
       "change": "sources added",
       "detail": "https://megaproject.com/"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:21.829697+00:00",
+      "change": "sources added",
+      "detail": "Pulse 2.0"
+    },
+    {
+      "timestamp": "2026-11-17T21:56:21.829713+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 6 -> 8"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-MSTCLTD-2026-0574",
+  "title": "Brazil-China freight rates soar up to 65%, forcing Minas Gerais iron ore miners to halt operations",
+  "summary": "Brazil-China freight rates soar up to 65%, forcing Minas Gerais iron ore miners to halt operations BNamericas",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "iron ore",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Severe supply-chain or raw-material disruption",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "iron ore is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to iron ore. The parts of the business most likely touched are supply, input cost, pricing. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Brazil-China freight rates soar up to 65%, forcing Minas Gerais iron ore miners to halt operations",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaE93bHpjZnpoOWk0SGZEUE9Fdy1OYlVhME5YS2w3R0FVUmlwSEV1b09md0JRbXowaDlDUElXT2lFYVNiNWxKMS03bUZBeEdsaV81Y1BrMzRNQnZxTy11a1lCdExEeEVaM0JiQ2k5UVVNZENIRE9xRTFORmNBbkxfbndmdnYzTUZIdS01WUVkUmlESFNnUDgzUkRuSENNM0J1QkJTX0hCaHRHOEYtLTNqeFJrVndPbmZwQW1MeENySHdaR01hU1RRekJxRW9TWGhZ",
+      "source_name": "BNamericas",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T19:24:59+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BNamericas",
+  "cluster_key": "MSTCLTD|SUPPLY_CHAIN|65%-brazil-china-forcing-freight-rate-soar",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-17T21:55:37.018563+00:00",
+  "last_updated": "2026-11-17T21:55:37.018642+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-17T21:55:37.018630+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
