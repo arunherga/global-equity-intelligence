@@ -10,23 +10,38 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 6,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.51,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [],
+      "exposures": [
+        {
+          "exposure_type": "PRODUCT",
+          "term": "PV modules",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
+        }
+      ],
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -47,21 +62,41 @@
       "published": "2026-11-18T09:45:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies named top performer in all eight categories of Kiwa PVEL’s PV Module Reliability Scorecard",
+      "url": "https://www.pv-magazine-india.com/2026/11/18/waaree-energies-named-top-performer-in-all-eight-categories-of-kiwa-pvels-pv-module-reliability-scorecard",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-18T16:25:17+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Sahi",
   "cluster_key": "WAAREEENER|OTHER|energies-kiwa-named-performer-pvel-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:01:39.349539+00:00",
-  "last_updated": "2026-11-18T16:01:39.349626+00:00",
+  "last_updated": "2026-11-18T22:00:52.773077+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:01:39.349615+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T22:00:52.773053+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-18T22:00:52.773072+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 6"
     }
   ],
   "price_reaction": {}
