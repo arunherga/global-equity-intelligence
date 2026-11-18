@@ -53,38 +53,46 @@
     },
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
-        "-2 Weak indirect connection",
+        "+3 Development at a known counterparty (NTPC)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -92,43 +100,51 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
-        "-2 Weak indirect connection",
+        "+3 Development at a known counterparty (NTPC)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -136,7 +152,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -229,38 +245,46 @@
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY"
+        "CAPACITY",
+        "CUSTOMERS"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "BSE",
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
-        "-2 Weak indirect connection",
+        "+3 Development at a known counterparty (NTPC)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "order execution schedule",
@@ -268,7 +292,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     },
     "KSOLVES": {
@@ -468,21 +492,51 @@
       "published": "2026-11-01T05:05:43+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Pace Digitek Secures INR 2,691 Crore BESS Order from NTPC Green Energy",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ0wzcHFHZFFoRU5NR2IzcS04ZkhrMVY3ODNSVjlMVW5IRjZ2Z0VMU2xNUlhUSXpSUVgzMVVicXp0eU92UGhpODZHMnMxNTZWREl6UFEydl9lV1Y5XzlfZnZtY0lsVGpoQTBGczc3MWt6RHp3cEdrRzdHNXJ5eXNxS29lc042ejdmTlJDejRVZTJLc0FqUDk1OEc1OWo3dWRuUW5BRXZn",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T07:13:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+COALINDIA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+RAVEL+SUPRIYA+TMB+WAAREEENER|ORDER_WIN|179.4-bess-digitek-order-pace-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-01T14:28:10.125867+00:00",
-  "last_updated": "2026-11-01T14:28:10.125957+00:00",
+  "last_updated": "2026-11-18T16:08:46.696080+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-01T14:28:10.125948+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.696046+00:00",
+      "change": "sources added",
+      "detail": "Energetica India Magazine"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.696065+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 6"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.696071+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 6"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.696076+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 6"
     }
   ],
   "price_reaction": {}

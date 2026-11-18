@@ -109,6 +109,50 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Asia. The parts of the business most likely touched are pricing, input cost, supply. Classified as commodity.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -131,16 +175,26 @@
       "published": "2026-11-11T15:56:57+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Crude oil prices fall as US inventory build outweighs West Asia tensions",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-prices-fall-as-us-inventory-build-outweighs-west-asia-tensions/article71714475.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-18T04:38:10+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+GEOPOLITICAL|crude-fall-midterm-oil-price-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:53:30.169416+00:00",
-  "last_updated": "2026-11-11T21:37:14.059517+00:00",
+  "last_updated": "2026-11-18T16:07:31.828074+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:53:30.169463+00:00",
@@ -156,6 +210,16 @@
       "timestamp": "2026-11-11T21:37:14.059503+00:00",
       "change": "categories added",
       "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:31.828046+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:31.828066+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

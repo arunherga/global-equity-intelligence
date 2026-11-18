@@ -10,38 +10,48 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "confidence": 0.49,
+      "business_impacts": [
+        "EXPORTS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
           "term": "solar panels",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "United States",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+2 International market development",
+        "+2 Names a key geography for this company",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar panels. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar panels, and United States. The parts of the business most likely touched are exports. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +65,41 @@
       "published": "2026-10-30T05:07:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Solar recycling 2.0",
+      "url": "https://www.pv-magazine-india.com/2026/11/18/solar-recycling-2-0",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-18T04:46:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Bioengineer.org",
   "cluster_key": "WAAREEENER|OTHER|faster-panel-piling-solar-waste-world",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-30T13:19:14.513909+00:00",
-  "last_updated": "2026-10-30T13:19:14.514019+00:00",
+  "last_updated": "2026-11-18T16:07:49.708385+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:19:14.514008+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:49.708360+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:49.708380+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 4"
     }
   ],
   "price_reaction": {}

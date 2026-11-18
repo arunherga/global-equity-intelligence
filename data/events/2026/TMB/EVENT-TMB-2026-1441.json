@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-TMB-2026-1441",
+  "title": "Karur Vysya Bank Trader Analysis | StockIQ",
+  "summary": "Karur Vysya Bank Trader Analysis | StockIQ The Economic Times",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.18,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.2,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "Adani",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from Adani"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Karur Vysya Bank Trader Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb0JMSjNKR2MxeW45ekpSMURUYlRMQjY2b1oyNHVvbktwOUprNVRldFFmVkMwVGlyX1ZsSDdlamZDM0UzcnhsN2pWbmt3M2Fsb0FfdlJSUmllWlN2emFGTk1LUEQwd0pSemRkbGg5UWRSY3NGOUNLcHM2Rk5uU2RvWldzbW16OTc4WGNoQUYtdw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T23:19:58+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Trader Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRGxONi1PWm5zem0tWGdEcDlNaWI0Q2pfaFlyM1RqcmZ4TFNES1RiY1QzTEh3VXVtTnBJM3gxeXJtZENjbWFLMWhabk9YWlJlRDVCZWxlS1VqV2dpdTQwSTJjTk5ycWdZUFhRNmVhVkpPUHFGMW9rSl9BR1MxUXFIaU91M0xFamV2U2NnOElhOGpTZw",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T23:35:22+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 2,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "TMB|OTHER|analysis-bank-karur-stockiq-trader-vysya",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-18T15:57:52.787529+00:00",
+  "last_updated": "2026-11-18T16:08:04.929630+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-18T15:57:52.787595+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:04.929598+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:04.929619+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:04.929625+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
+    }
+  ],
+  "price_reaction": {}
+}

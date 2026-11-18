@@ -1,0 +1,126 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-6981",
+  "title": "Salesforce stock falls 9.2% after Copilotforce partnership formation",
+  "summary": "Salesforce stock falls 9.2% after Copilotforce partnership formation Traders Union",
+  "event_date": "2026-11-17",
+  "event_types": [
+    "PARTNERSHIP"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRODUCT",
+        "CUSTOMERS",
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Salesforce)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are product, customers, supply. Classified as partnership.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
+      "business_impacts": [
+        "PRODUCT",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are product, customers. Classified as partnership.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce stock falls 9.2% after Copilotforce partnership formation",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUllLNXRJbTB0eUJZSnV0Y3Vxcng4X1l0ZXlJNEEtOEFyUlE2clhNZ0VEMk53YmQyNnRHd0FtYm04cGVGSExVWHlmNDBySXczamhTU0EwY1p2SXFGbmlfMXZ0d3p0NHlFSXpBUHVTZ1NaekctbUZxbjNPS3NDMmVBWS1rYlV3SjhnYkhzSjNDTWJSeDlL",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T22:05:30+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "KSOLVES+TMB|PARTNERSHIP|9.2%-copilotforce-fall-partnership-salesforce-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-18T15:57:44.720921+00:00",
+  "last_updated": "2026-11-18T15:57:44.721008+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-18T15:57:44.720997+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

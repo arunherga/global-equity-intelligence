@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -39,6 +39,7 @@
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
         "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -69,21 +70,56 @@
       "published": "2026-11-17T21:36:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce caps employees' AI spending after some ran up thousands of dollars a month in tokens",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY2lTMzRib0lVU3NwR1ZhalpkMmh1eGZ3UTRnN3l0SzNTWEtIQThVaFktYk5GTmNGTFBOVGRlYUpkUVdOWGwxZzJ0dUdxa1QzTnRMUkpEcUZtQjFMU3pDMzB0TlByMFJkZ2V4aktpaU9KUTBwY2JPTnV0Z19sY1BPQXUydlpaNUg2MGpjM01XS3VRVEVjcDFoT2VLU0dadEY0X2V2X1JfLUFTcGNoaEF3T1NFWERPZw",
+      "source_name": "MLQ.ai",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T22:46:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce sets monthly AI spending limits for employees, caps budgets at $1,000",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdDk0ZjJ4dldvZHdBdXB4WTA2N2ZaUzU0TjhBTnhOLXRZaUl6bW42VHdUeFM4a1hWOXhHeXJIVzJ4RjJBS3FjYW01U3JUanR1WUlSVzR2cmhUeU9GMl9TUFZSN0NwbExHTFJvdlZYd0J1OHBkbjY1WGNfVXJsMmVuaG92cVprcGJhTFNkaDVtM3VndUU1UXluRU9sWUJvLURiZG1vWHhub1pvS3IwNDZ2V25RSFkyRU5vdXVsUTZPTzg3TjhnT2I0b0MxZVNER1NnalRZTzVaelUxMUdsZFI00gHkAUFVX3lxTFBvSWl4NVdZYUtINTh5N2pQbkpjNDFsWVZWLW1WcUNZMzh1YWU5a3JEYkhOTHVaNUtMWlpwVnZFdHpjUXBiakI4eS1neS0xVjNtT2VvZ1JLRzNjMXlnR0dWaVRjQ3d6dWs5Q2lYYWd2eWFoQ0tkQm1Ma2hqaE1QX2NQQ2xxUkdGeGM1SGIyS0NIUmJFN3Zfcm5iYUpwNXFvN25UMXRyYkRRSVJXcUl5OGNaR1dJb2VZZ0w4N1hJYTVIVXlWdFQ5X1VQNmhDdHpTSHJOWlhQN0ZEUkN4eGJ5eVU5WllaZQ",
+      "source_name": "ETHRWorld.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T07:50:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Information",
   "cluster_key": "KSOLVES|REGULATORY|caps-details-employees-memo-salesforce-spending",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-17T21:55:55.171688+00:00",
-  "last_updated": "2026-11-17T21:55:55.171749+00:00",
+  "last_updated": "2026-11-18T16:08:51.890693+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T21:55:55.171739+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:02.361573+00:00",
+      "change": "sources added",
+      "detail": "MLQ.ai"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:02.361592+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 5 -> 7"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:51.890674+00:00",
+      "change": "sources added",
+      "detail": "ETHRWorld.com"
     }
   ],
   "price_reaction": {}

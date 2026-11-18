@@ -45,6 +45,54 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.18,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer, geography exposure to traders, and India. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -67,21 +115,56 @@
       "published": "2026-11-17T17:31:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Happiest Minds Investor Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeE85ck9RanVaVlR4bDZMaFo1SHVFZDBxeEhrZU40N2YxT0pxLWxjSVlMOXlqRlFrR3NadGM2WkRjN1FpM2ZQWmZmWE9GUXZHRDljNUE1WWdsYWhwN1p0eV91TEpyX0xUdl9yY3ZmSnVMcktiZGFCcDdJYUpRVDdKRW9iSWh4S0NNUW5Ob25UY3M4UU02dVdvZEJOcElheG1TU0NJ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-17T20:07:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ksolves India Trader Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNElXcGdCbXJHbUw2UWNFZ28xUE11NDhkLWRRRmR5QnFwQVZlU2JmY211UDZ0RHlHQmtOREFPWlhqOXRjR2kzZldNcV9UUU1HM3NrVnJDcmtzNU1zNjNKSVJPdWpkVDI5WXNMN3R3eTJXc05XTmUxTi0wMGM3ZzVkcEhGUHFwT2pDclI5ZFpn",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T00:00:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "KSOLVES|OTHER|analysis-india-investor-ksolves-stockiq",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T21:55:13.203226+00:00",
-  "last_updated": "2026-11-17T21:55:13.203309+00:00",
+  "last_updated": "2026-11-18T16:08:06.232135+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T21:55:13.203297+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:56.230572+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:06.232109+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:06.232129+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
     }
   ],
   "price_reaction": {}

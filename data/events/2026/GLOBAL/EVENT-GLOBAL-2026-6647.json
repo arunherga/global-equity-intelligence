@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.55,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -30,27 +30,19 @@
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+1 Industry-level relevance"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -61,45 +53,44 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "confidence": 0.55,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "credit deposit ratio",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "deposits",
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+1 Industry-level relevance"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to deposits, and India. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit deposit ratio, and deposits. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -113,21 +104,56 @@
       "published": "2026-11-15T07:39:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Banks face rising funding costs as credit growth outpaces deposits",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/banks-face-rising-funding-costs-as-credit-growth-outpaces-deposits/135945578",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-18T02:14:34+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Banks face rising funding costs as credit growth outpaces deposits",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeWtaZElQQXJueDB3b3RDam1TOWFQR19oUzBBOGFYdUtlNGdHU3hfYl9TYWlpa0NfY25JeTlVMVlmM2tNdEI0OGFCcTBmU1d5cU9Uam0wazlWaEdUaHBHeVBRRURacGlucFUxTzEtWmZHLWhoQVQwV0x2MU9nUUhLTTU1bDNVc21Id0tJNUNvWUZYN0FlNWw5OFg1TGFDb0lrRzVlOU43TXk5X3VjLW5HNkFzdmV6b2Z4SHY2X0ktbml4MGR1MjhId3JZRdIBywFBVV95cUxPeWtaZElQQXJueDB3b3RDam1TOWFQR19oUzBBOGFYdUtlNGdHU3hfYl9TYWlpa0NfY25JeTlVMVlmM2tNdEI0OGFCcTBmU1d5cU9Uam0wazlWaEdUaHBHeVBRRURacGlucFUxTzEtWmZHLWhoQVQwV0x2MU9nUUhLTTU1bDNVc21Id0tJNUNvWUZYN0FlNWw5OFg1TGFDb0lrRzVlOU43TXk5X3VjLW5HNkFzdmV6b2Z4SHY2X0ktbml4MGR1MjhId3JZRQ",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T02:14:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "PSU India",
   "cluster_key": "HDFCBANK+TMB|OTHER|268-bank-credit-deposit-outpaces-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-15T19:32:34.965972+00:00",
-  "last_updated": "2026-11-15T19:32:34.966077+00:00",
+  "last_updated": "2026-11-18T16:07:48.230071+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:32:34.966067+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:48.230042+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:48.230060+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:48.230066+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

@@ -4,18 +4,22 @@
   "summary": "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre The Indian Express",
   "event_date": "2026-11-16",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "GUIDANCE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -27,32 +31,37 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Earnings or guidance at a related company",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "assumptions behind the guidance",
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "confidence": 0.47,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -64,21 +73,23 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
-        "-2 Single unverified source"
+        "+2 Earnings or guidance at a related company",
+        "-2 Weak indirect connection"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "two independent sources",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "assumptions behind the guidance",
+        "execution track record"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, demand. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -122,16 +133,46 @@
       "published": "2026-11-17T04:59:54+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What are Tata Sons' options after RBI reiterates listing requirement?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/what-are-tata-sons-options-after-rbi-reiterates-listing-requirement/135945388",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-18T02:05:38+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Tata Sons Had Sought Guidance From RBI In Oct On Listing Mandate For Upper Layer NBFCs: Report",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVjV6UGdXTDJSNTNqRkFVWnlCb0N0MmNSbjlzSDNvdURsczN0M3NYWFlfMXdaT0xKdnBZT0g3QmFBMTA1NHhrZHY2d1hLZUVMcGphb3c3aXJyTzNNRjY4cEdraWlKUWVwbUp0RmIybElFdHlhTS1TZnNfYnBoX0pNSHVXRE4wanh2aW1FUW4tSlctNkJUdnFnZEFoeXdrbE0tMWRnbEZVYWg3dm1TcWhHbmUzdzhzdnAzZ1BFdzY1UlhKWnZ5Tmk4bFJHYlNHWXfSAdQBQVVfeXFMUDhqclFSenFZS2xKRU50S1lIYXFlUmlFc0Q2eW9sUnJvLU1aclpiX3lkaDYtV25qZ1VVSjFSUHFQbUF2RU5aSjdmUXBwYXVoNGVZQ3B1Ykw0TWNjZHlzbzZVTjgtVkk5V2pCZm9KZVluQnVPZFJnd2Y0WGY3eG05N3FSVnNISnlvY3d2RFQ3NGc3WHRWZFFxTnJtNHFmMGtwS1ZWXzhzWmRyY1N5QVRqU2tLS3hTeU9zWWx2WkQ5eVh5WlhITy1XUnVVTjF3Y3MwcTA4TXk",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T09:22:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "What are Tata Sons' options after RBI reiterates listing requirement?",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNFlTd0ZyZFM2aWxaOEZfYmRkaF8tNlJ5TlhUUmVjd1JTVjlDdjRiak5wRkFzNHF1c2RzcUEwQmxLSHl5LXRtY2JnMFBTZkpnbDBENlpTOGpUbERyVnBMOFJheFFEV1BrcWxMVXdYam8tM0VpRkpfQ0tDUXVRVldzckZza1FoUkhMQmJsajBrNklRTlg3cldmNVNIT2NqOUV5TnJIVUFPeUQybGhuZkFRRi1sWVRzSUVFdThhMEJSTmQxOG4yNF9BbGpyZDbSAcwBQVVfeXFMTTRZU3dGcmRTNmlsWjhGX2JkZGhfLTZSeU5YVFJlY3dSU1Y5Q3Y0YmpOcEZBczRxdXNkc3FBMEJsS0h5eS10bWNiZzBQU2ZKZ2wwRDZaUzhqVGxEclZwTDhSYXhRRFdQa3FsTFV3WGpvLTNFaUZKX0NLQ1F1UVZXc3JGc2tRaFJITEJibGowazZJUU5YN3JXZjVTSE9jajlFeU5ySFVBT3lEMmxobmZBUUYtbFlUc0lFRXU4YTBCUk5kMThuMjRfQWxqcmQ2",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T02:05:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 7,
+  "source_count": 2,
   "primary_source": "The Indian Express",
   "cluster_key": "HDFCBANK+TMB|OTHER|listing-rbi-reiterates-requirement-sons-tata",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:19:45.458206+00:00",
-  "last_updated": "2026-11-17T16:41:01.471277+00:00",
+  "last_updated": "2026-11-18T16:07:47.376845+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:19:45.458278+00:00",
@@ -147,6 +188,26 @@
       "timestamp": "2026-11-17T16:41:01.471257+00:00",
       "change": "sources added",
       "detail": "ABP Live English, Fortune India"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:47.376806+00:00",
+      "change": "sources added",
+      "detail": "ETBFSI, Free Press Journal, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:47.376825+00:00",
+      "change": "categories added",
+      "detail": "GUIDANCE"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:47.376834+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:47.376840+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 2"
     }
   ],
   "price_reaction": {}

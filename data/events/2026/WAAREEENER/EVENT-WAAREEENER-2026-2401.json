@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -21,31 +21,46 @@
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
+          "exposure_type": "COMMODITY",
+          "term": "solar module prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "output commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "module price",
+          "relationship": "SECTOR",
+          "weight": 2.3,
+          "detail": "international topic; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "solar module prices",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "inverters",
-          "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
-        "-2 Single unverified source"
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "solar module prices is a selling price and is moving down"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "sector relationship",
+        "best source quality 6/10",
+        "two independent sources",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -54,8 +69,26 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar modules, and inverters. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to solar module prices, and module price. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Export revenues could face downward pressure due to lower realized average selling prices (ASPs) in Europe and potential pricing spillover into other international markets. Revenue growth from European customers may slow if project cancellations lead to deferred or reduced module purchase orders.",
+        "margin_effect": "Gross and EBITDA margins could contract if finished module prices decline faster than upstream cell and wafer input costs, or if the company is forced to offer price concessions to maintain export order volumes.",
+        "cost_effect": "Raw material costs (such as solar cells, wafers, and polysilicon) may experience downward price trends due to global oversupply, providing partial relief; however, holding costs for finished inventory could rise if export dispatch timelines elongate.",
+        "competitive_effect": "Tier-1 Chinese and global competitors facing European gluts may aggressively discount surplus inventory in open international markets, increasing competitive pressure on Waaree's non-domestic sales bids.",
+        "regulatory_effect": "Depressed prices and surplus stock in Europe could prompt stricter EU trade checks, carbon border adjustments, or anti-dumping measures, while reinforcing the strategic importance of domestic protection mechanisms like India's ALMM (Approved List of Models and Manufacturers).",
+        "short_term": "Over the next 0-3 months, Waaree may experience pricing renegotiation pressure on unfulfilled international orders, potential export shipment delays, and inventory valuation scrutiny for Europe-bound modules.",
+        "medium_long_term": "Over 3 months to several years, sustained global ASP weakness could shift Waaree's strategic focus further toward the insulated domestic Indian market and the US market, while altering capital expenditure payback timelines for module expansion capacity.",
+        "second_order_effects": "Price suppression in Europe could spill over into secondary non-regulated export destination markets (e.g., Africa, Latin America, Middle East), while creating potential inventory write-downs across the broader solar supply chain.",
+        "key_uncertainty": "The extent of Waaree's direct revenue exposure to the European market versus its protected domestic and US order books, which determines its insulation from European price drops.",
+        "monitor_next": [
+          "Waaree's quarterly export revenue mix and regional breakdown changes",
+          "Global and European solar module price benchmarks (e.g., PV InfoLink, TrendForce pricing)",
+          "Changes in Chinese solar cell and wafer spot prices relative to module ASPs",
+          "Regulatory updates regarding EU anti-dumping policies or trade restrictions on solar imports"
+        ]
+      }
     }
   },
   "sources": [
@@ -68,21 +101,51 @@
       "published": "2026-11-05T16:20:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "European solar module prices face additional pressure from surplus stock, cancelled projects",
+      "url": "https://www.pv-magazine.com/2026/11/18/european-solar-module-prices-face-additional-pressure-from-surplus-stock-cancelled-projects",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-18T13:40:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "European solar module prices face additional pressure from surplus stock, cancelled projects",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYnVPYXhkVTRvMnlHYW13bjY1cVVEUWFWa19LamhUX0c2cGZOa05OZkdVM2dDeHQ5OTVQNkxoQ1NhTHJfcklVbDB0YlRTaHF5ell2MkRFczdWZXdLLVhWNHVEenBIMWRoRGR5cHZVM05VMjc3TDZXUGoyeGx3ellUUV9wazcwdG5rSldVSTRZMlRMNzlRVmlORlhuSXBKR0Nhd3J3R1o5bXRQZFhJWnVSMjg1ZDM5VXB0UVlaX2FEcWZaUWNwRE53dXZ2Zw",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T13:51:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 3,
+  "source_count": 2,
   "primary_source": "PV Tech",
   "cluster_key": "WAAREEENER|COMMODITY|europe-inverter-module-price-rise-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T20:49:10.869256+00:00",
-  "last_updated": "2026-11-05T20:49:10.869318+00:00",
+  "last_updated": "2026-11-18T16:07:51.090648+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:49:10.869307+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:51.090624+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine, pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-18T16:07:51.090643+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 7"
     }
   ],
   "price_reaction": {}

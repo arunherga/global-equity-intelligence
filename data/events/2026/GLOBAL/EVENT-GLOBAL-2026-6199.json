@@ -5,7 +5,8 @@
   "event_date": "2026-11-10",
   "event_types": [
     "MACRO",
-    "COMMODITY"
+    "COMMODITY",
+    "GEOPOLITICAL"
   ],
   "stocks": {
     "COALINDIA": {
@@ -13,38 +14,33 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 5,
       "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "DEMAND",
         "PRICING",
-        "INPUT_COST"
+        "INPUT_COST",
+        "SUPPLY",
+        "GEOGRAPHY"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
-          "term": "natural gas prices",
+          "term": "diesel prices",
           "relationship": "INDIRECT",
           "weight": 3.0,
-          "detail": "output commodity; in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "natural gas prices",
-          "relationship": "SECTOR",
-          "weight": 2.3,
-          "detail": "international topic; in headline"
+          "detail": "input commodity; in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
-        "+1 The commodity (natural gas prices) is the subject of the headline",
+        "+1 The commodity (diesel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "natural gas prices is a selling price and is moving up"
+        "diesel prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -57,7 +53,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to natural gas prices, and natural gas prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -104,6 +100,100 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to natural gas prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
       "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "SUPPLY",
+        "GEOGRAPHY"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST",
+        "SUPPLY",
+        "GEOGRAPHY"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "diesel prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (diesel prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "diesel prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to diesel prices. The parts of the business most likely touched are demand, pricing, input cost. Classified as macro.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -116,21 +206,96 @@
       "published": "2026-11-10T11:53:48+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Record diesel prices drive UK inflation to 1-year high of 3.6%",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBzWDFOdXo0OXlKWUhLU3BOand5VTlOc3ltNGFDNk5JYjk3dFNoUkp5Y2t1cVBHSlVNNHRFMkpZSkh1YzhiQm5yWTEzSDNFMzZiWlBrOE5qRjd2Q19OTDZXcFJHNnlpeG9ObEtvaXR2cGNpcFk",
+      "source_name": "CNBC",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T07:11:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "UK October inflation hits 3.6% as record diesel prices drive fuel costs higher",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOQ2FUT050ZHZvZFVqS3QyRUYyUXotOHpsMG8ybGZScGVGQTlGamh6ZnJYOXdtTmtQZ0xQNWtzM0h4aGw2bVAzY0RIQXRaWTV1NkVua3otUWxTZl9ZdWpUVEE2RURKdzlyanctRGlmVmMtT3IwVzk3d250WVNVQU9ra3c0U2NsRENzQ3duLWZEakJwcjVRNEdheXkwMnNQVld2bldXSEZzTTFGcWpZaTFoV3BOZlJDWjFYSGdndUxLTFBsTGFqTklhbzJTTEc4SDd3",
+      "source_name": "Investing.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T07:11:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "UK inflation rises to 3.6% as petrol and diesel prices climb",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE52alB4VnZKYnQzNkhrSHJaMW1hX3diRWZFcjY3T2hNeFktT0Rud0tmSThyRUVvSE5ZRVpHelZGNUZUWXhfU1dLdk55T2pCeV9wYjk0N0FKRHZxdGNUN0JzV3I2YzBqRHhNRm81YmJqT05sOWZXZDZ4V2h0MA",
+      "source_name": "Yahoo Finance Singapore",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T12:25:04+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "UK inflation rises to 3.6% as petrol and diesel prices surge",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSWZZaUdXVGJPbi1xVXNZVGV1NjRQajMxYlh0dWY1dC1fOG1mMmtjNWFrcUZxSkU1VXVaZkd0TTNULXA3Z2dhcG9ySUs5Z0V3X3d6SlNvSnZJRmV4bUVaWTFfRE1uamNhNHplRjFSUWJrR0xMd0V3T0J1eEFRUDJtcTFMWXFudVF0MFFnYUFRWVI4WjhJNGlnVHkzZ3c4VWllV0FR0gGoAUFVX3lxTE5MUHJCMlZGNk9UMUg3MkFTVWtnajQtZ3c5dGk2Xzd0Um55MXdIY21sTDlkYnExTl9CcHRxV2dUMlVaaUNWY0hWX0N4Mk85XzhidkRLTTQ2a1JFWmNYdTJSODd4amk2b2N1T3BaWnVDQnYxQU0xeGg1bWxrWnlvSk5tcHJLT0RncGNNVXJMNl9DU3ZXMC1nNU40R2JyVk96S0RPNW1FVDJmQg",
+      "source_name": "Free Press Kashmir",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T08:19:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "US War on Iran Drives UK Inflation to 3.6% As Petrol, Diesel Prices Surge",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWEs0c3EwcFJzNnJjY0w4WW81NzM3M09yWUhvRS01dk5pNUJkUTJ6bzNmVFowOS1wbWVyR2VxYXhoaHBFaUp5MU9EaWEzOUM3M2RZdHZvdUxpeVR2NlBoSWRoVzVvaV9SRTdBdTBGR3lYaUtUak45SnRXOHhjU3Z3Q1VaOVBUSVVoU2lLTHU5UnllWFFFaVNYYnMxdlNkcXpDZkJuX01EeGlWUi02WDd3LU9JQjRKWlVJRS1NVmEwdlk1QdIBxwFBVV95cUxQekZZYzhuSDhvZUNoMzlkOVczTFhnNk1yLVFoaUo0SHBqb3I1MWptV1JTdE1vSnozelVHcklMV3FTUEVHSTVYV0Y2VDhvUl9aUGZVVnFaS2dQcUNDMmwtV2kwYWk0cFhRVXlaSzk5M0g3OUdwYnFpVGJBY3dUUDVld2VHM1R2Rld3TlF6am8zOTI0dVRmSG1rbGpqaFltZjFvSGY0Z05ORWNkV3hRRkpLaVNjSjNoTHQyMkVPRThZN0pSNnpKaFVJ",
+      "source_name": "تسنیم",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T11:05:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "eKathimerini.com",
   "cluster_key": "COALINDIA+SUPRIYA|COMMODITY+MACRO|further-inflation-natural-october-rise-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:13:05.159057+00:00",
-  "last_updated": "2026-11-10T15:13:05.159131+00:00",
+  "last_updated": "2026-11-18T16:08:46.174883+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:13:05.159120+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.174843+00:00",
+      "change": "sources added",
+      "detail": "CNBC, Free Press Kashmir, Investing.com, Yahoo Finance Singapore"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.174860+00:00",
+      "change": "categories added",
+      "detail": "GEOPOLITICAL"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.174867+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.174873+00:00",
+      "change": "direction changed",
+      "detail": "COALINDIA POSITIVE -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:46.174879+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

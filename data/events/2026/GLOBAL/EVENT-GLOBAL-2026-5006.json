@@ -9,45 +9,38 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
+      "relationship": "SECTOR",
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.58,
+      "direction": "NEUTRAL",
+      "confidence": 0.39,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "INDUSTRY",
-          "term": "loan growth",
+          "exposure_type": "PRODUCT",
+          "term": "gold loans",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": ""
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure"
+        "+1 Industry-level relevance",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
-        "indirect relationship",
+        "best source quality 3/10",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and loan growth. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -151,16 +144,26 @@
       "published": "2026-10-30T21:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Loan Portfolio Grows 60.6 Per Cent To Rs 23.3 Lakh Crore In September: Report",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNUpqMWI4WllSUGx4Vl8xNk9lYUNoZHFNNHdaV25QOER0ajNUOWF6d0JsNTVSZ1hpUldyOHBOVDQ0M2QtYXp1M0hGTzlmeGtrSnF6SmJVMDhDMHpRS3V0YkpUNVg4aktYWW9LQ3hPUWFBdFRVOHRRS25lQ2lDTVVqSnZpMFl0QkdscnFZbDNNMDZHUkphV3ltYmJMM0dzOHVsdTgzVXZKeFZYbW10aTc2Vnk4VUEyR21KWU9tdkJRQ1FVNFR50gHEAUFVX3lxTE01SmoxYjhaWVJQbHhWXzE2T2VhQ2hkcU00d1pXblA4RHRqM1Q5YXp3Qmw1NVJnWGlSV3I4cE5UNDQzZC1henUzSEZPOWZ4a2tKcXpKYlUwOEMwelFLdXRiSlQ1WDhqS1hZb0tDeE9RYUF0VFU4dFFLbmVDaUNNVWpKdmkwWXRCR2xycVlsM00wNkdSSmFXeW1iYkwzR3M4dWx1ODNVdkp4VlhtbXRpNzZWeThVQTJHbUpZT212QlFDUVU0VHk",
+      "source_name": "Outlook Money",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T10:57:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "HDFCBANK+TMB|OTHER|28.3%-bank-credit-rise-sector-services",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:22:40.312466+00:00",
-  "last_updated": "2026-10-31T12:56:59.610959+00:00",
+  "last_updated": "2026-11-18T16:09:27.209971+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:22:40.312545+00:00",
@@ -186,6 +189,16 @@
       "timestamp": "2026-10-31T12:56:59.610939+00:00",
       "change": "sources added",
       "detail": "India's News.Net, KNN India"
+    },
+    {
+      "timestamp": "2026-11-18T16:09:27.209946+00:00",
+      "change": "sources added",
+      "detail": "Outlook Money"
+    },
+    {
+      "timestamp": "2026-11-18T16:09:27.209965+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

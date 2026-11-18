@@ -5,22 +5,32 @@
   "event_date": "2026-11-16",
   "event_types": [
     "OTHER",
-    "CAPACITY_EXPANSION"
+    "CAPACITY_EXPANSION",
+    "GOVERNMENT_POLICY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.39,
+      "confidence": 0.41,
       "business_impacts": [
+        "REGULATION",
+        "DEMAND",
         "CAPACITY",
         "BALANCE_SHEET"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "PLI scheme",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "solar modules",
@@ -37,7 +47,8 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -45,16 +56,16 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "funding mix for the expansion",
-        "commissioning timeline",
-        "demand visibility for the new capacity",
-        "effect on return ratios"
+        "notification text and timelines",
+        "budget or allocation attached",
+        "which players qualify",
+        "funding mix for the expansion"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar modules, and India. The parts of the business most likely touched are capacity, balance sheet. Classified as capacity expansion.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to PLI scheme, and solar modules. The parts of the business most likely touched are regulation, demand, capacity. Classified as government policy.",
       "ai_analysis": null
     }
   },
@@ -78,16 +89,26 @@
       "published": "2026-11-17T01:23:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India's Solar Module Capacity Reaches 116 GW as PLI Scheme Adds 24 GW",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb3FVVGI1SUFIWk5Rb05vWWdGTlE1UWxNRHFwcGc2Z1hMY2FyS290QUctTHdINGFuQUlGOGlSZVVseHF0cXBQQzhDRnNIbkIzSzR0VWhKYmpGZTZmdmdtVDQtbGh6Rmlhb2xQSEV6TXZIZndpNl9xaW5NLWtqcnhEdDNkclJpa3FfajhLT0VjZWVhLWVSNnVaUlc5b0hOSDNlbFVSV0R4Rm01eGVUelExVHJ0a3o5Zzc0VGhvN0RBcW5tQlUwYjE4RDVqWU8wY2dVbGoxVGR1YlJpWVpWTFdRWldIVjVELU9qbWZuS0RB",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T07:45:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Social News XYZ",
   "cluster_key": "WAAREEENER|OTHER|15-fold-capacity-india-module-rise-solar",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:19:39.324294+00:00",
-  "last_updated": "2026-11-17T16:40:35.591029+00:00",
+  "last_updated": "2026-11-18T16:08:49.224028+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:19:39.324366+00:00",
@@ -108,6 +129,21 @@
       "timestamp": "2026-11-17T16:40:35.591024+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:49.223995+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:49.224016+00:00",
+      "change": "categories added",
+      "detail": "GOVERNMENT_POLICY"
+    },
+    {
+      "timestamp": "2026-11-18T16:08:49.224023+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

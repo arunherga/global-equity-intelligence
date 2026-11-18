@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2723",
+  "title": "Dow Jones, Nasdaq, S&P 500 fall amid NSA outage; Salesforce shares tumble 9%",
+  "summary": "Dow Jones, Nasdaq, S&P 500 fall amid NSA outage; Salesforce shares tumble 9% Upstox",
+  "event_date": "2026-11-18",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Dow Jones, Nasdaq, S&P 500 fall amid NSA outage; Salesforce shares tumble 9%",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUzhyZWtzd3JiSXhKYmNYYzQ2RlNRRjNROHkwWGZtdlI4ek44ZE0xVWxscnJqeFFUenA3X1dhRm5Fa1ZYQm9Oenk2R1FpVlhDNnNHSGRjUXU3YmFGX0dhLThvX1IxWV9jdmo4X0NHdm5hSWZ3UzNWZmI2X1hEODlfWU9jRlNFSGpnZHJSbXRBZnc5OExZc2FiQ2lQQkROQVNMZ1VBelBhUWxsa21NaHVtaFVrRFRTdzU3NUNHN1lyZlVGVFpqY1ZTWHV6aGtlN3dlbkQxbQ",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T02:56:34+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Upstox",
+  "cluster_key": "KSOLVES|OTHER|500-dow-fall-jones-nasdaq-s&p",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-18T15:58:48.551556+00:00",
+  "last_updated": "2026-11-18T15:58:48.551639+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-18T15:58:48.551629+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
