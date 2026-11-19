@@ -10,10 +10,10 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "SUPPLY"
       ],
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -44,7 +45,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "supply terms from AWS",
@@ -64,21 +65,41 @@
       "published": "2026-11-15T16:04:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Google Cloud Grew 103%. Azure Grew 48%. AWS Grew 39%. Only 1 of These Stocks Is a Buy Right Now.",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNVnNmeHlJajQ5eTJTWm9yekZtX3ZkQTlMUDNfbFd0U1RhY1Z4MTVWZWhqTHNuN0cza1hjYXdNcXhFeHlKdUdNVkFSTk0tdWMtNC1jUG1wMkJiU0kxSjJ2el9PY3FUdFlvcFBob0p6cThlYVpaNkZRN1FVUHlCZW8xa1lac1UwMUtHOW5sR3FvYkVpVzI1b2M1M1NxaEtPeEN6NkJaTWtiUDdwOEotWGdwNlNfTVVZRXVFSFNrMHZpcHhDZWFlaExiWGdoY0pEakF6RndzekNyQ3FSY3VLZmppZGxSc1pRQXFnWXZ3TjU1UnFwOW53SEt3cHplYVIxUGU5YnVsag",
+      "source_name": "The Globe and Mail",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T17:18:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "JournalArta",
   "cluster_key": "KSOLVES|OTHER|aws-azure-cloud-google-inference-price",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-15T19:34:08.240147+00:00",
-  "last_updated": "2026-11-15T19:34:08.240231+00:00",
+  "last_updated": "2026-11-19T16:21:10.690590+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:34:08.240220+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:10.690567+00:00",
+      "change": "sources added",
+      "detail": "The Globe and Mail"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:10.690585+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

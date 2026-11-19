@@ -37,6 +37,47 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.18,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -49,21 +90,56 @@
       "published": "2026-11-17T14:34:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies Trader Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbzg3MjB0bmpYZ3VPcjVRbjllaE5mVFNtT0FwaXh4S09QSFVBMUxUZGR3ekx3REpYTnZLbjc1VElZeFdmWklFc3VIT2x3Z1BjR0loZjRRdEFJT2RGU25Ub1htMmFhWUI1SElwaWFXbGFGcmZrTEMzODZ0UXBhejFmNlRsTjFIZGlKLWNzWmhR",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T16:22:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Investor Analysis | StockIQ",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQmdZaWM4elJBX1o2TVhNUFBTd0xiZTMyMk9XREdzcklNMUlocE9JVjZyWWgyb3pZVVpNRm9WZ19KZTQ0N1hXUjI2dDBndXVCOGxXQkFMRVNUcGlVMUpiOGl6WnY2ckFQc3N4VFFqLTBjN1JsSlhadENUdTc4SWdBcmRnLV9TRjZST24xZURYYVJxeVNx",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T09:29:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "WAAREEENER|OTHER|analysis-energies-investor-stockiq-waaree",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:27:13.124280+00:00",
-  "last_updated": "2026-11-17T16:27:13.124359+00:00",
+  "last_updated": "2026-11-19T16:22:14.052816+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:27:13.124348+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:02.584309+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:02.584329+00:00",
+      "change": "stock added",
+      "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:14.052797+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
     }
   ],
   "price_reaction": {}

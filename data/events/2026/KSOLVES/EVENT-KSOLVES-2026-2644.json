@@ -4,17 +4,20 @@
   "summary": "Salesforce Inc. $CRM Stock Bought by Banco Santander S.A. MarketBeat",
   "event_date": "2026-11-17",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "PARTNERSHIP"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
+        "PRODUCT",
+        "CUSTOMERS",
         "SUPPLY"
       ],
       "time_horizon": "UNKNOWN",
@@ -36,6 +39,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Salesforce)",
         "+2 International market development",
         "-2 Single unverified source"
       ],
@@ -50,7 +54,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are product, customers, supply. Classified as partnership.",
       "ai_analysis": null
     }
   },
@@ -64,21 +68,61 @@
       "published": "2026-11-17T08:19:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. $CRM Stock Position Boosted by Banco BTG Pactual S.A.",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZnAyZl9lbTd2MzNuZzctUjR0dkVDNk5JMW9fZTNxSXhqS3JtYmk3QW1zc3RXU190cFFnb2tZY2dOTG5fc1JDRzU5aElLaE9teV8yS0pxc0FReW5OeUJLVUZnSS1DSmZ0MkJKYW12VkpCOFBHQVBiT3h5cFVnZUFfbFZ5NUwxV1I2NjU4MGh4cFpzNHVOZ2NVUnRLbGlSTTNPTWRJQkNPaVEtQ3kxM2thTndrQkFISzlwOHFqeERta2RKeFdp",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T08:42:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Salesforce Inc. $CRM Stock Bought by Independent Advisor Alliance",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMmhOTU9RN0lGX3dxZE9YSUZJZjlIR1llSkhfeDZYRVl1RmdIVklzTklTUE0wOXN0OUZ0QmM0eGtlREgxSDdody1GeXEtdkxVTF9vRmlhR2JiUVQ5bUotSDBCRGJQOWM1UUdWUHhJVXJsbFNhdnNwb1V2QWlqR1VIMjIyRURUVlk1bHVfSGthOW9TbXhadk5tVTd4a1V0ekZuaHlYN2VzQnp5MmdYVDNCYUg1UDY1bnVlMGFGUUppMEplUQ",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T13:41:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "KSOLVES|OTHER|banco-bought-crm-inc.-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-17T16:24:38.769015+00:00",
-  "last_updated": "2026-11-17T16:24:38.769095+00:00",
+  "last_updated": "2026-11-19T16:22:41.460001+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:24:38.769086+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:09.114985+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:41.459975+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:41.459991+00:00",
+      "change": "categories added",
+      "detail": "PARTNERSHIP"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:41.459997+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 5"
     }
   ],
   "price_reaction": {}

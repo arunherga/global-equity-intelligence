@@ -10,8 +10,8 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.78,
       "business_impacts": [
@@ -19,6 +19,13 @@
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
         {
           "exposure_type": "REGULATION",
           "term": "Reserve Bank of India",
@@ -37,8 +44,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "+3 Original regulator announcement"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
@@ -54,14 +60,14 @@
         "order value",
         "competing bidders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.78,
       "business_impacts": [
@@ -69,6 +75,13 @@
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
         {
           "exposure_type": "REGULATION",
           "term": "Reserve Bank of India",
@@ -87,8 +100,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Government policy or tender development",
-        "+3 Original regulator announcement",
-        "-2 Weak indirect connection"
+        "+3 Original regulator announcement"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
@@ -104,7 +116,7 @@
         "order value",
         "competing bidders"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to Reserve Bank of India, and India. The parts of the business most likely touched are revenue. Classified as tender.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue. Classified as tender.",
       "ai_analysis": null
     }
   },
@@ -118,21 +130,46 @@
       "published": "2026-11-13T09:55:00+00:00",
       "is_official": true,
       "quality": 10
+    },
+    {
+      "title": "Underwriting Auction for sale of Government Securities for ₹33,000 crore on November 20, 2026",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63999",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-11-19T11:15:00+00:00",
+      "is_official": true,
+      "quality": 10
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|TENDER|2026-auction-conducted-november-result-underwriting",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:47:24.992214+00:00",
-  "last_updated": "2026-11-14T13:47:24.992303+00:00",
+  "last_updated": "2026-11-19T16:20:46.896678+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:47:24.992291+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:46.896645+00:00",
+      "change": "sources added",
+      "detail": "Reserve Bank of India"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:46.896665+00:00",
+      "change": "impact raised",
+      "detail": "TMB 6 -> 8"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:46.896673+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 6 -> 8"
     }
   ],
   "price_reaction": {}

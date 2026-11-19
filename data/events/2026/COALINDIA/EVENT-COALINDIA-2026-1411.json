@@ -4,21 +4,28 @@
   "summary": "The Coal India subsidiary is set to raise ₹2,295 crore from investors ahead of its public issue, which will open for subscription on Thursday and close on Monday.",
   "event_date": "2026-11-18",
   "event_types": [
-    "FUNDRAISING"
+    "FUNDRAISING",
+    "EARNINGS",
+    "INDUSTRY_DEMAND",
+    "DIVIDEND"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.61,
+      "confidence": 0.68,
       "business_impacts": [
         "BALANCE_SHEET",
+        "REVENUE",
+        "MARGIN",
+        "DEMAND",
+        "CASH_FLOW",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -37,6 +44,11 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+3 Development at a known counterparty (Coal India)",
+        "+2 International market development",
+        "+2 3 independent sources",
+        "+2 Major industry-level development",
         "-2 Weak indirect connection"
       ],
       "direction_reasons": [
@@ -44,55 +56,85 @@
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
+        "3 independent sources",
         "indirect relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order flow from Coal India"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are balance sheet, customers. Classified as fundraising.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are balance sheet, revenue, margin. Classified as fundraising.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Potentially positive in the medium-to-long term if Mahanadi Coalfields uses IPO proceeds to scale up coal production and sales, leading to higher coal e-auction trading volumes on MSTC's platform. However, immediate direct revenue impact remains unclear.",
+        "margin_effect": "Unclear, as MSTC's operating margins depend on the fixed commission rate structure negotiated for coal e-auctions rather than the valuation or fundraising success of its client's subsidiary.",
+        "cost_effect": "Negligible impact on MSTC's operating or input costs, though platform infrastructure costs could see marginal scaling if transaction volumes significantly surge.",
+        "competitive_effect": "MSTC maintains its strong position as a primary e-auction service provider for public sector coal producers, but a listed and independent Mahanadi Coalfields could press for competitive service pricing or enhanced platform features.",
+        "regulatory_effect": "Increased public market listing scrutiny for Mahanadi Coalfields could lead to stricter reporting, transparency, and compliance standards for its e-auction processes conducted via MSTC.",
+        "short_term": "Minimal financial impact over the next 0-3 months beyond sentiment linkage within the Coal India ecosystem and public market enthusiasm around the IPO.",
+        "medium_long_term": "If the raised capital accelerates Mahanadi Coalfields' capacity expansion and mining infrastructure, increased coal throughput could drive sustained higher e-auction revenues for MSTC over the coming years.",
+        "second_order_effects": "Higher institutional participation in coal subsidiary IPOs may trigger broader modernization and digitisation efforts across state coal marketing channels, reinforcing reliance on digital auction platforms.",
+        "key_uncertainty": "Whether Mahanadi Coalfields will alter its service agreements, fee structures, or allocation of e-auction mandates with MSTC following its listing.",
+        "monitor_next": [
+          "Mahanadi Coalfields' post-IPO capital allocation and coal production growth plans",
+          "Terms and renewal timeline of MSTC's e-auction service agreement with Coal India subsidiaries",
+          "Quarterly trends in MSTC's coal e-auction transaction volumes and fee realizations",
+          "Any policy changes by the Ministry of Coal regarding portal allocation for coal auctions"
+        ]
+      }
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 4,
-      "impact_band": "LOW",
+      "impact_score": 15,
+      "impact_band": "CRITICAL",
       "direction": "UNCERTAIN",
-      "confidence": 0.45,
+      "confidence": 0.77,
       "business_impacts": [
-        "BALANCE_SHEET"
+        "BALANCE_SHEET",
+        "REVENUE",
+        "MARGIN",
+        "DEMAND",
+        "CASH_FLOW"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
+          "exposure_type": "SUBSIDIARY",
+          "term": "Mahanadi Coalfields",
+          "relationship": "DIRECT",
+          "weight": 3.5,
+          "detail": "subsidiary; in headline"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Earnings or guidance",
+        "+2 International market development",
+        "+2 3 independent sources",
         "+2 Company appears in the headline",
-        "-3 Speculative or unconfirmed report"
+        "+2 Major industry-level development"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
-        "two independent sources",
+        "3 independent sources",
         "direct relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, revenue, margin. Classified as fundraising.",
       "ai_analysis": null
     }
   },
@@ -116,21 +158,291 @@
       "published": "2026-11-18T08:35:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields raises ₹2,295 crore from anchor investors ahead of IPO",
+      "url": "https://www.thehindubusinessline.com/markets/mahanadi-coalfields-raises-2295-crore-from-anchor-investors-ahead-of-ipo/article71718344.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-19T03:04:20+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Mahanadi Coalfields raises ₹2,295 crore from anchor investors ahead of IPO",
+      "url": "https://energy.economictimes.indiatimes.com/news/coal/mahanadi-coalfields-raises-2295-crore-from-anchor-investors-ahead-of-ipo/135977340",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-19T04:17:51+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Goldman Sachs, Citigroup, Morgan Stanley help Mahanadi Coalfields mop up Rs 2,295 crore from anchor invest",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNOEFkc05FbUVoTU80X0sxaUN3THRndFF0MDBNQ0hJbGxSZnM2cVZ6WFJGWGJ6OVFENnEyd25QWklWX1ozajc1a2tEd24tWnlreUVMbjQtNDBYZkh2bE5wb0FuV2pHRGFBNzBlQVRKSEVqX0xhY0VESlNXTkRVSnVIUmZrU1pybnRSbjcxd0E4WGd6bDAxb0RPZkVWSGRtOENTY1c3dWNpNHNkTTdpYlI5LTQ0ZEFyc29xT3dNMVNpWWlxYnRYYWp6OTVhdV9jcUxOamtfVmJlSlhIVTR6MFVBRjZjc19ta2dlem91RDFuZGR6Rkl5UUVERGJFMmJIY0RkNlgtNTd5SXg1bHN2MEJjY1RhaEpWd0tfX2w40gGgAkFVX3lxTE9SUjJIa2dRNlRhNUtYLUg5eFNEc1BqeVhBRmw5MEZoOTdxR1B4dHAwWFVBd1BicEVuYnJXS1R5NExVMEstMUp5SEJGM201cEF0M0JubWJYQlU2VGNsOTNWaElsVERmNHMzb1pGM0VReWtmbDFiQVVIN0FpZzFMWlBQSHd5VXJCQUxPMmxISW1CazRfdUNvQ0VNcmFBZWI1ZU5yTlZybjNTOGtoS1RGOC1PZHA3TFBEWmNka2JFbmlMVDdieG0ySWNkRksxNk1GbUtmRmc3VmVMajZpdGNuTlZsckdJZmxETHZ0ZHA0M0JLUXhtTm4xa3l6ZjVvYlJUVjdlX2UtYmFXdFRTZmduNHZ2d1BTaTJFWkZYMjh1VHdWMA",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T18:47:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields Draws Rs 2,295.2 Crore Before IPO",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdk5tc1V4U2JLay13U1ZBQ0pvM3RGYW1BOUF4S2ZwTTEyWXJvSm9Gak4xMFprYXZOWHQxN3IyWWhRb3Bzek1uRVJFZGo0NGRlbHQ3eUsxWk9EXzIycXZkaTByeW5XQWt4Q25fTkxLU1loaEVwVlQ4OG5GbVpici1aRVJrai1uZw",
+      "source_name": "JournalArta",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T04:54:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Day 1: Check subscription status, GMP and issue details",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcjZQeS1ZR1JDS3Z1XzQ4bFBaZEpBZmxWeFpnRTZPZndSbVNMSndTd2lOdm15TVltaWZGUXgzZ2JHTW0tUzd2d2NuU2g5TFkxdW9CRkJ2Y0NQWVZLSi1pb0JQZG1NcTZTeWtwcXlOYm96NXotTTR2ZjV6Vk5WbWpIeDdKQ3FWVy1oUmRmbGI1bkxpYy1aRm5VRVJoaG1veklTN0xHczFmbTdMbzdfT1ZGV1RyV29adGFmUnNEM2ljRlBTcWVpdHBtVENRYWh5dFEyeGhmbUY3UkNmMDU3T0ctSDJ1NNIB6AFBVV95cUxPTThxUnVXX0lMMk9Gc2h1TkJZbWdhbVlSQTFkTWJVOHNUOWVqcE1DMmpfT01xQzVEMkFqTHlpMHppZDQ3TUpBQzZPNHJ2Sk5sOFV0ajNTeDZQX3lKRUdlTVd0ckV3Y0h0SThCaTVReDBPUWg0aVRZaGRFQkQweFY2dW52MzE0ZS1DT3M1RWh4T0NsNWlTRm9GU0NUYVhzd2lNa0xDYzNDX0FxY0ZYREpBMTM3dVFCS3JQMHpXNUxTcXA0ODB4dkRVTjZBckpaaGpwWElHeUJnYXBBR2FMNGlKMlBENDVWMkh1",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T08:05:10+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Day 1: Subscribed 0.04x; QIB demand negligible",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOTI2cjMwa3dvQ2FsTFNqTVBGa25iSGdfWktpeVh4TDFDZDJhdjBlNGhCcm9VZmRxem1zSXQtSnUyQ3RQUy1vek1jMkFMTjh6Z0I1SVJzdU5UVTBYRWFLRzNhemhTZy1vMnVuY013TkpsenB3blFZb2R3ZXVpS2t6QW9FQy16RVlaNnZ6VVdoTnlUVktvUEZIUFJFb3JKajFrSVhpUEtUT0N4WmMzc01vUjVzSWE1M0ZZbTFsSUcwZmR1LVJlM1JQNGZpYmRTNnpxYjVHcGdLMEEwQQ",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T06:17:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Day 1: Subscription Status, Timeline & Key Issue Details",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWXROODA0OGFjNDBzdE1YVUVQMTNmM2FzcWhXVGo1NDJneFBYOExjekEtbTRDdTlfQWxyUV9Fdm8teEhicWhlTzZPcTZCOENIOWVUc09WY2RrSVRkMFhQYmdmcWFwN3J6bWVwNmc4WUgtNF9xM0NYZlFIUml2Z0tqVkpYUG13cEhqeGJsYjE3RklmWUNrRFRGNGZZR3A3QkVOT09fQQ",
+      "source_name": "Groww",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T05:01:15+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO GMP today at ₹3 vs ₹136 price band - Should you apply for Coal India arm's shares or not?",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNVlhQS0NJbUZaQzl6OXBGSngzMHdTWWpaejh1T3JXTkRRZ0tnWHMwXzJ6X3BKSi1MRnVPQkNPUE50TWoxamF1aExsNE5HRXN5YWt3MjZyTnNXUlQ1UGJDdUdCSG1oRFRxV2NtX2tEZXpIVWhWRHM5bnhzYm1ZNGhLakRBWUJqRm53blNJQmpNa0ZPbmNzTmI5Y21qOTJWUUwwNUwtQndDQzd5d3VKd2JCeGtNc2c4czV0T2ltbnZTTGV5Yjdwb1czYnFOeGExMjJ6MEdwZjJyR2s5X1VJTmNfUG9TX2lGQzhwQ2EyaWNHUS1INEVVUmNva1pKMDRHZ9IBgwJBVV95cUxObWd0eTFMWl9EVDJidEtKd3VaR1NHbFk0dXc3MEFvemZJT18yY3JwTzV3WkdfOUl2NkhXcnRUNmJnOXhtRUplR2RyTnFuYjRWZjhIRzdWa1htWVRmU2hkdjI4QVVxYmJmSzNqTzNpMFlHaE5QMENCdk9mMFVhVU54aXZEaTI5QXBhME10MlBzdmxub2N5Wk9USWl5eTdqZnY4akpXNlRGb3pqT0x6N0h4WkZGYXdzMlVOVEh2MENoNWhsSVZGVG1XcHJCaDgwQnRtNGF0LTV3THBTZTFNNWRBVUdjWHdwMkIxSlhlMjRWMnBBV0NpZlpOTHk4X0VRZTk3Tk5R",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T02:59:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Open Today: 10 Key Things To Know Before You Subscribe; Read PL Capital's Report",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVHQteURCNTFrcnVKLWUyVjQ0ekl3UUFTVUVoOG5mR3VmR0JYYndvME40ZVlBRUVzWXc4dlFUUS1GQjJOalJYR0tGMXgwa2p1azI4TmdTTzVsQm5NYmN0UkJSektya3BRM2U4Z3FZU1ZBd2IxNS1WenZaR1JLVmdmQ2JKZXBOSnNHaDJGZXJ1YVY4eUpOQzFsR2lhMWJEa2llXzdrYVdRY2VkY3ozU2xHUFJvRVM1ejV1VElHZTdhYThmMk15dnRFYWZnNEtkZnhKTXNNUVRwY0JXUHNfUWc",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T02:35:02+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO Opens Today: What Its Valuation, Earnings And Coal Demand Outlook Tell Investors",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMDAtajNQQ0lyeDVpbTJhamZvWm1uRHhiM19NX1VzekF3aGlHMXJDVmM0QWQtRGFtcDdDNVJMTGcweWhQTVNFbm82UFZudHBSTWo3YzdXUU5HM1JzbGtEVXYzWlZjcWVDU2pMLV9CMUNTNHlxdTNxdy1kNHdneWRLR0EzLUhoME13bWFrSHhyc3g3NXhfRTdueE9hTHQ0UjU0bVAzaNIBsgFBVV95cUxNUEJwRG55S21RNk5FclQtTVBVcHFwZmtaWEEzMTRkdW42YmdMaHcwYjNzRks5cTM3aWV0elpkNVRXUlJ6Q2E2UXpkaDN5RWVrbjd4aDNKZS0wbVo1UDQ1blRsYWZUbjRFNk8xWm53YzVMQndDSzVOWXd2SUgwZHc1Z25pRDBLN2QzdXp6SHBxSmJOR3RUeDBsOGNrNVRqTlplR2Y2cVdQNGYyRF9mY3lqaml3",
+      "source_name": "Outlook Money",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T05:35:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO latest GMP: Listing gain or long-term wealth? 5 reasons to bid despite weak subscription; review",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQRTZMWG5fb2FidFo2VzdSTjA3R1c4LTNQeDEtTDRUTEJHTjJiVV96QndHb2U2N3RUOXRzaG82cHdWLWY2Z1NFbEFkSngwMFpEb3BDT3h3VXN1R194dnpMNHNGN2dGa2QwemNTblFKaTQ2MzdtTnJXby1SbEFBVVN0bFllNlZBREtiOV9IbEVNNDJfdkVhYVZjMnpFcUpOaE11TGR4dHk0QnhyVDJmc2V5M0FySFNWZWNEQWstOEtJWVA0bXBwUXNJQWZYX01GbGw3QVV3UDlWdFl1NjlxQ1RPUzlJSE1hQ25rUGxkSEQ0OVl5OWRpcHlYeG1UQVQybzVfNzNJ0gGIAkFVX3lxTE1udjFlTnBMTDdrejlDR2VtNkJGSUVUN1dLOUFJSHNMVjdUSGt1YWJrWHFGMjAyaU9mNFhKR3BYX1FEMFR5ZjFITkIwN3E1VXZKLXFhUUxsS0dpTE5rVWRHQU5QY2toSmswZXBmUGpOeGpLZFZjSVN4OWdSMzA2MElFNHpuY241REFOSFFFNno1dVNMaGI3M29TcWpZT3puSTJkUDlpNnphQXd3djFJOFJtNXM0WVJSODM0LVVTWVduNEhwR0lRQXVZaUgtOVk2TzAwMHlJcHJxQUNuMlV6aU9TblBzb3hqWDZhM0FoRUhVeUdhVGFhVWs3cHFEbU9yQzU5NWkxZVVjSg",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T10:22:35+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO opens: Should you subscribe to the Rs 8,981 crore issue?",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSWVZZFVOZEFzNk5tWnVHbzhSLUMtS0k4djA5LXlGUzNzYjByckhsc0owUnZ4LWRCMXQzY1ljbGd1OUlMZzFId0NSamtUUmcwbTdSb0NaN1FRRzhtOUZwX2VJQ1RsN3JZTnZJUERnMExoVC1kaXQyLXZhOGJCMEp4V2ZtdWVaQ2ZyU05ZWGNtd3I5YmtXTU1wWDFTTktUMWVuLXNwVWtUWWZUZU0tU2JYMGcwZE5qM0FMdE9ndEFmVGZEeFNGTi1ENEg1RnE0VDlPRkRKamJSM1pZa0tLcnhSbDNCd0doNE5KQnfSAe8BQVVfeXFMTmx0WVVNWmo0NFZDM3F2aGlFQUVPNHJtOUZiWVRLZ19qZDhUR0RzRWgzZlljZU5TM0x2aXd4bnFFZXdvT0dsX0hJaHpFdk1xazJsMm41NW5VbWhnYTNlSExJd2ktZ1M1STN3MHUtV1ZKMGlZd20zTzdPakdaRVoyS2I4S1pDZEY2RFY2U1J4RTBPMDdJaURBYWNsNmdTWm9fQ1FOdEcwUUJ4bzRDUTBaaEg1VmFnRVliOC1tWE5FX2RXMmxWUWVkNEZrTjI5TG5qTU5TTzdpdzRYNGVkSThENjIwdnoySnV4ZEg2b09HOG8",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T01:52:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO sees tepid response on Day 1; subscribed 0.38 times on QIBs buying",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUkRhZ2FkM1d4OWt2ZUR4WDl4SGxrYWtyZEVJY1A0dG9hY2o0a3ZreVczbExmR2RyMmx4TGxVckhSeVdrVnFRNnZXZDlvM1BQcTN2bks3Z1gwWlpwRWJmdkd1di00bTMxQjJKT2R1TXE5b3VOY09IYndPWlo0SzdDVTdmdmVNeThZLUsxVExxX2pIVjI0cUZhN1dsakkyMVRZN0tRVUhtdW4wRWE1dmFudVUxdllSdDd1SVQ4U2RWNkJBWF9UMDRhNGtQZlhWa25YMFNjT0k3Rm9wRUJVVVNiR0N1U3I3ZzTSAecBQVVfeXFMTVJEYWdhZDNXeDlrdmVEeFg5eEhsa2FrcmRFSWNQNHRvYWNqNGt2a3lXM2xMZkdkcjJseExsVXJIUnlXa1ZxUTZ2V2Q5bzNQUHEzdm5LN2dYMFpacEViZnZHdXYtNG0zMUIySk9kdU1xOW91TmNPSGJ3T1paNEs3Q1U3ZnZlTXk4WS1LMVRMcV9qSFYyNHFGYTdXbGpJMjFUWTdLUVVIbXVuMEVhNXZhbnVVMXZZUnQ3dUlUOFNkVjZCQVhfVDA0YTRrUGZYVmtuWDBTY09JN0ZvcEVCVVVTYkdDdVNyN2c0",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T11:40:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Anchor investors raise Rs 2,295 cr; LIC emerges as top investor",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPOEhpTjBIaGkzTThSbG5WMUR3RFFGUEhOTDFXNl80ZGY3M3Z6UTl5a0hpWVlnQjkweUp5ZnpIV2FnOWFwX2F1WUgweXE0Z20yNmVPcnFyNFFDdndMc1V4R0ZQUlVEMWpjSXZQS2tzeGpPQzRmYVR1dE80eTBrUGhvajluMUJzXzJOenNOdEFVdlpLenNLSWozX0t2c1JJSVBoMWUzM3VBY29MbmJkbktIZHRXMlA1SEtsbFh3ZnFpV1V2N3N2a1JyZTA2QUdWRFdhN3FrRGdYdkc0S3pYNGtrVk5B0gHiAUFVX3lxTE84SGlOMEhoaTNNOFJsblYxRHdEUUZQSE5MMVc2XzRkZjczdnpROXlrSGlZWWdCOTB5SnlmekhXYWc5YXBfYXVZSDB5cTRnbTI2ZU9ycXI0UUN2d0xzVXhHRlBSVUQxamNJdlBLa3N4ak9DNGZhVHV0TzR5MGtQaG9qOW4xQnNfMk56c050QVV2Wkt6c0tJajNfS3ZzUklJUGgxZTMzdUFjb0xuYmRuS0hkdFcyUDVIS2xsWHdmcWlXVXY3c3ZrUnJlMDZBR1ZEV2E3cWtEZ1h2RzRLelg0a2tWTkE",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T00:16:16+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Cash Cow Dividend Yield Explained",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYk9ZdXo4c2lkamZMYTZNdk4wb0RsRmJpZEQtRVh4U2xOX3lGbTU0cm9rclR4RnlpRm1HMS11U0tRWXp0YTVfLWtORzNSZUlfLVB3T3lrTkh4WkRkLVppRWFzU24wUFNwdklSUTFHanhqSWpwNkJRd2ZkS0oweG0wZkw2S0FvOEd3azlZN2k0NWNkOF85SUkzRUZPMFp4UUhjRVJwOElnTFQyS2c",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:18:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Coal India arm eyes Rs 17,900 cr solar, EV & rare earth push",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLXBLc2dJXzl2aUo0RnpJXzRhelZCQVNSYklFREpMSUdtQk9zMUVQTElDNFlTb3hqc0tPV29tZWJXb2lOYjBZdVdnR3djbjhFbjZ2c29oZ1Q1VThuUXJRRk9qNkVMamRLVjJJYzZ2VE13YVBjcjFnbEJjblBNWTg4amFjT2VEQ0tGQWdyZ3ZGZnFfSENpdzBGZ2ctSnhoRU5wRDJwMkZrWmpDVjdJa3AxS3NvVlRVNkJxa3Z4ZktocjFRQU9YMGFHbm9rdktJUdIB1AFBVV95cUxQNHR5UGF0VWQwVGZGeVBTRUdEMzYxZXJoSVVmbnloOHZ0RFFYZVp0V0MxQXVuaXNhU2o1ZXBWYnBBNzA2bG9vUUcxbXA3RExvSVEtLXNaVExIbV9pZHBuRGdkT2J5LVpKdF91aG1YYndSQ0txdFBFbXNCZXZwTWR1RkZjUXlMMVpkYkt2NHNQaXBkc253ZmdpS1Y2TUthMmpLMS1iSW1GS0ZLdENOU1QwcjVpVHdCb1RSVDgtbkpHOTNnamlEOE4tU05ZUk00SXZCLW85SQ",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T04:47:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Coal India arm raises ₹2,295 cr from anchors; GMP up 2.3% ahead of issue opening",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbHhXZUIwbzRQczJrT3JPUmsxVXBQYnN2cFNnR0I0WFRxc3NUQ3RlejIxaDRyTHlEZ2ROa1VyOWlJV1lZX1hMNnVmdHZCUWZxRGdISG1rVFl1OVM0aHJ6VlBla2RfbnZWZWlNZlJCc0w2MnI1eHJDSTZOSy1UVnNVcjQxaUcxMFoyRVFrM3MzU1hDWkdBYjVfc3ZIOEpBdlA1N0ZlWUN2ZHFDcWpBOXZiSVp5N29IdUZmSVZmU0g2NzI1VjhVaGItcEhJMzZKWEk1MFd6S3RiaE5CcjZoMjhlTNIB7gFBVV95cUxOY3pIdTdoVDdDc0h3WktLTkJYQkVQTVk2b3JuUGYtWVFPZko4MW12ZU1PQUU1N3J1LWE4dGxmRlEtcmlUUlpydlRjUUc1MFRmTG1GV29WRUxFNEcyNXlQRzVYQ0ZKekxQeVVoQV9tY3RRVExlLUJrd3RyZXctSWNnQUdBa1AxYTM2N3Q1cmdvQkxLb3JReUVBNUJyQkZsZHZHZjZ4NlBkelA5MjZDUlk3RFYtY1RFdVEtaXdKSTd6bXZRd3ZHclA5SUhXYzZTVDhrOFJaUG5VT0pENEhIYTZqMTMxZEozdmFSdVdTTlF3",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T02:02:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Should you bet on Coal India’s cash cow?",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMkZHZHgtZUYtVk9sbkhRSVRkZGliZ1lTUjY0VFB3QlRidkZnX2ZNLXNENGhoTVVRTHJITkdBZTNhZ0dtd0VKRW5XWmI1VnFNU0U4cjRGd1VGb3RwaDdGMkdXMUNlQUNoTVRVaFpSV1ZJaXlrVjNCMlhBdnh1dENJTXliM1Jsa3hBcmQ0OTZTVGxra2h1a3BLQjVOUk9WVEJXUzJTTHUyVHNZN0pFXzBVXzhNeUhYdw",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T04:36:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: Should you bid for Coal India arm? Analysts answer",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMHlPUzZsUVN2N3FqN1lqQ0tCSy14VEx0aDZ6WnZKMXRlYlBJQ1ZSZkRxU0hUaXZmNERyOFc2bmlMRTl4YThZNlpSN0pVYlVpTzV2Z2p4RjdfdkJJSjNuakNvUjJON1Z4RnZsUWxDOGVWWHNMNmJKbi1Na2YxaFFTUkczQnJPU3BBLXZvT2FoRDA1VktjdUJvekJMS1JveDN0QXp3Y2Z1OU1jNm1Xd3lteGVrNkxkZTRwb2FyODdOWjItemxMVDBJdHRESGVpODU4eDBmNnNsY9IB3AFBVV95cUxQdGZNV1R2bFZnbThMRTFkYmlrX2tvZUI1elV0U3JYYzZaeWp1NDlFSVQ4UzR3eGZGcXNPYzlucWRaVHcyUHFoTlNid2tYSkdhcGRHeFJEMjMwQ0N3M0VSZmJqcGJMeS13SnhRZXVmYkNaUGZQbEtQdlNSY0JmakZTMm1nWEtWSUNfQmNtX2tlOXY3Sm1xWWNKSnlJSXUyT0tKTW83Q2xQV0NLdmU3OE5xNHVBMk4zamNYUG9nYjAxSGphTm9TbzZuem42MmhYY1ljUFhCcGg2NkVWYmps",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T04:41:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields IPO: ₹8,981 crore issue opens; planning to apply? Key things you need to know",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPOF9sTDBYSkVXWGJUU1RRaXdKUGJaMUZ5WVE1QzMyTzk3bjZzWUNMRTZlbE1yQ1RUU2otTGtZYjJNTHg4REJ1aktkbTlDaVlQMktNVkJmRjgxOEVnc1NUN2YzYVFyd2RfbEhoY1lSbXZnT0oxWkZCQlBlOEQ4ZGhjVmVDNDNyQjd0U0JlbUEyS0s1UHN6T2ZXRnZHa1o1Ri1PVl9OYTNyUnFZejVUU05qSUczb195aldDQ1BmcVdzaG0ycDBuMmpvM2NCR1J1MUtsay1yMFlTYmc1TTZHMTZNSVNGOTJqbkRUNHBSVjRESjRvOEdGMFRRMnE5ajNEa3dVOGhyc1o0UG9WTTFXZk92SS05ZGVjdHpFUC1PeUs3ZG1fQ1ZLc3g2MTQxRUJqYnRiWGF4U3NB",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T02:00:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields Raises ₹2,295 Cr from Anchor Investors",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaE1jMmFGSFdPSmpGMDJ6d2h4QVJObWFGUElDbmR1N1FHV3B3Q3RaUUJKM3ZGaDdqQlRjQy1xUGYwTFBuMFZXd2hoU2hfWktERHg4ZV92dHVxNWJVWVBfREg3VjgxNHhxbEFHVmNBWVRXdDNLemJPOWJxeG1Xel9DeHA1Sy1RSGxUVmRHeHZmS2tTYV9sMzJaN2JIVG1RSUZfUHRfSkdMOUFGNWlDbWfSAbMBQVVfeXFMTzJQZUhWNGJOWTAyd3h2WFhoNVFSOC1CTjk1ZC0xNDZvMmFTX2VhdVktSFU3VDFWLWpoaGdQTU84eEFGSEIyNVhtVERpbHJnQTBhV3FHLXZmNm44bmFqREJjLWtrUXpqOXZ4M0hycE54MWQ5YlV4ZUdnSDFoM0ozejZtVHRHdktYNjRYYXhpUEJOTHBSV1hkM1p5TkYyV2FIZlRzWnBDX3JjNllHTmtSeXQ1Z0U",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T18:27:33+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mutual funds received 53% of Mahanadi Coalfields IPO anchor book: Which schemes will own Coal India subsidiary shares?",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPTERWWjZxdVpFWktrczFxdkQtVW5UVnRwd3hza28zYlpLTUJKY3BKbkhWdndYOU4zY2Q0T3gwM1g2YWQtWnZBMjN0UU9mMVNoWHVxem1JY2tDZENveGhZZmMzZ0xnTk5Ialp2b3d5SEZaX2tKdXdvSGdaQWZoUEtYRzEwNy1xblJGaHhGNncySlhtSnhKNDRyT0x3dXZlakc1TGU4Zk1OZXJiSnl2R3BIbXFpT2FNZ2xHSW45LU1xcHN2cU1EbEtwbmlHSUtlN1hJc1VGZFdqUWpSdDJqWlQ5bFJoUldhOXlfdTFDMUZjUG1FSmhqS0h4Skc0X3M1cUpqX3A1X1pnSUctNlZISkZGQtIBlgJBVV95cUxPOElXNHZXaUpidHNPaWNOVG03ZW95Z1otYzlzNkpGX2gySUM2SFk3d2Vnc1JTWTlZTnJXWUtoZ1dNUHJvNTJiU2NxRkJxdEdteU40NmFLS2FibjhtMXJsRnI0ajhBcVRDb2huRHFqaDRhYmd2eS1QTXJUTWFuSVJqS3ZrQUlBWnU2ZzVnU2ZYNW5odFZWaUYyVG5WX0xfR09Tdkp0aGt4VTFzLTc2ajUzVmNyLWFDUURNRjZPQWFQQ2lEa09kaWdQcG1GSUFOSUxSa0FibDBKenRRQ2VWS3pKZzZ4dkpKcUFaRmUyU25KRnIwSlQyWEtXYVhXZlFRX1RiSTlMTGxMWGQ0MnBMa3oybnpsRDFQQQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:58:56+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Subscribe for Mahanadi Coalfields Ltd IPO; Geojit Financial Services",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQazhZS3JISFlBbVM4a043VHBXb3ctbElZbC0xVHFYY3VWMUNjOGlQNVR1M0l2QnpRMXFLX21CekdZOVhjTUNTbFJLNmtUVks0T0N0WmM2dEVjQTBDaHFkcUtEZU1Rano5XzhIZjczTFdKX3Q2WFZUamhtRzY5RHVFaUpJZUhlZ1FITjR3ay16X0xuYWY0eFZCUGJiWVh0VU1GZWsxcnhEcGJaWjByVHZvR3BmbldPeVl6Wkx1S0pMUDJ2cGYxa3JV0gHMAUFVX3lxTFBhRTItNFFYa3V1U0dEYlYxZGhXVGYxQUd5em4za2VmdUhlTG54WktJeUl3Q2NUZW05YmdsYWNrUUkyMEd4Q3JzR2JUNXREdmJzQXZ0NENHdjJtNU15Ry1XMTBycTVIeGRZSm4xQ2hLSTRZakxzZ0FsbFlBT2ZEbVBhX0o4d0pqWXdIeThIbEt3d3pmY0FWRzZPNmtjY0pDZUNnSXplRmFxXzItcmtmdFJIZmprc1FmMUxsMEMwSWhQVE85Zkt3VEVZdUVWcg",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:10:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "The Mahanadi Coalfields IPO Explained",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xbzJJSG1pUlVuZWVEOG9lYW56RDVXRXVaeUJuWmZXYV9UX04tTmFJREdFakNUS0M5TVNWR2hOQWM2cmF6bXJvclJYb0ZacURrLTAzRnFyaFlXaUZyMnNGVlF2OHdmaVFfakxYOTR6dw",
+      "source_name": "Finshots",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T01:35:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Video | Mahanadi Coalfield IPO: Low Production Costs, Massive Reserves But What Are The Risks?",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRFNPbURiREdBcTFNUWJnVUV2dVZhbDU0RkplWGthaW9XWXo4U0tpV251V3hvSEtYS3VBbzg2YXNOZklHUTk4QlRBb3k2RmlvUEJ2N2FMQThIaWl3SG5Dd2lUMmZXa0s2RnRFRGRZTTdxalh2enlyUlI3eU51UUNWUEpkZG9xWEFBc1JqeUZEUWFLOGRlaVZfWVprUnIyN3VaYmgzZXlTVjJ6N2F0dFo5cHc4RHJmMElLQVE",
+      "source_name": "NDTV",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T04:14:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 2,
+  "article_count": 27,
+  "source_count": 3,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "COALINDIA+MSTCLTD|FUNDRAISING|abu-coalfields-dhabi-ipo-mahanadi-wealth",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-18T15:56:40.974083+00:00",
-  "last_updated": "2026-11-18T15:56:40.974183+00:00",
+  "last_updated": "2026-11-19T16:20:48.241791+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T15:56:40.974173+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:48.241756+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, ETEnergyWorld, Finshots, Fortune India"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:48.241775+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, INDUSTRY_DEMAND, DIVIDEND"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:48.241783+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 4 -> 15"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:48.241787+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 11"
     }
   ],
   "price_reaction": {}

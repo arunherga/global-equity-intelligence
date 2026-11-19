@@ -4,22 +4,24 @@
   "summary": "Pace Digitek bags ₹2,691 crore NTPC order for Gujarat battery storage project CNBC TV18",
   "event_date": "2026-11-16",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "CURRENCY"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.46,
+      "confidence": 0.68,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -33,13 +35,14 @@
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
         "+3 Development at a known counterparty (NTPC)",
-        "-2 Single unverified source"
+        "+2 3 independent sources"
       ],
       "direction_reasons": [
         "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "3 independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -49,22 +52,40 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, capacity, margin. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear to slightly positive. If NTPC processed this transformer procurement tender through MSTC's e-procurement platform, MSTC could earn transaction or portal fee revenue. However, direct involvement on this specific tender is unconfirmed.",
+        "margin_effect": "Neutral to slightly positive. E-procurement and service fees carry high gross margins, so any incremental transaction revenue from NTPC tenders flows efficiently to bottom-line profitability.",
+        "cost_effect": "No material impact on MSTC's input or operational cost structure, given its software-based asset-light business model.",
+        "competitive_effect": "Neutral. MSTC's market standing depends on maintaining its status as a preferred e-procurement service provider for large Public Sector Undertakings like NTPC.",
+        "regulatory_effect": "Neutral. Public sector procurement guidelines continue to govern mandatory e-tendering procedures across central PSUs.",
+        "short_term": "Minimal immediate impact on financial performance unless transaction service fees related to this specific INR 100+ crore tender are recognized in the current quarter.",
+        "medium_long_term": "Positive indirect trajectory. Increased capital spending by NTPC in renewable energy and battery storage infrastructure creates ongoing demand for e-procurement services and eventual scrap disposal via MSTC's auction platforms.",
+        "second_order_effects": "Growth in NTPC's power generation capacity and facility modernizations generates higher volumes of scrap metal and obsolete equipment disposal, driving future e-auction revenues for MSTC.",
+        "key_uncertainty": "Whether NTPC conducted this specific tender through MSTC's platform or utilized its internal/alternate e-procurement system.",
+        "monitor_next": [
+          "Disclosure of MSTC's fee volume or GMV derived from NTPC tenders in upcoming quarterly reports",
+          "Trends in total public sector e-procurement platform usage by NTPC and major energy PSUs",
+          "MSTC management commentary on green energy capex procurement mandates"
+        ]
+      }
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "relationship": "DIRECT",
+      "impact_score": 13,
+      "impact_band": "CRITICAL",
       "direction": "POSITIVE",
-      "confidence": 0.46,
+      "confidence": 0.74,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -72,20 +93,35 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "battery energy storage",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "inverters",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Development at a known counterparty (NTPC)",
-        "-2 Single unverified source"
+        "+5 Direct company event",
+        "+4 Major order or contract",
+        "+2 3 independent sources",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
-        "indirect strong relationship",
+        "best source quality 6/10",
+        "3 independent sources",
+        "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -94,22 +130,41 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, margin. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Positive impact. Adds over INR 100 crore (~INR 1 billion) to consolidated order backlog through subsidiary Waaree Transpower, which will be recognized as revenue upon production, delivery, and project milestones.",
+        "margin_effect": "Unclear. Overall margin impact depends on the contract's pricing structure, execution efficiency, and whether raw material cost pass-through provisions exist for high-spec inverter duty transformers compared to solar PV module margins.",
+        "cost_effect": "Increases short-term operating and working capital expenditures for purchasing raw materials such as copper, cold-rolled grain-oriented (CRGO) electrical steel, and specialized insulation materials required to manufacture the transformers.",
+        "competitive_effect": "Strengthens competitive positioning in utility-scale balance-of-plant equipment for storage projects, demonstrating execution capability with a major public sector undertaking (NTPC) and supporting diversification beyond core solar PV manufacturing.",
+        "regulatory_effect": "Requires compliance with NTPC quality assurance frameworks and Central Electricity Authority (CEA) grid integration standards for battery energy storage equipment.",
+        "short_term": "Improves order book visibility, initiates raw material sourcing, and begins project engineering design phases over the next 0-3 months.",
+        "medium_long_term": "Drives equipment delivery, commissioning, and top-line recognition while establishing a proven track record in BESS transformer solutions to qualify for larger utility-scale storage tenders.",
+        "second_order_effects": "Demonstrated execution with NTPC may enhance cross-selling opportunities for bundled packages including PV modules, inverters, and transformers in future integrated renewable energy tenders.",
+        "key_uncertainty": "The precise delivery schedule, execution timeline, and baseline operating margin profile of the transformer contract relative to core PV module manufacturing.",
+        "monitor_next": [
+          "Execution timeline and delivery milestone announcements for the NTPC transformer project",
+          "Quarterly financial disclosures on Waaree Transpower's revenue and margin contribution",
+          "Price fluctuations in primary transformer input commodities such as copper and electrical steel",
+          "Upcoming BESS and grid infrastructure tenders issued by NTPC and other state utilities"
+        ]
+      }
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
+      "impact_score": 10,
+      "impact_band": "HIGH",
       "direction": "POSITIVE",
-      "confidence": 0.46,
+      "confidence": 0.68,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
+        "MARGIN",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -123,13 +178,14 @@
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
         "+3 Development at a known counterparty (NTPC)",
-        "-2 Single unverified source"
+        "+2 3 independent sources"
       ],
       "direction_reasons": [
         "a customer's business is strengthening"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
+        "3 independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -139,7 +195,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer exposure to NTPC. The parts of the business most likely touched are revenue, capacity, margin. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -153,21 +209,141 @@
       "published": "2026-11-16T10:16:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Transpower Secures ₹1 Billion Transformer Order from NTPC",
+      "url": "https://www.mercomindia.com/waaree-transpower-secures-₹1-billion-transformer-order-from-ntpc",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-19T16:49:31+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Transpower secures inverter duty transformer order worth over INR 100 crore for NTPC’s battery energy storage project",
+      "url": "https://www.pv-magazine-india.com/2026/11/19/waaree-transpower-secures-inverter-duty-transformer-order-worth-over-inr-100-crore-for-ntpcs-battery-energy-storage-project",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-19T07:58:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "Waaree Energies Gets Order Worth Over 1 Billion Rupees From NTPC",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaGpkZGhqZktqNVhNNWJ0alNSV1RMX2Z0SGlVbi1jREZJY3AxcGhJaXY4UGQ1TWkzTVdfVHU5YWlTMWNWLW45ZEQyRjh3UEJvODRwSWFzM25ZcmFnWGdBeHM2ZjFjNnc4MXlseFVxQzRzMi1nYXFrWVhfckFRR05FcFZsZzN6Z0RhVGY0eUt1RW1HU3M4ZWN1UXJOdDRyRmxwMGVqQTRsTTAxVEJLWVc4TFdfcDBmYmxCYWNxYjEzV28yUnBHQkJZSWQ0dEZNYWc",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:03:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Energies arm bags over ₹100 crore NTPC order for battery storage project",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcHZKZnlSV3RuSDhpQmREOTZGTEVEZ0xjNE02MThuM0pMSE15cjY3OGY5M3haM2FMTXJwM19USkdWSG1pdWlUWXdCbTUwdlA4TGIxYWJ4eU02dEFsT2pZWm9ibm1tMWE0OHZHMDBYZ0JUM2ZmSzRoMlBXVTExTC0xdzVoejVMVFZXLWhka20wMElLYzByWUJ4dm4wbWxzNmtkR2dkelBlUzlpdkU3Y0tOOXMzSDdES3IxbGdua0xJNko0SzEzX0xqdHFzSlRHUm54Y0VuVmNVdkdkUjZCTGN4etIB5gFBVV95cUxPSnFIcWM1aUVXb3czOTFCY3Z3Zk0wTGdqRHVLZWRXNnRab0kwT1YtMjdZSXNCV1ZNZVV6TEVrNzFoS3pSd1hkRzFWSTlfQTYxenRlMWMxZVhMZzh1RTlBdEZwZFUyRHFwY2Zjall6YURvUmo2bXRaNlB6YjF4Q0d0cGhSUmhQUl96bjJkX0oxQm80VHRrczhWXzJERzVwX2ZPdVRfS0JhQm5iUGMtS3BKQkFZVnVhWlBIVTlCem40dmhad09Qem0wanVSSUJiYk9NSlhGQTJuQWdvSmtpNDZqTTZxMnJqUQ",
+      "source_name": "ET EnergyWorld",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:34:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Transpower Secures INR 100 Crore-Plus Transformer Order from NTPC",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU0Nucm1sd2IzYmllQWpsX1lSNHRPM1NRMXAwMmdsZ1B6aVY5NU5RRkI0UkxRZnYwblNQbXdWWG14UWpBcGw5d3hWdkUtTklETkMwcHpxd3JOd3dMV3NsQ0JTQ1ZXOHNBa3otN2VGckQzdjFuUGJFeHFzSHRxUER1aDJzSHhQYWkzdjRSLTBJTGxXVjd0anZlWXV4aTBNeXhpTkxEQ3dsVFVRSng3LV9j",
+      "source_name": "Energetica India Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:40:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Transpower Secures Order Worth Over ₹100 Crore from NTPC for Battery Energy Storage Project",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNaUl1SFFzdkZFbW5YcFdCaFFMTVR2dlBHSGxhOUZrd0d1cEc2RTBvWjRXNHBGdHRUXzV3UkxzV3ZwdlRQUjJkQk5VNmZMekpZUEQtWTNiaURZWGVKMzFGNldaMjVYS1h3YVJFa2IybUc0aS1zbXhaaV9uQ3ZVbVpwaXNGdUNIbk9STE0zREQ1RHZHTjUwWF9mSTJjZUhsNFlpaVp1SGVlNlAteU51LUdGalJGaGJWSEVSd29zMU9pSGFHVm51TTVXcmN0VW94UGM",
+      "source_name": "Newspatrolling.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:01:50+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Transpower Secures ₹1 Billion Transformer Order from NTPC",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaXNMR2ZENUFlSnpmc1JMVmpaOWI4YzZYVkJ1NkZFa0VCaUxiUi0zVDVPS01yTWpsUktGMVlnMzc0dkJ4ekNmOTdmMkhfU3IwVUxtRllvMWhPOEhyMUtyUUVra2dvMlB0Zkl4cmJZMFlNSm5BU3VnNmttUk1zWUNaUVVsNldJdEpCSjRveXN3RUNkS09LdHEzb1FBRjJxMVdGTUE",
+      "source_name": "Mercomindia.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T11:21:06+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Waaree Transpower bags over ₹100 crore NTPC order for battery storage project",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUWRhUkVKZVNtb1gwV1Fjdkl0V0ZfVi12U0pnSnZsc1FJeldaMnkxZ1JnWVVPd0o0UmpwTVFMV3RQcElNWDNjSlNmc0lwSkVsLVhNTTlBT1M4QWZ4NnZocmFTaWlzaWpZUHFzdUF2OGhOTDM4VlVYUmxFeHl6LUNRbFJfbWtUaXo0WkZEM1YwV25SbVRpeTh1VldoZS1kN3VTQUxCS0RQdzNSdFF5bFBTRV9iVlJfRkxvVXBlUTA0TU1adk0ybHBjSkdfMjJaS2dxQTk5dUJaRi1GNFXSAeIBQVVfeXFMTlktbk1MQlA2SDNacmxodzljcDdBYUV2NjUxQVA4bS1TVUc2NGhsVWtPSkZyY2JPVFBVZERnYjU2NUdXeHZVUnI1VDZuY0VaTzNWMVBJc1ZlRC1meDhsUS10YU1ob2ZwM0ZrNWowTHJ2bEoxVHZ6M1lzY3V3Ul94RUhNM2NTVVVEbFhHemRSa3JId3V4WXNuQUhiRmpuaEl4NG5fdzRtYkFHejBkVTd6YzhIODFDYVJ1VnpPWmZ6dlY4QllxUDc1Q21hbzlCR2hzSllHay1JWlBtZTVOU3Q3YkJZUQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T09:11:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Pace Digitek Bags Rs. 26.91 bn NTPC Storage Order",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaG1uR3BsVkdtY2lkV2dlakdtdF9DWUxuelFxamYzWU9tM2hLbkZYUURKVjFXNmtiOHNtZXBOMGJNM1JpcXVHVmpqVWJfOGd4S3lFSHM5V2JvMWVQUmc5WGQ1M2g0MVJscmp1NUlrVUl6dWQzMlF3TWcxcUFsc0xSeEhOMHBJU1BnZUpZQkRQRF9SWTJMYUEyRzlHN2p4SkpTc1dRcDROWS1uby1iVzFFX2hVc3E5ZDJ5OG1NTm9Tcw",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:45:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 10,
+  "source_count": 3,
   "primary_source": "CNBC TV18",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|ORDER_WIN|691-digitek-ntpc-order-pace-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:08:47.281704+00:00",
-  "last_updated": "2026-11-16T16:08:47.281776+00:00",
+  "last_updated": "2026-11-19T16:22:02.016290+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:08:47.281767+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:58.097287+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, ET EnergyWorld, Energetica India Magazine, Mercom India"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:58.097304+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:58.097312+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 6 -> 10"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:58.097316+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 13"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:58.097321+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 6 -> 10"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:02.016270+00:00",
+      "change": "sources added",
+      "detail": "Construction World"
     }
   ],
   "price_reaction": {}

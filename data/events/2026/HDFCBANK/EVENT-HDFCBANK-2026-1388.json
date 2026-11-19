@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -28,17 +28,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-5 Market commentary rather than a company development",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
-        "a competitor (HDFC Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "HDFC Bank's follow-up announcements"
@@ -49,26 +48,25 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.6,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-5 Market commentary rather than a company development",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -97,16 +95,36 @@
       "published": "2026-11-13T23:35:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares edge higher, but heavy selling keeps pressure on stock",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-shares-edge-higher-but-heavy-selling-keeps-pressure-on-stock/article71719007.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-19T07:56:37+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares edge higher, but heavy selling keeps pressure on stock",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWEJGZURDNnNwYmV5NTFtUU51QWJ0U0xDWjN2eGl5Z3RvYTNDYTY1T09VcDN5UHgyVVZMckhiWURtVmg2ampncW02N0tvYk1xQ1RlNS0xTlRFVWhtOGFNbERzeG9GZzNIc0JZd015SWs0MEtualNvT2ZTWlRqTUkwY3VSN25KWExfN1VvVUtNU1R2X2Z4QW9qU29sU2otTTE4ZXZDOC00V18zNU5sYXhIVVdLQkdZUTV1V0paN21YemIxN05HaWc",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:08:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 2,
   "primary_source": "NewsBytes",
   "cluster_key": "HDFCBANK+TMB|OTHER|2.86%-720-bank-hdfc-rise-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T20:15:09.443216+00:00",
-  "last_updated": "2026-11-14T18:55:44.439263+00:00",
+  "last_updated": "2026-11-19T16:20:52.300217+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T20:15:09.443283+00:00",
@@ -122,6 +140,21 @@
       "timestamp": "2026-11-14T18:55:44.439254+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:52.300189+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets, TradingView"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:52.300208+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:52.300213+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 7"
     }
   ],
   "price_reaction": {}

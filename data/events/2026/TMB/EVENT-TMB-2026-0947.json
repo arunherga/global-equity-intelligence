@@ -10,38 +10,38 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "DIRECT",
-      "impact_score": 8,
-      "impact_band": "HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.51,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "DEMAND"
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+3 Earnings or guidance",
-        "+2 Company appears in the headline",
+        "+3 Close, specific exposure to this company",
+        "+2 Earnings or guidance at a related company",
+        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "reported results moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "direct relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -50,7 +50,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Indian Bank. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -64,21 +64,41 @@
       "published": "2026-10-29T18:52:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Indian Bank Q2FY27 Results: Net profit up 14.6% YoY to ₹3,462 crore",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdk95MTZrZTJSeDBHVHN3OFNzZENvdUstcFJxRUtPUUdjaXpzc1ByM3BKeGxDeDBsSk15ckZzcGVUS2xuOWtGVkhlNWg0VVA2WnhVX1p3UTlIVmt0RWFhZUlYaFF5bXFMem9pMW9NQ1l3R1p2VUNfbzlYQXRUaEV4N3hZaWtmYlFadEFsaGstOU5oRzl5Q3dLRXdpVjN0VEVITmJOWXQ5czlHNXJuLWotZGllVW5JOU81cVBxWlBB",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T21:26:09+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "TMB|EARNINGS+GUIDANCE|42%-net-profit-q2fy27-results-tmb",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-30T13:16:35.823767+00:00",
-  "last_updated": "2026-10-30T13:16:35.823865+00:00",
+  "last_updated": "2026-11-19T16:21:23.392038+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-30T13:16:35.823855+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:23.392015+00:00",
+      "change": "sources added",
+      "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:23.392034+00:00",
+      "change": "direction changed",
+      "detail": "TMB POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -1,0 +1,77 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0321",
+  "title": "China Vegetable Prices Plunge 16.9%, Farmers Giving Crops Away",
+  "summary": "China Vegetable Prices Plunge 16.9%, Farmers Giving Crops Away Chiang Rai Times",
+  "event_date": "2026-11-19",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.41,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "vegetable prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "China Vegetable Prices Plunge 16.9%, Farmers Giving Crops Away",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pU0lhM3N2M3Zfa01TdjJBR01TaGZtdHY5T1pkUjU4Q2hKc19zM09aNmhid05UZjlmZXVGZ0lPRnhEWTlqMU1abmFsT09mS2YzcmVfNzZFX3NFb2tSSW15MW81WVktOGpUY1hNbHBGSHhpNDJsT0E",
+      "source_name": "Chiang Rai Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T01:04:06+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Chiang Rai Times",
+  "cluster_key": "FRESHARA|OTHER|16.9%-china-farmers-plunge-price-vegetable",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-19T16:02:45.047288+00:00",
+  "last_updated": "2026-11-19T16:02:45.047352+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-19T16:02:45.047343+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -15,12 +15,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND",
-        "REVENUE"
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -30,16 +29,21 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -52,7 +56,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -60,12 +64,11 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
         "MARGIN",
-        "DEMAND",
-        "REVENUE"
+        "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -75,16 +78,21 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Earnings or guidance at a related company",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "rate moves hit margins and credit demand in opposite directions"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -97,7 +105,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand, revenue. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -222,16 +230,26 @@
       "published": "2026-11-18T10:33:58+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Rate hikes loom: Goldman sees RBI raising repo by 75 bps",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNzFEWm1mZ2dIaWxxcEctTlF3OGw2REJSRTFKZmUzNmlYYXM2azFQX1BhZkh4UHlTeFVfcVF1MURZclZOS0hBcll5R2JnWGIyRDFUNHAtTWxyOWpBdjN6SkN4RWg0YmJJUW4tcFVPSnVKQWdsVk14eFBGbXBGSTlJVU1LR3RiMnJLWHQ1SDFUMXN1SmVoMk9mQmRSWXNzZWlSWDIwbk8zTmVldFNXTkxnWEFLMC1OSlnSAbwBQVVfeXFMTk5URE81TUtDdV9ZVG5wMjJzT1Vaa0Q3anlrZk1ocUppN2RYS2hVWEhoVnBQa2dxSldFdFo3dDBsN1d3M3dIRUpwUmN1UG1FYkVnNTE4c3VPZ1VyVXNlTEd2Rmx3cVY5eVFoa0ZiQ2RXdFRDdDlwMEVmZUxGWnpYaGFMbmdyUGlFSEVXOFNmWG9GRjRsMmdVc0JZcEdJcUpQbEc5Q3FKb3E1N1ZRTmxUblg4WUtYSDV2aDRvMy0",
+      "source_name": "The Hans India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T21:13:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Moneycontrol.com",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|goldman-raising-rbi-repo-sachs-sees",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:01:03.296097+00:00",
-  "last_updated": "2026-11-18T16:09:22.661965+00:00",
+  "last_updated": "2026-11-19T16:21:23.086398+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:01:03.296188+00:00",
@@ -262,6 +280,21 @@
       "timestamp": "2026-11-18T16:09:22.661961+00:00",
       "change": "stock added",
       "detail": "COALINDIA (MACRO)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:23.086369+00:00",
+      "change": "sources added",
+      "detail": "The Hans India"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:23.086388+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:23.086394+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> MIXED"
     }
   ],
   "price_reaction": {}

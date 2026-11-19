@@ -12,14 +12,13 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "PRICING",
-        "INPUT_COST",
-        "DEMAND"
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -34,6 +33,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Movement in a relevant commodity",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -50,7 +50,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "WAAREEENER": {
@@ -292,16 +292,46 @@
       "published": "2026-11-18T04:03:44+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price On November 19, 2026: Prices of Precious Metals Fall Again Today; Check Latest Rates",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPc1VKU3pqYkFpUkZSUDNkdml3bUczZzA1bElWemt0WUFrVnlqb3NUZmJCZ1piOHN1MmEzbHYwWGY2LUwxSTJQTTZ0TXFIY2tJZVY2RzBpYmVCWF8xQnFEMHZIMXgzX1cxSnIyVThHbFl0a1V1M0wwcVJiQ3NSUktNamJCNDZ2YTFDRXhxckU1WmZTWHFLd1V1TGdtSE5nU0k0S1pEcl9ydkE1MnRqV01GQVRKc0l0dTB4cE1QMW9rdXJfcHAta2x6ZDNMSG1nellj0gHWAUFVX3lxTFBvUEp2TDhDWlNyY2xCeXBVU25abk1wdlE5OUoxTkxNNk1vMGhScXhORThkNzRDcVNnVHg5TzNtX0hjbF9tN2l1U0plZ1ZmaTRkREwyWm45dXFYMzIyTDRKNjI5SGZtdkNJOEExb2lmQll3UGpVaHhBQ1pQdWVEb2pBWXIzS3VsYi1ZdXpFUGVJaE0yME5hTjVsUG9jRllXazZrd0RHSkptWEtNUXNvMFBzaTVqcWpfUkRBS2JycFhtLUpUMmVjNGlnUzlJazhuRlVNU1ZhQ1E",
+      "source_name": "Lokmat Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T06:47:24+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Price Today on November 19, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcGUtdW1DVmpMQ0VCMjhNRHl4cTk5SVJhMG9nelA4a01zU1VYTnlSRi1YQjlrRDdJYmZwNlVrZnd3aTVCcnVVNEJhdUJQVWMzVjFtcjJPaU0tYlV6dHhXd00zTzRrWGNTQ2FUQ3JLSGlaMWJpYjV3b21iZVlGRE9hLWVBRVdLaE1jWmo5VWJFM3RqZHdSNzZCUUtVN3ktN3lMMWN3",
+      "source_name": "USA Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T15:06:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate in Visakhapatnam Today: 22K and 24K Gold Prices Fall on November 18, 2026",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQanFNQmV2TUNJY3E3YjJOakdWYm9zWUJGaUVYQ3lLQ3BVOHB2bTY2TTNlRUNrUHhIMjFyUm5lWlN6TndlZkh4V0tJRVhEWXZKMGJGVzVlZlBUd0FRalBSSFAyb3VwWDc2ckpnZmd1bFUtRngtaWNMUTZxaXo5RFdadTFhZGgtMlkzZlNvLU9FeW9MTTFPM1dSd0I1ZVJ1ZVB0YkxtNTFZenQ4MU45",
+      "source_name": "Hello Vizag",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T02:51:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 20,
+  "article_count": 23,
   "source_count": 1,
   "primary_source": "Hyderabad Mail",
   "cluster_key": "TMB|OTHER|2026-gold-hyderabad-november-rate-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-06T14:36:30.197375+00:00",
-  "last_updated": "2026-11-18T16:08:24.490916+00:00",
+  "last_updated": "2026-11-19T16:21:30.718183+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:36:30.197454+00:00",
@@ -387,6 +417,16 @@
       "timestamp": "2026-11-18T16:08:24.490896+00:00",
       "change": "sources added",
       "detail": "Hyderabad Mail"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:30.718160+00:00",
+      "change": "sources added",
+      "detail": "Hello Vizag, Lokmat Times, USA Today"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:30.718178+00:00",
+      "change": "impact raised",
+      "detail": "TMB 2 -> 4"
     }
   ],
   "price_reaction": {}

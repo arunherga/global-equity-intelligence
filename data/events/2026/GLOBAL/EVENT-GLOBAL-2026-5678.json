@@ -47,8 +47,8 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "DIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -66,7 +66,9 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +76,14 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
         "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +97,41 @@
       "published": "2026-11-05T03:48:17+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank Stocks To Buy: ICICI Bank, HDFC Bank, SBI Among MOFSL's Top Picks; Full List Inside",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcFc0NVUxNWJhY2VhUEtDNDdEZVFtYzVjSXBTU0x6aWcwRzJhTDJVRzJyQndqbFRkQ2pFVGxVclhGN3U0d0ZMYTZ5cjZ0VVhlcnF5RFZnR3lfdVZva2pqdUlINmxFaHV6XzhLSFVjNHA4by00OEpwb2J6MmFFeVJuSktfMmsybElvVVcyU0pXWEtoSFktckkyZlcwU3ZtVU52TTN1OWhGelBoTnFxV3NTWnRBLVF0Slc1UUUzVUZKNEEzQUhfS1E",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T05:01:53+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "NDTV Profit",
   "cluster_key": "HDFCBANK+TMB|OTHER|bajaj-bank-finance-icici-l&t-sbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:55:11.745157+00:00",
-  "last_updated": "2026-11-05T14:55:11.745218+00:00",
+  "last_updated": "2026-11-19T16:21:40.929240+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:55:11.745209+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:40.929217+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:40.929236+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

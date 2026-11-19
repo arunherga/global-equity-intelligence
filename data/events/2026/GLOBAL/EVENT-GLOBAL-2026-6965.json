@@ -5,24 +5,21 @@
   "event_date": "2026-11-18",
   "event_types": [
     "TRADE_POLICY",
-    "FRAUD"
+    "FRAUD",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "confidence": 0.41,
       "business_impacts": [
-        "EXPORTS",
-        "REGULATION",
-        "REPUTATION",
-        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -33,42 +30,34 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+4 Material international trade or tariff policy"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "scope of the measure",
-        "affected product codes",
-        "retaliation risk",
-        "regulatory response"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are exports, regulation, reputation. Classified as trade policy.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.54,
+      "confidence": 0.41,
       "business_impacts": [
-        "EXPORTS",
-        "REGULATION",
-        "REPUTATION",
-        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -79,25 +68,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+4 Material international trade or tariff policy"
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 7/10",
-        "two independent sources",
-        "indirect strong relationship",
-        "no quantified financial implication"
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "scope of the measure",
-        "affected product codes",
-        "retaliation risk",
-        "regulatory response"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to ICICI Bank. The parts of the business most likely touched are exports, regulation, reputation. Classified as trade policy.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -261,21 +246,76 @@
       "published": "2026-11-18T06:26:36+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HC quashes ICICI Bank’s nod to prosecute ex-CEO",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSG1hcHk1VUcxYWhyZm4xTlVLRUoycXNOSVcxbWx3MUluX19IelBtNnQwRTdLUlN6dmJpOXV1dTlIeDl6d05ldXNkVkM1UzNVTjZ2WW10Uk5SMWZTandacEtsS2xDS2VseUZzd3RVS1NXWGY3Q1B6ajIzUy1tQ2xoOXlXWjR1X2N2MHcxY2FCYXpBNUQz0gGaAUFVX3lxTE5WUzU2X2d6THNCRlJBanhoVFk4djNXZGxkY0ZsLVpheFFQQVpKQ0t3TlQ1VzkwdTJrTnBkZDVKQzYzaVZ1WDliZEFZTXR6MEdQRV9rdzduR3NFTjYtOVNrZHZCUEx2RUFZR1Rnei1KQ0YzRXdrM0ZwMjM5NHpVSHkzRkJkWUdFRWFwMU53bHdmN1pOZW50VFVkWGc",
+      "source_name": "MillenniumPost",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-18T19:13:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bombay HC Questions ICICI Bank’s Authority in ₹3,250 Crore Videocon Loan Case",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9PZ0p6V1BWdU56dUctNjhsZUc2SmJ2bVRIajNuT2dBcEVRRk02ZjI2S3VFRTdxak5DTWNMQ3otRDMxMWpCSjJNR01BaUpFQ3p4WU1Ka1poblJmcU9qYXNkZ1lnOUtVczRpSmlhX09iVFduQU0",
+      "source_name": "The 420.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T11:43:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 16,
+  "article_count": 18,
   "source_count": 2,
   "primary_source": "Livemint Companies",
   "cluster_key": "HDFCBANK+TMB|FRAUD+TRADE_POLICY|bank-bombay-icici-prosecute-quashes-sanction",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T15:56:46.671050+00:00",
-  "last_updated": "2026-11-18T15:56:46.671240+00:00",
+  "last_updated": "2026-11-19T16:22:30.126018+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T15:56:46.671229+00:00",
       "change": "created",
       "detail": "16 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:18.282330+00:00",
+      "change": "sources added",
+      "detail": "MillenniumPost"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:18.282346+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:18.282353+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:18.282359+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:30.125990+00:00",
+      "change": "sources added",
+      "detail": "The 420.in"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:30.126009+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:30.126014+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

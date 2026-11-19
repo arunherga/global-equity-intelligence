@@ -4,19 +4,21 @@
   "summary": "Punjab National Bank fined ₹1.25 lakh by RBI for currency chest violations scanx.trade",
   "event_date": "2026-11-10",
   "event_types": [
-    "CURRENCY"
+    "CURRENCY",
+    "REGULATORY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
-        "MARGIN"
+        "MARGIN",
+        "REGULATION"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -26,11 +28,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "RBI penalty",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
+        "+4 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,24 +48,28 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and RBI penalty. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "POSITIVE",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "REGULATION",
         "COMPETITION"
       ],
       "time_horizon": "SHORT_TERM",
@@ -78,6 +91,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+4 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -86,12 +100,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "Punjab National Bank's follow-up announcements"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Punjab National Bank, and RBI. The parts of the business most likely touched are revenue, margin, competition. Classified as currency.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Punjab National Bank, and RBI. The parts of the business most likely touched are revenue, margin, regulation. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -115,16 +132,26 @@
       "published": "2026-11-18T13:29:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Punjab National Bank Gets ₹1.24 Lakh RBI Penalty Over Currency Chest Violations; Shares Rise 3.63%",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVkg0eEg2VmRwWE1fa1N3dlNtNVVIU293MW5aa1BsejMydXJzaFQ3RTc2RHhWZUp2WVNwV205Nm9LdVBkRnJwZmVLME5US0ptV1BFR3J1cnVkYjdlLTV2TUs4ZnBDclhNR0puZl9ORHZTU2xpQ2NHVzhCaTVEN1RjME5sX3lHQUl0MkFPSkdvSzZzalhkVHZlOU83R21zZ3pLZXBjNUowd1M",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T05:58:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "HDFCBANK+TMB|CURRENCY|1.25-bank-fined-national-punjab-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:12:44.289378+00:00",
-  "last_updated": "2026-11-18T16:09:48.834424+00:00",
+  "last_updated": "2026-11-19T16:21:45.550046+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:12:44.289443+00:00",
@@ -135,6 +162,26 @@
       "timestamp": "2026-11-18T16:09:48.834405+00:00",
       "change": "sources added",
       "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:45.550018+00:00",
+      "change": "sources added",
+      "detail": "HDFC Sky"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:45.550032+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:45.550038+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 4"
+    },
+    {
+      "timestamp": "2026-11-19T16:21:45.550043+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 4"
     }
   ],
   "price_reaction": {}

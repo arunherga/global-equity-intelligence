@@ -54,15 +54,14 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "MIXED",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "CAPACITY",
-        "COMPETITION",
-        "CUSTOMERS"
+        "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
       "exposures": [
@@ -72,33 +71,16 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NHAI",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
-          "term": "NHAI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Order activity at a related company",
         "+3 Strategically important competitor development",
-        "+3 Development at a known counterparty (NHAI)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "Positive and negative effects both present",
-        "a competitor (Dilip Buildcon) is doing well",
-        "a customer's business is strengthening"
+        "a competitor (Dilip Buildcon) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -111,7 +93,7 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, customer exposure to Dilip Buildcon, and NHAI. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Dilip Buildcon. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -125,21 +107,41 @@
       "published": "2026-11-16T13:41:55+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Dilip Buildcon Gets ₹419.47 Crore Contract From Gurugram Metro Rail",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmlqWDNKUXkyWlJ1MXAzUnA5Y1NlV01HbWVNY3BxMzN2dkVUaERjNklvUnBXdjNQTkdfYzVITnRSeURsdURMeERiZkRXQlJPb2laRzZLOUp6SnBtdExSX1I2SDhuMVp2d0FNcy1sclhMTUw5cXN1WUZQSFM1OVJEZ2xuT05wTHNEYzJuVGJXVlZuRjBfXzVB",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T12:32:11+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+JKIPL|ORDER_WIN|419.47-buildcon-dilip-gurugram-metro-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:10:00.964413+00:00",
-  "last_updated": "2026-11-16T16:10:00.964482+00:00",
+  "last_updated": "2026-11-19T16:22:35.511069+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:10:00.964473+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:35.511042+00:00",
+      "change": "sources added",
+      "detail": "Sahi"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:35.511064+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA MIXED -> NEGATIVE"
     }
   ],
   "price_reaction": {}

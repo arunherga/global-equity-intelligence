@@ -234,7 +234,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -247,6 +247,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -254,7 +268,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Federal Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -264,7 +278,7 @@
       "watch_next": [
         "Federal Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Federal Bank, and NSE. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -309,7 +323,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -322,6 +336,20 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -329,7 +357,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Federal Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -339,7 +367,7 @@
       "watch_next": [
         "Federal Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Federal Bank, and NSE. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -410,16 +438,26 @@
       "published": "2026-11-18T08:30:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Federal Bank (NSE:FEDERALBNK): Why Did It Publish E-Voting Notice for Postal Ballot?",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNkhkTk00UHNPbFQtZGNvcXp6VnJjQXN5djVEc19BRUtadDQzcHg0d0JnT1k0NjdKcTFma1FDMmo5VVdNeVFtbEQ0TV96Z1ZZcUp5N2NySU5QYUQ1dWFWVTNtYUNsbHZCZG1BT2dYX0xXOU9Oc3ZSZGNIaFdOaDBxZ0Fqd3dGbThoV2RCMXRSSFNsNXRxYjh5TWd5WjB4T3NiQjNtUkI0TFdjMWlTR29EQTdhVXpGbEJjLUczV1kweE96TFJkcmc",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T07:34:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Kalkine Media",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-federal-federalbnk-member-nse-seeks",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:00:51.259583+00:00",
-  "last_updated": "2026-11-18T16:09:00.732172+00:00",
+  "last_updated": "2026-11-19T16:22:00.425683+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:00:51.259671+00:00",
@@ -455,6 +493,21 @@
       "timestamp": "2026-11-18T16:09:00.732167+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:00.425651+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:00.425673+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:00.425678+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

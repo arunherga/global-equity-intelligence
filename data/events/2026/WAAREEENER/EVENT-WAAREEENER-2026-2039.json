@@ -10,7 +10,7 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "POSITIVE",
       "confidence": 0.46,
@@ -32,6 +32,7 @@
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
         "+1 The commodity (silver) is the subject of the headline",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -62,21 +63,41 @@
       "published": "2026-10-30T14:54:18+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Precious metals crash: 3 reasons why gold and silver prices drop to 14-month low",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN19reWZZTzloaGdBaGowb2Vfc2xwdk5vWjdPUU9FNVUzSld2WjhRTUtaOWR5LXBiOWpKSnpzQ3NKMFkzZVk4SV9zb3dEWVV3Z1loTlZBbGlWWGY3THotSlJKOTRhdkZhZGl5SnhWazJEMm5KRlVfVEJKX0IwZXNRQ1FOU19xM3o2aHVWV3ZsYmQ4WDhLOWZrRF8tMnY0eEVZNW4tUlhqZTV5SnpLbWh0a1BDUTJIX24xMjlkY0FvRDE1bG00dU9JbVpCWEVwZ9IB1AFBVV95cUxOWEl2R0pvNDJTNGlXdzhPcXd0c3ZibTVoNnBrRVdqcUhhWENKSWRXeTY4MVd0VmY2RG1YOUV0eWsyanRHeFBGcGFpS0dDeENJSnZLMzN2U2xqWnpVRUNfUTlSaDl2bmJTMzNLNGtzTF9mdGtqbXVPT1FVTjFha3g3MzFjYkkyZk1sc3NhQUxGU3o5WndCeGxMR2FzbjRkdUh1T1YwOTFyMkhBTktrOHlNVUhuc24yWkh5QzJ2YVN2cVpnZjVjdDUyY3M3T2FZTHo0T0hIcA",
+      "source_name": "The Financial Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T08:17:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "WAAREEENER|COMMODITY|crash-deepens-losses-oct-price-silver",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-10-31T12:50:18.775442+00:00",
-  "last_updated": "2026-10-31T12:50:18.775512+00:00",
+  "last_updated": "2026-11-19T16:22:05.326509+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:50:18.775503+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:05.326486+00:00",
+      "change": "sources added",
+      "detail": "The Financial Express"
+    },
+    {
+      "timestamp": "2026-11-19T16:22:05.326504+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 7"
     }
   ],
   "price_reaction": {}

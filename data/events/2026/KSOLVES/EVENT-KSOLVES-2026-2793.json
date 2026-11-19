@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-2793",
+  "title": "Our response to the Optimizely “OPTIMJACK” supply chain compromise",
+  "summary": "Our response to the Optimizely “OPTIMJACK” supply chain compromise Salesforce",
+  "event_date": "2026-11-19",
+  "event_types": [
+    "SUPPLY_CHAIN"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
+      "business_impacts": [
+        "SUPPLY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Development at a known counterparty (Salesforce)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "duration of the disruption",
+        "alternate sourcing",
+        "inventory cover",
+        "cost pass-through"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply, input cost. Classified as supply chain.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Our response to the Optimizely “OPTIMJACK” supply chain compromise",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRkNQMlBaUTQzZWdKbm12WnJGeS1MRjk0MnhJU3lXYlRxcmYxemRfbFFocXk2Si1WM0ZiWEFDWU5RczVzcnVieU5IWHdaRXRrY2piOEtOemc4ZzFPYlV2X0xRT2FJaEJYSFhMb2R1MFhSMEViV0tGOWMzd2stQi1wQ2MtWHpKVkpYeWdELWZUZmRIS25FbVF3M25HQmtVZw",
+      "source_name": "Salesforce",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T05:01:47+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Salesforce",
+  "cluster_key": "KSOLVES|SUPPLY_CHAIN|chain-optimizely-optimjack-our-response-supply",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-19T16:03:43.003452+00:00",
+  "last_updated": "2026-11-19T16:03:43.003525+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-19T16:03:43.003514+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

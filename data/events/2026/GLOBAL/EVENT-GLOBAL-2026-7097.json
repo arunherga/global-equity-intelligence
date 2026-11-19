@@ -1,0 +1,185 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7097",
+  "title": "Crude oil price today: Brent futures rise despite increase in US oil inventories",
+  "summary": "January Brent oil futures were at $92.04, up by 0.10%, and January crude oil futures on WTI (West Texas Intermediate) were at $82.11, down by 0.24%",
+  "event_date": "2026-11-19",
+  "event_types": [
+    "COMMODITY",
+    "RAW_MATERIAL"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue may face modest downward pressure if Ravelcare increases product prices to offset raw material inflation, potentially dampening sales volumes among price-sensitive personal care consumers.",
+        "margin_effect": "Gross and operating margins are expected to compress, as higher costs for petrochemical derivatives and plastic packaging cannot be fully or immediately passed along to end consumers.",
+        "cost_effect": "Cost of goods sold (COGS) will increase due to higher prices for crude oil-derived ingredients (such as mineral oil, paraffin, and surfactants) and polymer packaging, alongside higher freight and logistics expenses.",
+        "competitive_effect": "Ravelcare could be at a disadvantage relative to larger competitors who possess stronger supply chain hedging capabilities or market power to hold retail prices and absorb cost spikes to gain market share.",
+        "regulatory_effect": "Unclear or minimal direct regulatory impact, though potential mandatory eco-packaging standards could interact with rising plastic resin costs.",
+        "short_term": "Over the next 0-3 months, Ravelcare will likely experience margin compression as existing low-cost raw material inventory depletes and fuel-related transport surcharges take effect.",
+        "medium_long_term": "Prolonged high crude prices over 3+ months may necessitate portfolio-wide price hikes, supply chain re-engineering, or product reformulations toward sustainable/bio-derived raw materials.",
+        "second_order_effects": "Broader fuel inflation could squeeze overall consumer discretionary budgets, depressing demand for premium personal care items, while logistics providers may pass on transport fuel surcharges.",
+        "key_uncertainty": "The magnitude and persistence of the crude price rally, along with Ravelcare's pricing power and volume elasticity across its personal care product lines.",
+        "monitor_next": [
+          "Brent crude oil price trends and sustainability of the rally",
+          "Prices of key personal care feedstocks (surfactants, specialty chemicals, PET/HDPE packaging resins)",
+          "Competitor pricing actions and promotional activity in the personal care market",
+          "Ravelcare's upcoming quarterly gross margin performance and management commentary on cost pass-throughs"
+        ]
+      }
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Severe supply-chain or raw-material disruption",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (crude oil) is the subject of the headline",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to crude oil, and intermediates. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear in the short term. While higher input costs may eventually lead to price adjustments for APIs, contract price revisions typically lag cost increases, meaning immediate top-line expansion from cost pass-through is uncertain.",
+        "margin_effect": "Negative pressure expected on gross and EBITDA margins. Rising crude oil prices elevate the cost of petrochemical-derived key starting materials (KSMs) and organic solvents, which can compress margins if cost pass-through is delayed.",
+        "cost_effect": "Input and operating costs will likely increase due to higher prices for crude-derived solvents (such as toluene, acetone, and ethyl acetate), chemical intermediates, and increased energy/freight expenses.",
+        "competitive_effect": "Supriya's competitive positioning will depend on its level of backward integration compared to API peers. Highly backward-integrated producers can cushion the impact better than non-integrated competitors.",
+        "regulatory_effect": "No direct regulatory or compliance consequences stemming from crude oil price fluctuations.",
+        "short_term": "Over the next 0-3 months, existing raw material inventory will buffer initial shocks, but margin compression may begin to manifest as higher-cost solvents and basic chemical inputs are consumed.",
+        "medium_long_term": "Over 3 months to several years, sustained higher crude prices would necessitate structural price renegotiations with API clients, process optimization to reduce solvent loss, or deeper backward integration.",
+        "second_order_effects": "Rising raw material input prices could increase working capital requirements to finance inventory, while elevated oil prices could also drive up outbound freight and logistics surcharges.",
+        "key_uncertainty": "The duration of the crude oil price rally and the proportion of input cost increases that Supriya can successfully pass on to downstream pharmaceutical clients.",
+        "monitor_next": [
+          "Prices of key organic solvents (e.g., acetone, toluene, ethyl acetate) used in API synthesis.",
+          "Gross margin and EBITDA margin trends in Supriya Lifescience's upcoming quarterly financial results.",
+          "Brent crude oil price trajectories and energy market volatility over the coming weeks.",
+          "Management commentary regarding contract pricing mechanisms and pass-through capabilities."
+        ]
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Crude oil price today: Brent futures rise despite increase in US oil inventories",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-edge-lower-as-us-inventories-rise/article71718631.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-19T05:48:29+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY+RAW_MATERIAL|brent-crude-futures-oil-price-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-19T16:00:39.853537+00:00",
+  "last_updated": "2026-11-19T16:17:25.245230+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-19T16:00:39.853602+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T16:16:55.263457+00:00",
+      "change": "ai analysis",
+      "detail": "RAVEL via gemini"
+    },
+    {
+      "timestamp": "2026-11-19T16:17:25.245213+00:00",
+      "change": "ai analysis",
+      "detail": "SUPRIYA via gemini"
+    }
+  ],
+  "price_reaction": {}
+}
