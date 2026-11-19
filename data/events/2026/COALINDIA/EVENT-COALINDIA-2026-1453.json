@@ -4,22 +4,21 @@
   "summary": "Coal India Limited Receives Order From Ministry Of Heavy Industries For Setting Up Manufacturing Facility For Sintered Rare Earth Permanent Magnet www.marketscreener.com",
   "event_date": "2026-11-19",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "REVENUE",
-        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -37,26 +36,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Order activity at a related company",
-        "+3 Development at a known counterparty (Coal India)",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -144,21 +138,61 @@
       "published": "2026-11-19T11:29:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Consortium Gets LoI for Rare Earth Magnet Plant",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTjlDVEdXTk1XazZxbGE5b1FnX0FNS0xpM3REdDM0RHBjNEsyeW43OUhPMjg0dDZQWGZRTFpIbFdndHlCRE8wdlJmdnl1QmhaZHg2OWtfMDhmbWVFRlRpd2tvMnZtaWo1TEZoU0FUcFRwVVlYSkpkY000Sl8tNlRaVnJPay05bkZXRzlGZHV5UTRPTlRRa1g4",
+      "source_name": "India Business Trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T16:46:29+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India NdFeB Magnet Plant India Program Explained",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlelNCUXVONWxkUExKcTF0Zjc4MWk3Mk9BSjdSODE4VzhwaXVjay1sVFByM2FSRmRFbExBbklqZ3BMeVVtdVBCYThtdHpsS1RoamxoTUUzTHA4UDZEX2NLaXVfYU1EbzV4OUI2YVpNa19xRE9PVFE",
+      "source_name": "Rare Earth Exchanges",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T18:28:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "www.marketscreener.com",
   "cluster_key": "COALINDIA+MSTCLTD|ORDER_WIN|coal-heavy-india-ministry-order-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-19T16:06:14.584135+00:00",
-  "last_updated": "2026-11-19T16:06:14.584229+00:00",
+  "last_updated": "2026-11-19T21:40:59.838001+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:06:14.584220+00:00",
       "change": "created",
       "detail": "4 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-19T21:40:56.118802+00:00",
+      "change": "sources added",
+      "detail": "India Business Trade"
+    },
+    {
+      "timestamp": "2026-11-19T21:40:56.118816+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-19T21:40:56.118820+00:00",
+      "change": "direction changed",
+      "detail": "MSTCLTD POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-19T21:40:59.837984+00:00",
+      "change": "sources added",
+      "detail": "Rare Earth Exchanges"
     }
   ],
   "price_reaction": {}
