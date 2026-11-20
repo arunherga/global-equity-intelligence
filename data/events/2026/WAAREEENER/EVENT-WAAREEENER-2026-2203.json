@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "POSITIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -30,7 +30,8 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (silver) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -39,7 +40,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -48,6 +49,49 @@
         "hedging disclosure"
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -61,21 +105,46 @@
       "published": "2026-11-03T04:05:16+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price crash: Yellow metal and silver slump over 4% each on MCX",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaU82SjNXZ2szUFpvMkxscUMxNTlpLXJlNmZudVA4eGpoSnF4bHVCYkZXVWE4ZXdFcjQ0bkVUWXhKQmxHLVJpNTJ2UzJISzVvQnZpblYzbUROcHVLRzdCVWJWSkpJWElGYXhpT2ZmdktodXdoOEZNbGlHVTBJSmZ2aEZPU0lVdDY5U2RvcUJYSlprcVIxN2t5WWN1d0xDbEF3TWNwT3RhU1NnenVPN2RSUmVnbUJFQ2RnZ1FrQ1I2ZVRjV0lFd05VNGNtdkpuRERldGfSAdcBQVVfeXFMTXBVb0NnWXQ4Z0NCd1Y5bVNfa0tQOTQtWXNFTkZ0STdkOWZfcmNFSWotLTVWaWhRUzQwaXh0Njd1WmExOHNsdmNoRnlVekp6WWR1ZTlhRW42WHVZTzUxd0lkdTRmVU5aMkFlWnNkcUMtckNwdzcydEYtSnFpREE4Z1lwODZHb3A3WFNPMjVLSlR3Z3N3TjBuOUo1TnB3TmNqRDEwTXM5WFFXRE02b0hXdWUxM0VJWWx2eEJDcEVaaDlKZ1JUSVJBTTNjbHpqVm5CYjRRbW5zUEU",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T04:11:56+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Business Today",
   "cluster_key": "WAAREEENER|COMMODITY|gold-metal-november-price-silver-yellow",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T14:38:04.768298+00:00",
-  "last_updated": "2026-11-03T14:38:04.768398+00:00",
+  "last_updated": "2026-11-20T15:57:02.246279+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T14:38:04.768388+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:02.246261+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:02.246272+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 3 -> 5"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:02.246276+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -4,20 +4,25 @@
   "summary": "Vikram Solar targets March 2027 production at 9 GW cell plant Multibagg AI",
   "event_date": "2026-11-15",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN",
+    "NEW_PLANT"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "BALANCE_SHEET",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,21 +33,27 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
+        "+3 Strategically important competitor development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Vikram Solar) is doing well",
+        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "Vikram Solar's follow-up announcements"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Vikram Solar. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Vikram Solar. The parts of the business most likely touched are revenue, capacity, balance sheet. Classified as order win.",
       "ai_analysis": null
     }
   },
@@ -56,21 +67,46 @@
       "published": "2026-11-15T11:36:40+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vikram Solar To Commission 9 GW Cell Plant By March 2027 With 8.2 GW Order Book",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS2FWQkFac0FXeEhicWktdG45dUowZUZpZE42Q3BlT0dON09feThocmR5YXVFU1hSamRCcmxxZGIyM2Z5MDhoZDlBeFR4RDduRlA4dlh3Rk53cUFPdjVoMDg5Y1Q5bHFmTG5rNUVnQzdjNlZLZ0Z6M0w4Yk83cGFSWE43a0V6NWRuMU9xT2g2aFdpbExUREloQVQ3OGtzSVB0QnJ3Tmd0Y2o",
+      "source_name": "Sahi",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T12:35:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Multibagg AI",
   "cluster_key": "WAAREEENER|OTHER|2027-march-production-solar-targets-vikram",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-15T19:33:17.481587+00:00",
-  "last_updated": "2026-11-15T19:33:17.481667+00:00",
+  "last_updated": "2026-11-20T15:57:52.162443+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:33:17.481658+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:52.162423+00:00",
+      "change": "sources added",
+      "detail": "Sahi"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:52.162436+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN, NEW_PLANT"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:52.162441+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 6"
     }
   ],
   "price_reaction": {}

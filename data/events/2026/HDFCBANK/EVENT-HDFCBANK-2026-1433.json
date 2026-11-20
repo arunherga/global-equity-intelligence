@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -25,13 +25,6 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -40,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +43,7 @@
       "watch_next": [
         "HDFC Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to HDFC Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -102,21 +95,41 @@
       "published": "2026-11-04T05:21:32+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank climbs Friday, outperforms market",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOak4zOGJ4dGhrc1dTeDduOTFfMzRSMVJqTUVmQ2tTcnUyY2lpUElaUlhDbGR6VEVjSUd2VTQ3SHhzd2RwSURfdFJPenNDcEJjdGtjOWYxMTNQNy1mRDVYUVNtRVl4UWhBamk5LS1fUnlhMHpMVGRnSnNKT3B1VjdTMnZpWjlWeGZSUWVGSXY1X3d6MFpCdnJGOFhabzhNVlh2c2E2VjV2MDVBM0hNVC1wS0JTVlM3WmFpNjJHSQ",
+      "source_name": "MarketWatch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T10:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Sunday Guardian",
   "cluster_key": "HDFCBANK+TMB|OTHER|india-markets-nifty-sensex-share-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-04T20:36:23.071602+00:00",
-  "last_updated": "2026-11-04T20:36:23.071702+00:00",
+  "last_updated": "2026-11-20T15:57:38.351888+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T20:36:23.071691+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:38.351872+00:00",
+      "change": "sources added",
+      "detail": "MarketWatch"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:38.351884+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

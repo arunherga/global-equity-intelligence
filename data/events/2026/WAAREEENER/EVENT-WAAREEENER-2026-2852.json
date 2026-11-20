@@ -9,11 +9,11 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.35,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -25,10 +25,24 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "cell manufacturing",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "solar cells",
+          "relationship": "SECTOR",
+          "weight": 1.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -36,13 +50,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, industry exposure to silver, and cell manufacturing. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +70,41 @@
       "published": "2026-11-16T06:24:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "UNSW researchers target silver reduction in solar cell manufacturing",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUjhTYzRvcElJdmpIeGZ2T0dqLVJZXzQwc3k4LUxvNDBNVzktbXFDY3ExYm1qN1ZHS24zNUNRWkJxaFNGd1kxcW1ab2UtNEJSYTBtOU1oVUZidVNvSlZkUVdjS09aVFVfeDhhbzRGR0w0N0h6eHhEQmkwYjBJNlVJWDFFaGEyUktINGlIeWhqTFI4dUJZa0FKLThzR1RpUU8tekVnZ0ZrUVIwSTJaSWhwdVdR",
+      "source_name": "Australian Manufacturing",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T02:02:48+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "UNSW Sydney",
   "cluster_key": "WAAREEENER|OTHER|devise-reduction-researchers-silver-solar-working",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:07:30.573290+00:00",
-  "last_updated": "2026-11-16T16:07:30.573354+00:00",
+  "last_updated": "2026-11-20T15:56:52.147396+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:07:30.573345+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:56:52.147386+00:00",
+      "change": "sources added",
+      "detail": "Australian Manufacturing"
+    },
+    {
+      "timestamp": "2026-11-20T15:56:52.147393+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
     }
   ],
   "price_reaction": {}

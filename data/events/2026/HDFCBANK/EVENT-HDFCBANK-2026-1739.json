@@ -4,7 +4,8 @@
   "summary": "HDFC Bank vs Axis Bank: Both shares recover after Q2 sell-off; which banking stock offers higher upside? Check targets TradingView",
   "event_date": "2026-11-17",
   "event_types": [
-    "ANALYST_ACTION"
+    "ANALYST_ACTION",
+    "OTHER"
   ],
   "stocks": {
     "TMB": {
@@ -58,19 +59,18 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.4,
       "business_impacts": [
-        "REPUTATION",
         "COMPETITION"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Axis Bank",
+          "term": "ICICI Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -79,7 +79,6 @@
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -91,9 +90,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are reputation, competition. Classified as analyst action.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -107,21 +106,46 @@
       "published": "2026-11-17T13:20:59+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ICICI Bank vs HDFC Bank: Which is the Better Banking Stock?",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xcFpzV0Y3TjExTm1TNF8wQ2M3Q0JRN2I1VXFMeDgybmUzdDQ0NVQ4Ri00MmN2Q2NMRVFpcUl5MTRTQTI3ZmQ5Y2Q0cEI1VGFXSHFGN3R5VHFrRmtZckJzblQ4VTVBRFk4TDQ4NUtSQ0M",
+      "source_name": "Equitymaster",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T10:50:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "HDFCBANK+TMB|ANALYST_ACTION|axis-bank-bank-both-hdfc-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:26:44.718212+00:00",
-  "last_updated": "2026-11-17T16:26:44.718315+00:00",
+  "last_updated": "2026-11-20T15:57:41.040476+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:26:44.718304+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:41.040458+00:00",
+      "change": "sources added",
+      "detail": "Equitymaster"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:41.040468+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:41.040473+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 3 -> 5"
     }
   ],
   "price_reaction": {}

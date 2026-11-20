@@ -10,7 +10,7 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -36,6 +36,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -63,21 +64,41 @@
       "published": "2026-11-19T13:17:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce to lead consortium bringing SI to global markets",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRnZsT2x5VzM0NWJYeXZnenlMemdmSlhBSHlVb1JSN1dQWUlGVVZnSkFlZk5VRGVPVWE0bGo0aFFLZkxOaWZ4RnN6cTVxWjRvMmhKUmZKZDlYR0Q1UnhJeHc3ekZkUXRrQWFqQWZjOFpVejVoVEZtNy1PNFFSMWFaY2FnSUZDX0Vfd0s1b2V5YnlVaHZiR0ItTzJNc3RxMk5s",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-19T21:11:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Salesforce",
   "cluster_key": "KSOLVES|OTHER|bringing-consortium-lead-salesforce-trusted-usa",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-19T16:06:58.491532+00:00",
-  "last_updated": "2026-11-19T16:06:58.491605+00:00",
+  "last_updated": "2026-11-20T15:56:45.705610+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:06:58.491594+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T15:56:45.705595+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-20T15:56:45.705607+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

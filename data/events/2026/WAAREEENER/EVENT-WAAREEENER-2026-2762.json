@@ -12,18 +12,33 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "MIXED",
       "confidence": 0.3,
       "business_impacts": [
+        "COMPETITION",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
+          "exposure_type": "COMPETITOR",
+          "term": "Adani Green Energy",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
           "exposure_type": "CUSTOMER",
           "term": "Adani",
           "relationship": "INDIRECT",
           "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -32,7 +47,9 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a customer is under pressure"
+        "Positive and negative effects both present",
+        "a competitor (Adani Green Energy) is doing well",
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -40,9 +57,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "Adani Green Energy's follow-up announcements",
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are competition, customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -96,16 +114,36 @@
       "published": "2026-11-18T21:04:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Tarali Project Halted Over ₹227 Crore Wildlife Row",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdzk3SkZtRmd4aEhDZTdsQ3BBZmQ0M1lMSDgzR2tmcExlb0U4QndzYlNrWUg2U042MUtOWThHOVY2Q2FjcmhRTU51VTAxeUxtM1JsektFaGlQYUI4SFFza01BbjR2RXM3TV9NY1NRRTh2dkszbTZOa3VqVlk5QzVVeU1R",
+      "source_name": "Sprouts News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T11:52:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Adani Green Energy's Tarali hydro project under scrutiny for wildlife clearance and cost concerns - India Today",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOT2o3T1dwcnhMckk1LWhBSGtEMFVkMWtyU1NDSWtHOTQ5R3ZkY2QtdU5pQ2JYdW4taFAwdVd4eWtVM2ZySi1MQ25wZnFHRkhpdU1hcEQzTktLWVNxbzVxbGVBMlloZTZaNDl3cWwza19QZnlHQ0FNaHRtVXhqZk1lRlJ0dzZBYmZPNWQwV0g5eHFLa1RCVk9kM1FMa2N0bVdMODNkQjRLZUtBdS1XY2hUdVVvRXFRQUlEdXl3SUZZczFTZ3I3dXVHS2RPTXY0czNZNlViZHd0SVU0VGVwZEZQTmF6Q3ZzWHfSAewBQVVfeXFMUFAzUkF6dzVrV1E1cDFvenp5dkhIZ3ZRdUQxMW5jUmREbjcxV2ZhaXFHa2Vpcks1M2ctVnlhdWpldnNobzc3WGJ6LTltLUlwODhUZGRPTHdXUWR5SlVMRDd5Wm5qV0kxSlp4NjlWWXl2dkhkMW9yYU56MlNnZ0JqVC1aWVJnVXczVXduTFFST1pjYURHaWFPU1JJZFdtSlo3TUxGM3V6VVVQZVU0czk4VjdoOGZpT3BiSDAtZVVRS3MtRDRyVm1WQmJMZkswYk1JeHF2VzZaNW5jZ0xnWXVGb3JvVk5pcDBEOU5ma0k",
+      "source_name": "India Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T14:24:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 7,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "WAAREEENER|OTHER|adani-green-project-pumped-storage-tarali",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:49:41.378827+00:00",
-  "last_updated": "2026-11-19T16:21:22.778168+00:00",
+  "last_updated": "2026-11-20T15:57:57.936757+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:49:41.378901+00:00",
@@ -131,6 +169,21 @@
       "timestamp": "2026-11-19T16:21:22.778163+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER MIXED -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:45.952099+00:00",
+      "change": "sources added",
+      "detail": "Sprouts News"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:57.936742+00:00",
+      "change": "sources added",
+      "detail": "India Today"
+    },
+    {
+      "timestamp": "2026-11-20T15:57:57.936754+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> MIXED"
     }
   ],
   "price_reaction": {}

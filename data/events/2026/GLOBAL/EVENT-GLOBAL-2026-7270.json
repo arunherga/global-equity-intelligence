@@ -1,0 +1,130 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7270",
+  "title": "Rupee soars to 7-month high against the dollar, strengthens below 93 level",
+  "summary": "Gains 62 paise to close at 92.67/$; G-Sec yields thawed, tracking softer crude oil prices as well as US treasuries",
+  "event_date": "2026-11-20",
+  "event_types": [
+    "CURRENCY",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.48,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.48,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Rupee soars to 7-month high against the dollar, strengthens below 93 level",
+      "url": "https://www.thehindubusinessline.com/money-and-banking/rupee-soars-to-7-month-high-against-the-dollar-strengthens-below-93-level/article71724707.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-20T13:28:04+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|COMMODITY+CURRENCY|7-month-against-dollar-high-rise-rupee",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-20T15:41:52.031920+00:00",
+  "last_updated": "2026-11-20T15:41:52.031995+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-20T15:41:52.031984+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

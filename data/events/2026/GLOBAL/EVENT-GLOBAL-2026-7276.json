@@ -1,0 +1,205 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7276",
+  "title": "Gold set for worst week since March as rate-hike expectations grow",
+  "summary": "Gold prices plummeted on Friday, recording their most significant weekly dip since March, driven by a strengthening US dollar. This shift caused investors to adjust their forecasts about a possible interest rate increase by the Federal Reserve in December. The President of the Chicago Fed underscored inflation concerns tied to artificial intelligence and energy supply disruptions.",
+  "event_date": "2026-11-20",
+  "event_types": [
+    "GUIDANCE",
+    "SUPPLY_CHAIN",
+    "INTEREST_RATE",
+    "MACRO"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.38,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND",
+        "SUPPLY",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "artificial intelligence",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
+        "duration of the disruption",
+        "alternate sourcing"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its technology exposure to artificial intelligence. The parts of the business most likely touched are revenue, demand, supply. Classified as guidance.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "MIXED",
+      "confidence": 0.41,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND",
+        "SUPPLY",
+        "INPUT_COST",
+        "MARGIN",
+        "PRICING"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": "throughput commodity"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions",
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
+        "duration of the disruption",
+        "alternate sourcing"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and Federal Reserve. The parts of the business most likely touched are revenue, demand, supply. Classified as guidance.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.36,
+      "business_impacts": [
+        "REVENUE",
+        "DEMAND",
+        "SUPPLY",
+        "INPUT_COST",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "Federal Reserve",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "+2 Earnings or guidance at a related company",
+        "-3 Passing mention without a quantified development",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "macro relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "assumptions behind the guidance",
+        "execution track record",
+        "duration of the disruption",
+        "alternate sourcing"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to Federal Reserve, and interest rates. The parts of the business most likely touched are revenue, demand, supply. Classified as guidance.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold set for worst week since March as rate-hike expectations grow",
+      "url": "https://retail.economictimes.indiatimes.com/news/apparel-fashion/jewellery/gold-set-for-worst-week-since-march-as-rate-hike-expectations-grow/136010603",
+      "source_name": "ETRetail",
+      "source_domain": "retail.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-20T02:38:07+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETRetail",
+  "cluster_key": "HDFCBANK+KSOLVES+TMB|GUIDANCE+SUPPLY_CHAIN|gold-march-set-since-week-worst",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-20T15:41:57.804962+00:00",
+  "last_updated": "2026-11-20T15:41:57.805030+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-20T15:41:57.805020+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
