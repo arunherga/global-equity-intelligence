@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-WAAREEENER-2026-3160",
+  "title": "Gold and Silver Slide as Fed Eyes Rate Hikes at Dec. 9 Meeting",
+  "summary": "Gold and Silver Slide as Fed Eyes Rate Hikes at Dec. 9 Meeting JCK",
+  "event_date": "2026-11-20",
+  "event_types": [
+    "INTEREST_RATE"
+  ],
+  "stocks": {
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "POSITIVE",
+      "confidence": 0.3,
+      "business_impacts": [
+        "MARGIN",
+        "DEMAND",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "deposit repricing lag",
+        "loan book mix (fixed versus floating)",
+        "credit demand response",
+        "margin guidance"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are margin, demand, input cost. Classified as interest rate.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold and Silver Slide as Fed Eyes Rate Hikes at Dec. 9 Meeting",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9mNWFoeVE3YlRUWGU3dTFzNzVoYWFJMmRaM0UtVGtoYmtlZGtvUFZ4RXJDU1JDRGNncERzQ25Cc215SXpQVXZsU2x2OE1NQXFIazk0dUZSR3FVUDZmZ1lYSTVwLVhSd3JTYXNaOUJVNmRHekpt",
+      "source_name": "JCK",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T18:34:46+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "JCK",
+  "cluster_key": "WAAREEENER|INTEREST_RATE|eyes-fed-gold-rate-silver-slide",
+  "is_international": true,
+  "tags": [],
+  "first_seen": "2026-11-20T21:14:19.133553+00:00",
+  "last_updated": "2026-11-20T21:14:19.133617+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-20T21:14:19.133608+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,7 +4,9 @@
   "summary": "Ashoka Buildcon (NSE:ASHOKA) L1 for ₹865.90 Crore Expressway Work Kalkine India",
   "event_date": "2026-11-06",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN",
+    "CONTRACT_WIN"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -397,35 +399,40 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
       "confidence": 0.51,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+4 Major order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "CONTRACT_WIN is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -433,10 +440,31 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. Classified as other.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Positive impact on revenue as the contract (valued between ₹865.90 crore and ₹1,465 crore based on available reports) adds directly to Ashoka Buildcon's construction order book, with revenue recognized progressively over the execution timeline.",
+        "margin_effect": "Unclear without exact contract details; profitability will depend on the bid margins, operational execution efficiency, and whether raw material price escalation clauses are included.",
+        "cost_effect": "Input and operational expenses will increase due to resource mobilization, procurement of key raw materials (cement, steel, bitumen), equipment deployment, and labor.",
+        "competitive_effect": "Strengthens Ashoka Buildcon's market position and pre-qualification eligibility for future high-value highway and expressway projects awarded by NHAI and other government entities.",
+        "regulatory_effect": "Requires compliance with NHAI project standards, environmental and safety regulations, and dependence on government agencies for timely land acquisition and right-of-way approvals.",
+        "short_term": "0-3 months will focus on contract execution formalities, site mobilization, initial capital deployment, and securing necessary bank guarantees or working capital lines.",
+        "medium_long_term": "Consistent top-line revenue recognition and cash flows over the multi-year construction period (typically 2-3 years), aiding order book execution metrics.",
+        "second_order_effects": "Higher capacity utilization of owned construction equipment, potential subcontracting opportunities for regional vendors, and temporary expansion of working capital borrowings.",
+        "key_uncertainty": "The exact timeline for land availability/right-of-way handover by NHAI and the finalized contract execution period.",
+        "monitor_next": [
+          "Formal signing of the agreement and notification of the official Appointed Date from NHAI",
+          "Pace of land acquisition and site availability provided by the authority",
+          "Quarterly construction revenue contribution and overall order book updates in earnings releases",
+          "Movement in key construction material prices (cement, steel, fuel) impacting execution costs"
+        ]
+      }
     }
   },
   "sources": [
@@ -489,16 +517,46 @@
       "published": "2026-11-20T11:11:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Limited Wins ₹865.90 Crore NHAI Expressway Mandate",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRzQwUVlwakw2WDFtcHF5ZkVkMTJ6Qkd1cWpidVlGRHZ6YmY2UHNBQmhHUXJpcUxzTFVPakdaU05ETTFZRDY5Sk50aU1ZYVNMQkxIZ2hWZ0ZaN0Y5NzZVU3M5cC0ySXJJWUpTTmVNZDRNWm1tcUZnZTF6Q0NVWlctUlZBU2hCNEkzUWY0V0RmOVhfbTFzeVBEWjI1UVkwSXdfLUxqMXdoRnhfbXpTb2E2Sk9B",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T13:06:27+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Limited receives Rs 1,465 crore NHAI contract",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNY0hoM3phUy01Wi1VOTJLblhEOC1Ed29paXE0cnJraXJYU1l1TlhzREk2R2diR3p5YzFUTHBENFByVjI3djRYZ3UxS2RUeURGUVVhZUZzY0xicmh1REFkU1lOVUNfUndKMFlheWdLc1RFUDNYRmNMQzhkYl9kd0p2VF9tMmhWR0wzSVJGbk5Ob0dlSVJmRklkRHpmcEZXMjZQUDFWM2RKRXdPT1JYUVo2eEwyUlZwR1ExX01CSnlMSVEzdw",
+      "source_name": "Multibagg AI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T13:06:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon Receives Letter Of Acceptance For NHAI Project",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWUJZMG9wSG9YOTZZN0Vwa0RyaWdNNzRidS1UaTFuR0ZYY2g4YVJ6N0lGQXUzOC1qdEVYQzdPUFVNUE9UbDA5S2RweFRFcVJmbXAwTldtSnBFMnpBWGdscWExa2Mtc2RZMnQzMjBCeURhT1pnODFNTVduZlo5em4ySEl1WDd3eTBuYlhRT3lYX2N1aUMybW9xcGZ5NEtMSklrdWJlNjdvbnZ1RGxnN09GTDFyZEdGZXVteXFzYUoyNDc1X2dDdVQ4RDRuTVI",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T13:10:52+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|865.90-ashoka-ashoka-buildcon-expressway-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T20:06:37.861523+00:00",
-  "last_updated": "2026-11-20T15:57:42.585666+00:00",
+  "last_updated": "2026-11-20T21:14:58.425643+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T20:06:37.861571+00:00",
@@ -524,6 +582,21 @@
       "timestamp": "2026-11-20T15:57:42.585655+00:00",
       "change": "sources added",
       "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:58.425618+00:00",
+      "change": "sources added",
+      "detail": "Multibagg AI, TradingView"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:58.425633+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN, CONTRACT_WIN"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:58.425639+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 5 -> 9"
     }
   ],
   "price_reaction": {}

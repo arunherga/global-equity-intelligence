@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -26,19 +26,11 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
-        "-3 Speculative or unconfirmed report",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,8 +39,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -56,7 +47,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -70,21 +61,41 @@
       "published": "2026-11-17T06:08:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Today: Gold Falls 1.91% on November 20, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSUtnZGVIdmJYekQ1VmF3aWRJREx5aGNEcVpiOEhNc3U5bFNHeUd5eGl4MV9iZXI0dEdhd0tRTV91WkpQdzA0ZVlZVDc5LXViZlZnVXFJczhnTFBmYTZ2QUxiTDhyWXpQRk1wbUZ6aUlKN0xJeDFYUERyeFJ4T3FvSzVfb2twZEg3bjRYTmtOZXV4U2xRVmNEUHc1Z0N3d21zaUx3",
+      "source_name": "USA Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T19:09:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Times of India",
   "cluster_key": "TMB|COMMODITY|gold-gold-oversold-prediction-price-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:23:34.743714+00:00",
-  "last_updated": "2026-11-17T16:23:34.743809+00:00",
+  "last_updated": "2026-11-20T21:15:16.589136+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:23:34.743799+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:16.589117+00:00",
+      "change": "sources added",
+      "detail": "USA Today"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:16.589133+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 3"
     }
   ],
   "price_reaction": {}

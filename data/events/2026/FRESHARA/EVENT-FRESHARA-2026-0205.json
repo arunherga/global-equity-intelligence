@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -32,7 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "vegetable prices is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -56,21 +56,41 @@
       "published": "2026-10-30T19:00:49+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vegetable prices go up amid rain",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNy0wV0h0TUltVXlXMWJLeWowdFpNOXhBdnQxcXI3WTM4VlRKNTRzNlFzTXdQS3QxdGZnYmJjZVEzMHd0TGN1RU5PSkpUWVZXaEl3S05jdTFGSVpXdG0tYmJ4ZlRNNV8tSmxTVkF4NkRCOHk3ZHUwbUR5R2p3bTM1aVJIcjRRaW9q",
+      "source_name": "New Age BD",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T17:58:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "FRESHARA|OTHER|2026-miami-oct-price-usda-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-10-31T12:51:03.655228+00:00",
-  "last_updated": "2026-10-31T12:51:03.655287+00:00",
+  "last_updated": "2026-11-20T21:15:14.489713+00:00",
   "event_history": [
     {
       "timestamp": "2026-10-31T12:51:03.655277+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:14.489680+00:00",
+      "change": "sources added",
+      "detail": "New Age BD"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:14.489708+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

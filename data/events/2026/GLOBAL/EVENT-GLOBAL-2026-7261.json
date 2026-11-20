@@ -11,16 +11,15 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.73,
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
-        "REVENUE",
-        "MARGIN"
+        "CUSTOMERS"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -30,32 +29,23 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "Reserve Bank of India",
-          "relationship": "INDIRECT",
-          "weight": 1.8,
-          "detail": ""
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "+3 Original regulator announcement"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer is under pressure"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "two independent sources",
-        "official confirmation available",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
@@ -65,26 +55,8 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are regulation, revenue, margin. Classified as regulatory.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Unclear. Direct revenue impact depends on whether TMB has credit exposure, co-lending arrangements, or priority sector lending transactions with Fusion Finance Limited, which is currently unknown.",
-        "margin_effect": "Unclear. Net interest margins are expected to remain unaffected unless TMB holds debt exposure to Fusion Finance that requires additional credit provisioning.",
-        "cost_effect": "Operating costs could experience a minor increase if TMB proactively enhances its internal KYC verification, audit procedures, and customer grievance redressal mechanisms to align with RBI's heightened regulatory scrutiny.",
-        "competitive_effect": "Neutral. Regulatory penalties on microfinance NBFCs like Fusion Finance could modestly favor commercial banks for small-ticket lending, though TMB's regional focus in South India limits direct competitive shifts.",
-        "regulatory_effect": "The RBI penalty signals an aggressive supervisory stance on KYC compliance and Ombudsman redressal across all Indian financial institutions, reinforcing the need for TMB to maintain strict adherence to regulatory guidelines.",
-        "short_term": "In the next 0-3 months, TMB will likely review any direct or indirect counterparty exposures to Fusion Finance and conduct internal audits of its own KYC and Ombudsman compliance frameworks.",
-        "medium_long_term": "Over 3 months to several years, sustained regulatory focus on NBFCs may prompt TMB to tighten underwriting criteria for wholesale lending to NBFC-MFIs and expand compliance investments.",
-        "second_order_effects": "Heightened scrutiny on NBFC compliance could reduce funding liquidity for microfinance institutions, potentially impacting broader asset quality in shared retail or priority-sector borrower segments.",
-        "key_uncertainty": "The exact quantum of TMB's direct credit exposure, co-lending agreements, or PSLC transactions with Fusion Finance Limited is unknown.",
-        "monitor_next": [
-          "TMB's quarterly financial disclosures regarding loan exposure to NBFCs and microfinance lenders.",
-          "RBI supervisory enforcement actions or updates concerning private sector bank KYC compliance.",
-          "Credit rating agency actions or commentary regarding Fusion Finance Limited's debt obligations.",
-          "TMB management commentary on co-lending partnerships and counterparty risk management."
-        ]
-      }
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are regulation, customers. Classified as regulatory.",
+      "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
@@ -167,16 +139,36 @@
       "published": "2026-11-20T12:54:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI fines Fusion Finance ₹7.50 lakh for KYC and ombudsman breaches",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPajllQlotWkxzSXVxNmkwb1FXVTJ0VDBtS3Vrejl1YzgxdWw1OV9wNXpFWnFoM2lCMjJfVVF3dzhFakNfeDdNaEp1UEUtNy1vX1dLUTBteFRCeE9yU1l1dmc5RFV5SzZUVVZYS2JMSFUzM0V0dVI3UGNyYjJhS3RPTG5EQ1hsVTJOZ0MxempkeUNfVF9kQlpPTnEyTDg3S1ZWcW44cFRGZ0FFd3RmV0lDUkVnSEg",
+      "source_name": "scanx.trade",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T13:34:38+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI imposes penalty on Fusion Finance for KYC and Internal Ombudsman violations",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNmNqQmlmbmJqbVZncVpBdV9LeVlUclVSeDhPNHFvSDJGZko5allpTzNkODk2N0ZnYzJuUjRiQnFzdHpYLTlNallDQUR2SERLUkxHbDlyYVNfNmVqbVdTYk16WVdkTFF5MzQyREs4N3BxQms4YzlhWnVtLWFPdndadUFxT29SN0Q0OTNJb2pkaEM4ZHdRZWlrMTJBZl9PQlE",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T12:19:34+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 2,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "HDFCBANK+TMB|CURRENCY+REGULATORY|finance-fusion-imposes-monetary-penalty-rbi",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-20T15:41:39.879565+00:00",
-  "last_updated": "2026-11-20T15:56:30.587778+00:00",
+  "last_updated": "2026-11-20T21:14:57.938973+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:41:39.879631+00:00",
@@ -187,6 +179,16 @@
       "timestamp": "2026-11-20T15:56:30.587763+00:00",
       "change": "ai analysis",
       "detail": "TMB via gemini"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:57.938952+00:00",
+      "change": "sources added",
+      "detail": "Traders Union, scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:57.938967+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

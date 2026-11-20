@@ -51,7 +51,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -79,7 +79,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "copper is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -103,21 +103,41 @@
       "published": "2026-11-20T12:33:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China's copper scrap imports in October showed a divergence of \"stronger YoY, weaker MoM\"",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNajFjQzA1N2tVdF9oemZZbHFsYVJ5enAzSENpSk5SWGo0RlF2UmFEMXdVdDBjLWp5bWV1WE1ZLTlyRVJLUmo2bnBYYndTVEN3ZWZxQ3ctNjFNekp4V0ptZkYzdDNJU3gyMWNEM0JNZEV3WGZYbHpSNERzMmpaa05FaTN1UFlSREZXWktNWlBZUEtjc1hWbExfWDhWQ09Oay1XOE82Z0ZFakdBaENCUE1zVXFWb19aZVRmNkZKOXFTcmhnR05zY0VVdlJJbG52a1U4TlViU0pTdFgzZ3gxc0F3dmw2U2FOa2RtalFkMU5WbjJHQQ",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T11:47:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Shanghai Metals Market",
   "cluster_key": "MSTCLTD+WAAREEENER|OTHER|china-copper-import-mom-oct-scrap",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-20T15:45:57.880806+00:00",
-  "last_updated": "2026-11-20T15:45:57.880874+00:00",
+  "last_updated": "2026-11-20T21:14:56.581811+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:45:57.880863+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:56.581790+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:56.581807+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

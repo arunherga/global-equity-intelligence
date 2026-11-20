@@ -1,0 +1,127 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7425",
+  "title": "NHAI Uses AI To Detect Road Defects",
+  "summary": "NHAI Uses AI To Detect Road Defects Deccan Chronicle",
+  "event_date": "2026-11-20",
+  "event_types": [
+    "PRODUCT_FAILURE"
+  ],
+  "stocks": {
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REPUTATION",
+        "PRODUCT"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. The parts of the business most likely touched are reputation, product. Classified as product failure.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "REPUTATION",
+        "PRODUCT",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Development at a known counterparty (NHAI)",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "a customer is under pressure"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, regulation exposure to NHAI, and NHAI. The parts of the business most likely touched are reputation, product, customers. Classified as product failure.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "NHAI Uses AI To Detect Road Defects",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNelNkeGp6Z3cwY1Q1b2NtZmFETXhKZFpkeGJIX25Eb3BIcWFIOThpcjdQOTJPWmFYTzVKNTdvMVJYam41UThyRmx1WVh2S2JGQlJMUEItM20xMGdYZi04alprU2JULVVUQjNlXzRxLWIwS2hlNHo2M0NHT0FxOFJkcTJYYXl3azhLWFNnajBoSlRLUUpjWUtGSU1xOGF4VWVFRk1j0gGoAUFVX3lxTFBEbGI3XzNuYzdDTTNZdWhpb2xabUdEZVhLZzd0bkJhclgzTENWMFNpQXJDdW5yQlBvbW1BTURvVUFyNFpYbXhBZjJiUndYeFpwbEs2MWJUb1FWRktGUFhQSWFQVUNaQnpNZHA1eEdKQUpSbnBscnNxLU10Q3FpN1hvNHJCRUd6aHFXWVd4cUtOWmFJV3lfaVRyRWZVeEJWUjg4cGtuY0RuOQ",
+      "source_name": "Deccan Chronicle",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T16:39:58+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Deccan Chronicle",
+  "cluster_key": "ASHOKA+JKIPL|PRODUCT_FAILURE|defects-detect-nhai-road-uses",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-20T21:13:59.227478+00:00",
+  "last_updated": "2026-11-20T21:13:59.227536+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-20T21:13:59.227526+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

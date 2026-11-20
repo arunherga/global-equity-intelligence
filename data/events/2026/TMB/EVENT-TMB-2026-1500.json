@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -32,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Karur Vysya Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -42,7 +49,7 @@
       "watch_next": [
         "Karur Vysya Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Karur Vysya Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Karur Vysya Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -66,16 +73,26 @@
       "published": "2026-11-20T14:30:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Karur Vysya Bank GST Writ Petition Update November 2026",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNaHBwU0c0X2hfUFlGNFhwRTEwUUxSTW1zbU5VOUhnRnVzbkNhY21idk1NQlZ2M2hrSkNoczh1RERrVDhNTThFOTFfVVlvWnM2ek9rWHRXaEo0SWhmSGk1UzVDZHVNWVU5bkRZdXZxWkNlU1FyUVpMcTZ3cFNEa2lUMDZRMm1Db0l4R1FQa2pwMHFodlR6d19JeXhVNW4zVmQ3OE9UUTFvQ2xnVGM3aUR4T0hwQy1Sd3FxUHBKbjhzeG8zRUI2S0pQLVAtQXhqT3JHZkVFeA",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T13:56:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "TMB|OTHER|bank-gst-karur-petition-vysya-writ",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-20T15:44:03.011976+00:00",
-  "last_updated": "2026-11-20T15:57:59.277052+00:00",
+  "last_updated": "2026-11-20T21:15:00.574622+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:44:03.012026+00:00",
@@ -91,6 +108,16 @@
       "timestamp": "2026-11-20T15:57:59.277049+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:00.574600+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-20T21:15:00.574618+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

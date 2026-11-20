@@ -11,24 +11,20 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "DIRECT",
-      "impact_score": 9,
-      "impact_band": "HIGH",
-      "direction": "NEGATIVE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
       "confidence": 0.51,
-      "business_impacts": [
-        "REVENUE",
-        "CAPACITY"
-      ],
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Major order or contract",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_LOSS is unfavourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -38,26 +34,8 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order loss.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Direct reduction in future revenue execution pipeline by ₹846.38 crore. Projected top-line growth from international operations will be negatively impacted as no further revenue can be recognized from the Diriyah hotel contract.",
-        "margin_effect": "Unclear. However, losing international EPC contracts can reduce exposure to potentially higher-margin overseas projects. Margins may also be pressured if sunk costs associated with project mobilization cannot be recovered.",
-        "cost_effect": "Potential write-offs of initial mobilization costs, tendering expenses, setup costs, or deployed resources in Saudi Arabia, unless reimbursed under contract termination terms.",
-        "competitive_effect": "Weakens the company's track record in establishing a footprint in the Middle East civil construction market, potentially putting it at a disadvantage compared to peers bidding for Saudi Vision 2030 projects.",
-        "regulatory_effect": "No immediate regulatory non-compliance identified, but contractual dispute resolution mechanisms and cross-border commercial legal frameworks may govern the contract termination process.",
-        "short_term": "Negative market sentiment and share price pressure over 0-3 months, along with potential management disclosures detailing the financial impact and exact reasons for the cancellation.",
-        "medium_long_term": "Slower international revenue diversification, forcing the company to rely more heavily on domestic Indian highway and civil infrastructure projects to rebuild its order book.",
-        "second_order_effects": "Need to reallocate capital, equipment, and international management personnel back to domestic operations, alongside heightened scrutiny from credit rating agencies regarding international project execution risk.",
-        "key_uncertainty": "Whether Ashoka Buildcon will face financial penalties or receive termination compensation/reimbursement for pre-construction expenses from the client.",
-        "monitor_next": [
-          "Official company filings detailing contract termination terms and potential financial write-offs",
-          "Updates on total order book position and revised revenue execution guidance in upcoming quarterly results",
-          "Legal actions or arbitration notices filed by either Ashoka Buildcon or the Saudi client",
-          "New domestic and international order inflows to compensate for the lost contract pipeline"
-        ]
-      }
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
     },
     "MSTCLTD": {
       "ticker": "MSTCLTD",
@@ -567,16 +545,26 @@
       "published": "2026-11-20T09:38:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Ashoka Buildcon shares in focus as Saudi Arabia cancels ₹846 crore project; second such setback this week",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxON0xSTkJFRWFYcmUyM2NHS3NvaExyWWFUS18zRnRWcGJRZWFWUWdLazlyeU1ON0RFTmhBVEZ0c0dnUjNubjJWNWM1UmNyQnh5ZkNFaXFZNEdJb2Z3Z3I5aVU0bmpZVUtseUR0N3QxOGdUT1dfNDJPWXVUZW9DUWlHcm9lYWJ4TWZDeUp0ZUxiQ3ZuMDhPTXJlcGstSnJoR2w3SzZKNFZUaTZXcUhyN2s0OG9Da3RrdmduNXdqRldtMkpOQzF4ajV5QzNwQXFtcFNpZGMwUEFOc0dNb0dzSmYweXNTXy0xN3Y1b1ZxSHVNMlltT2d3",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T02:07:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 12,
+  "article_count": 13,
   "source_count": 1,
   "primary_source": "Dailyhunt",
   "cluster_key": "ASHOKA|OTHER|arabia-ashoka-buildcon-fall-saudi-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-20T15:42:26.053416+00:00",
-  "last_updated": "2026-11-20T15:57:01.355684+00:00",
+  "last_updated": "2026-11-20T21:14:45.591852+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:42:26.053474+00:00",
@@ -647,6 +635,16 @@
       "timestamp": "2026-11-20T15:57:01.355681+00:00",
       "change": "impact raised",
       "detail": "ASHOKA 5 -> 9"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:45.591825+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-11-20T21:14:45.591847+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
