@@ -5,16 +5,17 @@
   "event_date": "2026-11-20",
   "event_types": [
     "INTEREST_RATE",
-    "COMMODITY"
+    "COMMODITY",
+    "MACRO"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -25,22 +26,22 @@
       "exposures": [
         {
           "exposure_type": "MACRO",
-          "term": "US interest rates",
+          "term": "interest rates",
           "relationship": "MACRO",
           "weight": 1.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -49,7 +50,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -57,16 +58,16 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to US interest rates, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to interest rates, and India. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -77,22 +78,22 @@
       "exposures": [
         {
           "exposure_type": "MACRO",
-          "term": "US interest rates",
+          "term": "interest rates",
           "relationship": "MACRO",
           "weight": 1.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -101,7 +102,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -109,7 +110,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to US interest rates, and interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its geography, macro exposure to interest rates, and India. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -123,21 +124,71 @@
       "published": "2026-11-20T20:02:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "'India is growing at 7%': Trump takes aim at US Fed over high interest rates, pushes for rate cuts",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZExYdXVmdXlsY0wxV3Z5N0xPRGZ5WXZsemQ5N2tVN1NPbDZEaE9WaHVCUHgxcVhPajVZNG5HXzhXMWdJMDlfSDNPZFFNR2FRM2l2aGMxRDdBVXZERzRQY2Z5eVNpeTM2S2cwSXVmemZSNjZ4V3NPLTAxS1pwb3Qwc2JIbnRFRFdySWtUdFJENmJUQ0t1anVfMFJqTldEWDdYMUc1LTlNZVZjU0NtLW5NRVdhN3VaZ3NzZGw0ZVlIRVViQjA2al8ySXQ1bnV0SnFXbHluYnJLUG9iTzduMk1UamxhYWHSAeoBQVVfeXFMT29Cb3d5Vlo3TE1QMGxfcXFLcTJ1R1Fua09LWVBROGlVR3JNN0FMTEZ2aEhlSU5jTzJuS3RyemwxeEtCWkZ2U18yem1LSkltUkEwMnZKX3NOYWRnOEZ0ZV8zUXp1YWZkc2ljVGs2YVQwQzZCYWV6SXdiUHlLMmxzMlltbVFJVzRaNk14anFvbW12MXktWnlldUxYZkhYSUdQWXRacUdMM1hEdjdZZGhpQjNiQ3UwTTU4M3BSejQydDhfS1I3RHhISnlHeFJ3ODFQNWZJalM4bmdMY0NhM0hLVnBienRzQU4yblp3",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T01:14:32+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Trump cites India’s 7% GDP growth; blasts US Fed over high interest rates",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPc0FEZU40Wkg2SzdZTWxTVUdZX3YwUHZZMXdUZ2I2TlgzbUhGdS1sd1RWQ1JCTTlZNG14NEc4TW95dV9kOXo2WmE4TWNBdW8yaG1FckNxQXg5VDZwRWlJeUhIWmx6YkxVaHNjY3E2aTJ1U0M3T2hxQTR4dzhBOTN1UlFhU2pPUVp6VUJsem1TQXJNRGQ4R2ZQV3JSVDRWaFc5N1ZrSDM5VGZQZ2JKaHZ4aUt1Q2hpQ3I4ekdfc0hzUDlnN2la0gHKAUFVX3lxTE5YZ010bUJfTlNFR0IwX2lpLVRFSEh0OUczUFNna05ZVU1udlphcjJqVG94OTZYN3gzVWQyM3FlUTFxU2pwQ3I5VEtvSmxRZEd4SVFJVGMtZUFBeW5lYTBjUFZSR3Q0TUtFUUpDRWlybFFudlFnRV9DUEowYXppaWtpeDlQTmJwbVJNc3dxLWFWRVBBNnd5Wk4yNE4xQjBIUEtRZkNlQ0gwMEEzNWh4MHRtbkJnOFRqQThBRGRXMGtZZ3cxOTFVMkJ3QkE",
+      "source_name": "The Hans India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T19:04:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "‘Look at India’: Trump cites 7% GDP growth, claims US could grow 20% if Fed cut interest rates",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbXpCZmtGa0wtUHloZVBXT3JDTTMzY0FmeFZ4SmtycFpnc2dlRUpMQV9YQV9JTmRsdzRIZmxMQUdSNnZjMlFYRmRrVk0zY3k0ZlpDVHVidEJwcEtSSFVJMXpxanp5OTVUNnY1SDhQM0VFcHdiMEh2a3BaYjlFS2MxaTkyNkNpTXBHU2t3a2RxZnlSTV9UekhZaWdOdTJOMnFIMWl1aUQ0dzlWWDJuYnRCdTg4eUJQWkJRX2fSAb8BQVVfeXFMTWFoUXhuMDFERmFpQjBZeWdzZ1ZYQy1qd3p3dDdMdEw5ajdCU3VuSWhNRWdRYUREemZSZTdyY3UxWkRSUF8tekJrS3NiXzIwY0F0aXhTQU1yckl4ZjltNENnMU03QUN1T3NqZVc2M0RoM0xBbmlxMU55S1VSc2ZVUGdNclFqUWxmdHlmdVJwT3d4TFdYRFZYSnJKQkszdWdPTkxWSnBETWItUURLbFNmSGdDejJjcVBmRmtHQV9ZX3c",
+      "source_name": "The Statesman",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T01:33:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Crypto Briefing",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+INTEREST_RATE|citi-high-interest-rate-unsustainably-usa",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-20T21:14:28.626280+00:00",
-  "last_updated": "2026-11-20T21:14:28.626348+00:00",
+  "last_updated": "2026-11-21T20:14:16.360245+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T21:14:28.626338+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:16.360212+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times, The Hans India, The Statesman"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:16.360228+00:00",
+      "change": "categories added",
+      "detail": "MACRO"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:16.360235+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:16.360240+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

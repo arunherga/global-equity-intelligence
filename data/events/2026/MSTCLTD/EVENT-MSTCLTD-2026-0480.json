@@ -212,29 +212,36 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
-        "CASH_FLOW"
+        "CASH_FLOW",
+        "COMPETITION"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
         {
-          "exposure_type": "REGULATION",
-          "term": "SEBI",
+          "exposure_type": "COMPETITOR",
+          "term": "Infosys",
           "relationship": "INDIRECT",
-          "weight": 2.3,
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Wipro",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-2 Weak indirect connection",
         "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Infosys, Wipro) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -242,9 +249,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "Infosys's follow-up announcements",
+        "Wipro's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are cash flow. Classified as dividend.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Infosys, and Wipro. The parts of the business most likely touched are cash flow, competition. Classified as dividend.",
       "ai_analysis": null
     },
     "TMB": {
@@ -428,16 +436,26 @@
       "published": "2026-11-18T07:59:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Wipro Share Latest News 2026: Employee Stock Rewards, Unclaimed Dividend Warning and Infosys AI Business Updates – Telangana NavaNirmana Sena",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOWVGOVpNbFRrdTJ0emdFNUlVMnlqMGVVdjZjUWx2ajF6dU0xbFZKZzVvb0J1VHBlYUo1SFNlZEtQaS1fR3NRVFFrQUJlLWc5eDlCOGh0cjY0U29FSnJJZEtWZ0RkTENMT2dqUzBMdVFpUEo3bWVDM3pTWHJIQ1QwUGREcVNEc2xFWmlmSmhEemhmTTlXT1pCb2JiNTBKREllZWJOV2ZOQjdRMnE3MDRJTW1OM0FKSDR2SWtUY2lkcDdnblZSVXVSMA",
+      "source_name": "Telangana NavaNirmana Sena",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T13:31:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "MSTC Limited investor relations",
   "cluster_key": "MSTCLTD|DIVIDEND|dividend-mstc-unclaimed",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-08T18:29:56.722738+00:00",
-  "last_updated": "2026-11-18T16:08:54.278696+00:00",
+  "last_updated": "2026-11-21T20:14:25.654548+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-08T18:29:56.722801+00:00",
@@ -498,6 +516,16 @@
       "timestamp": "2026-11-18T16:08:54.278693+00:00",
       "change": "stock added",
       "detail": "ASHOKA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:25.654525+00:00",
+      "change": "sources added",
+      "detail": "Telangana NavaNirmana Sena"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:25.654543+00:00",
+      "change": "direction changed",
+      "detail": "KSOLVES UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

@@ -4,21 +4,21 @@
   "summary": "Gold price prediction: Gold rate jumps but experts warn of major volatile phase for bullion, check silver The Economic Times",
   "event_date": "2026-11-17",
   "event_types": [
-    "COMMODITY"
+    "COMMODITY",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 3,
-      "impact_band": "LOW",
-      "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,25 +29,21 @@
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "TMB": {
@@ -104,21 +100,46 @@
       "published": "2026-11-17T13:57:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bengaluru Bullion Rates Nov 21: Gold & Silver Prices",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTHZURUgxODRGVTNXSXR6ekMxSW01QWduU09PdjlESDc1d0JkY0RmUHZFYUZoVFpPSGhydTgxX2hfS0FRX0ZWcWZQUmpnazF1SHotUkdZWmFsNk9WVmNMNjI5dllqTVpYQ0JVVmlRMU5qclpET1BQR1FKWEI0MVFrRTVvRmxaMDBoa3ZabzV3bE5QdEtoTjJHY0psVzlCM2RTdzFj0gGoAUFVX3lxTE96ZldfazZwS2J3bmpxSWNlZHNjT1E4aDVTbXdsLU9iQi1ORmd5aUVvSkU3T3pEbFpTN29tSGV2MmY2aXFVTGl2V3pFQnpPMFRXODl4cWlyeHZXandVUGtFU19ZclZpZm9icVRvS3ZZOVNXUURFTERXR1Ntd21WMVMwZmVDa09CZlN1QldRTWw2blVCM0doNktoR3d1LW5xSzNIUGFKTDN6Vw",
+      "source_name": "Rediff MoneyWiz",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T12:56:22+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|gold-gold-prediction-price-rate-rise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:26:52.338430+00:00",
-  "last_updated": "2026-11-17T16:26:52.338525+00:00",
+  "last_updated": "2026-11-21T20:14:24.690734+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:26:52.338515+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:24.690707+00:00",
+      "change": "sources added",
+      "detail": "Rediff MoneyWiz"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:24.690723+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-21T20:14:24.690730+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

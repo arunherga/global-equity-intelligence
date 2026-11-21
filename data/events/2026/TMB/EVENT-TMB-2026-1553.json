@@ -1,0 +1,87 @@
+{
+  "event_id": "EVENT-TMB-2026-1553",
+  "title": "\"People Bought Less Gold, Prices Fell\": PM Modi Recalls His May Appeal",
+  "summary": "\"People Bought Less Gold, Prices Fell\": PM Modi Recalls His May Appeal NDTV",
+  "event_date": "2026-11-21",
+  "event_types": [
+    "PRODUCT_FAILURE",
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.15,
+      "business_impacts": [
+        "REPUTATION",
+        "PRODUCT",
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are reputation, product, pricing. Classified as product failure.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "\"People Bought Less Gold, Prices Fell\": PM Modi Recalls His May Appeal",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRlFkaFBuRXVSWVdvSWpRM1pNaDBSTUd3VS1WQkRjTzhCMFh1RjVRY1BjVjNXVlJmY19scjktWFowQjNJcHpic3ZxUHFieVYxTUZVdUtvWUtBczZpY3loMVhicmVzTHNLZG1WS0VOM2hXbWVUalJUVGFzX3FUVl9Lc2RENV93Y0xLYWFXdE9VVUl6UDcyNmRpYjN0TXFRandmd29ZZUNYZUlheWNCSmRUZkIzYVNYaFR3TnRxc0JRX2xmTHEzc3Y00gHPAUFVX3lxTFBmcEhZTklialZkSWM0b2hzVHFtcXhQNGhDYm9iNXBDTGJxeEVjNlRObkIxYWM3SkluM201TDdaZ2N4X1NfRlJoOWtSYVYyY3JTMjlUUFZuM0Z6Sk02VzFYZzlwN1NrWVhrZ3NiVnY3V0JFd0JhU2tYVWhpalRaNVpCRDlSek5RUmRybDRVZWh2bXhPUEFPSS01anlRVkowZl93LVNJd0pUT1AzMHdRd1lGMXZYYXdzeTRGdmNQVE5CQnBUZ0Q5cHI0Y09HNW9pYw",
+      "source_name": "NDTV",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T16:38:34+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "NDTV",
+  "cluster_key": "TMB|COMMODITY+PRODUCT_FAILURE|bought-fall-gold-less-people-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-21T20:14:02.353692+00:00",
+  "last_updated": "2026-11-21T20:14:02.353764+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-21T20:14:02.353754+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
