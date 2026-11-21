@@ -4,24 +4,34 @@
   "summary": "Salesforce vs. Palantir Technologies: Which Software Stock Is a Better Buy for 2027? The Motley Fool",
   "event_date": "2026-11-19",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
+        "PRODUCT",
+        "COMPETITION",
         "SUPPLY"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
           "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "ServiceNow",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
@@ -36,11 +46,12 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+3 Development at a known counterparty (Salesforce)",
         "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,9 +59,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "supply terms from Salesforce"
+        "supply terms from Salesforce",
+        "supply terms from ServiceNow"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its supplier exposure to Salesforce, and ServiceNow. The parts of the business most likely touched are product, competition, supply. Classified as technology.",
       "ai_analysis": null
     }
   },
@@ -64,21 +76,46 @@
       "published": "2026-11-19T19:32:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce vs. ServiceNow: Which Technology Stock Is a Better Buy for 2027?",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUHZDODB5NnBGeGxPSi1rdHpkRFFOQ3dkNkRaM3cyVXV1cXBUWGNXbjc1U2xyTFZ6ak84UVJ6Yy1pRFg3UFJDQVBIQUllTzN5MjlOclZkVVVZLXNOVEdZSmZHWEF0ZnRqLS16VDFWS3B2UlEzZ0RJbTN2R0dLZjVoaEktclZNNmk4MGtjSW1mUURwOFNNd0hFMzZhai1EcEF3V0NsSTVjQ01MdVBYOWRqTGlVeHJjU3N1ejFfX1pOaVFwZlU",
+      "source_name": "The Motley Fool",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T21:27:17+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Motley Fool",
   "cluster_key": "KSOLVES|OTHER|palantir-salesforce-software-technologies-vs.-which",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-19T21:38:59.217803+00:00",
-  "last_updated": "2026-11-19T21:38:59.217874+00:00",
+  "last_updated": "2026-11-21T14:59:35.967555+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T21:38:59.217864+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:35.967530+00:00",
+      "change": "sources added",
+      "detail": "The Motley Fool"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:35.967544+00:00",
+      "change": "categories added",
+      "detail": "TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:35.967551+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 2 -> 5"
     }
   ],
   "price_reaction": {}

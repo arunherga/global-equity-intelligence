@@ -1,0 +1,84 @@
+{
+  "event_id": "EVENT-TMB-2026-1542",
+  "title": "Gold Prices Crash 32% From January Peak to ₹1.22 Lakh, Recovery May Take Years",
+  "summary": "Gold Prices Crash 32% From January Peak to ₹1.22 Lakh, Recovery May Take Years https://ascendants.in/",
+  "event_date": "2026-11-21",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.27,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold Prices Crash 32% From January Peak to ₹1.22 Lakh, Recovery May Take Years",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYkpuSnFZTEFKczJvN1pudVQ4UGR4X05jNDdDNlBHWGFlbGw1R2pDeGhtMlhkZkhtQnN1NzVGU2xjOXg3djdQVWc1SFUtM29xdHdfQWVDcUV5Y0MzdjBNektnZDZvTXJXWnRrQTByaXp4SVNjSzNndVY4dlBBMklzUWhXaEI0bFcyMGlMYnFBNExqLXRraFdzMC1B",
+      "source_name": "https://ascendants.in/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T09:53:32+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "https://ascendants.in/",
+  "cluster_key": "TMB|COMMODITY|32%-crash-gold-january-peak-price",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-21T14:55:05.556495+00:00",
+  "last_updated": "2026-11-21T14:55:05.556563+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-21T14:55:05.556553+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,18 +4,22 @@
   "summary": "Chinese solar cell exports rose 21% in October — OilPrice UA.NEWS",
   "event_date": "2026-11-20",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "TARIFF"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
       "confidence": 0.39,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "EXPORTS",
+        "PRICING"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "PRODUCT",
@@ -23,14 +27,23 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "China",
+          "relationship": "WEAK",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
+        "+2 Trade policy development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -38,9 +51,12 @@
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "duty rate and effective date",
+        "exemptions and carve-outs",
+        "competitor exposure to the same duty",
+        "pass-through to customers"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to solar cells. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar cells, and China. The parts of the business most likely touched are exports, pricing. Classified as tariff.",
       "ai_analysis": null
     }
   },
@@ -54,21 +70,46 @@
       "published": "2026-11-20T10:26:29+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "China Solar Cell Exports Jump 21% in October Ahead of U.S. Tariffs - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWnlOd0p1V040UTJIbC1ybHRFLXYySVpmeTd2YWt6T29JQWp6N2ctRmsyTUpfT2tyQXl6Skk2LWViRFRWbmFRQWdtdHZraXRpb2FEQXhPNzliclpMOWFnU2lhSjRsUmh0OGlCS1Q1aVh5eE95ZHRybVJqQWc2Y1BjR0ZKWWREdFVkYUxKUldyd1R6M0dZczNHWEZNTmZ4X25JanphZEV5RFJYUl90SmRnX1NDUWktLXd0SkUtdFhVLTN6QQ",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-20T22:50:57+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "UA.NEWS",
   "cluster_key": "WAAREEENER|OTHER|21%-cell-china-export-rise-solar",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-20T15:45:12.470068+00:00",
-  "last_updated": "2026-11-20T15:45:12.470119+00:00",
+  "last_updated": "2026-11-21T14:59:37.593277+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:45:12.470111+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:37.593251+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:37.593268+00:00",
+      "change": "categories added",
+      "detail": "TARIFF"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:37.593273+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 3"
     }
   ],
   "price_reaction": {}

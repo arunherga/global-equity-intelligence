@@ -44,6 +44,43 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "metal recycling",
+          "relationship": "SECTOR",
+          "weight": 2.0,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "sector relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to metal recycling. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -56,21 +93,41 @@
       "published": "2026-11-18T09:51:04+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "What Are Steel, Aluminium and Metal Recycling Stocks?",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQV1IwTkFkZmFid1ctZEhpNk1Hdi1OX1BQMlk2eDc1azRrakpheHcxczVSQVl1TWhqcnBLX2hOelN2bjBZT3NndVFnblVIWmt6akt2enhZTEZ0bE1hdEc2UWZvb1gyNzIwZzYwNVBCamVybjhyZ0ZNRDhRRHpMblFCV3l6WHRxV3VHYThSY1dVYldFRnhuN3JWM01zWC1lQVc0WE9IZnB1YXc2Y3l4QVU4RmJ0ZWFYZml1ZXVJWWlIVmpZTUxMNUViQk1CZWRxei1USUFXRXFR",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T11:18:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "WAAREEENER|OTHER|domestic-metal-pressure-share-steel-under",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:01:42.177910+00:00",
-  "last_updated": "2026-11-18T16:01:42.177997+00:00",
+  "last_updated": "2026-11-21T15:00:11.471749+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:01:42.177987+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-21T15:00:11.471727+00:00",
+      "change": "sources added",
+      "detail": "Univest"
+    },
+    {
+      "timestamp": "2026-11-21T15:00:11.471744+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (SECTOR)"
     }
   ],
   "price_reaction": {}

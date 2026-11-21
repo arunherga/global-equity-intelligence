@@ -35,6 +35,43 @@
       ],
       "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -57,16 +94,36 @@
       "published": "2026-11-11T04:23:50+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Bank holiday today: Are SBI, HDFC, ICICI branches open or closed on Saturday, 21 November? Check RBI calendar",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQbWJJUk5ZdmlCeUhkVnhoVGRWOUJ1dDlxUTJKeE5HeDFheUFrbjNrX2tSeTNCeGcxczdZc0lFZ19YTDNlUDhzZzFBLTZRTUN6cURBRlNyeHpqODljd2FTbkVscGc0d3hZTFVtUWstVnRLT0hIUzJFTFZGWDhhSDZmZ2pjdzhmcWRyUDNzYjRwZzVCUk9fdTg3VmowZTBrUHlreXhDYV9oSkk5VmY1VFNjd2NSSnNKVUVzOWxkdHpwU2FoYjY1TlpZSVgwQ2l3VWtSTi16MkhEd1BrZElxNkZyX2dFUmRsSUs3SmNqeUlLRTNaMUVFLTlIQWlsOUVIUUXSAYQCQVVfeXFMUGptUWlmVjJULWV2VU5rMjFTc1U3dUE3WnUwWXJ6a1hqOUhKNUJuanFFR1VVRHV0Uy1BZ2NkaklnSWlMRjlaTEo4cm9xT2hWdkMzcjR2R3V4bDJ3aDRVdHYxM3ZWZUJKWkhpU3Z2dHZRSlZqYWducEVVVEJERFdyZDNncW1QVEx2cXlrSWhjbmVkUGY3dDNrYVE3WHNmUTVGSFZkMGJVNW1hUFlkdU5UQmN2Z1BKWFpTWHBRVnlWOElLVzAtSHNEeFdqZTcyM045UTlHNUJDU29aOUo1cHNMZTZuaHdVQ3BPUFhxSHlrclNqNnRSQkxyQ2F1eHZ0SkpKd1Y1WVA",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T03:19:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Bank holiday today: Are SBI, HDFC, ICICI, PNB and other banks open or closed on Saturday, November 21, 2026? Check RBI calendar here",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPZk9WbE9lUVhRRHF5LXFfTGp4TUxjekVIOFRLWW9ndGQ4cXg4YXBHV0xLanhlQUdQSUg1VGRCMmo3bVVYLW9PZVI4WkQ5RnVtRUVHdkJsVUdTd1VfTFh3Qi1Wa3ZrWVRzd3JYYWRkZDY2Nk44UUNiZHkxVWlIb2JTTnhwX2dLWWJWd21HQ3gyZHhlVTB4b0VxN3NhM2I0Z3NVaHI3QjJ0LWN2OUY2WXhCblBrWHN6UEptSGRXdkt4dVBKdUdCUm1Jc0NNUmtwbVc2U1paRkExSjBpcGZvYnBXRXdlYVdYUU1HMVk1UjQxTTRhTDhHS2pad2RPSlBLWk5GWjJVb1B3b2M4OXdJZXhOU1NiUGnSAZoCQVVfeXFMUGI4QkFUOEstMVFEM0JDcXJBVl9YS2IycjliWnNZRWRsT3NaMHk1SGJFOFpxRWNTVGt2eTdmVjMtSF90ckJkV0ctX2l6ZHI5RzhBcXhrRndLVGlUWXlrU2drTlZScXVLejV4QWc3WkpobTY1Y1hsYXNhZW5ycXhKb1VuSllEVzVnQkl6MXhVdDRXb3NvZk5XWmNtMlhaYjJMcURUdjBfdURSY0pWcURUT2RoTlpWTndrdjlEbmdNQU84R3QxRVdWVG9LcHNyVkRYbzRPYzZ5R1ZXdEMwZkloWktWSjBuNklNZzhaV1Y4dlpMNjdBYmhtTmI3YWJTb0FyS2NjenpORk1ZSTUxQjItcm1XWEJEdVNLUTRB",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T02:28:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "HDFCBANK|OTHER|2026-bank-holiday-november-sbi-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:10:13.454404+00:00",
-  "last_updated": "2026-11-11T14:48:41.464531+00:00",
+  "last_updated": "2026-11-21T14:59:43.029831+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:10:13.454475+00:00",
@@ -77,6 +134,16 @@
       "timestamp": "2026-11-11T14:48:41.464514+00:00",
       "change": "sources added",
       "detail": "Goodreturns"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:43.029808+00:00",
+      "change": "sources added",
+      "detail": "ET Now, Livemint"
+    },
+    {
+      "timestamp": "2026-11-21T14:59:43.029827+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
     }
   ],
   "price_reaction": {}
