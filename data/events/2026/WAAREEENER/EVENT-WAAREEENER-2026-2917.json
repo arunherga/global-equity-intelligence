@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.15,
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -29,17 +29,15 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication",
-        "speculative language"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "order flow from Adani"
@@ -78,16 +76,26 @@
       "published": "2026-11-18T02:20:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani Tarali Project: MPCB Halts Work at Satara Site Over Missing Permissions",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUTUtiVlBkdDhQMEpXaFY4MGo3bkxfYUQxcEo4VW1pdUVXNUtlUmdyaER3dEpaYUZYbU82NUREZlF5VjhHVGV0RV85LVcwTzR4YjBtYjVSM21OckF4Ul82elBZajRSWjVRX25yUENJYUFEOUFq",
+      "source_name": "theopenpress.in",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T13:52:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "ET Infra",
   "cluster_key": "WAAREEENER|OTHER|adani-fee-cut-halts-maharashtra-project-work",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:21:55.298595+00:00",
-  "last_updated": "2026-11-18T16:08:15.277205+00:00",
+  "last_updated": "2026-11-22T14:54:39.325901+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:21:55.298658+00:00",
@@ -103,6 +111,16 @@
       "timestamp": "2026-11-18T16:08:15.277200+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-22T14:54:39.325878+00:00",
+      "change": "sources added",
+      "detail": "theopenpress.in"
+    },
+    {
+      "timestamp": "2026-11-22T14:54:39.325895+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

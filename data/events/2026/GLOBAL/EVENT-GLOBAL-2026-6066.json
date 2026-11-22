@@ -13,18 +13,19 @@
       "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
+      "direction": "UNCERTAIN",
       "confidence": 0.28,
       "business_impacts": [
-        "DEMAND"
+        "CASH_FLOW",
+        "BALANCE_SHEET"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "LONG_TERM",
       "exposures": [
         {
-          "exposure_type": "PRODUCT",
-          "term": "mining equipment",
+          "exposure_type": "INDUSTRY",
+          "term": "mining capex",
           "relationship": "SECTOR",
-          "weight": 1.7,
+          "weight": 2.0,
           "detail": "in headline"
         }
       ],
@@ -34,7 +35,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "CAPEX cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -44,7 +45,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to mining equipment. The parts of the business most likely touched are demand. Classified as industry demand.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to mining capex. The parts of the business most likely touched are cash flow, balance sheet. Classified as capex.",
       "ai_analysis": null
     },
     "COALINDIA": {
@@ -109,16 +110,26 @@
       "published": "2026-11-09T11:26:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Loading Machines Market To 2035: Infrastructure and Mining Capex Drive Growth - News and Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNajRjV0VqZGxOZ1UxWjl2NXZXUUxNRmdoak9YaUxBR2xhRWNvcUFGcW5YYUpxYTJTaXp6bjdGM1ZuQ25lQUNzdThlTTJpal9XMURpbTF1V2JCQnFpMkx0LXhrb0ZmcmJQZnNqZ3RNOEdPa3MyNTIxZGkyMXoyQl9pMWlFamhjdWEyMDJwaDloUWdBZ1hwT1Niei01TDdMUmhZVy02T2hjMHpKcXBoRkZaa2NZbk5lRzFIWnpYRjdYLWFzZw",
+      "source_name": "IndexBox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-21T15:41:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "IndexBox",
   "cluster_key": "COALINDIA+JKIPL|CAPEX+INDUSTRY_DEMAND|2035-capex-drills-market-mining-rotary",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-09T16:40:59.669479+00:00",
-  "last_updated": "2026-11-09T16:53:31.142543+00:00",
+  "last_updated": "2026-11-22T14:53:37.568783+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:40:59.669553+00:00",
@@ -134,6 +145,16 @@
       "timestamp": "2026-11-09T16:53:31.142539+00:00",
       "change": "direction changed",
       "detail": "JKIPL UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:37.568757+00:00",
+      "change": "sources added",
+      "detail": "IndexBox"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:37.568776+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

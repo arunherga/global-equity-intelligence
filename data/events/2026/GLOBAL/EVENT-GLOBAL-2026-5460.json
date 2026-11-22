@@ -356,7 +356,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -365,23 +365,16 @@
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
-          "term": "Kotak Mahindra Bank",
+          "term": "Axis Bank",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "NSE",
+          "exposure_type": "COMPETITOR",
+          "term": "Kotak Mahindra Bank",
           "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
@@ -390,7 +383,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Kotak Mahindra Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -398,9 +391,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
+        "Axis Bank's follow-up announcements",
         "Kotak Mahindra Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, regulation exposure to Kotak Mahindra Bank, and NSE. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Axis Bank, and Kotak Mahindra Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -484,16 +478,26 @@
       "published": "2026-11-08T13:24:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank vs Kotak Mahindra Bank Compared",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5yd3ZmWUp5c2d6a0VET2hQQUpGdlNVMjhPOFYyQ2xNNTJzZUR6QmVHUHdsWDVkRWRReGZZckREa3JxRHB6Z0NMU2FUaDJzb1FxY1dDOVJtVTQzamxyemcycUM4TlQ5VXFrUjFIMG1Wd2g4bUpUV2RF",
+      "source_name": "Univest",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T09:55:10+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|bank-does-kotak-kotakbank-mahindra-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T20:16:13.143619+00:00",
-  "last_updated": "2026-11-08T18:33:04.330125+00:00",
+  "last_updated": "2026-11-22T14:54:25.841713+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T20:16:13.143702+00:00",
@@ -504,6 +508,16 @@
       "timestamp": "2026-11-08T18:33:04.330106+00:00",
       "change": "sources added",
       "detail": "Mid-Day"
+    },
+    {
+      "timestamp": "2026-11-22T14:54:25.841689+00:00",
+      "change": "sources added",
+      "detail": "Univest"
+    },
+    {
+      "timestamp": "2026-11-22T14:54:25.841708+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

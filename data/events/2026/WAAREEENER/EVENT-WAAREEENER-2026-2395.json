@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.27,
+      "direction": "POSITIVE",
+      "confidence": 0.41,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -29,17 +29,16 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "-3 Speculative or unconfirmed report",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "silver is an input cost and is moving down"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified",
-        "speculative language"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "silver over the next few weeks"
@@ -58,21 +57,41 @@
       "published": "2026-11-05T15:02:05+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver crash wipes out buyers’ gains",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcFY1bmszVmZvUkFERFQ4RDFnTm9QLUdrV1paNUphNzFWdEVVTjVlb0ZZRUFsSFBXbmxVYnpNNFoxSGcxdHZMTTRadC1UMXA4XzQ2NnNMMV9la2diQWRJc01wdTdrOF9oZEpFZ1BCMGdUcy1ZSTljenBlblE4SURRRWJsSQ",
+      "source_name": "PressReader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T00:04:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "WAAREEENER|OTHER|10%-dhanteras-gold-rise-sale-silver",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-05T20:48:42.547410+00:00",
-  "last_updated": "2026-11-05T20:48:42.547466+00:00",
+  "last_updated": "2026-11-22T14:53:50.242135+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T20:48:42.547458+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:50.242111+00:00",
+      "change": "sources added",
+      "detail": "PressReader"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:50.242129+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 2"
     }
   ],
   "price_reaction": {}

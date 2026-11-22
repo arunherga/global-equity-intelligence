@@ -1,0 +1,83 @@
+{
+  "event_id": "EVENT-FRESHARA-2026-0339",
+  "title": "Wholesale vegetable prices rise, green peppers up more than 10%",
+  "summary": "Wholesale vegetable prices rise, green peppers up more than 10% BurgasMedia",
+  "event_date": "2026-11-22",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "vegetable prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (vegetable prices) is the subject of the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "vegetable prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to vegetable prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Wholesale vegetable prices rise, green peppers up more than 10%",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNDZ1VDEwS215YmxXWUZxb3ZBQWR3ZFJsaUszR0tEYkdXTXNNTTJ4QlF5TTRIeDd6UEtERHZVOGpYSVIzSnI2WDJrZmYwNkdLT1h4MXlzVHlhNUtacUtESXAyZDNFN1BJdGxONjBNMnpBdHR0Zm5MZFV4SW1NSS1vVzJaLXNRVmVhajU3SjhHa0oyZngwdmtSZ9IBngFBVV95cUxPWnZ5cGw1dktpWlI1LXVwWnFiQ0R5Y3RFUTY2dW52YkpnY2Zfbk9ZM09SSnByNkJaeEtZWld2NTk5NVoyOEpveG4tRjBxdUVadE02bUVUc0lPZkJlbWpKTFlfUGhOWTIzZklSUFFjYWpUV3FxTlM0c0dNZnQ1VFc2a2I0Qjhld01FZjZLc3RNOGJsZHpvR3NaUGs0Y0RWUQ",
+      "source_name": "BurgasMedia",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T05:16:12+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "BurgasMedia",
+  "cluster_key": "FRESHARA|COMMODITY|green-peppers-price-rise-vegetable-wholesale",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-22T14:51:15.676535+00:00",
+  "last_updated": "2026-11-22T14:51:15.676610+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-22T14:51:15.676602+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

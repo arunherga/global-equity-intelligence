@@ -11,47 +11,40 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "MACRO",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
-      "confidence": 0.26,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "REVENUE",
-        "MARGIN",
-        "DEMAND"
+        "COMPETITION"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "MACRO",
-          "term": "interest rates",
-          "relationship": "MACRO",
-          "weight": 1.5,
+          "exposure_type": "COMPETITOR",
+          "term": "Indian Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Economy-wide relevance",
-        "+2 Earnings or guidance at a related company",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "macro relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "margin trend versus the previous quarter",
-        "management commentary on demand",
-        "order book or loan book disclosure",
-        "any guidance change"
+        "Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -130,16 +123,26 @@
       "published": "2026-11-15T06:08:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "3 Indian Bank Stocks Retail Investors Are Watching For Higher Rate Margins",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQLTlBUTl1V1huUDF0Mktod3UxSndHUGZYdENGLUpJMnNZc0tQaDRReERVQk04QnJyU3lLN2NLWmg3T1hFN095MjBfLTVFV2tMMjQ2d2M4ckVVVVJVVnZtbVJCNWFzN05sTk4xcUxpemJTYXBWNWhiNkZtN0RqNExEWUUtcWd3d2JZLTlWVjlQY0dDS0Jkd3A4",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T01:10:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Simply Wall St",
   "cluster_key": "TMB|OTHER|bank-india-rising-share-watching-worth",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T20:07:26.082717+00:00",
-  "last_updated": "2026-11-15T19:35:11.044394+00:00",
+  "last_updated": "2026-11-22T14:53:53.044092+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T20:07:26.082772+00:00",
@@ -170,6 +173,16 @@
       "timestamp": "2026-11-15T19:35:11.044390+00:00",
       "change": "stock added",
       "detail": "HDFCBANK (MACRO)"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:53.044069+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-22T14:53:53.044086+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}
