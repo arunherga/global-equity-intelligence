@@ -5,19 +5,21 @@
   "event_date": "2026-11-12",
   "event_types": [
     "COMMODITY",
-    "INDUSTRY_DEMAND"
+    "INDUSTRY_DEMAND",
+    "INTEREST_RATE"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.15,
       "business_impacts": [
         "PRICING",
         "INPUT_COST",
+        "MARGIN",
         "DEMAND"
       ],
       "time_horizon": "SHORT_TERM",
@@ -28,21 +30,37 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "US interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Price shock in a commodity this company is exposed to",
-        "+2 Major industry-level development",
+        "+2 Movement in a relevant commodity",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions",
         "gold prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -50,7 +68,61 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, macro exposure to gold prices, and US interest rates. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "MACRO",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "MIXED",
+      "confidence": 0.11,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "MARGIN",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "MACRO",
+          "term": "US interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "interest rates",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Economy-wide relevance",
+        "-3 Passing mention without a quantified development",
+        "-3 Speculative or unconfirmed report",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "rate moves hit margins and credit demand in opposite directions"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "macro relationship",
+        "no quantified financial implication",
+        "speculative language"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to US interest rates, and interest rates. The parts of the business most likely touched are pricing, input cost, margin. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -64,21 +136,61 @@
       "published": "2026-11-12T04:40:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price drops below Tk 2 lakh after a year",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcFNRUzdrRnJmejFVcEJWR3VxNW9jZXZPeHdwclM4UTl2MHRQeHpMVG80YlpaYmFTeUpScE9fdnUwQThtQVRoRXM5UVc4MXI0Qk05cTFLR1kyeDBMNlFQSklZMktLV3ZnS1NzUTU2NzdabzV4YWx4UnpVYXgzcUtXTTFnOFZCczFZd2VqQk9Vc1JsWTRwWGwxQjdmX1U3RGgzZXpmVA",
+      "source_name": "New Age BD",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T16:15:19+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold prices fall below $4,000: Could bullion slide further to $3,500 as higher US interest rates weigh on demand?",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbmM1MFJzZEd2SGx3UzZqbW9PX3RHa3BsOTd1cDRxcUo1aFVVUlhWZWUyOFE4WlZ2R1IxcWp0RDdXUWtBVjREeFdjY0gyZXpxR0t5bEV6TXFTYy03VUQwdUNkUUF1UUpmMkNEWGJyRzBnck41bFFNYzVReVJzdThqMEsyQUdMS29xcUktSGxPNTJDc2RNR3ZzWl9fZnhhdWVVUkhXaHhHRnFlQ0taOXNYb2xCZ1EtbUtGTHZmaXp6SG1xMloxRXZlbnM1TjkyUnJPR3FsNFpVNVk3TFBBTjJ0bU1zSmxhZzVWMFYyUkl6Ti1hbnot0gH6AUFVX3lxTE9jcW8yMi1tVVc0SHNwN1l0aEZVb0J1RERwLVJOclFEYldaSFNwTzhuQnZGV0lFcGpDVF91OUd5M2dkTWUtTzE1cUl2Q0RuV3BmUGFVaWNid3lGcmc4YkJWeTFKQTlTOWozaHUzRVBsaERtSWI4OUxVd3FEOVdyck9vOGplZXBRQjgyWWt2cFVhQVctQ0gtZHhXYzZKdFhPb24tQzVPQzB4S0pseTE3MHNtZG5JNUpQZW90ZVJGRXFSSEs4OU9SYjR3LVR4b3Q0OFJQeU56cWN5TDRCem5aNjRCWVJhNVlGQk1GMVRIa3FNcWd1aXNLUTRqYkE",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-22T15:00:13+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "36Kr",
   "cluster_key": "TMB|COMMODITY+INDUSTRY_DEMAND|europe-fall-gold-price-rise-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:33:45.418063+00:00",
-  "last_updated": "2026-11-12T15:33:45.418143+00:00",
+  "last_updated": "2026-11-22T20:29:10.614269+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:33:45.418133+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-22T20:29:10.614232+00:00",
+      "change": "sources added",
+      "detail": "Livemint, New Age BD"
+    },
+    {
+      "timestamp": "2026-11-22T20:29:10.614252+00:00",
+      "change": "categories added",
+      "detail": "INTEREST_RATE"
+    },
+    {
+      "timestamp": "2026-11-22T20:29:10.614259+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-22T20:29:10.614265+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (MACRO)"
     }
   ],
   "price_reaction": {}
