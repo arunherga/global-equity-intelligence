@@ -10,8 +10,8 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 3,
-      "impact_band": "LOW",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
       "confidence": 0.41,
       "business_impacts": [
@@ -31,6 +31,7 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -61,21 +62,41 @@
       "published": "2026-11-14T07:25:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold price falls 9% in a week, testing Ghana’s exports",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVnhlRFVOajAtYWxMeUtKWDZTdW4wMFpwdWhiaW53TEdYVkpYa2J1RnVBLW1iS1hsSlNTZkhWU0dRNktaaG5vS0RUTWpDSTVQLUxoMnBFdkYwYkdmSmNsRXVDY2tNekdmblRjN3hCblNRSnpWb1R3UndEbjg1X2xCYlFaNA",
+      "source_name": "NewsGhana",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T00:42:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "BigGo Finance",
   "cluster_key": "TMB|COMMODITY|4.9%-fall-gold-international-price-single",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-14T13:52:02.540659+00:00",
-  "last_updated": "2026-11-14T13:52:02.540760+00:00",
+  "last_updated": "2026-11-24T02:07:36.601237+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:52:02.540748+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:07:36.601220+00:00",
+      "change": "sources added",
+      "detail": "NewsGhana"
+    },
+    {
+      "timestamp": "2026-11-24T02:07:36.601232+00:00",
+      "change": "impact raised",
+      "detail": "TMB 3 -> 5"
     }
   ],
   "price_reaction": {}

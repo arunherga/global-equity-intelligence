@@ -6,21 +6,20 @@
   "event_types": [
     "COMMODITY",
     "GEOPOLITICAL",
-    "CURRENCY"
+    "CURRENCY",
+    "RAW_MATERIAL"
   ],
   "stocks": {
     "RAVEL": {
       "ticker": "RAVEL",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "POSITIVE",
-      "confidence": 0.48,
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST",
-        "SUPPLY",
-        "GEOGRAPHY"
+        "MARGIN"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -34,39 +33,33 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+4 Severe supply-chain or raw-material disruption",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down",
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are pricing, input cost, supply. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are input cost, margin. Classified as raw material.",
       "ai_analysis": null
     },
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
-      "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
-      "confidence": 0.48,
+      "impact_score": 8,
+      "impact_band": "HIGH",
+      "direction": "NEGATIVE",
+      "confidence": 0.59,
       "business_impacts": [
-        "PRICING",
         "INPUT_COST",
-        "SUPPLY",
-        "GEOGRAPHY",
+        "MARGIN",
         "EXPORTS"
       ],
       "time_horizon": "SHORT_TERM",
@@ -79,6 +72,13 @@
           "detail": "input commodity; in headline"
         },
         {
+          "exposure_type": "PRODUCT",
+          "term": "intermediates",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": ""
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "Asia",
           "relationship": "WEAK",
@@ -88,27 +88,41 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Movement in a relevant commodity",
+        "+4 Severe supply-chain or raw-material disruption",
         "+2 Names a key geography for this company",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "crude oil is an input cost and is moving down",
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "crude oil is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 7/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "whether the price move persists",
-        "contract repricing lag",
-        "inventory position",
-        "hedging disclosure"
+        "crude oil over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to crude oil, and Asia. The parts of the business most likely touched are pricing, input cost, supply. Classified as commodity.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, product exposure to crude oil, and intermediates. The parts of the business most likely touched are input cost, margin, exports. Classified as raw material.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could see minor nominal support if cost increases are passed on through higher API selling prices, but overall volume demand could face resistance if global customers delay orders due to elevated end-product pricing.",
+        "margin_effect": "Gross and EBITDA margins are likely to experience negative pressure due to the time lag between rising raw material costs and the ability to re-negotiate contract prices with API buyers.",
+        "cost_effect": "Direct input costs will rise, driven by higher prices for petrochemical-derived solvents, chemical intermediates, key starting materials (KSMs), and elevated utility and freight expenses.",
+        "competitive_effect": "Industry-wide impact across Asian API peers, though companies with higher degrees of backward integration or stronger pricing power may suffer less margin erosion than less-integrated competitors.",
+        "regulatory_effect": "No direct regulatory changes expected, though heightened geopolitical instability could prompt temporary trade route or export compliance checks in affected regions.",
+        "short_term": "Immediate margin compression over the next 0-3 months as existing low-cost raw material inventories are consumed and replaced with costlier petrochemical inputs and higher shipping rates.",
+        "medium_long_term": "Over 3+ months, Supriya may attempt to pass on cost increases via contractual price adjustments, while potentially accelerating initiatives toward greater backward integration to hedge against future crude volatility.",
+        "second_order_effects": "Heightened tensions in West Asia could lead to maritime transit disruptions (e.g., in the Red Sea), driving up global shipping container rates and extending delivery lead times for export markets.",
+        "key_uncertainty": "The extent and duration of the crude oil price surge, as well as the proportion of cost increases Supriya can successfully pass through to contractual API clients.",
+        "monitor_next": [
+          "Brent crude oil price trends and key solvent/petrochemical derivative price indices",
+          "Supriya Lifescience's gross and EBITDA margins in upcoming quarterly financial results",
+          "Global ocean freight rates and shipping lead times on India-to-Europe/US trade routes",
+          "Management commentary regarding raw material cost pass-through mechanisms and inventory buffers"
+        ]
+      }
     },
     "TMB": {
       "ticker": "TMB",
@@ -185,16 +199,26 @@
       "published": "2026-11-18T04:38:10+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Crude oil price gain on West Asia tensions",
+      "url": "https://www.thehindubusinessline.com/markets/commodities/crude-oil-futures-trade-lower-despite-tensions-in-west-asia/article71733355.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-23T05:25:05+00:00",
+      "is_official": false,
+      "quality": 7
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "RAVEL+SUPRIYA|COMMODITY+GEOPOLITICAL|crude-fall-midterm-oil-price-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:53:30.169416+00:00",
-  "last_updated": "2026-11-18T16:07:31.828074+00:00",
+  "last_updated": "2026-11-24T02:04:59.087252+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:53:30.169463+00:00",
@@ -220,6 +244,26 @@
       "timestamp": "2026-11-18T16:07:31.828066+00:00",
       "change": "stock added",
       "detail": "TMB (SECTOR)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:59.087222+00:00",
+      "change": "sources added",
+      "detail": "The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:59.087235+00:00",
+      "change": "categories added",
+      "detail": "RAW_MATERIAL"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:59.087242+00:00",
+      "change": "impact raised",
+      "detail": "RAVEL 4 -> 6"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:59.087248+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 6 -> 8"
     }
   ],
   "price_reaction": {}

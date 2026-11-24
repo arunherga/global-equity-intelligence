@@ -10,7 +10,7 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -25,12 +25,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "API",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Regulatory or legal action",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,7 +53,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to USFDA. The parts of the business most likely touched are regulation. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to USFDA, and API. The parts of the business most likely touched are regulation. Classified as regulatory.",
       "ai_analysis": null
     }
   },
@@ -71,16 +77,26 @@
       "published": "2026-11-20T00:41:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "USFDA Closes Inspection at Aurobindo's Apitoria API Facility with VAI Status, 3 Observations",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTzV4b2wzQVJiMlo5R2w2bEFVeFZJVWx4Mk9JYzFUdmJLM1hCSjIxRnlOYm03NFFCVXdJeFR0WkxfM0lGVE1udmxYczAydWpuc0xHcUVmdmJkb0o0V3N5QnE1eExOUWVGOF9aNXRpVmV2Z2VMaGdOdGM5aDA5NnhLSUlDb0JGeFVBYnp3STRobXNEMHFJanZvdDQxNDNmajIzNUlvQ3U4RmNpd3BDOUMwb1hBSGZWX3RWQy1BYmpxUFhwT2gzQ0pwdFY1TW9KZUFWSXlCMWlrX1kxbEF2eDdFUVFrOFnSAeQBQVVfeXFMT081eG9sM0FSYjJaOUdsNmxBVXhWSVVseDJPSWMxVHZiSzNYQkoyMUZ5TmJtNzRRQlV3SXhUdFpMXzNJRlRNbnZsWHMwMnVqbnNMR3FFZnZiZG9KNFdzeUJxNXhMTlFlRjhfWjV0aVZldmdlTGhnTnRjOWgwOTZ4S0lJQ29CRnhVQWJ6d0k0aG1zRDBxSWp2b3Q0MTQzZmoyMzVJb0N1OEZjaXdwQzlDMG9YQUhmVl90VkMtQWJqcVBYcE9oM0NKcHRWNU1vSmVBVkl5QjFpa19ZMWxBdng3RVFRazhZ",
+      "source_name": "Medical Dialogues",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T14:48:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Business Standard",
   "cluster_key": "SUPRIYA|REGULATORY|closes-hyderabad-inspection-plant-reddy-usfda",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-15T19:33:03.121948+00:00",
-  "last_updated": "2026-11-20T15:56:48.402523+00:00",
+  "last_updated": "2026-11-24T02:06:58.317237+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-15T19:33:03.122037+00:00",
@@ -91,6 +107,16 @@
       "timestamp": "2026-11-20T15:56:48.402511+00:00",
       "change": "sources added",
       "detail": "ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:58.317220+00:00",
+      "change": "sources added",
+      "detail": "Medical Dialogues"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:58.317231+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
     }
   ],
   "price_reaction": {}

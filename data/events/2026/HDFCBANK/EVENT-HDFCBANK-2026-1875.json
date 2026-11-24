@@ -1,0 +1,85 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1875",
+  "title": "Banks are lending faster, but where will the next round of deposits come from?",
+  "summary": "The incremental credit-deposit ratio has climbed to 90.1% in FY27 so far, leaving banks increasingly dependent on higher-cost term deposits, bulk deposits and short-term market borrowings to finance lending.",
+  "event_date": "2026-11-23",
+  "event_types": [
+    "DEBT"
+  ],
+  "stocks": {
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.49,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "INDUSTRY",
+          "term": "credit deposit ratio",
+          "relationship": "SECTOR",
+          "weight": 1.5,
+          "detail": ""
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+1 Industry-level relevance",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No company-specific directional signal"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "sector relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit deposit ratio, and deposits. The parts of the business most likely touched are debt, balance sheet. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Banks are lending faster, but where will the next round of deposits come from?",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/banks-are-lending-faster-but-where-will-the-next-round-of-deposits-come-from/136081308",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-23T00:30:00+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK|DEBT|bank-faster-lending-next-round-where",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T01:50:21.054837+00:00",
+  "last_updated": "2026-11-24T01:50:21.054908+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T01:50:21.054900+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

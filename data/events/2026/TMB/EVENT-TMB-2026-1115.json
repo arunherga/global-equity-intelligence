@@ -49,6 +49,49 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "silver",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "silver is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -71,21 +114,91 @@
       "published": "2026-11-05T07:13:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Prices Today, November 23, 2026: 24K Rate Rises ₹990 per 10 gm from Friday; Kalyan Jewellers Jumps 4.33%",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOV3p6dUFtQ2xCMGM4QW1NTzdJOE1TNWNsVnp0YzV5Y1ZpdHJoYktERThrT1g1UUpYZV8tanRxMXpqYy16c1k0V3Nmb1lkOHlqNzlNMVM1M2N0SzlyR0oxRVhwNFhYcmZUZE1KTDV4ZXZ5Vm5qY3o1OWZuTHJrZDVpaERRRzB3bDBMeUhzMTJxZWtYYkQtZldpQVhRUEJQQzlORVFLanZiSmVaMXZaTHdJVFd0d2xFTmE0WVVzNk8wZm9LTHYwa2NmaFh4WTdQU2hqQ1ZhdzlwWGZCODhtbXU2QzRZaUdRZW1TUHZTal9fV0VwU3cxY05rRFcwTQ",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T05:11:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today: Gold Rebounds After Sharp Weekly Fall; Check City-Wise Rates",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYlZmM2RQZld2dk9DWThMRUV5YzIwX0N4M2E2OGFiRWwtVWJyRnpaQXQ4a1BnZVdVTV9BWEpGWGlYbXNLWmVPX2tKcFRRVzlPS2o3WkFFZm9hUmU3RjgwczZUcjRncFdfNXNtbGdnSHZFWXBtWnZIcFlmZ2lVN3pwbWtqamRQR1BoX0JDSGV1YmRKYlpQeEFYTThnV2N2Znd1Vm1aVDRtYUlFWHBBbEdWbzU4bl9MdlZT",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T06:47:51+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today: Rates Rebound on November 23 After Sharp Weekly Crash",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdUJhS1lVcjdqSVBCWmRMWXAza1Jta3ZSdFFXSENycGxqQldHUDU2QW5hSkJINmZxM3NLX0tybGtiMGJVQUhkV2hzbkJIYThDR2R5SFp4eHkxbzhEd19oVjQ0SWpKVG5WbWlHdmZPeDJUSHJpckZRQWVpcDNNMmtuTUptb3VzeFM3N1R1d2VyMDg3X1dmRnVzdFdmRGMtVTJzN1NKclhn0gGrAUFVX3lxTE9KNjEzWjBtVmp1YlY0azFPT0FzS1NFWUYtUEloTFNOLVJuYkJRNkY4UTBzd3VTMzNRN3FSTlYtdVh6Mk4xeVdWaWlxN2o3VktZZDV6OWJISTlxQVhJRUVHT2d1ek5CTnhlTDlhMXNLZDU0a1dqQ0xlTmZhSzdoU3JJSjRTZDQtUW5JYWR5ME12MHJHVlY0SEhNc1NGMnp4MnJ5WXRGX2FKeXJ5MA",
+      "source_name": "AP7AM",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:42:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in Bangalore, 24 Nov 2026 - Live 18K, 22K & 24K Gold Prices",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBIS3F4MDVZR0tIVWlxMVltN080VkdVODBxWk9NTnp2Z2t6ODdyZ2ktSWNjM2RFSWIwWGU5UmZONnVZR1A3MUE5MG55aW5PNkpTRlJyTmVJZlItcmxaUlN4MFFYMVo4X3lFb0lrOWVMdUtnaWs",
+      "source_name": "Kotak Neo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T21:00:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, 23 November 2026: Gold prices spike to Rs 1,24,677 per 10 grams after hitting 14-month low",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPb2o2TG9RZUgwdjhGM0tPT214NmFjbV9KQlNyTHlVcnlyVU1YT2lEYm5LMUUwZmFRd094S0hhY3lCaVdzQlVvRnJ1SU9sYVRCTTZkSjFuTEZaY2dmSVlYZGR2Wi0yTWdYUy1Pa2RlakotTmtldGhLYUp3dTBWSmZHSkdMMVRhbWs0WlFjUnBlLWlRMXh4M3RRVGhPVEtzeG5qdk5WUWhZbENXcUsyTGlnV2pWc3pOMjhzUHBHNHZ0SURqZFNCcmYwZnF0SV83OWRVNGk5aldiX3VfRVZNVXRhd205b0NjNWFaQ2RxalVodU14MHh1LVHSAfwBQVVfeXFMUFR2OEJEV0VSZ1VyQ2hwWlMteWdaa3hySXJvYnBIb1FnOXpOcUQyYlJGcUFfNXRfN0pqR2ZjNDEwTjB4OUx5RnFhRFdJckNteEV5Y3FyVVl4aXpab0U4RDhHcHFGZGQxbm53Tmg2c1Z4Y0pKS1J5Y09KbnlhTTdXTW9nWFZjRXJJNkVCRnQ3T3VUanM3Y1FkQkVoVTZHMWRyWGpJaWR3ajNuNGVlSDdpNWFaRllpX3JBazFCYWk0Qjl4bnVzV0g3U3d2SWU3Z2xMdlFQWEs5OXZsSlFqbmNydDlQZEpaSmpIb1lIdVYydGVSU1d3RDdMLXVkdThF",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T08:50:14+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold, silver rates today, November 23: 22k, 24k, 18k gold prices rise; silver unchanged",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPeEtMdDZTcVlIN3JVckxZM3VlZ0k3MkE4cnVhcE9xRFd2cmxjMVV0NlRrQ1A5MG5kOFRFZkFFT21rcU9nQThjOXFEQUd1dVZMVmxvejhRV0o1NDRfNWFvaDFMdlY5ZGY0Q1pla20tcFZCcUdrQ3ZlZHpacGRUVm1DSFZrSG5lcGpvZS00a01odmtPMnV2cGhJVGVWQXQwQUx3MWZfN0U2WS0teWptWnBmbUtBY1dBMTgzdlpYN1Y3YXFqSlJfcU9HZTZTTkZ1cHZkYVFWanppUDJuSzM0U2k3TjZIWXNkbmVXZnRnU1Zfcw",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T06:44:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "HDFC Sky",
   "cluster_key": "TMB|COMMODITY|2026-24k-gold-november-price-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:55:46.721090+00:00",
-  "last_updated": "2026-11-05T14:55:46.721170+00:00",
+  "last_updated": "2026-11-24T02:05:25.114350+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:55:46.721159+00:00",
       "change": "created",
       "detail": "2 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:25.114332+00:00",
+      "change": "sources added",
+      "detail": "AP7AM, HDFC Sky, India Infoline, Kotak Neo"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:25.114345+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

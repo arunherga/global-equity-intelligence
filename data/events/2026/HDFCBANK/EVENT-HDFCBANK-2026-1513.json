@@ -85,6 +85,45 @@
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "TCS",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-5 Market commentary rather than a company development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "TCS's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to TCS. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -107,16 +146,26 @@
       "published": "2026-11-20T11:08:03+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Top gainers and losers, Nov 23: Tata Steel tumbles over 8%, Axis Bank falls 4%, TCS jumps 3%; check list",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeWk2YTh5cVRrX09sZGJjRGZlNXNoak1nZXQzLTI2U0JSZ2R0U3o3dFdHN2xtRm83QXNsajdsdnRVUlhWQWFBVjZCVjA2Q19yczNRUHNyTzh2eS1yRC1ZRkt1aVFCMW5qSEpLczIzbXlPRlQ2NDh5WUtDOHRxMk1Kd09vWG9uVXlPLTJRZXQtVVpuQWZ4RFN1dnU4bmtjLURFLXktajUxeTM5RUhWby14Z0dIY0pBZE42YkVSN1VqdmhrTmQySENoeHpZRTM1RHBWXzJ0d0ZycVBTaFV2Z1lTQXdQMEFaWThmYTRF",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T10:57:27+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Upstox",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-gainers-icici-losers-m&m-nov",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T20:06:23.506627+00:00",
-  "last_updated": "2026-11-20T15:57:42.095282+00:00",
+  "last_updated": "2026-11-24T02:06:28.716979+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T20:06:23.506678+00:00",
@@ -127,6 +176,16 @@
       "timestamp": "2026-11-20T15:57:42.095272+00:00",
       "change": "sources added",
       "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:28.716960+00:00",
+      "change": "sources added",
+      "detail": "Upstox"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:28.716973+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -9,14 +9,21 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "PM Surya Ghar",
@@ -26,22 +33,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry exposure to PM Surya Ghar. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to MNRE, and PM Surya Ghar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -75,16 +81,36 @@
       "published": "2026-11-21T03:18:27+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MNRE Offers Up To ₹2 Crore To DISCOMs For DERMS Projects Under PM Surya Ghar",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRGx6aWR2aEVQanE2MnNzcVlTRFA1MU5YRkx3a3NNSTNNWXpQYm5yZklJcWowSUNyY0RGYUh4ZFFfelY5RmE2cVkyeGhPbXpBa3NrcGVtcVB5bExLZENPYkp5Mzk5dC14T295Yk55amFBWDhhc0pBY2tDZDdQN1lzM01RM21HQjVYMU1TNWpYN2dLLUFaU3BVR3IybnBiTThwY1pxSzVqajhURm1nOEpRMlJGSmV3QndHOU9JenZaS0ZyeEo5S090YQ",
+      "source_name": "Saur Energy",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T09:00:31+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "MNRE Offers ₹2 Crore To DISCOMs For DERMS Projects",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYjMzVXZkT0lraTljNVRxcFlZbzVEOXo2R3BtV0M1UGxtaE9nRFFoVmt1WGluVHd4b2dpNEpJSGxaLTNkbGJEOXdGRUNyOHNGVHdfeGo5Zld5ZzdrQ2VaTWJjZnIzOFlyekYtOXBFQTNMak9McHdqN0VvS01ndXQxY05mVElLaDVVQmlYOQ",
+      "source_name": "https://www.mvapulse.com/",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T13:41:42+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "BW Businessworld",
   "cluster_key": "WAAREEENER|OTHER|derms-grid-invites-ministry-pilot-smart",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-21T14:53:10.469357+00:00",
-  "last_updated": "2026-11-21T14:59:45.703553+00:00",
+  "last_updated": "2026-11-24T02:06:12.301399+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:53:10.469415+00:00",
@@ -95,6 +121,16 @@
       "timestamp": "2026-11-21T14:59:45.703537+00:00",
       "change": "sources added",
       "detail": "ET EnergyWorld"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:12.301381+00:00",
+      "change": "sources added",
+      "detail": "Saur Energy, https://www.mvapulse.com/"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:12.301394+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

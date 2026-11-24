@@ -1,0 +1,230 @@
+{
+  "event_id": "EVENT-HDFCBANK-2026-1873",
+  "title": "RBI releases 2026 list of Domestic Systemically Important Banks (D-SIBs)",
+  "summary": "State Bank of India, HDFC Bank, and ICICI Bank continue to be identified as Domestic Systemically Important Banks (D-SIBs) under the same bucketing structure as in the 2025 list of D-SIBs . The additional Common Equity Tier 1 (CET1) requirement for these D-SIBs will be in addition to the capital conservation buffer. The list of D-SIBs is as follows: Bucket Banks Additional Common Equity Tier 1 requirement as a percentage of Risk Weighted Assets (RWAs) 5 - 1% 4 State Bank of India 0.80% 3 - 0.60% 2 HDFC Bank 0.40% 1 ICICI Bank 0.20% Background: The Reserve Bank had issued the Framework for deal",
+  "event_date": "2026-11-23",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.77,
+      "business_impacts": [
+        "COMPETITION",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "HDFC Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Original regulator announcement",
+        "-6 Scheduled statistical release, not a development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 10/10",
+        "two independent sources",
+        "official confirmation available",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "HDFC Bank's follow-up announcements",
+        "ICICI Bank's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are competition, customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "direct relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This is news about the company itself. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "RBI releases 2026 list of Domestic Systemically Important Banks (D-SIBs)",
+      "url": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64025",
+      "source_name": "Reserve Bank of India",
+      "source_domain": "rbi.org.in",
+      "source_type": "regulator",
+      "published": "2026-11-23T16:30:00+00:00",
+      "is_official": true,
+      "quality": 10
+    },
+    {
+      "title": "RBI Retains SBI, HDFC Bank, and ICICI Bank as Domestic Systemically Important Banks",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPYTF1MU56ZnM5UG41dEJNV3M2WGl5YVd2dGQzVmNISHNaaExhb2tpWjg3MEd0OXJiY0FhVHVWMExONGd3bmdaREE2MDBBbnIyblJ4eXRmWU50SEdyMjF4a1FpTWR2VDR2TDhqZVZTaHJjY3R0MHAyNEg1eE1iLXh1bmFzS3RnV1F0RU9taWFob01Mb21rdXpUOFlrRHhqOEk0eExGZUd3WmZIYTZRMDJydTE3OTFPY2pwTHdWOHlfSWhXZWtSeWhHMGJTTdIB0AFBVV95cUxQeEhURnJ3OVJWNjlFTF82YkZyRG1SaXFjNHJnZ1BXc0tlVW5rcnlJT1BERVpXQ2pCS1pqX3UzS3pJZTZFazZlcm1OejBJSHI0TmF5bkI4dWJJTGd1ZjVFT2owcWI5bFZLTi0zbEQxb0g5aFFmQ3N5ZzdudWVOWUlhSnBEc2FpeVp2VHZyZWxodXQ2bTg5bVMydk41Z3RXU2FTbVlaX29RRUVVVVRkNlBicnZBOHRTQW5PdG9SMkZ3WllnR0dMOHdESVd5dG1kbG5y",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T13:12:01+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI retains SBI, HDFC Bank and ICICI Bank in 2026 list of systemically important banks",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSHZrSGlWVVI2bE9wM3oxZUJnNHpxTTBPUDB2YVp2VTdzY0VaOVQ5Vk4wTHYwam1kSm9nVEQ0d2lHLUpOcjR5d2JKUHA2QWRMN1h5NFVoR3p4UWpiZkdXcGVJckQ5VjlVbm5zbURIMExoNzVEZVBVQkVYYzQ1NWhWTElrRjBLQkJMVkFlQTRPeHBGV0lIWmxOd0xsM1JNcHZ3TDktekp2Tlpxelp6UU9MWEFlVjRKV3ZjR3hOYm1KZnl3M0V1a0tKU1d0T2tCQndlaGlybWIxRU1TQkVFQW8w",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T11:57:26+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI retains SBI, HDFC Bank and ICICI Bank in the 2026 D-SIB list",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ3VXYlBaQXpmZGxHWFZXOTU0LTBYb05BWFFIR1g5S3VYY1o4SF9KeVRDMmNfT1M4X19ob2VQblR0T2lfejdnUTZmSmd5YXN5X3l6TFdha0EzWDZsRGhzMFpZa3hYYnNhWUhuOW02bkhwMTNiUnNQcXVNVllHY1R2UmhzV2lUZjRodnNnbkRLdw",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T12:22:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI retains SBI, HDFC Bank, ICICI Bank as ‘domestic systematically important banks’",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcFdTZzBTQjY2aE9iTFVfUDVPVDk0UUNHd0dvWHhYNnhsdGNLRHpDMi1XbncwMFhCakwxV3NNdDRJYkF3cWx3QXJhNGZlOTR5NnZ1TkZxQ3VKeUoxV0FXSmF3WnlFRzF3VkVoXzkzM3BibU12c2pmNThpSjBoMXdpd2oyOU5lc3lBVUk5RERLd29Xb20xQWJVM3o3MlNVdzRSM3dnTnlWQ3hEMEdmWjUzTllPaWVEMVFlOVJjQi1KME7SAc4BQVVfeXFMT2kyVHlLTXN0Z2tqNzNpWFdNVG9uT2xzc3BDWWxJaC13dTlwTWdBUnBtRExZTHB1MlU5RXZrNmRRU2NFUFViVjlwQzkzcVZ5RkthWExpT0oyV3h2WTFrVHVlb2RTM2RzaGwzOXpnVV9LcEJxSmNEOHNDOEllNTZHNGNSWThmUHFGRXJ4d0RlRUR1ZXhQREs1RTY4Nk5KVXJfWWhLRngzR2tYck9Kc1VvaTh0Ynh1ZEZDd2FEUTR2RlEtQXhHTkozemVOMDl5VkE",
+      "source_name": "Fortune India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T15:27:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI, HDFC Bank and ICICI Bank retain systemically important tag in RBI's 2026 list",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOOFk5ZkRpR1JfMWVfbXlvdDRxWmlDenFtWi1DZGpoVEk0el9KZi0tSFZ6N3RPZENwN2RzSG9hN1F3VW1oRDVRSENIZXRZaWFFX0Z5SGdKQklZMk5sVWFnV2tkZEFPWlo3NzhwYm1KOG1mNGpma1pzNkxJX29kLXRIcFBEWmljR0FxZ2d1b3BNZ2I2anRNbnJlNVJfQzJhS2phNFhFVnEzYlQwMjVwTDZJd2NKcUlvU3BCNjI4ZjRTR21iTVJaQnJoUmJBTXFGSUk5VkZuYUdJRFdPQWE5WjZQbHgtT0RicDhVSDJEdEp5SzhqckNiVFMwWWhvRXM2T2tM0gGAAkFVX3lxTE44WTlmRGlHUl8xZV9teW90NHFaaUN6cW1aLUNkamhUSTR6X0pmLS1IVno3dE9kQ3A3ZHNIb2E3UXdVbWhENVFIQ0hldFlpYUVfRnlIZ0pCSVkyTmxVYWdXa2RkQU9aWjc3OHBibUo4bWY0amZrWnM2TElfb2QtdEhwUERaaWNHQXFnZ3VvcE1nYjZqdE1ucmU1Ul9DMmFLamE0WEVWcTNiVDAyNXBMNkl3Y0pxSW9TcEI2MjhmNFNHbWJNUlpCcmhSYkFNcUZJSTlWRm5hR0lEV09BYTlaNlBseC1PRGJwOFVIMkR0SnlLOGpyQ2JUUzBZaG9FczZPa0w",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T13:06:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "SBI, HDFC Bank, ICICI Bank retain D-SIB status; RBI maintains capital requirements",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSTdEbDlpRlRTUVpxand0RWhqN01UMDB0eE90ZWtOaDlxZlhBYlZvZXc2c0ZkRU9ReU9oRm1qMGxndjg4VnV4YkxHSjFicVppR1I2X3lCV2E0ZmNPd3ZXeVJwZjhjMWhuRFUzQk9wNVZVc0xXYzFhZVdmQXB5cnhmbldrZFU3cDdEVkVaMk1EdXlieG5WNWtONXdKOWNiRlY3MmxiOHVFTUNUc19hS2FuV1ZEWlZOWGIySjZhSFVEOU9NRUxvbHkyaFVNQ29Oei01cVJNMTQyU0PSAd8BQVVfeXFMUFQtVUd2c3hxRmJMMzBYdVlONElXcUh5Tml4NGozZUdJRlk3ZElqMWVuR25LbzYtXzEzb29CNVBSUXVVU2J2Nk5GeVluWEo0RXpRSVI0NFVRaWtFWERKRTRfYngwUnhoRTYxa2lSMm9hOHYwMC1CVUNxQVFGLS1yZ0dhWmI4dDhYUU5CV2xiZTFtVzFxMmFFbEFKWS1QR25hYWJrczRRem1iVWtEcXpsTHhoblNTQy1nNERLZmxtYXl6blh4cUdaQWF4eWRkOENUUkN6eXFuMVd6dDh1UXd6SQ",
+      "source_name": "The Hindu",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T13:02:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI D-SIB List 2026: Why SBI, HDFC Bank and ICICI Bank remain systemically important banks; explained",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPOWwyWU04V2wwc25EOUlQMFVwT1JSSFQ5cGdlQWJrYjNjbWpDdlZzN1puY0ZiTHBLRFB3MTRYNDZocl9MVHhlQW1CaWI4NFhUd1RLTU9jdnJldUQySHJxZDg2Nk9DWFBsOXJkdFd0T2o4R0NmV3lYcTZpWURuTXRmZmtjT0FWVkhlSk9VdG5sbGFNYkVxeGxqSlplbGFycENUVEVnMWsxZHBlcEFvMjk2bDkwRDBkeDhUendPUVU4bVdaSTBwR2ZxelVhVU41elZSZmlNdFVpMmdrUW9HZ1FWWUd2Uk1Bdk5jLW15TzlRWlfSAfYBQVVfeXFMUEloZmFfbTRTRG53djNKN0ljMzVaai1VQW5mNVYyb0JYaFdSWFdlVHBWdkNUaUJOX1U0b2lscjUzcExQSGZYQVpYQ1FVS3dNLVZhSHhsRnZmY3NLUzVOR3RLQ2lyVExRa29jOUNhSk9XeVVvekh4STFKbndNNXBBczFXWHBlWnNkQnlDRTJXMTgzQWZSbUdTb1pDaHgxVnY5OE5OREVDZXZmTUNEd0NFRmFQSWNuSFZUYXNWTEVlYW5rSUtUenhHc3dVY0hpcU9Gc1p3d3N6Z0pUbmNScm9rSnJfaHQ1MjNtRGlDYzMyYl94Mjk5TWtB",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T16:37:54+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI’s 2026 list: SBI, HDFC, ICICI remain too big to fail banks",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORTA2N05hbnRfWmxqSDZXSlkxdG5iR29ISngxdGRLR1NJbnV3VVhiTHo2Q0k5MkQta3hUVjNPb3JFaFJqVzBSRVhMU0tIWjBjWkltbkMyejBIWTNLUmR3V0UzZDd5dGV3cjlFWGlXWE5NXzhLTWpELUJqSkhhbVNiU3pkQnVZOTMxczQ4NkxKYmtDbUJJQUI0RUlJajIwa0JLZFZCOC12WjNoemNUbVBhZ2s5Zi1XSzZ1SEtmd29NMDQycFI3R0g4",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T11:18:04+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 9,
+  "source_count": 2,
+  "primary_source": "Reserve Bank of India",
+  "cluster_key": "HDFCBANK+TMB|OTHER|2026-domestic-list-rbi-releases-systemically",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T01:49:45.173994+00:00",
+  "last_updated": "2026-11-24T02:06:32.220966+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T01:49:45.174106+00:00",
+      "change": "created",
+      "detail": "7 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:32.220950+00:00",
+      "change": "sources added",
+      "detail": "ET Now, Upstox"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:32.220961+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 5"
+    }
+  ],
+  "price_reaction": {}
+}

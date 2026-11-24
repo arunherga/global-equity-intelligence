@@ -4,19 +4,21 @@
   "summary": "Gold and Silver Price Forecast: Higher Yields Put Rebound at Risk FXEmpire",
   "event_date": "2026-11-11",
   "event_types": [
-    "GUIDANCE"
+    "GUIDANCE",
+    "REGULATORY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "POSITIVE",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
+        "REGULATION",
         "INPUT_COST"
       ],
       "time_horizon": "MEDIUM_TERM",
@@ -32,10 +34,11 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
+        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -45,9 +48,10 @@
       "watch_next": [
         "assumptions behind the guidance",
         "execution track record",
-        "silver over the next few weeks"
+        "formal order or circular text",
+        "compliance deadline"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are revenue, demand, regulation. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -81,16 +85,26 @@
       "published": "2026-11-20T07:19:08+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold and Silver Price Forecast: Strong Dollar Caps Rebound Before PCE",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNFYwUF85MUc1TlkxNWxTOW1DYjFSc2pJcGZIOTBMY19taHAwMjI3d3NJaEtOVUdTYU8wYkNodUpXeTFOMDFBZGtRZTExdDFvcUljZ05WQ2pTTE91R2hadDBvMmk3TjNDNjZvdDNDUk9GWlRCNXZFZzBnbzgzaEpmWWRFWDBGVk5tdy1jUDJGdDZhVWNVX2JGdGpTQUtJMUFnaTdYLUp2UXhqdUwydno2U2hJODkySExVYjJj",
+      "source_name": "FXEmpire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T10:27:01+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "FXEmpire",
   "cluster_key": "WAAREEENER|GUIDANCE|forecast-gold-price-rise-silver-yields",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T21:34:42.434612+00:00",
-  "last_updated": "2026-11-20T15:57:18.960622+00:00",
+  "last_updated": "2026-11-24T02:06:22.867409+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T21:34:42.434696+00:00",
@@ -116,6 +130,21 @@
       "timestamp": "2026-11-20T15:57:18.960618+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:22.867386+00:00",
+      "change": "sources added",
+      "detail": "FXEmpire"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:22.867398+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:22.867404+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 4"
     }
   ],
   "price_reaction": {}

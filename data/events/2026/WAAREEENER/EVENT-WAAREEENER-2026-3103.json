@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 6,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.56,
+      "confidence": 0.62,
       "business_impacts": [
         "PRODUCT",
         "COMPETITION"
@@ -45,14 +45,14 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 International market development",
-        "+2 Major industry-level development",
-        "-1 Single source, unconfirmed"
+        "+2 Major industry-level development"
       ],
       "direction_reasons": [
         "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
+        "two independent sources",
         "indirect strong relationship",
         "financial implication is quantified"
       ],
@@ -60,7 +60,25 @@
         "JinkoSolar's follow-up announcements"
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, product exposure to JinkoSolar, and solar cells. The parts of the business most likely touched are product, competition. Classified as technology.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear in the short term as perovskite-silicon tandem cells remain in lab/development stages; long-term revenue could face pressure in export markets if global competitors offer commercial tandem modules with significantly higher conversion efficiencies.",
+        "margin_effect": "Unclear in the short term; over the medium-to-long term, gross margins could compress if conventional TOPCon and PERC modules face faster price degradation due to next-generation tech commercialization.",
+        "cost_effect": "Input and operating costs remain unaffected in the near term, but Waaree may face higher capital expenditure and R&D expenses in the medium-to-long term to re-tool lines or adopt tandem manufacturing technology.",
+        "competitive_effect": "Strengthens the technology leadership position of global competitor JinkoSolar, widening the technological R&D gap for Indian manufacturers in high-efficiency export markets.",
+        "regulatory_effect": "No immediate regulatory effect, though it could prompt Indian policymakers to push for higher efficiency standards or offer R&D incentives under domestic manufacturing schemes.",
+        "short_term": "Negligible operational or financial impact over the next 0-3 months, as the efficiency claim represents a laboratory-level milestone rather than an immediate commercial product launch.",
+        "medium_long_term": "Increases technology obsolescence risk for current TOPCon and Mono PERC manufacturing assets over a 3 to 7 year horizon if perovskite tandem cells achieve commercial durability and scale.",
+        "second_order_effects": "Could accelerate strategic partnerships or licensing deals between Indian module makers and global equipment suppliers, while shifting global buyer expectations toward higher efficiency standards.",
+        "key_uncertainty": "The timeline and manufacturing cost required to translate JinkoSolar's lab-scale efficiency into mass-produced, commercially durable tandem modules.",
+        "monitor_next": [
+          "Commercialization timeline and pilot-line announcements for JinkoSolar's tandem cell technology",
+          "Waaree Energies' R&D commitments and technology roadmap regarding perovskite or next-gen tandem cell manufacturing",
+          "Field durability, encapsulation developments, and degradation rate data for perovskite-silicon tandem modules",
+          "Cost differential per watt between standard TOPCon modules and emerging tandem prototypes"
+        ]
+      }
     }
   },
   "sources": [
@@ -73,21 +91,61 @@
       "published": "2026-11-20T08:55:43+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "JinkoSolar claims 35.24% efficiency for perovskite-silicon tandem solar cell",
+      "url": "https://www.pv-magazine-india.com/2026/11/23/jinkosolar-claims-35-24-efficiency-for-perovskite-silicon-tandem-solar-cell",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-23T05:18:01+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "JinkoSolar claims 35.24% efficiency for perovskite-silicon tandem solar cell",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMmR0WXh2eUNPeEZoQ3FvSVlyTko5emNXbmNrU2lQenFUQU1QRDdXVW5Ec3RpbW9aZkFtcWxfcWtRTFU0TEhPUUJmakhrMmxHZDA4NnhkaHctaGNTRjNuQVkxbTlSa1BJX0ZEckNjSUMyczFWaF8zd3h1WDJLbE42WWE4aFhZMWpVVWNROGJnZXhteU5mS2FIdjk0U1E0T1Z0WjZmSkZKZUtrOW55d2sxWUl2TWZlYUQ5WEpoYVJR",
+      "source_name": "pv magazine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T07:27:57+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "JinkoSolar registers 35.24% TOPCon/perovskite tandem PV cell efficiency",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVDMwWl9SUDVSTTNUQW96ZzJUclJPZlpsczh4a25QdlBzcXkzQ1RlR2dRQzJxbVQ1b2VWQkt3UVdHZXd6eTE4OGdnckdlOFBDOHdIOXhvWDVvMjBYUXhUcDZnd0xRcmFzbnYzTmtqTm9fY3pCS0dqTFEzTk1WSTA5VHc4SnZORk16UFE",
+      "source_name": "PV Tech",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T16:22:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 4,
+  "source_count": 3,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|TECHNOLOGY|35.24%-claims-efficiency-jinkosolar-perovskite-silicon-tandem",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-20T15:42:02.954465+00:00",
-  "last_updated": "2026-11-20T15:42:02.954530+00:00",
+  "last_updated": "2026-11-24T02:05:07.047183+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:42:02.954519+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:07.047165+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India, PV Tech, pv magazine India"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:07.047178+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 6 -> 7"
     }
   ],
   "price_reaction": {}

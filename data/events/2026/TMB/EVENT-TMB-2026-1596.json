@@ -1,0 +1,89 @@
+{
+  "event_id": "EVENT-TMB-2026-1596",
+  "title": "Gold prices rise in India today, FXStreet data show",
+  "summary": "Gold prices rise in India today, FXStreet data show www.tmgm.com",
+  "event_date": "2026-11-23",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold prices rise in India today, FXStreet data show",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV211aDF3ZU5sTWNiRVkyUXIxN19tbkwtOFRKZDdjR21VYmhBTHZhMjc2SnVwS2NLSDhnY2l4Z3BHbzk5V1dYUUFPV2hVSE5FamR2TjVNWlFXU1lmZWRnSkRORkpRb1E1V3VkRDY1THk0T0lXam5iTEtwMjl3MFdhek1RODV0ZElzcVc2Y3RuUHdmclV4bGpNM0cxUUtkWkx4Y0djbWNQdnJNTXJlSU1IeDdJR3Q0WjJFeDRMUm43NTZQNHY3TXN3eQ",
+      "source_name": "www.tmgm.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T07:11:53+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "www.tmgm.com",
+  "cluster_key": "TMB|COMMODITY|fxstreet-gold-india-price-rise-today",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T01:53:05.789349+00:00",
+  "last_updated": "2026-11-24T01:53:05.789417+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T01:53:05.789410+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

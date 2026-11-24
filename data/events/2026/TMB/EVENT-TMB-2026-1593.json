@@ -1,0 +1,82 @@
+{
+  "event_id": "EVENT-TMB-2026-1593",
+  "title": "Gold price rebounds after biggest weekly crash in eight months: What triggered the recovery?",
+  "summary": "Gold price rebounds after biggest weekly crash in eight months: What triggered the recovery? Livemint",
+  "event_date": "2026-11-23",
+  "event_types": [
+    "COMMODITY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 3,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Price shock in a commodity this company is exposed to",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "gold prices is handled rather than bought or sold; volume matters more than price"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold price rebounds after biggest weekly crash in eight months: What triggered the recovery?",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNVVd1YVFnMzdXRy1XMEZmWlJ1N1psdXBtX3p5X3dtQkdGb2VGSHlNUEdJcm5qY0UxODljMXNRb2FZcnd3Q21aWDFUQnZQemQ2TmNqcllHOGZxV2E2TE56X2ZCdXloY1QtNGFhQmNmM2tuNTQ3eHY0ejVFd3FPMHN1cVp2c2ZKUUR5WTFQV2dncTViQmN4c01UMEpsNDlVSHNSZVRKWHlzQXdHeV9SOW5sdS1XY3VoUmU4anozaFk2aUNrejAzQ1VNNDB6bHpKLWhqSUYyOXNSVFlOUkdNa3pVa1FOSnAwTEJ2YWR3WnJiNNIB9AFBVV95cUxQTHlYdGJxZzhsNS15M1lIZUo5dTkxZDJnSi1iWHZGdDNlSXA2UWVkcE9DUktTQ2hHVzV1QnVmb20tYncwNi1MdVBvTElzQ2JKR1ZnOUhhalRuWXZtWTVybkpSSnhlSWZFMVNCcWd4UENjY0hPeE83X3VNLUgtZk1jVXVZVzlpX2N6aVZ2VDRPSnc1N2ZfY25ha0xpQkZpNGQyS0o0ZmRmcFFoY3h0cGdzWGtFSEF2LVdMVTc3d1VsdkZ4bVZ6eHhYZENNOFBZYjZhellnNlBfUlRTbldCa1dndW1ULTFNNVNjQ1RzY0c5RXM3MFli",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T05:48:14+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Livemint",
+  "cluster_key": "TMB|COMMODITY|biggest-crash-gold-price-rebounds-weekly",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T01:52:20.533717+00:00",
+  "last_updated": "2026-11-24T01:52:20.533792+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T01:52:20.533785+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

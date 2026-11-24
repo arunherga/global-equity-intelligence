@@ -47,26 +47,17 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
-      "business_impacts": [
-        "COMPETITION"
-      ],
+      "confidence": 0.4,
+      "business_impacts": [],
       "time_horizon": "UNKNOWN",
-      "exposures": [
-        {
-          "exposure_type": "COMPETITOR",
-          "term": "Federal Bank",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        }
-      ],
+      "exposures": [],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -74,13 +65,13 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Federal Bank's follow-up announcements"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Federal Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -94,21 +85,41 @@
       "published": "2026-11-12T06:55:46+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Hindalco Industries - HDFC Bank among 5 stocks showing White Marubozu pattern",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNLTZpQzRidmdvb2xIczJKVzdRVVU1c3BfSWJ0R2RQRC12U0FnSDlYazJhbzRwcDVqTklTdE92NUlmWEt0bnhBejN3dHN4VWZuMkZPZi1OT2JzUkY0Sy1NOEwzaGZ0ejEyR29weXZpeFdwNFlNaVA1ck1IdEJMR3hEZzhpaDVyeDFGZUdDX085UkxXYTJQUUdLb3AtUG9jZ1lrTDFkcHdsTmg2V21zT3llcWJlZlpReXZ6VmMwRDRkRkN2NUg3TjlGU0d1d0xEWTZXcVBFaU5aaHpOaUtfaDF5ajhNR21UVlB6N3V6MA",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:56:36+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK+TMB|OTHER|among-bank-federal-mahindra-mahindra-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:34:30.278011+00:00",
-  "last_updated": "2026-11-12T15:34:30.278096+00:00",
+  "last_updated": "2026-11-24T02:05:26.795467+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:34:30.278085+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:26.795450+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:26.795462+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

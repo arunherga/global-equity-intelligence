@@ -51,7 +51,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -64,6 +64,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Europe",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -72,7 +79,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -82,7 +89,7 @@
       "watch_next": [
         "steel prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and Europe. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     },
     "ASHOKA": {
@@ -90,7 +97,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -111,7 +118,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -135,21 +142,46 @@
       "published": "2026-11-09T18:41:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "ArcelorMittal raises flat steel prices in Europe",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNY3Bzd1NWUC01OTBib2prcllvWHdNaWtYVldjUEJEd0lUYW82allyMXBxWGNhcEY2M24xSWw4czNtNFh1OFlkODVYcVc2djV5ZzlNQ2UtUWtVSUQ5U3Q2MzlWcEJMdzZwRFRnaXQ1YUF6QzNoalpfcVVNd3VYWm8tbzVB0gGHAUFVX3lxTE53Xzg5eTdwQWxRMHlCU3hKMTRmU25kUkdVNkRuRTRacExxdEJGQlFUNER3UG0tZFJlLWh5Zmw3SWZESzJtZEdsemJRUkVNdjVjLUpzaV90OE82QkpGY1M5YXNZaVNveGc4WGp5ZEdzLWZQdnRBTFdDYkhGLUFYalVmdkJnSGZsWQ",
+      "source_name": "GMK Center",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T08:31:45+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Металлургпром",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|OTHER|europe-long-mills-price-raise-steel",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-10T15:09:48.635506+00:00",
-  "last_updated": "2026-11-10T15:09:48.635578+00:00",
+  "last_updated": "2026-11-24T02:06:08.669306+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:09:48.635567+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:08.669281+00:00",
+      "change": "sources added",
+      "detail": "GMK Center"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:08.669295+00:00",
+      "change": "direction changed",
+      "detail": "JKIPL NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:08.669302+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

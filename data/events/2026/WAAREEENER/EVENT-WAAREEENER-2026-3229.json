@@ -4,20 +4,23 @@
   "summary": "Stocks To Watch Tomorrow, Nov 23: Maruti Suzuki, Adani Energy, Waaree Energies, RVNL, IndusInd Bank In Focus Goodreturns",
   "event_date": "2026-11-22",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "ORDER_WIN"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.5,
       "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -25,28 +28,39 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Order or contract",
         "+2 Company appears in the headline",
         "-4 Opinion, preview or stock-tip piece",
-        "-5 Market commentary rather than a company development",
-        "-2 Single unverified source"
+        "-5 Market commentary rather than a company development"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
         "no quantified financial implication",
         "opinion piece"
       ],
       "watch_next": [
-        "order flow from Adani"
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -89,6 +103,437 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its competitor exposure to IndusInd Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "FRESHARA": {
+      "ticker": "FRESHARA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "INPUT_COST"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "explosives",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, regulation exposure to explosives, and NSE. The parts of the business most likely touched are revenue, capacity, input cost. Classified as order win.",
+      "ai_analysis": null
+    },
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "-2 Weak indirect connection",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "DIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.5,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+5 Direct company event",
+        "+3 Order or contract",
+        "+2 Company appears in the headline",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "direct relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.4,
+      "business_impacts": [
+        "REVENUE",
+        "CAPACITY",
+        "COMPETITION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Marico",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Order activity at a related company",
+        "+3 Strategically important competitor development",
+        "-4 Opinion, preview or stock-tip piece",
+        "-5 Market commentary rather than a company development"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect relationship",
+        "no quantified financial implication",
+        "opinion piece"
+      ],
+      "watch_next": [
+        "order execution schedule",
+        "customer identity and concentration",
+        "realised margin on the order",
+        "whether extra capacity is needed"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Marico. The parts of the business most likely touched are revenue, capacity, competition. Classified as order win.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -101,21 +546,151 @@
       "published": "2026-11-22T12:02:51+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks to watch, Nov 23: Tata Steel, APL Apollo Tubes, IndusInd Bank, NSE, Adani Energy, Waaree Energies, Premier Explosives, Maruti Suzuki, Texmaco Rail, RVNL, Ashoka Buildcon",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/stocks-to-watch-nov-23-tata-steel-apl-apollo-tubes-indusind-bank-nse-adani-energy-waaree-energies-premier-explosives-maruti-suzuki-texmaco-rail-rvnl-ashoka-buildcon/article71733190.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-23T01:29:31+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Ashoka Buildcon, Texmaco Rail, RVNL, Premier Explosives shares gain up to 7% on major order wins",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LSTRYa3BFUkZqUk10TGxqcGRjdUxRcE1XMVFTTDZjYXJfVk9TaHl4NW41c3FCblBuZkE5TTQzMUZUSzVhdzdUWVNVVjJ3SWNjVHZnbzFYTUVpUDRpUGxHZWdwSXZmZ0E",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T04:31:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to Watch Today: Adani Energy, RVNL, Maruti",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOZ1BEMjJRVmhYZWd3SEF4WjkwYk5uQ2x6V0Ftb3k3SWxfclFIdm5xMUFyTUhqUEVYRXl1WEZJUTVPYVp4cDNQZWZTdWZielk3T1JsdU9RbjhzNzJnUVl6UE5qaExaZTY0Y2h1OU9IMlhJSFRhd25HMElYdHBQRnpjb1hmUHNERjlzLVpJSmNwZW43UklHMm85TzMtdDdlRl9FRUpkb3ZuV2YzM1NrTjB5RXdYMW9zbC1GUlNnNFRiZ0FNUDFZbVhBbllaOE83UFhtSFBUaGJIN0hNWWRvSTZyZDFyRzlEcHM2bzFYbnBn",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T03:45:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to watch November 23: APL Apollo, Tata Steel, Adani Energy",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPU1hidVlDdmY0dnE0Y05veGtZZ1hvWnNlMXlQOENEeC1YeHB5Z1UwbzFhU3I3ejkzTTJCc1V0bjdKanVKNmlRaWpsQVR1dGFnd19uR0djZEExN3N0V0NrV2EwQmQ5Rm1Remp0SDJUUGZEZWtZUVgtZDJQcE91cGZ5T1JXV3VBVjgtVzc4dFFBUTV5T3J2TG1pZmpmLWlPNE1WeHFfM1owRlQwSjNrbWRPU3psNF8tQmhteUFLVks0dFJycUFfNlV4cmc0Skh3LVAzWXlQRkFjdEZuMnhPUDBCM0pJS2tKNVJGN1dMOWVyd0RmenJ3eEo1U3ZKSEoza1pWRGxV",
+      "source_name": "Business Upturn",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T05:50:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to watch, Nov 23: Waaree Energies, Tata Steel, APL Apollo, Maruti, Chalet Hotels, Marico, NATCO Pharma",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTUdnMlVCdU9NNlZQd3RROHJLeG1oOUhJSGNxLUhSV1BPb3M4M1NTZXJxajAyaVJXa2g3SHlQa3JRbTdRVS14SU05WjUxdlhqQ2haLUZ1djR0OFBSRGhLa2xhdlFhc1AxNTc5c0pjcGlWMDJueGswWUJIdEMxTzVTTUNCZnRad1JsWmtMY3J3R1pNdmJUbTFhLXY0dmJYQ3FqSDJFQ3JiZUR3MGVmbzA3VzJZN0xWOEQwdzBJeHBteW96ek5MbUxOR2tNWHNtb3dHcEkwYTlEQkhLYWpDVld0RmFOLW9rQmtLVWgtaXNkZ3VxZw",
+      "source_name": "Upstox",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:44:25+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Stocks to watch: Tata Steel, Waaree, Adani Energy, Maruti, IndusInd Bank",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMUlqakNqMDkzdjRWR1liX2pGRGF0U1BqVENQWUNiLVpSMGZUVDhuazhVSFBVbXRmRTFVREJqOXY1R1k4SDQ2S19SU2w4MmxzM0hIZS1JZXhnZXVWeTJTSWdaSFhSZnl1eHZja01BM2ViSm8yVzUydWVyWEZHVjVieDBhc1JQZG9Fc05Mc0JxRTVyTXhRSG1wVC0yWjBjMEt3ZGNRS0NVRmVwRjItcGJXRWk2SjBpZ2hCWm1nSlZSMUg4c1J1cEIzRjZiYjZFbFHSAdQBQVVfeXFMTzFZRGZMZmNuSjY3SXpFT1AyX1hqaENLV0xMREF3R2RwcUhydEI2bzBOVHBsYmxQLWd4RHRUUGVVNXdiTGV1M0NMUTRoRVF3VE43N2lXem5sbE05Q0ZQUWhXd0FNUWNVOXNubWxjblhfeE9oVWxIYUlXRWJtQ3ozWjJ0YXdlTnZsSWtSQU1VZVJLa2RfbmNKVkVEbFRRRzA0TFlOUEotTUl0NnZjRW95cHBnb084dmJyZHZMWTViX0V0NTFXS0VBdmJyelF2UHFkcUFndU8",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:32:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Top stocks to watch today: Tata Steel, APL Apollo Tubes, Maruti Suzuki, RVNL, Waaree Energies & 17 others in focus",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOVjl2UFpxdnlUaVk1SkV1anJqQUtnRWFHU0k5b2V6dXlpTUNmN3hlcTBtM3Bjdk85OWVYbmdnbHoxTUpPZlplcGk4WlR0Q1VXSFpRRTUzTGxnTVdGRk9EdmdRakpjdGt3ak1nY0hJLTN2UjlIWDd3N0s2SEk5Y195ckhwcWl2NnVudW5neXNwTnI3UHlQcTRpME5nZ3Y0SzNlaE5hczhibGM4M1lTU0hyai1mREpJaFNWTUtWZUhMeWktUHRhZFV0YUhpVU02cDZWRHhQaWhQTEtMbDN5Z2dseC1zR1A2ci11R0xJQk5US3ZPME1zcG9Ya1puMDVuM2hPOXJUREdrU1HSAY4CQVVfeXFMT29ZeGRCS3MtajZndFZkeVhIQk9MUDlycnZJTU9LeXF0NUJtbE8zY20zUW9DLVJ1ZkRJU015UDFCc0VDeXFFbmJwSkJtcnVSWUhlcGRaVWtTcVUwYURSM0lZazZFa3J6ckdENk03T1ljcHJWZzhqY3pmS2F2TW1jeHNpV1pEYzZ4YmFmdHZVbnpHb2tZWnNieldrdEhHQktxTXZQd2paNkg3eEFrNmhiTXpFSjdZbjk4Zm9scGl6RnRLb2pLcTYxMjF1dktLS3JTQ3gxNnpxXzY3MTd5Sk1Pb2tRaEtaVWxmcks4OUZ4Z3pFNjFGSXpzXzkwT1JFM0V3TTdLb1RYTi1QYkJNSERB",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:27:26+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "Goodreturns",
   "cluster_key": "HDFCBANK+WAAREEENER|OTHER|maruti-nov-share-suzuki-tomorrow-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-22T14:53:01.518715+00:00",
-  "last_updated": "2026-11-22T14:53:01.518805+00:00",
+  "last_updated": "2026-11-24T02:04:56.365402+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-22T14:53:01.518795+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365338+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Business Upturn, HDFC Sky, Livemint"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365351+00:00",
+      "change": "categories added",
+      "detail": "ORDER_WIN"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365358+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365363+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365369+00:00",
+      "change": "stock added",
+      "detail": "FRESHARA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365372+00:00",
+      "change": "stock added",
+      "detail": "JKIPL (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365379+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365383+00:00",
+      "change": "stock added",
+      "detail": "KSOLVES (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365386+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365390+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365394+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (DIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T02:04:56.365397+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
     }
   ],
   "price_reaction": {}

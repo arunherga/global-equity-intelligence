@@ -9,17 +9,26 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "INPUT_COST"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
+          "exposure_type": "COMMODITY",
+          "term": "solar wafer",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
           "exposure_type": "PRODUCT",
-          "term": "solar ingots",
+          "term": "solar wafers",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
@@ -33,22 +42,21 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "solar wafer over the next few weeks"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, product exposure to solar ingots, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, product exposure to solar wafer, and solar wafers. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -72,16 +80,26 @@
       "published": "2026-11-11T09:34:38+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Challenges of Solar Wafer & Ingot Manufacturing In India",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd1Q0UTdXUW92V0F6aEliTWtnV1R0eGVydjdRdFl4Rkh6OXozSUlGcWtWcFBlaWM2S0NXZDl3cUdILVJFVjVySFltRGFOcWxzX3J0dzNuem9aQWdFUEh6UWxqbEV4YzJYbU9yMDNSVERiZ1BQU3ZJYjlCV3MwOWd2eWNWOFpnUnM",
+      "source_name": "www.mvapulse.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T07:31:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "TaiyangNews",
   "cluster_key": "WAAREEENER|OTHER|india-ingot-partner-raana-solar-swelect",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-10T15:13:12.687333+00:00",
-  "last_updated": "2026-11-11T14:49:07.526390+00:00",
+  "last_updated": "2026-11-24T02:06:00.477453+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:13:12.687398+00:00",
@@ -92,6 +110,16 @@
       "timestamp": "2026-11-11T14:49:07.526373+00:00",
       "change": "sources added",
       "detail": "Urban Acres"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:00.477435+00:00",
+      "change": "sources added",
+      "detail": "www.mvapulse.com"
+    },
+    {
+      "timestamp": "2026-11-24T02:06:00.477448+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

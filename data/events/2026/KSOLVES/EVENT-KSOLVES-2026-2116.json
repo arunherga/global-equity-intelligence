@@ -11,15 +11,14 @@
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "REPUTATION",
         "SUPPLY"
       ],
-      "time_horizon": "IMMEDIATE",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "SUPPLIER",
@@ -39,8 +38,6 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 International market development",
-        "-7 Share-price listing or roundup page, not a development",
-        "-2 Scheduled disclosure with no surprise",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -54,7 +51,7 @@
       "watch_next": [
         "supply terms from Salesforce"
       ],
-      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are reputation, supply. Classified as analyst action.",
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are supply. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -98,16 +95,26 @@
       "published": "2026-11-17T18:02:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "TD Cowen Has Lowered Expectations for Salesforce (NYSE:CRM) Stock Price",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVXZKR1c2TmhKOFhVcTdqZmtMekxDUElHQlcwVklwZ0VhS0tGcE1mSUVJbEEtdTV5cENWdG1jZmNzaG9GaHBXSjdpbDRrdGpHREx4SnUtcEpsRTNUNVRiMkZHVXp3aWZBdXNqd1lxQmZialM3Xy14NGtEUC1IbFc1YUo5eXhxUlJlZHJPY0t3OUtySHpVMVZSVzd3MU8xdHU3WEM2MlFjWFdBMFhZWVptOVQtTVhLcDdlWGJSZ3pLVmM3ZnRnZk1OeUdLRQ",
+      "source_name": "MarketBeat",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T15:48:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "MarketBeat",
   "cluster_key": "KSOLVES|ANALYST_ACTION|average-crm-inc.-nyse-salesforce-share",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-04T14:54:30.385707+00:00",
-  "last_updated": "2026-11-17T21:56:15.726178+00:00",
+  "last_updated": "2026-11-24T02:07:03.688396+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-04T14:54:30.385797+00:00",
@@ -133,6 +140,16 @@
       "timestamp": "2026-11-17T21:56:15.726163+00:00",
       "change": "sources added",
       "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-24T02:07:03.688380+00:00",
+      "change": "sources added",
+      "detail": "MarketBeat"
+    },
+    {
+      "timestamp": "2026-11-24T02:07:03.688391+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 0 -> 2"
     }
   ],
   "price_reaction": {}

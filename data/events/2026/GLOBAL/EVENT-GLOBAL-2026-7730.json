@@ -1,0 +1,121 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7730",
+  "title": "RBI cautions NBFCs over falling gold prices and rising loan-to-value ratios",
+  "summary": "RBI cautions NBFCs over falling gold prices and rising loan-to-value ratios The Economic Times",
+  "event_date": "2026-11-23",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "gold prices over the next few weeks"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, regulation exposure to gold prices, and RBI. The parts of the business most likely touched are pricing. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "RBI cautions NBFCs over falling gold prices and rising loan-to-value ratios",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQT3dwYW5HbmRrQ19BTTB2V0Rsa2FJdUNSWHctMWxWVVVVNkl3ZGJTU3JkZHFKMlhjUC04cVA0TkU0d0dDT21faFlNYWI4TFF5UWhMeWNSX2VZRUdLTkFfMmVPbjhva1VuX3N6OHJYdVRtN2hwbWZPQnNuTnhhT0lENFR5M3JucmtxZ2F4OF9LdllhckMzcTJqaWFHbmRFZFBOeS1ZQzJ1UjZTWjlZN0xDNkMzMHNUVkFtUnBYMDE1bkdqR3R0dWtDRUotMjBNUkpmd0ZUR1o0R3R3bUdFTVRHYUhtQkx6U2IzZ0pkc0JZYkFNUXll0gH6AUFVX3lxTE1JUlhWblBybjVPWW44Tm9MVEp1QTE0Tm04Y0NfTTI1SFNkQloyLS1EZm10eTJDUHBKbGk3aWdWVlYzWElaUnpFNlFsRDRFUWpaaTdNQ0NDOENYNVh1TFpIY3hCelcxUkUtSkdaTGVCSEZTaDQyZnJvTEN6cWlHWFlRanZoYW9xa2VMXzF4WVIwczBrVk11U2hYaDlaQUxNS3I3U1RGVkJ0TDFXSFRfUjZqZ1NOdktxMGlYMlhlbThTaXhaWTI5RHRBemI0emR4SnI1Nm9ISlo4MDFQMXlWZ3VTRVhuMmlBcHZWSjMySDVEX19xbEMwWlBZZXc",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T19:41:15+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Economic Times",
+  "cluster_key": "HDFCBANK+TMB|OTHER|cautions-falling-gold-nbfcs-price-rbi",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T01:58:11.696944+00:00",
+  "last_updated": "2026-11-24T01:58:11.697013+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T01:58:11.697006+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

@@ -4,22 +4,24 @@
   "summary": "Coal India led consortium receives LoI from Govt to set up rare earth permanent manufacturing facility The Pioneer",
   "event_date": "2026-11-19",
   "event_types": [
-    "NEW_PLANT"
+    "NEW_PLANT",
+    "CONTRACT_WIN"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 4,
-      "impact_band": "LOW",
-      "direction": "UNCERTAIN",
+      "impact_score": 6,
+      "impact_band": "RELEVANT",
+      "direction": "POSITIVE",
       "confidence": 0.35,
       "business_impacts": [
+        "REVENUE",
         "CAPACITY",
         "BALANCE_SHEET",
         "CUSTOMERS"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "CUSTOMER",
@@ -38,11 +40,12 @@
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
+        "+2 Order activity at a related company",
         "+3 Development at a known counterparty (Coal India)",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
+        "a customer's business is strengthening"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -55,21 +58,22 @@
         "utilisation ramp",
         "order flow from Coal India"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are capacity, balance sheet, customers. Classified as new plant.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its customer, geography exposure to Coal India, and India. The parts of the business most likely touched are revenue, capacity, balance sheet. Classified as contract win.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "UNCERTAIN",
+      "impact_score": 10,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
       "confidence": 0.4,
       "business_impacts": [
+        "REVENUE",
         "CAPACITY",
         "BALANCE_SHEET"
       ],
-      "time_horizon": "LONG_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "GEOGRAPHY",
@@ -81,12 +85,13 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
+        "+3 Order or contract",
         "+2 Capacity expansion or capital expenditure",
         "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "NEW_PLANT cuts both ways — growth against capital, cost or execution risk"
+        "CONTRACT_WIN is favourable for the company"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -98,8 +103,26 @@
         "commissioning date",
         "utilisation ramp"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are capacity, balance sheet. Classified as new plant.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, balance sheet. Classified as contract win.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "No immediate revenue impact during construction, but opens a long-term revenue stream from high-value critical minerals and specialized manufacturing, helping diversify away from thermal coal reliance.",
+        "margin_effect": "Unclear in the short term due to initial setup and ramp-up costs. In the long term, rare earth magnet production generally carries higher gross margins than raw coal mining, potentially boosting blended margins once fully operational.",
+        "cost_effect": "Requires significant upfront capital expenditure (capex) for plant construction, technology acquisition, and specialized equipment, though government incentives or subsidies under the scheme may partially offset capital outlay.",
+        "competitive_effect": "Strengthens Coal India's position as a broader energy and critical materials player, establishing early-mover domestic manufacturing capabilities in rare earth magnets as global and domestic demand grows.",
+        "regulatory_effect": "Strong regulatory tailwinds as the project aligns directly with Indian government mandates for energy security, critical mineral self-reliance, and domestic manufacturing incentives.",
+        "short_term": "0-3 months: Announcement of consortium details, project outlay, technology transfer agreements, and initial regulatory/environmental approvals; negligible financial impact.",
+        "medium_long_term": "3 months to several years: Plant construction, commissioning, and eventual commercial production, establishing a new revenue vertical and improving the company's long-term energy transition profile.",
+        "second_order_effects": "Need to secure stable raw rare earth element feedstocks, potential technical joint ventures with foreign partners, and increased demand for specialized metallurgical talent.",
+        "key_uncertainty": "The total capex required, the timeline to operational commissioning, and the availability/cost of secure rare earth raw material inputs.",
+        "monitor_next": [
+          "Finalization of project capex and Coal India's equity contribution within the consortium",
+          "Identification and binding agreement with raw material supplier(s) for rare earth inputs",
+          "Selection of technology provider or technical partner for magnet manufacturing",
+          "Milestone timelines for plant construction and expected commissioning date"
+        ]
+      }
     }
   },
   "sources": [
@@ -112,21 +135,61 @@
       "published": "2026-11-19T23:29:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Wins Bid for Rare Earth Magnet Plant in Govt Scheme",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbER6UnYzdzhfcVktSE0wemYydFMzZDhHZExQSVRNeVM0Vy1vaFRBbFFhdHd4NEtrU29PTXBrZlh1ZnpOdUJWMWFIWG9ocGltVXdRa1RwZWxraGNWb2p4YlFlRUd3aDJKOWFUU0EzYmo0ZXRpaHJVcWJ1Zkk0VG13Xy1IR3Zfa2dNWEtfQ2d6dDBHVV9jTGx4dV80a2VmMnpnaTdCTUxzcGpCTGVPWnMwRU9aaWM4RWtMdVk0aEt5ZVRGeXVGMi1sN2ZPZVNqSjBmaTdV",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T06:32:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Coal India-led Consortium to Build Rare Earth Magnet Facility",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQanU2ZG10VDJpV3lXRkVVZmV0SnNvUlZPelhCS3FmZFNzTlh4N0x1Z0tpeU9HTkV1RmZVSFZNRDVTWUVNVGhJaW91UGVuSFphN1hRUWpvX3hzNmhqQVZLUUJacGF5TlU0YjJBblhva253RFYySmpEZnQ5anJGVS14cV95NkRFS2l3bFJQSC1oYThRdklrdXUtbTdOeGt6djVkcGRFbUpjLWpILVlxWDNrY2RYRXBLcTdxU21qTWMzeXV0ZWRWRFplY29maUltS3JyLTJCd3JR",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T07:15:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "The Pioneer",
   "cluster_key": "COALINDIA+MSTCLTD|NEW_PLANT|coal-consortium-india-led-loi-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-20T15:42:35.387652+00:00",
-  "last_updated": "2026-11-20T15:42:35.387722+00:00",
+  "last_updated": "2026-11-24T02:05:46.537134+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:42:35.387711+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:46.537107+00:00",
+      "change": "sources added",
+      "detail": "Construction World, Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:46.537117+00:00",
+      "change": "categories added",
+      "detail": "CONTRACT_WIN"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:46.537124+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 4 -> 6"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:46.537130+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 7 -> 10"
     }
   ],
   "price_reaction": {}

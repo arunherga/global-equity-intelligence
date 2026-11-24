@@ -54,8 +54,8 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "DIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -72,15 +72,17 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
+        "-4 Opinion, preview or stock-tip piece",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -88,13 +90,15 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "direct relationship",
+        "no quantified financial implication",
+        "opinion piece"
       ],
       "watch_next": [
-        "Axis Bank's follow-up announcements"
+        "Axis Bank's follow-up announcements",
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Axis Bank, and India. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -128,16 +132,26 @@
       "published": "2026-11-17T14:28:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "UBS Overweight On Indian Banks; HDFC Bank, ICICI Bank, Axis Bank Remain Top Picks",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS2J6SkgtanlsR2d1V2lENXloUGoxNjZ3NGNpMktOS240Q3Q5RWd6NF9faDNLWmszbHNqaWpYVjdEdWs2Vkxpa1IzRXE3WHcyU3dmQXk2SU9oQjBheFZqMFFxX214bE1Yb2UtcVM3czdHQ2E1TlRPWDRfR3EtTmk4bV9ESUpYanNxQkFMZ2QxYnc3QVUzWERGLUx1Skg2TDdBMHExZkx6MldLQVZQTlFucG9jZVBGN1ZRYzc0bS1ERdIBxwFBVV95cUxPckJKcTdUQU9ZdkxHRlBOTC01S0xLVW91cVZ1Z3pPVEpSYmNCdUIyaU41RW5VbVJPYmY4QkxGTWVyQWpFNjNJaUIzZDlRVEo2Zm9hblRaVjcxT2gxemZycFE1Vk05NTNiMHRBcjJoSm5fZ1E3V3lka3lXUF8tdE1sMWhFQ3RycHBTOFd2Wm4zZl95bzhYbVBzS1BSSVNoVEduRE1aT2lhNmRjU0M5U19VeW51Uk9BTWlDbTVhNUxaa2F4SlpuWDlR",
+      "source_name": "NDTV Profit",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T02:41:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "HDFCBANK+TMB|OTHER|axis-bank-icici-lombard-raise-stake",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:06:33.774235+00:00",
-  "last_updated": "2026-11-17T16:42:23.478692+00:00",
+  "last_updated": "2026-11-24T02:05:24.257539+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:06:33.774306+00:00",
@@ -148,6 +162,16 @@
       "timestamp": "2026-11-17T16:42:23.478675+00:00",
       "change": "sources added",
       "detail": "Rediff MoneyWiz, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:24.257521+00:00",
+      "change": "sources added",
+      "detail": "NDTV Profit"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:24.257534+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

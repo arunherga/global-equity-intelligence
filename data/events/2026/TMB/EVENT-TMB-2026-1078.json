@@ -9,14 +9,21 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "gold loans",
@@ -26,22 +33,58 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product exposure to gold loans. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and gold loans. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -55,21 +98,46 @@
       "published": "2026-11-03T10:11:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI steps up monitoring of gold loan portfolios of banks, NBFCs as LTV concerns emerge",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQZnNYRGVGTzNBMjdmRllyRldMZnRzcWtsTUFYZkdYT0xZYnNxV3U4ZGQ2aWNFVGwtOW9uTi04VkswZV9oc0EtSzV2aFBLOGFUX3NFV2VPQXNFakNnRlJqamNXV2VQbTN5MHBPdzNleXBxYjFUQWlpbGR1Z0Jsdmg5VnBiT0hxejk3QWVncHVRZkpYLUIzVy05LUhTRTM3TWZacVdTNXFkalBPQXQ5OGU0Y1p2V002V2VFRG9HTW5mQzNXSGFZRkdEdFRTRUs3TmV5QUthb3lza1dLcWJhbGk0V0pkOTlyV1g5RFHSAe8BQVVfeXFMUFdOQ1JSWVY4cS1mYkJaejI4ZDJldWd4UEtvd3FyNGVLaGNFTHBpT1RxZWVhNlBNRVdNamJxbnN5MUcxQWllaHkwTDFaUVh4SnpOZzkxVkJBdlB1ZElOaDJpV1pXSUtqaUZoVVF6TWUzOHd1dG9RUEprZnJ1VlJWUWM4OU9yNHlrS1hEcmhDdjNHZ3lEaklkNUxnZWxxR1ZCTllaM3kzYkNsTzdYd01PWWUzT1ZRTnJRd3F0T2RXVERwNjVJRzRyTlNkOEFBbDJTYXRtb1h6aTNaZk9ENmplX0hmSFgtVnBfVDdRZTNkOHc",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-23T04:34:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "TradingView",
   "cluster_key": "TMB|OTHER|bank-gold-loan-nbfcs-outstanding-overtake",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-03T20:15:29.156905+00:00",
-  "last_updated": "2026-11-03T20:15:29.156985+00:00",
+  "last_updated": "2026-11-24T02:05:36.440033+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-03T20:15:29.156973+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:36.440010+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:36.440023+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-24T02:05:36.440029+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}
