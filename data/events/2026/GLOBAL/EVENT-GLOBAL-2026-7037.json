@@ -49,8 +49,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "NEGATIVE",
+      "confidence": 0.15,
       "business_impacts": [
         "CUSTOMERS"
       ],
@@ -73,15 +73,17 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "-3 Speculative or unconfirmed report",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a customer is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "no quantified financial implication",
+        "speculative language"
       ],
       "watch_next": [
         "order flow from NHAI"
@@ -120,16 +122,26 @@
       "published": "2026-11-19T15:30:35+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Driving Without Insurance? New NHAI Toll Plaza System Could Flag Your Vehicle, Send SMS Alerts And Put You At Risk Of Rs 10,000 Fine",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOeVpNOEZ2amhicGlsTFVhZjdBUUhfaEYtOVlyLWU3RW9nakdfcW1yNmVtUS0wVnhXRnkyRHd4U09rQjRRN1pjZEUySU56WjROTVI3c2RxWGVZV01YV3hPR1k3UDdIX2kyVzRLd2dKeUFfdFh3TlpITFB1WERuQ2EtWUF0MHc5SGhyY19sYkpCQXg0TjFGRnBUTjRxc25EQmw2WlF5bExRVlBmUHRSYUxqd1ZoWFlHZGpvXzFNSExfZ3d5bjRaOFJwdmg2Q09PUXB5YXlVSjNrbVNPUDhtUHVSTVdHRG14WFkzTEFEU1ZEOTBBRm1rMVhnS1Rqb0R0S3JqbnJZ0gGIAkFVX3lxTE5nWndtSXJ6c1lwaDExVWEzdWkxR2ZpZ0o2MFljSDFOYmNCOUdOT0lKZmhuTG9JRHo5NHdZVFNadWxfRG9jVkdfWmMtNWpVM19pZWFNaW1OQWxGT0gtNHRla0poMk1rZjZlaWlwWkRZSGNfTS1wR1Ewdy13MW5najJrbm11U0JBR0RNSUxKdWZrOER1YjNCQW93WHBiVlh2SEZ6dWxQcldzcXVBckxpSHJyQWtsRU0zZF9MMHhwRWpjVGlKQmtHZmZ5bGg3SV9RTlpHNkJ0bnlpMFlaQVd0VGdxWDNRLVlxTldTVEVYeXl2WWVnQW5iMFowczBsQ201cC1hRC1JS1o4Mw",
+      "source_name": "NewsX",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T11:54:18+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Mathrubhumi English",
   "cluster_key": "ASHOKA+JKIPL|OTHER|expired-insurance-nhai-plaza-toll-vehicle",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:01:48.989227+00:00",
-  "last_updated": "2026-11-19T16:22:47.558347+00:00",
+  "last_updated": "2026-11-24T18:07:02.792013+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:01:48.989307+00:00",
@@ -145,6 +157,16 @@
       "timestamp": "2026-11-19T16:22:47.558330+00:00",
       "change": "sources added",
       "detail": "News18"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:02.791991+00:00",
+      "change": "sources added",
+      "detail": "NewsX"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:02.792010+00:00",
+      "change": "direction changed",
+      "detail": "ASHOKA UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

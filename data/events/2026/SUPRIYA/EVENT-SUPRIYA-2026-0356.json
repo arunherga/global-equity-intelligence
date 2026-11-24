@@ -12,8 +12,8 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.46,
+      "direction": "UNCERTAIN",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
@@ -27,6 +27,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -36,12 +43,12 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Divi's Laboratories) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -49,7 +56,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Divi's Laboratories. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor, geography exposure to Divi's Laboratories, and India. The parts of the business most likely touched are revenue, margin, competition. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -63,21 +70,41 @@
       "published": "2026-11-09T06:31:14+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Divi's Laboratories Shares: Volume, Earnings and Technical Readings",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOQ3ViWi1qVGhzdVI5Sk5rT2U3UFdiTEJOV29Mcm01QmFfSUpKbHB5bl80RVZPaTZacG9Cc2ExTGtrZk1NWkFMeG9LWTh1VEExMzRpNDB1eE1PVmNTVzFZaWdtcDNteXgyc0IzX1oweC1UZ1hoa0FPbTh1a01CR1FyZXZfekpnN1NtU2NCM1d1R2RDVGRmdmdmbVB6MnZTZ0xlLXlnVXpOVExtZTBROTFfRmhvVkJxNkdjZlNMX2JBUDlYeUVObTV6N3JVSlRFTmNjNUdHVkdnVDFDbzNYRTFUSEVDcjJNMjZxR0dIeGhMdWo",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T12:29:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "LinkedIn",
   "cluster_key": "SUPRIYA|EARNINGS|divi-jpmorgan-laboratories-rise-share-upgrade",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-09T16:42:36.180305+00:00",
-  "last_updated": "2026-11-09T16:42:36.180390+00:00",
+  "last_updated": "2026-11-24T18:07:04.480684+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-09T16:42:36.180380+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:04.480665+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:04.480680+00:00",
+      "change": "direction changed",
+      "detail": "SUPRIYA NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

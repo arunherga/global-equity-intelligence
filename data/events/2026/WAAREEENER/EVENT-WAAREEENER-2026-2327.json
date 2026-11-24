@@ -10,20 +10,29 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
+      "relationship": "INDIRECT",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.38,
-      "business_impacts": [],
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
           "relationship": "SECTOR",
-          "weight": 1.2,
-          "detail": ""
+          "weight": 1.7,
+          "detail": "in headline"
         },
         {
           "exposure_type": "TECHNOLOGY",
@@ -34,22 +43,99 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "order flow from NTPC"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and battery energy storage. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to NTPC. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -93,16 +179,36 @@
       "published": "2026-11-18T12:25:14+00:00",
       "is_official": false,
       "quality": 6
+    },
+    {
+      "title": "Bihar Invites Bids for Solar Projects with Battery Storage",
+      "url": "https://www.mercomindia.com/bihar-invites-bids-for-solar-projects-with-battery-storage",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-24T18:34:36+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "NVVN Invites Bids for Battery Energy Storage Projects",
+      "url": "https://www.mercomindia.com/nvvn-invites-bids-for-battery-energy-storage-projects",
+      "source_name": "Mercom India",
+      "source_domain": "mercomindia.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-24T11:15:30+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 4,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "Mercom India",
   "cluster_key": "WAAREEENER|OTHER|battery-bids-invites-nhpc-projects-storage",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-05T14:54:01.985727+00:00",
-  "last_updated": "2026-11-18T16:07:50.699794+00:00",
+  "last_updated": "2026-11-24T18:06:11.259942+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-05T14:54:01.985777+00:00",
@@ -128,6 +234,26 @@
       "timestamp": "2026-11-18T16:07:50.699786+00:00",
       "change": "categories added",
       "detail": "TENDER"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:11.259920+00:00",
+      "change": "sources added",
+      "detail": "Mercom India"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:11.259932+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:11.259936+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:11.259939+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
     }
   ],
   "price_reaction": {}

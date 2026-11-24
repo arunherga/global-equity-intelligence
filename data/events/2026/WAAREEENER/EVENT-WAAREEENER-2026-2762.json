@@ -12,33 +12,18 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "COMPETITION",
         "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
-          "exposure_type": "COMPETITOR",
-          "term": "Adani Green Energy",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "CUSTOMER",
           "term": "Adani",
           "relationship": "INDIRECT",
           "weight": 2.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
           "detail": "in headline"
         }
       ],
@@ -47,9 +32,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "Positive and negative effects both present",
-        "a competitor (Adani Green Energy) is doing well",
-        "a customer's business is strengthening"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -57,10 +40,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "Adani Green Energy's follow-up announcements",
         "order flow from Adani"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, customer exposure to Adani Green Energy, and Adani. The parts of the business most likely touched are competition, customers. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its customer exposure to Adani. The parts of the business most likely touched are customers. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -134,16 +116,26 @@
       "published": "2026-11-20T14:24:13+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Adani’s Tarali project: The dispute over its cost and wildlife fee",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU1FhaEY2WENBaC1RNmhXUjRTWVN3YjBhLVpZUk0wT0dqZGI0cWsxWE5zaWk0RHdJamFsX2ZZM280R1VtdmkyYldmblZyT2s1WkswbTl6RGZXNGlqLWRwR25rLXN1MHV1SFBIUzFlRDlNc3Raa0lUVzZJV252T25fRzI1ZHdQdi04MVhBYWdSazY5eDdLN0xxTU1JSFFzdXBna1hvczlEdVp5ZTd4QmltME9kSk9Pd9IBtgFBVV95cUxOU1FhaEY2WENBaC1RNmhXUjRTWVN3YjBhLVpZUk0wT0dqZGI0cWsxWE5zaWk0RHdJamFsX2ZZM280R1VtdmkyYldmblZyT2s1WkswbTl6RGZXNGlqLWRwR25rLXN1MHV1SFBIUzFlRDlNc3Raa0lUVzZJV252T25fRzI1ZHdQdi04MVhBYWdSazY5eDdLN0xxTU1JSFFzdXBna1hvczlEdVp5ZTd4QmltME9kSk9Pdw",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T10:16:38+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 7,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Goodreturns",
   "cluster_key": "WAAREEENER|OTHER|adani-green-project-pumped-storage-tarali",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:49:41.378827+00:00",
-  "last_updated": "2026-11-20T15:57:57.936757+00:00",
+  "last_updated": "2026-11-24T18:06:53.609695+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:49:41.378901+00:00",
@@ -184,6 +176,16 @@
       "timestamp": "2026-11-20T15:57:57.936754+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEGATIVE -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:53.609679+00:00",
+      "change": "sources added",
+      "detail": "The Indian Express"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:53.609692+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

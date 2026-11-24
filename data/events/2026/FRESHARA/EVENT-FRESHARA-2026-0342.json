@@ -12,8 +12,8 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.41,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
       ],
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -32,17 +39,17 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "vegetable prices is an input cost and is moving down"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "vegetable prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to vegetable prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to vegetable prices, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -56,21 +63,41 @@
       "published": "2026-11-23T12:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Vegetable prices ease in city as supplies normalise, bring relief to consumers",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOd3BUYkRiNnhQdi1BNlFaTm5CWVRqbjl0U2JjNVpHalQ3ZnVLVnFrMEwzZGZsR1h4dmNZVzVicmtsUE1pNEZINnZkekpPM0wtSWJYV0tvRU9jcnNORVR1ZkpmTkNzQ1plYUdlTzdvOV8xWU5lV1g0V0Y5aEthSUtENDF2Umh3dzItZEFJX3pZc0dOVnExTl92dEs2NjU3NW5CbnQ0SGNoSnZFbHg2c3RVSzNYUjltS1duYktsNkZYd05BS1VibnpNRTMtdjlzSzgzMVJWODQ4MjMtZWVRLW44Y0pwdk0yUdIB6wFBVV95cUxPeUt4X2IxNllyMGt6MDlfbFRMZUV1VGc2VzBpWjNGRUk2dks4Mi00cUFDdjUtMU5pbHlKMnNJUDNWcTR2eGpMc3RhZ1JQWkZpR3o0dzYzYWVJSlkwTTJycHFTSDJwSnpNMTc0MFcyMXlFOU1scnVMLUpkbHNjZDNHa1dhTEZ1Z0NLRFVTWmJXUlE2a2hRSF9vYWZOdlBoM09xNEtoNFpqLXJUVTFiMHBGenlBUDR2bXk0VmpLSi1LUmN4WjIxYURham14VE1fVXNnWi0tVi1SYl9femhFLXp5bE9oc19ya0JrYWxz",
+      "source_name": "The Times of India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T15:29:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "DTiNews",
   "cluster_key": "FRESHARA|OTHER|city-hcm-plunge-price-supplies-vegetable",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:55:42.828723+00:00",
-  "last_updated": "2026-11-24T01:55:42.828789+00:00",
+  "last_updated": "2026-11-24T18:07:13.161738+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:55:42.828782+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:13.161717+00:00",
+      "change": "sources added",
+      "detail": "The Times of India"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:13.161734+00:00",
+      "change": "direction changed",
+      "detail": "FRESHARA POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

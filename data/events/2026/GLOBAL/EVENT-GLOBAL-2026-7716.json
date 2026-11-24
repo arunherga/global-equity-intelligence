@@ -323,10 +323,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 8,
+      "impact_score": 10,
       "impact_band": "HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.35,
+      "confidence": 0.46,
       "business_impacts": [
         "BALANCE_SHEET",
         "REVENUE",
@@ -351,29 +351,15 @@
         },
         {
           "exposure_type": "REGULATION",
-          "term": "NSE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "REGULATION",
           "term": "RBI",
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
-        "+2 Regulatory or legal action",
+        "+4 Regulatory or legal action",
         "+2 Acquisition, merger or divestiture",
         "+3 Strategically important competitor development",
         "-2 Single unverified source"
@@ -385,7 +371,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect strong relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -397,20 +383,20 @@
       "ai_analysis": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
-        "revenue_effect": "Unclear in the short term, but potential medium-term downside risk if South Indian Bank leverages stronger institutional backing to capture market share in overlapping retail and SME lending segments in Southern India.",
-        "margin_effect": "Unclear to slightly negative if heightened competition for retail and CASA deposits in shared regional markets forces TMB to raise deposit rates, elevating its cost of funds.",
-        "cost_effect": "No direct impact on TMB's operating costs, though indirect pressure on borrowing/deposit costs could emerge if deposit competition escalates in South India.",
-        "competitive_effect": "Negative. South Indian Bank gains a major institutional endorsement and enhanced equity credibility, potentially improving its capital-raising capabilities and competitive positioning relative to regional peers like TMB.",
-        "regulatory_effect": "No direct regulatory consequences for TMB. The event underscores RBI's willingness to approve up to 9.99% stake acquisitions by large domestic institutional investors in private sector banks.",
-        "short_term": "Relative sentiment and valuation pressure on TMB as investor attention shifts to South Indian Bank following its regulatory clearance; operational impact will be negligible over 0-3 months.",
-        "medium_long_term": "TMB may face stiffer competition for loans and deposits in core Southern Indian territories if South Indian Bank uses institutional backing to expand branch networks, digital capabilities, and balance sheet capacity.",
-        "second_order_effects": "Speculation may rise around institutional investors seeking similar stake acquisitions in other regional private banks, including TMB; talent retention at TMB could face mild pressure if peers gain strategic advantage.",
-        "key_uncertainty": "The extent and timeline of SBI Mutual Fund's actual stake accumulation in South Indian Bank and whether it leads to capital injection and aggressive market expansion.",
+        "revenue_effect": "Unclear in the short term. In the medium to long term, heightened competitive pressure from a better-capitalized regional peer (South Indian Bank) could slow TMB's credit and deposit growth in overlapping South Indian markets.",
+        "margin_effect": "Unclear. If regional competition for retail deposits and quality SME borrowers intensifies, TMB may face mild downward pressure on Net Interest Margins (NIMs) to defend its loan book and deposit base.",
+        "cost_effect": "No direct impact on TMB's operating expenses. However, cost of funds could face indirect upward pressure if competition for regional low-cost CASA and NRI deposits escalates.",
+        "competitive_effect": "Negative. South Indian Bank gaining validation and potential long-term capital backing from a leading domestic fund house (SBI Mutual Fund) strengthens its market standing, potentially diverting institutional investor interest and client market share away from peers like TMB.",
+        "regulatory_effect": "No direct regulatory impact on TMB. However, the decision demonstrates RBI's willingness to grant approvals for institutional funds to acquire up to 9.99% in Old Private Sector Banks (OPSBs), establishing a favorable precedent for the broader sector.",
+        "short_term": "Minimal immediate operational impact over 0-3 months, though TMB stock may experience relative institutional capital reallocation toward South Indian Bank due to the positive catalyst.",
+        "medium_long_term": "Over 3 months to several years, an institutionally backed South Indian Bank may expand its balance sheet, digital infrastructure, and branch network more aggressively, challenging TMB's market share in Southern India's SME, MSME, and retail lending segments.",
+        "second_order_effects": "Increased domestic institutional interest in regional private sector banks could spur valuation re-ratings across the OPSB peer group, potentially incentivizing TMB to seek similar strategic institutional investors.",
+        "key_uncertainty": "The pace and extent to which SBI Mutual Fund actually builds its equity stake up to the 9.99% limit, and whether similar institutional approval requests emerge for TMB.",
         "monitor_next": [
-          "Actual shareholding changes in South Indian Bank detailing SBI Mutual Fund's stake build-up",
-          "TMB's deposit rates and CASA ratio movements relative to South Indian Bank",
-          "Quarterly credit and deposit growth rate differentials between TMB and South Indian Bank",
-          "Any potential institutional investor stake application filings regarding TMB"
+          "SBI Mutual Fund's actual share acquisition progress in South Indian Bank via BSE/NSE disclosures",
+          "Quarterly institutional (DII/FII) shareholding shifts in TMB versus South Indian Bank",
+          "Comparative deposit growth, credit growth, and NIM trajectories of TMB and SIB",
+          "Any regulatory filings or RBI approvals regarding stake increases in TMB by institutional investors"
         ]
       }
     },
@@ -598,16 +584,76 @@
       "published": "2026-11-23T16:46:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Approves SBI Mutual Fund’s Proposal to Acquire Up to 9.99% Stake in South Indian Bank",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMEJnRkpIOWs0ZnhUeFdJMGRGaGFoMEc1YVJRUVJISmpEOXk5d2VWX0E4QVpDVXFEMHg5SmF3VGRhNlRiY0IyVW1vRTNIWjdfQmc0SzNDNEtLUEVqNkNpUVdCNWNEQ28xVFY2R2xnQ21YdktubnpLMmFtVXhMMlk5N2dQaTdaV2haM3dWUzMwZWhHNDg",
+      "source_name": "Hindusthan Samachar English",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T12:27:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI approves SBI MF to acquire up to 9.99% stake in South Indian Bank",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZkxLcWY0V0pleHZybENqY0tNNjcwNnV5X3k4SzhLMHcycXVmLXZBQV8tdDZtaXNGYVI1QzNaOHBoQnVyV2htdnZETDZveFVsMGxWYjNzQ2t6WG1kNzZhRW9qcDFzWU9YclJuRFNUOS0wZEV3bThGZGk2UnNTOTl4WEk1ZmVRV0VsWGc2cy1Jam1TSEJMS3RvdGkzazNsanZsNXhDVWR3YVNORWJ0UzhPQnJndVpwbXN0eEdRTjY1ek1lVVlLcUNyUXV6Q1l1OTl5OGR1Slh30gHWAUFVX3lxTE5mTEtxZjRXSmV4dnJsQ2pjS002NzA2dXlfeThLOEswdzJxdWYtdkFBXy10Nm1pc0ZhUjVDM1o4cGhCdXJXaG12dkRMNm94VWwwbFZiM3NDa3pYbWQ3NmFFb2pwMXNZT1hyUm5EU1Q5LTBkRXdtOEZkaTZSc1M5OXhYSTVmZVFXRWxYZzZzLUlqbVNIQkxLdG90aTNrM2xqdmw1eENVZHdhU05FYnRTOE9Ccmd1WnBtc3R4R1FONjV6TWVVWUtxQ3JRdXpDWXU5OXk4ZHVKWHc",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T09:11:07+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI approves SBI Mutual Fund to acquire up to 9.99 pc stake in South Indian Bank",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOczlkSkwzLWU0WUZySk9LbUdGejdXb0sxOEl4VmZqZHY4R3NiNC02R0RQaHVjM0dQOE8tRDB2RXlMREJFSDBaNnVNOW4yVy05UThiQ2NIV281REVMalJZcFVDRXdabXVDQ2NBNVNDRXdnZGttTUNMc0RtdmZEVDl5OWNaMWRSMHpyVlppVGpvc0Z5NnlCTlNYM3B1UU9TOU9BV2NtWkZzbTJ0Yk10UnQwQlBjNlpPc2s0Y1hmdy1RSzVGdlRzQ3NidXlkb2pCakpid1VVZXo3Y19mRUJoMEHSAd4BQVVfeXFMTnM5ZEpMMy1lNFlGckpPS21HRno3V29LMThJeFZmamR2OEdzYjQtNkdEUGh1YzNHUDhPLUQwdkV5TERCRUgwWjZ1TTluMlctOVE4YkNjSFdvNURFTGpSWXBVQ0V3Wm11Q0NjQTVTQ0V3Z2RrbU1DTHNEbXZmRFQ5eTljWjFkUjB6clZaaVRqb3NGeTZ5Qk5TWDNwdVFPUzlPQVdjbVpGc20ydGJNdFJ0MEJQYzZaT3NrNGNYZnctUUs1RnZUc0NzYnV5ZG9qQmpKYndVVWV6N2NfZkVCaDBB",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T08:25:21+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI gives approval to SBI MF to acquire up to 9.99% of South Indian Bank’s paid-up share capital",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdnBScUtVVGY0emhNRzVDMF80MzNib1RnX0VNSk1xaTF6dVkyWmN2czA0eDFKOW9ZRkpEMEU4SG0xUExvcllSeWVzcXhRRklqc1dKUGNCaWNVLVF4bTZxcVk4NUdydHRoOE53ajJOSGRNRllzWWVOOVNjZjV1aXNnMjhZR0lqelFIUnBqZ0NLakZ1QjZ3VGkxb2F4OXdpcjFRekNiWG5FdUdXUk05UElHd25ocEJpWFFmREk5Q0Y5Mjg1T2ViWHBlLW02TWZqNG83WUd6amtKeG9kT1dSWDFzVEhwcjJ1eHJqRm9YQXBWenZZSU83TlpDNWR6WDZoTXAxS2s00gGDAkFVX3lxTE12cFJxS1VUZjR6aE1HNUMwXzQzM2JvVGdfRU1KTXFpMXp1WTJaY3ZzMDR4MUo5b1lGSkQwRThIbTFQTG9yWVJ5ZXNxeFFGSWpzV0pQY0JpY1UtUXhtNnFxWTg1R3J0dGg4TndqMk5IZE1GWXNZZU45U2NmNXVpc2cyOFlHSWp6UUhScGpnQ0tqRnVCNndUaTFvYXg5d2lyMVF6Q2JYbkV1R1dSTTlQSUd3bmhwQmlYUWZESTlDRjkyODVPZWJYcGUtbTZNZmo0bzdZR3pqa0p4b2RPV1JYMXNUSHByMnV4cmpGb1hBcFZ6dllJTzdOWkM1ZHpYNmhNcDFLazQ",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T04:47:28+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "South Indian Bank shares in focus as RBI approves SBI Mutual Fund to acquire up to 9.99% stake; stock up 612% in 5 years",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOTEFtUDZlUnVjQVF4a1JjTHlRRVpOS01vRXptVFk3ZENiaDJFY2dzWlNlYlN5RVVkdG5VNnJnaHA1LUt1dnBwTWxGdU1qZExqbXB3U2hUSS1DR3RxVllEQ3VycnJwa01BeWx6T0VYY0d4ZVJiTkVhYWcwSDU4cGUwM2pFRlNoU0V2aVpUTEpQZjFTLVFSN2JDM1BhN21rbkczbVlnWUtjQWJOTndrd0k0N1BNNzE3QXA4SldwM0h5ZGdvYncyYkh5WVczOXVBY0RocFpVMlJUYWVxSW9rUXA0UUpOSG9DRG1KUW50cWFmNVAwZ0pDN2Jsc0txeGtvUEFWcVlvd0xtWjJmYnlnVDVkS1h4LVBjQdIBmwJBVV95cUxQU2xpOVlwVDVZdVVObDcwa0hZTVp1eER4MDFzT01iTEtKQllHTVFkcFZXY2NaVGNwQmZFa0NMUUFIYXU0bW5TS2NLMjhSc3UyenUtY2lMY3RNbU5MNTJKUTdvbUk0eF9mSS1RWVVaZURXX1llbFJnS1JfRmp5NW5XN1RZUS1fcnlZNDdoRDU0S1VfWFlQM0NuWG9IQjNXQnR0SWtsUkRocVJtMEZvcjYxU1FabG53dHNnQzJOdGQzMGxpTFJRUV9hcXJ2dzM3dS1RMExQVlhHR0V4RnFmemx5bTl0T1V4R182MDJFNjFwYnl2el8xcVdwd2JpNXFPREtwaTEydmFMalBueDVZdHUwVVk3U0IzRXNoVHY4",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T13:51:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "The South Indian Bank Limited (NSE:SOUTHBANK) Gets RBI Nod for Mutual Fund Holding up to 9.99%",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbUNOa0hBeWpuem5BWWJNSVRPQ25tQnRkYTgwcGxKYl9CUnJRbkJXZ2tLRzFDdzdKYlR0Zm0xOEdsR0M0dldINUM3TlMzWVBfWFZqRnlPdUdEQ054dzNsbkxRY1R3Z1VQNFlPTWR5WHozNmVSSHJBMXVadGRmQlc5UmtYZ282VGlucWtmTkhIdXFVTHNrQ3hSU2I1MkRuZFBUNzg4cjNOMmRqRl9JXzZnU1JuLXBFYXZlS25zcmRTN3gxVGR1bWhtZ3hxREYtcVJHVUNockpnZVNGZUVJaXR6ZEtMeExjR2Q4U3dueW9KNXduSUJ6ZWkyV2dR",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T07:42:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|ACQUISITION+REGULATORY|bank-did-india-nse-south-southbank",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:57:24.342855+00:00",
-  "last_updated": "2026-11-24T02:03:07.594488+00:00",
+  "last_updated": "2026-11-24T18:06:44.136730+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:57:24.342932+00:00",
@@ -618,6 +664,21 @@
       "timestamp": "2026-11-24T02:03:07.594475+00:00",
       "change": "ai analysis",
       "detail": "TMB via gemini"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:30.953710+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, BusinessLine, Hindusthan Samachar English, Livemint"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:30.953723+00:00",
+      "change": "impact raised",
+      "detail": "TMB 8 -> 10"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:44.136709+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
     }
   ],
   "price_reaction": {}

@@ -14,13 +14,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -36,7 +35,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -44,12 +43,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -57,13 +53,12 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "MIXED",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "MARGIN",
         "DEMAND"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "REGULATION",
@@ -79,7 +74,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -87,12 +82,9 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are demand. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -256,16 +248,26 @@
       "published": "2026-11-23T09:14:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "New CPI series to stabilise inflation readings: RBI Dy Governor",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYklUbU5iLUZXZXN2QkxTUTM4MzBMUng2bFl2cnZkTDlTckQxSUI0V3YyVXA4OFlmWGF1MFdBdkdYNVhhSGdFUGw0S21CckR2eEdXZ1lwMGlBSHlOOFRPdGJBTDY1bWZ6ZHR1MG11MFpPV2VFSk9KN2ZFOFR6a1Qtb0tvaTFRWnRuMjNidWhsUjN6RU9uRXFfMGpRQnF6bU1rZDFVSjRQSEY0TkRER2V2THI4SnJ1Zw",
+      "source_name": "Awaz The Voice",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T08:16:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 16,
+  "article_count": 17,
   "source_count": 2,
   "primary_source": "ETBFSI",
   "cluster_key": "HDFCBANK+TMB|COMMODITY+MACRO|expected-gdp-revisions-see-series-smaller",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:50:29.890016+00:00",
-  "last_updated": "2026-11-24T02:05:49.034007+00:00",
+  "last_updated": "2026-11-24T18:06:45.569225+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:50:29.890151+00:00",
@@ -291,6 +293,21 @@
       "timestamp": "2026-11-24T02:05:49.034003+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK UNCERTAIN -> MIXED"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:45.569203+00:00",
+      "change": "sources added",
+      "detail": "Awaz The Voice"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:45.569217+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:45.569222+00:00",
+      "change": "direction changed",
+      "detail": "HDFCBANK MIXED -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

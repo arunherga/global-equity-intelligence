@@ -9,45 +9,46 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
+      "relationship": "SECTOR",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "direction": "NEUTRAL",
+      "confidence": 0.28,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "REGULATION",
-          "term": "MNRE",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "INDUSTRY",
           "term": "PM Surya Ghar",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+1 Industry-level relevance",
+        "-3 Passing mention without a quantified development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "financial implication is quantified"
+        "sector relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to MNRE, and PM Surya Ghar. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to PM Surya Ghar, and India. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -101,16 +102,26 @@
       "published": "2026-11-23T13:41:42+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NISE invites DERMS proposals under India’s PM Surya Ghar scheme",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ0ZtaG1FY0xlYWZvTmxVcFF0YlRCTmZYVU5HVmRRNlFXZ3NkMHVsOEl0MmZsYW5iX3JYWXA2ZmxSRUwxTmh4TElNbGwxZGZhejRkVWpOWkpQMF9sYjFkSldQc0g2UWpwY1cxaFZTWm5vbF9KTERNZHFYNV91S0JuYUU2d3gwUlY2ZWJjTWdHc1NvdVZVNXpXbzhGMHl0alc4dzU5VmtFa3pWSXV5amlILUFVOE1FSS1ZQjk1YnlvMjQ",
+      "source_name": "Solarbytes",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T13:34:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "BW Businessworld",
   "cluster_key": "WAAREEENER|OTHER|derms-grid-invites-ministry-pilot-smart",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-21T14:53:10.469357+00:00",
-  "last_updated": "2026-11-24T02:06:12.301399+00:00",
+  "last_updated": "2026-11-24T18:07:08.699000+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:53:10.469415+00:00",
@@ -131,6 +142,16 @@
       "timestamp": "2026-11-24T02:06:12.301394+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:08.698978+00:00",
+      "change": "sources added",
+      "detail": "Solarbytes"
+    },
+    {
+      "timestamp": "2026-11-24T18:07:08.698996+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
     }
   ],
   "price_reaction": {}

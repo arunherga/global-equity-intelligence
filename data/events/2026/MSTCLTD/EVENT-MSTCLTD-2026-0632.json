@@ -10,7 +10,7 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -29,6 +29,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -56,21 +57,41 @@
       "published": "2026-11-23T03:00:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "[SMM Iron Ore] Iron ore margin loss narrows; shipments up but prices range-bound",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPM196S1VyWV9GQ0FVbUsweXBaUWEzdHluUVZET1JqUFN5aDFqNTN4YkFod0t6Tmg5bUF4M1RpYXFROWx6bl9pYnFjdVNsZ2xMdVJ3UEtOVmVmWWNGcUM2d2Q3WExBV2E5b19tOXdLclhDd2lrMWhMVnJoUmMxR0ZVYmlLbmdOVjY3RnU4OE9mOGcyWkJBclMxQnotd2lldVZyYVNQcGNyVDg3cXhzbm9aUXBhVFF5dmJnM3RBcldMSlRDSGEtcnJnS01Mc2Y1VFRGS19wWmZFWHlwLWl2VlhBMWk5NFY1eG9aZ1A4",
+      "source_name": "Shanghai Metals Market",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T02:36:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Shanghai Metals Market",
   "cluster_key": "MSTCLTD|OTHER|imported-iron-iron-ore-ore-smm",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-24T01:51:22.319871+00:00",
-  "last_updated": "2026-11-24T01:51:22.319944+00:00",
+  "last_updated": "2026-11-24T18:06:25.481732+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:51:22.319938+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:25.481721+00:00",
+      "change": "sources added",
+      "detail": "Shanghai Metals Market"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:25.481730+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 2"
     }
   ],
   "price_reaction": {}

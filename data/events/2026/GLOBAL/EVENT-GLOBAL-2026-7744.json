@@ -1,0 +1,131 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-7744",
+  "title": "Investors get richer by ₹34.61 lakh crore this month as Sensex posts 11% rally",
+  "summary": "Strong foreign fund inflows, lower crude oil prices, better-than-expected Q2 earnings and a global sell-off in AI-linked stocks fuelled the equity market rally",
+  "event_date": "2026-11-24",
+  "event_types": [
+    "EARNINGS"
+  ],
+  "stocks": {
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-5 Market commentary rather than a company development",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as earnings.",
+      "ai_analysis": null
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.55,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "INPUT_COST"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "-5 Market commentary rather than a company development",
+        "-2 Scheduled disclosure with no surprise",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, input cost. Classified as earnings.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Investors get richer by ₹34.61 lakh crore this month as Sensex posts 11% rally",
+      "url": "https://www.thehindubusinessline.com/markets/investors-get-richer-by-3461-lakh-crore-this-month-as-sensex-posts-11-rally/article71737692.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-24T08:16:09+00:00",
+      "is_official": false,
+      "quality": 7
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "The Hindu BusinessLine Markets",
+  "cluster_key": "RAVEL+SUPRIYA|EARNINGS|34.61-get-investors-month-richer-sensex",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-24T18:01:38.105727+00:00",
+  "last_updated": "2026-11-24T18:01:38.105800+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-24T18:01:38.105790+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

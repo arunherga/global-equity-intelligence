@@ -12,7 +12,7 @@
       "relationship": "INDIRECT_STRONG",
       "impact_score": 3,
       "impact_band": "LOW",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.35,
       "business_impacts": [
         "PRICING",
@@ -26,13 +26,6 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
@@ -41,7 +34,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -54,7 +47,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     },
     "TMB": {
@@ -138,21 +131,41 @@
       "published": "2026-11-20T12:23:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver price today: Precious metals rebound after 10-day fall? Check city-wise rates",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOajROeXYxd3dEWEZVZFZBRVluQjZlWlBzdkZUWWptMUthTkZTb2lVeXd3d0UzaVY0LXpYZ2ZUU3V2YmhzVF92Z3A2akRrdXFZTW5NaFlCZTRoWnlBMmtMekdoY3JJYXh2RUd0cjV6bHlENDYyY05XcHV3R3hwMDFuZGZlb0hSdThRbG5LeHRseWx6bS1MakhQQy11NE1YdGVxUzN0cVhIX3pqM1JLZklVQlNIdWtHUUFyQUxpZndVczQ5Qkd6TkVLSUY2QlVTaFRyOE5qVElB0gHbAUFVX3lxTE15ZVh3Z3Q3eWs1cWw4MHNsZlVyNlk1anpyYnh5d05vMTNQZkFYUkEyRmc1SWc4Zm9oTzdzWjFYSGs5OGhlMms5Rkg1UUxKQWQyTWNBRlkwbVh1cTA1UGlCaXBNRjNKLVFkZU5JNUUzV1hIS3ZqWlpSLVZadG8xSmVkdEUyVEl5R1hSNVVoc3I2dDFVMXZYWlVsY1M4OTlJVU13X1F4TWo2eWw2Zm5hQXR2RTVXTVcxM1JnTm5sTDQ4ZWtMTjNaelFBbVpWYXJBTGFKT1oybXRmYTF4OA",
+      "source_name": "ET Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T03:59:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "APAC Media",
   "cluster_key": "TMB+WAAREEENER|COMMODITY|22k-city-wise-gold-nov-rate-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-20T15:43:35.779991+00:00",
-  "last_updated": "2026-11-20T15:43:35.780073+00:00",
+  "last_updated": "2026-11-24T18:06:29.028550+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-20T15:43:35.780061+00:00",
       "change": "created",
       "detail": "3 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:29.028532+00:00",
+      "change": "sources added",
+      "detail": "ET Now"
+    },
+    {
+      "timestamp": "2026-11-24T18:06:29.028546+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> NEGATIVE"
     }
   ],
   "price_reaction": {}
