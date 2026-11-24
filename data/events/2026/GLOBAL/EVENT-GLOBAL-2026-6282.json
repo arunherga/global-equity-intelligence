@@ -105,11 +105,13 @@
     "FRESHARA": {
       "ticker": "FRESHARA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
-      "business_impacts": [],
+      "business_impacts": [
+        "EXPORTS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
@@ -121,14 +123,15 @@
         },
         {
           "exposure_type": "GEOGRAPHY",
-          "term": "India",
+          "term": "Asia",
           "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -142,7 +145,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and Asia. The parts of the business most likely touched are exports. Classified as other.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -320,11 +323,13 @@
     "SUPRIYA": {
       "ticker": "SUPRIYA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
-      "business_impacts": [],
+      "business_impacts": [
+        "EXPORTS"
+      ],
       "time_horizon": "UNKNOWN",
       "exposures": [
         {
@@ -336,14 +341,15 @@
         },
         {
           "exposure_type": "GEOGRAPHY",
-          "term": "India",
+          "term": "Asia",
           "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -357,7 +363,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and Asia. The parts of the business most likely touched are exports. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -487,16 +493,26 @@
       "published": "2026-11-20T04:21:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Himadri Speciality Chemical (NSE:HSCL) Announces Asia Investor Roadshow in Singapore and Hong Kong for Late November 2026",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNUHhmNkZVNkZUemVWVlhKQnQ2NTZsYjZpWEI4U185dW1hOWZEa0h0YWp6SW9VOGhlTC10bUtPMjFmWVlyNUozczNkSHVrNVZRaG05WXBiSndxWnV0clB4VVZhOEFfVncyb0M5WnROSm5zWUUtM3h0djhta3VVRHAyU1M0ZUh1VGRTalpLeVB0Snh5YU9EQ0l6Zm9Ibld6cVdTOVAtc2dkaFpUOWZVV0RVUWNKQThuVVNFdFpMd0RHdWdpNUNYVjByNENKY0k5LWlvbWp6QjFTakpVVkJoOUFldy1IWEJWc3U3LVB3dmhGNTdWVThtV1l5dQ",
+      "source_name": "Kalkine Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-24T17:50:28+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "Kalkine India",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|conferences-investor-nhpc-nhpc-november-nse",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T14:43:04.417534+00:00",
-  "last_updated": "2026-11-20T15:57:03.358697+00:00",
+  "last_updated": "2026-11-24T23:10:24.023024+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:43:04.417584+00:00",
@@ -517,6 +533,21 @@
       "timestamp": "2026-11-20T15:57:03.358683+00:00",
       "change": "sources added",
       "detail": "Kalkine Media"
+    },
+    {
+      "timestamp": "2026-11-24T23:10:24.022994+00:00",
+      "change": "sources added",
+      "detail": "Kalkine Media"
+    },
+    {
+      "timestamp": "2026-11-24T23:10:24.023013+00:00",
+      "change": "impact raised",
+      "detail": "FRESHARA 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-24T23:10:24.023019+00:00",
+      "change": "impact raised",
+      "detail": "SUPRIYA 0 -> 2"
     }
   ],
   "price_reaction": {}
