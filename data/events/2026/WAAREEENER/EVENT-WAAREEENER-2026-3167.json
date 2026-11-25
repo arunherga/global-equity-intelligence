@@ -9,46 +9,45 @@
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "MNRE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
         {
           "exposure_type": "INDUSTRY",
           "term": "PM Surya Ghar",
           "relationship": "SECTOR",
           "weight": 2.0,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
+        "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its geography, industry exposure to PM Surya Ghar, and India. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to MNRE, and PM Surya Ghar. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -112,16 +111,36 @@
       "published": "2026-11-24T13:34:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "MNRE invites discom proposals for DERMS pilots",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNmJMdTFsRXE1WmtJTXA3d0V3c1pMMzRob3ZscUFwSkxTdFFRMWZYUFZELUtZR3RPQWZKWVZYSm01cm85M1poT3J0bkxYTlZ3SlM3NUp3WFpiYkpoLVZJWUhSeWdrS2dxa1lXY0w2RExYWnotRjZUZEozUk1QZ2JDamJCOVVROEx3QzVTc25xOA",
+      "source_name": "Renewable Watch",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T09:10:45+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "MNRE invites discom proposals for innovative DERMS projects under PM Surya Ghar",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcnBHYVZNUGdoRnliNXoyWkdyQWFTa0VoMWI1ZGNUOWFkWkZfYnBYaGl2YlAxbGQzcnd4TTlUMFJhUndjX2hEbU5CaXBSS1B2S0xiVnlIb2NLT196aWtBZWZ6UGtPNVAzalc5N1VsLVI3dHNxYnoyQ3pQN2ZiMlZBZDJNb2o1cE80a25POGpwdDdOM0trb2tuN0Y5dW5iQ0tTUjVLTTEyU0RwRFdOdFpWd0lWSzdjZ3BweXc",
+      "source_name": "Powerline Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T05:34:32+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 6,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "BW Businessworld",
   "cluster_key": "WAAREEENER|OTHER|derms-grid-invites-ministry-pilot-smart",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-21T14:53:10.469357+00:00",
-  "last_updated": "2026-11-24T18:07:08.699000+00:00",
+  "last_updated": "2026-11-25T17:46:43.295403+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:53:10.469415+00:00",
@@ -152,6 +171,16 @@
       "timestamp": "2026-11-24T18:07:08.698996+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER UNCERTAIN -> NEUTRAL"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:43.295385+00:00",
+      "change": "sources added",
+      "detail": "Powerline Magazine, Renewable Watch"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:43.295400+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEUTRAL -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

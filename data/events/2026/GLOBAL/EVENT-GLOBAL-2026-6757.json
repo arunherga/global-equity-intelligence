@@ -74,54 +74,42 @@
     },
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "DIRECT",
-      "impact_score": 13,
-      "impact_band": "CRITICAL",
-      "direction": "POSITIVE",
-      "confidence": 0.74,
+      "relationship": "SECTOR",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEUTRAL",
+      "confidence": 0.49,
       "business_impacts": [
         "REVENUE",
-        "CAPACITY",
-        "MARGIN",
-        "CUSTOMERS"
+        "CAPACITY"
       ],
-      "time_horizon": "SHORT_TERM",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
-        {
-          "exposure_type": "CUSTOMER",
-          "term": "NTPC",
-          "relationship": "INDIRECT",
-          "weight": 2.5,
-          "detail": "in headline"
-        },
         {
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
           "relationship": "SECTOR",
-          "weight": 1.7,
-          "detail": "in headline"
+          "weight": 1.2,
+          "detail": ""
         },
         {
-          "exposure_type": "PRODUCT",
-          "term": "inverters",
+          "exposure_type": "TECHNOLOGY",
+          "term": "battery energy storage system",
           "relationship": "SECTOR",
-          "weight": 0.9,
-          "detail": "in headline"
+          "weight": 1.0,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+5 Direct company event",
-        "+4 Major order or contract",
-        "+2 3 independent sources",
-        "+2 Company appears in the headline"
+        "+1 Industry-level relevance",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "3 independent sources",
-        "direct relationship",
+        "sector relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -130,26 +118,8 @@
         "realised margin on the order",
         "whether extra capacity is needed"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, margin. Classified as order win.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Positive impact. Adds over INR 100 crore (~INR 1 billion) to consolidated order backlog through subsidiary Waaree Transpower, which will be recognized as revenue upon production, delivery, and project milestones.",
-        "margin_effect": "Unclear. Overall margin impact depends on the contract's pricing structure, execution efficiency, and whether raw material cost pass-through provisions exist for high-spec inverter duty transformers compared to solar PV module margins.",
-        "cost_effect": "Increases short-term operating and working capital expenditures for purchasing raw materials such as copper, cold-rolled grain-oriented (CRGO) electrical steel, and specialized insulation materials required to manufacture the transformers.",
-        "competitive_effect": "Strengthens competitive positioning in utility-scale balance-of-plant equipment for storage projects, demonstrating execution capability with a major public sector undertaking (NTPC) and supporting diversification beyond core solar PV manufacturing.",
-        "regulatory_effect": "Requires compliance with NTPC quality assurance frameworks and Central Electricity Authority (CEA) grid integration standards for battery energy storage equipment.",
-        "short_term": "Improves order book visibility, initiates raw material sourcing, and begins project engineering design phases over the next 0-3 months.",
-        "medium_long_term": "Drives equipment delivery, commissioning, and top-line recognition while establishing a proven track record in BESS transformer solutions to qualify for larger utility-scale storage tenders.",
-        "second_order_effects": "Demonstrated execution with NTPC may enhance cross-selling opportunities for bundled packages including PV modules, inverters, and transformers in future integrated renewable energy tenders.",
-        "key_uncertainty": "The precise delivery schedule, execution timeline, and baseline operating margin profile of the transformer contract relative to core PV module manufacturing.",
-        "monitor_next": [
-          "Execution timeline and delivery milestone announcements for the NTPC transformer project",
-          "Quarterly financial disclosures on Waaree Transpower's revenue and margin contribution",
-          "Price fluctuations in primary transformer input commodities such as copper and electrical steel",
-          "Upcoming BESS and grid infrastructure tenders issued by NTPC and other state utilities"
-        ]
-      }
+      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
+      "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
@@ -299,16 +269,26 @@
       "published": "2026-11-19T07:45:02+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "L&T wins ₹1,000-2,500 crore order for battery storage project in Gujarat",
+      "url": "https://energy.economictimes.indiatimes.com/news/renewable/lt-wins-1000-2500-crore-order-for-battery-storage-project-in-gujarat/136152151",
+      "source_name": "ETEnergyWorld",
+      "source_domain": "energy.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-25T07:16:31+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 10,
-  "source_count": 3,
+  "article_count": 11,
+  "source_count": 4,
   "primary_source": "CNBC TV18",
   "cluster_key": "COALINDIA+MSTCLTD+WAAREEENER|ORDER_WIN|691-digitek-ntpc-order-pace-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-16T16:08:47.281704+00:00",
-  "last_updated": "2026-11-19T16:22:02.016290+00:00",
+  "last_updated": "2026-11-25T17:46:17.164563+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-16T16:08:47.281767+00:00",
@@ -344,6 +324,16 @@
       "timestamp": "2026-11-19T16:22:02.016270+00:00",
       "change": "sources added",
       "detail": "Construction World"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:17.164540+00:00",
+      "change": "sources added",
+      "detail": "ETEnergyWorld"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:17.164559+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> NEUTRAL"
     }
   ],
   "price_reaction": {}

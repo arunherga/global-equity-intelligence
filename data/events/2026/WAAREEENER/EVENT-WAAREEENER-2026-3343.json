@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -25,13 +25,6 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.7,
-          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -40,7 +33,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "aluminium is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -50,7 +43,7 @@
       "watch_next": [
         "aluminium over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium, and India. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -64,21 +57,51 @@
       "published": "2026-11-24T11:30:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Aluminium Industry Seeks Policy Push for ₹4 Lakh Crore Expansion",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOelI4TjFDWUtMQTdMd2huVTFBd043ZHhJd1lVckkzbE5BYy1ya05PY0RmSmd6bWFBQng1a0Q4QU0tNzV5X0t4MFUzTkZsWG1kVVEyWTZQUkI2dHBUWE9mWWx1LTFheFB4Z05rbkZ6WHBXWmhkdDh1VFU2dWpNdVZsb0lILWplNXhSNXJnYXFOTVBSTDgzdVpGZnZUaEczV3hjOGE3X1BBcGFPd0ZPczI2ekQ5NE4",
+      "source_name": "Urban Acres",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T11:27:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Aluminium Industry Seeks Policy Support for Rs 4 Trillion Investment",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQbTVzZUxfMzRuUlFfUmZmNTVRbElJQ1FNY3NybnotYVJVb1RrMW1WZ2RlVG1FejhfNGZlc282b0VjWGtpVTBhYUk0MHRTb0J3LWNQSUVEZENJV1YzUnhpMkxfU2VucUVEcENCRkF4dk1xN3FzUnBnV093anRFTG1VY0RnbUhTc0JfZUltZklHbkFaTmtQRkJRekxNTDB4TEVlTjB3enBiaWxxQWpYaDkzY01MeTh1OTNDZzZIeFVpUVFnU1hhd01WSDFZdXVTa2RMMHVnTWF5MjdZRGR1VEpNbEJOM3diLXdTQklvQmNPYkc1Zw",
+      "source_name": "Construction World",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T11:17:19+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "AL Circle",
   "cluster_key": "WAAREEENER|OTHER|aluminium-faces-india-investment-pipeline-trillion",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-24T18:04:13.499699+00:00",
-  "last_updated": "2026-11-24T18:04:13.499766+00:00",
+  "last_updated": "2026-11-25T17:47:22.485054+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T18:04:13.499756+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:22.485035+00:00",
+      "change": "sources added",
+      "detail": "Construction World, Urban Acres"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:22.485051+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

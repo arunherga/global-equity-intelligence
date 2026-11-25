@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "SECTOR",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 3,
+      "impact_band": "LOW",
       "direction": "NEUTRAL",
-      "confidence": 0.49,
+      "confidence": 0.55,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -30,25 +30,18 @@
           "relationship": "SECTOR",
           "weight": 0.9,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "China",
-          "relationship": "WEAK",
-          "weight": 0.4,
-          "detail": ""
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
-        "+2 International market development",
-        "-1 Single source, unconfirmed"
+        "+2 International market development"
       ],
       "direction_reasons": [
         "No company-specific directional signal"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
+        "two independent sources",
         "sector relationship",
         "financial implication is quantified"
       ],
@@ -79,16 +72,36 @@
       "published": "2026-11-19T16:39:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "UtmoLight, UNSW achieve 19.6% efficiency for 2.81 m² perovskite solar module",
+      "url": "https://www.pv-magazine.com/2026/11/25/utmolight-unsw-achieve-19-6-efficiency-for-2-81-m%c2%b2-perovskite-solar-module",
+      "source_name": "PV Magazine",
+      "source_domain": "pv-magazine.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-25T13:29:00+00:00",
+      "is_official": false,
+      "quality": 6
+    },
+    {
+      "title": "UtmoLight, UNSW achieve 19.6% efficiency for 2.81 m² perovskite solar module",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZzBKQm96MjN0Mms4Vkx2U3d4MDM2cE5wU2VJd1psNlRpdVdfbnA5UE93RnlRRDJvTEVqWXZrR2hhUUlRSFVneFhpaGkwcWRHQUFJMmlmQjNqaGxhc2dzVS1qQjJyYkdWZ21NR2l3cmgyQk9tSDJMdFJjUWJHZHN6VzVqWVBNaTNSbnlxck9Lb2NSUWxDX1BDZ0g4eEpfZG1GdnhBQUNKZ0Z2OF8yODR3VU9mMFZXTDZhNmNv",
+      "source_name": "pv magazine Global",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T15:01:02+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 4,
   "source_count": 2,
   "primary_source": "PV Magazine",
   "cluster_key": "WAAREEENER|OTHER|achieve-efficiency-microquanta-university-world-record-zhejiang",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-19T16:01:07.848098+00:00",
-  "last_updated": "2026-11-19T21:40:55.123382+00:00",
+  "last_updated": "2026-11-25T17:46:18.695555+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:01:07.848168+00:00",
@@ -99,6 +112,16 @@
       "timestamp": "2026-11-19T21:40:55.123366+00:00",
       "change": "sources added",
       "detail": "pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:18.695533+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine, pv magazine Global"
+    },
+    {
+      "timestamp": "2026-11-25T17:46:18.695552+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 3"
     }
   ],
   "price_reaction": {}

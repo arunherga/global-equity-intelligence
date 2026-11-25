@@ -10,12 +10,13 @@
     "JKIPL": {
       "ticker": "JKIPL",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
-        "INPUT_COST"
+        "INPUT_COST",
+        "EXPORTS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -25,10 +26,19 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "Africa",
+          "relationship": "WEAK",
+          "weight": 0.8,
+          "detail": "export market"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
+        "+2 Names a key geography for this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -42,13 +52,13 @@
       "watch_next": [
         "diesel prices over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to diesel prices. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to diesel prices, and Africa. The parts of the business most likely touched are input cost, exports. Classified as other.",
       "ai_analysis": null
     },
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -67,6 +77,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -86,7 +97,7 @@
     "ASHOKA": {
       "ticker": "ASHOKA",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
@@ -105,6 +116,7 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -132,21 +144,61 @@
       "published": "2026-11-24T14:27:37+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Diesel Prices Ease Across Five African Countries in November 2026",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBVaFFobHdObmZjMUFOdDFEOWxJemV0QlFMRlgtUjlZOFhVeUJUbHBOQm9mT216UkpPUWRDbE5uams5SHVHMkJnNDEtX2VDU3BPbDVvMkZMNl8yUWFZemdKZ2p1SkdRbURX",
+      "source_name": "cwibc.co.id",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T16:39:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Top 10 African countries with the lowest diesel prices in November 2026",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcUtqQnd1VUM4MzJEdGZLdGZSZnM1OHc0QlJQdmVuX0hpOHplbkhSb3lDZ1huY0lST3d6d0RzM3FGSFNiM21jeEdFTXhzSFBKdlU1ZHUyd0xiWDYxYzZsV21UUC1feDA0YXZBSzhGRkl5WHBJdFkta1RtTVFRa0NydlJWeFpuS21PLTIwcGJuRnNZYmRsNmlwbGFhTzNZMDJacndmMk1hdTB6bHNGYmc1ZTFRX0dwaUk0dzB1Sy1KQ29lU3VqZVI4",
+      "source_name": "Business Insider Africa",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T14:30:25+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "NDTV",
   "cluster_key": "ASHOKA+COALINDIA+JKIPL|OTHER|check-diesel-price-shillong-shillong-today",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-24T18:04:51.096610+00:00",
-  "last_updated": "2026-11-24T18:04:51.096660+00:00",
+  "last_updated": "2026-11-25T17:47:42.183391+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T18:04:51.096653+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:42.183363+00:00",
+      "change": "sources added",
+      "detail": "Business Insider Africa, cwibc.co.id"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:42.183380+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 4"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:42.183384+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:42.183387+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 2"
     }
   ],
   "price_reaction": {}

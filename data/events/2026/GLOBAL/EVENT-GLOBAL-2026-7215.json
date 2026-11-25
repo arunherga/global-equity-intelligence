@@ -11,10 +11,10 @@
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 7,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST",
@@ -24,7 +24,7 @@
       "exposures": [
         {
           "exposure_type": "COMMODITY",
-          "term": "steel prices",
+          "term": "aluminium scrap",
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
@@ -39,16 +39,18 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Movement in a relevant commodity",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+2 International market development",
+        "+2 Major industry-level development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is handled rather than bought or sold; volume matters more than price"
+        "aluminium scrap is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -56,7 +58,7 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium scrap, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
     },
     "JKIPL": {
@@ -160,6 +162,60 @@
       ],
       "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to steel prices, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
       "ai_analysis": null
+    },
+    "WAAREEENER": {
+      "ticker": "WAAREEENER",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.46,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST",
+        "DEMAND"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "aluminium",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (aluminium) is the subject of the headline",
+        "+2 International market development",
+        "+2 Major industry-level development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "aluminium is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to aluminium, and India. The parts of the business most likely touched are pricing, input cost, demand. Classified as commodity.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -182,16 +238,26 @@
       "published": "2026-11-23T07:15:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "India: Imported aluminium scrap prices fall sharply on LME correction, weak demand",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTFMzdE10b2lUOG5MYnJaVU9JWFFsMV92OHcxaXJhWFBFSW1PZW9kYlhiVzdUd2VvS01qNkgzUEUyQnQxUk5WT1dqZHE2eTFmV2txV3NUYUVSdEJmNXhlV2sybFR2XzlnSFZ6MERRc0VmbDMwdVBVT0ZOUDJyR1JwRkk0S1lfazVJZDRPaGRvTlpKMFhIelVMUTlNQ2k3aEtJZkRXWFhVOE9RUUI3Sy1vUjZ6NTI5ZF9W",
+      "source_name": "AL Circle",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T10:45:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "SteelRadar",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|INDUSTRY_DEMAND|demand-fall-india-price-steel-weak",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-19T16:07:19.173150+00:00",
-  "last_updated": "2026-11-24T02:05:55.226477+00:00",
+  "last_updated": "2026-11-25T17:47:19.197683+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:07:19.173216+00:00",
@@ -222,6 +288,21 @@
       "timestamp": "2026-11-24T02:05:55.226473+00:00",
       "change": "impact raised",
       "detail": "ASHOKA 1 -> 3"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:19.197658+00:00",
+      "change": "sources added",
+      "detail": "AL Circle"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:19.197673+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 2 -> 7"
+    },
+    {
+      "timestamp": "2026-11-25T17:47:19.197680+00:00",
+      "change": "stock added",
+      "detail": "WAAREEENER (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}
