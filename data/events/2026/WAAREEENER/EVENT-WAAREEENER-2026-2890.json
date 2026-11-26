@@ -4,22 +4,31 @@
   "summary": "Havells India showcased its battery energy storage systems (BESS) at the REI Expo 2026, highlighting its energy storage solutions as part of its broader renewable energy portfolio, which also includes hybrid inverters, EV chargers, solar inverters and modules.",
   "event_date": "2026-11-17",
   "event_types": [
-    "NEW_PRODUCT"
+    "NEW_PRODUCT",
+    "TENDER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "SECTOR",
-      "impact_score": 0,
-      "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.44,
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
       "business_impacts": [
         "PRODUCT",
-        "REVENUE"
+        "REVENUE",
+        "CUSTOMERS"
       ],
       "time_horizon": "UNKNOWN",
       "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
         {
           "exposure_type": "PRODUCT",
           "term": "battery energy storage",
@@ -31,14 +40,7 @@
           "exposure_type": "TECHNOLOGY",
           "term": "battery energy storage system",
           "relationship": "SECTOR",
-          "weight": 1.5,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "inverters",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "weight": 1.0,
           "detail": ""
         },
         {
@@ -50,22 +52,129 @@
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development"
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 6/10",
-        "two independent sources",
-        "sector relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NTPC"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. The parts of the business most likely touched are product, revenue. Classified as new product.",
+      "why_it_matters": "This reaches the company indirectly via its customer, product exposure to NTPC, and battery energy storage. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
+      "ai_analysis": null
+    },
+    "MSTCLTD": {
+      "ticker": "MSTCLTD",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
+      "ai_analysis": null
+    },
+    "COALINDIA": {
+      "ticker": "COALINDIA",
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "PRODUCT",
+        "REVENUE",
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NTPC",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+3 Government policy or tender development",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "bid outcome",
+        "order value",
+        "competing bidders",
+        "order flow from NTPC"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, geography exposure to NTPC, and India. The parts of the business most likely touched are product, revenue, customers. Classified as new product.",
       "ai_analysis": null
     }
   },
@@ -89,21 +198,56 @@
       "published": "2026-11-17T07:50:01+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NVVN launches 750 MWh battery energy storage tender",
+      "url": "https://www.pv-magazine-india.com/2026/11/26/nvvn-launches-750-mwh-battery-energy-storage-tender",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-26T08:39:48+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 2,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|NEW_PRODUCT|battery-energy-havells-launch-storage-systems",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:19:10.792455+00:00",
-  "last_updated": "2026-11-17T16:19:10.792537+00:00",
+  "last_updated": "2026-11-26T22:44:14.885754+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:19:10.792527+00:00",
       "change": "created",
       "detail": "2 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:14.885720+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:14.885736+00:00",
+      "change": "categories added",
+      "detail": "TENDER"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:14.885742+00:00",
+      "change": "stock added",
+      "detail": "MSTCLTD (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:14.885746+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 4"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:14.885751+00:00",
+      "change": "stock added",
+      "detail": "COALINDIA (INDIRECT)"
     }
   ],
   "price_reaction": {}

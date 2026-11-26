@@ -9,11 +9,11 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "SECTOR",
+      "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEUTRAL",
-      "confidence": 0.28,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
         "PRICING",
         "INPUT_COST"
@@ -21,32 +21,25 @@
       "time_horizon": "SHORT_TERM",
       "exposures": [
         {
-          "exposure_type": "INDUSTRY",
-          "term": "deposit rates",
-          "relationship": "SECTOR",
-          "weight": 2.0,
-          "detail": "in headline"
-        },
-        {
-          "exposure_type": "PRODUCT",
-          "term": "deposits",
-          "relationship": "SECTOR",
-          "weight": 0.9,
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
           "detail": "in headline"
         }
       ],
       "score_reasons": [
-        "+1 Industry-level relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No company-specific directional signal"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "sector relationship",
-        "no quantified financial implication"
+        "indirect relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "whether the price move persists",
@@ -54,7 +47,50 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to deposit rates, and deposits. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -68,21 +104,46 @@
       "published": "2026-11-17T15:06:33+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Overnight rates cross RBI’s MSF rate as liquidity tightens; VRR demand surges",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbFZPTy1HWUJfNy1ia1FTR3Q4Y1RCbUd2eXg0ZVBJQWNpaERvbUNhaEcyYWRTcktVMkJsdjhvajRJa0FQVDRlWVcySFJUYUg1aGxJZ3Voc3FxcS1QX0lIV2lKN3JIdjdmWVFlSkwtcUtHTWJrUzVYWDM0dms3WGZRaEZOeFAtdUVDNVpJTHk3b0dEX2RJUERvNFg5a054LVgyRE9HUVBLSFdYakg4aExqVHhZb3EzSHpwTjRhMTlXS3J3a0UwQTJNdFNuN1ZmS3M4NGJNSUFB0gHbAUFVX3lxTE53XzlvTF95Y1RNMWRTWDJ2UFpmWUtXRFZhY1lpY2tKMmc0dElaYU9rN0lSRnlpU241NVRQMVNsc2k1NEpiZE5OSjhmaWlRbXl5NFBwZkJtRFBTVy1Ba1paYWI4RE1OZi1RVEpPcjFNcWloUV9xMXEyU0stcUVYSG9Jd0wySEY1MnRMZ2FnMTdENVE4WkhWS3JFM0w2Rm93Y3lZUW1BMVFYQ2FnNUY5MDgxNU1jV1NDYVZSTE11MElGMkQzX0tDenV0T3B3bktpbFlCTjZ2YUktMUZmbw",
+      "source_name": "Moneycontrol.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T08:57:55+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Financial Express",
   "cluster_key": "TMB|COMMODITY|bulk-deposit-liquidity-rate-rise-tightens",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T21:54:54.491215+00:00",
-  "last_updated": "2026-11-17T21:54:54.491265+00:00",
+  "last_updated": "2026-11-26T22:45:10.406511+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T21:54:54.491258+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:10.406483+00:00",
+      "change": "sources added",
+      "detail": "Moneycontrol.com"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:10.406501+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEUTRAL -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:10.406507+00:00",
+      "change": "stock added",
+      "detail": "HDFCBANK (INDIRECT)"
     }
   ],
   "price_reaction": {}

@@ -5,19 +5,22 @@
   "event_date": "2026-11-18",
   "event_types": [
     "INTEREST_RATE",
-    "MACRO"
+    "MACRO",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -31,7 +34,7 @@
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -40,7 +43,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -48,19 +51,21 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "MACRO",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.26,
+      "confidence": 0.36,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -74,7 +79,7 @@
       ],
       "score_reasons": [
         "+1 Economy-wide relevance",
-        "-3 Passing mention without a quantified development",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -83,7 +88,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "macro relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "deposit repricing lag",
@@ -91,7 +96,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This is an economy-wide development the company shares with others via its macro exposure to interest rates. The parts of the business most likely touched are margin, demand, pricing. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -105,21 +110,61 @@
       "published": "2026-11-18T19:09:34+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "US Inflation Hits 3.8%: Will the Fed Raise Interest Rates Again in December?",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckJoTzRUZlhpcnZBcjBQUDdDWGEzMmdPOGJVVjZLOFFmaDZOY0pJN1I1MGo3VEgyb1l2eE9RRzFhOFM0ekNfV3VqdE01UHBxX0pQMGtqT1JJTWZLbEE5czVWYXpOSm93bGxCWVRuNU1QSmh4d0NBdUVGWTVuNFcxc0FMY0NCZHJXa1lBRGp4Ym42U3FJckFBQjFGZzlPMEwwYnphal9sa1UwQ05lNTlMRA",
+      "source_name": "CryptoRank",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T21:11:03+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "US PCE Inflation Rises to 3.8% in October; Will the Fed Hike Interest Rates in December?",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcTJQeWhhXzNOWVUwSjE4Q1VRR05lcGVyd3NRcW1idWdIWlU0SXh3ajJaNTJ1dndSdW5pZ3ZMLWVjWDB0U01TNnZWQVhnV1VCUzlGaTFyXzVoUThBLWJkVC1zQW1Gb0FTM1JWSTFYcHNfNGRfd2NZWGRMcDBrUDUzdEJOUTN1Ym4yb3lIYkZKaU80SzBGOE5OVHZfdExVcS1KNnN4UlhLYjBuRDVXUWhPV1hmZnFpQjUtR1JrRm5QdndCUTZNcm1jTnhxejh3dnNrQWp0d0VPekNCMU0wTVpTVGR5YUc",
+      "source_name": "Kotak Neo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T03:26:15+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "hngnews.com",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|fed-interest-minutes-needed-rate-rise",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-19T16:02:03.254565+00:00",
-  "last_updated": "2026-11-19T16:02:03.254631+00:00",
+  "last_updated": "2026-11-26T22:44:29.671769+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:02:03.254622+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:29.671740+00:00",
+      "change": "sources added",
+      "detail": "CryptoRank, Kotak Neo"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:29.671755+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:29.671761+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:29.671765+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

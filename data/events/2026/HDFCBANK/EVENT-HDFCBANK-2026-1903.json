@@ -4,18 +4,21 @@
   "summary": "Credit card spending rises 14.4% year-on-year to ₹2.45 lakh crore in October The Economic Times",
   "event_date": "2026-11-23",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "INDUSTRY_DEMAND"
   ],
   "stocks": {
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "SECTOR",
-      "impact_score": 0,
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "NEUTRAL",
       "confidence": 0.39,
-      "business_impacts": [],
-      "time_horizon": "UNKNOWN",
+      "business_impacts": [
+        "DEMAND"
+      ],
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "INDUSTRY",
@@ -30,10 +33,18 @@
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+1 Industry-level relevance",
+        "+2 Major industry-level development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -47,7 +58,7 @@
       "watch_next": [
         "confirmation from an official or company source"
       ],
-      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit card spending, and credit cards. Classified as other.",
+      "why_it_matters": "This is industry-level news rather than company news via its industry, product exposure to credit card spending, and credit cards. The parts of the business most likely touched are demand. Classified as industry demand.",
       "ai_analysis": null
     }
   },
@@ -61,21 +72,46 @@
       "published": "2026-11-23T19:42:06+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Credit card spending rises 20% to ₹2.45 lakh crore in October as festive shopping boosts consumer demand across India",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNMHNSc19RVUxtLWZWZXczUWduMXgwa1BBT1ZPcEs2a0Rpb2VvYkFSbWNwNFVJRE14SS1KazVOc2tOQUVwY0NlM3pua0p5MHFKeFRfY010UEo5WDg2Z0ZNN0VMc0FsSDA0bTV0WmdsNWk5WV9YTmd5NUtGdERNYlh6QXEzTmhhSHRIUzBFTG12LVhxaGtIaWZWdnZrZTVwdW1xLVFVM005OXFrR1A3NDF4RWlUTHNmc0x2b1JrWEZLYWRCZFh3OENXb1lsM2lXN25GVVFyQnBQMTRsazdFa0l5Q3pKRGJlTmlDeXB4b24zWTVjNG8yUW4taFZOc24tUEpjVWRzNHpabE5vQnVWTjc3d9IBlgJBVV95cUxPSG5KM1VMTUtfelNLdVRyekoxc3Bka05QdGlCLXprOTFiTV9xQ1FpX0xpdDFKQmJkV2QyVmxySGVscFBpTFU0bVJSMkxZbEhfMGwwQXNxN2RBZXJOZGJ1a1RQMGdKc3otMW9HVVVZQUhTbE1UNjZWcHI0RktvNWpaaEd0QlF2dk9CckRWSndYSXJkN19lSUl4M0RKYmtLU0lYMm9iV2FOaWRrRTRXSTVjMlg0ekExeS1GOFZEdEpCQURoSzZpdjB3eHhldUk1LUhGUnVDLTBsVGtSRk81c25yZ0ZsYUJtOUgyQVdnUjF1X3YzY041LWREQkpYakVfVy10QmJHM2x4UTVMaVA1akhkV1h5cFVwQQ",
+      "source_name": "Livemint",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T02:11:51+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "The Economic Times",
   "cluster_key": "HDFCBANK|OTHER|14.4%-card-credit-rise-spending-year-on-year",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:58:13.053494+00:00",
-  "last_updated": "2026-11-24T01:58:13.053567+00:00",
+  "last_updated": "2026-11-26T22:44:24.720771+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:58:13.053560+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:24.720746+00:00",
+      "change": "sources added",
+      "detail": "Livemint"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:24.720762+00:00",
+      "change": "categories added",
+      "detail": "INDUSTRY_DEMAND"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:24.720768+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

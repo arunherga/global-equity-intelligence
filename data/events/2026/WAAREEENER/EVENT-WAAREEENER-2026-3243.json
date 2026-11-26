@@ -4,30 +4,22 @@
   "summary": "Waaree Forever Energies, a wholly owned subsidiary of Waaree Energies, will develop a 700 MW solar power project coupled with a 700 MW/2,800 MWh energy storage system (ESS) in Solapur, Maharashtra, to supply assured peak power under a 25-year PPA.",
   "event_date": "2026-11-23",
   "event_types": [
-    "ORDER_WIN"
+    "ORDER_WIN",
+    "OTHER"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 11,
-      "impact_band": "VERY_HIGH",
-      "direction": "POSITIVE",
-      "confidence": 0.68,
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "UNCERTAIN",
+      "confidence": 0.51,
       "business_impacts": [
-        "REVENUE",
-        "CAPACITY",
         "CUSTOMERS"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
-        {
-          "exposure_type": "SUBSIDIARY",
-          "term": "Waaree Forever Energies",
-          "relationship": "DIRECT",
-          "weight": 3.0,
-          "detail": "subsidiary"
-        },
         {
           "exposure_type": "CUSTOMER",
           "term": "SECI",
@@ -38,45 +30,22 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+4 Major order or contract",
-        "+2 Company appears in the headline"
+        "+2 Company appears in the headline",
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ORDER_WIN is favourable for the company"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 6/10",
-        "two independent sources",
+        "best source quality 3/10",
         "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "order execution schedule",
-        "customer identity and concentration",
-        "realised margin on the order",
-        "whether extra capacity is needed"
+        "order flow from SECI"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity, customers. Classified as order win.",
-      "ai_analysis": {
-        "provider": "gemini",
-        "model": "gemini-3.5-flash",
-        "revenue_effect": "Provides long-term, annuity-style tariff revenue over the PPA duration (typically 25 years) once operational, while also creating guaranteed internal module volume demand for Waaree's solar manufacturing operations during the construction phase.",
-        "margin_effect": "Blended margins will depend on fixed PPA tariff realizations versus EPC execution costs and battery energy storage system (BESS) component pricing; while self-supplying solar modules protects module margins, BESS price fluctuations present margin variance risk.",
-        "cost_effect": "Triggers substantial capital expenditure (CapEx) for 700 MW of solar capacity and 2,800 MWh of storage equipment, alongside increased debt financing expenses and land acquisition costs in Maharashtra.",
-        "competitive_effect": "Enhances Waaree's market positioning by demonstrating utility-scale capabilities in complex, dispatchable solar-plus-storage projects beyond traditional solar module manufacturing and standard EPC.",
-        "regulatory_effect": "Requires compliance with SECI project development milestones, Central/State Electricity Regulatory Commission tariff adoption processes, and transmission connectivity grid codes.",
-        "short_term": "Focus on project engineering, securing financial closure, finalizing land allocation in Maharashtra, and entering supply agreements for battery storage hardware.",
-        "medium_long_term": "Drives execution and CapEx outflow during the 18-24 month construction phase, followed by steady operational cash inflows and long-term captive demand for solar modules.",
-        "second_order_effects": "Establishes an execution track record in large-scale energy storage, potentially enhancing eligibility and competitiveness for future firm and dispatchable renewable energy (FDRE) tenders.",
-        "key_uncertainty": "The total project CapEx and specific battery storage equipment procurement costs, which dictate the net project returns relative to the fixed PPA tariff.",
-        "monitor_next": [
-          "Financial closure announcements, including debt-equity financing mix and interest rate terms",
-          "BESS supply chain partnerships and battery procurement cost details",
-          "Land acquisition progress and transmission grid connectivity approvals in Maharashtra",
-          "Execution timeline updates and scheduled Commercial Operation Date (COD) milestones",
-          "Impact on corporate balance sheet leverage and total debt metrics"
-        ]
-      }
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -129,16 +98,26 @@
       "published": "2026-11-23T02:32:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Energies signs PPA with SECI for 700 MW solar plus storage project",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdTNaNzdBajZDa1Q5Mkl6QkFKN1YxSllqbXBDckhkZVRuZTR1cU9sMUE4MkxtNnZvSmFodjBTdHpYY0pheVNuVHpqQ2xxMmpJaEJLR1pjMXQ0MmFSYzJTbHdlcEUtN2l3WDNFQ2thbl9vZnFpYTZQOWJDT2dXWFNTdld3YklIZ2txanQ2TGxOdVZTY2pHbEdVSXpUeFMzMXlVaGpBeTE4UFhpU2stYV9hMF93",
+      "source_name": "Powerline Magazine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T05:16:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 2,
   "primary_source": "PV Magazine India",
   "cluster_key": "WAAREEENER|ORDER_WIN|700-energies-ppa-seci-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:50:25.342847+00:00",
-  "last_updated": "2026-11-24T01:59:40.061937+00:00",
+  "last_updated": "2026-11-26T22:44:43.051741+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:50:25.342933+00:00",
@@ -149,6 +128,21 @@
       "timestamp": "2026-11-24T01:59:40.061923+00:00",
       "change": "ai analysis",
       "detail": "WAAREEENER via gemini"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:43.051714+00:00",
+      "change": "sources added",
+      "detail": "Powerline Magazine"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:43.051730+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:43.051736+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER POSITIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

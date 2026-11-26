@@ -4,20 +4,26 @@
   "summary": "What Is Driving Silicon Wafer Demand Recovery? Semiconductor Engineering",
   "event_date": "2026-11-19",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "EARNINGS",
+    "TECHNOLOGY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRODUCT",
+        "COMPETITION",
         "INPUT_COST"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -29,20 +35,26 @@
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Earnings or guidance at a related company",
+        "+2 Major industry-level development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silicon wafer is an input cost and is moving up"
+        "silicon wafer is an input cost and is moving up",
+        "TECHNOLOGY cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "silicon wafer over the next few weeks"
+        "margin trend versus the previous quarter",
+        "management commentary on demand",
+        "order book or loan book disclosure",
+        "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silicon wafer. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silicon wafer. The parts of the business most likely touched are revenue, margin, product. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -56,21 +68,46 @@
       "published": "2026-11-19T11:03:57+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "【Formosa Sumco Technology FY2026 Q3 Earnings Call】AI Demand Ignites Silicon Wafer Recovery; Taiwan's Formosa Sumco Q3 Revenue Hits NT$3.984 Billion, Up 29% Year-on-Year, with 2027 Capacity Fully Sold Out and Prices Rising Across the Board",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1XeDllQ1hyZGMxcFNNaG9sZzREWGE0SEhWWk5fZ2RZV21vaDlvbnlCb3llT1pJc1AxTUl0WkFpTHBwNG10eHA2SkF2Y0hITnc5aDVOb1Ffa3dTYVpFQm9pS3p3",
+      "source_name": "finance.biggo.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T10:24:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Semiconductor Engineering",
   "cluster_key": "WAAREEENER|OTHER|demand-driving-recovery-silicon-wafer",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-19T16:06:09.186469+00:00",
-  "last_updated": "2026-11-19T16:06:09.186543+00:00",
+  "last_updated": "2026-11-26T22:45:20.977730+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:06:09.186529+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:20.977705+00:00",
+      "change": "sources added",
+      "detail": "finance.biggo.com"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:20.977721+00:00",
+      "change": "categories added",
+      "detail": "EARNINGS, TECHNOLOGY"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:20.977726+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 0 -> 4"
     }
   ],
   "price_reaction": {}

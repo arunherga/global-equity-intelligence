@@ -10,10 +10,10 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.61,
       "business_impacts": [
         "COMPETITION"
       ],
@@ -28,16 +28,16 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
-        "-2 Single unverified source"
+        "+2 Indirect but real exposure"
       ],
       "direction_reasons": [
         "a competitor (HDFC Bank) is doing well"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "HDFC Bank's follow-up announcements"
@@ -48,25 +48,25 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "DIRECT",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "confidence": 0.71,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -115,16 +115,56 @@
       "published": "2026-11-20T19:52:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "HDFC Bank shares rise 2.5% as board approves key Director re-appointment",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/hdfc-bank-shares-rise-25-as-board-approves-key-director-re-appointment/article71745377.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-26T05:54:42+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "HDFC Bank shares rise 2.5% as board approves key Director re-appointment",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPdGRiNU5uYWI5bWFfNTBja3BvT1I2WGhxeng5MW8xVGRCclgwMzRIenVpZ1N1cFFiYXd5R19jNGNFcFRsMnAtTDRZclVzWDFWUjlWRnNsTWk1NEttZ04wV2c3U1lCM1lwYklfa3RLMzRJMkZaZVk4M1FnTU43Rk41SENUQ1lhaWJlMHp5WG5CLXctYnY3NzJISHBGLVlwT1hMSGpzLU54YzF1UUdWWldZMGxFaVFwTnM2MTZ0QkZYNHFFbmx1WkFzbDAzSW9WN1EzSGZ3X2FsRGxSdHVGSU45dWdONNIB6gFBVV95cUxPRjkxSkJtdHdGOWRQcWI0V2dlRzFyT2llSkl4Z1lpdndHNkhwUWVqS0FZVTRiU3hWZTVkYVNERGNSU2d6YTBWOHNjXzZKRjdUUTBFeDZseW0yMFlkOF9ybWlRclNCTl9WTUVlT0ZrRU5CejBLMVhlTG5iVENPaHZNeUZ0ZHpGajdjSGNnNThWT0s3cnpqMjI2RVBrM2VndFNkZzZLQVhrd0FGczRBMmJJQlhuRUFIcnFDSXcyN2VtQ2FLZ3Q3ZFVWZS1kSHozRWhXRWlmVGFaOUU5UmtOcjdmZFdHOVZlVTRSaHc",
+      "source_name": "BusinessLine",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T05:52:18+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank stock: HDFC Bank board approves Bhanwala reappointment - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV3RJX0xpTHZTUWRGQ1ZBMXhnZm1IWEt0UDlueElScEpMZ2JIa050WVQ2Mi1ZR0R2XzlBTkhGWGRydzVHSHRwYXozTXg0M2lnTEZEaW44S0liMkpQWWxDcjl3MGxnWGpRR2FRSElQZENzTlBRUlA1TU41OThYZWxPV1FCeVQxcFdHTWtLeFVZdmlqNTh2N1AwQ0ptR0dVVnlOdVZzR3NrWmlhejZKUHNXSlU3aDhpemNwcGRHYUMydkh1aEY5",
+      "source_name": "ad-hoc-news.de",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T14:24:48+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "HDFC Bank's Board Approves Dr Harsh Bhanwala’s Re-appointment as Independent Director",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNazBXT0RhS0pmZjl3dnp5akVvM0RmV3RLYkpPV3RsaFlVemRydnZoeWlSSS1wd1p4QlNnMXMzR2s3ZXFlWGdjdjN1QW1FNlNSMkZBVVZjbW02Z0g4TldyV1VOQVUxNDdHb3d0NVE3a1A4YkF4OE5tbGZYdkUyUjFQUTczYy1SenduSUJNMkpmUlN0ZEU5aHd3cEtGWmVoc2pISjZvZHM5Z3ZVZWxKaWQyY1hGQVNuMVhJVEHSAb8BQVVfeXFMT2ZXcDF4RklTdWM2V2lhdkZnRzVfT1lmVV9CeGQwMk1ZTm9yVXZqc1pUSFpLSUlPSmljWFhOQ0M0cHhWQkd0Y0VtZEJCTXlMTWN6bE9YQkljaFluY3hDNWJyczFRd0RqeDd6a3hJenJVdVRmc3ZIaDl3VWJUalR5eUJkQ3dXclBwU3dNUVo1SXNjNkxMLWVmQ3FyUEE2ejNLRkF6Nm84X1BKaHVGYnNGXzVpTlpQYlFBRFRSMzF5VW8",
+      "source_name": "RuralVoice",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T12:38:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 8,
+  "source_count": 2,
   "primary_source": "PSU Connect",
   "cluster_key": "HDFCBANK+TMB|OTHER|approve-bank-board-hdfc-rangan-re-appointment",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-14T13:52:37.970188+00:00",
-  "last_updated": "2026-11-20T21:15:17.497709+00:00",
+  "last_updated": "2026-11-26T22:44:02.605712+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-14T13:52:37.970250+00:00",
@@ -140,6 +180,21 @@
       "timestamp": "2026-11-20T21:15:17.497682+00:00",
       "change": "sources added",
       "detail": "scanx.trade"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:02.605684+00:00",
+      "change": "sources added",
+      "detail": "BusinessLine, RuralVoice, The Hindu BusinessLine Markets, ad-hoc-news.de"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:02.605703+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:02.605708+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 5 -> 7"
     }
   ],
   "price_reaction": {}

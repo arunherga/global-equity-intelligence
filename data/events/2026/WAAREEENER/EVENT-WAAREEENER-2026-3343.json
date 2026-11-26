@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "INPUT_COST"
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
@@ -33,7 +40,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "aluminium is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -43,7 +50,7 @@
       "watch_next": [
         "aluminium over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to aluminium. The parts of the business most likely touched are input cost. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to aluminium, and India. The parts of the business most likely touched are input cost. Classified as other.",
       "ai_analysis": null
     }
   },
@@ -77,16 +84,26 @@
       "published": "2026-11-25T11:17:19+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Budget 2027-28: Aluminium Body Seeks Higher Import Duties, Downstream Parks to Support Rs 4 Tn Investment Pipeline",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeU02QkFtbHk3cFJRQ0hlNFhpZ2ZSTUdyamV1anpyWUlGS2NRak1weHBJd1ZPOXQ0MGQ2RnFwcXNpTEV3dGR2dUR5Z3hKQXpjaXdnMkx1WHRXdmg5YV9FV0czR1dNODg4YldPMy1QcnRwWjdoczg4VkNNZHczdHRyZmdaU1RzUDZTV2ROMm9fbG9xLXFyU1FSWUt6bkpieGFNMExTOWpPbEpCLTlpcV82dnBtWTJkVUJPWC12Y25KWUNqeTQ1aExyVW5tckNsS0V3dldhS0xjbkNMc0dhV1Y3cF96VG5LNFJPbFNESkRROHBNZw",
+      "source_name": "KNN India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T12:00:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "AL Circle",
   "cluster_key": "WAAREEENER|OTHER|aluminium-faces-india-investment-pipeline-trillion",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-24T18:04:13.499699+00:00",
-  "last_updated": "2026-11-25T17:47:22.485054+00:00",
+  "last_updated": "2026-11-26T22:45:28.584379+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T18:04:13.499756+00:00",
@@ -102,6 +119,16 @@
       "timestamp": "2026-11-25T17:47:22.485051+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:28.584358+00:00",
+      "change": "sources added",
+      "detail": "KNN India"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:28.584374+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

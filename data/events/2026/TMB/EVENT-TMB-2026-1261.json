@@ -6,7 +6,8 @@
   "event_types": [
     "CURRENCY",
     "MACRO",
-    "COMMODITY"
+    "COMMODITY",
+    "TARIFF"
   ],
   "stocks": {
     "TMB": {
@@ -48,6 +49,118 @@
         "order flow from traders"
       ],
       "why_it_matters": "This is industry-level news rather than company news via its customer exposure to traders. The parts of the business most likely touched are revenue, margin, customers. Classified as currency.",
+      "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.54,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Unclear. Revenue could see nominal growth if the company passes on higher input costs through product price hikes, though volume growth may suffer if consumer demand in personal care is price-sensitive. If the company has export sales, INR depreciation would positively boost domestic currency realization.",
+        "margin_effect": "Gross and operating margins are likely to face compression due to higher landed costs for imported raw materials and elevated price levels for crude oil derivative inputs used in personal care formulations and packaging.",
+        "cost_effect": "Cost of Goods Sold (COGS) will likely increase. Crude oil is a key feedstock for petrochemical derivatives (such as surfactants, mineral oils, and plastic packaging), and INR depreciation raises the cost of USD-denominated raw material imports.",
+        "competitive_effect": "Larger personal care competitors with stronger pricing power, domestic sourcing networks, or robust currency/commodity hedging may manage cost pressures better than smaller peers. Conversely, any export-oriented segments could gain a relative price advantage in overseas markets.",
+        "regulatory_effect": "No immediate direct regulatory changes, though potential government intervention in trade tariffs or import duties on chemical feedstocks could emerge if currency weakness and commodity inflation persist.",
+        "short_term": "Over 0-3 months, profit margins may contract as existing low-cost inventory is consumed and replaced by higher-cost raw materials, while pricing adjustments at retail usually lag.",
+        "medium_long_term": "Over 3 months to several years, the company may need to reformulate products to reduce reliance on crude derivatives, optimize domestic sourcing, and permanently adjust product price tiers to restore margins.",
+        "second_order_effects": "Broad-based price increases across the personal care industry could lead consumers to trade down to lower-priced value brands or reduce discretionary usage, dampening overall category volume growth.",
+        "key_uncertainty": "The specific breakdown of Ravelcare's export revenue share, raw material import exposure, and its ability to pass on cost increases without losing market share.",
+        "monitor_next": [
+          "USD/INR exchange rate trends and crude oil price movements over upcoming weeks",
+          "Ravelcare's quarterly gross margin and COGS sensitivity disclosures",
+          "Management announcements regarding price hikes or product resizing (shrinkflation)",
+          "Changes in trade tariffs or customs duties on personal care input chemicals"
+        ]
+      }
+    },
+    "SUPRIYA": {
+      "ticker": "SUPRIYA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 9,
+      "impact_band": "HIGH",
+      "direction": "POSITIVE",
+      "confidence": 0.54,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN",
+        "PRICING",
+        "INPUT_COST",
+        "EXPORTS"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "crude oil",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "input commodity"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "+4 Material international trade or tariff policy",
+        "+2 Movement in a relevant commodity"
+      ],
+      "direction_reasons": [
+        "crude oil is an input cost and is moving down"
+      ],
+      "confidence_reasons": [
+        "best source quality 7/10",
+        "two independent sources",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to crude oil. The parts of the business most likely touched are revenue, margin, pricing. Classified as currency.",
       "ai_analysis": null
     }
   },
@@ -91,16 +204,36 @@
       "published": "2026-11-17T04:34:21+00:00",
       "is_official": false,
       "quality": 7
+    },
+    {
+      "title": "Rupee falls 20 paise to 92.40 against US dollar in early trade",
+      "url": "https://www.thehindubusinessline.com/markets/forex/rupee-falls-20-paise-to-9240-against-us-dollar-in-early-trade/article71745273.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-26T05:37:16+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "USD INR Rate: Rupee Falls 20 Paise to 92.40 Against US Dollar as Crude Oil Prices Rise and Tariff Concerns Mount",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYXlFVFMzUXI0Zi1EQy1pcWhSTUxfaVFNVWpPcEtEaVJSYkdJSlZBczU5OTF5SklUVkFfbzJjRFZ3c1FKeWo3OXRyMnNMOGstNVcxcGVZbl9sMl9ZSlhWQU1sN3AyeUdFdFlxMFJpSDBiZTBqMTRxc1lNRjBqZnhEdkp6bF9XV2RnWFgzbXZDUVNRalZ6ZUNUaW11N0hKRmdFSS1MbmdyWVJjSkY4MkRybWRiaExhbE5ydFBwWWtfb181d1JicEpRaEh3",
+      "source_name": "Kotak Neo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T06:52:30+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "TMB|CURRENCY|93.70-against-paise-rise-rupee-usa",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T14:40:07.470990+00:00",
-  "last_updated": "2026-11-17T16:39:51.343327+00:00",
+  "last_updated": "2026-11-26T22:44:01.840655+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T14:40:07.471053+00:00",
@@ -131,6 +264,26 @@
       "timestamp": "2026-11-17T16:39:51.343320+00:00",
       "change": "categories added",
       "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:01.840621+00:00",
+      "change": "sources added",
+      "detail": "Kotak Neo, The Hindu BusinessLine Markets"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:01.840640+00:00",
+      "change": "categories added",
+      "detail": "TARIFF"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:01.840647+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT_STRONG)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:01.840651+00:00",
+      "change": "stock added",
+      "detail": "SUPRIYA (INDIRECT_STRONG)"
     }
   ],
   "price_reaction": {}

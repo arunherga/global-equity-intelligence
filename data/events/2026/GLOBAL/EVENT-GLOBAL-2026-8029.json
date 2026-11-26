@@ -1,0 +1,145 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-8029",
+  "title": "Gold's share in India's forex reserves falls to 14.38% in September from 16.7% in March, RBI says",
+  "summary": "Gold's share in India's foreign exchange reserves declined to 14.38 per cent at the end of September 2026 from 16.70 per cent six months earlier, as the value of the Reserve Bank of India's gold holdings fell by USD 9.3 billion during the period.",
+  "event_date": "2026-11-26",
+  "event_types": [
+    "CURRENCY"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.52,
+      "business_impacts": [
+        "REVENUE",
+        "MARGIN"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "Reserve Bank of India",
+          "relationship": "INDIRECT",
+          "weight": 1.8,
+          "detail": ""
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI, and Reserve Bank of India. The parts of the business most likely touched are revenue, margin. Classified as currency.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Gold's share in India's forex reserves falls to 14.38% in September from 16.7% in March, RBI says",
+      "url": "https://bfsi.economictimes.indiatimes.com/articles/golds-share-in-indias-forex-reserves-falls-to-14-38-in-september-from-16-7-in-march-rbi-says/136176196",
+      "source_name": "ETBFSI",
+      "source_domain": "bfsi.economictimes.indiatimes.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-26T01:57:44+00:00",
+      "is_official": false,
+      "quality": 6
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "ETBFSI",
+  "cluster_key": "HDFCBANK+TMB|CURRENCY|fall-forex-gold-india-reserves-share",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-26T22:27:24.859301+00:00",
+  "last_updated": "2026-11-26T22:27:24.859380+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-26T22:27:24.859369+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

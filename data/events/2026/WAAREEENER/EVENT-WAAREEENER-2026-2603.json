@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 2,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
+      "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
         "DEMAND",
@@ -26,13 +26,6 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
@@ -41,7 +34,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving up"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -51,7 +44,7 @@
       "watch_next": [
         "silver over the next few weeks"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are demand, input cost. Classified as macro.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are demand, input cost. Classified as macro.",
       "ai_analysis": null
     }
   },
@@ -65,21 +58,41 @@
       "published": "2026-11-10T11:56:07+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold, silver outlook: How US inflation and Fed policy expectations are shaping prices",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeGZCckRyblNOR082aGVrcFhfWWQ0M3RJQkI5Wm15X2JNc0thbmtZSVhkUkxXa29PMDVBSG5Hb2xLWVJzOThCNU1hSnBxQWxQOW9tRUozbllwcXRXUG1xcHA2LWNtMVZCeXVCaXE5dUx1akNweHVwdGVFUVUxb0dPRmdHa3dTeWhFUktxaXF6UTVYX0dWanowenBpbWJhbjFER0FWSWhTMnh0MHllSUF6ZkdxT2h1bU9RUXBFUVdodXh5czI2d3RaM2NTSVHSAdIBQVVfeXFMTklQNFIwNEtZZVlqWU9lQjdNVm9yOVliZ3RUNFRKU0pkeGhVMXViVy1wVkdxNEpuSF9iSGhJVlVoUEZtejJRN0t2VnRndGdacFhOSWRYdTQxdTk3UTRiMGF6MzlXa2I3Y0k0cEZEa19YSXhjSE5tbkk2WUgzeUE1TlFpdDZINEQwazlQQlZrMTk4SzE2N3E2VTd3MlkzR21LdVp0cmhVOFpBZkE2QXBQaUhJSUY1UDJMMDdWX1VvanM3eHh3RU1nbGs4cDNKaXhjUlVR",
+      "source_name": "CNBC TV18",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T01:50:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "IBTimes India",
   "cluster_key": "WAAREEENER|MACRO|gold-price-rally-silver-slip-usa",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-10T15:13:09.479923+00:00",
-  "last_updated": "2026-11-10T15:13:09.479990+00:00",
+  "last_updated": "2026-11-26T22:44:23.418889+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-10T15:13:09.479981+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:23.418867+00:00",
+      "change": "sources added",
+      "detail": "CNBC TV18"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:23.418884+00:00",
+      "change": "direction changed",
+      "detail": "WAAREEENER NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

@@ -4,19 +4,23 @@
   "summary": "What to Expect When Salesforce Reports Q3 FY27 Earnings AlphaStreet",
   "event_date": "2026-11-24",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "GUIDANCE",
+    "ANALYST_ACTION"
   ],
   "stocks": {
     "KSOLVES": {
       "ticker": "KSOLVES",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 1,
-      "impact_band": "NOISE",
+      "impact_score": 8,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
       "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "DEMAND",
+        "REPUTATION",
         "SUPPLY"
       ],
       "time_horizon": "IMMEDIATE",
@@ -39,7 +43,8 @@
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+3 Development at a known counterparty (Salesforce)",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -56,7 +61,7 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are revenue, margin, supply. Classified as earnings.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are revenue, margin, demand. Classified as earnings.",
       "ai_analysis": null
     }
   },
@@ -70,21 +75,46 @@
       "published": "2026-11-24T20:55:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Salesforce (CRM) Price Forecast: What Financial Analysts Expect Ahead of Q3 Earnings Next Week",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNmROWEY2d0ZHbHZoTGdRbkI1UHJ0ZXdfZVhDaXpJZDVWSGFWQ0k1N0RRZXRlcU9QRDI4MXFGLU53MlZscHExZEVaT2pwQkZzOVhBelo0Mm56UjQ1YTdBd1pCakZCcjZmOWZ6MDVVT053S21ZdHFqdGhxYVZaMVUwMDVaOHo3Um92ZmZRSHRDZ1NYd244aHVxRF9Ha1RRX2FlWUFFRy1WQXRqVTlLLTNBa2Y4Y2g3RDVwcUg1aS1R",
+      "source_name": "TipRanks",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T18:09:29+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "AlphaStreet",
   "cluster_key": "KSOLVES|EARNINGS|earning-expect-fy27-salesforce-when",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-24T23:09:54.784600+00:00",
-  "last_updated": "2026-11-24T23:09:54.784658+00:00",
+  "last_updated": "2026-11-26T22:45:53.465634+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T23:09:54.784648+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:53.465606+00:00",
+      "change": "sources added",
+      "detail": "TipRanks"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:53.465624+00:00",
+      "change": "categories added",
+      "detail": "GUIDANCE, ANALYST_ACTION"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:53.465630+00:00",
+      "change": "impact raised",
+      "detail": "KSOLVES 1 -> 8"
     }
   ],
   "price_reaction": {}

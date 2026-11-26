@@ -8,21 +8,19 @@
     "GEOPOLITICAL",
     "INTEREST_RATE",
     "MACRO",
-    "COMMODITY"
+    "COMMODITY",
+    "CURRENCY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 7,
-      "impact_band": "RELEVANT",
-      "direction": "MIXED",
-      "confidence": 0.79,
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
       "business_impacts": [
-        "DEBT",
-        "BALANCE_SHEET",
-        "SUPPLY",
-        "GEOGRAPHY",
+        "REVENUE",
         "MARGIN",
         "DEMAND"
       ],
@@ -34,33 +32,31 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+3 Original regulator announcement",
-        "+2 International market development",
-        "+2 4 independent sources",
-        "-2 Weak indirect connection"
+        "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "rate moves hit margins and credit demand in opposite directions",
-        "GEOPOLITICAL cuts both ways — growth against capital, cost or execution risk"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
-        "best source quality 10/10",
-        "4 independent sources",
-        "official confirmation available",
+        "best source quality 3/10",
         "indirect relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
-        "deposit repricing lag",
-        "loan book mix (fixed versus floating)",
-        "credit demand response",
-        "margin guidance"
+        "confirmation from an official or company source"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
+      "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to RBI, and India. The parts of the business most likely touched are revenue, margin, demand. Classified as currency.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -688,16 +684,36 @@
       "published": "2026-11-25T16:08:10+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Bulletin Tracks Food Inflation and Currency Flows",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONWNCWFl2XzJBTndDai1sSHFwZHlRZmhPMXc1X2c5Z05JNGgyMktBU1VyYUR0dmJpUWdJUk4ycFhLT1ZWbm9QM0dZTGl4cy0tWTZ4Z2VuclZXQWIzaExxaEQ1TGZWQ0NnUUpJMUtXWWd2a01YNWZnejJNeXNjS3JzeFdhQnlvbVZIdGhHSXR3c2NsRlNrWEFGWWlGZS1aTnYwRjl0Zk9TazFWV3J4eUNFOTdEWWFvcmFzb3AxU3pFNHFQb183c0E",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T06:30:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Bulletin: NBFC Bank Borrowings Rise to 39.6% in FY26",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aOV80dFhxOEZlUmxQdjlzeHRhSWhZTWpWc29ZUENGQkxqRWxwUUxfSEdOandiSEZGZUthcGpJZjlrbEl0THY1REh0VnFWSUV5WG82NDAyend0Q1FRZDktb0NGdDI",
+      "source_name": "Elets BFSI",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T09:12:05+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 35,
+  "article_count": 37,
   "source_count": 4,
   "primary_source": "Reserve Bank of India",
   "cluster_key": "FRESHARA+HDFCBANK+RAVEL+SUPRIYA+TMB|DEBT+GEOPOLITICAL|bulletin-rbi",
   "is_international": true,
   "tags": [],
   "first_seen": "2026-11-25T17:28:48.661783+00:00",
-  "last_updated": "2026-11-25T17:44:09.833097+00:00",
+  "last_updated": "2026-11-26T22:45:11.164265+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-25T17:28:48.661972+00:00",
@@ -713,6 +729,26 @@
       "timestamp": "2026-11-25T17:44:09.833078+00:00",
       "change": "ai analysis",
       "detail": "HDFCBANK via gemini"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:50.357884+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:50.357900+00:00",
+      "change": "categories added",
+      "detail": "CURRENCY"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:50.357908+00:00",
+      "change": "direction changed",
+      "detail": "TMB MIXED -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-26T22:45:11.164247+00:00",
+      "change": "sources added",
+      "detail": "Elets BFSI"
     }
   ],
   "price_reaction": {}

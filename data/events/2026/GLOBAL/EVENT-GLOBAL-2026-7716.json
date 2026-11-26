@@ -322,15 +322,13 @@
     },
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT_STRONG",
-      "impact_score": 10,
-      "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.46,
+      "relationship": "INDIRECT",
+      "impact_score": 2,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.3,
       "business_impacts": [
         "REGULATION",
-        "BALANCE_SHEET",
-        "REVENUE",
         "COMPETITION"
       ],
       "time_horizon": "MEDIUM_TERM",
@@ -355,22 +353,27 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
-        "+3 Close, specific exposure to this company",
-        "+4 Regulatory or legal action",
-        "+2 Acquisition, merger or divestiture",
-        "+3 Strategically important competitor development",
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "ACQUISITION cuts both ways — growth against capital, cost or execution risk"
+        "a competitor (Indian Bank, South Indian Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect strong relationship",
-        "financial implication is quantified"
+        "indirect relationship",
+        "no quantified financial implication"
       ],
       "watch_next": [
         "formal order or circular text",
@@ -378,7 +381,7 @@
         "company response or clarification",
         "precedent for peers"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are regulation, balance sheet, revenue. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -665,16 +668,46 @@
       "published": "2026-11-25T03:48:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Clears SBI MF To Acquire 9.99% Stake In South Indian Bank",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTTdoZ1RfUGE3ZFVRdTB0VFdtWTgtRG1mQWNjc2kzNnFQMm51Skd1Z3lOaUhjdzEzdGxCSnI4TlBUdWhqMnNKM1NTLTdPalBpYWliSEhzNXN4RjFSYnNubUhTNmNhRldPR2hNemhKMl9TRGJMWU5SR0p0c2dBTFV5YVJGX0RxeFEwNms4S0J5cWwxQzZDcnR1ZjN4c3pDZ0Q3czZGUmpMQVRtVkQ5SkpRUnhpNG9xaWFy",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-25T22:23:22+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI clears SBI Mutual Fund to buy up to 9.99% stake in South Indian Bank",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRGk5a2wyQUQyOEJESVZKcnk3LVFzekdGblVhVE9KVFNLcWRoUFBScDR3cHRBX09KOVZBdFV6SUpHTy1XSDBKdDY2cW9hLWpRSk1aUVpfd3Zsa2pVT05WdGVNNE45VFpTSGhEU0FJYmwta3RSYmhaRU1pN2F2amRXXzktSVNSc2R4cU1fV0xCQVJsd01YRHZtSEhnVjQxQWhMbmxDcTR3MHczMVFwZXdqeGp3LVoxZlVya3FUWXYzbnE2dw",
+      "source_name": "Prop News Time",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T10:04:55+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "South Indian Bank RBI Approval for Mutual Fund Holding",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRl9VT2NIYVlqNzBsV05FUThRRmktdWd2T1hTM2NzZU5KWXFjVzByQkNHeVJLeTFBWGJmTEN6LWFuWTYyTDNyRndnb1ZxbnBUblBBV0VHSFdpU18zUXB5VnFzbGhESS1NSzhFTGpyaTB6QWNDM3NGQVRqMVBCMlpSM1lPUVZhc2M4TGw4N3lCczlxTVl6OTA2cjlCVFJqVnJ0R2RWSmJkYy1MZmRZdHhEYUU1ZWgxUmQ0TnhKTw",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T07:10:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 12,
+  "article_count": 15,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|ACQUISITION+REGULATORY|bank-did-india-nse-south-southbank",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:57:24.342855+00:00",
-  "last_updated": "2026-11-25T17:46:32.799469+00:00",
+  "last_updated": "2026-11-26T22:44:57.625962+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:57:24.342932+00:00",
@@ -715,6 +748,21 @@
       "timestamp": "2026-11-25T17:46:32.799462+00:00",
       "change": "direction changed",
       "detail": "TMB NEGATIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:17.226380+00:00",
+      "change": "sources added",
+      "detail": "Prop News Time, TradingView"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:57.625938+00:00",
+      "change": "sources added",
+      "detail": "Kalkine India"
+    },
+    {
+      "timestamp": "2026-11-26T22:44:57.625955+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}
