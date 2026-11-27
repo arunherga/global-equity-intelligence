@@ -53,8 +53,8 @@
     "HDFCBANK": {
       "ticker": "HDFCBANK",
       "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
+      "impact_score": 4,
+      "impact_band": "LOW",
       "direction": "UNCERTAIN",
       "confidence": 0.3,
       "business_impacts": [
@@ -69,12 +69,18 @@
           "relationship": "INDIRECT",
           "weight": 2.3,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "MACRO",
+          "term": "MSME credit",
+          "relationship": "MACRO",
+          "weight": 1.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+4 Material international trade or tariff policy",
-        "-2 Weak indirect connection",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -90,7 +96,7 @@
         "affected product codes",
         "retaliation risk"
       ],
-      "why_it_matters": "This reaches the company indirectly via its regulation exposure to RBI. The parts of the business most likely touched are exports, regulation. Classified as trade policy.",
+      "why_it_matters": "This reaches the company indirectly via its macro, regulation exposure to RBI, and MSME credit. The parts of the business most likely touched are exports, regulation. Classified as trade policy.",
       "ai_analysis": null
     }
   },
@@ -104,21 +110,61 @@
       "published": "2026-11-27T14:01:39+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI Deputy Governor Swaminathan J Urges Banks To Expedite Credit Sanctions To MSMEs, Promote Cash-Flow-Based",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOaU5XZy10eW9PUGpEcEpHdW91R21oSzYwRjY4MmNPaHVSYkhpODEzVHFwREZDdllOd2FNdHduZk1EbWRPc3JNYkt3M0N6aHZQejhnOXdjdndQdmZZS3pLUUdoX1dWQ3JyZ1IxM0ROeS1WZTZYY3RDVHJFdlRqRmJseFpULUJnLWl0ZkI1RHZ6VW1mVWFZM0JhLXE4eHVyOFJZY3MwWDJZT215UmJ2VkFDZGxfb1N1dWRXYWJ5NE8zYnFtWlVsc2xJYTBpNnl5T0t0Wl81Q1ExejNIMTdHajhoRWtCczlsT0pmOWtFWdIB8gFBVV95cUxOMG9HSlk3MmdsUVhKbTB4dmJ2WWJ3dkFnME9yUTJYRE85cjdVSmhNN3J4aUZNSzg2NmJocEgtUWlyVVFNbDdBNDF2c3ZFNzFNLWdOUXJmX2h6b3I1bGRwZjlVQmNPSDVXVkFfbWJmN0pieGg0SzJkZTZ0WEgtTk14bmRRSnZMRTJid3JxUC1DR3BkZlNYZWRJTmpPMl92R0dCVEhCNnRFdVAxd1cycDdVTTNSUFVKbDJpcEE4SkYwZUcydWIzWE1lNmNDejQyMmM3WkV4TERBaWp6UTU1S1MxY1ZOUHZyTnBWaElXam1xdHIyUQ",
+      "source_name": "Free Press Journal",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T14:33:30+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Deputy Governor urges banks to expedite MSME credit sanctions at Kolkata meeting",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWUxyNEQwak9ZbS0tTUI1R0wxSjRqcXBXanVWVE81SGY3NHZQTkJHUlBoWk9uaExpRExtV0VGamVzTjlLWlNHS0VnYmgzYmZjSjFvWTl6b05RZENaZkVpekVWOEU2ZU1KNUlONVpiUHNvc3k4ZUhYWkpFUVdGeFc1UGd5UEdWOXEyQUpmU05TWnlFYzdCTjFUVFAyMERYT0ZJbkhyblhYR0RDMmNURVZOT1hZd24zUG4tVFUxUzhta2YyQjc4dXNQSUtmM3cxaGZI",
+      "source_name": "ANI News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T13:46:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "RBI Focuses on Accelerating Credit Sanctions for MSMEs in Kolkata",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTXYzSmxCNzEzWEpicUFCTjJkbXhRcFpjYnMwcUxBNkVnVUNaY3U0UDYxaFkwWTJjOE8wZlZ6VEljc2ROUWV1MGdiR3pNUlM4T1FteGwtVlBPdXZyMHh0cndGeTVpQjJiM0NyamxWVFI1YVNtRFhLcmQyeW03c1lEWGVQendaaC1KeHRBdmRIeVo3MWE0M1dDRHV4b3MtRFVxalNqVThKUTB0OXB6S0QxN0tFU2dLc3dzTmlJd3kxdmpKa2l1SHfSAcsBQVVfeXFMTTFxcUtaV3dYZktITGRhQUJPN0pzc2txVTFOV056QzFLN0dfTWtOT2RjelBMZ0hKVnBwWklLUlZRZFd6cnZuVS0zMXlieWRyM2dwZnkwbmJITmFvT1ZjM2pJcUROdTVnNG5pcmpER2pPM2ZEOXNGY04zbzBzY0xfNkVndFpTckdLU0hRX2IybkRzNjc2Q0wzdHA3UDZaLWhIZ3NoTlA3OGlQVWJ4Zko1SExqQTJMVlJscWtiRHMtbnpHcHJXLTBYMUlBZ0k",
+      "source_name": "Asianet Newsable",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T14:00:04+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "tennews.in",
   "cluster_key": "HDFCBANK+TMB|TRADE_POLICY|bank-deputy-expedite-governor-rbi-urges",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-27T17:01:51.344456+00:00",
-  "last_updated": "2026-11-27T17:01:51.344528+00:00",
+  "last_updated": "2026-11-27T22:08:34.259728+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-27T17:01:51.344517+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:34.259706+00:00",
+      "change": "sources added",
+      "detail": "ANI News, Asianet Newsable, Free Press Journal"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:34.259724+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 2 -> 4"
     }
   ],
   "price_reaction": {}

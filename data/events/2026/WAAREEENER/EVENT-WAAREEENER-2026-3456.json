@@ -10,10 +10,10 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "DIRECT",
-      "impact_score": 8,
+      "impact_score": 9,
       "impact_band": "HIGH",
-      "direction": "UNCERTAIN",
-      "confidence": 0.4,
+      "direction": "POSITIVE",
+      "confidence": 0.51,
       "business_impacts": [
         "REVENUE",
         "CAPACITY"
@@ -24,21 +24,28 @@
           "exposure_type": "SUBSIDIARY",
           "term": "Waaree Renewable Technologies",
           "relationship": "INDIRECT_STRONG",
-          "weight": 3.5,
-          "detail": "group company, separately reported; in headline"
+          "weight": 3.0,
+          "detail": "group company, separately reported"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "PV modules",
+          "relationship": "SECTOR",
+          "weight": 1.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+5 Direct company event",
         "+3 Order or contract",
         "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "-1 Single source, unconfirmed"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "ORDER_WIN is favourable for the company"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 6/10",
         "direct relationship",
         "no quantified financial implication"
       ],
@@ -49,7 +56,25 @@
         "whether extra capacity is needed"
       ],
       "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are revenue, capacity. Classified as order win.",
-      "ai_analysis": null
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Consolidated revenue is expected to benefit from the 120 MWp EPC contract win by group company Waaree Renewable Technologies. Standalone module sales revenue for Waaree Energies could also rise if the project sources its solar PV modules internally.",
+        "margin_effect": "Consolidated profitability could improve if the group captures integrated margins across both module manufacturing and EPC execution, though exact impact depends on project-specific contract terms and pricing.",
+        "cost_effect": "Increased module manufacturing volume to fulfill the project could drive operating efficiency and economies of scale, though underlying solar cell and raw material input costs remain a key factor.",
+        "competitive_effect": "Strengthens the group's competitive positioning in the Indian market by demonstrating end-to-end solar capabilities from PV module manufacturing to turnkey utility-scale EPC execution.",
+        "regulatory_effect": "No direct regulatory changes identified, though project execution will be subject to standard local grid connectivity, land acquisition, and domestic content compliance requirements.",
+        "short_term": "Immediate expansion of the group's consolidated order backlog over the next 0-3 months, along with project planning and module delivery scheduling.",
+        "medium_long_term": "Milestone-based revenue and cash flow recognition during the execution phase (typically 6-18 months), enhancing the group's track record for future utility-scale tenders.",
+        "second_order_effects": "Allocating manufacturing capacity to internal EPC projects may temporarily restrict the volume of modules available for third-party external sales.",
+        "key_uncertainty": "Whether Waaree Energies will exclusively supply 100% of the PV modules for this project and the specific financial margin terms of the EPC contract.",
+        "monitor_next": [
+          "Confirmation of module sourcing details and volume allocated to Waaree Energies Limited",
+          "Project execution timeline and milestone completion schedules",
+          "Quarterly order book and margin performance reported by Waaree Renewable Technologies",
+          "Raw material cost trends for solar cell and glass procurement during the buildout"
+        ]
+      }
     }
   },
   "sources": [
@@ -102,21 +127,41 @@
       "published": "2026-11-26T13:51:37+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Waaree Renewable secures 120 MWp turnkey solar project",
+      "url": "https://www.pv-magazine-india.com/2026/11/27/waaree-renewable-secures-120-mwp-turnkey-solar-project",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-27T06:30:00+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 5,
-  "source_count": 1,
+  "article_count": 6,
+  "source_count": 2,
   "primary_source": "Multibagg AI",
   "cluster_key": "WAAREEENER|ORDER_WIN|120-mwp-renewable-technologies-waaree-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-26T22:31:53.277324+00:00",
-  "last_updated": "2026-11-26T22:31:53.277422+00:00",
+  "last_updated": "2026-11-27T22:08:18.052598+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-26T22:31:53.277412+00:00",
       "change": "created",
       "detail": "5 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:18.052572+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:18.052593+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 8 -> 9"
     }
   ],
   "price_reaction": {}

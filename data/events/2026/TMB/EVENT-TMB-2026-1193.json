@@ -4,20 +4,23 @@
   "summary": "Gold prices today, November 8th: Global market recovers, SJC gold price increases by 2 million VND. Vietnam.vn",
   "event_date": "2026-11-08",
   "event_types": [
-    "OTHER"
+    "OTHER",
+    "COMMODITY"
   ],
   "stocks": {
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 0,
+      "impact_score": 2,
       "impact_band": "NOISE",
       "direction": "UNCERTAIN",
-      "confidence": 0.41,
+      "confidence": 0.3,
       "business_impacts": [
-        "PRICING"
+        "PRICING",
+        "INPUT_COST",
+        "CUSTOMERS"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -25,10 +28,18 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -37,12 +48,15 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "financial implication is quantified"
+        "no quantified financial implication"
       ],
       "watch_next": [
-        "gold prices over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to gold prices. The parts of the business most likely touched are pricing. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its commodity, customer exposure to gold prices, and traders. The parts of the business most likely touched are pricing, input cost, customers. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -66,16 +80,26 @@
       "published": "2026-11-08T04:38:30+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Pakistan gold prices rise with global bullion market gains",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMm05UXZFeFd4dnphOW1YZFJfQlNYMkFJVE9iZE9KQVR1NlZvS0ZiblBnSkdueWdIbFJCX1R5U1RoSmZISkNIazAtMEFhdC0xNlptUFVnWWZ4X3ExZnliMTdIT1pLMzhrVHV3THVVdTc3SFhTdFZvaUNJX3BvSXNMMnoybWZyLWxoWVpLOUJiUXBwNHRTMW96c1JR",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T15:26:40+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 2,
+  "article_count": 3,
   "source_count": 1,
   "primary_source": "Vietnam.vn",
   "cluster_key": "TMB|OTHER|8th-global-gold-november-price-today",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-08T13:41:54.253924+00:00",
-  "last_updated": "2026-11-08T13:45:46.121760+00:00",
+  "last_updated": "2026-11-27T22:08:36.258060+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-08T13:41:54.254000+00:00",
@@ -86,6 +110,21 @@
       "timestamp": "2026-11-08T13:45:46.121744+00:00",
       "change": "sources added",
       "detail": "Vietnam.vn"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:36.258036+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:36.258052+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-27T22:08:36.258057+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 2"
     }
   ],
   "price_reaction": {}

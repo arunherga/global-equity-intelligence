@@ -1,0 +1,93 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-3213",
+  "title": "Salesforce Financial Position: Cash, Debt and Equity Overview",
+  "summary": "Salesforce Financial Position: Cash, Debt and Equity Overview Kalkine India",
+  "event_date": "2026-11-27",
+  "event_types": [
+    "DEBT"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "SUPPLY"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are debt, balance sheet, supply. Classified as debt.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce Financial Position: Cash, Debt and Equity Overview",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNbjdlS1NFT2ZZUi1MUkdaNlJlaUVYZ1BsOTAwRmo2cHdLSzhGNHZ2MmJkR1BxY2FBRWxxTHdETG9UR0JDcHBZbUlHbTVValUwaFB4NEZ2b0pPMDdjc3VtbHJnck10LVJ1V0hOdmttclZ0UERGNmlieGYxLVNRUTJ3YUVyRjRuREdPZmRYTGN6UHpCSks1MU8wWEVoNDl3UUlWQWlLd2RkcVFPWFRtZTdpbzFxSU9TQjczMGJtMF9ndGxlV0lUbnNXdWg4Q1RFc08wdENiUTl3",
+      "source_name": "Kalkine India",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T17:25:00+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Kalkine India",
+  "cluster_key": "KSOLVES|DEBT|cash-debt-equity-financial-position-salesforce",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-27T22:07:45.620026+00:00",
+  "last_updated": "2026-11-27T22:07:45.620088+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-27T22:07:45.620078+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}
