@@ -58,10 +58,10 @@
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [],
       "time_horizon": "UNKNOWN",
       "exposures": [
@@ -76,8 +76,6 @@
       "score_reasons": [
         "+5 Direct company event",
         "+2 Company appears in the headline",
-        "-4 Opinion, preview or stock-tip piece",
-        "-5 Market commentary rather than a company development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -86,8 +84,7 @@
       "confidence_reasons": [
         "best source quality 3/10",
         "direct relationship",
-        "no quantified financial implication",
-        "opinion piece"
+        "no quantified financial implication"
       ],
       "watch_next": [
         "confirmation from an official or company source"
@@ -136,16 +133,26 @@
       "published": "2026-11-19T02:43:12+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Coal India Ltd (COALINDIA-NS) Share Price Today, Live Chart and News",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wc2ZIODZ6SnQyWkE0THBYdlpTRE5mRG05ZjUzTVVWUDZYSHdMTDBPcjM4M0JSUnRfUW1TUV90eHY4dFlpNWd0am91OFRDRW15S0dOZ2tpRml4Z1p2TmxEUXE4eFM5SE0",
+      "source_name": "TechGraph",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-26T20:34:49+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 5,
   "source_count": 1,
   "primary_source": "The Financial Express",
   "cluster_key": "COALINDIA+MSTCLTD|OTHER|coal-india-jio-share-today-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-19T16:02:38.818333+00:00",
-  "last_updated": "2026-11-19T16:21:29.385487+00:00",
+  "last_updated": "2026-11-27T17:13:34.364648+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-19T16:02:38.818412+00:00",
@@ -156,6 +163,16 @@
       "timestamp": "2026-11-19T16:21:29.385468+00:00",
       "change": "sources added",
       "detail": "HDFC Sky, Upstox"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:34.364626+00:00",
+      "change": "sources added",
+      "detail": "TechGraph"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:34.364644+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 0 -> 5"
     }
   ],
   "price_reaction": {}

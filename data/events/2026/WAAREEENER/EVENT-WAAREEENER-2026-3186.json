@@ -10,9 +10,9 @@
     "WAAREEENER": {
       "ticker": "WAAREEENER",
       "relationship": "INDIRECT_STRONG",
-      "impact_score": 5,
+      "impact_score": 7,
       "impact_band": "RELEVANT",
-      "direction": "POSITIVE",
+      "direction": "NEGATIVE",
       "confidence": 0.46,
       "business_impacts": [
         "PRICING",
@@ -26,16 +26,24 @@
           "relationship": "INDIRECT",
           "weight": 3.0,
           "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.2,
+          "detail": ""
         }
       ],
       "score_reasons": [
         "+3 Close, specific exposure to this company",
         "+3 Price shock in a commodity this company is exposed to",
         "+1 The commodity (silver) is the subject of the headline",
+        "+2 International market development",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -48,7 +56,58 @@
         "inventory position",
         "hedging disclosure"
       ],
-      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, geography exposure to silver, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
+      "ai_analysis": null
+    },
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 4,
+      "impact_band": "LOW",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "PRICING",
+        "INPUT_COST"
+      ],
+      "time_horizon": "SHORT_TERM",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "gold prices",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "throughput commodity; in headline"
+        },
+        {
+          "exposure_type": "GEOGRAPHY",
+          "term": "India",
+          "relationship": "WEAK",
+          "weight": 0.7,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Movement in a relevant commodity",
+        "+2 International market development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "whether the price move persists",
+        "contract repricing lag",
+        "inventory position",
+        "hedging disclosure"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its commodity, geography exposure to gold prices, and India. The parts of the business most likely touched are pricing, input cost. Classified as commodity.",
       "ai_analysis": null
     }
   },
@@ -62,21 +121,106 @@
       "published": "2026-11-21T07:19:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold Price Today: Gold Rises 2.18% on November 27, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPd2lCRFlOSHY2TG43WmpHMmFfTWxhSDVmTGc2ejVOQzhSbWRGeWxQNGU3QjFWMGMyQnJKQWFzdFBQdXU5Q0xKNWYtTFFGZUxwQ2YzVTAzQmNjTmhKRU5yYUwxMnFDTjNyVWdWbHI0Vm9aM18wcWpGOExnR3Z3RktTejJPb1BfWEhaTHlvS3dBRHVlNFl6SDc3eWM4eWdCVHFmQlJN",
+      "source_name": "USA Today",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T14:13:00+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today November 27: MCX Gold Rises 1.63%, Silver Jumps 4%; Check City-Wise Rates",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR3hocmVwVy1GUGc4UVNxR3hwNzMtbmdmYWtpRUNqeVY5QTBOR1JqRHk2WkFSa1RTY3dWUW5sSUw3LXRuVmFIYWZ4ZVNkVG1NeXFCRHJ2RFl3dHlvQ2FlNDBaTTVhOTlqeFZmTkg2OE1adkpwdDZEdnhEUlQ4YVRxT19qeXZheG1zcTg2cFVZVjlYS28tc3hQSTdLSWpJN29XS3dWVVJyWHZzTThUeGE5NHlpSXpXdllVWFRtcHhFM1FtaWJZ",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T06:41:09+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Prices Today, November 27, 2026: 24K Rate Rises ₹660 per 10 gm from Thursday; Kalyan Jewellers Gains 2.20%",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRWEyY1g0Q0xQeGNnby02Xzh0U0Zhemd5c0d4clg1Q0NZSWpLOGowWUZ1aVczVjdPejJiSFhkV0FIMXlkWnBRUFd6UG55VDV2WEZuUVNLcGltZG0xUXlPV01oX2wwV2JsVmlUS2JmN2ZSTkZ3NDhQNVE3c3BndDZ3aU1PWXJ6V0s0d0p3MmdWQUgzcHh2THNuc0FidmMtWVU5czlMWV9YRG5pdldzdVdITG1XQ0JXV1FGR1NTajhxSk92UGpGLUtzdHNNRE1RdWdJVUpWZGFpNXVuLU5hT2c1NHBHTW9fRGR6UWJITUNsejhTLUtiX1VtYlJkMA",
+      "source_name": "HDFC Sky",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T05:32:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today in India, 27 Nov 2026 - Live 18K, 22K & 24K Gold Prices",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9oS1doakpSUWg2blRCZGtNeWp5UXFadUo5cVZtTzd5bzBsdHNnUHlsTG9KVEN5UGVMaENmNVNDSGxrVmVLaHgtYWRPeEE",
+      "source_name": "Kotak Neo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T12:44:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, Nov 27: Precious Metal Rise Across India; Check 22K, 24K Rates and City-Wise Silver Prices",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPaDdFR09wVmdtLThRY0ZrcnBuemhUbkhGVW5qZi1STk9GWWRaLTk1ZUJkOXRsVS1KdUYxc0t3WDdDc21IZGU5ejZzX29aRUpHRDQ5b2NaVWhUakduemdCemdXbkNKVnhLR3lhZ3pEVUdReTdIaTVWakxFVUhBSUc3NGVwbEExa0FsWVNOOU54U0FndHV5TWVSSUF4U0VQSllT",
+      "source_name": "APAC Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T12:25:12+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold Rate Today, November 27: Check 18, 22 and 24 carat gold prices in Chennai, Mumbai, Delhi, Kolkata and other cities",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQMmcza0FaWkx2R0h0YTBvTEJQcmVWd25xRWVzSkIzaVRxendiRjQ2c091T1lvRTN5Y3UwQUY1ZUNQZ0x4d1ZST1NLbVAtMTVVZ3NUQXFONHQtalFQblpteDU3Wnk2eTNENHl6bGtEdVNhVjhVU3JOSUU1TU5CNWxubHAycFNocGZ6WXp1LTZCUVk4Ul9VOEFBalZQUHRTa0NjNjdFdi0wYktXNjFPRHYwUFlfdW0wYW1TYU1yYjZYU2Q1ajdDTUNTNkdBQlhWQzhxSURJNnJ3Mk9ZM2VPUG9XSUx4Zk50dDZ0WUVFTmJWZzF0b1BTc0HSAfwBQVVfeXFMTlp2a25RdE5QSVhwVEJXb3I4bEs4QkZiOHVFcEZ6LUJEakx6enVPX0kwenhmZkJxTlFaZTYzWDZWNnUxaThmc0FkTDlZQ1hCQnFSUkExNnNHYmZSenVSdWZLZENnNzllYklISWdYZHNfNkdyQXpWMjBiTnFfVk9iaHlyTWZnWWhhWV8wUW1saDNEVTFUY1FibkFwX2E5R1FyakplcF9rZE8tRDRDTGpjSHRYWHBlU05VYnV6Q0xUSmY2TlVGdXR0RUZsTmpwd1E0NXZ2MlZtc0pLUkJVeDZGU3F6SkRYdnRKOGxpbFFMMndFX2NYNXRQTlo0OHY3",
+      "source_name": "The Indian Express",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T04:46:46+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Gold price in India: Rates on November 27",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQV3M5cm85ZXlsb3R4Y1pKUWxtUVRGZ3N5U3ZONjNSYUtpRHhKOTJKUEpyWGJiVzY1QlNPSUlyUENQdjB5WG1VYVRuQ2l6Sjh6UFBwSzJmNk9lemhSemxXal9IUzlGdGRycG9rY2dOS0hvZHhqN0QtUmxUNWpZM1QwTlpLNUVOT0JwcVRFMFJQZ1FBLUVWVWNnbExEaGVCWjV3TUx0ZXh3",
+      "source_name": "FXStreet",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T04:44:37+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 8,
   "source_count": 1,
   "primary_source": "Livemint",
   "cluster_key": "WAAREEENER|COMMODITY|64.2%-crash-january-peak-price-silver",
-  "is_international": false,
+  "is_international": true,
   "tags": [],
   "first_seen": "2026-11-21T14:54:39.387135+00:00",
-  "last_updated": "2026-11-21T14:54:39.387205+00:00",
+  "last_updated": "2026-11-27T17:14:02.065734+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:54:39.387195+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:02.065707+00:00",
+      "change": "sources added",
+      "detail": "APAC Media, FXStreet, HDFC Sky, India Infoline"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:02.065726+00:00",
+      "change": "stock added",
+      "detail": "TMB (INDIRECT)"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:02.065731+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 5 -> 7"
     }
   ],
   "price_reaction": {}

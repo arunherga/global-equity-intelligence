@@ -12,7 +12,7 @@
       "relationship": "INDIRECT",
       "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
+      "direction": "NEGATIVE",
       "confidence": 0.3,
       "business_impacts": [
         "COMPETITION"
@@ -25,6 +25,13 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
+        },
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "ICICI Bank",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
@@ -32,7 +39,7 @@
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (HDFC Bank, ICICI Bank) is doing well"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
@@ -40,9 +47,10 @@
         "no quantified financial implication"
       ],
       "watch_next": [
-        "HDFC Bank's follow-up announcements"
+        "HDFC Bank's follow-up announcements",
+        "ICICI Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank. The parts of the business most likely touched are competition. Classified as other.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to HDFC Bank, and ICICI Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -105,16 +113,26 @@
       "published": "2026-11-14T08:46:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Home Loan Subvention Case: SC Gives HDFC Bank, ICICI Bank, PNB Housing, Sammaan Capital 7 Days To Approve Pros",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQTDRvbk1TV0p2c3RhT1Y4SUtsX09KY2ZWNWNtTWZNQWt1SmxmUE1DQ3FzMU8wdVJnM2VFYW9IUVozOTI3c09MTV9VYXFCSnFCZ0pNUkFGRHd5X01yS0djRldUV0s3RWdIWjVNMmh4azZoNkRZNVJEX20xR3ZqeXkxbWt0S0xuamFMWFFqZlY2amh3TVpqQlc3bjBzYVNERFB4dlNsampsblF4eWI1VGlzZkdWaXlXR3Zvdnd2dzNjcm5URjlFMDBGS3JYVS01em9POEZMb0RCZGxFYVBtUWpUYUpDajdHMV9XclBWNjE2cHdUeVR3dmk0MTlZTVhYTWxQclNFU2xDV3JxY28xRmJ3TVdZUGpMd9IBmwJBVV95cUxOUF9wdXRRM0FtMXluNTJmY1dyYlZxTGVPODJrWXFybUtiRDh2NnJrQ090bzIyT09qc01JMG16djB6bWxLSVI1eTJxVGJyMGdwNVpGd0VMQnNRcEU5cFZNNFpWUUFrRnl0OGd1SDVjRHMyTGFsdWtkaTNJMTNqNFM1THFJM2JlT3UwUm9TWUl2YWU0SWVoQXA0M3Z1bkJLLVg2c2ZpbmhKM253bkoxVzhkdjBhWG4tUncyWGFsWVRxWUpnTm9hU2h1QkJtQnZ2UUhjeXZtZjdsZ3dyOTc4c0dSY2FsVTJYZXFWR1hUNUxZU090ZWNfUFpUTG5ueWZpY2NRdkljeUJlZHJDdXJIQW12UzRGM3JnVlZrY2pn",
+      "source_name": "Times Now",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T05:54:50+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 3,
+  "article_count": 4,
   "source_count": 1,
   "primary_source": "Equitymaster",
   "cluster_key": "HDFCBANK+TMB|OTHER|bank-cons-hdfc-investing-pros",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-06T14:34:57.759729+00:00",
-  "last_updated": "2026-11-14T14:00:01.492272+00:00",
+  "last_updated": "2026-11-27T17:14:09.497907+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-06T14:34:57.759809+00:00",
@@ -130,6 +148,16 @@
       "timestamp": "2026-11-14T14:00:01.492252+00:00",
       "change": "sources added",
       "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:09.497882+00:00",
+      "change": "sources added",
+      "detail": "Times Now"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:09.497901+00:00",
+      "change": "direction changed",
+      "detail": "TMB UNCERTAIN -> NEGATIVE"
     }
   ],
   "price_reaction": {}

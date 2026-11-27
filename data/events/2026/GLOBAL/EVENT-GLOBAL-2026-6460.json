@@ -4,20 +4,24 @@
   "summary": "Will Higher Steel Prices Keep Nucor (NYSE:NUE) Earnings Strong? Kalkine Media",
   "event_date": "2026-11-12",
   "event_types": [
-    "EARNINGS"
+    "EARNINGS",
+    "TARIFF",
+    "COMMODITY"
   ],
   "stocks": {
     "MSTCLTD": {
       "ticker": "MSTCLTD",
       "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "impact_score": 9,
+      "impact_band": "HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "confidence": 0.41,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
-        "PRICING"
+        "EXPORTS",
+        "PRICING",
+        "INPUT_COST"
       ],
       "time_horizon": "IMMEDIATE",
       "exposures": [
@@ -32,16 +36,18 @@
       "score_reasons": [
         "+2 Indirect but real exposure",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
+        "TARIFF cuts both ways — growth against capital, cost or execution risk",
         "steel prices is handled rather than bought or sold; volume matters more than price"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -49,19 +55,21 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, pricing. Classified as earnings.",
+      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
       "ai_analysis": null
     },
     "JKIPL": {
       "ticker": "JKIPL",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "EXPORTS",
+        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "IMMEDIATE",
@@ -75,18 +83,21 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (steel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is an input cost and is moving up"
+        "steel prices is an input cost and is moving up",
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -94,19 +105,39 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, input cost. Classified as earnings.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue could face downward pressure if high steel prices inflate equipment prices, prompting construction and mining clients to defer capital expenditures. While higher unit prices might inflate nominal sales per machine, overall unit sales volume is likely to slow.",
+        "margin_effect": "Operating and gross margins are expected to compress if JKIPL is unable to fully pass on higher equipment procurement costs to price-sensitive end-users in the short to medium term.",
+        "cost_effect": "Cost of inventory and equipment procurement will rise, as original equipment manufacturers (OEMs) pass elevated steel raw material costs down to dealers and trading companies.",
+        "competitive_effect": "Larger distributors with greater balance sheet scale or fixed OEM pricing contracts may absorb cost increases better, putting smaller trading entities like JKIPL at a relative pricing disadvantage.",
+        "regulatory_effect": "No direct compliance or regulatory consequence for JKIPL, though any broad changes to domestic trade tariffs on steel or heavy machinery imports could impact input pricing dynamics.",
+        "short_term": "Over the next 0-3 months, higher equipment replacement costs will elevate working capital requirements, while prospective buyers may delay capital investments or negotiate aggressively on price.",
+        "medium_long_term": "If steel prices remain elevated for 3 months to several years, end-users may pivot toward equipment rental or refurbished machinery instead of buying new equipment, potentially slowing JKIPL's core sales growth.",
+        "second_order_effects": "Cost pressures on end-user infrastructure and mining firms could lead to delayed project execution, stretching JKIPL's receivable collection timelines and working capital cycles.",
+        "key_uncertainty": "The extent to which domestic construction and mining operators can absorb higher equipment purchase costs without curtailing capital expenditure programs.",
+        "monitor_next": [
+          "Domestic and global benchmark steel prices (e.g., hot-rolled coil indices)",
+          "OEM price adjustments across major construction and mining equipment lines",
+          "JKIPL's gross profit margins and working capital conversion cycle",
+          "Capital expenditure announcements and project activity in the Indian mining and infrastructure sectors"
+        ]
+      }
     },
     "ASHOKA": {
       "ticker": "ASHOKA",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "confidence": 0.46,
       "business_impacts": [
         "REVENUE",
         "MARGIN",
+        "EXPORTS",
+        "PRICING",
         "INPUT_COST"
       ],
       "time_horizon": "IMMEDIATE",
@@ -120,18 +151,21 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
-        "-2 Scheduled disclosure with no surprise",
+        "+4 Material international trade or tariff policy",
+        "+3 Price shock in a commodity this company is exposed to",
+        "+1 The commodity (steel prices) is the subject of the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "steel prices is an input cost and is moving up"
+        "steel prices is an input cost and is moving up",
+        "TARIFF cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
-        "no quantified financial implication"
+        "indirect strong relationship",
+        "financial implication is quantified"
       ],
       "watch_next": [
         "margin trend versus the previous quarter",
@@ -139,8 +173,26 @@
         "order book or loan book disclosure",
         "any guidance change"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, input cost. Classified as earnings.",
-      "ai_analysis": null
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to steel prices. The parts of the business most likely touched are revenue, margin, exports. Classified as earnings.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Revenue recognition could slow if elevated input costs lead to project execution delays, though price escalation clauses in select contracts could marginally inflate nominal top-line values.",
+        "margin_effect": "Operating margins are likely to face negative pressure as steel is a major raw material component in civil construction and highway infrastructure projects.",
+        "cost_effect": "Direct increase in procurement costs for rebar, structural steel, and related civil construction materials across active EPC and concession projects.",
+        "competitive_effect": "Larger EPC players with strong balance sheets and supply chain leverage may absorb higher input costs better than smaller sub-contractors, though Ashoka may face competitive pressure against players with more aggressive price escalation protection.",
+        "regulatory_effect": "Potential for increased contractual claims or arbitration under National Highways Authority of India (NHAI) price variation clauses, alongside potential domestic government trade policy shifts to curb local steel inflation.",
+        "short_term": "Immediate margin compression on unhedged or fixed-price project execution over the next 0-3 months, along with more conservative bidding on upcoming tenders.",
+        "medium_long_term": "Over 3 months to several years, sustained high steel prices could lead to higher bidding prices across the industry, potential re-negotiation of project terms, or reduced overall infrastructure ordering activity if project budgets expand excessively.",
+        "second_order_effects": "Sub-contractors and vendors under Ashoka Buildcon may experience financial distress, leading to operational bottlenecks or demand for contract renegotiations.",
+        "key_uncertainty": "The exact proportion of Ashoka's order book covered by full pass-through price escalation clauses versus fixed-price commitments.",
+        "monitor_next": [
+          "Domestic Indian steel and rebar price indices (e.g., TMT bar prices)",
+          "Ashoka Buildcon's EPC segment EBITDA margin trends in upcoming quarterly earnings",
+          "Contractual mix of fixed-price vs. escalation-linked projects in the order book",
+          "NHAI price escalation index adjustments and tender award momentum"
+        ]
+      }
     }
   },
   "sources": [
@@ -153,21 +205,56 @@
       "published": "2026-11-12T11:01:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "How Are High Steel Prices and Tariffs Powering Record Earnings Growth at Nucor (NYSE:NUE)?",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLV9tOHhScGtVRWhQdFE2NW9PSTNqZ0NfYUxmRDQ2MnFrbk54a3hhTzRWcm44U1d3alFkMDZlTjhYT2lXcE51MU1UdFJyN2hlN01fYklvT3BFdUM0ZDNRd2hWVGowX0pnZUxiQmV1M20wMTFzSE5JUDdyMW9ucWswd3Z3N0JORzZnVVRGRGNPTmFfSEdCUklEWFd2N3ZFdkVnLUoyanYySnpNZTZYZG5fb3FDbHZWMzVmbDlLb0lWUWl5RkJQaGNWV3haNXJhZ19rX0RQTg",
+      "source_name": "Kalkine Media",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T11:14:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "Kalkine Media",
   "cluster_key": "ASHOKA+JKIPL+MSTCLTD|EARNINGS|keep-nucor-nyse-price-rise-steel",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-12T15:36:29.827890+00:00",
-  "last_updated": "2026-11-12T15:36:29.827967+00:00",
+  "last_updated": "2026-11-27T17:14:46.609758+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-12T15:36:29.827957+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:46.609725+00:00",
+      "change": "sources added",
+      "detail": "Kalkine Media"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:46.609740+00:00",
+      "change": "categories added",
+      "detail": "TARIFF, COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:46.609747+00:00",
+      "change": "impact raised",
+      "detail": "MSTCLTD 0 -> 9"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:46.609751+00:00",
+      "change": "impact raised",
+      "detail": "JKIPL 0 -> 11"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:46.609755+00:00",
+      "change": "impact raised",
+      "detail": "ASHOKA 0 -> 11"
     }
   ],
   "price_reaction": {}

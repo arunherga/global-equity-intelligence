@@ -562,6 +562,51 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its geography, regulation exposure to NSE, and India. The parts of the business most likely touched are debt, balance sheet, regulation. Classified as debt.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "DEBT",
+        "BALANCE_SHEET",
+        "REGULATION"
+      ],
+      "time_horizon": "MEDIUM_TERM",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "SEBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "+2 Regulatory or legal action",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to SEBI. The parts of the business most likely touched are debt, balance sheet, regulation. Classified as debt.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -604,21 +649,71 @@
       "published": "2026-11-26T12:59:23+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "NSE Secures RBI Nod for Corporate Bond Index Futures After SEBI Clearance in October; Launch Date Awaited",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc0dMQ0k4WEhUSlpabGY5Y1MzcnhwNm8yeWxPSW1MckVXTzliejFMa3dnRkFOcTFpZldqOWhXNEFUb0o3bkpNNGRHMVRvbmdMUHg4a2I5WXpsbDZzWFgxTmF1a1dOd2ZzVDBvOWRQbF9VY3FRM0VmYmxPUWJnR05uN3ZDbXVISm1WX2tVYVJYSTM4UE5zaWpMT29DTVdCenRfRXhPWHlaV3dvenltNUVaOVRjcEp4d3RGWF9lUEdn",
+      "source_name": "Kotak Neo",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T03:49:37+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NSE Shares Rally 35% in a Month; RBI Clears Corporate Bond Index Futures",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVkZwOGdUbzdBSnVTQzdMTnQ5RnBtT25WNXhRaVhWRldua2E1T2JPV284SW05SVZJbzNSSllzQzJSd0FxaDlZTFR4TDZYS21DSmpHRnR2TFVubWlDNXhvcUpiVUlmQ0JCUEFmVUpGcjJVbmpEVFVlQkNoNGJfaS1VSA",
+      "source_name": "NiftyTrader",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T05:13:43+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NSE receives RBI nod for corporate bond index futures, aims to deepen debt market",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNS1cwT1F2X1B6NGo5TGdJdjItR1RUS1pmQ3l1ZXBlai0tRUU1dl9oeVlGMWdEdnc0aG4wV2ZucmI1RkQ5ZFUtbVZEelZRcmtDVTNDSkZvYjJ2bUhjMzdRWm9fa2VZTmxWY0RZSGJfQkNuVWxBRHhvLWg3R0NwTUFYaWRFMlItbC1hSGdtS3hpdVY5cHFpeHRFSGdOdDkzVHdoSXVUdXhJa0RpMndxLXBIMHh2WEdGV05hdWd4R0lTVVNwN1lmaGxvNVBjdHQydFctMHFiQ1VJc0hEYUVTdVHSAd4BQVVfeXFMTUtXME9Rdl9QejRqOUxnSXYyLUdUVEtaZkN5dWVwZWotLUVFNXZfaHlZRjFnRHZ3NGhuMFdmbnJiNUZEOWRVLW1WRHpWUXJrQ1UzQ0pGb2Iydm1IYzM3UVpvX2tlWU5sVmNEWUhiX0JDblVsQUR4by1oN0dDcE1BWGlkRTJSLWwtYUhnbUt4aXVWOXBxaXh0RUhnTnQ5M1R3aEl1VHV4SWtEaTJ3cS1wSDB4dlhHRldOYXVneEdJU1VTcDdZZmhsbzVQY3R0MnRXLTBxYkNVSXNIRGFFU3VR",
+      "source_name": "bfsi.economictimes.indiatimes.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T00:52:44+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "NSE shares in focus after RBI nod for corporate bond index futures",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPdmdPM3hMVDFxMVhuZHlXa2FMQTZ0SXJxLWIxMW5xY0ZMMUVPSFhrMk1kOVRDa3M3azRwRkh2TjNsQ29ZeUxUMFJhSGxnX2c2aF9yMW1VUWVGZjFvM1Q5NnBJaXZreDZiLVVBQzNCLVNlN3FpQlB5QWw4c3RwOG14bEY3RFNqekZkWjJNUmFvR0xTRzFYaFpfNDcxNHM4bURBWTJhbXFQN2lLOGYyNGJtSkh3dnN0WmNBT25IN0x6UEtSY3g1RGlEQVBqWG1MV2VmRTNyM083R0JDa3FjNUl4UGJHSdIB3AFBVV95cUxNUkJxaHBROTVUcHFVVE52cEE1Ymd1STFLSzE2UWZnWHhwTFYxY0RXcnpyc29OV042UnNDU2lSeFdxS180WFFTVVFFUUl3eERTRXZsOEU0T0VlZHFFQXpiZk5EaHoyMTZoS0xfZTlHdVpLYVpyTkxQQ2VHdXA0aktTZTZCSmoxTGU4T3JCSS1HM2xBWXZ1UlFjNzE2NTRVV0I1MXB1SFB1cE5kcU9SdkFYdnhuczFwakdHMkY1ZnpvTEhVbTlLY3htX3JzSGR6WmczYkxUckNhNXdrUnYz",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T03:35:14+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 4,
+  "article_count": 8,
   "source_count": 2,
   "primary_source": "The Hindu BusinessLine Markets",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|DEBT+REGULATORY|approve-bond-corporate-nse-rbi-win",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-26T22:27:23.022874+00:00",
-  "last_updated": "2026-11-26T22:27:23.022966+00:00",
+  "last_updated": "2026-11-27T17:13:43.265049+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-26T22:27:23.022955+00:00",
       "change": "created",
       "detail": "4 source(s) from 2 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:43.265022+00:00",
+      "change": "sources added",
+      "detail": "Kotak Neo, NiftyTrader, The Economic Times, bfsi.economictimes.indiatimes.com"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:43.265045+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
     }
   ],
   "price_reaction": {}

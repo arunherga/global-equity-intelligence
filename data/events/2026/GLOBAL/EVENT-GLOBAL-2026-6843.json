@@ -10,14 +10,15 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
       "direction": "MIXED",
-      "confidence": 0.41,
+      "confidence": 0.46,
       "business_impacts": [
         "MARGIN",
-        "DEMAND"
+        "DEMAND",
+        "CUSTOMERS"
       ],
       "time_horizon": "SHORT_TERM",
       "exposures": [
@@ -36,6 +37,13 @@
           "detail": "in headline"
         },
         {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        },
+        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
@@ -44,7 +52,7 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -52,7 +60,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
@@ -61,7 +69,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand. Classified as interest rate.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its industry, regulation exposure to RBI, and repo rate. The parts of the business most likely touched are margin, demand, customers. Classified as interest rate.",
       "ai_analysis": null
     },
     "HDFCBANK": {
@@ -131,21 +139,41 @@
       "published": "2026-11-17T00:32:21+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "RBI keeps repo rate at 4.00% in India",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONVlodURQM2hFUTE0SWstd3FMVlFPNW0tTjdVSHdndzN1ZkVVb19xem1faHAwX3F4bGxIU2dheF9WMHljMHhWamc5R3ZaOWZOSU1oOXRUcmRlVzNkbE1yVWdSdlBEX1FRaEJkeFEzOHBjd01fc0NESUluZ0E5QlFXdFBZOG5VREtkZXZv",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T10:26:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "News On AIR",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE+MACRO|keeps-projects-rate-rbi-repo-unchanged",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-17T16:21:25.311383+00:00",
-  "last_updated": "2026-11-17T16:21:25.311486+00:00",
+  "last_updated": "2026-11-27T17:14:42.812745+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-17T16:21:25.311475+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:42.812721+00:00",
+      "change": "sources added",
+      "detail": "Traders Union"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:42.812739+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
     }
   ],
   "price_reaction": {}

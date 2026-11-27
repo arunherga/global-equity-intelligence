@@ -1,0 +1,86 @@
+{
+  "event_id": "EVENT-KSOLVES-2026-3193",
+  "title": "Salesforce, Inc. : Gets a Buy rating from JP Morgan",
+  "summary": "Salesforce, Inc. : Gets a Buy rating from JP Morgan marketscreener.com",
+  "event_date": "2026-11-27",
+  "event_types": [
+    "ANALYST_ACTION"
+  ],
+  "stocks": {
+    "KSOLVES": {
+      "ticker": "KSOLVES",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "REPUTATION",
+        "SUPPLY"
+      ],
+      "time_horizon": "IMMEDIATE",
+      "exposures": [
+        {
+          "exposure_type": "SUPPLIER",
+          "term": "Salesforce",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "TECHNOLOGY",
+          "term": "Salesforce",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Scheduled disclosure with no surprise",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "supply terms from Salesforce"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its supplier, technology exposure to Salesforce, and Salesforce. The parts of the business most likely touched are reputation, supply. Classified as analyst action.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "Salesforce, Inc. : Gets a Buy rating from JP Morgan",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS21VSFZLa2RkT2hDd2t2Mm41Q1BFMmZCcE51NkhMWVdscEYyY28yakItM1dUcVdRSjlKZDBuR1hXTDcxM0N6S3l6QzdVMFJBLUVhNkxVejR3Mzh0cnY1cjcxNXJ6NV9ES21sd3ZzajBlNWhMdFBIQWE1UUdXZXoyVU9kcEp1V1lHdndjNEJSZV9vRVpCdXZua092N2NveGVJZlE",
+      "source_name": "marketscreener.com",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T12:22:23+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "marketscreener.com",
+  "cluster_key": "KSOLVES|ANALYST_ACTION|buy-inc.-morgan-rating-salesforce-win",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-27T17:01:13.234774+00:00",
+  "last_updated": "2026-11-27T17:01:13.234844+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-27T17:01:13.234834+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

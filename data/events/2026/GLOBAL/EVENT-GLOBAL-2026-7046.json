@@ -10,17 +10,17 @@
   "stocks": {
     "TMB": {
       "ticker": "TMB",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
-        "PRODUCT",
-        "REVENUE",
+        "REPUTATION",
+        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -28,46 +28,42 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Axis Bank) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Axis Bank, and India. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are reputation, management, competition. Classified as fraud.",
       "ai_analysis": null
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
       "impact_band": "NOISE",
-      "direction": "UNCERTAIN",
-      "confidence": 0.3,
+      "direction": "POSITIVE",
+      "confidence": 0.35,
       "business_impacts": [
-        "PRODUCT",
-        "REVENUE",
+        "REPUTATION",
+        "MANAGEMENT",
         "COMPETITION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "IMMEDIATE",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -75,31 +71,27 @@
           "relationship": "INDIRECT",
           "weight": 2.5,
           "detail": "in headline"
-        },
-        {
-          "exposure_type": "GEOGRAPHY",
-          "term": "India",
-          "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "No clear directional signal in the available text"
+        "a competitor (Axis Bank) is under pressure"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
+        "regulatory response",
+        "quantum involved",
+        "auditor commentary",
         "Axis Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, geography exposure to Axis Bank, and India. The parts of the business most likely touched are product, revenue, competition. Classified as new product.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its competitor exposure to Axis Bank. The parts of the business most likely touched are reputation, management, competition. Classified as fraud.",
       "ai_analysis": null
     }
   },
@@ -153,16 +145,26 @@
       "published": "2026-11-23T04:43:31+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Axis Bank Safe Banking drive for Fraud Awareness Week",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaXE3T1Zmbkl6MFhHZzVIT0Q2eExnNV9pcUp1Q2UtcVZZd3pTYXhRdlNPZmRaR1h2OW1JYjZoSDNhNFVqQTVER0JsV2dJaVh5NjYtSmZwRWxRSHZnYl9lUUUyT0VVTUNfS0RMS0hnS0N0NzhJN1F1ZnZFLVQ5Y3RFbS1MdFh2M2NBOTgtQzJLOGVKSlhKZVlzeA",
+      "source_name": "MediaBrief",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T10:06:03+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "CXOToday.com",
   "cluster_key": "HDFCBANK+TMB|FRAUD+NEW_PRODUCT|awareness-axis-bank-fraud-international-marks",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-18T16:02:29.725121+00:00",
-  "last_updated": "2026-11-24T02:05:36.935067+00:00",
+  "last_updated": "2026-11-27T17:14:40.799493+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-18T16:02:29.725222+00:00",
@@ -193,6 +195,21 @@
       "timestamp": "2026-11-24T02:05:36.935063+00:00",
       "change": "direction changed",
       "detail": "HDFCBANK POSITIVE -> UNCERTAIN"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:40.799467+00:00",
+      "change": "sources added",
+      "detail": "MediaBrief"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:40.799484+00:00",
+      "change": "impact raised",
+      "detail": "TMB 0 -> 1"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:40.799489+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 1"
     }
   ],
   "price_reaction": {}

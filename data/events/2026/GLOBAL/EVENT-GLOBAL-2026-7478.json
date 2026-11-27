@@ -59,11 +59,11 @@
     },
     "HDFCBANK": {
       "ticker": "HDFCBANK",
-      "relationship": "INDIRECT",
-      "impact_score": 0,
-      "impact_band": "NOISE",
+      "relationship": "DIRECT",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
       "direction": "MIXED",
-      "confidence": 0.3,
+      "confidence": 0.4,
       "business_impacts": [
         "MARGIN",
         "DEMAND",
@@ -80,7 +80,7 @@
         },
         {
           "exposure_type": "PRODUCT",
-          "term": "personal loans",
+          "term": "home loans",
           "relationship": "SECTOR",
           "weight": 1.7,
           "detail": "in headline"
@@ -101,7 +101,8 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+5 Direct company event",
+        "+2 Company appears in the headline",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
@@ -109,7 +110,7 @@
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "direct relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
@@ -118,7 +119,7 @@
         "credit demand response",
         "margin guidance"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor, product exposure to IDFC First Bank, and personal loans. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are margin, demand, competition. Classified as interest rate.",
       "ai_analysis": null
     }
   },
@@ -132,21 +133,41 @@
       "published": "2026-11-21T07:19:56+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "IDFC FIRST Bank vs HDFC Bank: Which bank offers the best home loan deal? Check interest rates",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMzFGUEZ4dkQyNlV6dTh1SHFsRGs3bTU3OVdLcHZETFpJZ3pLQ0RRQ0ZUdWFacjBrS1h0SllCdEVaa0FyS0xUcUYwZ3N3Vzh0cUdxSWh0TVh6eVcxeWRnTFN4OEF0aE40WHBUcFNTY005YTJHemwzYWo2TTZFR0xsT01mU2NKcDFnSnczclhMMlc1NmJYSGFOa3dISmdJX3NmTC1BWG1GUHJxeE9nTEtEd3ZrM3JfRUhWdlVoXzR0RXdNUmdveldYcEhhOTZlVEVuSGxINGMzUDQxMkFWamx5U1JudGwwVjdYV0kxeTBENkh3dGtLRm1B0gH8AUFVX3lxTE94NV9UbTVwdGcyT194blBJVkl6NnJXYVdfVW5fU3hORkN6cVR0WUR5Yy1tNnVwbGhQOW9rLUtPZTkzaFlpRmlnMDVLN0NHVHNmazhnbzR5YzZZQ0FyYVo4VnZCVW9fekhEYlVkZUF4bE5kSGdpOWhCeGJGMElpNUNzSEFSNUNaSk12MTAzUC1meWlPMUwxeWxqWWx4MGFiVHhUQUVrQUZNU3YwR3ZsUnYxUHBJTHlsTXZtY2dqRXlYVE9QOTE5MTJuTEhPQ3ozanpKUl9sVmZpREVqWXJsU28zeDgyUFFyT1ZwdmJYQ3BVMndRYU9mTllEdFZSaw",
+      "source_name": "India TV News",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T11:16:12+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "India TV News",
   "cluster_key": "HDFCBANK+TMB|INTEREST_RATE|bank-first-idfc-pnb-sbi-which",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-21T14:54:40.321745+00:00",
-  "last_updated": "2026-11-21T14:54:40.321827+00:00",
+  "last_updated": "2026-11-27T17:14:47.042784+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:54:40.321817+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:47.042761+00:00",
+      "change": "sources added",
+      "detail": "India TV News"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:47.042779+00:00",
+      "change": "impact raised",
+      "detail": "HDFCBANK 0 -> 5"
     }
   ],
   "price_reaction": {}

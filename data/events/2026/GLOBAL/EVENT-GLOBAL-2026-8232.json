@@ -1,0 +1,130 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-8232",
+  "title": "NHAI Extends Cost Escalation Compensation Mechanism For Bitumen Price Increases",
+  "summary": "NHAI Extends Cost Escalation Compensation Mechanism For Bitumen Price Increases Legal 500",
+  "event_date": "2026-11-27",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "JKIPL": {
+      "ticker": "JKIPL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to NHAI. Classified as other.",
+      "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 1,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
+      "business_impacts": [
+        "CUSTOMERS",
+        "INPUT_COST"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMMODITY",
+          "term": "bitumen prices",
+          "relationship": "INDIRECT",
+          "weight": 3.0,
+          "detail": "input commodity; in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.5,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "REGULATION",
+          "term": "NHAI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+3 Close, specific exposure to this company",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "bitumen prices is an input cost and is moving up"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect strong relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "bitumen prices over the next few weeks",
+        "order flow from NHAI"
+      ],
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity, customer exposure to bitumen prices, and NHAI. The parts of the business most likely touched are customers, input cost. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "NHAI Extends Cost Escalation Compensation Mechanism For Bitumen Price Increases",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSWExNW5xZjA1TlBycXR3NnY5Wm9QQkRldFBDcU4tQUJRVzBfQ0hfMlhNbHVYVUFUdWtJSlo2dDhPUklYRldzZnJhV2pjU202bHNIa2VuYnhBTktFcDhHRkJJODJKYVQ2RG1jemFUWVU2NGdzNUdNWW10T0lHdUFEM1BaYjE5bGZsRmhJNjZOdkswTUZ6eFB3VTRkcmNLWTZqT0dHQkZIVi1iVml3UG43cEpkaXpnMmFWSmJ4RktMODBvUzBNajk3VVJPX3VqMVRTV0hDTUdfLXhuX1J1WFZ1NmczcnV5bms",
+      "source_name": "Legal 500",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T08:22:03+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Legal 500",
+  "cluster_key": "ASHOKA+JKIPL|OTHER|compensation-cost-escalation-extends-mechanism-nhai",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-27T16:59:41.131328+00:00",
+  "last_updated": "2026-11-27T16:59:41.131403+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-27T16:59:41.131393+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

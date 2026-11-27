@@ -5,22 +5,24 @@
   "event_date": "2026-11-11",
   "event_types": [
     "GUIDANCE",
-    "REGULATORY"
+    "REGULATORY",
+    "COMMODITY"
   ],
   "stocks": {
     "WAAREEENER": {
       "ticker": "WAAREEENER",
-      "relationship": "INDIRECT",
-      "impact_score": 2,
-      "impact_band": "NOISE",
-      "direction": "POSITIVE",
-      "confidence": 0.3,
+      "relationship": "INDIRECT_STRONG",
+      "impact_score": 5,
+      "impact_band": "RELEVANT",
+      "direction": "NEGATIVE",
+      "confidence": 0.35,
       "business_impacts": [
         "REVENUE",
         "DEMAND",
+        "PRICING",
         "INPUT_COST"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "SHORT_TERM",
       "exposures": [
         {
           "exposure_type": "COMMODITY",
@@ -31,24 +33,26 @@
         }
       ],
       "score_reasons": [
-        "+2 Indirect but real exposure",
+        "+3 Close, specific exposure to this company",
         "+2 Earnings or guidance at a related company",
+        "+2 Movement in a relevant commodity",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "silver is an input cost and is moving down"
+        "silver is an input cost and is moving up"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
-        "indirect relationship",
+        "indirect strong relationship",
         "no quantified financial implication"
       ],
       "watch_next": [
         "assumptions behind the guidance",
         "execution track record",
-        "silver over the next few weeks"
+        "whether the price move persists",
+        "contract repricing lag"
       ],
-      "why_it_matters": "This reaches the company indirectly via its commodity exposure to silver. The parts of the business most likely touched are revenue, demand, input cost. Classified as guidance.",
+      "why_it_matters": "This reaches the company through a close, specific exposure via its commodity exposure to silver. The parts of the business most likely touched are revenue, demand, pricing. Classified as guidance.",
       "ai_analysis": null
     }
   },
@@ -102,16 +106,26 @@
       "published": "2026-11-24T18:30:28+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Gold and Silver Price Forecast: Silver Leads Rebound as Ratio Falls",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbTNvNmdrVlhUYXQtcFBkNTlSSEFMQjNfRkl1STktMTE4VDBiXzJIY0U1RTBCZFBCNGhlbmVScG1vM2FSR25ld05RejhzeDVkOTNyb05fT1Q3S1ljZ2UzeE1XMk1FWU5ldGwxSng4VVVocXctRjk1R0NMTlRqbEdqZE1PQUR5MkZ3UGNGZzFFaXJPd00tMEIxdkM5Z0NabVlkZE13SGdNLS1qMy1OdDNjMnlSeElUQ0xL",
+      "source_name": "FXEmpire",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T09:45:44+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 5,
+  "article_count": 6,
   "source_count": 1,
   "primary_source": "FXEmpire",
   "cluster_key": "WAAREEENER|GUIDANCE|forecast-gold-price-rise-silver-yields",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-11T21:34:42.434612+00:00",
-  "last_updated": "2026-11-25T17:46:20.011951+00:00",
+  "last_updated": "2026-11-27T17:14:36.860683+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-11T21:34:42.434696+00:00",
@@ -162,6 +176,21 @@
       "timestamp": "2026-11-25T17:46:20.011948+00:00",
       "change": "direction changed",
       "detail": "WAAREEENER NEGATIVE -> POSITIVE"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:36.860657+00:00",
+      "change": "sources added",
+      "detail": "FXEmpire"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:36.860674+00:00",
+      "change": "categories added",
+      "detail": "COMMODITY"
+    },
+    {
+      "timestamp": "2026-11-27T17:14:36.860679+00:00",
+      "change": "impact raised",
+      "detail": "WAAREEENER 2 -> 5"
     }
   ],
   "price_reaction": {}

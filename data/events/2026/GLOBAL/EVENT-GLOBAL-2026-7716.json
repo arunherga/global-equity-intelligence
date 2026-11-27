@@ -5,7 +5,8 @@
   "event_date": "2026-11-23",
   "event_types": [
     "ACQUISITION",
-    "REGULATORY"
+    "REGULATORY",
+    "OTHER"
   ],
   "stocks": {
     "MSTCLTD": {
@@ -323,15 +324,14 @@
     "TMB": {
       "ticker": "TMB",
       "relationship": "INDIRECT",
-      "impact_score": 2,
+      "impact_score": 0,
       "impact_band": "NOISE",
-      "direction": "NEGATIVE",
-      "confidence": 0.3,
+      "direction": "UNCERTAIN",
+      "confidence": 0.41,
       "business_impacts": [
-        "REGULATION",
         "COMPETITION"
       ],
-      "time_horizon": "MEDIUM_TERM",
+      "time_horizon": "UNKNOWN",
       "exposures": [
         {
           "exposure_type": "COMPETITOR",
@@ -348,40 +348,30 @@
           "detail": "in headline"
         },
         {
-          "exposure_type": "REGULATION",
-          "term": "RBI",
-          "relationship": "INDIRECT",
-          "weight": 2.3,
-          "detail": "in headline"
-        },
-        {
           "exposure_type": "GEOGRAPHY",
           "term": "India",
           "relationship": "WEAK",
-          "weight": 0.2,
-          "detail": ""
+          "weight": 0.7,
+          "detail": "in headline"
         }
       ],
       "score_reasons": [
         "+2 Indirect but real exposure",
-        "+2 Regulatory or legal action",
         "-2 Single unverified source"
       ],
       "direction_reasons": [
-        "a competitor (Indian Bank, South Indian Bank) is doing well"
+        "No clear directional signal in the available text"
       ],
       "confidence_reasons": [
         "best source quality 3/10",
         "indirect relationship",
-        "no quantified financial implication"
+        "financial implication is quantified"
       ],
       "watch_next": [
-        "formal order or circular text",
-        "compliance deadline",
-        "company response or clarification",
-        "precedent for peers"
+        "Indian Bank's follow-up announcements",
+        "South Indian Bank's follow-up announcements"
       ],
-      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are regulation, competition. Classified as regulatory.",
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Indian Bank, and South Indian Bank. The parts of the business most likely touched are competition. Classified as other.",
       "ai_analysis": null
     },
     "SUPRIYA": {
@@ -698,16 +688,26 @@
       "published": "2026-11-26T07:10:00+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "CORPWATCH: India clears SBI Mutual Fund for near-10% South Indian Bank stake",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY3BWeUcyc0ozdGtVOGV6ZWFmbWk3ZnpKVVdmNWI5dkN5V043SDBBYWZZNUJGazMzRU9NS2hNZTlNRktybTM0WE9sWVhEWUlmeFpPRG9wa2JIa3hqT0dwVTVvV3phX3h2UExXcmU1dEZVZlZMWTEtMkgxenl0MEJlN2t0dlVyVVRTNW5sV2QwaW9YaGFRaUJQMUNhNEVuU0k",
+      "source_name": "Yahoo Finance",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T00:21:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 15,
+  "article_count": 16,
   "source_count": 1,
   "primary_source": "scanx.trade",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|ACQUISITION+REGULATORY|bank-did-india-nse-south-southbank",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-24T01:57:24.342855+00:00",
-  "last_updated": "2026-11-26T22:44:57.625962+00:00",
+  "last_updated": "2026-11-27T17:13:38.952180+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-24T01:57:24.342932+00:00",
@@ -763,6 +763,21 @@
       "timestamp": "2026-11-26T22:44:57.625955+00:00",
       "change": "direction changed",
       "detail": "TMB UNCERTAIN -> NEGATIVE"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:38.952154+00:00",
+      "change": "sources added",
+      "detail": "Yahoo Finance"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:38.952170+00:00",
+      "change": "categories added",
+      "detail": "OTHER"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:38.952176+00:00",
+      "change": "direction changed",
+      "detail": "TMB NEGATIVE -> UNCERTAIN"
     }
   ],
   "price_reaction": {}

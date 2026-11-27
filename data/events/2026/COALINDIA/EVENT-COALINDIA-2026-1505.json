@@ -4,20 +4,22 @@
   "summary": "Mahanadi Coalfields raises INR 2,295 crore from anchor investors ahead of INR 8,981 crore IPO Prop News Time",
   "event_date": "2026-11-21",
   "event_types": [
-    "FUNDRAISING"
+    "FUNDRAISING",
+    "REGULATORY"
   ],
   "stocks": {
     "COALINDIA": {
       "ticker": "COALINDIA",
       "relationship": "DIRECT",
-      "impact_score": 5,
-      "impact_band": "RELEVANT",
+      "impact_score": 11,
+      "impact_band": "VERY_HIGH",
       "direction": "UNCERTAIN",
-      "confidence": 0.51,
+      "confidence": 0.71,
       "business_impacts": [
-        "BALANCE_SHEET"
+        "BALANCE_SHEET",
+        "REGULATION"
       ],
-      "time_horizon": "UNKNOWN",
+      "time_horizon": "MEDIUM_TERM",
       "exposures": [
         {
           "exposure_type": "SUBSIDIARY",
@@ -29,22 +31,44 @@
       ],
       "score_reasons": [
         "+5 Direct company event",
-        "+2 Company appears in the headline",
-        "-2 Single unverified source"
+        "+4 Regulatory or legal action",
+        "+2 Company appears in the headline"
       ],
       "direction_reasons": [
         "FUNDRAISING cuts both ways — growth against capital, cost or execution risk"
       ],
       "confidence_reasons": [
-        "best source quality 3/10",
+        "best source quality 7/10",
+        "two independent sources",
         "direct relationship",
         "financial implication is quantified"
       ],
       "watch_next": [
-        "confirmation from an official or company source"
+        "formal order or circular text",
+        "compliance deadline",
+        "company response or clarification",
+        "precedent for peers"
       ],
-      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet. Classified as fundraising.",
-      "ai_analysis": null
+      "why_it_matters": "This is news about the company itself. The parts of the business most likely touched are balance sheet, regulation. Classified as fundraising.",
+      "ai_analysis": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "revenue_effect": "Core coal production and sales revenue remain unaffected by the equity listing. However, Coal India's non-operating cash reserves or exceptional income will increase if the IPO contained an Offer for Sale (OFS) component where the parent company divested equity.",
+        "margin_effect": "Operating profit margins are largely unaffected. Consolidated net profit attributable to Coal India shareholders may see minor dilution due to the creation of a non-controlling (minority) interest in Mahanadi Coalfields.",
+        "cost_effect": "No direct operational cost impact on coal mining activities, though Mahanadi Coalfields will incur additional recurring administrative, legal, compliance, and investor relations expenses standard for a publicly traded company.",
+        "competitive_effect": "Enhances corporate transparency and standalone financial flexibility for Mahanadi Coalfields, though it does not significantly change Coal India's overall near-monopoly market position in Indian domestic coal production.",
+        "regulatory_effect": "Mahanadi Coalfields is now directly subject to SEBI listing regulations, stock exchange disclosure requirements, and heightened governance and public reporting standards.",
+        "short_term": "Market focus will center on the initial discounted trading debut (-2%) and near-term market digestion of Coal India's updated balance sheet cash position following the public issue.",
+        "medium_long_term": "Unlocks underlying value of Coal India's major operating subsidiary, creates an independent capital market avenue for subsidiary-level expansion, and establishes a holding company valuation dynamic for Coal India.",
+        "second_order_effects": "Sets a valuation precedent and operational template for the potential future public listing of other key Coal India subsidiaries, such as South Eastern Coalfields or Northern Coalfields.",
+        "key_uncertainty": "The exact proportion of proceeds retained versus remitted to Coal India, and whether Coal India will deploy these funds into capital expenditures or distribute them via a special dividend.",
+        "monitor_next": [
+          "Coal India board announcements regarding potential special dividend payouts from IPO proceeds.",
+          "Post-listing trading performance and price stabilization of Mahanadi Coalfields.",
+          "Coal India's upcoming quarterly financial results for minority interest line-item adjustments.",
+          "Official statements on plans for public listings of Coal India's other operating subsidiaries."
+        ]
+      }
     }
   },
   "sources": [
@@ -57,21 +81,96 @@
       "published": "2026-11-21T13:00:20+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields set for Mumbai debut after ₹8,981 crore IPO",
+      "url": "https://www.thehindubusinessline.com/markets/mahanadi-coalfields-set-for-mumbai-debut-after-8981-crore-ipo/article71749298.ece",
+      "source_name": "The Hindu BusinessLine Markets",
+      "source_domain": "thehindubusinessline.com",
+      "source_type": "established_newspaper",
+      "published": "2026-11-27T03:42:51+00:00",
+      "is_official": false,
+      "quality": 7
+    },
+    {
+      "title": "Mahanadi Coalfields Shares Make Discounted Debut Below IPO Price Of Rs 136",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTDNLcXVJWW1jYXhmVHFTcXVJcXNVMVg4YXhjTU03emVKUUlKbkhWMWNRWlBzc2pCX2xiSEdqUFpPNlRWMDZPOTZoYnNSTnBYN2M4MGhSOHpGdXhsU2pKSXVGTmpYVXUwck43YzZfamkxYzhaSlkzQ3JSYWtscVZFSURSM2U5VjhXaXUwMlFlbkVwWmJ0aXNRajh4ZTZxcmNOMlNVWkhYQWI1ZldKajNlQjZ1c3IybGpHdGo4dWgzdWRZT0ktX3RoV1NPcw",
+      "source_name": "TradingView",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T10:13:05+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields lists at 134, down by 2% to issue price",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaElMLVhtY3NFSEpYMU96dGNzcmxNUHpQbkQwa1pRWWNMS3V6aU5lbTI1cVQxRThLODdhcDRub1VRSVNMWXJDV21PblEzSEtIVDAtamk1cmlvLWFUZzU5QTV3LU8yNWhJTlNHT2sxWUhKUHRZM1hUQTNOVThhbV9VeTJXTmtDWkpCbFhUMk5pRjZUTWZLSDE2TzVscEQ",
+      "source_name": "India Infoline",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T06:35:36+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields makes muted D-St debut, lists at 2% discount over IPO price",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPc1lyUDVFaDd6YTlTR2NUemV5WlY5NUlpemRNVlRjYlJwSHZPb054RkZ2VWlENHpQUU5kdkp3UU13bGMzZTg4bGhOY3NONWRwNHpkMUU2LXdqQ2V2c1REVDJwVUJHZVlmVXRyREc0cGhFdXliODczNEwzeGtzMU1FcUZxcU9TYUNqSGdZdUhYWnVQU1ctcmJLTS1JZkRMUF84TDBwUElnVlQ4RmxmZl8zbUFHZXVpU1AzZGpGd3ZjT19wT2laYzZBazZwOXlLbHdXZC1vR0F4U2d4VHlNbWlpMkc1eVJIQUlwNzBmRWlfblo0X0tTSFdza2VHQWl2MEd2SlYxWEMydlBla0F5WkJ2SU9Lci1aY0paZGNiTDJsSkVUMy1wYmZic9IBrgJBVV95cUxNcWtZM0R2blJ5UDVhWEJScFBScFRyanBWRzFPdWZIMDQwemgtSlhoaDFrLU1XTHdjUy02UWtwR0JiVlVzOEtReFcxSHUxTnZwcWRzd01IM2dXaEFJNHNVT1lrOG5qY0xlUU53Z1ZDMUxpeElENlpZR3ZvTHo4cWNqVkF0NS0tYld0eVRFUllISzN1cU9zdlRLU3VNZmgtamxIc3RVOGMya3hVWDFyd3hyZEFQbjN3Y2ctbGk0SXlUX20wX181cEludk14cU9EWjd6cDNLNkpvLUZDaVJuRExkY09jWGY3dGR6b3hiWWJBMERhNjhrMGhtVGhaR0tKa2FhRzdNUndEY0RCeWp3VG4zYWhfSkc4dXNLYlg1WVNubm9rbGtxckNqZzdNV3dmQQ",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T02:26:17+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields set for stock market debut after $969 million IPO",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNWJJc0RrcmlhLTBQWUdxWXYybjZZS3BTNVhScnFzdjZTXzFnNzN2M2o1RW9CeDlyN0xhV1lqUFZ6UHlFNm9aWmxxbXJjQWx4cVdadV9SZXpkZk5lMHR2NFl1Qkk3QndMSVA3SVprSFhYT05UcUREWUFUZ2NRcFhYNXJ3d1BCYXp3WEtEQXBFYy1zc2tXUkI2VWlscFdEbXkta184TjVXX2lqMlhDQk9SMG1fV3NMOXRtX0M0Wi1RSFg4LW0xMFo0eGhaLUJjaFFzUHlHTkRiNi3SAdgBQVVfeXFMTTViSXNEa3JpYS0wUFlHcVl2Mm42WUtwUzVYUnJxc3Y2U18xZzczdjNqNUVvQng5cjdMYVdZalBWelB5RTZvWlpscW1yY0FseHFXWnVfUmV6ZGZOZTB0djRZdUJJN0J3TElQN0laa0hYWE9OVHFERFlBVGdjUXBYWDVyd3dQQmF6d1hLREFwRWMtc3NrV1JCNlVpbHBXRG15LWtfOE41V19pajJYQ0JPUjBtX1dzTDl0bV9DNFotUUhYOC1tMTBaNHhoWi1CY2hRc1B5R05EYjYt",
+      "source_name": "Business Standard",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T03:27:53+00:00",
+      "is_official": false,
+      "quality": 3
+    },
+    {
+      "title": "Mahanadi Coalfields’ IPO Debut Was Quiet, Still Valued At $9.6 Billion",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQzc5dGFLNlVnUTQ2QjhIZWVLc0NCamVTWFZhTkVSZy1aOGxlM19RMjBldnZNZVhLWEJ2elJ5STZCcXBrZE5CVVRaV1ZBQVRIaVlFUnl1VUFuMmNycnJvRGdMSkJzZFF3c0ZFNk5maFhXZzZFczNQWTFRRUJ0c2U0NXktWUJDSUFBbGhacGRtQnA5ZlN2ZEV1REJNYw",
+      "source_name": "Finimize",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T05:58:35+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 7,
+  "source_count": 2,
   "primary_source": "Prop News Time",
   "cluster_key": "COALINDIA|FUNDRAISING|295-anchor-coalfields-inr-mahanadi-raise",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-21T14:55:26.104705+00:00",
-  "last_updated": "2026-11-21T14:55:26.104787+00:00",
+  "last_updated": "2026-11-27T17:13:13.552083+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-21T14:55:26.104776+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:13.552052+00:00",
+      "change": "sources added",
+      "detail": "Business Standard, Finimize, India Infoline, The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:13.552069+00:00",
+      "change": "categories added",
+      "detail": "REGULATORY"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:13.552077+00:00",
+      "change": "impact raised",
+      "detail": "COALINDIA 5 -> 11"
     }
   ],
   "price_reaction": {}

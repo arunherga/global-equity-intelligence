@@ -1,0 +1,134 @@
+{
+  "event_id": "EVENT-GLOBAL-2026-8263",
+  "title": "RBI weekly data show foreign exchange reserves decline, while bank deposits and credit continue to grow year on year",
+  "summary": "RBI weekly data show foreign exchange reserves decline, while bank deposits and credit continue to grow year on year Traders Union",
+  "event_date": "2026-11-27",
+  "event_types": [
+    "OTHER"
+  ],
+  "stocks": {
+    "TMB": {
+      "ticker": "TMB",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [
+        "CUSTOMERS"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "CUSTOMER",
+          "term": "traders",
+          "relationship": "SECTOR",
+          "weight": 1.0,
+          "detail": "generic role"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "order flow from traders"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its customer, regulation exposure to RBI, and traders. The parts of the business most likely touched are customers. Classified as other.",
+      "ai_analysis": null
+    },
+    "HDFCBANK": {
+      "ticker": "HDFCBANK",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "RBI",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        },
+        {
+          "exposure_type": "PRODUCT",
+          "term": "deposits",
+          "relationship": "SECTOR",
+          "weight": 0.9,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its product, regulation exposure to RBI, and deposits. Classified as other.",
+      "ai_analysis": null
+    }
+  },
+  "sources": [
+    {
+      "title": "RBI weekly data show foreign exchange reserves decline, while bank deposits and credit continue to grow year on year",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTFd5ekk4WWt4VGF0Zmh2aWZOcXFVNktFazRwUFJIVXlCYk5qOUdUblBzU0ZRWUpRVy0tWU9FSmFYcnVDbVJYeXpOVTJ2aE13MGdLX2xLc2NTSUlDclNfbHVZX1ZTY2tnZ2poVHFweWdlTHE0RVI0NnZacDZzTnNoYy1qT3FSanV1ZHFqNkZZZW42ZkYtM1dFOC03T21CUQ",
+      "source_name": "Traders Union",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T12:21:45+00:00",
+      "is_official": false,
+      "quality": 3
+    }
+  ],
+  "article_count": 1,
+  "source_count": 1,
+  "primary_source": "Traders Union",
+  "cluster_key": "HDFCBANK+TMB|OTHER|data-exchange-foreign-rbi-show-weekly",
+  "is_international": false,
+  "tags": [],
+  "first_seen": "2026-11-27T17:01:10.907297+00:00",
+  "last_updated": "2026-11-27T17:01:10.907384+00:00",
+  "event_history": [
+    {
+      "timestamp": "2026-11-27T17:01:10.907372+00:00",
+      "change": "created",
+      "detail": "1 source(s) from 1 domain(s)"
+    }
+  ],
+  "price_reaction": {}
+}

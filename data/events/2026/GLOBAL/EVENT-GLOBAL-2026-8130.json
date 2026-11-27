@@ -406,6 +406,45 @@
       ],
       "why_it_matters": "This reaches the company indirectly via its regulation exposure to NSE. Classified as other.",
       "ai_analysis": null
+    },
+    "RAVEL": {
+      "ticker": "RAVEL",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "UNCERTAIN",
+      "confidence": 0.3,
+      "business_impacts": [],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "REGULATION",
+          "term": "BSE",
+          "relationship": "INDIRECT",
+          "weight": 2.3,
+          "detail": "in headline"
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-5 Market commentary rather than a company development",
+        "-7 Share-price listing or roundup page, not a development",
+        "-2 Single unverified source"
+      ],
+      "direction_reasons": [
+        "No clear directional signal in the available text"
+      ],
+      "confidence_reasons": [
+        "best source quality 3/10",
+        "indirect relationship",
+        "no quantified financial implication"
+      ],
+      "watch_next": [
+        "confirmation from an official or company source"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its regulation exposure to BSE. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -418,21 +457,41 @@
       "published": "2026-11-26T13:26:53+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "Stocks in news: Tata Group companies, NSE, BSE, Zydus Lifesciences and KPI Green Energy",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOc3FsQUhiS0JqQUZyOGZDbzJKWlFuLTRZbVY0NUt1TUkxc3VWRFdMVERDSl9uZkpUbGpKQS1pNWpJZF84VnlxeHNaRm9LMGRXY0FCWjhjdFloVHNteE9pUzdFMGpVRDR0TEs0aGdxZkRVSW82RkF5dGNJb1liNjVHS3lzY1FxME9hRXBLQUhlN2w2OWZlLVREUF9BWFZZaGhOSERhNXNyREVFRHY5RmN2QVFrblFKb3BjRXoxQU5QeDU2Z3pxdG1HOXpqM2RMcTJSdVNhVUJvSDRLcElYa3NubVc5T3lGVXdDb3fSAe8BQVVfeXFMTXJqN1ZtUjN6N0wxeHRWb2NKWjJ3dFFmV2NZclZmM3Fxb0dDckcwQ2dseFFOWVhySVFNZnJqcF83RmZTU2RpVnlvTnA4TUlvSENITnpFNDdrLVpJaTNHenFBTlM0aUVtWmg5c2lpYUlHdDRuODNSX1RZRTV2VXRua1BKa2dFU2JiSTRsakdZTUNqdkNzWEota1Z4MHd3ZkM3YUs0QUcwU2FWc1A1bkYxSjd6NEVRTzhocUdHUXlnZ0JHOFl0ZDhMX0pMYTN1Y193UEtLbXhoWGhxcE5lT2F0Y3IySEl3aE9GM2p3QVF0WFk",
+      "source_name": "The Economic Times",
+      "source_domain": "news.google.com",
+      "source_type": "unknown_news_site",
+      "published": "2026-11-27T00:30:00+00:00",
+      "is_official": false,
+      "quality": 3
     }
   ],
-  "article_count": 1,
+  "article_count": 2,
   "source_count": 1,
   "primary_source": "CNBC TV18",
   "cluster_key": "ASHOKA+COALINDIA+FRESHARA+HDFCBANK+JKIPL+KSOLVES+MSTCLTD+SUPRIYA+TMB+WAAREEENER|OTHER|companies-group-november-share-tata-watch",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-26T22:31:52.126289+00:00",
-  "last_updated": "2026-11-26T22:31:52.126380+00:00",
+  "last_updated": "2026-11-27T17:13:40.015654+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-26T22:31:52.126368+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:40.015626+00:00",
+      "change": "sources added",
+      "detail": "The Economic Times"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:40.015647+00:00",
+      "change": "stock added",
+      "detail": "RAVEL (INDIRECT)"
     }
   ],
   "price_reaction": {}

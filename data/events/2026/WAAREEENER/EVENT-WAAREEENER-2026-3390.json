@@ -49,6 +49,45 @@
       ],
       "why_it_matters": "This is industry-level news rather than company news via its product, technology exposure to battery energy storage, and battery energy storage system. Classified as other.",
       "ai_analysis": null
+    },
+    "ASHOKA": {
+      "ticker": "ASHOKA",
+      "relationship": "INDIRECT",
+      "impact_score": 0,
+      "impact_band": "NOISE",
+      "direction": "NEGATIVE",
+      "confidence": 0.52,
+      "business_impacts": [
+        "COMPETITION"
+      ],
+      "time_horizon": "UNKNOWN",
+      "exposures": [
+        {
+          "exposure_type": "COMPETITOR",
+          "term": "Larsen & Toubro",
+          "relationship": "INDIRECT",
+          "weight": 2.0,
+          "detail": ""
+        }
+      ],
+      "score_reasons": [
+        "+2 Indirect but real exposure",
+        "-2 Weak indirect connection",
+        "-1 Single source, unconfirmed"
+      ],
+      "direction_reasons": [
+        "a competitor (Larsen & Toubro) is doing well"
+      ],
+      "confidence_reasons": [
+        "best source quality 6/10",
+        "indirect relationship",
+        "financial implication is quantified"
+      ],
+      "watch_next": [
+        "Larsen & Toubro's follow-up announcements"
+      ],
+      "why_it_matters": "This reaches the company indirectly via its competitor exposure to Larsen & Toubro. The parts of the business most likely touched are competition. Classified as other.",
+      "ai_analysis": null
     }
   },
   "sources": [
@@ -61,21 +100,41 @@
       "published": "2026-11-25T07:06:52+00:00",
       "is_official": false,
       "quality": 3
+    },
+    {
+      "title": "L&T wins 300 MW/900 MWh battery energy storage project in Gujarat",
+      "url": "https://www.pv-magazine-india.com/2026/11/27/lt-wins-300-mw-900-mwh-battery-energy-storage-project-in-gujarat",
+      "source_name": "PV Magazine India",
+      "source_domain": "pv-magazine-india.com",
+      "source_type": "specialized_trade_publication",
+      "published": "2026-11-27T05:44:34+00:00",
+      "is_official": false,
+      "quality": 6
     }
   ],
-  "article_count": 1,
-  "source_count": 1,
+  "article_count": 2,
+  "source_count": 2,
   "primary_source": "Business Today",
   "cluster_key": "WAAREEENER|OTHER|battery-energy-l&t-order-rise-share",
   "is_international": false,
   "tags": [],
   "first_seen": "2026-11-25T17:31:32.022070+00:00",
-  "last_updated": "2026-11-25T17:31:32.022139+00:00",
+  "last_updated": "2026-11-27T17:13:30.326117+00:00",
   "event_history": [
     {
       "timestamp": "2026-11-25T17:31:32.022128+00:00",
       "change": "created",
       "detail": "1 source(s) from 1 domain(s)"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:30.326092+00:00",
+      "change": "sources added",
+      "detail": "PV Magazine India"
+    },
+    {
+      "timestamp": "2026-11-27T17:13:30.326113+00:00",
+      "change": "stock added",
+      "detail": "ASHOKA (INDIRECT)"
     }
   ],
   "price_reaction": {}
